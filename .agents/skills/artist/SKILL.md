@@ -83,3 +83,80 @@ When receiving critic feedback:
 - Never conclude "no changes needed" — always apply a concrete improvement
 - Address visual feedback at the algorithm level
 - If the core concept needs to change, renaming the work is acceptable
+
+## Python Templates
+
+### Still Image Template
+
+```python
+from pathlib import Path
+import py5
+
+SKETCH_DIR = Path(__file__).parent
+PREVIEW_FRAME = 120  # save preview ~2 seconds in and exit
+
+PREVIEW_SIZE = (1920, 1080)
+OUTPUT_SIZE  = (3840, 2160)
+SIZE = PREVIEW_SIZE
+
+def setup():
+    py5.size(*SIZE)
+    py5.background(0)
+
+def draw():
+    # drawing logic
+
+    if py5.frame_count == PREVIEW_FRAME:
+        py5.save_frame(str(SKETCH_DIR / "preview.png"))
+        py5.exit_sketch()
+
+py5.run_sketch()
+```
+
+### Animation Template (MP4 output)
+
+```python
+from pathlib import Path
+import subprocess
+import py5
+
+SKETCH_DIR = Path(__file__).parent
+FRAMES_DIR = SKETCH_DIR / "frames"
+DURATION_SEC = 5
+FPS = 60
+TOTAL_FRAMES = DURATION_SEC * FPS
+
+PREVIEW_SIZE = (1920, 1080)
+OUTPUT_SIZE  = (3840, 2160)
+SIZE = PREVIEW_SIZE
+
+def setup():
+    py5.size(*SIZE)
+    FRAMES_DIR.mkdir(exist_ok=True)
+
+def draw():
+    # drawing logic (choose intentionally whether to call background() each frame)
+
+    py5.save_frame(str(FRAMES_DIR / "frame-####.png"))
+
+    if py5.frame_count >= TOTAL_FRAMES:
+        py5.exit_sketch()
+        subprocess.run([
+            "ffmpeg", "-y", "-r", str(FPS),
+            "-i", str(FRAMES_DIR / "frame-%04d.png"),
+            "-vcodec", "libx264", "-pix_fmt", "yuv420p",
+            str(SKETCH_DIR / "output.mp4")
+        ], check=True)
+        mid = str(FRAMES_DIR / f"frame-{TOTAL_FRAMES // 2:04d}.png")
+        subprocess.run(["cp", mid, str(SKETCH_DIR / "preview.png")], check=True)
+
+py5.run_sketch()
+```
+
+**Notes:**
+- Animation works save sequential PNGs to `frames/` and combine into MP4 with ffmpeg
+- Requires: `brew install ffmpeg`
+- Include `output.mp4` in the commit
+- Choose intentionally whether to call `background()` each frame (omit to leave trails)
+- Do not fix random seed — results should vary each run
+- On Retina: After `py5.load_np_pixels()`, get actual size from `py5.np_pixels.shape[:2]`

@@ -117,6 +117,13 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: Fourier epicycles (15 nested rotating circles), 6-chain simultaneous trace, age-based rainbow trail coloring
 - **Description**: Six simultaneous epicycle tips trace one complex closed Fourier-series curve in rainbow colors; the 6-chain offset reveals the complete shape from the first frame and builds into a dense glowing rainbow curve
 
+## aurora_borealis
+
+- **Date**: 2026-04-26
+- **Theme**: atmosphere, polar light, electromagnetism, landscape
+- **Technique**: layered vertical ribbon waves (180 columns × 5 phases), alpha accumulation, star scatter, tree silhouette
+- **Description**: 900 sine-wave ribbon strips in five overlapping layers form the characteristic waviness of the Northern Lights; horizontal gradient from electric green through cold teal to deep violet encodes the spectral emission bands of excited atmospheric gases above a conifer treeline
+
 <!-- Add new works above this line using the format below:
 
 ## work_name

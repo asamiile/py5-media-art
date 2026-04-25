@@ -88,6 +88,11 @@ Add any notes on color, density, theme, or mood in the Comment field.
 - **Rating**:
 - **Comment**: The use of color is monotonous, so consider an artistic color scheme.
 
+## aurora_borealis
+
+- **Rating**:
+- **Comment**:
+
 ## reaction_diffusion
 
 - **Rating**: OK

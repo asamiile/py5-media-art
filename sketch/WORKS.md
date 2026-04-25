@@ -5,6 +5,13 @@
 
 ---
 
+## reaction_diffusion
+
+- **Date**: 2026-04-25
+- **Theme**: biology, emergence, self-organization
+- **Technique**: Gray-Scott reaction-diffusion PDE, numpy simulation, 2000 steps
+- **Description**: Labyrinthine floral clusters formed by two interacting virtual chemicals, resembling coral or animal markings
+
 ## wave_interference
 
 - **Date**: 2026-04-25

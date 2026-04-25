@@ -10,6 +10,7 @@
       "Bash(date *)",
       "Bash(cat *)",
       "Bash(sleep *)",
+      "Bash(BRANCH=*)",
       "Write(sketch/*)",
       "Write(.claude/*)",
       "Write(.agents/*)",

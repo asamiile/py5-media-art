@@ -173,6 +173,13 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: layered vertical ribbon waves (180 columns × 5 phases), alpha accumulation, star scatter, tree silhouette
 - **Description**: 900 sine-wave ribbon strips in five overlapping layers form the characteristic waviness of the Northern Lights; horizontal gradient from electric green through cold teal to deep violet encodes the spectral emission bands of excited atmospheric gases above a conifer treeline
 
+## halftone_waves
+
+- **Date**: 2026-04-26
+- **Theme**: printing, halftone, wave interference, graphic design
+- **Technique**: two interleaved dot grids (offset by half cell), cosine wave superposition amplitude drives dot radius, power-stretch contrast, complementary two-color fields
+- **Description**: Four wave point sources create interference; amplitude drives navy dot radius on a regular grid and complementary (inverted) amplitude drives sienna dots on a half-cell-offset grid; constructive and destructive peaks appear as clusters of large navy or sienna dots with bare cream paper at interference nulls
+
 ## sand_dunes
 
 - **Date**: 2026-04-26

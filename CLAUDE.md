@@ -183,11 +183,23 @@ Append to `sketch/WORKS.md`:
 - **Description**: One-line summary in English
 ```
 
+### Step 6.5: Add entry to FEEDBACK.md
+
+Append a blank entry to `sketch/FEEDBACK.md` so the user can rate the new work:
+
+```markdown
+## {work_name}
+
+- **Rating**:
+- **Comment**:
+```
+
 ### Step 7: Commit
 
 ```bash
 git add sketch/{work_name}/
 git add sketch/WORKS.md
+git add sketch/FEEDBACK.md
 git commit -m "feat: add {work_name} sketch"
 ```
 

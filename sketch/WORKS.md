@@ -117,6 +117,13 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: Fourier epicycles (15 nested rotating circles), 6-chain simultaneous trace, age-based rainbow trail coloring
 - **Description**: Six simultaneous epicycle tips trace one complex closed Fourier-series curve in rainbow colors; the 6-chain offset reveals the complete shape from the first frame and builds into a dense glowing rainbow curve
 
+## phyllotaxis
+
+- **Date**: 2026-04-26
+- **Theme**: botany, mathematics, golden ratio, nature's geometry
+- **Technique**: Vogel's phyllotaxis formula, golden angle seed placement, radial color/size encoding
+- **Description**: 8500 seed discs placed at golden angle intervals with √n radial spacing; Fibonacci spiral families (34 and 55 arms) emerge as an optical effect from the irrational angle; amber→gold→cream radial gradient encodes seed age
+
 ## magnetic_field
 
 - **Date**: 2026-04-26

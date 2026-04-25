@@ -13,6 +13,11 @@ Add any notes on color, density, theme, or mood in the Comment field.
 
 ---
 
+## julia_set
+
+- **Rating**:
+- **Comment**:
+
 ## clifford_attractor
 
 - **Rating**:

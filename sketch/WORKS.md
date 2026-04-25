@@ -5,6 +5,13 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 
 ---
 
+## julia_set
+
+- **Date**: 2026-04-25
+- **Theme**: mathematics, complex dynamics, fractal geometry
+- **Technique**: Julia set iteration, smooth escape-time coloring, numpy vectorization
+- **Description**: Douady rabbit Julia set rendered with smooth coloring; intricate spiral dendrites mark the boundary between bounded and unbounded complex orbits
+
 ## reaction_diffusion
 
 - **Date**: 2026-04-25

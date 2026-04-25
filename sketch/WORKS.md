@@ -5,6 +5,13 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 
 ---
 
+## domain_warp
+
+- **Date**: 2026-04-25
+- **Theme**: pure abstraction, mathematics, generative color
+- **Technique**: iterative domain warping, multi-chain coordinate distortion, harmonic sampling, numpy vectorization
+- **Description**: Three independent warp chains distort a 2D field through layered sine/cosine transformations; randomized parameters produce a unique abstract color swirl on every run
+
 ## lsystem_tree
 
 - **Date**: 2026-04-25

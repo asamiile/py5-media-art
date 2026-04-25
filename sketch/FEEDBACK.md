@@ -25,8 +25,8 @@ Add any notes on color, density, theme, or mood in the Comment field.
 
 ## flow_field
 
-- **Rating**:
-- **Comment**:
+- **Rating**: OK
+- **Comment**: It would be even better if it were a little more abstract.
 
 ## julia_set
 
@@ -36,7 +36,7 @@ Add any notes on color, density, theme, or mood in the Comment field.
 ## clifford_attractor
 
 - **Rating**:
-- **Comment**:
+- **Comment**: I'd like to see other patterns as well.
 
 ## wave_interference
 
@@ -45,5 +45,5 @@ Add any notes on color, density, theme, or mood in the Comment field.
 
 ## reaction_diffusion
 
-- **Rating**:
-- **Comment**:
+- **Rating**: OK
+- **Comment**: It would be good if the patterns didn't overlap.

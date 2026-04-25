@@ -46,7 +46,7 @@ Add any notes on color, density, theme, or mood in the Comment field.
 ## lsystem_tree
 
 - **Rating**:
-- **Comment**:
+- **Comment**: When creating natural objects, the goal is to reproduce natural phenomena.
 
 ## voronoi_cells
 
@@ -73,6 +73,11 @@ Add any notes on color, density, theme, or mood in the Comment field.
 - **Rating**:
 - **Comment**: It's too blurry.
 
+## newton_fractal
+
+- **Rating**:
+- **Comment**:
+
 ## boid_flock
 
 - **Rating**:
@@ -81,7 +86,7 @@ Add any notes on color, density, theme, or mood in the Comment field.
 ## fourier_epicycles
 
 - **Rating**:
-- **Comment**:
+- **Comment**: The use of color is monotonous, so consider an artistic color scheme.
 
 ## reaction_diffusion
 

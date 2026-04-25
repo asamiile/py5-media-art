@@ -96,6 +96,13 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: strange attractor, vectorized multi-trajectory, density accumulation, log-scale mapping
 - **Description**: Two million points tracing a Clifford attractor, rendered as a density field with an amber glow on black
 
+## newton_fractal
+
+- **Date**: 2026-04-25
+- **Theme**: mathematics, complex dynamics, numerical analysis
+- **Technique**: Newton-Raphson iteration on z⁵−1, basin-of-convergence coloring, convergence-speed brightness mapping
+- **Description**: Five colored basins separate the complex plane into regions converging to each fifth-root of unity; the fractal Julia-set boundary between basins traces dark lace of infinite detail
+
 ## boid_flock
 
 - **Date**: 2026-04-25

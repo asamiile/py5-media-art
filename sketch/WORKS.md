@@ -117,6 +117,13 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: Fourier epicycles (15 nested rotating circles), 6-chain simultaneous trace, age-based rainbow trail coloring
 - **Description**: Six simultaneous epicycle tips trace one complex closed Fourier-series curve in rainbow colors; the 6-chain offset reveals the complete shape from the first frame and builds into a dense glowing rainbow curve
 
+## magnetic_field
+
+- **Date**: 2026-04-26
+- **Theme**: physics, electromagnetism, invisible forces, streamlines
+- **Technique**: Euler streamline integration of analytic dipole field, color-encoded pole polarity
+- **Description**: 72 field lines seeded at uniform angles from the N pole and integrated through a two-pole dipole field; N→S connecting lines rendered with warm-red→cold-blue gradient; escaping lines appear as dim peripheral arcs
+
 ## lorenz_attractor
 
 - **Date**: 2026-04-26

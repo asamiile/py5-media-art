@@ -1,7 +1,7 @@
 # Works Registry
 
-過去の作品一覧。新しい作品を作る前に必ずこのファイルを読むこと。
-同じテーマ・技法・アルゴリズムの繰り返しを避けるために使う。
+Read this file before creating any new artwork.
+Use it to avoid repeating themes, techniques, or algorithms from past works.
 
 ---
 
@@ -19,20 +19,19 @@
 - **Technique**: wave superposition, analytical computation, numpy vectorization
 - **Description**: Nine wave sources superimposed to form a standing wave interference pattern with yellow constructive nodes on a blue field
 
-<!-- 作品を追加する際は以下のフォーマットで追記する -->
-
-<!-- Example:
-## flowing_particles
-
-- **Date**: 2026-04-25
-- **Theme**: fluid, motion
-- **Technique**: particle system, Perlin noise
-- **Description**: Particles flowing along a noise field, leaving trails of light
--->
-
 ## clifford_attractor
 
 - **Date**: 2026-04-25
 - **Theme**: chaos theory, mathematics
 - **Technique**: strange attractor, vectorized multi-trajectory, density accumulation, log-scale mapping
 - **Description**: Two million points tracing a Clifford attractor, rendered as a density field with an amber glow on black
+
+<!-- Add new works above this line using the format below:
+
+## work_name
+
+- **Date**: YYYY-MM-DD
+- **Theme**: (e.g. fluid, geometry, nature)
+- **Technique**: (e.g. particle system, recursion, noise)
+- **Description**: One-line summary in English
+-->

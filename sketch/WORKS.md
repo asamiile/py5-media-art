@@ -96,6 +96,13 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: strange attractor, vectorized multi-trajectory, density accumulation, log-scale mapping
 - **Description**: Two million points tracing a Clifford attractor, rendered as a density field with an amber glow on black
 
+## boid_flock
+
+- **Date**: 2026-04-25
+- **Theme**: emergence, swarm intelligence, organic motion
+- **Technique**: Reynolds boid rules (separation/alignment/cohesion), vectorized numpy physics, heading-based HSV color, circular trail buffer
+- **Description**: 300 boids forming emergent flocks; heading-angle coloring makes each flock a coherent color ribbon; 50-frame trails trace swooping collective paths as brush-stroke formations on black
+
 ## fourier_epicycles
 
 - **Date**: 2026-04-25

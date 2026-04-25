@@ -173,6 +173,13 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: layered vertical ribbon waves (180 columns × 5 phases), alpha accumulation, star scatter, tree silhouette
 - **Description**: 900 sine-wave ribbon strips in five overlapping layers form the characteristic waviness of the Northern Lights; horizontal gradient from electric green through cold teal to deep violet encodes the spectral emission bands of excited atmospheric gases above a conifer treeline
 
+## spirograph
+
+- **Date**: 2026-04-26
+- **Theme**: mathematics, mechanical drawing, symmetry, petal geometry
+- **Technique**: parametric hypotrochoid equations (d = R−r rose mode), 8 overlaid curves with petal counts 4–12, normalized radii, semi-transparent concentric layering
+- **Description**: Eight hypotrochoid rose curves in distinct colors (crimson through rose) overlaid at the canvas center; petal counts 4, 5, 6, 7, 8, 9, 11, 12 build a stained-glass mandala where overlapping petals create color interference patterns
+
 ## halftone_waves
 
 - **Date**: 2026-04-26

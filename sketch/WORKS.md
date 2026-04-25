@@ -117,6 +117,13 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: Fourier epicycles (15 nested rotating circles), 6-chain simultaneous trace, age-based rainbow trail coloring
 - **Description**: Six simultaneous epicycle tips trace one complex closed Fourier-series curve in rainbow colors; the 6-chain offset reveals the complete shape from the first frame and builds into a dense glowing rainbow curve
 
+## sphere_world
+
+- **Date**: 2026-04-26
+- **Theme**: space, astronomy, 3D rendering, procedural terrain
+- **Technique**: ray-sphere intersection, Lambertian shading, 7-octave fBm terrain, atmospheric limb scattering
+- **Description**: Analytic ray-sphere rendering with multi-octave noise terrain colored by elevation (ocean to snow); atmospheric blue glow at the limb and stars in the background create a convincing distant-planet scene
+
 ## phyllotaxis
 
 - **Date**: 2026-04-26

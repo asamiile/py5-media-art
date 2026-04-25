@@ -73,6 +73,11 @@ Add any notes on color, density, theme, or mood in the Comment field.
 - **Rating**:
 - **Comment**: It's too blurry.
 
+## fourier_epicycles
+
+- **Rating**:
+- **Comment**:
+
 ## reaction_diffusion
 
 - **Rating**: OK

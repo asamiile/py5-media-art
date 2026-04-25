@@ -96,6 +96,13 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: strange attractor, vectorized multi-trajectory, density accumulation, log-scale mapping
 - **Description**: Two million points tracing a Clifford attractor, rendered as a density field with an amber glow on black
 
+## fourier_epicycles
+
+- **Date**: 2026-04-25
+- **Theme**: mathematics, Fourier analysis, animation
+- **Technique**: Fourier epicycles (15 nested rotating circles), 6-chain simultaneous trace, age-based rainbow trail coloring
+- **Description**: Six simultaneous epicycle tips trace one complex closed Fourier-series curve in rainbow colors; the 6-chain offset reveals the complete shape from the first frame and builds into a dense glowing rainbow curve
+
 <!-- Add new works above this line using the format below:
 
 ## work_name

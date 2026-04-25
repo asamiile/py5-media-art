@@ -117,6 +117,13 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: Fourier epicycles (15 nested rotating circles), 6-chain simultaneous trace, age-based rainbow trail coloring
 - **Description**: Six simultaneous epicycle tips trace one complex closed Fourier-series curve in rainbow colors; the 6-chain offset reveals the complete shape from the first frame and builds into a dense glowing rainbow curve
 
+## shell_spiral
+
+- **Date**: 2026-04-26
+- **Theme**: nature, biology, mathematics, growth, logarithmic spiral
+- **Technique**: Moseley's logarithmic spiral model, chamber segmentation, age-based radial shading
+- **Description**: Nautilus shell cross-section rendered via r=r₀·eᵇᶿ with 4.5 whorls and 32 chambers delimited by septa; ivory outer whorls shade to dark ochre at the columella center
+
 ## chladni_figures
 
 - **Date**: 2026-04-26

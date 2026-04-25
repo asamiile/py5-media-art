@@ -1,6 +1,12 @@
 ## Media Art Works
 
-- Run Script
+- Install ffmpeg (once)
+
+```bash
+brew install ffmpeg
+```
+
+- Run Sketch
 
 ```
 uv run python sketch/test/main.py

@@ -17,134 +17,102 @@ SIZE = PREVIEW_SIZE
 CX = SIZE[0] // 2
 CY = SIZE[1] // 2
 
-N_CHAINS = 6
-
-# 2× scale vs original; primary amp 370 < 540 (half-height) so no canvas clipping
+# Theme: "Clockwork orrery" — single mechanism, brass aesthetic
+# One chain: trail gold→dark brown; circles dark bronze; arms dark brass; rivets at joints
 EPICYCLES = [
-    ( 1,  370,  0.00),
-    (-2,  196,  0.31),
-    ( 3,  146,  0.72),
-    (-4,  110,  1.10),
-    ( 5,   84,  0.05),
-    (-6,   62,  0.53),
-    ( 7,   46,  0.98),
-    (-8,   34,  0.24),
-    ( 9,   26,  0.81),
-    (-10,  20,  0.47),
-    ( 11,  16,  0.93),
-    (-12,  12,  0.17),
-    ( 13,  10,  0.62),
-    (-14,   8,  1.35),
-    ( 15,   6,  0.29),
+    ( 1,  360,  0.00),
+    (-2,  190,  0.31),
+    ( 3,  142,  0.72),
+    (-4,  106,  1.10),
+    ( 5,   80,  0.05),
+    (-6,   60,  0.53),
+    ( 7,   44,  0.98),
+    (-8,   32,  0.24),
+    ( 9,   24,  0.81),
+    (-10,  18,  0.47),
+    ( 11,  14,  0.93),
+    (-12,  10,  0.17),
+    ( 13,   8,  0.62),
+    (-14,   6,  1.35),
+    ( 15,   4,  0.29),
 ]
 
-# 6 chains evenly spread around the curve so it fills in from the start
-CHAIN_PHASES = np.linspace(0, 2 * np.pi, N_CHAINS, endpoint=False)
-# Base hue per chain (blue → violet → magenta → orange → lime → teal)
-CHAIN_HUES = (np.array([200, 260, 320, 20, 80, 140], dtype=float))
+# Colors
+BG_COL      = (7,   8,  14)     # #07080e near-black
+RING_COL    = (42,  32,  16)    # #2a2010 very dark bronze
+ARM_COL     = (138, 106, 48)    # #8a6a30 dark brass
+RIVET_COL   = (162, 128,  60)   # slightly brighter brass for joints
+GOLD_NEW    = np.array([232, 200, 112])  # #e8c870 recent trail
+GOLD_OLD    = np.array([ 58,  48,  32])  # #3a3020 old trail → background
 
-trails = [deque(maxlen=TOTAL_FRAMES) for _ in range(N_CHAINS)]
-
-
-def _tip(t_val):
-    x, y = float(CX), float(CY)
-    for freq, amp, phase in EPICYCLES:
-        x += amp * np.cos(freq * t_val + phase)
-        y += amp * np.sin(freq * t_val + phase)
-    return x, y
-
-
-def _hsv_batch(hues_deg, s=0.92, v=1.0):
-    h = hues_deg / 60.0
-    ii = np.floor(h).astype(int) % 6
-    f = h - np.floor(h)
-    p = np.full_like(hues_deg, v * (1 - s))
-    q = v * (1 - s * f)
-    tv = v * (1 - s * (1 - f))
-    vv = np.full_like(hues_deg, v)
-    cnd = [ii == k for k in range(6)]
-    r = (np.select(cnd, [vv, q, p, p, tv, vv]) * 255).astype(int)
-    g = (np.select(cnd, [tv, vv, vv, q, p, p]) * 255).astype(int)
-    b = (np.select(cnd, [p, p, tv, vv, vv, q]) * 255).astype(int)
-    return r, g, b
-
-
-def _hsv_single(h_deg, s=0.92, v=1.0):
-    h = h_deg / 60.0
-    ii = int(h) % 6
-    f = h - int(h)
-    p = v * (1 - s)
-    q = v * (1 - s * f)
-    tv = v * (1 - s * (1 - f))
-    lut = [(v, tv, p), (q, v, p), (p, v, tv), (p, q, v), (tv, p, v), (v, p, q)]
-    return tuple(int(c * 255) for c in lut[ii])
+trail = deque(maxlen=TOTAL_FRAMES)
 
 
 def setup():
     py5.size(*SIZE)
     FRAMES_DIR.mkdir(exist_ok=True)
-    py5.background(4, 4, 14)
+    py5.background(*BG_COL)
 
 
 def draw():
-    base_t = (py5.frame_count - 1) / TOTAL_FRAMES * 2 * np.pi
-    py5.background(4, 4, 14)
+    t = (py5.frame_count - 1) / TOTAL_FRAMES * 2 * np.pi
+    py5.background(*BG_COL)
 
-    # Ghost epicycle arms for chain 0 only
+    # Draw epicycle rings and arms with brass rivets at each joint
     x0, y0 = float(CX), float(CY)
-    t0 = base_t + CHAIN_PHASES[0]
+    py5.no_fill()
+    joints = [(x0, y0)]  # track all joint positions for rivets
+
     for freq, amp, phase in EPICYCLES:
-        angle = freq * t0 + phase
-        nx, ny = x0 + amp * np.cos(angle), y0 + amp * np.sin(angle)
-        py5.no_fill()
-        py5.stroke(90, 110, 180, 10)
-        py5.stroke_weight(0.5)
+        angle = freq * t + phase
+        nx = x0 + amp * np.cos(angle)
+        ny = y0 + amp * np.sin(angle)
+
+        # Orbit ring — very dark bronze, barely visible
+        py5.stroke(*RING_COL, 80)
+        py5.stroke_weight(0.8)
         py5.ellipse(x0, y0, amp * 2, amp * 2)
-        py5.stroke(130, 155, 235, 28)
-        py5.stroke_weight(0.7)
+
+        # Arm — dark brass
+        py5.stroke(*ARM_COL, 140)
+        py5.stroke_weight(1.4)
         py5.line(x0, y0, nx, ny)
+
+        joints.append((nx, ny))
         x0, y0 = nx, ny
 
-    # Compute tips and update trails
-    tips = []
-    for ci in range(N_CHAINS):
-        tx, ty = _tip(base_t + CHAIN_PHASES[ci])
-        tips.append((tx, ty))
-        trails[ci].append((tx, ty))
-
-    # Draw trails
-    for ci in range(N_CHAINS):
-        pts = list(trails[ci])
-        n = len(pts)
-        if n < 2:
-            continue
-
-        ages = np.arange(n, dtype=np.float32) / max(n - 1, 1)
-        hues = (CHAIN_HUES[ci] + ages * 55.0) % 360.0
-        alphas = (35 + ages * 210).astype(int)
-        rs, gs, bs = _hsv_batch(hues)
-
-        # Glow pass
-        py5.stroke_weight(4.5)
-        for i in range(1, n):
-            ga = max(int(alphas[i]) - 155, 0)
-            py5.stroke(int(rs[i]), int(gs[i]), int(bs[i]), ga)
-            py5.line(pts[i-1][0], pts[i-1][1], pts[i][0], pts[i][1])
-
-        # Core pass
-        py5.stroke_weight(2.0)
-        for i in range(1, n):
-            py5.stroke(int(rs[i]), int(gs[i]), int(bs[i]), int(alphas[i]))
-            py5.line(pts[i-1][0], pts[i-1][1], pts[i][0], pts[i][1])
-
-    # Tip dots
+    # Brass rivet dots at each joint
     py5.no_stroke()
-    for ci, (tx, ty) in enumerate(tips):
-        r, g, b = _hsv_single(CHAIN_HUES[ci])
-        py5.fill(r, g, b, 235)
-        py5.ellipse(tx, ty, 8, 8)
-        py5.fill(r, g, b, 55)
-        py5.ellipse(tx, ty, 22, 22)
+    for jx, jy in joints[:-1]:   # all except tip (tip gets gold dot)
+        py5.fill(*RIVET_COL, 200)
+        py5.ellipse(jx, jy, 5.0, 5.0)
+
+    # Update trail
+    trail.append((x0, y0))
+
+    # Draw trail — gold (recent) → dark brown (old)
+    pts = list(trail)
+    n = len(pts)
+    if n >= 2:
+        # age 0 = oldest → GOLD_OLD; age 1 = newest → GOLD_NEW
+        ages = np.linspace(0.0, 1.0, n, dtype=np.float32)
+        rs = (GOLD_OLD[0] * (1 - ages) + GOLD_NEW[0] * ages).astype(int)
+        gs = (GOLD_OLD[1] * (1 - ages) + GOLD_NEW[1] * ages).astype(int)
+        bs = (GOLD_OLD[2] * (1 - ages) + GOLD_NEW[2] * ages).astype(int)
+        alphas = (40 + ages * 215).astype(int)
+
+        py5.no_fill()
+        py5.stroke_weight(2.2)
+        for i in range(1, n):
+            py5.stroke(rs[i], gs[i], bs[i], alphas[i])
+            py5.line(pts[i-1][0], pts[i-1][1], pts[i][0], pts[i][1])
+
+    # Gold tip dot
+    py5.no_stroke()
+    py5.fill(*GOLD_NEW, 255)
+    py5.ellipse(x0, y0, 9.0, 9.0)
+    py5.fill(*GOLD_NEW, 60)
+    py5.ellipse(x0, y0, 24.0, 24.0)
 
     py5.save_frame(str(FRAMES_DIR / "frame-####.png"))
 

@@ -12,7 +12,13 @@ SIZE = PREVIEW_SIZE
 CELL = 2
 COLS = SIZE[0] // CELL   # 960
 ROWS = SIZE[1] // CELL   # 540
-RULE = 90   # Rule 90 — Sierpinski triangle fractal
+RULE = 110   # Rule 110 — Turing-complete, aperiodic complex patterns
+
+# Ice-blue palette — brightness only, no hue shift
+# dead cell: #050810  recent: #e8f4ff  old: #b8d4e8
+BG_RGB  = np.array([5,   8,  16], dtype=np.uint8)    # background / dead
+NEW_RGB = np.array([232, 244, 255], dtype=np.uint8)   # just-born cell
+OLD_RGB = np.array([184, 212, 232], dtype=np.uint8)   # older cell
 
 pixels_arr = None
 
@@ -23,13 +29,13 @@ def build_rule_lut(rule_num):
 
 def evolve(rule_lut):
     grid = np.zeros((ROWS, COLS), dtype=np.uint8)
-    # Single "on" cell at center of first row → pure Sierpinski triangle
-    grid[0, COLS // 2] = 1
+    # Complex initial row — Rule 110 needs non-trivial start to fill canvas
+    grid[0] = np.random.randint(0, 2, COLS, dtype=np.uint8)
 
     for gen in range(1, ROWS):
         row = grid[gen - 1]
-        left   = np.roll(row, 1)
-        right  = np.roll(row, -1)
+        left  = np.roll(row,  1)
+        right = np.roll(row, -1)
         triple = (left << 2) | (row << 1) | right
         grid[gen] = rule_lut[triple]
 
@@ -39,32 +45,23 @@ def evolve(rule_lut):
 def build_pixels(grid):
     rows, cols = grid.shape
 
-    # Hue varies by generation (top=warm amber, bottom=cool violet)
-    gen_idx = np.arange(rows, dtype=np.float32) / rows
-    hue_row = (gen_idx * 240 + 30).astype(np.float32)  # 30° (amber) → 270° (violet)
-    H = np.tile(hue_row[:, np.newaxis], (1, cols))
+    # Brightness by generation (recency): top row = most recent pattern start
+    # We want newer rows (lower index) to appear slightly brighter
+    gen_frac = np.arange(rows, dtype=np.float32) / rows   # 0 (top) → 1 (bottom)
 
-    S, V = 0.88, 0.95
-    h = H / 60.0
-    i6 = np.floor(h).astype(int) % 6
-    f = h - np.floor(h)
-    p = V * (1 - S)
-    q = V * (1 - S * f)
-    t = V * (1 - S * (1 - f))
+    # Interpolate NEW_RGB → OLD_RGB based on gen_frac
+    r_alive = (NEW_RGB[0] * (1 - gen_frac) + OLD_RGB[0] * gen_frac).astype(np.uint8)
+    g_alive = (NEW_RGB[1] * (1 - gen_frac) + OLD_RGB[1] * gen_frac).astype(np.uint8)
+    b_alive = (NEW_RGB[2] * (1 - gen_frac) + OLD_RGB[2] * gen_frac).astype(np.uint8)
 
-    idx = [i6 == k for k in range(6)]
-    Vf = np.full_like(H, V)
-    r = np.select(idx, [Vf, q, p, p, t, Vf])
-    g = np.select(idx, [t, Vf, Vf, q, p, p])
-    b = np.select(idx, [p, p, t, Vf, Vf, q])
-
-    alive = grid == 1
-    r_out = np.where(alive, (r * 255).astype(np.uint8), np.uint8(6))
-    g_out = np.where(alive, (g * 255).astype(np.uint8), np.uint8(4))
-    b_out = np.where(alive, (b * 255).astype(np.uint8), np.uint8(12))
+    # Expand to (rows, cols)
+    R = np.where(grid == 1, np.tile(r_alive[:, np.newaxis], (1, cols)), BG_RGB[0])
+    G = np.where(grid == 1, np.tile(g_alive[:, np.newaxis], (1, cols)), BG_RGB[1])
+    B = np.where(grid == 1, np.tile(b_alive[:, np.newaxis], (1, cols)), BG_RGB[2])
 
     alpha = np.full((rows, cols), 255, dtype=np.uint8)
-    small = np.stack([alpha, r_out, g_out, b_out], axis=-1)
+    small = np.stack([alpha, R.astype(np.uint8),
+                      G.astype(np.uint8), B.astype(np.uint8)], axis=-1)
     return np.repeat(np.repeat(small, CELL, axis=0), CELL, axis=1)
 
 
@@ -79,12 +76,10 @@ def setup():
 def draw():
     py5.load_np_pixels()
     h, w = py5.np_pixels.shape[:2]
-
     if h == SIZE[1] and w == SIZE[0]:
         py5.np_pixels[:] = pixels_arr
     else:
         py5.np_pixels[:] = np.repeat(np.repeat(pixels_arr, 2, axis=0), 2, axis=1)
-
     py5.update_np_pixels()
 
     if py5.frame_count == PREVIEW_FRAME:

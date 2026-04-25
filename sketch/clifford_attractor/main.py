@@ -9,38 +9,43 @@ PREVIEW_SIZE = (1920, 1080)
 OUTPUT_SIZE  = (3840, 2160)
 SIZE = PREVIEW_SIZE
 
-# Clifford attractor parameters — produces a dense, intricate structure
-A, B, C, D = -1.7, 1.3, -0.1, -1.2
+# Theme: "Dust settling" — Peter de Jong attractor, parchment-on-black
+# Parameters chosen for an intricate, filigree-like structure
+A, B, C, D = -2.0, -2.0, -1.2, 2.0
 
-N_TRAJ  = 2000   # parallel trajectories (vectorized)
-N_STEPS = 1200   # steps per trajectory
-BURN_IN = 200    # discard initial steps until convergence
+N_TRAJ  = 5000
+N_STEPS = 2500
+BURN_IN = 300
+
+# Palette: near-black → cold dim blue-gray → warm sand/parchment at peak
+BG_COL      = np.array([6,   6,  10], dtype=np.float32) / 255.0
+LOW_COL     = np.array([30,  32,  48], dtype=np.float32) / 255.0  # dim blue-gray
+HIGH_COL    = np.array([212, 196, 160], dtype=np.float32) / 255.0 # warm parchment
 
 
 def setup():
     py5.size(*SIZE)
 
-    # Vectorized multi-trajectory generation — fast and produces ~2M points
     rng = np.random.default_rng()
-    x = rng.uniform(-0.2, 0.2, N_TRAJ)
-    y = rng.uniform(-0.2, 0.2, N_TRAJ)
+    x = rng.uniform(-0.5, 0.5, N_TRAJ)
+    y = rng.uniform(-0.5, 0.5, N_TRAJ)
 
     chunks_x, chunks_y = [], []
     for step in range(N_STEPS):
-        xn = np.sin(A * y) + C * np.cos(A * x)
-        yn = np.sin(B * x) + D * np.cos(B * y)
+        # Peter de Jong map
+        xn = np.sin(A * y) - np.cos(B * x)
+        yn = np.sin(C * x) - np.cos(D * y)
         x, y = xn, yn
         if step >= BURN_IN:
-            chunks_x.append(x)
-            chunks_y.append(y)
+            chunks_x.append(x.copy())
+            chunks_y.append(y.copy())
 
     xs = np.concatenate(chunks_x)
     ys = np.concatenate(chunks_y)
 
-    # Use actual pixel buffer dimensions (2x on Retina)
     py5.load_np_pixels()
     h, w = py5.np_pixels.shape[:2]
-    margin = 100
+    margin = 80
 
     px = ((xs - xs.min()) / (xs.max() - xs.min()) * (w - 2 * margin) + margin).astype(np.int32)
     py_arr = ((ys - ys.min()) / (ys.max() - ys.min()) * (h - 2 * margin) + margin).astype(np.int32)
@@ -51,18 +56,23 @@ def setup():
     np.add.at(density, (py_arr, px), 1.0)
 
     d = np.log1p(density)
-    d /= d.max()
+    d /= d.max()   # 0 (empty) → 1 (peak density)
 
-    # High-contrast palette: black → deep purple → orange → bright yellow-white
-    r = (d * 255 + d ** 0.5 * 80 - 30).clip(0, 255).astype(np.uint8)
-    g = (d ** 1.5 * 200).clip(0, 255).astype(np.uint8)
-    b = (d * 120 * (1 - d)).clip(0, 255).astype(np.uint8)
+    # Color: interpolate LOW_COL → HIGH_COL; brightness by d^0.45 for fine grain
+    brightness = d ** 0.45
+    r = (LOW_COL[0] * (1 - d) + HIGH_COL[0] * d) * brightness
+    g = (LOW_COL[1] * (1 - d) + HIGH_COL[1] * d) * brightness
+    b = (LOW_COL[2] * (1 - d) + HIGH_COL[2] * d) * brightness
+
+    r_px = np.clip(r * 255, 0, 255).astype(np.uint8)
+    g_px = np.clip(g * 255, 0, 255).astype(np.uint8)
+    b_px = np.clip(b * 255, 0, 255).astype(np.uint8)
     alpha = np.full((h, w), 255, dtype=np.uint8)
 
     py5.np_pixels[:, :, 0] = alpha
-    py5.np_pixels[:, :, 1] = r
-    py5.np_pixels[:, :, 2] = g
-    py5.np_pixels[:, :, 3] = b
+    py5.np_pixels[:, :, 1] = r_px
+    py5.np_pixels[:, :, 2] = g_px
+    py5.np_pixels[:, :, 3] = b_px
     py5.update_np_pixels()
 
 

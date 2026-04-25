@@ -9,12 +9,14 @@ PREVIEW_SIZE = (1920, 1080)
 OUTPUT_SIZE  = (3840, 2160)
 SIZE = PREVIEW_SIZE
 
-TILE = 60   # pixels per tile (32 × 18 = 576 tiles)
+TILE = 40   # smaller tile → denser weave
 
-# Two complementary stroke colors (RGBA) for the two tile orientations
-COLOR_A = (255, 90, 130)    # rose-coral  → variant 0
-COLOR_B = (55, 210, 220)    # cyan-teal   → variant 1
-BG = (10, 8, 14)            # near-black background
+# 4-orientation Smith Truchet; orientation determines arc/line variant
+# 0: arc TL+BR   1: arc TR+BL   2: diagonal /   3: diagonal \
+# Palette: linen / espresso — monochrome, structure from geometry not color
+BG      = (214, 207, 196)   # #d6cfc4 warm linen
+COL_ARC = (61, 53, 48)      # #3d3530 deep espresso (arcs)
+COL_LIN = (138, 127, 116)   # #8a7f74 mid gray-beige (diagonal lines)
 
 
 def setup():
@@ -24,35 +26,41 @@ def setup():
 
     cols = SIZE[0] // TILE + 1
     rows = SIZE[1] // TILE + 1
-    r = TILE / 2   # arc radius = half tile size
+    r = TILE / 2
 
-    variants = np.random.randint(0, 2, (rows, cols))
+    variants = np.random.randint(0, 4, (rows, cols))
 
     for row in range(rows):
         for col in range(cols):
             tx = col * TILE
             ty = row * TILE
-            v = variants[row, col]
+            v = int(variants[row, col])
 
             if v == 0:
-                # Variant 0: arcs at top-left and bottom-right corners
-                # Top-left arc: connects top-midpoint to left-midpoint
-                py5.stroke(*COLOR_A, 210)
-                py5.stroke_weight(2.8)
-                py5.arc(tx, ty, TILE, TILE, 0, py5.HALF_PI, py5.OPEN)
-                # Bottom-right arc: connects bottom-midpoint to right-midpoint
-                py5.arc(tx + TILE, ty + TILE, TILE, TILE,
-                        py5.PI, 3 * py5.HALF_PI, py5.OPEN)
+                # Arc TL corner + BR corner (connects adjacent midpoints)
+                py5.stroke(*COL_ARC, 230)
+                py5.stroke_weight(2.5)
+                py5.arc(tx,        ty,        TILE, TILE, 0,           py5.HALF_PI,       py5.OPEN)
+                py5.arc(tx + TILE, ty + TILE, TILE, TILE, py5.PI,      3*py5.HALF_PI,     py5.OPEN)
+
+            elif v == 1:
+                # Arc TR corner + BL corner
+                py5.stroke(*COL_ARC, 230)
+                py5.stroke_weight(2.5)
+                py5.arc(tx + TILE, ty,        TILE, TILE, py5.HALF_PI, py5.PI,            py5.OPEN)
+                py5.arc(tx,        ty + TILE, TILE, TILE, 3*py5.HALF_PI, py5.TWO_PI,     py5.OPEN)
+
+            elif v == 2:
+                # Diagonal line: bottom-left → top-right  (/)
+                py5.stroke(*COL_LIN, 200)
+                py5.stroke_weight(1.8)
+                py5.line(tx, ty + TILE, tx + TILE, ty)
+
             else:
-                # Variant 1: arcs at top-right and bottom-left corners
-                # Top-right arc: connects right-midpoint to top-midpoint
-                py5.stroke(*COLOR_B, 210)
-                py5.stroke_weight(2.8)
-                py5.arc(tx + TILE, ty, TILE, TILE,
-                        py5.HALF_PI, py5.PI, py5.OPEN)
-                # Bottom-left arc: connects left-midpoint to bottom-midpoint
-                py5.arc(tx, ty + TILE, TILE, TILE,
-                        3 * py5.HALF_PI, py5.TWO_PI, py5.OPEN)
+                # Diagonal line: top-left → bottom-right  (\)
+                py5.stroke(*COL_LIN, 200)
+                py5.stroke_weight(1.8)
+                py5.line(tx, ty, tx + TILE, ty + TILE)
 
 
 def draw():

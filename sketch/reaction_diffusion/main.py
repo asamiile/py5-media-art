@@ -9,11 +9,18 @@ PREVIEW_SIZE = (1920, 1080)
 OUTPUT_SIZE  = (3840, 2160)
 SIZE = PREVIEW_SIZE
 
-# Gray-Scott parameters — dense labyrinthine pattern
-F, K   = 0.035, 0.060
+# Theme: "Isolated organisms" — spots regime, cold sage palette
+# Spots regime: lower F, higher k → isolated spots instead of connected labyrinths
+F, K   = 0.035, 0.064
 DU, DV = 0.20,  0.10
-STEPS  = 2000
+STEPS  = 1000   # fewer steps — catch isolated-spot stage before merging
 DT     = 1.0
+
+# Palette (normalized 0–1)
+BG_COL       = np.array([8,  12,  16], dtype=np.float32) / 255.0   # #080c10 near-black
+TRANS_COL    = np.array([26, 48,  48], dtype=np.float32) / 255.0   # #1a3030 dark teal
+STRUCT_COL   = np.array([200, 216, 184], dtype=np.float32) / 255.0 # #c8d8b8 pale sage
+CORE_COL     = np.array([240, 244, 232], dtype=np.float32) / 255.0 # #f0f4e8 near-white
 
 
 def laplacian(Z):
@@ -31,15 +38,17 @@ def setup():
     V = np.zeros((h, w), dtype=np.float32)
 
     rng = np.random.default_rng()
-    for _ in range(80):
-        x = rng.integers(10, w - 10)
-        y = rng.integers(10, h - 10)
-        r = rng.integers(8, 18)
+    # Scattered circular seeds — controls where spots form (not random noise)
+    for _ in range(60):
+        x = rng.integers(15, w - 15)
+        y = rng.integers(15, h - 15)
+        r = rng.integers(6, 14)
         U[y - r:y + r, x - r:x + r] = 0.50
         V[y - r:y + r, x - r:x + r] = 0.25
 
-    U += rng.uniform(-0.01, 0.01, (h, w)).astype(np.float32)
-    V += rng.uniform(-0.005, 0.005, (h, w)).astype(np.float32)
+    # Very slight perturbation to break symmetry
+    U += rng.uniform(-0.005, 0.005, (h, w)).astype(np.float32)
+    V += rng.uniform(-0.002, 0.002, (h, w)).astype(np.float32)
     np.clip(U, 0, 1, out=U)
     np.clip(V, 0, 1, out=V)
 
@@ -52,10 +61,18 @@ def setup():
 
     d = (V - V.min()) / (V.max() - V.min() + 1e-8)
 
-    # Biological palette: dark teal → bright coral/orange at peaks
-    r_ch = (d * 255).clip(0, 255).astype(np.uint8)
-    g_ch = (d ** 0.6 * 160 + (1 - d) * 40).clip(0, 255).astype(np.uint8)
-    b_ch = ((1 - d) ** 0.8 * 180 + d * 30).clip(0, 255).astype(np.uint8)
+    # 4-zone cold sage palette: BG → dark teal → pale sage → near-white core
+    d0 = np.clip(d * 3.0, 0.0, 1.0)        # first zone: BG → teal
+    d1 = np.clip(d * 3.0 - 1.0, 0.0, 1.0)  # second zone: teal → sage
+    d2 = np.clip(d * 3.0 - 2.0, 0.0, 1.0)  # third zone: sage → core-white
+
+    r_f = BG_COL[0] * (1 - d0) + TRANS_COL[0] * d0 * (1 - d1) + STRUCT_COL[0] * d1 * (1 - d2) + CORE_COL[0] * d2
+    g_f = BG_COL[1] * (1 - d0) + TRANS_COL[1] * d0 * (1 - d1) + STRUCT_COL[1] * d1 * (1 - d2) + CORE_COL[1] * d2
+    b_f = BG_COL[2] * (1 - d0) + TRANS_COL[2] * d0 * (1 - d1) + STRUCT_COL[2] * d1 * (1 - d2) + CORE_COL[2] * d2
+
+    r_ch = np.clip(r_f * 255, 0, 255).astype(np.uint8)
+    g_ch = np.clip(g_f * 255, 0, 255).astype(np.uint8)
+    b_ch = np.clip(b_f * 255, 0, 255).astype(np.uint8)
 
     py5.load_np_pixels()
     h_buf, w_buf = py5.np_pixels.shape[:2]

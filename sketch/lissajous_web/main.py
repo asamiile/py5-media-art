@@ -9,44 +9,60 @@ PREVIEW_SIZE = (1920, 1080)
 OUTPUT_SIZE  = (3840, 2160)
 SIZE = PREVIEW_SIZE
 
-N_CURVES = 24
-N_PTS = 5000
+N_PTS = 8000
 
-# Frequency pairs for rich variety of figures
+# Curated pairs: forms that abstractly suggest organic silhouettes
 FREQ_PAIRS = [
-    (1, 2), (1, 3), (2, 3), (1, 4), (3, 4), (2, 5), (3, 5), (4, 5),
-    (1, 6), (5, 6), (3, 7), (4, 7), (5, 7), (2, 7), (3, 8), (5, 8),
-    (7, 8), (4, 9), (5, 9), (7, 9), (2, 9), (5, 11), (4, 11), (7, 11),
+    (1, 2), (2, 3), (3, 4), (3, 5), (4, 5),
+    (5, 7), (1, 4), (2, 5), (5, 8), (7, 9),
 ]
+
+# Palette — warm gold, steel blue, off-white accent
+GOLD  = (200, 169, 110)   # #c8a96e
+STEEL = (126, 155, 181)   # #7e9bb5
+WHITE = (255, 244, 224)   # #fff4e0
 
 
 def setup():
     py5.size(*SIZE)
-    py5.color_mode(py5.HSB, 360, 100, 100, 100)
-    py5.background(10, 10, 12)
+    py5.background(9, 9, 15)   # #09090f near-black
     py5.no_fill()
-    py5.stroke_weight(0.9)
 
-    margin = 0.06
+    margin = 0.05
     rx = SIZE[0] * (1 - 2 * margin) / 2
     ry = SIZE[1] * (1 - 2 * margin) / 2
     cx, cy = SIZE[0] / 2, SIZE[1] / 2
 
     t = np.linspace(0, 2 * np.pi, N_PTS, endpoint=False)
 
-    for i, (a, b) in enumerate(FREQ_PAIRS[:N_CURVES]):
-        delta = np.random.uniform(0, 2 * np.pi)
+    # Draw each curve twice — thin+faint base then slightly thicker mid
+    for i, (a, b) in enumerate(FREQ_PAIRS):
+        # Deterministic phase spread so the canvas fills consistently each run
+        delta = np.pi * 0.37 * i
 
         xs = np.sin(a * t + delta) * rx + cx
         ys = np.sin(b * t) * ry + cy
+        pts = list(zip(xs.tolist(), ys.tolist()))
 
-        # Hue spread evenly across curves; saturation/brightness high
-        hue = (i / N_CURVES * 360 + 20) % 360
-        alpha = np.random.randint(55, 80)
-        py5.stroke(hue, 82, 95, alpha)
+        col = GOLD if i % 2 == 0 else STEEL
 
+        # Main layer — weight 2.5 so strokes render at ≥5px in Retina save
+        py5.stroke(*col, 50)
+        py5.stroke_weight(2.5)
         py5.begin_shape()
-        for x, y in zip(xs, ys):
+        for x, y in pts:
+            py5.vertex(x, y)
+        py5.end_shape(py5.CLOSE)
+
+    # Off-white accent to lift dense intersection zones
+    py5.stroke(*WHITE, 30)
+    py5.stroke_weight(1.2)
+    for i, (a, b) in enumerate(FREQ_PAIRS[:6]):
+        delta = np.pi * 0.37 * i
+        xs = np.sin(a * t + delta) * rx + cx
+        ys = np.sin(b * t) * ry + cy
+        py5.begin_shape()
+        for x, y in zip(xs.tolist(), ys.tolist()):
             py5.vertex(x, y)
         py5.end_shape(py5.CLOSE)
 

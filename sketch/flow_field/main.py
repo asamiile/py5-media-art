@@ -9,72 +9,80 @@ PREVIEW_SIZE = (1920, 1080)
 OUTPUT_SIZE  = (3840, 2160)
 SIZE = PREVIEW_SIZE
 
-N_PARTICLES = 80000
-SPEED = 2.5
-JITTER = 0.8  # random perturbation to break closed orbits
+# Theme: "Signal degrading" — structured center attractor, chaos at edges
+N_PARTICLES = 150000
+SPEED = 2.0
+
+# Teal at high density (center); crimson at low density (edges)
+TEAL    = np.array([0.157, 0.769, 0.659], dtype=np.float64)  # #28c4a8
+CRIMSON = np.array([0.478, 0.188, 0.251], dtype=np.float64)  # #7a3040
 
 particles = None
-trail = None
+density   = None
 
 
-def flow_angle(x, y, t):
-    ax = x / SIZE[0] * np.pi * 2
-    ay = y / SIZE[1] * np.pi * 2
-    angle = (
-        np.sin(ax * 1.5 + t * 0.30) * 1.2
-        + np.cos(ay * 2.0 + t * 0.20) * 1.0
-        + np.sin(ax * 3.5 - ay * 2.5 + t * 0.18) * 0.7
-        + np.cos(ax * 0.8 + ay * 3.2 + t * 0.12) * 0.6
-        + np.sin(ax * 5.0 + ay * 1.0 - t * 0.25) * 0.3
-    ) * np.pi
-    return angle
+def flow_angle(x, y):
+    cx, cy = SIZE[0] / 2.0, SIZE[1] / 2.0
+    dx = x - cx
+    dy = y - cy
+    # Inward spiral: angle toward center + slight rotation
+    toward_center = np.arctan2(-dy, -dx)
+    r_norm = np.sqrt((dx / cx) ** 2 + (dy / cy) ** 2)
+    # Perturbation grows with radius — structured center, chaos at edge
+    perturb = np.sin(x / 120.0 + y / 80.0) * np.pi * r_norm ** 1.8
+    return toward_center + 0.3 + perturb
 
 
 def setup():
-    global particles, trail
+    global particles, density
     py5.size(*SIZE)
     particles = np.random.rand(N_PARTICLES, 2) * np.array([SIZE[0], SIZE[1]])
-    trail = np.zeros((SIZE[1], SIZE[0], 3), dtype=np.float64)
+    density = np.zeros((SIZE[1], SIZE[0]), dtype=np.float64)
 
 
 def draw():
-    global particles, trail
+    global particles, density
 
-    t = py5.frame_count * 0.010
+    angle = flow_angle(particles[:, 0], particles[:, 1])
+    cx, cy = SIZE[0] / 2.0, SIZE[1] / 2.0
+    r_norm = np.sqrt(((particles[:, 0] - cx) / cx) ** 2 + ((particles[:, 1] - cy) / cy) ** 2)
+    jitter = r_norm * 1.2
 
-    angle = flow_angle(particles[:, 0], particles[:, 1], t)
-    vx = np.cos(angle) * SPEED + np.random.randn(N_PARTICLES) * JITTER
-    vy = np.sin(angle) * SPEED + np.random.randn(N_PARTICLES) * JITTER
+    vx = np.cos(angle) * SPEED + np.random.randn(N_PARTICLES) * jitter
+    vy = np.sin(angle) * SPEED + np.random.randn(N_PARTICLES) * jitter
 
+    # Wrap-around
     particles[:, 0] = (particles[:, 0] + vx) % SIZE[0]
     particles[:, 1] = (particles[:, 1] + vy) % SIZE[1]
-
-    # Color by flow direction — full HSV hue spectrum
-    hue = (angle / (2 * np.pi)) % 1.0
-    r_col = np.clip(np.abs(hue * 6 - 3) - 1, 0, 1)
-    g_col = np.clip(2 - np.abs(hue * 6 - 2), 0, 1)
-    b_col = np.clip(2 - np.abs(hue * 6 - 4), 0, 1)
-
-    trail *= 0.988
 
     xi = particles[:, 0].astype(np.int32) % SIZE[0]
     yi = particles[:, 1].astype(np.int32) % SIZE[1]
     flat = yi * SIZE[0] + xi
     total = SIZE[0] * SIZE[1]
 
-    trail[:, :, 0] += np.bincount(flat, weights=r_col, minlength=total).reshape(SIZE[1], SIZE[0])
-    trail[:, :, 1] += np.bincount(flat, weights=g_col, minlength=total).reshape(SIZE[1], SIZE[0])
-    trail[:, :, 2] += np.bincount(flat, weights=b_col, minlength=total).reshape(SIZE[1], SIZE[0])
+    counts = np.bincount(flat, minlength=total).reshape(SIZE[1], SIZE[0]).astype(np.float64)
 
-    # log1p tone mapping with high scale — dim areas become luminous
-    scale = 12.0
-    log_trail = np.log1p(trail * scale)
-    max_v = log_trail.max()
-    if max_v > 0:
-        display = np.clip(log_trail / max_v * 255, 0, 255).astype(np.uint8)
+    # Slow decay to accumulate structure
+    density = density * 0.992 + counts
+
+    log_d = np.log1p(density * 60.0)
+    max_d = log_d.max()
+
+    if max_d > 0:
+        d_norm = log_d / max_d  # 0 at dark edges, 1 at bright center
+
+        # Color: TEAL where dense, CRIMSON where sparse but visible
+        r_out = d_norm * TEAL[0] + (1 - d_norm) * CRIMSON[0]
+        g_out = d_norm * TEAL[1] + (1 - d_norm) * CRIMSON[1]
+        b_out = d_norm * TEAL[2] + (1 - d_norm) * CRIMSON[2]
+
+        r_px = np.clip(r_out * d_norm * 255, 0, 255).astype(np.uint8)
+        g_px = np.clip(g_out * d_norm * 255, 0, 255).astype(np.uint8)
+        b_px = np.clip(b_out * d_norm * 255, 0, 255).astype(np.uint8)
     else:
-        display = trail.astype(np.uint8)
+        r_px = g_px = b_px = np.zeros((SIZE[1], SIZE[0]), dtype=np.uint8)
 
+    display = np.stack([r_px, g_px, b_px], axis=-1)
     alpha = np.full((SIZE[1], SIZE[0], 1), 255, dtype=np.uint8)
     argb = np.concatenate([alpha, display], axis=-1)
 

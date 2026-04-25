@@ -9,22 +9,27 @@ PREVIEW_SIZE = (1920, 1080)
 OUTPUT_SIZE  = (3840, 2160)
 SIZE = PREVIEW_SIZE
 
-N = 300   # points on the circle — finer envelope at higher N
+N = 300   # points on the circle
 
 CX = SIZE[0] / 2
 CY = SIZE[1] / 2
 RADIUS = SIZE[1] * 0.44
 
-# Each entry: (multiplier, hue, alpha)
-# M=2→cardioid, M=3→nephroid; higher M→more-pointed star envelopes
+# Theme: "Resonance frequencies" — 3 harmonic families in complementary tones
+# Low M (2,3): burnt sienna/rust  Mid M (5,7): steel blue  High M (13,51): sage green
+# Each at low alpha so density accumulates naturally
 LAYERS = [
-    (2,    0,   60),   # cardioid — warm red
-    (3,   50,   55),   # nephroid — amber
-    (5,  120,   50),   # 5-fold   — green
-    (7,  190,   50),   # 7-fold   — cyan
-    (13, 260,   45),   # 13-fold  — violet
-    (51, 310,   40),   # complex  — magenta
+    # (multiplier, R, G, B, alpha, weight)
+    (2,  196, 120,  90, 45, 1.2),   # cardioid — burnt sienna
+    (3,  196, 120,  90, 40, 1.2),   # nephroid — rust
+    (5,   90, 140, 168, 40, 0.8),   # 5-fold   — steel blue
+    (7,   90, 140, 168, 35, 0.8),   # 7-fold   — steel blue
+    (13, 168, 200, 122, 32, 0.4),   # 13-fold  — sage green
+    (51, 168, 200, 122, 28, 0.4),   # complex  — sage green
 ]
+
+# Outer ring color: dark charcoal frame
+RING_COL = (55, 55, 60)
 
 # Precompute point positions
 angles = np.linspace(0, 2 * np.pi, N, endpoint=False)
@@ -34,13 +39,18 @@ py_pts = CY + RADIUS * np.sin(angles)
 
 def setup():
     py5.size(*SIZE)
-    py5.color_mode(py5.HSB, 360, 100, 100, 100)
-    py5.background(8, 8, 10)
+    py5.color_mode(py5.RGB, 255, 255, 255, 255)
+    py5.background(10, 10, 18)   # #0a0a12 near-black
     py5.no_fill()
-    py5.stroke_weight(0.7)
 
-    for m, hue, alpha in LAYERS:
-        py5.stroke(hue, 80, 95, alpha)
+    # Faint outer ring to frame the composition
+    py5.stroke(*RING_COL, 160)
+    py5.stroke_weight(1.5)
+    py5.ellipse(CX, CY, RADIUS * 2, RADIUS * 2)
+
+    for m, r, g, b, alpha, weight in LAYERS:
+        py5.stroke(r, g, b, alpha)
+        py5.stroke_weight(weight)
         for i in range(N):
             j = int(i * m) % N
             py5.line(px[i], py_pts[i], px[j], py_pts[j])

@@ -1,99 +1,147 @@
 from pathlib import Path
+import subprocess
 import numpy as np
 import py5
 
 SKETCH_DIR = Path(__file__).parent
-PREVIEW_FRAME = 60
+FRAMES_DIR = SKETCH_DIR / "frames"
+DURATION_SEC = 8
+FPS = 30
+TOTAL_FRAMES = DURATION_SEC * FPS   # 240
 
 PREVIEW_SIZE = (1920, 1080)
 OUTPUT_SIZE  = (3840, 2160)
 SIZE = PREVIEW_SIZE
 
-N_BANDS = 14      # number of contour bands — wide, legible
-EXPONENT = 2.8   # high rolloff → smooth, large-scale terrain
+N_BANDS  = 12
+EXPONENT = 2.6
+T_SPEED  = 0.008   # how fast the terrain morphs per frame
 
-pixels_arr = None
+# Geological palette — 5 tones, cool to warm
+# valley(dark navy) → slate → sage → sandstone → peak(bone)
+PALETTE = np.array([
+    [14,  21,  32],   # #0e1520 deep navy valley
+    [42,  64,  85],   # #2a4055 dark slate
+    [92, 122, 106],   # #5c7a6a muted sage
+    [160, 140, 110],  # #a08c6e warm sandstone
+    [232, 220, 200],  # #e8dcc8 pale bone peak
+], dtype=np.float32)
+
+# Pre-build a smooth 256-entry LUT from the 5-color palette
+def _build_lut():
+    lut = np.zeros((256, 3), dtype=np.float32)
+    n = len(PALETTE)
+    for i in range(256):
+        t = i / 255.0 * (n - 1)
+        lo = int(t)
+        hi = min(lo + 1, n - 1)
+        f = t - lo
+        lut[i] = PALETTE[lo] * (1 - f) + PALETTE[hi] * f
+    return lut
+
+LUT = _build_lut()
+
+# Base 3D noise volume: shape (DEPTH, H, W)
+# We'll use a 2D FFT field and scroll through a third axis via phase rotation
+DEPTH = TOTAL_FRAMES + 1
+noise_volume = None
 
 
-def spectral_terrain(width, height, exponent):
-    """Generate fractal terrain via inverse FFT with 1/f^exponent power spectrum."""
-    fy = np.fft.fftfreq(height)
-    fx = np.fft.fftfreq(width)
+def _spectral_field(w, h, exp, phase_offset=0.0):
+    """Single 2D FFT terrain slice with a phase-shifted spectrum."""
+    fy = np.fft.fftfreq(h)
+    fx = np.fft.fftfreq(w)
     FX, FY = np.meshgrid(fx, fy)
+    freq = np.sqrt(FX**2 + FY**2)
+    freq[0, 0] = 1.0
+    amp = freq ** (-exp)
+    amp[0, 0] = 0.0
+    return amp, freq
 
-    freq = np.sqrt(FX ** 2 + FY ** 2)
-    freq[0, 0] = 1.0  # avoid DC divide-by-zero
 
-    amplitude = freq ** (-exponent)
-    amplitude[0, 0] = 0.0  # zero mean
+def _build_volume(w, h):
+    """Precompute amplitude spectrum and random phases for morphing."""
+    fy = np.fft.fftfreq(h)
+    fx = np.fft.fftfreq(w)
+    FX, FY = np.meshgrid(fx, fy)
+    freq = np.sqrt(FX**2 + FY**2)
+    freq[0, 0] = 1.0
+    amp = freq ** (-EXPONENT)
+    amp[0, 0] = 0.0
 
-    phase = np.random.uniform(0, 2 * np.pi, (height, width))
-    spectrum = amplitude * np.exp(1j * phase)
+    # Two independent random phase fields; we interpolate between them over time
+    phase_a = np.random.uniform(0, 2*np.pi, (h, w))
+    phase_b = np.random.uniform(0, 2*np.pi, (h, w))
+    return amp, phase_a, phase_b
 
+
+amp_spec = None
+phase_a  = None
+phase_b  = None
+
+
+def _frame_field(t_norm):
+    """t_norm: 0→1 over animation. Returns normalised 2D field."""
+    # Smoothly interpolate phase between phase_a and phase_b using cosine ease
+    ease = (1 - np.cos(t_norm * np.pi)) / 2
+    phase = phase_a * (1 - ease) + phase_b * ease
+    spectrum = amp_spec * np.exp(1j * phase)
     field = np.real(np.fft.ifft2(spectrum))
-    field = (field - field.min()) / (field.max() - field.min())
-    return field.astype(np.float32)
+    mn, mx = field.min(), field.max()
+    return ((field - mn) / (mx - mn)).astype(np.float32)
 
 
-def field_to_rgb(field, n_bands):
-    """Map field values to colorful topographic contour bands."""
-    # Position within band (0→1) and band index
-    scaled = field * n_bands
-    band_idx = scaled.astype(np.int32) % n_bands
-    band_pos = scaled - np.floor(scaled)   # 0→1 within each band
+def _field_to_pixels(field):
+    """Map field to ARGB pixel array using geological LUT + sharp band edges."""
+    scaled = field * N_BANDS
+    band_pos = scaled - np.floor(scaled)      # 0→1 within each band
+    edge_dist = np.minimum(band_pos, 1 - band_pos)
+    brightness = np.clip(edge_dist * 14.0, 0, 1)   # sharp dark borders
 
-    # Hue: cycles slowly over all bands (one full spectrum per n_bands)
-    hue = (band_idx.astype(np.float32) / n_bands * 360.0)
+    # LUT lookup — quantize field to 0-255
+    lut_idx = np.clip((field * 255).astype(int), 0, 255)
+    rgb = LUT[lut_idx]   # (H, W, 3)
 
-    # Sharp dark contour lines at band boundaries; bright, saturated interiors
-    edge_dist = np.minimum(band_pos, 1.0 - band_pos)  # 0 at border, 0.5 at center
-    brightness = np.clip(edge_dist * 12.0, 0, 1)      # sharp cutoff at border
-    sat = brightness * 0.88 + 0.05
-    val = brightness * 0.88 + 0.08
-
-    # HSV → RGB (vectorized)
-    h = hue / 60.0
-    i6 = np.floor(h).astype(np.int32) % 6
-    f = h - np.floor(h)
-    p = val * (1 - sat)
-    q = val * (1 - sat * f)
-    t = val * (1 - sat * (1 - f))
-
-    conds = [i6 == k for k in range(6)]
-    r = np.select(conds, [val, q, p, p, t, val])
-    g = np.select(conds, [t, val, val, q, p, p])
-    b = np.select(conds, [p, p, t, val, val, q])
+    # Apply brightness (border = dark, interior = full color)
+    br = brightness[:, :, np.newaxis]
+    rgb_out = (rgb * br).astype(np.uint8)
 
     alpha = np.full(field.shape, 255, dtype=np.uint8)
-    return np.stack([
-        alpha,
-        np.clip(r * 255, 0, 255).astype(np.uint8),
-        np.clip(g * 255, 0, 255).astype(np.uint8),
-        np.clip(b * 255, 0, 255).astype(np.uint8),
-    ], axis=-1)
+    return np.stack([alpha, rgb_out[:,:,0], rgb_out[:,:,1], rgb_out[:,:,2]], axis=-1)
 
 
 def setup():
-    global pixels_arr
+    global amp_spec, phase_a, phase_b
     py5.size(*SIZE)
-    field = spectral_terrain(SIZE[0], SIZE[1], EXPONENT)
-    pixels_arr = field_to_rgb(field, N_BANDS)
+    FRAMES_DIR.mkdir(exist_ok=True)
+    amp_spec, phase_a, phase_b = _build_volume(SIZE[0], SIZE[1])
 
 
 def draw():
+    t_norm = (py5.frame_count - 1) / max(TOTAL_FRAMES - 1, 1)
+    field = _frame_field(t_norm)
+    pixels = _field_to_pixels(field)
+
     py5.load_np_pixels()
     h, w = py5.np_pixels.shape[:2]
-
     if h == SIZE[1] and w == SIZE[0]:
-        py5.np_pixels[:] = pixels_arr
+        py5.np_pixels[:] = pixels
     else:
-        py5.np_pixels[:] = np.repeat(np.repeat(pixels_arr, 2, axis=0), 2, axis=1)
-
+        py5.np_pixels[:] = np.repeat(np.repeat(pixels, 2, axis=0), 2, axis=1)
     py5.update_np_pixels()
 
-    if py5.frame_count == PREVIEW_FRAME:
-        py5.save_frame(str(SKETCH_DIR / "preview.png"))
+    py5.save_frame(str(FRAMES_DIR / "frame-####.png"))
+
+    if py5.frame_count >= TOTAL_FRAMES:
         py5.exit_sketch()
+        subprocess.run([
+            "ffmpeg", "-y", "-r", str(FPS),
+            "-i", str(FRAMES_DIR / "frame-%04d.png"),
+            "-vcodec", "libx264", "-pix_fmt", "yuv420p",
+            str(SKETCH_DIR / "output.mp4"),
+        ], check=True)
+        mid = str(FRAMES_DIR / f"frame-{TOTAL_FRAMES // 2:04d}.png")
+        subprocess.run(["cp", mid, str(SKETCH_DIR / "preview.png")], check=True)
 
 
 py5.run_sketch()

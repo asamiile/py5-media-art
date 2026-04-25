@@ -9,13 +9,21 @@ PREVIEW_SIZE = (1920, 1080)
 OUTPUT_SIZE  = (3840, 2160)
 SIZE = PREVIEW_SIZE
 
-# Sources spread across the full canvas so waves reach every corner
+# Theme: "Precision instrument" — hard-threshold binary render, 5 sources
+# Near-black / dark teal / cold near-white — like an oscilloscope or X-ray
 SOURCES = [
-    (-0.85,  0.45), ( 0.85,  0.45), ( 0.00, -0.50),
-    (-0.50,  0.00), ( 0.55,  0.10), ( 0.10,  0.48),
-    (-0.20, -0.42), ( 0.72, -0.38), (-0.78, -0.30),
+    (-0.60,  0.35), ( 0.60,  0.35),
+    ( 0.00, -0.45), (-0.38, -0.10), ( 0.42,  0.05),
 ]
-WAVELENGTH = 0.16
+WAVELENGTH = 0.14
+
+# Three-level threshold rendering
+BG_COL   = np.array([3,   5,  10], dtype=np.uint8)    # #03050a near-black
+MID_COL  = np.array([26, 58,  74], dtype=np.uint8)    # #1a3a4a dark teal
+PEAK_COL = np.array([224, 240, 255], dtype=np.uint8)  # #e0f0ff cold near-white
+
+THRESHOLD_PEAK = 0.78   # above → bright peak
+THRESHOLD_MID  = 0.52   # above → dark teal
 
 
 def setup():
@@ -31,22 +39,35 @@ def setup():
         r = np.sqrt((X - sx) ** 2 + (Y - sy) ** 2)
         wave += np.sin(2 * np.pi * r / WAVELENGTH)
 
+    # Normalize to 0–1
     d = (wave - wave.min()) / (wave.max() - wave.min())
 
-    # Wide palette: dark purple → electric blue → bright yellow-white
-    r_ch = (d ** 1.2 * 220 + d ** 3 * 35).clip(0, 255).astype(np.uint8)
-    g_ch = (d ** 0.6 * 180 + d ** 3 * 75).clip(0, 255).astype(np.uint8)
-    b_ch = (np.sin(d * np.pi) * 255).clip(0, 255).astype(np.uint8)
+    # Hard threshold: 3 levels only — no gradient
+    r_ch = np.where(d >= THRESHOLD_PEAK, PEAK_COL[0],
+           np.where(d >= THRESHOLD_MID,  MID_COL[0], BG_COL[0])).astype(np.uint8)
+    g_ch = np.where(d >= THRESHOLD_PEAK, PEAK_COL[1],
+           np.where(d >= THRESHOLD_MID,  MID_COL[1], BG_COL[1])).astype(np.uint8)
+    b_ch = np.where(d >= THRESHOLD_PEAK, PEAK_COL[2],
+           np.where(d >= THRESHOLD_MID,  MID_COL[2], BG_COL[2])).astype(np.uint8)
+
+    # Faint grid overlay at low alpha to reinforce "measurement" aesthetic
+    grid_spacing = 80
+    grid_mask = ((np.arange(h_sim)[:, np.newaxis] % grid_spacing == 0) |
+                 (np.arange(w_sim)[np.newaxis, :] % grid_spacing == 0))
+    grid_alpha = 18
+    r_ch = np.where(grid_mask, np.clip(r_ch.astype(int) + grid_alpha, 0, 255), r_ch).astype(np.uint8)
+    g_ch = np.where(grid_mask, np.clip(g_ch.astype(int) + grid_alpha, 0, 255), g_ch).astype(np.uint8)
+    b_ch = np.where(grid_mask, np.clip(b_ch.astype(int) + grid_alpha, 0, 255), b_ch).astype(np.uint8)
 
     py5.load_np_pixels()
     h_buf, w_buf = py5.np_pixels.shape[:2]
 
     if h_buf != h_sim or w_buf != w_sim:
-        sy_sc = h_buf // h_sim
-        sx_sc = w_buf // w_sim
-        r_ch = np.repeat(np.repeat(r_ch, sy_sc, axis=0), sx_sc, axis=1)
-        g_ch = np.repeat(np.repeat(g_ch, sy_sc, axis=0), sx_sc, axis=1)
-        b_ch = np.repeat(np.repeat(b_ch, sy_sc, axis=0), sx_sc, axis=1)
+        scale_y = h_buf // h_sim
+        scale_x = w_buf // w_sim
+        r_ch = np.repeat(np.repeat(r_ch, scale_y, axis=0), scale_x, axis=1)
+        g_ch = np.repeat(np.repeat(g_ch, scale_y, axis=0), scale_x, axis=1)
+        b_ch = np.repeat(np.repeat(b_ch, scale_y, axis=0), scale_x, axis=1)
 
     alpha = np.full((h_buf, w_buf), 255, dtype=np.uint8)
     py5.np_pixels[:, :, 0] = alpha

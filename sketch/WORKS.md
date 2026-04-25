@@ -1,0 +1,17 @@
+# Works Registry
+
+過去の作品一覧。新しい作品を作る前に必ずこのファイルを読むこと。
+同じテーマ・技法・アルゴリズムの繰り返しを避けるために使う。
+
+---
+
+<!-- 作品を追加する際は以下のフォーマットで追記する -->
+
+<!-- Example:
+## flowing_particles
+
+- **Date**: 2026-04-25
+- **Theme**: fluid, motion
+- **Technique**: particle system, Perlin noise
+- **Description**: Particles flowing along a noise field, leaving trails of light
+-->

@@ -6,6 +6,14 @@
 uv run python sketch/test/main.py
 ```
 
+- Autonomous artwork creation via Claude Code
+
+Open this repository in Claude Code and run:
+
+```
+/create-artwork
+```
+
 ## Author
 
 [Asami.K](https://asami.tokyo/)

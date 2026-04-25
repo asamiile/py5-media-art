@@ -5,6 +5,13 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 
 ---
 
+## lsystem_tree
+
+- **Date**: 2026-04-25
+- **Theme**: nature, botany, recursion
+- **Technique**: stochastic recursive fractal branching, depth-based color/thickness taper
+- **Description**: 11-level stochastic fractal tree with random angle jitter at each fork; sienna trunk transitions to sage-gold tips against a deep indigo gradient sky
+
 ## voronoi_cells
 
 - **Date**: 2026-04-25

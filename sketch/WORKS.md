@@ -173,6 +173,13 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: layered vertical ribbon waves (180 columns × 5 phases), alpha accumulation, star scatter, tree silhouette
 - **Description**: 900 sine-wave ribbon strips in five overlapping layers form the characteristic waviness of the Northern Lights; horizontal gradient from electric green through cold teal to deep violet encodes the spectral emission bands of excited atmospheric gases above a conifer treeline
 
+## moire_pattern
+
+- **Date**: 2026-04-26
+- **Theme**: optics, geometry, interference, optical illusion
+- **Technique**: two concentric ring distance fields from offset centers, boolean ring intersection coloring, three-state pixel mapping (ring A / ring B / overlap)
+- **Description**: Two families of 20px-spaced concentric rings from horizontally offset centers interfere at crossing points; the bright lavender-white overlap points trace classical moiré elliptic and hyperbolic fringes against dark crimson and navy ring families
+
 ## particle_life
 
 - **Date**: 2026-04-26

@@ -117,6 +117,13 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: Fourier epicycles (15 nested rotating circles), 6-chain simultaneous trace, age-based rainbow trail coloring
 - **Description**: Six simultaneous epicycle tips trace one complex closed Fourier-series curve in rainbow colors; the 6-chain offset reveals the complete shape from the first frame and builds into a dense glowing rainbow curve
 
+## chladni_figures
+
+- **Date**: 2026-04-26
+- **Theme**: physics, acoustics, resonance, standing waves
+- **Technique**: superposed square-plate vibrational modes, nodal-zone threshold coloring, smooth density gradient
+- **Description**: Five vibrational modes of a square plate superimposed; sand accumulates at the nodal lines (|f| < threshold) revealing the hidden geometry of resonance as organic looping cream patterns on dark felt
+
 ## sphere_world
 
 - **Date**: 2026-04-26

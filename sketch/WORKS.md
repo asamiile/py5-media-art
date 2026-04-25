@@ -5,6 +5,13 @@
 
 ---
 
+## wave_interference
+
+- **Date**: 2026-04-25
+- **Theme**: physics, wave phenomena
+- **Technique**: wave superposition, analytical computation, numpy vectorization
+- **Description**: Nine wave sources superimposed to form a standing wave interference pattern with yellow constructive nodes on a blue field
+
 <!-- 作品を追加する際は以下のフォーマットで追記する -->
 
 <!-- Example:

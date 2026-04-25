@@ -5,6 +5,13 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 
 ---
 
+## truchet_tiles
+
+- **Date**: 2026-04-25
+- **Theme**: algorithmic tiling, geometry, emergence
+- **Technique**: Truchet quarter-circle arc tiling, binary random orientation, two-color complementary palette
+- **Description**: 576 tiles each randomly assigned one of two arc orientations; arcs connect seamlessly at boundaries producing emergent S-curves, loops, and wave trains in rose-coral and cyan-teal on black
+
 ## contour_field
 
 - **Date**: 2026-04-25

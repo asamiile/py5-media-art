@@ -117,6 +117,13 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: Fourier epicycles (15 nested rotating circles), 6-chain simultaneous trace, age-based rainbow trail coloring
 - **Description**: Six simultaneous epicycle tips trace one complex closed Fourier-series curve in rainbow colors; the 6-chain offset reveals the complete shape from the first frame and builds into a dense glowing rainbow curve
 
+## dla_lightning
+
+- **Date**: 2026-04-26
+- **Theme**: electricity, physics, branching fractal, nature
+- **Technique**: midpoint displacement fractal with stochastic branching, numpy glow accumulation, log-scale tone mapping
+- **Description**: A single lightning bolt rendered via recursive midpoint displacement — each segment splits at a randomly displaced midpoint, spawning side branches with depth-weighted probability; depth encodes color from near-white core to dim steel-blue tips
+
 ## aurora_borealis
 
 - **Date**: 2026-04-26

@@ -15,28 +15,28 @@ Add any notes on color, density, theme, or mood in the Comment field.
 
 ## lissajous_web
 
-- **Rating**:
-- **Comment**:
+- **Rating**: v1 is OK. 
+- **Comment**: You may draw abstract lines that mimic the shape of an object.
 
 ## truchet_tiles
 
-- **Rating**:
-- **Comment**:
+- **Rating**: OK
+- **Comment**: I'd like to see other patterns as well.
 
 ## contour_field
 
-- **Rating**:
-- **Comment**:
+- **Rating**: v1 is OK. 
+- **Comment**: I want to watch animation.
 
 ## cellular_automaton
 
-- **Rating**:
-- **Comment**:
+- **Rating**: OK
+- **Comment**: I'd like ti see other colors and patterns as well.
 
 ## modulo_circles
 
-- **Rating**:
-- **Comment**:
+- **Rating**: v1 is OK.
+- **Comment**: I'd like to see other color patterns as well.
 
 ## domain_warp
 
@@ -51,7 +51,7 @@ Add any notes on color, density, theme, or mood in the Comment field.
 ## voronoi_cells
 
 - **Rating**:
-- **Comment**:
+- **Comment**: I'd like it to be a little more abstract.
 
 ## flow_field
 
@@ -71,7 +71,7 @@ Add any notes on color, density, theme, or mood in the Comment field.
 ## wave_interference
 
 - **Rating**:
-- **Comment**:
+- **Comment**: It's too blurry.
 
 ## reaction_diffusion
 

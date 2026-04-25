@@ -173,6 +173,13 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: layered vertical ribbon waves (180 columns × 5 phases), alpha accumulation, star scatter, tree silhouette
 - **Description**: 900 sine-wave ribbon strips in five overlapping layers form the characteristic waviness of the Northern Lights; horizontal gradient from electric green through cold teal to deep violet encodes the spectral emission bands of excited atmospheric gases above a conifer treeline
 
+## barnsley_fern
+
+- **Date**: 2026-04-26
+- **Theme**: nature, botany, fractal, self-similarity, IFS
+- **Technique**: Barnsley IFS (4 affine transforms), 800k stochastic iterations, 2D density accumulation, log-scale 3-stop color gradient
+- **Description**: 800k stochastic IFS iterations accumulate into a density field that reveals the Barnsley fern — stem, main self-similar frond, and paired lateral leaflets; log-scale mapping with a dark-forest-to-pale-tip gradient produces a photorealistic fractal fern frond
+
 ## spirograph
 
 - **Date**: 2026-04-26

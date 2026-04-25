@@ -11,3 +11,6 @@ wheels/
 
 # Virtual environments
 .venv
+
+# Animation frame sequences (not committed per CLAUDE.md)
+sketch/*/frames/

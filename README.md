@@ -20,6 +20,13 @@ Open this repository in Claude Code and run:
 /create-artwork
 ```
 
+If you continue with multiple iterations:
+
+```
+/create-artworks
+```
+
+
 ## Author
 
 [Asami.K](https://asami.tokyo/)

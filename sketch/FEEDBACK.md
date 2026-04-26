@@ -257,3 +257,13 @@ Add any notes on color, density, theme, or mood in the Comment field.
 
 - **Rating**:
 - **Comment**:
+
+## paper_marbling
+
+- **Rating**:
+- **Comment**:
+
+## crystal_lattice
+
+- **Rating**:
+- **Comment**:

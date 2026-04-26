@@ -355,6 +355,13 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: ink-drop radial expansion (new_d = sqrt(d²+r²)), alternating x/y sinusoidal comb strokes with decaying amplitude, smooth palette interpolation across 6 jewel-tone colours in 5 stripe cycles, Gaussian grain post-processing
 - **Description**: Ebru paper marbling simulation: 7–11 ink drops push the colour-stripe field radially outward, then 5–9 alternating comb strokes apply sinusoidal warps to create the characteristic Ottoman marbling pattern; peacock blue, emerald, gold, cream, burgundy, and midnight navy flow in complex organic bands
 
+## crystal_lattice
+
+- **Date**: 2026-04-26
+- **Theme**: crystallography, physics, X-ray diffraction, hidden order, symmetry
+- **Technique**: reciprocal lattice Fourier transform, structure factor with multi-atom basis, Debye-Waller damping, Gaussian spot rendering, Laue zone rings
+- **Description**: X-ray diffraction pattern from a randomly chosen 2D crystal lattice (hexagonal/square/rectangular/oblique); reciprocal lattice spots glow cyan-to-gold with intensity from structure-factor phase summation; systematic extinctions reveal multi-atom basis symmetry against deep midnight with concentric Laue rings
+
 <!-- Add new works above this line using the format below:
 
 ## work_name

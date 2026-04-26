@@ -285,6 +285,13 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: Descartes' Circle Theorem (inverse no-sqrt BFS formula), 6-stop curvature-octave palette, iterative gap filling
 - **Description**: Apollonian gasket from (-1,2,2,3) seed; each gap between three tangent circles is filled with a unique inscribed circle; 6-stop warm-to-cool palette cycles by curvature octave (log₂k), encoding scale as color while the fractal limit set emerges at the boundary
 
+## ink_diffusion
+
+- **Date**: 2026-04-26
+- **Theme**: ink wash, washi paper, calligraphy, diffusion, texture
+- **Technique**: stochastic Brownian particle diffusion, fiber-direction anisotropy, inter-drop tendril flow, satellite splatter, log-scale density tone mapping
+- **Description**: Sumi-e ink drops on washi paper simulated via 60k particles per drop diffusing along paper fiber direction; variable concentration creates tonal range from dilute wash to dense pools; nearby drops connect through flowing tendrils; satellite spatters add authentic imperfection
+
 <!-- Add new works above this line using the format below:
 
 ## work_name

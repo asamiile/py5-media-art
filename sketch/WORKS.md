@@ -327,6 +327,13 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: analytic sinusoidal wave surface, vector Snell's law refraction, bincount photon-density accumulation, three-zone tone mapping (floor / glow / flare), tile grid compositing
 - **Description**: Sunlight refracted through a random 8-wave water surface projected onto a virtual pool floor; bright caustic lines form a golden shimmering web where many rays converge, dark voids appear where they diverge, against a deep navy ceramic-tile floor
 
+## soap_film
+
+- **Date**: 2026-04-26
+- **Theme**: optics, thin-film interference, iridescence, light, physics
+- **Technique**: 6-octave fBm thickness field (0–680 nm), 21-wavelength spectral integration of I(λ)=½(1−cos(4πnt/λ)) with CIE sensitivity curves, saturation boost + power-law tone map
+- **Description**: A soap film's iridescent colour field rendered from first-principles thin-film optics; Newton's interference colour sequence (black film → first-order violet/blue → green → orange/red → second-order) swirls across an fBm thickness landscape, gravity-biased thicker at the bottom
+
 <!-- Add new works above this line using the format below:
 
 ## work_name

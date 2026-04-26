@@ -299,6 +299,13 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: stochastic dendritic branching with crystallographic angle constraints (60°/90°/30°), depth-controlled sub-branching, anti-aliased line segments, multi-scale Gaussian glow, age-based 4-stop color gradient
 - **Description**: Multiple crystal seeds in cave darkness sprout dendritic arms at crystallographic angles up to 8 levels deep; age-based gradient from deep violet core through amethyst and quartz rose to mineral gold tips; multi-scale glow creates atmospheric luminosity
 
+## tidal_erosion
+
+- **Date**: 2026-04-26
+- **Theme**: geology, coastal erosion, ocean, strata, natural forces
+- **Technique**: procedural cliff geometry with multi-frequency profiles, 2D fractal noise erosion weighted by waterline proximity, noise-perturbed sea caves, wavy strata boundaries, vectorized numpy rendering
+- **Description**: Cross-section coastal cliff with 12 geological strata progressively carved by simulated tidal erosion; noise-based erosion creates organic undercuts and sea caves at waterline; overhanging cliff face, vertical cracks, seafoam, and mist spray complete the scene
+
 <!-- Add new works above this line using the format below:
 
 ## work_name

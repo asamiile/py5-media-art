@@ -320,6 +320,13 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: thin-lens point-mass deflection (α = r_E²/r), bilinear interpolation via map_coordinates, amplification ring, Doppler-brightened accretion disk, photon sphere glow, gaussian star PSF
 - **Description**: A synthetic black hole rendered via gravitational lensing: each pixel's light ray is deflected back to its unlensed star-field origin; a golden Einstein ring encircles the pitch-black event horizon, an orange accretion disk glows across the equator with Doppler brightening, and a blue-white photon sphere halo marks the last photon orbit
 
+## water_caustics
+
+- **Date**: 2026-04-26
+- **Theme**: water, light, optics, physics, swimming pool, refraction
+- **Technique**: analytic sinusoidal wave surface, vector Snell's law refraction, bincount photon-density accumulation, three-zone tone mapping (floor / glow / flare), tile grid compositing
+- **Description**: Sunlight refracted through a random 8-wave water surface projected onto a virtual pool floor; bright caustic lines form a golden shimmering web where many rays converge, dark voids appear where they diverge, against a deep navy ceramic-tile floor
+
 <!-- Add new works above this line using the format below:
 
 ## work_name

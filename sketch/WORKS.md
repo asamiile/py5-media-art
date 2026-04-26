@@ -376,6 +376,13 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: stochastic branching growth algorithm with age-based color mapping, glow effects on active growth tips, depth-based stroke tapering
 - **Description**: 15 fungal networks spread across dark soil, growing, branching, and aging from cream (active) to brown (mature); delicate glow surrounding young tips emphasizes the underground kingdom where mycelium silently connects and decomposes the forest
 
+## stellar_nursery
+
+- **Date**: 2026-04-26
+- **Theme**: space, astronomy, star formation, emission nebula, cosmos
+- **Technique**: multi-scale fBm spectral noise for gas density, narrowband emission palette (Hα/OIII/SII), protostar glow with core+halo, dust extinction, multi-scale bloom post-processing, HDR tone mapping
+- **Description**: A stellar nursery rendered from first-principles astrophotography: layered fractal gas clouds in hydrogen-alpha red, oxygen-III teal, and sulfur-II amber; embedded protostars illuminate the nebula from within; dust lanes carve dark silhouettes; film grain and vignette mimic a deep-sky telescope exposure
+
 <!-- Add new works above this line using the format below:
 
 ## work_name

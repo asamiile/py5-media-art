@@ -369,6 +369,13 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: damped magnetic pendulum ODE simulation (3 magnets), per-pixel basin-of-attraction mapping, convergence-speed brightness, Laplacian edge enhancement
 - **Description**: Each pixel is colored by which of three magnets captures a damped pendulum started at that position; the fractal boundary between basins reveals sensitive dependence on initial conditions in amethyst, teal, and copper
 
+## mycelium_network
+
+- **Date**: 2026-04-26
+- **Theme**: nature, biology, underground ecosystems, decomposition, fungal growth
+- **Technique**: stochastic branching growth algorithm with age-based color mapping, glow effects on active growth tips, depth-based stroke tapering
+- **Description**: 15 fungal networks spread across dark soil, growing, branching, and aging from cream (active) to brown (mature); delicate glow surrounding young tips emphasizes the underground kingdom where mycelium silently connects and decomposes the forest
+
 <!-- Add new works above this line using the format below:
 
 ## work_name

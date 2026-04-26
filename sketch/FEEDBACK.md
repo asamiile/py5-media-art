@@ -193,6 +193,11 @@ Add any notes on color, density, theme, or mood in the Comment field.
 - **Rating**:
 - **Comment**:
 
+## penrose_tiling
+
+- **Rating**:
+- **Comment**:
+
 ## spirograph
 
 - **Rating**:

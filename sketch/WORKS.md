@@ -271,6 +271,13 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: binary fold sequence iteration, cumulative angle integration mod 4, 16 cyclic color bands along path
 - **Description**: 15-iteration Harter-Heighway dragon curve with 32,767 right-angle segments; the path is divided into 16 sequential color bands cycling through a 4-stop indigo-coral-teal-gold palette, making the self-similar winding visible at every scale against near-black
 
+## penrose_tiling
+
+- **Date**: 2026-04-26
+- **Theme**: mathematics, aperiodic tiling, quasicrystals, 5-fold symmetry
+- **Technique**: Robinson triangle substitution (golden-ratio split), 7 iterations from decagonal seed, 5-sector angular coloring
+- **Description**: ~6100 half-rhombus triangles from 7 rounds of Penrose P3 substitution; fat rhombuses colored in 5 warm shades and thin rhombuses in 5 cool shades by angular sector, forming a never-repeating mosaic with perfect 10-fold symmetry
+
 <!-- Add new works above this line using the format below:
 
 ## work_name

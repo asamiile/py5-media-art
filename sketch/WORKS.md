@@ -376,6 +376,13 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: stochastic branching growth algorithm with age-based color mapping, glow effects on active growth tips, depth-based stroke tapering
 - **Description**: 15 fungal networks spread across dark soil, growing, branching, and aging from cream (active) to brown (mature); delicate glow surrounding young tips emphasizes the underground kingdom where mycelium silently connects and decomposes the forest
 
+## bonfire
+
+- **Date**: 2026-04-26
+- **Theme**: nature, fire, heat, chaos, organic motion
+- **Technique**: fractal noise domain warping (two warp layers + base fBm), height-dependent Gaussian horizontal focus, power-law vertical taper, classic fire color palette
+- **Description**: Organic flame tongues rise from a white-hot ember base through amber and orange to dim crimson tips; two layers of fBm domain-warp distort the heat field horizontally to create the characteristic lateral flicker of real fire against a deep black void
+
 ## stellar_nursery
 
 - **Date**: 2026-04-26

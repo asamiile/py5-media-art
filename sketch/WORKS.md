@@ -292,6 +292,13 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: stochastic Brownian particle diffusion, fiber-direction anisotropy, inter-drop tendril flow, satellite splatter, log-scale density tone mapping
 - **Description**: Sumi-e ink drops on washi paper simulated via 60k particles per drop diffusing along paper fiber direction; variable concentration creates tonal range from dilute wash to dense pools; nearby drops connect through flowing tendrils; satellite spatters add authentic imperfection
 
+## crystal_growth
+
+- **Date**: 2026-04-26
+- **Theme**: geology, crystallography, emergence, mineral, cave
+- **Technique**: stochastic dendritic branching with crystallographic angle constraints (60°/90°/30°), depth-controlled sub-branching, anti-aliased line segments, multi-scale Gaussian glow, age-based 4-stop color gradient
+- **Description**: Multiple crystal seeds in cave darkness sprout dendritic arms at crystallographic angles up to 8 levels deep; age-based gradient from deep violet core through amethyst and quartz rose to mineral gold tips; multi-scale glow creates atmospheric luminosity
+
 <!-- Add new works above this line using the format below:
 
 ## work_name

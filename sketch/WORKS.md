@@ -173,6 +173,13 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: layered vertical ribbon waves (180 columns × 5 phases), alpha accumulation, star scatter, tree silhouette
 - **Description**: 900 sine-wave ribbon strips in five overlapping layers form the characteristic waviness of the Northern Lights; horizontal gradient from electric green through cold teal to deep violet encodes the spectral emission bands of excited atmospheric gases above a conifer treeline
 
+## snowflake_crystal
+
+- **Date**: 2026-04-26
+- **Theme**: nature, crystallography, winter, 6-fold symmetry, fractal
+- **Technique**: recursive depth-7 branching with per-depth random parameters (decay, angle, branch fraction) applied identically to all 6 arms; depth-based color interpolation blue→white; stroke weight tapering
+- **Description**: A unique hexagonal snow crystal each run; six recursive fractal arms with randomized branching angles and decay ratios produce dendritic plate and stellar-dendrite morphologies against a midnight-sky star field
+
 ## kaleidoscope
 
 - **Date**: 2026-04-26

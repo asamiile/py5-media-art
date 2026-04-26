@@ -173,6 +173,13 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: layered vertical ribbon waves (180 columns × 5 phases), alpha accumulation, star scatter, tree silhouette
 - **Description**: 900 sine-wave ribbon strips in five overlapping layers form the characteristic waviness of the Northern Lights; horizontal gradient from electric green through cold teal to deep violet encodes the spectral emission bands of excited atmospheric gases above a conifer treeline
 
+## hilbert_curve
+
+- **Date**: 2026-04-26
+- **Theme**: mathematics, space-filling curves, topology, self-similarity
+- **Technique**: vectorised d→(x,y) Hilbert bit-pair mapping, 256×256 cell grid, cyclic 3-stop palette (20 cycles) reveals winding structure
+- **Description**: Order-8 Hilbert curve with 65536 cells; a cyclic indigo→teal→amber palette repeating 20× along the 1D path makes the self-similar U-winding visible at every scale simultaneously
+
 ## snowflake_crystal
 
 - **Date**: 2026-04-26

@@ -1,6 +1,12 @@
 ## Media Art Works
 
-- Run Script
+- Install ffmpeg (once)
+
+```bash
+brew install ffmpeg
+```
+
+- Run Sketch
 
 ```
 uv run python sketch/test/main.py
@@ -13,6 +19,13 @@ Open this repository in Claude Code and run:
 ```
 /create-artwork
 ```
+
+If you continue with multiple iterations:
+
+```
+/create-artworks
+```
+
 
 ## Author
 

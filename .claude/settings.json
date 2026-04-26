@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(*)",
+      "Write(sketch/*)",
+      "Write(.claude/*)",
+      "Write(.agents/*)",
+      "Write(CLAUDE.md)",
+      "Edit(sketch/*)",
+      "Edit(.claude/*)",
+      "Edit(.agents/*)",
+      "Edit(CLAUDE.md)"
+    ]
+  }
+}

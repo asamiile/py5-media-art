@@ -306,6 +306,13 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: procedural cliff geometry with multi-frequency profiles, 2D fractal noise erosion weighted by waterline proximity, noise-perturbed sea caves, wavy strata boundaries, vectorized numpy rendering
 - **Description**: Cross-section coastal cliff with 12 geological strata progressively carved by simulated tidal erosion; noise-based erosion creates organic undercuts and sea caves at waterline; overhanging cliff face, vertical cracks, seafoam, and mist spray complete the scene
 
+## smoke_rings
+
+- **Date**: 2026-04-26
+- **Theme**: fluid dynamics, vortex rings, physics, atmospheric
+- **Technique**: point vortex Biot-Savart simulation, 50k particles per ring, bincount density accumulation, log tone mapping
+- **Description**: Three vortex ring cross-sections (cerulean · gold · mint) formed by counter-rotating point vortex pairs; 50k particles per ring trace the toroidal Biot-Savart flow field for 200 steps; density accumulation reveals tight glowing cores and diffuse return-flow halos against near-black
+
 <!-- Add new works above this line using the format below:
 
 ## work_name

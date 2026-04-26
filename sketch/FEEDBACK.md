@@ -203,6 +203,11 @@ Add any notes on color, density, theme, or mood in the Comment field.
 - **Rating**:
 - **Comment**:
 
+## smoke_rings
+
+- **Rating**:
+- **Comment**:
+
 ## spirograph
 
 - **Rating**:

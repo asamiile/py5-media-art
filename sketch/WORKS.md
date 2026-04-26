@@ -173,6 +173,13 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: layered vertical ribbon waves (180 columns × 5 phases), alpha accumulation, star scatter, tree silhouette
 - **Description**: 900 sine-wave ribbon strips in five overlapping layers form the characteristic waviness of the Northern Lights; horizontal gradient from electric green through cold teal to deep violet encodes the spectral emission bands of excited atmospheric gases above a conifer treeline
 
+## kaleidoscope
+
+- **Date**: 2026-04-26
+- **Theme**: optics, symmetry, mandala, geometry, stained glass
+- **Technique**: polar coordinate folding into canonical sector, multi-frequency sine product pattern, cyclic 4-stop jewel-tone palette, circular mask
+- **Description**: 12-fold kaleidoscope; a 15° wedge of interfering sine harmonics is reflected and rotated to fill a circle; jewel-tone cyclic palette produces concentric stained-glass rings
+
 ## moire_pattern
 
 - **Date**: 2026-04-26

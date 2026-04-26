@@ -341,6 +341,13 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: logarithmic spiral row spacing, quadratic bezier sag per segment, 4-layer composited dew-drop circles with specular highlight, hub glow compositing, per-run randomised geometry
 - **Description**: Orb spider's web at dawn: 30–40 radial threads with angle jitter fan out to a frame polygon; 22–30 logarithmically spaced capture-silk spiral rows sag gently toward the hub via bezier; ~80% of intersections carry layered dew-drop pearls with white specular highlights against deep midnight blue
 
+## city_rain
+
+- **Date**: 2026-04-26
+- **Theme**: urban, night, atmosphere, rain, reflection, neon
+- **Technique**: 4-depth-layer procedural building generation, window probability grid per layer, ripple-distorted wet-pavement reflection, directional rain via exponential field + gaussian filter, additive bloom compositing
+- **Description**: Nocturnal cityscape in the rain: back-to-front building towers lit by grids of amber/blue/orange windows and neon signs; the lower 40% of canvas shows the skyline reflected in wet asphalt, sinusoidally ripple-distorted and fading toward the ground; thin rain streaks and a bloom post-pass complete the scene
+
 <!-- Add new works above this line using the format below:
 
 ## work_name

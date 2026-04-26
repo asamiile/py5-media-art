@@ -1,0 +1,73 @@
+---
+name: polish
+description: "Autonomously polish and refine existing artwork based on user feedback. Selects improvement target from FEEDBACK.md, generates enhancement plan, and implements updated version."
+allowed-tools: Bash, Read, Write, Edit
+---
+
+# Polish Artwork Skill
+
+Autonomously polishes an existing py5 media art sketch by analyzing feedback, selecting an improvement target, and implementing an enhanced version.
+
+## Workflow
+
+1. **Parse FEEDBACK.md**
+   - Read all work entries with ratings and comments
+   - Calculate improvement priority (blank/NG with comment → OK with comment)
+   
+2. **Select Polish Target**
+   - Choose the highest-priority work needing improvement
+   - Criteria: Rating blank or NG with actionable Comment, OR OK with feature requests
+   
+3. **Analyze Comment & Generate Plan**
+   - Extract improvement direction from Comment text
+   - Categories:
+     - Color/Pattern: "see other colors", "monotonous color", "see other patterns"
+     - Abstraction: "more abstract", "less abstract"
+     - Animation: "want to watch animation"
+     - Clarity: "too blurry", "patterns overlap"
+     - Realism: "reproduce natural phenomena"
+   - Generate specific implementation directives
+   
+4. **Implement Enhancement**
+   - Read existing `sketch/{work_name}/main.py`
+   - Modify code to address Comment directives
+   - Keep the core algorithm, adjust parameters/colors/density
+   - Save existing `preview.png` as `preview_v{n}.png` (version tracking)
+   
+5. **Preview & Verify**
+   - Run: `uv run python sketch/{work_name}/main.py`
+   - Generates new `preview.png`
+   - Verify visual improvement matches intent
+   
+6. **Update Documentation**
+   - Edit `sketch/{work_name}/README.md` with enhancement notes
+   - Update `FEEDBACK.md` with new `preview_v{n}.png` reference and revised Comment
+   
+7. **Commit**
+   - Stage changes: main.py, preview.png, preview_v{n}.png, README.md, FEEDBACK.md
+   - Commit: "polish: {work_name} — {improvement_summary}"
+
+## Selection Priority
+
+For next improvement target, prioritize in this order:
+1. **Critical**: Rating = NG with Comment (clear rejection needing fix)
+2. **High**: Rating blank with Comment (not yet evaluated, has feedback)
+3. **Medium**: Rating = OK with Comment + feature request (approved direction, expand it)
+4. **Low**: Rating = OK with Comment + minor tweak (nice-to-have)
+
+## Implementation Rules
+
+- Keep original algorithm/theme; modify only parameters/colors/patterns
+- If Comment requests "other colors", vary palette; use artistic combinations (not single-gradient)
+- If Comment requests "other patterns", add algorithmic variants (multiple Truchet orientations, Rule variants, etc.)
+- If Comment requests "more abstract", reduce density/increase transformation depth; if "more realistic", add details/constraints
+- If Comment mentions animation, change to `py5.run_sketch(continuous=True)` or add frame-based evolution
+- Never change work name or core identity
+- Document what changed in README for transparency
+
+## Notes
+
+- Work names use snake_case
+- Entry point filename is always `main.py`
+- Preview resolution: 1920×1080 (change `SIZE` in script for output 3840×2160)
+- Preserve git history by creating separate commit (not amending)

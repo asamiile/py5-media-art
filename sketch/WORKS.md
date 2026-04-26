@@ -285,6 +285,111 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: Descartes' Circle Theorem (inverse no-sqrt BFS formula), 6-stop curvature-octave palette, iterative gap filling
 - **Description**: Apollonian gasket from (-1,2,2,3) seed; each gap between three tangent circles is filled with a unique inscribed circle; 6-stop warm-to-cool palette cycles by curvature octave (log₂k), encoding scale as color while the fractal limit set emerges at the boundary
 
+## ink_diffusion
+
+- **Date**: 2026-04-26
+- **Theme**: ink wash, washi paper, calligraphy, diffusion, texture
+- **Technique**: stochastic Brownian particle diffusion, fiber-direction anisotropy, inter-drop tendril flow, satellite splatter, log-scale density tone mapping
+- **Description**: Sumi-e ink drops on washi paper simulated via 60k particles per drop diffusing along paper fiber direction; variable concentration creates tonal range from dilute wash to dense pools; nearby drops connect through flowing tendrils; satellite spatters add authentic imperfection
+
+## crystal_growth
+
+- **Date**: 2026-04-26
+- **Theme**: geology, crystallography, emergence, mineral, cave
+- **Technique**: stochastic dendritic branching with crystallographic angle constraints (60°/90°/30°), depth-controlled sub-branching, anti-aliased line segments, multi-scale Gaussian glow, age-based 4-stop color gradient
+- **Description**: Multiple crystal seeds in cave darkness sprout dendritic arms at crystallographic angles up to 8 levels deep; age-based gradient from deep violet core through amethyst and quartz rose to mineral gold tips; multi-scale glow creates atmospheric luminosity
+
+## tidal_erosion
+
+- **Date**: 2026-04-26
+- **Theme**: geology, coastal erosion, ocean, strata, natural forces
+- **Technique**: procedural cliff geometry with multi-frequency profiles, 2D fractal noise erosion weighted by waterline proximity, noise-perturbed sea caves, wavy strata boundaries, vectorized numpy rendering
+- **Description**: Cross-section coastal cliff with 12 geological strata progressively carved by simulated tidal erosion; noise-based erosion creates organic undercuts and sea caves at waterline; overhanging cliff face, vertical cracks, seafoam, and mist spray complete the scene
+
+## smoke_rings
+
+- **Date**: 2026-04-26
+- **Theme**: fluid dynamics, vortex rings, physics, atmospheric
+- **Technique**: point vortex Biot-Savart simulation, 50k particles per ring, bincount density accumulation, log tone mapping
+- **Description**: Three vortex ring cross-sections (cerulean · gold · mint) formed by counter-rotating point vortex pairs; 50k particles per ring trace the toroidal Biot-Savart flow field for 200 steps; density accumulation reveals tight glowing cores and diffuse return-flow halos against near-black
+
+## gravity_lensing
+
+- **Date**: 2026-04-26
+- **Theme**: space, physics, general relativity, optics, black hole
+- **Technique**: thin-lens point-mass deflection (α = r_E²/r), bilinear interpolation via map_coordinates, amplification ring, Doppler-brightened accretion disk, photon sphere glow, gaussian star PSF
+- **Description**: A synthetic black hole rendered via gravitational lensing: each pixel's light ray is deflected back to its unlensed star-field origin; a golden Einstein ring encircles the pitch-black event horizon, an orange accretion disk glows across the equator with Doppler brightening, and a blue-white photon sphere halo marks the last photon orbit
+
+## water_caustics
+
+- **Date**: 2026-04-26
+- **Theme**: water, light, optics, physics, swimming pool, refraction
+- **Technique**: analytic sinusoidal wave surface, vector Snell's law refraction, bincount photon-density accumulation, three-zone tone mapping (floor / glow / flare), tile grid compositing
+- **Description**: Sunlight refracted through a random 8-wave water surface projected onto a virtual pool floor; bright caustic lines form a golden shimmering web where many rays converge, dark voids appear where they diverge, against a deep navy ceramic-tile floor
+
+## soap_film
+
+- **Date**: 2026-04-26
+- **Theme**: optics, thin-film interference, iridescence, light, physics
+- **Technique**: 6-octave fBm thickness field (0–680 nm), 21-wavelength spectral integration of I(λ)=½(1−cos(4πnt/λ)) with CIE sensitivity curves, saturation boost + power-law tone map
+- **Description**: A soap film's iridescent colour field rendered from first-principles thin-film optics; Newton's interference colour sequence (black film → first-order violet/blue → green → orange/red → second-order) swirls across an fBm thickness landscape, gravity-biased thicker at the bottom
+
+## spider_web
+
+- **Date**: 2026-04-26
+- **Theme**: nature, geometry, morning dew, organic structure, precision
+- **Technique**: logarithmic spiral row spacing, quadratic bezier sag per segment, 4-layer composited dew-drop circles with specular highlight, hub glow compositing, per-run randomised geometry
+- **Description**: Orb spider's web at dawn: 30–40 radial threads with angle jitter fan out to a frame polygon; 22–30 logarithmically spaced capture-silk spiral rows sag gently toward the hub via bezier; ~80% of intersections carry layered dew-drop pearls with white specular highlights against deep midnight blue
+
+## city_rain
+
+- **Date**: 2026-04-26
+- **Theme**: urban, night, atmosphere, rain, reflection, neon
+- **Technique**: 4-depth-layer procedural building generation, window probability grid per layer, ripple-distorted wet-pavement reflection, directional rain via exponential field + gaussian filter, additive bloom compositing
+- **Description**: Nocturnal cityscape in the rain: back-to-front building towers lit by grids of amber/blue/orange windows and neon signs; the lower 40% of canvas shows the skyline reflected in wet asphalt, sinusoidally ripple-distorted and fading toward the ground; thin rain streaks and a bloom post-pass complete the scene
+
+## paper_marbling
+
+- **Date**: 2026-04-26
+- **Theme**: craft, textile, fluid, Turkish ebru, Ottoman art, paper marbling
+- **Technique**: ink-drop radial expansion (new_d = sqrt(d²+r²)), alternating x/y sinusoidal comb strokes with decaying amplitude, smooth palette interpolation across 6 jewel-tone colours in 5 stripe cycles, Gaussian grain post-processing
+- **Description**: Ebru paper marbling simulation: 7–11 ink drops push the colour-stripe field radially outward, then 5–9 alternating comb strokes apply sinusoidal warps to create the characteristic Ottoman marbling pattern; peacock blue, emerald, gold, cream, burgundy, and midnight navy flow in complex organic bands
+
+## crystal_lattice
+
+- **Date**: 2026-04-26
+- **Theme**: crystallography, physics, X-ray diffraction, hidden order, symmetry
+- **Technique**: reciprocal lattice Fourier transform, structure factor with multi-atom basis, Debye-Waller damping, Gaussian spot rendering, Laue zone rings
+- **Description**: X-ray diffraction pattern from a randomly chosen 2D crystal lattice (hexagonal/square/rectangular/oblique); reciprocal lattice spots glow cyan-to-gold with intensity from structure-factor phase summation; systematic extinctions reveal multi-atom basis symmetry against deep midnight with concentric Laue rings
+
+## magnetic_pendulum
+
+- **Date**: 2026-04-26
+- **Theme**: chaos theory, determinism, fate, basin of attraction, physics
+- **Technique**: damped magnetic pendulum ODE simulation (3 magnets), per-pixel basin-of-attraction mapping, convergence-speed brightness, Laplacian edge enhancement
+- **Description**: Each pixel is colored by which of three magnets captures a damped pendulum started at that position; the fractal boundary between basins reveals sensitive dependence on initial conditions in amethyst, teal, and copper
+
+## mycelium_network
+
+- **Date**: 2026-04-26
+- **Theme**: nature, biology, underground ecosystems, decomposition, fungal growth
+- **Technique**: stochastic branching growth algorithm with age-based color mapping, glow effects on active growth tips, depth-based stroke tapering
+- **Description**: 15 fungal networks spread across dark soil, growing, branching, and aging from cream (active) to brown (mature); delicate glow surrounding young tips emphasizes the underground kingdom where mycelium silently connects and decomposes the forest
+
+## bonfire
+
+- **Date**: 2026-04-26
+- **Theme**: nature, fire, heat, chaos, organic motion
+- **Technique**: fractal noise domain warping (two warp layers + base fBm), height-dependent Gaussian horizontal focus, power-law vertical taper, classic fire color palette
+- **Description**: Organic flame tongues rise from a white-hot ember base through amber and orange to dim crimson tips; two layers of fBm domain-warp distort the heat field horizontally to create the characteristic lateral flicker of real fire against a deep black void
+
+## stellar_nursery
+
+- **Date**: 2026-04-26
+- **Theme**: space, astronomy, star formation, emission nebula, cosmos
+- **Technique**: multi-scale fBm spectral noise for gas density, narrowband emission palette (Hα/OIII/SII), protostar glow with core+halo, dust extinction, multi-scale bloom post-processing, HDR tone mapping
+- **Description**: A stellar nursery rendered from first-principles astrophotography: layered fractal gas clouds in hydrogen-alpha red, oxygen-III teal, and sulfur-II amber; embedded protostars illuminate the nebula from within; dust lanes carve dark silhouettes; film grain and vignette mimic a deep-sky telescope exposure
+
 <!-- Add new works above this line using the format below:
 
 ## work_name

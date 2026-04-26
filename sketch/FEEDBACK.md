@@ -203,12 +203,87 @@ Add any notes on color, density, theme, or mood in the Comment field.
 - **Rating**:
 - **Comment**:
 
+## smoke_rings
+
+- **Rating**:
+- **Comment**:
+
 ## spirograph
 
 - **Rating**:
 - **Comment**:
 
 ## halftone_waves
+
+- **Rating**:
+- **Comment**:
+
+## ink_diffusion
+
+- **Rating**:
+- **Comment**:
+
+## crystal_growth
+
+- **Rating**:
+- **Comment**:
+
+## tidal_erosion
+
+- **Rating**:
+- **Comment**:
+
+## gravity_lensing
+
+- **Rating**:
+- **Comment**:
+
+## water_caustics
+
+- **Rating**:
+- **Comment**:
+
+## soap_film
+
+- **Rating**:
+- **Comment**:
+
+## spider_web
+
+- **Rating**:
+- **Comment**:
+
+## city_rain
+
+- **Rating**:
+- **Comment**:
+
+## paper_marbling
+
+- **Rating**:
+- **Comment**:
+
+## crystal_lattice
+
+- **Rating**:
+- **Comment**:
+
+## magnetic_pendulum
+
+- **Rating**:
+- **Comment**:
+
+## mycelium_network
+
+- **Rating**:
+- **Comment**:
+
+## bonfire
+
+- **Rating**:
+- **Comment**:
+
+## stellar_nursery
 
 - **Rating**:
 - **Comment**:

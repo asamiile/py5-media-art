@@ -11,11 +11,14 @@ Autonomously creates a py5 media art sketch by following the workflow defined in
 ## Workflow
 
 1. Read `CLAUDE.md` to confirm the full workflow
-2. Read `sketch/WORKS.md` and `sketch/FEEDBACK.md` to understand past works and user preferences
+2. **Planner**: Read `sketch/WORKS.md` and `sketch/FEEDBACK.md`, then produce a Creative Brief (see `.agents/skills/planner/SKILL.md`)
 3. Create or reuse the branch `feature/works-YYYYMMDD`
-4. Implement a new, non-duplicate sketch in `sketch/{work_name}/main.py`
-5. Update `sketch/WORKS.md`
-6. Commit and push
+4. **Artist**: Implement the concept from the Creative Brief in `sketch/{work_name}/main.py` (see `.agents/skills/artist/SKILL.md`)
+5. Run the sketch to generate `preview.png`
+6. **Critic**: Review code + `preview.png` and return APPROVE or REVISE (see `.agents/skills/critic/SKILL.md`)
+7. If REVISE: artist applies feedback and re-runs (max 2 revisions)
+8. Update `sketch/WORKS.md` and `sketch/FEEDBACK.md`
+9. Commit and push
 
 ## Notes
 

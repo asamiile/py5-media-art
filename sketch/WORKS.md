@@ -278,6 +278,13 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: Robinson triangle substitution (golden-ratio split), 7 iterations from decagonal seed, 5-sector angular coloring
 - **Description**: ~6100 half-rhombus triangles from 7 rounds of Penrose P3 substitution; fat rhombuses colored in 5 warm shades and thin rhombuses in 5 cool shades by angular sector, forming a never-repeating mosaic with perfect 10-fold symmetry
 
+## apollonian_gasket
+
+- **Date**: 2026-04-26
+- **Theme**: mathematics, fractals, circle packing, recursive geometry
+- **Technique**: Descartes' Circle Theorem (inverse no-sqrt BFS formula), 6-stop curvature-octave palette, iterative gap filling
+- **Description**: Apollonian gasket from (-1,2,2,3) seed; each gap between three tangent circles is filled with a unique inscribed circle; 6-stop warm-to-cool palette cycles by curvature octave (log₂k), encoding scale as color while the fractal limit set emerges at the boundary
+
 <!-- Add new works above this line using the format below:
 
 ## work_name

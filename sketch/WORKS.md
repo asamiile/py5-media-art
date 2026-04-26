@@ -348,6 +348,13 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: 4-depth-layer procedural building generation, window probability grid per layer, ripple-distorted wet-pavement reflection, directional rain via exponential field + gaussian filter, additive bloom compositing
 - **Description**: Nocturnal cityscape in the rain: back-to-front building towers lit by grids of amber/blue/orange windows and neon signs; the lower 40% of canvas shows the skyline reflected in wet asphalt, sinusoidally ripple-distorted and fading toward the ground; thin rain streaks and a bloom post-pass complete the scene
 
+## paper_marbling
+
+- **Date**: 2026-04-26
+- **Theme**: craft, textile, fluid, Turkish ebru, Ottoman art, paper marbling
+- **Technique**: ink-drop radial expansion (new_d = sqrt(d²+r²)), alternating x/y sinusoidal comb strokes with decaying amplitude, smooth palette interpolation across 6 jewel-tone colours in 5 stripe cycles, Gaussian grain post-processing
+- **Description**: Ebru paper marbling simulation: 7–11 ink drops push the colour-stripe field radially outward, then 5–9 alternating comb strokes apply sinusoidal warps to create the characteristic Ottoman marbling pattern; peacock blue, emerald, gold, cream, burgundy, and midnight navy flow in complex organic bands
+
 <!-- Add new works above this line using the format below:
 
 ## work_name

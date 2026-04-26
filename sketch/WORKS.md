@@ -313,6 +313,13 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: point vortex Biot-Savart simulation, 50k particles per ring, bincount density accumulation, log tone mapping
 - **Description**: Three vortex ring cross-sections (cerulean · gold · mint) formed by counter-rotating point vortex pairs; 50k particles per ring trace the toroidal Biot-Savart flow field for 200 steps; density accumulation reveals tight glowing cores and diffuse return-flow halos against near-black
 
+## gravity_lensing
+
+- **Date**: 2026-04-26
+- **Theme**: space, physics, general relativity, optics, black hole
+- **Technique**: thin-lens point-mass deflection (α = r_E²/r), bilinear interpolation via map_coordinates, amplification ring, Doppler-brightened accretion disk, photon sphere glow, gaussian star PSF
+- **Description**: A synthetic black hole rendered via gravitational lensing: each pixel's light ray is deflected back to its unlensed star-field origin; a golden Einstein ring encircles the pitch-black event horizon, an orange accretion disk glows across the equator with Doppler brightening, and a blue-white photon sphere halo marks the last photon orbit
+
 <!-- Add new works above this line using the format below:
 
 ## work_name

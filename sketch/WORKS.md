@@ -264,6 +264,13 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: layered ridge silhouettes back-to-front, 1D cosine noise profiles (2–5 octaves), filled polygon depth compositing, sky gradient via numpy pixel buffer
 - **Description**: 14 dune ridge silhouettes progress from dark brown near the horizon to pale ivory cream in the foreground, with a burnt-sienna-to-amber sky gradient; front layers have higher octave noise and greater amplitude, producing sharp desert crests while back layers dissolve into hazy distance
 
+## dragon_curve
+
+- **Date**: 2026-04-26
+- **Theme**: mathematics, fractals, space-filling curves, self-similarity
+- **Technique**: binary fold sequence iteration, cumulative angle integration mod 4, 16 cyclic color bands along path
+- **Description**: 15-iteration Harter-Heighway dragon curve with 32,767 right-angle segments; the path is divided into 16 sequential color bands cycling through a 4-stop indigo-coral-teal-gold palette, making the self-similar winding visible at every scale against near-black
+
 <!-- Add new works above this line using the format below:
 
 ## work_name

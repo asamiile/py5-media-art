@@ -188,6 +188,11 @@ Add any notes on color, density, theme, or mood in the Comment field.
 - **Rating**:
 - **Comment**:
 
+## dragon_curve
+
+- **Rating**:
+- **Comment**:
+
 ## spirograph
 
 - **Rating**:

@@ -404,6 +404,13 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: recursive square subdivision with asymmetric quadrant sizes, rotation at each recursion level, dramatic color gradient transitions, seed-based organic variation
 - **Description**: A dynamic fractal pattern that breaks mechanical grid symmetry through organic asymmetry and rotation; squares subdivide asymmetrically with 22.5° rotation increments, creating visual movement with dramatic color transitions from deep emerald to bright teal and deep amber to bright coral against deep charcoal
 
+## bioluminescent_forest
+
+- **Date**: 2026-04-28
+- **Theme**: nature, bioluminescence, forest, night, organic growth, particle systems
+- **Technique**: recursive tree structures with randomized parameters, particle system with swarm behavior (cohesion, alignment, wandering), depth-based scaling and opacity for 3D spatial relationships, attraction points for organic clustering, varied glow strength based on tree age, ground vegetation with smaller recursive structures, purple/magenta accents in deeper forest areas
+- **Description**: A mesmerizing bioluminescent forest where glowing trees and floating fireflies create an enchanting nighttime atmosphere; organic tree structures with randomized parameters, depth-based layering for 3D spatial relationships, and vibrant color transitions from teal to amber to violet with purple and magenta accents in deeper areas
+
 <!-- Add new works above this line using the format below:
 
 ## work_name

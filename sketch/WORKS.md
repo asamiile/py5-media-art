@@ -425,6 +425,13 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: wavelength-dependent refraction indices, ray tracing through optical elements (convex lenses, prisms, concave lenses), additive blending, glow effects
 - **Description**: Chromatic aberration simulation using wavelength-dependent refraction indices; creates prismatic color separation through simulated optical elements with rainbow patterns, revealing the hidden spectrum within white light
 
+## diffraction_pattern
+
+- **Date**: 2026-04-29
+- **Theme**: optics, wave physics, interference, diffraction, mathematical precision
+- **Technique**: Fraunhofer diffraction simulation using Fourier transform principles, 2D FFT for far-field diffraction patterns, multiple aperture types (circular, rectangular, double slit)
+- **Description**: Wave interference patterns revealed through Fraunhofer diffraction; concentric diffraction rings and interference fringes created by light passing through apertures, demonstrating the wave nature of light with mathematical precision
+
 <!-- Add new works above this line using the format below:
 
 ## work_name

@@ -411,6 +411,13 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: recursive tree structures with randomized parameters, particle system with swarm behavior (cohesion, alignment, wandering), depth-based scaling and opacity for 3D spatial relationships, attraction points for organic clustering, varied glow strength based on tree age, ground vegetation with smaller recursive structures, purple/magenta accents in deeper forest areas
 - **Description**: A mesmerizing bioluminescent forest where glowing trees and floating fireflies create an enchanting nighttime atmosphere; organic tree structures with randomized parameters, depth-based layering for 3D spatial relationships, and vibrant color transitions from teal to amber to violet with purple and magenta accents in deeper areas
 
+## fluid_dynamics
+
+- **Date**: 2026-04-28
+- **Theme**: fluid dynamics, mathematics, physics, organic flow, turbulence
+- **Technique**: Navier-Stokes-based fluid dynamics simulation with vorticity visualization, stable fluid solver with dye advection, diffusion, projection (divergence-free velocity field), and vorticity confinement to create organic swirling patterns
+- **Description**: A mathematical fluid simulation revealing the hidden patterns of flow and turbulence; Navier-Stokes equations create organic swirling patterns that resemble ocean currents or atmospheric flow, rendered in electric cyan, warm coral, and golden amber on a deep navy background
+
 <!-- Add new works above this line using the format below:
 
 ## work_name

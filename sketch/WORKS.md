@@ -397,6 +397,13 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: Ikeda map discrete-time dynamical system, 50k trajectory points, iteration-based color gradient (cyan→magenta→white), point rendering with alpha blending
 - **Description**: A chaotic system spiraling through phase space; the Ikeda attractor generates complex organic trajectories from simple mathematical rules, rendered as a glowing spiral that transitions from electric cyan through warm magenta to bright white against a deep midnight blue background
 
+## tiled_fractal
+
+- **Date**: 2026-04-28
+- **Theme**: fractal geometry, recursion, organic asymmetry, tiling
+- **Technique**: recursive square subdivision with asymmetric quadrant sizes, rotation at each recursion level, dramatic color gradient transitions, seed-based organic variation
+- **Description**: A dynamic fractal pattern that breaks mechanical grid symmetry through organic asymmetry and rotation; squares subdivide asymmetrically with 22.5° rotation increments, creating visual movement with dramatic color transitions from deep emerald to bright teal and deep amber to bright coral against deep charcoal
+
 <!-- Add new works above this line using the format below:
 
 ## work_name

@@ -418,6 +418,13 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: Navier-Stokes-based fluid dynamics simulation with vorticity visualization, stable fluid solver with dye advection, diffusion, projection (divergence-free velocity field), and vorticity confinement to create organic swirling patterns
 - **Description**: A mathematical fluid simulation revealing the hidden patterns of flow and turbulence; Navier-Stokes equations create organic swirling patterns that resemble ocean currents or atmospheric flow, rendered in electric cyan, warm coral, and golden amber on a deep navy background
 
+## chromatic_aberration
+
+- **Date**: 2026-04-28
+- **Theme**: optics, light, physics, chromatic aberration, dispersion, prismatic color
+- **Technique**: wavelength-dependent refraction indices, ray tracing through optical elements (convex lenses, prisms, concave lenses), additive blending, glow effects
+- **Description**: Chromatic aberration simulation using wavelength-dependent refraction indices; creates prismatic color separation through simulated optical elements with rainbow patterns, revealing the hidden spectrum within white light
+
 <!-- Add new works above this line using the format below:
 
 ## work_name

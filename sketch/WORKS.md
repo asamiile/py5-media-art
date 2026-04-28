@@ -33,6 +33,13 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: Wolfram Rule 90 elementary cellular automaton, single-cell seed, generation-depth HSV gradient
 - **Description**: Rule 90 evolved 540 generations from one center cell produces the Sierpinski triangle; amber-to-violet gradient encodes computational time as color
 
+## cellular_automata
+
+- **Date**: 2026-04-29
+- **Theme**: computation, emergence, probabilistic systems, organic growth
+- **Technique**: Probabilistic cellular automaton with density-based coloring, age-based color transitions, multiple seed clusters
+- **Description**: 12 random seed clusters evolve through 180 generations using probabilistic survival/birth rules; magenta→teal→purple age gradient with golden density highlights creates organic cellular patterns against deep midnight
+
 ## modulo_circles
 
 - **Date**: 2026-04-25

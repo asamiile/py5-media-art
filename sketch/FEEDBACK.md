@@ -33,6 +33,11 @@ Add any notes on color, density, theme, or mood in the Comment field.
 - **Rating**: OK
 - **Comment**: I'd like ti see other colors and patterns as well.
 
+## cellular_automata
+
+- **Rating**: OK
+- **Comment**: The probabilistic algorithm creates organic patterns. The magenta/teal/gold/purple palette is adventurous and visually striking.
+
 ## modulo_circles
 
 - **Rating**: v1 is OK.

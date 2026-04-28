@@ -390,6 +390,41 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: multi-scale fBm spectral noise for gas density, narrowband emission palette (Hα/OIII/SII), protostar glow with core+halo, dust extinction, multi-scale bloom post-processing, HDR tone mapping
 - **Description**: A stellar nursery rendered from first-principles astrophotography: layered fractal gas clouds in hydrogen-alpha red, oxygen-III teal, and sulfur-II amber; embedded protostars illuminate the nebula from within; dust lanes carve dark silhouettes; film grain and vignette mimic a deep-sky telescope exposure
 
+## ikeda_attractor
+
+- **Date**: 2026-04-28
+- **Theme**: chaos theory, mathematics, strange attractor, phase space
+- **Technique**: Ikeda map discrete-time dynamical system, 50k trajectory points, iteration-based color gradient (cyan→magenta→white), point rendering with alpha blending
+- **Description**: A chaotic system spiraling through phase space; the Ikeda attractor generates complex organic trajectories from simple mathematical rules, rendered as a glowing spiral that transitions from electric cyan through warm magenta to bright white against a deep midnight blue background
+
+## tiled_fractal
+
+- **Date**: 2026-04-28
+- **Theme**: fractal geometry, recursion, organic asymmetry, tiling
+- **Technique**: recursive square subdivision with asymmetric quadrant sizes, rotation at each recursion level, dramatic color gradient transitions, seed-based organic variation
+- **Description**: A dynamic fractal pattern that breaks mechanical grid symmetry through organic asymmetry and rotation; squares subdivide asymmetrically with 22.5° rotation increments, creating visual movement with dramatic color transitions from deep emerald to bright teal and deep amber to bright coral against deep charcoal
+
+## bioluminescent_forest
+
+- **Date**: 2026-04-28
+- **Theme**: nature, bioluminescence, forest, night, organic growth, particle systems
+- **Technique**: recursive tree structures with randomized parameters, particle system with swarm behavior (cohesion, alignment, wandering), depth-based scaling and opacity for 3D spatial relationships, attraction points for organic clustering, varied glow strength based on tree age, ground vegetation with smaller recursive structures, purple/magenta accents in deeper forest areas
+- **Description**: A mesmerizing bioluminescent forest where glowing trees and floating fireflies create an enchanting nighttime atmosphere; organic tree structures with randomized parameters, depth-based layering for 3D spatial relationships, and vibrant color transitions from teal to amber to violet with purple and magenta accents in deeper areas
+
+## fluid_dynamics
+
+- **Date**: 2026-04-28
+- **Theme**: fluid dynamics, mathematics, physics, organic flow, turbulence
+- **Technique**: Navier-Stokes-based fluid dynamics simulation with vorticity visualization, stable fluid solver with dye advection, diffusion, projection (divergence-free velocity field), and vorticity confinement to create organic swirling patterns
+- **Description**: A mathematical fluid simulation revealing the hidden patterns of flow and turbulence; Navier-Stokes equations create organic swirling patterns that resemble ocean currents or atmospheric flow, rendered in electric cyan, warm coral, and golden amber on a deep navy background
+
+## chromatic_aberration
+
+- **Date**: 2026-04-28
+- **Theme**: optics, light, physics, chromatic aberration, dispersion, prismatic color
+- **Technique**: wavelength-dependent refraction indices, ray tracing through optical elements (convex lenses, prisms, concave lenses), additive blending, glow effects
+- **Description**: Chromatic aberration simulation using wavelength-dependent refraction indices; creates prismatic color separation through simulated optical elements with rainbow patterns, revealing the hidden spectrum within white light
+
 <!-- Add new works above this line using the format below:
 
 ## work_name

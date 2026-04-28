@@ -390,6 +390,13 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: multi-scale fBm spectral noise for gas density, narrowband emission palette (Hα/OIII/SII), protostar glow with core+halo, dust extinction, multi-scale bloom post-processing, HDR tone mapping
 - **Description**: A stellar nursery rendered from first-principles astrophotography: layered fractal gas clouds in hydrogen-alpha red, oxygen-III teal, and sulfur-II amber; embedded protostars illuminate the nebula from within; dust lanes carve dark silhouettes; film grain and vignette mimic a deep-sky telescope exposure
 
+## ikeda_attractor
+
+- **Date**: 2026-04-28
+- **Theme**: chaos theory, mathematics, strange attractor, phase space
+- **Technique**: Ikeda map discrete-time dynamical system, 50k trajectory points, iteration-based color gradient (cyan→magenta→white), point rendering with alpha blending
+- **Description**: A chaotic system spiraling through phase space; the Ikeda attractor generates complex organic trajectories from simple mathematical rules, rendered as a glowing spiral that transitions from electric cyan through warm magenta to bright white against a deep midnight blue background
+
 <!-- Add new works above this line using the format below:
 
 ## work_name

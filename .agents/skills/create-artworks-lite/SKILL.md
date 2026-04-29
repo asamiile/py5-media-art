@@ -53,7 +53,8 @@ Stop instead of continuing if any of these happen:
 - Do not use the full `create-artworks` workflow.
 - Do not carry creative state between works except by reading updated `WORKS.md` and `FEEDBACK.md`.
 - Do not perform more than one revision per work.
-- Prefer still images over MP4 unless motion is essential to the concept.
+- Do not read every historical work in detail; scan enough of `WORKS.md` and `FEEDBACK.md` to avoid obvious repetition.
+- Prefer a still image over MP4 unless the concept clearly requires motion.
 - Prefer existing helpers in `lib/`:
   - `lib.paths.sketch_dir`
   - `lib.sizes.get_sizes`
@@ -69,4 +70,45 @@ Stop instead of continuing if any of these happen:
 - The concept, technique, and palette must differ from recent works.
 - `preview.png` must be generated before review and commit.
 - `FEEDBACK.md` must receive at least one concise note for the new work.
+- If critique tooling or visual inspection is unavailable, use a fallback self-critique in the critic format and explicitly output `APPROVE` or `REVISE`.
 - The final report for each iteration must include an explicit `APPROVE` or `REVISE` verdict.
+
+## Recommended Still Image Skeleton
+
+```python
+from pathlib import Path
+import sys
+import py5
+
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.append(str(PROJECT_ROOT))
+
+from lib.paths import sketch_dir
+from lib.preview import maybe_save_exit_on_frame
+from lib.sizes import get_sizes
+
+SKETCH_DIR = sketch_dir(__file__)
+PREVIEW_FRAME = 60
+PREVIEW_SIZE, OUTPUT_SIZE, SIZE = get_sizes()
+
+
+def setup():
+    py5.size(*SIZE)
+    py5.background(0)
+
+
+def draw():
+    # drawing logic
+    maybe_save_exit_on_frame(PREVIEW_FRAME, SKETCH_DIR)
+
+
+py5.run_sketch()
+```
+
+## Rate Limit Rules
+
+- After each committed/pushed artwork, wait 60-90 seconds before starting the next iteration.
+- If `Provider API request failed` or an upstream API error occurs, wait 90-180 seconds and retry once.
+- If the retry fails, stop and report the last completed commit and current git status.
+- Keep progress reports concise to reduce extra provider calls.

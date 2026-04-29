@@ -1,14 +1,19 @@
 from pathlib import Path
+import sys
 import numpy as np
 from scipy.ndimage import gaussian_filter, map_coordinates
-from PIL import Image
 import py5
 
-SKETCH_DIR = Path(__file__).parent
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.append(str(PROJECT_ROOT))
 
-PREVIEW_SIZE = (1920, 1080)
-OUTPUT_SIZE  = (3840, 2160)
-SIZE = PREVIEW_SIZE
+from lib.preview import save_preview_pil
+from lib.sizes import get_sizes
+from lib.paths import sketch_dir
+SKETCH_DIR = sketch_dir(__file__)
+
+PREVIEW_SIZE, OUTPUT_SIZE, SIZE = get_sizes()
 
 RNG = np.random.default_rng()
 
@@ -184,7 +189,7 @@ def draw():
     result_u8 = (result.clip(0, 1) * 255).astype(np.uint8)
 
     # Save directly via PIL (avoids Retina np_pixels size mismatch)
-    Image.fromarray(result_u8, "RGB").save(str(SKETCH_DIR / "preview.png"))
+    save_preview_pil(result_u8, SKETCH_DIR, filename="preview.png", mode="RGB")
     py5.exit_sketch()
 
 

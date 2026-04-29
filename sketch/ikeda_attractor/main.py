@@ -1,13 +1,19 @@
 from pathlib import Path
+import sys
 import py5
 import numpy as np
 
-SKETCH_DIR = Path(__file__).parent
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.append(str(PROJECT_ROOT))
+
+from lib.preview import maybe_save_exit_on_frame
+from lib.sizes import get_sizes
+from lib.paths import sketch_dir
+SKETCH_DIR = sketch_dir(__file__)
 PREVIEW_FRAME = 1
 
-PREVIEW_SIZE = (1920, 1080)
-OUTPUT_SIZE  = (3840, 2160)
-SIZE = PREVIEW_SIZE
+PREVIEW_SIZE, OUTPUT_SIZE, SIZE = get_sizes()
 
 MAX_ITERATIONS = 50000  # Reduced for performance
 U = 0.9  # Ikeda parameter - controls chaos
@@ -79,8 +85,6 @@ def setup():
         py5.point(screen_x[i], screen_y[i])
 
 def draw():
-    if py5.frame_count == PREVIEW_FRAME:
-        py5.save_frame(str(SKETCH_DIR / "preview.png"))
-        py5.exit_sketch()
+    maybe_save_exit_on_frame(PREVIEW_FRAME, SKETCH_DIR, filename="preview.png")
 
 py5.run_sketch()

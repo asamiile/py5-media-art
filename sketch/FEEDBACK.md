@@ -302,3 +302,8 @@ Add any notes on color, density, theme, or mood in the Comment field.
 
 - **Rating**:
 - **Comment**:
+
+## coral_reef
+
+- **Rating**:
+- **Comment**: Varied color palette (deep navy, coral pink, seafoam teal, golden amber, soft lavender, bright turquoise) successfully creates visual interest. Five distinct coral morphologies provide good diversity. Underwater atmosphere (light rays, bubbles, depth gradient) adds convincing depth. Organic variation through randomization creates naturalistic feel. Consider more varied colony base positions to avoid clustering in future iterations. Light ray alpha variation could be more subtle for naturalistic diffusion. Bubble size distribution could follow exponential distribution for realism.

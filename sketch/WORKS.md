@@ -439,6 +439,13 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: Fraunhofer diffraction simulation using Fourier transform principles, 2D FFT for far-field diffraction patterns, multiple aperture types (circular, rectangular, double slit)
 - **Description**: Wave interference patterns revealed through Fraunhofer diffraction; concentric diffraction rings and interference fringes created by light passing through apertures, demonstrating the wave nature of light with mathematical precision
 
+## coral_reef
+
+- **Date**: 2026-04-29
+- **Theme**: marine biology, underwater ecosystems, organic growth, biodiversity
+- **Technique**: procedural coral generation with recursive branching, randomized parameters, depth-based layering, underwater lighting effects
+- **Description**: Five distinct coral morphologies (branching, plate, staghorn, brain, fan) grow organically across the sea floor; vibrant coral pink, seafoam teal, golden amber, soft lavender, and bright turquoise colonies rise from deep navy waters with atmospheric light rays and rising bubbles
+
 <!-- Add new works above this line using the format below:
 
 ## work_name

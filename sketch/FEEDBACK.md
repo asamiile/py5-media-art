@@ -307,3 +307,8 @@ Add any notes on color, density, theme, or mood in the Comment field.
 
 - **Rating**:
 - **Comment**: Varied color palette (deep navy, coral pink, seafoam teal, golden amber, soft lavender, bright turquoise) successfully creates visual interest. Five distinct coral morphologies provide good diversity. Underwater atmosphere (light rays, bubbles, depth gradient) adds convincing depth. Organic variation through randomization creates naturalistic feel. Consider more varied colony base positions to avoid clustering in future iterations. Light ray alpha variation could be more subtle for naturalistic diffusion. Bubble size distribution could follow exponential distribution for realism.
+
+## sound_waves
+
+- **Rating**:
+- **Comment**: Varied color palette (electric blue, warm magenta, bright cyan) creates good visual contrast. Multiple visualization types (horizontal waves, circular waves, spectrogram, frequency bars) provide complexity and depth. Harmonic overtones create realistic wave interference patterns. Spectrogram background could be more subtle to avoid overwhelming main waves. Circular waves could have more varied spacing for naturalistic appearance. Frequency bars could follow exponential decay distribution for realism.

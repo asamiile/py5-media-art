@@ -446,6 +446,13 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: procedural coral generation with recursive branching, randomized parameters, depth-based layering, underwater lighting effects
 - **Description**: Five distinct coral morphologies (branching, plate, staghorn, brain, fan) grow organically across the sea floor; vibrant coral pink, seafoam teal, golden amber, soft lavender, and bright turquoise colonies rise from deep navy waters with atmospheric light rays and rising bubbles
 
+## sound_waves
+
+- **Date**: 2026-04-29
+- **Theme**: acoustics, sound visualization, frequency patterns, audio waves
+- **Technique**: procedural waveform generation with frequency-based layering, amplitude modulation, harmonic overtones, spectrogram-style visualization
+- **Description**: Eight layered horizontal sound waves with harmonic overtones, twelve radiating circular wave patterns, and a spectrogram-style background create a complex audio visualization; electric blue, warm magenta, and bright cyan waves interfere against a deep charcoal field with frequency bars at the bottom
+
 <!-- Add new works above this line using the format below:
 
 ## work_name

@@ -1,11 +1,17 @@
 from pathlib import Path
+import sys
 import py5
 import numpy as np
 
-SKETCH_DIR = Path(__file__).parent
-PREVIEW_SIZE = (1920, 1080)
-OUTPUT_SIZE = (3840, 2160)
-SIZE = PREVIEW_SIZE
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.append(str(PROJECT_ROOT))
+
+from lib.preview import maybe_save_exit_on_frame
+from lib.sizes import get_sizes
+from lib.paths import sketch_dir
+SKETCH_DIR = sketch_dir(__file__)
+PREVIEW_SIZE, OUTPUT_SIZE, SIZE = get_sizes()
 PREVIEW_FRAME = 120
 
 class MyceliumTip:
@@ -119,8 +125,6 @@ def draw():
     tips = [t for t in tips if t.alive]
 
     # Exit and save at target frame
-    if py5.frame_count == PREVIEW_FRAME:
-        py5.save_frame(str(SKETCH_DIR / "preview.png"))
-        py5.exit_sketch()
+    maybe_save_exit_on_frame(PREVIEW_FRAME, SKETCH_DIR, filename="preview.png")
 
 py5.run_sketch()

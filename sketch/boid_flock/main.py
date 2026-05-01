@@ -1,17 +1,22 @@
 from pathlib import Path
-import subprocess
+import sys
 import numpy as np
 import py5
 
-SKETCH_DIR = Path(__file__).parent
-FRAMES_DIR = SKETCH_DIR / "frames"
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.append(str(PROJECT_ROOT))
+
+from lib.animation import frames_dir, render_video_and_preview, save_animation_frame
+from lib.sizes import get_sizes
+from lib.paths import sketch_dir
+SKETCH_DIR = sketch_dir(__file__)
+FRAMES_DIR = frames_dir(SKETCH_DIR)
 DURATION_SEC = 8
 FPS = 60
 TOTAL_FRAMES = DURATION_SEC * FPS  # 480
 
-PREVIEW_SIZE = (1920, 1080)
-OUTPUT_SIZE = (3840, 2160)
-SIZE = PREVIEW_SIZE
+PREVIEW_SIZE, OUTPUT_SIZE, SIZE = get_sizes()
 W, H = SIZE
 
 N = 300         # number of boids
@@ -138,18 +143,17 @@ def draw():
             py5.stroke(int(rs[i]), int(gs[i]), int(bs[i]), alpha)
             py5.line(float(p0[i, 0]), float(p0[i, 1]), float(p1[i, 0]), float(p1[i, 1]))
 
-    py5.save_frame(str(FRAMES_DIR / "frame-####.png"))
+    save_animation_frame(FRAMES_DIR)
 
     if py5.frame_count >= TOTAL_FRAMES:
         py5.exit_sketch()
-        subprocess.run([
-            "ffmpeg", "-y", "-r", str(FPS),
-            "-i", str(FRAMES_DIR / "frame-%04d.png"),
-            "-vcodec", "libx264", "-pix_fmt", "yuv420p",
-            str(SKETCH_DIR / "output.mp4"),
-        ], check=True)
-        mid = str(FRAMES_DIR / f"frame-{TOTAL_FRAMES // 2:04d}.png")
-        subprocess.run(["cp", mid, str(SKETCH_DIR / "preview.png")], check=True)
+        render_video_and_preview(
+            SKETCH_DIR,
+            FRAMES_DIR,
+            fps=FPS,
+            total_frames=TOTAL_FRAMES,
+            preview_frame=TOTAL_FRAMES // 2,
+        )
 
 
 py5.run_sketch()

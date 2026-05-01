@@ -1,12 +1,18 @@
 from pathlib import Path
+import sys
 import numpy as np
 import py5
 
-SKETCH_DIR = Path(__file__).parent
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.append(str(PROJECT_ROOT))
 
-PREVIEW_SIZE = (1920, 1080)
-OUTPUT_SIZE  = (3840, 2160)
-SIZE = PREVIEW_SIZE
+from lib.preview import exit_after_preview_py5
+from lib.sizes import get_sizes
+from lib.paths import sketch_dir
+SKETCH_DIR = sketch_dir(__file__)
+
+PREVIEW_SIZE, OUTPUT_SIZE, SIZE = get_sizes()
 
 RNG = np.random.default_rng()
 
@@ -143,8 +149,7 @@ def draw():
                 py5.circle(px, py_, base_r * 1.5)
 
     # ── Save ─────────────────────────────────────────────────────────────────
-    py5.save_frame(str(SKETCH_DIR / "preview.png"))
-    py5.exit_sketch()
+    exit_after_preview_py5(SKETCH_DIR, filename="preview.png")
 
 
 py5.run_sketch()

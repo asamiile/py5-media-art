@@ -33,6 +33,13 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: Wolfram Rule 90 elementary cellular automaton, single-cell seed, generation-depth HSV gradient
 - **Description**: Rule 90 evolved 540 generations from one center cell produces the Sierpinski triangle; amber-to-violet gradient encodes computational time as color
 
+## cellular_automata
+
+- **Date**: 2026-04-29
+- **Theme**: computation, emergence, probabilistic systems, organic growth
+- **Technique**: Probabilistic cellular automaton with density-based coloring, age-based color transitions, multiple seed clusters
+- **Description**: 12 random seed clusters evolve through 180 generations using probabilistic survival/birth rules; magenta→teal→purple age gradient with golden density highlights creates organic cellular patterns against deep midnight
+
 ## modulo_circles
 
 - **Date**: 2026-04-25
@@ -424,6 +431,27 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Theme**: optics, light, physics, chromatic aberration, dispersion, prismatic color
 - **Technique**: wavelength-dependent refraction indices, ray tracing through optical elements (convex lenses, prisms, concave lenses), additive blending, glow effects
 - **Description**: Chromatic aberration simulation using wavelength-dependent refraction indices; creates prismatic color separation through simulated optical elements with rainbow patterns, revealing the hidden spectrum within white light
+
+## diffraction_pattern
+
+- **Date**: 2026-04-29
+- **Theme**: optics, wave physics, interference, diffraction, mathematical precision
+- **Technique**: Fraunhofer diffraction simulation using Fourier transform principles, 2D FFT for far-field diffraction patterns, multiple aperture types (circular, rectangular, double slit)
+- **Description**: Wave interference patterns revealed through Fraunhofer diffraction; concentric diffraction rings and interference fringes created by light passing through apertures, demonstrating the wave nature of light with mathematical precision
+
+## coral_reef
+
+- **Date**: 2026-04-29
+- **Theme**: marine biology, underwater ecosystems, organic growth, biodiversity
+- **Technique**: procedural coral generation with recursive branching, randomized parameters, depth-based layering, underwater lighting effects
+- **Description**: Five distinct coral morphologies (branching, plate, staghorn, brain, fan) grow organically across the sea floor; vibrant coral pink, seafoam teal, golden amber, soft lavender, and bright turquoise colonies rise from deep navy waters with atmospheric light rays and rising bubbles
+
+## sound_waves
+
+- **Date**: 2026-04-29
+- **Theme**: acoustics, sound visualization, frequency patterns, audio waves
+- **Technique**: procedural waveform generation with frequency-based layering, amplitude modulation, harmonic overtones, spectrogram-style visualization
+- **Description**: Eight layered horizontal sound waves with harmonic overtones, twelve radiating circular wave patterns, and a spectrogram-style background create a complex audio visualization; electric blue, warm magenta, and bright cyan waves interfere against a deep charcoal field with frequency bars at the bottom
 
 <!-- Add new works above this line using the format below:
 

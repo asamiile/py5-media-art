@@ -467,6 +467,13 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: recursive grid subdivision, Manhattan random walk, particle trails, additive blending
 - **Description**: A pulsating digital metropolis where data packets navigate a hierarchical network of glowing circuits in cyber lime, electric blue, and hot pink
 
+## quantum_foam
+
+- **Date**: 2026-05-02
+- **Theme**: cosmos, physics, quantum mechanics, energy
+- **Technique**: dynamic Voronoi tessellation, noise-driven seeds, energy bursts, additive blending
+- **Description**: The frantic, chaotic bubbling of spacetime at the Planck scale, rendered as a flickering froth of ultraviolet and magenta energy flashes
+
 <!-- Add new works above this line using the format below:
 
 ## work_name

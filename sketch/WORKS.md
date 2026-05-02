@@ -565,12 +565,25 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: L-system branching, recursive geometric subdivision, multi-layered depth, architectural rendering
 - **Description**: A dense, golden architectural forest growing across an obsidian void, where fractal L-system branches transition into intricate, Mondrian-style subdivision tiles
 
+## liquid_crystal
+
+- **Date**: 2026-05-02
+- **Theme**: physics, microscopic, iridescence, soft matter
+- **Technique**: Schlieren texture simulation, director field noise, iridescent mapping, polarized light physics
+- **Description**: Shimmering iridescent patterns of a liquid crystal thin film under a cross-polarized microscope, featuring dynamic Schlieren textures and topological defects
+
+## ca_reef
+
+- **Date**: 2026-05-02
+- **Theme**: cellular automata, biology, self-organization, coral
+- **Technique**: multi-state CA, organic polyp rendering, noise-based jitter, atmospheric depth pass
+- **Description**: A vibrant, living grid of coral polyps in coral pink and seafoam green, emerging from a calcified rocky base and shimmering underwater atmosphere
+
+## ethereal_echoes
+
+- **Date**: 2026-05-03
+- **Theme**: physics, resonance, invisible fields, light, abstraction
+- **Technique**: Interferometry simulation via multi-source wave interference, non-linear field mapping for sharp fringes, prismatic color interpolation, vectorized NumPy rendering
+- **Description**: A visualization of intersecting wave fields that produce complex, glowing interference patterns with sharp, prismatic "echo" lines.
+
 <!-- Add new works above this line using the format below:
-
-## work_name
-
-- **Date**: YYYY-MM-DD
-- **Theme**: (e.g. fluid, geometry, nature)
-- **Technique**: (e.g. particle system, recursion, noise)
-- **Description**: One-line summary in English
--->

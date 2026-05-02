@@ -586,4 +586,13 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: Interferometry simulation via multi-source wave interference, non-linear field mapping for sharp fringes, prismatic color interpolation, vectorized NumPy rendering
 - **Description**: A visualization of intersecting wave fields that produce complex, glowing interference patterns with sharp, prismatic "echo" lines.
 
+
+## radiolarian_pulse
+
+- **Date**: 2026-05-03
+- **Theme**: marine biology, geometry, deep sea, organic pulse
+- **Technique**: icosphere subdivision, spherical inversion, 3D Perlin noise, layered SCREEN blending, particle glow
+- **Description**: A bioluminescent microscopic skeleton pulses and inverts through its own center; bone-white and electric-cyan geometric threads form an intricate lattice surrounded by drifting gold marine snow against a deep abyss.
+
 <!-- Add new works above this line using the format below:
+

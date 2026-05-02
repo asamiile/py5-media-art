@@ -11,7 +11,9 @@ The Artist reads this file before starting a new sketch to understand preference
 
 Add any notes on color, density, theme, or mood in the Comment field.
 
+
 ---
+
 
 ## lissajous_web
 
@@ -396,4 +398,14 @@ Add any notes on color, density, theme, or mood in the Comment field.
 ## geometric_growth
 
 - **Rating**:
+- **Comment**: 
+
+## ethereal_echoes
+
+- **Rating**: 
+- **Comment**: 
+
+## radiolarian_pulse
+
+- **Rating**: 
 - **Comment**: 

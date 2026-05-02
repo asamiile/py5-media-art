@@ -509,6 +509,13 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: stochastic branching growth, multi-scale action potential glow, additive blending, organic cell simulation
 - **Description**: A glowing biological network of neural connections with flickering electrical pulses in gold, cyan, and violet racing between irregular cell bodies
 
+## crystallized_time
+
+- **Date**: 2026-05-02
+- **Theme**: time, crystals, geometry, fragility
+- **Technique**: recursive subdivision, prismatic diffraction, SCREEN blending, geometric clipping
+- **Description**: A luminous, shattered field of crystalline shards in ice blue and prism violet, with rainbow diffraction on the edges and brilliant prismatic flares
+
 <!-- Add new works above this line using the format below:
 
 ## work_name

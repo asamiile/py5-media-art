@@ -5,7 +5,7 @@ import py5
 
 SKETCH_DIR = Path(__file__).parent
 FRAMES_DIR = SKETCH_DIR / "frames"
-DURATION_SEC = 2
+DURATION_SEC = 6
 FPS = 60
 TOTAL_FRAMES = DURATION_SEC * FPS
 

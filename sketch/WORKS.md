@@ -530,6 +530,13 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: text-based particle system, vortex vector fields, chromatic aberration, glitch shifts
 - **Description**: A swirling vortex of multilingual characters that transitions from emerald chaos to a structured, glowing white grid with digital display distortion
 
+## orbital_mechanics
+
+- **Date**: 2026-05-02
+- **Theme**: astronomy, gravity, orbits, cosmic dance
+- **Technique**: RK4 N-body simulation, velocity-based line thickness, long-exposure trail accumulation
+- **Description**: A complex, glowing map of hundreds of satellite orbits in gold and seafoam dancing around a multi-planet system with subtle rings and atmospheric halos
+
 <!-- Add new works above this line using the format below:
 
 ## work_name

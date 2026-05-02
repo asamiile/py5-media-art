@@ -460,6 +460,13 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: agent-based Physarum simulation, trail map diffusion, vectorized NumPy physics
 - **Description**: 100k autonomous agents simulate the foraging behavior of a slime mold, self-organizing into an organic transport network with bioluminescent indigo, teal, and gold trails against a deep obsidian void
 
+## cyber_circuits
+
+- **Date**: 2026-05-02
+- **Theme**: urban, machine, cybernetics, digital metaphor
+- **Technique**: recursive grid subdivision, Manhattan random walk, particle trails, additive blending
+- **Description**: A pulsating digital metropolis where data packets navigate a hierarchical network of glowing circuits in cyber lime, electric blue, and hot pink
+
 <!-- Add new works above this line using the format below:
 
 ## work_name

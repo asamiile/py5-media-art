@@ -502,6 +502,13 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: recursive stratification, horizontal displacement mapping, block corruption, scanline synthesis
 - **Description**: A vertical cross-section of corrupted digital memory, rendered as high-contrast neon strata with horizontal tearing and geometric data blocks
 
+## neural_synapse
+
+- **Date**: 2026-05-02
+- **Theme**: neuroscience, connectivity, biological computation, signals
+- **Technique**: stochastic branching growth, multi-scale action potential glow, additive blending, organic cell simulation
+- **Description**: A glowing biological network of neural connections with flickering electrical pulses in gold, cyan, and violet racing between irregular cell bodies
+
 <!-- Add new works above this line using the format below:
 
 ## work_name

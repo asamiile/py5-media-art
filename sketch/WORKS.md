@@ -516,6 +516,13 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: recursive subdivision, prismatic diffraction, SCREEN blending, geometric clipping
 - **Description**: A luminous, shattered field of crystalline shards in ice blue and prism violet, with rainbow diffraction on the edges and brilliant prismatic flares
 
+## fluid_mosaic
+
+- **Date**: 2026-05-02
+- **Theme**: molecular biology, cell membrane, fluidity, life
+- **Technique**: fluid simulation, noise-driven velocity fields, dual-scale particle systems, multi-layer trail accumulation
+- **Description**: A shimmering microscopic landscape where vibrant coral and amber protein complexes drift through a fluid sea of teal phospholipids and wispy extracellular fibers
+
 <!-- Add new works above this line using the format below:
 
 ## work_name

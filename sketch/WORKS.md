@@ -481,6 +481,13 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: Bezier curves, polar symmetry, particle system, additive blending
 - **Description**: Exotic bioluminescent flowers swaying in a deep-space garden, unfurling glowing violet petals as golden pollen drifts through the void
 
+## chromatic_drift
+
+- **Date**: 2026-05-02
+- **Theme**: synesthesia, optics, memory, pure abstraction
+- **Technique**: multi-channel particle system, noise flow field, SCREEN blending, long exposure
+- **Description**: The ethereal separation of light into its constituent R, G, B channels as it drifts through a hazy, prismatic void
+
 ## metamorphic_flow
 
 - **Date**: 2026-05-02

@@ -523,6 +523,13 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: fluid simulation, noise-driven velocity fields, dual-scale particle systems, multi-layer trail accumulation
 - **Description**: A shimmering microscopic landscape where vibrant coral and amber protein complexes drift through a fluid sea of teal phospholipids and wispy extracellular fibers
 
+## kinetic_typography
+
+- **Date**: 2026-05-02
+- **Theme**: language, communication, digital flow, data
+- **Technique**: text-based particle system, vortex vector fields, chromatic aberration, glitch shifts
+- **Description**: A swirling vortex of multilingual characters that transitions from emerald chaos to a structured, glowing white grid with digital display distortion
+
 <!-- Add new works above this line using the format below:
 
 ## work_name

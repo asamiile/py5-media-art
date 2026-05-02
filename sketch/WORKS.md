@@ -602,6 +602,15 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: recursive ray-casting, 15-channel spectral decomposition, additive blending, star-polygon mirror maze
 - **Description**: A complex web of light fractured into its constituent rainbow colors through 20 levels of reflection within a geometric star-shaped mirror maze; high-brilliance spectral fringes against a deep navy void.
 
+
+## superfluid_tangle
+
+- **Date**: 2026-05-03
+- **Theme**: physics, fluid dynamics, quantum turbulence
+- **Technique**: 2D Biot-Savart point-vortex simulation, 3000-particle flow field, HSB velocity mapping, additive trail synthesis
+- **Description**: A dense, glowing web of electric cyan and violet filaments swirling around ten hidden vortex cores; a visualization of frictionless quantum turbulence with long, liquid-like trails against a dark navy void.
+
 <!-- Add new works above this line using the format below:
+
 
 

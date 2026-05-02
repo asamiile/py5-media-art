@@ -474,6 +474,13 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: dynamic Voronoi tessellation, noise-driven seeds, energy bursts, additive blending
 - **Description**: The frantic, chaotic bubbling of spacetime at the Planck scale, rendered as a flickering froth of ultraviolet and magenta energy flashes
 
+## luminescent_bloom
+
+- **Date**: 2026-05-02
+- **Theme**: nature, botanical, space, magic
+- **Technique**: Bezier curves, polar symmetry, particle system, additive blending
+- **Description**: Exotic bioluminescent flowers swaying in a deep-space garden, unfurling glowing violet petals as golden pollen drifts through the void
+
 <!-- Add new works above this line using the format below:
 
 ## work_name

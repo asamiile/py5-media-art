@@ -453,6 +453,13 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: procedural waveform generation with frequency-based layering, amplitude modulation, harmonic overtones, spectrogram-style visualization
 - **Description**: Eight layered horizontal sound waves with harmonic overtones, twelve radiating circular wave patterns, and a spectrogram-style background create a complex audio visualization; electric blue, warm magenta, and bright cyan waves interfere against a deep charcoal field with frequency bars at the bottom
 
+## slime_intelligence
+
+- **Date**: 2026-05-02
+- **Theme**: nature, biology, emergent intelligence, biological networks
+- **Technique**: agent-based Physarum simulation, trail map diffusion, vectorized NumPy physics
+- **Description**: 100k autonomous agents simulate the foraging behavior of a slime mold, self-organizing into an organic transport network with bioluminescent indigo, teal, and gold trails against a deep obsidian void
+
 <!-- Add new works above this line using the format below:
 
 ## work_name

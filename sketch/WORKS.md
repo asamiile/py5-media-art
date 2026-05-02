@@ -594,5 +594,14 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: icosphere subdivision, spherical inversion, 3D Perlin noise, layered SCREEN blending, particle glow
 - **Description**: A bioluminescent microscopic skeleton pulses and inverts through its own center; bone-white and electric-cyan geometric threads form an intricate lattice surrounded by drifting gold marine snow against a deep abyss.
 
+
+## prismatic_reflection
+
+- **Date**: 2026-05-03
+- **Theme**: optics, geometry, physics, spectral dispersion
+- **Technique**: recursive ray-casting, 15-channel spectral decomposition, additive blending, star-polygon mirror maze
+- **Description**: A complex web of light fractured into its constituent rainbow colors through 20 levels of reflection within a geometric star-shaped mirror maze; high-brilliance spectral fringes against a deep navy void.
+
 <!-- Add new works above this line using the format below:
+
 

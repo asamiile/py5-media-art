@@ -11,8 +11,8 @@ The Artist reads this file before starting a new sketch to understand preference
 
 Add any notes on color, density, theme, or mood in the Comment field.
 
-
 ---
+
 
 
 ## lissajous_web
@@ -406,6 +406,11 @@ Add any notes on color, density, theme, or mood in the Comment field.
 - **Comment**: 
 
 ## radiolarian_pulse
+
+- **Rating**: 
+- **Comment**: 
+
+## prismatic_reflection
 
 - **Rating**: 
 - **Comment**: 

@@ -537,6 +537,13 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: RK4 N-body simulation, velocity-based line thickness, long-exposure trail accumulation
 - **Description**: A complex, glowing map of hundreds of satellite orbits in gold and seafoam dancing around a multi-planet system with subtle rings and atmospheric halos
 
+## tectonic_drift
+
+- **Date**: 2026-05-02
+- **Theme**: geology, plate tectonics, planetary evolution, crustal movement
+- **Technique**: Voronoi tessellation, boundary vector analysis, fractal noise mountains, magmatic rift synthesis
+- **Description**: A planetary-scale map of shifting crustal plates, featuring voluminous basalt mountain ranges at collision zones and glowing orange magma rifts in divergent valleys
+
 <!-- Add new works above this line using the format below:
 
 ## work_name

@@ -64,8 +64,8 @@ def setup():
     py5.size(*SIZE)
     global agents
     agents = []
-    # 10,000 agents per channel for stability
-    n_per_channel = 10000
+    # 5,000 agents per channel for stability
+    n_per_channel = 5000
     for c_idx in range(len(CHANNELS)):
         for _ in range(n_per_channel):
             agents.append(DriftAgent(py5.width, py5.height, c_idx))
@@ -76,7 +76,8 @@ def setup():
     py5.stroke_weight(1.0)
 
 def draw():
-    # Slower fade for more accumulation
+    if py5.frame_count % 30 == 0:
+        print(f"Frame {py5.frame_count} / {TOTAL_FRAMES}")
     py5.no_stroke()
     py5.fill(*CLR_BG, 3) 
     py5.rect(0, 0, py5.width, py5.height)

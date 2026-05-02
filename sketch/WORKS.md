@@ -495,6 +495,13 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: magnetic dipole streamline integration, particle systems, additive blending, cosmic noise background
 - **Description**: High-energy plasma ribbons of cyan and violet being deflected and channeled by a planetary magnetic field against a star-dusted void
 
+## glitch_strata
+
+- **Date**: 2026-05-02
+- **Theme**: digital decay, data corruption, archaeology, glitch art
+- **Technique**: recursive stratification, horizontal displacement mapping, block corruption, scanline synthesis
+- **Description**: A vertical cross-section of corrupted digital memory, rendered as high-contrast neon strata with horizontal tearing and geometric data blocks
+
 <!-- Add new works above this line using the format below:
 
 ## work_name

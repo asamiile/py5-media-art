@@ -551,6 +551,13 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: radial noise shapes, internal glow organs, curling tentacle simulation, organic plankton clustering
 - **Description**: A stunning view into the midnight zone of the ocean, featuring glowing jellyfish-like creatures in magenta and cyan surrounded by a dense cloud of bioluminescent plankton and falling marine snow
 
+## geometric_growth
+
+- **Date**: 2026-05-02
+- **Theme**: mathematics, recursion, L-systems, architecture
+- **Technique**: L-system branching, recursive geometric subdivision, multi-layered depth, architectural rendering
+- **Description**: A dense, golden architectural forest growing across an obsidian void, where fractal L-system branches transition into intricate, Mondrian-style subdivision tiles
+
 <!-- Add new works above this line using the format below:
 
 ## work_name

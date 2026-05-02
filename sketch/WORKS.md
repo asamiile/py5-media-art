@@ -481,6 +481,13 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: Bezier curves, polar symmetry, particle system, additive blending
 - **Description**: Exotic bioluminescent flowers swaying in a deep-space garden, unfurling glowing violet petals as golden pollen drifts through the void
 
+## metamorphic_flow
+
+- **Date**: 2026-05-02
+- **Theme**: geology, metamorphic rock, deep time, pressure
+- **Technique**: domain-warped fractal noise, mineral vein thresholding, stone grain synthesis, vectorized NumPy
+- **Description**: Organic, compressed geological strata resembling polished agate, rendered through domain-warped noise with obsidian, sienna, and gold mineral tones
+
 <!-- Add new works above this line using the format below:
 
 ## work_name

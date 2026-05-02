@@ -544,6 +544,13 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: Voronoi tessellation, boundary vector analysis, fractal noise mountains, magmatic rift synthesis
 - **Description**: A planetary-scale map of shifting crustal plates, featuring voluminous basalt mountain ranges at collision zones and glowing orange magma rifts in divergent valleys
 
+## bioluminescent_deep
+
+- **Date**: 2026-05-02
+- **Theme**: marine biology, deep sea, bioluminescence, organic form
+- **Technique**: radial noise shapes, internal glow organs, curling tentacle simulation, organic plankton clustering
+- **Description**: A stunning view into the midnight zone of the ocean, featuring glowing jellyfish-like creatures in magenta and cyan surrounded by a dense cloud of bioluminescent plankton and falling marine snow
+
 <!-- Add new works above this line using the format below:
 
 ## work_name

@@ -640,6 +640,13 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: Kuramoto model simulation, coherence-based edge rendering, phase-mapped pulsing, additive SCREEN blending
 - **Description**: 200 coupled oscillators self-organize from chaos into a rhythmic collective heartbeat; electric cyan and deep magenta connections emerge as neighbors synchronize their internal phases, forming a breathing web of light against deep charcoal.
 
+## prismatic_architecture
+
+- **Date**: 2026-05-03
+- **Theme**: architecture, crystals, iridescence, geometry, modularity
+- **Technique**: recursive isometric cube subdivision, thin-film interference color mapping, additive SCREEN blending, stochastic growth
+- **Description**: A futuristic metropolis of shimmering crystalline structures; iridescent teal, rose, and gold faces refract light across a recursive geometric landscape, creating intense luminosity where structures converge against an obsidian sky.
+
 <!-- Add new works above this line using the format below:
 
 

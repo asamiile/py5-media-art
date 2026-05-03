@@ -22,8 +22,8 @@ PREVIEW_SIZE, OUTPUT_SIZE, SIZE = get_sizes()
 CX = SIZE[0] // 2
 CY = SIZE[1] // 2
 
-# Theme: "Clockwork orrery" — single mechanism, brass aesthetic
-# One chain: trail gold→dark brown; circles dark bronze; arms dark brass; rivets at joints
+# Theme: "Iridescent Cosmos" — spectral harmonics and celestial orbits
+# Vibrant multi-color trail with a shifting iridescent palette
 EPICYCLES = [
     ( 1,  360,  0.00),
     (-2,  190,  0.31),
@@ -43,12 +43,19 @@ EPICYCLES = [
 ]
 
 # Colors
-BG_COL      = (7,   8,  14)     # #07080e near-black
-RING_COL    = (42,  32,  16)    # #2a2010 very dark bronze
-ARM_COL     = (138, 106, 48)    # #8a6a30 dark brass
-RIVET_COL   = (162, 128,  60)   # slightly brighter brass for joints
-GOLD_NEW    = np.array([232, 200, 112])  # #e8c870 recent trail
-GOLD_OLD    = np.array([ 58,  48,  32])  # #3a3020 old trail → background
+BG_COL      = (5,   5,  12)     # #05050c deep space black
+RING_COL    = (30,  30,  60)    # #1e1e3c dark nebula blue
+ARM_COL     = (60,  60, 120)    # #3c3c78 muted cosmic blue
+RIVET_COL   = (100, 100, 200)   # #6464c8 faint star light
+
+# Iridescent Palette for the trail
+PALETTE = [
+    np.array([120, 40, 200]),  # Deep Purple
+    np.array([40, 100, 255]),  # Electric Blue
+    np.array([0, 255, 220]),   # Cyan/Teal
+    np.array([255, 50, 150]),  # Hot Magenta
+    np.array([255, 220, 50]),  # Solar Gold
+]
 
 trail = deque(maxlen=TOTAL_FRAMES)
 
@@ -95,29 +102,46 @@ def draw():
     # Update trail
     trail.append((x0, y0))
 
-    # Draw trail — gold (recent) → dark brown (old)
+    # Draw trail — Iridescent Spectrum
     pts = list(trail)
     n = len(pts)
     if n >= 2:
-        # age 0 = oldest → GOLD_OLD; age 1 = newest → GOLD_NEW
+        # age 0 = oldest; age 1 = newest
         ages = np.linspace(0.0, 1.0, n, dtype=np.float32)
-        rs = (GOLD_OLD[0] * (1 - ages) + GOLD_NEW[0] * ages).astype(int)
-        gs = (GOLD_OLD[1] * (1 - ages) + GOLD_NEW[1] * ages).astype(int)
-        bs = (GOLD_OLD[2] * (1 - ages) + GOLD_NEW[2] * ages).astype(int)
-        alphas = (40 + ages * 215).astype(int)
+
+        # Multi-stop interpolation for the trail colors
+        trail_colors = np.zeros((n, 3), dtype=np.int32)
+        num_stops = len(PALETTE)
+        for i in range(num_stops - 1):
+            mask = (ages >= i / (num_stops - 1)) & (ages <= (i + 1) / (num_stops - 1))
+            if not np.any(mask):
+                continue
+            t_local = (ages[mask] - i / (num_stops - 1)) * (num_stops - 1)
+            c0 = PALETTE[i]
+            c1 = PALETTE[i+1]
+            trail_colors[mask] = (c0[None, :] * (1 - t_local[:, None]) + c1[None, :] * t_local[:, None]).astype(int)
+
+        alphas = (30 + ages * 225).astype(int)
 
         py5.no_fill()
-        py5.stroke_weight(2.2)
         for i in range(1, n):
-            py5.stroke(rs[i], gs[i], bs[i], alphas[i])
+            # Glow effect
+            py5.stroke(trail_colors[i][0], trail_colors[i][1], trail_colors[i][2], alphas[i] // 4)
+            py5.stroke_weight(7.0)
             py5.line(pts[i-1][0], pts[i-1][1], pts[i][0], pts[i][1])
 
-    # Gold tip dot
+            # Core trail
+            py5.stroke(trail_colors[i][0], trail_colors[i][1], trail_colors[i][2], alphas[i])
+            py5.stroke_weight(2.4)
+            py5.line(pts[i-1][0], pts[i-1][1], pts[i][0], pts[i][1])
+
+    # Tip dot - matches the latest color in the palette
+    tip_col = PALETTE[-1]
     py5.no_stroke()
-    py5.fill(*GOLD_NEW, 255)
+    py5.fill(*tip_col, 255)
     py5.ellipse(x0, y0, 9.0, 9.0)
-    py5.fill(*GOLD_NEW, 60)
-    py5.ellipse(x0, y0, 24.0, 24.0)
+    py5.fill(*tip_col, 60)
+    py5.ellipse(x0, y0, 28.0, 28.0)
 
     save_animation_frame(FRAMES_DIR)
 
@@ -129,6 +153,7 @@ def draw():
             fps=FPS,
             total_frames=TOTAL_FRAMES,
             preview_frame=TOTAL_FRAMES,
+            preview_filename="preview_p1.png",
         )
 
 

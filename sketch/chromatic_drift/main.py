@@ -5,7 +5,7 @@ import py5
 
 SKETCH_DIR = Path(__file__).parent
 FRAMES_DIR = SKETCH_DIR / "frames"
-DURATION_SEC = 6
+DURATION_SEC = 10
 FPS = 60
 TOTAL_FRAMES = DURATION_SEC * FPS
 
@@ -102,20 +102,39 @@ def draw():
     py5.save_frame(str(FRAMES_DIR / "frame-####.png"))
 
     if py5.frame_count >= TOTAL_FRAMES:
+        print("Reached TOTAL_FRAMES. Exiting sketch and rendering video...")
         py5.exit_sketch()
-        print("Rendering video...")
-        subprocess.run([
-            "ffmpeg", "-y", "-r", str(FPS),
-            "-i", str(FRAMES_DIR / "frame-%04d.png"),
-            "-vcodec", "libx264", "-pix_fmt", "yuv420p",
-            "-crf", "18",
-            str(SKETCH_DIR / "output.mp4")
-        ], check=True)
-        # Capture a frame where the prismatic effect is well-developed
-        mid_frame = int(TOTAL_FRAMES * 0.8)
-        mid_path = str(FRAMES_DIR / f"frame-{mid_frame:04d}.png")
-        subprocess.run(["cp", mid_path, str(SKETCH_DIR / "preview.png")], check=True)
-        print("Done.")
+        try:
+            cmd = [
+                "ffmpeg", "-y", "-r", str(FPS),
+                "-i", str(FRAMES_DIR / "frame-%04d.png"),
+                "-vcodec", "libx264", "-pix_fmt", "yuv420p",
+                "-crf", "18",
+                str(SKETCH_DIR / "output.mp4")
+            ]
+            print(f"Running command: {' '.join(cmd)}")
+            result = subprocess.run(cmd, capture_output=True, text=True)
+            if result.returncode != 0:
+                print(f"FFmpeg failed with return code {result.returncode}")
+                print(f"FFmpeg stderr: {result.stderr}")
+            else:
+                print("FFmpeg finished successfully.")
+                
+                # Capture a frame where the prismatic effect is well-developed
+                mid_frame = int(TOTAL_FRAMES * 0.8)
+                mid_path = FRAMES_DIR / f"frame-{mid_frame:04d}.png"
+                if mid_path.exists():
+                    import shutil
+                    shutil.copy(str(mid_path), str(SKETCH_DIR / "preview.png"))
+                    print(f"Preview image updated: {SKETCH_DIR / 'preview.png'}")
+                
+                # Cleanup frames directory to save space as requested
+                import shutil
+                shutil.rmtree(FRAMES_DIR)
+                print(f"Temporary frames directory deleted: {FRAMES_DIR}")
+        except Exception as e:
+            print(f"Error during video export: {e}")
+        print("Export process finished.")
 
 if __name__ == "__main__":
     py5.run_sketch()

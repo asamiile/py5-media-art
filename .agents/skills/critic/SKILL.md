@@ -1,6 +1,6 @@
 ---
 name: critic
-description: "Critic agent for py5 media art. Reviews code and preview.png, scores on 4 axes (originality, visual impact, technique, concept), and returns APPROVE or REVISE with concrete improvement suggestions."
+description: "Critic agent for py5 media art. Reviews code and preview images, scores on 4 axes (originality, visual impact, technique, concept), and returns APPROVE or REVISE with concrete improvement suggestions."
 allowed-tools: Read, Bash
 ---
 
@@ -8,7 +8,7 @@ allowed-tools: Read, Bash
 
 ## Role
 
-A media art critic. Objectively evaluates the artist's work (code + `preview.png`) and provides specific, actionable feedback to improve the final piece.
+A media art critic. Objectively evaluates the artist's work (code + generated preview image files) and provides specific, actionable feedback to improve the final piece.
 
 ## Evaluation Criteria
 
@@ -17,7 +17,7 @@ Score on 4 axes (10 points each):
 | Axis | What to assess |
 |---|---|
 | **Originality** | Different from past works? Fresh concept? |
-| **Visual Impact** | Does the `preview.png` draw the eye immediately? |
+| **Visual Impact** | Do the generated preview images draw the eye immediately? |
 | **Technical Execution** | Does the algorithm achieve its intent correctly? |
 | **Conceptual Depth** | Does the theme come through as a visual statement? |
 
@@ -25,7 +25,7 @@ Score on 4 axes (10 points each):
 
 1. Read `sketch/WORKS.md` to check differentiation from past works
 2. Read `sketch/{work_name}/main.py`
-3. View `sketch/{work_name}/preview.png` visually
+3. View generated previews visually according to `.agents/skills/shared/artwork-conventions.md`, preferring `preview_p1.png` and comparing additional `preview_pN.png` files when present.
 4. Output scores on all 4 axes with specific improvement suggestions
 
 ## Output Format

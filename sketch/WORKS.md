@@ -5,6 +5,111 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 
 ---
 
+## route_arbitration
+
+- **Date**: 2026-05-03
+- **Theme**: autonomous negotiation, shared floor, routing pressure, operational intelligence
+- **Technique**: Obstacle-field generation, grid shortest-path routing, conflict heat accumulation, reservation tick glyphs
+- **Description**: A dark warehouse-like routing map shows steel-blue and green paths threading around matte blockers while amber conflict nodes and white priority markers reveal where autonomous decisions compete for the same floor.
+
+## braid_phase
+
+- **Date**: 2026-05-03
+- **Theme**: separate histories, crossing paths, layered memory, mathematical weaving
+- **Technique**: Phase-driven strand paths, over-under depth masking, contour-lit strokes, low-contrast phase-field background
+- **Description**: Teal, violet, and muted-copper strands cross through a dark interference field in layered over-under rhythms; pale edge highlights mark the moments where one history rises above another.
+
+## redaction_current
+
+- **Date**: 2026-05-03
+- **Theme**: censorship, suppressed communication, signal leakage, modern abstraction
+- **Technique**: Redaction block field, sinusoidal signal leakage, wake accumulation around barriers, ghost baseline synthesis
+- **Description**: A document-like dark field is crossed by hard black redaction bars while cyan currents, magenta edge residue, and muted amber wakes leak around the blocks, suggesting a suppressed message that still carries charge.
+
+## impact_palimpest
+
+- **Date**: 2026-05-03
+- **Theme**: repeated collision, regolith memory, natural surface abstraction
+- **Technique**: Crater heightfield synthesis, asymmetric rim lighting, ballistic ejecta rays, slope-based relief shading
+- **Description**: A dark regolith-like surface is overwritten by overlapping impact bowls, muted copper ejecta rays, cold shadowed basins, and pale worn rims; the image reads as an abstract record of repeated collisions.
+
+## pulsar_cartogram
+
+- **Date**: 2026-05-03
+- **Theme**: time signals, deep-space navigation, astronomical instrument record
+- **Technique**: Polar pulsar placement, pulse train encoding, barycentric timing arcs, sparse chart grid synthesis
+- **Description**: A near-black astronomical cartogram turns rhythmic pulse arrivals into coordinates; cyan tick trains radiate from a central reference while amber timing arcs, rose halos, and faint chart lanes cross the quiet sky.
+
+## lenticular_night
+
+- **Date**: 2026-05-03
+- **Theme**: optical surface, hidden images, nocturnal perception, angle-shifted memory
+- **Technique**: Phase-shifted lenticular stripe masks, warped layer fields, crisp separator bands, sparse glint synthesis
+- **Description**: A dark optical field flickers with cyan, muted rose, and pale-gold fragments revealed through precise slanted seams; multiple hidden layers misregister into a dense full-canvas lenticular surface.
+
+## avalanche_ledger
+
+- **Date**: 2026-05-03
+- **Theme**: arithmetic avalanche, computational sediment, collapse record
+- **Technique**: Abelian sandpile relaxation, residue-state coloring, logarithmic topple heat layer, nearest-neighbor crisp upscaling
+- **Description**: A full-canvas computational avalanche leaves a sharp ledger of teal, mauve, ochre, and pale residues; dense central collapse patterns expand outward into blocky fractal boundaries and audit-like hatching.
+
+## jacobian_drift
+
+- **Date**: 2026-05-03
+- **Theme**: invisible pressure, coordinate weather, mathematical deformation
+- **Technique**: Nonlinear coordinate warp, finite-difference Jacobian analysis, warped coordinate families, tensor ellipse glyph rendering
+- **Description**: A dark indigo coordinate field bends under hidden Gaussian pressure centers; silver-blue warped traces and coral tensor ellipses reveal local stretch, compression, and rotation across the full canvas.
+
+## crease_memory
+
+- **Date**: 2026-05-03
+- **Theme**: folded memory, stored pressure, geometric material abstraction
+- **Technique**: Signed crease distance fields, procedural origami heightfield, normal-based relief shading, ridge stress highlighting
+- **Description**: A dark folded surface fills the canvas with graphite planes, teal incisions, mauve shadows, and copper-white stress ridges; every luminous crease reads as a stored pressure mark in a synthetic material sheet.
+
+## eigenveil
+
+- **Date**: 2026-05-03
+- **Theme**: hidden order, woven abstraction, spectral pressure, quiet machinery
+- **Technique**: Weighted graph Laplacian eigenmodes, bilinear field expansion, quantized contour threading, gradient-based stress accents
+- **Description**: A dark full-canvas veil of teal and violet contour threads reveals hidden mathematical pressure beneath the surface; restrained amber points flicker along steep spectral bends without exposing the underlying graph directly.
+
+## signal_fossil
+
+- **Date**: 2026-05-03
+- **Theme**: digital archaeology, damaged broadcast, memory, modern abstraction
+- **Technique**: Gabor-like wave packet synthesis, contour quantization, packet dropout masking, additive multi-hue glow
+- **Description**: A damaged future signal appears as a luminous fossil excavated from a near-black technological substrate; cyan contour shards, amber stress edges, violet missing-data shadows, and vertical recovery ticks form a full-canvas abstract relic of compressed light.
+
+## kinetic_mandala
+
+- **Date**: 2026-05-03
+- **Theme**: sacred geometry, rhythm, symmetry, meditation, kinetic art
+- **Technique**: 16-fold rotational symmetry, counter-rotating nested rings, high-density line moiré, additive blending, pulsing scale oscillations
+- **Description**: A complex, golden "digital mandala" that breathes and rotates with hypnotic precision; thousands of fine lines in stellar gold and amber overlap to create intricate moiré patterns and glowing energy points in a dark charcoal void.
+
+## neon_gasket
+
+- **Date**: 2026-05-03
+- **Theme**: fractal urbanism, cyberpunk, geometry, infinite detail
+- **Technique**: Apollonian Gasket (Descartes' Circle Theorem), isometric projection, curvature-based height mapping, neon hexagonal prisms
+- **Description**: A dense, fractal metropolis reimagined from the Apollonian Gasket; 800 glowing hexagonal buildings in electric blue, laser pink, and cyber lime are projected isometrically, with tiny needle-like towers pulsing at extreme heights around massive central hubs.
+
+## soft_membranes
+
+- **Date**: 2026-05-03
+- **Theme**: organic flow, translucency, bioluminescence, deep sea
+- **Technique**: Stacked domain-warped noise layers, alpha accumulation, additive blending, dynamic ribbon geometry
+- **Description**: 24 translucent, bioluminescent membranes drift through a dark indigo void; layered noise-driven ribbons in seafoam, rose, and amethyst overlap to create complex prismatic interference and luminous depth, accompanied by drifting marine snow particles.
+
+## urban_pulse
+
+- **Date**: 2026-05-03
+- **Theme**: urbanism, connectivity, kinetic energy, modern city, data flow
+- **Technique**: Recursive grid subdivision, Manhattan-distance flow field, pulse-modulated particle brightness, architectural window grid synthesis
+- **Description**: A top-down "satellite" view of a glowing digital city; 40,000 particles surge through a Manhattan-grid street network in neon cyan and magenta, while flickering window grids in dark blocks create a dense architectural texture synchronized to a global "pulse" heartbeat.
+
 ## lissajous_web
 
 - **Date**: 2026-04-25
@@ -119,10 +224,10 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 
 ## fourier_epicycles
 
-- **Date**: 2026-04-25
-- **Theme**: mathematics, Fourier analysis, animation
-- **Technique**: Fourier epicycles (15 nested rotating circles), 6-chain simultaneous trace, age-based rainbow trail coloring
-- **Description**: Six simultaneous epicycle tips trace one complex closed Fourier-series curve in rainbow colors; the 6-chain offset reveals the complete shape from the first frame and builds into a dense glowing rainbow curve
+- **Date**: 2026-05-03 (Polished)
+- **Theme**: mathematics, Fourier analysis, Iridescent Cosmos, spectral harmonics
+- **Technique**: Fourier epicycles (15 nested rotating circles), single-chain trace, multi-stop iridescent color gradient, enhanced glow effects
+- **Description**: A complex chain of 15 rotating epicycles traces a vibrant, iridescent path across a deep space background; the multi-stop spectral gradient and enhanced glow transform the mechanical trace into a rhythmic, celestial light display.
 
 ## shell_spiral
 
@@ -565,12 +670,86 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: L-system branching, recursive geometric subdivision, multi-layered depth, architectural rendering
 - **Description**: A dense, golden architectural forest growing across an obsidian void, where fractal L-system branches transition into intricate, Mondrian-style subdivision tiles
 
+## liquid_crystal
+
+- **Date**: 2026-05-02
+- **Theme**: physics, microscopic, iridescence, soft matter
+- **Technique**: Schlieren texture simulation, director field noise, iridescent mapping, polarized light physics
+- **Description**: Shimmering iridescent patterns of a liquid crystal thin film under a cross-polarized microscope, featuring dynamic Schlieren textures and topological defects
+
+## ca_reef
+
+- **Date**: 2026-05-02
+- **Theme**: cellular automata, biology, self-organization, coral
+- **Technique**: multi-state CA, organic polyp rendering, noise-based jitter, atmospheric depth pass
+- **Description**: A vibrant, living grid of coral polyps in coral pink and seafoam green, emerging from a calcified rocky base and shimmering underwater atmosphere
+
+## ethereal_echoes
+
+- **Date**: 2026-05-03
+- **Theme**: physics, resonance, invisible fields, light, abstraction
+- **Technique**: Interferometry simulation via multi-source wave interference, non-linear field mapping for sharp fringes, prismatic color interpolation, vectorized NumPy rendering
+- **Description**: A visualization of intersecting wave fields that produce complex, glowing interference patterns with sharp, prismatic "echo" lines.
+
+
+## radiolarian_pulse
+
+- **Date**: 2026-05-03
+- **Theme**: marine biology, geometry, deep sea, organic pulse
+- **Technique**: icosphere subdivision, spherical inversion, 3D Perlin noise, layered SCREEN blending, particle glow
+- **Description**: A bioluminescent microscopic skeleton pulses and inverts through its own center; bone-white and electric-cyan geometric threads form an intricate lattice surrounded by drifting gold marine snow against a deep abyss.
+
+
+## prismatic_reflection
+
+- **Date**: 2026-05-03
+- **Theme**: optics, geometry, physics, spectral dispersion
+- **Technique**: recursive ray-casting, 15-channel spectral decomposition, additive blending, star-polygon mirror maze
+- **Description**: A complex web of light fractured into its constituent rainbow colors through 20 levels of reflection within a geometric star-shaped mirror maze; high-brilliance spectral fringes against a deep navy void.
+
+
+## superfluid_tangle
+
+- **Date**: 2026-05-03
+- **Theme**: physics, fluid dynamics, quantum turbulence
+- **Technique**: 2D Biot-Savart point-vortex simulation, 3000-particle flow field, HSB velocity mapping, additive trail synthesis
+- **Description**: A dense, glowing web of electric cyan and violet filaments swirling around ten hidden vortex cores; a visualization of frictionless quantum turbulence with long, liquid-like trails against a dark navy void.
+
+
+## tectonic_tension
+
+- **Date**: 2026-05-03
+- **Theme**: geology, physics, tectonics, volcanic energy
+- **Technique**: Voronoi-based plate simulation, ridge stress analysis, multi-layered additive glow, kinetic magma particles
+- **Description**: A visceral visualization of shifting geological plates; dark basalt slabs drift and collide, releasing intense orange magma glow and sparkling ejecta at the boundaries against a hazy, volcanic atmosphere.
+
+
+## neural_synapse
+
+- **Date**: 2026-05-03
+- **Theme**: biology, networks, intelligence, electricity
+- **Technique**: Stochastic graph-based signal propagation, 3D perspective projection, branching activation cascades, additive bloom trails
+- **Description**: A complex, glowing web of bioluminescent nodes firing electric magenta and cyan signals; pulses cascade through a rotating 3D network, creating a shimmering, interconnected mind against a deep indigo void.
+
+## spectral_mirage
+
+- **Date**: 2026-05-03
+- **Theme**: optics, atmosphere, prismatic light, ice crystals
+- **Technique**: noise-guided ray-casting, spectral dispersion (wavelength-dependent refraction), structured beam clustering, multi-pass glow rendering
+- **Description**: A cold, shimmering veil of light Fractured into prismatic filaments as it passes through a simulated ice-density field; electric blue and prism violet fringes emerge from structured beams against a deep midnight navy void.
+
+## spectral_synchrony
+
+- **Date**: 2026-05-03
+- **Theme**: mathematics, synchronization, emergence, networks, resonance
+- **Technique**: Kuramoto model simulation, coherence-based edge rendering, phase-mapped pulsing, additive SCREEN blending
+- **Description**: 200 coupled oscillators self-organize from chaos into a rhythmic collective heartbeat; electric cyan and deep magenta connections emerge as neighbors synchronize their internal phases, forming a breathing web of light against deep charcoal.
+
+## prismatic_architecture
+
+- **Date**: 2026-05-03
+- **Theme**: architecture, crystals, iridescence, geometry, modularity
+- **Technique**: recursive isometric cube subdivision, thin-film interference color mapping, additive SCREEN blending, stochastic growth
+- **Description**: A futuristic metropolis of shimmering crystalline structures; iridescent teal, rose, and gold faces refract light across a recursive geometric landscape, creating intense luminosity where structures converge against an obsidian sky.
+
 <!-- Add new works above this line using the format below:
-
-## work_name
-
-- **Date**: YYYY-MM-DD
-- **Theme**: (e.g. fluid, geometry, nature)
-- **Technique**: (e.g. particle system, recursion, noise)
-- **Description**: One-line summary in English
--->

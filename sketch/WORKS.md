@@ -5,6 +5,13 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 
 ---
 
+## signal_fossil
+
+- **Date**: 2026-05-03
+- **Theme**: digital archaeology, damaged broadcast, memory, modern abstraction
+- **Technique**: Gabor-like wave packet synthesis, contour quantization, packet dropout masking, additive multi-hue glow
+- **Description**: A damaged future signal appears as a luminous fossil excavated from a near-black technological substrate; cyan contour shards, amber stress edges, violet missing-data shadows, and vertical recovery ticks form a full-canvas abstract relic of compressed light.
+
 ## kinetic_mandala
 
 - **Date**: 2026-05-03
@@ -676,7 +683,6 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Description**: A futuristic metropolis of shimmering crystalline structures; iridescent teal, rose, and gold faces refract light across a recursive geometric landscape, creating intense luminosity where structures converge against an obsidian sky.
 
 <!-- Add new works above this line using the format below:
-
 
 
 

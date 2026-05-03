@@ -14,6 +14,10 @@ Add any notes on color, density, theme, or mood in the Comment field.
 ---
 
 
+## signal_fossil
+
+- **Rating**: 
+- **Comment**: Critic approved at 33/40. Strong modern abstract direction with full-canvas dark field, multi-hue glow, and sharp signal-contour structure. Future improvement: reduce or vary the tallest vertical recovery ticks if they compete too strongly with the central fossil-like wave field.
 
 ## lissajous_web
 

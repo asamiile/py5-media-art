@@ -5,6 +5,13 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 
 ---
 
+## impact_palimpest
+
+- **Date**: 2026-05-03
+- **Theme**: repeated collision, regolith memory, natural surface abstraction
+- **Technique**: Crater heightfield synthesis, asymmetric rim lighting, ballistic ejecta rays, slope-based relief shading
+- **Description**: A dark regolith-like surface is overwritten by overlapping impact bowls, muted copper ejecta rays, cold shadowed basins, and pale worn rims; the image reads as an abstract record of repeated collisions.
+
 ## pulsar_cartogram
 
 - **Date**: 2026-05-03

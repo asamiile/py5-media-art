@@ -14,6 +14,11 @@ Add any notes on color, density, theme, or mood in the Comment field.
 ---
 
 
+## impact_palimpest
+
+- **Rating**: 
+- **Comment**: First critic pass was 28/40 because the image read as graphic rings over rays rather than physically shaded crater relief. Two revisions reduced rim dominance, deepened bowl shadows, and added regolith texture; final approved at 30/40 due to revision limit. Future crater/natural-surface work should make terrain relief primary from the start and avoid translucent circle outlines.
+
 ## pulsar_cartogram
 
 - **Rating**: 

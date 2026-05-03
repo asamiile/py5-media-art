@@ -12,11 +12,11 @@ Each iteration must produce one complete, independent artwork and commit/push it
 
 ## Workflow
 
-1. Read only the essential parts of `CLAUDE.md`, `sketch/WORKS.md`, and `sketch/FEEDBACK.md`.
+1. Read only the essential parts of `CLAUDE.md`, `.agents/skills/shared/artwork-conventions.md`, `.agents/skills/shared/py5-templates.md`, `sketch/WORKS.md`, and `.agents/FEEDBACK.md`.
 2. Create or reuse branch `feature/works-YYYYMMDD`.
 3. Loop until externally interrupted:
    1. Check `git status --short`. Stop if unrelated pending changes would make a clean commit unsafe.
-   2. Re-read or rescan `sketch/WORKS.md` and `sketch/FEEDBACK.md` enough to avoid repetition.
+   2. Re-read or rescan `sketch/WORKS.md` and `.agents/FEEDBACK.md` enough to avoid repetition.
    3. Produce a short inline creative brief:
       - work name
       - one-sentence theme
@@ -24,14 +24,14 @@ Each iteration must produce one complete, independent artwork and commit/push it
       - 3-5 color palette
       - how it differs from recent works
    4. Implement `sketch/{work_name}/main.py` and `README.md`.
-   5. Run `uv run python sketch/{work_name}/main.py` and ensure `sketch/{work_name}/preview.png` exists.
+   5. Run `uv run python sketch/{work_name}/main.py` and ensure `sketch/{work_name}/preview_p1.png` exists.
    6. Perform one concise self-critique in the same format as `.agents/skills/critic/SKILL.md`.
-   7. If the verdict is `REVISE`, apply at most one revision and regenerate `preview.png`; the second review should approve unless there is a hard failure.
-   8. Update both `sketch/WORKS.md` and `sketch/FEEDBACK.md`.
+   7. If the verdict is `REVISE`, apply at most one revision and regenerate pattern-specific previews; the second review should approve unless there is a hard failure.
+   8. Update both `sketch/WORKS.md` and `.agents/FEEDBACK.md`.
    9. Stage only intended files:
       - `sketch/{work_name}/`
       - `sketch/WORKS.md`
-      - `sketch/FEEDBACK.md`
+      - `.agents/FEEDBACK.md`
    10. Commit and push.
    11. Report the completed work name, score/verdict, changed files, and commit hash.
    12. Immediately start the next iteration.
@@ -42,7 +42,7 @@ Stop instead of continuing if any of these happen:
 
 - unrelated pending changes are present
 - a unique work name cannot be chosen confidently
-- `preview.png` cannot be generated
+- `preview_p1.png` cannot be generated
 - the sketch fails after one repair attempt
 - commit or push fails after one repair attempt
 - the user interrupts the run
@@ -51,10 +51,11 @@ Stop instead of continuing if any of these happen:
 
 - Do not invoke separate Planner, Artist, or Critic agents.
 - Do not use the full `create-artworks` workflow.
-- Do not carry creative state between works except by reading updated `WORKS.md` and `FEEDBACK.md`.
+- Do not carry creative state between works except by reading updated `sketch/WORKS.md` and `.agents/FEEDBACK.md`.
 - Do not perform more than one revision per work.
-- Do not read every historical work in detail; scan enough of `WORKS.md` and `FEEDBACK.md` to avoid obvious repetition.
+- Do not read every historical work in detail; scan enough of `sketch/WORKS.md` and `.agents/FEEDBACK.md` to avoid obvious repetition.
 - Prefer a still image over MP4 unless the concept clearly requires motion.
+- Follow `.agents/skills/shared/artwork-conventions.md` for work names, preview names, and staging.
 - Prefer existing helpers in `lib/`:
   - `lib.paths.sketch_dir`
   - `lib.sizes.get_sizes`
@@ -68,43 +69,14 @@ Stop instead of continuing if any of these happen:
 
 - The work must be visually intentional, not a default demo.
 - The concept, technique, and palette must differ from recent works.
-- `preview.png` must be generated before review and commit.
-- `FEEDBACK.md` must receive at least one concise note for the new work.
+- `preview_p1.png` must be generated before review and commit.
+- `.agents/FEEDBACK.md` must receive at least one concise note for the new work.
 - If critique tooling or visual inspection is unavailable, use a fallback self-critique in the critic format and explicitly output `APPROVE` or `REVISE`.
 - The final report for each iteration must include an explicit `APPROVE` or `REVISE` verdict.
 
-## Recommended Still Image Skeleton
+## Recommended Templates
 
-```python
-from pathlib import Path
-import sys
-import py5
-
-PROJECT_ROOT = Path(__file__).resolve().parents[2]
-if str(PROJECT_ROOT) not in sys.path:
-    sys.path.append(str(PROJECT_ROOT))
-
-from lib.paths import sketch_dir
-from lib.preview import maybe_save_exit_on_frame
-from lib.sizes import get_sizes
-
-SKETCH_DIR = sketch_dir(__file__)
-PREVIEW_FRAME = 60
-PREVIEW_SIZE, OUTPUT_SIZE, SIZE = get_sizes()
-
-
-def setup():
-    py5.size(*SIZE)
-    py5.background(0)
-
-
-def draw():
-    # drawing logic
-    maybe_save_exit_on_frame(PREVIEW_FRAME, SKETCH_DIR)
-
-
-py5.run_sketch()
-```
+Use `.agents/skills/shared/py5-templates.md`.
 
 ## Rate Limit Rules
 

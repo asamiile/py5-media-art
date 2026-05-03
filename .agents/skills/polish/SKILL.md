@@ -1,6 +1,6 @@
 ---
 name: polish
-description: "Autonomously polish and refine existing artwork based on user feedback. Selects improvement target from FEEDBACK.md, generates enhancement plan, and implements updated version."
+description: "Autonomously polish and refine existing artwork based on user feedback. Selects improvement target from .agents/FEEDBACK.md, generates enhancement plan, and implements updated version."
 allowed-tools: Bash, Read, Write, Edit
 ---
 
@@ -10,15 +10,18 @@ Autonomously polishes an existing py5 media art sketch by analyzing feedback, se
 
 ## Workflow
 
-1. **Parse FEEDBACK.md**
+1. **Read Shared Conventions**
+   - Read `.agents/skills/shared/artwork-conventions.md` before editing preview files
+
+2. **Parse `.agents/FEEDBACK.md`**
    - Read all work entries with ratings and comments
    - Calculate improvement priority (blank/NG with comment → OK with comment)
    
-2. **Select Polish Target**
+3. **Select Polish Target**
    - Choose the highest-priority work needing improvement
    - Criteria: Rating blank or NG with actionable Comment, OR OK with feature requests
    
-3. **Analyze Comment & Generate Plan**
+4. **Analyze Comment & Generate Plan**
    - Extract improvement direction from Comment text
    - Categories:
      - Color/Pattern: "see other colors", "monotonous color", "see other patterns"
@@ -28,23 +31,23 @@ Autonomously polishes an existing py5 media art sketch by analyzing feedback, se
      - Realism: "reproduce natural phenomena"
    - Generate specific implementation directives
    
-4. **Implement Enhancement**
+5. **Implement Enhancement**
    - Read existing `sketch/{work_name}/main.py`
    - Modify code to address Comment directives
    - Keep the core algorithm, adjust parameters/colors/density
-   - Save existing `preview.png` as `preview_v{n}.png` (version tracking)
+   - Save the existing preview as a versioned snapshot before editing, following `.agents/skills/shared/artwork-conventions.md`; legacy `preview.png` may use `preview_v{n}.png`
    
-5. **Preview & Verify**
+6. **Preview & Verify**
    - Run: `uv run python sketch/{work_name}/main.py`
-   - Generates new `preview.png`
+   - Generate the updated pattern-specific preview
    - Verify visual improvement matches intent
    
-6. **Update Documentation**
+7. **Update Documentation**
    - Edit `sketch/{work_name}/README.md` with enhancement notes
-   - Update `FEEDBACK.md` with new `preview_v{n}.png` reference and revised Comment
+   - Update `.agents/FEEDBACK.md` with the new versioned preview reference and revised Comment
    
-7. **Commit**
-   - Stage changes: main.py, preview.png, preview_v{n}.png, README.md, FEEDBACK.md
+8. **Commit**
+   - Stage changes: main.py, preview image files, versioned preview snapshots, README.md, `.agents/FEEDBACK.md`
    - Commit: "polish: {work_name} — {improvement_summary}"
 
 ## Selection Priority
@@ -67,7 +70,7 @@ For next improvement target, prioritize in this order:
 
 ## Notes
 
-- Work names use snake_case
+- Follow `.agents/skills/shared/artwork-conventions.md`
 - Entry point filename is always `main.py`
 - Preview resolution: 1920×1080 (change `SIZE` in script for output 3840×2160)
 - Preserve git history by creating separate commit (not amending)

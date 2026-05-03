@@ -5,6 +5,13 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 
 ---
 
+## pulsar_cartogram
+
+- **Date**: 2026-05-03
+- **Theme**: time signals, deep-space navigation, astronomical instrument record
+- **Technique**: Polar pulsar placement, pulse train encoding, barycentric timing arcs, sparse chart grid synthesis
+- **Description**: A near-black astronomical cartogram turns rhythmic pulse arrivals into coordinates; cyan tick trains radiate from a central reference while amber timing arcs, rose halos, and faint chart lanes cross the quiet sky.
+
 ## lenticular_night
 
 - **Date**: 2026-05-03

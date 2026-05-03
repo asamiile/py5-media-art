@@ -14,6 +14,11 @@ Add any notes on color, density, theme, or mood in the Comment field.
 ---
 
 
+## pulsar_cartogram
+
+- **Rating**: 
+- **Comment**: First critic pass was 29/40 because the signal structure was too concentrated near the center. Revision expanded source placement, increased pulse density, and added faint timing lanes; approved at 32/40. Future improvement: keep the instrument-chart restraint while adding more off-center structure.
+
 ## lenticular_night
 
 - **Rating**: 

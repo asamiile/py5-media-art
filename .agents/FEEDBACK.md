@@ -48,7 +48,7 @@ Add any notes on color, density, theme, or mood in the Comment field.
 ## domain_warp
 
 - **Rating**:
-- **Comment**:
+- **Comment**: I'd like to see other color patterns as well.
 
 ## lsystem_tree
 
@@ -82,13 +82,13 @@ Add any notes on color, density, theme, or mood in the Comment field.
 
 ## newton_fractal
 
-- **Rating**:
-- **Comment**:
+- **Rating**: 
+- **Comment**: 
 
 ## boid_flock
 
-- **Rating**:
-- **Comment**:
+- **Rating**: OK.
+- **Comment**: I'd like to see other patterns.
 
 ## fourier_epicycles
 
@@ -98,27 +98,27 @@ Add any notes on color, density, theme, or mood in the Comment field.
 ## shell_spiral
 
 - **Rating**:
-- **Comment**:
+- **Comment**: I'd like to see other patterns.
 
 ## chladni_figures
 
 - **Rating**:
-- **Comment**:
+- **Comment**: I'd like to see other patterns.
 
 ## sphere_world
 
 - **Rating**:
-- **Comment**:
+- **Comment**: I'd like to see more abstract patterns.
 
 ## phyllotaxis
 
 - **Rating**:
-- **Comment**:
+- **Comment**: I'd like to see other patterns.
 
 ## magnetic_field
 
 - **Rating**:
-- **Comment**:
+- **Comment**: I'd like to see other colors.
 
 ## lorenz_attractor
 
@@ -128,12 +128,12 @@ Add any notes on color, density, theme, or mood in the Comment field.
 ## dla_lightning
 
 - **Rating**:
-- **Comment**:
+- **Comment**: I'd like to see other color and patterns.
 
 ## aurora_borealis
 
-- **Rating**:
-- **Comment**:
+- **Rating**: OK.
+- **Comment**: I want it to be drawn across the entire canvas.
 
 ## reaction_diffusion
 
@@ -142,28 +142,28 @@ Add any notes on color, density, theme, or mood in the Comment field.
 
 ## sand_dunes
 
-- **Rating**:
+- **Rating**: OK.
 - **Comment**:
 
 ## woven_fabric
 
-- **Rating**:
-- **Comment**:
+- **Rating**: OK.
+- **Comment**: I'd like to see other colors.
 
 ## rossler_attractor
 
-- **Rating**:
-- **Comment**:
+- **Rating**: OK.
+- **Comment**: I'd like to see other patterns.
 
 ## hilbert_curve
 
-- **Rating**:
-- **Comment**:
+- **Rating**: OK.
+- **Comment**: It would be good if the patterns didn't overlap.
 
 ## snowflake_crystal
 
-- **Rating**:
-- **Comment**:
+- **Rating**: OK.
+- **Comment**: I'd like to see other patterns.
 
 ## kaleidoscope
 
@@ -173,17 +173,17 @@ Add any notes on color, density, theme, or mood in the Comment field.
 ## moire_pattern
 
 - **Rating**:
-- **Comment**:
+- **Comment**: I'd like to see more dark color.
 
 ## particle_life
 
 - **Rating**:
-- **Comment**:
+- **Comment**: I'd like to see more abstract patterns.
 
 ## harmonograph
 
-- **Rating**:
-- **Comment**:
+- **Rating**: OK.
+- **Comment**: I'd like to see other colors and patterns.
 
 ## mandelbrot_set
 
@@ -193,12 +193,12 @@ Add any notes on color, density, theme, or mood in the Comment field.
 ## barnsley_fern
 
 - **Rating**:
-- **Comment**:
+- **Comment**: I'd like to see more colors.
 
 ## dragon_curve
 
-- **Rating**:
-- **Comment**:
+- **Rating**: OK.
+- **Comment**: I'd like to see other patterns.
 
 ## penrose_tiling
 
@@ -208,7 +208,7 @@ Add any notes on color, density, theme, or mood in the Comment field.
 ## apollonian_gasket
 
 - **Rating**:
-- **Comment**:
+- **Comment**:　I want to add a modern city feel.
 
 ## smoke_rings
 
@@ -217,23 +217,23 @@ Add any notes on color, density, theme, or mood in the Comment field.
 
 ## spirograph
 
-- **Rating**:
-- **Comment**:
+- **Rating**: OK.
+- **Comment**: I'd like to see other patterns.
 
 ## halftone_waves
 
-- **Rating**:
-- **Comment**:
+- **Rating**: OK.
+- **Comment**: I'd like to see other colors.
 
 ## ink_diffusion
 
 - **Rating**:
-- **Comment**:
+- **Comment**: I'd like to see more abstract patterns.
 
 ## crystal_growth
 
-- **Rating**:
-- **Comment**:
+- **Rating**: preview is OK.
+- **Comment**: I'd like to see other colors.
 
 ## tidal_erosion
 
@@ -247,18 +247,18 @@ Add any notes on color, density, theme, or mood in the Comment field.
 
 ## water_caustics
 
-- **Rating**:
-- **Comment**:
+- **Rating**: OK.
+- **Comment**: I'd love to see another work with this kind of atmosphere..
 
 ## soap_film
 
 - **Rating**:
-- **Comment**:
+- **Comment**: I'd like to see other colors.
 
 ## spider_web
 
 - **Rating**:
-- **Comment**:
+- **Comment**: I'd like to seemore abstract patterns.
 
 ## city_rain
 
@@ -267,18 +267,18 @@ Add any notes on color, density, theme, or mood in the Comment field.
 
 ## paper_marbling
 
-- **Rating**:
-- **Comment**:
+- **Rating**: OK.
+- **Comment**: I'd like to see other colors and patterns.
 
 ## crystal_lattice
 
-- **Rating**:
+- **Rating**: OK.
 - **Comment**:
 
 ## magnetic_pendulum
 
-- **Rating**:
-- **Comment**:
+- **Rating**: OK.
+- **Comment**: I'd like to see other patterns.
 
 ## mycelium_network
 
@@ -292,13 +292,13 @@ Add any notes on color, density, theme, or mood in the Comment field.
 
 ## stellar_nursery
 
-- **Rating**:
-- **Comment**:
+- **Rating**: OK.
+- **Comment**: It would be good to focus a bit more on capturing a beatiful night sky.
 
 ## chromatic_aberration
 
 - **Rating**:
-- **Comment**:
+- **Comment**: I'd like to see other patterns.
 
 ## diffraction_pattern
 
@@ -323,7 +323,7 @@ Add any notes on color, density, theme, or mood in the Comment field.
 ## cyber_circuits
 
 - **Rating**:
-- **Comment**: 
+- **Comment**: I want to see works that have a modern twist.
 
 ## quantum_foam
 
@@ -337,7 +337,7 @@ Add any notes on color, density, theme, or mood in the Comment field.
 
 ## chromatic_drift
 
-- **Rating**:
+- **Rating**: OK.
 - **Comment**: 
 
 ## liquid_crystal
@@ -358,7 +358,7 @@ Add any notes on color, density, theme, or mood in the Comment field.
 ## glitch_strata
 
 - **Rating**:
-- **Comment**: 
+- **Comment**: I'd like to see other color.
 
 ## neural_synapse
 
@@ -367,17 +367,17 @@ Add any notes on color, density, theme, or mood in the Comment field.
 
 ## crystallized_time
 
-- **Rating**:
+- **Rating**: OK.
 - **Comment**: 
 
 ## fluid_mosaic
 
-- **Rating**:
+- **Rating**: OK.
 - **Comment**: 
 
 ## kinetic_typography
 
-- **Rating**:
+- **Rating**: OK.
 - **Comment**: 
 
 ## orbital_mechanics
@@ -403,18 +403,18 @@ Add any notes on color, density, theme, or mood in the Comment field.
 ## ethereal_echoes
 
 - **Rating**: 
-- **Comment**: 
+- **Comment**: Please add a previe image.
 
 ## radiolarian_pulse
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## prismatic_reflection
 
-
 - **Rating**: 
 - **Comment**: 
+
 ## superfluid_tangle
 
 - **Rating**: 

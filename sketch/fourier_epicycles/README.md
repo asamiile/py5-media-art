@@ -1,5 +1,5 @@
-# Fourier Epicycles
+# Fourier Epicycles (Iridescent Cosmos)
 
-![preview](preview.png)
+![preview](preview_p1.png)
 
-Fifteen nested rotating circles (epicycles) drive six simultaneous tips tracing one complex closed curve; each chain is offset by a sixth of the period so the shape fills in from six directions at once. Rainbow trails — blue through teal, magenta, orange, lime, and gold — accumulate over 360 frames to reveal the Fourier series as geometry in motion.
+A complex chain of 15 rotating epicycles traces a vibrant, iridescent path across a deep space background. This "spectral harmonics" theme replaces the previous brass aesthetic with a multi-stop color gradient (purple, blue, teal, magenta, gold) and enhanced glow effects, transforming a mechanical physics demonstration into a rhythmic, celestial light display.

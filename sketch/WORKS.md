@@ -119,10 +119,10 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 
 ## fourier_epicycles
 
-- **Date**: 2026-04-25
-- **Theme**: mathematics, Fourier analysis, animation
-- **Technique**: Fourier epicycles (15 nested rotating circles), 6-chain simultaneous trace, age-based rainbow trail coloring
-- **Description**: Six simultaneous epicycle tips trace one complex closed Fourier-series curve in rainbow colors; the 6-chain offset reveals the complete shape from the first frame and builds into a dense glowing rainbow curve
+- **Date**: 2026-05-03 (Polished)
+- **Theme**: mathematics, Fourier analysis, Iridescent Cosmos, spectral harmonics
+- **Technique**: Fourier epicycles (15 nested rotating circles), single-chain trace, multi-stop iridescent color gradient, enhanced glow effects
+- **Description**: A complex chain of 15 rotating epicycles traces a vibrant, iridescent path across a deep space background; the multi-stop spectral gradient and enhanced glow transform the mechanical trace into a rhythmic, celestial light display.
 
 ## shell_spiral
 

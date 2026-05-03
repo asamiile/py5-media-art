@@ -5,6 +5,13 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 
 ---
 
+## kinetic_mandala
+
+- **Date**: 2026-05-03
+- **Theme**: sacred geometry, rhythm, symmetry, meditation, kinetic art
+- **Technique**: 16-fold rotational symmetry, counter-rotating nested rings, high-density line moiré, additive blending, pulsing scale oscillations
+- **Description**: A complex, golden "digital mandala" that breathes and rotates with hypnotic precision; thousands of fine lines in stellar gold and amber overlap to create intricate moiré patterns and glowing energy points in a dark charcoal void.
+
 ## neon_gasket
 
 - **Date**: 2026-05-03

@@ -5,6 +5,13 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 
 ---
 
+## urban_pulse
+
+- **Date**: 2026-05-03
+- **Theme**: urbanism, connectivity, kinetic energy, modern city, data flow
+- **Technique**: Recursive grid subdivision, Manhattan-distance flow field, pulse-modulated particle brightness, architectural window grid synthesis
+- **Description**: A top-down "satellite" view of a glowing digital city; 40,000 particles surge through a Manhattan-grid street network in neon cyan and magenta, while flickering window grids in dark blocks create a dense architectural texture synchronized to a global "pulse" heartbeat.
+
 ## lissajous_web
 
 - **Date**: 2026-04-25

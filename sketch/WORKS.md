@@ -5,6 +5,13 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 
 ---
 
+## avalanche_ledger
+
+- **Date**: 2026-05-03
+- **Theme**: arithmetic avalanche, computational sediment, collapse record
+- **Technique**: Abelian sandpile relaxation, residue-state coloring, logarithmic topple heat layer, nearest-neighbor crisp upscaling
+- **Description**: A full-canvas computational avalanche leaves a sharp ledger of teal, mauve, ochre, and pale residues; dense central collapse patterns expand outward into blocky fractal boundaries and audit-like hatching.
+
 ## jacobian_drift
 
 - **Date**: 2026-05-03
@@ -704,4 +711,3 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Description**: A futuristic metropolis of shimmering crystalline structures; iridescent teal, rose, and gold faces refract light across a recursive geometric landscape, creating intense luminosity where structures converge against an obsidian sky.
 
 <!-- Add new works above this line using the format below:
-

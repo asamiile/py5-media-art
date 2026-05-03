@@ -5,6 +5,13 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 
 ---
 
+## eigenveil
+
+- **Date**: 2026-05-03
+- **Theme**: hidden order, woven abstraction, spectral pressure, quiet machinery
+- **Technique**: Weighted graph Laplacian eigenmodes, bilinear field expansion, quantized contour threading, gradient-based stress accents
+- **Description**: A dark full-canvas veil of teal and violet contour threads reveals hidden mathematical pressure beneath the surface; restrained amber points flicker along steep spectral bends without exposing the underlying graph directly.
+
 ## signal_fossil
 
 - **Date**: 2026-05-03
@@ -683,7 +690,6 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Description**: A futuristic metropolis of shimmering crystalline structures; iridescent teal, rose, and gold faces refract light across a recursive geometric landscape, creating intense luminosity where structures converge against an obsidian sky.
 
 <!-- Add new works above this line using the format below:
-
 
 
 

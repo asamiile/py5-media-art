@@ -453,6 +453,118 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: procedural waveform generation with frequency-based layering, amplitude modulation, harmonic overtones, spectrogram-style visualization
 - **Description**: Eight layered horizontal sound waves with harmonic overtones, twelve radiating circular wave patterns, and a spectrogram-style background create a complex audio visualization; electric blue, warm magenta, and bright cyan waves interfere against a deep charcoal field with frequency bars at the bottom
 
+## slime_intelligence
+
+- **Date**: 2026-05-02
+- **Theme**: nature, biology, emergent intelligence, biological networks
+- **Technique**: agent-based Physarum simulation, trail map diffusion, vectorized NumPy physics
+- **Description**: 100k autonomous agents simulate the foraging behavior of a slime mold, self-organizing into an organic transport network with bioluminescent indigo, teal, and gold trails against a deep obsidian void
+
+## cyber_circuits
+
+- **Date**: 2026-05-02
+- **Theme**: urban, machine, cybernetics, digital metaphor
+- **Technique**: recursive grid subdivision, Manhattan random walk, particle trails, additive blending
+- **Description**: A pulsating digital metropolis where data packets navigate a hierarchical network of glowing circuits in cyber lime, electric blue, and hot pink
+
+## quantum_foam
+
+- **Date**: 2026-05-02
+- **Theme**: cosmos, physics, quantum mechanics, energy
+- **Technique**: dynamic Voronoi tessellation, noise-driven seeds, energy bursts, additive blending
+- **Description**: The frantic, chaotic bubbling of spacetime at the Planck scale, rendered as a flickering froth of ultraviolet and magenta energy flashes
+
+## luminescent_bloom
+
+- **Date**: 2026-05-02
+- **Theme**: nature, botanical, space, magic
+- **Technique**: Bezier curves, polar symmetry, particle system, additive blending
+- **Description**: Exotic bioluminescent flowers swaying in a deep-space garden, unfurling glowing violet petals as golden pollen drifts through the void
+
+## chromatic_drift
+
+- **Date**: 2026-05-02
+- **Theme**: synesthesia, optics, memory, pure abstraction
+- **Technique**: multi-channel particle system, noise flow field, SCREEN blending, long exposure
+- **Description**: The ethereal separation of light into its constituent R, G, B channels as it drifts through a hazy, prismatic void
+
+## metamorphic_flow
+
+- **Date**: 2026-05-02
+- **Theme**: geology, metamorphic rock, deep time, pressure
+- **Technique**: domain-warped fractal noise, mineral vein thresholding, stone grain synthesis, vectorized NumPy
+- **Description**: Organic, compressed geological strata resembling polished agate, rendered through domain-warped noise with obsidian, sienna, and gold mineral tones
+
+## solar_wind
+
+- **Date**: 2026-05-02
+- **Theme**: plasma, magnetic fields, solar activity, cosmic energy
+- **Technique**: magnetic dipole streamline integration, particle systems, additive blending, cosmic noise background
+- **Description**: High-energy plasma ribbons of cyan and violet being deflected and channeled by a planetary magnetic field against a star-dusted void
+
+## glitch_strata
+
+- **Date**: 2026-05-02
+- **Theme**: digital decay, data corruption, archaeology, glitch art
+- **Technique**: recursive stratification, horizontal displacement mapping, block corruption, scanline synthesis
+- **Description**: A vertical cross-section of corrupted digital memory, rendered as high-contrast neon strata with horizontal tearing and geometric data blocks
+
+## neural_synapse
+
+- **Date**: 2026-05-02
+- **Theme**: neuroscience, connectivity, biological computation, signals
+- **Technique**: stochastic branching growth, multi-scale action potential glow, additive blending, organic cell simulation
+- **Description**: A glowing biological network of neural connections with flickering electrical pulses in gold, cyan, and violet racing between irregular cell bodies
+
+## crystallized_time
+
+- **Date**: 2026-05-02
+- **Theme**: time, crystals, geometry, fragility
+- **Technique**: recursive subdivision, prismatic diffraction, SCREEN blending, geometric clipping
+- **Description**: A luminous, shattered field of crystalline shards in ice blue and prism violet, with rainbow diffraction on the edges and brilliant prismatic flares
+
+## fluid_mosaic
+
+- **Date**: 2026-05-02
+- **Theme**: molecular biology, cell membrane, fluidity, life
+- **Technique**: fluid simulation, noise-driven velocity fields, dual-scale particle systems, multi-layer trail accumulation
+- **Description**: A shimmering microscopic landscape where vibrant coral and amber protein complexes drift through a fluid sea of teal phospholipids and wispy extracellular fibers
+
+## kinetic_typography
+
+- **Date**: 2026-05-02
+- **Theme**: language, communication, digital flow, data
+- **Technique**: text-based particle system, vortex vector fields, chromatic aberration, glitch shifts
+- **Description**: A swirling vortex of multilingual characters that transitions from emerald chaos to a structured, glowing white grid with digital display distortion
+
+## orbital_mechanics
+
+- **Date**: 2026-05-02
+- **Theme**: astronomy, gravity, orbits, cosmic dance
+- **Technique**: RK4 N-body simulation, velocity-based line thickness, long-exposure trail accumulation
+- **Description**: A complex, glowing map of hundreds of satellite orbits in gold and seafoam dancing around a multi-planet system with subtle rings and atmospheric halos
+
+## tectonic_drift
+
+- **Date**: 2026-05-02
+- **Theme**: geology, plate tectonics, planetary evolution, crustal movement
+- **Technique**: Voronoi tessellation, boundary vector analysis, fractal noise mountains, magmatic rift synthesis
+- **Description**: A planetary-scale map of shifting crustal plates, featuring voluminous basalt mountain ranges at collision zones and glowing orange magma rifts in divergent valleys
+
+## bioluminescent_deep
+
+- **Date**: 2026-05-02
+- **Theme**: marine biology, deep sea, bioluminescence, organic form
+- **Technique**: radial noise shapes, internal glow organs, curling tentacle simulation, organic plankton clustering
+- **Description**: A stunning view into the midnight zone of the ocean, featuring glowing jellyfish-like creatures in magenta and cyan surrounded by a dense cloud of bioluminescent plankton and falling marine snow
+
+## geometric_growth
+
+- **Date**: 2026-05-02
+- **Theme**: mathematics, recursion, L-systems, architecture
+- **Technique**: L-system branching, recursive geometric subdivision, multi-layered depth, architectural rendering
+- **Description**: A dense, golden architectural forest growing across an obsidian void, where fractal L-system branches transition into intricate, Mondrian-style subdivision tiles
+
 <!-- Add new works above this line using the format below:
 
 ## work_name

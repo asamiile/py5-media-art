@@ -74,7 +74,7 @@ Avoid the default trap of high-saturation full-spectrum rainbow gradients. They 
 ## Implementation Guidelines
 
 - Follow the coding conventions in `CLAUDE.md`
-- Design the sketch to auto-save `preview.png` and auto-exit
+- Design the sketch to auto-save `preview.png` and explicitly auto-exit using `py5.exit_sketch()` to prevent memory leaks in continuous runs
 - Keep code readable with clear intent
 
 ## Response to Critic Feedback

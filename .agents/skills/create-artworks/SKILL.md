@@ -15,7 +15,7 @@ Continuously creates py5 media art sketches by repeating the single-artwork work
 3. **Loop** — Repeat the following for each new work:
    1. **Planner**: Read `sketch/WORKS.md` and `sketch/FEEDBACK.md`, then produce a Creative Brief (see `.agents/skills/planner/SKILL.md`)
    2. **Artist**: Implement the concept from the Creative Brief in `sketch/{work_name}/main.py` (see `.agents/skills/artist/SKILL.md`)
-   3. Run the sketch to generate `preview.png`
+   3. Run the sketch to generate `preview.png` and wait for the process to fully terminate before proceeding (ensure no lingering python processes)
    4. **Critic**: Review code + `preview.png` and return APPROVE or REVISE (see `.agents/skills/critic/SKILL.md`)
    5. If REVISE: artist applies feedback and re-runs (max 2 revisions)
    6. Update `sketch/WORKS.md` and `sketch/FEEDBACK.md`

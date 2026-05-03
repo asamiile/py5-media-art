@@ -7,7 +7,7 @@ Use `/create-artwork` or `/create-artworks` to automate. See `.agents/skills/` f
 1. **Branch** — `feature/works-$(date +%Y%m%d)`
 2. **Plan** — Planner reads `WORKS.md` + `FEEDBACK.md` → Creative Brief (`.agents/skills/planner/SKILL.md`)
 3. **Implement** — Artist executes brief in `sketch/{work_name}/main.py` (`.agents/skills/artist/SKILL.md`)
-4. **Preview** — `uv run python sketch/{work_name}/main.py` → saves `preview.png`
+4. **Preview** — `uv run python sketch/{work_name}/main.py` → saves `preview.png` (ensure process terminates)
 5. **Review** — Critic loop, max 2 revisions (`.agents/skills/critic/SKILL.md`)
 6. **Document** — Add README.md, update `WORKS.md` and `FEEDBACK.md`
 7. **Commit & Push**

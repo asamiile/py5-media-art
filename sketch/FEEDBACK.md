@@ -417,5 +417,10 @@ Add any notes on color, density, theme, or mood in the Comment field.
 
 ## superfluid_tangle
 
+## tectonic_tension
+
+- **Rating**: 
+- **Comment**: 
+
 - **Rating**: 
 - **Comment**: 

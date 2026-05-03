@@ -610,7 +610,16 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: 2D Biot-Savart point-vortex simulation, 3000-particle flow field, HSB velocity mapping, additive trail synthesis
 - **Description**: A dense, glowing web of electric cyan and violet filaments swirling around ten hidden vortex cores; a visualization of frictionless quantum turbulence with long, liquid-like trails against a dark navy void.
 
+
+## tectonic_tension
+
+- **Date**: 2026-05-03
+- **Theme**: geology, physics, tectonics, volcanic energy
+- **Technique**: Voronoi-based plate simulation, ridge stress analysis, multi-layered additive glow, kinetic magma particles
+- **Description**: A visceral visualization of shifting geological plates; dark basalt slabs drift and collide, releasing intense orange magma glow and sparkling ejecta at the boundaries against a hazy, volcanic atmosphere.
+
 <!-- Add new works above this line using the format below:
+
 
 
 

@@ -626,6 +626,13 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: Stochastic graph-based signal propagation, 3D perspective projection, branching activation cascades, additive bloom trails
 - **Description**: A complex, glowing web of bioluminescent nodes firing electric magenta and cyan signals; pulses cascade through a rotating 3D network, creating a shimmering, interconnected mind against a deep indigo void.
 
+## spectral_mirage
+
+- **Date**: 2026-05-03
+- **Theme**: optics, atmosphere, prismatic light, ice crystals
+- **Technique**: noise-guided ray-casting, spectral dispersion (wavelength-dependent refraction), structured beam clustering, multi-pass glow rendering
+- **Description**: A cold, shimmering veil of light Fractured into prismatic filaments as it passes through a simulated ice-density field; electric blue and prism violet fringes emerge from structured beams against a deep midnight navy void.
+
 <!-- Add new works above this line using the format below:
 
 

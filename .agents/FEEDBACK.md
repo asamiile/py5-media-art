@@ -14,6 +14,11 @@ Add any notes on color, density, theme, or mood in the Comment field.
 ---
 
 
+## lenticular_night
+
+- **Rating**: 
+- **Comment**: Critic approved at 34/40. Dense crisp optical field with strong dark palette and multi-hue lenticular fragments. Future improvement: introduce larger quiet zones if the full-canvas stripe density feels too busy.
+
 ## avalanche_ledger
 
 - **Rating**: 

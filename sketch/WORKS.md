@@ -5,6 +5,13 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 
 ---
 
+## braid_phase
+
+- **Date**: 2026-05-03
+- **Theme**: separate histories, crossing paths, layered memory, mathematical weaving
+- **Technique**: Phase-driven strand paths, over-under depth masking, contour-lit strokes, low-contrast phase-field background
+- **Description**: Teal, violet, and muted-copper strands cross through a dark interference field in layered over-under rhythms; pale edge highlights mark the moments where one history rises above another.
+
 ## redaction_current
 
 - **Date**: 2026-05-03

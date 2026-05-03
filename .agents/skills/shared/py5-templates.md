@@ -54,7 +54,7 @@ from lib.sizes import get_sizes
 
 SKETCH_DIR = sketch_dir(__file__)
 FRAMES_DIR = SKETCH_DIR / "frames"
-DURATION_SEC = 5
+DURATION_SEC = 10
 FPS = 60
 TOTAL_FRAMES = DURATION_SEC * FPS
 PREVIEW_FILENAME = preview_filename(pattern=1)
@@ -90,6 +90,7 @@ py5.run_sketch()
 - Prefer helpers in `lib/`: `lib.paths.sketch_dir`, `lib.sizes.get_sizes`, and `lib.preview`.
 - Save previews with `preview_filename(pattern=1)` unless creating additional patterns.
 - Explicitly call `py5.exit_sketch()` or use `maybe_save_exit_on_frame()` so continuous runs do not leave sketch processes running.
+- When creating video/animation works, set `DURATION_SEC` to **10 or greater**.
 - Animation works save sequential PNGs to `frames/` and combine into MP4 with ffmpeg.
 - Include `output.mp4` in the commit only for animation works.
 - Do not fix random seed; results should vary each run.

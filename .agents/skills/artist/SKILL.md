@@ -78,6 +78,7 @@ Avoid the default trap of high-saturation full-spectrum rainbow gradients. They 
 - Use the code skeletons in `.agents/skills/shared/py5-templates.md`
 - Use the work name from the brief as the directory name; do not overwrite an existing work directory.
 - Design the sketch to auto-save pattern-specific preview images and explicitly auto-exit using `py5.exit_sketch()` to prevent memory leaks in continuous runs
+- For video/animation works, create an animation that is **10 seconds or longer**
 - Keep code readable with clear intent
 
 ## Response to Critic Feedback

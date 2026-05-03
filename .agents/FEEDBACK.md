@@ -14,6 +14,11 @@ Add any notes on color, density, theme, or mood in the Comment field.
 ---
 
 
+## route_arbitration
+
+- **Rating**: 
+- **Comment**: Critic approved at 31/40. Distinct operational-map direction with coherent obstacle routing, amber conflict heat, and reservation markers. Future improvement: increase local density or contrast so the map feels less quiet without becoming cluttered.
+
 ## braid_phase
 
 - **Rating**: 

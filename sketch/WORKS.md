@@ -5,6 +5,13 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 
 ---
 
+## route_arbitration
+
+- **Date**: 2026-05-03
+- **Theme**: autonomous negotiation, shared floor, routing pressure, operational intelligence
+- **Technique**: Obstacle-field generation, grid shortest-path routing, conflict heat accumulation, reservation tick glyphs
+- **Description**: A dark warehouse-like routing map shows steel-blue and green paths threading around matte blockers while amber conflict nodes and white priority markers reveal where autonomous decisions compete for the same floor.
+
 ## braid_phase
 
 - **Date**: 2026-05-03

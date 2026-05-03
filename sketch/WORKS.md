@@ -618,7 +618,16 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: Voronoi-based plate simulation, ridge stress analysis, multi-layered additive glow, kinetic magma particles
 - **Description**: A visceral visualization of shifting geological plates; dark basalt slabs drift and collide, releasing intense orange magma glow and sparkling ejecta at the boundaries against a hazy, volcanic atmosphere.
 
+
+## neural_synapse
+
+- **Date**: 2026-05-03
+- **Theme**: biology, networks, intelligence, electricity
+- **Technique**: Stochastic graph-based signal propagation, 3D perspective projection, branching activation cascades, additive bloom trails
+- **Description**: A complex, glowing web of bioluminescent nodes firing electric magenta and cyan signals; pulses cascade through a rotating 3D network, creating a shimmering, interconnected mind against a deep indigo void.
+
 <!-- Add new works above this line using the format below:
+
 
 
 

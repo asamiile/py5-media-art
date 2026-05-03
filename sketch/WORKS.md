@@ -5,6 +5,13 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 
 ---
 
+## redaction_current
+
+- **Date**: 2026-05-03
+- **Theme**: censorship, suppressed communication, signal leakage, modern abstraction
+- **Technique**: Redaction block field, sinusoidal signal leakage, wake accumulation around barriers, ghost baseline synthesis
+- **Description**: A document-like dark field is crossed by hard black redaction bars while cyan currents, magenta edge residue, and muted amber wakes leak around the blocks, suggesting a suppressed message that still carries charge.
+
 ## impact_palimpest
 
 - **Date**: 2026-05-03

@@ -14,6 +14,11 @@ Add any notes on color, density, theme, or mood in the Comment field.
 ---
 
 
+## jacobian_drift
+
+- **Rating**: 
+- **Comment**: First critic pass was 29/40 because the tensor idea was too quiet and sparse. Revision strengthened warped coordinate traces and pressure bands; approved at 31/40. Future improvement: make tensor glyphs feel less marker-like while keeping the crisp mathematical-weather direction.
+
 ## crease_memory
 
 - **Rating**: 

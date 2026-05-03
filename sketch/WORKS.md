@@ -5,6 +5,13 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 
 ---
 
+## jacobian_drift
+
+- **Date**: 2026-05-03
+- **Theme**: invisible pressure, coordinate weather, mathematical deformation
+- **Technique**: Nonlinear coordinate warp, finite-difference Jacobian analysis, warped coordinate families, tensor ellipse glyph rendering
+- **Description**: A dark indigo coordinate field bends under hidden Gaussian pressure centers; silver-blue warped traces and coral tensor ellipses reveal local stretch, compression, and rotation across the full canvas.
+
 ## crease_memory
 
 - **Date**: 2026-05-03
@@ -697,5 +704,4 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Description**: A futuristic metropolis of shimmering crystalline structures; iridescent teal, rose, and gold faces refract light across a recursive geometric landscape, creating intense luminosity where structures converge against an obsidian sky.
 
 <!-- Add new works above this line using the format below:
-
 

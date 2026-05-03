@@ -5,6 +5,13 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 
 ---
 
+## crease_memory
+
+- **Date**: 2026-05-03
+- **Theme**: folded memory, stored pressure, geometric material abstraction
+- **Technique**: Signed crease distance fields, procedural origami heightfield, normal-based relief shading, ridge stress highlighting
+- **Description**: A dark folded surface fills the canvas with graphite planes, teal incisions, mauve shadows, and copper-white stress ridges; every luminous crease reads as a stored pressure mark in a synthetic material sheet.
+
 ## eigenveil
 
 - **Date**: 2026-05-03
@@ -690,6 +697,5 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Description**: A futuristic metropolis of shimmering crystalline structures; iridescent teal, rose, and gold faces refract light across a recursive geometric landscape, creating intense luminosity where structures converge against an obsidian sky.
 
 <!-- Add new works above this line using the format below:
-
 
 

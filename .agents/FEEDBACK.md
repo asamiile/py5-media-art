@@ -14,6 +14,11 @@ Add any notes on color, density, theme, or mood in the Comment field.
 ---
 
 
+## crease_memory
+
+- **Rating**: 
+- **Comment**: First critic pass was 28/40 because the preview felt too soft and caustic-like. Revision added incision shadows, sharper ridge highlights, and fine facet lines; approved at 32/40. Future direction: keep the material-relief abstraction, but avoid excessive glow blur.
+
 ## eigenveil
 
 - **Rating**: 

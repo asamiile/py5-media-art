@@ -11,6 +11,11 @@ The Artist reads this file before starting a new sketch to understand preference
 
 Add any notes on color, density, theme, or mood in the Comment field.
 
+## stellar_equilibrium
+
+- **Rating**: 
+- **Comment**: Critic approved at 35/40. Successful addressing of the "beautiful night sky" request. The combination of N-body physics and noise-driven solar mechanics creates a powerful sense of cosmic scale. The golden prominences and violet plasma trails provide a high-impact, premium aesthetic.
+
 ## isohedral_metropolis
 
 - **Rating**: 

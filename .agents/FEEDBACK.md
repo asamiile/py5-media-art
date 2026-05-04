@@ -11,6 +11,11 @@ The Artist reads this file before starting a new sketch to understand preference
 
 Add any notes on color, density, theme, or mood in the Comment field.
 
+## interference_topography
+
+- **Rating**: 
+- **Comment**: Critic approved at 34/40. High-tech wave abstraction with striking contour quantization. The interplay between moving emitters and constructive interference creates a complex, rhythmic visual landscape. Future improvement: implement a "frequency sweep" mode where waves oscillate between high and low density over time.
+
 ## liquid_topology
 
 - **Rating**: 

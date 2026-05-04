@@ -11,6 +11,11 @@ The Artist reads this file before starting a new sketch to understand preference
 
 Add any notes on color, density, theme, or mood in the Comment field.
 
+## recursive_interference
+
+- **Rating**: 
+- **Comment**: Critic approved at 36/40. A tour de force of recursive geometry and light emission. The density of the "interference shards" is visually arresting and the PGraphics accumulation provides a beautiful temporal glow that feels premium. The color transition from Teal to Orange adds depth. Future improvement: implement a "lens" effect where certain quadtree nodes refract the background light differently.
+
 ## harmonic_vibrance
 
 - **Rating**: 

@@ -19,6 +19,14 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Logic Lab Reference**: `fractals/quadtree_part_1/quadtree_part_1.py` — used for recursive subdivision logic
 - **Description**: A stark, shifting landscape of charcoal concrete slabs that subdivide and merge in a rhythmic algorithmic breath; deep shadows and sharp edges emphasize the brutalist scale, while safety-orange pulses reveal the machine-like processing beneath the monolithic surface.
 
+## elastic_residue
+
+- **Date**: 2026-05-04
+- **Theme**: Material memory, physical tension, lingering traces, soft-body abstraction
+- **Technique**: Verlet cloth simulation (30x30 mesh), persistence-buffer trail accumulation, tension-weighted spectral coloring (Tan→Gold), multi-agent repulsion field
+- **Logic Lab Reference**: `research/cloth_simulation/cloth_simulation.py` — used for Verlet integration and constraint satisfaction logic
+- **Description**: A luminous web of threads deforms under invisible pressure, leaving a persistent golden record of its peak tension; the dark sienna background holds the "scars" of past movements, creating a complex palimpsest of physical stress and slow recovery.
+
 ---
 
 ## selection_pressure

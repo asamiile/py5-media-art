@@ -21,6 +21,11 @@ Add any notes on color, density, theme, or mood in the Comment field.
 - **Rating**: 
 - **Comment**: Critic approved at 34/40. Strong architectural direction with a "modern twist" requested by the user. The monolithic concrete aesthetic, safety orange accents, and rhythmic subdivision create a compelling industrial atmosphere. Animation (12s) successfully captures the "breathing" logic. Future improvement: add subtle "camera shake" or "lens grit" to enhance the sense of scale and physical presence.
 
+## elastic_residue
+
+- **Rating**: 
+- **Comment**: Critic approved at 34/40. Sophisticated soft-body physics simulation with a strong conceptual link to "material memory." The persistence-buffer technique creates a beautiful, ghostly record of tension. The warm earth-and-gold palette is a welcome departure from recent neon/cyber themes. Future improvement: optimize the Verlet solver further to allow for a denser mesh (e.g. 60x60) without sacrificing frame rate.
+
 ---
 
 

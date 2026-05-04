@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## magnetic_topography
+
+- **Date**: 2026-05-04
+- **Theme**: Hidden magnetic fields, topographical abstraction, energy maps, beautiful night sky
+- **Technique**: Magnetic dipole field synthesis, Marching Squares contour extraction, HSB spectral mapping, atmospheric starfield rendering
+- **Description**: A dense, shimmering topographical map of magnetic energy where hundreds of flowing lines swirl and converge around invisible dipoles; the colors transition from deep teal to molten copper against a silent, star-dusted charcoal void.
+
 ## resonant_void
 
 - **Date**: 2026-05-04

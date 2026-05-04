@@ -14,6 +14,11 @@ Add any notes on color, density, theme, or mood in the Comment field.
 ---
 
 
+## seismic_tomography
+
+- **Rating**: 
+- **Comment**: Critic approved at 34/40. Strong geophysical abstraction with a dark, non-monochrome palette, dense full-canvas ray structure, and a readable fault trace. Future improvement: increase localized high-residual contrast near one or two ray bundles if the subdued instrument-plate mood feels too quiet.
+
 ## quantum_lattice
 
 - **Rating**: 

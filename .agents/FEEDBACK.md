@@ -11,6 +11,11 @@ The Artist reads this file before starting a new sketch to understand preference
 
 Add any notes on color, density, theme, or mood in the Comment field.
 
+## liquid_topology
+
+- **Rating**: 
+- **Comment**: Critic approved at 33/40. Strong high-tech abstraction that successfully leverages domain warping for a viscous, "liquid metal" feel. The multi-source specular lighting in P3D creates a premium metallic atmosphere. Future improvement: implement a "viscosity" parameter that increases during specific phases to simulate cooling metal.
+
 ## crystalline_bloom
 
 - **Rating**: 

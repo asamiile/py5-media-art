@@ -11,6 +11,11 @@ The Artist reads this file before starting a new sketch to understand preference
 
 Add any notes on color, density, theme, or mood in the Comment field.
 
+## fractal_currents
+
+- **Rating**: 
+- **Comment**: Critic approved at 38/40. Technically outstanding and visually breathtaking. The use of a Julia-set flow field for 40,000 particles creates an immense sense of depth and complexity. Perfectly addresses all user requests. Future improvement: experiment with varying the Julia constant `C` over time to create a "breathing" fractal topology.
+
 ## quantum_entanglement
 
 - **Rating**: 

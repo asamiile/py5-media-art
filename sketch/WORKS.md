@@ -5,6 +5,13 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 
 ---
 
+## flux_lattice
+
+- **Date**: 2026-05-04
+- **Theme**: Energy distribution, urban metabolism, hidden currents, systemic flow
+- **Technique**: Stochastic lattice routing, pulse-width modulated currents, node-leakage sparks, jittered grid subdivision
+- **Description**: A dark, dense network of glowing conduits where "power" surges through neon cobalt trunk lines and gold capillaries, while ghostly magenta sparks reveal high-pressure leakage at the nodes.
+
 ## route_arbitration
 
 - **Date**: 2026-05-03

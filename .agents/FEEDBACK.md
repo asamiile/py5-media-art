@@ -11,6 +11,11 @@ The Artist reads this file before starting a new sketch to understand preference
 
 Add any notes on color, density, theme, or mood in the Comment field.
 
+## monsoon_circuit
+
+- **Rating**: 
+- **Comment**: Critic approved at 35/40. Strong urban-metabolism concept that successfully addresses the user's request for a "modern city feel" with an "abstract twist." The Manhattan-constrained data rain and pixel-buffer accumulation create a rich, atmospheric depth. Future improvement: implement a "surge" mode where data flow intensity fluctuates over time to simulate peak traffic hours.
+
 ## hyperbolic_growth
 
 - **Rating**: 

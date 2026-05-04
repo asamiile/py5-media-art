@@ -3,6 +3,14 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## metabolic_lattice
+
+- **Date**: 2026-05-04
+- **Theme**: Kinetic tension, metabolic elasticity, structural vibration, iridescent membranes
+- **Technique**: Verlet integration, radial spring mesh, stress-based HSB mapping, atmospheric bloom rendering
+- **Logic Lab Reference**: `physics/spring_mesh/spring_mesh.py`
+- **Description**: A living, breathing radial lattice of glowing conduits that ripples and shudders under a central metabolic pulse; stress-induced colors shift from deep violet to electric cyan as the structure maintains its precarious equilibrium.
+
 ## prismatic_cellularity
 
 - **Date**: 2026-05-04

@@ -3,6 +3,14 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## isohedral_metropolis
+
+- **Date**: 2026-05-04
+- **Theme**: Non-Euclidean urbanism, interlocking systems, metabolic pulse, synthetic nature
+- **Technique**: IH01 Isohedral tiling, dynamic Bezier deformation, persistence-buffer trail accumulation, high-density starfield rendering
+- **Logic Lab Reference**: `tiling_patterns/ih01_deformation/ih01_deformation.py`
+- **Description**: A dense, glowing metropolis defined by complex interlocking "living blocks" that pulse and shift against a deep star-dusted night; luminous conduits in cyan and magenta trace the shifting boundaries, while golden data hubs flicker at the intersections of the metabolic grid.
+
 ## spectral_currents
 
 - **Date**: 2026-05-04

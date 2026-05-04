@@ -11,6 +11,11 @@ The Artist reads this file before starting a new sketch to understand preference
 
 Add any notes on color, density, theme, or mood in the Comment field.
 
+## isohedral_metropolis
+
+- **Rating**: 
+- **Comment**: Critic approved at 35/40. Striking non-Euclidean urban grid using IH01 tiling and dynamic Bezier deformation. The high-contrast spectral palette and starfield successfully address the request for "modern city feel" and "beautiful night sky." Future improvement: introduce local phase offsets to create traveling waves of deformation across the grid.
+
 ## spectral_currents
 
 - **Rating**: 

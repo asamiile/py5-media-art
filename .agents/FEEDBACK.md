@@ -11,6 +11,11 @@ The Artist reads this file before starting a new sketch to understand preference
 
 Add any notes on color, density, theme, or mood in the Comment field.
 
+## entropic_monolith
+
+- **Rating**: 
+- **Comment**: Critic approved at 32/40. Compelling conceptual execution of "digital entropy." The recursive splitting algorithm effectively captures the feeling of a rigid structure being dissolved. The high-contrast Cyan-on-Black palette reinforces the monolithic, high-tech atmosphere. Future improvement: add internal "energy" textures to the shard faces to increase visual complexity during disintegration.
+
 ## interference_topography
 
 - **Rating**: 

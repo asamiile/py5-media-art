@@ -3,6 +3,14 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## entropic_monolith
+
+- **Date**: 2026-05-04
+- **Theme**: Digital entropy, decaying geometry, crystalline collapse, monolithic silence
+- **Technique**: Recursive geometric polygon fragmentation, stochastic detachment logic, HSB edge-glow simulation, kinematic drift advection
+- **Logic Lab Reference**: `mathematical/voronoi/voronoi.py` — used as a conceptual base for spatial partitioning and sharding
+- **Description**: A massive, obsidian-like monolith that stands in a pitch-black void, slowly being shattered by invisible entropic forces; hairline cracks of electric cyan appear across its surface as geometric shards break off, drifting away and dissolving into a fine mist of white light.
+
 ## interference_topography
 
 - **Date**: 2026-05-04

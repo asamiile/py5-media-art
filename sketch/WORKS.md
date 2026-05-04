@@ -5,6 +5,14 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 
 ---
 
+## selection_pressure
+
+- **Date**: 2026-05-04
+- **Theme**: Environmental pressure, adaptation, inherited variation, survival memory
+- **Technique**: Genetic-algorithm inspired population simulation, selection-weighted reproduction, phenotype mutation, lineage trail rendering, Retina-aware pixel-buffer habitat compositing
+- **Logic Lab Reference**: `genetic_algorithms/evolving_bloops/evolving_bloops.py` — used for DNA, mutation, survival, and reproduction structure
+- **Description**: A dark habitat field records generations of small abstract phenotypes drifting diagonally through selection pressure; pale moss bodies, muted amber elite rings, and faint extinct variants reveal a population slowly changing shape to survive.
+
 ## seismic_tomography
 
 - **Date**: 2026-05-04

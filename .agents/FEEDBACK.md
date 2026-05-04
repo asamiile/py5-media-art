@@ -14,6 +14,11 @@ Add any notes on color, density, theme, or mood in the Comment field.
 ---
 
 
+## selection_pressure
+
+- **Rating**: 
+- **Comment**: Critic approved at 32/40. Fresh genetic-algorithm direction using Logic Lab's evolving bloops reference; the dark habitat, diagonal survival path, and amber elite rings make adaptation legible without becoming literal. Future improvement: make parent-child lineage threads slightly clearer if the evolutionary mechanism needs to read more explicitly.
+
 ## seismic_tomography
 
 - **Rating**: 

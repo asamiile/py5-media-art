@@ -3,6 +3,14 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## supersymmetric_manifold
+
+- **Date**: 2026-05-04
+- **Theme**: High-dimensional geometry, spectral resonance, beautiful night sky
+- **Technique**: Layered Gielis Superformula, second-order domain warping, persistence-buffer trail accumulation, Retina-aware pixel-buffer compositing
+- **Logic Lab Reference**: `mathematical/superformula/superformula.py`
+- **Description**: A shimmering, iridescent manifold of violet and cyan energy threads that pulses and vibrates in a deep star-dusted void; the complex geometric layers flow with a rhythmic "supersymmetric" breath, leaving glowing spectral echoes in their wake.
+
 ## metabolic_growth
 
 - **Date**: 2026-05-04

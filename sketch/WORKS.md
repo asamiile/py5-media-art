@@ -799,6 +799,14 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: icosphere subdivision, spherical inversion, 3D Perlin noise, layered SCREEN blending, particle glow
 - **Description**: A bioluminescent microscopic skeleton pulses and inverts through its own center; bone-white and electric-cyan geometric threads form an intricate lattice surrounded by drifting gold marine snow against a deep abyss.
 
+## fractal_metropolis
+
+- **Date**: 2026-05-04
+- **Theme**: Fractal urbanism, data-metabolism, spectral infrastructure, cosmic scale
+- **Technique**: Deformed hexagonal lattice, recursive Koch-polygon architecture, spectral edge-glow simulation, multi-scale starfield synthesis
+- **Logic Lab Reference**: `tiling_patterns/ih02_tv08_koch/ih02_tv08_koch.py`
+- **Description**: A sprawling, glowing metropolis of fractal monoliths extends into a deep-space void; each structure is built from shimmering geometric layers that subdivide and pulse with electric cyan and laser pink light, while a distant starfield and violet horizon haze suggest an infinite atmospheric scale.
+
 
 ## prismatic_reflection
 
@@ -851,5 +859,13 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Theme**: architecture, crystals, iridescence, geometry, modularity
 - **Technique**: recursive isometric cube subdivision, thin-film interference color mapping, additive SCREEN blending, stochastic growth
 - **Description**: A futuristic metropolis of shimmering crystalline structures; iridescent teal, rose, and gold faces refract light across a recursive geometric landscape, creating intense luminosity where structures converge against an obsidian sky.
+
+## fractal_metropolis
+
+- **Date**: 2026-05-04
+- **Theme**: Fractal urbanism, data-metabolism, spectral infrastructure, cosmic scale
+- **Technique**: Deformed hexagonal lattice, recursive Koch-polygon architecture, spectral edge-glow simulation, multi-scale starfield synthesis
+- **Logic Lab Reference**: `tiling_patterns/ih02_tv08_koch/ih02_tv08_koch.py`
+- **Description**: A sprawling, glowing metropolis of fractal monoliths extends into a deep-space void; each structure is built from shimmering geometric layers that subdivide and pulse with electric cyan and laser pink light, while a distant starfield and violet horizon haze suggest an infinite atmospheric scale.
 
 <!-- Add new works above this line using the format below:

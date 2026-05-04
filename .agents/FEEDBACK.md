@@ -579,5 +579,12 @@ Add any notes on color, density, theme, or mood in the Comment field.
 
 ## kinetic_mandala
 
+- **Date**: 2026-05-03
 - **Rating**: 
 - **Comment**: 
+
+## fractal_metropolis
+
+- **Date**: 2026-05-04
+- **Rating**: 
+- **Comment**: Critic approved at 36/40. Striking synthesis of logic-lab tiling patterns with a cosmic, architectural theme. The spectral edge-glows and Koch-fractal caps create a premium high-tech feel. The addition of a starfield and horizon haze successfully addresses the user's request for "beautiful night skies." Future improvement: implement a "flight-through" camera motion to enhance the sense of urban scale.

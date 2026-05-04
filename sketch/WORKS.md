@@ -3,6 +3,14 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## hyperbolic_growth
+
+- **Date**: 2026-05-04
+- **Theme**: Non-Euclidean growth, constrained infinity, coral morphology, mathematical lens
+- **Technique**: Recursive hyperbolic branching (Poincaré disk model), Mobius coordinate transformation, depth-weighted stochastic jitter, HSB-spectral gradient rendering
+- **Logic Lab Reference**: `fractals/stochastic_tree/stochastic_tree.py` — used for recursive branching and stochastic jitter logic
+- **Description**: A circular Poincaré disk contains an intricate web of seafoam and amethyst branches that sprout from the center and curve elegantly outward; as they approach the boundary, they become infinitely dense and delicate, accented by golden growth tips against a deep charcoal void.
+
 ---
 
 ## selection_pressure

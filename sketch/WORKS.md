@@ -11,6 +11,14 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Logic Lab Reference**: `fractals/stochastic_tree/stochastic_tree.py` — used for recursive branching and stochastic jitter logic
 - **Description**: A circular Poincaré disk contains an intricate web of seafoam and amethyst branches that sprout from the center and curve elegantly outward; as they approach the boundary, they become infinitely dense and delicate, accented by golden growth tips against a deep charcoal void.
 
+## algorithmic_brutalism
+
+- **Date**: 2026-05-04
+- **Theme**: Industrial logic, brutalist architecture, recursion, monolithic scale
+- **Technique**: Animated recursive quadtree subdivision, 3D monolithic slab rendering (P3D), noise-driven height modulation, safety-orange emissive accents, isometric-parallax motion
+- **Logic Lab Reference**: `fractals/quadtree_part_1/quadtree_part_1.py` — used for recursive subdivision logic
+- **Description**: A stark, shifting landscape of charcoal concrete slabs that subdivide and merge in a rhythmic algorithmic breath; deep shadows and sharp edges emphasize the brutalist scale, while safety-orange pulses reveal the machine-like processing beneath the monolithic surface.
+
 ---
 
 ## selection_pressure

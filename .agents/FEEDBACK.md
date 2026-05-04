@@ -11,6 +11,11 @@ The Artist reads this file before starting a new sketch to understand preference
 
 Add any notes on color, density, theme, or mood in the Comment field.
 
+## synthetic_aurora
+
+- **Rating**: 
+- **Comment**: Critic approved at 35/40. Stunning "Digital Aurora" aesthetic; the chromatic aberration and persistence create a very sophisticated feel. Perfectly hits the "Modern Twist" and "Beautiful night sky" goals.
+
 ## stellar_equilibrium
 
 - **Rating**: 

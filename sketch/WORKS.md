@@ -3,6 +3,14 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## hexagonal_fractalopolis
+
+- **Date**: 2026-05-04
+- **Theme**: Non-Euclidean urbanism, fractal infrastructure, modern architectural twist, beautiful night sky
+- **Technique**: IH02 Isohedral tiling (TV08 model), recursive Koch curve subdivision, 3D monolithic height modulation (P3D), atmospheric bloom rendering
+- **Logic Lab Reference**: `tiling_patterns/ih02_tv08_koch/ih02_tv08_koch.py`
+- **Description**: A dense, shimmering landscape of fractal buildings that sprawl across a non-Euclidean hexagonal grid; every structure is defined by recursive Koch edges, creating a "gear-like" architectural complexity that pulses with neon highlights against a deep star-dusted night sky.
+
 ## supersymmetric_manifold
 
 - **Date**: 2026-05-04

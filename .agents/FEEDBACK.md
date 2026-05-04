@@ -11,6 +11,11 @@ The Artist reads this file before starting a new sketch to understand preference
 
 Add any notes on color, density, theme, or mood in the Comment field.
 
+## hexagonal_fractalopolis
+
+- **Rating**: 
+- **Comment**: Critic approved at 36/40. Striking fractal urbanism using IH02 tiling and Koch curves. The gear-like silhouettes and 3D extrusion create a very sophisticated, high-tech architectural feel. The starfield and lighting successfully address the "beautiful night sky" request. Future improvement: introduce a small "gap" between tiles to clarify the individual block boundaries in dense areas.
+
 ## supersymmetric_manifold
 
 - **Rating**: 

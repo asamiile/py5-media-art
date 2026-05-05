@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## differential_expansion
+
+- **Date**: 2026-05-05
+- **Theme**: Organic morphogenesis, brain-like folding, cellular growth, beautiful night sky
+- **Technique**: Differential growth algorithm (Verlet nodes), Scipy KDTree spatial repulsion optimization, multi-layered bioluminescent rendering (Emerald/Seafoam/Cyan), additive blending, 60fps high-quality MP4 encoding
+- **Description**: An organic, brain-like structure that folds and expands through a differential growth algorithm, creating an intricate bioluminescent tapestry of seafoam and cyan energy against a deep oceanic void.
+
 ## harmonic_levitation
 
 - **Date**: 2026-05-05

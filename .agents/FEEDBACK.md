@@ -11,6 +11,11 @@ The Artist reads this file before starting a new sketch to understand preference
 
 Add any notes on color, density, theme, or mood in the Comment field.
 
+## quasicrystal_void
+
+- **Rating**: OK
+- **Comment**: Fascinating use of aperiodic interference. The 7-fold symmetry is visually captivating, and the iridescent color mapping against the deep void creates a strong sense of cosmic scale.
+
 ## gravitational_warp
 
 - **Rating**: OK

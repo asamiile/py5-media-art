@@ -3,7 +3,231 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## recursive_interference
+
+- **Date**: 2026-05-04
+- **Theme**: Recursive physics, multi-scale interference, digital optics, complex resonance
+- **Technique**: Quadtree subdivision driven by moving noise, persistent PGraphics accumulation for temporal glow, triple-shard interference emission, additive spectral highlights
+- **Logic Lab Reference**: `fractals/quadtree_part_1/quadtree_part_1.py`, `physics/additive_wave/additive_wave.py`
+- **Description**: An incredibly dense, shimmering tapestry of light fringes where the frequency and density of wave emitters are determined by a recursive quadtree; the result is a multi-scale interference field that pulses with organic-yet-digital life against a deep navy night.
+
+## harmonic_vibrance
+
+- **Date**: 2026-05-04
+- **Theme**: Harmonic resonance, celestial mechanics, elastic geometry, beautiful night sky
+- **Technique**: Concentric Verlet-integrated elastic rings, multi-emitter harmonic wave interference, PGraphics persistent trail accumulation, additive spectral bloom
+- **Logic Lab Reference**: `physics/spring_mesh/spring_mesh.py`, `physics/additive_wave/additive_wave.py`
+- **Description**: A series of shimmering, elastic geometric rings vibrate and pulse in response to complex harmonic wave interference; the concentric layers of electric cyan, amethyst, and amber leave persistent spectral trails as they resonate against a vast, star-dusted obsidian void.
+
+## fractal_currents
+
+- **Date**: 2026-05-04
+- **Theme**: Mathematical fluidity, fractal advection, complex dynamics, beautiful night sky
+- **Technique**: Julia-set driven flow field, vectorized particle advection (NumPy), HSB phase-to-hue mapping, atmospheric starfield rendering
+- **Description**: A swirling, intricate sea of 40,000 particles flows along the complex-gradient of a Julia Set; the dense iridescent currents in electric teal and soft rose navigate the infinite recursive boundaries of the fractal against a deep star-dusted night sky.
+
+## quantum_entanglement
+
+- **Date**: 2026-05-04
+- **Theme**: Quantum physics, entanglement, non-locality, symmetrical energy, beautiful night sky
+- **Technique**: Symmetrical mirrored particle systems, stochastic decoherence noise, persistence buffer trails, atmospheric starfield rendering
+- **Description**: Two shimmering particle systems in electric cyan and vibrant magenta dance in perfect synchronization across a central void; ghostly white threads connect the entangled pairs, while subtle decoherence noise and long-exposure trails create a sense of invisible connection and rhythmic harmony against a star-dusted night sky.
+
+## magnetic_topography
+
+- **Date**: 2026-05-04
+- **Theme**: Hidden magnetic fields, topographical abstraction, energy maps, beautiful night sky
+- **Technique**: Magnetic dipole field synthesis, Marching Squares contour extraction, HSB spectral mapping, atmospheric starfield rendering
+- **Description**: A dense, shimmering topographical map of magnetic energy where hundreds of flowing lines swirl and converge around invisible dipoles; the colors transition from deep teal to molten copper against a silent, star-dusted charcoal void.
+
+## resonant_void
+
+- **Date**: 2026-05-04
+- **Theme**: Cosmic resonance, gravitational waves, shimmering energy, beautiful night sky
+- **Technique**: 3D harmonic mesh deformation (P3D), multi-frequency sine superposition, HSB spectral mapping, atmospheric starfield rendering
+- **Description**: A central, vibrating energy membrane pulses with multiple overlapping harmonic frequencies in a deep star-dusted void; the shimmering surface shifts between electric cyan and royal amethyst, leaving glowing spectral echoes as it rotates through the silent indigo sky.
+
+## hexagonal_fractalopolis
+
+- **Date**: 2026-05-04
+- **Theme**: Non-Euclidean urbanism, fractal infrastructure, modern architectural twist, beautiful night sky
+- **Technique**: IH02 Isohedral tiling (TV08 model), recursive Koch curve subdivision, 3D monolithic height modulation (P3D), atmospheric bloom rendering
+- **Logic Lab Reference**: `tiling_patterns/ih02_tv08_koch/ih02_tv08_koch.py`
+- **Description**: A dense, shimmering landscape of fractal buildings that sprawl across a non-Euclidean hexagonal grid; every structure is defined by recursive Koch edges, creating a "gear-like" architectural complexity that pulses with neon highlights against a deep star-dusted night sky.
+
+## supersymmetric_manifold
+
+- **Date**: 2026-05-04
+- **Theme**: High-dimensional geometry, spectral resonance, beautiful night sky
+- **Technique**: Layered Gielis Superformula, second-order domain warping, persistence-buffer trail accumulation, Retina-aware pixel-buffer compositing
+- **Logic Lab Reference**: `mathematical/superformula/superformula.py`
+- **Description**: A shimmering, iridescent manifold of violet and cyan energy threads that pulses and vibrates in a deep star-dusted void; the complex geometric layers flow with a rhythmic "supersymmetric" breath, leaving glowing spectral echoes in their wake.
+
+## metabolic_growth
+
+- **Date**: 2026-05-04
+- **Theme**: Algorithmic botany, synthetic life, metabolic pulse, modern twist
+- **Technique**: 3D L-System branching, recursive depth modulation, glowing branch gradients, wireframe perspective grid
+- **Logic Lab Reference**: `fractals/l_system/l_system.py`
+- **Description**: A complex, glowing 3D organism grows from a dark wireframe grid; violet and cyan branches pulse with a rhythmic algorithmic breath, while terminal nodes flicker with spectral light against a deep star-dusted void.
+
+## synthetic_aurora
+
+- **Date**: 2026-05-04
+- **Theme**: Atmospheric phenomena, digital beauty, spectral currents, beautiful night sky
+- **Technique**: Noise-driven vertical Bezier curtains, chromatic aberration (RGB spatial split), persistence-buffer trail accumulation, additive P2D blending
+- **Logic Lab Reference**: `physics/additive_wave/additive_wave.py`, `physics/perlin_noise_walker_lines/perlin_noise_walker_lines.py`
+- **Description**: A digital reimagining of the Northern Lights where algorithmic curtains of light shimmer with iridescent chromatic fringes; deep emerald, cyan, and electric pink currents wave across a dark star-dusted void, leaving glowing spectral echoes in their wake.
+
+## stellar_equilibrium
+
+- **Date**: 2026-05-04
+- **Theme**: Cosmic energy, physical tension, solar majesty, beautiful night sky
+- **Technique**: N-body gravitational simulation, magnetic tension loops (Bezier), noise-driven solar core rendering, persistence-buffer trail accumulation
+- **Logic Lab Reference**: `physics/n_body_orbital_simulation/n_body_orbital_simulation.py`, `physics/spring_connection/spring_connection.py`
+- **Description**: A massive, pulsing star held in precarious balance between gravitational collapse and magnetic pressure; golden solar prominences surge from the core while violet plasma agents dance in complex orbits against a high-density star-dusted void.
+
+## isohedral_metropolis
+
+- **Date**: 2026-05-04
+- **Theme**: Non-Euclidean urbanism, interlocking systems, metabolic pulse, synthetic nature
+- **Technique**: IH01 Isohedral tiling, dynamic Bezier deformation, persistence-buffer trail accumulation, high-density starfield rendering
+- **Logic Lab Reference**: `tiling_patterns/ih01_deformation/ih01_deformation.py`
+- **Description**: A dense, glowing metropolis defined by complex interlocking "living blocks" that pulse and shift against a deep star-dusted night; luminous conduits in cyan and magenta trace the shifting boundaries, while golden data hubs flicker at the intersections of the metabolic grid.
+
+## spectral_currents
+
+- **Date**: 2026-05-04
+- **Theme**: Fluidic light, spectral advection, luminous currents, silken motion
+- **Technique**: Perlin/Simplex noise vector field, particle advection, accumulation trails, HSB spectral mapping
+- **Logic Lab Reference**: `physics/perlin_noise_walker_lines/perlin_noise_walker_lines.py`
+- **Description**: A swirling sea of silken light threads that flow and curl through a deep indigo void; thousands of particles leave shimmering iridescent trails, creating a long-exposure effect of bioluminescent fluid motion.
+
+## neural_coral
+
+- **Date**: 2026-05-04
+- **Theme**: Biological growth, neural pathways, iridescent calcification
+- **Technique**: Gray-Scott Reaction-Diffusion, 3D gradient shading, optimized vectorized simulation, atmospheric bloom
+- **Logic Lab Reference**: `physics/reaction_diffusion/reaction_diffusion.py`
+- **Description**: A dense, organic maze of coral-like ridges that pulse with light; 3D-like shading and bioluminescent highlights create a sense of deep-sea biological intelligence and intricate natural architecture.
+
+## metabolic_lattice
+
+- **Date**: 2026-05-04
+- **Theme**: Kinetic tension, metabolic elasticity, structural vibration, iridescent membranes
+- **Technique**: Verlet integration, radial spring mesh, stress-based HSB mapping, atmospheric bloom rendering
+- **Logic Lab Reference**: `physics/spring_mesh/spring_mesh.py`
+- **Description**: A living, breathing radial lattice of glowing conduits that ripples and shudders under a central metabolic pulse; stress-induced colors shift from deep violet to electric cyan as the structure maintains its precarious equilibrium.
+
+## prismatic_cellularity
+
+- **Date**: 2026-05-04
+- **Theme**: Urban metabolism, cellular logic, spectral pressure, modern architectural twist
+- **Technique**: Multi-scale Worley noise (L1/L2 hybrid), derivative-based edge detection, HSB spectral mapping, atmospheric haze rendering, optimized NumPy grid-partitioning
+- **Logic Lab Reference**: `mathematical/worley_noise/worley_noise.py`
+- **Description**: A dense, glowing "cellular metropolis" of blocky, rhythmic structures that pulse and shift against a deep indigo night sky; sharp iridescent edges and soft glowing cores create a sense of operational intelligence and high-tech urban flow.
+
+## entropic_monolith
+
+- **Date**: 2026-05-04
+- **Theme**: Digital entropy, decaying geometry, crystalline collapse, monolithic silence
+- **Technique**: Recursive geometric polygon fragmentation, stochastic detachment logic, HSB edge-glow simulation, kinematic drift advection
+- **Logic Lab Reference**: `mathematical/voronoi/voronoi.py` — used as a conceptual base for spatial partitioning and sharding
+- **Description**: A massive, obsidian-like monolith that stands in a pitch-black void, slowly being shattered by invisible entropic forces; hairline cracks of electric cyan appear across its surface as geometric shards break off, drifting away and dissolving into a fine mist of white light.
+
+## interference_topography
+
+- **Date**: 2026-05-04
+- **Theme**: Wave mechanics, constructive interference, rhythmic precision, topological light
+- **Technique**: High-density vectorized wave interference (10 emitters), contour quantization (18 levels), Lissajous emitter path logic, Retina-aware pixel-buffer compositing
+- **Logic Lab Reference**: `physics/fluid_resistance/fluid_resistance.py` — conceptual base for physical field interaction
+- **Description**: A dense, vibrating field of sharp geometric contours that ripple outward from multiple moving centers; where the ripples meet, they form intense, glowing "nodes" of gold and cyan light that dance across a dark indigo void.
+
+## liquid_topology
+
+- **Date**: 2026-05-04
+- **Theme**: Fluid intelligence, liquid data, topological deformation, metallic reflection
+- **Technique**: Multi-octave domain-warped noise terrain, P3D high-density vertex mesh, multi-source specular highlight simulation, viscous motion advection
+- **Logic Lab Reference**: `physics/noise_terrain/noise_terrain.py` — used for noise-driven 3D surface generation
+- **Description**: A mesmerizing, shimmering field of liquid silver that ripples and flows across the entire canvas; light catches the viscous peaks in electric cyan and deep violet, creating a sense of immense depth and complexity as the topological surface deforms.
+
+## crystalline_bloom
+
+- **Date**: 2026-05-04
+- **Theme**: Geometric efflorescence, frozen growth, mineral intelligence
+- **Technique**: Fermat spiral (phyllotaxis), recursive polygon subdivision, depth-weighted spectral coloring, animated breathing scaling
+- **Logic Lab Reference**: `mathematical/fermat_spiral/fermat_spiral.py` — used for phyllotaxis distribution logic
+- **Description**: A complex, multi-layered "mineral bloom" that pulses with cold light; thousands of recursive geometric petals are arranged in a perfect Fermat spiral, shifting between shimmering silver and deep amethyst as the structure breathes and rotates.
+
+## monsoon_circuit
+
+- **Date**: 2026-05-04
+- **Theme**: Urban metabolism, torrential data, tropical infrastructure
+- **Technique**: Recursive quadtree subdivision, Manhattan-constrained particle flow, Retina-aware pixel-buffer accumulation, chromatic aberration shift
+- **Logic Lab Reference**: `fractals/quadtree_part_1/quadtree_part_1.py` — used for recursive subdivision logic
+- **Description**: A top-down view of a dense, glowing city grid where luminous rivers of electric teal and neon violet light surge through the streets; brighter pulses flicker at the intersections like rhythmic electronic heartbeats against a deep charcoal background.
+
+## hyperbolic_growth
+
+- **Date**: 2026-05-04
+- **Theme**: Non-Euclidean growth, constrained infinity, coral morphology, mathematical lens
+- **Technique**: Recursive hyperbolic branching (Poincaré disk model), Mobius coordinate transformation, depth-weighted stochastic jitter, HSB-spectral gradient rendering
+- **Logic Lab Reference**: `fractals/stochastic_tree/stochastic_tree.py` — used for recursive branching and stochastic jitter logic
+- **Description**: A circular Poincaré disk contains an intricate web of seafoam and amethyst branches that sprout from the center and curve elegantly outward; as they approach the boundary, they become infinitely dense and delicate, accented by golden growth tips against a deep charcoal void.
+
+## algorithmic_brutalism
+
+- **Date**: 2026-05-04
+- **Theme**: Industrial logic, brutalist architecture, recursion, monolithic scale
+- **Technique**: Animated recursive quadtree subdivision, 3D monolithic slab rendering (P3D), noise-driven height modulation, safety-orange emissive accents, isometric-parallax motion
+- **Logic Lab Reference**: `fractals/quadtree_part_1/quadtree_part_1.py` — used for recursive subdivision logic
+- **Description**: A stark, shifting landscape of charcoal concrete slabs that subdivide and merge in a rhythmic algorithmic breath; deep shadows and sharp edges emphasize the brutalist scale, while safety-orange pulses reveal the machine-like processing beneath the monolithic surface.
+
+## elastic_residue
+
+- **Date**: 2026-05-04
+- **Theme**: Material memory, physical tension, lingering traces, soft-body abstraction
+- **Technique**: Verlet cloth simulation (30x30 mesh), persistence-buffer trail accumulation, tension-weighted spectral coloring (Tan→Gold), multi-agent repulsion field
+- **Logic Lab Reference**: `research/cloth_simulation/cloth_simulation.py` — used for Verlet integration and constraint satisfaction logic
+- **Description**: A luminous web of threads deforms under invisible pressure, leaving a persistent golden record of its peak tension; the dark sienna background holds the "scars" of past movements, creating a complex palimpsest of physical stress and slow recovery.
+
 ---
+
+## selection_pressure
+
+- **Date**: 2026-05-04
+- **Theme**: Environmental pressure, adaptation, inherited variation, survival memory
+- **Technique**: Genetic-algorithm inspired population simulation, selection-weighted reproduction, phenotype mutation, lineage trail rendering, Retina-aware pixel-buffer habitat compositing
+- **Logic Lab Reference**: `genetic_algorithms/evolving_bloops/evolving_bloops.py` — used for DNA, mutation, survival, and reproduction structure
+- **Description**: A dark habitat field records generations of small abstract phenotypes drifting diagonally through selection pressure; pale moss bodies, muted amber elite rings, and faint extinct variants reveal a population slowly changing shape to survive.
+
+## seismic_tomography
+
+- **Date**: 2026-05-04
+- **Theme**: Hidden pressure beneath a surface, measurement, fault memory, geophysical abstraction
+- **Technique**: Synthetic seismic velocity-field synthesis, refracted ray tracing, travel-time residual coloring, marching-squares contour extraction, Retina-aware pixel-buffer compositing
+- **Description**: A dark subsurface instrument plate is crossed by muted teal and copper ray fans from edge sensors; faint residual contours and a chalk-copper fault trace reveal buried pressure without turning the scene into a literal landscape.
+
+## quantum_lattice
+
+- **Date**: 2026-05-04
+- **Theme**: Quantum mechanics, probability fields, entanglement, wave-particle duality
+- **Technique**: Complex wave superposition, energy-band quantization, probability-node extraction, optimized pixel-buffer rendering
+- **Description**: A vibrant field of shimmering interference fringes where waves of positron pink and electron blue overlap; bright gold quanta emerge at probability peaks against a dark vacuum indigo grid.
+
+## atmospheric_veil
+
+- **Date**: 2026-05-04
+- **Theme**: Atmospheric light, noctilucent clouds, twilight, ethereal presence
+- **Technique**: Second-order domain warping, fBm noise layers, height-dependent spectral coloring, derivative-based solar edge highlighting
+- **Description**: A luminous, shimmering veil of noctilucent clouds ripples across a deep indigo sky; pearlescent silver and electric blue textures catch a faint solar amber glow at their edges against a distant star field.
+
+## flux_lattice
+
+- **Date**: 2026-05-04
+- **Theme**: Energy distribution, urban metabolism, hidden currents, systemic flow
+- **Technique**: Stochastic lattice routing, pulse-width modulated currents, node-leakage sparks, jittered grid subdivision
+- **Description**: A dark, dense network of glowing conduits where "power" surges through neon cobalt trunk lines and gold capillaries, while ghostly magenta sparks reveal high-pressure leakage at the nodes.
 
 ## route_arbitration
 
@@ -699,6 +923,14 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: icosphere subdivision, spherical inversion, 3D Perlin noise, layered SCREEN blending, particle glow
 - **Description**: A bioluminescent microscopic skeleton pulses and inverts through its own center; bone-white and electric-cyan geometric threads form an intricate lattice surrounded by drifting gold marine snow against a deep abyss.
 
+## fractal_metropolis
+
+- **Date**: 2026-05-04
+- **Theme**: Fractal urbanism, data-metabolism, spectral infrastructure, cosmic scale
+- **Technique**: Deformed hexagonal lattice, recursive Koch-polygon architecture, spectral edge-glow simulation, multi-scale starfield synthesis
+- **Logic Lab Reference**: `tiling_patterns/ih02_tv08_koch/ih02_tv08_koch.py`
+- **Description**: A sprawling, glowing metropolis of fractal monoliths extends into a deep-space void; each structure is built from shimmering geometric layers that subdivide and pulse with electric cyan and laser pink light, while a distant starfield and violet horizon haze suggest an infinite atmospheric scale.
+
 
 ## prismatic_reflection
 
@@ -751,5 +983,13 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Theme**: architecture, crystals, iridescence, geometry, modularity
 - **Technique**: recursive isometric cube subdivision, thin-film interference color mapping, additive SCREEN blending, stochastic growth
 - **Description**: A futuristic metropolis of shimmering crystalline structures; iridescent teal, rose, and gold faces refract light across a recursive geometric landscape, creating intense luminosity where structures converge against an obsidian sky.
+
+## fractal_metropolis
+
+- **Date**: 2026-05-04
+- **Theme**: Fractal urbanism, data-metabolism, spectral infrastructure, cosmic scale
+- **Technique**: Deformed hexagonal lattice, recursive Koch-polygon architecture, spectral edge-glow simulation, multi-scale starfield synthesis
+- **Logic Lab Reference**: `tiling_patterns/ih02_tv08_koch/ih02_tv08_koch.py`
+- **Description**: A sprawling, glowing metropolis of fractal monoliths extends into a deep-space void; each structure is built from shimmering geometric layers that subdivide and pulse with electric cyan and laser pink light, while a distant starfield and violet horizon haze suggest an infinite atmospheric scale.
 
 <!-- Add new works above this line using the format below:

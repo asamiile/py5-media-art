@@ -11,6 +11,11 @@ The Artist reads this file before starting a new sketch to understand preference
 
 Add any notes on color, density, theme, or mood in the Comment field.
 
+## supernova_remnant
+
+- **Rating**: OK
+- **Comment**: The high-density particle system creates a wonderful "dusty" nebula effect. The explosive expansion is well-paced, and the multi-pass rendering gives the filaments a nice glow. The palette is vibrant yet fits the cosmic theme perfectly.
+
 ## string_theory_manifold
 
 - **Rating**: OK

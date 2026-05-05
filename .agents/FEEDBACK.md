@@ -430,8 +430,8 @@ Add any notes on color, density, theme, or mood in the Comment field.
 
 ## wave_interference
 
-- **Rating**:
-- **Comment**: It's too blurry.
+- **Rating**: OK
+- **Comment**: Polish (v3): Resolved the "too blurry" issue by migrating to full-resolution NumPy computation and P2D rendering. Enhanced visual clarity with a "Sapphire & Mercury" high-contrast palette and added technical overlays. (New preview: `preview_p1.png`)
 
 ## newton_fractal
 

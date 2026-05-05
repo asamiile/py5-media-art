@@ -11,6 +11,11 @@ The Artist reads this file before starting a new sketch to understand preference
 
 Add any notes on color, density, theme, or mood in the Comment field.
 
+## metabolic_nodes
+
+- **Rating**: 
+- **Comment**: Critic approved at 32/40. Sophisticated 3D network abstraction with a very atmospheric, organic aesthetic. The combination of proximity-based connections and pulse propagation creates a powerful sense of a living, digital nervous system. The starfield and camera motion successfully address the "beautiful night sky" request. Future improvement: introduce "pulse interference" where pulses crossing at nodes create momentary bursts of additive light.
+
 ## quantum_entanglement
 
 - **Rating**: 

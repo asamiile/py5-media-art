@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## spectral_prism
+
+- **Date**: 2026-05-05
+- **Theme**: Optical physics, chromatic dispersion, liquid light, beautiful night sky
+- **Technique**: Physical Snell's Law refraction, Cauchy's dispersion equation, multi-pass ray tracing (12 wavelengths), HSB-spectral coloring, P2D additive blending, 60fps high-quality MP4 encoding
+- **Description**: A rotating obsidian prism catches a beam of intense white starlight and refracts it into a shimmering, fluid fan of spectral colors that sweep across the canvas like a celestial lighthouse beam against a deep star-dusted void.
+
 ## ferrofluid_spikes
 
 - **Date**: 2026-05-05

@@ -11,6 +11,11 @@ The Artist reads this file before starting a new sketch to understand preference
 
 Add any notes on color, density, theme, or mood in the Comment field.
 
+## metabolic_landscape
+
+- **Rating**: 
+- **Comment**: Critic approved at 34/40. Striking planetary geography abstraction with a very atmospheric 3D aesthetic. The combination of domain-warped terrain and pulsating contours creates a powerful sense of an organic, living planet. The starfield and camera motion successfully address the "beautiful night sky" request. Future improvement: introducing "atmospheric storms" where noise-driven particle clouds drift across the terrain.
+
 ## spectral_coral
 
 - **Rating**: 

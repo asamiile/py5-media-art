@@ -11,6 +11,11 @@ The Artist reads this file before starting a new sketch to understand preference
 
 Add any notes on color, density, theme, or mood in the Comment field.
 
+## stellar_nursery_dust
+
+- **Rating**: OK
+- **Comment**: The "gas" background layer adds a very convincing depth to the scene, and the white-hot protostar centers provide excellent contrast against the deep violet dust clouds. The gravitational clumping feels natural and dynamic.
+
 ## solar_flare_loops
 
 - **Rating**: OK

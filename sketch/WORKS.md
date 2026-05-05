@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## metabolic_voxels
+
+- **Date**: 2026-05-05
+- **Theme**: Living architecture, geometric metabolism, digital growth, beautiful night sky
+- **Technique**: 3D recursive growth (P3D), spectral edge highlighting, animated "breathing" scale, dynamic camera rotation, high-density starfield
+- **Description**: A vast, dark space filled with massive, glowing 3D monoliths that grow and breathe like synthetic corals; the recursive structures in slate and graphite pulse with electric cyan and amethyst highlights against a star-dusted midnight void.
+
 ## data_metropolis
 
 - **Date**: 2026-05-05

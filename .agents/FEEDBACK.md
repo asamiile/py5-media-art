@@ -11,6 +11,11 @@ The Artist reads this file before starting a new sketch to understand preference
 
 Add any notes on color, density, theme, or mood in the Comment field.
 
+## metabolic_voxels
+
+- **Rating**: 
+- **Comment**: Critic approved at 34/40. Striking 3D architectural growth using P3D. The combination of glowing spectral edges and the "breathing" animation creates a powerful sense of organic life in a high-tech void. The starfield and camera motion successfully address the "beautiful night sky" request. Future improvement: introduce "internal lighting" where some voxels flicker like distant windows or data hubs.
+
 ## data_metropolis
 
 - **Rating**: 

@@ -11,6 +11,11 @@ The Artist reads this file before starting a new sketch to understand preference
 
 Add any notes on color, density, theme, or mood in the Comment field.
 
+## recursive_membranes
+
+- **Rating**: 
+- **Comment**: Critic approved at 34/40. Striking 3D surface abstraction with a very atmospheric, iridescent aesthetic. The combination of noise-warped meshes and translucent layering creates a powerful sense of an organic, living fabric in space. The starfield and camera motion successfully address the "beautiful night sky" request. Future improvement: introduce "tear and repair" events where the membrane momentarily ruptures and then re-weaves itself through additive light.
+
 ## stellar_clockwork
 
 - **Rating**: 

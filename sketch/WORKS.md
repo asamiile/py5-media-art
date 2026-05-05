@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## recursive_membranes
+
+- **Date**: 2026-05-05
+- **Theme**: Dimensional folding, iridescent surfaces, organic geometry, beautiful night sky
+- **Technique**: 3D noise-warped mesh (P3D), height-based HSB iridescence mapping, translucent layering, dynamic camera rotation, high-density starfield
+- **Description**: A shimmering, translucent veil of light that folds and pulses in a deep void; the noise-warped membranes in electric cyan and royal amethyst create an intricate, pearlescent tapestry of geometric resonance under a silent, star-dusted midnight sky.
+
 ## stellar_clockwork
 
 - **Date**: 2026-05-05

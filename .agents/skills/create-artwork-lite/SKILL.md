@@ -1,12 +1,12 @@
 ---
 name: create-artwork-lite
-description: "Creates exactly one py5 media art sketch with a lightweight workflow for slow Claude Code proxy routes such as NVIDIA API. Minimizes planning/review overhead while still generating preview images, updating records, committing, and pushing. Triggers: create artwork lite, lightweight artwork, NVIDIA proxy artwork"
+description: "Creates exactly one py5 media art still image with a lightweight workflow for slow Claude Code proxy routes such as NVIDIA API. Minimizes planning/review overhead while still generating preview images, updating records, committing, and pushing. Triggers: create artwork lite, lightweight artwork, NVIDIA proxy artwork"
 allowed-tools: Bash, Read, Write, Edit
 ---
 
 # Create Artwork Lite Skill
 
-Create exactly one new py5 media art sketch using a reduced-overhead version of the normal `create-artwork` workflow. This is intended for slow execution routes, especially Claude Code connected through an NVIDIA API proxy.
+Create exactly one new py5 media art still image using a reduced-overhead version of the normal `create-artwork` workflow. This is intended for slow execution routes, especially Claude Code connected through an NVIDIA API proxy.
 
 Use this skill when execution speed and fewer model/tool round trips matter more than a full Planner -> Artist -> Critic separation.
 

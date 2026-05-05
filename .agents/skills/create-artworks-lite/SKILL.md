@@ -1,12 +1,12 @@
 ---
 name: create-artworks-lite
-description: "Continuously creates py5 media art sketches with the lightweight workflow for slow Claude Code proxy routes such as NVIDIA API. Repeats create-artwork-lite-style iterations until interrupted, committing and pushing each work. Triggers: create artworks lite, batch artwork lite, continuous lightweight artwork, NVIDIA proxy artworks"
+description: "Continuously creates py5 media art still images with the lightweight workflow for slow Claude Code proxy routes such as NVIDIA API. Repeats create-artwork-lite-style iterations until interrupted, committing and pushing each work. Triggers: create artworks lite, batch artwork lite, continuous lightweight artwork, NVIDIA proxy artworks"
 allowed-tools: Bash, Read, Write, Edit
 ---
 
 # Create Artworks Lite Skill
 
-Continuously create py5 media art sketches using the lightweight workflow from `create-artwork-lite`. This is intended for slow execution routes, especially Claude Code connected through an NVIDIA API proxy.
+Continuously create py5 media art still images using the lightweight workflow from `create-artwork-lite`. This is intended for slow execution routes, especially Claude Code connected through an NVIDIA API proxy.
 
 Each iteration must produce one complete, independent artwork and commit/push it before starting the next.
 

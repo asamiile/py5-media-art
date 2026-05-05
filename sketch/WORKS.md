@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## metabolic_rhizome
+
+- **Date**: 2026-05-05
+- **Theme**: Organic growth, cosmic connectivity, rhizomatic systems, beautiful night sky
+- **Technique**: Space-colonization algorithm (nutrient-driven growth), multi-root initialization, adaptive path thickness (flow-based scaling), bioluminescent teal/violet shading, additive junction highlights
+- **Description**: A delicate, glowing web of energy that branches and weaves through a deep star-dusted void; using a space-colonization algorithm, the network self-organizes into an optimized transport system that pulses with bio-phosphor teal and neural violet, revealing the organic, interconnected nature of the cosmic vacuum.
+
 ## stellar_caustics
 
 - **Date**: 2026-05-05

@@ -11,6 +11,11 @@ The Artist reads this file before starting a new sketch to understand preference
 
 Add any notes on color, density, theme, or mood in the Comment field.
 
+## metabolic_rhizome
+
+- **Rating**: OK
+- **Comment**: The organic branching is beautifully executed. The decentralized network architecture and the teal/violet gradients create a strong sense of living connectivity within the void.
+
 ## stellar_caustics
 
 - **Rating**: OK

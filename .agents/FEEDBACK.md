@@ -11,6 +11,11 @@ The Artist reads this file before starting a new sketch to understand preference
 
 Add any notes on color, density, theme, or mood in the Comment field.
 
+## prismatic_resonator
+
+- **Rating**: 
+- **Comment**: Critic approved at 32/40. Sophisticated optical physics abstraction with a very atmospheric, geometric aesthetic. The build-up of spectral rays creates a rich, premium depth. The starfield and chromatic dispersion successfully address the "beautiful night sky" request. Future improvement: implement "resonator transformations" where the boundary shape dynamically morphs from circle to square, distorting the resonance patterns.
+
 ## recursive_membranes
 
 - **Rating**: 

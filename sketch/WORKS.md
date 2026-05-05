@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## prismatic_resonator
+
+- **Date**: 2026-05-05
+- **Theme**: Optical physics, spectral refraction, geometric resonance, beautiful night sky
+- **Technique**: Recursive ray-tracing (P2D), chromatic dispersion simulation, high-persistence path accumulation, additive bloom rendering
+- **Description**: An intricate visualization of optical resonance where shimmering spectral rays in electric cyan, cobalt, and amethyst bounce and refract inside a circular resonator; the build-up of silken, thread-like patterns pulses with a geometric harmony against a star-dusted midnight void.
+
 ## recursive_membranes
 
 - **Date**: 2026-05-05

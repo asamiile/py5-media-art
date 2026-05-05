@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## gluon_flux
+
+- **Date**: 2026-05-05
+- **Theme**: Subatomic physics, particle confinement, energetic tension, beautiful night sky
+- **Technique**: Force-directed lattice with confinement spring logic ($F \propto r$), additive spectral bloom, high-density starfield rendering, animated tension-weighted edge modulation
+- **Description**: A dense, vibrating web of "quarks" held together by shimmering "gluon flux tubes" in electric magenta, lime, and cobalt; as the particles drift apart, the tension-weighted connections flare with white-gold energy, creating a complex, high-energy lattice against a deep star-dusted night sky.
+
 ## recursive_interference
 
 - **Date**: 2026-05-04

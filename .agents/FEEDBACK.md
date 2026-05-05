@@ -11,6 +11,11 @@ The Artist reads this file before starting a new sketch to understand preference
 
 Add any notes on color, density, theme, or mood in the Comment field.
 
+## gluon_flux
+
+- **Rating**: 
+- **Comment**: Critic approved at 35/40. Successful translation of subatomic physics into a modern media art piece. The tension-weighted flux tubes and spectral bloom create a very energetic, premium feel. The high-density starfield perfectly addresses the "beautiful night sky" request. Future improvement: implement "gluon emission" where high-tension edges occasionally spawn small, short-lived virtual particles.
+
 ## recursive_interference
 
 - **Rating**: 

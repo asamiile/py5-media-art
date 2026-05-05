@@ -11,6 +11,11 @@ The Artist reads this file before starting a new sketch to understand preference
 
 Add any notes on color, density, theme, or mood in the Comment field.
 
+## strange_attractor_dust
+
+- **Rating**: OK
+- **Comment**: The "silken" texture of the dust cloud is truly stunning. The way the Lorenz attractor's lobes emerge from the violet and crimson gradients creates a powerful sense of chaotic order.
+
 ## metabolic_rhizome
 
 - **Rating**: OK

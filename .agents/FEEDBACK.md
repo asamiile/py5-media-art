@@ -11,6 +11,16 @@ The Artist reads this file before starting a new sketch to understand preference
 
 Add any notes on color, density, theme, or mood in the Comment field.
 
+## gravitational_warp
+
+- **Rating**: OK
+- **Comment**: Exceptional use of conformal mapping to simulate gravitational lensing. The sapphire/silver palette perfectly fits the "beautiful night sky" requirement, and the multi-pass rendering with chromatic aberration gives it a high-tech, professional polish.
+
+## stochastic_nebula
+
+- **Rating**: OK
+- **Comment**: Beautiful balance of organic, smoky filaments and a deep starry background. The transition from P2D to the default renderer improved stability in the headless environment without sacrificing the "silken trace" aesthetic. High density of stars and subtle additive blending successfully achieve the "beautiful night sky" requirement.
+
 ## prismatic_architecture
 
 - **Rating**: 

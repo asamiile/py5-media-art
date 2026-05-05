@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## stellar_clockwork
+
+- **Date**: 2026-05-05
+- **Theme**: Orbital resonance, astronomical instruments, temporal harmony, beautiful night sky
+- **Technique**: Nested epicyclic tracers (P2D), harmonic resonance tuning, high-persistence trace accumulation, spectral metal coloring (Gold/Silver/Copper)
+- **Description**: An intricate visualization of celestial mechanics where nested golden and silver epicycles weave a complex, shimmering tapestry of orbital paths; the build-up of silken, thread-like textures pulses with a temporal harmony against a star-dusted midnight void.
+
 ## metabolic_landscape
 
 - **Date**: 2026-05-05

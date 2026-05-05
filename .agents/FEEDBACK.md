@@ -11,6 +11,11 @@ The Artist reads this file before starting a new sketch to understand preference
 
 Add any notes on color, density, theme, or mood in the Comment field.
 
+## tectonic_glow
+
+- **Rating**: 
+- **Comment**: Critic approved at 34/40. Strong geological abstraction with a high-impact molten aesthetic. The combination of jagged cracks and a deep starfield successfully addresses the "beautiful night sky" and "modern twist" requests. Future improvement: implement a "volcanic" event where specific nodes explode into temporary particle fountains.
+
 ## gravitational_echoes
 
 - **Rating**: 

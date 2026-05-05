@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## tectonic_glow
+
+- **Date**: 2026-05-05
+- **Theme**: Planetary stress, seismic energy, crustal fractures, beautiful night sky
+- **Technique**: Dynamic proximity mesh, stress-weighted spectral coloring, midpoint-displaced quadratic "cracks", noise-driven drift simulation
+- **Description**: A dark, planetary landscape where shifting tectonic plates create glowing fractures of molten gold and electric magenta; the jagged spectral cracks pulse with subterranean energy against a deep star-dusted night sky.
+
 ## gravitational_echoes
 
 - **Date**: 2026-05-05

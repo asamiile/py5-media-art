@@ -11,6 +11,11 @@ The Artist reads this file before starting a new sketch to understand preference
 
 Add any notes on color, density, theme, or mood in the Comment field.
 
+## stellar_caustics
+
+- **Rating**: OK
+- **Comment**: The "liquid starlight" atmosphere is exceptional. The turbulent caustics perfectly capture the feeling of light passing through a gaseous medium, and the solar flares add a great touch of brilliance.
+
 ## quasicrystal_void
 
 - **Rating**: OK

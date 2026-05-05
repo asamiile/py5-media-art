@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## luminous_strata
+
+- **Date**: 2026-05-05
+- **Theme**: Geological history, layered resonance, mineral light, beautiful night sky
+- **Technique**: Stacked noise-driven ridges (P2D), spectral edge highlighting, mineral texture mapping (Simplex noise), high-density starfield rendering
+- **Description**: A shimmering visualization of geological strata where 12 noise-driven layers stack to create a rich, mineral-like landscape; the glowing ridges in emerald, amethyst, and molten gold pulse with a rhythmic planetary resonance against a deep star-dusted midnight void.
+
 ## metabolic_voxels
 
 - **Date**: 2026-05-05

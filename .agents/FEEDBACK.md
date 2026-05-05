@@ -11,6 +11,11 @@ The Artist reads this file before starting a new sketch to understand preference
 
 Add any notes on color, density, theme, or mood in the Comment field.
 
+## luminous_strata
+
+- **Rating**: 
+- **Comment**: Critic approved at 32/40. Sophisticated geological abstraction with a very atmospheric, mineral-like aesthetic. The combination of stacked noise ridges and spectral highlights creates a rich, premium depth. The starfield successfully addresses the "beautiful night sky" request. Future improvement: implement "seismic pulses" where specific layers momentarily brighten and distort in response to a global planetary signal.
+
 ## metabolic_voxels
 
 - **Rating**: 

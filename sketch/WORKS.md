@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## spectral_filaments
+
+- **Date**: 2026-05-05
+- **Theme**: Magnetic resonance, plasma loops, interstellar filaments, beautiful night sky
+- **Technique**: Vectorized 40,000-particle advection along rotating dipole fields ($B \propto r^{-2}$), HSB spectral mapping (Emerald/Gold/Cobalt), high-density starfield rendering
+- **Description**: A dense, intricate web of 40,000 silken filaments that trace the invisible magnetic architecture of the cosmos; the glowing threads in deep emerald, molten gold, and electric cobalt swirl and resonate against a deep star-dusted navy void.
+
 ## tectonic_glow
 
 - **Date**: 2026-05-05

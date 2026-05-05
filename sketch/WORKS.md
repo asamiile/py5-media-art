@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## data_metropolis
+
+- **Date**: 2026-05-05
+- **Theme**: Digital urbanism, data flow, quantum connectivity, beautiful night sky
+- **Technique**: Recursive quadtree subdivision, isometric building projection, Manhattan-grid particle advection (data packets), spectral edge highlighting
+- **Description**: A top-down isometric view of a digital metropolis where luminous data packets in laser pink, cyber lime, and electric blue surge through a complex geometric grid; the architectural slabs of the city pulse with neon light against a star-dusted night sky.
+
 ## spectral_filaments
 
 - **Date**: 2026-05-05

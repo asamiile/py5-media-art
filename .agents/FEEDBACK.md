@@ -11,6 +11,11 @@ The Artist reads this file before starting a new sketch to understand preference
 
 Add any notes on color, density, theme, or mood in the Comment field.
 
+## data_metropolis
+
+- **Rating**: 
+- **Comment**: Critic approved at 32/40. Strong digital-urbanism concept with a high-impact neon aesthetic. The combination of isometric building projection and flowing data packets creates a rich, atmospheric depth. The starfield successfully addresses the "beautiful night sky" request. Future improvement: implement a "system overload" mode where data packet density and speed increase dramatically during peak phases.
+
 ## spectral_filaments
 
 - **Rating**: 

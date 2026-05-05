@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## ferrofluid_spikes
+
+- **Date**: 2026-05-05
+- **Theme**: Magnetic fluids, physical tension, alien architecture, beautiful night sky
+- **Technique**: 3D mesh deformation (P3D, 64x64 grid), magnetic field intensity simulation, Lissajous pole paths, multi-source specular lighting, bioluminescent cobalt highlights, 60fps high-quality MP4 encoding
+- **Description**: A dark, viscous liquid surface erupts into sharp, rhythmic spikes in response to moving magnetic poles, creating an alien architectural landscape of obsidian and electric cobalt under a star-dusted night sky.
+
 ## differential_expansion
 
 - **Date**: 2026-05-05

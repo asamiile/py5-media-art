@@ -11,6 +11,11 @@ The Artist reads this file before starting a new sketch to understand preference
 
 Add any notes on color, density, theme, or mood in the Comment field.
 
+## gravitational_echoes
+
+- **Rating**: 
+- **Comment**: Critic approved at 36/40. Sophisticated visualization of spacetime resonance. The chirping orbital logic and the subpixel starfield distortion create a powerful sense of physical scale and invisible force. Perfectly addresses the "beautiful night sky" and "modern twist" requests. Future improvement: implement a "non-linear time" mode where the wave propagation speed fluctuates to simulate relativistic effects.
+
 ## gluon_flux
 
 - **Rating**: 

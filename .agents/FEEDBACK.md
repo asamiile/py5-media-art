@@ -11,6 +11,11 @@ The Artist reads this file before starting a new sketch to understand preference
 
 Add any notes on color, density, theme, or mood in the Comment field.
 
+## spectral_mitosis
+
+- **Rating**: 
+- **Comment**: Critic approved at 32/40. Sophisticated synthetic biology abstraction with a very atmospheric, organic aesthetic. The combination of stochastic cell dynamics and mitosis bursts creates a powerful sense of a living, dividing void. The starfield and membrane oscillation successfully address the "beautiful night sky" request. Future improvement: introduce "spectral recombination" where cells merging create momentary bursts of subtractive light or color mixing.
+
 ## metabolic_nodes
 
 - **Rating**: 

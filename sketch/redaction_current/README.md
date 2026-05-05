@@ -1,18 +1,16 @@
 # redaction_current
 
-A suppressed message still leaks through its black bars.
+![Preview](preview_p1.png)
+
+## Metadata
+- **Date**: 2026-05-03
+- **Theme**: censorship, suppressed communication, signal leakage, modern abstraction
+- **Technique**: Redaction block field, sinusoidal signal leakage, wake accumulation around barriers, ghost baseline synthesis
 
 ## Concept
+A document-like dark field is crossed by hard black redaction bars while cyan currents, magenta edge residue, and muted amber wakes leak around the blocks, suggesting a suppressed message that still carries charge.
 
-The work treats censorship as a physical obstruction: the message is blocked, but electrical traces bend, leak, and brighten at the edges.
-
-## Technique
-
-- **Redaction Block Field**: Rows of irregular black bars form the main visual structure.
-- **Signal Leakage Field**: Interfering sinusoidal carriers create luminous currents that survive around the blocks.
-- **Wake Accumulation**: Each redaction rectangle adds a downstream glow, as if current is diverted around a barrier.
-- **Ghost Baselines**: Faint horizontal traces imply text without making any message legible.
-
-## Visual Impression
-
-A dark document-like field where cyan currents, magenta edge residue, and muted amber wakes leak around hard black redaction bars.
+## Technical Details
+- **Renderer**: P2D
+- **Simulation**: Redaction block field
+- **Visuals**: sinusoidal signal leakage, wake accumulation around barriers, ghost baseline synthesis

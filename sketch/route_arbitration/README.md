@@ -1,18 +1,16 @@
 # route_arbitration
 
-Many autonomous decisions negotiate the same floor.
+![Preview](preview_p1.png)
+
+## Metadata
+- **Date**: 2026-05-03
+- **Theme**: autonomous negotiation, shared floor, routing pressure, operational intelligence
+- **Technique**: Obstacle-field generation, grid shortest-path routing, conflict heat accumulation, reservation tick glyphs
 
 ## Concept
+A dark warehouse-like routing map shows steel-blue and green paths threading around matte blockers while amber conflict nodes and white priority markers reveal where autonomous decisions compete for the same floor.
 
-The work abstracts a warehouse routing system as a field of negotiated intent, where every path is simple alone but dense conflicts emerge collectively.
-
-## Technique
-
-- **Obstacle Field**: Random rectangular blockers create aisles and unavailable floor zones.
-- **Grid Shortest Paths**: Breadth-first routing finds Manhattan paths between distributed start and goal cells.
-- **Conflict Heat**: Cells used by multiple routes glow amber, revealing arbitration pressure.
-- **Reservation Ticks**: Small marks along paths suggest time-window reservations and route priority.
-
-## Visual Impression
-
-A dark operational map with steel-blue and green routes threading around matte blockers, amber conflict nodes, and crisp white priority markers.
+## Technical Details
+- **Renderer**: P2D
+- **Simulation**: Obstacle-field generation
+- **Visuals**: grid shortest-path routing, conflict heat accumulation, reservation tick glyphs

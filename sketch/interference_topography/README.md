@@ -1,15 +1,18 @@
 # interference_topography
 
-A dense, vibrating field of sharp geometric contours that ripple outward from multiple moving centers. Where the ripples meet, they form intense, glowing "nodes" of gold and cyan light that dance across a dark indigo void.
+![Preview](preview_p1.png)
+
+## Metadata
+- **Date**: 2026-05-04
+- **Theme**: Wave mechanics, constructive interference, rhythmic precision, topological light
+- **Technique**: High-density vectorized wave interference (10 emitters), contour quantization (18 levels), Lissajous emitter path logic, Retina-aware pixel-buffer compositing
+- **Logic Lab Reference**: `physics/fluid_resistance/fluid_resistance.py` — conceptual base for physical field interaction
 
 ## Concept
-Wave mechanics, constructive interference, rhythmic precision, topological light. The work visualizes the hidden geometry of interference as a precise, architectural landscape of light.
+A dense, vibrating field of sharp geometric contours that ripple outward from multiple moving centers; where the ripples meet, they form intense, glowing "nodes" of gold and cyan light that dance across a dark indigo void.
 
-## Technique
-- **Wave Interference**: 10 moving oscillation centers (emitters) placed around the canvas, with paths defined by complex Lissajous frequencies.
-- **Vectorized Field**: Using NumPy to calculate the analytic superposition of waves at every pixel, optimized for Full-HD resolution.
-- **Contour Quantization**: The interference field is quantized into 18 discrete levels, creating a topographic "contour" effect that emphasizes the structural nature of the waves.
-- **Luminous Nodes**: Constructive interference peaks are highlighted with solar gold and pure white glints, while troughs fade into deep indigo.
-
-## Reference
-- `physics/fluid_resistance/fluid_resistance.py` (Logic Lab)
+## Technical Details
+- **Renderer**: P2D
+- **Simulation**: High-density vectorized wave interference (10 emitters)
+- **Visuals**: contour quantization (18 levels), Lissajous emitter path logic, Retina-aware pixel-buffer compositing
+- **Animation**: 10s @ 60fps (typical)

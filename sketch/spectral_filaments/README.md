@@ -1,17 +1,17 @@
 # spectral_filaments
 
-A generative animation exploring the intricate, invisible magnetic architecture of the interstellar medium.
+![Preview](preview_p1.png)
+
+## Metadata
+- **Date**: 2026-05-05
+- **Theme**: Magnetic resonance, plasma loops, interstellar filaments, beautiful night sky
+- **Technique**: Vectorized 40,000-particle advection along rotating dipole fields ($B \propto r^{-2}$), HSB spectral mapping (Emerald/Gold/Cobalt), high-density starfield rendering
 
 ## Concept
-The work visualizes "plasma loops" and "magnetic filaments" as they are shaped by massive, rotating dipole centers. 40,000 particles are advected along the field lines of multiple magnetic sources, creating a dense, shimmering web of silken threads. This piece captures the rhythmic resonance and structural complexity of the intergalactic medium.
+A dense, intricate web of 40,000 silken filaments that trace the invisible magnetic architecture of the cosmos; the glowing threads in deep emerald, molten gold, and electric cobalt swirl and resonate against a deep star-dusted navy void.
 
-## Technique
-- **Magnetic Dipole Simulation**: Particle advection driven by the superposition of 4 rotating magnetic dipole fields ($B \propto r^{-2}$).
-- **High-Performance Advection**: Fully vectorized NumPy implementation allowing for 40,000 simultaneous particle simulations at high frame rates.
-- **HSB Spectral Variety**: Filaments are color-coded in Emerald, Gold, and Cobalt using HSB mapping, creating a rich, iridescent texture.
-- **Deep Space Atmosphere**: A high-density starfield and darkest navy background address the "beautiful night sky" request.
-
-## Palette
-- **Background**: Deepest Navy (#020205)
-- **Filaments**: Emerald Green, Molten Gold, Electric Cobalt
-- **Stars**: Shimmering White/Silver
+## Technical Details
+- **Renderer**: P2D
+- **Simulation**: Vectorized 40,000-particle advection along rotating dipole fields ($B \propto r^{-2}$)
+- **Visuals**: HSB spectral mapping (Emerald/Gold/Cobalt), high-density starfield rendering
+- **Animation**: 10s @ 60fps (typical)

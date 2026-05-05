@@ -1,17 +1,17 @@
 # luminous_strata
 
-A generative animation exploring the concept of geological history and layered resonance through spectral light and noise-driven growth.
+![Preview](preview_p1.png)
+
+## Metadata
+- **Date**: 2026-05-05
+- **Theme**: Geological history, layered resonance, mineral light, beautiful night sky
+- **Technique**: Stacked noise-driven ridges (P2D), spectral edge highlighting, mineral texture mapping (Simplex noise), high-density starfield rendering
 
 ## Concept
-The work visualizes the deep, temporal history of a planet through shimmering geological layers. Multiple noise-driven ridges stack from back to front, representing different mineral strata. Each layer is highlighted with a spectral glow, pulsing with a rhythmic resonance that suggests an underlying planetary heartbeat in a silent, star-dusted void.
+A shimmering visualization of geological strata where 12 noise-driven layers stack to create a rich, mineral-like landscape; the glowing ridges in emerald, amethyst, and molten gold pulse with a rhythmic planetary resonance against a deep star-dusted midnight void.
 
-## Technique
-- **Stacked Noise Ridges (P2D)**: 12 layers of noise-driven silhouettes are generated using multi-octave Simplex noise, creating an organic, geological stacking effect.
-- **Spectral Edge Highlighting**: The boundaries of each layer are rendered with a glowing spectral gradient in Emerald Green, Deep Amethyst, and Molten Gold.
-- **Mineral Texture Mapping**: A subtle noise-driven grain is applied to the layers using multiplicative blending, creating a sense of crystalline depth.
-- **Atmospheric Starfield**: A high-density starfield reinforces the cosmic/planetary scale, addressing the "beautiful night sky" request.
-
-## Palette
-- **Strata**: Emerald Green, Deep Amethyst, Molten Gold
-- **Grain**: Pale Mineral Silver
-- **Void**: Midnight Blue/Black
+## Technical Details
+- **Renderer**: P2D
+- **Simulation**: Stacked noise-driven ridges (P2D)
+- **Visuals**: spectral edge highlighting, mineral texture mapping (Simplex noise), high-density starfield rendering
+- **Animation**: 10s @ 60fps (typical)

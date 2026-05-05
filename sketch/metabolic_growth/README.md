@@ -1,17 +1,18 @@
-# Metabolic Growth
+# metabolic_growth
 
-A 3D L-System exploration of synthetic life and algorithmic botany.
+![Preview](preview_p1.png)
 
-## Thematic Concept
-'Metabolic Growth' visualizes a digital organism that exists in a high-tech void. It explores the tension between organic growth patterns (L-Systems) and the rigid, mathematical structure of the digital world (the grid). The "pulse" of the organism is represented through rhythmic sways and shifting light.
+## Metadata
+- **Date**: 2026-05-04
+- **Theme**: Algorithmic botany, synthetic life, metabolic pulse, modern twist
+- **Technique**: 3D L-System branching, recursive depth modulation, glowing branch gradients, wireframe perspective grid
+- **Logic Lab Reference**: `fractals/l_system/l_system.py`
+
+## Concept
+A complex, glowing 3D organism grows from a dark wireframe grid; violet and cyan branches pulse with a rhythmic algorithmic breath, while terminal nodes flicker with spectral light against a deep star-dusted void.
 
 ## Technical Details
-- **3D L-System**: Implements a 3D branching grammar with rotations in X, Y, and Z axes.
-- **Recursive Depth**: 5 levels of subdivision create a complex, dense structure.
-- **Spectral Bloom**: Terminal nodes (leaves) are rendered as small glowing spheres that pulse with HSB color shifts.
-- **Environment**: A wireframe perspective grid provides a sense of scale and "modern" grounding.
-- **Logic Lab Integration**: References `fractals/l_system` for the core grammar logic and `physics/spring_mesh` for the conceptual metabolic pulse.
-
-## Logic Lab References
-- `fractals/l_system`
-- `physics/spring_mesh`
+- **Renderer**: P2D
+- **Simulation**: 3D L-System branching
+- **Visuals**: recursive depth modulation, glowing branch gradients, wireframe perspective grid
+- **Animation**: 10s @ 60fps (typical)

@@ -1,10 +1,17 @@
 # hyperbolic_growth
- 
+
+![Preview](preview_p1.png)
+
+## Metadata
 - **Date**: 2026-05-04
-- **Theme**: The infinite expansion of life within a finite, curved boundary; a meditation on growth in constrained, non-Euclidean spaces.
-- **Technique**: Recursive branching in hyperbolic space (Poincaré disk model) using Mobius transformations to maintain geodesics; stochastic jitter for organic "coral" morphology.
-- **Logic Lab Reference**: `fractals/stochastic_tree/stochastic_tree.py` — used for recursive branching logic.
+- **Theme**: Non-Euclidean growth, constrained infinity, coral morphology, mathematical lens
+- **Technique**: Recursive hyperbolic branching (Poincaré disk model), Mobius coordinate transformation, depth-weighted stochastic jitter, HSB-spectral gradient rendering
+- **Logic Lab Reference**: `fractals/stochastic_tree/stochastic_tree.py` — used for recursive branching and stochastic jitter logic
 
-## Description
+## Concept
+A circular Poincaré disk contains an intricate web of seafoam and amethyst branches that sprout from the center and curve elegantly outward; as they approach the boundary, they become infinitely dense and delicate, accented by golden growth tips against a deep charcoal void.
 
-A circular "lens" where intricate, mossy branches sprout from the center and curve elegantly outward. As the branches approach the boundary of the Poincaré disk, they become infinitely dense and delicate, revealing the non-Euclidean nature of the space. The palette transitions from seafoam teal at the core to deep amethyst at the edges, with golden growth tips marking the latest stochastic expansions.
+## Technical Details
+- **Renderer**: P2D
+- **Simulation**: Recursive hyperbolic branching (Poincaré disk model)
+- **Visuals**: Mobius coordinate transformation, depth-weighted stochastic jitter, HSB-spectral gradient rendering

@@ -1,16 +1,18 @@
-# Synthetic Aurora
+# synthetic_aurora
 
-A digital reimagining of atmospheric phenomena. 
+![Preview](preview_p1.png)
 
-## Thematic Concept
-'Synthetic Aurora' explores the intersection of natural beauty and digital glitch. It visualizes a future where the night sky is filled with algorithmic currents of light, shimmering with chromatic aberration and spectral interference.
+## Metadata
+- **Date**: 2026-05-04
+- **Theme**: Atmospheric phenomena, digital beauty, spectral currents, beautiful night sky
+- **Technique**: Noise-driven vertical Bezier curtains, chromatic aberration (RGB spatial split), persistence-buffer trail accumulation, additive P2D blending
+- **Logic Lab Reference**: `physics/additive_wave/additive_wave.py`, `physics/perlin_noise_walker_lines/perlin_noise_walker_lines.py`
+
+## Concept
+A digital reimagining of the Northern Lights where algorithmic curtains of light shimmer with iridescent chromatic fringes; deep emerald, cyan, and electric pink currents wave across a dark star-dusted void, leaving glowing spectral echoes in their wake.
 
 ## Technical Details
-- **Noise-Driven Advection**: 15 layers of vertical Bezier curtains are deformed by multi-octave Perlin noise.
-- **Chromatic Aberration**: Each curtain is split into R, G, and B components with spatial offsets, creating a prismatic "fringe" effect characteristic of high-end optical sensors.
-- **Persistence Rendering**: Uses a low-alpha feedback loop to create smooth motion trails and a glowing, ethereal atmosphere.
-- **Logic Lab Integration**: References `physics/additive_wave` for the interference-based shimmering and `physics/perlin_noise_walker_lines` for the organic movement.
-
-## Logic Lab References
-- `physics/additive_wave`
-- `physics/perlin_noise_walker_lines`
+- **Renderer**: P2D
+- **Simulation**: Noise-driven vertical Bezier curtains
+- **Visuals**: chromatic aberration (RGB spatial split), persistence-buffer trail accumulation, additive P2D blending
+- **Animation**: 10s @ 60fps (typical)

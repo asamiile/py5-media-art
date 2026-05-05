@@ -1,18 +1,17 @@
 # urban_pulse
 
-A visualization of the heartbeat of a modern metropolis. The work represents urban energy as a fluid, rhythmic pulse of information and movement through a structured grid.
+![Preview](preview_p1.png)
 
-## Theme
-- Urban Energy
-- Modern City
-- Rhythm
-- Connectivity
+## Metadata
+- **Date**: 2026-05-03
+- **Theme**: urbanism, connectivity, kinetic energy, modern city, data flow
+- **Technique**: Recursive grid subdivision, Manhattan-distance flow field, pulse-modulated particle brightness, architectural window grid synthesis
 
-## Technique
-- **Grid Subdivision**: Recursive subdivision creating non-uniform "city blocks".
-- **Manhattan Flow**: Particles navigate only in cardinal directions along the "streets".
-- **Pulse Dynamics**: Global sinusoidal pulses modulate the brightness of both the "data" particles and the architectural "windows".
-- **High-Density Vectorization**: 40,000 particles simulated using NumPy for smooth, complex flow.
+## Concept
+A top-down "satellite" view of a glowing digital city; 40,000 particles surge through a Manhattan-grid street network in neon cyan and magenta, while flickering window grids in dark blocks create a dense architectural texture synchronized to a global "pulse" heartbeat.
 
-## Visual Impression
-A nocturnal top-down view of a glowing digital city. Sharp geometric blocks are carved out of the darkness, while rivers of neon cyan, magenta, and golden amber surge through the streets. Architectural window grids flicker with life, synchronized to the city's pulse.
+## Technical Details
+- **Renderer**: P2D
+- **Simulation**: Recursive grid subdivision
+- **Visuals**: Manhattan-distance flow field, pulse-modulated particle brightness, architectural window grid synthesis
+- **Animation**: 10s @ 60fps (typical)

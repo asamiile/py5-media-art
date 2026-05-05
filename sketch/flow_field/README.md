@@ -1,5 +1,16 @@
-# Flow Field
+# flow_field
 
-![preview](preview.png)
+![Preview](preview_p1.png)
 
-80,000 particles drifting through a multi-frequency vector field built from layered sine and cosine functions. Particles converge onto emergent closed-loop orbits — limit cycles — tracing glowing stream lines reminiscent of plasma vortex rings or magnetic field lines on a deep black ground.
+## Metadata
+- **Date**: 2026-04-25
+- **Theme**: fluid dynamics, emergence, field theory
+- **Technique**: particle system, noise-based vector field, trail accumulation, log-scale tone mapping
+
+## Concept
+80k particles following a multi-frequency sine/cosine vector field, converging onto emergent closed-loop orbits that trace luminous stream lines on black
+
+## Technical Details
+- **Renderer**: P2D
+- **Simulation**: particle system
+- **Visuals**: noise-based vector field, trail accumulation, log-scale tone mapping

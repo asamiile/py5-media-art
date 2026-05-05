@@ -1,15 +1,16 @@
 # rossler_attractor
 
-**Theme**: "Spiral descent" — the Rössler attractor; a 3D chaotic system whose orbits wind outward in the (x,y) plane in a broad spiral before snapping back through a narrow fold at high z, then repeating — a fundamentally different shape from the Lorenz butterfly
+![Preview](preview_p1.png)
 
-**Technique**: Vectorised RK4 integration of 250 parallel trajectories (35k steps each); density split into three z-height layers (low/mid/high) each accumulated separately; additive colour compositing of violet (low z), teal (mid z), gold (high z) layers; log-scale tone mapping per layer
+## Metadata
+- **Date**: 2026-04-26
+- **Theme**: chaos theory, mathematics, physics, strange attractor
+- **Technique**: vectorised RK4 ODE (250 trajectories × 35k steps), z-height split into 3 density layers, additive colour compositing violet→teal→gold, log tone mapping
 
-**Description**: The Rössler system (dx/dt = −y−z, dy/dt = x+ay, dz/dt = b+z(x−c), a=b=0.2, c=5.7) traces a wide clockwise spiral in the (x,y) plane. Near the outer edge, each orbit is pushed to high z values (the snap-back fold) before being injected back at low z near the centre. Z-height coloring makes this fold visible as a bright gold crescent at the top-right against the deep violet spiral body. The dark void at the centre is the attractor's characteristic hollow core.
+## Concept
+The Rössler chaotic system rendered with z-height coloring; the spiral body glows violet, the snap-back fold burns gold, revealing the 3D fold structure in a (x,y) projection with depth as color
 
-**Palette**:
-- Background: `#05040a` near-black
-- Low z (spiral body): `#1c1264` deep violet
-- Mid z (transition): `#087890` electric teal
-- High z (snap-back fold): `#dcb41c` warm gold
-
-**Preview**: `preview.png`
+## Technical Details
+- **Renderer**: P2D
+- **Simulation**: vectorised RK4 ODE (250 trajectories × 35k steps)
+- **Visuals**: z-height split into 3 density layers, additive colour compositing violet→teal→gold, log tone mapping

@@ -1,18 +1,17 @@
 # soft_membranes
 
-An exploration of translucency and organic fluidity. The work simulates the appearance of delicate, bioluminescent membranes drifting in a dark, viscous fluid.
+![Preview](preview_p1.png)
 
-## Theme
-- Organic Flow
-- Translucency
-- Bioluminescence
-- Deep Sea
+## Metadata
+- **Date**: 2026-05-03
+- **Theme**: organic flow, translucency, bioluminescence, deep sea
+- **Technique**: Stacked domain-warped noise layers, alpha accumulation, additive blending, dynamic ribbon geometry
 
-## Technique
-- **Stacked Noise Layers**: 24 layers of noise-driven ribbons with varying phase and warping.
-- **Domain Warping**: Perlin noise fields distorted by other noise fields to create "wispy" organic structures.
-- **Alpha Accumulation**: Low-alpha layers (8%) stacked using additive blending to create luminous depth.
-- **Dynamic Ribbons**: Each membrane is a closed shape with a fluctuating top and bottom edge, simulating fabric-like movement.
+## Concept
+24 translucent, bioluminescent membranes drift through a dark indigo void; layered noise-driven ribbons in seafoam, rose, and amethyst overlap to create complex prismatic interference and luminous depth, accompanied by drifting marine snow particles.
 
-## Visual Impression
-Ethereal, semi-transparent sheets of light sway gently through a dark indigo void. The membranes overlap to create new colors and complex interference patterns, while drifting "marine snow" particles add to the sense of an underwater environment.
+## Technical Details
+- **Renderer**: P2D
+- **Simulation**: Stacked domain-warped noise layers
+- **Visuals**: alpha accumulation, additive blending, dynamic ribbon geometry
+- **Animation**: 10s @ 60fps (typical)

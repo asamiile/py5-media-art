@@ -1,16 +1,16 @@
 # kaleidoscope
 
-**Theme**: "Stained glass mandala" — a 12-fold kaleidoscope; a single 15° wedge of a multi-frequency sine pattern is reflected and rotated to fill a circle, producing a jewel-toned stained-glass window from pure mathematical symmetry
+![Preview](preview_p1.png)
 
-**Technique**: Polar coordinate mapping; each pixel's angle is folded into the canonical sector [0°, 15°] via modulo + reflection; a 3-frequency sine/cosine product pattern is sampled at the canonical (r, θ) coordinates; the result is mapped through a cyclic 4-stop jewel-tone palette
+## Metadata
+- **Date**: 2026-04-26
+- **Theme**: optics, symmetry, mandala, geometry, stained glass
+- **Technique**: polar coordinate folding into canonical sector, multi-frequency sine product pattern, cyclic 4-stop jewel-tone palette, circular mask
 
-**Description**: Every pixel is assigned to one of the 24 canonical wedge instances through angle folding, giving the 12-fold rotational + reflective symmetry of a physical kaleidoscope. The pattern within the wedge uses three interfering sine harmonics whose product creates organic blob shapes. The cyclic palette — warm gold → cool teal → crimson → deep violet → back to gold — produces layered stained-glass rings radiating from the center. The near-black circle boundary separates the mandala from the dark background.
+## Concept
+12-fold kaleidoscope; a 15° wedge of interfering sine harmonics is reflected and rotated to fill a circle; jewel-tone cyclic palette produces concentric stained-glass rings
 
-**Palette**:
-- Background: `#06050a` near-black
-- Warm gold: `#cd9b1c`
-- Cool teal: `#1c989e`
-- Crimson: `#9e1c26`
-- Deep violet: `#6c1ca8`
-
-**Preview**: `preview.png`
+## Technical Details
+- **Renderer**: P2D
+- **Simulation**: polar coordinate folding into canonical sector
+- **Visuals**: multi-frequency sine product pattern, cyclic 4-stop jewel-tone palette, circular mask

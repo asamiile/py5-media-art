@@ -1,10 +1,18 @@
 # elastic_residue
- 
+
+![Preview](preview_p1.png)
+
+## Metadata
 - **Date**: 2026-05-04
-- **Theme**: A meditation on material memory and the lingering traces of physical tension.
-- **Technique**: High-fidelity cloth simulation (Verlet integration) with persistent luminous trails; tension-based color mapping from tan to gold.
-- **Logic Lab Reference**: `research/cloth_simulation/cloth_simulation.py` — used for core soft-body physics logic.
+- **Theme**: Material memory, physical tension, lingering traces, soft-body abstraction
+- **Technique**: Verlet cloth simulation (30x30 mesh), persistence-buffer trail accumulation, tension-weighted spectral coloring (Tan→Gold), multi-agent repulsion field
+- **Logic Lab Reference**: `research/cloth_simulation/cloth_simulation.py` — used for Verlet integration and constraint satisfaction logic
 
-## Description
+## Concept
+A luminous web of threads deforms under invisible pressure, leaving a persistent golden record of its peak tension; the dark sienna background holds the "scars" of past movements, creating a complex palimpsest of physical stress and slow recovery.
 
-A delicate, glowing web of threads deforms and stretches under the influence of invisible pressure spheres. Where the internal tension is highest, the lines burn with a golden intensity, leaving fading "scars" or spectral residues on the dark sienna background. The work explores the concept of "material memory," where past stresses remain visible as a luminous record of the system's history.
+## Technical Details
+- **Renderer**: P2D
+- **Simulation**: Verlet cloth simulation (30x30 mesh)
+- **Visuals**: persistence-buffer trail accumulation, tension-weighted spectral coloring (Tan→Gold), multi-agent repulsion field
+- **Animation**: 10s @ 60fps (typical)

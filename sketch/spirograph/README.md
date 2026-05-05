@@ -1,13 +1,16 @@
 # spirograph
 
-**Theme**: "Machine botany" — eight hypotrochoid rose curves overlaid at the canvas center, each drawn by a different gear ratio, evoking the layered petals of mechanical spirograph drawing instruments
+![Preview](preview_p1.png)
 
-**Technique**: Parametric hypotrochoid equations (x = (R−r)cos t + d·cos((R−r)t/r), y = (R−r)sin t − d·sin((R−r)t/r)) with d = R−r (classic rose mode); each curve closes after r/gcd(R,r) full inner-gear revolutions; normalized to canvas radius; semi-transparent strokes let color overlaps show through
+## Metadata
+- **Date**: 2026-04-26
+- **Theme**: mathematics, mechanical drawing, symmetry, petal geometry
+- **Technique**: parametric hypotrochoid equations (d = R−r rose mode), 8 overlaid curves with petal counts 4–12, normalized radii, semi-transparent concentric layering
 
-**Description**: Eight rose-curve hypotrochoids with petal counts 4, 5, 6, 7, 8, 9, 11, and 12 are drawn concentrically in distinct colors (crimson, gold, teal, violet, coral, sage green, steel blue, rose). All curves use d = R−r which produces the classic sharp-cusped petal shape without inner loops. The overlapping petals build up a stained-glass mandala where different petal densities create interference patterns at the center and outer ring.
+## Concept
+Eight hypotrochoid rose curves in distinct colors (crimson through rose) overlaid at the canvas center; petal counts 4, 5, 6, 7, 8, 9, 11, 12 build a stained-glass mandala where overlapping petals create color interference patterns
 
-**Palette**:
-- Background: `#06060e` near-black deep navy
-- 8 curve colors: crimson, gold, teal, violet, coral, sage, steel blue, rose
-
-**Preview**: `preview.png`
+## Technical Details
+- **Renderer**: P2D
+- **Simulation**: parametric hypotrochoid equations (d = R−r rose mode)
+- **Visuals**: 8 overlaid curves with petal counts 4–12, normalized radii, semi-transparent concentric layering

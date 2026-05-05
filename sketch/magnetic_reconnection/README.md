@@ -1,22 +1,17 @@
 # magnetic_reconnection
 
-An intricate visualization of solar magnetic physics and plasma energy dynamics.
+![Preview](preview_p1.png)
+
+## Metadata
+- **Date**: 2026-05-05
+- **Theme**: Solar physics, plasma energy, magnetic snap, beautiful night sky
+- **Technique**: Vectorized 50,000-particle advection, dynamic multi-pole magnetic field reconnection, kinetic energy spectral mapping, high-density starfield rendering
 
 ## Concept
+An intricate visualization of solar magnetic physics where 50,000 silken filaments trace the invisible architecture of a multi-pole magnetic field; periodic "reconnection" events send shimmering shockwaves of molten gold and stark white light through the deep star-dusted indigo void.
 
-This work simulates the phenomenon of magnetic reconnection, where magnetic field lines from different domains suddenly "snap" and re-route, releasing immense amounts of kinetic energy. This process is visualized as high-tension magnetic filaments that pulse with energy in a deep, star-dusted void.
-
-## Technique
-
-- **Vectorized Particle Advection**: 50,000 particles are advected along a multi-pole magnetic field using NumPy for high performance.
-- **Dynamic Field Topology**: The magnetic dipoles are periodically modulated to force "reconnection" events, changing the flow patterns and accelerating local particles.
-- **Spectral Energy Mapping**: Particle colors shift from deep blue/teal to intense white-gold based on the local magnetic field intensity (a proxy for kinetic energy).
-- **Persistence Trails**: A slow-fade background creates silken, thread-like filaments that trace the history of the magnetic field lines.
-- **High-Density Starfield**: A procedurally generated background provides a sense of cosmic scale and depth.
-
-## Palette
-
-- **Deep Indigo**: The vacuum of space.
-- **Electric Cobalt / Teal**: Low-energy magnetic filaments.
-- **Rose-Gold / Molten Gold**: High-energy reconnection sites.
-- **Stark White**: Peak energy acceleration.
+## Technical Details
+- **Renderer**: P2D
+- **Simulation**: Vectorized 50,000-particle advection
+- **Visuals**: dynamic multi-pole magnetic field reconnection, kinetic energy spectral mapping, high-density starfield rendering
+- **Animation**: 10s @ 60fps (typical)

@@ -1,14 +1,18 @@
 # monsoon_circuit
 
-A top-down view of a dense, glowing city grid where luminous rivers of electric teal and neon violet light surge through the streets. Brighter pulses flicker at the intersections like rhythmic electronic heartbeats against a deep charcoal background.
+![Preview](preview_p1.png)
+
+## Metadata
+- **Date**: 2026-05-04
+- **Theme**: Urban metabolism, torrential data, tropical infrastructure
+- **Technique**: Recursive quadtree subdivision, Manhattan-constrained particle flow, Retina-aware pixel-buffer accumulation, chromatic aberration shift
+- **Logic Lab Reference**: `fractals/quadtree_part_1/quadtree_part_1.py` — used for recursive subdivision logic
 
 ## Concept
-Urban metabolism, torrential data, tropical infrastructure. The work captures the rhythmic, heavy energy of a digital storm flowing through a futuristic urban grid.
+A top-down view of a dense, glowing city grid where luminous rivers of electric teal and neon violet light surge through the streets; brighter pulses flicker at the intersections like rhythmic electronic heartbeats against a deep charcoal background.
 
-## Technique
-- **Grid**: Recursive quadtree subdivision defines the hierarchy of streets and blocks.
-- **Flow**: Particle system with agents birthed as "raindrops" constrained to Manhattan routing along grid edges.
-- **Atmosphere**: Retina-aware pixel-buffer accumulation for persistence trails, combined with a subtle chromatic aberration shift and additive building lights.
-
-## Reference
-- `fractals/quadtree_part_1/quadtree_part_1.py` (Logic Lab)
+## Technical Details
+- **Renderer**: P2D
+- **Simulation**: Recursive quadtree subdivision
+- **Visuals**: Manhattan-constrained particle flow, Retina-aware pixel-buffer accumulation, chromatic aberration shift
+- **Animation**: 10s @ 60fps (typical)

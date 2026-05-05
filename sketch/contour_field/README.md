@@ -1,5 +1,17 @@
-# Contour Field
+# contour_field
 
-![preview](preview.png)
+![Preview](preview_p1.png)
 
-A fractal terrain field is synthesized via inverse FFT with a 1/f² power spectrum, producing smooth organic hills unique to every run. The elevation is rendered as 14 topographic contour bands with sharp dark boundaries, each band cycling through the full color spectrum. The result reads simultaneously as abstract cartography and pure color field composition.
+## Metadata
+- **Date**: 2026-04-25
+- **Theme**: abstract cartography, landscape, topology
+- **Technique**: 2D FFT spectral terrain synthesis (1/f² power spectrum), topographic contour band coloring
+
+## Concept
+Fractal terrain field via inverse FFT rendered as 14 colorful topographic contour bands with sharp dark borders; organic hills unique to every run
+
+## Technical Details
+- **Renderer**: P2D
+- **Simulation**: 2D FFT spectral terrain synthesis (1/f² power spectrum)
+- **Visuals**: topographic contour band coloring
+- **Animation**: 10s @ 60fps (typical)

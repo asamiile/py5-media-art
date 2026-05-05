@@ -1,15 +1,16 @@
 # sand_dunes
 
-**Theme**: "Eroded silence" — desert dunes at last light; wind geometry rendered as layered silhouettes
+![Preview](preview_p1.png)
 
-**Technique**: 14 ridge layers painted back-to-front; each ridge is a smooth 1D noise profile from summed cosines with random phases (2–5 octaves, roughness 0.55); filled polygon from ridge top down to canvas bottom creates depth compositing
+## Metadata
+- **Date**: 2026-04-26
+- **Theme**: desert landscape, geology, atmosphere, light
+- **Technique**: layered ridge silhouettes back-to-front, 1D cosine noise profiles (2–5 octaves), filled polygon depth compositing, sky gradient via numpy pixel buffer
 
-**Description**: A desert landscape in last light. 14 dune ridge silhouettes progress from dark brown at the horizon to pale ivory cream in the foreground, with a burnt-sienna-to-amber sky gradient behind them. Front layers have more octaves and larger amplitude swings, producing the characteristic sharp crests of desert dunes. Back layers are lower, smoother, and subtler — dissolved in haze at the horizon.
+## Concept
+14 dune ridge silhouettes progress from dark brown near the horizon to pale ivory cream in the foreground, with a burnt-sienna-to-amber sky gradient; front layers have higher octave noise and greater amplitude, producing sharp desert crests while back layers dissolve into hazy distance
 
-**Palette**:
-- Sky top: `#281c12` burnt sienna-black
-- Sky bottom: `#b4783c` amber horizon
-- Back dune: `#321e12` darkest brown
-- Front dune: `#f5e8c0` pale cream sand
-
-**Preview**: `preview.png`
+## Technical Details
+- **Renderer**: P2D
+- **Simulation**: layered ridge silhouettes back-to-front
+- **Visuals**: 1D cosine noise profiles (2–5 octaves), filled polygon depth compositing, sky gradient via numpy pixel buffer

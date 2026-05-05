@@ -1,15 +1,16 @@
 # lorenz_attractor
 
-**Theme**: "Convective turbulence" — the Lorenz attractor, born from a 1963 meteorology model, reveals the butterfly where chaos lives
+![Preview](preview_p1.png)
 
-**Technique**: Runge-Kutta 4 integration of the Lorenz ODE system, 800 parallel trajectories, density accumulation, log-scale tone mapping
+## Metadata
+- **Date**: 2026-04-26
+- **Theme**: chaos theory, physics, meteorology, strange attractor
+- **Technique**: RK4 ODE integration, 800 parallel trajectories, density accumulation, log tone mapping
 
-**Description**: 800 trajectories are simultaneously integrated through the Lorenz system (σ=10, ρ=28, β=8/3) using RK4 at dt=0.004. After a burn-in of 2000 steps, 25,000 steps per trajectory are recorded and projected onto the (x, z) plane — the canonical butterfly view. Point density is accumulated into a 2D histogram, log-mapped, and rendered through a rust→amber→pale-gold palette. The two lobes and their dark hollow centers emerge from the attractor's own geometry.
+## Concept
+20 million trajectory points traced through the Lorenz convection system projected onto the (x,z) plane; density accumulation reveals the twin-lobed butterfly with dark hollow cores and warm amber density gradient
 
-**Palette**:
-- Background: `#020308` near-black
-- Low density: `#5a1e08` deep rust
-- Mid density: `#c87814` warm amber
-- Peak density: `#ffdC8c` pale gold
-
-**Preview**: `preview.png`
+## Technical Details
+- **Renderer**: P2D
+- **Simulation**: RK4 ODE integration
+- **Visuals**: 800 parallel trajectories, density accumulation, log tone mapping

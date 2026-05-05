@@ -1,11 +1,17 @@
-# Fractal Currents
+# fractal_currents
 
-A visualization of mathematical fluidity where 40,000 particles flow along the complex-gradient of a Julia Set in a deep star-dusted void.
+![Preview](preview_p1.png)
 
-- **Theme**: Mathematical Fluidity, fractal advection, complex dynamics, beautiful night sky.
-- **Technique**: Julia-set driven flow field, vectorized particle advection (NumPy), HSB phase-to-hue mapping, atmospheric starfield rendering.
-- **Palette**: Complex Current (Deep Space Indigo, Electric Teal, Soft Rose, Stardust White).
+## Metadata
+- **Date**: 2026-05-04
+- **Theme**: Mathematical fluidity, fractal advection, complex dynamics, beautiful night sky
+- **Technique**: Julia-set driven flow field, vectorized particle advection (NumPy), HSB phase-to-hue mapping, atmospheric starfield rendering
 
-## Description
+## Concept
+A swirling, intricate sea of 40,000 particles flows along the complex-gradient of a Julia Set; the dense iridescent currents in electric teal and soft rose navigate the infinite recursive boundaries of the fractal against a deep star-dusted night sky.
 
-This piece features a mesmerizing, swirling sea of 40,000 particles that navigate the recursive boundaries of a Julia Set. The motion is governed by the local gradient of the complex function z = z^2 + c, creating intricate patterns of flow that mirror the infinite complexity of the fractal. The particles are colored based on their local complex phase, shifting between electric teal and soft rose as they surge through the silent, star-dusted void.
+## Technical Details
+- **Renderer**: P2D
+- **Simulation**: Julia-set driven flow field
+- **Visuals**: vectorized particle advection (NumPy), HSB phase-to-hue mapping, atmospheric starfield rendering
+- **Animation**: 10s @ 60fps (typical)

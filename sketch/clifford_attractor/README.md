@@ -1,5 +1,16 @@
-# Clifford Attractor
+# clifford_attractor
 
-![preview](preview.png)
+![Preview](preview_p1.png)
 
-A strange attractor defined by four trigonometric parameters, revealing chaotic yet structured geometry. Two million trajectory points are accumulated into a density field, log-scaled, and mapped to a dark-to-amber palette — exposing the intricate loops and knotted convergence zones of deterministic chaos.
+## Metadata
+- **Date**: 2026-04-25
+- **Theme**: chaos theory, mathematics
+- **Technique**: strange attractor, vectorized multi-trajectory, density accumulation, log-scale mapping
+
+## Concept
+Two million points tracing a Clifford attractor, rendered as a density field with an amber glow on black
+
+## Technical Details
+- **Renderer**: P2D
+- **Simulation**: strange attractor
+- **Visuals**: vectorized multi-trajectory, density accumulation, log-scale mapping

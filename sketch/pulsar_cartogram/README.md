@@ -1,18 +1,16 @@
 # pulsar_cartogram
 
-Time signals cross an empty sky like a navigational artifact.
+![Preview](preview_p1.png)
+
+## Metadata
+- **Date**: 2026-05-03
+- **Theme**: time signals, deep-space navigation, astronomical instrument record
+- **Technique**: Polar pulsar placement, pulse train encoding, barycentric timing arcs, sparse chart grid synthesis
 
 ## Concept
+A near-black astronomical cartogram turns rhythmic pulse arrivals into coordinates; cyan tick trains radiate from a central reference while amber timing arcs, rose halos, and faint chart lanes cross the quiet sky.
 
-The work imagines a sky map built from rhythm instead of position: each radial mark is a pulse arriving from deep space and becoming a coordinate.
-
-## Technique
-
-- **Polar Pulsar Placement**: Randomized polar positions place timing sources around a central reference.
-- **Pulse Train Encoding**: Period and drift parameters create short transverse ticks along each radial path.
-- **Timing Arcs**: Small offset arcs around each source imply barycentric correction and phase uncertainty.
-- **Sparse Chart Grid**: Faint grid and ring marks make the image feel like an instrument record rather than a literal night sky.
-
-## Visual Impression
-
-A near-black astronomical chart with dim cyan pulse ticks, cold blue-gray guide lines, soft amber timing arcs, and restrained rose halos.
+## Technical Details
+- **Renderer**: P2D
+- **Simulation**: Polar pulsar placement
+- **Visuals**: pulse train encoding, barycentric timing arcs, sparse chart grid synthesis

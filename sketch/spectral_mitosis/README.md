@@ -1,17 +1,17 @@
 # spectral_mitosis
 
-A generative animation exploring the concept of synthetic biology, membrane dynamics, and information splitting.
+![Preview](preview_p1.png)
+
+## Metadata
+- **Date**: 2026-05-05
+- **Theme**: Synthetic biology, membrane dynamics, information splitting, beautiful night sky
+- **Technique**: Stochastic cell simulation (P2D), iridescent membrane oscillation, spectral mitosis bursts, high-density starfield rendering
 
 ## Concept
-The work visualizes an intricate, shimmering world of synthetic biological growth. Using a stochastic cell simulation algorithm, the piece creates glowing organic forms that pulse and divide in a deep cosmic void. The iridescent membrane oscillation and sudden bursts of spectral light suggest an underlying biological harmony under a star-dusted night sky.
+An intricate visualization of synthetic biological growth where glowing organic forms in electric cyan and cyber magenta pulse and divide in a deep void; the shimmering celestial tapestry of mitosis events pulses with a rhythmic harmony against a star-dusted midnight sky.
 
-## Technique
-- **Stochastic Cell Simulation (P2D)**: Multiple deformable "cells" generated using noise-driven polygon vertices, moving through a complex noise field.
-- **Iridescent Membrane Oscillation**: Cell boundaries vibrate with a combination of multi-octave noise and harmonic Sine waves, creating organic, "living" forms.
-- **Spectral Mitosis Events**: Cells periodically "burst" with additive spectral light, accompanied by a sudden shift in HSB hue and scale.
-- **Atmospheric Starfield**: A high-density starfield reinforces the cosmic/astronomical context, addressing the "beautiful night sky" request.
-
-## Palette
-- **Membranes**: Electric Cyan, Cyber Magenta, Gold
-- **Cells**: Pearlescent Slate, Pale Silver
-- **Void**: Midnight Blue/Black
+## Technical Details
+- **Renderer**: P2D
+- **Simulation**: Stochastic cell simulation (P2D)
+- **Visuals**: iridescent membrane oscillation, spectral mitosis bursts, high-density starfield rendering
+- **Animation**: 10s @ 60fps (typical)

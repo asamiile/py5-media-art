@@ -32,6 +32,8 @@ def solve_k4(k1, k2, k3):
     root = 2 * np.sqrt(term)
     return [k1 + k2 + k3 + root, k1 + k2 + k3 - root]
 
+import random
+
 class Circle:
     def __init__(self, x, y, r):
         self.x = x
@@ -39,7 +41,7 @@ class Circle:
         self.r = r
         self.k = 1.0 / r
         self.h = np.random.uniform(50, 400) # Building height
-        self.color = np.random.choice([
+        self.color = random.choice([
             (200, 80, 100), # Electric Blue
             (320, 90, 100), # Laser Pink
             (120, 90, 100), # Cyber Lime

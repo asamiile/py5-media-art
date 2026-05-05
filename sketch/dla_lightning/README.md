@@ -1,15 +1,16 @@
 # dla_lightning
 
-**Theme**: "Branching discharge" — a single lightning bolt as a fractal branching structure, evoking electrical discharge, river deltas, and neuronal dendrites
+![Preview](preview_p1.png)
 
-**Technique**: Midpoint displacement fractal with stochastic side branching, numpy pixel accumulation, log-scale tone mapping
+## Metadata
+- **Date**: 2026-04-26
+- **Theme**: electricity, physics, branching fractal, nature
+- **Technique**: midpoint displacement fractal with stochastic branching, numpy glow accumulation, log-scale tone mapping
 
-**Description**: A main channel from sky to ground is recursively subdivided: each segment's midpoint is displaced perpendicular to the segment, with displacement scaling as `length × roughness^depth`. At each split, a side branch spawns with probability proportional to depth. Segments are rendered via gaussian glow accumulation into a float canvas, then tone-mapped with log1p. Depth encodes color — near-white cyan core → dim steel blue at the finest tips.
+## Concept
+A single lightning bolt rendered via recursive midpoint displacement — each segment splits at a randomly displaced midpoint, spawning side branches with depth-weighted probability; depth encodes color from near-white core to dim steel-blue tips
 
-**Palette**:
-- Background: `#020308` near-black
-- Core trunk: `#d2f0ff` cold near-white
-- Mid branches: `#3ca0f0` electric blue
-- Fine tips: `#123c78` dark steel blue
-
-**Preview**: `preview.png`
+## Technical Details
+- **Renderer**: P2D
+- **Simulation**: midpoint displacement fractal with stochastic branching
+- **Visuals**: numpy glow accumulation, log-scale tone mapping

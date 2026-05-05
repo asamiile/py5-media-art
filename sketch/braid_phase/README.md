@@ -1,18 +1,16 @@
 # braid_phase
 
-Separate histories cross without merging.
+![Preview](preview_p1.png)
+
+## Metadata
+- **Date**: 2026-05-03
+- **Theme**: separate histories, crossing paths, layered memory, mathematical weaving
+- **Technique**: Phase-driven strand paths, over-under depth masking, contour-lit strokes, low-contrast phase-field background
 
 ## Concept
+Teal, violet, and muted-copper strands cross through a dark interference field in layered over-under rhythms; pale edge highlights mark the moments where one history rises above another.
 
-The work uses braided strands as a metaphor for paths that repeatedly meet, pass over and under one another, and remain distinct.
-
-## Technique
-
-- **Phase-Driven Strands**: Sine-based paths create knot-like crossings across the full canvas.
-- **Over-Under Masking**: Each strand is split into front and back passes using a phase-derived depth value.
-- **Contour-Lit Strokes**: Highlight lines appear only where a strand comes forward.
-- **Phase Field Background**: A low-contrast interference field reinforces the woven mathematical atmosphere.
-
-## Visual Impression
-
-A dark field of teal, violet, and copper strands crossing in layered over-under rhythms, with pale edge highlights revealing which path is on top.
+## Technical Details
+- **Renderer**: P2D
+- **Simulation**: Phase-driven strand paths
+- **Visuals**: over-under depth masking, contour-lit strokes, low-contrast phase-field background

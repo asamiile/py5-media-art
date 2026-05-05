@@ -1,17 +1,17 @@
 # gravitational_echoes
 
-An abstract generative animation capturing the rhythmic distortion of spacetime during a binary black hole merger.
+![Preview](preview_p1.png)
+
+## Metadata
+- **Date**: 2026-05-05
+- **Theme**: Gravitational waves, binary merger, spacetime distortion, beautiful night sky
+- **Technique**: Phase-space wave superposition, chirping orbital emitters, subpixel starfield distortion (lensing simulation), additive interference rendering
 
 ## Concept
-The work visualizes "gravitational waves" as they ripple outward from two orbiting massive bodies. As the objects approach their final "merger," the frequency of the waves increases and the orbital radius shrinks (the "chirp" signal). This creates a complex, interference-rich tapestry of light that bends the background stars and pulses with cosmic resonance.
+A rhythmic, shimmering visualization of a binary merger where expanding wave-fronts of electric cyan and royal amethyst interfere to create complex spectral fringes; the background starfield is dynamically warped by the passing gravitational waves, culminating in a bright white-gold flash at the center of the obsidian void.
 
-## Technique
-- **Binary Merger Simulation**: Two emitters follow a non-linear "chirp" orbit where $f \propto t^2$ and $r \propto (1-t^{1.5})$.
-- **Interference Fringes**: Concentric wave-fronts from both emitters are rendered using additive blending (`py5.ADD`), creating bright "nodes" where crests overlap.
-- **Metric Distortion**: A high-density starfield (1200 stars) is dynamically warped using the phase of the local gravitational wave, simulating the stretching and squeezing of spacetime.
-- **Spectral Palette**: Electric Cyan and Royal Amethyst ripples pulse against a deep indigo-obsidian void, culminating in a white-gold "merger" flash.
-
-## Palette
-- **Background**: Obsidian Indigo (#020205)
-- **Waves**: Electric Cyan, Royal Amethyst
-- **Focal Point**: White-Gold merger core
+## Technical Details
+- **Renderer**: P2D
+- **Simulation**: Phase-space wave superposition
+- **Visuals**: chirping orbital emitters, subpixel starfield distortion (lensing simulation), additive interference rendering
+- **Animation**: 10s @ 60fps (typical)

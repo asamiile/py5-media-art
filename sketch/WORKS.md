@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## gasket_metropolis
+
+- **Date**: 2026-05-05
+- **Theme**: Fractal urbanism, infinite density, modern city feel, beautiful night sky
+- **Technique**: Recursive circle subdivision, 3D isometric building extrusion (P3D), Curvature-based height modulation, Neon spectral lighting
+- **Description**: A dense, shimmering metropolis of circular skyscrapers that recedes into infinite fractal detail; the buildings glow with electric blue and laser pink neon highlights, creating a vibrant geometric landscape under a silent, star-dusted midnight sky.
+
 ## magnetic_reconnection
 
 - **Date**: 2026-05-05

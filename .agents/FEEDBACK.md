@@ -11,6 +11,11 @@ The Artist reads this file before starting a new sketch to understand preference
 
 Add any notes on color, density, theme, or mood in the Comment field.
 
+## magnetic_reconnection
+
+- **Rating**: 
+- **Comment**: Critic approved at 35/40. Sophisticated solar physics abstraction with incredible silken texture. The 50,000-particle advection creates a very premium feel. The "Plasma Twilight" palette and starfield successfully address the "beautiful night sky" request. The dynamic reconnection "snaps" provide compelling kinetic energy. Future improvement: implement "magnetic reconnection" events where field lines suddenly snap and release a burst of high-velocity particles (already partially implemented, but could be more violent).
+
 ## algorithmic_crystals
 
 - **Rating**: 

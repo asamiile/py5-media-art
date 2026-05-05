@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## magnetic_reconnection
+
+- **Date**: 2026-05-05
+- **Theme**: Solar physics, plasma energy, magnetic snap, beautiful night sky
+- **Technique**: Vectorized 50,000-particle advection, dynamic multi-pole magnetic field reconnection, kinetic energy spectral mapping, high-density starfield rendering
+- **Description**: An intricate visualization of solar magnetic physics where 50,000 silken filaments trace the invisible architecture of a multi-pole magnetic field; periodic "reconnection" events send shimmering shockwaves of molten gold and stark white light through the deep star-dusted indigo void.
+
 ## algorithmic_crystals
 
 - **Date**: 2026-05-05

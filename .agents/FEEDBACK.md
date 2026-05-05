@@ -11,6 +11,11 @@ The Artist reads this file before starting a new sketch to understand preference
 
 Add any notes on color, density, theme, or mood in the Comment field.
 
+## algorithmic_fluid
+
+- **Rating**: 
+- **Comment**: Critic approved at 32/40. Sophisticated fluid physics abstraction with a very atmospheric, organic aesthetic. The combination of grid-based advection and spectral mapping creates a powerful sense of a living, flowing void. The starfield and velocity-based HSB mapping successfully address the "beautiful night sky" request. Future improvement: introduce "viscosity modulation" where some regions momentarily become more viscous, slowing down the flow and creating "frozen" structures of light.
+
 ## prismatic_resonator
 
 - **Rating**: 

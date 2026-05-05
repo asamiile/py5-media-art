@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## algorithmic_fluid
+
+- **Date**: 2026-05-05
+- **Theme**: Digital liquid, spectral flow, viscous light, beautiful night sky
+- **Technique**: Grid-based fluid simulation (P2D), spectral dye advection, velocity-based HSB mapping, high-density starfield rendering
+- **Description**: A shimmering, viscous flow of spectral light where electric cyan and royal amethyst dyes swirl and mix in a deep void; the intricate, fluid tapestry of geometric resonance pulses with a rhythmic harmony against a star-dusted midnight sky.
+
 ## prismatic_resonator
 
 - **Date**: 2026-05-05

@@ -11,6 +11,11 @@ The Artist reads this file before starting a new sketch to understand preference
 
 Add any notes on color, density, theme, or mood in the Comment field.
 
+## quantum_chromatics
+
+- **Rating**: 
+- **Comment**: Critic approved at 34/40. High-energy visualization with a very premium "sparkler" aesthetic. The combination of Lorentz force curvature and age-based spectral decay creates a powerful sense of physical process and energy. The starfield successfully addresses the "beautiful night sky" request. Future improvement: implement "secondary decay" where some fragments split again into smaller, even faster particles.
+
 ## quantum_vorticity
 
 - **Rating**: 

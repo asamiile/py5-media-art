@@ -11,6 +11,11 @@ The Artist reads this file before starting a new sketch to understand preference
 
 Add any notes on color, density, theme, or mood in the Comment field.
 
+## event_horizon_shadow
+
+- **Rating**: OK
+- **Comment**: The gravitational lensing effect on the background stars is excellent, creating a believable "Einstein ring" around the shadow. The accretion disk's color mapping (cyan to orange) effectively suggests relativistic energy gradients.
+
 ## supernova_remnant
 
 - **Rating**: OK

@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## event_horizon_shadow
+
+- **Date**: 2026-05-05
+- **Theme**: Black hole, event horizon, accretion disk, light warping, beautiful night sky
+- **Technique**: Accretion disk simulation (70,000 particles) with Keplerian orbits, Doppler-shift color mapping (HSB), dramatic gravitational lensing (Einstein ring approximation) on a star-dusted background, 60fps high-quality MP4 encoding
+- **Description**: A terrifyingly beautiful visualization of a supermassive black hole; light from the background stars is warped into a shimmering Einstein ring around the central shadow, while a high-energy accretion disk of electric cyan and molten orange plasma swirls at relativistic speeds.
+
 ## supernova_remnant
 
 - **Date**: 2026-05-05

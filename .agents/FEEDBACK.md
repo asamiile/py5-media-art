@@ -11,6 +11,11 @@ The Artist reads this file before starting a new sketch to understand preference
 
 Add any notes on color, density, theme, or mood in the Comment field.
 
+## solar_flare_loops
+
+- **Rating**: OK
+- **Comment**: The incandescent core glow is very effective, and the volumetric treatment of the Bezier loops creates a convincing "plasma filament" feel. The rhythmic pulsing adds a nice organic quality to the magnetic arcs.
+
 ## event_horizon_shadow
 
 - **Rating**: OK

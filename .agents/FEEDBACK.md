@@ -11,6 +11,11 @@ The Artist reads this file before starting a new sketch to understand preference
 
 Add any notes on color, density, theme, or mood in the Comment field.
 
+## algorithmic_crystals
+
+- **Rating**: 
+- **Comment**: Critic approved at 32/40. Sophisticated digital mineralization abstraction with a very atmospheric, geometric aesthetic. The build-up of iridescent crystal faces creates a rich, premium depth. The starfield and luminous internal glow successfully address the "beautiful night sky" request. Future improvement: introduce "lattice fractures" where crystals momentarily shatter into smaller fragments and then re-form through additive light.
+
 ## spectral_mitosis
 
 - **Rating**: 

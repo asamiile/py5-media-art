@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## algorithmic_crystals
+
+- **Date**: 2026-05-05
+- **Theme**: Digital mineralization, recursive lattices, geometric resonance, beautiful night sky
+- **Technique**: 3D recursive lattice growth (P3D), iridescent surface mapping, luminous internal glow, high-density starfield rendering
+- **Description**: An intricate visualization of synthetic mineralization where glowing digital geodes in molten gold, cyber lime, and royal amethyst pulse and divide in a deep void; the shimmering celestial tapestry of geometric resonance pulses with a rhythmic harmony against a star-dusted midnight sky.
+
 ## spectral_mitosis
 
 - **Date**: 2026-05-05

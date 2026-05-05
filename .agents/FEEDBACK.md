@@ -11,6 +11,11 @@ The Artist reads this file before starting a new sketch to understand preference
 
 Add any notes on color, density, theme, or mood in the Comment field.
 
+## cometary_ion_tail
+
+- **Rating**: OK
+- **Comment**: The dual-tail physics works very well; the contrast between the curving dust tail and the rigid, turbulent ion tail is scientifically inspired and visually striking. The shimmering effect in the tail filaments adds a nice layer of detail.
+
 ## stellar_nursery_dust
 
 - **Rating**: OK

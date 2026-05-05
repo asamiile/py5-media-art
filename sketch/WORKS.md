@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## quantum_vorticity
+
+- **Date**: 2026-05-05
+- **Theme**: Superfluid turbulence, quantized vortices, liquid light, beautiful night sky
+- **Technique**: Vectorized 30,000-particle advection along point-vortex velocity fields (Biot-Savart law), HSB spectral mapping, high-density starfield rendering
+- **Description**: A shimmering visualization of quantum turbulence where 30,000 silken filaments in electric cyan, royal amethyst, and gold swirl around invisible singularities; the intricate tapestry of phase-space resonance pulses against a darkest indigo midnight void.
+
 ## luminous_strata
 
 - **Date**: 2026-05-05

@@ -11,6 +11,11 @@ The Artist reads this file before starting a new sketch to understand preference
 
 Add any notes on color, density, theme, or mood in the Comment field.
 
+## spectral_coral
+
+- **Rating**: 
+- **Comment**: Critic approved at 32/40. Striking synthetic marine-life concept with a high-impact spectral aesthetic. The combination of stochastic branching and metabolic pulses creates a powerful sense of physical process and organic life. The starfield successfully addresses the "beautiful night sky" request. Future improvement: implement "branching triggers" where pulses momentarily cause new, temporary branches to grow and fade.
+
 ## quantum_chromatics
 
 - **Rating**: 

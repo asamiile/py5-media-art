@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## spectral_coral
+
+- **Date**: 2026-05-05
+- **Theme**: Synthetic marine life, metabolic light, crystalline coral, beautiful night sky
+- **Technique**: Stochastic branching growth, metabolic spectral pulse modulation, recursive fractal geometry, additive bloom rendering
+- **Description**: An intricate visualization of "spectral coral" structures that grow and pulse in a dark void; the crystalline branches in slate and graphite shimmer with rhythmic pulses of electric cyan, cyber lime, and amethyst against a star-dusted night sky.
+
 ## quantum_chromatics
 
 - **Date**: 2026-05-05

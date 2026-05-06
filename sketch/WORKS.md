@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## event_horizon_echo
+
+- **Date**: 2026-05-06
+- **Theme**: Black hole, event horizon, accretion disk, Doppler shift, beautiful night sky
+- **Technique**: Relativistic particle simulation (130,000 particles) orbiting a central gravitational singularity. Particles follow Keplerian orbits with additional relativistic drag (1/r^4) and precession. Implements "Doppler beaming" where color and brightness are modulated by the orbital velocity relative to the camera (Approaching = Electric Cyan & Bright; Receding = Amber & Faint). Multi-pass rendering for the intense photon ring and the dark shadow of the event horizon. 60fps high-bitrate MP4 encoding.
+- **Description**: A majestic and terrifying view of a supermassive black hole; a shimmering disk of light swirls around a perfect circle of absolute darkness, its colors shifting from electric blue to deep amber as it orbits at near-light speeds against a silent star-dusted void.
+
 ## vacuum_fluctuations
 
 - **Date**: 2026-05-06

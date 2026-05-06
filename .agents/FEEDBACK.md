@@ -11,6 +11,11 @@ The Artist reads this file before starting a new sketch to understand preference
 
 Add any notes on color, density, theme, or mood in the Comment field.
 
+## ring_resonance_void
+
+- **Rating**: 
+- **Comment**: 
+
 ## lensed_nebular_void
 
 - **Rating**: 

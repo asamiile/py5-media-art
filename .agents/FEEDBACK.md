@@ -11,6 +11,11 @@ The Artist reads this file before starting a new sketch to understand preference
 
 Add any notes on color, density, theme, or mood in the Comment field.
 
+## nebular_filament_lattice
+
+- **Rating**: 
+- **Comment**: 
+
 ## supernova_light_echo
 
 - **Rating**: 

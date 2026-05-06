@@ -3,6 +3,104 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## dla_metropolis
+
+- **Date**: 2026-05-06
+- **Theme**: Organic urbanism, diffusion-limited aggregation (DLA), brutalist megastructures, beautiful night sky
+- **Technique**: 3D Diffusion-Limited Aggregation (DLA) simulation (3,200 monoliths) using a NumPy-optimized spatial hashing grid for fast particle collision. Monoliths are rendered with skyscraper proportions and multi-pass aesthetics: (1) Solid obsidian core (BLEND), (2) Neon edge highlights (ADD), and (3) Subtle volumetric glow (ADD). HSB palette (Cyan/Indigo/Magenta) with a twinkling starfield backdrop. 60fps high-bitrate MP4.
+- **Description**: A vast, fractal-like megacity grown through organic aggregation in the deep void; thousands of obsidian skyscrapers with glowing neon edges form a dense, bristling monolith that pulses with digital life against a silent, star-dusted night.
+
+## tidal_disruption
+
+- **Date**: 2026-05-06
+- **Theme**: Cosmic catastrophe, spaghettification, event horizon, beautiful night sky
+- **Technique**: 3D particle simulation (180,000 particles) using a relativistic gravitational potential. A central "singularity" exerts non-linear tidal forces that stretch a spherical particle emitter into a long, twisting filament. Particles are colored by speed-based HSB (simulating Doppler shift and heating), with a multi-pass additive core glow for the photon ring. 60fps high-bitrate MP4.
+- **Description**: A star's violent and beautiful death; caught in the immense gravity of a supermassive black hole, it is shredded into a glowing "noodle" of plasma that spirals toward the event horizon in a deep, star-dusted void.
+
+## synaptic_nebula
+
+- **Date**: 2026-05-06
+- **Theme**: Cosmic biology, information flow, synaptic currents, beautiful night sky
+- **Technique**: Physics-driven particle simulation (80,000 particles) using NumPy. Particles gravitate toward 30 "synaptic nodes" while being perturbed by noise-driven drift. Vectorized rendering using `py5.points()` for performance. Synaptic nodes feature pulsing multi-pass glow coronas (spheres) with distance-based scaling. HSB palette (Cyan/Blue/Violet/Rose). 60fps high-bitrate MP4.
+- **Description**: A vast, bioluminescent neural network in the deep void; 80,000 data-particles flow through nebular filaments, connecting 30 pulsing synaptic nodes that flare with the light of a cosmic intelligence.
+
+## algorithmic_geode
+
+- **Date**: 2026-05-06
+- **Theme**: Digital mineralization, urban recursion, inner light, modern city feel, beautiful night sky
+- **Technique**: 3D architectural sketch using P3D. Exterior consists of 12 jagged graphite shards (box primitives) with bright edge highlights and volumetric glow "leaks". Interior faces feature a recursive Quadtree city grid (depth 6) with animated HSB neon strokes. Multi-pass rendering for additive core bloom using concentric spheres and depth-test disabling. 60fps high-bitrate MP4.
+- **Description**: A massive, jagged obsidian geode floats in the void; its dark, geometric shell is split open to reveal a pulsing, neon-lit metropolis of infinite recursive complexity, casting a cold, digital glow into the surrounding starfield.
+
+## entropic_dyson_swarm
+
+- **Date**: 2026-05-06
+- **Theme**: Megastructures, Dyson swarm, solar energy, orbital entropy, beautiful night sky
+- **Technique**: 3D orbital simulation (120,000 particles) using NumPy-vectorized Keplerian dynamics. Features "entropic drift" using Simplex-like noise perturbations to simulate gravitational instability. Multi-pass rendering for a pulsing solar core (60 units) and its corona glow. Particles are colored by orbital speed (Cyan to Gold) with additive blending. 60fps high-bitrate MP4 encoding.
+- **Description**: A vast, shimmering megastructure in a deep indigo void; 120,000 collector mirrors swirl around a blindingly bright white-gold star, their paths tracing a chaotic yet organized dance of light that pulses with the energy of a distant civilization.
+
+## event_horizon_echo
+
+- **Date**: 2026-05-06
+- **Theme**: Black hole, event horizon, accretion disk, Doppler shift, beautiful night sky
+- **Technique**: Relativistic particle simulation (130,000 particles) orbiting a central gravitational singularity. Particles follow Keplerian orbits with additional relativistic drag (1/r^4) and precession. Implements "Doppler beaming" where color and brightness are modulated by the orbital velocity relative to the camera (Approaching = Electric Cyan & Bright; Receding = Amber & Faint). Multi-pass rendering for the intense photon ring and the dark shadow of the event horizon. 60fps high-bitrate MP4 encoding.
+- **Description**: A majestic and terrifying view of a supermassive black hole; a shimmering disk of light swirls around a perfect circle of absolute darkness, its colors shifting from electric blue to deep amber as it orbits at near-light speeds against a silent star-dusted void.
+
+## vacuum_fluctuations
+
+- **Date**: 2026-05-06
+- **Theme**: Vacuum fluctuations, quantum foam, virtual particles, beautiful night sky
+- **Technique**: 3D particle simulation (150,000 particles) using a "virtual emission" model. Particles are generated based on structured interference fields (sine-wave probability volumes), representing vacuum excitations. Each particle has a very short lifetime (annihilation) and a high "uncertainty" jitter in its velocity. Multi-pass rendering with life-ratio color mapping (Birth/White to Decay/Indigo). 60fps high-bitrate MP4 encoding.
+- **Description**: A mesmerizing view of the "empty" void; the obsidian space is a bubbling cauldron of light where thousands of tiny, indigo and white sparks flicker into existence and vanish in a shimmering quantum dance across the star-dusted night.
+
+## dark_matter_halo
+
+- **Date**: 2026-05-06
+- **Theme**: Dark matter, cosmic web, gravitational lensing, beautiful night sky
+- **Technique**: 3D particle simulation (120,000 particles) representing the "cosmic web". Particles aggregate into filaments and halos using hub-based attraction. Features a "gravitational lensing" effect where 4,500 background stars are dynamically distorted by the invisible mass of the hubs. Multi-pass rendering with soft, ethereal "halo" glows and ghost-like particle filaments. 60fps high-bitrate MP4 encoding.
+- **Description**: A haunting visualization of the universe's hidden architecture; faint, ghostly filaments of ghostly amethyst and cobalt energy weave through the void, while the light from distant stars is warped and bent by the immense, invisible mass of the dark matter halos.
+
+## neutron_star_jet
+
+- **Date**: 2026-05-06
+- **Theme**: Neutron star, relativistic jets, pulsar, magnetic precession, beautiful night sky
+- **Technique**: High-velocity particle emission (160,000 particles) from two antipodal poles of a central precessing sphere. Particles follow relativistic trajectories with helical twisting (magnetic field) and outward expansion. The rotation axis precesses over time, creating a "lighthouse" sweep effect. Multi-pass rendering for the blindingly bright core and the shimmering spectral jets. 60fps high-bitrate MP4 encoding.
+- **Description**: A terrifyingly powerful cosmic lighthouse; two blindingly bright beams of cobalt and magenta energy erupt from a shimmering white core, sweeping through the star-dusted void in a complex precessing rhythm that illuminates the deep celestial void.
+
+## cosmic_loom
+
+- **Date**: 2026-05-06
+- **Theme**: Cosmic weaving, spacetime fabric, silken threads, beautiful night sky
+- **Technique**: 3D particle simulation (100,000 particles) using a "weaving" attractor model. Three dynamic 3D Bezier splines ("loom stars") move in complex, harmonic paths through the void. Particles are attracted to the nearest points on the splines, creating dense, shimmering filaments that trace the weaving motion. Multi-pass rendering with high-persistence trails and additive blending. 60fps high-bitrate MP4 encoding.
+- **Description**: An intricate, shimmering tapestry of light that appears to be woven by invisible celestial needles; silken threads of royal amethyst and electric indigo energy curve and twist across the star-dusted void, leaving glowing white-gold echoes of their harmonic dance.
+
+## photon_fluid
+
+- **Date**: 2026-05-06
+- **Theme**: Photon fluid, Bose-Einstein condensation, light dynamics, beautiful night sky
+- **Technique**: 2D grid-based fluid simulation (NumPy) with particle advection (100,000 particles). Features a "photon density" field that fluctuations with high-frequency noise before condensing into a coherent central "super-photon" peak. Additive blending and speed-based spectral coloring. 60fps high-bitrate MP4 encoding.
+- **Description**: A vibrant, shimmering sea of light that begins as chaotic violet and cyan ripples, slowly converging into a singular, blindingly bright white-gold core at the center of a silent star-dusted void.
+
+## magnetic_storm
+
+- **Date**: 2026-05-06
+- **Theme**: Magnetosphere, solar wind, bow shock, auroral energy, beautiful night sky
+- **Technique**: Vectorized 3D particle advection (150,000 particles) along a combined magnetic dipole field and constant solar wind flux. Particles are continuously emitted from a solar source and deflected by a parabolic magnetic shield. Features a shimmering bow shock, trapped auroral filaments, and a long magnetotail. Multi-pass rendering for the planet and its atmospheric glow. 60fps high-bitrate MP4 encoding.
+- **Description**: A majestic visualization of a planet's invisible shield; a constant stream of molten white-gold particles from the sun is deflected into a beautiful, glowing shell of electric emerald and cyan energy, trailing off into the deep indigo void as a shimmering magnetotail.
+
+## superfluid_vortices
+
+- **Date**: 2026-05-06
+- **Theme**: Superfluidity, quantized vortices, Bose-Einstein condensate, beautiful night sky
+- **Technique**: Vectorized point-vortex simulation (Biot-Savart law) using NumPy. 120 dynamic vortices and 120,000 particle tracers. The velocity field is calculated as the sum of rotations from all active vortices. Tracers follow the flow with high persistence and sub-pixel glow, creating a dense, iridescent tapestry of quantum turbulence. 60fps high-bitrate MP4 encoding.
+- **Description**: A mesmerizing, shimmering visualization of quantum turbulence where 120,000 silken filaments in electric cyan, ice blue, and indigo swirl around invisible singularities; the intricate tapestry of phase-space resonance pulses against a dark, star-dusted night sky.
+
+## galactic_collision
+
+- **Date**: 2026-05-06
+- **Theme**: Galactic collision, tidal tails, galactic cannibalism, beautiful night sky
+- **Technique**: N-body particle simulation (120,000 particles) using vectorized NumPy gravity (softened kernel). Two initial spiral distributions with distinct angular momenta and rotation axes. Features "tidal tail" formation, star clumping, and a high-density starfield background. Multi-pass rendering for central bulge glow using additive blending. 60fps high-bitrate MP4 encoding.
+- **Description**: A massive, slow-motion cosmic dance where two spiral galaxies tear each other apart, leaving long, shimmering filaments of stars across the obsidian void; one galaxy glows in electric cyan while the other burns in royal amethyst, their cores merging into a white-gold brilliance against the silent star-dusted night.
+
 ## cometary_ion_tail
 
 - **Date**: 2026-05-05

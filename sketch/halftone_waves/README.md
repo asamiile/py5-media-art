@@ -1,14 +1,16 @@
 # halftone_waves
 
-**Theme**: "Printed interference" — wave superposition rendered as halftone dots, evoking offset-print lithography and newspaper halftone printing
+![Preview](preview_p1.png)
 
-**Technique**: Two interleaved dot grids offset by half a cell (PITCH/2); Grid A encodes wave-field amplitude as navy dot radius; Grid B encodes the complementary (inverted) amplitude as sienna dot radius; power stretch (field^1.8) sharpens the size contrast between dense and empty zones
+## Metadata
+- **Date**: 2026-04-26
+- **Theme**: printing, halftone, wave interference, graphic design
+- **Technique**: two interleaved dot grids (offset by half cell), cosine wave superposition amplitude drives dot radius, power-stretch contrast, complementary two-color fields
 
-**Description**: Four wave point sources placed randomly within the canvas; each source emits cosine waves that interfere. The summed interference amplitude drives dot radius on a regular 22px grid. Large navy dots cluster at constructive interference peaks; large sienna dots fill the complementary troughs. The interleaved two-color grid creates a muted tertiary where both colors are large, and bare cream paper shows where both are small. Every run produces a unique wave topology.
+## Concept
+Four wave point sources create interference; amplitude drives navy dot radius on a regular grid and complementary (inverted) amplitude drives sienna dots on a half-cell-offset grid; constructive and destructive peaks appear as clusters of large navy or sienna dots with bare cream paper at interference nulls
 
-**Palette**:
-- Background: `#f8f4ea` warm cream paper
-- Grid A: `#182648` deep navy
-- Grid B: `#a25828` burnt sienna
-
-**Preview**: `preview.png`
+## Technical Details
+- **Renderer**: P2D
+- **Simulation**: two interleaved dot grids (offset by half cell)
+- **Visuals**: cosine wave superposition amplitude drives dot radius, power-stretch contrast, complementary two-color fields

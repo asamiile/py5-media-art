@@ -1,5 +1,16 @@
-# Voronoi Cells
+# voronoi_cells
 
-![preview](preview.png)
+![Preview](preview_p1.png)
 
-220 random seed points partition the canvas into Voronoi cells, each filled with a warm earth-tone palette. An exponential center-glow gradient lights each polygon from its centroid outward, and a thin dark border traces the exact geometric boundary — evoking stained glass, biological tissue, and geological cross-sections simultaneously.
+## Metadata
+- **Date**: 2026-04-25
+- **Theme**: geometry, organic structure, spatial partitioning
+- **Technique**: Voronoi tessellation, banded numpy distance fields, center-glow gradient, earth-tone palette
+
+## Concept
+220 seed points partition the canvas into warm-toned Voronoi polygons with exponential center glow and sharp geometric borders, evoking stained glass and biological tissue
+
+## Technical Details
+- **Renderer**: P2D
+- **Simulation**: Voronoi tessellation
+- **Visuals**: banded numpy distance fields, center-glow gradient, earth-tone palette

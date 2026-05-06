@@ -1,24 +1,17 @@
 # slime_intelligence
 
-An exploration of decentralized biological intelligence through a Physarum polycephalum (slime mold) transport network simulation.
+![Preview](preview_p1.png)
 
-![preview](preview.png)
+## Metadata
+- **Date**: 2026-05-02
+- **Theme**: nature, biology, emergent intelligence, biological networks
+- **Technique**: agent-based Physarum simulation, trail map diffusion, vectorized NumPy physics
 
 ## Concept
+100k autonomous agents simulate the foraging behavior of a slime mold, self-organizing into an organic transport network with bioluminescent indigo, teal, and gold trails against a deep obsidian void
 
-This artwork simulates the foraging behavior of a collective organism. Thousands of autonomous agents navigate a digital environment, depositing pheromones and following the gradients left by others. Over time, these simple rules produce a complex, self-organizing network that optimizes for efficient connectivity, mimicking the natural intelligence of slime molds used in biological computation.
-
-## Technique
-
-- **Physarum Simulation**: 100,000 agents with sensor-based navigation.
-- **Agent Behavior**: Three-way sensing (left, center, right), trail deposition, and gradient-following rotation.
-- **Environment Dynamics**: Trail map diffusion via Gaussian filter and exponential decay to simulate evaporating pheromones.
-- **Rendering**: Custom color mapping from trail density to a bioluminescent palette (Indigo, Teal, and Gold).
-- **Implementation**: Vectorized NumPy for high-performance agent physics and Scipy for spatial diffusion.
-
-## Data
-
-- **Date**: 2026-05-02
-- **Theme**: Nature, Biology, Emergent Intelligence, Biological Networks
-- **Technique**: Agent-based Physarum simulation, Trail map diffusion
-- **Format**: 10s Animation @ 60fps (MP4)
+## Technical Details
+- **Renderer**: P2D
+- **Simulation**: agent-based Physarum simulation
+- **Visuals**: trail map diffusion, vectorized NumPy physics
+- **Animation**: 10s @ 60fps (typical)

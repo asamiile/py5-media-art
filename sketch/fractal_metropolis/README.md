@@ -1,22 +1,18 @@
 # fractal_metropolis
 
-A sprawling, glowing metropolis of fractal monoliths extending into a deep-space void.
+![Preview](preview_p1.png)
+
+## Metadata
+- **Date**: 2026-05-04
+- **Theme**: Fractal urbanism, data-metabolism, spectral infrastructure, cosmic scale
+- **Technique**: Deformed hexagonal lattice, recursive Koch-polygon architecture, spectral edge-glow simulation, multi-scale starfield synthesis
+- **Logic Lab Reference**: `tiling_patterns/ih02_tv08_koch/ih02_tv08_koch.py`
 
 ## Concept
+A sprawling, glowing metropolis of fractal monoliths extends into a deep-space void; each structure is built from shimmering geometric layers that subdivide and pulse with electric cyan and laser pink light, while a distant starfield and violet horizon haze suggest an infinite atmospheric scale.
 
-This work explores the intersection of fractal urbanism and data metabolism. It reimagines a city as a living, recursive infrastructure where every building is a monolithic energy conduit that subdivides and pulses with light.
-
-## Technique
-
-- **Deformed Hexagonal Lattice**: The underlying grid is a hexagonal tiling that is dynamically warped by sinusoidal "data-winds," simulating a city under pressure.
-- **Koch-Polygon Architecture**: Each monolith is capped with a Koch fractal perimeter that pulses between flat and recursive states.
-- **Spectral Edge-Glow**: The structures are rendered with high-contrast spectral colors (Cyan, Magenta, Gold) and layered alpha glows to create a high-tech atmosphere.
-- **Cosmic Scale**: A multi-scale starfield and horizon haze provide a sense of infinite atmospheric depth.
-
-## Logic Lab Reference
-
-- `tiling_patterns/ih02_tv08_koch/ih02_tv08_koch.py`: Adapted the deformed hex lattice and Koch point generation for 3D architectural rendering.
-
-## Preview
-
-![Preview](preview_p1.png)
+## Technical Details
+- **Renderer**: P2D
+- **Simulation**: Deformed hexagonal lattice
+- **Visuals**: recursive Koch-polygon architecture, spectral edge-glow simulation, multi-scale starfield synthesis
+- **Animation**: 10s @ 60fps (typical)

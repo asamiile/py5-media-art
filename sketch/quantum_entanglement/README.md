@@ -1,11 +1,17 @@
-# Quantum Entanglement
+# quantum_entanglement
 
-A visualization of non-local quantum interactions where two particle systems mirror each other's movements across a silent void.
+![Preview](preview_p1.png)
 
-- **Theme**: Quantum Physics, entanglement, non-locality, beautiful night sky.
-- **Technique**: Symmetrical particle systems, mirrored coordinate transformation, persistence buffer (feedback trails), stochastic decoherence noise.
-- **Palette**: Entangled Spectral (Void Black, Electric Cyan, Vibrant Magenta, Pure White).
+## Metadata
+- **Date**: 2026-05-04
+- **Theme**: Quantum physics, entanglement, non-locality, symmetrical energy, beautiful night sky
+- **Technique**: Symmetrical mirrored particle systems, stochastic decoherence noise, persistence buffer trails, atmospheric starfield rendering
 
-## Description
+## Concept
+Two shimmering particle systems in electric cyan and vibrant magenta dance in perfect synchronization across a central void; ghostly white threads connect the entangled pairs, while subtle decoherence noise and long-exposure trails create a sense of invisible connection and rhythmic harmony against a star-dusted night sky.
 
-This piece explores the concept of quantum entanglement by simulating two particle systems that are inextricably linked across a central void. Every movement of the electric cyan particles on the left is echoed by the vibrant magenta particles on the right, connected by ghostly, flickering threads of white light. A slight "decoherence" noise creates subtle asymmetries, suggesting the precarious nature of quantum coherence against a shimmering, distant starfield.
+## Technical Details
+- **Renderer**: P2D
+- **Simulation**: Symmetrical mirrored particle systems
+- **Visuals**: stochastic decoherence noise, persistence buffer trails, atmospheric starfield rendering
+- **Animation**: 10s @ 60fps (typical)

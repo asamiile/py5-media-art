@@ -1,15 +1,16 @@
 # harmonograph
 
-**Theme**: "Fading resonance" — a dual-pendulum mechanical plotter; the exponentially decaying oscillations trace an inward-spiraling figure as the machine winds down from wild swings to a final rest
+![Preview](preview_p1.png)
 
-**Technique**: Two-component x and two-component y pendulum formula (x(t) = Σ aᵢ·sin(fᵢt+pᵢ)·exp(−dᵢt)); random near-rational frequency ratios near 2:3 produce closed Lissajous-like envelopes that precess and spiral; age-based color gradient maps early trace (bright gold) through late (dark amber) to dead center (near-black); randomized phases and frequencies produce a unique form every run
+## Metadata
+- **Date**: 2026-04-26
+- **Theme**: physics, oscillation, mechanical drawing, decay
+- **Technique**: dual-pendulum harmonograph (4-component parametric x/y), exponential decay, near-rational 2:3 frequency ratios, age-based gold→amber color gradient
 
-**Description**: 500k points trace the full life of the harmonograph: at t=0 both pendulums swing at full amplitude tracing a wide golden figure; as the exponential decay takes over the loops tighten and the color darkens to amber, the trace converging toward the center. The resulting twisted-ribbon form encodes the physics of coupled oscillators in a single image.
+## Concept
+A single 500k-point trace follows the full life of a dual-pendulum plotter from wide gold swings to dim amber spirals converging at center; twisted-ribbon forms emerge from the interplay of two slightly incommensurate oscillating pendulums
 
-**Palette**:
-- Background: `#050409` near-black
-- Early trace: `#e1af37` warm gold
-- Late trace: `#3a280c` dark amber
-- Dead center: `#08060e` near-background
-
-**Preview**: `preview.png`
+## Technical Details
+- **Renderer**: P2D
+- **Simulation**: dual-pendulum harmonograph (4-component parametric x/y)
+- **Visuals**: exponential decay, near-rational 2:3 frequency ratios, age-based gold→amber color gradient

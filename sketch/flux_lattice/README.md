@@ -1,19 +1,17 @@
 # flux_lattice
 
-A visualization of a hidden urban energy grid. Not a literal city map, but a metabolic abstraction where "power" seeks the path of least resistance through a fluctuating stochastic lattice.
+![Preview](preview_p1.png)
+
+## Metadata
+- **Date**: 2026-05-04
+- **Theme**: Energy distribution, urban metabolism, hidden currents, systemic flow
+- **Technique**: Stochastic lattice routing, pulse-width modulated currents, node-leakage sparks, jittered grid subdivision
 
 ## Concept
-Energy distribution, urban metabolism, hidden currents, systemic flow.
+A dark, dense network of glowing conduits where "power" surges through neon cobalt trunk lines and gold capillaries, while ghostly magenta sparks reveal high-pressure leakage at the nodes.
 
-## Technique
-- **Lattice Generation**: Recursive grid subdivision with jittered nodes to create a "stressed" geometric feel.
-- **Flow Routing**: Stochastic pathfinding to establish major and minor conduits.
-- **Current Simulation**: Pulse-width modulation (PWM) of line brightness and thickness to simulate rhythmic energy surges.
-- **Leakage Points**: Perlin-noise driven "spark" clusters at nodes where conduits intersect or terminate.
-
-## Palette
-- **Background**: Deep Graphite / Obsidian
-- **Primary Flow (High Capacity)**: Neon Cobalt
-- **Secondary Flow (Capillaries)**: Radioactive Gold
-- **Leakage / Pressure**: Ghostly Magenta (translucent)
-- **Grid Foundation**: Faint Steel
+## Technical Details
+- **Renderer**: P2D
+- **Simulation**: Stochastic lattice routing
+- **Visuals**: pulse-width modulated currents, node-leakage sparks, jittered grid subdivision
+- **Animation**: 10s @ 60fps (typical)

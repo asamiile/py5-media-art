@@ -1,22 +1,18 @@
 # stellar_equilibrium
 
-A visualization of the precarious balance within a massive star — gravitational collapse vs. magnetic tension.
+![Preview](preview_p1.png)
 
-## Description
+## Metadata
+- **Date**: 2026-05-04
+- **Theme**: Cosmic energy, physical tension, solar majesty, beautiful night sky
+- **Technique**: N-body gravitational simulation, magnetic tension loops (Bezier), noise-driven solar core rendering, persistence-buffer trail accumulation
+- **Logic Lab Reference**: `physics/n_body_orbital_simulation/n_body_orbital_simulation.py`, `physics/spring_connection/spring_connection.py`
 
-`stellar_equilibrium` captures the majestic and violent life of a star. At the center, a dense core pulses with nuclear fusion, casting a warm amber glow that ripples through the surrounding vacuum. Thousands of plasma agents are held in orbit by a complex interplay of forces: the relentless inward pull of gravity and the outward push of magnetic pressure. Golden solar prominences (magnetic loops) surge from the core, while the entire system "breathes" in a rhythmic cycle of expansion and contraction against a deep, star-dusted night.
+## Concept
+A massive, pulsing star held in precarious balance between gravitational collapse and magnetic pressure; golden solar prominences surge from the core while violet plasma agents dance in complex orbits against a high-density star-dusted void.
 
 ## Technical Details
-
-- **Physics Engine**: N-body simulation with custom gravitational and magnetic force fields.
-- **Magnetic Loops**: Dynamic Bezier paths driven by agent history and local tension gradients.
-- **Rendering**:
-    - Retina-aware pixel buffer accumulation for "long-exposure" plasma trails.
-    - Noise-driven core luminosity with multi-layered Gaussian glow.
-    - Stochastic starfield with atmospheric twinkling.
-- **Palette**: `Stellar Night` — Solar Amber, Plasma Violet, Electric Magenta, Vacuum Indigo.
-
-## Logic Lab Reference
-
-- `physics/n_body_orbital_simulation/n_body_orbital_simulation.py` — gravitational logic.
-- `physics/spring_connection/spring_connection.py` — tension and restoring force logic.
+- **Renderer**: P2D
+- **Simulation**: N-body gravitational simulation
+- **Visuals**: magnetic tension loops (Bezier), noise-driven solar core rendering, persistence-buffer trail accumulation
+- **Animation**: 10s @ 60fps (typical)

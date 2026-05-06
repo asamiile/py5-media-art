@@ -1,5 +1,17 @@
-# Boid Flock
+# boid_flock
 
-![preview](preview.png)
+![Preview](preview_p1.png)
 
-300 autonomous agents follow Reynolds' three rules — separation, alignment, cohesion — to form emergent flocks; each agent is colored by its heading angle so flocks glow as coherent ribbons of hue. Fifty-frame trailing arcs trace the swooping collective paths, producing abstract brush-stroke formations that split, merge, and wheel across an 8-second animation.
+## Metadata
+- **Date**: 2026-04-25
+- **Theme**: emergence, swarm intelligence, organic motion
+- **Technique**: Reynolds boid rules (separation/alignment/cohesion), vectorized numpy physics, heading-based HSV color, circular trail buffer
+
+## Concept
+300 boids forming emergent flocks; heading-angle coloring makes each flock a coherent color ribbon; 50-frame trails trace swooping collective paths as brush-stroke formations on black
+
+## Technical Details
+- **Renderer**: P2D
+- **Simulation**: Reynolds boid rules (separation/alignment/cohesion)
+- **Visuals**: vectorized numpy physics, heading-based HSV color, circular trail buffer
+- **Animation**: 10s @ 60fps (typical)

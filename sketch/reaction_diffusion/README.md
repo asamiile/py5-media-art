@@ -1,5 +1,16 @@
-# Reaction Diffusion
+# reaction_diffusion
 
-![preview](preview.png)
+![Preview](preview_p1.png)
 
-A Gray-Scott reaction-diffusion system simulated over 2000 steps. Two virtual chemicals interact — activator and inhibitor — spontaneously forming labyrinthine floral clusters reminiscent of coral, lichen, or animal markings. Each cluster grows a unique internal maze from the same simple chemical rules.
+## Metadata
+- **Date**: 2026-04-25
+- **Theme**: biology, emergence, self-organization
+- **Technique**: Gray-Scott reaction-diffusion PDE, numpy simulation, 2000 steps
+
+## Concept
+Labyrinthine floral clusters formed by two interacting virtual chemicals, resembling coral or animal markings
+
+## Technical Details
+- **Renderer**: P2D
+- **Simulation**: Gray-Scott reaction-diffusion PDE
+- **Visuals**: numpy simulation, 2000 steps

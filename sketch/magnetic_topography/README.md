@@ -1,11 +1,16 @@
-# Magnetic Topography
+# magnetic_topography
 
-A visualization of invisible magnetic forces rendered as a topographical map in a deep star-dusted void.
+![Preview](preview_p1.png)
 
-- **Theme**: Hidden Magnetic Fields, topographical abstraction, beautiful night sky.
-- **Technique**: Magnetic dipole field synthesis, Marching Squares contour extraction, HSB-to-pressure mapping, atmospheric starfield rendering.
-- **Palette**: Magnetic Twilight (Deep Charcoal, Electric Teal, Molten Copper, Solar White).
+## Metadata
+- **Date**: 2026-05-04
+- **Theme**: Hidden magnetic fields, topographical abstraction, energy maps, beautiful night sky
+- **Technique**: Magnetic dipole field synthesis, Marching Squares contour extraction, HSB spectral mapping, atmospheric starfield rendering
 
-## Description
+## Concept
+A dense, shimmering topographical map of magnetic energy where hundreds of flowing lines swirl and converge around invisible dipoles; the colors transition from deep teal to molten copper against a silent, star-dusted charcoal void.
 
-This piece reveals the hidden geometry of magnetic fields by extracting iso-value contours from a simulated dipole field. The resulting "topographical map" of energy features hundreds of flowing lines that swirl and converge around invisible centers of influence. The colors transition from deep teal in low-pressure zones to vibrant copper and solar white at the peaks of magnetic intensity, all set against a shimmering, distant starfield.
+## Technical Details
+- **Renderer**: P2D
+- **Simulation**: Magnetic dipole field synthesis
+- **Visuals**: Marching Squares contour extraction, HSB spectral mapping, atmospheric starfield rendering

@@ -11,65 +11,269 @@ The Artist reads this file before starting a new sketch to understand preference
 
 Add any notes on color, density, theme, or mood in the Comment field.
 
-## recursive_interference
+## cometary_ion_tail
+
+- **Rating**: OK
+- **Comment**: The dual-tail physics works very well; the contrast between the curving dust tail and the rigid, turbulent ion tail is scientifically inspired and visually striking. The shimmering effect in the tail filaments adds a nice layer of detail.
+
+## stellar_nursery_dust
+
+- **Rating**: OK
+- **Comment**: The "gas" background layer adds a very convincing depth to the scene, and the white-hot protostar centers provide excellent contrast against the deep violet dust clouds. The gravitational clumping feels natural and dynamic.
+
+## solar_flare_loops
+
+- **Rating**: OK
+- **Comment**: The incandescent core glow is very effective, and the volumetric treatment of the Bezier loops creates a convincing "plasma filament" feel. The rhythmic pulsing adds a nice organic quality to the magnetic arcs.
+
+## event_horizon_shadow
+
+- **Rating**: OK
+- **Comment**: The gravitational lensing effect on the background stars is excellent, creating a believable "Einstein ring" around the shadow. The accretion disk's color mapping (cyan to orange) effectively suggests relativistic energy gradients.
+
+## supernova_remnant
+
+- **Rating**: OK
+- **Comment**: The high-density particle system creates a wonderful "dusty" nebula effect. The explosive expansion is well-paced, and the multi-pass rendering gives the filaments a nice glow. The palette is vibrant yet fits the cosmic theme perfectly.
+
+## string_theory_manifold
+
+- **Rating**: OK
+- **Comment**: The complex geometric folding of the manifold is visually captivating. The choice of HSB iridescence on a deep indigo background creates a very premium "string theory" aesthetic. The 3D rotation adds a necessary sense of scale and depth.
+
+## cymatic_nebula
+
+- **Rating**: OK
+- **Comment**: The "cymatic" patterning is very effective. The way the particles self-organize into symmetric standing-wave nodes creates a strong sense of celestial resonance. The "indigo and cyan" palette fits the beautiful night sky requirement perfectly.
+
+## strange_attractor_dust
+
+- **Rating**: OK
+- **Comment**: The "silken" texture of the dust cloud is truly stunning. The way the Lorenz attractor's lobes emerge from the violet and crimson gradients creates a powerful sense of chaotic order.
+
+## metabolic_rhizome
+
+- **Rating**: OK
+- **Comment**: The organic branching is beautifully executed. The decentralized network architecture and the teal/violet gradients create a strong sense of living connectivity within the void.
+
+## stellar_caustics
+
+- **Rating**: OK
+- **Comment**: The "liquid starlight" atmosphere is exceptional. The turbulent caustics perfectly capture the feeling of light passing through a gaseous medium, and the solar flares add a great touch of brilliance.
+
+## quasicrystal_void
+
+- **Rating**: OK
+- **Comment**: Fascinating use of aperiodic interference. The 7-fold symmetry is visually captivating, and the iridescent color mapping against the deep void creates a strong sense of cosmic scale.
+
+## gravitational_warp
+
+- **Rating**: OK
+- **Comment**: Exceptional use of conformal mapping to simulate gravitational lensing. The sapphire/silver palette perfectly fits the "beautiful night sky" requirement, and the multi-pass rendering with chromatic aberration gives it a high-tech, professional polish.
+
+## stochastic_nebula
+
+- **Rating**: OK
+- **Comment**: Beautiful balance of organic, smoky filaments and a deep starry background. The transition from P2D to the default renderer improved stability in the headless environment without sacrificing the "silken trace" aesthetic. High density of stars and subtle additive blending successfully achieve the "beautiful night sky" requirement.
+
+## prismatic_architecture
 
 - **Rating**: 
-- **Comment**: Critic approved at 36/40. A tour de force of recursive geometry and light emission. The density of the "interference shards" is visually arresting and the PGraphics accumulation provides a beautiful temporal glow that feels premium. The color transition from Teal to Orange adds depth. Future improvement: implement a "lens" effect where certain quadtree nodes refract the background light differently.
+- **Comment**: 
 
-## harmonic_vibrance
-
-- **Rating**: 
-- **Comment**: Critic approved at 35/40. Striking visualization of celestial resonance with a premium high-tech aesthetic. The combination of Verlet dynamics and harmonic emitters creates a compelling sense of "geometric music." The persistent spectral trails and starfield successfully address the "beautiful night sky" request. Future improvement: introduce an "overtone" mode where rings momentarily double their vibration frequency for increased visual complexity.
-
-## fractal_currents
+## prismatic_vortices
 
 - **Rating**: 
-- **Comment**: Critic approved at 38/40. Technically outstanding and visually breathtaking. The use of a Julia-set flow field for 40,000 particles creates an immense sense of depth and complexity. Perfectly addresses all user requests. Future improvement: experiment with varying the Julia constant `C` over time to create a "breathing" fractal topology.
+- **Comment**: 
+
+## nebular_ribbons
+
+- **Rating**: 
+- **Comment**: 
+
+## chromatic_refraction
+
+- **Rating**: 
+- **Comment**: 
+
+## supersymmetric_manifold_v2
+
+- **Rating**: 
+- **Comment**: 
+
+## nebular_loom
+
+- **Rating**: 
+- **Comment**: 
+
+## gasket_metropolis
+
+- **Rating**: 
+- **Comment**: 
+
+## magnetic_reconnection
+
+- **Rating**: 
+- **Comment**: 
+
+## algorithmic_crystals
+
+- **Rating**: 
+- **Comment**: 
+
+## spectral_mitosis
+
+- **Rating**: 
+- **Comment**: 
+
+## metabolic_nodes
+
+- **Rating**: 
+- **Comment**: 
 
 ## quantum_entanglement
 
 - **Rating**: 
-- **Comment**: Critic approved at 36/40. Compelling conceptual visualization of non-locality with a strong Cyan/Magenta spectral contrast. The persistence trails and "entanglement threads" create a rich, complex texture that successfully addresses the "abstract" and "modern twist" requests. Future improvement: implement a "collapse" event where the systems momentarily synchronize perfectly before drifting apart again.
+- **Comment**: 
+
+## algorithmic_architecture
+
+- **Rating**: 
+- **Comment**: 
+
+## algorithmic_fluid
+
+- **Rating**: 
+- **Comment**: 
+
+## prismatic_resonator
+
+- **Rating**: 
+- **Comment**: 
+
+## recursive_membranes
+
+- **Rating**: 
+- **Comment**: 
+
+## stellar_clockwork
+
+- **Rating**: 
+- **Comment**: 
+
+## metabolic_landscape
+
+- **Rating**: 
+- **Comment**: 
+
+## spectral_coral
+
+- **Rating**: 
+- **Comment**: 
+
+## quantum_chromatics
+
+- **Rating**: 
+- **Comment**: 
+
+## quantum_vorticity
+
+- **Rating**: 
+- **Comment**: 
+
+## luminous_strata
+
+- **Rating**: 
+- **Comment**: 
+
+## metabolic_voxels
+
+- **Rating**: 
+- **Comment**: 
+
+## data_metropolis
+
+- **Rating**: 
+- **Comment**: 
+
+## spectral_filaments
+
+- **Rating**: 
+- **Comment**: 
+
+## tectonic_glow
+
+- **Rating**: 
+- **Comment**: 
+
+## gravitational_echoes
+
+- **Rating**: 
+- **Comment**: 
+
+## gluon_flux
+
+- **Rating**: 
+- **Comment**: 
+
+## recursive_interference
+
+- **Rating**:  OK
+
+## harmonic_vibrance
+
+- **Rating**: 
+- **Comment**: 
+
+## fractal_currents
+
+- **Rating**: 
+- **Comment**: 
+
+## quantum_entanglement
+
+- **Rating**: 
+- **Comment**: 
 
 ## magnetic_topography
 
 - **Rating**: 
-- **Comment**: Critic approved at 37/40. Outstanding topographical abstraction using Marching Squares. The field synthesis and "Magnetic Twilight" palette create a very sophisticated, premium feel. Perfectly addresses the "modern twist" and "beautiful night sky" requests. Future improvement: implement linear interpolation for the Marching Squares to create even smoother curves at lower grid resolutions.
+- **Comment**: 
 
 ## resonant_void
 
-- **Rating**: 
-- **Comment**: Critic approved at 34/40. Strong cosmic resonance concept with a premium high-tech spectral aesthetic. The vibrating mesh and starfield successfully address the "beautiful night sky" and "modern twist" requests. Future improvement: introduce a subtle "gravitational lens" effect or light distortion around the mesh to enhance the cosmic scale.
+- **Rating**: OK.
+- **Comment**: 
 
 ## hexagonal_fractalopolis
 
 - **Rating**: 
-- **Comment**: Critic approved at 36/40. Striking fractal urbanism using IH02 tiling and Koch curves. The gear-like silhouettes and 3D extrusion create a very sophisticated, high-tech architectural feel. The starfield and lighting successfully address the "beautiful night sky" request. Future improvement: introduce a small "gap" between tiles to clarify the individual block boundaries in dense areas.
+- **Comment**: 
 
 ## supersymmetric_manifold
 
-- **Rating**: 
-- **Comment**: Critic approved at 34/40. Strong high-tech geometric abstraction with a premium spectral glow. The combination of Gielis Superformula and domain warping creates a compelling sense of "supersymmetric" vibrations. The starfield successfully addresses the "beautiful night sky" request. Future improvement: add a glowing central core to serve as a stronger focal point.
+- **Rating**: OK.
+- **Comment**: I want to see movie version.
 
 ## metabolic_growth
 
 - **Rating**: 
-- **Comment**: Critic approved at 34/40. Strong 3D L-System execution with a premium, high-tech aesthetic. The glowing violet-to-cyan branches and the perspective grid successfully address the "Modern Twist" and "Beautiful night sky" requests.
+- **Comment**: 
 
 ## synthetic_aurora
 
-- **Rating**: 
-- **Comment**: Critic approved at 35/40. Stunning "Digital Aurora" aesthetic; the chromatic aberration and persistence create a very sophisticated feel. Perfectly hits the "Modern Twist" and "Beautiful night sky" goals.
+- **Rating**: OK.
+- **Comment**: 
 
 ## stellar_equilibrium
 
 - **Rating**: 
-- **Comment**: Critic approved at 35/40. Successful addressing of the "beautiful night sky" request. The combination of N-body physics and noise-driven solar mechanics creates a powerful sense of cosmic scale. The golden prominences and violet plasma trails provide a high-impact, premium aesthetic.
+- **Comment**: 
 
 ## isohedral_metropolis
 
 - **Rating**: 
-- **Comment**: Critic approved at 35/40. Striking non-Euclidean urban grid using IH01 tiling and dynamic Bezier deformation. The high-contrast spectral palette and starfield successfully address the request for "modern city feel" and "beautiful night sky." Future improvement: introduce local phase offsets to create traveling waves of deformation across the grid.
+- **Comment**: 
 
 ## spectral_currents
 
@@ -94,42 +298,42 @@ Add any notes on color, density, theme, or mood in the Comment field.
 ## entropic_monolith
 
 - **Rating**: 
-- **Comment**: Critic approved at 32/40. Compelling conceptual execution of "digital entropy." The recursive splitting algorithm effectively captures the feeling of a rigid structure being dissolved. The high-contrast Cyan-on-Black palette reinforces the monolithic, high-tech atmosphere. Future improvement: add internal "energy" textures to the shard faces to increase visual complexity during disintegration.
+- **Comment**: 
 
 ## interference_topography
 
 - **Rating**: 
-- **Comment**: Critic approved at 34/40. High-tech wave abstraction with striking contour quantization. The interplay between moving emitters and constructive interference creates a complex, rhythmic visual landscape. Future improvement: implement a "frequency sweep" mode where waves oscillate between high and low density over time.
+- **Comment**: 
 
 ## liquid_topology
 
 - **Rating**: 
-- **Comment**: Critic approved at 33/40. Strong high-tech abstraction that successfully leverages domain warping for a viscous, "liquid metal" feel. The multi-source specular lighting in P3D creates a premium metallic atmosphere. Future improvement: implement a "viscosity" parameter that increases during specific phases to simulate cooling metal.
+- **Comment**: 
 
 ## crystalline_bloom
 
 - **Rating**: 
-- **Comment**: Critic approved at 32/40. Sophisticated geometric abstraction that successfully addresses the user's request for more abstract, precise patterns. The combination of phyllotaxis and recursion creates a convincing sense of natural but alien growth. Future improvement: introduce slight Z-axis rotation variations per petal to enhance the 3D crystalline feel.
+- **Comment**: 
 
 ## monsoon_circuit
 
 - **Rating**: 
-- **Comment**: Critic approved at 35/40. Strong urban-metabolism concept that successfully addresses the user's request for a "modern city feel" with an "abstract twist." The Manhattan-constrained data rain and pixel-buffer accumulation create a rich, atmospheric depth. Future improvement: implement a "surge" mode where data flow intensity fluctuates over time to simulate peak traffic hours.
+- **Comment**: 
 
 ## hyperbolic_growth
 
 - **Rating**: 
-- **Comment**: Critic approved at 34/40. Strong non-Euclidean concept using Poincaré disk model. The Seafoam/Amethyst/Gold palette provides a sophisticated, organic feel that matches the coral-like branching. Technical implementation of Mobius transformations correctly captures the hyperbolic geometry. Future improvement: implement true circular arc geodesics for segments if the straight-line approximation becomes visible at lower depths.
+- **Comment**: 
 
 ## algorithmic_brutalism
 
 - **Rating**: 
-- **Comment**: Critic approved at 34/40. Strong architectural direction with a "modern twist" requested by the user. The monolithic concrete aesthetic, safety orange accents, and rhythmic subdivision create a compelling industrial atmosphere. Animation (12s) successfully captures the "breathing" logic. Future improvement: add subtle "camera shake" or "lens grit" to enhance the sense of scale and physical presence.
+- **Comment**: 
 
 ## elastic_residue
 
 - **Rating**: 
-- **Comment**: Critic approved at 34/40. Sophisticated soft-body physics simulation with a strong conceptual link to "material memory." The persistence-buffer technique creates a beautiful, ghostly record of tension. The warm earth-and-gold palette is a welcome departure from recent neon/cyber themes. Future improvement: optimize the Verlet solver further to allow for a denser mesh (e.g. 60x60) without sacrificing frame rate.
+- **Comment**: 
 
 ---
 
@@ -137,82 +341,82 @@ Add any notes on color, density, theme, or mood in the Comment field.
 ## selection_pressure
 
 - **Rating**: 
-- **Comment**: Critic approved at 32/40. Fresh genetic-algorithm direction using Logic Lab's evolving bloops reference; the dark habitat, diagonal survival path, and amber elite rings make adaptation legible without becoming literal. Future improvement: make parent-child lineage threads slightly clearer if the evolutionary mechanism needs to read more explicitly.
+- **Comment**: 
 
 ## seismic_tomography
 
 - **Rating**: 
-- **Comment**: Critic approved at 34/40. Strong geophysical abstraction with a dark, non-monochrome palette, dense full-canvas ray structure, and a readable fault trace. Future improvement: increase localized high-residual contrast near one or two ray bundles if the subdued instrument-plate mood feels too quiet.
+- **Comment**: 
 
 ## quantum_lattice
 
 - **Rating**: 
-- **Comment**: Critic approved at 34/40. Strong conceptual visualization of probability fields with clean quantization and vibrant spectral contrast. Future improvement: introduce a "phase shift" across the lattice to simulate entanglement-driven non-locality more explicitly.
+- **Comment**: 
 
 ## atmospheric_veil
 
 - **Rating**: 
-- **Comment**: Critic approved at 32/40. Ethereal, shimmering texture with a strong sense of atmospheric depth. The "solar edge" effect adds a convincing physical touch. Future improvement: increase the noise scale variation to include larger "void" areas in the sky for better balance.
+- **Comment**: 
 
 ## flux_lattice
 
 - **Rating**: 
-- **Comment**: Critic approved at 34/40. Strong metabolic-grid abstraction with striking neon contrast and pulsing energy surges. Future improvement: consider varying the lattice density across the canvas to create more natural "urban sprawl" hubs.
+- **Comment**: 
 
 ## route_arbitration
 
 - **Rating**: 
-- **Comment**: Critic approved at 31/40. Distinct operational-map direction with coherent obstacle routing, amber conflict heat, and reservation markers. Future improvement: increase local density or contrast so the map feels less quiet without becoming cluttered.
+- **Comment**: 
 
 ## braid_phase
 
 - **Rating**: 
-- **Comment**: Critic approved at 32/40. Clear mathematical-weaving concept with readable teal/violet/copper crossings and a restrained phase-field background. Future improvement: make over-under depth occlusion more decisive at strand crossings.
+- **Comment**: 
 
 ## redaction_current
 
 - **Rating**: 
-- **Comment**: Critic approved at 34/40. Strong modern communication abstraction with crisp black redaction geometry, cyan leakage, magenta residue, and amber wakes. Future improvement: reduce the repeated fingerprint-like current density if it starts to feel too uniform.
+- **Comment**: 
 
 ## impact_palimpest
 
 - **Rating**: 
-- **Comment**: First critic pass was 28/40 because the image read as graphic rings over rays rather than physically shaded crater relief. Two revisions reduced rim dominance, deepened bowl shadows, and added regolith texture; final approved at 30/40 due to revision limit. Future crater/natural-surface work should make terrain relief primary from the start and avoid translucent circle outlines.
+- **Comment**: 
 
 ## pulsar_cartogram
 
 - **Rating**: 
-- **Comment**: First critic pass was 29/40 because the signal structure was too concentrated near the center. Revision expanded source placement, increased pulse density, and added faint timing lanes; approved at 32/40. Future improvement: keep the instrument-chart restraint while adding more off-center structure.
+- **Comment**: 
 
 ## lenticular_night
 
 - **Rating**: 
-- **Comment**: Critic approved at 34/40. Dense crisp optical field with strong dark palette and multi-hue lenticular fragments. Future improvement: introduce larger quiet zones if the full-canvas stripe density feels too busy.
+- **Comment**: 
 
 ## avalanche_ledger
 
 - **Rating**: 
-- **Comment**: Critic approved at 33/40. Strong crisp cellular computation and full-canvas density; brighter palette is a useful contrast to recent dark works. Future improvement: reduce generation time and consider a darker variant if the ochre field feels too dominant.
+- **Comment**: 
 
 ## jacobian_drift
 
 - **Rating**: 
-- **Comment**: First critic pass was 29/40 because the tensor idea was too quiet and sparse. Revision strengthened warped coordinate traces and pressure bands; approved at 31/40. Future improvement: make tensor glyphs feel less marker-like while keeping the crisp mathematical-weather direction.
+- **Comment**: 
 
 ## crease_memory
 
 - **Rating**: 
-- **Comment**: First critic pass was 28/40 because the preview felt too soft and caustic-like. Revision added incision shadows, sharper ridge highlights, and fine facet lines; approved at 32/40. Future direction: keep the material-relief abstraction, but avoid excessive glow blur.
+- **Comment**: 
 
 ## eigenveil
 
 - **Rating**: 
-- **Comment**: Critic approved at 31/40. Crisp full-canvas contour-thread abstraction with strong dark palette and restrained amber accents. Future improvement: vary the vertical rhythm more aggressively so the spectral bands feel less regular.
+- **Comment**: 
 
 ## signal_fossil
 
 - **Rating**: 
-- **Comment**: Critic approved at 33/40. Strong modern abstract direction with full-canvas dark field, multi-hue glow, and sharp signal-contour structure. Future improvement: reduce or vary the tallest vertical recovery ticks if they compete too strongly with the central fossil-like wave field.
+- **Comment**: 
 
 ## lissajous_web
 
@@ -276,8 +480,8 @@ Add any notes on color, density, theme, or mood in the Comment field.
 
 ## wave_interference
 
-- **Rating**:
-- **Comment**: It's too blurry.
+- **Rating**: OK
+- **Comment**: Polish (v3): Resolved the "too blurry" issue by migrating to full-resolution NumPy computation and P2D rendering. Enhanced visual clarity with a "Sapphire & Mercury" high-contrast palette and added technical overlays. (New preview: `preview_p1.png`)
 
 ## newton_fractal
 
@@ -667,4 +871,4 @@ Add any notes on color, density, theme, or mood in the Comment field.
 
 - **Date**: 2026-05-04
 - **Rating**: 
-- **Comment**: Critic approved at 36/40. Striking synthesis of logic-lab tiling patterns with a cosmic, architectural theme. The spectral edge-glows and Koch-fractal caps create a premium high-tech feel. The addition of a starfield and horizon haze successfully addresses the user's request for "beautiful night skies." Future improvement: implement a "flight-through" camera motion to enhance the sense of urban scale.
+- **Comment**: 

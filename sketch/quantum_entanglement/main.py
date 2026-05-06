@@ -20,97 +20,95 @@ TOTAL_FRAMES = DURATION_SEC * FPS
 PREVIEW_FILENAME = preview_filename(pattern=1)
 PREVIEW_SIZE, OUTPUT_SIZE, SIZE = get_sizes()
 
-# Particle System Parameters
-PARTICLE_COUNT = 150
-MAX_SPEED = 4
-DECOHERENCE = 0.1
+# Constants
+STAR_COUNT = 1000
+NUM_PAIRS = 40
 
-particles = None
-stars = None
+class ParticlePair:
+    def __init__(self, index):
+        self.index = index
+        self.p1 = np.array([SIZE[0]/2, SIZE[1]/2], dtype=float)
+        self.p2 = np.array([SIZE[0]/2, SIZE[1]/2], dtype=float)
+        
+        angle = np.random.uniform(0, py5.TWO_PI)
+        self.v1 = np.array([np.cos(angle), np.sin(angle)]) * np.random.uniform(2, 5)
+        self.v2 = -self.v1.copy()
+        
+        self.hue = np.random.choice([180, 220, 320]) # Cyan, Cobalt, Rose
+        
+    def update(self, t):
+        # Noise-driven drift
+        n1 = py5.noise(self.p1[0] * 0.005, self.p1[1] * 0.005, t * 0.5) * py5.TWO_PI * 2
+        n2 = py5.noise(self.p2[0] * 0.005, self.p2[1] * 0.005, t * 0.5 + 10) * py5.TWO_PI * 2
+        
+        self.v1 += np.array([np.cos(n1), np.sin(n1)]) * 0.2
+        self.v2 += np.array([np.cos(n2), np.sin(n2)]) * 0.2
+        
+        self.p1 += self.v1
+        self.p2 += self.v2
+        
+        # Boundary bounce
+        for p, v in [(self.p1, self.v1), (self.p2, self.v2)]:
+            if p[0] < 0 or p[0] > SIZE[0]: v[0] *= -1
+            if p[1] < 0 or p[1] > SIZE[1]: v[1] *= -1
+            
+    def draw(self, t):
+        dist = np.linalg.norm(self.p1 - self.p2)
+        alpha = py5.remap(dist, 0, 800, 150, 0)
+        if alpha < 0: return
+        
+        # Pulse
+        pulse = np.sin(t * py5.TWO_PI * 2 + self.index) * 0.5 + 0.5
+        
+        py5.color_mode(py5.HSB, 360, 100, 100, 100)
+        py5.stroke(self.hue, 80, 100, alpha * pulse)
+        py5.stroke_weight(1.5)
+        py5.line(self.p1[0], self.p1[1], self.p2[0], self.p2[1])
+        
+        # Particle heads
+        py5.no_stroke()
+        py5.fill(self.hue, 50, 100, alpha)
+        py5.circle(self.p1[0], self.p1[1], 3)
+        py5.circle(self.p2[0], self.p2[1], 3)
+        
+        py5.color_mode(py5.RGB, 255, 255, 255, 255)
+
+pairs = [ParticlePair(i) for i in range(NUM_PAIRS)]
+stars = []
 
 def setup():
-    global particles, stars
     py5.size(*SIZE, py5.P2D)
-    FRAMES_DIR.mkdir(exist_ok=True)
+    py5.smooth(8)
     
-    # Initialize particles (System A)
-    # x, y, vx, vy
-    particles = np.random.uniform(0, 1, (PARTICLE_COUNT, 4))
-    particles[:, 0] *= py5.width / 2
-    particles[:, 1] *= py5.height
-    particles[:, 2:] = (particles[:, 2:] - 0.5) * MAX_SPEED
-    
-    # Starfield
-    stars = np.random.uniform(0, 1, (1000, 3))
-    stars[:, 0] *= py5.width
-    stars[:, 1] *= py5.height
-    stars[:, 2] = np.random.uniform(0.5, 2.0)  # size
-
-def draw_starfield():
-    py5.stroke(255, 150)
-    for i in range(len(stars)):
-        py5.stroke_weight(stars[i, 2])
-        py5.point(stars[i, 0], stars[i, 1])
+    # Init stars
+    for _ in range(STAR_COUNT):
+        stars.append((np.random.uniform(0, SIZE[0]), np.random.uniform(0, SIZE[1]), np.random.uniform(0.5, 2.5), np.random.uniform(50, 150)))
+        
+    FRAMES_DIR.mkdir(exist_ok=True, parents=True)
 
 def draw():
-    # Persistence effect
-    py5.fill(0, 15)
-    py5.rect(0, 0, py5.width, py5.height)
+    t = py5.frame_count / TOTAL_FRAMES
     
-    draw_starfield()
+    # 1. Background
+    # Persistence
+    py5.fill(5, 5, 10, 25)
+    py5.no_stroke()
+    py5.rect(0, 0, SIZE[0], SIZE[1])
     
-    # Update and Draw Particles
-    center = np.array([py5.width / 2, py5.height / 2])
-    
-    # Mirror line is center X
-    mid_x = py5.width / 2
-    
-    for i in range(PARTICLE_COUNT):
-        p = particles[i]
-        
-        # Attraction to center
-        dir_to_center = center - p[:2]
-        dist = np.linalg.norm(dir_to_center)
-        if dist > 0:
-            p[2:] += (dir_to_center / dist) * 0.1
-        
-        # Noise
-        p[2:] += (np.random.uniform(-0.1, 0.1, 2))
-        
-        # Friction
-        p[2:] *= 0.98
-        
-        # Move
-        p[:2] += p[2:]
-        
-        # Bounce/Wrap (constrain to left half)
-        if p[0] < 0 or p[0] > mid_x:
-            p[2] *= -1
-            p[0] = np.clip(p[0], 0, mid_x)
-        if p[1] < 0 or p[1] > py5.height:
-            p[3] *= -1
-            p[1] = np.clip(p[1], 0, py5.height)
-            
-        # Draw System A (Cyan)
-        py5.stroke(0, 255, 255, 180)
-        py5.stroke_weight(2)
-        py5.point(p[0], p[1])
-        
-        # Draw System B (Magenta - Mirrored)
-        # B = Mirrored X, but with slight noise
-        mirror_x = py5.width - p[0]
-        mirror_y = p[1] + np.sin(py5.frame_count * 0.1 + i) * 5 * DECOHERENCE
-        
-        py5.stroke(255, 0, 255, 180)
-        py5.point(mirror_x, mirror_y)
-        
-        # Draw Entanglement Threads (Subtle)
-        if i % 10 == 0:
-            py5.stroke(255, 255, 255, 20)
-            py5.stroke_weight(0.5)
-            py5.line(p[0], p[1], mirror_x, mirror_y)
+    # Stars
+    py5.no_stroke()
+    for sx, sy, s_size, s_alpha in stars:
+        py5.fill(255, s_alpha + np.sin(py5.frame_count * 0.1 + sx) * 40)
+        py5.circle(sx, sy, s_size)
 
-    # Save frame
+    # 2. Draw Pairs
+    py5.blend_mode(py5.ADD)
+    for p in pairs:
+        p.update(t)
+        p.draw(t)
+    py5.blend_mode(py5.BLEND)
+
+    # 3. Capture
     py5.save_frame(str(FRAMES_DIR / "frame-####.png"))
 
     if py5.frame_count >= TOTAL_FRAMES:
@@ -121,8 +119,7 @@ def draw():
             "-vcodec", "libx264", "-pix_fmt", "yuv420p",
             str(SKETCH_DIR / "output.mp4"),
         ], check=True)
-        mid = str(FRAMES_DIR / f"frame-{TOTAL_FRAMES // 2:04d}.png")
+        mid = str(FRAMES_DIR / f"frame-{int(TOTAL_FRAMES * 0.7):04d}.png")
         subprocess.run(["cp", mid, str(SKETCH_DIR / PREVIEW_FILENAME)], check=True)
 
-if __name__ == "__main__":
-    py5.run_sketch()
+py5.run_sketch()

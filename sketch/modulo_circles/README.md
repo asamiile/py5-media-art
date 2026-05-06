@@ -1,5 +1,16 @@
-# Modulo Circles
+# modulo_circles
 
-![preview](preview.png)
+![Preview](preview_p1.png)
 
-300 equally spaced points on a circle are connected by chords following the rule: point i links to point (i × M) mod 300. Six multipliers M = 2, 3, 5, 7, 13, 51 are layered in distinct hues, each producing a family of envelope curves: a cardioid (M=2), nephroid (M=3), and progressively more complex star-polygon forms. Pure modular arithmetic rendered as geometry.
+## Metadata
+- **Date**: 2026-04-25
+- **Theme**: number theory, abstract geometry, mathematical visualization
+- **Technique**: modular arithmetic chord connections, envelope curves, layered transparency
+
+## Concept
+300 circle points connected by chords via six multipliers (M=2,3,5,7,13,51); chord envelopes form cardioid, nephroid, and star-polygon families in distinct hues
+
+## Technical Details
+- **Renderer**: P2D
+- **Simulation**: modular arithmetic chord connections
+- **Visuals**: envelope curves, layered transparency

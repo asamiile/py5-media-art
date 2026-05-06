@@ -1,18 +1,16 @@
 # impact_palimpest
 
-A surface is repeatedly rewritten by collisions.
+![Preview](preview_p1.png)
+
+## Metadata
+- **Date**: 2026-05-03
+- **Theme**: repeated collision, regolith memory, natural surface abstraction
+- **Technique**: Crater heightfield synthesis, asymmetric rim lighting, ballistic ejecta rays, slope-based relief shading
 
 ## Concept
+A dark regolith-like surface is overwritten by overlapping impact bowls, muted copper ejecta rays, cold shadowed basins, and pale worn rims; the image reads as an abstract record of repeated collisions.
 
-The work treats an impact field as a palimpsest: every crater erases, lifts, and dusts over older marks, leaving a compressed history of violence in the surface.
-
-## Technique
-
-- **Crater Heightfield Synthesis**: Each impact contributes an excavated bowl, raised rim, and outer slump.
-- **Ballistic Ejecta Rays**: Angular ray patterns decay outward from crater rims to approximate thrown dust and debris.
-- **Slope-Based Illumination**: Surface gradients become normals, revealing rim relief and overlapping scars.
-- **Layered Regolith Color**: Cool shadows, charcoal ground, copper ejecta, and pale dust highlights separate physical features.
-
-## Visual Impression
-
-A dark abstract regolith surface filled with overlapping bowls, sharp rim highlights, muted copper ejecta rays, and cold blue-gray shadowed basins.
+## Technical Details
+- **Renderer**: P2D
+- **Simulation**: Crater heightfield synthesis
+- **Visuals**: asymmetric rim lighting, ballistic ejecta rays, slope-based relief shading

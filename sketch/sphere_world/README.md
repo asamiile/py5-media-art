@@ -1,19 +1,16 @@
 # sphere_world
 
-**Theme**: "Distant world" — a planet observed from afar; orthographic ray-sphere rendering with fractional Brownian motion surface texture and atmospheric limb glow
+![Preview](preview_p1.png)
 
-**Technique**: Analytic ray-sphere intersection, surface normals, Lambertian shading, 7-octave fBm terrain noise, atmospheric scattering approximation at limb
+## Metadata
+- **Date**: 2026-04-26
+- **Theme**: space, astronomy, 3D rendering, procedural terrain
+- **Technique**: ray-sphere intersection, Lambertian shading, 7-octave fBm terrain, atmospheric limb scattering
 
-**Description**: Each pixel casts an orthographic ray at the sphere; hit pixels compute a 3D surface normal and evaluate 7 octaves of sine/cosine fBm to get a terrain height. Height maps to a 6-stop elevation palette (ocean deep → coastal → lowlands → highlands → mountain rust → snow peaks). Lambertian shading with an ambient term models the illuminated hemisphere. A Gaussian falloff at the limb creates the atmospheric blue halo; a second term adds the faint glow in surrounding space. Stars are deterministically scattered in the dark background.
+## Concept
+Analytic ray-sphere rendering with multi-octave noise terrain colored by elevation (ocean to snow); atmospheric blue glow at the limb and stars in the background create a convincing distant-planet scene
 
-**Palette**:
-- Space: `#020308` deep black
-- Atmosphere: `#3c8cc8` blue-cyan
-- Ocean: `#3c5a3c` deep green
-- Coastal: `#50823a` sage
-- Plains: `#8ca064` muted ochre-green
-- Highlands: `#a08250` warm ochre
-- Mountains: `#783232` rust
-- Snow: `#dcd7d2` pale gray-white
-
-**Preview**: `preview.png`
+## Technical Details
+- **Renderer**: P2D
+- **Simulation**: ray-sphere intersection
+- **Visuals**: Lambertian shading, 7-octave fBm terrain, atmospheric limb scattering

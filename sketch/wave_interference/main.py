@@ -7,84 +7,110 @@ PROJECT_ROOT = Path(__file__).resolve().parents[2]
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.append(str(PROJECT_ROOT))
 
-from lib.preview import maybe_save_exit_on_frame
+from lib.preview import maybe_save_exit_on_frame, preview_filename
 from lib.sizes import get_sizes
 from lib.paths import sketch_dir
-SKETCH_DIR = sketch_dir(__file__)
-PREVIEW_FRAME = 120
 
+SKETCH_DIR = sketch_dir(__file__)
+PREVIEW_FRAME = 1
+PREVIEW_FILENAME = preview_filename(pattern=1)
 PREVIEW_SIZE, OUTPUT_SIZE, SIZE = get_sizes()
 
-# Theme: "Precision instrument" — hard-threshold binary render, 5 sources
-# Near-black / dark teal / cold near-white — like an oscilloscope or X-ray
+# Algorithm Parameters
 SOURCES = [
     (-0.60,  0.35), ( 0.60,  0.35),
     ( 0.00, -0.45), (-0.38, -0.10), ( 0.42,  0.05),
 ]
-WAVELENGTH = 0.14
-
-# Three-level threshold rendering
-BG_COL   = np.array([3,   5,  10], dtype=np.uint8)    # #03050a near-black
-MID_COL  = np.array([26, 58,  74], dtype=np.uint8)    # #1a3a4a dark teal
-PEAK_COL = np.array([224, 240, 255], dtype=np.uint8)  # #e0f0ff cold near-white
-
-THRESHOLD_PEAK = 0.78   # above → bright peak
-THRESHOLD_MID  = 0.52   # above → dark teal
-
+WAVELENGTH = 0.12
+PHASE_SHIFT = 0.0
 
 def setup():
-    py5.size(*SIZE)
+    # Use P2D for high-resolution pixel manipulation
+    py5.size(*SIZE, py5.P2D)
+    py5.pixel_density(1)
+    py5.no_loop()
+    
+    # Compute field at full resolution
+    field = compute_interference_field()
+    render_field(field)
+    draw_ui_overlay()
+    
+    maybe_save_exit_on_frame(PREVIEW_FRAME, SKETCH_DIR, filename=PREVIEW_FILENAME)
 
-    h_sim, w_sim = PREVIEW_SIZE[1], PREVIEW_SIZE[0]
-    x = np.linspace(-1.0,    1.0,    w_sim, dtype=np.float32)
-    y = np.linspace(-0.5625, 0.5625, h_sim, dtype=np.float32)
+def compute_interference_field():
+    """Vectorized interference field computation."""
+    w, h = py5.width, py5.height
+    x = np.linspace(-1.0, 1.0, w, dtype=np.float32)
+    y = np.linspace(-1.0 * (h/w), 1.0 * (h/w), h, dtype=np.float32)
     X, Y = np.meshgrid(x, y)
-
-    wave = np.zeros((h_sim, w_sim), dtype=np.float32)
+    
+    field = np.zeros_like(X)
     for sx, sy in SOURCES:
         r = np.sqrt((X - sx) ** 2 + (Y - sy) ** 2)
-        wave += np.sin(2 * np.pi * r / WAVELENGTH)
+        # Summing sine waves for interference
+        field += np.sin(2 * np.pi * r / WAVELENGTH + PHASE_SHIFT)
+    
+    # Normalize to [-1, 1]
+    f_min, f_max = np.min(field), np.max(field)
+    return 2 * (field - f_min) / (f_max - f_min) - 1
 
-    # Normalize to 0–1
-    d = (wave - wave.min()) / (wave.max() - wave.min())
+def render_field(field):
+    """Render field with high contrast and optical detail."""
+    # Define "Sapphire & Mercury" palette
+    void = np.array([5, 8, 20], dtype=np.float32)      # Deep blue-black
+    sapphire = np.array([20, 80, 200], dtype=np.float32) # Electric sapphire
+    mercury = np.array([220, 230, 255], dtype=np.float32) # Cold mercury
+    
+    # Map [-1, 1] to [0, 1]
+    t = (field + 1) / 2
+    
+    # Apply a sharpening power to reduce "blurriness"
+    t = np.sign(t - 0.5) * (np.abs(t - 0.5) ** 0.8) + 0.5
+    t = np.clip(t, 0, 1)
+    
+    h, w = field.shape
+    pixels = np.zeros((h, w, 3), dtype=np.uint8)
+    
+    # Split into two segments: Void -> Sapphire -> Mercury
+    m1 = t < 0.5
+    m2 = t >= 0.5
+    
+    # Segment 1: Void to Sapphire
+    t1 = (t[m1] / 0.5)[:, None]
+    pixels[m1] = ((1 - t1) * void + t1 * sapphire).astype(np.uint8)
+    
+    # Segment 2: Sapphire to Mercury
+    t2 = ((t[m2] - 0.5) / 0.5)[:, None]
+    pixels[m2] = ((1 - t2) * sapphire + t2 * mercury).astype(np.uint8)
+    
+    # Apply pixels
+    py5.set_np_pixels(pixels, bands='RGB')
 
-    # Hard threshold: 3 levels only — no gradient
-    r_ch = np.where(d >= THRESHOLD_PEAK, PEAK_COL[0],
-           np.where(d >= THRESHOLD_MID,  MID_COL[0], BG_COL[0])).astype(np.uint8)
-    g_ch = np.where(d >= THRESHOLD_PEAK, PEAK_COL[1],
-           np.where(d >= THRESHOLD_MID,  MID_COL[1], BG_COL[1])).astype(np.uint8)
-    b_ch = np.where(d >= THRESHOLD_PEAK, PEAK_COL[2],
-           np.where(d >= THRESHOLD_MID,  MID_COL[2], BG_COL[2])).astype(np.uint8)
-
-    # Faint grid overlay at low alpha to reinforce "measurement" aesthetic
-    grid_spacing = 80
-    grid_mask = ((np.arange(h_sim)[:, np.newaxis] % grid_spacing == 0) |
-                 (np.arange(w_sim)[np.newaxis, :] % grid_spacing == 0))
-    grid_alpha = 18
-    r_ch = np.where(grid_mask, np.clip(r_ch.astype(int) + grid_alpha, 0, 255), r_ch).astype(np.uint8)
-    g_ch = np.where(grid_mask, np.clip(g_ch.astype(int) + grid_alpha, 0, 255), g_ch).astype(np.uint8)
-    b_ch = np.where(grid_mask, np.clip(b_ch.astype(int) + grid_alpha, 0, 255), b_ch).astype(np.uint8)
-
-    py5.load_np_pixels()
-    h_buf, w_buf = py5.np_pixels.shape[:2]
-
-    if h_buf != h_sim or w_buf != w_sim:
-        scale_y = h_buf // h_sim
-        scale_x = w_buf // w_sim
-        r_ch = np.repeat(np.repeat(r_ch, scale_y, axis=0), scale_x, axis=1)
-        g_ch = np.repeat(np.repeat(g_ch, scale_y, axis=0), scale_x, axis=1)
-        b_ch = np.repeat(np.repeat(b_ch, scale_y, axis=0), scale_x, axis=1)
-
-    alpha = np.full((h_buf, w_buf), 255, dtype=np.uint8)
-    py5.np_pixels[:, :, 0] = alpha
-    py5.np_pixels[:, :, 1] = r_ch
-    py5.np_pixels[:, :, 2] = g_ch
-    py5.np_pixels[:, :, 3] = b_ch
-    py5.update_np_pixels()
-
+def draw_ui_overlay():
+    """Add technical 'precision instrument' overlays."""
+    py5.push_style()
+    
+    # Subtle grid
+    py5.stroke(255, 255, 255, 15)
+    py5.stroke_weight(1)
+    for x in range(0, py5.width, 100):
+        py5.line(x, 0, x, py5.height)
+    for y in range(0, py5.height, 100):
+        py5.line(0, y, py5.width, y)
+        
+    # Source markers
+    py5.no_fill()
+    py5.stroke(255, 255, 255, 80)
+    for sx, sy in SOURCES:
+        px = py5.remap(sx, -1, 1, 0, py5.width)
+        py5.circle(px, py5.height/2 + (sy * py5.width/2), 10)
+        py5.line(px-15, py5.height/2 + (sy * py5.width/2), px+15, py5.height/2 + (sy * py5.width/2))
+        py5.line(px, py5.height/2 + (sy * py5.width/2) - 15, px, py5.height/2 + (sy * py5.width/2) + 15)
+        
+    py5.pop_style()
 
 def draw():
-    maybe_save_exit_on_frame(PREVIEW_FRAME, SKETCH_DIR, filename="preview.png")
+    maybe_save_exit_on_frame(PREVIEW_FRAME, SKETCH_DIR, filename=PREVIEW_FILENAME)
 
-
-py5.run_sketch()
+if __name__ == "__main__":
+    py5.run_sketch()

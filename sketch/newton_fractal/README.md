@@ -1,5 +1,16 @@
-# Newton Fractal
+# newton_fractal
 
-![preview](preview.png)
+![Preview](preview_p1.png)
 
-Newton-Raphson iteration applied to z⁵ − 1 on the complex plane partitions every pixel into one of five basins of convergence; each basin is colored by which root (at the five fifth-roots of unity) the iteration reaches. Convergence speed maps to brightness, making slow-converging boundary pixels dark and revealing the fractal Julia-set lace that separates the five vivid regions.
+## Metadata
+- **Date**: 2026-04-25
+- **Theme**: mathematics, complex dynamics, numerical analysis
+- **Technique**: Newton-Raphson iteration on z⁵−1, basin-of-convergence coloring, convergence-speed brightness mapping
+
+## Concept
+Five colored basins separate the complex plane into regions converging to each fifth-root of unity; the fractal Julia-set boundary between basins traces dark lace of infinite detail
+
+## Technical Details
+- **Renderer**: P2D
+- **Simulation**: Newton-Raphson iteration on z⁵−1
+- **Visuals**: basin-of-convergence coloring, convergence-speed brightness mapping

@@ -1,5 +1,16 @@
-# Julia Set
+# julia_set
 
-![preview](preview.png)
+![Preview](preview_p1.png)
 
-A Julia set fractal rendered with smooth escape-time coloring. The constant c = −0.7269 + 0.1889i (Douady rabbit) produces intricate spiral dendrites at the boundary between bounded and unbounded orbits in the complex plane. Full-spectrum sine-wave palette cycling reveals iteration depth across the fractal's self-similar structure.
+## Metadata
+- **Date**: 2026-04-25
+- **Theme**: mathematics, complex dynamics, fractal geometry
+- **Technique**: Julia set iteration, smooth escape-time coloring, numpy vectorization
+
+## Concept
+Douady rabbit Julia set rendered with smooth coloring; intricate spiral dendrites mark the boundary between bounded and unbounded complex orbits
+
+## Technical Details
+- **Renderer**: P2D
+- **Simulation**: Julia set iteration
+- **Visuals**: smooth escape-time coloring, numpy vectorization

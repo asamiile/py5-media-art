@@ -1,18 +1,16 @@
 # lenticular_night
 
-A dark surface changes identity when viewed from another angle.
+![Preview](preview_p1.png)
+
+## Metadata
+- **Date**: 2026-05-03
+- **Theme**: optical surface, hidden images, nocturnal perception, angle-shifted memory
+- **Technique**: Phase-shifted lenticular stripe masks, warped layer fields, crisp separator bands, sparse glint synthesis
 
 ## Concept
+A dark optical field flickers with cyan, muted rose, and pale-gold fragments revealed through precise slanted seams; multiple hidden layers misregister into a dense full-canvas lenticular surface.
 
-The work imagines an optical print after midnight: several hidden images occupy the same plane, and fine lenticular seams reveal only fragments of each one.
-
-## Technique
-
-- **Phase-Shifted Stripe Masks**: Three interleaved stripe phases expose separate image layers.
-- **Warped Layer Fields**: Low-frequency sinusoidal warps bend each hidden layer so the image feels physically misregistered rather than mechanically striped.
-- **Crisp Separators**: Thin dark gaps preserve the lenticular construction and avoid blur.
-- **Sparse Glints**: Short horizontal glints simulate tiny viewing-angle flashes across the print surface.
-
-## Visual Impression
-
-An obsidian optical field with cyan, muted rose, and pale gold fragments flickering through precise slanted seams.
+## Technical Details
+- **Renderer**: P2D
+- **Simulation**: Phase-shifted lenticular stripe masks
+- **Visuals**: warped layer fields, crisp separator bands, sparse glint synthesis

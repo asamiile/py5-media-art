@@ -1,5 +1,16 @@
-# Cellular Automaton
+# cellular_automaton
 
-![preview](preview.png)
+![Preview](preview_p1.png)
 
-Rule 90 elementary cellular automaton evolved from a single center cell produces the Sierpinski triangle fractal; 540 generations of XOR-based computation rendered with a vertical amber-to-violet color gradient that encodes computational depth as hue.
+## Metadata
+- **Date**: 2026-04-25
+- **Theme**: computation, fractal, emergence from simple rules
+- **Technique**: Wolfram Rule 90 elementary cellular automaton, single-cell seed, generation-depth HSV gradient
+
+## Concept
+Rule 90 evolved 540 generations from one center cell produces the Sierpinski triangle; amber-to-violet gradient encodes computational time as color
+
+## Technical Details
+- **Renderer**: P2D
+- **Simulation**: Wolfram Rule 90 elementary cellular automaton
+- **Visuals**: single-cell seed, generation-depth HSV gradient

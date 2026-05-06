@@ -1,8 +1,16 @@
 # seismic_tomography
 
-An abstract geophysical instrument plate: refracted seismic ray fans cross a dark subsurface field, revealing a slipping fault through travel-time residuals, contour traces, and warm/cold velocity anomalies.
+![Preview](preview_p1.png)
 
-- **Theme**: Hidden pressure under a surface becoming visible only through measurement.
-- **Technique**: Refracted ray tracing through a synthetic velocity field, residual contour extraction, and full-canvas layered compositing.
-- **Palette**: Near-black basalt, deep blue, teal signal traces, copper fault heat, chalk sensor marks.
-- **Format**: Still image, `preview_p1.png`.
+## Metadata
+- **Date**: 2026-05-04
+- **Theme**: Hidden pressure beneath a surface, measurement, fault memory, geophysical abstraction
+- **Technique**: Synthetic seismic velocity-field synthesis, refracted ray tracing, travel-time residual coloring, marching-squares contour extraction, Retina-aware pixel-buffer compositing
+
+## Concept
+A dark subsurface instrument plate is crossed by muted teal and copper ray fans from edge sensors; faint residual contours and a chalk-copper fault trace reveal buried pressure without turning the scene into a literal landscape.
+
+## Technical Details
+- **Renderer**: P2D
+- **Simulation**: Synthetic seismic velocity-field synthesis
+- **Visuals**: refracted ray tracing, travel-time residual coloring, marching-squares contour extraction, Retina-aware pixel-buffer compositing

@@ -1,15 +1,18 @@
 # entropic_monolith
 
-A massive, obsidian-like monolith that stands in a pitch-black void, slowly being shattered by invisible entropic forces. Hairline cracks of electric cyan appear across its surface as geometric shards break off, drifting away and dissolving into a fine mist of white light.
+![Preview](preview_p1.png)
+
+## Metadata
+- **Date**: 2026-05-04
+- **Theme**: Digital entropy, decaying geometry, crystalline collapse, monolithic silence
+- **Technique**: Recursive geometric polygon fragmentation, stochastic detachment logic, HSB edge-glow simulation, kinematic drift advection
+- **Logic Lab Reference**: `mathematical/voronoi/voronoi.py` — used as a conceptual base for spatial partitioning and sharding
 
 ## Concept
-Digital entropy, decaying geometry, crystalline collapse, monolithic silence. The work explores the tension between perfect geometric order and the inevitable decay of information.
+A massive, obsidian-like monolith that stands in a pitch-black void, slowly being shattered by invisible entropic forces; hairline cracks of electric cyan appear across its surface as geometric shards break off, drifting away and dissolving into a fine mist of white light.
 
-## Technique
-- **Recursive Fragmentation**: A central polygon (the monolith) is iteratively split by random planes to create a complex web of internal "cracks."
-- **Stochastic Detachment**: Shards are dynamically detached from the main body based on their distance from the center, simulating a gradual crumbling process.
-- **Kinematic Drift**: Once detached, shards follow a physics-based path including rotation and acceleration, creating a sense of weightlessness in a void.
-- **Energy Shading**: Shards use HSB coloring to create glowing cyan edges and dark, obsidian-like faces.
-
-## Reference
-- `mathematical/voronoi/voronoi.py` (Logic Lab)
+## Technical Details
+- **Renderer**: P2D
+- **Simulation**: Recursive geometric polygon fragmentation
+- **Visuals**: stochastic detachment logic, HSB edge-glow simulation, kinematic drift advection
+- **Animation**: 10s @ 60fps (typical)

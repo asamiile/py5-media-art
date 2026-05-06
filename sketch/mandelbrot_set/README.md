@@ -1,15 +1,16 @@
 # mandelbrot_set
 
-**Theme**: "Boundary of infinity" — the Mandelbrot set; the parameter space of the quadratic map z → z² + c, where the boundary between bounded and unbounded orbits traces a fractal coastline of infinite complexity
+![Preview](preview_p1.png)
 
-**Technique**: Vectorized numpy escape-time iteration (280 max iterations); smooth coloring via ν = i + 1 − log₂(log₂|z|) eliminates banding at the boundary; 3-stop color gradient maps normalized escape time from far (deep violet) through near-boundary (amber) to the fractal edge (pale gold)
+## Metadata
+- **Date**: 2026-04-26
+- **Theme**: mathematics, complex dynamics, fractal geometry, parameter space
+- **Technique**: vectorized numpy escape-time iteration, smooth coloring (ν = i+1−log₂(log₂|z|)), 3-stop violet→amber→gold gradient
 
-**Description**: Each pixel represents a complex parameter c. The smooth coloring value encodes how quickly the orbit z → z² + c diverges: far-escaping points (left exterior) appear in cold deep violet; as c approaches the fractal boundary, the glow warms through burnt amber to pale gold, illuminating the infinite detail of the set's coastline. The interior (bounded orbits) remains near-black. The classic two-bulb body, its antenna extending left, and the satellite mini-brots along the top are all clearly resolved.
+## Concept
+The Mandelbrot set rendered with smooth escape-time coloring; the fractal boundary glows amber-gold where orbits take longest to escape, cooling to deep violet in the empty exterior; the interior remains near-black
 
-**Palette**:
-- Interior (bounded): `#04030e` near-black purple
-- Far escape: `#0c0826` deep violet
-- Medium iter: `#a8601c` burnt amber
-- Near boundary: `#f5e8bc` pale gold
-
-**Preview**: `preview.png`
+## Technical Details
+- **Renderer**: P2D
+- **Simulation**: vectorized numpy escape-time iteration
+- **Visuals**: smooth coloring (ν = i+1−log₂(log₂|z|)), 3-stop violet→amber→gold gradient

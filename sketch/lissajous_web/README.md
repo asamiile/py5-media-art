@@ -1,5 +1,16 @@
-# Lissajous Web
+# lissajous_web
 
-![preview](preview.png)
+![Preview](preview_p1.png)
 
-Twenty-four Lissajous figures — parametric curves x = sin(at + δ), y = sin(bt) — are overlaid using frequency ratios spanning 1:2 to 7:11. Each figure is drawn in a distinct hue with a random phase offset. Where curves share boundary extremes (sin = ±1) they accumulate, forming a glowing rectangular frame; in the interior, crossing angles encode the mathematical relationship between each pair of frequencies.
+## Metadata
+- **Date**: 2026-04-25
+- **Theme**: harmonic mathematics, signal, parametric curves
+- **Technique**: Lissajous figures (multiple frequency-ratio pairs), direct vertex stroke rendering, layered alpha compositing
+
+## Concept
+24 Lissajous figures with frequency ratios from 1:2 to 7:11 overlaid in distinct hues; boundary accumulations form a glowing frame and interior crossings encode harmonic relationships
+
+## Technical Details
+- **Renderer**: P2D
+- **Simulation**: Lissajous figures (multiple frequency-ratio pairs)
+- **Visuals**: direct vertex stroke rendering, layered alpha compositing

@@ -1,12 +1,12 @@
 ---
 name: create-artworks
-description: "Continuously creates py5 media art sketches in a loop. Each iteration follows the same workflow as create-artwork (plan → implement → review → commit). Runs until stopped. Triggers: create artworks, batch art, continuous sketches"
+description: "Continuously creates py5 media art still images in a loop. Each iteration follows the same workflow as create-artwork (plan → implement → review → commit). Runs until stopped. Triggers: create artworks, batch art, continuous sketches"
 allowed-tools: Bash, Read, Write, Edit
 ---
 
 # Create Artworks Skill (Continuous)
 
-Continuously creates py5 media art sketches by repeating the single-artwork workflow in a loop. Each iteration produces a distinct work with a unique concept, theme, and technique.
+Continuously creates py5 media art still images in a loop. Each iteration produces a distinct work with a unique concept, theme, and technique.
 
 ## Workflow
 

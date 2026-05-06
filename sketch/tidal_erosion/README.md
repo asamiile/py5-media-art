@@ -1,36 +1,16 @@
 # tidal_erosion
 
-**The ancient dialogue between ocean and stone**
+![Preview](preview_p1.png)
 
-![preview](preview.png)
+## Metadata
+- **Date**: 2026-04-26
+- **Theme**: geology, coastal erosion, ocean, strata, natural forces
+- **Technique**: procedural cliff geometry with multi-frequency profiles, 2D fractal noise erosion weighted by waterline proximity, noise-perturbed sea caves, wavy strata boundaries, vectorized numpy rendering
 
 ## Concept
+Cross-section coastal cliff with 12 geological strata progressively carved by simulated tidal erosion; noise-based erosion creates organic undercuts and sea caves at waterline; overhanging cliff face, vertical cracks, seafoam, and mist spray complete the scene
 
-A cross-section of a coastal cliff reveals layered geological strata, undercut by centuries of wave action. The cliff face is sculpted by simulated tidal erosion — noisy patterns carve sea caves and notches at the waterline while vertical cracks propagate through the rock mass. Seafoam traces the active erosion zone.
-
-## Technique
-
-- **Procedural cliff geometry** — Multi-frequency sine profiles define the cliff face with an overhanging top and undercut erosion notch at waterline
-- **2D fractal noise erosion** — 6-octave noise field multiplied by proximity-to-waterline weighting removes rock in organic, natural patterns
-- **Sea cave generation** — Elliptical cavities with noise-perturbed boundaries create natural-looking erosion features
-- **Wavy strata boundaries** — Sine-wave offsets make geological layer boundaries undulate naturally
-- **Cliff surface detail** — Edge highlighting (soft glow on exposed faces), underside darkening (overhangs), vertical cracks, rock texture noise
-- **Ocean rendering** — Multi-frequency wave texture, depth-based gradient, seafoam at waterline, mist spray
-- **Vectorized numpy** — All rendering is fully vectorized for performance
-
-## Palette
-
-| Role | Color | Description |
-|------|-------|-------------|
-| Sky | `rgb(10, 15, 28)` → `rgb(28, 38, 58)` | Night sky gradient |
-| Ocean | `rgb(22, 52, 78)` → `rgb(8, 18, 32)` | Surface to deep |
-| Rock (12 strata) | Basalt → slate → sandstone → ochre → limestone | Geological age gradient |
-| Accent | `rgb(128, 195, 185)` | Seafoam teal |
-
-## Parameters
-
-- 12 geological strata with wavy boundaries
-- 3–6 sea caves per run with noise-perturbed shapes
-- 5–15 vertical cracks
-- 6-octave noise erosion field
-- Each run produces a unique cliff profile
+## Technical Details
+- **Renderer**: P2D
+- **Simulation**: procedural cliff geometry with multi-frequency profiles
+- **Visuals**: 2D fractal noise erosion weighted by waterline proximity, noise-perturbed sea caves, wavy strata boundaries, vectorized numpy rendering

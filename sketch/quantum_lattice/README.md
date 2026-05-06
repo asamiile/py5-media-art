@@ -1,19 +1,17 @@
 # quantum_lattice
 
-A visualization of the non-local and probabilistic nature of the quantum world. The work captures the interference patterns of overlapping probability waves, quantized into discrete energy states.
+![Preview](preview_p1.png)
+
+## Metadata
+- **Date**: 2026-05-04
+- **Theme**: Quantum mechanics, probability fields, entanglement, wave-particle duality
+- **Technique**: Complex wave superposition, energy-band quantization, probability-node extraction, optimized pixel-buffer rendering
 
 ## Concept
-Quantum mechanics, probability fields, entanglement, wave-particle duality.
+A vibrant field of shimmering interference fringes where waves of positron pink and electron blue overlap; bright gold quanta emerge at probability peaks against a dark vacuum indigo grid.
 
-## Technique
-- **Wave Superposition**: Simulation of multiple rotating probability wave sources using complex exponentials.
-- **Interference Mapping**: Structured interference patterns emerging from correlated source phases.
-- **Quantization**: Stepped color mapping to create discrete energy bands, simulating the discrete nature of quantum states.
-- **Particle Emergence**: High-intensity nodes marked as "quanta" where probability waves constructively interfere.
-
-## Palette
-- **Background (Vacuum)**: Vacuum Indigo
-- **Wave A (Positron)**: Positron Pink
-- **Wave B (Electron)**: Electron Blue
-- **Interference (Quanta)**: Quantum Gold
-- **Metric Grid**: Faint Steel
+## Technical Details
+- **Renderer**: P2D
+- **Simulation**: Complex wave superposition
+- **Visuals**: energy-band quantization, probability-node extraction, optimized pixel-buffer rendering
+- **Animation**: 10s @ 60fps (typical)

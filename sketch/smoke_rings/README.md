@@ -1,15 +1,16 @@
 # smoke_rings
 
-**Theme**: "Vortex ballet" — three smoke ring cross-sections rendered via fluid dynamics; each ring is a pair of counter-rotating point vortices whose Biot-Savart velocity field guides 50k tracer particles through the toroidal roll.
+![Preview](preview_p1.png)
 
-**Technique**: Point vortex simulation (Biot-Savart law), vectorized numpy integration, per-ring colored density accumulation via `np.bincount` weighting, log-scale tone mapping; three rings (cerulean · gold · mint) arranged across a wide canvas.
+## Metadata
+- **Date**: 2026-04-26
+- **Theme**: fluid dynamics, vortex rings, physics, atmospheric
+- **Technique**: point vortex Biot-Savart simulation, 50k particles per ring, bincount density accumulation, log tone mapping
 
-**Description**: Each smoke ring appears as two paired vortex cores in cross-section; 50k particles per ring are seeded as Gaussian clouds around each core and traced for 200 time steps under all six vortices' mutual induction. Density accumulation with log-scale mapping reveals the tight swirling cores and the diffuse return-flow halos — the characteristic anatomy of a toroidal vortex against near-black.
+## Concept
+Three vortex ring cross-sections (cerulean · gold · mint) formed by counter-rotating point vortex pairs; 50k particles per ring trace the toroidal Biot-Savart flow field for 200 steps; density accumulation reveals tight glowing cores and diffuse return-flow halos against near-black
 
-**Palette**:
-- Background: `#06050c` near-black
-- Left ring: cerulean `#3791f5`
-- Center ring: gold `#f5c32d`
-- Right ring: mint `#2de69b`
-
-**Preview**: `preview.png`
+## Technical Details
+- **Renderer**: P2D
+- **Simulation**: point vortex Biot-Savart simulation
+- **Visuals**: 50k particles per ring, bincount density accumulation, log tone mapping

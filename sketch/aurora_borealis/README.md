@@ -1,17 +1,16 @@
 # aurora_borealis
 
-**Theme**: "Magnetic curtain" — ionized plasma sheets dancing in Earth's polar magnetosphere
+![Preview](preview_p1.png)
 
-**Technique**: Layered vertical ribbon waves (180 columns × 5 depth layers), star field scatter, tree silhouette
+## Metadata
+- **Date**: 2026-04-26
+- **Theme**: atmosphere, polar light, electromagnetism, landscape
+- **Technique**: layered vertical ribbon waves (180 columns × 5 phases), alpha accumulation, star scatter, tree silhouette
 
-**Description**: 900 vertical ribbon strips rendered as stacked sine-wave segments trace the characteristic curtain waviness of the Northern Lights. Five overlapping layers with different frequencies and phases accumulate luminance through alpha blending. The horizontal color gradient — electric green → cold teal → deep violet → magenta rim — follows the spectral emission bands of excited oxygen and nitrogen. Stars are placed in the upper sky; a deterministic conifer silhouette anchors the horizon.
+## Concept
+900 sine-wave ribbon strips in five overlapping layers form the characteristic waviness of the Northern Lights; horizontal gradient from electric green through cold teal to deep violet encodes the spectral emission bands of excited atmospheric gases above a conifer treeline
 
-**Palette**:
-- Sky: `#030408` deep near-black
-- Stars: `#e8f0ff` cold white
-- Aurora left: `#10d258` electric green (oxygen 557.7 nm)
-- Aurora center: `#10c0b8` cold teal
-- Aurora right: `#8526b8` deep violet (nitrogen)
-- Aurora rim: `#c02e84` magenta
-
-**Preview**: `preview.png`
+## Technical Details
+- **Renderer**: P2D
+- **Simulation**: layered vertical ribbon waves (180 columns × 5 phases)
+- **Visuals**: alpha accumulation, star scatter, tree silhouette

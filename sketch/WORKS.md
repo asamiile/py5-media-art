@@ -3,6 +3,328 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## cometary_ion_tail
+
+- **Date**: 2026-05-05
+- **Theme**: Comet, ion tail, dust tail, solar wind, beautiful night sky
+- **Technique**: 3D particle simulation (60,000 particles) with a dual-tail physics model. Implements a curved, golden "dust tail" (inertia + radiation pressure) and a straight, electric-blue "ion tail" (noise-driven solar wind advection). Multi-layer rendering for the cometary coma and shimmering tail filaments. 60fps high-bitrate MP4 encoding
+- **Description**: A magnificent comet streaking through the deep celestial void; its nucleus glows with a ghostly white light, trailing a massive dual tail that stretches across the stars—one curving gracefully like a golden ribbon, the other pointing rigidly away from the sun in a beam of shimmering electric blue.
+
+## stellar_nursery_dust
+
+- **Date**: 2026-05-05
+- **Theme**: Stellar nursery, gravitational collapse, protostars, beautiful night sky
+- **Technique**: 3D particle simulation (80,000 particles) using a vectorized gravity model with 12 dynamic mass centers. Features multi-layer rendering: a coarse "gas" background, medium-density "dust" clouds, and white-hot "protostar" cores. 60fps high-bitrate MP4 encoding
+- **Description**: A vast, swirling cosmic cloud collapsing under its own weight; deep violet dust gives way to shimmering cyan filaments, culminating in the birth of brilliant white-hot infant stars that illuminate the nebula from within.
+
+## solar_flare_loops
+
+- **Date**: 2026-05-05
+- **Theme**: Solar flare loops, magnetic arcs, plasma dynamics, beautiful night sky
+- **Technique**: 3D magnetic loop simulation using 24 dynamic Bezier curves and 48,000 particles with volumetric noise offsets. Multi-pass rendering for incandescent core glow and plasma filaments (core/halo), 60fps high-quality MP4 encoding
+- **Description**: A high-energy visualization of a star's surface; massive arcs of shimmering plasma rise and fall from the incandescent solar core, pulsing with rhythmic magnetic energy against the silent obsidian void.
+
+## event_horizon_shadow
+
+- **Date**: 2026-05-05
+- **Theme**: Black hole, event horizon, accretion disk, light warping, beautiful night sky
+- **Technique**: Accretion disk simulation (70,000 particles) with Keplerian orbits, Doppler-shift color mapping (HSB), dramatic gravitational lensing (Einstein ring approximation) on a star-dusted background, 60fps high-quality MP4 encoding
+- **Description**: A terrifyingly beautiful visualization of a supermassive black hole; light from the background stars is warped into a shimmering Einstein ring around the central shadow, while a high-energy accretion disk of electric cyan and molten orange plasma swirls at relativistic speeds.
+
+## supernova_remnant
+
+- **Date**: 2026-05-05
+- **Theme**: Supernova remnant, expanding shockwaves, interstellar dust, beautiful night sky
+- **Technique**: 3D particle simulation (120,000 particles) with radial shockwave expansion, multi-octave sine-based turbulence, velocity drag, multi-pass rendering (glow/core) for high-density volumetric feel, 60fps high-quality MP4 encoding
+- **Description**: A massive, explosive expansion of stardust that fragment into intricate filaments of electric violet and crimson; the work simulates the catastrophic death of a star and the subsequent formation of a shimmering nebula within the silent obsidian void.
+
+## string_theory_manifold
+
+- **Date**: 2026-05-05
+- **Theme**: Calabi-Yau manifolds, higher dimensions, hidden geometry, beautiful night sky
+- **Technique**: 3D parametric surface (P3D) based on nested complex trigonometric transformations, dynamic breathing via harmonic modulation, high-density starfield with localized alpha twinkle, HSB-based iridescent wireframe rendering, 60fps high-quality MP4 encoding
+- **Description**: A complex, shimmering geometric form that appears to rotate and fold into itself, revealing hidden symmetries in a silent cosmic void of deep indigo and distant stars.
+
+## cymatic_nebula
+
+- **Date**: 2026-05-05
+- **Theme**: Cymatics, acoustic trapping, celestial resonance, beautiful night sky
+- **Technique**: 2D grid-based sound pressure simulation (Chladni function), particle advection (80,000 particles) using gradient-descent towards nodal regions, high-persistence silken trails, vectorized additive blending, 60fps high-quality MP4 encoding
+- **Description**: A shimmering, silken nebula that self-organizes into complex geometric patterns as if driven by invisible celestial frequencies; glowing filaments in electric indigo and cyan converge into rhythmic standing-wave nodes across a deep, star-dusted void.
+
+## vacuum_fluctuations
+
+- **Date**: 2026-05-05
+- **Theme**: Quantum physics, virtual particles, zero-point energy, beautiful night sky
+- **Technique**: Vectorized multi-wave field synthesis (12 oscillators), stochastic excitation thresholding, transient entanglement link simulation (proximity-based), additive blending, 60fps high-quality MP4 encoding
+- **Description**: A shimmering visualization of quantum zero-point energy where tiny, ephemeral points of light emerge and vanish in a deep obsidian void; ghostly cyan threads momentarily connect the fluctuating violet excitations, revealing the hidden connectivity of the vacuum.
+
+## spectral_prism
+
+- **Date**: 2026-05-05
+- **Theme**: Optical physics, chromatic dispersion, liquid light, beautiful night sky
+- **Technique**: Physical Snell's Law refraction, Cauchy's dispersion equation, multi-pass ray tracing (12 wavelengths), HSB-spectral coloring, P2D additive blending, 60fps high-quality MP4 encoding
+- **Description**: A rotating obsidian prism catches a beam of intense white starlight and refracts it into a shimmering, fluid fan of spectral colors that sweep across the canvas like a celestial lighthouse beam against a deep star-dusted void.
+
+## ferrofluid_spikes
+
+- **Date**: 2026-05-05
+- **Theme**: Magnetic fluids, physical tension, alien architecture, beautiful night sky
+- **Technique**: 3D mesh deformation (P3D, 64x64 grid), magnetic field intensity simulation, Lissajous pole paths, multi-source specular lighting, bioluminescent cobalt highlights, 60fps high-quality MP4 encoding
+- **Description**: A dark, viscous liquid surface erupts into sharp, rhythmic spikes in response to moving magnetic poles, creating an alien architectural landscape of obsidian and electric cobalt under a star-dusted night sky.
+
+## differential_expansion
+
+- **Date**: 2026-05-05
+- **Theme**: Organic morphogenesis, brain-like folding, cellular growth, beautiful night sky
+- **Technique**: Differential growth algorithm (Verlet nodes), Scipy KDTree spatial repulsion optimization, multi-layered bioluminescent rendering (Emerald/Seafoam/Cyan), additive blending, 60fps high-quality MP4 encoding
+- **Description**: An organic, brain-like structure that folds and expands through a differential growth algorithm, creating an intricate bioluminescent tapestry of seafoam and cyan energy against a deep oceanic void.
+
+## harmonic_levitation
+
+- **Date**: 2026-05-05
+- **Theme**: Resonant assembly, acoustic trapping, celestial geometry, beautiful night sky
+- **Technique**: Dynamic multi-source wave interference field (8 oscillators), gradient-based particle advection (60,000 particles), HSB-spectral energy mapping, dense starfield with twinkle effect, 60fps high-quality MP4 encoding
+- **Description**: An intricate visualization of matter responding to invisible resonant frequencies; 60,000 particles of light navigate a dynamic wave field, assembling into shimmering geometric nodes that morph and pulse as the frequencies shift, creating a delicate, celestial dance against a deep star-dusted void.
+
+## strange_attractor_dust
+
+- **Date**: 2026-05-05
+- **Theme**: Chaos theory, strange attractors, butterfly nebula, beautiful night sky
+- **Technique**: Lorenz attractor simulation (120k particles), vectorized numerical integration, high-performance 2D histogram density accumulation, gamma-corrected density mapping, radius-based spectral color interpolation
+- **Description**: A dense, swirling vortex of electric violet and crimson stardust that forms a complex, heart-like shell within the obsidian void; the work utilizes 120,000 particles to trace the chaotic yet ordered trajectories of the Lorenz attractor, revealing a luminous, silken nebula that pulses with a hidden mathematical intensity.
+
+## metabolic_rhizome
+
+- **Date**: 2026-05-05
+- **Theme**: Organic growth, cosmic connectivity, rhizomatic systems, beautiful night sky
+- **Technique**: Space-colonization algorithm (nutrient-driven growth), multi-root initialization, adaptive path thickness (flow-based scaling), bioluminescent teal/violet shading, additive junction highlights
+- **Description**: A delicate, glowing web of energy that branches and weaves through a deep star-dusted void; using a space-colonization algorithm, the network self-organizes into an optimized transport system that pulses with bio-phosphor teal and neural violet, revealing the organic, interconnected nature of the cosmic vacuum.
+
+## stellar_caustics
+
+- **Date**: 2026-05-05
+- **Theme**: Interstellar gas, light refraction, caustics, beautiful night sky
+- **Technique**: Multi-wave superposition (18-fold), turbulence-driven grid distortion, non-linear contrast sharpening, additive solar flare highlights
+- **Description**: A luminous, shimmering web of light that feels liquid and alive, pulsing with electric teal and solar amber highlights; the work simulates the complex refraction of starlight through a turbulent interstellar medium, revealing an intricate tapestry of energy against a deep indigo void.
+
+## quasicrystal_void
+
+- **Date**: 2026-05-05
+- **Theme**: Aperiodic resonance, cosmic order, quantum vacuum, beautiful night sky
+- **Technique**: Quasicrystal wave interference (7-fold plane wave summation), vectorized NumPy field rendering, iridescent multi-stop color mapping, additive focal glows, high-density starfield
+- **Description**: An intricate, shimmering field of aperiodic energy that pulses through a deep star-dusted void; the complex interference of 7 plane waves creates an iridescent tapestry of royal amethyst, electric cyan, and stellar gold that never repeats, revealing the hidden mathematical architecture of the vacuum.
+
+## gravitational_warp
+
+- **Date**: 2026-05-05
+- **Theme**: Space-time curvature, gravitational lensing, cosmic void, beautiful night sky
+- **Technique**: Multi-pass conformal coordinate warping (inverse-square lensing approximation), dual-pass additive sapphire/silver grid rendering, distorted Einstein rings, chromatic aberration (spatial color split), high-density multi-magnitude starfield
+- **Description**: A stunning visualization of space-time distortion where the underlying geometric fabric of the universe is warped by four massive, invisible singularities; shimmering silver grid lines bend and arc around luminous sapphire focal points, creating complex "Einstein rings" and delicate spectral fringes that pulse with an ethereal intensity against a deep, star-dusted midnight navy void.
+
+## stochastic_nebula
+
+- **Date**: 2026-05-05
+- **Theme**: Cosmic gas clouds, stochastic flow, celestial textures, beautiful night sky
+- **Technique**: Langevin dynamics simulation, 90,000-particle vectorized flow, pre-computed 512x512 noise-potential grid, additive blending with slow background decay, multi-scale starfield generation
+- **Description**: A vast, shimmering celestial nursery where intricate filaments of light weave through a deep midnight void; using Langevin dynamics and a complex noise-potential field, 90,000 particles of electric cyan, amethyst, and rose gold accumulate into organic, smoky nebula structures that glow with a soft, ethereal light amidst a dense, multi-magnitude starfield.
+
+## prismatic_architecture
+
+- **Date**: 2026-05-05
+- **Theme**: Digital brutalism, spectral refraction, modern urbanism, beautiful night sky
+- **Technique**: 3D recursive quadtree subdivision, isometric camera projection, spectral "refraction" fringe rendering, transparent "glass" box geometry
+- **Description**: A vast, shimmering digital metropolis of glass-like buildings that appears to pulse with light; the architectural slabs of the 5-level recursive city feature spectral cyan and magenta fringes that simulate optical refraction against a deep star-dusted midnight void.
+
+## prismatic_vortices
+
+- **Date**: 2026-05-05
+- **Theme**: Fluid dynamics, spectral turbulence, liquid light, beautiful night sky
+- **Technique**: Vectorized 60,000-particle advection, Kármán vortex street simulation, triple-pass prismatic RGB rendering, persistent silken trace accumulation
+- **Description**: A mesmerizing, shimmering flow of silken light that curls into intricate spectral vortices; as 60,000 particles navigate invisible oscillating obstacles, they create rhythmic, prismatic swirls of electric cyan, laser pink, and golden amber against a deep star-dusted midnight void.
+
+## nebular_ribbons
+
+- **Date**: 2026-05-05
+- **Theme**: Celestial ribbons, silken energy, cosmic dance, beautiful night sky
+- **Technique**: 3D `TRIANGLE_STRIP` ribbon sheets, multi-octave Simplex noise pathfinding, shimmering width modulation, persistent spectral trails, additive P3D blending
+- **Description**: A graceful, shimmering dance of 14 silken energy ribbons that twist and turn through a deep space void; the iridescent sheets in teal, lavender, and rose gold leave glowing spectral echoes as they navigate the star-dusted night sky, pulsing with a rhythmic cosmic breath.
+
+## chromatic_refraction
+
+- **Date**: 2026-05-05
+- **Theme**: Optical physics, spectral distortion, cosmic lens, beautiful night sky
+- **Technique**: Triple-pass RGB chromatic aberration, multi-octave Simplex noise distortion field, convex lens magnification logic, Gaussian nebula bloom rendering
+- **Description**: A shimmering, iridescent "cosmic lens" that warps the star-dusted night sky; as the background starfield passes through the central 15,000-point distortion field, it refracts into vibrant spectral arcs of electric cyan, magenta, and yellow, creating a sense of immense depth and optical complexity in the silent obsidian void.
+
+## supersymmetric_manifold_v2
+
+- **Date**: 2026-05-05
+- **Theme**: High-dimensional resonance, spectral motion, supersymmetric breath, beautiful night sky
+- **Technique**: Animated Gielis Superformula (P3D), dynamic parameter modulation, persistent spectral trails, 60fps high-quality MP4 encoding
+- **Description**: An animated evolution of the `supersymmetric_manifold`, responding to user feedback for a motion version; the shimmering energy manifold pulses and rotates through a deep star-dusted void, with its 8 spectral shells breathing in a complex, rhythmic harmony of electric indigo, cyan, and magenta.
+
+## nebular_loom
+
+- **Date**: 2026-05-05
+- **Theme**: Celestial weaving, interstellar threads, cosmic tapestry, beautiful night sky
+- **Technique**: Vectorized 50,000-particle advection, harmonic "weaver star" attractors, persistent silken trace accumulation, high-density multi-hue starfield
+- **Description**: An intricate, shimmering tapestry of light that appears to be woven by the movement of six "weaver stars" across the cosmos; the 50,000 silken filaments in electric indigo, cobalt, and rose gold create a dense, iridescent fabric that pulses against a deep star-dusted midnight void.
+
+## gasket_metropolis
+
+- **Date**: 2026-05-05
+- **Theme**: Fractal urbanism, infinite density, modern city feel, beautiful night sky
+- **Technique**: Recursive circle subdivision, 3D isometric building extrusion (P3D), Curvature-based height modulation, Neon spectral lighting
+- **Description**: A dense, shimmering metropolis of circular skyscrapers that recedes into infinite fractal detail; the buildings glow with electric blue and laser pink neon highlights, creating a vibrant geometric landscape under a silent, star-dusted midnight sky.
+
+## magnetic_reconnection
+
+- **Date**: 2026-05-05
+- **Theme**: Solar physics, plasma energy, magnetic snap, beautiful night sky
+- **Technique**: Vectorized 50,000-particle advection, dynamic multi-pole magnetic field reconnection, kinetic energy spectral mapping, high-density starfield rendering
+- **Description**: An intricate visualization of solar magnetic physics where 50,000 silken filaments trace the invisible architecture of a multi-pole magnetic field; periodic "reconnection" events send shimmering shockwaves of molten gold and stark white light through the deep star-dusted indigo void.
+
+## algorithmic_crystals
+
+- **Date**: 2026-05-05
+- **Theme**: Digital mineralization, recursive lattices, geometric resonance, beautiful night sky
+- **Technique**: 3D recursive lattice growth (P3D), iridescent surface mapping, luminous internal glow, high-density starfield rendering
+- **Description**: An intricate visualization of synthetic mineralization where glowing digital geodes in molten gold, cyber lime, and royal amethyst pulse and divide in a deep void; the shimmering celestial tapestry of geometric resonance pulses with a rhythmic harmony against a star-dusted midnight sky.
+
+## spectral_mitosis
+
+- **Date**: 2026-05-05
+- **Theme**: Synthetic biology, membrane dynamics, information splitting, beautiful night sky
+- **Technique**: Stochastic cell simulation (P2D), iridescent membrane oscillation, spectral mitosis bursts, high-density starfield rendering
+- **Description**: An intricate visualization of synthetic biological growth where glowing organic forms in electric cyan and cyber magenta pulse and divide in a deep void; the shimmering celestial tapestry of mitosis events pulses with a rhythmic harmony against a star-dusted midnight sky.
+
+## metabolic_nodes
+
+- **Date**: 2026-05-05
+- **Theme**: Living networks, organic computation, synthetic synapse, beautiful night sky
+- **Technique**: 3D stochastic network construction (P3D), luminous pulse propagation, dynamic node resonance, high-density starfield rendering
+- **Description**: An intricate visualization of a living digital network that pulses and breathes in a deep void; glowing cyber lime and royal amethyst pulses travel through dense architectural synapses against a star-dusted midnight sky.
+
+## quantum_entanglement
+
+- **Date**: 2026-05-05
+- **Theme**: Non-local connection, particle pairs, spectral resonance, beautiful night sky
+- **Technique**: Entangled particle simulation (P2D), spectral connection bridges, phase-locked harmonic pulsing, noise-driven correlation
+- **Description**: An intricate visualization of quantum coherence where glowing spectral bridges in electric cyan, cobalt, and rose-gold connect entangled particle pairs; the shimmering celestial tapestry pulses with a rhythmic harmony against a star-dusted midnight void.
+
+## algorithmic_architecture
+
+- **Date**: 2026-05-05
+- **Theme**: Recursive urbanism, digital metabolism, synthetic metropolis, beautiful night sky
+- **Technique**: 3D recursive quadtree construction (P3D), luminous data highways, dynamic camera rotation, high-density starfield rendering
+- **Description**: A vast, shimmering digital metropolis generated by 3D recursive quadtree subdivision that appears to pulse with life; glowing electric cyan and royal amethyst data highways flow across dense architectural forms against a star-dusted midnight sky.
+
+## algorithmic_fluid
+
+- **Date**: 2026-05-05
+- **Theme**: Digital liquid, spectral flow, viscous light, beautiful night sky
+- **Technique**: Grid-based fluid simulation (P2D), spectral dye advection, velocity-based HSB mapping, high-density starfield rendering
+- **Description**: A shimmering, viscous flow of spectral light where electric cyan and royal amethyst dyes swirl and mix in a deep void; the intricate, fluid tapestry of geometric resonance pulses with a rhythmic harmony against a star-dusted midnight sky.
+
+## prismatic_resonator
+
+- **Date**: 2026-05-05
+- **Theme**: Optical physics, spectral refraction, geometric resonance, beautiful night sky
+- **Technique**: Recursive ray-tracing (P2D), chromatic dispersion simulation, high-persistence path accumulation, additive bloom rendering
+- **Description**: An intricate visualization of optical resonance where shimmering spectral rays in electric cyan, cobalt, and amethyst bounce and refract inside a circular resonator; the build-up of silken, thread-like patterns pulses with a geometric harmony against a star-dusted midnight void.
+
+## recursive_membranes
+
+- **Date**: 2026-05-05
+- **Theme**: Dimensional folding, iridescent surfaces, organic geometry, beautiful night sky
+- **Technique**: 3D noise-warped mesh (P3D), height-based HSB iridescence mapping, translucent layering, dynamic camera rotation, high-density starfield
+- **Description**: A shimmering, translucent veil of light that folds and pulses in a deep void; the noise-warped membranes in electric cyan and royal amethyst create an intricate, pearlescent tapestry of geometric resonance under a silent, star-dusted midnight sky.
+
+## stellar_clockwork
+
+- **Date**: 2026-05-05
+- **Theme**: Orbital resonance, astronomical instruments, temporal harmony, beautiful night sky
+- **Technique**: Nested epicyclic tracers (P2D), harmonic resonance tuning, high-persistence trace accumulation, spectral metal coloring (Gold/Silver/Copper)
+- **Description**: An intricate visualization of celestial mechanics where nested golden and silver epicycles weave a complex, shimmering tapestry of orbital paths; the build-up of silken, thread-like textures pulses with a temporal harmony against a star-dusted midnight void.
+
+## metabolic_landscape
+
+- **Date**: 2026-05-05
+- **Theme**: Living geography, organic terrain, pulsating resonance, beautiful night sky
+- **Technique**: 3D domain-warped mesh (P3D), metabolic contour pulse modulation, dynamic camera rotation, high-density starfield rendering
+- **Description**: A vast, dark planetary landscape generated by second-order domain warping that appears to breathe; shimmering neon emerald and electric amethyst contours pulse across organic ridges and valleys against a star-dusted midnight sky.
+
+## spectral_coral
+
+- **Date**: 2026-05-05
+- **Theme**: Synthetic marine life, metabolic light, crystalline coral, beautiful night sky
+- **Technique**: Stochastic branching growth, metabolic spectral pulse modulation, recursive fractal geometry, additive bloom rendering
+- **Description**: An intricate visualization of "spectral coral" structures that grow and pulse in a dark void; the crystalline branches in slate and graphite shimmer with rhythmic pulses of electric cyan, cyber lime, and amethyst against a star-dusted night sky.
+
+## quantum_chromatics
+
+- **Date**: 2026-05-05
+- **Theme**: Particle collisions, high-energy resonance, magnetic curvature, beautiful night sky
+- **Technique**: Lorentz-force path simulation, stochastic collision fragmentation (5,000 particles), spectral decay mapping (White-Gold to Cyan/Magenta), high-density starfield rendering
+- **Description**: A high-energy visualization of quantum collisions where rhythmic bursts of 5,000 white-gold fragments shard into curved filaments of electric cyan and magenta; the shimmering spectral decay creates a vibrant, high-energy "sparkler" effect against a silent, star-dusted night sky.
+
+## quantum_vorticity
+
+- **Date**: 2026-05-05
+- **Theme**: Superfluid turbulence, quantized vortices, liquid light, beautiful night sky
+- **Technique**: Vectorized 30,000-particle advection along point-vortex velocity fields (Biot-Savart law), HSB spectral mapping, high-density starfield rendering
+- **Description**: A shimmering visualization of quantum turbulence where 30,000 silken filaments in electric cyan, royal amethyst, and gold swirl around invisible singularities; the intricate tapestry of phase-space resonance pulses against a darkest indigo midnight void.
+
+## luminous_strata
+
+- **Date**: 2026-05-05
+- **Theme**: Geological history, layered resonance, mineral light, beautiful night sky
+- **Technique**: Stacked noise-driven ridges (P2D), spectral edge highlighting, mineral texture mapping (Simplex noise), high-density starfield rendering
+- **Description**: A shimmering visualization of geological strata where 12 noise-driven layers stack to create a rich, mineral-like landscape; the glowing ridges in emerald, amethyst, and molten gold pulse with a rhythmic planetary resonance against a deep star-dusted midnight void.
+
+## metabolic_voxels
+
+- **Date**: 2026-05-05
+- **Theme**: Living architecture, geometric metabolism, digital growth, beautiful night sky
+- **Technique**: 3D recursive growth (P3D), spectral edge highlighting, animated "breathing" scale, dynamic camera rotation, high-density starfield
+- **Description**: A vast, dark space filled with massive, glowing 3D monoliths that grow and breathe like synthetic corals; the recursive structures in slate and graphite pulse with electric cyan and amethyst highlights against a star-dusted midnight void.
+
+## data_metropolis
+
+- **Date**: 2026-05-05
+- **Theme**: Digital urbanism, data flow, quantum connectivity, beautiful night sky
+- **Technique**: Recursive quadtree subdivision, isometric building projection, Manhattan-grid particle advection (data packets), spectral edge highlighting
+- **Description**: A top-down isometric view of a digital metropolis where luminous data packets in laser pink, cyber lime, and electric blue surge through a complex geometric grid; the architectural slabs of the city pulse with neon light against a star-dusted night sky.
+
+## spectral_filaments
+
+- **Date**: 2026-05-05
+- **Theme**: Magnetic resonance, plasma loops, interstellar filaments, beautiful night sky
+- **Technique**: Vectorized 40,000-particle advection along rotating dipole fields ($B \propto r^{-2}$), HSB spectral mapping (Emerald/Gold/Cobalt), high-density starfield rendering
+- **Description**: A dense, intricate web of 40,000 silken filaments that trace the invisible magnetic architecture of the cosmos; the glowing threads in deep emerald, molten gold, and electric cobalt swirl and resonate against a deep star-dusted navy void.
+
+## tectonic_glow
+
+- **Date**: 2026-05-05
+- **Theme**: Planetary stress, seismic energy, crustal fractures, beautiful night sky
+- **Technique**: Dynamic proximity mesh, stress-weighted spectral coloring, midpoint-displaced quadratic "cracks", noise-driven drift simulation
+- **Description**: A dark, planetary landscape where shifting tectonic plates create glowing fractures of molten gold and electric magenta; the jagged spectral cracks pulse with subterranean energy against a deep star-dusted night sky.
+
+## gravitational_echoes
+
+- **Date**: 2026-05-05
+- **Theme**: Gravitational waves, binary merger, spacetime distortion, beautiful night sky
+- **Technique**: Phase-space wave superposition, chirping orbital emitters, subpixel starfield distortion (lensing simulation), additive interference rendering
+- **Description**: A rhythmic, shimmering visualization of a binary merger where expanding wave-fronts of electric cyan and royal amethyst interfere to create complex spectral fringes; the background starfield is dynamically warped by the passing gravitational waves, culminating in a bright white-gold flash at the center of the obsidian void.
+
+## gluon_flux
+
+- **Date**: 2026-05-05
+- **Theme**: Subatomic physics, particle confinement, energetic tension, beautiful night sky
+- **Technique**: Force-directed lattice with confinement spring logic ($F \propto r$), additive spectral bloom, high-density starfield rendering, animated tension-weighted edge modulation
+- **Description**: A dense, vibrating web of "quarks" held together by shimmering "gluon flux tubes" in electric magenta, lime, and cobalt; as the particles drift apart, the tension-weighted connections flare with white-gold energy, creating a complex, high-energy lattice against a deep star-dusted night sky.
+
 ## recursive_interference
 
 - **Date**: 2026-05-04

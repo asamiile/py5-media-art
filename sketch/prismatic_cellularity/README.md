@@ -1,21 +1,17 @@
-# Prismatic Cellularity
+# prismatic_cellularity
 
-A generative media art sketch exploring the intersection of urban metabolism and cellular logic through multi-scale Worley noise and spectral pressure.
+![Preview](preview_p1.png)
+
+## Metadata
+- **Date**: 2026-05-04
+- **Theme**: Urban metabolism, cellular logic, spectral pressure, modern architectural twist
+- **Technique**: Multi-scale Worley noise (L1/L2 hybrid), derivative-based edge detection, HSB spectral mapping, atmospheric haze rendering, optimized NumPy grid-partitioning
+- **Logic Lab Reference**: `mathematical/worley_noise/worley_noise.py`
 
 ## Concept
+A dense, glowing "cellular metropolis" of blocky, rhythmic structures that pulse and shift against a deep indigo night sky; sharp iridescent edges and soft glowing cores create a sense of operational intelligence and high-tech urban flow.
 
-This work reimagines a futuristic metropolis as a living organism. Using a hybrid of Manhattan and Euclidean distance metrics, it generates a dense grid of "districts" that pulse and breathe. The sharp, iridescent edges represent high-pressure data conduits, while the glowing cores suggest the operational heart of each cellular block.
-
-## Techniques
-
-- **Hybrid Worley Noise**: Combines L1 (Manhattan) and L2 (Euclidean) distance metrics to balance architectural rigidity with organic growth.
-- **Spectral Edge detection**: Luminous boundaries are extracted from the distance field (F2 - F1) and colored based on local strain and time-based harmonics.
-- **Dynamic Lattice**: Feature points drift and oscillate, creating a continuous "breathing" effect across the city.
-- **Atmospheric Depth**: A star-field background and bottom-up haze provide a sense of scale and nocturnal atmosphere.
-- **Optimized Rendering**: Uses NumPy for high-performance distance field computation and cellular partitioning.
-
-## Controls (during development)
-
-- The sketch runs autonomously for 10 seconds to generate a high-quality animation.
-- Previews are saved as `preview_p1.png`.
-- Final animation is exported as `output.mp4`.
+## Technical Details
+- **Renderer**: P2D
+- **Simulation**: Multi-scale Worley noise (L1/L2 hybrid)
+- **Visuals**: derivative-based edge detection, HSB spectral mapping, atmospheric haze rendering, optimized NumPy grid-partitioning

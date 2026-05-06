@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## photon_fluid
+
+- **Date**: 2026-05-06
+- **Theme**: Photon fluid, Bose-Einstein condensation, light dynamics, beautiful night sky
+- **Technique**: 2D grid-based fluid simulation (NumPy) with particle advection (100,000 particles). Features a "photon density" field that fluctuations with high-frequency noise before condensing into a coherent central "super-photon" peak. Additive blending and speed-based spectral coloring. 60fps high-bitrate MP4 encoding.
+- **Description**: A vibrant, shimmering sea of light that begins as chaotic violet and cyan ripples, slowly converging into a singular, blindingly bright white-gold core at the center of a silent star-dusted void.
+
 ## magnetic_storm
 
 - **Date**: 2026-05-06

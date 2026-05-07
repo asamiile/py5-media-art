@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## quantum_vortex_lattice
+
+- **Date**: 2026-05-07
+- **Theme**: Quantum vortices, superfluidity, vortex lattice, topological defects, beautiful night sky
+- **Technique**: 3D simulation of a rotating superfluid with 19 quantized vortices in a hexagonal lattice. Implements helical Kelvin waves and a "melting" phase transition into turbulence. 30,000 particles are advected along the vortex cores. Features a transition from ordered Cyan/Indigo to chaotic shimmering Gold. 60fps high-bitrate MP4.
+- **Description**: A macroscopic window into the quantum world; a perfect, shimmering lattice of vertical silk-like threads rotates in a deep blue void, before erupting into a chaotic and beautiful dance of tangled loops and swirling golden dust.
+
 ## nucleosynthesis_fusion_core
 
 - **Date**: 2026-05-07

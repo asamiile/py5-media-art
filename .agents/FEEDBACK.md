@@ -11,6 +11,146 @@ The Artist reads this file before starting a new sketch to understand preference
 
 Add any notes on color, density, theme, or mood in the Comment field.
 
+## spectral_jet_precession
+
+- **Rating**: 
+- **Comment**: 
+
+## protoplanetary_clump_void
+
+- **Rating**: 
+- **Comment**: 
+
+## hyper_dimensional_tesseract_lattice
+
+- **Rating**: 
+- **Comment**: 
+
+## quantum_entanglement_cascade
+
+- **Rating**: 
+- **Comment**: 
+
+## quantum_foam_architecture
+
+- **Rating**: 
+- **Comment**: 
+
+## digital_accretion_singularity
+
+- **Rating**: 
+- **Comment**: 
+
+## nebular_filament_lattice
+
+- **Rating**: 
+- **Comment**: 
+
+## supernova_light_echo
+
+- **Rating**: 
+- **Comment**: 
+
+## lensed_fractal_urbanism
+
+- **Rating**: 
+- **Comment**: 
+
+## orbital_data_mesh
+
+- **Rating**: 
+- **Comment**: 
+
+## sagittarius_a_orbits
+
+- **Rating**: 
+- **Comment**: 
+
+## ring_resonance_void
+
+- **Rating**: 
+- **Comment**: 
+
+## lensed_nebular_void
+
+- **Rating**: 
+- **Comment**: 
+
+## chromatic_wormhole
+
+- **Rating**: 
+- **Comment**: 
+
+## stellar_megastructure
+
+- **Rating**: 
+- **Comment**: 
+
+## tidal_disruption
+
+- **Rating**: 
+- **Comment**: 
+
+## synaptic_nebula
+
+- **Rating**: 
+- **Comment**: 
+
+## algorithmic_geode
+
+- **Rating**: 
+- **Comment**: 
+
+## entropic_dyson_swarm
+
+- **Rating**: 
+- **Comment**: 
+
+## event_horizon_echo
+
+- **Rating**: 
+- **Comment**: 
+
+## vacuum_fluctuations
+
+- **Rating**: OK.
+- **Comment**: 
+
+## dark_matter_halo
+
+- **Rating**: 
+- **Comment**: 
+
+## neutron_star_jet
+
+- **Rating**: 
+- **Comment**: 
+
+## cosmic_loom
+
+- **Rating**: 
+- **Comment**: 
+
+## photon_fluid
+
+- **Rating**: 
+- **Comment**: 
+
+## magnetic_storm
+
+- **Rating**: 
+- **Comment**: 
+
+## superfluid_vortices
+
+- **Rating**: 
+- **Comment**: 
+
+## galactic_collision
+
+- **Rating**: 
+- **Comment**: 
+
 ## cometary_ion_tail
 
 - **Rating**: OK
@@ -19,7 +159,7 @@ Add any notes on color, density, theme, or mood in the Comment field.
 ## stellar_nursery_dust
 
 - **Rating**: OK
-- **Comment**: The "gas" background layer adds a very convincing depth to the scene, and the white-hot protostar centers provide excellent contrast against the deep violet dust clouds. The gravitational clumping feels natural and dynamic.
+- **Comment**: 
 
 ## solar_flare_loops
 
@@ -34,12 +174,12 @@ Add any notes on color, density, theme, or mood in the Comment field.
 ## supernova_remnant
 
 - **Rating**: OK
-- **Comment**: The high-density particle system creates a wonderful "dusty" nebula effect. The explosive expansion is well-paced, and the multi-pass rendering gives the filaments a nice glow. The palette is vibrant yet fits the cosmic theme perfectly.
+- **Comment**: 
 
 ## string_theory_manifold
 
 - **Rating**: OK
-- **Comment**: The complex geometric folding of the manifold is visually captivating. The choice of HSB iridescence on a deep indigo background creates a very premium "string theory" aesthetic. The 3D rotation adds a necessary sense of scale and depth.
+- **Comment**: 
 
 ## cymatic_nebula
 
@@ -98,7 +238,7 @@ Add any notes on color, density, theme, or mood in the Comment field.
 
 ## supersymmetric_manifold_v2
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## nebular_loom
@@ -118,7 +258,7 @@ Add any notes on color, density, theme, or mood in the Comment field.
 
 ## algorithmic_crystals
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## spectral_mitosis
@@ -138,17 +278,17 @@ Add any notes on color, density, theme, or mood in the Comment field.
 
 ## algorithmic_architecture
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## algorithmic_fluid
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## prismatic_resonator
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## recursive_membranes
@@ -163,17 +303,17 @@ Add any notes on color, density, theme, or mood in the Comment field.
 
 ## metabolic_landscape
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## spectral_coral
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## quantum_chromatics
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## quantum_vorticity
@@ -870,5 +1010,23 @@ Add any notes on color, density, theme, or mood in the Comment field.
 ## fractal_metropolis
 
 - **Date**: 2026-05-04
+- **Rating**: 
+- **Comment**: 
+
+## differential_expansion
+
+- **Date**: 2026-05-05
+- **Rating**: OK.
+- **Comment**: 
+
+## spectral_prism
+
+- **Date**: 2026-05-05
+- **Rating**: OK.
+- **Comment**: 
+
+## dla_metropolis
+
+- **Date**: 2026-05-06
 - **Rating**: 
 - **Comment**: 

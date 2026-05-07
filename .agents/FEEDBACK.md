@@ -11,6 +11,11 @@ The Artist reads this file before starting a new sketch to understand preference
 
 Add any notes on color, density, theme, or mood in the Comment field.
 
+## hawking_radiation_singularity
+
+- **Rating**: 
+- **Comment**: 
+
 ## spectral_jet_precession
 
 - **Rating**: 

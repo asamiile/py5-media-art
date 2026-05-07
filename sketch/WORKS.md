@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## quantum_tunneling_resonance
+
+- **Date**: 2026-05-07
+- **Theme**: Quantum tunneling, wave packet interference, potential barrier, beautiful night sky
+- **Technique**: 3D particle simulation (160,000 particles) modeling wave packet dynamics. Particles follow paths guided by incident, reflected (interference), and tunneled ($T \approx 0.05$) wavefunction components at a potential barrier. Features multi-pass additive rendering with HSB spectral mapping (Violet/Cyan/Gold) and a high-density starfield (12,000 stars). 60fps high-bitrate MP4.
+- **Description**: A majestic vision of quantum mechanics; iridescent waves of electric violet and cyan crash against an invisible wall, rippling backward in complex fringes while a needle-sharp beam of white-gold light "leaks" through the barrier and vanishes into the deep obsidian night.
+
 ## superfluid_kelvin_waves
 
 - **Date**: 2026-05-07

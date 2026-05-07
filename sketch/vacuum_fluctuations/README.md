@@ -1,13 +1,26 @@
 # vacuum_fluctuations
 
-- **Date**: 2026-05-06
-- **Theme**: Vacuum fluctuations, quantum foam, virtual particles, beautiful night sky
-- **Technique**: 3D particle simulation (150,000 particles) using a "virtual emission" model. Particles are generated based on structured interference fields (sine-wave probability volumes), representing vacuum excitations. Each particle has a very short lifetime (annihilation) and a high "uncertainty" jitter in its velocity. Multi-pass rendering with life-ratio color mapping (Birth/White to Decay/Indigo). 60fps high-bitrate MP4 encoding.
-- **Description**: A mesmerizing view of the "empty" void; the obsidian space is a bubbling cauldron of light where thousands of tiny, indigo and white sparks flicker into existence and vanish in a shimmering quantum dance across the star-dusted night.
+A shimmering field of ephemeral quantum excitations popping out of the void.
 
-## Visuals
+## Description
 
-![Preview](preview_p1.png)
+This work visualizes the concept of quantum zero-point energy, where the vacuum is not truly empty but a bubbling sea of virtual particles. Tiny, ephemeral points of light emerge from the obsidian void and vanish within milliseconds. Ghostly, cyan "entanglement" threads momentarily connect nearby fluctuating violet excitations, revealing the hidden connectivity and rhythmic vibration of the underlying space-time fabric.
+
+## Details
+
+- **Date**: 2026-05-05
+- **Theme**: Quantum physics, virtual particles, zero-point energy, beautiful night sky
+- **Technique**: 
+  - Vectorized multi-wave field synthesis (12 oscillators)
+  - Stochastic excitation thresholding
+  - Transient entanglement link simulation (proximity-based)
+  - Additive blending for luminous effects
+  - Dense twinkling starfield
+- **Output**: 10s animation @ 60fps (3840x2160)
+
+## Preview
+
+![preview_p1.png](preview_p1.png)
 
 ## Animation
 

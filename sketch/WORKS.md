@@ -255,7 +255,7 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: Relativistic particle simulation (130,000 particles) orbiting a central gravitational singularity. Particles follow Keplerian orbits with additional relativistic drag (1/r^4) and precession. Implements "Doppler beaming" where color and brightness are modulated by the orbital velocity relative to the camera (Approaching = Electric Cyan & Bright; Receding = Amber & Faint). Multi-pass rendering for the intense photon ring and the dark shadow of the event horizon. 60fps high-bitrate MP4 encoding.
 - **Description**: A majestic and terrifying view of a supermassive black hole; a shimmering disk of light swirls around a perfect circle of absolute darkness, its colors shifting from electric blue to deep amber as it orbits at near-light speeds against a silent star-dusted void.
 
-## vacuum_fluctuations
+## vacuum_fluctuations_p2 (3D Particles)
 
 - **Date**: 2026-05-06
 - **Theme**: Vacuum fluctuations, quantum foam, virtual particles, beautiful night sky
@@ -360,11 +360,11 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: 2D grid-based sound pressure simulation (Chladni function), particle advection (80,000 particles) using gradient-descent towards nodal regions, high-persistence silken trails, vectorized additive blending, 60fps high-quality MP4 encoding
 - **Description**: A shimmering, silken nebula that self-organizes into complex geometric patterns as if driven by invisible celestial frequencies; glowing filaments in electric indigo and cyan converge into rhythmic standing-wave nodes across a deep, star-dusted void.
 
-## vacuum_fluctuations
+## vacuum_fluctuations_p1 (2D Field)
 
 - **Date**: 2026-05-05
 - **Theme**: Quantum physics, virtual particles, zero-point energy, beautiful night sky
-- **Technique**: Vectorized multi-wave field synthesis (12 oscillators), stochastic excitation thresholding, transient entanglement link simulation (proximity-based), additive blending, 60fps high-quality MP4 encoding
+- **Technique**: Vectorized multi-wave field synthesis (12 oscillators), stochastic excitation thresholding, transient entanglement link simulation (proximity-based), additive blending, 60fps high-quality MP4 encoding.
 - **Description**: A shimmering visualization of quantum zero-point energy where tiny, ephemeral points of light emerge and vanish in a deep obsidian void; ghostly cyan threads momentarily connect the fluctuating violet excitations, revealing the hidden connectivity of the vacuum.
 
 ## spectral_prism

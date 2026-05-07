@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## singularity_braiding
+
+- **Date**: 2026-05-07
+- **Theme**: Quantum field topology, cosmic strings, topological defects, beautiful night sky
+- **Technique**: 3D particle simulation (150,000 particles) advected along the gradient of a dynamic complex potential field. Multi-pass additive rendering with HSB spectral mapping (Cyan/Amethyst/Gold) and a high-density starfield (12,000 stars). 60fps high-bitrate MP4.
+- **Description**: A majestic vision of cosmic topological defects; silken threads of electric cyan and royal amethyst light braid and twist around invisible singularities, creating an intricate tapestry of quantum energy against the deep obsidian night.
+
 ## star_cluster_core
 
 - **Date**: 2026-05-07

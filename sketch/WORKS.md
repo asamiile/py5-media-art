@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## cosmic_inflation_pulse
+
+- **Date**: 2026-05-07
+- **Theme**: Big Bang, cosmic inflation, exponential expansion, cooling of the universe, large-scale structure seeding, beautiful night sky
+- **Technique**: 3D particle simulation (250,000 particles) using an exponential expansion model. Particles are emitted from a central singularity and rapidly pushed outward. Implements "quantum seeding" where multi-harmonic interference in the early phase grows into silken filaments and clusters. Features a time-dependent temperature mapping from blinding white to electric cyan and royal amethyst. 60fps high-bitrate MP4.
+- **Description**: A breathtaking visualization of the birth of the cosmos; a blindingly bright point of light erupts into a vast, shimmering web of spectral energy that cools and self-organizes into intricate filaments against the deep, expanding indigo void.
+
 ## hawking_radiation_singularity
 
 - **Date**: 2026-05-07

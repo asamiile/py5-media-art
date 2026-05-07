@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## kilonova_merger_ripple
+
+- **Date**: 2026-05-07
+- **Theme**: Neutron star merger, kilonova, nucleosynthesis, gravitational waves, beautiful night sky
+- **Technique**: 3D simulation of a binary neutron star system spiraling into a collision. Features a real-time background starfield ripple effect simulating space-time distortion. Post-collision, it triggers an asymmetric ejection of 300,000 particles (toroidal + polar jets) with a spectral shift from blue-white to rose gold and platinum. 60fps high-bitrate MP4.
+- **Description**: A violent and beautiful celestial event; two tiny, blinding dots dance in a tightening spiral, warping the very stars behind them, before vanishing into a spectacular explosion of shimmering gold and platinum dust that fills the void.
+
 ## cosmic_inflation_pulse
 
 - **Date**: 2026-05-07

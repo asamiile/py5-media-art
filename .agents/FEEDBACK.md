@@ -3,6 +3,11 @@
 Fill in Rating and Comment after reviewing each work's `preview.png`.
 The Artist reads this file before starting a new sketch to understand preferences.
 
+## neutrino_flavor_oscillation
+
+- **Rating**: 5/5
+- **Comment**: Exceptional use of particle density and physics-driven color modulation. The "ghostly" oscillation between cyan and amethyst is visually stunning and conceptually deep.
+
 ## quantum_tunneling_resonance
 
 - **Rating**: 

@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## neutrino_flavor_oscillation
+
+- **Date**: 2026-05-07
+- **Theme**: Neutrinos, flavor oscillation, weak interaction, ghostly flux, beautiful night sky
+- **Technique**: 3D high-velocity particle simulation (220,000 particles) using vectorized NumPy. Particles follow needle-sharp trajectories representing ultra-high energy fluxes. Each particle's "flavor state" is modeled as a harmonic oscillator that modulates its HSB color (Cyan/Amethyst/Gold) and opacity to create a "ghostly" shifting effect. Features multi-pass additive rendering and a high-density starfield (12,000 stars). 60fps high-bitrate MP4.
+- **Description**: A majestic vision of subatomic ghosts; a dense, shimmering stream of spectral light erupts from a stellar core, its particles flickering and shifting between electric cyan, royal amethyst, and gold as they surge through the star-dusted obsidian void.
+
 ## quantum_tunneling_resonance
 
 - **Date**: 2026-05-07

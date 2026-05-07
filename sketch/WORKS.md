@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## superfluid_kelvin_waves
+
+- **Date**: 2026-05-07
+- **Theme**: Superfluidity, Kelvin waves, vortex line oscillation, quantum turbulence, beautiful night sky
+- **Technique**: 3D particle simulation (120,000 particles) sampled along 12 closed-loop vortex filaments. Filaments are modulated by multiple helical harmonic oscillators (Kelvin waves) using vectorized NumPy. Features multi-pass additive rendering with HSB spectral mapping (Teal/Violet/White) and a high-density starfield (10,000 stars). 60fps high-bitrate MP4.
+- **Description**: A majestic vision of quantum fluids; silken loops of electric teal and royal violet light oscillate with high-frequency helical ripples, appearing like cosmic threads vibrating in a silent star-dusted void.
+
 ## relativistic_caustic_drift
 
 - **Date**: 2026-05-07

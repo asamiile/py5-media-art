@@ -3,6 +3,11 @@
 Fill in Rating and Comment after reviewing each work's `preview.png`.
 The Artist reads this file before starting a new sketch to understand preferences.
 
+## lensing_caustic_network
+
+- **Rating**: 
+- **Comment**: 
+
 ## pulsar_wind_nebula
 
 - **Rating**: 

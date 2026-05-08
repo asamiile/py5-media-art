@@ -3,6 +3,11 @@
 Fill in Rating and Comment after reviewing each work's `preview.png`.
 The Artist reads this file before starting a new sketch to understand preferences.
 
+## vacuum_polarization_resonance
+
+- **Rating**: 
+- **Comment**: 
+
 ## axion_field_flux
 
 - **Rating**: 5/5

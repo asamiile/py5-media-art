@@ -3,6 +3,11 @@
 Fill in Rating and Comment after reviewing each work's `preview.png`.
 The Artist reads this file before starting a new sketch to understand preferences.
 
+## clifford_vortex_filaments
+
+- **Rating**: 
+- **Comment**: 
+
 ## spectral_tesseract_unfolding
 
 - **Rating**: 

@@ -3,6 +3,56 @@
 Fill in Rating and Comment after reviewing each work's `preview.png`.
 The Artist reads this file before starting a new sketch to understand preferences.
 
+## quantum_tunneling_resonance
+
+- **Rating**: 
+- **Comment**: 
+
+## superfluid_kelvin_waves
+
+- **Rating**: 
+- **Comment**: 
+
+## relativistic_caustic_drift
+
+- **Rating**: 
+- **Comment**: 
+
+## lattice_strain_diffraction
+
+- **Rating**: 
+- **Comment**: 
+
+## singularity_braiding
+
+- **Rating**: 
+- **Comment**: 
+
+## star_cluster_core
+
+- **Rating**: 
+- **Comment**: 
+
+## cosmic_string_network
+
+- **Rating**: 
+- **Comment**: 
+
+## magnetic_filament_weave
+
+- **Rating**: 
+- **Comment**: 
+
+## lensing_caustic_network
+
+- **Rating**: 
+- **Comment**: 
+
+## pulsar_wind_nebula
+
+- **Rating**: 
+- **Comment**: 
+
 ## How to Rate
 
 - `OK` — liked it; continue in this direction
@@ -10,6 +60,36 @@ The Artist reads this file before starting a new sketch to understand preference
 - (blank) — not yet evaluated; Artist should ignore
 
 Add any notes on color, density, theme, or mood in the Comment field.
+
+## quantum_vortex_lattice
+
+- **Rating**: 
+- **Comment**: 
+
+## nucleosynthesis_fusion_core
+
+- **Rating**: 
+- **Comment**: 
+
+## hyperspectral_lens_cluster
+
+- **Rating**: 
+- **Comment**: 
+
+## kilonova_merger_ripple
+
+- **Rating**: 
+- **Comment**: 
+
+## cosmic_inflation_pulse
+
+- **Rating**: 
+- **Comment**: 
+
+## hawking_radiation_singularity
+
+- **Rating**: 
+- **Comment**: 
 
 ## spectral_jet_precession
 

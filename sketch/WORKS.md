@@ -3,6 +3,118 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## quantum_tunneling_resonance
+
+- **Date**: 2026-05-07
+- **Theme**: Quantum tunneling, wave packet interference, potential barrier, beautiful night sky
+- **Technique**: 3D particle simulation (160,000 particles) modeling wave packet dynamics. Particles follow paths guided by incident, reflected (interference), and tunneled ($T \approx 0.05$) wavefunction components at a potential barrier. Features multi-pass additive rendering with HSB spectral mapping (Violet/Cyan/Gold) and a high-density starfield (12,000 stars). 60fps high-bitrate MP4.
+- **Description**: A majestic vision of quantum mechanics; iridescent waves of electric violet and cyan crash against an invisible wall, rippling backward in complex fringes while a needle-sharp beam of white-gold light "leaks" through the barrier and vanishes into the deep obsidian night.
+
+## superfluid_kelvin_waves
+
+- **Date**: 2026-05-07
+- **Theme**: Superfluidity, Kelvin waves, vortex line oscillation, quantum turbulence, beautiful night sky
+- **Technique**: 3D particle simulation (120,000 particles) sampled along 12 closed-loop vortex filaments. Filaments are modulated by multiple helical harmonic oscillators (Kelvin waves) using vectorized NumPy. Features multi-pass additive rendering with HSB spectral mapping (Teal/Violet/White) and a high-density starfield (10,000 stars). 60fps high-bitrate MP4.
+- **Description**: A majestic vision of quantum fluids; silken loops of electric teal and royal violet light oscillate with high-frequency helical ripples, appearing like cosmic threads vibrating in a silent star-dusted void.
+
+## relativistic_caustic_drift
+
+- **Date**: 2026-05-07
+- **Theme**: Gravitational caustics, relativistic drift, light warping, beautiful night sky
+- **Technique**: 3D particle simulation (180,000 particles) using a vectorized deflection model with 4 dynamic gravitational hubs. Features multi-pass additive rendering with influence-weighted spectral mapping (Cyan/Silver/Gold) and a high-density starfield (12,000 stars). 60fps high-bitrate MP4.
+- **Description**: A mesmerizing vision of light warping in the deep cosmos; liquid-like ribbons of electric cyan and silver energy drift and warp across the void, erupting into intense white-gold caustic networks wherever invisible mass centers concentrate the light against the star-dusted night.
+
+## lattice_strain_diffraction
+
+- **Date**: 2026-05-07
+- **Theme**: Crystal lattices, mechanical strain, diffraction patterns, beautiful night sky
+- **Technique**: 3D grid of 8,000 nodes (20x20x20) deformed by dynamic Gaussian strain centers and harmonic vibration. Features strain-weighted spectral rendering using HSB color mapping (Cyan/Magenta/Gold) and additive blending. 60fps high-bitrate MP4.
+- **Description**: A majestic vision of a pulsing crystal lattice; a vast geometric grid of light warps and breaths in the void, erupting into shimmering rainbows of spectral energy wherever the structure is strained against the deep, star-dusted night.
+
+## singularity_braiding
+
+- **Date**: 2026-05-07
+- **Theme**: Quantum field topology, cosmic strings, topological defects, beautiful night sky
+- **Technique**: 3D particle simulation (150,000 particles) advected along the gradient of a dynamic complex potential field. Multi-pass additive rendering with HSB spectral mapping (Cyan/Amethyst/Gold) and a high-density starfield (12,000 stars). 60fps high-bitrate MP4.
+- **Description**: A majestic vision of cosmic topological defects; silken threads of electric cyan and royal amethyst light braid and twist around invisible singularities, creating an intricate tapestry of quantum energy against the deep obsidian night.
+
+## star_cluster_core
+
+- **Date**: 2026-05-07
+- **Theme**: Globular cluster, stellar dynamics, core collapse, n-body simulation, beautiful night sky
+- **Technique**: 3D high-density stellar simulation featuring 3,000 dynamic "luminous" stars (using a vectorized central-potential gravity model) and 100,000 background "cloud" stars. Features multi-pass additive rendering with an "Ancient Stellar Core" HSB palette (Gold/Amber/White/Cyan). The central core is rendered with higher intensity and scale to simulate dynamical core collapse, set against a high-density starfield (12,000 stars). 60fps high-bitrate MP4.
+- **Description**: A majestic, shimmering ball of thousands of stars that pulses with a golden intensity; at its heart, a dense sea of light swirls in a chaotic yet ordered orbital web against the deep obsidian night, representing the late-stage evolution of a dense globular cluster.
+
+## cosmic_string_network
+
+- **Date**: 2026-05-07
+- **Theme**: Topological defects, cosmic strings, loops, primordial universe, beautiful night sky
+- **Technique**: 3D simulation of a cosmic string network featuring 12 infinite strings and 40 closed loops. 120,000 particles are sampled along the paths using vectorized linear interpolation and animated with harmonic noise. Features intensity peaks at "cusps" where strings reach high energy, rendered with blinding white highlights. Multi-pass additive rendering uses an "Ultraviolet Singularity" palette (Cyan/Amethyst/Indigo) and a high-density starfield (10,000 stars). 60fps high-bitrate MP4.
+- **Description**: A vast, shimmering web of razor-sharp light threads that twist and snap in the primordial void; silken loops of electric cyan and white energy drift and dissolve against a deep, star-dusted night sky, representing the energy relics of the early universe.
+
+## magnetic_filament_weave
+
+- **Date**: 2026-05-07
+- **Theme**: Galactic magnetic fields, interstellar filaments, cosmic magnetism, beautiful night sky
+- **Technique**: 3D magnetic field simulation using a combined toroidal spiral field and 5 localized rotating dipoles (NumPy). 150,000 particles are advected along the field lines, leaving persistent silken trails that create a dense, braided texture. Features multi-pass additive rendering with a "Cosmic Neon" HSB palette (Cyan/Magenta/Gold) and a high-density starfield (12,000 stars). 60fps high-bitrate MP4.
+- **Description**: A majestic visualization of the galaxy's magnetic architecture; thousands of silken, glowing filaments trace the invisible field lines that braid and twist through the interstellar void, acting as a cosmic loom for stardust against a silent, star-dusted night.
+
+## lensing_caustic_network
+
+- **Date**: 2026-05-07
+- **Theme**: Gravitational lensing, caustic networks, high magnification, dark matter clusters, beautiful night sky
+- **Technique**: 2D gravitational lens simulation using a vectorized multi-hub mass model (NumPy). Visualizes the "caustics"—lines of theoretically infinite magnification—created by a cluster of 6 invisible dark matter halos. 180,000 particles are sampled based on the local magnification field of an animated background source. Features multi-pass additive rendering with a "Glacial Aurora" HSB palette (Cobalt/Cyan/Silver) and a high-density starfield (10,000 stars). 60fps high-bitrate MP4.
+- **Description**: A mesmerizing, ever-shifting web of brilliant light ripples and morphs across the cosmos; like sunlight on the bottom of a pool, these gravitational caustics reveal the invisible architecture of dark matter, casting a cold and beautiful glow against the star-dusted obsidian void.
+
+## pulsar_wind_nebula
+
+- **Date**: 2026-05-07
+- **Theme**: Pulsar wind, termination shock, synchrotron radiation, Crab Nebula filaments, beautiful night sky
+- **Technique**: 3D particle simulation (120,000 particles) using vectorized NumPy for performance. Particles are emitted from a central pulsing core as a relativistic wind. At the termination shock ($r \approx 280$), they enter a turbulent regime driven by multi-octave pseudo-noise and helical magnetic fields. Features multi-pass additive rendering with synchrotron-inspired color mapping (Cyan -> Violet -> Gold) and a high-density starfield (8,000 stars). 60fps high-bitrate MP4.
+- **Description**: A blindingly bright, pulsing heart of a nebula; silken filaments of electric light swirl and knot into a complex, glowing web of energy against the deep obsidian night, representing the violent and beautiful environment around a rapidly rotating pulsar.
+
+## quantum_vortex_lattice
+
+- **Date**: 2026-05-07
+- **Theme**: Quantum vortices, superfluidity, vortex lattice, topological defects, beautiful night sky
+- **Technique**: 3D simulation of a rotating superfluid with 19 quantized vortices in a hexagonal lattice. Implements helical Kelvin waves and a "melting" phase transition into turbulence. 30,000 particles are advected along the vortex cores. Features a transition from ordered Cyan/Indigo to chaotic shimmering Gold. 60fps high-bitrate MP4.
+- **Description**: A macroscopic window into the quantum world; a perfect, shimmering lattice of vertical silk-like threads rotates in a deep blue void, before erupting into a chaotic and beautiful dance of tangled loops and swirling golden dust.
+
+## nucleosynthesis_fusion_core
+
+- **Date**: 2026-05-07
+- **Theme**: Stellar nucleosynthesis, nuclear fusion, plasma convection, gamma-ray bursts, beautiful night sky
+- **Technique**: 3D high-velocity particle simulation (150,000 points) using vectorized `py5.points()`. Implements a softened central gravity and a toroidal convection field. Particles undergo "elemental transformation" (H -> He -> C -> O) based on local temperature/density proxies. Triggers "gamma-ray" streaks upon fusion events. Multi-pass additive rendering for the central plasma glow. 60fps high-bitrate MP4.
+- **Description**: A churning, incandescent heart of a giant star; a dense sea of electric blue nuclei collide and ignite in spectacular bursts of gold and violet light, slowly transforming the core into a rich, multi-layered tapestry of heavier elements.
+
+## hyperspectral_lens_cluster
+
+- **Date**: 2026-05-07
+- **Theme**: Gravitational lensing, galaxy cluster, dark matter, Einstein rings, chromatic aberration, beautiful night sky
+- **Technique**: 2D projection of a complex gravitational lens field. Background "galaxies" (60,000 particles) are distorted by a cluster of 6 massive objects using a vectorized deflection model. Implements "hyperspectral smearing" where different color channels are deflected by varying amounts to simulate relativistic chromatic aberration. Uses additive blending for vibrant, shimmering arcs and rings. 60fps high-bitrate MP4.
+- **Description**: A mesmerizing window into the deep universe; distant, colorful galaxies are stretched and warped into elegant, shimmering arcs and glowing Einstein rings by an invisible, massive cluster in the foreground, creating a spectral tapestry of light against the silent obsidian void.
+
+## kilonova_merger_ripple
+
+- **Date**: 2026-05-07
+- **Theme**: Neutron star merger, kilonova, nucleosynthesis, gravitational waves, beautiful night sky
+- **Technique**: 3D simulation of a binary neutron star system spiraling into a collision. Features a real-time background starfield ripple effect simulating space-time distortion. Post-collision, it triggers an asymmetric ejection of 300,000 particles (toroidal + polar jets) with a spectral shift from blue-white to rose gold and platinum. 60fps high-bitrate MP4.
+- **Description**: A violent and beautiful celestial event; two tiny, blinding dots dance in a tightening spiral, warping the very stars behind them, before vanishing into a spectacular explosion of shimmering gold and platinum dust that fills the void.
+
+## cosmic_inflation_pulse
+
+- **Date**: 2026-05-07
+- **Theme**: Big Bang, cosmic inflation, exponential expansion, cooling of the universe, large-scale structure seeding, beautiful night sky
+- **Technique**: 3D particle simulation (250,000 particles) using an exponential expansion model. Particles are emitted from a central singularity and rapidly pushed outward. Implements "quantum seeding" where multi-harmonic interference in the early phase grows into silken filaments and clusters. Features a time-dependent temperature mapping from blinding white to electric cyan and royal amethyst. 60fps high-bitrate MP4.
+- **Description**: A breathtaking visualization of the birth of the cosmos; a blindingly bright point of light erupts into a vast, shimmering web of spectral energy that cools and self-organizes into intricate filaments against the deep, expanding indigo void.
+
+## hawking_radiation_singularity
+
+- **Date**: 2026-05-07
+- **Theme**: Black hole evaporation, virtual particle pairs, Hawking radiation, event horizon entropy, beautiful night sky
+- **Technique**: 3D simulation of a black hole's evaporation via virtual particle pair production at the event horizon ($r=2M$). Escaping particles (White-Gold) follow twisted "yarn-like" trajectories, while falling particles (Electric Indigo) are consumed by the central shadow. Features a multi-pass additive rendering with a pulsing "stretched horizon" glow and a high-density background starfield (10,000 stars). 60fps high-bitrate MP4.
+- **Description**: A majestic and somber vision of a black hole slowly bleeding light into the void; a perfect circle of darkness is surrounded by a boiling, iridescent shell of quantum energy, with silken threads of light escaping like cosmic steam into a deep, star-dusted night.
+
 ## spectral_jet_precession
 
 - **Date**: 2026-05-06
@@ -150,7 +262,7 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: Relativistic particle simulation (130,000 particles) orbiting a central gravitational singularity. Particles follow Keplerian orbits with additional relativistic drag (1/r^4) and precession. Implements "Doppler beaming" where color and brightness are modulated by the orbital velocity relative to the camera (Approaching = Electric Cyan & Bright; Receding = Amber & Faint). Multi-pass rendering for the intense photon ring and the dark shadow of the event horizon. 60fps high-bitrate MP4 encoding.
 - **Description**: A majestic and terrifying view of a supermassive black hole; a shimmering disk of light swirls around a perfect circle of absolute darkness, its colors shifting from electric blue to deep amber as it orbits at near-light speeds against a silent star-dusted void.
 
-## vacuum_fluctuations
+## vacuum_fluctuations_p2 (3D Particles)
 
 - **Date**: 2026-05-06
 - **Theme**: Vacuum fluctuations, quantum foam, virtual particles, beautiful night sky
@@ -255,11 +367,11 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: 2D grid-based sound pressure simulation (Chladni function), particle advection (80,000 particles) using gradient-descent towards nodal regions, high-persistence silken trails, vectorized additive blending, 60fps high-quality MP4 encoding
 - **Description**: A shimmering, silken nebula that self-organizes into complex geometric patterns as if driven by invisible celestial frequencies; glowing filaments in electric indigo and cyan converge into rhythmic standing-wave nodes across a deep, star-dusted void.
 
-## vacuum_fluctuations
+## vacuum_fluctuations_p1 (2D Field)
 
 - **Date**: 2026-05-05
 - **Theme**: Quantum physics, virtual particles, zero-point energy, beautiful night sky
-- **Technique**: Vectorized multi-wave field synthesis (12 oscillators), stochastic excitation thresholding, transient entanglement link simulation (proximity-based), additive blending, 60fps high-quality MP4 encoding
+- **Technique**: Vectorized multi-wave field synthesis (12 oscillators), stochastic excitation thresholding, transient entanglement link simulation (proximity-based), additive blending, 60fps high-quality MP4 encoding.
 - **Description**: A shimmering visualization of quantum zero-point energy where tiny, ephemeral points of light emerge and vanish in a deep obsidian void; ghostly cyan threads momentarily connect the fluctuating violet excitations, revealing the hidden connectivity of the vacuum.
 
 ## spectral_prism

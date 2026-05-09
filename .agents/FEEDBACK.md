@@ -4,6 +4,11 @@
 Agents MUST NOT write anything in the `Comment` field. When registering a new work, Agents must leave the `Rating` and `Comment` fields empty or with their default labels as placeholders for the user.
 The Artist reads this file before starting a new sketch to understand preferences.
 
+## moire_lattice_resonance
+
+- **Rating**: 
+- **Comment**: 
+
 ## monolayer_buckling_topography
 
 - **Rating**: 
@@ -56,7 +61,7 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## accretion_disk_instability
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## gravitational_caustic_refraction

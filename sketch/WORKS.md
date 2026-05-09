@@ -3,6 +3,14 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## moire_lattice_resonance
+
+- **Date**: 2026-05-10
+- **Theme**: twisted bilayer graphene, Moiré patterns, electron resonance, quantum physics, beautiful night sky
+- **Technique**: 2D particle simulation of 180,000 electron tracers in a dynamic Moiré potential field. Visualizes the interference of two rotating hexagonal lattices. Features multi-pass additive rendering with "Emerald / Cyan / Deep Purple" palette and dynamic twist-angle modulation. 60fps high-bitrate 4K MP4.
+- **Description**: A stunning visualization of quantum resonance; nearly 200,000 silken particles are guided by the shimmering interference patterns of two twisted atomic lattices, forming complex, rhythmic arcs of cyan and violet light that pulse and breathe against a deep obsidian void.
+
+
 ## monolayer_buckling_topography
 
 - **Date**: 2026-05-09
@@ -376,7 +384,7 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 
 ## ring_resonance_void
 
-- **Date**: 2026-05-06
+- **Date**: 2026-05-10
 - **Theme**: Planetary rings, orbital resonance, shepherd moons, beautiful night sky
 - **Technique**: 3D orbital simulation (180,000 particles) using vectorized NumPy for Keplerian dynamics. Features a perturbation model where invisible shepherd moons create density "wakes" and resonance gaps in a thin silken disk. Multi-pass rendering includes a background starfield, additive spectral ring particles (Pale Gold/Ice Blue), and a planetary shadow simulation. 60fps high-bitrate MP4.
 - **Description**: A majestic visualization of a planetary ring system seen from an oblique angle; nearly 200,000 silken particles swirl in complex orbital resonance, revealing delicate wave patterns and sharp gaps carved by the gravity of invisible moons against a silent, star-dusted night sky.

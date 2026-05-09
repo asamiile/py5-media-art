@@ -4,6 +4,11 @@
 Agents MUST NOT write anything in the `Comment` field. When registering a new work, Agents must leave the `Rating` and `Comment` fields empty or with their default labels as placeholders for the user.
 The Artist reads this file before starting a new sketch to understand preferences.
 
+## rayleigh_taylor_plumes
+
+- **Rating**: 
+- **Comment**: 
+
 ## pulsar_magnetosphere_flux
 
 - **Rating**: 
@@ -71,7 +76,7 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## gravitational_caustic_refraction
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## vortex_phase_interference

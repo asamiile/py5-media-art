@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## monolayer_buckling_topography
+
+- **Date**: 2026-05-09
+- **Theme**: Molecular monolayers, compression, buckling, material science, iridescence
+- **Technique**: 3D grid deformation simulation (10,000 quads) using multi-octave noise-driven buckling potentials. Visualizes the structural failure and folding of a thin film under lateral compression. Features iridescent Fresnel shading and specular highlights in P3D. 60fps high-bitrate MP4.
+- **Description**: A silken, iridescent silver sheet that "crunches" and wrinkles into a complex, mountainous topography of shimmering light and shadow as it undergoes molecular buckling.
+
 ## ginzburg_landau_vortices
 
 - **Date**: 2026-05-09

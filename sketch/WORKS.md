@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## primordial_polarization_swirl
+
+- **Date**: 2026-05-09
+- **Theme**: B-mode polarization, primordial gravitational waves, CMB, beautiful night sky
+- **Technique**: 3D simulation of 120,000 particles on a spherical shell advected by a multi-scale "curl" vector field representing tensor perturbations. Features multi-pass additive rendering with HSB spectral mapping and cosmic expansion scaling. 60fps high-bitrate MP4.
+- **Description**: A majestic visualization of the early universe's first light; silken swirls of celestial azure and soft gold energy are twisted into intricate B-mode patterns by primordial gravitational waves, shimmering across a deep amethyst void.
+
 ## casimir_vacuum_pressure
 
 - **Date**: 2026-05-09

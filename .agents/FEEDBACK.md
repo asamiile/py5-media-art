@@ -3,6 +3,16 @@
 Fill in Rating and Comment after reviewing each work's `preview.png`.
 The Artist reads this file before starting a new sketch to understand preferences.
 
+## vortex_phase_interference
+
+- **Rating**: 
+- **Comment**: 
+
+## dark_energy_expansion_drift
+
+- **Rating**: 
+- **Comment**: 
+
 ## topological_braid_flux
 
 - **Rating**: 

@@ -16,7 +16,7 @@ Each iteration must produce one complete, independent animation and commit/push 
 2. Create or reuse branch `feature/works-YYYYMMDD`.
 3. Loop until externally interrupted:
    1. Check `git status --short`. Stop if unrelated pending changes would make a clean commit unsafe.
-   2. Produce a short inline creative brief with **Format: Animation (10s @ 60fps)**:
+   2. Produce a short inline creative brief with **Format: Animation (10-30s @ 60fps)**:
       - work name
       - one-sentence theme
       - technique

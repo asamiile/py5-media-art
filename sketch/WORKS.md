@@ -3,6 +3,90 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## topological_braid_flux
+
+- **Date**: 2026-05-08
+- **Theme**: Topology, knot theory, braid groups, cosmic threads, beautiful night sky
+- **Technique**: 3D simulation of 16 "braid threads" evolved through a combined helical vortex flow and Perlin noise field. Each thread is a complex polyline whose crossing patterns are driven by phase-shifted oscillators and global rotation. Features multi-pass additive line rendering with a "Royal Purple/Electric Cyan/Crimson" palette and an integrated high-density background starfield. 60fps high-bitrate MP4.
+- **Description**: A majestic dance of cosmic threads; silken braids of royal purple, cyan, and crimson light weave and tangle in a high-dimensional flow, representing the rhythmic connectivity of the vacuum against the star-dusted obsidian night.
+
+## clifford_vortex_filaments
+
+- **Date**: 2026-05-08
+- **Theme**: Chaos theory, non-linear dynamics, attractor manifolds, turbulent flow, beautiful night sky
+- **Technique**: 3D chaotic attractor based on a modified De Jong map. 200,000 particles are iteratively evolved through a system of coupled non-linear equations, where parameters ($a, b, c, d$) are slowly modulated via low-frequency oscillators. Features multi-pass additive point rendering with a "Molten Amber/Neon Violet/Electric Blue" palette and a high-density background starfield. 60fps high-bitrate MP4.
+- **Description**: A majestic, silken knot of shimmering amber and violet light pulses and shifts in the void, revealing complex filamentary structures that weave through a chaotic mathematical manifold against the star-dusted obsidian night.
+
+## spectral_tesseract_unfolding
+
+- **Date**: 2026-05-08
+- **Theme**: Higher dimensions, tesseract rotation, projection, mathematical beauty, beautiful night sky
+- **Technique**: 4D rotation and 3D perspective projection of a hypercube. 200,000 particles sampled from the 4D face-cells of a tesseract are rotated simultaneously in $xy$ and $zw$ planes. The 4D coordinates are projected into 3D space using a perspective transform $1/(d-w)$. Features multi-pass additive point rendering with an iridescent spectral palette (HSB shift from Indigo to Violet to Gold) and an integrated starfield. 60fps high-bitrate MP4.
+- **Description**: A majestic, shimmering geometric structure of iridescent indigo and violet light turns and warps in the void, its higher-dimensional edges trailing golden sparks as it unfolds in ways that defy 3D logic against the star-dusted obsidian night.
+
+## bioluminescent_mycelial_network
+
+- **Date**: 2026-05-08
+- **Theme**: Organic growth, mycelial networks, self-organization, cosmic biological emergence, beautiful night sky
+- **Technique**: 3D agent-based simulation inspired by Physarum polycephalum (slime mold). 200,000 agents navigate a 128x128x128 pheromone density field, depositing trails and steering towards high-concentration gradients. The field is continuously evolved via diffusion (Gaussian blur) and decay using vectorized NumPy and Scipy. Features multi-pass additive point rendering with a "Cyan/Amethyst/White" bioluminescent palette and a high-density background starfield (12,000 stars). 60fps high-bitrate MP4.
+- **Description**: A majestic vision of cosmic biological emergence; silken threads of electric cyan and royal amethyst light branch and weave through the void, self-organizing into a complex, shimmering mycelial web that pulses with an internal biological rhythm against the star-dusted obsidian night.
+
+## higgs_field_symmetry
+
+- **Date**: 2026-05-08
+- **Theme**: Higgs mechanism, spontaneous symmetry breaking, phase transitions, scalar fields, beautiful night sky
+- **Technique**: 3D simulation of a scalar field $\phi$ undergoing a symmetry-breaking phase transition. 200,000 particles representing local field excitations are evolved via Langevin-like dynamics driven by the gradient of the Higgs potential $V(\phi) = \alpha |\phi|^2 + \beta |\phi|^4$. The $\alpha$ parameter is smoothly transition from positive (symmetric) to negative (broken), causing the field to "roll" into the Mexican Hat vacuum manifold. Features multi-pass additive point rendering with a "White/Violet/Cyan/Gold" spectral palette and an integrated background starfield (12,000 stars). 60fps high-bitrate MP4.
+- **Description**: A majestic, high-fidelity vision of the birth of mass; a chaotic cloud of shimmering white-violet light undergoes a cosmic phase transition, collapsing into a structured, shimmering condensate of electric cyan and gold light that pulses with the hidden weight of the universe against the star-dusted obsidian void.
+
+## chromospheric_spicule_flare
+
+- **Date**: 2026-05-08
+- **Theme**: Stellar chromosphere, plasma spicules, magnetic reconnection, solar flares, beautiful night sky
+- **Technique**: 3D simulation of a stellar surface featuring hundreds of plasma "spicules" (short-lived vertical jets). 120,000 particles are emitted from a hemispherical base and advected by a dynamic magnetic field composed of 8 rotating dipoles. Periodic "magnetic reconnection" events trigger intense white-gold flares and rapid particle acceleration. Features multi-pass additive rendering with an "Incandescent Amber/Violet" HSB palette and a high-density background starfield (12,000 stars). 60fps high-bitrate MP4.
+- **Description**: A majestic, high-energy vision of a star's atmosphere; thousands of silken plasma jets erupt from an incandescent amber surface, twisting into complex magnetic loops that snap and flare with ultraviolet light against the star-dusted obsidian void.
+
+## topological_quantum_braid
+
+- **Date**: 2026-05-08
+- **Theme**: Quantum fluids, knotted vortices, braid topology, superfluidity, beautiful night sky
+- **Technique**: 3D simulation of a topological quantum fluid featuring a knotted vortex filament (Trefoil knot). 150,000 particles are advected via the Biot-Savart velocity field generated by the knotted core using vectorized NumPy with chunked point broadcasting. The knot undergoes a slow topological braid transformation. Features multi-pass additive rendering with a "Neon Emerald/Cyan/Indigo" HSB palette and a high-density background starfield (12,000 stars). 60fps high-bitrate MP4.
+- **Description**: A majestic, shimmering vision of a quantum fluid; silken filaments of electric emerald and cyan energy swirl and knot into a complex trefoil braid that pulses with hidden resonance against the star-dusted obsidian void.
+
+## riemann_surface_unfolding
+
+- **Date**: 2026-05-08
+- **Theme**: Riemann surfaces, complex analysis, mathematical topology, high-dimensional manifolds, beautiful night sky
+- **Technique**: 3D simulation of a complex manifold for $w^2 = z^3 - z$. The surface is rendered via 180,000 particles advected along the phase-gradient vector field of the complex potential. Implements multi-sheet topology where particles transition between sheets based on branch point proximity. Features multi-pass additive rendering with an iridescent "Spectral" HSB palette and a high-density background starfield (12,000 stars). 60fps high-bitrate MP4.
+- **Description**: A mesmerizing vision of mathematical beauty; a complex geometric surface unfolds and breathes in the void, its iridescent sheets swirling with silken threads of light that trace the hidden paths of complex functions against the star-dusted obsidian night.
+
+## neutron_star_starquake
+
+- **Date**: 2026-05-08
+- **Theme**: Neutron stars, starquakes, crustal fracture, magnetospheric flaring, beautiful night sky
+- **Technique**: 3D simulation of a neutron star surface using a noise-deformed sphere. Implements "Starquake" events where the crust fractures along stress-driven boundaries, rendered as high-intensity additive lines with volumetric glow. Ejected plasma (150,000 particles) is advected along helical magnetic field lines using vectorized NumPy. Features multi-pass additive rendering with an "Electric Cobalt/Gold" HSB palette and a high-density background starfield (12,000 stars). 60fps high-bitrate MP4.
+- **Description**: A majestic, somber vision of a neutron star's violent surface; the dark obsidian crust shudders and splits, revealing blinding white-gold energy through jagged cracks that erupt into shimmering indigo plasma filaments against the star-dusted deep indigo void.
+
+## vacuum_polarization_resonance
+
+- **Date**: 2026-05-08
+- **Theme**: Vacuum polarization, virtual particle pairs, dipole resonance, quantum electrodynamics, beautiful night sky
+- **Technique**: 3D high-density particle simulation (200,000 particles) using vectorized NumPy. Particles are emitted as "virtual pairs" from a central region and advected by a dynamic 3D dipole electric field, creating polarized filaments. Visibility (alpha) is modulated by local field strength and particle lifetime. Features multi-pass additive rendering with a Cyan/Amethyst/Indigo palette and a high-density starfield (12,000 stars). 60fps high-bitrate MP4.
+- **Description**: A majestic, shimmering vision of the quantum vacuum; silken threads of electric cyan and royal amethyst energy polarize and align around an invisible dipole, creating an intricate tapestry of virtual light against the star-dusted obsidian void.
+
+## axion_field_flux
+
+- **Date**: 2026-05-07
+- **Theme**: Dark matter, axion fields, Primakoff effect, scalar field oscillation, beautiful night sky
+- **Technique**: 3D high-density particle simulation (240,000 particles) using vectorized NumPy. Particles are sampled from a multi-harmonic 3D scalar field $\phi(x, t)$. Implements "Primakoff conversion" where particle visibility (alpha) is modulated by local field phase and distance from a central magnetic flux string. Features multi-pass additive rendering with a Gold/Indigo/Cyan palette and a high-density starfield (12,000 stars). 60fps high-bitrate MP4.
+- **Description**: A majestic, shimmering vision of the hidden cosmos; a pulsing cloud of electric indigo and cyan light self-organizes into ghostly filaments around a blinding white-gold flux string, representing the conversion of dark matter axions into photons against the star-dusted obsidian void.
+
+## neutrino_flavor_oscillation
+
+- **Date**: 2026-05-07
+- **Theme**: Neutrinos, flavor oscillation, weak interaction, ghostly flux, beautiful night sky
+- **Technique**: 3D high-velocity particle simulation (220,000 particles) using vectorized NumPy. Particles follow needle-sharp trajectories representing ultra-high energy fluxes. Each particle's "flavor state" is modeled as a harmonic oscillator that modulates its HSB color (Cyan/Amethyst/Gold) and opacity to create a "ghostly" shifting effect. Features multi-pass additive rendering and a high-density starfield (12,000 stars). 60fps high-bitrate MP4.
+- **Description**: A majestic vision of subatomic ghosts; a dense, shimmering stream of spectral light erupts from a stellar core, its particles flickering and shifting between electric cyan, royal amethyst, and gold as they surge through the star-dusted obsidian void.
+
 ## quantum_tunneling_resonance
 
 - **Date**: 2026-05-07

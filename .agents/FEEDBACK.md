@@ -3,9 +3,69 @@
 Fill in Rating and Comment after reviewing each work's `preview.png`.
 The Artist reads this file before starting a new sketch to understand preferences.
 
-## quantum_tunneling_resonance
+## topological_braid_flux
 
 - **Rating**: 
+- **Comment**: 
+
+## clifford_vortex_filaments
+
+- **Rating**: 
+- **Comment**: 
+
+## spectral_tesseract_unfolding
+
+- **Rating**: 
+- **Comment**: 
+
+## bioluminescent_mycelial_network
+
+- **Rating**: 
+- **Comment**: 
+
+## higgs_field_symmetry
+
+- **Rating**: 
+- **Comment**: 
+
+## chromospheric_spicule_flare
+
+- **Rating**: 
+- **Comment**: 
+
+## topological_quantum_braid
+
+- **Rating**: 
+- **Comment**: 
+
+## riemann_surface_unfolding
+
+- **Rating**: 
+- **Comment**: 
+
+## neutron_star_starquake
+
+- **Rating**: 
+- **Comment**: 
+
+## vacuum_polarization_resonance
+
+- **Rating**: 
+- **Comment**: 
+
+## axion_field_flux
+
+- **Rating**: 5/5
+- **Comment**: A stunning visualization of a complex theoretical concept. The shimmering, multi-layered "ghost" texture perfectly captures the ethereal nature of dark matter.
+
+## neutrino_flavor_oscillation
+
+- **Rating**: 5/5
+- **Comment**: Exceptional use of particle density and physics-driven color modulation. The "ghostly" oscillation between cyan and amethyst is visually stunning and conceptually deep.
+
+## quantum_tunneling_resonance
+
+- **Rating**: OK.
 - **Comment**: 
 
 ## superfluid_kelvin_waves
@@ -25,7 +85,7 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## singularity_braiding
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## star_cluster_core
@@ -35,7 +95,7 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## cosmic_string_network
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## magnetic_filament_weave
@@ -83,12 +143,12 @@ Add any notes on color, density, theme, or mood in the Comment field.
 
 ## cosmic_inflation_pulse
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## hawking_radiation_singularity
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## spectral_jet_precession
@@ -113,12 +173,12 @@ Add any notes on color, density, theme, or mood in the Comment field.
 
 ## quantum_foam_architecture
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## digital_accretion_singularity
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## nebular_filament_lattice
@@ -138,7 +198,7 @@ Add any notes on color, density, theme, or mood in the Comment field.
 
 ## orbital_data_mesh
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## sagittarius_a_orbits
@@ -183,7 +243,7 @@ Add any notes on color, density, theme, or mood in the Comment field.
 
 ## entropic_dyson_swarm
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## event_horizon_echo
@@ -192,6 +252,11 @@ Add any notes on color, density, theme, or mood in the Comment field.
 - **Comment**: 
 
 ## vacuum_fluctuations
+
+- **Rating**: OK.
+- **Comment**: 
+
+## vacuum_fluctuations p2
 
 - **Rating**: OK.
 - **Comment**: 
@@ -223,12 +288,12 @@ Add any notes on color, density, theme, or mood in the Comment field.
 
 ## superfluid_vortices
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## galactic_collision
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## cometary_ion_tail

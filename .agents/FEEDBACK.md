@@ -3,6 +3,11 @@
 Fill in Rating and Comment after reviewing each work's `preview.png`.
 The Artist reads this file before starting a new sketch to understand preferences.
 
+## chromatic_planck_fluctuations
+
+- **Rating**: OK
+- **Comment**: 
+
 ## cosmic_filament_condensation
 
 - **Rating**: OK

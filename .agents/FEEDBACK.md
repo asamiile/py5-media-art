@@ -71,8 +71,8 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## clifford_vortex_filaments
 
-- **Rating**: 
-- **Comment**: 
+- **Rating**: OK.
+- **Comment**: Very good.
 
 ## spectral_tesseract_unfolding
 

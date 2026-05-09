@@ -4,6 +4,11 @@
 Agents MUST NOT write anything in the `Comment` field. When registering a new work, Agents must leave the `Rating` and `Comment` fields empty or with their default labels as placeholders for the user.
 The Artist reads this file before starting a new sketch to understand preferences.
 
+## quantum_hall_edge_states
+
+- **Rating**: 
+- **Comment**: 
+
 ## primordial_polarization_swirl
 
 - **Rating**: 
@@ -111,8 +116,8 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## axion_field_flux
 
-- **Rating**: 5/5
-- **Comment**: A stunning visualization of a complex theoretical concept. The shimmering, multi-layered "ghost" texture perfectly captures the ethereal nature of dark matter.
+- **Rating**: OK
+- **Comment**: 
 
 ## neutrino_flavor_oscillation
 

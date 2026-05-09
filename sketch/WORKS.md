@@ -3,6 +3,104 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## monolayer_buckling_topography
+
+- **Date**: 2026-05-09
+- **Theme**: Molecular monolayers, compression, buckling, material science, iridescence
+- **Technique**: 3D grid deformation simulation (10,000 quads) using multi-octave noise-driven buckling potentials. Visualizes the structural failure and folding of a thin film under lateral compression. Features iridescent Fresnel shading and specular highlights in P3D. 60fps high-bitrate MP4.
+- **Description**: A silken, iridescent silver sheet that "crunches" and wrinkles into a complex, mountainous topography of shimmering light and shadow as it undergoes molecular buckling.
+
+## ginzburg_landau_vortices
+
+- **Date**: 2026-05-09
+- **Theme**: Ginzburg-Landau theory, topological defects, vortex-antivortex turbulence, superconductivity
+- **Technique**: Time-Dependent Ginzburg-Landau (TDGL) simulation on a 128x128 complex scalar field. Visualizes the phase transition and topological defect dynamics using 40,000 advected particles. Features multi-pass additive rendering with a "Superconducting Gold / Electric Blue" palette. 60fps high-bitrate MP4.
+- **Description**: A stunning visualization of a superconducting phase transition; complex filaments of molten gold and electric blue energy swirl and dance as topological vortices collide and annihilate in a shimmering obsidian void.
+
+## quantum_hall_edge_states
+
+- **Date**: 2026-05-09
+- **Theme**: Quantum Hall Effect, topological protection, chiral edge states
+- **Technique**: 2D particle simulation of 150,000 charge carriers under a strong perpendicular magnetic field. Visualizes the contrast between insulating bulk (cyclotron loops) and conducting edges (unidirectional skipping orbits). Features multi-pass additive rendering with "Cobalt / Electric Lime" palette. 60fps high-bitrate MP4.
+- **Description**: A precise and technically stunning visualization of topological protection in a 2D electron gas. Within the deep indigo bulk, particles are trapped in localized cyclotron loops, while along the boundaries, they form a swift, unidirectional current of shimmering electric lime light.
+
+## primordial_polarization_swirl
+
+- **Date**: 2026-05-09
+- **Theme**: B-mode polarization, primordial gravitational waves, CMB, beautiful night sky
+- **Technique**: 3D simulation of 120,000 particles on a spherical shell advected by a multi-scale "curl" vector field representing tensor perturbations. Features multi-pass additive rendering with HSB spectral mapping and cosmic expansion scaling. 60fps high-bitrate MP4.
+- **Description**: A majestic visualization of the early universe's first light; silken swirls of celestial azure and soft gold energy are twisted into intricate B-mode patterns by primordial gravitational waves, shimmering across a deep amethyst void.
+
+## casimir_vacuum_pressure
+
+- **Date**: 2026-05-09
+- **Theme**: Casimir effect, quantum vacuum pressure, beautiful night sky
+- **Technique**: 3D particle physics simulation of 160,000 virtual particles with life-cycle decay and boundary-based suppression. Oscillating parallel plates with glow effects. Multi-pass additive rendering. "Silver / Electric Cyan / Deep Amethyst" palette. 60fps high-fidelity MP4.
+- **Description**: A serene yet powerful visualization of quantum vacuum pressure; shimmering virtual particles emerge and vanish in a cosmic void, noticeably suppressed in the narrow gap between two silver plates, illustrating the silent force of the void itself.
+
+## mhd_accretion_turbulence
+
+- **Date**: 2026-05-09
+- **Theme**: MHD turbulence, accretion disks, plasma physics, beautiful night sky
+- **Technique**: 3D simulation of 180,000 particles in a Keplerian disk with magnetic tension proxies and MRI-inspired turbulence. Multi-pass additive rendering with kinetic energy color mapping. "Incandescent Orange / Plasma Blue / Obsidian Black" palette. 60fps high-bitrate MP4.
+- **Description**: A violent, beautiful visualization of plasma turbulence in a black hole's accretion disk; swirling ropes of orange and blue fire are twisted by invisible magnetic fields, creating a rhythmic, incandescent dance of matter at the edge of the void.
+
+## skyrmion_vortex_lattice
+
+- **Date**: 2026-05-09
+- **Theme**: Skyrmions, magnetic topology, spin textures, beautiful night sky
+- **Technique**: 3D simulation of 150,000 "spin tracer" particles advected by a lattice of 9 Skyrmion cores. Implements a multi-pole vortex field with topological twisting and core oscillations. Multi-pass additive rendering with an "Emerald Glow / Burnished Gold / Deep Ultraviolet" palette. 60fps high-bitrate MP4.
+- **Description**: A majestic visualization of a magnetic Skyrmion lattice; swirling vortices of emerald and gold light wrap around stable topological cores, weaving an intricate web of silken spin textures against the deep violet star-dusted night.
+
+## chromatic_planck_fluctuations
+
+- **Date**: 2026-05-09
+- **Theme**: Quantum foam, Planck length, virtual particles, vacuum energy, beautiful night sky
+- **Technique**: 3D simulation of 160,000 "virtual particles" with finite lifetimes (birth/annihilation loop). Particles follow a dynamic 3D noise-based field (interpolated 32^3 volume) representing space-time jitter. Multi-pass additive rendering with lifetime-based alpha modulation and an "Ultraviolet / Electric Cyan / Solar Gold" palette. 60fps high-bitrate MP4.
+- **Description**: A mesmerizing visualization of the quantum vacuum at the Planck scale; a boiling, iridescent sea of light where spectral sparks of ultraviolet and electric cyan flicker into existence and vanish, revealing the hidden, jittering geometry of space-time against the star-dusted obsidian void.
+
+## cosmic_filament_condensation
+
+- **Date**: 2026-05-09
+- **Theme**: Large-scale structure, baryon acoustic oscillations, cosmic web, dark matter halos, beautiful night sky
+- **Technique**: 3D simulation of 150,000 particles representing baryonic matter and dark matter tracers. Implements a multi-scale gravitational clustering algorithm towards 12 dynamic "dark matter hubs" using a modified $1/r^{1.2}$ potential. Features global harmonic oscillations (BAO) and multi-pass additive rendering with a "Crystalline White / Deep Cobalt / Ionized Magenta" palette. 60fps high-bitrate MP4.
+- **Description**: A majestic visualization of the formation of the Cosmic Web; silken filaments of ionized magenta and deep cobalt light stretch across the void, condensing into brilliant crystalline white clusters driven by the rhythmic pulse of primordial sound waves against the star-dusted night.
+
+## stochastic_resonance_lattice
+
+- **Date**: 2026-05-09
+- **Theme**: Stochastic resonance, coupled oscillators, signal-in-noise, lattice dynamics, beautiful night sky
+- **Technique**: 3D simulation of 150,000 particles following Langevin dynamics in a double-well potential landscape ($V(x) = -x^2/2 + x^4/4$). Implements nonlinear synchronization driven by Gaussian white noise and a weak periodic forcing signal. Multi-pass additive point rendering with state-dependent coloring ("Electric Cyan / Deep Amethyst / Neon White"). 60fps high-bitrate MP4.
+- **Description**: A majestic vision of order emerging from chaos; a shimmering cloud of electric cyan and deep amethyst light pulses with a hidden cosmic rhythm. As the collective oscillators synchronize through the mechanism of stochastic resonance, the noisy void crystallizes into a pulsing geometric lattice of neon white energy against the star-dusted indigo night.
+
+## accretion_disk_instability
+
+- **Date**: 2026-05-09
+- **Theme**: Black hole accretion, disk turbulence, Magneto-Rotational Instability (MRI), polar jets, beautiful night sky
+- **Technique**: 3D simulation of 180,000 particles following Keplerian rotation dynamics ($v \propto 1/\sqrt{r}$). Implements turbulent noise-driven advection within the disk and high-velocity polar jets with plasma-like jitter. Multi-pass additive point rendering with an "Incandescent Orange / Crimson Red / Ultraviolet Indigo" HSB palette and a subtle high-density starfield. 60fps high-bitrate MP4.
+- **Description**: A majestic vision of a star's final descent; silken filaments of incandescent orange and crimson light spiral into the dark heart of a black hole, creating a complex, shimmering disk that pulses with thermal instability. Violent jets of ultraviolet indigo plasma erupt from the poles, tracing the invisible magnetic conduits that channel energy away from the gravitational abyss against the star-dusted obsidian night.
+
+## gravitational_caustic_refraction
+
+- **Date**: 2026-05-09
+- **Theme**: Gravitational lensing, light caustics, General Relativity, beautiful night sky
+- **Technique**: 3D ray-tracing of 150,000 light rays deflected by four moving gravitational centers (lenses). Deflection is calculated using a vectorized non-linear force field, resulting in complex caustic folds and sharp light convergences. Multi-pass additive point rendering with a "Nebula Gold / Electric Azure / Diamond White" HSB palette and a subtle high-density starfield. 60fps high-bitrate MP4.
+- **Description**: A majestic visualization of space-time warping; silken ribbons of shimmering gold and electric azure light dance and fold into intricate caustic patterns as they are bent by invisible gravitational giants against the star-dusted obsidian night.
+
+## vortex_phase_interference
+
+- **Date**: 2026-05-09
+- **Theme**: Quantum vortices, phase interference, superfluids, beautiful night sky
+- **Technique**: 3D simulation of two interacting vortex rings with 150,000 particle tracers. Particles follow a simplified Biot-Savart velocity field and rotate around ring cores. When rings approach, their phase-velocity fields interfere, creating complex bridging structures. Multi-pass additive rendering with a "Electric Cyan / Royal Violet" HSB palette and a high-density background starfield. 20fps high-bitrate MP4.
+- **Description**: A mesmerizing visualization of interacting quantum vortex rings in a superfluid medium; silken filaments of electric cyan and royal violet energy dance and weave through the void, creating intricate bridging structures as they collide in the star-dusted obsidian night.
+
+## dark_energy_expansion_drift
+
+- **Date**: 2026-05-09
+- **Theme**: Dark energy, quintessence, accelerated expansion, cosmological constant, beautiful night sky
+- **Technique**: 3D simulation of a "quintessence" field using a vectorized 3D scalar field. 120,000 particles representing dark energy quanta are advected by a repulsion field that increases with distance from the center (exponential expansion). Particles undergo virtual decay and leave silken threads. Multi-pass additive rendering with a "Cosmic Lavender/Deep Emerald/Silver" palette and a high-density background starfield. 60fps high-bitrate MP4.
+- **Description**: A majestic visualization of the accelerating expansion of the universe; silken threads of cosmic lavender and deep emerald light stretch and thin as they drift into the obsidian night, representing the hidden energy driving the cosmos apart.
+
 ## topological_braid_flux
 
 - **Date**: 2026-05-08

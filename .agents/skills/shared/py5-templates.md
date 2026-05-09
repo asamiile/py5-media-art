@@ -18,8 +18,9 @@ from lib.preview import maybe_save_exit_on_frame, preview_filename
 from lib.sizes import get_sizes
 
 SKETCH_DIR = sketch_dir(__file__)
+WORK_NAME = SKETCH_DIR.name
 PREVIEW_FRAME = 60
-PREVIEW_FILENAME = preview_filename(pattern=1)
+PREVIEW_FILENAME = f"{WORK_NAME}_p1.png"
 PREVIEW_SIZE, OUTPUT_SIZE, SIZE = get_sizes()
 
 
@@ -53,11 +54,12 @@ from lib.preview import preview_filename
 from lib.sizes import get_sizes
 
 SKETCH_DIR = sketch_dir(__file__)
+WORK_NAME = SKETCH_DIR.name
 FRAMES_DIR = SKETCH_DIR / "frames"
 DURATION_SEC = 10  # 10 to 30 seconds depending on content
 FPS = 60
 TOTAL_FRAMES = DURATION_SEC * FPS
-PREVIEW_FILENAME = preview_filename(pattern=1)
+PREVIEW_FILENAME = f"{WORK_NAME}_p1.png"
 PREVIEW_SIZE, OUTPUT_SIZE, SIZE = get_sizes()
 
 
@@ -76,7 +78,7 @@ def draw():
             "ffmpeg", "-y", "-r", str(FPS),
             "-i", str(FRAMES_DIR / "frame-%04d.png"),
             "-vcodec", "libx264", "-pix_fmt", "yuv420p",
-            str(SKETCH_DIR / "output.mp4"),
+            str(SKETCH_DIR / f"{WORK_NAME}.mp4"),
         ], check=True)
         mid = str(FRAMES_DIR / f"frame-{TOTAL_FRAMES // 2:04d}.png")
         subprocess.run(["cp", mid, str(SKETCH_DIR / PREVIEW_FILENAME)], check=True)
@@ -88,10 +90,10 @@ py5.run_sketch()
 ## Notes
 
 - Prefer helpers in `lib/`: `lib.paths.sketch_dir`, `lib.sizes.get_sizes`, and `lib.preview`.
-- Save previews with `preview_filename(pattern=1)` unless creating additional patterns.
+- Save previews with `{work_name}_p1.png` where `{work_name}` is the directory name.
 - Explicitly call `py5.exit_sketch()` or use `maybe_save_exit_on_frame()` so continuous runs do not leave sketch processes running.
 - When creating video/animation works, set `DURATION_SEC` to **10 to 30 seconds depending on the content**.
 - Animation works save sequential PNGs to `frames/` and combine into MP4 with ffmpeg.
-- Include `output.mp4` in the commit only for animation works.
+- Include `{work_name}.mp4` in the commit only for animation works.
 - Do not fix random seed; results should vary each run.
 - On Retina, after `py5.load_np_pixels()`, get actual size from `py5.np_pixels.shape[:2]`.

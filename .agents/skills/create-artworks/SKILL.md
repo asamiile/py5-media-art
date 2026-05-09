@@ -18,7 +18,7 @@ Continuously creates py5 media art still images in a loop. Each iteration produc
    3. Run the sketch to generate pattern-specific preview images and wait for the process to fully terminate before proceeding (ensure no lingering python processes)
    4. **Critic**: Review code + generated preview images and return APPROVE or REVISE (see `.agents/skills/critic/SKILL.md`)
    5. If REVISE: artist applies feedback and re-runs (max 2 revisions)
-   6. Update `sketch/WORKS.md` and `.agents/FEEDBACK.md`
+   6. Update `sketch/WORKS.md` and `.agents/FEEDBACK.md` (leave Rating and Comment empty per conventions)
    7. Commit and push
    8. Start next iteration immediately — no user confirmation
 

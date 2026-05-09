@@ -25,7 +25,7 @@ Each iteration must produce one complete, independent animation and commit/push 
    3. Implement `sketch/{work_name}/main.py` and `README.md`.
    4. Run `uv run python sketch/{work_name}/main.py` and ensure `sketch/{work_name}/output.mp4` and `preview_p1.png` exist.
    5. Perform one concise self-critique in the same format as `.agents/skills/critic/SKILL.md`.
-   6. Update `sketch/WORKS.md` and `.agents/FEEDBACK.md`.
+   6. Update `sketch/WORKS.md` and `.agents/FEEDBACK.md` (leave Rating and Comment empty per conventions).
    7. Commit and push.
    8. Wait 60-90 seconds (Rate Limit) then start the next iteration.
 

@@ -21,40 +21,26 @@ A creative director who studies past works and user feedback, then proposes the 
 
 ## Analysis Process
 
-### Step 1 — Map coverage
+### Step 1 — Discovery & Gap Analysis
 
-Build a mental grid of what has been covered:
+Perform a dynamic search to build a mental map of what has been done versus what is possible:
 
-| Category | Covered techniques |
-|---|---|
-| **Natural phenomena** | particle flow, noise field, fractal branching, phyllotaxis, aurora ribbons, reaction-diffusion |
-| **Mathematical structure** | Lissajous, Fourier, Hilbert, Penrose, Apollonian, Julia/Mandelbrot, Newton, Clifford/Lorenz/Rössler |
-| **Emotion & abstraction** | domain warp, Truchet, kaleidoscope, moiré, harmonograph |
-| **Urban & machine** | woven fabric, halftone dots |
-| **Cosmos & time** | sphere world, boid flocks |
-
-Find the combination that **has not been done yet**.
+1.  **Analyze `sketch/WORKS.md`**: Extract keywords from past themes and techniques. Identify over-saturated areas (e.g., "particles", "noise fields", "night sky").
+2.  **Explore `logic-lab` MCP**: Call `mcp__logic-lab__get_manifest` to see all available categories and algorithm tags.
+3.  **Identify Opportunities**:
+    *   Find **Untapped Categories**: Logic Lab categories that have few or no entries in `WORKS.md`.
+    *   Find **Thematic Gaps**: New combinations of a past theme with a completely different MCP technique.
+    *   Find **Visual Gaps**: Look at `.agents/FEEDBACK.md` for requested styles (e.g., "more abstract", "multi-hue") and map them to available algorithms.
 
 ### Step 2 — Weight by feedback
 
-- Prioritise directions similar to works rated `OK`
-- Avoid directions similar to works rated `NG` (note: `NG` currently has no entries — stay alert)
-- Take user comments literally:
-  - "more abstract" → steer away from literal representations
-  - "natural phenomena should look natural" → use physically accurate models, not just decorative patterns
-  - "monotonous color" → propose a deliberate multi-hue palette up front
-  - "animation wanted" → flag if the concept suits animation
+- Prioritize directions similar to works rated `OK`
+- Avoid directions similar to works rated `NG`
+- Interpret user comments as direct creative constraints (e.g., "less geometric" → look for organic/growth algorithms in MCP).
 
 ### Step 3 — Choose and justify
 
-After deciding the missing theme/technique direction, query the `logic-lab` MCP server for supporting algorithms:
-
-- Prefer `search_algorithms(query, category, limit=5)` using theme and technique words.
-- Use `get_manifest()` only when search is insufficient.
-- Do not fetch full source code during planning.
-- If the MCP server is unavailable, omit the Logic Lab Reference and choose the concept from `WORKS.md`, feedback, and general knowledge.
-
-Select one concept. Explain in one sentence why this slot in the grid is the most interesting gap right now.
+Select one concept that maximizes novelty by combining a fresh theme with an under-used technique from `logic-lab`. Explain in one sentence what specific gap in the collection this fills.
 
 ## Output Format
 

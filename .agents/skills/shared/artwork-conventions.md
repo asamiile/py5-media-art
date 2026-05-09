@@ -11,11 +11,11 @@ Shared naming, file, and staging rules for py5 media art skills.
 
 ## Preview Images
 
-- Use `preview_p1.png` for the first generated pattern.
-- If the work deliberately includes multiple distinct patterns or variants, save them as `preview_p2.png`, `preview_p3.png`, etc.
-- Keep the pattern suffix before the revision suffix for snapshots: `preview_p1_v1.png`, `preview_p2_v1.png`, etc.
+- Use `{work_name}_p1.png` for the first generated pattern.
+- If the work deliberately includes multiple distinct patterns or variants, save them as `{work_name}_p2.png`, `{work_name}_p3.png`, etc.
+- Keep the pattern suffix before the revision suffix for snapshots: `{work_name}_p1_v1.png`, `{work_name}_p2_v1.png`, etc.
 - Do not create or commit an unsuffixed `preview.png` for new works.
-- `preview_p1.png` must exist before review and commit.
+- `{work_name}_p1.png` must exist before review and commit.
 
 ## Work Directory
 
@@ -24,11 +24,11 @@ sketch/
   {work_name}/
     main.py
     README.md
-    preview_p1.png
-    preview_p2.png       # optional additional pattern
-    preview_p1_v1.png    # optional revision snapshot
-    output.mp4           # animation only
-    frames/              # sequential PNGs, not committed
+    {work_name}_p1.png
+    {work_name}_p2.png       # optional additional pattern
+    {work_name}_p1_v1.png    # optional revision snapshot
+    {work_name}.mp4          # animation only
+    frames/                  # sequential PNGs, not committed
 ```
 
 ## Staging
@@ -40,3 +40,15 @@ Stage only intended files:
 - `.agents/FEEDBACK.md`
 
 Do not stage unrelated pending changes.
+
+## FEEDBACK.md Protocol
+
+- **Agents MUST NOT** write anything in the `Rating` or `Comment` fields of `.agents/FEEDBACK.md`.
+- These fields are reserved EXCLUSIVELY for the USER to provide feedback and critique.
+- When registering a new work, the Agent should only create the header and empty fields:
+  ```markdown
+  ## {work_name}
+
+  - **Rating**: 
+  - **Comment**: 
+  ```

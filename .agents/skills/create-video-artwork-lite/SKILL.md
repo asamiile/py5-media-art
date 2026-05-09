@@ -23,7 +23,7 @@ Create exactly one new py5 media art animation using a reduced-overhead version 
 6. Run `uv run python sketch/{work_name}/main.py` and ensure `sketch/{work_name}/output.mp4` and `preview_p1.png` exist.
 7. Perform one concise self-critique in the same format as `.agents/skills/critic/SKILL.md`.
 8. If the verdict is `REVISE`, apply at most one revision; the second review should approve unless there is a hard failure.
-9. Update both `sketch/WORKS.md` and `.agents/FEEDBACK.md`.
+9. Update both `sketch/WORKS.md` and `.agents/FEEDBACK.md` (leave Rating and Comment empty per conventions).
 10. Stage and commit `sketch/{work_name}/`, `sketch/WORKS.md`, and `.agents/FEEDBACK.md`.
 11. Push.
 

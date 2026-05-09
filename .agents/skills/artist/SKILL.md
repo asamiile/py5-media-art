@@ -46,25 +46,26 @@ Only after the theme is clear, choose the algorithm that best expresses it.
 
 ## Concept Selection Criteria
 
-- Choose a theme, technique, and visual style different from all past works
-- Rotate across these categories each time:
-  - **Theme**: natural phenomena / mathematical structure / emotion & abstraction / urban & machine / cosmos & time
-  - **Technique**: particles / recursion / cellular automata / Fourier transform / noise fields / L-system
+- **Diversity First**: Actively seek a theme, technique, and visual style that differs from the most recent 10 works in `WORKS.md`.
+- **Dynamic Rotation**: Instead of a fixed list, analyze the current `WORKS.md` and `logic-lab` manifest to identify under-represented categories (e.g., if many works use "Mathematical structure", switch to "Organic Growth" or "Urban Abstract").
+- **Constraint Satisfaction**: Ensure the implementation honors the specific `Logic Lab Reference` from the Creative Brief while injecting an original artistic twist.
 
 ## Color Design Guidelines
 
 Avoid the default trap of high-saturation full-spectrum rainbow gradients. They read as "generative art demo" rather than intentional artwork.
 
-**Before choosing colors, decide the tonal mood:**
-- Dark/moody → black or near-black background, 1–2 muted accent colors, minimal brightness
-- Warm/organic → earthy desaturated tones (ochre, sienna, burnt umber), soft highlights
-- Cold/precise → deep navy or charcoal base, ice-blue or silver accents
-- Quiet/minimal → near-monochrome with one restrained accent hue
+**Before choosing colors, decide the tonal mood based on the theme:**
+- **Dark/Moody** → black or near-black background, 1–2 muted accent colors.
+- **Warm/Organic** → earthy desaturated tones (ochre, sienna), soft highlights.
+- **Cold/Precise** → deep navy base, ice-blue or silver accents.
+- **Quiet/Minimal** → near-monochrome with one restrained accent hue.
+- **Vibrant/Neon** → high-contrast dark background with glowing, saturated primary hues (Cyan/Magenta/Lime) to simulate light-emission.
+- **Graphic/Bold** → limited palette (e.g., Black/White + 1 strong color) with sharp edges and high contrast.
 
 **Palette construction rules:**
 - Limit to **3–5 colors** maximum
 - Choose a dominant color (60%), a secondary (30%), and an accent (10%)
-- Prefer desaturated or toned-down hues over full HSV saturation (S ≤ 0.7 for most colors)
+- For most moods, prefer desaturated or toned-down hues (S ≤ 0.7). For "Neon" or "Graphic" moods, saturated accents are encouraged.
 - If using a gradient, span only **60–90° of hue** — not the full spectrum
 - Test contrast against the background before rendering
 

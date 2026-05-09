@@ -27,7 +27,7 @@ Each iteration must produce one complete, independent artwork and commit/push it
    5. Run `uv run python sketch/{work_name}/main.py` and ensure `sketch/{work_name}/preview_p1.png` exists.
    6. Perform one concise self-critique in the same format as `.agents/skills/critic/SKILL.md`.
    7. If the verdict is `REVISE`, apply at most one revision and regenerate pattern-specific previews; the second review should approve unless there is a hard failure.
-   8. Update both `sketch/WORKS.md` and `.agents/FEEDBACK.md`.
+   8. Update both `sketch/WORKS.md` and `.agents/FEEDBACK.md` (leave Rating and Comment empty per conventions).
    9. Stage only intended files:
       - `sketch/{work_name}/`
       - `sketch/WORKS.md`
@@ -70,7 +70,7 @@ Stop instead of continuing if any of these happen:
 - The work must be visually intentional, not a default demo.
 - The concept, technique, and palette must differ from recent works.
 - `preview_p1.png` must be generated before review and commit.
-- `.agents/FEEDBACK.md` must receive at least one concise note for the new work.
+- **Agents MUST NOT** write anything in the `Rating` or `Comment` fields of `.agents/FEEDBACK.md`.
 - If critique tooling or visual inspection is unavailable, use a fallback self-critique in the critic format and explicitly output `APPROVE` or `REVISE`.
 - The final report for each iteration must include an explicit `APPROVE` or `REVISE` verdict.
 

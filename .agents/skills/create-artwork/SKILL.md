@@ -17,7 +17,7 @@ Autonomously creates a py5 media art still image by following the workflow defin
 5. Run the sketch to generate pattern-specific preview images and ensure the process terminates (wait for completion and kill if it hangs)
 6. **Critic**: Review code + generated preview images and return APPROVE or REVISE (see `.agents/skills/critic/SKILL.md`)
 7. If REVISE: artist applies feedback and re-runs (max 2 revisions)
-8. Update `sketch/WORKS.md` and `.agents/FEEDBACK.md`
+8. Update `sketch/WORKS.md` and `.agents/FEEDBACK.md` (leave Rating and Comment empty per conventions)
 9. Commit and push
 
 ## Notes

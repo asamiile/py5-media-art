@@ -18,7 +18,7 @@ Continuously creates py5 media art animations by repeating the single-artwork wo
    3. Run the sketch to generate `output.mp4` and preview images, ensuring the process fully terminates
    4. **Critic**: Review code, video, and generated preview images and return APPROVE or REVISE (see `.agents/skills/critic/SKILL.md`)
    5. If REVISE: artist applies feedback and re-runs (max 2 revisions)
-   6. Update `sketch/WORKS.md` and `.agents/FEEDBACK.md`
+   6. Update `sketch/WORKS.md` and `.agents/FEEDBACK.md` (leave Rating and Comment empty per conventions)
    7. Commit and push
    8. Start next iteration immediately — no user confirmation
 

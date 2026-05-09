@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## casimir_vacuum_pressure
+
+- **Date**: 2026-05-09
+- **Theme**: Casimir effect, quantum vacuum pressure, beautiful night sky
+- **Technique**: 3D particle physics simulation of 160,000 virtual particles with life-cycle decay and boundary-based suppression. Oscillating parallel plates with glow effects. Multi-pass additive rendering. "Silver / Electric Cyan / Deep Amethyst" palette. 60fps high-fidelity MP4.
+- **Description**: A serene yet powerful visualization of quantum vacuum pressure; shimmering virtual particles emerge and vanish in a cosmic void, noticeably suppressed in the narrow gap between two silver plates, illustrating the silent force of the void itself.
+
 ## mhd_accretion_turbulence
 
 - **Date**: 2026-05-09

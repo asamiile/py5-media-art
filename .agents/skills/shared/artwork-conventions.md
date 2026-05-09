@@ -40,3 +40,15 @@ Stage only intended files:
 - `.agents/FEEDBACK.md`
 
 Do not stage unrelated pending changes.
+
+## FEEDBACK.md Protocol
+
+- **Agents MUST NOT** write anything in the `Rating` or `Comment` fields of `.agents/FEEDBACK.md`.
+- These fields are reserved EXCLUSIVELY for the USER to provide feedback and critique.
+- When registering a new work, the Agent should only create the header and empty fields:
+  ```markdown
+  ## {work_name}
+
+  - **Rating**: 
+  - **Comment**: 
+  ```

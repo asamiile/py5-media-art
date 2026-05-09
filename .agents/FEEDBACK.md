@@ -1,7 +1,13 @@
 # User Feedback
 
-Fill in Rating and Comment after reviewing each work's `preview.png`.
+**CRITICAL RULE**: ONLY the USER may write to the `Rating` and `Comment` fields.
+Agents MUST NOT write anything in the `Comment` field. When registering a new work, Agents must leave the `Rating` and `Comment` fields empty or with their default labels as placeholders for the user.
 The Artist reads this file before starting a new sketch to understand preferences.
+
+## casimir_vacuum_pressure
+
+- **Rating**: 
+- **Comment**: 
 
 ## mhd_accretion_turbulence
 
@@ -344,7 +350,7 @@ Add any notes on color, density, theme, or mood in the Comment field.
 ## cometary_ion_tail
 
 - **Rating**: OK
-- **Comment**: The dual-tail physics works very well; the contrast between the curving dust tail and the rigid, turbulent ion tail is scientifically inspired and visually striking. The shimmering effect in the tail filaments adds a nice layer of detail.
+- **Comment**: 
 
 ## stellar_nursery_dust
 
@@ -354,12 +360,12 @@ Add any notes on color, density, theme, or mood in the Comment field.
 ## solar_flare_loops
 
 - **Rating**: OK
-- **Comment**: The incandescent core glow is very effective, and the volumetric treatment of the Bezier loops creates a convincing "plasma filament" feel. The rhythmic pulsing adds a nice organic quality to the magnetic arcs.
+- **Comment**: 
 
 ## event_horizon_shadow
 
 - **Rating**: OK
-- **Comment**: The gravitational lensing effect on the background stars is excellent, creating a believable "Einstein ring" around the shadow. The accretion disk's color mapping (cyan to orange) effectively suggests relativistic energy gradients.
+- **Comment**: 
 
 ## supernova_remnant
 
@@ -374,37 +380,37 @@ Add any notes on color, density, theme, or mood in the Comment field.
 ## cymatic_nebula
 
 - **Rating**: OK
-- **Comment**: The "cymatic" patterning is very effective. The way the particles self-organize into symmetric standing-wave nodes creates a strong sense of celestial resonance. The "indigo and cyan" palette fits the beautiful night sky requirement perfectly.
+- **Comment**: 
 
 ## strange_attractor_dust
 
 - **Rating**: OK
-- **Comment**: The "silken" texture of the dust cloud is truly stunning. The way the Lorenz attractor's lobes emerge from the violet and crimson gradients creates a powerful sense of chaotic order.
+- **Comment**: 
 
 ## metabolic_rhizome
 
 - **Rating**: OK
-- **Comment**: The organic branching is beautifully executed. The decentralized network architecture and the teal/violet gradients create a strong sense of living connectivity within the void.
+- **Comment**: 
 
 ## stellar_caustics
 
 - **Rating**: OK
-- **Comment**: The "liquid starlight" atmosphere is exceptional. The turbulent caustics perfectly capture the feeling of light passing through a gaseous medium, and the solar flares add a great touch of brilliance.
+- **Comment**: 
 
 ## quasicrystal_void
 
 - **Rating**: OK
-- **Comment**: Fascinating use of aperiodic interference. The 7-fold symmetry is visually captivating, and the iridescent color mapping against the deep void creates a strong sense of cosmic scale.
+- **Comment**: 
 
 ## gravitational_warp
 
 - **Rating**: OK
-- **Comment**: Exceptional use of conformal mapping to simulate gravitational lensing. The sapphire/silver palette perfectly fits the "beautiful night sky" requirement, and the multi-pass rendering with chromatic aberration gives it a high-tech, professional polish.
+- **Comment**: 
 
 ## stochastic_nebula
 
 - **Rating**: OK
-- **Comment**: Beautiful balance of organic, smoky filaments and a deep starry background. The transition from P2D to the default renderer improved stability in the headless environment without sacrificing the "silken trace" aesthetic. High density of stars and subtle additive blending successfully achieve the "beautiful night sky" requirement.
+- **Comment**: 
 
 ## prismatic_architecture
 
@@ -811,7 +817,7 @@ Add any notes on color, density, theme, or mood in the Comment field.
 ## wave_interference
 
 - **Rating**: OK
-- **Comment**: Polish (v3): Resolved the "too blurry" issue by migrating to full-resolution NumPy computation and P2D rendering. Enhanced visual clarity with a "Sapphire & Mercury" high-contrast palette and added technical overlays. (New preview: `preview_p1.png`)
+- **Comment**: 
 
 ## newton_fractal
 
@@ -826,7 +832,7 @@ Add any notes on color, density, theme, or mood in the Comment field.
 ## fourier_epicycles
 
 - **Rating**: OK
-- **Comment**: Polish (v2): Addressed the monotonous color feedback by implementing a dynamic "Iridescent Cosmos" theme with a multi-stop spectral gradient and glow effects. (New preview: `preview_p1.png`)
+- **Comment**: 
 
 ## shell_spiral
 
@@ -1041,12 +1047,12 @@ Add any notes on color, density, theme, or mood in the Comment field.
 ## coral_reef
 
 - **Rating**:
-- **Comment**: Varied color palette (deep navy, coral pink, seafoam teal, golden amber, soft lavender, bright turquoise) successfully creates visual interest. Five distinct coral morphologies provide good diversity. Underwater atmosphere (light rays, bubbles, depth gradient) adds convincing depth. Organic variation through randomization creates naturalistic feel. Consider more varied colony base positions to avoid clustering in future iterations. Light ray alpha variation could be more subtle for naturalistic diffusion. Bubble size distribution could follow exponential distribution for realism.
+- **Comment**: 
 
 ## sound_waves
 
 - **Rating**:
-- **Comment**: Varied color palette (electric blue, warm magenta, bright cyan) creates good visual contrast. Multiple visualization types (horizontal waves, circular waves, spectrogram, frequency bars) provide complexity and depth. Harmonic overtones create realistic wave interference patterns. Spectrogram background could be more subtle to avoid overwhelming main waves. Circular waves could have more varied spacing for naturalistic appearance. Frequency bars could follow exponential decay distribution for realism.
+- **Comment**: 
 
 ## slime_intelligence
 

@@ -4,6 +4,13 @@ Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
 ## lsystem_tree_v2
+## mhd_kelvin_helmholtz_waves
+
+- **Date**: 2026-05-10
+- **Theme**: plasma dynamics, magnetohydrodynamics, fluid billows, beautiful night sky
+- **Technique**: Vectorized 2D/3D particle advection (NumPy). Implements a magnetized shear layer simulation with a magnetic tension proxy resisting vertical displacement ($v_y \leftarrow v_y - \beta y$). Features a 60,000-particle system with persistence-based motion blur and additive blending in P2D. Palette: "Deep Amethyst / Luminous Teal / Molten Gold" with initial position-based color mapping. High-fidelity 4K rendering.
+- **Description**: A majestic visualization of the Kelvin-Helmholtz instability in a magnetized cosmic fluid. Luminous filaments of teal and gold roll and billow into intricate spirals against a deep amethyst void, captured as they trace the invisible magnetic lines that attempt to bind them.
+
 
 - **Date**: 2026-05-10
 - **Theme**: bioluminescent nature, L-system fidelity, fractal growth, beautiful night sky

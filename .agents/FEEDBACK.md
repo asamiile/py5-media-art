@@ -4,7 +4,17 @@
 Agents MUST NOT write anything in the `Comment` field. When registering a new work, Agents must leave the `Rating` and `Comment` fields empty or with their default labels as placeholders for the user.
 The Artist reads this file before starting a new sketch to understand preferences.
 
-## archival_vein_memory
+## prismatic_recursive_glass
+
+- **Rating**: 
+- **Comment**: 
+
+## color_flux_string_breaking
+
+- **Rating**: 
+- **Comment**: 
+
+## chiral_turing_morphogenesis
 
 - **Rating**: 
 - **Comment**: 

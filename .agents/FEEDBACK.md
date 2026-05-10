@@ -5,6 +5,12 @@ Agents MUST NOT write anything in the `Comment` field. When registering a new wo
 The Artist reads this file before starting a new sketch to understand preferences.
 
 ## lsystem_tree_v2
+## superfluid_helicity_resonance
+
+- **Rating**: 
+- **Comment**: 
+
+
 ## mhd_kelvin_helmholtz_waves
 
 - **Rating**: 

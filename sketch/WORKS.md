@@ -4,6 +4,13 @@ Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
 ## lsystem_tree_v2
+## superfluid_helicity_resonance
+
+- **Date**: 2026-05-10
+- **Theme**: Superfluidity, vortex helicity, Kelvin waves, quantum turbulence, beautiful night sky
+- **Technique**: 3D particle simulation (240,000 tracers) advected by helical harmonic perturbations (Kelvin waves) along three interacting vortex rings. Features manual 3D-to-2D projection with multi-pass additive point rendering for a soft "ghostly" glow. Palette: "Electric Ice / Ghostly Amethyst / Deep Cobalt" HSB mapping. 20s 4K/60fps MP4.
+- **Description**: A majestic visualization of quantum fluid dynamics; silken filaments of electric ice and ghostly amethyst light weave and twist in a helical resonance, tracing the hidden paths of superfluid vortex rings as they dance against the star-dusted obsidian void.
+
 ## mhd_kelvin_helmholtz_waves
 
 - **Date**: 2026-05-10

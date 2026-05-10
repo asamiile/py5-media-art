@@ -4,6 +4,13 @@ Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
 ## lsystem_tree_v2
+## axion_string_conversion
+
+- **Date**: 2026-05-10
+- **Theme**: Cosmic strings, axion-photon conversion, Primakoff effect, high-energy physics, beautiful night sky
+- **Technique**: 3D polyline simulation of vibrating cosmic strings; emission of 160,000 spectral particles advected by magnetic drift. Features smooth curve rendering and multi-pass additive point rendering. Palette: "Stark White / Electric Cyan / Deep Amethyst / Ionized Magenta" HSB mapping. 15s 4K/60fps MP4.
+- **Description**: A high-energy visualization of cosmic string dynamics; razor-sharp luminous threads pulse and snap in the obsidian void, emitting spectral clouds of cyan, violet, and magenta photons.
+
 ## superfluid_helicity_resonance
 
 - **Date**: 2026-05-10

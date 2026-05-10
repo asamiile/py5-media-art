@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## color_flux_string_breaking
+
+- **Date**: 2026-05-10
+- **Theme**: Quantum Chromodynamics (QCD), string breaking, quark confinement, beautiful night sky.
+- **Technique**: 3D particle simulation of strong force confinement. 30,000 quarks (particles) connected by "color flux tubes". As they drift apart due to high-energy scattering, the tension increases until it "snaps", spawning new quark-antiquark pairs. Rendered with additive blending, using RGB (Red, Green, Blue) and their anti-colors as the literal "color charge".
+- **Description**: A dense, chaotic web of intense RGB threads that constantly stretch and snap with blinding white flashes, weaving an ever-expanding, intricate quantum tapestry that illustrates the inescapable confinement of quarks.
+
 ## chiral_turing_morphogenesis
 
 - **Date**: 2026-05-10

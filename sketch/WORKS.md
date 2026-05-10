@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## metachronal_cilia_field
+
+- **Date**: 2026-05-10
+- **Theme**: microscopic cilia moving in coordinated metachronal waves across a dim biological membrane
+- **Technique**: Procedural 2D phase-field animation of cilia beat timing and recovery. Vectorized comb-ridge synthesis creates thousands of short filament strokes without per-stroke drawing; local shear accumulates into a fading flow-memory buffer, with cyan/pearl metachronal bands and subtle coral afterimages rendered directly through the py5 pixel buffer. 10s 4K/60fps MP4, generated as `output.mp4` and mirrored to `metachronal_cilia_field.mp4`.
+- **Description**: Diagonal bands of tiny luminous cilia sweep across a dark teal membrane, producing coordinated pearl-and-cyan waves with faint coral traces that read like an organism moving fluid through microscopic rhythm.
+
 ## capillary_bridge_rupture
 
 - **Date**: 2026-05-10

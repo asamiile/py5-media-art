@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## chromatophore_signal_skin
+
+- **Date**: 2026-05-10
+- **Theme**: cephalopod-like skin where chromatophore cells expand and contract under traveling neural signals
+- **Technique**: Procedural staggered cell lattice with vectorized radial pigment masks, ring highlights, iridescent inner bands, and a fading signal-memory buffer. Multi-wave neural activation modulates chromatophore expansion across the skin while pale signal paths drift through warm umber and coral tissue. 10s 4K/60fps MP4, generated as `output.mp4` and mirrored to `chromatophore_signal_skin.mp4`.
+- **Description**: A living field of coral pigment cells pulses over dark skin while pale nerve-wave ribbons pass through it, making the surface feel like a responsive cephalopod display.
+
 ## triboelectric_pollen_cloud
 
 - **Date**: 2026-05-10

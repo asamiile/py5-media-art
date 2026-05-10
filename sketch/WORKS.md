@@ -3,6 +3,14 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## lsystem_tree_v2
+
+- **Date**: 2026-05-10
+- **Theme**: bioluminescent nature, L-system fidelity, fractal growth, beautiful night sky
+- **Technique**: Stochastic L-system with multi-segment curved branch subdivision. Implements bioluminescent leaf clustering at terminals using additive blending (`py5.ADD`) and a depth-based thickness taper ($sw \propto (1-t)^{2.5}$). Features a vectorized night sky gradient with integrated starfield and dynamic firefly accents. Palette: "Charcoal / Aged Wood / Luminous Teal / Molten Gold".
+- **Description**: A majestic vision of cosmic biological emergence; a complex, organic tree with curved, silken branches rises against a star-dusted obsidian sky. Bioluminescent teal leaves pulse with a rhythmic internal light, while tiny fireflies of molten gold dance in the surrounding void, bridging the gap between natural phenomena and celestial wonder.
+
+
 ## voronoi_cells_v2
 
 - **Date**: 2026-05-10

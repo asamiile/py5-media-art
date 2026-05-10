@@ -3,19 +3,12 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
-## color_flux_string_breaking
+## archival_vein_memory
 
 - **Date**: 2026-05-10
-- **Theme**: Quantum Chromodynamics (QCD), string breaking, quark confinement, beautiful night sky.
-- **Technique**: 3D particle simulation of strong force confinement. 30,000 quarks (particles) connected by "color flux tubes". As they drift apart due to high-energy scattering, the tension increases until it "snaps", spawning new quark-antiquark pairs. Rendered with additive blending, using RGB (Red, Green, Blue) and their anti-colors as the literal "color charge".
-- **Description**: A dense, chaotic web of intense RGB threads that constantly stretch and snap with blinding white flashes, weaving an ever-expanding, intricate quantum tapestry that illustrates the inescapable confinement of quarks.
-
-## chiral_turing_morphogenesis
-
-- **Date**: 2026-05-10
-- **Theme**: Organic morphogenesis driven by chiral chemical reactions, creating twisting, breathing labyrinths of light.
-- **Technique**: Vectorized 2D Gray-Scott Reaction-Diffusion model with a chiral advection term (curl of the gradient) to create twisting, spiraling Turing patterns. Rendered with a high-contrast mapping and subtle displacement mapping for a "liquid metal" feel.
-- **Description**: A dark, viscous surface erupts with glowing, spiraling green and violet labyrinths that twist and consume each other like a living digital organism.
+- **Theme**: archival paper remembering water damage, oxidized ink veins, quiet material decay
+- **Technique**: 2D anisotropic particle advection through a paper-fiber vector field. 65,000 particles deposit into low-resolution ink and oxide density buffers, which diffuse with restrained decay and are upscaled into the py5 pixel buffer. Fold-line crease masks bias the flow and tint oxidized regions with muted verdigris and copper edge highlights. 10s 4K/60fps MP4.
+- **Description**: A warm parchment field where green-black stains slowly crawl along invisible fibers and old fold lines, forming soft archival veins with faint copper-rimmed edges and a quiet sense of paper remembering moisture.
 
 ## monsoon_resonance
 

@@ -3,6 +3,14 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## glitch_strata_v2
+
+- **Date**: 2026-05-10
+- **Theme**: luxury decay, obsidian & gold, digital archaeology, high-fidelity corruption, beautiful night sky
+- **Technique**: Vectorized 2D pixel-buffer manipulation (NumPy). Implements recursive stratification with three distinct corruption styles: (1) noisy gradients with horizontal tear displacement, (2) digital block corruption with stochastic color injection, and (3) high-frequency jitter-shredding. Palette: "Obsidian / Deep Gold / Pale Amber / Steel" with refined noise-to-signal ratios and scanline synthesis. High-resolution P2D rendering.
+- **Description**: A majestic, high-fidelity refinement of the `glitch_strata` concept; a vertical cross-section of luxury data-memory is rendered as an elegant, shimmering tapestry of obsidian, deep gold, and pale amber. Intricate horizontal displacement mapping and block corruption patterns create a sense of structured digital archaeology, revealing the hidden beauty of corrupted information against a silent, star-dusted night.
+
+
 ## rayleigh_taylor_plumes
 
 - **Date**: 2026-05-10

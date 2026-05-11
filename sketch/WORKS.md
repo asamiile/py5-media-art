@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## magnetohydrodynamic_z_pinch_instability
+
+- **Date**: 2026-05-11
+- **Theme**: Fusion energy, plasma physics, Z-pinch confinement, sausage and kink instabilities, magnetohydrodynamics (MHD).
+- **Technique**: 3D magnetic field simulation of a central current column. Implements harmonic deformations corresponding to sausage (radial) and kink (helical) instability modes. 100,000 tracers. 10s 4K/60fps MP4.
+- **Description**: A vertical column of intense light starts in a stable cylindrical configuration but quickly succumbs to the violent forces of electromagnetism, deforming into chaotic kinks and sausages.
+
 ## supernova_nucleosynthesis_nebula
 
 - **Date**: 2026-05-11

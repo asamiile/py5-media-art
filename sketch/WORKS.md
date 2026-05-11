@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## kerr_effect_filamentation
+
+- **Date**: 2026-05-11
+- **Theme**: Non-linear optics, Kerr effect, self-focusing, laser filamentation, spatial solitons.
+- **Technique**: 2D particle simulation of laser filamentation. Tracers are advected by the gradient of an intensity field governed by non-linear self-focusing dynamics. Features multi-pass additive rendering with a "Deep Emerald / Neon Lime / Prism White" palette. 20s 4K/60fps MP4.
+- **Description**: A central beam of emerald light breaks into brilliant filaments, creating a high-energy crystalline structure through non-linear self-focusing.
+
 ## rayleigh_benard_convection_cells
 
 - **Date**: 2026-05-11

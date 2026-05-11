@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## rayleigh_benard_convection_cells
+
+- **Date**: 2026-05-11
+- **Theme**: Fluid dynamics, thermodynamics, thermal convection, Rayleigh-Bénard instability, self-organization.
+- **Technique**: 2D particle advection simulation. Tracers are guided by a dynamic velocity field derived from a hexagonal convection roll model. Features multi-pass additive rendering with a "Molten Copper / Solar Amber / Obsidian" palette. 20s 4K/60fps MP4.
+- **Description**: A dark, viscous surface boils with organized cells of molten copper and golden light, revealing the elegant self-organization of a heated fluid.
+
 ## gravitational_wave_chirp_merger
 
 - **Date**: 2026-05-11

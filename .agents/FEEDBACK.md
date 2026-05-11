@@ -4,6 +4,117 @@
 Agents MUST NOT write anything in the `Comment` field. When registering a new work, Agents must leave the `Rating` and `Comment` fields empty or with their default labels as placeholders for the user.
 The Artist reads this file before starting a new sketch to understand preferences.
 
+## z_pinch_instability_flare
+
+- **Rating**: 
+- **Comment**: 
+
+## strange_attractor_manifold
+
+- **Rating**: 
+- **Comment**: 
+
+## bose_einstein_condensate_vortices
+
+- **Rating**: 
+- **Comment**: 
+
+## magnetic_reconnection_flare
+
+- **Rating**: 
+- **Comment**: 
+
+## spin_ice_monopoles
+
+- **Rating**: 
+- **Comment**: 
+
+## acoustic_cavitation_luminescence
+
+- **Rating**: 
+- **Comment**: 
+
+## cherenkov_radiation_cone
+
+- **Rating**: 
+- **Comment**: 
+
+## algorithmic_mycelium_network
+
+- **Rating**: 
+- **Comment**: 
+
+## prismatic_recursive_glass
+
+- **Rating**: 
+- **Comment**: 
+
+## color_flux_string_breaking
+
+- **Rating**: 
+- **Comment**: 
+
+## chiral_turing_morphogenesis
+
+- **Rating**: 
+- **Comment**: 
+
+## monsoon_resonance
+
+- **Rating**: 
+- **Comment**: 
+
+
+## lsystem_tree_v2
+## axion_string_conversion
+
+- **Rating**: 
+- **Comment**: 
+
+
+## superfluid_helicity_resonance
+
+- **Rating**: 
+- **Comment**: 
+
+
+## mhd_kelvin_helmholtz_waves
+
+- **Rating**: 
+- **Comment**: 
+
+
+- **Rating**: 
+- **Comment**: 
+
+
+## voronoi_cells_v2
+
+- **Rating**: 
+- **Comment**: 
+
+
+## glitch_strata_v2
+
+- **Rating**: 
+- **Comment**: 
+
+
+## rayleigh_taylor_plumes
+
+- **Rating**: 
+- **Comment**: 
+
+## pulsar_magnetosphere_flux
+
+- **Rating**: 
+- **Comment**: 
+
+## moire_lattice_resonance
+
+- **Rating**: 
+- **Comment**: 
+
 ## monolayer_buckling_topography
 
 - **Rating**: 
@@ -21,12 +132,12 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## primordial_polarization_swirl
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## casimir_vacuum_pressure
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## mhd_accretion_turbulence
@@ -56,12 +167,12 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## accretion_disk_instability
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## gravitational_caustic_refraction
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## vortex_phase_interference

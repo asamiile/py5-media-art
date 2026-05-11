@@ -3,6 +3,157 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## z_pinch_instability_flare
+
+- **Date**: 2026-05-10
+- **Theme**: Plasma physics, Z-pinch instability, sausage and kink instabilities, magnetic confinement, beautiful night sky.
+- **Technique**: 3D particle simulation (240,000 particles) modeling a cylindrical plasma column compressed by a magnetic field. Instabilities (m=0 sausage, m=1 kink) grow exponentially, causing the column to wriggle, pinch, and violently break apart, accelerating particles axially into explosive jets. Rendered with P3D additive blending, color-mapped by speed (Deep Violet -> Electric Cyan -> White-Gold) and a subtle 3D curl-noise for turbulence. 20s 4K/60fps MP4.
+- **Description**: A majestic and terrifying visualization of magnetic confinement failure; a dense, glowing column of plasma wriggles like a serpent in the dark before violently pinching in on itself, exploding into blinding white-gold jets of high-energy particles against the star-dusted obsidian void.
+
+## strange_attractor_manifold
+
+- **Date**: 2026-05-10
+- **Theme**: Chaos theory, strange attractors (Lorenz, Rössler, Thomas), topological manifolds, deterministic chaos, dynamic systems.
+- **Technique**: A 3D particle simulation where thousands of points are released into a vector field defined by a system of non-linear differential equations (e.g., a parameterized Lorenz or Thomas' cyclically symmetric attractor). Over time, the parameters of the equations slowly drift, morphing the topology of the attractor manifold in real-time. Rendered with py5 P3D, additive blending, and motion trails.
+- **Description**: A dense cluster of intensely glowing orange and fuchsia particles rapidly expands, constrained by invisible mathematical currents, tracing out a glowing, continuously morphing butterfly-like or knotted topological manifold.
+
+## bose_einstein_condensate_vortices
+
+- **Date**: 2026-05-10
+- **Theme**: Quantum fluid mechanics, Bose-Einstein Condensate, quantized vortices, macroscopic quantum phenomena, phase singularities.
+- **Technique**: 2D grid mapped to a 3D height map, where the height and color represent the phase and amplitude of a macroscopic quantum wave function. Multiple quantized vortices (points of infinite phase) drift across the grid, creating spiraling interference patterns and ripples. Rendered as a glowing 3D wireframe mesh or dense particle grid with additive blending. Vectorized NumPy operations for the wave function to maintain 60fps.
+- **Description**: A dense, undulating grid of deep blue and cyan light forms complex, spiraling ripples. Deep, dark singularities drift slowly through the glowing waves, distorting the grid into perfectly quantized spiral arms.
+
+## magnetic_reconnection_flare
+
+- **Date**: 2026-05-10
+- **Theme**: Solar plasma, magnetic field topology, magnetic reconnection, astrophysics, coronal loops.
+- **Technique**: 3D simulation of plasma particles bound to twisting, dynamic magnetic field lines (parameterized curves). As the loops twist and intersect, a "reconnection event" occurs, releasing a burst of high-energy particles. The simulation uses 80,000 particles moving along structured paths, with explosive radial bursts during reconnection. Intense additive blending with a bloom effect.
+- **Description**: Giant, glowing arching loops of fiery orange and violet plasma twist in the dark. As the loops pinch together, a blinding white explosion of energy bursts outwards, scattering high-speed particles across the void.
+
+## spin_ice_monopoles
+
+- **Date**: 2026-05-10
+- **Theme**: Spin ice, geometrical frustration, emergent magnetic monopoles, crystal lattice defects.
+- **Technique**: 3D simulation of a pyrochlore lattice (interlocking tetrahedra). Spins on the vertices are visualized as small glowing vectors. Thermal fluctuations flip spins, violating the "two-in, two-out" ground state and creating defect pairs (emergent magnetic monopoles). These monopoles drift through the lattice, connected by a shimmering "Dirac string" of flipped spins. Vectorized grid simulation with 80,000 particles.
+- **Description**: A delicate, crystalline geometric grid in cold ice-blue stretches endlessly. Suddenly, bright golden sparks (monopoles) appear and wander through the structure, leaving behind glowing, jagged magenta trails (Dirac strings) that slowly fade, illustrating the hidden physics of frustrated magnetism.
+
+## acoustic_cavitation_luminescence
+
+- **Date**: 2026-05-10
+- **Theme**: Sonoluminescence, cavitation bubbles, acoustic standing waves, star in a jar.
+- **Technique**: 3D particle and sphere simulation. 30,000 "micro-bubbles" trapped in a volumetric acoustic standing wave (represented by a 3D sine field). As they reach the high-pressure antinodes, they collapse rapidly and emit intense flashes of broad-spectrum light (UV to visible). Additive blending with short-lived blinding white sparks.
+- **Description**: A deep, liquid-like void where thousands of tiny cyan and violet bubbles drift, occasionally shrinking violently to erupt into blindingly bright, rhythmic flashes of white starlight.
+
+## cherenkov_radiation_cone
+
+- **Date**: 2026-05-10
+- **Theme**: Cherenkov radiation, particle accelerators, sonic boom of light, nuclear reactors.
+- **Technique**: High-velocity particle tracks traversing a dielectric medium. When a particle exceeds the local phase velocity of light, it triggers an expanding conical shockwave of photons (Cherenkov angle). Vectorized simulation with 120,000 particles using P3D and intense additive blending.
+- **Description**: Ghostly, high-speed projectiles streak through a pitch-black void, leaving behind overlapping, glowing blue conical shockwaves that slowly fade, resembling a beautiful and eerie underwater reactor core.
+
+## algorithmic_mycelium_network
+
+- **Date**: 2026-05-10
+- **Theme**: Cybernetic biology, algorithmic growth, complex network formation.
+- **Technique**: Physarum polycephalum (slime mold) agent-based simulation. 50,000 agents deposit "pheromone" trails on a grid and move towards areas with higher pheromone gradients. The grid undergoes continuous diffusion and decay to produce self-organizing, highly optimized pathfinding networks.
+- **Description**: A dense, living network of glowing hot pink and orange veins continuously explores and optimizes its structural connections. It behaves like an alien cybernetic fungal network, mapping out paths of light through a dark digital void.
+
+## prismatic_recursive_glass
+
+- **Date**: 2026-05-10
+- **Theme**: Optical physics, high-tech urbanism, chromatic dispersion on a massive recursive glass structure.
+- **Technique**: 3D recursive structure (fractal depth 4) rendered with a translucent shader-like effect in Py5. Using P3D, massive transparent monolithic slabs rotate and unfold dynamically. Chromatic aberration is faked by drawing the structure three times (R, G, B) with slight rotational offsets and additive blending.
+- **Description**: A towering, intricate fractal crystal floats in the void. As it unfolds, its edges split the light into brilliant holographic rainbows, creating an awe-inspiring sense of scale and digital purity against a star-dusted night.
+
+## color_flux_string_breaking
+
+- **Date**: 2026-05-10
+- **Theme**: Quantum Chromodynamics (QCD), string breaking, quark confinement, beautiful night sky.
+- **Technique**: 3D particle simulation of strong force confinement. 30,000 quarks (particles) connected by "color flux tubes". As they drift apart due to high-energy scattering, the tension increases until it "snaps", spawning new quark-antiquark pairs. Rendered with additive blending, using RGB (Red, Green, Blue) and their anti-colors as the literal "color charge".
+- **Description**: A dense, chaotic web of intense RGB threads that constantly stretch and snap with blinding white flashes, weaving an ever-expanding, intricate quantum tapestry that illustrates the inescapable confinement of quarks.
+
+## chiral_turing_morphogenesis
+
+- **Date**: 2026-05-10
+- **Theme**: Organic morphogenesis driven by chiral chemical reactions, creating twisting, breathing labyrinths of light.
+- **Technique**: Vectorized 2D Gray-Scott Reaction-Diffusion model with a chiral advection term (curl of the gradient) to create twisting, spiraling Turing patterns. Rendered with a high-contrast mapping and subtle displacement mapping for a "liquid metal" feel.
+- **Description**: A dark, viscous surface erupts with glowing, spiraling green and violet labyrinths that twist and consume each other like a living digital organism.
+
+## monsoon_resonance
+
+- **Date**: 2026-05-10
+- **Theme**: still pond at midnight, summer monsoon raindrops, wave interference, meditative naturalism
+- **Technique**: 2D scalar wave equation propagated by 5-point FDTD on a 480×270 grid (`u_next = (2u − u_prev + c²·∇²u) · damping`); raindrops injected as Mexican-hat (Laplacian-of-Gaussian) impulses to seed multiple concentric bands; soft border absorber prevents boxy reflections; signed-height shading (positive → cyan/pearl, negative → indigo shadow) plus subtle slope rim. Vectorized NumPy and direct ARGB pixel writes via `py5.np_pixels`. 18s 4K/60fps MP4.
+- **Description**: A still dark pond surface where occasional silver droplets fall and bloom into expanding rings of moonlight; the rings interfere into a hypnotic shimmer of cyan and pearl bands against deep indigo, with a soft moonlight gradient and a single distant amber lamp at the far shore.
+
+## lsystem_tree_v2
+## axion_string_conversion
+
+- **Date**: 2026-05-10
+- **Theme**: Cosmic strings, axion-photon conversion, Primakoff effect, high-energy physics, beautiful night sky
+- **Technique**: 3D polyline simulation of vibrating cosmic strings; emission of 160,000 spectral particles advected by magnetic drift. Features smooth curve rendering and multi-pass additive point rendering. Palette: "Stark White / Electric Cyan / Deep Amethyst / Ionized Magenta" HSB mapping. 15s 4K/60fps MP4.
+- **Description**: A high-energy visualization of cosmic string dynamics; razor-sharp luminous threads pulse and snap in the obsidian void, emitting spectral clouds of cyan, violet, and magenta photons.
+
+## superfluid_helicity_resonance
+
+- **Date**: 2026-05-10
+- **Theme**: Superfluidity, vortex helicity, Kelvin waves, quantum turbulence, beautiful night sky
+- **Technique**: 3D particle simulation (240,000 tracers) advected by helical harmonic perturbations (Kelvin waves) along three interacting vortex rings. Features manual 3D-to-2D projection with multi-pass additive point rendering for a soft "ghostly" glow. Palette: "Electric Ice / Ghostly Amethyst / Deep Cobalt" HSB mapping. 20s 4K/60fps MP4.
+- **Description**: A majestic visualization of quantum fluid dynamics; silken filaments of electric ice and ghostly amethyst light weave and twist in a helical resonance, tracing the hidden paths of superfluid vortex rings as they dance against the star-dusted obsidian void.
+
+## mhd_kelvin_helmholtz_waves
+
+- **Date**: 2026-05-10
+- **Theme**: plasma dynamics, magnetohydrodynamics, fluid billows, beautiful night sky
+- **Technique**: Vectorized 2D/3D particle advection (NumPy). Implements a magnetized shear layer simulation with a magnetic tension proxy resisting vertical displacement ($v_y \leftarrow v_y - \beta y$). Features a 60,000-particle system with persistence-based motion blur and additive blending in P2D. Palette: "Deep Amethyst / Luminous Teal / Molten Gold" with initial position-based color mapping. High-fidelity 4K rendering.
+- **Description**: A majestic visualization of the Kelvin-Helmholtz instability in a magnetized cosmic fluid. Luminous filaments of teal and gold roll and billow into intricate spirals against a deep amethyst void, captured as they trace the invisible magnetic lines that attempt to bind them.
+
+
+- **Date**: 2026-05-10
+- **Theme**: bioluminescent nature, L-system fidelity, fractal growth, beautiful night sky
+- **Technique**: Stochastic L-system with multi-segment curved branch subdivision. Implements bioluminescent leaf clustering at terminals using additive blending (`py5.ADD`) and a depth-based thickness taper ($sw \propto (1-t)^{2.5}$). Features a vectorized night sky gradient with integrated starfield and dynamic firefly accents. Palette: "Charcoal / Aged Wood / Luminous Teal / Molten Gold".
+- **Description**: A majestic vision of cosmic biological emergence; a complex, organic tree with curved, silken branches rises against a star-dusted obsidian sky. Bioluminescent teal leaves pulse with a rhythmic internal light, while tiny fireflies of molten gold dance in the surrounding void, bridging the gap between natural phenomena and celestial wonder.
+
+
+## voronoi_cells_v2
+
+- **Date**: 2026-05-10
+- **Theme**: abstract quantum cells, ethereal boundaries, fluid geometry, beautiful night sky
+- **Technique**: Vectorized 2D pixel-buffer manipulation (NumPy). Implements a noise-warped Voronoi tessellation where pixel coordinates are perturbed by multi-harmonic sine/cosine fields before distance calculation. Features a soft-glow boundary rendering using an exponential falloff based on the second-order distance (d2-d1). Palette: "Deep Amethyst / Luminous Teal / Molten Gold" with stochastic cell-wise color modulation. High-resolution P2D rendering.
+- **Description**: A majestic and ethereal visualization of cellular structure in a quantum field. Shimmering, fluid boundaries in luminous teal weave through a deep amethyst void, occasionally erupting into brilliant sparks of molten gold where the energy of the vacuum is concentrated.
+
+
+## glitch_strata_v2
+
+- **Date**: 2026-05-10
+- **Theme**: luxury decay, obsidian & gold, digital archaeology, high-fidelity corruption, beautiful night sky
+- **Technique**: Vectorized 2D pixel-buffer manipulation (NumPy). Implements recursive stratification with three distinct corruption styles: (1) noisy gradients with horizontal tear displacement, (2) digital block corruption with stochastic color injection, and (3) high-frequency jitter-shredding. Palette: "Obsidian / Deep Gold / Pale Amber / Steel" with refined noise-to-signal ratios and scanline synthesis. High-resolution P2D rendering.
+- **Description**: A majestic, high-fidelity refinement of the `glitch_strata` concept; a vertical cross-section of luxury data-memory is rendered as an elegant, shimmering tapestry of obsidian, deep gold, and pale amber. Intricate horizontal displacement mapping and block corruption patterns create a sense of structured digital archaeology, revealing the hidden beauty of corrupted information against a silent, star-dusted night.
+
+
+## rayleigh_taylor_plumes
+
+- **Date**: 2026-05-10
+- **Theme**: Fluid dynamics, Rayleigh-Taylor instability, buoyancy-driven mixing, beautiful night sky
+- **Technique**: 3D particle simulation (100,000 particles) advected by a vectorized buoyant force field and 16 dynamic plume centers. Implements the growth of "mushrooms" and "spikes" through a dual-fluid interface. Features manual 3D-to-2D projection for performance and stability. Palette: "Incandescent Orange / Electric Azure / Deep Amethyst" with additive blending. 60fps high-bitrate 4K MP4.
+- **Description**: A majestic visualization of two cosmic fluids mixing under gravity. Heavy, glowing plumes of molten orange sink into a deep blue sea, while silken azure filaments rise in response, creating a complex, shimmering interface of light and shadow reminiscent of a nocturnal atmospheric event.
+
+## pulsar_magnetosphere_flux
+
+- **Date**: 2026-05-10
+- **Theme**: Pulsar magnetosphere, rotating dipole, magnetic field lines, relativistic wind, beautiful night sky
+- **Technique**: 3D physics-based simulation of 60,000 particle tracers advected by a rotating magnetic dipole field. Implements the "twist" of magnetic field lines near the light cylinder and the transition to a radial relativistic pulsar wind. Features manual 3D-to-2D projection for performance and stability. Palette: "Cyan / Electric Blue / Royal Purple" HSB mapping with additive blending. 60fps high-bitrate 4K MP4.
+- **Description**: A majestic visualization of a pulsar's invisible power; silken filaments of electric cyan and royal purple light are twisted into complex, shimmering braids by the star's rapid rotation. As they reach the light cylinder, the magnetic ropes snap and surge outward into the deep obsidian night, creating a vast, glowing shroud of relativistic energy.
+
+## moire_lattice_resonance
+
+- **Date**: 2026-05-10
+- **Theme**: twisted bilayer graphene, Moiré patterns, electron resonance, quantum physics, beautiful night sky
+- **Technique**: 2D particle simulation of 180,000 electron tracers in a dynamic Moiré potential field. Visualizes the interference of two rotating hexagonal lattices. Features multi-pass additive rendering with "Emerald / Cyan / Deep Purple" palette and dynamic twist-angle modulation. 60fps high-bitrate 4K MP4.
+- **Description**: A stunning visualization of quantum resonance; nearly 200,000 silken particles are guided by the shimmering interference patterns of two twisted atomic lattices, forming complex, rhythmic arcs of cyan and violet light that pulse and breathe against a deep obsidian void.
+
+
 ## monolayer_buckling_topography
 
 - **Date**: 2026-05-09
@@ -376,7 +527,7 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 
 ## ring_resonance_void
 
-- **Date**: 2026-05-06
+- **Date**: 2026-05-10
 - **Theme**: Planetary rings, orbital resonance, shepherd moons, beautiful night sky
 - **Technique**: 3D orbital simulation (180,000 particles) using vectorized NumPy for Keplerian dynamics. Features a perturbation model where invisible shepherd moons create density "wakes" and resonance gaps in a thin silken disk. Multi-pass rendering includes a background starfield, additive spectral ring particles (Pale Gold/Ice Blue), and a planetary shadow simulation. 60fps high-bitrate MP4.
 - **Description**: A majestic visualization of a planetary ring system seen from an oblique angle; nearly 200,000 silken particles swirl in complex orbital resonance, revealing delicate wave patterns and sharp gaps carved by the gravity of invisible moons against a silent, star-dusted night sky.

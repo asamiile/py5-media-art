@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## dielectric_breakdown_resonance
+
+- **Date**: 2026-05-11
+- **Theme**: Plasma physics, Lichtenberg figures, dielectric breakdown, high-voltage discharge, beautiful night sky.
+- **Technique**: 3D stochastic branch-growth simulation (DLA-variant) where "streamers" propagate along the gradient of a dynamic field. Features 30,000 spectral particles advected by the local discharge current and turbulence. Rendered with manual 3D-to-2D projection, multi-pass additive blending, and a "Blinding White / Electric Cyan / Deep Amethyst" palette. 8s 4K/60fps MP4.
+- **Description**: A majestic, high-energy visualization of cosmic lightning; razor-sharp branches of electric cyan and white energy strike out into the obsidian void, shattering into a shimmering haze of amethyst particles as the dielectric strength of the vacuum fails.
+
 ## z_pinch_instability_flare
 
 - **Date**: 2026-05-10

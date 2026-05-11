@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## gravitational_wave_chirp_merger
+
+- **Date**: 2026-05-11
+- **Theme**: General Relativity, gravitational waves, binary black hole merger, spacetime distortion, the "chirp" signal.
+- **Technique**: 3D particle grid simulation representing the fabric of spacetime. Two orbiting gravitational centers (masses) warp the surrounding geometry, creating rotating spiral ripples. Employs a non-linear "chirp" progression and manual 3D-to-2D projection. 15s 4K/60fps MP4.
+- **Description**: Two blindingly bright singularities dance in a tightening spiral, sending violent, rhythmic ripples of indigo and cyan through the fabric of spacetime before a final cataclysmic merger.
+
 ## asymptotic_giant_branch_pulsation
 
 - **Date**: 2026-05-11

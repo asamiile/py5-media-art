@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## asymptotic_giant_branch_pulsation
+
+- **Date**: 2026-05-11
+- **Theme**: Stellar evolution, AGB stars, thermal pulses, planetary nebula precursor, stardust.
+- **Technique**: 3D shell ejection simulation. A central core undergoes periodic pulses every 180 frames, triggering the expansion of nested, concentric shells of 15,000 tracers each (up to 150,000 total). 20s 4K/60fps MP4.
+- **Description**: Concentric, shimmering shells of stardust expand slowly from a pulsing stellar core, creating a delicate, layered cocoon of rose and orange light.
+
 ## magnetohydrodynamic_z_pinch_instability
 
 - **Date**: 2026-05-11

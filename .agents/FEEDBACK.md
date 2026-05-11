@@ -4,6 +4,11 @@
 Agents MUST NOT write anything in the `Comment` field. When registering a new work, Agents must leave the `Rating` and `Comment` fields empty or with their default labels as placeholders for the user.
 The Artist reads this file before starting a new sketch to understand preferences.
 
+## supernova_nucleosynthesis_nebula
+
+- **Rating**: 
+- **Comment**: 
+
 ## cosmic_ray_cascade_resonance
 
 - **Rating**: 

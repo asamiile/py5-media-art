@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## quantum_chaos_billiard
+
+- **Date**: 2026-05-12
+- **Theme**: Quantum mechanics, chaos theory, stadium billiard, wavefunctions, quantum scarring, wave-particle duality.
+- **Technique**: 2D wave equation simulation in a stadium geometry. High-density volumetric point rendering to visualize probability density. 15s 4K/60fps MP4 (1080p source).
+- **Description**: Visualizes the emergence of quantum scars in a chaotic stadium billiard, where the wavefunction concentrates along classical periodic orbits.
+
 ## topological_spin_ice
 
 - **Date**: 2026-05-12

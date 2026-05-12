@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## dark_matter_halo_cusp
+
+- **Date**: 2026-05-12
+- **Theme**: Astrophysics, dark matter, N-body simulation, NFW profile, gravitational collapse.
+- **Technique**: 3D N-body simulation (140,000 particles) with NFW potential modeling. Multi-pass additive rendering. 20s 4K/60fps MP4 (1080p source).
+- **Description**: A diffuse cloud of Spectral Indigo particles collapses into a dense, bright central cusp, visualizing the formation of a dark matter halo.
+
 ## gravitational_wave_chirp
 
 - **Date**: 2026-05-12

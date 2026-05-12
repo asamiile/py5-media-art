@@ -3,6 +3,27 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## anderson_localization_mesh
+
+- **Date**: 2026-05-12
+- **Theme**: Quantum physics, Anderson localization, disordered systems, metal-insulator transition.
+- **Technique**: 3D grid simulation (150,000 particles). Grid nodes are randomly perturbed. A "localization" function (exponential falloff) determines particle density. Manual 3D-to-2D projection. 15s 4K/60fps MP4 (1080p source).
+- **Description**: A vast, distorted 3D grid of silver threads floats in the dark, housing a blindingly bright, spherical concentration of electric blue and amethyst particles that represent a localized quantum wavefunction.
+
+## weyl_semimetal_fermi_arcs
+
+- **Date**: 2026-05-12
+- **Theme**: Topological matter, Weyl semimetals, Fermi arcs, chiral Weyl nodes, momentum-space topology.
+- **Technique**: 3D particle simulation (120,000 tracers). Two centers of attraction/repulsion representing Weyl nodes. Particles follow "Fermi arc" trajectories—semicircular or elliptic paths on a surface in momentum space. Multi-pass additive rendering with P3D projection. 20s 4K/60fps MP4 (1080p source).
+- **Description**: Two blindingly bright Weyl nodes float in an obsidian momentum-space void, connected by a shimmering, pulsing shell of iridescent Fermi arcs in cyan and magenta.
+
+## benard_marangoni_convection
+
+- **Date**: 2026-05-11
+- **Theme**: Fluid dynamics, surface tension, Bénard-Marangoni convection, self-organization.
+- **Technique**: 2D particle simulation of surface-driven flow. Tracers follow a velocity field derived from surface tension gradients. Features multi-pass additive rendering with a "Deep Violet / Indigo / Silver" palette. 20s 4K/60fps MP4.
+- **Description**: A shimmering surface organizes into silver-rimmed hexagonal cells, visualizing the spontaneous order of surface-tension driven convection.
+
 ## kerr_effect_filamentation
 
 - **Date**: 2026-05-11

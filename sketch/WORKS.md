@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## neutrino_flavor_oscillation
+
+- **Date**: 2026-05-12
+- **Theme**: Particle physics, neutrinos, flavor oscillation, PMNS matrix, quantum interference.
+- **Technique**: 3D particle advection (120,000 particles) along a helical beam. Color oscillations between three HSB bands. Multi-pass additive rendering. 15s 4K/60fps MP4 (1080p source).
+- **Description**: A beam of ghostly light oscillates between three distinct flavors—Cyan, Magenta, and Gold—representing the Electron, Muon, and Tau neutrino states in transit.
+
 ## rydberg_blockade_array
 
 - **Date**: 2026-05-12

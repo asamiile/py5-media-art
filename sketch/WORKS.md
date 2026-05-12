@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## rydberg_blockade_array
+
+- **Date**: 2026-05-12
+- **Theme**: Quantum computing, Rydberg atoms, dipole blockade, collective excitations.
+- **Technique**: 3D grid simulation. Greedy blockade logic based on a wave potential. Multi-pass additive rendering with glowing shells (sphere geometry). 12s 4K/60fps MP4 (1080p source).
+- **Description**: A precise 3D grid of neutral atoms, where laser excitations trigger blinding Neon Orange glows and translucent blockade shells that prevent neighboring atoms from being excited.
+
 ## supersolid_lattice_vibration
 
 - **Date**: 2026-05-12

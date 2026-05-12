@@ -15,7 +15,7 @@ wheels/
 # Animation frame sequences (not committed per CLAUDE.md)
 sketch/*/frames/
 
-# Media outputs (not committed)
-*.mp4
-*.mov
-*.webm
+# Media outputs (committed for portfolio per CLAUDE.md)
+# *.mp4
+# *.mov
+# *.webm

@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## topological_defect_string
+
+- **Date**: 2026-05-12
+- **Theme**: Cosmology, early universe, symmetry breaking, cosmic strings, topological defects, phase transition.
+- **Technique**: 2D complex scalar field simulation (Ginzburg-Landau type) with Mexican hat symmetry breaking. High-density point rendering of defect cores. 10s 4K/60fps MP4 (1080p source).
+- **Description**: Visualizes the emergence of cosmic strings from a primordial gold field as the universe undergoes a symmetry-breaking phase transition.
+
 ## dark_matter_halo_cusp
 
 - **Date**: 2026-05-12

@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## gravitational_wave_chirp
+
+- **Date**: 2026-05-12
+- **Theme**: General relativity, binary black hole merger, gravitational waves, space-time ripples.
+- **Technique**: 3D particle simulation (80,000 particles) distorted by a metric perturbation field. Chirp frequency/amplitude scaling and ringdown logic. Multi-pass additive rendering. 15s 4K/60fps MP4 (1080p source).
+- **Description**: Two binary black holes spiral and merge, triggering a titanic chirp of space-time ripples that radiate as concentric waves of Deep Violet and Electric Gold.
+
 ## neutrino_flavor_oscillation
 
 - **Date**: 2026-05-12

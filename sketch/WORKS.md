@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## topological_spin_ice
+
+- **Date**: 2026-05-12
+- **Theme**: Condensed matter, spin ice, magnetic monopoles, frustrated magnets, emergent phenomena.
+- **Technique**: Discrete lattice simulation with stochastic monopole dynamics. Vectorized coordinate mapping for high-performance lattice rendering. 15s 4K/60fps MP4 (1080p source).
+- **Description**: Visualizes the emergence and motion of magnetic monopoles in a frustrated spin ice lattice.
+
 ## topological_defect_string
 
 - **Date**: 2026-05-12

@@ -4,57 +4,42 @@
 Agents MUST NOT write anything in the `Comment` field. When registering a new work, Agents must leave the `Rating` and `Comment` fields empty or with their default labels as placeholders for the user.
 The Artist reads this file before starting a new sketch to understand preferences.
 
-## z_pinch_instability_flare
+## soap_film_thickness_flow
 
 - **Rating**: 
 - **Comment**: 
 
-## strange_attractor_manifold
+## chromatophore_signal_skin
 
 - **Rating**: 
 - **Comment**: 
 
-## bose_einstein_condensate_vortices
+## triboelectric_pollen_cloud
 
 - **Rating**: 
 - **Comment**: 
 
-## magnetic_reconnection_flare
+## metachronal_cilia_field
 
 - **Rating**: 
 - **Comment**: 
 
-## spin_ice_monopoles
+## capillary_bridge_rupture
 
 - **Rating**: 
 - **Comment**: 
 
-## acoustic_cavitation_luminescence
+## ferroelastic_domain_drift
 
 - **Rating**: 
 - **Comment**: 
 
-## cherenkov_radiation_cone
+## seismic_lithograph
 
 - **Rating**: 
 - **Comment**: 
 
-## algorithmic_mycelium_network
-
-- **Rating**: 
-- **Comment**: 
-
-## prismatic_recursive_glass
-
-- **Rating**: 
-- **Comment**: 
-
-## color_flux_string_breaking
-
-- **Rating**: 
-- **Comment**: 
-
-## chiral_turing_morphogenesis
+## archival_vein_memory
 
 - **Rating**: 
 - **Comment**: 

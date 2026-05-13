@@ -3,82 +3,61 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
-## z_pinch_instability_flare
+## soap_film_thickness_flow
 
 - **Date**: 2026-05-10
-- **Theme**: Plasma physics, Z-pinch instability, sausage and kink instabilities, magnetic confinement, beautiful night sky.
-- **Technique**: 3D particle simulation (240,000 particles) modeling a cylindrical plasma column compressed by a magnetic field. Instabilities (m=0 sausage, m=1 kink) grow exponentially, causing the column to wriggle, pinch, and violently break apart, accelerating particles axially into explosive jets. Rendered with P3D additive blending, color-mapped by speed (Deep Violet -> Electric Cyan -> White-Gold) and a subtle 3D curl-noise for turbulence. 20s 4K/60fps MP4.
-- **Description**: A majestic and terrifying visualization of magnetic confinement failure; a dense, glowing column of plasma wriggles like a serpent in the dark before violently pinching in on itself, exploding into blinding white-gold jets of high-energy particles against the star-dusted obsidian void.
+- **Theme**: draining soap film where nanoscale thickness changes become moving interference colors and pale bubble rims
+- **Technique**: Procedural thin-film thickness field driven by vertical drainage, shear waves, circular bubble boundaries, and dry black-film memory. Spectral cosine interference maps thickness to saturated green, blue, violet, and magenta bands, with bright pearl rim highlights and slow rupture shadows rendered directly through the py5 pixel buffer. 10s 4K/60fps MP4, generated as `output.mp4` and mirrored to `soap_film_thickness_flow.mp4`.
+- **Description**: Large bright arcs cut through a flowing field of iridescent color bands, suggesting a fragile soap membrane draining, thinning, and remembering near-rupture zones.
 
-## strange_attractor_manifold
-
-- **Date**: 2026-05-10
-- **Theme**: Chaos theory, strange attractors (Lorenz, Rössler, Thomas), topological manifolds, deterministic chaos, dynamic systems.
-- **Technique**: A 3D particle simulation where thousands of points are released into a vector field defined by a system of non-linear differential equations (e.g., a parameterized Lorenz or Thomas' cyclically symmetric attractor). Over time, the parameters of the equations slowly drift, morphing the topology of the attractor manifold in real-time. Rendered with py5 P3D, additive blending, and motion trails.
-- **Description**: A dense cluster of intensely glowing orange and fuchsia particles rapidly expands, constrained by invisible mathematical currents, tracing out a glowing, continuously morphing butterfly-like or knotted topological manifold.
-
-## bose_einstein_condensate_vortices
+## chromatophore_signal_skin
 
 - **Date**: 2026-05-10
-- **Theme**: Quantum fluid mechanics, Bose-Einstein Condensate, quantized vortices, macroscopic quantum phenomena, phase singularities.
-- **Technique**: 2D grid mapped to a 3D height map, where the height and color represent the phase and amplitude of a macroscopic quantum wave function. Multiple quantized vortices (points of infinite phase) drift across the grid, creating spiraling interference patterns and ripples. Rendered as a glowing 3D wireframe mesh or dense particle grid with additive blending. Vectorized NumPy operations for the wave function to maintain 60fps.
-- **Description**: A dense, undulating grid of deep blue and cyan light forms complex, spiraling ripples. Deep, dark singularities drift slowly through the glowing waves, distorting the grid into perfectly quantized spiral arms.
+- **Theme**: cephalopod-like skin where chromatophore cells expand and contract under traveling neural signals
+- **Technique**: Procedural staggered cell lattice with vectorized radial pigment masks, ring highlights, iridescent inner bands, and a fading signal-memory buffer. Multi-wave neural activation modulates chromatophore expansion across the skin while pale signal paths drift through warm umber and coral tissue. 10s 4K/60fps MP4, generated as `output.mp4` and mirrored to `chromatophore_signal_skin.mp4`.
+- **Description**: A living field of coral pigment cells pulses over dark skin while pale nerve-wave ribbons pass through it, making the surface feel like a responsive cephalopod display.
 
-## magnetic_reconnection_flare
-
-- **Date**: 2026-05-10
-- **Theme**: Solar plasma, magnetic field topology, magnetic reconnection, astrophysics, coronal loops.
-- **Technique**: 3D simulation of plasma particles bound to twisting, dynamic magnetic field lines (parameterized curves). As the loops twist and intersect, a "reconnection event" occurs, releasing a burst of high-energy particles. The simulation uses 80,000 particles moving along structured paths, with explosive radial bursts during reconnection. Intense additive blending with a bloom effect.
-- **Description**: Giant, glowing arching loops of fiery orange and violet plasma twist in the dark. As the loops pinch together, a blinding white explosion of energy bursts outwards, scattering high-speed particles across the void.
-
-## spin_ice_monopoles
+## triboelectric_pollen_cloud
 
 - **Date**: 2026-05-10
-- **Theme**: Spin ice, geometrical frustration, emergent magnetic monopoles, crystal lattice defects.
-- **Technique**: 3D simulation of a pyrochlore lattice (interlocking tetrahedra). Spins on the vertices are visualized as small glowing vectors. Thermal fluctuations flip spins, violating the "two-in, two-out" ground state and creating defect pairs (emergent magnetic monopoles). These monopoles drift through the lattice, connected by a shimmering "Dirac string" of flipped spins. Vectorized grid simulation with 80,000 particles.
-- **Description**: A delicate, crystalline geometric grid in cold ice-blue stretches endlessly. Suddenly, bright golden sparks (monopoles) appear and wander through the structure, leaving behind glowing, jagged magenta trails (Dirac strings) that slowly fade, illustrating the hidden physics of frustrated magnetism.
+- **Theme**: charged pollen grains suspended in a dim air column, pulled by invisible static-electric fields
+- **Technique**: Procedural electrostatic-potential animation with moving positive and negative charge centers. Vectorized field-line synthesis maps potential phase and field magnitude into blue-violet corona arcs, while ring-shaped pollen shells and a fading charge-memory buffer create warm golden grains and residual ion trails. 10s 4K/60fps MP4, generated as `output.mp4` and mirrored to `triboelectric_pollen_cloud.mp4`.
+- **Description**: Golden pollen rings drift through a smoky blue-violet chamber as static field lines curl and snap around them, leaving faint electric traces like charged dust suspended in quiet air.
 
-## acoustic_cavitation_luminescence
-
-- **Date**: 2026-05-10
-- **Theme**: Sonoluminescence, cavitation bubbles, acoustic standing waves, star in a jar.
-- **Technique**: 3D particle and sphere simulation. 30,000 "micro-bubbles" trapped in a volumetric acoustic standing wave (represented by a 3D sine field). As they reach the high-pressure antinodes, they collapse rapidly and emit intense flashes of broad-spectrum light (UV to visible). Additive blending with short-lived blinding white sparks.
-- **Description**: A deep, liquid-like void where thousands of tiny cyan and violet bubbles drift, occasionally shrinking violently to erupt into blindingly bright, rhythmic flashes of white starlight.
-
-## cherenkov_radiation_cone
+## metachronal_cilia_field
 
 - **Date**: 2026-05-10
-- **Theme**: Cherenkov radiation, particle accelerators, sonic boom of light, nuclear reactors.
-- **Technique**: High-velocity particle tracks traversing a dielectric medium. When a particle exceeds the local phase velocity of light, it triggers an expanding conical shockwave of photons (Cherenkov angle). Vectorized simulation with 120,000 particles using P3D and intense additive blending.
-- **Description**: Ghostly, high-speed projectiles streak through a pitch-black void, leaving behind overlapping, glowing blue conical shockwaves that slowly fade, resembling a beautiful and eerie underwater reactor core.
+- **Theme**: microscopic cilia moving in coordinated metachronal waves across a dim biological membrane
+- **Technique**: Procedural 2D phase-field animation of cilia beat timing and recovery. Vectorized comb-ridge synthesis creates thousands of short filament strokes without per-stroke drawing; local shear accumulates into a fading flow-memory buffer, with cyan/pearl metachronal bands and subtle coral afterimages rendered directly through the py5 pixel buffer. 10s 4K/60fps MP4, generated as `output.mp4` and mirrored to `metachronal_cilia_field.mp4`.
+- **Description**: Diagonal bands of tiny luminous cilia sweep across a dark teal membrane, producing coordinated pearl-and-cyan waves with faint coral traces that read like an organism moving fluid through microscopic rhythm.
 
-## algorithmic_mycelium_network
-
-- **Date**: 2026-05-10
-- **Theme**: Cybernetic biology, algorithmic growth, complex network formation.
-- **Technique**: Physarum polycephalum (slime mold) agent-based simulation. 50,000 agents deposit "pheromone" trails on a grid and move towards areas with higher pheromone gradients. The grid undergoes continuous diffusion and decay to produce self-organizing, highly optimized pathfinding networks.
-- **Description**: A dense, living network of glowing hot pink and orange veins continuously explores and optimizes its structural connections. It behaves like an alien cybernetic fungal network, mapping out paths of light through a dark digital void.
-
-## prismatic_recursive_glass
+## capillary_bridge_rupture
 
 - **Date**: 2026-05-10
-- **Theme**: Optical physics, high-tech urbanism, chromatic dispersion on a massive recursive glass structure.
-- **Technique**: 3D recursive structure (fractal depth 4) rendered with a translucent shader-like effect in Py5. Using P3D, massive transparent monolithic slabs rotate and unfold dynamically. Chromatic aberration is faked by drawing the structure three times (R, G, B) with slight rotational offsets and additive blending.
-- **Description**: A towering, intricate fractal crystal floats in the void. As it unfolds, its edges split the light into brilliant holographic rainbows, creating an awe-inspiring sense of scale and digital purity against a star-dusted night.
+- **Theme**: microscopic droplets forming unstable liquid bridges, stretching under surface tension, and rupturing into faint residue
+- **Technique**: 2D metaball droplet field with animated centers and radii. Near-neighbor segment-distance fields synthesize capillary bridges; a time-varying waist term thins the bridge necks until rupture, accumulating amber residue in a fading buffer. Direct NumPy-to-py5 pixel rendering with FFmpeg output as `output.mp4` and `capillary_bridge_rupture.mp4`. 10s 4K/60fps MP4.
+- **Description**: Translucent green-blue droplets cling to a dark brushed substrate while thin liquid bridges stretch between them; small amber flashes mark rupture points and leave ghostly residue rings in the fluid network.
 
-## color_flux_string_breaking
-
-- **Date**: 2026-05-10
-- **Theme**: Quantum Chromodynamics (QCD), string breaking, quark confinement, beautiful night sky.
-- **Technique**: 3D particle simulation of strong force confinement. 30,000 quarks (particles) connected by "color flux tubes". As they drift apart due to high-energy scattering, the tension increases until it "snaps", spawning new quark-antiquark pairs. Rendered with additive blending, using RGB (Red, Green, Blue) and their anti-colors as the literal "color charge".
-- **Description**: A dense, chaotic web of intense RGB threads that constantly stretch and snap with blinding white flashes, weaving an ever-expanding, intricate quantum tapestry that illustrates the inescapable confinement of quarks.
-
-## chiral_turing_morphogenesis
+## ferroelastic_domain_drift
 
 - **Date**: 2026-05-10
-- **Theme**: Organic morphogenesis driven by chiral chemical reactions, creating twisting, breathing labyrinths of light.
-- **Technique**: Vectorized 2D Gray-Scott Reaction-Diffusion model with a chiral advection term (curl of the gradient) to create twisting, spiraling Turing patterns. Rendered with a high-contrast mapping and subtle displacement mapping for a "liquid metal" feel.
-- **Description**: A dark, viscous surface erupts with glowing, spiraling green and violet labyrinths that twist and consume each other like a living digital organism.
+- **Theme**: polarized ferroelastic domains slowly drifting, locking, and leaving luminous boundary memories
+- **Technique**: Continuous 2D phase-field relaxation with pinning noise, slow external bias, and domain-wall memory extracted from field gradients. A rotating analyzer term maps domain orientation into restrained teal and violet polarization colors, while moving boundaries accumulate amber highlights. Direct NumPy-to-py5 pixel rendering. 10s 4K/60fps MP4.
+- **Description**: Large teal and violet material domains slide under a dark polarizing field; their borders glow with thin amber light, creating a quiet microscopic view of crystal variants shifting and locking into place.
+
+## seismic_lithograph
+
+- **Date**: 2026-05-10
+- **Theme**: low seismic pulses traveling through an etched stone slab, revealing hidden layers and quiet fault heat
+- **Technique**: 2D finite-difference wave field on a layer-dependent stiffness map. Stratified shale bands are synthesized as a lithographic base texture; diagonal fault masks add nonlinear slip and localized heat memory. Signed wave height, accumulated strain, and fault heat are mapped to slate, ash, sulfur, and rust tones through direct py5 pixel-buffer rendering. 10s 4K/60fps MP4.
+- **Description**: A dark mineral surface where slow pressure waves cross layered stone, briefly exposing pale stress contours and rust-colored fault scars before the slab returns to a quiet, smoky lithographic texture.
+
+## archival_vein_memory
+
+- **Date**: 2026-05-10
+- **Theme**: archival paper remembering water damage, oxidized ink veins, quiet material decay
+- **Technique**: 2D anisotropic particle advection through a paper-fiber vector field. 65,000 particles deposit into low-resolution ink and oxide density buffers, which diffuse with restrained decay and are upscaled into the py5 pixel buffer. Fold-line crease masks bias the flow and tint oxidized regions with muted verdigris and copper edge highlights. 10s 4K/60fps MP4.
+- **Description**: A warm parchment field where green-black stains slowly crawl along invisible fibers and old fold lines, forming soft archival veins with faint copper-rimmed edges and a quiet sense of paper remembering moisture.
 
 ## monsoon_resonance
 

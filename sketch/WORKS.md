@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## wigner_crystal_melting
+
+- **Date**: 2026-05-13
+- **Theme**: Quantum phase transition, Wigner crystallization, melting, Coulomb repulsion, collective dynamics.
+- **Technique**: 2D particle simulation with $1/r$ repulsive forces and a harmonic trap. Brownian dynamics with time-varying temperature. Vectorized NumPy physics. 20s 4K/60fps MP4.
+- **Description**: A rigid, shimmering hexagonal lattice of blue-white stars that slowly vibrates, develops defects, and eventually melts into a chaotic, swirling sea of violet and cyan light as the quantum temperature rises.
+
 ## spinodal_decomposition_nebula
 
 - **Date**: 2026-05-13

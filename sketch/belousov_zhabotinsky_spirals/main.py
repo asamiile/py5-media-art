@@ -41,16 +41,18 @@ TOTAL_FRAMES  = DURATION_SEC * FPS
 PREVIEW_FRAME = TOTAL_FRAMES // 2          # grab mid-point frame as preview
 
 PREVIEW_SIZE, OUTPUT_SIZE, SIZE = get_sizes()
-GRID_W, GRID_H = 512, 512                  # simulation resolution
+GRID_W, GRID_H = 768, 432                  # simulation resolution
 PREVIEW_FILENAME = f"{WORK_NAME}_p1.png"
+STEPS_PER_FRAME = 6
+sim_tick = 0
 
 # ── Barkley parameters ────────────────────────────────────────────────────────
-A   = 0.75    # threshold parameter
-B   = 0.01    # excitability
-EPS = 0.02    # time-scale separation (fast u, slow v)
-DT  = 0.4     # integration timestep
-DU  = 1.0     # diffusion of activator
-DV  = 0.0     # inhibitor is local (non-diffusing)
+A   = 0.74    # threshold parameter
+B   = 0.035   # excitability
+EPS = 0.080   # time-scale separation (fast u, slow v)
+DT  = 0.030   # integration timestep
+DU  = 0.220   # diffusion of activator
+DV  = 0.015   # weak inhibitor diffusion softens refractory wakes
 
 # ── palette  ──────────────────────────────────────────────────────────────────
 # u in [0,1] → RGBA; map through 5-stop gradient
@@ -67,33 +69,51 @@ PALETTE_B = np.array([8,   16,  26,  20,   224], dtype=np.float32)
 # ── state ─────────────────────────────────────────────────────────────────────
 u = np.zeros((GRID_H, GRID_W), dtype=np.float32)
 v = np.zeros((GRID_H, GRID_W), dtype=np.float32)
+yy, xx = np.indices((GRID_H, GRID_W), dtype=np.float32)
+nx = xx / (GRID_W - 1)
+ny = yy / (GRID_H - 1)
+grain = np.zeros((GRID_H, GRID_W), dtype=np.float32)
+pacemakers = []
 
 def _seed_spirals():
-    """Plant a handful of broken-symmetry seeds that produce counter-rotating spirals."""
+    """Plant broken wavefronts that evolve into counter-rotating spirals."""
+    global grain, pacemakers
     rng = np.random.default_rng(seed=None)   # no fixed seed — different every run
-    centres = [
-        (GRID_H // 4,     GRID_W // 4),
-        (GRID_H // 4,     3 * GRID_W // 4),
-        (3 * GRID_H // 4, GRID_W // 4),
-        (3 * GRID_H // 4, 3 * GRID_W // 4),
-        (GRID_H // 2,     GRID_W // 2),
+    grain = rng.normal(0.0, 1.0, (GRID_H, GRID_W)).astype(np.float32)
+    for _ in range(5):
+        grain = (
+            grain
+            + np.roll(grain, 1, 0)
+            + np.roll(grain, -1, 0)
+            + np.roll(grain, 1, 1)
+            + np.roll(grain, -1, 1)
+        ) / 5.0
+    grain = (grain - grain.min()) / (grain.max() - grain.min() + 1e-6)
+
+    pacemakers = [
+        (0.20, 0.26, 1.0, 0.090),
+        (0.46, 0.64, -1.0, 0.105),
+        (0.72, 0.33, 1.0, 0.082),
+        (0.83, 0.78, -1.0, 0.095),
     ]
-    for cy, cx in centres:
-        r  = 22
-        y0, y1 = max(0, cy - r), min(GRID_H, cy + r)
-        x0, x1 = max(0, cx - r), min(GRID_W, cx + r)
-        # half-circle of u=1, other half v=0.5 (asymmetric seed → spiral)
-        ys = np.arange(y0, y1)[:, None]
-        xs = np.arange(x0, x1)[None, :]
-        in_circle = ((ys - cy) ** 2 + (xs - cx) ** 2) < r ** 2
-        left_half = (xs - cx) <= 0
-        u[y0:y1, x0:x1] = np.where(in_circle & left_half, 1.0, u[y0:y1, x0:x1])
-        v[y0:y1, x0:x1] = np.where(in_circle & ~left_half, 0.5, v[y0:y1, x0:x1])
-    # a few scattered random sparks
-    ry = rng.integers(10, GRID_H - 10, 8)
-    rx = rng.integers(10, GRID_W - 10, 8)
-    for cy, cx in zip(ry, rx):
-        u[cy - 3: cy + 3, cx - 3: cx + 3] = 1.0
+    for px, py, charge, spacing in pacemakers:
+        dx = nx - px
+        dy = (ny - py) * (GRID_H / GRID_W)
+        radius = np.sqrt(dx * dx + dy * dy)
+        angle = np.arctan2(dy, dx)
+        phase = charge * angle + radius / spacing
+        mask = radius < 0.34
+        front = np.exp(-((np.sin(phase) - 0.92) ** 2) / 0.018) * mask
+        refractory = np.exp(-((np.sin(phase + 0.85) - 0.80) ** 2) / 0.045) * mask
+        u[:] = np.maximum(u, front.astype(np.float32))
+        v[:] = np.maximum(v, (refractory * 0.55).astype(np.float32))
+
+    for _ in range(22):
+        cy = rng.integers(18, GRID_H - 18)
+        cx = rng.integers(18, GRID_W - 18)
+        r = rng.integers(5, 11)
+        patch = (yy - cy) ** 2 + (xx - cx) ** 2 < r ** 2
+        u[patch] = rng.uniform(0.65, 1.0)
 
 
 _seed_spirals()
@@ -109,25 +129,44 @@ def _laplacian(field):
 
 
 def _step():
-    global u, v
+    global u, v, sim_tick
+    sim_tick += 1
     lap_u = _laplacian(u)
+    lap_v = _laplacian(v)
     # Barkley activator/inhibitor update
-    f_u = u * (1 - u) * (u - (v + B) / A)
+    threshold = (v + B) / A
+    f_u = (u * (1 - u) * (u - threshold)) / EPS
     du  = DT * (f_u + DU * lap_u)
-    dv  = EPS * DT * (u - v)
+    dv  = DT * (u - v + DV * lap_v)
     u = np.clip(u + du, 0.0, 1.0)
     v = np.clip(v + dv, 0.0, 1.0)
 
+    drive = np.zeros_like(u)
+    for px, py, charge, spacing in pacemakers:
+        dx = nx - px
+        dy = (ny - py) * (GRID_H / GRID_W)
+        radius = np.sqrt(dx * dx + dy * dy)
+        angle = np.arctan2(dy, dx)
+        phase = charge * angle + radius / spacing - sim_tick * 0.018
+        source = np.exp(-((np.sin(phase) - 0.965) ** 2) / 0.006)
+        envelope = np.exp(-(radius ** 2) / 0.075)
+        drive = np.maximum(drive, source * envelope)
+    u = np.maximum(u, drive.astype(np.float32) * (0.82 - v * 0.40))
 
-def _u_to_rgba(u_field):
-    """Map activator field u ∈ [0,1] → RGBA uint8 array (H, W, 4)."""
+
+def _u_to_rgb(u_field):
+    """Map activator field into a warm BZ reaction palette."""
     u_flat = u_field.ravel()
     r = np.interp(u_flat, PALETTE_U, PALETTE_R).reshape(GRID_H, GRID_W)
     g = np.interp(u_flat, PALETTE_U, PALETTE_G).reshape(GRID_H, GRID_W)
     b = np.interp(u_flat, PALETTE_U, PALETTE_B).reshape(GRID_H, GRID_W)
-    a = np.full_like(r, 255)
-    rgba = np.stack([r, g, b, a], axis=-1).astype(np.uint8)
-    return rgba
+    edge = np.hypot(np.gradient(u_field, axis=0), np.gradient(u_field, axis=1))
+    edge = np.clip(edge * 5.5, 0.0, 1.0)
+    r += edge * 78.0 + grain * 5.0
+    g += edge * 48.0 + grain * 3.0
+    b += edge * 18.0 + grain * 2.0
+    rgb = np.stack([r, g, b], axis=-1)
+    return np.clip(rgb, 0.0, 255.0).astype(np.uint8)
 
 
 # pre-compute upscale grid for efficiency
@@ -136,14 +175,17 @@ from PIL import Image as _PILImage
 
 def _render_frame():
     """Render current u field into py5 using the actual pixel buffer size."""
-    rgba = _u_to_rgba(u)
+    rgb = _u_to_rgb(np.clip(u * 0.92 + v * 0.18, 0.0, 1.0))
     py5.load_np_pixels()
     actual_h, actual_w = py5.np_pixels.shape[:2]
-    pil  = _PILImage.fromarray(rgba, "RGBA")
+    pil  = _PILImage.fromarray(rgb, "RGB")
     pil  = pil.resize((actual_w, actual_h), _PILImage.LANCZOS)
-    arr  = np.asarray(pil)                     # shape (H, W, 4) uint8 RGBA
+    arr  = np.asarray(pil)                     # shape (H, W, 3) uint8 RGB
     # py5 np_pixels expects ARGB order
-    py5.np_pixels[:, :, :] = arr[:, :, [3, 0, 1, 2]]
+    py5.np_pixels[..., 0] = 255
+    py5.np_pixels[..., 1] = arr[..., 0]
+    py5.np_pixels[..., 2] = arr[..., 1]
+    py5.np_pixels[..., 3] = arr[..., 2]
     py5.update_np_pixels()
 
 
@@ -153,13 +195,13 @@ def setup():
     FRAMES_DIR.mkdir(exist_ok=True)
     py5.frame_rate(FPS)
     # warm up simulation so spirals are already forming on first frame
-    for _ in range(60):
+    for _ in range(260):
         _step()
 
 
 def draw():
     # advance simulation a few steps per rendered frame for richer motion
-    for _ in range(4):
+    for _ in range(STEPS_PER_FRAME):
         _step()
 
     _render_frame()

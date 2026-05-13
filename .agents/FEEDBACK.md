@@ -201,14 +201,14 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## monsoon_resonance
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 
 ## lsystem_tree_v2
 ## axion_string_conversion
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 
@@ -236,8 +236,8 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## glitch_strata_v2
 
-- **Rating**: 
-- **Comment**: 
+- **Rating**: OK.
+- **Comment**: I'd like to see more glitch effects and more color.
 
 
 ## rayleigh_taylor_plumes
@@ -720,7 +720,7 @@ Add any notes on color, density, theme, or mood in the Comment field.
 
 ## magnetic_reconnection
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## algorithmic_crystals

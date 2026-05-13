@@ -4,6 +4,71 @@
 Agents MUST NOT write anything in the `Comment` field. When registering a new work, Agents must leave the `Rating` and `Comment` fields empty or with their default labels as placeholders for the user.
 The Artist reads this file before starting a new sketch to understand preferences.
 
+## spinodal_decomposition_nebula
+
+- **Rating**: 
+- **Comment**: 
+
+## quantum_chaos_billiard
+
+- **Rating**: 
+- **Comment**: 
+
+## topological_spin_ice
+
+- **Rating**: 
+- **Comment**: 
+
+## topological_defect_string
+
+- **Rating**: 
+- **Comment**: 
+
+## dark_matter_halo_cusp
+
+- **Rating**: 
+- **Comment**: 
+
+## gravitational_wave_chirp
+
+- **Rating**: 
+- **Comment**: 
+
+## neutrino_flavor_oscillation
+
+- **Rating**: 
+- **Comment**: 
+
+## rydberg_blockade_array
+
+- **Rating**: 
+- **Comment**: 
+
+## supersolid_lattice_vibration
+
+- **Rating**: 
+- **Comment**: 
+
+## dirac_fluid_turbulence
+
+- **Rating**: 
+- **Comment**: 
+
+## anderson_localization_mesh
+
+- **Rating**: 
+- **Comment**: 
+
+## weyl_semimetal_fermi_arcs
+
+- **Rating**: 
+- **Comment**: 
+
+## benard_marangoni_convection
+
+- **Rating**: 
+- **Comment**: 
+
 ## kerr_effect_filamentation
 
 - **Rating**: 

@@ -3,6 +3,97 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## spinodal_decomposition_nebula
+
+- **Date**: 2026-05-13
+- **Theme**: The spontaneous separation of two primordial fluids as the universe cools, creating a vast, intricate web of matter and void.
+- **Technique**: Cahn-Hilliard equation simulation on a 256x256 grid, scaled to 4K using LANCZOS. Visualizes phase separation (spinodal decomposition) with a spectral mapping from obsidian to solar white. 15s 4K/60fps MP4.
+- **Description**: A shimmering, uniform mist of purple and cyan slowly curdles and separates into a majestic, glowing sponge-like network of light threads, leaving vast dark voids in between.
+
+## quantum_chaos_billiard
+
+- **Date**: 2026-05-12
+- **Theme**: Quantum mechanics, chaos theory, stadium billiard, wavefunctions, quantum scarring, wave-particle duality.
+- **Technique**: 2D wave equation simulation in a stadium geometry. High-density volumetric point rendering to visualize probability density. 15s 4K/60fps MP4 (1080p source).
+- **Description**: Visualizes the emergence of quantum scars in a chaotic stadium billiard, where the wavefunction concentrates along classical periodic orbits.
+
+## topological_spin_ice
+
+- **Date**: 2026-05-12
+- **Theme**: Condensed matter, spin ice, magnetic monopoles, frustrated magnets, emergent phenomena.
+- **Technique**: Discrete lattice simulation with stochastic monopole dynamics. Vectorized coordinate mapping for high-performance lattice rendering. 15s 4K/60fps MP4 (1080p source).
+- **Description**: Visualizes the emergence and motion of magnetic monopoles in a frustrated spin ice lattice.
+
+## topological_defect_string
+
+- **Date**: 2026-05-12
+- **Theme**: Cosmology, early universe, symmetry breaking, cosmic strings, topological defects, phase transition.
+- **Technique**: 2D complex scalar field simulation (Ginzburg-Landau type) with Mexican hat symmetry breaking. High-density point rendering of defect cores. 10s 4K/60fps MP4 (1080p source).
+- **Description**: Visualizes the emergence of cosmic strings from a primordial gold field as the universe undergoes a symmetry-breaking phase transition.
+
+## dark_matter_halo_cusp
+
+- **Date**: 2026-05-12
+- **Theme**: Astrophysics, dark matter, N-body simulation, NFW profile, gravitational collapse.
+- **Technique**: 3D N-body simulation (140,000 particles) with NFW potential modeling. Multi-pass additive rendering. 20s 4K/60fps MP4 (1080p source).
+- **Description**: A diffuse cloud of Spectral Indigo particles collapses into a dense, bright central cusp, visualizing the formation of a dark matter halo.
+
+## gravitational_wave_chirp
+
+- **Date**: 2026-05-12
+- **Theme**: General relativity, binary black hole merger, gravitational waves, space-time ripples.
+- **Technique**: 3D particle simulation (80,000 particles) distorted by a metric perturbation field. Chirp frequency/amplitude scaling and ringdown logic. Multi-pass additive rendering. 15s 4K/60fps MP4 (1080p source).
+- **Description**: Two binary black holes spiral and merge, triggering a titanic chirp of space-time ripples that radiate as concentric waves of Deep Violet and Electric Gold.
+
+## neutrino_flavor_oscillation
+
+- **Date**: 2026-05-12
+- **Theme**: Particle physics, neutrinos, flavor oscillation, PMNS matrix, quantum interference.
+- **Technique**: 3D particle advection (120,000 particles) along a helical beam. Color oscillations between three HSB bands. Multi-pass additive rendering. 15s 4K/60fps MP4 (1080p source).
+- **Description**: A beam of ghostly light oscillates between three distinct flavors—Cyan, Magenta, and Gold—representing the Electron, Muon, and Tau neutrino states in transit.
+
+## rydberg_blockade_array
+
+- **Date**: 2026-05-12
+- **Theme**: Quantum computing, Rydberg atoms, dipole blockade, collective excitations.
+- **Technique**: 3D grid simulation. Greedy blockade logic based on a wave potential. Multi-pass additive rendering with glowing shells (sphere geometry). 12s 4K/60fps MP4 (1080p source).
+- **Description**: A precise 3D grid of neutral atoms, where laser excitations trigger blinding Neon Orange glows and translucent blockade shells that prevent neighboring atoms from being excited.
+
+## supersolid_lattice_vibration
+
+- **Date**: 2026-05-12
+- **Theme**: Quantum matter, supersolids, spontaneous translational symmetry breaking, phonon-roton modes.
+- **Technique**: 3D lattice simulation (100,000 particles). Lattice vibrations modeled as coupled oscillators or wave propagation. Multi-pass additive rendering with HSB spectral shifts. 15s 4K/60fps MP4 (1080p source).
+- **Description**: A crystal-like 3D lattice of crystalline droplets shimmers in a cold vacuum, pulsing and vibrating with roton-like excitations in a coordinated wave-like dance.
+
+## dirac_fluid_turbulence
+
+- **Date**: 2026-05-12
+- **Theme**: Dirac fluids, electron hydrodynamics, graphene physics, relativistic turbulence.
+- **Technique**: 2D particle advection on a velocity field (80,000 particles). Velocity field generated by a von Kármán vortex street model. Multi-pass additive rendering. 14s 4K/60fps MP4 (1080p source).
+- **Description**: A shimmering flow of plasma-like light surges through a channel, breaking into a majestic von Kármán vortex street of glowing eddies as it encounters a circular obstacle.
+
+## anderson_localization_mesh
+
+- **Date**: 2026-05-12
+- **Theme**: Quantum physics, Anderson localization, disordered systems, metal-insulator transition.
+- **Technique**: 3D grid simulation (150,000 particles). Grid nodes are randomly perturbed. A "localization" function (exponential falloff) determines particle density. Manual 3D-to-2D projection. 15s 4K/60fps MP4 (1080p source).
+- **Description**: A vast, distorted 3D grid of silver threads floats in the dark, housing a blindingly bright, spherical concentration of electric blue and amethyst particles that represent a localized quantum wavefunction.
+
+## weyl_semimetal_fermi_arcs
+
+- **Date**: 2026-05-12
+- **Theme**: Topological matter, Weyl semimetals, Fermi arcs, chiral Weyl nodes, momentum-space topology.
+- **Technique**: 3D particle simulation (120,000 tracers). Two centers of attraction/repulsion representing Weyl nodes. Particles follow "Fermi arc" trajectories—semicircular or elliptic paths on a surface in momentum space. Multi-pass additive rendering with P3D projection. 20s 4K/60fps MP4 (1080p source).
+- **Description**: Two blindingly bright Weyl nodes float in an obsidian momentum-space void, connected by a shimmering, pulsing shell of iridescent Fermi arcs in cyan and magenta.
+
+## benard_marangoni_convection
+
+- **Date**: 2026-05-11
+- **Theme**: Fluid dynamics, surface tension, Bénard-Marangoni convection, self-organization.
+- **Technique**: 2D particle simulation of surface-driven flow. Tracers follow a velocity field derived from surface tension gradients. Features multi-pass additive rendering with a "Deep Violet / Indigo / Silver" palette. 20s 4K/60fps MP4.
+- **Description**: A shimmering surface organizes into silver-rimmed hexagonal cells, visualizing the spontaneous order of surface-tension driven convection.
+
 ## kerr_effect_filamentation
 
 - **Date**: 2026-05-11
@@ -121,6 +212,27 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Theme**: archival paper remembering water damage, oxidized ink veins, quiet material decay
 - **Technique**: 2D anisotropic particle advection through a paper-fiber vector field. 65,000 particles deposit into low-resolution ink and oxide density buffers, which diffuse with restrained decay and are upscaled into the py5 pixel buffer. Fold-line crease masks bias the flow and tint oxidized regions with muted verdigris and copper edge highlights. 10s 4K/60fps MP4.
 - **Description**: A warm parchment field where green-black stains slowly crawl along invisible fibers and old fold lines, forming soft archival veins with faint copper-rimmed edges and a quiet sense of paper remembering moisture.
+
+## prismatic_recursive_glass
+
+- **Date**: 2026-05-10
+- **Theme**: Optical physics, high-tech urbanism, chromatic dispersion on a massive recursive glass structure.
+- **Technique**: 3D recursive structure (fractal depth 4) rendered with a translucent shader-like effect in Py5. Using P3D, massive transparent monolithic slabs rotate and unfold dynamically. Chromatic aberration is faked by drawing the structure three times (R, G, B) with slight rotational offsets and additive blending.
+- **Description**: A towering, intricate fractal crystal floats in the void. As it unfolds, its edges split the light into brilliant holographic rainbows, creating an awe-inspiring sense of scale and digital purity against a star-dusted night.
+
+## color_flux_string_breaking
+
+- **Date**: 2026-05-10
+- **Theme**: Quantum Chromodynamics (QCD), string breaking, quark confinement, beautiful night sky.
+- **Technique**: 3D particle simulation of strong force confinement. 30,000 quarks (particles) connected by "color flux tubes". As they drift apart due to high-energy scattering, the tension increases until it "snaps", spawning new quark-antiquark pairs. Rendered with additive blending, using RGB (Red, Green, Blue) and their anti-colors as the literal "color charge".
+- **Description**: A dense, chaotic web of intense RGB threads that constantly stretch and snap with blinding white flashes, weaving an ever-expanding, intricate quantum tapestry that illustrates the inescapable confinement of quarks.
+
+## chiral_turing_morphogenesis
+
+- **Date**: 2026-05-13
+- **Theme**: Organic morphogenesis driven by chiral chemical reactions, creating twisting, breathing labyrinths of light.
+- **Technique**: Vectorized 2D Gray-Scott Reaction-Diffusion model on a 512x512 grid with a chiral advection term (asymmetric laplacian) and LANCZOS scaling to 4K. Rendered with a Midnight Indigo / Emerald / Amethyst palette. 15s 4K/60fps MP4.
+- **Description**: A dark, viscous surface erupts with glowing, spiraling green and violet labyrinths that twist and consume each other like a living digital organism.
 
 ## monsoon_resonance
 

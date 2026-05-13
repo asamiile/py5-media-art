@@ -12,10 +12,10 @@ wheels/
 # Virtual environments
 .venv
 
-# Animation frame sequences (not committed per CLAUDE.md)
+# Animation frame sequences
 sketch/*/frames/
 
-# Media outputs (committed for portfolio per CLAUDE.md)
+# Media outputs
 *.mp4
 *.mov
 *.webm

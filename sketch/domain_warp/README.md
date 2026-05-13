@@ -1,16 +1,18 @@
 # domain_warp
 
-![Preview](preview_p1.png)
+![Preview](preview.png)
 
 ## Metadata
 - **Date**: 2026-04-25
-- **Theme**: pure abstraction, mathematics, generative color
-- **Technique**: iterative domain warping, multi-chain coordinate distortion, harmonic sampling, numpy vectorization
+- **Theme**: pure abstraction, mathematics, generative color.
+- **Technique**: iterative domain warping, multi-chain coordinate distortion, harmonic sampling, numpy vectorization.
+- **Logic Lab Reference**: None
 
 ## Concept
-Three independent warp chains distort a 2D field through layered sine/cosine transformations; randomized parameters produce a unique abstract color swirl on every run
+Three independent warp chains distort a 2D field through layered sine/cosine transformations; randomized parameters produce a unique abstract color swirl on every run.
 
 ## Technical Details
 - **Renderer**: P2D
-- **Simulation**: iterative domain warping
-- **Visuals**: multi-chain coordinate distortion, harmonic sampling, numpy vectorization
+- **Simulation**: NumPy.
+- **Visuals**: bloom-like highlights, dark-field contrast.
+- **Animation**: Still image

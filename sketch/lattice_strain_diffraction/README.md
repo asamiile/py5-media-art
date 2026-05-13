@@ -1,17 +1,18 @@
 # lattice_strain_diffraction
 
-A 3D generative media art piece exploring the visual representation of mechanical strain in a crystal lattice.
+![Preview](preview_p1.png)
+
+## Metadata
+- **Date**: 2026-05-07
+- **Theme**: Crystal lattices, mechanical strain, diffraction patterns, beautiful night sky.
+- **Technique**: 3D grid of 8,000 nodes (20x20x20) deformed by dynamic Gaussian strain centers and harmonic vibration. Features strain-weighted spectral rendering using HSB color mapping (Cyan/Magenta/Gold) and additive blending. 60fps high-bitrate MP4.
+- **Logic Lab Reference**: None
 
 ## Concept
-The work visualizes a 3D grid of atomic points subjected to a dynamic, volumetric strain field. As the lattice warps and breathes, the nodes respond to local compression and tension by emitting spectral light. This simulates a diffraction-like phenomenon where structural "stress" reveals the underlying energy of the crystal.
+A majestic vision of a pulsing crystal lattice; a vast geometric grid of light warps and breaths in the void, erupting into shimmering rainbows of spectral energy wherever the structure is strained against the deep, star-dusted night.
 
 ## Technical Details
+- **Renderer**: P3D
 - **Simulation**: 3D grid of 8,000 nodes (20x20x20) deformed by dynamic Gaussian strain centers and harmonic vibration.
-- **Rendering**: Strain-weighted spectral rendering using HSB color mapping (Cyan -> Magenta -> Gold) and additive blending.
-- **Starfield**: High-density background of 10,000 stars.
-- **Resolution**: 3840x2160 (4K) @ 60fps.
-- **Duration**: 10 seconds.
-
-## Aesthetic
-- **Theme**: Crystal lattices, topological strain, diffraction, beautiful night sky.
-- **Visuals**: Geometric grid, shimmering spectral pulses, high-tech mathematical precision against a deep obsidian void.
+- **Visuals**: additive blending, HSB spectral mapping, prismatic color, dark-field contrast.
+- **Animation**: 10 seconds at 60fps

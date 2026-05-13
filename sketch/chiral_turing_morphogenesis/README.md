@@ -1,11 +1,18 @@
 # chiral_turing_morphogenesis
 
-- **Date**: 2026-05-10
+![Preview](chiral_turing_morphogenesis_p1.png)
+
+## Metadata
+- **Date**: 2026-05-13
 - **Theme**: Organic morphogenesis driven by chiral chemical reactions, creating twisting, breathing labyrinths of light.
-- **Technique**: Vectorized 2D Gray-Scott Reaction-Diffusion model with a chiral advection term (curl of the gradient) to create twisting, spiraling Turing patterns. Rendered with a high-contrast mapping and subtle displacement mapping for a "liquid metal" feel.
-- **Palette**: Liquid Obsidian / Bioluminescent Lime / Deep Violet / Silver
-- **Format**: Animation (15s @ 60fps)
+- **Technique**: Vectorized 2D Gray-Scott Reaction-Diffusion model on a 512x512 grid with a chiral advection term (asymmetric laplacian) and LANCZOS scaling to 4K. Rendered with a Midnight Indigo / Emerald / Amethyst palette. 15s 4K/60fps MP4.
+- **Logic Lab Reference**: None
 
-## Description
-
+## Concept
 A dark, viscous surface erupts with glowing, spiraling green and violet labyrinths that twist and consume each other like a living digital organism.
+
+## Technical Details
+- **Renderer**: P2D
+- **Simulation**: reaction-diffusion.
+- **Visuals**: dark-field contrast.
+- **Animation**: 15 seconds at 60fps

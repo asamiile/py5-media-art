@@ -1,12 +1,18 @@
 # kerr_effect_filamentation
 
-A high-energy, crystalline visualization of light's self-focusing in a non-linear medium.
+![Preview](kerr_effect_filamentation_p1.png)
 
-## Theme
-Non-linear optics, Kerr effect, self-focusing, laser filamentation, spatial solitons.
+## Metadata
+- **Date**: 2026-05-11
+- **Theme**: Non-linear optics, Kerr effect, self-focusing, laser filamentation, spatial solitons.
+- **Technique**: 2D particle simulation of laser filamentation. Tracers are advected by the gradient of an intensity field governed by non-linear self-focusing dynamics. Features multi-pass additive rendering with a "Deep Emerald / Neon Lime / Prism White" palette. 20s 4K/60fps MP4.
+- **Logic Lab Reference**: None
 
-## Technique
-2D particle simulation of laser filamentation. Tracers are advected by the gradient of an intensity field governed by non-linear self-focusing dynamics (NLSE-inspired). Employs multi-pass additive rendering with a "Deep Emerald / Neon Lime / Prism White" palette. Features dynamic soliton centers and peripheral chromatic vignetting.
+## Concept
+A central beam of emerald light breaks into brilliant filaments, creating a high-energy crystalline structure through non-linear self-focusing.
 
-## Description
-A central beam of intense emerald light spontaneously breaks into multiple brilliant filaments, as the medium itself bends the light into tight, crystalline threads. Wisps of neon lime energy spiral around intense white cores, illustrating the extreme energy and spatial organization of non-linear optical phenomena.
+## Technical Details
+- **Renderer**: P2D
+- **Simulation**: particle.
+- **Visuals**: additive blending, HSB spectral mapping, prismatic color, dark-field contrast.
+- **Animation**: 20 seconds at 60fps

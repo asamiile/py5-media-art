@@ -1,7 +1,18 @@
 # brine_frost_channel_memory
 
-Sea ice grows inward from the frame edges while dark brine channels open through the frozen surface and leave amber salt memory along old fracture paths.
+![Preview](brine_frost_channel_memory_p1.png)
 
-- **Format**: Animation, 10 seconds at 60fps
-- **Technique**: Vectorized phase-field frost growth with animated anisotropic channel fields, edge/freezing nuclei, brine vein darkening, and persistent salt-memory highlights rendered through the py5 pixel buffer.
-- **Palette**: Deep brine black, cold blue ice, porcelain frost, and restrained amber salt.
+## Metadata
+- **Date**: 2026-05-13
+- **Theme**: Sea ice forming under quiet pressure, with trapped brine veins opening and remembering old fracture paths.
+- **Technique**: Vectorized 2D phase-field frost growth with animated anisotropic channel fields, edge/freezing nuclei, dendritic crystal texture, brine darkening, and persistent salt-memory highlights rendered directly through the py5 pixel buffer. 10s 4K/60fps MP4.
+- **Logic Lab Reference**: None
+
+## Concept
+A cold mineral surface freezes inward in porcelain-blue sheets while dark brine veins creep through it; amber salt traces flicker along old cracks, giving the ice a memory of pressure and retreat.
+
+## Technical Details
+- **Renderer**: P2D
+- **Simulation**: Vectorized 2D phase-field frost growth with animated anisotropic channel fields, edge/freezing nuclei, dendritic crystal texture, brine dark.
+- **Visuals**: pixel-buffer rendering, persistent trails, dark-field contrast.
+- **Animation**: 10 seconds at 60fps

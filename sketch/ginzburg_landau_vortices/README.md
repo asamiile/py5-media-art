@@ -1,18 +1,18 @@
 # ginzburg_landau_vortices
 
-A generative visualization of topological defects in a complex scalar field, governed by the Time-Dependent Ginzburg-Landau (TDGL) equation.
+![Preview](ginzburg_landau_vortices_p1.png)
 
-## Theme
-- Superconductivity, superfluidity, and phase transitions.
-- "Celestial Teal / Nebula Violet / Starfire Gold" palette.
-- Emergent vortex dynamics and turbulent flow.
+## Metadata
+- **Date**: 2026-05-09
+- **Theme**: Ginzburg-Landau theory, topological defects, vortex-antivortex turbulence, superconductivity.
+- **Technique**: Time-Dependent Ginzburg-Landau (TDGL) simulation on a 128x128 complex scalar field. Visualizes the phase transition and topological defect dynamics using 40,000 advected particles. Features multi-pass additive rendering with a "Superconducting Gold / Electric Blue" palette. 60fps high-bitrate MP4.
+- **Logic Lab Reference**: None
 
-## Technique
-- **Field Simulation**: Solves the TDGL equation on a 128x128 grid, capturing the formation and interaction of quantum vortices (phase singularities).
-- **Particle Advection**: 40,000 particle tracers driven by the supercurrent (imaginary part of the conjugate field gradient).
-- **3D Projection**: Manual perspective projection of particles across a volumetric space (z-depth 0-800).
-- **Batch Rendering**: Particles are batched by phase angle to optimize rendering calls with additive blending and HSB spectral mapping.
+## Concept
+A stunning visualization of a superconducting phase transition; complex filaments of molten gold and electric blue energy swirl and dance as topological vortices collide and annihilate in a shimmering obsidian void.
 
-## Controls
-- Run the script to generate a 10-second 4K animation at 60fps.
-- Previews are saved as `ginzburg_landau_vortices_p1.png`.
+## Technical Details
+- **Renderer**: P2D
+- **Simulation**: particle.
+- **Visuals**: additive blending, dark-field contrast.
+- **Animation**: 10 seconds at 60fps

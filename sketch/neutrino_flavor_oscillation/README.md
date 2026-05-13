@@ -1,6 +1,18 @@
 # neutrino_flavor_oscillation
 
-- **Date**: 2026-05-12
-- **Theme**: Particle physics, neutrinos, flavor oscillation, PMNS matrix, quantum interference.
-- **Visual Impression**: A beam of ghostly light travels through the cosmic void. As it moves, it doesn't stay a single color; it oscillates between three distinct "flavors"—a "Ghostly Cyan", "Plasma Magenta", and "Spectral Gold". These colors represent the Electron, Muon, and Tau neutrino states. The beam itself is composed of thousands of fine threads that braid and weave around each other, illustrating the underlying quantum mechanical interference that drives the oscillation.
-- **Technique**: 3D particle advection along a central axis. Particle color and density are modulated by the flavor oscillation probabilities. Multi-pass additive rendering with HSB spectral shifts. Palette: "Ghostly Cyan / Plasma Magenta / Spectral Gold". 15s 4K/60fps MP4 (1080p source).
+![Preview](neutrino_flavor_oscillation_p1.png)
+
+## Metadata
+- **Date**: 2026-05-07
+- **Theme**: Neutrinos, flavor oscillation, weak interaction, ghostly flux, beautiful night sky.
+- **Technique**: 3D high-velocity particle simulation (220,000 particles) using vectorized NumPy. Particles follow needle-sharp trajectories representing ultra-high energy fluxes. Each particle's "flavor state" is modeled as a harmonic oscillator that modulates its HSB color (Cyan/Amethyst/Gold) and opacity to create a "ghostly" shifting effect. Features multi-pass additive rendering and a high-density starfield (12,000 stars). 60fps high-bitrate MP4.
+- **Logic Lab Reference**: None
+
+## Concept
+A majestic vision of subatomic ghosts; a dense, shimmering stream of spectral light erupts from a stellar core, its particles flickering and shifting between electric cyan, royal amethyst, and gold as they surge through the star-dusted obsidian void.
+
+## Technical Details
+- **Renderer**: P3D
+- **Simulation**: Vectorized NumPy, NumPy, particle.
+- **Visuals**: additive blending, HSB spectral mapping, bloom-like highlights, prismatic color, dark-field contrast.
+- **Animation**: 15 seconds at 60fps

@@ -1,12 +1,18 @@
 # benard_marangoni_convection
 
-A shimmering, self-organizing visualization of fluid surface tension and thermal instability.
+![Preview](benard_marangoni_convection_p1.png)
 
-## Theme
-Fluid dynamics, surface tension, Bénard-Marangoni convection, self-organization.
+## Metadata
+- **Date**: 2026-05-11
+- **Theme**: Fluid dynamics, surface tension, Bénard-Marangoni convection, self-organization.
+- **Technique**: 2D particle simulation of surface-driven flow. Tracers follow a velocity field derived from surface tension gradients. Features multi-pass additive rendering with a "Deep Violet / Indigo / Silver" palette. 20s 4K/60fps MP4.
+- **Logic Lab Reference**: None
 
-## Technique
-2D particle simulation of surface-driven flow. Tracers follow a velocity field derived from surface tension gradients (Marangoni effect). Features characteristic hexagonal cell structures with rising centers and sinking boundaries. Employs multi-pass additive rendering with a "Deep Violet / Indigo / Silver" palette.
+## Concept
+A shimmering surface organizes into silver-rimmed hexagonal cells, visualizing the spontaneous order of surface-tension driven convection.
 
-## Description
-A shimmering surface of violet and indigo spontaneously organizes into a silver-rimmed hexagonal lattice. The fluid seems to breathe, as warm material rises in the deep violet centers and cool material sinks at the silvery edges. This elegant pattern illustrates the spontaneous order that emerges when heat meets the delicate skin of a fluid.
+## Technical Details
+- **Renderer**: P2D
+- **Simulation**: particle.
+- **Visuals**: additive blending, dark-field contrast.
+- **Animation**: 15 seconds at 60fps

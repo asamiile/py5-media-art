@@ -1,28 +1,18 @@
 # ferrofluid_spikes
 
-A dark, viscous liquid surface that erupts into magnetic spikes.
+![Preview](preview_p1.png)
 
-## Description
-
-This work simulates the behavior of a magnetic fluid (ferrofluid) in 3D space. A dark, viscous liquid surface is deformed by multiple moving magnetic poles, creating sharp, rhythmic spikes where the magnetic field is strongest. The obsidian-like material features cobalt highlights and bright specular glints, creating an alien architectural landscape under a star-dusted night sky.
-
-## Details
-
+## Metadata
 - **Date**: 2026-05-05
-- **Theme**: Magnetic fluids, physical tension, alien architecture, beautiful night sky
-- **Technique**: 
-  - 3D mesh deformation (P3D, 64x64 grid)
-  - Magnetic field intensity simulation (Inverse-square falloff)
-  - Lissajous pole paths for complex motion
-  - Multi-source specular lighting
-  - Bioluminescent cobalt highlights
-  - Dense twinkling starfield
-- **Output**: 10s animation @ 60fps (3840x2160)
+- **Theme**: Magnetic fluids, physical tension, alien architecture, beautiful night sky.
+- **Technique**: 3D mesh deformation (P3D, 64x64 grid), magnetic field intensity simulation, Lissajous pole paths, multi-source specular lighting, bioluminescent cobalt highlights, 60fps high-quality MP4 encoding.
+- **Logic Lab Reference**: None
 
-## Preview
+## Concept
+A dark, viscous liquid surface erupts into sharp, rhythmic spikes in response to moving magnetic poles, creating an alien architectural landscape of obsidian and electric cobalt under a star-dusted night sky.
 
-![preview_p1.png](preview_p1.png)
-
-## Animation
-
-[output.mp4](output.mp4)
+## Technical Details
+- **Renderer**: P3D
+- **Simulation**: 3D mesh deformation (P3D, 64x64 grid), magnetic field intensity simulation, Lissajous pole paths, multi-source specular lighting, biolumines.
+- **Visuals**: dark-field contrast.
+- **Animation**: 10 seconds at 60fps

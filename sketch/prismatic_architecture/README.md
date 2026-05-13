@@ -1,10 +1,18 @@
 # prismatic_architecture
 
-- **Date**: 2026-05-05
-- **Theme**: Digital brutalism, spectral refraction, modern urbanism, beautiful night sky
-- **Technique**: 3D recursive quadtree subdivision, isometric camera projection, spectral "refraction" fringe rendering, transparent "glass" box geometry
-- **Description**: A vast, shimmering digital metropolis of glass-like buildings that appears to pulse with light; the architectural slabs of the 5-level recursive city feature spectral cyan and magenta fringes that simulate optical refraction against a deep star-dusted midnight void.
+![Preview](preview_p1.png)
 
-## Preview
+## Metadata
+- **Date**: 2026-05-03
+- **Theme**: architecture, crystals, iridescence, geometry, modularity.
+- **Technique**: recursive isometric cube subdivision, thin-film interference color mapping, additive SCREEN blending, stochastic growth.
+- **Logic Lab Reference**: None
 
-![preview_p1.png](preview_p1.png)
+## Concept
+A futuristic metropolis of shimmering crystalline structures; iridescent teal, rose, and gold faces refract light across a recursive geometric landscape, creating intense luminosity where structures converge against an obsidian sky.
+
+## Technical Details
+- **Renderer**: P3D
+- **Simulation**: recursive.
+- **Visuals**: additive blending, HSB spectral mapping, prismatic color, dark-field contrast.
+- **Animation**: Still image

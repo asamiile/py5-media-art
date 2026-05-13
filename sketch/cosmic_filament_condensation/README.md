@@ -1,18 +1,18 @@
 # cosmic_filament_condensation
 
-A majestic 3D visualization of the formation of the Cosmic Web, where baryonic matter condenses into intricate filaments and dense clusters under the influence of dark matter and primordial sound waves.
+![Preview](cosmic_filament_condensation_p1.png)
+
+## Metadata
+- **Date**: 2026-05-09
+- **Theme**: Large-scale structure, baryon acoustic oscillations, cosmic web, dark matter halos, beautiful night sky.
+- **Technique**: 3D simulation of 150,000 particles representing baryonic matter and dark matter tracers. Implements a multi-scale gravitational clustering algorithm towards 12 dynamic "dark matter hubs" using a modified $1/r^{1.2}$ potential. Features global harmonic oscillations (BAO) and multi-pass additive rendering with a "Crystalline White / Deep Cobalt / Ionized Magenta" palette. 60fps high-bitrate MP4.
+- **Logic Lab Reference**: None
 
 ## Concept
-The universe on its largest scales is not uniform, but a vast network of filaments and voids. This piece simulates the gravitational collapse of matter in the early universe, driven by primordial density perturbations and modulated by baryon acoustic oscillations (BAO).
+A majestic visualization of the formation of the Cosmic Web; silken filaments of ionized magenta and deep cobalt light stretch across the void, condensing into brilliant crystalline white clusters driven by the rhythmic pulse of primordial sound waves against the star-dusted night.
 
-## Technique
-- **Simulation**: 200,000 particles in 3D space using vectorized NumPy for physical integration.
-- **Clustering**: Particles are attracted to 12 dynamic "dark matter hubs" using a modified $1/r^{1.5}$ gravitational potential to encourage silken filament formation.
-- **BAO Oscillation**: A global harmonic oscillation modulates the particle velocities, simulating the sound waves that rippled through the primordial plasma.
-- **Rendering**: Multi-pass additive point rendering with density-based color mapping.
-- **Palette**: Crystalline White (high density cores), Ionized Magenta (heated filaments), and Deep Cobalt (dark matter halos).
-
-## Format
-- **Animation**: 20 seconds @ 60fps
-- **Resolution**: 3840x2160 (4K)
-- **Engine**: py5 (Python implementation of Processing)
+## Technical Details
+- **Renderer**: P3D
+- **Simulation**: particle.
+- **Visuals**: additive blending, dark-field contrast.
+- **Animation**: 10 seconds at 60fps

@@ -1,17 +1,18 @@
 # chromatic_planck_fluctuations
 
-A mesmerizing visualization of the quantum vacuum at the Planck scale, where space-time is not a smooth manifold but a boiling, iridescent foam of virtual particles and fluctuating energy fields.
+![Preview](chromatic_planck_fluctuations_p1.png)
+
+## Metadata
+- **Date**: 2026-05-09
+- **Theme**: Quantum foam, Planck length, virtual particles, vacuum energy, beautiful night sky.
+- **Technique**: 3D simulation of 160,000 "virtual particles" with finite lifetimes (birth/annihilation loop). Particles follow a dynamic 3D noise-based field (interpolated 32^3 volume) representing space-time jitter. Multi-pass additive rendering with lifetime-based alpha modulation and an "Ultraviolet / Electric Cyan / Solar Gold" palette. 60fps high-bitrate MP4.
+- **Logic Lab Reference**: None
 
 ## Concept
-At the smallest scales of reality, the vacuum is not empty. This piece explores the concept of "Quantum Foam" and virtual particles that are constantly born and annihilated, driven by the jittering energy of the Planck scale.
+A mesmerizing visualization of the quantum vacuum at the Planck scale; a boiling, iridescent sea of light where spectral sparks of ultraviolet and electric cyan flicker into existence and vanish, revealing the hidden, jittering geometry of space-time against the star-dusted obsidian void.
 
-## Technique
-- **Simulation**: 160,000 "virtual particles" are simulated in 3D. Each particle has a finite lifetime, after which it is "annihilated" and a new one is "born" at a stochastic location.
-- **Foam Dynamics**: Particle movement is driven by a 3D noise-based field (using a precomputed 32x32x32 volume with high-order interpolation) representing the energy fluctuations of the vacuum.
-- **Chromatics**: Particle colors and sizes are mapped to the local "energy density" (noise intensity), shifting from ultraviolet/deep indigo in low-energy regions to brilliant solar gold in high-fluctuation nodes.
-- **Rendering**: Multi-pass additive point rendering with lifetime-based alpha modulation to create a ghostly, ephemeral aesthetic.
-
-## Format
-- **Animation**: 10 seconds @ 60fps
-- **Resolution**: 3840x2160 (4K)
-- **Engine**: py5 (Python implementation of Processing)
+## Technical Details
+- **Renderer**: P3D
+- **Simulation**: particle.
+- **Visuals**: additive blending, HSB spectral mapping, bloom-like highlights, prismatic color, dark-field contrast.
+- **Animation**: 10 seconds at 60fps

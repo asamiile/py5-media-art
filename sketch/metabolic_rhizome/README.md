@@ -1,19 +1,18 @@
-# Metabolic Rhizome
-
-An organic growth simulation exploring the colonization of the cosmic void.
+# metabolic_rhizome
 
 ![Preview](preview_p1.png)
 
+## Metadata
+- **Date**: 2026-05-05
+- **Theme**: Organic growth, cosmic connectivity, rhizomatic systems, beautiful night sky.
+- **Technique**: Space-colonization algorithm (nutrient-driven growth), multi-root initialization, adaptive path thickness (flow-based scaling), bioluminescent teal/violet shading, additive junction highlights.
+- **Logic Lab Reference**: None
+
 ## Concept
-The rhizome is a botanical structure that grows horizontally and branches indefinitely. In this work, we apply the space-colonization algorithm to simulate an organic energy network that colonizes a nutrient-rich dark matter field. It represents the persistent, non-hierarchical connectivity of life and energy on a galactic scale.
+A delicate, glowing web of energy that branches and weaves through a deep star-dusted void; using a space-colonization algorithm, the network self-organizes into an optimized transport system that pulses with bio-phosphor teal and neural violet, revealing the organic, interconnected nature of the cosmic vacuum.
 
 ## Technical Details
-- **Space Colonization Algorithm**: A branching network grows by detecting and moving toward distributed "nutrient" points. This creates optimized transport paths similar to tree roots or fungal mycelium.
-- **Adaptive Path Thickness**: Paths that lead to more nutrients thicken over time, creating a visual hierarchy of energy flow.
-- **Bioluminescent Shading**: The network is rendered with a gradient from neural violet to bio-phosphor teal, with additive highlights at high-flow junctions.
-- **Multi-Root Initialization**: Multiple growth centers are initialized to create a decentralized, non-centric network architecture.
-
-## Aesthetics
-- **Palette**: Deep Void, Bio-Phosphor Teal, Neural Violet, Core Gold.
-- **Mood**: Organic, persistent, and connected.
-- **Visuals**: Delicate, glowing webs with luminous nodes at branch junctions.
+- **Renderer**: P2D
+- **Simulation**: Space-colonization algorithm (nutrient-driven growth), multi-root initialization, adaptive path thickness (flow-based scaling), bioluminesce.
+- **Visuals**: additive blending.
+- **Animation**: Still image

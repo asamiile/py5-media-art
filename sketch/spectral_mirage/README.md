@@ -4,13 +4,15 @@
 
 ## Metadata
 - **Date**: 2026-05-03
-- **Theme**: optics, atmosphere, prismatic light, ice crystals
-- **Technique**: noise-guided ray-casting, spectral dispersion (wavelength-dependent refraction), structured beam clustering, multi-pass glow rendering
+- **Theme**: optics, atmosphere, prismatic light, ice crystals.
+- **Technique**: noise-guided ray-casting, spectral dispersion (wavelength-dependent refraction), structured beam clustering, multi-pass glow rendering.
+- **Logic Lab Reference**: None
 
 ## Concept
 A cold, shimmering veil of light Fractured into prismatic filaments as it passes through a simulated ice-density field; electric blue and prism violet fringes emerge from structured beams against a deep midnight navy void.
 
 ## Technical Details
 - **Renderer**: P2D
-- **Simulation**: noise-guided ray-casting
-- **Visuals**: spectral dispersion (wavelength-dependent refraction), structured beam clustering, multi-pass glow rendering
+- **Simulation**: noise-guided ray-casting, spectral dispersion (wavelength-dependent refraction), structured beam clustering, multi-pass glow rendering.
+- **Visuals**: HSB spectral mapping, bloom-like highlights, prismatic color, dark-field contrast.
+- **Animation**: Still image

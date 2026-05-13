@@ -1,6 +1,18 @@
 # topological_defect_string
 
+![Preview](topological_defect_string_p1.png)
+
+## Metadata
 - **Date**: 2026-05-12
 - **Theme**: Cosmology, early universe, symmetry breaking, cosmic strings, topological defects, phase transition.
-- **Visual Impression**: A churning sea of "Primordial Gold" light fills the screen—the high-entropy state of the early universe. Suddenly, a phase transition occurs, and the field settles. Trapped in the cooling vacuum, electric-blue "Cobalt" cosmic strings emerge, stretching and vibrating across the deep void. These topological defects form a complex network, ghostly scars of the universe's birth.
-- **Technique**: 2D complex scalar field simulation undergoing symmetry breaking (Mexican hat potential). Strings are identified as zero-magnitude defect cores. High-density point rendering. Palette: "Primordial Gold / Cobalt / Deep Space". 10s 4K/60fps MP4 (1080p source).
+- **Technique**: 2D complex scalar field simulation (Ginzburg-Landau type) with Mexican hat symmetry breaking. High-density point rendering of defect cores. 10s 4K/60fps MP4 (1080p source).
+- **Logic Lab Reference**: None
+
+## Concept
+Visualizes the emergence of cosmic strings from a primordial gold field as the universe undergoes a symmetry-breaking phase transition.
+
+## Technical Details
+- **Renderer**: P3D
+- **Simulation**: 2D complex scalar field simulation (Ginzburg-Landau type) with Mexican hat symmetry breaking.
+- **Visuals**: HSB spectral mapping, bloom-like highlights, prismatic color, dark-field contrast.
+- **Animation**: 10 seconds at 60fps

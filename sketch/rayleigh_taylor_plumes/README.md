@@ -1,18 +1,18 @@
 # rayleigh_taylor_plumes
 
-A 3D simulation of Rayleigh-Taylor instability, visualizing the buoyancy-driven mixing of two cosmic fluids.
+![Preview](rayleigh_taylor_plumes_p1.png)
 
-## Theme
-- Fluid dynamics, buoyancy, gravity, mixing.
-- "Incandescent Orange / Electric Azure / Deep Amethyst" palette.
-- Atmospheric billows and nocturnal cosmic plumes.
+## Metadata
+- **Date**: 2026-05-10
+- **Theme**: Fluid dynamics, Rayleigh-Taylor instability, buoyancy-driven mixing, beautiful night sky.
+- **Technique**: 3D particle simulation (100,000 particles) advected by a vectorized buoyant force field and 16 dynamic plume centers. Implements the growth of "mushrooms" and "spikes" through a dual-fluid interface. Features manual 3D-to-2D projection for performance and stability.
+- **Logic Lab Reference**: None
 
-## Technique
-- 160,000 particle tracers advected by a vectorized buoyant force field.
-- Plume-based advection centers to simulate the growth of mushrooms and spikes.
-- Manual 3D-to-2D projection for performance and stability.
-- Multi-pass additive rendering with HSB spectral mapping.
+## Concept
+A majestic visualization of two cosmic fluids mixing under gravity. Heavy, glowing plumes of molten orange sink into a deep blue sea, while silken azure filaments rise in response, creating a complex, shimmering interface of light and shadow reminiscent of a nocturnal atmospheric event.
 
-## Controls
-- Run the script to generate a 20-second 4K animation.
-- Previews are saved as `rayleigh_taylor_plumes_p1.png`.
+## Technical Details
+- **Renderer**: P2D
+- **Simulation**: particle, 3D particle.
+- **Visuals**: additive blending.
+- **Animation**: 20 seconds at 60fps

@@ -1,20 +1,18 @@
 # kilonova_merger_ripple
 
-A 3D simulation of a neutron star merger, capturing the binary inspiral, gravitational wave ripples, and the subsequent kilonova explosion.
+![Preview](preview_p1.png)
 
-## Description
+## Metadata
+- **Date**: 2026-05-07
+- **Theme**: Neutron star merger, kilonova, nucleosynthesis, gravitational waves, beautiful night sky.
+- **Technique**: 3D simulation of a binary neutron star system spiraling into a collision. Features a real-time background starfield ripple effect simulating space-time distortion. Post-collision, it triggers an asymmetric ejection of 300,000 particles (toroidal + polar jets) with a spectral shift from blue-white to rose gold and platinum. 60fps high-bitrate MP4.
+- **Logic Lab Reference**: None
 
-A violent and beautiful celestial event; two tiny, blinding dots dance in a tightening spiral, warping the very stars behind them, before vanishing into a spectacular explosion of shimmering gold and platinum dust that fills the void in a complex, toroidal and polar jet structure.
+## Concept
+A violent and beautiful celestial event; two tiny, blinding dots dance in a tightening spiral, warping the very stars behind them, before vanishing into a spectacular explosion of shimmering gold and platinum dust that fills the void.
 
-## Technique
-
-- **Binary Dynamics**: Simulation of two neutron stars spiraling inward with a decay-rate model, increasing in frequency as they approach collision at frame 240.
-- **Space-time Distortion**: Real-time background starfield ripple effect, where the amplitude and frequency are coupled to the binary orbital parameters.
-- **Kilonova Physics**: Post-collision ejection of 300,000 particles using a dual-mode distribution (toroidal disk + relativistic polar jets).
-- **Nucleosynthesis Color Mapping**: Spectral shift from blinding blue-white (stars) to rose gold and platinum (heavy element ejecta) via time-dependent lerping.
-- **Rendering**: 3D particle simulation with additive blending and a fading central fireball.
-- **Format**: 10-second animation @ 60fps, 4K resolution.
-
-## Preview
-
-![preview_p1](preview_p1.png)
+## Technical Details
+- **Renderer**: P3D
+- **Simulation**: particle.
+- **Visuals**: HSB spectral mapping, bloom-like highlights, prismatic color, dark-field contrast.
+- **Animation**: 10 seconds at 60fps

@@ -1,17 +1,18 @@
 # superfluid_kelvin_waves
 
-A 3D generative media art piece visualizing the harmonic oscillations of vortex filaments in a quantum superfluid.
+![Preview](preview_p1.png)
+
+## Metadata
+- **Date**: 2026-05-07
+- **Theme**: Superfluidity, Kelvin waves, vortex line oscillation, quantum turbulence, beautiful night sky.
+- **Technique**: 3D particle simulation (120,000 particles) sampled along 12 closed-loop vortex filaments. Filaments are modulated by multiple helical harmonic oscillators (Kelvin waves) using vectorized NumPy. Features multi-pass additive rendering with HSB spectral mapping (Teal/Violet/White) and a high-density starfield (10,000 stars). 60fps high-bitrate MP4.
+- **Logic Lab Reference**: None
 
 ## Concept
-The work represents quantum vortex lines as silken filaments of light that oscillate with multiple octaves of "Kelvin waves"—high-frequency helical ripples. As the loops twist and vibrate in the cosmic void, they create a mesmerizing display of quantum turbulence and harmonic resonance, appearing like primordial threads of the universe.
+A majestic vision of quantum fluids; silken loops of electric teal and royal violet light oscillate with high-frequency helical ripples, appearing like cosmic threads vibrating in a silent star-dusted void.
 
 ## Technical Details
-- **Simulation**: 120,000 particles sampled along 12 closed-loop filaments, modulated by multi-octave helical harmonic oscillators using vectorized NumPy.
-- **Rendering**: Multi-pass additive rendering with HSB spectral mapping (Teal -> Violet -> White).
-- **Starfield**: High-density background of 10,000 stars.
-- **Resolution**: 3840x2160 (4K) @ 60fps.
-- **Duration**: 10 seconds.
-
-## Aesthetic
-- **Theme**: Superfluidity, Kelvin waves, vortex line oscillation, beautiful night sky.
-- **Visuals**: Delicate silken filaments, shimmering helical ripples, iridescent quantum energy against a deep obsidian void.
+- **Renderer**: P3D
+- **Simulation**: Vectorized NumPy, NumPy, particle.
+- **Visuals**: additive blending, HSB spectral mapping, bloom-like highlights, prismatic color, dark-field contrast.
+- **Animation**: 10 seconds at 60fps

@@ -1,5 +1,18 @@
 # chromatophore_signal_skin
 
-10-second 4K/60fps py5 animation of cephalopod-like chromatophores expanding and contracting across living skin as pale neural waves travel through the tissue.
+![Preview](chromatophore_signal_skin_p1.png)
 
-The renderer uses a staggered procedural cell lattice, vectorized radial pigment masks, iridescent inner rings, and a fading signal-memory buffer. Frames are written through py5's pixel array, encoded with FFmpeg as `output.mp4`, mirrored to `chromatophore_signal_skin.mp4`, and sampled at mid-frame for `chromatophore_signal_skin_p1.png`.
+## Metadata
+- **Date**: 2026-05-10
+- **Theme**: cephalopod-like skin where chromatophore cells expand and contract under traveling neural signals.
+- **Technique**: Procedural staggered cell lattice with vectorized radial pigment masks, ring highlights, iridescent inner bands, and a fading signal-memory buffer. Multi-wave neural activation modulates chromatophore expansion across the skin while pale signal paths drift through warm umber and coral tissue. 10s 4K/60fps MP4, generated as `output.mp4` and mirrored to `chromatophore_signal_skin.mp4`.
+- **Logic Lab Reference**: None
+
+## Concept
+A living field of coral pigment cells pulses over dark skin while pale nerve-wave ribbons pass through it, making the surface feel like a responsive cephalopod display.
+
+## Technical Details
+- **Renderer**: P2D
+- **Simulation**: Procedural staggered cell lattice with vectorized radial pigment masks, ring highlights, iridescent inner bands, and a fading signal-memory.
+- **Visuals**: dark-field contrast.
+- **Animation**: 10 seconds at 60fps

@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## belousov_zhabotinsky_spirals
+
+- **Date**: 2026-05-13
+- **Theme**: Oscillating chemical reactions forming self-sustaining spiral waves in a dark laboratory medium.
+- **Technique**: Vectorized Barkley-model Belousov-Zhabotinsky excitable medium simulation on a 512x512 grid, using activator/inhibitor dynamics, periodic Laplacian diffusion, asymmetric spiral seeds, LANCZOS upscaling, and warm reaction-front palette mapping. 20s 4K/60fps MP4.
+- **Description**: Crimson and amber chemical wavefronts curl into rotating spiral cores over near-black reagent, spreading ivory-hot excitation bands that make the surface feel like a living reaction vessel.
+
 ## magnetotactic_compass_swarm
 
 - **Date**: 2026-05-13

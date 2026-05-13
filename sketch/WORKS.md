@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## brine_frost_channel_memory
+
+- **Date**: 2026-05-13
+- **Theme**: Sea ice forming under quiet pressure, with trapped brine veins opening and remembering old fracture paths.
+- **Technique**: Vectorized 2D phase-field frost growth with animated anisotropic channel fields, edge/freezing nuclei, dendritic crystal texture, brine darkening, and persistent salt-memory highlights rendered directly through the py5 pixel buffer. 10s 4K/60fps MP4.
+- **Description**: A cold mineral surface freezes inward in porcelain-blue sheets while dark brine veins creep through it; amber salt traces flicker along old cracks, giving the ice a memory of pressure and retreat.
+
 ## soliton_resonance_void
 
 - **Date**: 2026-05-13

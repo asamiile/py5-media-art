@@ -3,6 +3,27 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## soliton_resonance_void
+
+- **Date**: 2026-05-13
+- **Theme**: Nonlinear Schrödinger Equation (NLSE), solitons, breather modes, wave interference.
+- **Technique**: 2D NLSE simulation on a 256x256 grid using the Split-Step Fourier Method. Visualizes the evolution and collision of multiple localized wave packets (solitons) in a focusing nonlinear medium. 15s 4K/60fps MP4.
+- **Description**: A dark, tranquil pool of violet energy where bright, localized pulses of rose and gold light emerge, collide, and pass through each other with intense, flickering resonance, demonstrating the unique stability and interaction of solitons.
+
+## acoustic_levitation_drift
+
+- **Date**: 2026-05-13
+- **Theme**: Acoustic levitation, Gorkov potential, standing wave resonance, particle trapping.
+- **Technique**: 3D Gorkov potential simulation. Particles are trapped in the nodes of a 3D standing wave field. The phase of the standing wave is slowly modulated, causing the trapped "beads" of light to drift and reorganize. 15s 4K/60fps MP4.
+- **Description**: A dark void where thousands of silver and cyan specks are suspended in an invisible, vibrating grid. The grid slowly shifts and warps, carrying the specks in a rhythmic, coordinated dance that reveals the hidden geometry of sound.
+
+## wigner_crystal_melting
+
+- **Date**: 2026-05-13
+- **Theme**: Quantum phase transition, Wigner crystallization, melting, Coulomb repulsion, collective dynamics.
+- **Technique**: 2D particle simulation with $1/r$ repulsive forces and a harmonic trap. Brownian dynamics with time-varying temperature. Vectorized NumPy physics. 20s 4K/60fps MP4.
+- **Description**: A rigid, shimmering hexagonal lattice of blue-white stars that slowly vibrates, develops defects, and eventually melts into a chaotic, swirling sea of violet and cyan light as the quantum temperature rises.
+
 ## spinodal_decomposition_nebula
 
 - **Date**: 2026-05-13

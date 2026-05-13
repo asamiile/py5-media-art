@@ -27,5 +27,5 @@ Continuously creates py5 media art animations by repeating the single-artwork wo
 - Always choose a concept, theme, and technique different from every past work
 - Follow shared naming, preview, and staging rules in `.agents/skills/shared/artwork-conventions.md`
 - Entry point filename is always `main.py`
-- Animation is the primary output; ensure `output.mp4` is generated and committed for each work.
+- Animation is the primary output; ensure `output.mp4` is generated for each work. Commit MP4 files only when explicitly requested.
 - The loop continues indefinitely until externally stopped

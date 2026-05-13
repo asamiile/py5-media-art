@@ -94,6 +94,6 @@ py5.run_sketch()
 - Explicitly call `py5.exit_sketch()` or use `maybe_save_exit_on_frame()` so continuous runs do not leave sketch processes running.
 - When creating video/animation works, set `DURATION_SEC` to **10 to 30 seconds depending on the content**.
 - Animation works save sequential PNGs to `frames/` and combine into MP4 with ffmpeg.
-- Include `{work_name}.mp4` in the commit only for animation works.
+- MP4 files are generated outputs; commit them only when explicitly requested.
 - Do not fix random seed; results should vary each run.
 - On Retina, after `py5.load_np_pixels()`, get actual size from `py5.np_pixels.shape[:2]`.

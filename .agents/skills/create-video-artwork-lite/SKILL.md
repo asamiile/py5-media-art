@@ -24,7 +24,7 @@ Create exactly one new py5 media art animation using a reduced-overhead version 
 7. Perform one concise self-critique in the same format as `.agents/skills/critic/SKILL.md`.
 8. If the verdict is `REVISE`, apply at most one revision; the second review should approve unless there is a hard failure.
 9. Update both `sketch/WORKS.md` and `.agents/FEEDBACK.md` (leave Rating and Comment empty per conventions).
-10. Stage and commit `sketch/{work_name}/`, `sketch/WORKS.md`, and `.agents/FEEDBACK.md`.
+10. Stage and commit the intended non-ignored files in `sketch/{work_name}/`, plus `sketch/WORKS.md` and `.agents/FEEDBACK.md`.
 11. Push.
 
 ## Lightweight Rules
@@ -33,5 +33,5 @@ Create exactly one new py5 media art animation using a reduced-overhead version 
 - Do not invoke separate Planner, Artist, or Critic agents.
 - Do not run an indefinite loop.
 - Do not perform more than one revision.
-- Animation is the primary output; ensure `output.mp4` is generated and committed.
+- Animation is the primary output; ensure `output.mp4` is generated. Commit MP4 files only when explicitly requested.
 - Follow `.agents/skills/shared/artwork-conventions.md` for naming and staging.

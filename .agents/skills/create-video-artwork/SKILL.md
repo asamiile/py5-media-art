@@ -26,4 +26,4 @@ Autonomously creates a py5 media art animation by following the workflow defined
 - Follow shared naming, preview, and staging rules in `.agents/skills/shared/artwork-conventions.md`
 - Entry point filename is always `main.py`
 - Prefer the `logic-lab` MCP server for external algorithm references.
-- Animation is the primary output; ensure `output.mp4` is generated and committed.
+- Animation is the primary output; ensure `output.mp4` is generated. Commit MP4 files only when explicitly requested.

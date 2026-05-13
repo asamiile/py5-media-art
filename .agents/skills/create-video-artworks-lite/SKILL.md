@@ -33,7 +33,7 @@ Each iteration must produce one complete, independent animation and commit/push 
 
 - **MANDATORY**: Always produce Animations.
 - Do not invoke separate Planner, Artist, or Critic agents.
-- Animation is the primary output; ensure `output.mp4` is generated and committed for each work.
+- Animation is the primary output; ensure `output.mp4` is generated for each work. Commit MP4 files only when explicitly requested.
 - Do not perform more than one revision per work.
 - Follow `.agents/skills/shared/artwork-conventions.md` for naming and staging.
 - The loop continues indefinitely until externally stopped.

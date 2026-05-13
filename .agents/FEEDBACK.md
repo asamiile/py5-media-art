@@ -134,52 +134,42 @@ The Artist reads this file before starting a new sketch to understand preference
 - **Rating**: 
 - **Comment**: 
 
-## strange_attractor_manifold
+## soap_film_thickness_flow
 
 - **Rating**: 
 - **Comment**: 
 
-## bose_einstein_condensate_vortices
+## chromatophore_signal_skin
 
 - **Rating**: 
 - **Comment**: 
 
-## magnetic_reconnection_flare
+## triboelectric_pollen_cloud
 
 - **Rating**: 
 - **Comment**: 
 
-## spin_ice_monopoles
+## metachronal_cilia_field
 
 - **Rating**: 
 - **Comment**: 
 
-## acoustic_cavitation_luminescence
+## capillary_bridge_rupture
 
 - **Rating**: 
 - **Comment**: 
 
-## cherenkov_radiation_cone
+## ferroelastic_domain_drift
 
 - **Rating**: 
 - **Comment**: 
 
-## algorithmic_mycelium_network
+## seismic_lithograph
 
 - **Rating**: 
 - **Comment**: 
 
-## prismatic_recursive_glass
-
-- **Rating**: 
-- **Comment**: 
-
-## color_flux_string_breaking
-
-- **Rating**: 
-- **Comment**: 
-
-## chiral_turing_morphogenesis
+## archival_vein_memory
 
 - **Rating**: 
 - **Comment**: 

@@ -12,7 +12,7 @@ Each iteration must produce one complete, independent animation and commit/push 
 
 ## Workflow
 
-1. Read only the essential parts of `CLAUDE.md`, `.agents/skills/shared/artwork-conventions.md`, `.agents/skills/shared/py5-templates.md`, `sketch/WORKS.md`, and `.agents/FEEDBACK.md`.
+1. Read only the essential parts of `AGENTS.md`, `.agents/skills/shared/artwork-conventions.md`, `.agents/skills/shared/py5-templates.md`, `sketch/WORKS.md`, and `.agents/FEEDBACK.md`.
 2. Create or reuse branch `feature/works-YYYYMMDD`.
 3. Loop until externally interrupted:
    1. Check `git status --short`. Stop if unrelated pending changes would make a clean commit unsafe.

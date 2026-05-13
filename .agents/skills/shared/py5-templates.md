@@ -56,7 +56,7 @@ from lib.sizes import get_sizes
 SKETCH_DIR = sketch_dir(__file__)
 WORK_NAME = SKETCH_DIR.name
 FRAMES_DIR = SKETCH_DIR / "frames"
-DURATION_SEC = 10  # 10 to 30 seconds depending on content
+DURATION_SEC = 10  # Adjust between 10–30 seconds depending on content
 FPS = 60
 TOTAL_FRAMES = DURATION_SEC * FPS
 PREVIEW_FILENAME = f"{WORK_NAME}_p1.png"
@@ -92,8 +92,7 @@ py5.run_sketch()
 - Prefer helpers in `lib/`: `lib.paths.sketch_dir`, `lib.sizes.get_sizes`, and `lib.preview`.
 - Save previews with `{work_name}_p1.png` where `{work_name}` is the directory name.
 - Explicitly call `py5.exit_sketch()` or use `maybe_save_exit_on_frame()` so continuous runs do not leave sketch processes running.
-- When creating video/animation works, set `DURATION_SEC` to **10 to 30 seconds depending on the content**.
 - Animation works save sequential PNGs to `frames/` and combine into MP4 with ffmpeg.
-- MP4 files are generated outputs; commit them only when explicitly requested.
+- MP4 files are generated outputs; do not commit them.
 - Do not fix random seed; results should vary each run.
 - On Retina, after `py5.load_np_pixels()`, get actual size from `py5.np_pixels.shape[:2]`.

@@ -1,7 +1,6 @@
 # py5 Media Art — Autonomous Workflow
 
-Use `/create-artwork` or `/create-artworks` to automate. See `.agents/skills/` for detailed guides.
-Shared conventions live in `.agents/skills/shared/artwork-conventions.md` and `.agents/skills/shared/py5-templates.md`.
+Use `/create-artwork` or `/create-artworks` to automate. Each step reads shared conventions.
 
 ## Workflow
 
@@ -13,36 +12,17 @@ Shared conventions live in `.agents/skills/shared/artwork-conventions.md` and `.
 6. **Document** — Add README.md, update `sketch/WORKS.md` and `.agents/FEEDBACK.md`
 7. **Commit & Push**
 
-## Key Details
+## Shared Conventions
 
-- **Work names**: Use snake_case for new concepts (e.g. `flowing_particles`). Do not add `_v1` to every first version. When intentionally remaking or replacing the idea of a past work, create a new directory with an incremented work-name suffix such as `flowing_particles_v2`, `flowing_particles_v3`, etc.; never overwrite the original directory.
-- **Preview files**: Use `{work_name}_p1.png` for the first generated pattern. If the work includes multiple distinct patterns or variants, save them as `{work_name}_p2.png`, `{work_name}_p3.png`, etc. Revision snapshots keep the pattern suffix before the revision suffix, e.g. `{work_name}_p1_v1.png`.
+All agents must follow:
+
+- **Work naming & preview files** — See `.agents/skills/shared/artwork-conventions.md`
+- **py5 code templates & patterns** — See `.agents/skills/shared/py5-templates.md`
+- **Directory structure** — See `.agents/skills/shared/artwork-conventions.md`
+
+## Key Constraints
+
 - **Resolution**: Preview 1920×1080 | Output 3840×2160 (change `SIZE` constant)
-- **Animation duration**: When creating video/animation works, make them **10 to 30 seconds depending on the content**.
-- **Python**: Use `py5.run_sketch()`, don't fix random seed
 - **Retina**: After `py5.load_np_pixels()`, check `py5.np_pixels.shape[:2]` for actual size
-
-## Directory Structure
-
-```
-sketch/
-  WORKS.md            # all works registry (always update)
-  {work_name}/
-    main.py           # entry point (fixed filename)
-    {work_name}_p1.png    # first/latest pattern preview
-    {work_name}_p2.png    # second pattern preview, if created
-    {work_name}_p1_v1.png # p1 before first revision
-    {work_name}_p1_v2.png # p1 before second revision
-    {work_name}.mp4       # animation only
-    frames/           # sequential PNGs — not committed
-    README.md
-  {work_name}_v2/     # remake/rework of a past work, if intentionally created
-.agents/skills/
-  planner/            # concept & palette brief
-  artist/             # implementation
-  critic/             # review
-  create-artwork/     # single run
-  create-artworks/    # continuous run
-```
-
-`.agents/FEEDBACK.md` stores agent-only user preference and critique memory.
+- **No fixed seeds**: Results should vary each run
+- `.agents/FEEDBACK.md` is reserved for user feedback only (agents do not write to Rating/Comment fields)

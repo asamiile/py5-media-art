@@ -10,7 +10,7 @@ Continuously creates py5 media art animations by repeating the single-artwork wo
 
 ## Workflow
 
-1. Read `CLAUDE.md`, `.agents/skills/shared/artwork-conventions.md`, and `.agents/skills/shared/py5-templates.md` to confirm the full workflow and shared conventions
+1. Read `AGENTS.md`, `.agents/skills/shared/artwork-conventions.md`, and `.agents/skills/shared/py5-templates.md` to confirm the full workflow and shared conventions
 2. Create or switch to the branch `feature/works-YYYYMMDD` (use today's date)
 3. **Loop** — Repeat the following for each new work:
    1. **Planner**: Read `sketch/WORKS.md` and `.agents/FEEDBACK.md`, then produce a Creative Brief with **Format: Animation (10-30s @ 60fps)** (see `.agents/skills/planner/SKILL.md`)

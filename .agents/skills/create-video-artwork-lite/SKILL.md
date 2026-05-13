@@ -10,7 +10,7 @@ Create exactly one new py5 media art animation using a reduced-overhead version 
 
 ## Workflow
 
-1. Read only the essential parts of `CLAUDE.md`, `.agents/skills/shared/artwork-conventions.md`, `.agents/skills/shared/py5-templates.md`, `sketch/WORKS.md`, and `.agents/FEEDBACK.md`.
+1. Read only the essential parts of `AGENTS.md`, `.agents/skills/shared/artwork-conventions.md`, `.agents/skills/shared/py5-templates.md`, `sketch/WORKS.md`, and `.agents/FEEDBACK.md`.
 2. Check `git status --short`. Stop if unrelated pending changes would make a clean commit unsafe.
 3. Create or reuse branch `feature/works-YYYYMMDD`.
 4. Produce a short inline creative brief with **Format: Animation (10-30s @ 60fps)**:

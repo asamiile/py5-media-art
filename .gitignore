@@ -16,6 +16,6 @@ wheels/
 sketch/*/frames/
 
 # Media outputs (committed for portfolio per CLAUDE.md)
-# *.mp4
-# *.mov
-# *.webm
+*.mp4
+*.mov
+*.webm

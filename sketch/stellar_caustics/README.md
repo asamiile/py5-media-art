@@ -1,19 +1,18 @@
-# Stellar Caustics
-
-A visualization of light refracting through turbulent interstellar gas clouds.
+# stellar_caustics
 
 ![Preview](preview_p1.png)
 
+## Metadata
+- **Date**: 2026-05-05
+- **Theme**: Interstellar gas, light refraction, caustics, beautiful night sky.
+- **Technique**: Multi-wave superposition (18-fold), turbulence-driven grid distortion, non-linear contrast sharpening, additive solar flare highlights.
+- **Logic Lab Reference**: None
+
 ## Concept
-Interstellar gas is rarely uniform. As light from distant stars passes through these turbulent regions, it undergoes refraction, creating complex luminous networks known as caustics. This work simulates this phenomenon by superimposing multiple noise-distorted wave fields, creating a liquid-like tapestry of light.
+A luminous, shimmering web of light that feels liquid and alive, pulsing with electric teal and solar amber highlights; the work simulates the complex refraction of starlight through a turbulent interstellar medium, revealing an intricate tapestry of energy against a deep indigo void.
 
 ## Technical Details
-- **Multi-Wave Superposition**: 18 rotated plane waves are summed to create the base caustic field.
-- **Turbulence Simulation**: The coordinate grid is distorted using a secondary set of low-frequency sine waves to simulate gaseous turbulence.
-- **Non-linear Contrast Mapping**: A power-law mapping (γ=3.0) is applied to the field to sharpen the constructive interference peaks, mimicking the sharp focus of optical caustics.
-- **Chromatic Glow**: Local maxima are identified and enhanced with additive solar flares and soft halos to simulate light diffusion.
-
-## Aesthetics
-- **Palette**: Midnight Indigo, Electric Teal, Solar Amber.
-- **Mood**: Ethereal, liquid, and vast.
-- **Visuals**: High-contrast luminous webs against a deep, starry background.
+- **Renderer**: P2D
+- **Simulation**: Multi-wave superposition (18-fold), turbulence-driven grid distortion, non-linear contrast sharpening, additive solar flare highlights.
+- **Visuals**: additive blending.
+- **Animation**: Still image

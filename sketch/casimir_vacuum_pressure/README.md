@@ -1,20 +1,18 @@
 # casimir_vacuum_pressure
 
-A physics-based generative artwork simulating the Casimir effect—the physical force arising from quantum field fluctuations between two parallel plates.
+![Preview](casimir_vacuum_pressure_p1.png)
+
+## Metadata
+- **Date**: 2026-05-09
+- **Theme**: Casimir effect, quantum vacuum pressure, beautiful night sky.
+- **Technique**: 3D particle physics simulation of 160,000 virtual particles with life-cycle decay and boundary-based suppression. Oscillating parallel plates with glow effects. Multi-pass additive rendering. "Silver / Electric Cyan / Deep Amethyst" palette. 60fps high-fidelity MP4.
+- **Logic Lab Reference**: None
 
 ## Concept
-The vacuum is not empty but filled with "virtual" particles that pop in and out of existence. When two plates are placed close together, certain wavelengths of these fluctuations are suppressed in the gap, leading to a pressure differential that pushes the plates together.
-
-## Visuals
-- **Plates**: Two oscillating parallel plates that suppress long-wavelength fluctuations in the gap.
-- **Fluctuations**: 160,000 virtual particles following a life-cycle of emergence and decay.
-- **Color Palette**: 
-  - **Silver / Electric Cyan**: High-energy emergence.
-  - **Deep Amethyst**: Decay phase.
-- **Aesthetic**: "Beautiful Night Sky" with additive blending and high-density starfield.
+A serene yet powerful visualization of quantum vacuum pressure; shimmering virtual particles emerge and vanish in a cosmic void, noticeably suppressed in the narrow gap between two silver plates, illustrating the silent force of the void itself.
 
 ## Technical Details
-- **Resolution**: 4K (3840x2160)
-- **Framerate**: 60fps
-- **Implementation**: py5 (Processing for Python) + Vectorized NumPy for performance.
-- **Duration**: 10 seconds.
+- **Renderer**: P3D
+- **Simulation**: particle, 3D particle.
+- **Visuals**: additive blending, HSB spectral mapping, bloom-like highlights, prismatic color, dark-field contrast.
+- **Animation**: 10 seconds at 60fps

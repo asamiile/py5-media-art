@@ -1,12 +1,18 @@
 # magnetohydrodynamic_z_pinch_instability
 
-A high-energy visualization of plasma confinement and its inevitable breakdown through magnetic instabilities.
+![Preview](magnetohydrodynamic_z_pinch_instability_p1.png)
 
-## Theme
-Fusion energy, plasma physics, Z-pinch confinement, sausage and kink instabilities, magnetohydrodynamics (MHD).
+## Metadata
+- **Date**: 2026-05-11
+- **Theme**: Fusion energy, plasma physics, Z-pinch confinement, sausage and kink instabilities, magnetohydrodynamics (MHD).
+- **Technique**: 3D magnetic field simulation of a central current column. Implements harmonic deformations corresponding to sausage (radial) and kink (helical) instability modes. 100,000 tracers. 10s 4K/60fps MP4.
+- **Logic Lab Reference**: None
 
-## Technique
-3D magnetic field simulation of a central current column. Implements harmonic deformations corresponding to sausage (radial) and kink (helical) instability modes. Features 100,000 tracers with manual 3D-to-2D projection, multi-pass additive blending, and a "Plasma Magenta / Neon Blue / Blinding White" palette.
+## Concept
+A vertical column of intense light starts in a stable cylindrical configuration but quickly succumbs to the violent forces of electromagnetism, deforming into chaotic kinks and sausages.
 
-## Description
-A vertical column of intense light starts in a stable cylindrical configuration but quickly succumbs to the violent forces of electromagnetism. The column deforms into a series of "sausages" and "kinks", eventually ejecting rings of superheated plasma into the surrounding void as the confinement field collapses in a spectacular display of high-energy chaos.
+## Technical Details
+- **Renderer**: P2D
+- **Simulation**: 3D magnetic field simulation of a central current column.
+- **Visuals**: bloom-like highlights, dark-field contrast.
+- **Animation**: 10 seconds at 60fps

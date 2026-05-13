@@ -4,15 +4,15 @@
 
 ## Metadata
 - **Date**: 2026-05-10
-- **Theme**: abstract quantum cells, ethereal boundaries, fluid geometry, beautiful night sky
-- **Technique**: noise-warped Voronoi tessellation, second-order distance (d2-d1) soft glow rendering, vectorized space warping via NumPy
-- **Parent Work**: [voronoi_cells](../voronoi_cells/)
+- **Theme**: abstract quantum cells, ethereal boundaries, fluid geometry, beautiful night sky.
+- **Technique**: Vectorized 2D pixel-buffer manipulation (NumPy). Implements a noise-warped Voronoi tessellation where pixel coordinates are perturbed by multi-harmonic sine/cosine fields before distance calculation. Features a soft-glow boundary rendering using an exponential falloff based on the second-order distance (d2-d1).
+- **Logic Lab Reference**: None
 
 ## Concept
-A high-precision refinement of the `voronoi_cells` concept, responding to requests for more abstraction. The sharp geometric boundaries of the original are replaced with "melty" noise-warped edges and a soft-glow luminescence, shifting the mood from "shattered glass" to an ethereal, biological or quantum field.
+A majestic and ethereal visualization of cellular structure in a quantum field. Shimmering, fluid boundaries in luminous teal weave through a deep amethyst void, occasionally erupting into brilliant sparks of molten gold where the energy of the vacuum is concentrated.
 
 ## Technical Details
 - **Renderer**: P2D
-- **Simulation**: noise-warped Voronoi tessellation
-- **Visuals**: spectral palette (Amethyst/Teal/Gold), soft exponential glow for boundaries, vectorized coordinate perturbation
-- **Changes from v1**: Increased abstraction via space warping, transitioned to a soft glow border logic, updated palette to preferred user colors.
+- **Simulation**: NumPy.
+- **Visuals**: pixel-buffer rendering, bloom-like highlights.
+- **Animation**: Still image

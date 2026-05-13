@@ -3,6 +3,41 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## eutectic_alloy_solidification
+
+- **Date**: 2026-05-13
+- **Theme**: A cooling alloy remembering pressure and impurity as pale eutectic lamellae freeze through a dark molten film.
+- **Technique**: Vectorized phase-front solidification animation on a 960x540 grid, using anisotropic cooling fronts, oscillatory eutectic lamella masks, dendritic tip highlights, grain-boundary fields, solute-rejection memory, and direct py5 pixel-buffer rendering. 10s 4K/60fps MP4 generated as `output.mp4`.
+- **Description**: Silver and pewter freezing fronts advance through an iron-blue melt, splitting into alternating lamellae while copper-rich impurity veins stay behind as a persistent memory of the solidification path.
+
+## electrowetting_lens_array
+
+- **Date**: 2026-05-13
+- **Theme**: Tiny droplets on conductive glass flattening under voltage pulses and bending light like adjustable micro-lenses.
+- **Technique**: Vectorized electrowetting lens-field animation on a 960x540 grid, using pulsed elliptical droplet masks, rim highlights, caustic interference bands, electrode traces, voltage-memory glow, and direct py5 pixel-buffer rendering. 10s 4K/60fps MP4 generated as `output.mp4`.
+- **Description**: A dark graphite slide holds an array of aquamarine droplets that breathe flatter and taller as voltage sweeps across them; silver rims and amber electrode memories reveal the hidden electrical control behind the shifting optical caustics.
+
+## belousov_zhabotinsky_spirals
+
+- **Date**: 2026-05-13
+- **Theme**: Oscillating chemical reactions forming self-sustaining spiral waves in a dark laboratory medium.
+- **Technique**: Vectorized Barkley-model Belousov-Zhabotinsky excitable medium simulation on a 768x432 grid, using activator/inhibitor dynamics, periodic Laplacian diffusion, counter-rotating spiral pacemakers, LANCZOS upscaling, and warm reaction-front palette mapping. 20s 4K/60fps MP4.
+- **Description**: Crimson and amber chemical wavefronts curl into rotating spiral cores over near-black reagent, spreading ivory-hot excitation bands that make the surface feel like a living reaction vessel.
+
+## magnetotactic_compass_swarm
+
+- **Date**: 2026-05-13
+- **Theme**: Magnetotactic bacteria quietly reorienting as an invisible magnetic field turns through a microscope slide.
+- **Technique**: Vectorized 2D bacterial swarm simulation with rotating-field alignment, local oxygen-driven wobble, rod-shaped density deposition, magnetite core darkening, field-line memory, and persistent trails rendered directly through the py5 pixel buffer. 10s 4K/60fps MP4.
+- **Description**: Thousands of teal microbial rods drift over an olive-black slide, then slowly swing into a shared direction as faint pearl field lines pass through them; amber tips and dark magnetite cores make the swarm feel alive, precise, and quietly compelled.
+
+## brine_frost_channel_memory
+
+- **Date**: 2026-05-13
+- **Theme**: Sea ice forming under quiet pressure, with trapped brine veins opening and remembering old fracture paths.
+- **Technique**: Vectorized 2D phase-field frost growth with animated anisotropic channel fields, edge/freezing nuclei, dendritic crystal texture, brine darkening, and persistent salt-memory highlights rendered directly through the py5 pixel buffer. 10s 4K/60fps MP4.
+- **Description**: A cold mineral surface freezes inward in porcelain-blue sheets while dark brine veins creep through it; amber salt traces flicker along old cracks, giving the ice a memory of pressure and retreat.
+
 ## soliton_resonance_void
 
 - **Date**: 2026-05-13

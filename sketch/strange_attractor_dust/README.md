@@ -1,20 +1,18 @@
-# Strange Attractor Dust
-
-A chaotic, high-density visualization of the Lorenz Attractor as a primordial stardust nebula.
+# strange_attractor_dust
 
 ![Preview](preview_p1.png)
 
+## Metadata
+- **Date**: 2026-05-05
+- **Theme**: Chaos theory, strange attractors, butterfly nebula, beautiful night sky.
+- **Technique**: Lorenz attractor simulation (120k particles), vectorized numerical integration, high-performance 2D histogram density accumulation, gamma-corrected density mapping, radius-based spectral color interpolation.
+- **Logic Lab Reference**: None
+
 ## Concept
-Strange attractors are mathematical structures that represent the hidden order within chaotic systems. In this work, we simulate the movement of 120,000 particles governed by the Lorenz equations. As the particles diverge through chaotic feedback, they weave a complex, three-dimensional "dust" cloud that resembles a celestial butterfly nebula.
+A dense, swirling vortex of electric violet and crimson stardust that forms a complex, heart-like shell within the obsidian void; the work utilizes 120,000 particles to trace the chaotic yet ordered trajectories of the Lorenz attractor, revealing a luminous, silken nebula that pulses with a hidden mathematical intensity.
 
 ## Technical Details
-- **Lorenz Attractor Simulation**: The particle trajectories are computed using numerical integration of the Lorenz equations (σ=10, ρ=28, β=8/3).
-- **High-Density Accumulation**: 120,000 particles are simulated over 500 iterations, resulting in a dataset of millions of spatial points.
-- **Histogram-Based Rendering**: To handle the massive point count, the points are projected into a 2D histogram buffer. This allows for smooth density accumulation and a "silken" visual texture.
-- **Gamma-Corrected Mapping**: A power-law mapping (γ=0.3) is applied to the density field to reveal the delicate, faint structures of the attractor's lobes.
-- **Spectral Color Mapping**: Colors are mapped based on the 3D radius of the particles, transitioning from deep electric violet to crimson and soft supernova white.
-
-## Aesthetics
-- **Palette**: Obsidian Void, Electric Violet, Crimson Flare, Supernova White.
-- **Mood**: Chaotic, intense, and ordered.
-- **Visuals**: A luminous, silky vortex with two glowing focal centers, surrounded by a fine mist of celestial dust.
+- **Renderer**: P2D
+- **Simulation**: particle.
+- **Visuals**: HSB spectral mapping, prismatic color, dark-field contrast.
+- **Animation**: Still image

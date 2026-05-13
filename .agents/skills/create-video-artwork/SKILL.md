@@ -1,16 +1,16 @@
 ---
 name: create-video-artwork
-description: "Autonomously creates a py5 media art animation (video) following the workflow in CLAUDE.md. Covers branch setup, past-work research, implementation, commit, and push. Triggers: create video artwork, new animation, video sketch"
+description: "Autonomously creates a py5 media art animation (video) following the workflow in AGENTS.md. Covers branch setup, past-work research, implementation, commit, and push. Triggers: create video artwork, new animation, video sketch"
 allowed-tools: Bash, Read, Write, Edit
 ---
 
 # Create Video Artwork Skill
 
-Autonomously creates a py5 media art animation by following the workflow defined in `CLAUDE.md`.
+Autonomously creates a py5 media art animation by following the workflow defined in `AGENTS.md`.
 
 ## Workflow
 
-1. Read `CLAUDE.md`, `.agents/skills/shared/artwork-conventions.md`, and `.agents/skills/shared/py5-templates.md` to confirm the full workflow and shared conventions
+1. Read `AGENTS.md`, `.agents/skills/shared/artwork-conventions.md`, and `.agents/skills/shared/py5-templates.md` to confirm the full workflow and shared conventions
 2. **Planner**: Read `sketch/WORKS.md` and `.agents/FEEDBACK.md`, then use the `logic-lab` MCP server to search for relevant algorithm references before producing a Creative Brief with **Format: Animation (10-30s @ 60fps)** (see `.agents/skills/planner/SKILL.md`)
 3. Create or reuse the branch `feature/works-YYYYMMDD`
 4. **Artist**: Implement the concept from the Creative Brief in `sketch/{work_name}/main.py`; ensure it uses FFmpeg for encoding (see `.agents/skills/artist/SKILL.md`)
@@ -26,4 +26,4 @@ Autonomously creates a py5 media art animation by following the workflow defined
 - Follow shared naming, preview, and staging rules in `.agents/skills/shared/artwork-conventions.md`
 - Entry point filename is always `main.py`
 - Prefer the `logic-lab` MCP server for external algorithm references.
-- Animation is the primary output; ensure `output.mp4` is generated and committed.
+- Animation is the primary output; ensure `output.mp4` is generated. Commit MP4 files only when explicitly requested.

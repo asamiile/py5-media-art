@@ -1,19 +1,18 @@
-# Clifford Vortex Filaments
+# clifford_vortex_filaments
 
-A 3D chaotic attractor simulation exploring the visual beauty of non-linear dynamics and turbulent flow.
+![Preview](preview_p1.png)
+
+## Metadata
+- **Date**: 2026-05-08
+- **Theme**: Chaos theory, non-linear dynamics, attractor manifolds, turbulent flow, beautiful night sky.
+- **Technique**: 3D chaotic attractor based on a modified De Jong map. 200,000 particles are iteratively evolved through a system of coupled non-linear equations, where parameters ($a, b, c, d$) are slowly modulated via low-frequency oscillators. Features multi-pass additive point rendering with a "Molten Amber/Neon Violet/Electric Blue" palette and a high-density background starfield. 60fps high-bitrate MP4.
+- **Logic Lab Reference**: None
 
 ## Concept
-
-This artwork visualizes a 3D extension of the De Jong attractor. By evolving 200,000 particles through a set of coupled non-linear equations, we reveal the complex, silken filaments that form within the phase space of a chaotic system. The parameters of the system are slowly modulated over time, causing the attractor to "breathe" and shift its topology.
+A majestic, silken knot of shimmering amber and violet light pulses and shifts in the void, revealing complex filamentary structures that weave through a chaotic mathematical manifold against the star-dusted obsidian night.
 
 ## Technical Details
-
-- **Attractor Logic**: 3D De Jong map variant with dynamic parameter modulation ($a, b, c, d$).
-- **Particles**: 200,000 particles updated per frame to reveal the attractor's density structure.
-- **Rendering**: Multi-pass additive point rendering with a "Molten Amber/Neon Violet/Electric Blue" palette.
-- **Modulation**: Parameters are modulated via low-frequency oscillators to ensure smooth transitions in the attractor's form.
-- **Environment**: 4K/60fps animation with a high-density background starfield.
-
-## Aesthetics
-
-The visual impression is one of energetic turbulence and mathematical elegance. The dense core of "Molten Amber" light gives way to silken "Neon Violet" filaments that weave through the void. The "Electric Blue" highlights mark the regions of highest kinetic energy, creating a sense of a living, breathing mathematical organism pulsating against the obsidian night.
+- **Renderer**: P3D
+- **Simulation**: particle.
+- **Visuals**: additive blending, bloom-like highlights, dark-field contrast.
+- **Animation**: 20 seconds at 60fps

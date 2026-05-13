@@ -1,19 +1,18 @@
-# Higgs Field Symmetry Breaking
+# higgs_field_symmetry
 
-A high-fidelity 3D visualization of the Higgs mechanism and spontaneous symmetry breaking in the early universe.
+![Preview](preview_p1.png)
+
+## Metadata
+- **Date**: 2026-05-08
+- **Theme**: Higgs mechanism, spontaneous symmetry breaking, phase transitions, scalar fields, beautiful night sky.
+- **Technique**: 3D simulation of a scalar field $\phi$ undergoing a symmetry-breaking phase transition. 200,000 particles representing local field excitations are evolved via Langevin-like dynamics driven by the gradient of the Higgs potential $V(\phi) = \alpha |\phi|^2 + \beta |\phi|^4$. The $\alpha$ parameter is smoothly transition from positive (symmetric) to negative (broken), causing the field to "roll" into the Mexican Hat vacuum manifold. Features multi-pass additive point rendering with a "White/Violet/Cyan/Gold" spectral palette and an integrated background starfield (12,000 stars). 60fps high-bitrate MP4.
+- **Logic Lab Reference**: None
 
 ## Concept
-
-This artwork simulates a 3D scalar field $\phi$ undergoing a phase transition. In the early high-energy phase, the field oscillates around the zero-state (symmetric vacuum). As the universe cools, the potential shifts into a "Mexican Hat" shape, causing the field to roll down into a new, non-zero vacuum manifold (the "gutter" of the potential).
+A majestic, high-fidelity vision of the birth of mass; a chaotic cloud of shimmering white-violet light undergoes a cosmic phase transition, collapsing into a structured, shimmering condensate of electric cyan and gold light that pulses with the hidden weight of the universe against the star-dusted obsidian void.
 
 ## Technical Details
-
-- **Simulation**: 200,000 particles representing local field excitations.
-- **Physics**: Implements a Langevin-like second-order evolution driven by the gradient of the Higgs potential $V(\phi) = \alpha |\phi|^2 + \beta |\phi|^4$.
-- **Transition**: The $\alpha$ parameter shifts from positive to negative, triggering the spontaneous symmetry breaking.
-- **Rendering**: Multi-pass additive point rendering in P3D with a spectral palette (White/Violet to Cyan/Gold).
-- **Environment**: 4K/60fps high-bitrate animation with a dense background starfield (12,000 stars).
-
-## Aesthetics
-
-The visual narrative follows the transition from chaotic high-energy white-violet fluctuations into a structured, shimmering "condensate" of cyan and gold light, representing the birth of mass in the cosmos.
+- **Renderer**: P3D
+- **Simulation**: particle.
+- **Visuals**: additive blending, HSB spectral mapping, bloom-like highlights, prismatic color, dark-field contrast.
+- **Animation**: 20 seconds at 60fps

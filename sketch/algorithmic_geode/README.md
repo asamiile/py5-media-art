@@ -1,13 +1,18 @@
 # algorithmic_geode
 
-A 3D architectural sketch featuring a recursive quadtree city core encased in jagged obsidian-like shards, exploring themes of digital mineralization and urban recursion.
+![Preview](preview_p1.png)
 
+## Metadata
 - **Date**: 2026-05-06
-- **Theme**: Digital mineralization, urban recursion, inner light, modern city feel, beautiful night sky
-- **Technique**:
-    - **Architecture**: A monolithic geode-like structure composed of 12 graphite shards with sharp edge highlights.
-    - **Recursion**: A recursive quadtree algorithm generates an infinitely dense city grid on the interior faces of the core.
-    - **Visuals**: HSB-based neon highlights (Cyan/Magenta/Indigo) with additive bloom layers and volumetric light "leaks" from the seams.
-    - **Animation**: 10 seconds @ 60fps, featuring a slow zoom and rotation that reveals the scale of the metropolitan interior.
+- **Theme**: Digital mineralization, urban recursion, inner light, modern city feel, beautiful night sky.
+- **Technique**: 3D architectural sketch using P3D. Exterior consists of 12 jagged graphite shards (box primitives) with bright edge highlights and volumetric glow "leaks". Interior faces feature a recursive Quadtree city grid (depth 6) with animated HSB neon strokes. Multi-pass rendering for additive core bloom using concentric spheres and depth-test disabling. 60fps high-bitrate MP4.
+- **Logic Lab Reference**: None
 
-![preview_p1.png](preview_p1.png)
+## Concept
+A massive, jagged obsidian geode floats in the void; its dark, geometric shell is split open to reveal a pulsing, neon-lit metropolis of infinite recursive complexity, casting a cold, digital glow into the surrounding starfield.
+
+## Technical Details
+- **Renderer**: P3D
+- **Simulation**: recursive.
+- **Visuals**: additive blending, HSB spectral mapping, bloom-like highlights, dark-field contrast.
+- **Animation**: 10 seconds at 60fps

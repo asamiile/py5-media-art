@@ -1,21 +1,18 @@
 # vacuum_polarization_resonance
 
-A majestic, shimmering vision of the quantum vacuum; silken threads of electric cyan and royal amethyst energy polarize and align around an invisible dipole, creating an intricate tapestry of virtual light against the star-dusted obsidian void.
+![Preview](preview_p1.png)
+
+## Metadata
+- **Date**: 2026-05-08
+- **Theme**: Vacuum polarization, virtual particle pairs, dipole resonance, quantum electrodynamics, beautiful night sky.
+- **Technique**: 3D high-density particle simulation (200,000 particles) using vectorized NumPy. Particles are emitted as "virtual pairs" from a central region and advected by a dynamic 3D dipole electric field, creating polarized filaments. Visibility (alpha) is modulated by local field strength and particle lifetime. Features multi-pass additive rendering with a Cyan/Amethyst/Indigo palette and a high-density starfield (12,000 stars). 60fps high-bitrate MP4.
+- **Logic Lab Reference**: None
 
 ## Concept
+A majestic, shimmering vision of the quantum vacuum; silken threads of electric cyan and royal amethyst energy polarize and align around an invisible dipole, creating an intricate tapestry of virtual light against the star-dusted obsidian void.
 
-This work visualizes the theoretical phenomenon of **vacuum polarization** from quantum electrodynamics. In a strong electric field, the vacuum is not truly empty but is filled with virtual particle-antiparticle pairs that emerge and vanish. These virtual pairs become polarized and aligned by the field, momentarily creating a structured medium of energy.
-
-## Technique
-
-- **3D High-Density Particle Simulation**: 200,000 particles managed via vectorized NumPy for performance.
-- **Dipole Field Advection**: Particles are advected along a dynamic 3D electric dipole field ($E \propto r/d^3$).
-- **Multi-Pass Additive Rendering**: Simulates a high-intensity glow with cyan, amethyst, and indigo spectral mapping.
-- **High-Density Starfield**: 12,000 background stars provide a sense of cosmic scale and depth.
-- **4K Animation**: 15 seconds at 60fps, rendered with FFmpeg.
-
-## Visuals
-
-- **Palette**: Ultraviolet Singularity (Cyan/Amethyst/Indigo) with "Electric Gold" core highlights.
-- **Motion**: The dipole centers oscillate, causing the polarized filaments to weave and pulse rhythmically.
-- **Atmosphere**: Dark, ethereal, and high-tech, adhering to the "beautiful night sky" aesthetic.
+## Technical Details
+- **Renderer**: P3D
+- **Simulation**: Vectorized NumPy, NumPy, particle.
+- **Visuals**: additive blending.
+- **Animation**: 15 seconds at 60fps

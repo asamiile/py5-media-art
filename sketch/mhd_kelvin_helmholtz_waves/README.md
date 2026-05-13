@@ -1,22 +1,18 @@
-# MHD Kelvin-Helmholtz Waves
+# mhd_kelvin_helmholtz_waves
 
-A simulation of Magnetohydrodynamic (MHD) Kelvin-Helmholtz instabilities in a magnetized plasma shear layer.
-
-![MHD Kelvin-Helmholtz Waves](mhd_kelvin_helmholtz_waves_p1.png)
-
-## Concept
-This artwork visualizes the "billowing" interface between two fluids with different velocities, a classic fluid dynamics instability known as Kelvin-Helmholtz (KH). In an MHD context, the presence of a magnetic field (modeled here via a tension proxy) resists the vertical displacement, leading to more elongated, filamentary vortex structures compared to purely hydrodynamic flows.
-
-The aesthetic follows the "Beautiful Night Sky" theme, with particles representing glowing plasma filaments in a cosmic shear flow.
-
-## Technical Details
-- **Simulation**: Vectorized NumPy advection of 60,000 particles through a shear velocity field ($v_x = U \tanh(y/\delta)$) with periodic boundary conditions.
-- **Physics**: Includes a magnetic tension proxy that provides a restoring force to vertical perturbations, and a sinusoidal phase-shifted perturbation to trigger the billows.
-- **Rendering**: P2D additive blending with persistence-based motion blur to create soft, glowing trails.
-- **Palette**: "Deep Amethyst / Luminous Teal / Molten Gold" with color mapping based on initial vertical position.
+![Preview](mhd_kelvin_helmholtz_waves_p1.png)
 
 ## Metadata
-- **Duration**: 15 seconds
-- **FPS**: 60
-- **Resolution**: 4K (3840x2160)
-- **Engine**: py5 (Processing for Python)
+- **Date**: 2026-05-10
+- **Theme**: plasma dynamics, magnetohydrodynamics, fluid billows, beautiful night sky.
+- **Technique**: Vectorized 2D/3D particle advection (NumPy). Implements a magnetized shear layer simulation with a magnetic tension proxy resisting vertical displacement ($v_y \leftarrow v_y - \beta y$). Features a 60,000-particle system with persistence-based motion blur and additive blending in P2D.
+- **Logic Lab Reference**: None
+
+## Concept
+A majestic visualization of the Kelvin-Helmholtz instability in a magnetized cosmic fluid. Luminous filaments of teal and gold roll and billow into intricate spirals against a deep amethyst void, captured as they trace the invisible magnetic lines that attempt to bind them.
+
+## Technical Details
+- **Renderer**: P2D
+- **Simulation**: NumPy, particle, 3D particle.
+- **Visuals**: additive blending, bloom-like highlights.
+- **Animation**: 15 seconds at 60fps

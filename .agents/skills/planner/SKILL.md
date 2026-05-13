@@ -89,7 +89,7 @@ Emit exactly this block and nothing else:
 - Limit palette to 3–5 colors; never propose a full-spectrum rainbow as the primary scheme
 - If the concept suits animation (motion is essential to the idea), say so in **Format**.
 - **MANDATORY**: If the calling skill specifies a required format (Still image or Animation) in its instructions, the planner MUST output that format in the brief.
-- If proposing animation, specify a duration of **10 to 30 seconds depending on the content**.
+- If proposing animation, specify duration in the brief. See `.agents/skills/shared/py5-templates.md` for timing guidance (10–30 seconds depending on content).
 - Do not write any code — output the brief only.
 - Keep Logic Lab Reference to at most 3 paths.
 - Logic Lab should support the artwork concept, not define it. Never choose a concept only because an algorithm exists.

@@ -12,7 +12,7 @@ Each iteration must produce one complete, independent animation and commit/push 
 
 ## Workflow
 
-1. Read only the essential parts of `CLAUDE.md`, `.agents/skills/shared/artwork-conventions.md`, `.agents/skills/shared/py5-templates.md`, `sketch/WORKS.md`, and `.agents/FEEDBACK.md`.
+1. Read only the essential parts of `AGENTS.md`, `.agents/skills/shared/artwork-conventions.md`, `.agents/skills/shared/py5-templates.md`, `sketch/WORKS.md`, and `.agents/FEEDBACK.md`.
 2. Create or reuse branch `feature/works-YYYYMMDD`.
 3. Loop until externally interrupted:
    1. Check `git status --short`. Stop if unrelated pending changes would make a clean commit unsafe.
@@ -33,7 +33,7 @@ Each iteration must produce one complete, independent animation and commit/push 
 
 - **MANDATORY**: Always produce Animations.
 - Do not invoke separate Planner, Artist, or Critic agents.
-- Animation is the primary output; ensure `output.mp4` is generated and committed for each work.
+- Animation is the primary output; ensure `output.mp4` is generated for each work. Commit MP4 files only when explicitly requested.
 - Do not perform more than one revision per work.
 - Follow `.agents/skills/shared/artwork-conventions.md` for naming and staging.
 - The loop continues indefinitely until externally stopped.

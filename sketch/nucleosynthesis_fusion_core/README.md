@@ -1,19 +1,18 @@
 # nucleosynthesis_fusion_core
 
-A 3D simulation of stellar nucleosynthesis, capturing the turbulent plasma convection and nuclear fusion processes inside a massive star.
+![Preview](preview_p1.png)
 
-## Description
+## Metadata
+- **Date**: 2026-05-07
+- **Theme**: Stellar nucleosynthesis, nuclear fusion, plasma convection, gamma-ray bursts, beautiful night sky.
+- **Technique**: 3D high-velocity particle simulation (150,000 points) using vectorized `py5.points()`. Implements a softened central gravity and a toroidal convection field. Particles undergo "elemental transformation" (H -> He -> C -> O) based on local temperature/density proxies. Triggers "gamma-ray" streaks upon fusion events. Multi-pass additive rendering for the central plasma glow. 60fps high-bitrate MP4.
+- **Logic Lab Reference**: None
 
-A churning, incandescent heart of a giant star; a dense sea of electric blue nuclei collide and ignite in spectacular bursts of gold and violet light, slowly transforming the core into a rich, multi-layered tapestry of heavier elements through a complex, toroidal convection field.
+## Concept
+A churning, incandescent heart of a giant star; a dense sea of electric blue nuclei collide and ignite in spectacular bursts of gold and violet light, slowly transforming the core into a rich, multi-layered tapestry of heavier elements.
 
-## Technique
-
-- **Stellar Plasma Physics**: 3D high-velocity particle simulation (150,000 points) with a softened central gravity model and convective toroidal flow.
-- **Nucleosynthesis Stages**: Elemental transformation logic (Hydrogen -> Helium -> Carbon -> Oxygen) based on collision probability and proximity to the stellar center.
-- **Fusion Events**: Real-time generation of "gamma-ray" streaks and volumetric glows triggered by successful fusion events.
-- **Rendering**: Optimized vectorized particle rendering using `py5.points()` for high-density simulation. Features multi-pass additive glows for the stellar core.
-- **Format**: 10-second animation @ 60fps, 4K resolution.
-
-## Preview
-
-![preview_p1](preview_p1.png)
+## Technical Details
+- **Renderer**: P3D
+- **Simulation**: particle.
+- **Visuals**: additive blending, bloom-like highlights, dark-field contrast.
+- **Animation**: 10 seconds at 60fps

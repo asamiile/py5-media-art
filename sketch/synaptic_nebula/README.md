@@ -1,13 +1,18 @@
 # synaptic_nebula
 
-A physics-driven visualization of a bioluminescent neural nebula, exploring themes of cosmic biology and information flow.
+![Preview](preview_p1.png)
 
+## Metadata
 - **Date**: 2026-05-06
-- **Theme**: Cosmic biology, information flow, synaptic currents, beautiful night sky
-- **Technique**:
-    - **Physics**: 80,000 particles simulated using NumPy. They are attracted to a set of 30 "synaptic nodes" with a high-frequency noise perturbation.
-    - **Visuals**: Vectorized particle rendering (Cyan/Violet/Rose) with pulsing HSB highlights.
-    - **Flares**: Synaptic nodes feature multi-pass glow layers (spheres) that scale based on camera distance to create a sense of depth and activity.
-    - **Animation**: 10 seconds @ 60fps, featuring a slow orbiting camera through the filaments.
+- **Theme**: Cosmic biology, information flow, synaptic currents, beautiful night sky.
+- **Technique**: Physics-driven particle simulation (80,000 particles) using NumPy. Particles gravitate toward 30 "synaptic nodes" while being perturbed by noise-driven drift. Vectorized rendering using `py5.points()` for performance. Synaptic nodes feature pulsing multi-pass glow coronas (spheres) with distance-based scaling. HSB palette (Cyan/Blue/Violet/Rose). 60fps high-bitrate MP4.
+- **Logic Lab Reference**: None
 
-![preview_p1.png](preview_p1.png)
+## Concept
+A vast, bioluminescent neural network in the deep void; 80,000 data-particles flow through nebular filaments, connecting 30 pulsing synaptic nodes that flare with the light of a cosmic intelligence.
+
+## Technical Details
+- **Renderer**: P3D
+- **Simulation**: NumPy, particle.
+- **Visuals**: HSB spectral mapping, bloom-like highlights, prismatic color, dark-field contrast.
+- **Animation**: 10 seconds at 60fps

@@ -49,6 +49,7 @@ Only after the theme is clear, choose the algorithm that best expresses it.
 - **Diversity First**: Actively seek a theme, technique, and visual style that differs from the most recent 10 works in `WORKS.md`.
 - **Dynamic Rotation**: Instead of a fixed list, analyze the current `WORKS.md` and `logic-lab` manifest to identify under-represented categories (e.g., if many works use "Mathematical structure", switch to "Organic Growth" or "Urban Abstract").
 - **Constraint Satisfaction**: Ensure the implementation honors the specific `Logic Lab Reference` from the Creative Brief while injecting an original artistic twist.
+- **Animation Duration**: Follow `.agents/skills/shared/py5-templates.md` for timing (10–30 seconds depending on content).
 
 ## Color Design Guidelines
 
@@ -76,12 +77,10 @@ Avoid the default trap of high-saturation full-spectrum rainbow gradients. They 
 
 ## Implementation Guidelines
 
-- Follow the coding conventions in `CLAUDE.md`
 - Follow shared naming and preview rules in `.agents/skills/shared/artwork-conventions.md`
 - Use the code skeletons in `.agents/skills/shared/py5-templates.md`
 - Use the work name from the brief as the directory name; do not overwrite an existing work directory.
 - Design the sketch to auto-save pattern-specific preview images and explicitly auto-exit using `py5.exit_sketch()` to prevent memory leaks in continuous runs
-- For video/animation works, create an animation that is **10 to 30 seconds depending on the content**
 - Keep code readable with clear intent
 
 ## Logic Lab MCP Usage

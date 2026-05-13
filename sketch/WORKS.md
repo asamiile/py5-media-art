@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## spinodal_decomposition_nebula
+
+- **Date**: 2026-05-13
+- **Theme**: The spontaneous separation of two primordial fluids as the universe cools, creating a vast, intricate web of matter and void.
+- **Technique**: Cahn-Hilliard equation simulation on a 256x256 grid, scaled to 4K using LANCZOS. Visualizes phase separation (spinodal decomposition) with a spectral mapping from obsidian to solar white. 15s 4K/60fps MP4.
+- **Description**: A shimmering, uniform mist of purple and cyan slowly curdles and separates into a majestic, glowing sponge-like network of light threads, leaving vast dark voids in between.
+
 ## quantum_chaos_billiard
 
 - **Date**: 2026-05-12
@@ -222,9 +229,9 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 
 ## chiral_turing_morphogenesis
 
-- **Date**: 2026-05-10
+- **Date**: 2026-05-13
 - **Theme**: Organic morphogenesis driven by chiral chemical reactions, creating twisting, breathing labyrinths of light.
-- **Technique**: Vectorized 2D Gray-Scott Reaction-Diffusion model with a chiral advection term (curl of the gradient) to create twisting, spiraling Turing patterns. Rendered with a high-contrast mapping and subtle displacement mapping for a "liquid metal" feel.
+- **Technique**: Vectorized 2D Gray-Scott Reaction-Diffusion model on a 512x512 grid with a chiral advection term (asymmetric laplacian) and LANCZOS scaling to 4K. Rendered with a Midnight Indigo / Emerald / Amethyst palette. 15s 4K/60fps MP4.
 - **Description**: A dark, viscous surface erupts with glowing, spiraling green and violet labyrinths that twist and consume each other like a living digital organism.
 
 ## monsoon_resonance

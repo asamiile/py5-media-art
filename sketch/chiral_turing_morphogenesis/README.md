@@ -2,8 +2,8 @@
 
 - **Date**: 2026-05-10
 - **Theme**: Organic morphogenesis driven by chiral chemical reactions, creating twisting, breathing labyrinths of light.
-- **Technique**: Vectorized 2D Gray-Scott Reaction-Diffusion model with a chiral advection term (curl of the gradient) to create twisting, spiraling Turing patterns. Rendered with a high-contrast mapping and subtle displacement mapping for a "liquid metal" feel.
-- **Palette**: Liquid Obsidian / Bioluminescent Lime / Deep Violet / Silver
+- **Technique**: Vectorized 2D Gray-Scott Reaction-Diffusion model on a 512x512 grid with a chiral advection term (asymmetric laplacian) and LANCZOS scaling to 4K.
+- **Palette**: Midnight Indigo / Emerald / Amethyst / Star-White
 - **Format**: Animation (15s @ 60fps)
 
 ## Description

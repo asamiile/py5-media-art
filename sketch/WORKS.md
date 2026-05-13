@@ -3,6 +3,69 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## kerr_effect_filamentation
+
+- **Date**: 2026-05-11
+- **Theme**: Non-linear optics, Kerr effect, self-focusing, laser filamentation, spatial solitons.
+- **Technique**: 2D particle simulation of laser filamentation. Tracers are advected by the gradient of an intensity field governed by non-linear self-focusing dynamics. Features multi-pass additive rendering with a "Deep Emerald / Neon Lime / Prism White" palette. 20s 4K/60fps MP4.
+- **Description**: A central beam of emerald light breaks into brilliant filaments, creating a high-energy crystalline structure through non-linear self-focusing.
+
+## rayleigh_benard_convection_cells
+
+- **Date**: 2026-05-11
+- **Theme**: Fluid dynamics, thermodynamics, thermal convection, Rayleigh-Bénard instability, self-organization.
+- **Technique**: 2D particle advection simulation. Tracers are guided by a dynamic velocity field derived from a hexagonal convection roll model. Features multi-pass additive rendering with a "Molten Copper / Solar Amber / Obsidian" palette. 20s 4K/60fps MP4.
+- **Description**: A dark, viscous surface boils with organized cells of molten copper and golden light, revealing the elegant self-organization of a heated fluid.
+
+## gravitational_wave_chirp_merger
+
+- **Date**: 2026-05-11
+- **Theme**: General Relativity, gravitational waves, binary black hole merger, spacetime distortion, the "chirp" signal.
+- **Technique**: 3D particle grid simulation representing the fabric of spacetime. Two orbiting gravitational centers (masses) warp the surrounding geometry, creating rotating spiral ripples. Employs a non-linear "chirp" progression and manual 3D-to-2D projection. 15s 4K/60fps MP4.
+- **Description**: Two blindingly bright singularities dance in a tightening spiral, sending violent, rhythmic ripples of indigo and cyan through the fabric of spacetime before a final cataclysmic merger.
+
+## asymptotic_giant_branch_pulsation
+
+- **Date**: 2026-05-11
+- **Theme**: Stellar evolution, AGB stars, thermal pulses, planetary nebula precursor, stardust.
+- **Technique**: 3D shell ejection simulation. A central core undergoes periodic pulses every 180 frames, triggering the expansion of nested, concentric shells of 15,000 tracers each (up to 150,000 total). 20s 4K/60fps MP4.
+- **Description**: Concentric, shimmering shells of stardust expand slowly from a pulsing stellar core, creating a delicate, layered cocoon of rose and orange light.
+
+## magnetohydrodynamic_z_pinch_instability
+
+- **Date**: 2026-05-11
+- **Theme**: Fusion energy, plasma physics, Z-pinch confinement, sausage and kink instabilities, magnetohydrodynamics (MHD).
+- **Technique**: 3D magnetic field simulation of a central current column. Implements harmonic deformations corresponding to sausage (radial) and kink (helical) instability modes. 100,000 tracers. 10s 4K/60fps MP4.
+- **Description**: A vertical column of intense light starts in a stable cylindrical configuration but quickly succumbs to the violent forces of electromagnetism, deforming into chaotic kinks and sausages.
+
+## supernova_nucleosynthesis_nebula
+
+- **Date**: 2026-05-11
+- **Theme**: Stellar evolution, supernova explosions, heavy element creation, nuclear physics, beautiful night sky.
+- **Technique**: 3D blast wave simulation using an expanding shell of 80,000 particles with stochastic cooling and turbulence. Rendered with manual 3D-to-2D projection, multi-pass additive blending, and a "Deep Gold / Neon Violet / Star-White" palette. 15s 4K/60fps MP4.
+- **Description**: A violent yet majestic expansion; a central core collapses and rebounds, sending a shimmering, variegated nebula of precious metals and stardust into the cosmic dark.
+
+## cosmic_ray_cascade_resonance
+
+- **Date**: 2026-05-11
+- **Theme**: High-energy astrophysics, cosmic ray air showers, particle physics, beautiful night sky.
+- **Technique**: 3D particle cascade simulation (Heitler model). A primary high-energy particle triggers a stochastic branching process, spawning secondaries (pions, muons, electrons) in a narrow relativistic cone. Features 50,000 spectral particles at the shower peak. Rendered with manual 3D-to-2D projection, multi-pass additive blending, and a "Blinding White / Electric Cyan / Deep Amethyst" palette. 10s 4K/60fps MP4.
+- **Description**: A majestic eruption of light; a single streak from the top of the frame shatters into a vast, shimmering cone of spectral particles that illuminate the obsidian void like a fleeting ghost.
+
+## nematic_liquid_crystal_disclinations
+
+- **Date**: 2026-05-11
+- **Theme**: Liquid crystals, topological defects, disclination lines, soft matter physics, beautiful night sky.
+- **Technique**: 3D tensor field simulation (simplified director field) where orientation is influenced by moving defect centers (vortices). Features 40,000 tracers advected along the director field. Rendered with manual 3D-to-2D projection, multi-pass additive blending, and a "Spectral Blue / Pearl / Ionized Amethyst" palette. 15s 4K/60fps MP4.
+- **Description**: Silken filaments of pearl and blue light weave through the obsidian void, revealing the tangled topological defects of a liquid crystal phase as it relaxes toward equilibrium.
+
+## dielectric_breakdown_resonance
+
+- **Date**: 2026-05-11
+- **Theme**: Plasma physics, Lichtenberg figures, dielectric breakdown, high-voltage discharge, beautiful night sky.
+- **Technique**: 3D stochastic branch-growth simulation (DLA-variant) where "streamers" propagate along the gradient of a dynamic field. Features 30,000 spectral particles advected by the local discharge current and turbulence. Rendered with manual 3D-to-2D projection, multi-pass additive blending, and a "Blinding White / Electric Cyan / Deep Amethyst" palette. 8s 4K/60fps MP4.
+- **Description**: A majestic, high-energy visualization of cosmic lightning; razor-sharp branches of electric cyan and white energy strike out into the obsidian void, shattering into a shimmering haze of amethyst particles as the dielectric strength of the vacuum fails.
+
 ## soap_film_thickness_flow
 
 - **Date**: 2026-05-10

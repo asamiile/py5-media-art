@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## bec_interference_fringes
+
+- **Date**: 2026-05-16
+- **Theme**: Bose-Einstein Condensate (BEC) interference and vortex formation.
+- **Technique**: Vectorized interference field simulation with expanding wave packets, density-mapped particle dynamics, and multi-pass additive rendering. 10s 4K/60fps MP4.
+- **Description**: Expanding concentric fringes of quantum density that collide to create intricate moiré lattices in neon aqua and pulse red.
+
 ## fermi_surface_topology
 
 - **Date**: 2026-05-16

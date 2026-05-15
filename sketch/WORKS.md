@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## quantum_spin_liquid_entanglement
+
+- **Date**: 2026-05-16
+- **Theme**: Quantum Spin Liquids (QSLs) and Resonating Valence Bonds (RVB).
+- **Technique**: Vectorized triangular lattice spin system with stochastic dimer-swapping (RVB) dynamics and tracer-based entanglement trails. 10s 4K/60fps MP4.
+- **Description**: A fluid, shimmering web of entangled spin-dimers in deep amethyst and electric lime, illustrating the resonating nature of quantum spin liquids.
+
 ## cholesteric_blue_phase_resonance
 
 - **Date**: 2026-05-16

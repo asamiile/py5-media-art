@@ -9,142 +9,118 @@ if str(PROJECT_ROOT) not in sys.path:
     sys.path.append(str(PROJECT_ROOT))
 
 from lib.paths import sketch_dir
-from lib.preview import preview_filename
 from lib.sizes import get_sizes
 
 SKETCH_DIR = sketch_dir(__file__)
+WORK_NAME = SKETCH_DIR.name
 FRAMES_DIR = SKETCH_DIR / "frames"
 DURATION_SEC = 10
 FPS = 60
 TOTAL_FRAMES = DURATION_SEC * FPS
-PREVIEW_FILENAME = preview_filename(pattern=1)
+PREVIEW_FILENAME = f"{WORK_NAME}_p1.png"
 PREVIEW_SIZE, OUTPUT_SIZE, SIZE = get_sizes()
 
-# Simulation constants
-NUM_FILAMENTS = 12
-PARTICLES_PER_FILAMENT = 10_000
-NUM_PARTICLES = NUM_FILAMENTS * PARTICLES_PER_FILAMENT
-NUM_STARS = 10_000
+# Simulation Parameters
+NUM_FILAMENTS = 5
+NUM_POINTS_PER_FILAMENT = 200
+NUM_TRACERS = 80000
 
-# State
-u_vals = None
-filament_centers = None
-filament_radii = None
-stars = None
+# Filament points
+z_coords = np.linspace(-500, 500, NUM_POINTS_PER_FILAMENT)
+theta = np.linspace(0, 4 * np.pi, NUM_POINTS_PER_FILAMENT)
+
+# Tracer positions
+TRACER_POS = np.random.uniform(-400, 400, (NUM_TRACERS, 3))
 
 def setup():
     py5.size(*SIZE, py5.P3D)
-    py5.background(0)
+    py5.background(10, 5, 20)
     FRAMES_DIR.mkdir(exist_ok=True)
-    
-    global u_vals, filament_centers, filament_radii, stars
-    
-    # Pre-compute parameter u [0, 2pi] for each particle
-    u_vals = np.tile(np.linspace(0, 2 * np.pi, PARTICLES_PER_FILAMENT), NUM_FILAMENTS).astype(np.float32)
-    
-    # Filament properties
-    filament_centers = np.random.uniform(-100, 100, (NUM_FILAMENTS, 3)).astype(np.float32)
-    filament_radii = np.random.uniform(150, 300, NUM_FILAMENTS).astype(np.float32)
-    
-    # Background stars
-    stars = np.random.uniform(-1500, 1500, (NUM_STARS, 3)).astype(np.float32)
 
 def draw():
-    if py5.frame_count % 50 == 0:
-        print(f"Frame: {py5.frame_count}/{TOTAL_FRAMES}")
+    global TRACER_POS
+    t = py5.frame_count
     
-    t = py5.frame_count * 0.02
+    py5.background(5, 5, 15)
     
-    py5.background(0)
-    py5.hint(py5.DISABLE_DEPTH_TEST)
-    
-    # Camera
-    py5.camera(600 * np.sin(t * 0.1), 400 * np.cos(t * 0.15), 600 * np.cos(t * 0.1),
-               0, 0, 0, 0, 1, 0)
-    
-    # Draw Stars
-    py5.stroke(255, 120)
-    py5.stroke_weight(1)
-    py5.points(stars)
-    
-    # Physics: Kelvin Waves on Vortex Filaments
-    # Each filament i:
-    # p = center_i + rotation_i * (base_circle + kelvin_waves)
-    
-    all_pts = []
-    
+    # Filament Physics: Kelvin Waves
+    filaments = []
     for i in range(NUM_FILAMENTS):
-        u = u_vals[i * PARTICLES_PER_FILAMENT : (i+1) * PARTICLES_PER_FILAMENT]
-        r = filament_radii[i]
-        c = filament_centers[i]
+        # Base position
+        offset_x = 200 * np.cos(i * 2 * np.pi / NUM_FILAMENTS + t * 0.01)
+        offset_y = 200 * np.sin(i * 2 * np.pi / NUM_FILAMENTS + t * 0.01)
         
-        # Base circle
-        x = r * np.cos(u)
-        y = r * np.sin(u)
-        z = np.zeros_like(u)
+        # Helical perturbation
+        amp = 30 + 10 * np.sin(t * 0.05 + i)
+        freq = 3.0
+        phase = t * 0.15 + i * 0.5
         
-        # Kelvin Waves (multi-octave helical ripples)
-        # Octave 1
-        n1 = 4.0
-        amp1 = 20.0 * np.sin(t * 0.5 + i)
-        x += amp1 * np.cos(n1 * u + t * 2.0)
-        z += amp1 * np.sin(n1 * u + t * 2.0)
+        px = offset_x + amp * np.cos(freq * z_coords * 0.01 + phase)
+        py = offset_y + amp * np.sin(freq * z_coords * 0.01 + phase)
+        pz = z_coords
         
-        # Octave 2
-        n2 = 12.0
-        amp2 = 8.0 * np.cos(t * 0.8 - i)
-        y += amp2 * np.sin(n2 * u - t * 3.0)
-        z += amp2 * np.cos(n2 * u - t * 3.0)
-        
-        # Rotation for orientation
-        rot_t = t * 0.1 + i * 1.5
-        rx = x * np.cos(rot_t) - z * np.sin(rot_t)
-        rz = x * np.sin(rot_t) + z * np.cos(rot_t)
-        
-        all_pts.append(np.stack([rx + c[0], y + c[1], rz + c[2]], axis=-1))
+        filaments.append(np.stack([px, py, pz], axis=-1))
     
-    all_pts = np.concatenate(all_pts, axis=0).astype(np.float32)
+    # Tracer motion: simple flow around closest filament
+    for fil in filaments:
+        # Distance to filament points (sampled)
+        # Using a simplified attraction/rotation
+        rel = TRACER_POS[:, np.newaxis, :] - fil[::10]
+        dist_sq = np.sum(rel**2, axis=-1)
+        min_idx = np.argmin(dist_sq, axis=1)
+        
+        # Closest relative vector
+        closest_rel = rel[np.arange(NUM_TRACERS), min_idx]
+        d = np.sqrt(dist_sq[np.arange(NUM_TRACERS), min_idx])
+        
+        # Velocity: Rotation around the filament + drift
+        v_rot = np.cross(closest_rel, [0, 0, 1]) / (d[:, np.newaxis] + 10) * 15
+        TRACER_POS += v_rot * 0.5
+        
+    # Wrapping
+    TRACER_POS = (TRACER_POS + 500) % 1000 - 500
     
-    # Additive Rendering
+    # Rendering
+    py5.push_matrix()
+    py5.translate(py5.width / 2, py5.height / 2, -200)
+    py5.rotate_y(t * 0.005)
+    
     py5.blend_mode(py5.ADD)
-    py5.color_mode(py5.HSB, 360, 100, 100, 100)
     
-    # Draw filaments
-    for i in range(NUM_FILAMENTS):
-        pts = all_pts[i * PARTICLES_PER_FILAMENT : (i+1) * PARTICLES_PER_FILAMENT]
+    # Draw Filaments
+    py5.no_fill()
+    py5.stroke_weight(3.0)
+    for i, fil in enumerate(filaments):
+        py5.stroke(200, 200, 255, 150)
+        py5.begin_shape()
+        for p in fil[::2]:
+            py5.vertex(*p)
+        py5.end_shape()
         
-        # Color based on filament index and local curvature proxy (Z-variation)
-        # Teal (170) and Violet (270)
-        h = 170 if i % 2 == 0 else 270
-        s = 80
-        b = 100
-        
-        # Vectorized segments or points
-        py5.stroke(h, s, b, 60)
-        py5.stroke_weight(1.2)
-        py5.points(pts)
-        
-        # Core highlights
-        py5.stroke(0, 0, 100, 40)
-        py5.stroke_weight(0.5)
-        py5.points(pts)
-
+    # Draw Tracers
+    py5.stroke_weight(1.5)
+    # Color mapping: Ultra Violet (280) to Silver
+    py5.stroke(180, 150, 255, 40)
+    py5.points(TRACER_POS[::2])
+    
+    py5.stroke(220, 220, 255, 30)
+    py5.points(TRACER_POS[1::2])
+    
+    py5.pop_matrix()
+    
     # Save frame
     py5.save_frame(str(FRAMES_DIR / "frame-####.png"))
-
+    
     if py5.frame_count >= TOTAL_FRAMES:
         py5.exit_sketch()
         subprocess.run([
             "ffmpeg", "-y", "-r", str(FPS),
             "-i", str(FRAMES_DIR / "frame-%04d.png"),
-            "-vcodec", "libx264", "-crf", "28", "-pix_fmt", "yuv420p",
-            str(SKETCH_DIR / "output.mp4"),
+            "-vcodec", "libx264", "-pix_fmt", "yuv420p",
+            "-crf", "18",
+            str(SKETCH_DIR / f"{WORK_NAME}.mp4"),
         ], check=True)
-        mid_frame = TOTAL_FRAMES // 2
-        subprocess.run([
-            "cp", str(FRAMES_DIR / f"frame-{mid_frame:04d}.png"),
-            str(SKETCH_DIR / PREVIEW_FILENAME)
-        ], check=True)
+        mid = str(FRAMES_DIR / f"frame-{TOTAL_FRAMES // 2:04d}.png")
+        subprocess.run(["cp", mid, str(SKETCH_DIR / PREVIEW_FILENAME)], check=True)
 
-if __name__ == "__main__":
-    py5.run_sketch()
+py5.run_sketch()

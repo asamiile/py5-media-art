@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## superfluid_kelvin_waves
+
+- **Date**: 2026-05-16
+- **Theme**: Kelvin waves on quantized vortices in a superfluid.
+- **Technique**: 3D vortex filament model with helical wave perturbations, vectorized tracer advection, and multi-pass additive rendering. 10s 4K/60fps MP4.
+- **Description**: Glowing helical filaments in ultra violet and silver, vibrating with quantum Kelvin waves as they rotate and interact.
+
 ## bec_interference_fringes
 
 - **Date**: 2026-05-16

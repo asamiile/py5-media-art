@@ -3,9 +3,14 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
-## axion_domain_walls
+## quantum_zeno_decoherence
 
 - **Date**: 2026-05-16
+- **Theme**: The freezing effect of constant observation vs. the violent eruption of decoherence.
+- **Technique**: Stochastic state-switching simulation with periodic grid projections, vectorized particle fragmentation, and direct pixel-buffer horizontal shredding. 15s 4K/60fps MP4.
+- **Description**: A shimmering amethyst quantum sphere is caged by sharp white-gold observation grids; when the gaze wavers, the sphere shatters into spectral fragments and digital glitch artifacts, visualizing the tension between quantum stability and chaotic decoherence.
+
+## axion_domain_walls
 - **Theme**: Domain walls in an axion insulator.
 - **Technique**: 3D time-varying scalar field simulation, gradient-descent particle trapping on isosurfaces, and 3D additive rendering. 10s 4K/60fps MP4.
 - **Description**: Ethereal sheets of chrome and oxide light ripple and intersect in a dark void, as particles clump and flow along the topological domain walls.

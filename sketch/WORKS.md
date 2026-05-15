@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## axion_domain_walls
+
+- **Date**: 2026-05-16
+- **Theme**: Domain walls in an axion insulator.
+- **Technique**: 3D time-varying scalar field simulation, gradient-descent particle trapping on isosurfaces, and 3D additive rendering. 10s 4K/60fps MP4.
+- **Description**: Ethereal sheets of chrome and oxide light ripple and intersect in a dark void, as particles clump and flow along the topological domain walls.
+
 ## topological_edge_currents
 
 - **Date**: 2026-05-16

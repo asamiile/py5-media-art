@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## topological_edge_currents
+
+- **Date**: 2026-05-16
+- **Theme**: Protected edge states in a topological insulator.
+- **Technique**: Lattice-based boundary flow simulation, vectorized particle advection, and multi-pass additive rendering. 10s 4K/60fps MP4.
+- **Description**: Glowing emerald currents weave through a dark cobalt lattice, flowing perfectly around internal voids and jagged boundaries without dissipation.
+
 ## superfluid_kelvin_waves
 
 - **Date**: 2026-05-16

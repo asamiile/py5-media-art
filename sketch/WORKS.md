@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## fermi_surface_topology
+
+- **Date**: 2026-05-16
+- **Theme**: Fermi Surface momentum-space geometry.
+- **Technique**: Vectorized 3D scalar field for Fermi surface approximation with particle advection constrained to the energy manifold and tight-binding mapping. 10s 4K/60fps MP4.
+- **Description**: A shimmering, complex manifold of momentum states in electric cobalt and solar gold, illustrating the topological structure of electron energy in a crystal lattice.
+
 ## quantum_spin_liquid_entanglement
 
 - **Date**: 2026-05-16

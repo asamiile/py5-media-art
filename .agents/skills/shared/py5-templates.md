@@ -26,6 +26,7 @@ PREVIEW_SIZE, OUTPUT_SIZE, SIZE = get_sizes()
 
 def setup():
     py5.size(*SIZE)
+    py5.pixel_density(1)  # Capping density at 1x prevents extreme Retina-doubled rendering loads
     py5.background(0)
 
 
@@ -41,6 +42,7 @@ py5.run_sketch()
 
 ```python
 from pathlib import Path
+import shutil
 import subprocess
 import sys
 import py5
@@ -65,6 +67,7 @@ PREVIEW_SIZE, OUTPUT_SIZE, SIZE = get_sizes()
 
 def setup():
     py5.size(*SIZE)
+    py5.pixel_density(1)  # Capping density at 1x prevents extreme Retina-doubled rendering loads
     FRAMES_DIR.mkdir(exist_ok=True)
 
 
@@ -72,16 +75,30 @@ def draw():
     # drawing logic; choose intentionally whether to call background() each frame
     py5.save_frame(str(FRAMES_DIR / "frame-####.png"))
 
+    # Progress feedback: prevents silent timeouts and makes it clear the render is healthy
+    if py5.frame_count % 60 == 0:
+        print(f"[Render Progress] Frame {py5.frame_count}/{TOTAL_FRAMES} ({py5.frame_count/TOTAL_FRAMES*100:.1f}%)")
+
     if py5.frame_count >= TOTAL_FRAMES:
         py5.exit_sketch()
+        
+        # Compile frames into MP4
+        print(f"[Render FFmpeg] Compiling {TOTAL_FRAMES} frames into video...")
         subprocess.run([
             "ffmpeg", "-y", "-r", str(FPS),
             "-i", str(FRAMES_DIR / "frame-%04d.png"),
             "-vcodec", "libx264", "-pix_fmt", "yuv420p",
             str(SKETCH_DIR / f"{WORK_NAME}.mp4"),
         ], check=True)
+        
+        # Save a preview snapshot
         mid = str(FRAMES_DIR / f"frame-{TOTAL_FRAMES // 2:04d}.png")
         subprocess.run(["cp", mid, str(SKETCH_DIR / PREVIEW_FILENAME)], check=True)
+        
+        # Clean up frames directory to save gigabytes of local storage
+        if FRAMES_DIR.exists():
+            shutil.rmtree(FRAMES_DIR)
+            print("[Render Cleanup] Temporary frames directory successfully removed.")
 
 
 py5.run_sketch()

@@ -1547,3 +1547,9 @@ Add any notes on color, density, theme, or mood in the Comment field.
 - **Date**: 2026-05-06
 - **Rating**: 
 - **Comment**: 
+
+## photonic_bandgap_waveguide
+
+- **Date**: 2026-05-17
+- **Rating**: 
+- **Comment**: 

@@ -2240,4 +2240,11 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Logic Lab Reference**: `tiling_patterns/ih02_tv08_koch/ih02_tv08_koch.py`
 - **Description**: A sprawling, glowing metropolis of fractal monoliths extends into a deep-space void; each structure is built from shimmering geometric layers that subdivide and pulse with electric cyan and laser pink light, while a distant starfield and violet horizon haze suggest an infinite atmospheric scale.
 
+## photonic_bandgap_waveguide
+
+- **Date**: 2026-05-17
+- **Theme**: Light guided through a labyrinth of silent obsidian pillars, trapped within a designed defect where it flows around a sharp turn without scattering, visualizing the control of light at the microscopic scale.
+- **Technique**: 2D TM-polarized FDTD wave solver on a square dielectric lattice with an L-shaped defect channel and edge absorption.
+- **Description**: Sinusoidal electric field waves (Teal crests and Coral troughs) propagate down a channel and bend perfectly at a 90-degree corner, while adjacent gold pillars scatter the evanescent field, breathing with gold light.
+
 <!-- Add new works above this line using the format below:

@@ -3,6 +3,20 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## glitch_strata_v3
+
+- **Date**: 2026-05-17
+- **Theme**: Luxury decay, digital archaeology, and high-fidelity corruption.
+- **Technique**: Vectorized 2D pixel-buffer corruption using NumPy. Implements dynamic wiggling strata boundaries, horizontal wave tearing, blocky slide shifts, dynamic vertical data spikes, vectorized chromatic aberration (RGB channel splitting), and moving retro analogue scanlines. 10s 4K/60fps MP4.
+- **Description**: An elegant, shimmering digital tapestry of obsidian, deep gold, cyber magenta, and royal amethyst decays dynamically over time. Striking horizontal tearing waves and vertical tracking errors slice across the canvas, while high-performance RGB channel splitting adds vibrant chromatic aberration, visualizing a majestic archaeological survey of corrupted luxury memory.
+
+## bioluminescent_shear_tide
+
+- **Date**: 2026-05-17
+- **Theme**: The fleeting, brilliant glow of microscopic organisms in a midnight tide pool, triggered by the mechanical stress of shifting currents and breaking waves.
+- **Technique**: 2D fluid-shear advection with a multi-harmonic velocity field. A bioluminescent buffer excites based on local shear stress, modulating the alpha and color of 120,000 tracers. 12s 4K/60fps MP4.
+- **Description**: A stunning fluid simulation of a tide pool at midnight. Shimmering ribbons of electric emerald and cyan light are swept along by invisible currents, glowing with intense brilliance as shear forces excite the simulated microorganisms, leaving delicate, fading trails of foam-white and deep teal in the dark water.
+
 ## quantum_zeno_decoherence
 
 - **Date**: 2026-05-16

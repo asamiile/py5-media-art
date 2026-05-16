@@ -2247,4 +2247,11 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: 2D TM-polarized FDTD wave solver on a square dielectric lattice with an L-shaped defect channel and edge absorption.
 - **Description**: Sinusoidal electric field waves (Teal crests and Coral troughs) propagate down a channel and bend perfectly at a 90-degree corner, while adjacent gold pillars scatter the evanescent field, breathing with gold light.
 
+## adaptive_nerve_bloom
+
+- **Date**: 2026-05-17
+- **Theme**: Artificial intelligence learning to recognize patterns through dynamic synaptic adaptation, visualizing the emergence of computational intelligence.
+- **Technique**: Procedural neural network simulation with 180 stochastically-positioned neurons, proximity-based synapse generation (250px radius), adaptive synapse strength decay, and activation-driven signal propagation with distance-weighted color mapping. 15s 4K/60fps MP4.
+- **Description**: A constellation of glowing neural nodes blooms across a dark void, forming a dense web of cyan, magenta, and gold connections that pulse with computational energy. As signals propagate through the network, synaptic connections strengthen and weaken in real time, visualizing the dynamic learning process of artificial intelligence reorganizing itself.
+
 <!-- Add new works above this line using the format below:

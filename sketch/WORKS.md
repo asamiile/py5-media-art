@@ -3,6 +3,60 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## quantum_zeno_decoherence
+
+- **Date**: 2026-05-16
+- **Theme**: The freezing effect of constant observation vs. the violent eruption of decoherence.
+- **Technique**: Stochastic state-switching simulation with periodic grid projections, vectorized particle fragmentation, and direct pixel-buffer horizontal shredding. 15s 4K/60fps MP4.
+- **Description**: A shimmering amethyst quantum sphere is caged by sharp white-gold observation grids; when the gaze wavers, the sphere shatters into spectral fragments and digital glitch artifacts, visualizing the tension between quantum stability and chaotic decoherence.
+
+## axion_domain_walls
+- **Theme**: Domain walls in an axion insulator.
+- **Technique**: 3D time-varying scalar field simulation, gradient-descent particle trapping on isosurfaces, and 3D additive rendering. 10s 4K/60fps MP4.
+- **Description**: Ethereal sheets of chrome and oxide light ripple and intersect in a dark void, as particles clump and flow along the topological domain walls.
+
+## topological_edge_currents
+
+- **Date**: 2026-05-16
+- **Theme**: Protected edge states in a topological insulator.
+- **Technique**: Lattice-based boundary flow simulation, vectorized particle advection, and multi-pass additive rendering. 10s 4K/60fps MP4.
+- **Description**: Glowing emerald currents weave through a dark cobalt lattice, flowing perfectly around internal voids and jagged boundaries without dissipation.
+
+## superfluid_kelvin_waves
+
+- **Date**: 2026-05-16
+- **Theme**: Kelvin waves on quantized vortices in a superfluid.
+- **Technique**: 3D vortex filament model with helical wave perturbations, vectorized tracer advection, and multi-pass additive rendering. 10s 4K/60fps MP4.
+- **Description**: Glowing helical filaments in ultra violet and silver, vibrating with quantum Kelvin waves as they rotate and interact.
+
+## bec_interference_fringes
+
+- **Date**: 2026-05-16
+- **Theme**: Bose-Einstein Condensate (BEC) interference and vortex formation.
+- **Technique**: Vectorized interference field simulation with expanding wave packets, density-mapped particle dynamics, and multi-pass additive rendering. 10s 4K/60fps MP4.
+- **Description**: Expanding concentric fringes of quantum density that collide to create intricate moiré lattices in neon aqua and pulse red.
+
+## fermi_surface_topology
+
+- **Date**: 2026-05-16
+- **Theme**: Fermi Surface momentum-space geometry.
+- **Technique**: Vectorized 3D scalar field for Fermi surface approximation with particle advection constrained to the energy manifold and tight-binding mapping. 10s 4K/60fps MP4.
+- **Description**: A shimmering, complex manifold of momentum states in electric cobalt and solar gold, illustrating the topological structure of electron energy in a crystal lattice.
+
+## quantum_spin_liquid_entanglement
+
+- **Date**: 2026-05-16
+- **Theme**: Quantum Spin Liquids (QSLs) and Resonating Valence Bonds (RVB).
+- **Technique**: Vectorized triangular lattice spin system with stochastic dimer-swapping (RVB) dynamics and tracer-based entanglement trails. 10s 4K/60fps MP4.
+- **Description**: A fluid, shimmering web of entangled spin-dimers in deep amethyst and electric lime, illustrating the resonating nature of quantum spin liquids.
+
+## cholesteric_blue_phase_resonance
+
+- **Date**: 2026-05-16
+- **Theme**: Cholesteric liquid crystal "Blue Phases" (BPI/BPII).
+- **Technique**: Vectorized 3D director field approximation with cubic symmetry, particle advection, and iridescent selective reflection mapping. 10s 4K/60fps MP4.
+- **Description**: A shimmering 3D lattice of double-twist light cylinders in electric cyan and royal violet, revealing the complex topological structure of highly chiral liquid crystals.
+
 ## eutectic_alloy_solidification
 
 - **Date**: 2026-05-13

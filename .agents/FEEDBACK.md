@@ -4,6 +4,46 @@
 Agents MUST NOT write anything in the `Comment` field. When registering a new work, Agents must leave the `Rating` and `Comment` fields empty or with their default labels as placeholders for the user.
 The Artist reads this file before starting a new sketch to understand preferences.
 
+## quantum_zeno_decoherence
+
+- **Rating**: 
+- **Comment**: 
+
+## axion_domain_walls
+
+- **Rating**: 
+- **Comment**: 
+
+## topological_edge_currents
+
+- **Rating**: 
+- **Comment**: 
+
+## superfluid_kelvin_waves
+
+- **Rating**: 
+- **Comment**: 
+
+## bec_interference_fringes
+
+- **Rating**: 
+- **Comment**: 
+
+## fermi_surface_topology
+
+- **Rating**: 
+- **Comment**: 
+
+## quantum_spin_liquid_entanglement
+
+- **Rating**: 
+- **Comment**: 
+
+## cholesteric_blue_phase_resonance
+
+- **Rating**: 
+- **Comment**: 
+
 ## eutectic_alloy_solidification
 
 - **Rating**: 

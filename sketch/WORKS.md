@@ -2254,4 +2254,11 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: Procedural neural network simulation with 180 stochastically-positioned neurons, proximity-based synapse generation (250px radius), adaptive synapse strength decay, and activation-driven signal propagation with distance-weighted color mapping. 15s 4K/60fps MP4.
 - **Description**: A constellation of glowing neural nodes blooms across a dark void, forming a dense web of cyan, magenta, and gold connections that pulse with computational energy. As signals propagate through the network, synaptic connections strengthen and weaken in real time, visualizing the dynamic learning process of artificial intelligence reorganizing itself.
 
+## wildfire_front_propagation
+
+- **Date**: 2026-05-17
+- **Theme**: A spreading wildfire racing across dry grassland, visualizing how heat and fuel interact to drive the expanding flame front with organic chaos.
+- **Technique**: Cellular automata fire propagation on 240×135 grid with heat diffusion, probabilistic neighbor-spreading, fuel depletion, and temperature-mapped RGB coloring. 18s 4K/60fps MP4.
+- **Description**: A spark ignites in darkness and erupts into an expanding wildfire, creating jagged flame fronts that spread in organic, chaotic patterns. Brilliant incandescent white cores glow through vibrant orange and scarlet reds to deep charred boundaries, creating visceral heat intensity while leaving blackened ash in the fire's wake.
+
 <!-- Add new works above this line using the format below:

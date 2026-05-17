@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## polymer_chain_langevin_dynamics
+
+- **Date**: 2026-05-17
+- **Theme**: Microscopic polymer chains floating in a heat bath, folding and unfolding randomly under thermal noise and a swirling fluid field.
+- **Technique**: 2D Langevin dynamics simulation of 150 polymer chains (1,000 particles each). Particles are connected by Hookean springs, subject to random Gaussian thermal kicks, and advected by a macroscopic harmonic swirl field using vectorized NumPy physics with sub-stepping. Rendered with multi-pass additive point rendering using `py5.points` with a "Cyan to Magenta" HSB palette against a motion-blurred dark background. 15s 4K/60fps MP4.
+- **Description**: A mesmerizing microscopic view; 150 glowing, fluorescent neon threads twist, tangle, and breathe in a dark fluid, driven by invisible thermal noise and slow swirling currents, resembling DNA or polymers in a microfluidic channel.
+
 ## chladni_plate_resonance
 
 - **Date**: 2026-05-17

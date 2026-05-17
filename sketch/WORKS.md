@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## boid_murmuration_fluid
+
+- **Date**: 2026-05-17
+- **Theme**: The breathtaking, emergent intelligence of a massive murmuration flowing and turning like liquid through a turbulent wind at dusk.
+- **Technique**: Vectorized hierarchical spatial flocking simulation (Boids) for 30,000 agents, coupled with a multi-octave noise wind field and center of mass attraction. Agents align with local flock leaders and leave fading silken paths rendered directly into the py5 pixel buffer with additive blending. 15s 4K/60fps MP4.
+- **Description**: Thousands of tiny sparks sweep across a dark indigo sky, suddenly folding and swooping together into massive, undulating ribbon-like shapes that feel both organic and perfectly synchronized.
+
 ## electrodeposition_dendrite_growth
 
 - **Date**: 2026-05-17

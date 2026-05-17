@@ -2282,4 +2282,11 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: Recursive L-system tree generation with turtle graphics rendering, binary branching (±0.4 rads), length scaling (75% per generation), generation-based coloring, progressive animation reveal, and leaf particle effects. 14s 4K/60fps MP4.
 - **Description**: A single trunk erupts and recursively splits into increasingly fine branches. Warm brown wooden limbs extend upward through ten generations while glowing green leaves bloom along mature branches, creating a living fractal tree with organic mathematical elegance.
 
+## noise_field_flow
+
+- **Date**: 2026-05-17
+- **Theme**: Particles flowing along invisible currents defined by turbulent noise, visualizing emergent fluid-like behavior.
+- **Technique**: Perlin noise-based velocity field particle advection with 5000 particles, velocity smoothing (0.8 decay), noise-value coloring gradient, variable size based on local noise magnitude. 12s 4K/60fps MP4.
+- **Description**: Thousands of cyan and magenta particles swirl and flow in organic curves, guided by invisible Perlin noise currents. Electric ribbons weave and spiral, creating vortices and laminar flow patterns that mimic natural fluid dynamics while remaining purely particle-driven.
+
 <!-- Add new works above this line using the format below:

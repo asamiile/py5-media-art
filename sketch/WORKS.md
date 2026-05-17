@@ -2275,4 +2275,11 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: Recursive cell division simulation with generation-based lifecycle, directional propagation, size-scaling per generation, pulsing radius animation, and generation-depth color mapping. 16s 4K/60fps MP4.
 - **Description**: A single cell erupts and immediately divides into a cascade of exponential growth. Green and cyan cells multiply and branch symmetrically, creating elegant fractal structures that fill the canvas. Each cell pulses rhythmically with a deep purple nucleus, visualizing the mathematical beauty of biological reproduction.
 
+## fractal_tree_generation
+
+- **Date**: 2026-05-17
+- **Theme**: Recursive tree growth using Lindenmayer systems, visualizing how simple branching rules create complex botanical fractals.
+- **Technique**: Recursive L-system tree generation with turtle graphics rendering, binary branching (±0.4 rads), length scaling (75% per generation), generation-based coloring, progressive animation reveal, and leaf particle effects. 14s 4K/60fps MP4.
+- **Description**: A single trunk erupts and recursively splits into increasingly fine branches. Warm brown wooden limbs extend upward through ten generations while glowing green leaves bloom along mature branches, creating a living fractal tree with organic mathematical elegance.
+
 <!-- Add new works above this line using the format below:

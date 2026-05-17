@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## photoelastic_granular_jamming
+
+- **Date**: 2026-05-17
+- **Theme**: Granular physics, photoelastic stress birefringence, contact force chains, jamming transitions.
+- **Technique**: 2D soft-sphere Discrete Element Method (DEM) using spring-dashpot contact dynamics solved in a multi-step vectorized NumPy physics engine, integrated with a multi-layered polariscope photoelastic rendering model. Concentric stress-induced colorful circular fringes centered at the contact points and 1,000+ contact-force neon lines. 15s 4K/60fps MP4.
+- **Description**: A stunning simulation of photoelastic granular jamming. 650 translucent dark glass beads are compressed by a modern glassy cyan piston, building a dense network of glowing amber and gold contact force chains. As they are compressed, the beads glow from within with nested deep purple, neon pink, and solar gold stress fringes, dynamically rearranging and locking under pressure.
+
 ## viscous_fingering_hele_shaw
 
 - **Date**: 2026-05-17

@@ -171,7 +171,7 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## gravitational_wave_chirp_merger
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## asymptotic_giant_branch_pulsation

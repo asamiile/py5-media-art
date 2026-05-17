@@ -176,7 +176,7 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## asymptotic_giant_branch_pulsation
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## magnetohydrodynamic_z_pinch_instability
@@ -191,7 +191,7 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## cosmic_ray_cascade_resonance
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## nematic_liquid_crystal_disclinations

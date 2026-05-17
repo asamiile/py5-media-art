@@ -18,7 +18,8 @@ DURATION_SEC = 15
 FPS = 60
 TOTAL_FRAMES = DURATION_SEC * FPS
 PREVIEW_FILENAME = f"{WORK_NAME}_p1.png"
-PREVIEW_SIZE, OUTPUT_SIZE, SIZE = get_sizes()
+PREVIEW_SIZE, OUTPUT_SIZE, _ = get_sizes()
+SIZE = OUTPUT_SIZE  # Force 4K resolution (3840x2160)
 
 # Simulation Parameters
 NUM_PARTICLES = 150000
@@ -63,14 +64,24 @@ class AndersonSimulation:
 
 sim = AndersonSimulation(NUM_PARTICLES)
 
+import shutil
+
 def setup():
     py5.size(*SIZE, py5.P3D)
+    py5.pixel_density(1)  # Capping at 1x density prevents Retina-doubling lag on 4K renders
     py5.smooth(8)
+    if FRAMES_DIR.exists():
+        shutil.rmtree(FRAMES_DIR)
     FRAMES_DIR.mkdir(exist_ok=True)
     py5.background(0, 5, 15)
 
 def draw():
     t = py5.frame_count
+    
+    # Progress logs to prevent command timeouts
+    if t % 60 == 0:
+        print(f"[Render Progress] Frame {t}/{TOTAL_FRAMES} ({t/TOTAL_FRAMES*100:.1f}%)")
+        
     py5.background(0, 5, 15)
     
     # 3D Camera
@@ -79,12 +90,9 @@ def draw():
     py5.rotate_y(t * 0.003)
     py5.rotate_z(t * 0.001)
     
-    # Draw Disordered Grid (Subtle)
+    # Draw Disordered Grid (Subtle) - Balanced for 4K
     py5.stroke(200, 200, 255, 15)
-    py5.stroke_weight(0.5)
-    # Draw some grid lines
-    # To be fast, we'll only draw a subset of lines
-    # Let's just draw nodes as small points
+    py5.stroke_weight(1.5)
     py5.points(sim.grid_nodes)
     
     # Draw Localized Wavefunction
@@ -94,7 +102,7 @@ def draw():
     dist = np.linalg.norm(points, axis=1)
     # Closer = Brighter Cyan, Further = Fainter Amethyst
     
-    py5.stroke_weight(1.0)
+    py5.stroke_weight(2.5)  # Balanced for 4K
     for i in range(8):
         r_low = i * 60
         r_high = (i + 1) * 60
@@ -114,14 +122,25 @@ def draw():
 
     if py5.frame_count >= TOTAL_FRAMES:
         py5.exit_sketch()
+        
+        print(f"[Render FFmpeg] Compiling {TOTAL_FRAMES} frames into 4K video...")
         subprocess.run([
             "ffmpeg", "-y", "-r", str(FPS),
             "-i", str(FRAMES_DIR / "frame-%04d.png"),
             "-vcodec", "libx264", "-pix_fmt", "yuv420p",
-            "-crf", "28",
+            "-crf", "22",
             str(SKETCH_DIR / f"{WORK_NAME}.mp4"),
         ], check=True)
+        
+        # Mirror output
+        subprocess.run(["cp", str(SKETCH_DIR / f"{WORK_NAME}.mp4"), str(SKETCH_DIR / "output.mp4")], check=True)
+        
         mid = str(FRAMES_DIR / f"frame-{TOTAL_FRAMES // 2:04d}.png")
         subprocess.run(["cp", mid, str(SKETCH_DIR / PREVIEW_FILENAME)], check=True)
+        
+        # Clean up temporary frames
+        if FRAMES_DIR.exists():
+            shutil.rmtree(FRAMES_DIR)
+            print("[Render Cleanup] Temporary frames directory successfully removed.")
 
 py5.run_sketch()

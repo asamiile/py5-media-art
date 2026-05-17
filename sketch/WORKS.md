@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## pilot_wave_hydrodynamics
+
+- **Date**: 2026-05-17
+- **Theme**: Path memory and wave-particle duality in classical physics. A microscopic droplet bouncing on a vertically vibrating fluid bath generates local standing Faraday wave ripples that serve as its own guiding field. The droplet is deflected by the gradients of its own past waves, creating a self-guided chaotic walk fueled by wave memory.
+- **Technique**: Vectorized 2D wave-field superposition (Bessel-like Faraday wave ripples) and agent-based pilot-wave coupling, hybrid rendering (low-resolution grid-based specular shading combined with high-resolution vector overlays), and custom ARGB color packing in NumPy. 15s 4K/60fps MP4.
+- **Description**: A spectacular fluid simulation of a vertically vibrating oil bath. Concentric neon turquoise and electric cyan ripples propagate and interfere on a metallic, iridescent fluid surface, while 8 brilliant white-pearl droplets bounce in and out of phase, steered by the invisible slopes of their own past waves and tracing glowing amber-gold path trajectories across the obsidian pool.
+
 ## active_nematic_turbulence
 
 - **Date**: 2026-05-17

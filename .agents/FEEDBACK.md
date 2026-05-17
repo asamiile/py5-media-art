@@ -181,7 +181,7 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## magnetohydrodynamic_z_pinch_instability
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## supernova_nucleosynthesis_nebula
@@ -196,7 +196,7 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## nematic_liquid_crystal_disclinations
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## dielectric_breakdown_resonance

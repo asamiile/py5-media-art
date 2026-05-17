@@ -21,7 +21,7 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## axion_domain_walls
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## topological_edge_currents
@@ -51,7 +51,7 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## cholesteric_blue_phase_resonance
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## eutectic_alloy_solidification

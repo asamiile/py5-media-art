@@ -121,7 +121,7 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## gravitational_wave_chirp
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## neutrino_flavor_oscillation

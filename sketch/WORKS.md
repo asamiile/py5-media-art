@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## abrikosov_vortex_depinning
+
+- **Date**: 2026-05-17
+- **Theme**: Type-II superconductivity, Abrikosov flux lattice, pinning potential wells, elastic depinning, AC transport current, plastic flow channels.
+- **Technique**: Vectorized 2D Langevin equations of motion for 400 repulsive vortices interacting via a screened Yukawa-like potential, trapped in an attraction landscape of 80 fixed Gaussian potential wells under an oscillating AC transport drive. Velocity-mapped color styling and persistent fading trails. 15s 4K/60fps MP4.
+- **Description**: A stunning simulation of Abrikosov vortex depinning. A perfect hexagonal lattice of electric cyan quantum vortices is trapped by 80 fixed violet pinning centers. As an alternating horizontal driving force is applied, channels of vortices shear into glowing magenta and gold, carving sinuous, rushing vortex rivers that slide through pinning channels and trace permanent, silken highways of light.
+
 ## photoelastic_granular_jamming
 
 - **Date**: 2026-05-17

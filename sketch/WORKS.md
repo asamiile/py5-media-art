@@ -3,6 +3,20 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## viscous_fingering_hele_shaw
+
+- **Date**: 2026-05-17
+- **Theme**: Saffman-Taylor instability, viscous fingering, fluid confinement, fractal branching, competitive growth
+- **Technique**: Grid-based discrete Laplace equation solver via Jacobi relaxation, Dielectric Breakdown Model (DBM) boundary growth with pre-cached Gaussian-smoothed spatial noise, and high-density advected flow tracer simulation. Multi-velocity point styling (drawing 80,000 tracer particles grouped into three speed classes with custom opacity and weight). 15s 4K/60fps MP4.
+- **Description**: A stunning simulation of Saffman-Taylor instability in a confined Hele-Shaw cell. Mesmerizing, organic fractal-branching fingers of electric cyan and neon teal grow outward from a central seed into a deep royal indigo fog. The active growth tips are highlighted with an incandescent, warm gold glow, while 80,000 silken tracer particles curve gracefully along the fluid flow lines, mapping the invisible pressure gradients.
+
+## kuramoto_phase_synchronization
+
+- **Date**: 2026-05-17
+- **Theme**: Kuramoto model, spontaneous synchronization, firefly rhythms, emergent order.
+- **Technique**: 2D grid-based Kuramoto model simulation on a 640x360 grid. Each pixel acts as a coupled oscillator with a natural frequency derived from continuous 2D noise. Oscillators couple with their 4 nearest neighbors, pulling each other's phase. The phase $\theta$ is mapped to a sharp brightness curve ($\sin^4(\theta)$) to simulate flashes of light. Rendered with a Deep Indigo / Cyan / Golden Glow palette using `py5.np_pixels`. 15s 4K/60fps MP4.
+- **Description**: A mesmerizing macro-view of emergent order; hundreds of thousands of individual, chaotic sparks of light begin to influence one another, slowly synchronizing into majestic sweeping waves of golden-cyan flashes against a deep indigo void, reminiscent of bioluminescent fireflies coordinating their rhythms in a dark forest.
+
 ## mobius_geodesic_flow
 
 - **Date**: 2026-05-17

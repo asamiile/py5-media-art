@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## mobius_geodesic_flow
+
+- **Date**: 2026-05-17
+- **Theme**: Non-orientable topology, continuous flow, mathematical beauty.
+- **Technique**: 3D simulation of 150,000 particles constrained to a parametric Möbius strip. Particles follow a continuous flow field parameterized by $(u, v)$ and wrap seamlessly around the non-orientable boundary. Manual 3D-to-2D perspective projection. Rendered with multi-pass additive point rendering using `py5.points` with a Cyan/Violet/Magenta HSB palette against a dark void. 15s 4K/60fps MP4.
+- **Description**: A majestic mathematical sculpture of light; a continuous, glowing ribbon twists and loops through a dark void, its surface composed of thousands of silken threads that flow endlessly along its non-orientable topology in a shimmering dance of cyan and violet energy.
+
 ## polymer_chain_langevin_dynamics
 
 - **Date**: 2026-05-17

@@ -136,7 +136,7 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## supersolid_lattice_vibration
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## dirac_fluid_turbulence

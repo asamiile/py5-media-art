@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## chladni_plate_resonance
+
+- **Date**: 2026-05-17
+- **Theme**: A brass plate vibrating at multiple shifting resonant frequencies, causing golden sand particles to dance and gather along the intricate, shifting nodal lines.
+- **Technique**: 2D particle simulation (150,000 particles) using the Chladni resonance equation with time-varying modes ($n, m$). Particles are advected along the negative gradient of $|Z|^2$ toward the nodal lines. Rendered with multi-pass additive point rendering using `py5.points()` with an Amber/Gold palette against a dark slate background. 15s 4K/60fps MP4.
+- **Description**: A vast, dark plate where hundreds of thousands of golden, glowing sand grains vibrate and dance, organizing into complex, shifting geometric lattices that perfectly visualize the acoustic resonance of the void.
+
 ## boid_murmuration_fluid
 
 - **Date**: 2026-05-17

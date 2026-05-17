@@ -1,6 +1,10 @@
 # supernova_nucleosynthesis_nebula
 
-![Preview](supernova_nucleosynthesis_nebula_p1.png)
+### Previews
+- **Original 1080p:**
+  ![Original 1080p](supernova_nucleosynthesis_nebula_p1.png)
+- **Upgraded 4K:**
+  ![Upgraded 4K](supernova_nucleosynthesis_nebula_p2.png)
 
 ## Metadata
 - **Date**: 2026-05-11

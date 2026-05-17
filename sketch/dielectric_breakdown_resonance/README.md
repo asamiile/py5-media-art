@@ -1,6 +1,10 @@
 # dielectric_breakdown_resonance
 
-![Preview](dielectric_breakdown_resonance_p1.png)
+### Previews
+- **Original 1080p:**
+  ![Original 1080p](dielectric_breakdown_resonance_p1.png)
+- **Upgraded 4K:**
+  ![Upgraded 4K](dielectric_breakdown_resonance_p2.png)
 
 ## Metadata
 - **Date**: 2026-05-11

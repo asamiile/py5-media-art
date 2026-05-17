@@ -46,7 +46,7 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## quantum_spin_liquid_entanglement
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## cholesteric_blue_phase_resonance
@@ -1560,6 +1560,16 @@ Add any notes on color, density, theme, or mood in the Comment field.
 - **Comment**: 
 
 ## wildfire_front_propagation
+
+- **Rating**: 
+- **Comment**: 
+
+## tidal_wave_propagation
+
+- **Rating**: 
+- **Comment**: 
+
+## cellular_division_bloom
 
 - **Rating**: 
 - **Comment**: 

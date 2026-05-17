@@ -2261,4 +2261,18 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: Cellular automata fire propagation on 240×135 grid with heat diffusion, probabilistic neighbor-spreading, fuel depletion, and temperature-mapped RGB coloring. 18s 4K/60fps MP4.
 - **Description**: A spark ignites in darkness and erupts into an expanding wildfire, creating jagged flame fronts that spread in organic, chaotic patterns. Brilliant incandescent white cores glow through vibrant orange and scarlet reds to deep charred boundaries, creating visceral heat intensity while leaving blackened ash in the fire's wake.
 
+## tidal_wave_propagation
+
+- **Date**: 2026-05-17
+- **Theme**: A massive tsunami expanding radially from a seismic epicenter, visualizing the relentless propagation of energy through ocean water.
+- **Technique**: 2D wave equation simulation with Laplacian diffusion on 200×120 grid, depth-based color gradient rendering, periodic re-excitation pulses, and foam particle effects. 20s 4K/60fps MP4.
+- **Description**: A central disturbance erupts in bright cyan light that radiates outward in concentric rings. The dark navy ocean blooms with glowing aqua wave patterns, their crests catching golden highlights as energy propagates across the canvas, leaving traces of foam-white in expanding arcs.
+
+## cellular_division_bloom
+
+- **Date**: 2026-05-17
+- **Theme**: Microscopic view of cells dividing and growing exponentially in a petri dish, creating fractal-like branching patterns.
+- **Technique**: Recursive cell division simulation with generation-based lifecycle, directional propagation, size-scaling per generation, pulsing radius animation, and generation-depth color mapping. 16s 4K/60fps MP4.
+- **Description**: A single cell erupts and immediately divides into a cascade of exponential growth. Green and cyan cells multiply and branch symmetrically, creating elegant fractal structures that fill the canvas. Each cell pulses rhythmically with a deep purple nucleus, visualizing the mathematical beauty of biological reproduction.
+
 <!-- Add new works above this line using the format below:

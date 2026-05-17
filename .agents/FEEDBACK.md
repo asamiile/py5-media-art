@@ -186,7 +186,7 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## supernova_nucleosynthesis_nebula
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## cosmic_ray_cascade_resonance

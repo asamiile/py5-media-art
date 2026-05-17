@@ -18,7 +18,8 @@ DURATION_SEC = 15
 FPS = 60
 TOTAL_FRAMES = DURATION_SEC * FPS
 PREVIEW_FILENAME = f"{WORK_NAME}_p1.png"
-PREVIEW_SIZE, OUTPUT_SIZE, SIZE = get_sizes()
+PREVIEW_SIZE, OUTPUT_SIZE, _ = get_sizes()
+SIZE = OUTPUT_SIZE  # Force 4K resolution (3840x2160)
 
 # Simulation Parameters
 PARTICLE_COUNT = 80000
@@ -98,40 +99,43 @@ class SupernovaSystem:
             # Much brighter alpha
             alpha_base = np.mean(life_active[m]) * 255
             
+            # Subtle glow (adjusted stroke weights for 4K)
             # Massive Glow
             py5.stroke(c[0], c[1], c[2], alpha_base * 0.3)
-            py5.stroke_weight(12)
+            py5.stroke_weight(24)
             py5.points(p_chunk[::2])
             
             # Mid Glow
             py5.stroke(c[0], c[1], c[2], alpha_base * 0.6)
-            py5.stroke_weight(5)
+            py5.stroke_weight(10)
             py5.points(p_chunk)
             
             # Core
             py5.stroke(255, 255, 255, alpha_base)
-            py5.stroke_weight(1.5)
+            py5.stroke_weight(3.0)
             py5.points(p_chunk)
 
 sys_obj = None
 stars_pos = None
 
+import shutil
+
 def setup():
     global sys_obj, stars_pos
     py5.size(*SIZE, py5.P2D)
+    py5.pixel_density(1)  # Capping at 1x density prevents Retina-doubling lag on 4K renders
     py5.background(0)
     py5.blend_mode(py5.ADD)
     sys_obj = SupernovaSystem(py5.width, py5.height)
     stars_pos = np.random.uniform(0, [py5.width, py5.height], (600, 2)).astype(np.float32)
     if FRAMES_DIR.exists():
-        import shutil
         shutil.rmtree(FRAMES_DIR)
     FRAMES_DIR.mkdir(exist_ok=True)
 
 def draw():
     py5.background(0)
     py5.stroke(120, 70)
-    py5.stroke_weight(1)
+    py5.stroke_weight(2)  # Balanced for 4K
     py5.points(stars_pos)
 
     ry = py5.frame_count * 0.005
@@ -141,13 +145,29 @@ def draw():
     sys_obj.draw(ry, rz)
 
     py5.save_frame(str(FRAMES_DIR / "frame-####.png"))
+    
+    # Progress logs to prevent command timeouts
+    if py5.frame_count % 60 == 0:
+        print(f"[Render Progress] Frame {py5.frame_count}/{TOTAL_FRAMES} ({py5.frame_count/TOTAL_FRAMES*100:.1f}%)")
+
     if py5.frame_count >= TOTAL_FRAMES:
         py5.exit_sketch()
+        
+        print(f"[Render FFmpeg] Compiling {TOTAL_FRAMES} frames into 4K video...")
         subprocess.run(["ffmpeg", "-y", "-r", str(FPS), "-i", str(FRAMES_DIR / "frame-%04d.png"),
-                        "-vcodec", "libx264", "-pix_fmt", "yuv420p", "-crf", "26",
+                        "-vcodec", "libx264", "-pix_fmt", "yuv420p", "-crf", "22",
                         str(SKETCH_DIR / f"{WORK_NAME}.mp4")], check=True)
+        
+        # Mirror output
+        subprocess.run(["cp", str(SKETCH_DIR / f"{WORK_NAME}.mp4"), str(SKETCH_DIR / "output.mp4")], check=True)
+        
         mid = str(FRAMES_DIR / f"frame-{TOTAL_FRAMES // 2:04d}.png")
         subprocess.run(["cp", mid, str(SKETCH_DIR / PREVIEW_FILENAME)], check=True)
+        
+        # Clean up temporary frames
+        if FRAMES_DIR.exists():
+            shutil.rmtree(FRAMES_DIR)
+            print("[Render Cleanup] Temporary frames directory successfully removed.")
 
 if __name__ == "__main__":
     py5.run_sketch()

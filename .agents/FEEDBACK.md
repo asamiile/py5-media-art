@@ -141,12 +141,12 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## dirac_fluid_turbulence
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## anderson_localization_mesh
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## weyl_semimetal_fermi_arcs

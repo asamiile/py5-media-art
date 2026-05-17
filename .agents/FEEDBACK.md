@@ -201,7 +201,7 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## dielectric_breakdown_resonance
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## z_pinch_instability_flare

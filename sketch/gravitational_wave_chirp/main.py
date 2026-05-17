@@ -18,7 +18,8 @@ DURATION_SEC = 15
 FPS = 60
 TOTAL_FRAMES = DURATION_SEC * FPS
 PREVIEW_FILENAME = f"{WORK_NAME}_p1.png"
-PREVIEW_SIZE, OUTPUT_SIZE, SIZE = get_sizes()
+PREVIEW_SIZE, OUTPUT_SIZE, _ = get_sizes()
+SIZE = OUTPUT_SIZE  # Force 4K resolution (3840x2160)
 
 # Simulation Parameters
 NUM_PARTICLES = 80000
@@ -77,16 +78,24 @@ class ChirpSimulation:
 
 sim = ChirpSimulation(NUM_PARTICLES)
 
+import shutil
+
 def setup():
     py5.size(*SIZE, py5.P3D)
+    py5.pixel_density(1)  # Capping at 1x density prevents Retina-doubling lag on 4K renders
     py5.smooth(8)
+    if FRAMES_DIR.exists():
+        shutil.rmtree(FRAMES_DIR)
     FRAMES_DIR.mkdir(exist_ok=True)
     py5.background(10, 5, 20)
 
 def draw():
     t = py5.frame_count
+    
+    # Progress logs to prevent command timeouts
     if t % 60 == 0:
-        print(f"Frame {t}")
+        print(f"[Render Progress] Frame {t}/{TOTAL_FRAMES} ({t/TOTAL_FRAMES*100:.1f}%)")
+        
     py5.background(10, 5, 20)
     
     # 3D Camera
@@ -103,7 +112,7 @@ def draw():
     wave_amp = np.linalg.norm(pos - sim.orig_pos, axis=1)
     
     py5.color_mode(py5.HSB, 360, 100, 100, 100)
-    py5.stroke_weight(1.5)
+    py5.stroke_weight(3.0)  # Balanced for 4K
     
     # Draw field
     # Purple (280) to Gold (50)
@@ -124,13 +133,13 @@ def draw():
     # Draw masses
     if not sim.merger:
         py5.stroke(0, 0, 100, 100)
-        py5.stroke_weight(8)
+        py5.stroke_weight(16)  # Balanced for 4K
         py5.point(*sim.m1)
         py5.point(*sim.m2)
     else:
         # Final flash
         py5.stroke(50, 40, 100, 100 * np.exp(-(t-600)*0.1))
-        py5.stroke_weight(20)
+        py5.stroke_weight(40)  # Balanced for 4K
         py5.point(0, 0, 0)
     
     py5.color_mode(py5.RGB, 255, 255, 255, 255)
@@ -141,14 +150,25 @@ def draw():
 
     if py5.frame_count >= TOTAL_FRAMES:
         py5.exit_sketch()
+        
+        print(f"[Render FFmpeg] Compiling {TOTAL_FRAMES} frames into 4K video...")
         subprocess.run([
             "ffmpeg", "-y", "-r", str(FPS),
             "-i", str(FRAMES_DIR / "frame-%04d.png"),
             "-vcodec", "libx264", "-pix_fmt", "yuv420p",
-            "-crf", "28",
+            "-crf", "22",
             str(SKETCH_DIR / f"{WORK_NAME}.mp4"),
         ], check=True)
+        
+        # Mirror output
+        subprocess.run(["cp", str(SKETCH_DIR / f"{WORK_NAME}.mp4"), str(SKETCH_DIR / "output.mp4")], check=True)
+        
         mid = str(FRAMES_DIR / f"frame-{TOTAL_FRAMES // 2:04d}.png")
         subprocess.run(["cp", mid, str(SKETCH_DIR / PREVIEW_FILENAME)], check=True)
+        
+        # Clean up temporary frames
+        if FRAMES_DIR.exists():
+            shutil.rmtree(FRAMES_DIR)
+            print("[Render Cleanup] Temporary frames directory successfully removed.")
 
 py5.run_sketch()

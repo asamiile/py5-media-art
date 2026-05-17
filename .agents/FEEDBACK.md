@@ -111,7 +111,7 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## topological_defect_string
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## dark_matter_halo_cusp

@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## active_nematic_turbulence
+
+- **Date**: 2026-05-17
+- **Theme**: The restless, self-sustained dance of active living matter, where microscopic energy sources continuously drive chaotic flows, tearing order apart into wandering topological defects that seek each other in the dark.
+- **Technique**: Vectorized active nematodynamics simulation using Q-tensor components ($Q_1 = \cos 2\theta$ and $Q_2 = \sin 2\theta$) and discrete winding numbers, incompressible screened Stokes flow solved via 2D FFT, and 120,000 tracers with HSL-tailored color bins. 15s 4K/60fps MP4.
+- **Description**: A stunning, vibrant simulation of active nematodynamics in a deep midnight Prussian blue fluid. Swirling ribbons of electric teal and ocean-blue filaments are swept along by self-sustained Stokes flows, while glowing gold comet-like +1/2 defects and hot pink star-like -1/2 defects are continuously generated, advected, and annihilated, trailing majestic paths of deep amethyst light.
+
 ## glitch_strata_v3
 
 - **Date**: 2026-05-17

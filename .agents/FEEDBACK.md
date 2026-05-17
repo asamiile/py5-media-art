@@ -4,6 +4,11 @@
 Agents MUST NOT write anything in the `Comment` field. When registering a new work, Agents must leave the `Rating` and `Comment` fields empty or with their default labels as placeholders for the user.
 The Artist reads this file before starting a new sketch to understand preferences.
 
+## active_nematic_turbulence
+
+- **Rating**: 
+- **Comment**: 
+
 ## glitch_strata_v3
 
 - **Rating**: 
@@ -206,7 +211,7 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## z_pinch_instability_flare
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## soap_film_thickness_flow

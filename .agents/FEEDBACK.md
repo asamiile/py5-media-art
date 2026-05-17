@@ -101,7 +101,7 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## quantum_chaos_billiard
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## topological_spin_ice
@@ -131,7 +131,7 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## rydberg_blockade_array
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## supersolid_lattice_vibration

@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## ferrofluid_rosensweig_instability
+
+- **Date**: 2026-05-18
+- **Theme**: The spontaneous emergence of hexagonal spikes on the surface of a magnetic fluid when subjected to a vertical magnetic field.
+- **Technique**: 2.5D height field simulation using a continuous relaxation model balancing magnetic pressure against gravity and surface tension, rendered with high-contrast specular highlights. 15s 4K/60fps MP4.
+- **Description**: A dark, glossy metallic fluid that suddenly erupts into sharp, crystalline spikes, reflecting deep violet and gold light.
+
 ## abrikosov_vortex_depinning
 
 - **Date**: 2026-05-17

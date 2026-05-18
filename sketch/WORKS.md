@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## taylor_couette_vortices
+
+- **Date**: 2026-05-18
+- **Theme**: The hydrodynamic transition of a fluid confined between concentric rotating cylinders, shifting from beautifully stacked, orderly toroidal vortices to undulating waves and chaotic turbulence.
+- **Technique**: Vectorized 3D Navier-Stokes advection on a cylindrical coordinate grid representing Taylor-Couette flow, advecting 120,000 tracer particles. The simulation dynamically transitions from laminar Taylor vortex flow to wavy vortex flow by modulating the Taylor shear number over time. Projected manually into 3D space with slow cylindrical orbital rotation and depth fading. 15s 4K/60fps MP4.
+- **Description**: A stunning, hollow cylinder of glowing sapphire tracers rotates majestically in pitch-black space, organizing into a vertical stack of six glowing toroidal vortices. Tracers spiral dynamically inside each torus around a soft, molten copper core. As the outer shear increases, the stacked tori sway and wave in an undulating rhythm before dissolving into a turbulent sienna and blue spray, then cleanly reforming.
+
 ## fput_recurrence_lattice
 
 - **Date**: 2026-05-18

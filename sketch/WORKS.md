@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## schlieren_thermal_plumes
+
+- **Date**: 2026-05-18
+- **Theme**: Visualizing the invisible convection currents of heat rising off a glowing wire, using the Schlieren optical effect.
+- **Technique**: 2D particle simulation (150,000 tracers) advected by a multi-harmonic curl noise field representing convective turbulence. Rendered with additive blending and faint silver strokes to simulate the gathering of refracted light. 15s 4K/60fps MP4.
+- **Description**: Deep, high-contrast monochrome with sharp, shimmering wisps of faint electric blue and silver light that curl and fold into each other like smoke, but with optical purity.
+
 ## ferrofluid_rosensweig_instability
 
 - **Date**: 2026-05-18

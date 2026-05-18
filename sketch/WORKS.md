@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## fput_recurrence_lattice
+
+- **Date**: 2026-05-18
+- **Theme**: The paradox of a non-linear lattice of coupled oscillators that, instead of thermalizing and distributing energy evenly, periodically returns to its initial low-frequency state in a majestic act of coherence.
+- **Technique**: Vectorized 1D FPUT chain simulation with alpha non-linear coupling, Velocity Verlet integration, manual 3D perspective projection, and 150,000 glowing particles in additive blending. Color-mapped by local thermal energy density and real-time Fourier modal spectrum rings. 15s 4K/60fps MP4.
+- **Description**: An elegant, shimmering double helix in electric cyan shatters dynamically into high-frequency amethyst and rose-pink thermalized ripples, before condensing back into a pristine, coherent wave with a blinding gold-white core, surrounded by concentric background rings of light.
+
 ## schlieren_thermal_plumes
 
 - **Date**: 2026-05-18

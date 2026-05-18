@@ -1,6 +1,10 @@
 # topological_defect_string
 
-![Preview](topological_defect_string_p1.png)
+### Previews
+- **Original 1080p:**
+  ![Original 1080p](topological_defect_string_p1.png)
+- **Upgraded 4K:**
+  ![Upgraded 4K](topological_defect_string_p2.png)
 
 ## Metadata
 - **Date**: 2026-05-12

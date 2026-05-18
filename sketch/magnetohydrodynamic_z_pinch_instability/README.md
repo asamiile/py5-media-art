@@ -1,6 +1,10 @@
 # magnetohydrodynamic_z_pinch_instability
 
-![Preview](magnetohydrodynamic_z_pinch_instability_p1.png)
+### Previews
+- **Original 1080p:**
+  ![Original 1080p](magnetohydrodynamic_z_pinch_instability_p1.png)
+- **Upgraded 4K:**
+  ![Upgraded 4K](magnetohydrodynamic_z_pinch_instability_p2.png)
 
 ## Metadata
 - **Date**: 2026-05-11

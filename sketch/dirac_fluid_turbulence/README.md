@@ -1,6 +1,10 @@
 # dirac_fluid_turbulence
 
-![Preview](dirac_fluid_turbulence_p1.png)
+### Previews
+- **Original 1080p:**
+  ![Original 1080p](dirac_fluid_turbulence_p1.png)
+- **Upgraded 4K:**
+  ![Upgraded 4K](dirac_fluid_turbulence_p2.png)
 
 ## Metadata
 - **Date**: 2026-05-12

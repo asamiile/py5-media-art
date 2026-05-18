@@ -1,6 +1,10 @@
 # gravitational_wave_chirp
 
-![Preview](gravitational_wave_chirp_p1.png)
+### Previews
+- **Original 1080p:**
+  ![Original 1080p](gravitational_wave_chirp_p1.png)
+- **Upgraded 4K:**
+  ![Upgraded 4K](gravitational_wave_chirp_p2.png)
 
 ## Metadata
 - **Date**: 2026-05-12

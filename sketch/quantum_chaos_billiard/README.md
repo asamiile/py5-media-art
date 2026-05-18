@@ -1,6 +1,10 @@
 # quantum_chaos_billiard
 
-![Preview](quantum_chaos_billiard_p1.png)
+### Previews
+- **Original 1080p:**
+  ![Original 1080p](quantum_chaos_billiard_p1.png)
+- **Upgraded 4K:**
+  ![Upgraded 4K](quantum_chaos_billiard_p2.png)
 
 ## Metadata
 - **Date**: 2026-05-12

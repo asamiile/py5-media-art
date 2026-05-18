@@ -17,8 +17,9 @@ FRAMES_DIR = SKETCH_DIR / "frames"
 DURATION_SEC = 10
 FPS = 60
 TOTAL_FRAMES = DURATION_SEC * FPS
-PREVIEW_FILENAME = f"{WORK_NAME}_p1.png"
-PREVIEW_SIZE, OUTPUT_SIZE, SIZE = get_sizes()
+PREVIEW_FILENAME = f"{WORK_NAME}_p2.png"
+PREVIEW_SIZE, OUTPUT_SIZE, _ = get_sizes()
+SIZE = OUTPUT_SIZE  # Force 4K resolution (3840x2160)
 
 # Simulation Parameters
 GRID_SIZE = 256
@@ -70,24 +71,30 @@ class CosmicStringSimulation:
         p_indices = indices[mask]
         
         # Map to world coords
-        x = (p_indices[:, 1] / self.size - 0.5) * 1600
-        y = (p_indices[:, 0] / self.size - 0.5) * 1600
-        z = np.random.normal(0, 50, len(x))
+        # Map to world coords (scaled for 4K)
+        x = (p_indices[:, 1] / self.size - 0.5) * 3200
+        y = (p_indices[:, 0] / self.size - 0.5) * 3200
+        z = np.random.normal(0, 100, len(x))
         
         return np.stack([x, y, z], axis=-1), mvals[mask]
 
 sim = CosmicStringSimulation(GRID_SIZE)
 
+import shutil
+
 def setup():
     py5.size(*SIZE, py5.P3D)
+    py5.pixel_density(1)  # Capping at 1x density prevents Retina-doubling lag on 4K renders
     py5.smooth(8)
+    if FRAMES_DIR.exists():
+        shutil.rmtree(FRAMES_DIR)
     FRAMES_DIR.mkdir(exist_ok=True)
     py5.background(10, 8, 5)
 
 def draw():
     t = py5.frame_count
     if t % 60 == 0:
-        print(f"Frame {t}")
+        print(f"[Render Progress] Frame {t}/{TOTAL_FRAMES} ({t/TOTAL_FRAMES*100:.1f}%)")
     py5.background(10, 8, 5)
     
     sim.update(t)
@@ -108,37 +115,30 @@ def draw():
     # Primordial Gold (50) to Cobalt (210)
     # Background: Gold, Strings: Cobalt
     
-    # Field background - only draw occasionally or subsampled
+    # Field background - only draw occasionally or subsampled (scaled for 4K)
     if t % 2 == 0:
         indices = np.random.randint(0, GRID_SIZE, (50000, 2))
-        px = (indices[:, 1] / GRID_SIZE - 0.5) * 1800
-        py = (indices[:, 0] / GRID_SIZE - 0.5) * 1800
-        pz = np.random.uniform(-200, -50, 50000)
+        px = (indices[:, 1] / GRID_SIZE - 0.5) * 3600
+        py = (indices[:, 0] / GRID_SIZE - 0.5) * 3600
+        pz = np.random.uniform(-400, -100, 50000)
         
         phases = np.angle(sim.phi[indices[:, 0], indices[:, 1]])
         hues = 45 + (phases / np.pi) * 15 # Gold range
         
         # Vectorized points for speed
-        py5.stroke_weight(2.0)
-        # We'll map phases to hues then use stroke and points
-        # Actually py5.points doesn't take colors per point directly without vertex
-        # But we can chunk by hue if needed, or just use one gold hue for the whole background for now
-        # to keep it fast, or a few bands
-        
-        # Simplest: one gold hue with alpha variations
+        py5.stroke_weight(4.0)  # Thicker dust for 4K canvas
         py5.stroke(45, 90, 100, 30)
         fpos = np.stack([px, py, pz], axis=-1)
         py5.points(fpos)
-
-    # Strings
+ 
+    # Strings (scaled for 4K)
     if len(pos) > 0:
-        py5.stroke_weight(2.0)
-        # Cobalt cores
+        py5.stroke_weight(5.0)  # Cobalt cores
         py5.stroke(210, 90, 100, 40)
         py5.points(pos)
         
         # Glow
-        py5.stroke_weight(4.0)
+        py5.stroke_weight(10.0)  # Outer glow
         py5.stroke(210, 70, 100, 10)
         py5.points(pos)
 
@@ -150,14 +150,25 @@ def draw():
 
     if py5.frame_count >= TOTAL_FRAMES:
         py5.exit_sketch()
+        
+        print(f"[Render FFmpeg] Compiling {TOTAL_FRAMES} frames into 4K video...")
         subprocess.run([
             "ffmpeg", "-y", "-r", str(FPS),
             "-i", str(FRAMES_DIR / "frame-%04d.png"),
             "-vcodec", "libx264", "-pix_fmt", "yuv420p",
-            "-crf", "28",
+            "-crf", "22",
             str(SKETCH_DIR / f"{WORK_NAME}.mp4"),
         ], check=True)
+        
+        # Mirror output
+        subprocess.run(["cp", str(SKETCH_DIR / f"{WORK_NAME}.mp4"), str(SKETCH_DIR / "output.mp4")], check=True)
+        
         mid = str(FRAMES_DIR / f"frame-{TOTAL_FRAMES // 2:04d}.png")
         subprocess.run(["cp", mid, str(SKETCH_DIR / PREVIEW_FILENAME)], check=True)
+        
+        # Clean up temporary frames
+        if FRAMES_DIR.exists():
+            shutil.rmtree(FRAMES_DIR)
+            print("[Render Cleanup] Temporary frames directory successfully removed.")
 
 py5.run_sketch()

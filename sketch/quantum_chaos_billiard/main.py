@@ -17,8 +17,9 @@ FRAMES_DIR = SKETCH_DIR / "frames"
 DURATION_SEC = 15
 FPS = 60
 TOTAL_FRAMES = DURATION_SEC * FPS
-PREVIEW_FILENAME = f"{WORK_NAME}_p1.png"
-PREVIEW_SIZE, OUTPUT_SIZE, SIZE = get_sizes()
+PREVIEW_FILENAME = f"{WORK_NAME}_p2.png"
+PREVIEW_SIZE, OUTPUT_SIZE, _ = get_sizes()
+SIZE = OUTPUT_SIZE  # Force 4K resolution (3840x2160)
 
 # Simulation Parameters
 GRID_SIZE = 256
@@ -63,15 +64,20 @@ class QuantumBilliardSimulation:
 
 sim = QuantumBilliardSimulation(GRID_SIZE)
 
+import shutil
+
 def setup():
     py5.size(*SIZE, py5.P3D)
+    py5.pixel_density(1)  # Capping at 1x density prevents Retina-doubling lag on 4K renders
     py5.smooth(8)
+    if FRAMES_DIR.exists():
+        shutil.rmtree(FRAMES_DIR)
     FRAMES_DIR.mkdir(exist_ok=True)
 
 def draw():
     t = py5.frame_count
     if t % 60 == 0:
-        print(f"Frame {t}")
+        print(f"[Render Progress] Frame {t}/{TOTAL_FRAMES} ({t/TOTAL_FRAMES*100:.1f}%)")
     
     # Deep charcoal background
     py5.background(10, 10, 15)
@@ -91,9 +97,9 @@ def draw():
     y, x = y[::skip], x[::skip]
     vals = sim.u[y, x]
     
-    px = (x / GRID_SIZE - 0.5) * 1200
-    py = (y / GRID_SIZE - 0.5) * 800
-    pz = vals * 300
+    px = (x / GRID_SIZE - 0.5) * 2400  # Scaled up for 4K
+    py = (y / GRID_SIZE - 0.5) * 1600  # Scaled up for 4K
+    pz = vals * 600  # Scaled up for 4K
     
     py5.color_mode(py5.HSB, 360, 100, 100, 100)
     
@@ -111,13 +117,15 @@ def draw():
     # Group by hue for stroke efficiency? 
     # Or just one color if it's too slow.
     # For now, let's use a single glowy gold for active parts
-    py5.stroke_weight(2.5)
+    # Active gold points are thicker and brighter
     mask_active = mag > 0.005
     if np.any(mask_active):
+        py5.stroke_weight(5.0)  # Thicker glow for 4K active wave peaks
         py5.stroke(50, 90, 100, 50) # Gold
         py5.points(pos[mask_active])
         
         # Fainter indigo for the rest
+        py5.stroke_weight(2.0)  # Fine resolution background wavefield
         py5.stroke(260, 80, 50, 15)
         py5.points(pos[~mask_active])
 
@@ -129,14 +137,25 @@ def draw():
 
     if py5.frame_count >= TOTAL_FRAMES:
         py5.exit_sketch()
+        
+        print(f"[Render FFmpeg] Compiling {TOTAL_FRAMES} frames into 4K video...")
         subprocess.run([
             "ffmpeg", "-y", "-r", str(FPS),
             "-i", str(FRAMES_DIR / "frame-%04d.png"),
             "-vcodec", "libx264", "-pix_fmt", "yuv420p",
-            "-crf", "28",
+            "-crf", "22",
             str(SKETCH_DIR / f"{WORK_NAME}.mp4"),
         ], check=True)
+        
+        # Mirror output
+        subprocess.run(["cp", str(SKETCH_DIR / f"{WORK_NAME}.mp4"), str(SKETCH_DIR / "output.mp4")], check=True)
+        
         mid = str(FRAMES_DIR / f"frame-{TOTAL_FRAMES // 2:04d}.png")
         subprocess.run(["cp", mid, str(SKETCH_DIR / PREVIEW_FILENAME)], check=True)
+        
+        # Clean up temporary frames
+        if FRAMES_DIR.exists():
+            shutil.rmtree(FRAMES_DIR)
+            print("[Render Cleanup] Temporary frames directory successfully removed.")
 
 py5.run_sketch()

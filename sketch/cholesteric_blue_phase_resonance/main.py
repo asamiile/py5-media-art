@@ -17,11 +17,12 @@ FRAMES_DIR = SKETCH_DIR / "frames"
 DURATION_SEC = 10
 FPS = 60
 TOTAL_FRAMES = DURATION_SEC * FPS
-PREVIEW_FILENAME = f"{WORK_NAME}_p1.png"
-PREVIEW_SIZE, OUTPUT_SIZE, SIZE = get_sizes()
+PREVIEW_FILENAME = f"{WORK_NAME}_p2.png"
+PREVIEW_SIZE, OUTPUT_SIZE, _ = get_sizes()
+SIZE = OUTPUT_SIZE  # Force 4K resolution (3840x2160)
 
 # Simulation Parameters
-NUM_PARTICLES = 120000
+NUM_PARTICLES = 200000  # Increased for ultra-dense 4K crystalline shine
 LATTICE_SCALE = 300.0  # Unit cell size
 TIME_STEP = 0.015
 PITCH = 120.0  # Chiral pitch
@@ -54,9 +55,14 @@ def get_director(p, t):
     mag = np.sqrt(nx**2 + ny**2 + nz**2) + 1e-6
     return np.stack([nx/mag, ny/mag, nz/mag], axis=-1)
 
+import shutil
+
 def setup():
     py5.size(*SIZE, py5.P3D)
+    py5.pixel_density(1)  # Capping at 1x density prevents Retina-doubling lag on 4K renders
     py5.background(0)
+    if FRAMES_DIR.exists():
+        shutil.rmtree(FRAMES_DIR)
     FRAMES_DIR.mkdir(exist_ok=True)
     
     # Initial particle state
@@ -65,8 +71,13 @@ def setup():
 
 def draw():
     global pos, colors, alpha
-    t = py5.frame_count * TIME_STEP
+    frame = py5.frame_count
+    t = frame * TIME_STEP
     
+    # Progress logs to prevent command timeouts
+    if frame % 60 == 0:
+        print(f"[Render Progress] Frame {frame}/{TOTAL_FRAMES} ({frame/TOTAL_FRAMES*100:.1f}%)")
+        
     py5.background(5, 5, 12)  # Deep indigo base
     
     # Update physics
@@ -107,7 +118,7 @@ def draw():
     py5.rotate_x(t * 0.05)
     
     # Rendering: Point system
-    py5.stroke_weight(3.0)
+    py5.stroke_weight(6.0)  # Thicker sparks for 4K canvas
     py5.blend_mode(py5.ADD)
     
     # Quantize colors into bands to use vectorized points()
@@ -137,16 +148,26 @@ def draw():
     
     if py5.frame_count >= TOTAL_FRAMES:
         py5.exit_sketch()
-        # Video assembly
+        
+        print(f"[Render FFmpeg] Compiling {TOTAL_FRAMES} frames into 4K video...")
         subprocess.run([
             "ffmpeg", "-y", "-r", str(FPS),
             "-i", str(FRAMES_DIR / "frame-%04d.png"),
             "-vcodec", "libx264", "-pix_fmt", "yuv420p",
-            "-crf", "18",
+            "-crf", "22",
             str(SKETCH_DIR / f"{WORK_NAME}.mp4"),
         ], check=True)
+        
+        # Mirror output
+        subprocess.run(["cp", str(SKETCH_DIR / f"{WORK_NAME}.mp4"), str(SKETCH_DIR / "output.mp4")], check=True)
+        
         # Preview
         mid = str(FRAMES_DIR / f"frame-{TOTAL_FRAMES // 2:04d}.png")
         subprocess.run(["cp", mid, str(SKETCH_DIR / PREVIEW_FILENAME)], check=True)
+        
+        # Clean up temporary frames
+        if FRAMES_DIR.exists():
+            shutil.rmtree(FRAMES_DIR)
+            print("[Render Cleanup] Temporary frames directory successfully removed.")
 
 py5.run_sketch()

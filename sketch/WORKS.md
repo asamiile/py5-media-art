@@ -3,6 +3,97 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## abrikosov_vortex_depinning
+
+- **Date**: 2026-05-17
+- **Theme**: Type-II superconductivity, Abrikosov flux lattice, pinning potential wells, elastic depinning, AC transport current, plastic flow channels.
+- **Technique**: Vectorized 2D Langevin equations of motion for 400 repulsive vortices interacting via a screened Yukawa-like potential, trapped in an attraction landscape of 80 fixed Gaussian potential wells under an oscillating AC transport drive. Velocity-mapped color styling and persistent fading trails. 15s 4K/60fps MP4.
+- **Description**: A stunning simulation of Abrikosov vortex depinning. A perfect hexagonal lattice of electric cyan quantum vortices is trapped by 80 fixed violet pinning centers. As an alternating horizontal driving force is applied, channels of vortices shear into glowing magenta and gold, carving sinuous, rushing vortex rivers that slide through pinning channels and trace permanent, silken highways of light.
+
+## photoelastic_granular_jamming
+
+- **Date**: 2026-05-17
+- **Theme**: Granular physics, photoelastic stress birefringence, contact force chains, jamming transitions.
+- **Technique**: 2D soft-sphere Discrete Element Method (DEM) using spring-dashpot contact dynamics solved in a multi-step vectorized NumPy physics engine, integrated with a multi-layered polariscope photoelastic rendering model. Concentric stress-induced colorful circular fringes centered at the contact points and 1,000+ contact-force neon lines. 15s 4K/60fps MP4.
+- **Description**: A stunning simulation of photoelastic granular jamming. 650 translucent dark glass beads are compressed by a modern glassy cyan piston, building a dense network of glowing amber and gold contact force chains. As they are compressed, the beads glow from within with nested deep purple, neon pink, and solar gold stress fringes, dynamically rearranging and locking under pressure.
+
+## viscous_fingering_hele_shaw
+
+- **Date**: 2026-05-17
+- **Theme**: Saffman-Taylor instability, viscous fingering, fluid confinement, fractal branching, competitive growth
+- **Technique**: Grid-based discrete Laplace equation solver via Jacobi relaxation, Dielectric Breakdown Model (DBM) boundary growth with pre-cached Gaussian-smoothed spatial noise, and high-density advected flow tracer simulation. Multi-velocity point styling (drawing 80,000 tracer particles grouped into three speed classes with custom opacity and weight). 15s 4K/60fps MP4.
+- **Description**: A stunning simulation of Saffman-Taylor instability in a confined Hele-Shaw cell. Mesmerizing, organic fractal-branching fingers of electric cyan and neon teal grow outward from a central seed into a deep royal indigo fog. The active growth tips are highlighted with an incandescent, warm gold glow, while 80,000 silken tracer particles curve gracefully along the fluid flow lines, mapping the invisible pressure gradients.
+
+## kuramoto_phase_synchronization
+
+- **Date**: 2026-05-17
+- **Theme**: Kuramoto model, spontaneous synchronization, firefly rhythms, emergent order.
+- **Technique**: 2D grid-based Kuramoto model simulation on a 640x360 grid. Each pixel acts as a coupled oscillator with a natural frequency derived from continuous 2D noise. Oscillators couple with their 4 nearest neighbors, pulling each other's phase. The phase $\theta$ is mapped to a sharp brightness curve ($\sin^4(\theta)$) to simulate flashes of light. Rendered with a Deep Indigo / Cyan / Golden Glow palette using `py5.np_pixels`. 15s 4K/60fps MP4.
+- **Description**: A mesmerizing macro-view of emergent order; hundreds of thousands of individual, chaotic sparks of light begin to influence one another, slowly synchronizing into majestic sweeping waves of golden-cyan flashes against a deep indigo void, reminiscent of bioluminescent fireflies coordinating their rhythms in a dark forest.
+
+## mobius_geodesic_flow
+
+- **Date**: 2026-05-17
+- **Theme**: Non-orientable topology, continuous flow, mathematical beauty.
+- **Technique**: 3D simulation of 150,000 particles constrained to a parametric Möbius strip. Particles follow a continuous flow field parameterized by $(u, v)$ and wrap seamlessly around the non-orientable boundary. Manual 3D-to-2D perspective projection. Rendered with multi-pass additive point rendering using `py5.points` with a Cyan/Violet/Magenta HSB palette against a dark void. 15s 4K/60fps MP4.
+- **Description**: A majestic mathematical sculpture of light; a continuous, glowing ribbon twists and loops through a dark void, its surface composed of thousands of silken threads that flow endlessly along its non-orientable topology in a shimmering dance of cyan and violet energy.
+
+## polymer_chain_langevin_dynamics
+
+- **Date**: 2026-05-17
+- **Theme**: Microscopic polymer chains floating in a heat bath, folding and unfolding randomly under thermal noise and a swirling fluid field.
+- **Technique**: 2D Langevin dynamics simulation of 150 polymer chains (1,000 particles each). Particles are connected by Hookean springs, subject to random Gaussian thermal kicks, and advected by a macroscopic harmonic swirl field using vectorized NumPy physics with sub-stepping. Rendered with multi-pass additive point rendering using `py5.points` with a "Cyan to Magenta" HSB palette against a motion-blurred dark background. 15s 4K/60fps MP4.
+- **Description**: A mesmerizing microscopic view; 150 glowing, fluorescent neon threads twist, tangle, and breathe in a dark fluid, driven by invisible thermal noise and slow swirling currents, resembling DNA or polymers in a microfluidic channel.
+
+## chladni_plate_resonance
+
+- **Date**: 2026-05-17
+- **Theme**: A brass plate vibrating at multiple shifting resonant frequencies, causing golden sand particles to dance and gather along the intricate, shifting nodal lines.
+- **Technique**: 2D particle simulation (150,000 particles) using the Chladni resonance equation with time-varying modes ($n, m$). Particles are advected along the negative gradient of $|Z|^2$ toward the nodal lines. Rendered with multi-pass additive point rendering using `py5.points()` with an Amber/Gold palette against a dark slate background. 15s 4K/60fps MP4.
+- **Description**: A vast, dark plate where hundreds of thousands of golden, glowing sand grains vibrate and dance, organizing into complex, shifting geometric lattices that perfectly visualize the acoustic resonance of the void.
+
+## boid_murmuration_fluid
+
+- **Date**: 2026-05-17
+- **Theme**: The breathtaking, emergent intelligence of a massive murmuration flowing and turning like liquid through a turbulent wind at dusk.
+- **Technique**: Vectorized hierarchical spatial flocking simulation (Boids) for 30,000 agents, coupled with a multi-octave noise wind field and center of mass attraction. Agents align with local flock leaders and leave fading silken paths rendered directly into the py5 pixel buffer with additive blending. 15s 4K/60fps MP4.
+- **Description**: Thousands of tiny sparks sweep across a dark indigo sky, suddenly folding and swooping together into massive, undulating ribbon-like shapes that feel both organic and perfectly synchronized.
+
+## electrodeposition_dendrite_growth
+
+- **Date**: 2026-05-17
+- **Theme**: The slow, beautiful electro-chemical growth of silver crystals branching out in a dark fluid under an electric field.
+- **Technique**: Vectorized pseudo-Diffusion-Limited Aggregation using a 150,000 particle system with continuous radial drift and random walk. Metallic age-based coloration mapped directly to the py5 P2D 3D ARGB pixel buffer with additive blending for electrolyte glow. 15s 4K/60fps MP4.
+- **Description**: A single glowing seed in the center begins to rapidly branch out with intricate, frost-like fractal tendrils of shimmering silver and warm copper against a deep obsidian void, enveloped by an electric blue aura of migrating ions.
+
+## pilot_wave_hydrodynamics
+
+- **Date**: 2026-05-17
+- **Theme**: Path memory and wave-particle duality in classical physics. A microscopic droplet bouncing on a vertically vibrating fluid bath generates local standing Faraday wave ripples that serve as its own guiding field. The droplet is deflected by the gradients of its own past waves, creating a self-guided chaotic walk fueled by wave memory.
+- **Technique**: Vectorized 2D wave-field superposition (Bessel-like Faraday wave ripples) and agent-based pilot-wave coupling, hybrid rendering (low-resolution grid-based specular shading combined with high-resolution vector overlays), and custom ARGB color packing in NumPy. 15s 4K/60fps MP4.
+- **Description**: A spectacular fluid simulation of a vertically vibrating oil bath. Concentric neon turquoise and electric cyan ripples propagate and interfere on a metallic, iridescent fluid surface, while 8 brilliant white-pearl droplets bounce in and out of phase, steered by the invisible slopes of their own past waves and tracing glowing amber-gold path trajectories across the obsidian pool.
+
+## active_nematic_turbulence
+
+- **Date**: 2026-05-17
+- **Theme**: The restless, self-sustained dance of active living matter, where microscopic energy sources continuously drive chaotic flows, tearing order apart into wandering topological defects that seek each other in the dark.
+- **Technique**: Vectorized active nematodynamics simulation using Q-tensor components ($Q_1 = \cos 2\theta$ and $Q_2 = \sin 2\theta$) and discrete winding numbers, incompressible screened Stokes flow solved via 2D FFT, and 120,000 tracers with HSL-tailored color bins. 15s 4K/60fps MP4.
+- **Description**: A stunning, vibrant simulation of active nematodynamics in a deep midnight Prussian blue fluid. Swirling ribbons of electric teal and ocean-blue filaments are swept along by self-sustained Stokes flows, while glowing gold comet-like +1/2 defects and hot pink star-like -1/2 defects are continuously generated, advected, and annihilated, trailing majestic paths of deep amethyst light.
+
+## glitch_strata_v3
+
+- **Date**: 2026-05-17
+- **Theme**: Luxury decay, digital archaeology, and high-fidelity corruption.
+- **Technique**: Vectorized 2D pixel-buffer corruption using NumPy. Implements dynamic wiggling strata boundaries, horizontal wave tearing, blocky slide shifts, dynamic vertical data spikes, vectorized chromatic aberration (RGB channel splitting), and moving retro analogue scanlines. 10s 4K/60fps MP4.
+- **Description**: An elegant, shimmering digital tapestry of obsidian, deep gold, cyber magenta, and royal amethyst decays dynamically over time. Striking horizontal tearing waves and vertical tracking errors slice across the canvas, while high-performance RGB channel splitting adds vibrant chromatic aberration, visualizing a majestic archaeological survey of corrupted luxury memory.
+
+## bioluminescent_shear_tide
+
+- **Date**: 2026-05-17
+- **Theme**: The fleeting, brilliant glow of microscopic organisms in a midnight tide pool, triggered by the mechanical stress of shifting currents and breaking waves.
+- **Technique**: 2D fluid-shear advection with a multi-harmonic velocity field. A bioluminescent buffer excites based on local shear stress, modulating the alpha and color of 120,000 tracers. 12s 4K/60fps MP4.
+- **Description**: A stunning fluid simulation of a tide pool at midnight. Shimmering ribbons of electric emerald and cyan light are swept along by invisible currents, glowing with intense brilliance as shear forces excite the simulated microorganisms, leaving delicate, fading trails of foam-white and deep teal in the dark water.
+
 ## quantum_zeno_decoherence
 
 - **Date**: 2026-05-16
@@ -2225,5 +2316,54 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: Deformed hexagonal lattice, recursive Koch-polygon architecture, spectral edge-glow simulation, multi-scale starfield synthesis
 - **Logic Lab Reference**: `tiling_patterns/ih02_tv08_koch/ih02_tv08_koch.py`
 - **Description**: A sprawling, glowing metropolis of fractal monoliths extends into a deep-space void; each structure is built from shimmering geometric layers that subdivide and pulse with electric cyan and laser pink light, while a distant starfield and violet horizon haze suggest an infinite atmospheric scale.
+
+## photonic_bandgap_waveguide
+
+- **Date**: 2026-05-17
+- **Theme**: Light guided through a labyrinth of silent obsidian pillars, trapped within a designed defect where it flows around a sharp turn without scattering, visualizing the control of light at the microscopic scale.
+- **Technique**: 2D TM-polarized FDTD wave solver on a square dielectric lattice with an L-shaped defect channel and edge absorption.
+- **Description**: Sinusoidal electric field waves (Teal crests and Coral troughs) propagate down a channel and bend perfectly at a 90-degree corner, while adjacent gold pillars scatter the evanescent field, breathing with gold light.
+
+## adaptive_nerve_bloom
+
+- **Date**: 2026-05-17
+- **Theme**: Artificial intelligence learning to recognize patterns through dynamic synaptic adaptation, visualizing the emergence of computational intelligence.
+- **Technique**: Procedural neural network simulation with 180 stochastically-positioned neurons, proximity-based synapse generation (250px radius), adaptive synapse strength decay, and activation-driven signal propagation with distance-weighted color mapping. 15s 4K/60fps MP4.
+- **Description**: A constellation of glowing neural nodes blooms across a dark void, forming a dense web of cyan, magenta, and gold connections that pulse with computational energy. As signals propagate through the network, synaptic connections strengthen and weaken in real time, visualizing the dynamic learning process of artificial intelligence reorganizing itself.
+
+## wildfire_front_propagation
+
+- **Date**: 2026-05-17
+- **Theme**: A spreading wildfire racing across dry grassland, visualizing how heat and fuel interact to drive the expanding flame front with organic chaos.
+- **Technique**: Cellular automata fire propagation on 240×135 grid with heat diffusion, probabilistic neighbor-spreading, fuel depletion, and temperature-mapped RGB coloring. 18s 4K/60fps MP4.
+- **Description**: A spark ignites in darkness and erupts into an expanding wildfire, creating jagged flame fronts that spread in organic, chaotic patterns. Brilliant incandescent white cores glow through vibrant orange and scarlet reds to deep charred boundaries, creating visceral heat intensity while leaving blackened ash in the fire's wake.
+
+## tidal_wave_propagation
+
+- **Date**: 2026-05-17
+- **Theme**: A massive tsunami expanding radially from a seismic epicenter, visualizing the relentless propagation of energy through ocean water.
+- **Technique**: 2D wave equation simulation with Laplacian diffusion on 200×120 grid, depth-based color gradient rendering, periodic re-excitation pulses, and foam particle effects. 20s 4K/60fps MP4.
+- **Description**: A central disturbance erupts in bright cyan light that radiates outward in concentric rings. The dark navy ocean blooms with glowing aqua wave patterns, their crests catching golden highlights as energy propagates across the canvas, leaving traces of foam-white in expanding arcs.
+
+## cellular_division_bloom
+
+- **Date**: 2026-05-17
+- **Theme**: Microscopic view of cells dividing and growing exponentially in a petri dish, creating fractal-like branching patterns.
+- **Technique**: Recursive cell division simulation with generation-based lifecycle, directional propagation, size-scaling per generation, pulsing radius animation, and generation-depth color mapping. 16s 4K/60fps MP4.
+- **Description**: A single cell erupts and immediately divides into a cascade of exponential growth. Green and cyan cells multiply and branch symmetrically, creating elegant fractal structures that fill the canvas. Each cell pulses rhythmically with a deep purple nucleus, visualizing the mathematical beauty of biological reproduction.
+
+## fractal_tree_generation
+
+- **Date**: 2026-05-17
+- **Theme**: Recursive tree growth using Lindenmayer systems, visualizing how simple branching rules create complex botanical fractals.
+- **Technique**: Recursive L-system tree generation with turtle graphics rendering, binary branching (±0.4 rads), length scaling (75% per generation), generation-based coloring, progressive animation reveal, and leaf particle effects. 14s 4K/60fps MP4.
+- **Description**: A single trunk erupts and recursively splits into increasingly fine branches. Warm brown wooden limbs extend upward through ten generations while glowing green leaves bloom along mature branches, creating a living fractal tree with organic mathematical elegance.
+
+## noise_field_flow
+
+- **Date**: 2026-05-17
+- **Theme**: Particles flowing along invisible currents defined by turbulent noise, visualizing emergent fluid-like behavior.
+- **Technique**: Perlin noise-based velocity field particle advection with 5000 particles, velocity smoothing (0.8 decay), noise-value coloring gradient, variable size based on local noise magnitude. 12s 4K/60fps MP4.
+- **Description**: Thousands of cyan and magenta particles swirl and flow in organic curves, guided by invisible Perlin noise currents. Electric ribbons weave and spiral, creating vortices and laminar flow patterns that mimic natural fluid dynamics while remaining purely particle-driven.
 
 <!-- Add new works above this line using the format below:

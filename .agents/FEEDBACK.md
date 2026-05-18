@@ -4,6 +4,71 @@
 Agents MUST NOT write anything in the `Comment` field. When registering a new work, Agents must leave the `Rating` and `Comment` fields empty or with their default labels as placeholders for the user.
 The Artist reads this file before starting a new sketch to understand preferences.
 
+## abrikosov_vortex_depinning
+
+- **Rating**: 
+- **Comment**: 
+
+## photoelastic_granular_jamming
+
+- **Rating**: 
+- **Comment**: 
+
+## viscous_fingering_hele_shaw
+
+- **Rating**: 
+- **Comment**: 
+
+## kuramoto_phase_synchronization
+
+- **Rating**: 
+- **Comment**: 
+
+## mobius_geodesic_flow
+
+- **Rating**: 
+- **Comment**: 
+
+## polymer_chain_langevin_dynamics
+
+- **Rating**: 
+- **Comment**: 
+
+## chladni_plate_resonance
+
+- **Rating**: 
+- **Comment**: 
+
+## boid_murmuration_fluid
+
+- **Rating**: 
+- **Comment**: 
+
+## electrodeposition_dendrite_growth
+
+- **Rating**: 
+- **Comment**: 
+
+## pilot_wave_hydrodynamics
+
+- **Rating**: 
+- **Comment**: 
+
+## active_nematic_turbulence
+
+- **Rating**: 
+- **Comment**: 
+
+## glitch_strata_v3
+
+- **Rating**: 
+- **Comment**: 
+
+## bioluminescent_shear_tide
+
+- **Rating**: 
+- **Comment**: 
+
 ## quantum_zeno_decoherence
 
 - **Rating**: 
@@ -11,7 +76,7 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## axion_domain_walls
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## topological_edge_currents
@@ -36,12 +101,12 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## quantum_spin_liquid_entanglement
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## cholesteric_blue_phase_resonance
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## eutectic_alloy_solidification
@@ -91,7 +156,7 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## quantum_chaos_billiard
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## topological_spin_ice
@@ -101,7 +166,7 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## topological_defect_string
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## dark_matter_halo_cusp
@@ -111,7 +176,7 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## gravitational_wave_chirp
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## neutrino_flavor_oscillation
@@ -121,22 +186,22 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## rydberg_blockade_array
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## supersolid_lattice_vibration
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## dirac_fluid_turbulence
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## anderson_localization_mesh
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## weyl_semimetal_fermi_arcs
@@ -161,42 +226,42 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## gravitational_wave_chirp_merger
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## asymptotic_giant_branch_pulsation
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## magnetohydrodynamic_z_pinch_instability
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## supernova_nucleosynthesis_nebula
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## cosmic_ray_cascade_resonance
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## nematic_liquid_crystal_disclinations
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## dielectric_breakdown_resonance
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## z_pinch_instability_flare
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## soap_film_thickness_flow
@@ -1535,5 +1600,41 @@ Add any notes on color, density, theme, or mood in the Comment field.
 ## dla_metropolis
 
 - **Date**: 2026-05-06
+- **Rating**: 
+- **Comment**: 
+
+## photonic_bandgap_waveguide
+
+- **Date**: 2026-05-17
+- **Rating**: 
+- **Comment**: 
+
+## adaptive_nerve_bloom
+
+- **Rating**: 
+- **Comment**: 
+
+## wildfire_front_propagation
+
+- **Rating**: 
+- **Comment**: 
+
+## tidal_wave_propagation
+
+- **Rating**: 
+- **Comment**: 
+
+## cellular_division_bloom
+
+- **Rating**: 
+- **Comment**: 
+
+## fractal_tree_generation
+
+- **Rating**: 
+- **Comment**: 
+
+## noise_field_flow
+
 - **Rating**: 
 - **Comment**: 

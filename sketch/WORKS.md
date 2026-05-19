@@ -2415,4 +2415,11 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: Routed flight-arc animation with stochastic landing pads, easing-based drone interpolation, pad occupancy pulses, parallax skyline layers, and aviation-light accents. 10s 1920x1080/60fps MP4.
 - **Description**: A graphite rooftop becomes a near-future autonomy map: circular charging pads pulse across a skewed landing deck while small drones follow faint curved routes between numbered ports. Teal, amber, white, and red navigation lights keep the image modern and restrained.
 
+## recurrence_chamber
+
+- **Date**: 2026-05-19
+- **Theme**: A dark instrument chamber where nonlinear vibration briefly loses order, then remembers its first tone.
+- **Technique**: Alpha-FPUT coupled oscillator lattice with fixed boundaries, velocity Verlet integration, sine-mode projection, modal recurrence meter, resonator bars, and energy-band traces. 12s 1920x1080/60fps MP4.
+- **Description**: A graphite laboratory chamber holds a row of vertical resonators that bend with nonlinear displacement while cyan, amber, rose, and silver mode traces pass through them. The animation visualizes energy leaving the fundamental tone and returning as a measured recurrence pulse.
+
 <!-- Add new works above this line using the format below:

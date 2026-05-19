@@ -2422,4 +2422,11 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: Alpha-FPUT coupled oscillator lattice with fixed boundaries, velocity Verlet integration, sine-mode projection, modal recurrence meter, resonator bars, and energy-band traces. 12s 1920x1080/60fps MP4.
 - **Description**: A graphite laboratory chamber holds a row of vertical resonators that bend with nonlinear displacement while cyan, amber, rose, and silver mode traces pass through them. The animation visualizes energy leaving the fundamental tone and returning as a measured recurrence pulse.
 
+## liquidity_tide
+
+- **Date**: 2026-05-19
+- **Theme**: A market order book breathing like a tide as invisible pressure moves around the midprice.
+- **Technique**: Stochastic limit-order-book simulation with bid/ask depth arrays, order arrivals, cancellations, trade pulses, spread pressure, scrolling depth-memory heatmap, and imbalance meter. 10s 1920x1080/60fps MP4.
+- **Description**: A dark market terminal becomes a living depth map: cyan bid liquidity and rose ask liquidity accumulate, thin out, and ripple around a silver midprice while amber spread pressure frames the center. Trade impacts appear as circular pulses, turning microstructure into a restrained financial tide.
+
 <!-- Add new works above this line using the format below:

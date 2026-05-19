@@ -2401,4 +2401,11 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: Event-driven conveyor network animation with easing-based lane transfers, rotating diverter gates, scanner sweeps, restrained additive glow, and procedural parcel traffic. 10s 1920x1080/60fps MP4.
 - **Description**: A graphite industrial floor becomes a nocturnal city grid of moving packages, cyan scanner beams, amber status lights, and pivoting diverter gates. Parcels glide and change lanes across seven conveyor bands, turning logistics infrastructure into a precise, modern routing choreography.
 
+## elevator_memory
+
+- **Date**: 2026-05-19
+- **Theme**: A glass tower remembering every elevator trip as pale vertical traces in the night.
+- **Technique**: Multi-shaft elevator choreography with eased triangular motion, fading path memory, stochastic window calls, parallax city silhouettes, and restrained glow passes. 10s 1920x1080/60fps MP4.
+- **Description**: A translucent high-rise facade becomes a vertical traffic recorder: elevator cabins rise and descend through nine shafts while previous trips remain as cyan, amber, silver, and rose traces. The work turns routine urban circulation into a quiet architectural memory field.
+
 <!-- Add new works above this line using the format below:

@@ -2408,4 +2408,11 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: Multi-shaft elevator choreography with eased triangular motion, fading path memory, stochastic window calls, parallax city silhouettes, and restrained glow passes. 10s 1920x1080/60fps MP4.
 - **Description**: A translucent high-rise facade becomes a vertical traffic recorder: elevator cabins rise and descend through nine shafts while previous trips remain as cyan, amber, silver, and rose traces. The work turns routine urban circulation into a quiet architectural memory field.
 
+## drone_port_lattice
+
+- **Date**: 2026-05-19
+- **Theme**: A rooftop drone-port network negotiating quiet autonomous arrivals under a dark city sky.
+- **Technique**: Routed flight-arc animation with stochastic landing pads, easing-based drone interpolation, pad occupancy pulses, parallax skyline layers, and aviation-light accents. 10s 1920x1080/60fps MP4.
+- **Description**: A graphite rooftop becomes a near-future autonomy map: circular charging pads pulse across a skewed landing deck while small drones follow faint curved routes between numbered ports. Teal, amber, white, and red navigation lights keep the image modern and restrained.
+
 <!-- Add new works above this line using the format below:

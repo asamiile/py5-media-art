@@ -2436,4 +2436,11 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: Procedural wafer die grid with dose accumulation, moving scanner slit, overlay-error vector field, alignment control pulses, and circular inspection sweep. 10s 1920x1080/60fps MP4.
 - **Description**: A dark cleanroom field frames a circular wafer as a cyan exposure slit scans across the die grid. Violet resist dose accumulates inside each chip field while tiny amber overlay vectors and silver inspection geometry turn fabrication tolerance into a precise nocturnal ritual.
 
+## battery_formation_field
+
+- **Date**: 2026-05-19
+- **Theme**: A battery-cell formation rack balancing hundreds of quiet charge states before the cells become useful.
+- **Technique**: Procedural cell-array simulation with charge-state waves, balancing shunts, thermal drift, diagnostic traces, and rack-level meters. 10s 1920x1080/60fps MP4.
+- **Description**: A graphite formation rack holds rows of glowing cells whose cyan and green charge columns rise through slow stochastic phases. Amber balancing shunts and red thermal warnings punctuate the field while low diagnostic traces turn cell formation into a restrained industrial calibration ritual.
+
 <!-- Add new works above this line using the format below:

@@ -3,6 +3,34 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## taylor_couette_vortices
+
+- **Date**: 2026-05-18
+- **Theme**: The hydrodynamic transition of a fluid confined between concentric rotating cylinders, shifting from beautifully stacked, orderly toroidal vortices to undulating waves and chaotic turbulence.
+- **Technique**: Vectorized 3D Navier-Stokes advection on a cylindrical coordinate grid representing Taylor-Couette flow, advecting 120,000 tracer particles. The simulation dynamically transitions from laminar Taylor vortex flow to wavy vortex flow by modulating the Taylor shear number over time. Projected manually into 3D space with slow cylindrical orbital rotation and depth fading. 15s 4K/60fps MP4.
+- **Description**: A stunning, hollow cylinder of glowing sapphire tracers rotates majestically in pitch-black space, organizing into a vertical stack of six glowing toroidal vortices. Tracers spiral dynamically inside each torus around a soft, molten copper core. As the outer shear increases, the stacked tori sway and wave in an undulating rhythm before dissolving into a turbulent sienna and blue spray, then cleanly reforming.
+
+## fput_recurrence_lattice
+
+- **Date**: 2026-05-18
+- **Theme**: The paradox of a non-linear lattice of coupled oscillators that, instead of thermalizing and distributing energy evenly, periodically returns to its initial low-frequency state in a majestic act of coherence.
+- **Technique**: Vectorized 1D FPUT chain simulation with alpha non-linear coupling, Velocity Verlet integration, manual 3D perspective projection, and 150,000 glowing particles in additive blending. Color-mapped by local thermal energy density and real-time Fourier modal spectrum rings. 15s 4K/60fps MP4.
+- **Description**: An elegant, shimmering double helix in electric cyan shatters dynamically into high-frequency amethyst and rose-pink thermalized ripples, before condensing back into a pristine, coherent wave with a blinding gold-white core, surrounded by concentric background rings of light.
+
+## schlieren_thermal_plumes
+
+- **Date**: 2026-05-18
+- **Theme**: Visualizing the invisible convection currents of heat rising off a glowing wire, using the Schlieren optical effect.
+- **Technique**: 2D particle simulation (150,000 tracers) advected by a multi-harmonic curl noise field representing convective turbulence. Rendered with additive blending and faint silver strokes to simulate the gathering of refracted light. 15s 4K/60fps MP4.
+- **Description**: Deep, high-contrast monochrome with sharp, shimmering wisps of faint electric blue and silver light that curl and fold into each other like smoke, but with optical purity.
+
+## ferrofluid_rosensweig_instability
+
+- **Date**: 2026-05-18
+- **Theme**: The spontaneous emergence of hexagonal spikes on the surface of a magnetic fluid when subjected to a vertical magnetic field.
+- **Technique**: 2.5D height field simulation using a continuous relaxation model balancing magnetic pressure against gravity and surface tension, rendered with high-contrast specular highlights. 15s 4K/60fps MP4.
+- **Description**: A dark, glossy metallic fluid that suddenly erupts into sharp, crystalline spikes, reflecting deep violet and gold light.
+
 ## abrikosov_vortex_depinning
 
 - **Date**: 2026-05-17

@@ -2457,4 +2457,11 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: Procedural port scene with container stacks, ship berths, gantry crane kinematics, trolley/load motion, berth scheduling arcs, haze fields, and water reflections. 10s 1920x1080/60fps MP4.
 - **Description**: A dark harbor becomes a staged terminal ballet: gantry cranes glide across rails, glowing loads descend between ship and yard, and stacked containers form dense signal blocks. Cyan and amber scheduling arcs hover over the berth while water reflections stretch the industrial lights into the night.
 
+## nanopore_signal_loom
+
+- **Date**: 2026-05-19
+- **Theme**: A sequencing flow cell listening to strands of DNA as tiny current interruptions become readable signals.
+- **Technique**: Procedural nanopore sensor channels with stochastic base events, ion-current traces, pore glow pulses, molecule drift, base-call rings, and quality meter. 10s 1920x1080/60fps MP4.
+- **Description**: A graphite flow-cell panel streams twelve cyan ion-current traces while colored base-call rings bloom where molecular events interrupt the signal. Drifting molecule specks and a small quality meter frame live DNA sequencing as a quiet conversion of physical blockage into information.
+
 <!-- Add new works above this line using the format below:

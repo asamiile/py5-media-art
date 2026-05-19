@@ -2394,4 +2394,11 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: Perlin noise-based velocity field particle advection with 5000 particles, velocity smoothing (0.8 decay), noise-value coloring gradient, variable size based on local noise magnitude. 12s 4K/60fps MP4.
 - **Description**: Thousands of cyan and magenta particles swirl and flow in organic curves, guided by invisible Perlin noise currents. Electric ribbons weave and spiral, creating vortices and laminar flow patterns that mimic natural fluid dynamics while remaining purely particle-driven.
 
+## sortation_dawn
+
+- **Date**: 2026-05-19
+- **Theme**: A modern logistics floor waking before sunrise, where silent machines route parcels with choreographed precision.
+- **Technique**: Event-driven conveyor network animation with easing-based lane transfers, rotating diverter gates, scanner sweeps, restrained additive glow, and procedural parcel traffic. 10s 1920x1080/60fps MP4.
+- **Description**: A graphite industrial floor becomes a nocturnal city grid of moving packages, cyan scanner beams, amber status lights, and pivoting diverter gates. Parcels glide and change lanes across seven conveyor bands, turning logistics infrastructure into a precise, modern routing choreography.
+
 <!-- Add new works above this line using the format below:

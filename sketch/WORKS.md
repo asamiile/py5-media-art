@@ -2429,4 +2429,11 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: Stochastic limit-order-book simulation with bid/ask depth arrays, order arrivals, cancellations, trade pulses, spread pressure, scrolling depth-memory heatmap, and imbalance meter. 10s 1920x1080/60fps MP4.
 - **Description**: A dark market terminal becomes a living depth map: cyan bid liquidity and rose ask liquidity accumulate, thin out, and ripple around a silver midprice while amber spread pressure frames the center. Trade impacts appear as circular pulses, turning microstructure into a restrained financial tide.
 
+## wafer_stepper_drift
+
+- **Date**: 2026-05-19
+- **Theme**: A semiconductor wafer passing through a quiet lithography exposure cycle as alignment errors drift below perception.
+- **Technique**: Procedural wafer die grid with dose accumulation, moving scanner slit, overlay-error vector field, alignment control pulses, and circular inspection sweep. 10s 1920x1080/60fps MP4.
+- **Description**: A dark cleanroom field frames a circular wafer as a cyan exposure slit scans across the die grid. Violet resist dose accumulates inside each chip field while tiny amber overlay vectors and silver inspection geometry turn fabrication tolerance into a precise nocturnal ritual.
+
 <!-- Add new works above this line using the format below:

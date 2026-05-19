@@ -2443,4 +2443,11 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: Procedural cell-array simulation with charge-state waves, balancing shunts, thermal drift, diagnostic traces, and rack-level meters. 10s 1920x1080/60fps MP4.
 - **Description**: A graphite formation rack holds rows of glowing cells whose cyan and green charge columns rise through slow stochastic phases. Amber balancing shunts and red thermal warnings punctuate the field while low diagnostic traces turn cell formation into a restrained industrial calibration ritual.
 
+## cold_chain_pulse
+
+- **Date**: 2026-05-19
+- **Theme**: A refrigerated storage wall breathing through compressor cycles as cold air and humidity drift through each bay.
+- **Technique**: Procedural cold-chain sensor grid with bay temperatures, humidity rings, compressor pulses, condensation particles, and scrolling thermal traces. 10s 1920x1080/60fps MP4.
+- **Description**: A dark insulated panel holds rows of refrigerated bays whose blue-cyan fields shift with compressor phase and door-load drift. Mist particles and ice rings make the cold visible, while thin sensor traces turn refrigerated logistics into a quiet atmospheric control system.
+
 <!-- Add new works above this line using the format below:

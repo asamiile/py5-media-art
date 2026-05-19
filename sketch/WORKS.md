@@ -2450,4 +2450,11 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: Procedural cold-chain sensor grid with bay temperatures, humidity rings, compressor pulses, condensation particles, and scrolling thermal traces. 10s 1920x1080/60fps MP4.
 - **Description**: A dark insulated panel holds rows of refrigerated bays whose blue-cyan fields shift with compressor phase and door-load drift. Mist particles and ice rings make the cold visible, while thin sensor traces turn refrigerated logistics into a quiet atmospheric control system.
 
+## harbor_crane_ballet
+
+- **Date**: 2026-05-19
+- **Theme**: A night container terminal where gantry cranes move with the calm precision of choreography.
+- **Technique**: Procedural port scene with container stacks, ship berths, gantry crane kinematics, trolley/load motion, berth scheduling arcs, haze fields, and water reflections. 10s 1920x1080/60fps MP4.
+- **Description**: A dark harbor becomes a staged terminal ballet: gantry cranes glide across rails, glowing loads descend between ship and yard, and stacked containers form dense signal blocks. Cyan and amber scheduling arcs hover over the berth while water reflections stretch the industrial lights into the night.
+
 <!-- Add new works above this line using the format below:

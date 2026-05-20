@@ -2394,4 +2394,74 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: Perlin noise-based velocity field particle advection with 5000 particles, velocity smoothing (0.8 decay), noise-value coloring gradient, variable size based on local noise magnitude. 12s 4K/60fps MP4.
 - **Description**: Thousands of cyan and magenta particles swirl and flow in organic curves, guided by invisible Perlin noise currents. Electric ribbons weave and spiral, creating vortices and laminar flow patterns that mimic natural fluid dynamics while remaining purely particle-driven.
 
+## sortation_dawn
+
+- **Date**: 2026-05-19
+- **Theme**: A modern logistics floor waking before sunrise, where silent machines route parcels with choreographed precision.
+- **Technique**: Event-driven conveyor network animation with easing-based lane transfers, rotating diverter gates, scanner sweeps, restrained additive glow, and procedural parcel traffic. 10s 1920x1080/60fps MP4.
+- **Description**: A graphite industrial floor becomes a nocturnal city grid of moving packages, cyan scanner beams, amber status lights, and pivoting diverter gates. Parcels glide and change lanes across seven conveyor bands, turning logistics infrastructure into a precise, modern routing choreography.
+
+## elevator_memory
+
+- **Date**: 2026-05-19
+- **Theme**: A glass tower remembering every elevator trip as pale vertical traces in the night.
+- **Technique**: Multi-shaft elevator choreography with eased triangular motion, fading path memory, stochastic window calls, parallax city silhouettes, and restrained glow passes. 10s 1920x1080/60fps MP4.
+- **Description**: A translucent high-rise facade becomes a vertical traffic recorder: elevator cabins rise and descend through nine shafts while previous trips remain as cyan, amber, silver, and rose traces. The work turns routine urban circulation into a quiet architectural memory field.
+
+## drone_port_lattice
+
+- **Date**: 2026-05-19
+- **Theme**: A rooftop drone-port network negotiating quiet autonomous arrivals under a dark city sky.
+- **Technique**: Routed flight-arc animation with stochastic landing pads, easing-based drone interpolation, pad occupancy pulses, parallax skyline layers, and aviation-light accents. 10s 1920x1080/60fps MP4.
+- **Description**: A graphite rooftop becomes a near-future autonomy map: circular charging pads pulse across a skewed landing deck while small drones follow faint curved routes between numbered ports. Teal, amber, white, and red navigation lights keep the image modern and restrained.
+
+## recurrence_chamber
+
+- **Date**: 2026-05-19
+- **Theme**: A dark instrument chamber where nonlinear vibration briefly loses order, then remembers its first tone.
+- **Technique**: Alpha-FPUT coupled oscillator lattice with fixed boundaries, velocity Verlet integration, sine-mode projection, modal recurrence meter, resonator bars, and energy-band traces. 12s 1920x1080/60fps MP4.
+- **Description**: A graphite laboratory chamber holds a row of vertical resonators that bend with nonlinear displacement while cyan, amber, rose, and silver mode traces pass through them. The animation visualizes energy leaving the fundamental tone and returning as a measured recurrence pulse.
+
+## liquidity_tide
+
+- **Date**: 2026-05-19
+- **Theme**: A market order book breathing like a tide as invisible pressure moves around the midprice.
+- **Technique**: Stochastic limit-order-book simulation with bid/ask depth arrays, order arrivals, cancellations, trade pulses, spread pressure, scrolling depth-memory heatmap, and imbalance meter. 10s 1920x1080/60fps MP4.
+- **Description**: A dark market terminal becomes a living depth map: cyan bid liquidity and rose ask liquidity accumulate, thin out, and ripple around a silver midprice while amber spread pressure frames the center. Trade impacts appear as circular pulses, turning microstructure into a restrained financial tide.
+
+## wafer_stepper_drift
+
+- **Date**: 2026-05-19
+- **Theme**: A semiconductor wafer passing through a quiet lithography exposure cycle as alignment errors drift below perception.
+- **Technique**: Procedural wafer die grid with dose accumulation, moving scanner slit, overlay-error vector field, alignment control pulses, and circular inspection sweep. 10s 1920x1080/60fps MP4.
+- **Description**: A dark cleanroom field frames a circular wafer as a cyan exposure slit scans across the die grid. Violet resist dose accumulates inside each chip field while tiny amber overlay vectors and silver inspection geometry turn fabrication tolerance into a precise nocturnal ritual.
+
+## battery_formation_field
+
+- **Date**: 2026-05-19
+- **Theme**: A battery-cell formation rack balancing hundreds of quiet charge states before the cells become useful.
+- **Technique**: Procedural cell-array simulation with charge-state waves, balancing shunts, thermal drift, diagnostic traces, and rack-level meters. 10s 1920x1080/60fps MP4.
+- **Description**: A graphite formation rack holds rows of glowing cells whose cyan and green charge columns rise through slow stochastic phases. Amber balancing shunts and red thermal warnings punctuate the field while low diagnostic traces turn cell formation into a restrained industrial calibration ritual.
+
+## cold_chain_pulse
+
+- **Date**: 2026-05-19
+- **Theme**: A refrigerated storage wall breathing through compressor cycles as cold air and humidity drift through each bay.
+- **Technique**: Procedural cold-chain sensor grid with bay temperatures, humidity rings, compressor pulses, condensation particles, and scrolling thermal traces. 10s 1920x1080/60fps MP4.
+- **Description**: A dark insulated panel holds rows of refrigerated bays whose blue-cyan fields shift with compressor phase and door-load drift. Mist particles and ice rings make the cold visible, while thin sensor traces turn refrigerated logistics into a quiet atmospheric control system.
+
+## harbor_crane_ballet
+
+- **Date**: 2026-05-19
+- **Theme**: A night container terminal where gantry cranes move with the calm precision of choreography.
+- **Technique**: Procedural port scene with container stacks, ship berths, gantry crane kinematics, trolley/load motion, berth scheduling arcs, haze fields, and water reflections. 10s 1920x1080/60fps MP4.
+- **Description**: A dark harbor becomes a staged terminal ballet: gantry cranes glide across rails, glowing loads descend between ship and yard, and stacked containers form dense signal blocks. Cyan and amber scheduling arcs hover over the berth while water reflections stretch the industrial lights into the night.
+
+## nanopore_signal_loom
+
+- **Date**: 2026-05-19
+- **Theme**: A sequencing flow cell listening to strands of DNA as tiny current interruptions become readable signals.
+- **Technique**: Procedural nanopore sensor channels with stochastic base events, ion-current traces, pore glow pulses, molecule drift, base-call rings, and quality meter. 10s 1920x1080/60fps MP4.
+- **Description**: A graphite flow-cell panel streams twelve cyan ion-current traces while colored base-call rings bloom where molecular events interrupt the signal. Drifting molecule specks and a small quality meter frame live DNA sequencing as a quiet conversion of physical blockage into information.
+
 <!-- Add new works above this line using the format below:

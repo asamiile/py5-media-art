@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## hyper_chromatic_glitch_fold
+
+- **Date**: 2026-05-22
+- **Theme**: A high-density data matrix folding and tearing itself apart, bleeding brilliant spectral colors as its structural integrity collapses under recursive glitches.
+- **Technique**: Vectorized recursive grid subdivision with pseudo-random chromatic displacement, localized horizontal tearing (row-shifting), and high-frequency noise injection. Multi-pass RGB channel splitting. 15s 4K/60fps MP4.
+- **Description**: A perfect, dense geometric grid suddenly shivers, splitting into blinding neon magenta and cyan channels. Horizontal tears slice across the frame, ripping the structure apart while golden noise bleeds into the fractures.
+
 ## salt_finger_convection_sim
 
 - **Date**: 2026-05-22

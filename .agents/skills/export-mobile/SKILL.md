@@ -20,6 +20,7 @@ No new sketch is created — only the existing rendered video is transcoded.
 | Loop        | Seamless — uses `-stream_loop -1` + `-t` | Seamless — uses `-stream_loop -1` + `-t` |
 | Fast-start  | `-movflags +faststart`                   | `-movflags +faststart`                   |
 | Quality     | `-crf 23`                                | `-crf 23`                                |
+| Scaling     | Fill + center-crop (no black bars)       | Fill + center-crop (no black bars)       |
 | Output file | `{work_name}_landscape.mp4`              | `{work_name}_portrait.mp4`               |
 
 ## Inputs
@@ -50,7 +51,7 @@ No new sketch is created — only the existing rendered video is transcoded.
      -t {TARGET_SEC} \
      -vcodec libx264 \
      -profile:v baseline -level 3.1 \
-     -vf "scale=1280:720:force_original_aspect_ratio=decrease,pad=1280:720:(ow-iw)/2:(oh-ih)/2" \
+     -vf "scale=1280:720:force_original_aspect_ratio=increase,crop=1280:720" \
      -pix_fmt yuv420p \
      -movflags +faststart \
      -crf 23 \
@@ -63,13 +64,15 @@ No new sketch is created — only the existing rendered video is transcoded.
      -t {TARGET_SEC} \
      -vcodec libx264 \
      -profile:v baseline -level 3.1 \
-     -vf "scale=720:1280:force_original_aspect_ratio=decrease,pad=720:1280:(ow-iw)/2:(oh-ih)/2" \
+     -vf "scale=720:1280:force_original_aspect_ratio=increase,crop=720:1280" \
      -pix_fmt yuv420p \
      -movflags +faststart \
      -crf 23 \
      sketch/{work_name}/{work_name}_portrait.mp4
    ```
-   `-stream_loop -1` with `-t` handles both looping (short source) and trimming (long source).
+   `-stream_loop -1` with `-t` handles both looping (short source) and trimming (long source).  
+   `force_original_aspect_ratio=increase` + `crop` fills the entire target frame from the center,
+   avoiding the small-video-with-black-bars problem that occurs with `decrease` + `pad`.
 8. Verify both output files were created successfully.
 9. Report: work name, source duration, target duration, and for each output — path and file size.
 

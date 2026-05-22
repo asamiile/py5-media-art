@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## lbm_karman_vortex_street
+
+- **Date**: 2026-05-22
+- **Theme**: The mesmerizing, repeating pattern of swirling vortices created by a fluid as it is forced around an obstacle.
+- **Technique**: Vectorized 2D Lattice Boltzmann Method (D2Q9) simulation. Dynamic vorticity is mapped to a diverging thermal/teal colormap. 15s 4K/60fps MP4.
+- **Description**: A smooth, deep blue river flows silently until it hits a solid pillar. Rhythmic, alternating crimson and cyan whirlpools peel off from the edges of the pillar, drifting downstream in a complex dance of interacting eddies.
+
 ## ginzburg_landau_spiral_defects
 
 - **Date**: 2026-05-22

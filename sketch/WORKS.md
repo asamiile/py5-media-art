@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## crystal_dislocation_glide
+
+- **Date**: 2026-05-22
+- **Theme**: The sudden, violent slipping of microscopic lattice defects through an atomic crystal under immense pressure, visualizing the invisible physics of plastic deformation.
+- **Technique**: Vectorized 2D Sine-Gordon (Frenkel-Kontorova) phase-field model. Computes atomic displacement under macroscopic shear stress with local yielding and dislocation avalanches. 15s 4K/60fps MP4.
+- **Description**: A perfectly ordered, shimmering ice-blue atomic grid slowly deforms. Suddenly, brilliant amber fault lines rip diagonally through the structure, accompanied by a cascade of localized structural rearrangements that echo like a microscopic earthquake.
+
 ## hyper_chromatic_glitch_fold
 
 - **Date**: 2026-05-22

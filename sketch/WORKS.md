@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## ginzburg_landau_spiral_defects
+
+- **Date**: 2026-05-22
+- **Theme**: The mesmerizing, spontaneous emergence of rotating spiral waves and topological defects in a complex oscillatory medium.
+- **Technique**: Vectorized 2D simulation of the Complex Ginzburg-Landau Equation (CGLE) solved via FDTD. The complex phase maps to a vibrant synthwave spectrum. 15s 4K/60fps MP4.
+- **Description**: A bubbling, chaotic sea of iridescent noise quickly synchronizes. Distinct pacemakers emerge, emitting rhythmic, expanding rainbow rings that curl into spinning, interlocking multi-armed spirals.
+
 ## hopf_fibration_projection
 
 - **Date**: 2026-05-22

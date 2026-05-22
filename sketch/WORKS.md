@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## hopf_fibration_projection
+
+- **Date**: 2026-05-22
+- **Theme**: The mathematical elegance of the Hopf Fibration, projecting the 4D hypersphere onto 3D space as a seamless arrangement of interlocking, luminous circular fibers.
+- **Technique**: Parametric 4D generation of Hopf circles projected via Stereographic projection from S3 to R3, and then to 2D. Rendered as luminous, silken threads using an additive blend mode. 15s 4K/60fps MP4.
+- **Description**: A massive, shimmering torus made of hundreds of interlocking glowing rings slowly rotates in the void. As it turns inside out in 4D space, waves of iridescent colors flow smoothly along the fibers.
+
 ## crystal_dislocation_glide
 
 - **Date**: 2026-05-22

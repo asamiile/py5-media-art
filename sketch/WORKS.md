@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## salt_finger_convection_sim
+
+- **Date**: 2026-05-22
+- **Theme**: Double-diffusive convection where warm, salty water lies over cold, fresh water, creating intricate falling salt fingers and rising thermal plumes due to differing diffusion rates.
+- **Technique**: Vectorized 2D Boussinesq Navier-Stokes with two coupled advection-diffusion scalar fields (Temperature and Salinity). 15s 4K/60fps MP4.
+- **Description**: Deep oceanic indigo background is cut through by electric cyan falling salt fingers and warm gold rising thermal plumes.
+
 ## taylor_couette_vortices
 
 - **Date**: 2026-05-18
@@ -2463,5 +2470,12 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Theme**: A sequencing flow cell listening to strands of DNA as tiny current interruptions become readable signals.
 - **Technique**: Procedural nanopore sensor channels with stochastic base events, ion-current traces, pore glow pulses, molecule drift, base-call rings, and quality meter. 10s 1920x1080/60fps MP4.
 - **Description**: A graphite flow-cell panel streams twelve cyan ion-current traces while colored base-call rings bloom where molecular events interrupt the signal. Drifting molecule specks and a small quality meter frame live DNA sequencing as a quiet conversion of physical blockage into information.
+
+## lenia_morphogenesis
+
+- **Date**: 2026-05-21
+- **Theme**: Continuous Cellular Automata (Lenia) & Particle Morphogenesis
+- **Technique**: Vectorized 2D FFT convolutions, density gradient advection (100,000 tracers), and multi-channel color blending. 15s 1920x1080/60fps MP4.
+- **Description**: A stunning continuous cellular automaton simulation where organic violet and cyan cell bodies slide dynamically over an obsidian background, forming active golden cores. As they glide and mutate, 100,000 golden particles are drawn along the density gradients, trailing glowing bioluminescent dust that highlights the self-organizing flow.
 
 <!-- Add new works above this line using the format below:

@@ -4,6 +4,11 @@
 Agents MUST NOT write anything in the `Comment` field. When registering a new work, Agents must leave the `Rating` and `Comment` fields empty or with their default labels as placeholders for the user.
 The Artist reads this file before starting a new sketch to understand preferences.
 
+## salt_finger_convection_sim
+
+- **Rating**: 
+- **Comment**: 
+
 ## taylor_couette_vortices
 
 - **Rating**: 
@@ -1705,6 +1710,11 @@ Add any notes on color, density, theme, or mood in the Comment field.
 - **Comment**: 
 
 ## nanopore_signal_loom
+
+- **Rating**: 
+- **Comment**: 
+
+## lenia_morphogenesis
 
 - **Rating**: 
 - **Comment**: 

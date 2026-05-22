@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## quantum_interference_glitch
+
+- **Date**: 2026-05-23
+- **Theme**: The delicate, shimmering interference patterns of quantum waves that violently shear and split into bright RGB noise when observed.
+- **Technique**: Procedural interference patterns mapped to saturated neon colors (Cyan, Magenta, Yellow), with sudden chaotic horizontal and vertical tearing using NumPy pixel manipulation. 15s 60fps MP4.
+- **Description**: A visualization of a structured quantum system experiencing sudden decoherence. The piece begins with harmonious, overlapping interference rings from multiple wave sources, but as the timeline progresses, the "observation effect" intensifies, tearing the simulation apart through violent spatial shifts and RGB channel inversions.
+
 ## neon_cellular_datamosh
 
 - **Date**: 2026-05-23

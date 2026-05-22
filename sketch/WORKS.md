@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## cybernetic_flora_corruption
+
+- **Date**: 2026-05-22
+- **Theme**: Organic growth trying to establish order, but constantly being disrupted by vibrant digital corruption.
+- **Technique**: Procedurally generated cybernetic floral structures (Maurer-inspired roses) rotating and blooming over time, rendered with RGB channel splitting. A secondary NumPy pixel-manipulation pass introduces horizontal datamoshing and block tears across the canvas. 15s 60fps MP4.
+- **Description**: A delicate, geometric flower blooms slowly in the obsidian void. As it opens, its structural integrity stutters and shears, bleeding intense neon cyan, magenta, and yellow data across the frame, leaving vibrant datamosh trails in its wake.
+
 ## lbm_karman_vortex_street
 
 - **Date**: 2026-05-22

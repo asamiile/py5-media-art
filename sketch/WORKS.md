@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## neon_cellular_datamosh
+
+- **Date**: 2026-05-23
+- **Theme**: The relentless, infectious spread of corrupted data through a structured system, represented by neon cellular automata bleeding into chaotic horizontal datamosh lines.
+- **Technique**: Procedurally generated cellular rectangles drawn with high saturation RGB colors (Cyan, Magenta, Yellow, Green) on a dark background. NumPy is used for real-time pixel manipulation, introducing horizontal screen tearing and RGB channel swapping to simulate datamoshing and signal corruption. 15s 60fps MP4.
+- **Description**: A visualization of a structured digital system being overwhelmed by vibrant, chaotic data corruption. Clean geometric shapes are continuously ripped apart and color-shifted, leaving neon trails that bleed across the canvas in unpredictable patterns.
+
 ## taylor_couette_vortices
 
 - **Date**: 2026-05-18

@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## adaptive_nerve_bloom
+
+- **Date**: 2026-05-23
+- **Theme**: Emergent intelligence and neural connections.
+- **Technique**: Network graph simulation with 180 nodes and dynamic distance-based synapses. Signal propagation is visualized through pulsing edge brightness and node activation radii. Rendered with a Cyan, Magenta, and Gold palette over a dark canvas. 15s 60fps MP4.
+- **Description**: The dark canvas blooms with a constellation of cyan, magenta, and gold neural nodes. Connections between neurons pulse with energy as signals propagate through the network, creating an ever-shifting web of computational activity. The animation captures the essence of intelligence emerging and organizing itself in real time.
+
 ## strange_attractor_aizawa
 
 - **Date**: 2026-05-23

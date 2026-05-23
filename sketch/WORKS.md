@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## metaballs_liquid_metal
+
+- **Date**: 2026-05-23
+- **Theme**: Fluid dynamics, implicit surfaces, metallic reflections, retro demoscene.
+- **Technique**: We simulate 30 bouncy physics particles and compute a 2D scalar field representing their inverse-square distance functions. Instead of rendering them as solid blobs, we pass the scalar field through phase-shifted periodic sine functions. This creates alternating bands of light and dark that perfectly mimic the environmental reflections of shiny liquid metal (like mercury or chrome). The outer boundary is clamped via a hard threshold mask. Computed completely via vectorized NumPy grid operations and upscaled to full resolution. 15s 60fps MP4.
+- **Description**: 30 spheres of liquid mercury fly around a pitch-black canvas. When they get close, they seamlessly snap together and merge into larger, amorphous blobs. The intricate, wavy light bands inside the blobs constantly shift and distort, creating an extremely convincing metallic sheen that reflects an invisible, striped environment.
+
 ## neural_network_activation_landscape
 
 - **Date**: 2026-05-23

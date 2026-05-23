@@ -91,7 +91,7 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## kuramoto_phase_synchronization
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## mobius_geodesic_flow
@@ -116,7 +116,7 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## electrodeposition_dendrite_growth
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## pilot_wave_hydrodynamics

@@ -61,7 +61,7 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## fput_recurrence_lattice
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## schlieren_thermal_plumes
@@ -101,7 +101,7 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## polymer_chain_langevin_dynamics
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## chladni_plate_resonance
@@ -1731,7 +1731,7 @@ Add any notes on color, density, theme, or mood in the Comment field.
 
 ## liquidity_tide
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## wafer_stepper_drift
@@ -1756,5 +1756,5 @@ Add any notes on color, density, theme, or mood in the Comment field.
 
 ## nanopore_signal_loom
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 

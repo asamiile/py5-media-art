@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## boid_murmuration_fluid
+
+- **Date**: 2026-05-23
+- **Theme**: Fluid flocking dynamics resembling organic murmuration.
+- **Technique**: Vectorized boids simulation featuring 120 flock leaders and 30,000 follower agents. Leaders interact via separation, alignment, cohesion, and central attraction. Agents are strongly attracted to their respective leaders and align with their velocity, adding local noise. Rendered using additive blending on a dark indigo background. 15s 60fps MP4.
+- **Description**: Thousands of tiny sparks sweep across a dark indigo sky, suddenly folding and swooping together into massive, undulating ribbon-like shapes that feel both organic and perfectly synchronized.
+
 ## adaptive_nerve_bloom
 
 - **Date**: 2026-05-23

@@ -4,6 +4,11 @@
 Agents MUST NOT write anything in the `Comment` field. When registering a new work, Agents must leave the `Rating` and `Comment` fields empty or with their default labels as placeholders for the user.
 The Artist reads this file before starting a new sketch to understand preferences.
 
+## boid_murmuration_fluid
+
+- **Rating**: 
+- **Comment**: 
+
 ## adaptive_nerve_bloom
 
 - **Rating**: 
@@ -101,12 +106,12 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## chladni_plate_resonance
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## boid_murmuration_fluid
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## electrodeposition_dendrite_growth

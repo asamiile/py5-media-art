@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## bifurcation_attractor_swarm
+
+- **Date**: 2026-05-23
+- **Theme**: Chaotic attractors undergoing bifurcation, mapped by a glowing swarm of particles.
+- **Technique**: 2.5D rendering of the Lorenz attractor equations mixed with custom sine-wave perturbations. 50,000 tracers. Additive blending with a hot pink, violet, and deep blue palette. 15s 60fps MP4.
+- **Description**: Thousands of glowing points stream through a dark void, painting the structure of a mathematical strange attractor. Over time, the parameters driving the system shift, causing the orbital paths to deform and bifurcate into increasingly complex patterns of motion.
+
 ## fractal_brownian_terrain
 
 - **Date**: 2026-05-23

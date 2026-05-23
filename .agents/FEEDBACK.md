@@ -96,7 +96,7 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## mobius_geodesic_flow
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## polymer_chain_langevin_dynamics
@@ -1706,7 +1706,7 @@ Add any notes on color, density, theme, or mood in the Comment field.
 
 ## noise_field_flow
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## sortation_dawn

@@ -21,7 +21,8 @@ SKETCH_DIR = sketch_dir(__file__)
 WORK_NAME = SKETCH_DIR.name
 PREVIEW_FRAME = 60
 PREVIEW_FILENAME = f"{WORK_NAME}_p1.png"
-PREVIEW_SIZE, OUTPUT_SIZE, SIZE = get_sizes()
+PREVIEW_SIZE, OUTPUT_SIZE, _ = get_sizes()
+SIZE = OUTPUT_SIZE
 
 
 def setup():
@@ -62,7 +63,8 @@ DURATION_SEC = 10  # Adjust between 10–30 seconds depending on content
 FPS = 60
 TOTAL_FRAMES = DURATION_SEC * FPS
 PREVIEW_FILENAME = f"{WORK_NAME}_p1.png"
-PREVIEW_SIZE, OUTPUT_SIZE, SIZE = get_sizes()
+PREVIEW_SIZE, OUTPUT_SIZE, _ = get_sizes()
+SIZE = OUTPUT_SIZE
 
 
 def setup():

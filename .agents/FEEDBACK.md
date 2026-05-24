@@ -4,6 +4,11 @@
 Agents MUST NOT write anything in the `Comment` field. When registering a new work, Agents must leave the `Rating` and `Comment` fields empty or with their default labels as placeholders for the user.
 The Artist reads this file before starting a new sketch to understand preferences.
 
+## generative_particle_life_ecosystem
+
+- **Rating**: 
+- **Comment**:
+
 ## geometric_fractal_hilbert_curve_3d
 
 - **Rating**: 
@@ -27,7 +32,7 @@ The Artist reads this file before starting a new sketch to understand preference
 ## abstract_generative_strange_attractor_lorenz
 
 - **Rating**: 
-- **Comment**: 
+- **Comment**: It has tuned white.
 
 ## geometric_fractal_kaleidoscope_mirrors
 
@@ -36,12 +41,12 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## abstract_generative_boids_flocking_3d
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## abstract_generative_cellular_automata_1d
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## geometric_generative_phyllotaxis_spiral
@@ -426,7 +431,7 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## hopf_fibration_projection
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## crystal_dislocation_glide

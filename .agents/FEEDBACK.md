@@ -4,6 +4,401 @@
 Agents MUST NOT write anything in the `Comment` field. When registering a new work, Agents must leave the `Rating` and `Comment` fields empty or with their default labels as placeholders for the user.
 The Artist reads this file before starting a new sketch to understand preferences.
 
+## geometric_fractal_recursive_tree_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## geometric_isometric_voxel_sorting
+
+- **Rating**: 
+- **Comment**: 
+
+## abstract_generative_strange_attractor_lorenz
+
+- **Rating**: 
+- **Comment**: 
+
+## geometric_fractal_kaleidoscope_mirrors
+
+- **Rating**: 
+- **Comment**: 
+
+## abstract_generative_boids_flocking_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## abstract_generative_cellular_automata_1d
+
+- **Rating**: 
+- **Comment**: 
+
+## geometric_generative_phyllotaxis_spiral
+
+- **Rating**: 
+- **Comment**: 
+
+## abstract_vector_field_magnetic_dipole
+
+- **Rating**: 
+- **Comment**: 
+
+## abstract_liquid_displacement_map
+
+- **Rating**: 
+- **Comment**: 
+
+## geometric_sacred_flower_of_life
+
+- **Rating**: 
+- **Comment**: 
+
+## abstract_reaction_diffusion_slime
+
+- **Rating**: 
+- **Comment**: 
+
+## geometric_3d_voxel_terrain_flight
+
+- **Rating**: 
+- **Comment**: 
+
+## abstract_particle_spring_physics_mesh
+
+- **Rating**: 
+- **Comment**: 
+
+## geometric_fractal_recursive_tree_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## abstract_topological_moebius_strip
+
+- **Rating**: 
+- **Comment**: 
+
+## generative_vector_field_perlin_flow
+
+- **Rating**: 
+- **Comment**: 
+
+## generative_liquid_metaballs_threshold
+
+- **Rating**: 
+- **Comment**: 
+
+## geometric_isometric_cyber_city
+
+- **Rating**: 
+- **Comment**: 
+
+## geometric_fractal_polyhedron_subdivision
+
+- **Rating**: 
+- **Comment**: 
+
+## abstract_quantum_wavefunction_collapse
+
+- **Rating**: 
+- **Comment**: 
+
+## abstract_cellular_automata_1d
+
+- **Rating**: 
+- **Comment**: 
+
+## generative_phyllotaxis_sunflower
+
+- **Rating**: 
+- **Comment**: 
+
+## optical_illusion_moire_patterns
+
+- **Rating**: 
+- **Comment**: 
+
+## abstract_strange_attractor_particle_flow
+
+- **Rating**: 
+- **Comment**: 
+
+## generative_neural_network_graph
+
+- **Rating**: 
+- **Comment**: 
+
+## geometric_flower_of_venus
+
+- **Rating**: 
+- **Comment**: 
+
+## hyperbolic_tessellation_poincare
+
+- **Rating**: 
+- **Comment**: 
+
+## abstract_fluid_marbling
+
+- **Rating**: 
+- **Comment**: 
+
+## geometric_origami_tessellation
+
+- **Rating**: 
+- **Comment**: 
+
+## generative_cymatics_chladni
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_string_art_geometry
+
+- **Rating**: 
+- **Comment**: 
+
+## generative_kaleidoscope_mirrors
+
+- **Rating**: 
+- **Comment**: 
+
+## abstract_topological_mesh
+
+- **Rating**: 
+- **Comment**: 
+
+## chromatic_glitch_cube_field
+
+- **Rating**: 
+- **Comment**: 
+
+## sacred_geometry_flower_of_life
+
+- **Rating**: 
+- **Comment**: 
+
+## algorithmic_diorama_voxel_city
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_wave_pendulum
+
+- **Rating**: 
+- **Comment**: 
+
+## quantum_orbital_electron_cloud
+
+- **Rating**: 
+- **Comment**: 
+
+## recursive_fractal_tree_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## fluid_vector_field_interference
+
+- **Rating**: 
+- **Comment**: 
+
+## recursive_fractal_spirograph
+
+- **Rating**: 
+- **Comment**: 
+
+## generative_terrain_topography
+
+- **Rating**: 
+- **Comment**: 
+
+## geometric_metatron_cube_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## cellular_automata_game_of_life_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## particle_attractor_lorenz_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## algorithmic_crystal_growth
+
+- **Rating**: 
+- **Comment**: 
+
+## quantum_interference_waves
+
+- **Rating**: 
+- **Comment**: 
+
+## neon_wireframe_torus_knot
+
+- **Rating**: 
+- **Comment**: 
+
+## generative_architecture_cityscape
+
+- **Rating**: 
+- **Comment**: 
+
+## cloth_simulation_physics
+
+- **Rating**: 
+- **Comment**: 
+
+## recursive_tree_fractal_canopy
+
+- **Rating**: 
+- **Comment**: 
+
+## hypnotic_moire_interference
+
+- **Rating**: 
+- **Comment**: 
+
+## fractal_brownian_motion_terrain
+
+- **Rating**: 
+- **Comment**: 
+
+## differential_growth_coral
+
+- **Rating**: 
+- **Comment**: 
+
+## sacred_geometry_mandala
+
+- **Rating**: 
+- **Comment**: 
+
+## vector_flow_field_particles
+
+- **Rating**: 
+- **Comment**: 
+
+## metaballs_liquid_metal
+
+- **Rating**: 
+- **Comment**: 
+
+## neural_network_activation_landscape
+
+- **Rating**: 
+- **Comment**: 
+
+## lorenz_attractor_particle_flow
+
+- **Rating**: 
+- **Comment**: 
+
+## boids_flocking_swirl
+
+- **Rating**: 
+- **Comment**: 
+
+## magnetic_pendulum_fractal
+
+- **Rating**: 
+- **Comment**: 
+
+## strange_attractor_clifford_morph
+
+- **Rating**: 
+- **Comment**: 
+
+## slime_mold_physarum
+
+- **Rating**: 
+- **Comment**: 
+
+## solar_corona_magnetic_loops
+
+- **Rating**: 
+- **Comment**: 
+
+## double_pendulum_fractal_map
+
+- **Rating**: 
+- **Comment**: 
+
+## reaction_diffusion_turing_patterns
+
+- **Rating**: 
+- **Comment**: 
+
+## lissajous_knot_orbital_decay
+
+- **Rating**: 
+- **Comment**: 
+
+## non_euclidean_poincare_disk
+
+- **Rating**: 
+- **Comment**: 
+
+## magnetic_reconnection_plasma
+
+- **Rating**: 
+- **Comment**: 
+
+## boid_murmuration_fluid
+
+- **Rating**: 
+- **Comment**: 
+
+## adaptive_nerve_bloom
+
+- **Rating**: 
+- **Comment**: 
+
+## strange_attractor_aizawa
+
+- **Rating**: 
+- **Comment**: 
+
+## hopf_fibration_flow
+
+- **Rating**: 
+- **Comment**: 
+
+## bifurcation_attractor_swarm
+
+- **Rating**: 
+- **Comment**: 
+
+## fractal_brownian_terrain
+
+- **Rating**: 
+- **Comment**: 
+
+## chromatic_vector_field_glitch
+
+- **Rating**: 
+- **Comment**: 
+
+## holographic_lattice_collapse
+
+- **Rating**: 
+- **Comment**: 
+
+## quantum_interference_glitch
+
+- **Rating**: 
+- **Comment**: 
+
+## neon_cellular_datamosh
+
+- **Rating**: 
+- **Comment**: 
+
 ## cybernetic_flora_corruption
 
 - **Rating**: 
@@ -46,7 +441,7 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## fput_recurrence_lattice
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## schlieren_thermal_plumes
@@ -76,32 +471,32 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## kuramoto_phase_synchronization
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## mobius_geodesic_flow
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## polymer_chain_langevin_dynamics
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## chladni_plate_resonance
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## boid_murmuration_fluid
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## electrodeposition_dendrite_growth
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## pilot_wave_hydrodynamics
@@ -1691,7 +2086,7 @@ Add any notes on color, density, theme, or mood in the Comment field.
 
 ## noise_field_flow
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## sortation_dawn
@@ -1716,7 +2111,7 @@ Add any notes on color, density, theme, or mood in the Comment field.
 
 ## liquidity_tide
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## wafer_stepper_drift
@@ -1746,5 +2141,5 @@ Add any notes on color, density, theme, or mood in the Comment field.
 
 ## lenia_morphogenesis
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 

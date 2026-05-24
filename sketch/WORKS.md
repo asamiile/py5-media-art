@@ -3,6 +3,559 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## geometric_fractal_recursive_tree_3d
+
+- **Date**: 2026-05-23
+- **Theme**: L-systems, fractal trees, botany, recursive growth, sacred geometry, nature.
+- **Technique**: Uses a recursive function (`draw_branch`) to generate thousands of connected 3D lines. At each depth, the tree branches into 2 or 3 smaller branches, spiraling outward in 3D space. The angle of each branch is dynamically modulated by a 2D Perlin noise field simulating wind, causing the entire massive structure to gently sway. The length of the branches scales rhythmically with a sine wave to simulate breathing or organic growth. Rendered in `py5.P3D` as the camera slowly orbits the glowing, neon-colored tree. 15s 60fps MP4.
+- **Description**: A digital Yggdrasil. A massive, glowing neon tree grows upward from the void, branching out endlessly into thousands of delicate, mathematical twigs. The camera slowly orbits the three-dimensional fractal structure while a gentle, invisible wind rustles the glowing branches. The colors organically shift from deep roots of purple to electric cyan leaves, creating a mesmerizing fusion of nature and computation.
+
+## geometric_isometric_voxel_sorting
+
+- **Date**: 2026-05-23
+- **Theme**: Pixel sorting, algorithms, voxels, entropy to order, 3D data visualization, isometric projection.
+- **Technique**: Starts with a $15 \times 15 \times 15$ grid (3,375 voxels) of completely randomized colors (Hue, Saturation, Brightness). Every frame, the script runs partial passes of a Bubble Sort algorithm along the X, Y, and Z axes. The X-axis sorts by Hue, the Y-axis sorts by Saturation, and the Z-axis sorts by Brightness. As the algorithm progresses over 15 seconds, the chaotic block of noise magically self-organizes into a perfect, smooth 3D RGB color gradient cube. The voxels also "breathe" (scale up and down) based on their hue, meaning as the cube sorts itself, the random glitchy scaling organizes into a smooth geometric wave. Rendered in `py5.P3D` with an isometric camera angle. 15s 60fps MP4.
+- **Description**: Entropy reversing into perfect order. A massive, rotating cubic structure is made of thousands of tiny, randomly colored floating blocks. Over time, the blocks begin to shift and swap places autonomously. Slowly, a pattern emerges from the chaos. The random noise reorganizes itself until it forms a flawless, glowing 3D rainbow gradient cube, undulating smoothly as its internal colors harmonize.
+
+## abstract_generative_strange_attractor_lorenz
+
+- **Date**: 2026-05-23
+- **Theme**: Chaos theory, strange attractors, the butterfly effect, fluid convection, math.
+- **Technique**: Solves the Lorenz system of nonlinear ordinary differential equations ($\frac{dx}{dt} = \sigma(y - x)$, $\frac{dy}{dt} = x(\rho - z) - y$, $\frac{dz}{dt} = xy - \beta z$) for 15,000 independent particles simultaneously. The entire swarm is initialized in a microscopic cluster of a $0.01$ radius. Due to the chaotic nature of the strange attractor (the "Butterfly Effect"), infinitesimally small initial differences cause the particles' paths to rapidly diverge. The physics are computed using vectorized NumPy operations for high performance. The particles are drawn as a continuous, fading neon ribbon (`py5.line` with additive blending and motion blur) that reveals the iconic dual-lobe "butterfly" shape of the attractor over time. 15s 60fps MP4.
+- **Description**: The Butterfly Effect made visible. 15,000 points of light begin as a single microscopic drop, but within seconds, the laws of chaos rip them apart. They spiral outward, tracing the invisible mathematical currents of the Lorenz Strange Attractor. The paths weave a massive, glowing, two-lobed structure that looks like cosmic gossamer wings. The camera slowly orbits the 3D structure, showing the intricate, non-intersecting layers of infinite complexity drawn in deep purples and electric pinks.
+
+## geometric_fractal_kaleidoscope_mirrors
+
+- **Date**: 2026-05-23
+- **Theme**: Kaleidoscopes, reflection, fractals, sacred geometry, mirrors, symmetry, optical illusions.
+- **Technique**: Uses matrix transformations (`py5.push_matrix()`, `py5.rotate()`) combined with matrix scaling (`py5.scale(1, -1)`) to perfectly mirror a single wedge of geometry 12 times in a circle. Inside the base wedge (slice), the script generates chaotic, overlapping Bezier curves and jagged polygons driven by time and Perlin noise. When this single slice is mirrored and repeated, the chaotic lines seamlessly connect across the boundaries of the slices, creating massive, perfectly symmetrical geometric mandalas. Additive blending (`py5.ADD`) and a slight motion blur trail make the shifting shapes glow like stained glass or a laser light show. 15s 60fps MP4.
+- **Description**: A digital kaleidoscope turns endlessly, reflecting beams of neon light into a perfect 12-pointed star. As the internal "mirrors" shift, chaotic ribbons of cyan and magenta fold into intricate, symmetrical mandalas, expanding and collapsing like a breathing cosmic flower. The shapes flow seamlessly across the reflection boundaries, creating the hypnotic illusion of an infinitely repeating fractal universe.
+
+## abstract_generative_boids_flocking_3d
+
+- **Date**: 2026-05-23
+- **Theme**: Artificial life, emergent behavior, flocking, Boids, swarm intelligence.
+- **Technique**: Simulates 1,200 individual "boids" flying inside a massive 3D boundary box. To achieve real-time 60fps performance without using C++ or shaders, the heavy $O(N^2)$ distance matrix and N-body interaction logic (Separation, Alignment, Cohesion) are heavily optimized using NumPy broadcasting and vectorization. Each boid mathematically calculates the velocity and position of its neighbors to steer its flight path dynamically. The boids are rendered using `py5.begin_shape(py5.TRIANGLES)` as custom 3D pyramids that pitch and yaw perfectly along their velocity vectors using `atan2` rotations. Dynamic lighting (`py5.directional_light`) casts dramatic shadows as the swarm moves. 15s 60fps MP4.
+- **Description**: A breathtaking digital murmuration. Over a thousand glowing, geometric birds swarm inside an invisible cubic boundary. They organically clump together into massive, swirling flocks, only to break apart and weave through each other to avoid collisions. The artificial creatures constantly shift their neon colors based on their spatial coordinates, creating a chaotic yet perfectly synchronized dance of swarm intelligence that feels deeply alive.
+
+## abstract_generative_cellular_automata_1d
+
+- **Date**: 2026-05-23
+- **Theme**: Cellular automata, Rule 30, chaos theory, weaving, digital tapestry, isometric projection.
+- **Technique**: Implements a 1D elementary cellular automaton using Rule 30, famous for generating complex, pseudo-random, chaotic patterns from a single starting pixel. Instead of rendering it as a static 2D image, the automaton is rendered as a scrolling $100 \times 100$ grid of 3D cubes (`py5.box`) using an isometric camera projection. Every 3 frames, a new row is calculated at the top and the entire history shifts downward, creating a cascading waterfall effect. The "active" (`1`) states are rendered as tall, emissive gold pillars, while the "inactive" (`0`) states are short, dark obsidian blocks. A secondary sine wave ripple distorts the Z-axis of the entire tapestry. 15s 60fps MP4.
+- **Description**: A breathtaking digital tapestry weaves itself in real-time. Rendered in a deep, moody isometric 3D view, a chaotic but highly structured pattern cascades downward like a waterfall. The pattern is built from thousands of individual geometric blocks—glowing, metallic gold pillars representing "alive" cells, and dark obsidian blocks representing "dead" cells. The chaotic geometry of Rule 30 creates striking triangle patterns that slide gracefully across the screen as the entire woven structure slowly rotates in three-dimensional space.
+
+## geometric_generative_phyllotaxis_spiral
+
+- **Date**: 2026-05-23
+- **Theme**: Phyllotaxis, golden ratio, sunflowers, botany, sacred geometry, Moiré patterns.
+- **Technique**: Uses Vogel's mathematical model for phyllotaxis ($r = c \sqrt{n}$, $\theta = n \times 137.5^\circ$) to arrange 4,000 glowing geometric "seeds" into a perfect spiral. The script slightly animates the divergence angle $\theta$ around the exact Golden Angle using a sine wave. Even a deviation of $0.1^\circ$ completely breaks and reforms the visible spiral arms (parastichies), creating hypnotic, kaleidoscopic Moiré patterns. The 2D mathematical pattern is mapped onto a 3D dome, tilting and rotating smoothly in 3D space (`py5.P3D`) with additive blending. 15s 60fps MP4.
+- **Description**: Thousands of glowing neon petals arrange themselves into a perfect, massive sunflower-like spiral. As the central mathematical angle imperceptibly shifts, the spiral arms undergo a breathtaking optical illusion—collapsing into straight spokes, twisting into countless tiny whirlpools, and snapping back into perfect golden-ratio spirals. The entire 3D botanical structure breathes and rotates, shifting colors from hot pink and orange in the center to deep ultraviolet at the edges.
+
+## abstract_vector_field_magnetic_dipole
+
+- **Date**: 2026-05-23
+- **Theme**: Magnetism, physics, vector fields, iron filings, electromagnetism, flux lines.
+- **Technique**: Employs a fully NumPy-vectorized physics engine to update 30,000 particles at 60fps. The vector field is mathematically defined by four magnetic "poles" (positive and negative charges) that orbit each other in Lissajous curves. The force acting on each particle is calculated using Coulomb's/magnetic inverse-square law ($F \propto 1/r^2$). To simulate the visual look of iron filings aligning to a magnetic field, particles are drawn as short, additive-blended line segments (`py5.line` from old position to new position) over a motion-blur background. The color of the particles shifts from deep blue to bright cyan/white depending on their kinetic velocity. 15s 60fps MP4.
+- **Description**: Like iron filings scattered over invisible magnets, tens of thousands of glowing particles align themselves into intricate, looping magnetic flux lines. The invisible poles dance and spin around each other, causing the magnetic field to warp and tear. The particles are continuously swept up in these invisible currents, creating breathtaking loops and figure-eights of glowing plasma that accelerate violently when trapped between opposing charges.
+
+## abstract_liquid_displacement_map
+
+- **Date**: 2026-05-23
+- **Theme**: Fluid dynamics, water, optical refraction, caustics, bioluminescence, ocean currents.
+- **Technique**: A dense 2D grid ($120 \times 80$) is mapped to a scrolling 3D Perlin noise field. Instead of using the noise to determine color or height directly, the script calculates the numerical derivative (gradient) of the noise field at each point. The $X$ and $Y$ coordinates of each grid point are then physically displaced by this gradient vector multiplied by a massive scalar ($8000$). This mathematically simulates optical refraction, where light rays bend based on the slope of a water wave. Additive blending (`py5.ADD`) naturally creates bright "caustic" bands where the displaced points bunch together. The entire field flows downwards over time, simulating a deep ocean current. 15s 60fps MP4.
+- **Description**: Looking down into the depths of a bioluminescent ocean. Shimmering, fluid lines of light—known as caustics—dance and warp across the dark blue void. The light rays are bent and refracted by unseen, rolling waves, causing the grid to tear, overlap, and bunch together into intensely bright, neon-cyan ridges. The fluid motion is mesmerizing, flowing continuously downward like a digital waterfall of pure light.
+
+## geometric_sacred_flower_of_life
+
+- **Date**: 2026-05-23
+- **Theme**: Sacred geometry, Flower of Life, mandalas, blooming, interconnectedness, enlightenment.
+- **Technique**: Uses a mathematical hexagonal lattice generator (Axial coordinates $q$ and $r$) to precisely calculate the intersecting center points for 91 overlapping circles. Instead of drawing it flat, the script adds a Z-axis depth ripple driven by a sine wave (`py5.translate(x, y, py5.sin(phase) * 50)`). Additive blending (`py5.ADD`) is used to make the overlapping geometric intersections glow with intense neon light. The radius of the circles and the overall structure breathe and pulsate in an outward-radiating wave pattern, simulating the "blooming" of a cosmic flower. 15s 60fps MP4.
+- **Description**: The ancient "Flower of Life" symbol comes alive as a glowing, three-dimensional digital mandala. Perfectly overlapping neon circles ripple and breathe outward from the center, creating hypnotic, shifting petal patterns where their geometries intersect. The overlapping rings glow white-hot at their junctions, shifting continuously through a brilliant spectrum of cyan, magenta, and gold as the entire cosmic lattice slowly rotates in the dark void.
+
+## abstract_reaction_diffusion_slime
+
+- **Date**: 2026-05-23
+- **Theme**: Biology, cellular division, slime mold, Reaction-Diffusion, organic patterns, Turing patterns.
+- **Technique**: Solves the Gray-Scott Reaction-Diffusion differential equations natively in Python. To achieve 60fps performance without shaders, the simulation runs at half-resolution ($960 \times 540$) using highly optimized 2D NumPy array slicing for the discrete Laplacian convolution operator. The simulation is advanced 8 steps per drawn frame. The resulting chemical concentration fields are then upscaled via `numpy.repeat` and mapped to a custom color gradient, which is blasted directly to the screen buffer via `py5.np_pixels`. 15s 60fps MP4.
+- **Description**: A macroscopic view of an alien cellular organism dividing and multiplying in a petri dish. Starting from a few microscopic seeds, neon cyan and green chemical trails rapidly spread outward across a dark violet void. The organic patterns undergo continuous mitosis, splitting into maze-like ridges, coral-like branches, and leopard spots as the two simulated chemicals continuously react and diffuse into one another.
+
+## geometric_3d_voxel_terrain_flight
+
+- **Date**: 2026-05-23
+- **Theme**: Voxel engines, flight simulation, procedural terrain, retro 3D, topographic mapping.
+- **Technique**: Uses a 2D Perlin noise map to generate a continuously scrolling 3D terrain grid. Rather than rendering the terrain as a smooth mesh, it is rendered discretely using 1,800 individual 3D cubes (`py5.box`), creating a retro voxel aesthetic similar to Minecraft or early 3D renders. The `y`-axis of the Perlin noise input is continuously decremented, creating the illusion of endless forward flight. A dynamic `py5.camera()` controls the viewport, banking left, right, up, and down as it flies through the valleys. The cubes are colored topographically based on their height, with the highest peaks assigned `py5.emissive()` materials so they glow like volcanic lava or neon snow in the dark atmosphere. 15s 60fps MP4.
+- **Description**: The camera hurtles forward through a digital canyon made entirely of floating geometric cubes. Below, a jagged, blocky terrain of deep purple valleys and towering magenta peaks scrolls by endlessly. The camera smoothly banks and bobs as if mounted to a flying drone. As the drone passes over the tallest mountain ranges, the tips of the voxel towers glow with a blinding, emissive heat, illuminating the atmospheric fog of the digital world.
+
+## abstract_particle_spring_physics_mesh
+
+- **Date**: 2026-05-23
+- **Theme**: Soft-body physics, Hooke's Law, digital fabric, spring constraints, interactive topology, tearing force.
+- **Technique**: A 60x40 2D grid of particles is simulated using basic Euler integration and Hooke's Law. Each particle is connected to its rest position via a mathematical spring ($F = -kx$). Three invisible circular colliders move in complex Lissajous patterns across the screen, colliding with the grid particles and forcefully pushing them away. When the colliders pass, the springs rapidly snap the particles back into place with elastic damping. The connections between particles are drawn as lines using additive blending (`py5.ADD`). The color, brightness, and opacity of each line segment are directly mapped to its "stretch factor"—lines glow white-hot when under extreme tension. 15s 60fps MP4.
+- **Description**: A dense, dark wireframe mesh resembling digital fabric spans the entire screen. Suddenly, invisible spheres crash into the fabric from behind, stretching the grid violently. The areas of the mesh under extreme physical tension glow brightly in blinding cyan and magenta, visualizing the kinetic energy of the impact. As the invisible forces move away, the fabric snaps back, rippling with residual elastic waves until it settles back into its perfect, dormant grid.
+
+## geometric_fractal_recursive_tree_3d
+
+- **Date**: 2026-05-23
+- **Theme**: Fractals, recursive trees, L-systems, algorithmic botany, nature, wind simulation.
+- **Technique**: Uses a pure recursive function (`draw_branch`) to draw a highly complex 3D tree. The function draws a line (the branch trunk), translates to its tip, and then calls itself 3 times. Each child branch is rotated evenly around the Y-axis (creating a volumetric canopy) and tilted outwards. The recursion depth is 9, resulting in $3^9$ (nearly 20,000) individual branch segments. Global time `t` continuously modulates the branching angles and applies Perlin noise-based wind sway. The hue shifts dynamically based on recursion depth. 15s 60fps MP4.
+- **Description**: A magical, glowing digital tree grows upward from the bottom of the screen into a dense, sprawling canopy. The tree is composed of thousands of glowing neon lines that shift from deep indigo at the thick trunk to vibrant cyan and green at the delicate outer branches. The entire tree is constantly in motion—not only rotating slowly in 3D space, but each branch gracefully swaying and curling inward and outward as if caught in an ethereal, shifting wind.
+
+## abstract_topological_moebius_strip
+
+- **Date**: 2026-05-23
+- **Theme**: Topology, non-orientable surfaces, Möbius strip, sacred geometry, infinite loops, energy streams.
+- **Technique**: Evaluates the parametric mathematical equations for a Möbius strip over a dense $u,v$ coordinate grid. Rather than rendering a solid surface, the script draws only discrete longitude lines (`LINE_STRIP`) along the $V$ axis, creating the appearance of a hollow, glowing wireframe track or energy ribbon. The twist factor of the Möbius strip is animated over time using a sine wave, causing the non-orientable geometry to mathematically warp and "break" its topology as it spins. High-frequency 3D Perlin noise and additive blending give the lines a crackling, energetic plasma texture. 15s 60fps MP4.
+- **Description**: A massive, glowing ribbon of neon light twists endlessly through a dark void. The ribbon is a perfect Möbius strip—a paradoxical geometric shape with only one side and one edge. As it rotates, the mathematical parameters of the strip smoothly mutate, causing the track to widen, narrow, and aggressively twist upon itself. The glowing cyan, magenta, and gold lines crackle with digital energy, creating an infinite, hypnotic loop that defies spatial logic.
+
+## generative_vector_field_perlin_flow
+
+- **Date**: 2026-05-23
+- **Theme**: Fluid dynamics, vector fields, Perlin noise, wind currents, Van Gogh's Starry Night, organic flow.
+- **Technique**: Uses NumPy arrays to manage the positions and velocities of 30,000 individual particles. In every frame, a 3D Perlin noise function evaluates the precise angle of a "wind current" at each particle's exact (x, y) location. The third dimension of the noise function is bound to time, causing the entire invisible vector field to slowly mutate and boil. The background is not completely cleared between frames; instead, a highly transparent black rectangle is drawn over the canvas, causing the moving particles to leave long, fading trails (`py5.background` motion blur effect). The particles are colored based on their current angle of travel. 15s 60fps MP4.
+- **Description**: Like a digital painting of a cosmic wind storm. 30,000 glowing neon dust particles flow across the screen, caught in an invisible, churning atmospheric current. They weave into intricate, interlocking spirals, whirlpools, and flowing rivers of light that resemble the swirling skies of Van Gogh's *Starry Night* or the intricate rings of polished wood grain. As the underlying wind field slowly shifts, the entire glowing tapestry continuously repaints itself in waves of shifting cyan, magenta, and gold.
+
+## generative_liquid_metaballs_threshold
+
+- **Date**: 2026-05-23
+- **Theme**: Metaballs, surface tension, fluid dynamics, liquid metal, organic blobs.
+- **Technique**: Demonstrates an optimized way to render 2D Metaballs without expensive per-pixel distance field calculations. First, 60 invisible points bouncing around the screen are rendered as soft, grayscale radial gradients using `py5.blend_mode(py5.ADD)`. This creates a smooth, continuous scalar density field. Then, `py5.load_np_pixels()` intercepts the raw frame buffer. NumPy array masking is applied to threshold the image instantly: pixels above a certain brightness become a solid neon cyan (the liquid core), while pixels sitting exactly on the brightness threshold become neon magenta (surface tension / outlines). The result is perfectly smooth, gloopy liquid blobs that merge and separate dynamically. 15s 60fps MP4.
+- **Description**: Drops of glowing neon cyan liquid float across a pitch-black canvas. As the droplets collide, they do not overlap like solid objects; instead, their surface tension snaps them together, seamlessly merging into massive, undulating blobs of liquid light. Each globule is outlined by a razor-sharp, glowing magenta edge that continuously recalculates its shape as the fluid stretches and tears apart, creating a hypnotic lava-lamp effect of digital plasma.
+
+## geometric_isometric_cyber_city
+
+- **Date**: 2026-05-23
+- **Theme**: Cyberpunk, isometric projection, brutalist architecture, procedural generation, living cities.
+- **Technique**: A massive 35x35 grid of 3D boxes is generated using `py5.box()`. The camera is strictly set to an orthographic projection (`py5.ortho()`) and rotated to precise isometric angles ($\arcsin(1/\sqrt{3})$ and $45^\circ$). The height of each "building" is dynamically driven by an exponentiated 3D Perlin noise field moving over time, creating sharp, towering skyscrapers and deep valleys that ripple like a fluid wave. Multi-colored directional lighting casts dramatic shadows, while select buildings are rendered as pure, glowing emissive neon pillars. 15s 60fps MP4.
+- **Description**: An endless, futuristic metropolis viewed from a classic video-game isometric perspective. The brutalist concrete skyscrapers stretch and shrink continuously, as if the entire city is a living, breathing organism reacting to a digital earthquake. Saturated neon cyan and magenta lights sweep across the angular architecture, while hyper-tall glowing monolithic towers pierce the skyline like beacons in the geometric night.
+
+## geometric_fractal_polyhedron_subdivision
+
+- **Date**: 2026-05-23
+- **Theme**: Sacred geometry, recursive subdivision, platonic solids, geodesic domes, fractal breathing.
+- **Technique**: The script begins with a mathematically perfect Icosahedron (a 20-sided Platonic solid derived from the Golden Ratio). Before drawing, it performs 4 levels of recursive subdivision on the CPU, splitting each triangular face into 4 smaller triangles and projecting the new vertices back onto a unit sphere, creating a dense geodesic mesh (thousands of triangles). During the draw loop, the position of every single vertex is displaced outward or inward based on a 3D volumetric sine wave interference pattern. This displacement causes the rigid geometry to "breathe" and warp dynamically. The faces are rendered semi-transparent with glowing edges (`py5.TRIANGLES`). 15s 60fps MP4.
+- **Description**: A gigantic, glowing geodesic crystal floats and rotates slowly in a void. What starts as a perfect sphere made of thousands of tiny triangular glass panels suddenly begins to warp and breathe. Three-dimensional ripples travel across its surface, pulling the sharp vertices outward into spiked fractal crowns and pushing them inward to form deep craters. The facets gleam in shifting colors of cyan, magenta, and gold as the simulated light hits the continuously rippling, breathing digital crystal.
+
+## abstract_quantum_wavefunction_collapse
+
+- **Date**: 2026-05-23
+- **Theme**: Quantum mechanics, wave function, superposition, probability density, spherical harmonics, electron orbitals.
+- **Technique**: Uses NumPy vectorization to simulate a 3D probability cloud of 60,000 particles. Instead of standard noise, the particle positions are displaced and filtered using equations derived from "Spherical Harmonics"—the mathematical standing waves that dictate the shapes of electron orbitals (s, p, d, f) in atoms. The sketch smoothly interpolates between two distinct orbital states (quantum superposition), causing the particle cloud to morph and separate into distinct geometric lobes and nodes (empty voids where probability is zero). Rendered using `py5.POINTS` with additive blending and dynamic phase coloring. 15s 60fps MP4.
+- **Description**: A mesmerizing visualization of the quantum realm. 60,000 glowing subatomic particles float in a deep void, not as solid objects, but as a probability cloud. The cloud organically shifts, stretching and pinching into the distinct, bulbous shapes of atomic orbitals. As the wave function evolves in a state of superposition, the neon cyan and azure lobes of the electron cloud dissolve and recombine, perfectly illustrating the hidden standing waves that form the foundation of matter.
+
+## abstract_cellular_automata_1d
+
+- **Date**: 2026-05-23
+- **Theme**: Cellular Automata, Rule 30, Stephen Wolfram, computational irreducibility, digital fabric, weaving.
+- **Technique**: First, a 1D Cellular Automaton (Rule 30) is calculated for 150 generations across a grid of 120 cells using a classic bitwise evaluation loop. Instead of rendering this as a flat 2D pixel grid, the space-time history (where Y is time and X is the cell index) is mapped onto the surface of a 3D cylinder using polar coordinates (`py5.QUADS`). To make it kinetic, a time-based 3D Perlin noise field deforms the radius of the cylinder continuously. The result is a mathematically complex, non-repeating triangular fractal pattern that appears to be woven into a piece of digital fabric flapping in a simulated wind. 15s 60fps MP4.
+- **Description**: A massive, woven tube of glowing fabric floats in the dark. The fabric is patterned with the iconic, chaotic triangles of Cellular Automaton Rule 30—the same mathematical pattern found on the shells of Conus textile snails. As the tube slowly rotates, an invisible wind causes the digital cloth to ripple and warp. The "living" cells (1s) glow in shifting neon hues, while the "dead" cells (0s) form a dark, semi-transparent mesh, blending rigid computer science with organic, flowing textiles.
+
+## generative_phyllotaxis_sunflower
+
+- **Date**: 2026-05-23
+- **Theme**: Phyllotaxis, golden ratio, Fibonacci sequence, sunflower seeds, organic growth, sacred geometry.
+- **Technique**: Positions 3,000 "seeds" using the classic mathematical model of plant growth: $r = c \sqrt{n}$ and $\theta = n \times 137.5^\circ$ (the Golden Angle). To make the simulation kinetic and mesmerizing, the exact angle is continuously modulated by a tiny sine wave offset. This extremely small perturbation breaks the perfect Fibonacci spirals, causing the intersecting visual arcs to warp, twist, and weave into entirely new geometric interference patterns before snapping back to the perfect sunflower formation. The entire structure is rendered as a subtly breathing 3D dome, with each seed rotating and glowing dynamically. 15s 60fps MP4.
+- **Description**: A perfect, glowing sunflower made of 3,000 neon diamond petals spins slowly in a dark void. As the underlying mathematical angle shifts by fractions of a degree, the perfect spiral arms of the flower begin to twist and cross over one another. The visual structure ripples and breathes, dissolving into complex diamond grids and multi-armed vortexes before seamlessly reforming its hypnotic, natural Fibonacci perfection. The colors radiate from the center, creating a mesmerizing display of organic geometry.
+
+## optical_illusion_moire_patterns
+
+- **Date**: 2026-05-23
+- **Theme**: Op-art, optical illusions, Moiré patterns, kinetic art, wave interference, visual perception.
+- **Technique**: Renders three extremely dense layers of concentric circles and one layer of dense linear grating. By assigning contrasting semi-transparent colors (cyan, magenta, yellow, white) to each layer and slowly translating, rotating, and scaling them relative to one another, the sketch generates intense mathematical interference patterns (Moiré effects). The human eye perceives these overlapping high-frequency lines as moving, low-frequency macroscopic shapes (ghostly spirals, pulsing waves, and flickering stars). Rendered purely in 2D with `py5.circle` and `py5.line`. 15s 60fps MP4.
+- **Description**: A mind-bending optical illusion. Dense geometric grids of cyan, magenta, and yellow overlap against a dark background. As the layers slowly drift and rotate out of alignment, impossible new shapes—pulsating stars, shimmering ripples, and swirling vortexes—suddenly appear and dissolve within the negative space. The interference patterns create a dizzying, hypnotic visual effect that seems to vibrate and move in ways that the actual drawn lines do not, challenging the limits of human perception.
+
+## abstract_strange_attractor_particle_flow
+
+- **Date**: 2026-05-23
+- **Theme**: Chaos theory, strange attractors, Lorenz system, butterfly effect, fluid dynamics, particle swarm.
+- **Technique**: Leverages NumPy array vectorization to compute the differential equations for the classic Lorenz attractor ($dx, dy, dz$) on 50,000 independent particles simultaneously at 60fps. The particles are initialized in a tiny cluster and are quickly ripped apart by the chaotic vector field, splitting into two distinct orbiting lobes (the "butterfly wings"). A subtle oscillating noise field is added to the equations, giving the mathematically rigid attractor a more organic, fluid-like wind distortion. The scene is rendered using `py5.POINTS` with additive blending and motion blur. Particle colors dynamically map from cyan to magenta based on their instantaneous velocity. 15s 60fps MP4.
+- **Description**: 50,000 glowing particles are caught in an invisible, chaotic gravitational storm. Starting as a dense singularity, the swarm is violently stretched and torn into two swirling, interconnected rings resembling the wings of a butterfly. The glowing dust races along the complex mathematical curves of the Lorenz attractor, leaving brilliant trails of cyan and magenta light that continuously fold in on themselves. As the camera slowly rotates, the infinite, non-repeating complexity of chaos theory is revealed as a beautiful, breathing cosmic nebula.
+
+## generative_neural_network_graph
+
+- **Date**: 2026-05-23
+- **Theme**: Artificial intelligence, neural networks, deep learning, data flow, synaptic connections, cybernetics.
+- **Technique**: A massive 3D graph is constructed representing the layers of a deep neural network. The nodes (neurons) are arranged in 8 concentric circular layers forming a large cylinder. The edges (synapses) connect nodes between adjacent layers. To avoid visual clutter and maintain performance, connections are only drawn between "nearest neighbor" angles. A global "activation pulse" travels continuously down the layers from input to output, causing the nodes and edges to flare with intense brightness as the data passes through. Individual synaptic activity is modulated by 3D Perlin noise, ensuring the network feels organically "thinking" rather than rigidly mechanical. Rendered with additive blending. 15s 60fps MP4.
+- **Description**: A gigantic, glowing cybernetic brain floats in a dark void. It is composed of thousands of nodes connected by a dense web of glowing synapses. As the camera slowly orbits the structure, bright pulses of data surge through the network, illuminating the layers one by one in a cascading wave of cyan and magenta light. The connections flicker and reroute dynamically, mimicking the complex, unfathomable computations of an artificial intelligence processing a massive stream of information.
+
+## geometric_flower_of_venus
+
+- **Date**: 2026-05-23
+- **Theme**: Orbital mechanics, celestial geometry, resonance, spirograph, cosmic mandala.
+- **Technique**: Simulates the orbital paths of three mathematical "planets" moving around a central star. By connecting the planets with semi-transparent, additive-blended lines (`py5.line`) at regular time intervals, their orbital resonance ratios naturally construct intricate, spirograph-like mandalas (just as tracing the distance between Earth and Venus over 8 years creates a perfect 5-petaled flower). Unlike rigid astronomy, the orbital radii and resonance ratios (`ratio1`, `ratio2`) slowly morph over time using sine waves. This causes the drawn geometry to seamlessly transition between different symmetrical flowers and complex, chaotic webs. 15s 60fps MP4.
+- **Description**: In the dark void of space, three glowing points orbit at different speeds. As they move, brilliant laser-like lines connect them, leaving a glowing trail in their wake. Because their orbits are mathematically resonant, these straight lines intersect perfectly to weave a stunning, glowing mandala—the "Flower of Venus". As the orbital parameters slowly shift, the intricate geometric flower dissolves and rapidly reweaves itself into an entirely new, deeply mesmerizing 12-petaled cosmic pattern.
+
+## hyperbolic_tessellation_poincare
+
+- **Date**: 2026-05-23
+- **Theme**: Hyperbolic geometry, Poincaré disk, non-Euclidean math, M.C. Escher, fractal tessellation, Möbius transformation.
+- **Technique**: Demonstrates complex mathematical mapping in 2D space. A recursive hexagonal fractal is generated in the complex plane, strictly bounded within the "unit disk" ($|z| < 1$). Before rendering, every vertex of the fractal is mathematically transformed using a time-varying Möbius transformation: $f(z) = (z - a) / (1 - a^* z)$. The complex parameter $a$ orbits inside the disk over time. This creates an impossible optical illusion where the center of the fractal seems to flow out toward the edges, infinitely shrinking as it approaches the boundary circle, mimicking the exact hyperbolic spatial distortion seen in M.C. Escher's "Circle Limit" works. 15s 60fps MP4.
+- **Description**: Inside a glowing white circle on a dark canvas, a mesmerizing mosaic of neon hexagons forms a dense fractal. As invisible forces warp space, the geometric pattern continuously flows outward like a fountain. Shapes that reach the edge of the circle do not disappear; instead, they stretch, flatten, and shrink to infinity, creating an infinite hyperbolic boundary. The colors cycle smoothly through neon gradients, emphasizing the dizzying, impossible depth of this non-Euclidean universe.
+
+## abstract_fluid_marbling
+
+- **Date**: 2026-05-23
+- **Theme**: Fluid marbling, suminagashi, marble paper, organic flow, vector field advection.
+- **Technique**: Instead of simulating a raster pixel grid, this sketch renders 120 horizontal vector lines, each containing 400 vertices. To simulate the swirling, organic eddies of ink dropped onto water, every vertex is displaced (`dx`, `dy`) by a combination of overlapping 3D Perlin noise fields. By carefully tuning the frequency and amplitude of the noise functions, the lines are pulled and folded into elegant, continuous swirls that perfectly mimic fluid advection without the extreme computational overhead of a true Navier-Stokes solver. Rendered in P2D with a smooth ocean-blue to deep-purple gradient. 15s 60fps MP4.
+- **Description**: Dense, horizontal lines of cyan and purple ink are suspended in a dark void. Slowly, invisible currents begin to stir the fluid. The perfectly straight lines are drawn into complex, curling eddies, folding over themselves like marble patterns on expensive paper. The fluid motion is incredibly smooth and organic, continuously twisting into new, mesmerizing fractal swirls before gently drifting off-screen.
+
+## geometric_origami_tessellation
+
+- **Date**: 2026-05-23
+- **Theme**: Origami, paper folding, Miura fold, geometric tessellation, mathematical surfaces.
+- **Technique**: Uses a dense 2D grid (`py5.QUAD_STRIP`) to simulate a massive sheet of paper. A base "fold angle" ($\theta$) oscillates via a sine wave, causing the entire paper to contract on the X-axis while simultaneously expanding on the Z-axis in an alternating, checkerboard pattern. This creates the classic "accordion" structure of rigid origami. To make it visually organic, the fold angle is modulated locally by 3D Perlin noise, causing the rigid geometric folds to ripple, warp, and crumple slightly like real, stiff iridescent paper. 15s 60fps MP4.
+- **Description**: A vast, flat plane of iridescent material slowly begins to fold itself. Guided by invisible mathematical laws, the surface collapses inward, forming a highly complex, repeating geometric pattern of sharp ridges and deep valleys (a Miura-ori tessellation). Strong directional lights catch the shifting angles of the folds, revealing a spectrum of glowing cyan and magenta hues. As the structure slowly spins, the paper breathes—unfolding back into a nearly flat plane before deeply crumpling again in a mesmerizing, organic rhythm.
+
+## generative_cymatics_chladni
+
+- **Date**: 2026-05-23
+- **Theme**: Cymatics, Chladni figures, standing waves, physics simulation, sound visualization.
+- **Technique**: Calculates the squared gradient of the classic Chladni equation (`a * sin(n*pi*x)*sin(m*pi*y) + b * sin(m*pi*x)*sin(n*pi*y)`). 30,000 simulated grains of sand are placed on a 2D plane. Every frame, they read the local gradient of the wave amplitude and accelerate "downhill" towards the zero-amplitude nodal lines where the plate isn't vibrating. NumPy array vectorization allows simulating 30,000 particles at 60 FPS in Python. As the resonant frequencies `n` and `m` morph smoothly over time, the complex geometric figures naturally dissolve and reform into new harmonic states. Brownian noise prevents particles from getting artificially stuck. 15s 60fps MP4.
+- **Description**: In a dark, resonant void, 30,000 glowing particles of "digital sand" vibrate violently before suddenly settling into perfectly symmetrical, incredibly complex geometric patterns. As the hidden audio frequencies shift, the sand boils over, scattering into chaos, only to instantly lock into an entirely new, intricate mandala. The sand forms sharp grids, sweeping arcs, and nested loops, glowing with shifting neon hues as the virtual plate slowly rotates.
+
+## kinetic_string_art_geometry
+
+- **Date**: 2026-05-23
+- **Theme**: Geometric string art, mathematical curves, parametric equations, laser light show.
+- **Technique**: Uses parametric equations to animate 1,500 straight lines connecting points that orbit along multiple concentric 3D circles. The phase multipliers determining the orbital speeds of the endpoints (`m1`, `m2`) are dynamically modulated by sine and cosine waves over time. This causes the thousands of straight lines to mathematically construct beautiful, curved geometric envelopes (similar to a Lissajous curve or a Spirograph) that continually twist, fold, and turn inside out. Rendered in P3D with additive blending and a semi-transparent background to create a brilliant, sweeping motion blur. 15s 60fps MP4.
+- **Description**: Thousands of extremely fine, rainbow-colored laser beams connect across a dark void. Because of their precise geometric arrangement, the perfectly straight lines collectively form the illusion of a smooth, sweeping, complex curved surface. As the endpoints orbit at different speeds, the surface dances, twisting into a torus, collapsing into a star, and expanding back into a complex spiraling funnel. The vibrant neon colors wash through the strings like a digital hologram.
+
+## generative_kaleidoscope_mirrors
+
+- **Date**: 2026-05-23
+- **Theme**: Optical illusions, kaleidoscope, perfect symmetry, generative curves.
+- **Technique**: Demonstrates the mathematical power of matrix transformations (`py5.push_matrix`, `py5.rotate`, `py5.scale`). A highly complex, chaotic, and asymmetrical base segment consisting of twisting, noise-driven 3D bezier curves is calculated and drawn inside a single wedge (1/12th of a circle). This base wedge is then copied, rotated, and mirrored (`scale(1, -1)`) 12 times in a loop. Because the base geometry relies on Perlin noise driven by time, the chaos morphs organically, but the matrix mirroring forces it into absolute, mesmerizing, radial symmetry. 15s 60fps MP4.
+- **Description**: Symmetrical ribbons of glowing neon light twist, fold, and bloom like an alien flower inside a massive kaleidoscope. The shapes are chaotic, forming sharp angles and elegant loops, but they are perfectly mirrored across 12 axes. As the entire mandala slowly rotates, the internal geometry breathes and shifts, creating a flawless, deeply satisfying optical illusion of perfect fractal symmetry out of pure random noise.
+
+## abstract_topological_mesh
+
+- **Date**: 2026-05-23
+- **Theme**: Topology, non-Euclidean geometry, mathematical surfaces, abstract mesh.
+- **Technique**: Uses NumPy's `meshgrid` to highly optimize the calculation of a 10,000-vertex grid ($100 \times 100$). The $Z$-height of each vertex is governed by a dynamic mathematical equation that combines a hyperbolic paraboloid (saddle shape) with time-varying 3D sine and cosine ripples. The mesh is rendered using `py5.TRIANGLE_STRIP` for performance. A strong specular highlight (`py5.specular`, `py5.shininess`) and directional lighting are applied, giving the abstract math surface the appearance of glossy, wet liquid or polished plastic. The color of the mesh maps smoothly to its vertical displacement, shifting over time. 15s 60fps MP4.
+- **Description**: A vast, glossy landscape of geometric ripples morphs fluidly in a dark void. The surface bends into a massive, saddle-like shape, while high-frequency ripples wash across it like waves in a thick alien liquid. The mesh shines with intense specular highlights under a bright artificial light. As the landscape slowly spins, its colors shift organically through a spectrum of oceanic cyans, deep blues, and vibrant neon pinks, perfectly matching the peaks and valleys of its mathematical topology.
+
+## chromatic_glitch_cube_field
+
+- **Date**: 2026-05-23
+- **Theme**: Glitch art, chromatic aberration, retro-futurism, VHS distortion.
+- **Technique**: Instead of slow pixel-by-pixel manipulation, this sketch achieves real-time chromatic aberration by rendering the entire 3D scene three times per frame—once for the Red channel, once for Green, and once for Blue. These passes are composited using `py5.BLEND_MODE(py5.ADD)`. Under normal conditions, the color channels are slightly offset on the X-axis, creating a rainbow edge-fringe. High-frequency 1D Perlin noise dictates a "glitch intensity" variable; when the noise spikes above a threshold, the color channels are violently and randomly displaced in 3D space, causing the white wireframes to shatter into vibrant RGB shadows. A semi-transparent black overlay provides retro CRT scanlines. 15s 60fps MP4.
+- **Description**: A vast, dark void is filled with hundreds of tumbling, white wireframe cubes. Suddenly, the video signal appears to tear and glitch. The cubes violently split apart into pure red, green, and blue ghost-images before snapping back together. The camera slowly dollies forward through the field while the intense chromatic aberration and thick CRT scanlines give the piece a raw, analog-video aesthetic.
+
+## sacred_geometry_flower_of_life
+
+- **Date**: 2026-05-23
+- **Theme**: Sacred geometry, mysticism, overlapping circles, wave interference.
+- **Technique**: The center coordinates for an extensive hexagonal grid are mathematically generated during `setup()`, defining the exact intersection points of a classic Flower of Life pattern spanning 6 concentric layers. During `draw()`, a circle is drawn at each node. Instead of static shapes, the radius, stroke weight, color, and Z-axis depth of every circle are continuously modulated by a radiating sine wave originating from the center. This causes the geometry to "breathe" as overlapping interference patterns cascade outward. Rendered in P3D with additive blending. 15s 60fps MP4.
+- **Description**: An intricate lattice of glowing, intersecting neon rings forms the legendary Flower of Life pattern against a dark background. As the entire mandala slowly rotates, pulsating waves of energy ripple outward from its core. The rings expand and contract rhythmically, shifting through brilliant hues of cyan, magenta, and gold. Where the rings overlap, brilliant flares of white light form, giving the ancient symbol a deeply hypnotic, high-tech, and mystical presence.
+
+## algorithmic_diorama_voxel_city
+
+- **Date**: 2026-05-23
+- **Theme**: Procedural generation, isometric diorama, voxel art, cyberpunk cityscape.
+- **Technique**: A $30 \times 30$ grid of 3D boxes is generated during `setup()` using 2D Perlin noise combined with a radial distance envelope. This forces the tallest "skyscrapers" to cluster in the center of the grid, tapering off into smaller buildings near the edges to create a distinct floating island diorama. The height values are quantized to give a blocky, voxel aesthetic. During `draw()`, the camera is positioned and rotated to create a high-angle isometric-style perspective. The buildings dynamically pulse in height slightly over time, and random 3D Perlin noise is used to make individual buildings flash brightly, simulating glowing neon windows in a living, breathing cyberpunk city. 15s 60fps MP4.
+- **Description**: A dense, futuristic mini-city sits on a thick, dark platform floating in empty space. The buildings are rendered as sleek geometric blocks that transition in color from deep oceanic blues at the edges to vibrant magenta and purple at the towering center. The entire diorama slowly rotates on a turntable, while individual skyscrapers blink and pulse with internal neon light, giving the impression of a living, microscopic metropolis.
+
+## kinetic_wave_pendulum
+
+- **Date**: 2026-05-23
+- **Theme**: Physics simulation, kinetic art, harmonic motion, pendulum waves.
+- **Technique**: Simulates an array of 45 independent, uncoupled pendulums suspended from a single central bar. The length of each pendulum is mathematically calculated using the simple pendulum equation ($T = 2\pi\sqrt{L/g}$) such that the $i$-th pendulum executes exactly $15 + i \times \text{step}$ oscillations over the 15-second duration of the video. When released from a common starting angle, the pendulums quickly fall out of phase, creating mesmerizing traveling waves, chaotic interlaced patterns, and beautiful double/triple helices before finally realigning completely at the 15-second mark. Rendered in P3D with dynamic HSB coloring and a slow cinematic camera pan. 15s 60fps MP4.
+- **Description**: 45 glowing, rainbow-colored spheres hang from a massive support beam in a dark 3D void. Released simultaneously, they begin to swing back and forth. Because their string lengths vary slightly, they immediately fall out of sync, creating a hypnotic, snake-like traveling wave of color. As time progresses, the wave breaks down into two waves, then three, then total chaos, before magically snapping back into perfect synchronization exactly at the end of the video.
+
+## quantum_orbital_electron_cloud
+
+- **Date**: 2026-05-23
+- **Theme**: Quantum mechanics, electron orbitals, probability density, particle physics.
+- **Technique**: Uses NumPy to simulate 50,000 "electrons" in spherical coordinates ($r, \theta, \phi$). Instead of classical Newtonian gravity, the particles orbit chaotically and jitter. Their effective radii are modulated by a simplified spherical harmonic function (`abs(cos(2θ) * sin(3φ))`), which forces the random particle cloud to naturally group into distinct geometric "lobes" reminiscent of complex $d$ or $f$ atomic orbitals. The particles are drawn using `py5.POINTS` with additive blending, accumulating light where probability density is highest. The hue of each particle is tied to its distance from the nucleus. 15s 60fps MP4.
+- **Description**: In the center of the void, a bright white nucleus pulses. Surrounding it is a vast, ethereal cloud of 50,000 glowing neon points. The points swarm chaotically, yet their collective motion forms beautiful, symmetrical flower-like lobes—the mathematical shapes of quantum electron orbitals. As the entire atomic structure slowly rotates, the density of the points creates blindingly bright, colorful regions of high probability, leaving dark voids where electrons are forbidden to exist.
+
+## recursive_fractal_tree_3d
+
+- **Date**: 2026-05-23
+- **Theme**: Algorithmic botany, L-systems, fractal geometry, nature emulation.
+- **Technique**: Uses a classic recursive function (`draw_branch`) in P3D to build a fractal tree with a maximum depth of 8. Unlike simple 2D L-systems, this tree branches out in 3 directions at every node, distributed radially around the local Y-axis. The entire structure is composed of thousands of overlapping lines. The branching angle is driven by a sine wave based on time and the current depth, causing the tree to smoothly expand and contract as if breathing or swaying in an unseen underwater current. The color transitions from a deep magenta trunk to bright cyan/green "leaves" at the outermost tips. 15s 60fps MP4.
+- **Description**: A mesmerizing, neon-lit digital tree grows from the bottom of a dark void. It branches out in full 3D space, with thousands of delicate geometric twigs. The entire massive structure slowly rotates while gracefully expanding and contracting. The colors smoothly pulse along its depth, giving the mathematical fractal a deeply organic and hypnotic, lifelike quality.
+
+## fluid_vector_field_interference
+
+- **Date**: 2026-05-23
+- **Theme**: Fluid dynamics, vector fields, magnetic interference, particle swarm.
+- **Technique**: Utilizes highly optimized NumPy arrays to simultaneously calculate the physics of 25,000 independent particles in 3D space. The velocity of each particle is driven by a vector field composed of two separate, off-axis mathematical vortices (acting like tornadoes or magnetic poles) combined with a sinusoidal noise interference layer. As the particles are swept into these currents, their colors shift dynamically based on their speed. Additive blending (`py5.ADD`) and a semi-transparent background frame buffer create a thick, glowing motion blur that beautifully visualizes the invisible fluid flow lines. 15s 60fps MP4.
+- **Description**: Thousands of glowing embers swirl violently in the dark, caught in invisible, overlapping tornados. The particles form distinct rings and tubes of light as they are pulled into the twin vortex centers, their colors shifting from cool blue to intense, blinding white-hot magenta as they accelerate. The entire chaotic system slowly tumbles in 3D space, revealing the complex, interwoven spiral patterns of the fluid interference.
+
+## recursive_fractal_spirograph
+
+- **Date**: 2026-05-23
+- **Theme**: Spirograph, hypotrochoid math, recursive geometry, 3D ribbons.
+- **Technique**: Simulates a series of 4 nested, rotating linkages (similar to a robotic arm or planetary gears). Each linkage rotates on multiple axes (X, Y, and Z) at different speeds, creating a highly complex, chaotic 3D orbit for the final "pen" tip. The tip's position is recorded in a fixed-length memory queue (1500 points). To render the trail, a `py5.TRIANGLE_STRIP` is extruded along the path by calculating the tangent vector and expanding outward to create a flat "ribbon" that tapers and fades at the tail. The entire shape rotates in P3D, producing a mesmerizing, self-intersecting knot of glowing HSB colors. 15s 60fps MP4.
+- **Description**: A brilliantly glowing ribbon of rainbow light dances wildly in the center of a black abyss. Like an invisible, multi-jointed pendulum swinging in all three dimensions, it draws an intricate, chaotic, yet perfectly mathematical knot. The glowing trail slowly fades into darkness at its tail, creating a beautiful long-exposure photography effect, as the entire 3D construct smoothly rotates before the viewer.
+
+## generative_terrain_topography
+
+- **Date**: 2026-05-23
+- **Theme**: Generative terrain, Perlin noise, topography, retro-futurism (Synthwave aesthetic).
+- **Technique**: Evaluates 2D Perlin noise across a 120x90 grid to compute elevation data. Instead of generating a solid mesh with lighting, the terrain is drawn as a wireframe using `py5.TRIANGLE_STRIP` without `py5.fill`. The Y-axis of the noise sampling space is offset by time `t`, creating an infinite scrolling effect that simulates the camera flying forward at high speed over the landscape. The stroke color of each vertex is dynamically mapped to its Z-elevation, transitioning from deep cool blues in the valleys to bright, hot pinks and reds at the mountain peaks. 15s 60fps MP4.
+- **Description**: The camera glides swiftly over a vast, undulating wireframe mountain range. The landscape is entirely composed of brightly glowing neon lines against a pitch-black void, reminiscent of 80s synthwave aesthetics and classic vector graphics. Deep valleys flow underneath the camera in cool cyan, while jagged peaks rise up in brilliant magenta and orange, shifting seamlessly as the terrain endlessly generates ahead of the viewer.
+
+## geometric_metatron_cube_3d
+
+- **Date**: 2026-05-23
+- **Theme**: Sacred geometry, Metatron's Cube, Vector Equilibrium, esoteric math.
+- **Technique**: Constructs the 13 foundational spheres of Metatron's Cube in 3D using the vertices of a cuboctahedron (Vector Equilibrium) plus a central node. All 78 possible connecting lines between these 13 centers are drawn in P3D. The structure rotates smoothly on all three axes while the lines pulse with dynamic HSB neon colors. Lines connected to the center are rendered thicker and brighter, emphasizing the radial energy of the shape, while the vertices themselves are drawn as glowing 3D spheres. 15s 60fps MP4.
+- **Description**: A mathematically perfect, glowing geometrical construct floats in the void. It consists of 13 brightly lit spheres connected by an intricate web of 78 intersecting neon lines. As the entire complex structure tumbles and rotates in 3D space, it occasionally aligns perfectly with the camera to reveal the classic 2D sacred geometry pattern of Metatron's Cube, before breaking apart again into complex 3D depth.
+
+## cellular_automata_game_of_life_3d
+
+- **Date**: 2026-05-23
+- **Theme**: Cellular automata, emergence, 3D voxel graphics, Game of Life.
+- **Technique**: Operates a 32x32x32 state grid using a 3D extension of the Game of Life rules (the "4555 rule": a cell survives if it has 4 or 5 neighbors, and is born if it has exactly 5 neighbors out of the possible 26 in a 3x3x3 Moore neighborhood). The neighbor counting is highly optimized using `scipy.signal.convolve`. To make the visualization compelling, the age of each surviving cell is tracked. When rendered using `py5.box`, older cells grow slightly larger and shift their HSB hue over time, making it easy to distinguish stable geometric structures from chaotic, newly-born noise. 15s 60fps MP4.
+- **Description**: A cluster of randomly blinking neon blocks floats in the center of the screen. Suddenly, complex geometric patterns begin to emerge from the noise. Symmetrical gliders shoot off into the darkness, while oscillating central structures slowly shift through rainbow colors as they survive from generation to generation. The camera smoothly orbits the entire 3D voxel structure, revealing the intricate internal architecture of the emergent lifeforms.
+
+## particle_attractor_lorenz_3d
+
+- **Date**: 2026-05-23
+- **Theme**: Chaos theory, strange attractors, vector fields, particle physics.
+- **Technique**: Evaluates the Lorenz system equations ($\sigma=10, \rho=28, \beta=8/3$) simultaneously for 30,000 independent particles using highly optimized vectorized NumPy arrays. Each frame, the local vector field determines the velocity of every particle, driving them to orbit the two strange attractor "wings." The rendering uses P3D with `py5.POINTS` and additive blending, combined with a semi-transparent black rectangle over the screen to produce beautiful motion-blurred trails. The color of each particle is dynamically tied to its instantaneous speed and the global time. 15s 60fps MP4.
+- **Description**: 30,000 brightly colored neon sparks swirl through a black void, caught in the invisible currents of a mathematical storm. They trace out the famous "butterfly wings" of the Lorenz strange attractor, looping endlessly from one side to the other. Thanks to additive blending, dense clusters of particles glow with intense, blinding light, while fast-moving outliers leave sweeping, wispy rainbow trails behind them as the entire shape slowly rotates.
+
+## algorithmic_crystal_growth
+
+- **Date**: 2026-05-23
+- **Theme**: Algorithmic botany, DLA (Diffusion-Limited Aggregation), crystallography, bismuth.
+- **Technique**: Uses a 3D NumPy grid (30x30x30) to track crystal nodes. The growth algorithm starts with a single central seed. Every frame, it randomly selects active nodes (biased towards newer nodes via a Beta distribution to encourage branching rather than a solid blob) and spawns neighbors in the 6 cardinal directions. Once a node is formed, it records its "generation" (age). The sketch renders each node using `py5.box` with size and neon HSB coloring determined by its generation. The result is a rapidly branching, fractal-like structure similar to bismuth crystals. Rendered in P3D with directional lighting. 15s 60fps MP4.
+- **Description**: In the center of a dark void, a tiny glowing cube appears. Suddenly, it rapidly branches outward in straight lines, spawning thousands of cubic "crystals" that aggressively build a complex, jagged, alien structure in 3D space. As the giant crystalline lattice rotates, its nested layers shimmer in a hypnotic rainbow gradient, highly reminiscent of metallic bismuth crystals.
+
+## quantum_interference_waves
+
+- **Date**: 2026-05-23
+- **Theme**: Quantum mechanics, wave interference, ripple tanks, data visualization.
+- **Technique**: Evaluates the trigonometric superposition of three moving wave emitters acting upon a dense 150x150 grid of particles (22,500 total). The height (Z-axis) of each particle is calculated as the sum of sine waves propagating outward from each emitter. Constructive and destructive interference creates complex, evolving Moire-like patterns and standing waves. Rendered using `py5.POINTS` in P3D, with the camera tilted to view the resulting 3D landscape. Color mapping is directly tied to the wave amplitude. 15s 60fps MP4.
+- **Description**: A vast grid of glowing dots hangs in space, undulating rhythmically like the surface of a liquid. Three invisible sources are moving around the grid, continuously dropping stones into the water. Where their ripples intersect, they create beautiful, constantly shifting geometric peaks and valleys. The colors transition dynamically through the neon spectrum based on how high or low the wave peaks are.
+
+## neon_wireframe_torus_knot
+
+- **Date**: 2026-05-23
+- **Theme**: Topology, geometry, wireframe 3D rendering, glowing aesthetics.
+- **Technique**: Evaluates the parametric equations for a (3,7) Torus Knot to generate a complex, interlocking continuous curve in 3D space. To render it with volume instead of just a thin line, we calculate the Frenet-Serret frame (tangent, normal, binormal vectors) at every point along the curve. We then extrude a 12-sided circle along these axes, using `py5.begin_shape(py5.TRIANGLE_STRIP)` to draw a hollow, wireframe 3D tube. The entire structure smoothly rotates on all three axes while rainbows of neon colors race rapidly along its length. 15s 60fps MP4.
+- **Description**: A highly complex, mathematically perfect 3D knot floats in the center of a black void. Instead of a solid surface, the knot is drawn as an intricate wireframe mesh composed of thousands of glowing neon lines. As the knot rotates smoothly, bright pulses of pink, blue, and green light race around its infinite loops, creating a deeply satisfying, hypnotic visual loop.
+
+## generative_architecture_cityscape
+
+- **Date**: 2026-05-23
+- **Theme**: Procedural architecture, 3D cityscapes, cyberpunk, neon lighting.
+- **Technique**: Utilizes pure 3D rendering (`py5.box`, `py5.camera`) to build an infinite grid of city blocks. The height of each building is determined by 2D Perlin noise multiplied by a "downtown factor," ensuring taller skyscrapers cluster near the central avenue while shorter buildings spread into the suburbs. The camera constantly pushes forward down the central avenue, dynamically spawning and culling buildings to maintain performance. Dual directional lighting combined with glowing HSB strokes gives the city a distinct neon-drenched, retro-futuristic aesthetic. 15s 60fps MP4.
+- **Description**: The camera glides steadily down a wide, empty avenue surrounded by hundreds of towering skyscrapers. The city stretches to the horizon in a dark void. Each building is cast in dark shadows but strongly outlined with brilliant, shifting neon light. As you fly forward, the skyline endlessly generates itself, rising and falling organically like a concrete mountain range.
+
+## cloth_simulation_physics
+
+- **Date**: 2026-05-23
+- **Theme**: Physical simulation, Verlet integration, fabric dynamics, neon cyber-aesthetics.
+- **Technique**: Uses NumPy to compute Verlet integration physics for a 50x50 grid of connected nodes (2,500 total particles). The grid enforces structural spring constraints to maintain its shape, with the top edge pinned in space. Gravity constantly pulls the nodes downward, while a 3D Perlin noise field applies a continuous, turbulent "wind" force, pushing the fabric backwards. The cloth is rendered in P3D using `py5.QUADS`, mapping the Z-depth (how far the wind pushes the fabric) and the X/Y coordinates directly to the HSB color wheel. 15s 60fps MP4.
+- **Description**: A massive, brilliantly colored neon sheet hangs suspended in a dark void. As an invisible digital wind strikes it, the fabric ripples, folds, and violently billows backwards, throwing off a mesmerizing gradient of shifting rainbow colors that highlight every wrinkle and fold of the simulated cloth.
+
+## recursive_tree_fractal_canopy
+
+- **Date**: 2026-05-23
+- **Theme**: Generative botany, fractals, recursion, natural motion.
+- **Technique**: Utilizes pure recursive functions to draw fractal trees. At each step, a branch draws a line, translates to the tip, and recursively calls itself to draw 2 or 3 smaller branches at specific angles. To breathe life into the static mathematical structure, `py5.noise()` (Perlin noise) is sampled using the branch depth and time, modifying the rotation angles to simulate propagating waves of wind passing through the canopy. Rendered in P3D with additive blending and a semi-transparent motion blur background. 15s 60fps MP4.
+- **Description**: Three massive, neon-glowing trees rise from the bottom of the canvas, immediately splitting into thousands of tiny, intricate branches. Glowing circular "leaves" sit at the tips of the fractal structure. As time passes, the colors smoothly shift through the rainbow, and the entire incredibly dense canopy sways and flexes organically as if blown by a gentle breeze.
+
+## hypnotic_moire_interference
+
+- **Date**: 2026-05-23
+- **Theme**: Optical illusions, Moiré patterns, wave interference, Op Art.
+- **Technique**: Uses pure 2D geometric vector drawing (`py5.begin_shape`, `py5.circle`). By overlapping extremely dense arrays of lines (radial bursts) and closely-spaced concentric circles, and rotating/translating them at slightly different speeds and offsets, massive macroscopic interference patterns naturally emerge. This visual artifact, known as a Moiré pattern, creates the illusion of curving waves and ghostly glowing bands moving across the screen, even though the underlying geometry consists only of rigid straight lines and perfect circles. Additive HSB blending provides a vivid neon aesthetic. 15s 60fps MP4.
+- **Description**: Two dense bursts of colorful lines slowly rotate in opposite directions, while tight rings of concentric circles expand and contract. Because the lines are so densely packed, your eyes and the pixels physically interact to create giant, sweeping, ghostly waves of light that ripple horizontally and vertically across the canvas. It is a striking, hypnotic optical illusion.
+
+## fractal_brownian_motion_terrain
+
+- **Date**: 2026-05-23
+- **Theme**: Procedural generation, retro 3D graphics, outrun/synthwave aesthetics, terrain mapping.
+- **Technique**: Utilizing `py5.begin_shape(py5.TRIANGLE_STRIP)`, we generate a 60x60 3D mesh grid. The vertical (Z) position of each vertex is determined by 2D Perlin noise (`py5.noise()`). To create the sensation of forward flight, the Y-coordinate sampled from the noise space is constantly offset downwards over time. The edges of the grid smoothly fade to black using a distance falloff mask. Rendered in P3D with dynamic neon HSB coloring mapped to altitude. 15s 60fps MP4.
+- **Description**: The camera hurtles endlessly over a sprawling, mountainous digital landscape. The neon wireframe mountains shift colors from deep blue in the valleys to bright purple and pink at their peaks. As you fly forward, new mountains smoothly roll into existence from the black horizon, perfectly evoking the aesthetic of 1980s vector graphics and modern Synthwave art.
+
+## differential_growth_coral
+
+- **Date**: 2026-05-23
+- **Theme**: Algorithmic botany, differential growth, biological simulation.
+- **Technique**: We start with a simple ring of 30 connected nodes. In every frame, the nodes attempt to maintain a comfortable distance from their neighbors (spring force) while actively repulsing any other node that gets too close. If the distance between two connected nodes exceeds a threshold, a new node is spawned between them. This continuous division and repulsion causes the line to organically fold, buckle, and crinkle into itself, creating incredibly dense, labyrinthine shapes. Vectorized physics logic allows it to grow to over 8,000 nodes smoothly. 15s 60fps MP4.
+- **Description**: A smooth, glowing neon circle violently crinkles and folds inward. As it rapidly expands, it packs itself into a dense, brain-like labyrinth of glowing curves. The colors cycle continuously along the perimeter, sending waves of rainbow light pulsing through the tightly packed geometric coral structure.
+
+## sacred_geometry_mandala
+
+- **Date**: 2026-05-23
+- **Theme**: Sacred geometry, kaleidoscope symmetry, vector graphics, spiritual algorithms.
+- **Technique**: Instead of manipulating pixels directly, this work uses crisp, mathematical vector graphics (`py5.begin_shape`, `py5.vertex`, `py5.circle`). It draws 12 concentric layers of geometry—alternating between polygons, stars, and rings of circles. Each layer rotates independently, with alternating directions and variable speeds. The radii of the shapes gently pulse using sine waves. Drawn with semi-transparent neon colors (HSB) and additive blending over a faintly fading background to create light trails. 15s 60fps MP4.
+- **Description**: A mesmerizing array of neon shapes (stars, triangles, and circles) rapidly spin and pulse from the center of the canvas. Because each layer is rotating at slightly different speeds and directions, the entire structure behaves like an incredibly complex mechanical clock or a digital kaleidoscope, hypnotically expanding and contracting in perfect symmetry.
+
+## vector_flow_field_particles
+
+- **Date**: 2026-05-23
+- **Theme**: Fluid dynamics, vector fields, particle trails, generative art.
+- **Technique**: To maintain 60fps while simulating 500,000 particles, we bypass computationally heavy Perlin noise and instead generate a smooth pseudo-random flow field using a combination of multiple low-frequency sine and cosine waves. This creates continuous, chaotic eddies and currents. The particles update their positions based on this vector field every frame. The background is only faintly cleared (10/255 opacity) each frame, allowing the particles to leave extremely long, smooth light trails. Rendered via additive blending directly into the `py5.np_pixels` buffer. 15s 60fps MP4.
+- **Description**: Millions of bright cyan, blue, and white strands flow across the dark canvas like glowing silk threads caught in an invisible river. They converge into massive, swirling vortexes and split along unseen ridges. As the invisible math underlying the currents slowly shifts over time, the beautiful, complex structures elegantly unspool and reform into new shapes.
+
+## metaballs_liquid_metal
+
+- **Date**: 2026-05-23
+- **Theme**: Fluid dynamics, implicit surfaces, metallic reflections, retro demoscene.
+- **Technique**: We simulate 30 bouncy physics particles and compute a 2D scalar field representing their inverse-square distance functions. Instead of rendering them as solid blobs, we pass the scalar field through phase-shifted periodic sine functions. This creates alternating bands of light and dark that perfectly mimic the environmental reflections of shiny liquid metal (like mercury or chrome). The outer boundary is clamped via a hard threshold mask. Computed completely via vectorized NumPy grid operations and upscaled to full resolution. 15s 60fps MP4.
+- **Description**: 30 spheres of liquid mercury fly around a pitch-black canvas. When they get close, they seamlessly snap together and merge into larger, amorphous blobs. The intricate, wavy light bands inside the blobs constantly shift and distort, creating an extremely convincing metallic sheen that reflects an invisible, striped environment.
+
+## neural_network_activation_landscape
+
+- **Date**: 2026-05-23
+- **Theme**: Artificial intelligence, latent space, continuous neural representations, generative art.
+- **Technique**: We construct a 2-hidden-layer Multi-Layer Perceptron (MLP) purely in NumPy. A dense grid of 2D $(X, Y)$ coordinates acts as the input batch, and we perform a full forward pass (`Dense -> ReLU -> Dense -> ReLU -> Dense -> Sin`) for every pixel on the canvas simultaneously. Over time, the internal weight matrices of the network are smoothly rotated using a skew-symmetric matrix multiplier, simulating a slow, continuous walk through the network's high-dimensional latent space. The 3-channel output is directly mapped to the RGB pixel buffer. 15s 60fps MP4.
+- **Description**: The screen is covered in smooth, surreal blobs and sharply creased bands of vibrant color. As the hidden "brain" slowly rewires its internal connections, the decision boundaries warp, flow, and fold into one another. It feels like peering into the fluid, geometric dreams of an artificial intelligence.
+
+## lorenz_attractor_particle_flow
+
+- **Date**: 2026-05-23
+- **Theme**: Chaos theory, strange attractors, meteorology, fluid dynamics.
+- **Technique**: 200,000 independent particles are initialized in a tight cluster near the origin and iteratively integrated through the classical Lorenz equations using a high-speed vectorized NumPy Euler solver. Instead of drawing static lines, the particles dynamically flow through the attractor's phase space, leaving decaying, semi-transparent light trails. The 3D coordinates are rotated with a virtual camera and projected directly into the `py5.np_pixels` buffer using additive blending. Colored based on their vertical (Z) position, creating a glowing gradient from Deep Purple to Hot Pink to Bright Orange. 15s 60fps MP4.
+- **Description**: A tight knot of glowing plasma explodes outward, rapidly tracing the iconic butterfly wings of the Lorenz attractor. The particles flow like a torrential, glowing fluid, endlessly looping and crossing between the two chaotic basins. The camera slowly orbits the structure, revealing the infinitely thin, fractal layers that make up this beautiful mathematical anomaly.
+
+## boids_flocking_swirl
+
+- **Date**: 2026-05-23
+- **Theme**: Artificial life, emergence, flocking, Craig Reynolds' boids.
+- **Technique**: Simulates 10,000 autonomous "boids" using a randomized neighborhood approximation to calculate Separation, Alignment, and Cohesion forces in real time without dropping framerate. The boids are drawn directly to the `py5.np_pixels` buffer, creating smooth additive light trails that slowly fade over time. Colored based on their velocity, transitioning from deep ocean blue to bright bioluminescent cyan as they accelerate. 15s 60fps MP4.
+- **Description**: Like a glowing school of deep-sea fish or a swarm of cybernetic fireflies, thousands of bright blue trails swirl around the screen. They continuously split apart, merge, and form massive swirling vortexes, demonstrating how complex, beautiful group dynamics can arise from simple individual rules.
+
+## magnetic_pendulum_fractal
+
+- **Date**: 2026-05-23
+- **Theme**: Physics simulation, fractals, chaos theory, basins of attraction.
+- **Technique**: Instead of simulating a single pendulum swinging between three magnets, we treat the entire canvas as a grid of 500,000 different starting positions $(X, Y)$ and simulate them all simultaneously using vectorized NumPy operations. Over the course of the 15-second animation, the positions of all pendulums are integrated using Euler's method. The color of each pixel corresponds to the proximity of its respective pendulum to the three magnets (Red, Green, Blue). As the pendulums fall into the gravitational and magnetic wells, the smooth color fields shatter into infinitely complex fractal boundaries. 15s 60fps MP4.
+- **Description**: What begins as a smooth, blurry RGB gradient slowly warps and folds as the invisible pendulums start swinging. Gravity and magnetism violently pull the system apart, revealing a stunning, razor-sharp fractal crystal where tiny changes in starting position determine which magnet a pendulum ultimately lands on.
+
+## strange_attractor_clifford_morph
+
+- **Date**: 2026-05-23
+- **Theme**: Chaos theory, strange attractors, dynamical systems.
+- **Technique**: An ultra-fast vectorized Python simulation mapping 500,000 points through the Clifford attractor equations iteratively. Instead of static parameters, the variables $(a,b,c,d)$ are modulated by smooth sine waves over the 15-second duration, causing the fractal structure to seamlessly unfold, collapse, and transform. A dense 2D histogram (density map) is calculated each frame using `numpy.add.at` and mapped to a Cyberpunk-inspired Magenta, Blue, and Cyan additive palette directly in the pixel buffer. 15s 60fps MP4.
+- **Description**: Millions of microscopic particles dance along invisible mathematical boundaries, tracing out impossibly intricate, folding shapes. As time progresses, the rules of the universe shift—causing the ghostly, neon-lit geometric web to warp and tear, constantly revealing new, mesmerizing symmetries hidden within the chaos.
+
+## slime_mold_physarum
+
+- **Date**: 2026-05-23
+- **Theme**: Biological growth, multi-agent systems, emergent behavior, slime mold.
+- **Technique**: A massive multi-agent particle simulation running entirely on a 2D grid. 150,000 independent sensory agents deposit chemical pheromones on the grid as they move. They also sense the local pheromone gradient using three forward sensors and steer towards the highest concentration. The global pheromone grid is continuously diffused and decayed using `scipy.ndimage.gaussian_filter`. Rendered via nearest-neighbor upscaling into a bio-luminescent Electric Green and Deep Violet palette directly in the `py5.np_pixels` buffer. 15s 60fps MP4.
+- **Description**: What starts as an amorphous ring of individual particles quickly organizes into striking, pulsing transport networks. The agents follow each other's chemical trails, spontaneously forming dense super-highways of glowing electric green that branch, weave, and restructure themselves like the veins of a living organism.
+
+## solar_corona_magnetic_loops
+
+- **Date**: 2026-05-23
+- **Theme**: Astrophysics, solar flares, magnetic flux loops, plasma dynamics.
+- **Technique**: A 3D procedural physics simulation modeling 150,000 plasma tracers flowing along magnetic field lines generated by multiple dipole pairs (sunspots). The field is perturbed by a time-varying volumetric noise function to simulate turbulent convection. Rendered via a manual 3D projection mapped directly into the `py5.np_pixels` buffer for ultra-fast additive blending, using a temperature-based Crimson-Orange-Gold palette. 15s 60fps MP4.
+- **Description**: The dark surface of a stellar void erupts with towering, interlocking arches of blinding gold and crimson plasma. As the camera slowly orbits the scene, the magnetic flux tubes twist and weave, guiding rivers of high-energy particles that beautifully illustrate the immense, invisible electromagnetic forces shaping the solar corona.
+
+## double_pendulum_fractal_map
+
+- **Date**: 2026-05-23
+- **Theme**: Chaos theory, fractal boundaries, double pendulum, phase space.
+- **Technique**: A 2D parameter space grid (where $X = \theta_1$ and $Y = \theta_2$) represents the initial starting angles of over 500,000 double pendulums. A highly vectorized NumPy physics engine integrates the equations of motion for all pendulums simultaneously using a sub-stepped Euler/Runge-Kutta approximation. The current angle $\theta_2$ of each pendulum is mapped to a continuous spectral color map, creating an intricately folding fractal that reveals the chaotic boundaries of the system over time. 15s 60fps MP4.
+- **Description**: A smooth, beautifully colored gradient gradually warps, stretches, and folds in upon itself with infinite complexity. As the hidden pendulums swing, the phase space shatters into a breathtaking, swirling fractal pattern, perfectly visualizing how microscopic changes in initial conditions lead to wildly divergent and chaotic futures.
+
+## reaction_diffusion_turing_patterns
+
+- **Date**: 2026-05-23
+- **Theme**: Turing patterns, reaction-diffusion, biological self-organization, Gray-Scott model.
+- **Technique**: 2D Reaction-Diffusion PDE solved via finite difference method on a downscaled grid using `scipy.ndimage.convolve` for vectorized Laplacian operations. Chemical concentrations are iteratively updated across 8 sub-steps per frame. Feed and kill rates dynamically shift over time to transition the system from isolated spots to dense labyrinths and chaotic stripes. The resulting chemical field is upscaled and rendered directly to `py5.np_pixels` using a Deep Purple, Cyan, and Neon Orange color map. 15s 60fps MP4.
+- **Description**: A mesmerizing, organic progression of life-like patterns. Starting from a dark purple void, vibrant cyan and neon orange chemical reactions spontaneously emerge, slowly growing into isolated cellular spots that gradually fuse, morph, and stretch into complex, shifting labyrinths resembling coral or animal skin.
+
+## lissajous_knot_orbital_decay
+
+- **Date**: 2026-05-23
+- **Theme**: Orbital mechanics, resonance, Lissajous figures, 3D geometry.
+- **Technique**: Vectorized 3D parametric equations generating 120,000 orbital tracers. The frequencies $f_x, f_y, f_z$ are linearly interpolated from irrational starting ratios ($\pi, e, \phi$) down to a 1:1:1 resonance over time. Rendered directly into the `py5.np_pixels` buffer for massive performance additive blending with a fading background, using a Cyan-to-Magenta structural palette. 15s 60fps MP4.
+- **Description**: An incredibly intricate, tangled ball of glowing neon threads spins in the dark void. As time passes, the chaotic orbits begin to align, gradually simplifying the knot's geometry until the entire system collapses into a single, majestic, perfectly synchronized ring of light.
+
+## non_euclidean_poincare_disk
+
+- **Date**: 2026-05-23
+- **Theme**: Non-Euclidean geometry, hyperbolic space, Poincaré disk model, infinite recursion.
+- **Technique**: Procedural pixel-shader simulation. Maps the pixel canvas to the complex plane, restricts it to the unit disk, and applies time-varying Möbius transformations to simulate translation/zooming in hyperbolic space. The transformed hyperbolic distance drives a trigonometric tessellation pattern, colored with a shimmering Cyan-Emerald-Violet palette. 15s 60fps MP4.
+- **Description**: A glowing circular window into a non-Euclidean universe. As the view translates endlessly forward, intricate, shimmering geometric forms flow out from the impossibly deep boundary, expanding gracefully as they approach the center before folding away, visualizing the mind-bending infinite space contained within a finite disk.
+
+## magnetic_reconnection_plasma
+
+- **Date**: 2026-05-23
+- **Theme**: Magnetic reconnection, solar flares, plasma physics.
+- **Technique**: Vectorized 2D simulation of a Sweet-Parker / Petschek magnetic reconnection event. 150,000 plasma tracer particles are advected by a time-varying magnetic field that snaps and reconfigures at $t=0.5$, releasing high-velocity jets. Directly manipulates the `py5.np_pixels` buffer for extreme performance additive blending, mapping particle velocity to a Gold-to-Magenta color gradient. 15s 60fps MP4.
+- **Description**: Opposing magnetic fields slowly compress a glowing sheet of golden plasma. Suddenly, the field lines snap and reconnect, instantly accelerating the plasma into violent, blinding magenta jets that shoot outward in opposite directions, visualizing the catastrophic energy release of a solar flare.
+
+## boid_murmuration_fluid
+
+- **Date**: 2026-05-23
+- **Theme**: Fluid flocking dynamics resembling organic murmuration.
+- **Technique**: Vectorized boids simulation featuring 120 flock leaders and 30,000 follower agents. Leaders interact via separation, alignment, cohesion, and central attraction. Agents are strongly attracted to their respective leaders and align with their velocity, adding local noise. Rendered using additive blending on a dark indigo background. 15s 60fps MP4.
+- **Description**: Thousands of tiny sparks sweep across a dark indigo sky, suddenly folding and swooping together into massive, undulating ribbon-like shapes that feel both organic and perfectly synchronized.
+
+## adaptive_nerve_bloom
+
+- **Date**: 2026-05-23
+- **Theme**: Emergent intelligence and neural connections.
+- **Technique**: Network graph simulation with 180 nodes and dynamic distance-based synapses. Signal propagation is visualized through pulsing edge brightness and node activation radii. Rendered with a Cyan, Magenta, and Gold palette over a dark canvas. 15s 60fps MP4.
+- **Description**: The dark canvas blooms with a constellation of cyan, magenta, and gold neural nodes. Connections between neurons pulse with energy as signals propagate through the network, creating an ever-shifting web of computational activity. The animation captures the essence of intelligence emerging and organizing itself in real time.
+
+## strange_attractor_aizawa
+
+- **Date**: 2026-05-23
+- **Theme**: The mathematical beauty of the Aizawa strange attractor and chaotic orbits.
+- **Technique**: 2.5D point cloud with 80,000 tracers using the Aizawa attractor equations. Additive blending with a shifting HSB palette of deep cyan, emerald, and gold. 15s 60fps MP4.
+- **Description**: Tens of thousands of glowing particles flow from the center to map out the hypnotic, spherical shape of the Aizawa strange attractor. As they orbit, their trajectories illustrate the delicate balance between determinism and chaos, shifting in hue to create a vibrant, glowing mathematical sculpture in the void.
+
+## hopf_fibration_flow
+
+- **Date**: 2026-05-23
+- **Theme**: The mathematical beauty of the Hopf fibration, showing linked circles flowing seamlessly through each other in 3D space.
+- **Technique**: 3D point cloud of 50,000 particles parameterized by angles on S2 and a fiber angle. The points flow along the fiber angle and are stereographically projected into R3. Additive blending with spectral colors mapped to the base angle. 15s 60fps MP4.
+- **Description**: Thousands of glowing particles weave together into an intricate set of interlinked tori. As the system flows, the particles trace the continuous, non-intersecting rings of the Hopf fibration, projecting higher-dimensional geometry into a mesmerizing dance of light.
+
+## bifurcation_attractor_swarm
+
+- **Date**: 2026-05-23
+- **Theme**: Chaotic attractors undergoing bifurcation, mapped by a glowing swarm of particles.
+- **Technique**: 2.5D rendering of the Lorenz attractor equations mixed with custom sine-wave perturbations. 50,000 tracers. Additive blending with a hot pink, violet, and deep blue palette. 15s 60fps MP4.
+- **Description**: Thousands of glowing points stream through a dark void, painting the structure of a mathematical strange attractor. Over time, the parameters driving the system shift, causing the orbital paths to deform and bifurcate into increasingly complex patterns of motion.
+
+## fractal_brownian_terrain
+
+- **Date**: 2026-05-23
+- **Theme**: A sweeping 3D landscape generated by moving Fractional Brownian Motion (fBm) noise, projecting a neon-lit wireframe terrain that shifts and evolves as we fly over it in a dark void.
+- **Technique**: 2.5D rendering using py5's P3D mode, moving noise grid using `py5.noise()`, mapping noise to height. Additive blending with vibrant neon color transitions based on height. 15s 60fps MP4.
+- **Description**: An endless flight over a shimmering mathematical landscape. As the terrain flows beneath, the neon wireframe contours shift dynamically, illustrating the complex, fractal nature of continuous 2D noise translated into 3D heightmaps.
+
+## chromatic_vector_field_glitch
+
+- **Date**: 2026-05-23
+- **Theme**: A swirling, dynamic vector field driven by Perlin noise, traversed by thousands of glowing particles, which experiences intense noise spikes that datamosh the buffer.
+- **Technique**: Procedural simulation of 10,000 particles moving through an OpenSimplex noise-based vector field. Particles are rendered with time-evolving HSB hues and additive blending. Random noise bursts inject intense localized chaos into the particle trajectories, while NumPy is used to trigger horizontal block datamoshing across the final rendered frame. 15s 60fps MP4.
+- **Description**: The flow of structured data through an unstable network. Ten thousand data points follow smooth, continuous fluid paths governed by a hidden mathematical manifold, only to be intermittently slammed by catastrophic digital interference that rips the structure apart and forces hard resets of the trajectories.
+
+## holographic_lattice_collapse
+
+- **Date**: 2026-05-23
+- **Theme**: A 3D isometric or pseudo-3D hexagonal lattice that shimmers holographically in neon colors, and then collapses due to randomized scaling and displacement glitches over time.
+- **Technique**: Procedural P3D grid of polygons, additive blending, sine wave based height maps mapped to color, and random glitch displacements applied to vertices and global pixels based on noise. Datamosh tearing via NumPy array manipulation. 15s 60fps MP4.
+- **Description**: A visualization of an idealized, shimmering geometric manifold suffering from catastrophic data collapse. The piece juxtaposes the rigid, mathematical beauty of an undulating 3D lattice with the aggressive, unpredictable nature of digital corruption.
+
+## quantum_interference_glitch
+
+- **Date**: 2026-05-23
+- **Theme**: The delicate, shimmering interference patterns of quantum waves that violently shear and split into bright RGB noise when observed.
+- **Technique**: Procedural interference patterns mapped to saturated neon colors (Cyan, Magenta, Yellow), with sudden chaotic horizontal and vertical tearing using NumPy pixel manipulation. 15s 60fps MP4.
+- **Description**: A visualization of a structured quantum system experiencing sudden decoherence. The piece begins with harmonious, overlapping interference rings from multiple wave sources, but as the timeline progresses, the "observation effect" intensifies, tearing the simulation apart through violent spatial shifts and RGB channel inversions.
+
+## neon_cellular_datamosh
+
+- **Date**: 2026-05-23
+- **Theme**: The relentless, infectious spread of corrupted data through a structured system, represented by neon cellular automata bleeding into chaotic horizontal datamosh lines.
+- **Technique**: Procedurally generated cellular rectangles drawn with high saturation RGB colors (Cyan, Magenta, Yellow, Green) on a dark background. NumPy is used for real-time pixel manipulation, introducing horizontal screen tearing and RGB channel swapping to simulate datamoshing and signal corruption. 15s 60fps MP4.
+- **Description**: A visualization of a structured digital system being overwhelmed by vibrant, chaotic data corruption. Clean geometric shapes are continuously ripped apart and color-shifted, leaving neon trails that bleed across the canvas in unpredictable patterns.
+
 ## cybernetic_flora_corruption
 
 - **Date**: 2026-05-22

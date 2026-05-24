@@ -556,6 +556,55 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: Procedurally generated cellular rectangles drawn with high saturation RGB colors (Cyan, Magenta, Yellow, Green) on a dark background. NumPy is used for real-time pixel manipulation, introducing horizontal screen tearing and RGB channel swapping to simulate datamoshing and signal corruption. 15s 60fps MP4.
 - **Description**: A visualization of a structured digital system being overwhelmed by vibrant, chaotic data corruption. Clean geometric shapes are continuously ripped apart and color-shifted, leaving neon trails that bleed across the canvas in unpredictable patterns.
 
+## cybernetic_flora_corruption
+
+- **Date**: 2026-05-22
+- **Theme**: Organic growth trying to establish order, but constantly being disrupted by vibrant digital corruption.
+- **Technique**: Procedurally generated cybernetic floral structures (Maurer-inspired roses) rotating and blooming over time, rendered with RGB channel splitting. A secondary NumPy pixel-manipulation pass introduces horizontal datamoshing and block tears across the canvas. 15s 60fps MP4.
+- **Description**: A delicate, geometric flower blooms slowly in the obsidian void. As it opens, its structural integrity stutters and shears, bleeding intense neon cyan, magenta, and yellow data across the frame, leaving vibrant datamosh trails in its wake.
+
+## lbm_karman_vortex_street
+
+- **Date**: 2026-05-22
+- **Theme**: The mesmerizing, repeating pattern of swirling vortices created by a fluid as it is forced around an obstacle.
+- **Technique**: Vectorized 2D Lattice Boltzmann Method (D2Q9) simulation. Dynamic vorticity is mapped to a diverging thermal/teal colormap. 15s 4K/60fps MP4.
+- **Description**: A smooth, deep blue river flows silently until it hits a solid pillar. Rhythmic, alternating crimson and cyan whirlpools peel off from the edges of the pillar, drifting downstream in a complex dance of interacting eddies.
+
+## ginzburg_landau_spiral_defects
+
+- **Date**: 2026-05-22
+- **Theme**: The mesmerizing, spontaneous emergence of rotating spiral waves and topological defects in a complex oscillatory medium.
+- **Technique**: Vectorized 2D simulation of the Complex Ginzburg-Landau Equation (CGLE) solved via FDTD. The complex phase maps to a vibrant synthwave spectrum. 15s 4K/60fps MP4.
+- **Description**: A bubbling, chaotic sea of iridescent noise quickly synchronizes. Distinct pacemakers emerge, emitting rhythmic, expanding rainbow rings that curl into spinning, interlocking multi-armed spirals.
+
+## hopf_fibration_projection
+
+- **Date**: 2026-05-22
+- **Theme**: The mathematical elegance of the Hopf Fibration, projecting the 4D hypersphere onto 3D space as a seamless arrangement of interlocking, luminous circular fibers.
+- **Technique**: Parametric 4D generation of Hopf circles projected via Stereographic projection from S3 to R3, and then to 2D. Rendered as luminous, silken threads using an additive blend mode. 15s 4K/60fps MP4.
+- **Description**: A massive, shimmering torus made of hundreds of interlocking glowing rings slowly rotates in the void. As it turns inside out in 4D space, waves of iridescent colors flow smoothly along the fibers.
+
+## crystal_dislocation_glide
+
+- **Date**: 2026-05-22
+- **Theme**: The sudden, violent slipping of microscopic lattice defects through an atomic crystal under immense pressure, visualizing the invisible physics of plastic deformation.
+- **Technique**: Vectorized 2D Sine-Gordon (Frenkel-Kontorova) phase-field model. Computes atomic displacement under macroscopic shear stress with local yielding and dislocation avalanches. 15s 4K/60fps MP4.
+- **Description**: A perfectly ordered, shimmering ice-blue atomic grid slowly deforms. Suddenly, brilliant amber fault lines rip diagonally through the structure, accompanied by a cascade of localized structural rearrangements that echo like a microscopic earthquake.
+
+## hyper_chromatic_glitch_fold
+
+- **Date**: 2026-05-22
+- **Theme**: A high-density data matrix folding and tearing itself apart, bleeding brilliant spectral colors as its structural integrity collapses under recursive glitches.
+- **Technique**: Vectorized recursive grid subdivision with pseudo-random chromatic displacement, localized horizontal tearing (row-shifting), and high-frequency noise injection. Multi-pass RGB channel splitting. 15s 4K/60fps MP4.
+- **Description**: A perfect, dense geometric grid suddenly shivers, splitting into blinding neon magenta and cyan channels. Horizontal tears slice across the frame, ripping the structure apart while golden noise bleeds into the fractures.
+
+## salt_finger_convection_sim
+
+- **Date**: 2026-05-22
+- **Theme**: Double-diffusive convection where warm, salty water lies over cold, fresh water, creating intricate falling salt fingers and rising thermal plumes due to differing diffusion rates.
+- **Technique**: Vectorized 2D Boussinesq Navier-Stokes with two coupled advection-diffusion scalar fields (Temperature and Salinity). 15s 4K/60fps MP4.
+- **Description**: Deep oceanic indigo background is cut through by electric cyan falling salt fingers and warm gold rising thermal plumes.
+
 ## taylor_couette_vortices
 
 - **Date**: 2026-05-18
@@ -3016,5 +3065,12 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Theme**: A sequencing flow cell listening to strands of DNA as tiny current interruptions become readable signals.
 - **Technique**: Procedural nanopore sensor channels with stochastic base events, ion-current traces, pore glow pulses, molecule drift, base-call rings, and quality meter. 10s 1920x1080/60fps MP4.
 - **Description**: A graphite flow-cell panel streams twelve cyan ion-current traces while colored base-call rings bloom where molecular events interrupt the signal. Drifting molecule specks and a small quality meter frame live DNA sequencing as a quiet conversion of physical blockage into information.
+
+## lenia_morphogenesis
+
+- **Date**: 2026-05-21
+- **Theme**: Continuous Cellular Automata (Lenia) & Particle Morphogenesis
+- **Technique**: Vectorized 2D FFT convolutions, density gradient advection (100,000 tracers), and multi-channel color blending. 15s 1920x1080/60fps MP4.
+- **Description**: A stunning continuous cellular automaton simulation where organic violet and cyan cell bodies slide dynamically over an obsidian background, forming active golden cores. As they glide and mutate, 100,000 golden particles are drawn along the density gradients, trailing glowing bioluminescent dust that highlights the self-organizing flow.
 
 <!-- Add new works above this line using the format below:

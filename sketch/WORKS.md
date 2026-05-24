@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## abstract_cybernetic_glitch_core
+
+- **Date**: 2026-05-24
+- **Theme**: Data corruption in an old quantum computer, mixing sharp geometric structures with fluid, melting glitch effects.
+- **Technique**: A 3D wireframe mesh that periodically displaces its vertices using high-frequency 3D Perlin noise and chromatic aberration separation on the X/Y axes when a "glitch" threshold is hit. It avoids extreme additive blending build-up by clearing the background with a low-opacity black each frame to create a controlled blur without blowing out to white.
+- **Description**: A dynamic 3D cybernetic mesh glitches and distorts with chromatic aberration, creating a dark, moody energetic field.
+
 ## geometric_fractal_recursive_tree_3d
 
 - **Date**: 2026-05-23

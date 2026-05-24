@@ -1,8 +1,8 @@
 # geometric_fractal_recursive_tree_3d
 
-A kinetic 3D fractal tree generated via recursive L-system logic.
+A fully 3D, recursively generated fractal tree that simulates wind and biological growth.
 
 - **Date**: 2026-05-23
-- **Theme**: Fractals, recursive trees, L-systems, algorithmic botany, nature, wind simulation.
-- **Technique**: Uses a pure recursive function (`draw_branch`) to draw a highly complex 3D tree. The function draws a line (the branch trunk), translates to its tip, and then calls itself 3 times. Each child branch is rotated evenly around the Y-axis (creating a volumetric canopy) and tilted outwards. The recursion depth is 9, resulting in $3^9$ (nearly 20,000) individual branch segments. Global time `t` continuously modulates the branching angles and applies Perlin noise-based wind sway. The hue shifts dynamically based on recursion depth. 15s 60fps MP4.
-- **Description**: A magical, glowing digital tree grows upward from the bottom of the screen into a dense, sprawling canopy. The tree is composed of thousands of glowing neon lines that shift from deep indigo at the thick trunk to vibrant cyan and green at the delicate outer branches. The entire tree is constantly in motion—not only rotating slowly in 3D space, but each branch gracefully swaying and curling inward and outward as if caught in an ethereal, shifting wind.
+- **Theme**: L-systems, fractal trees, botany, recursive growth, sacred geometry, nature.
+- **Technique**: Uses a recursive function (`draw_branch`) to generate thousands of connected 3D lines. At each depth, the tree branches into 2 or 3 smaller branches, spiraling outward in 3D space. The angle of each branch is dynamically modulated by a 2D Perlin noise field simulating wind, causing the entire massive structure to gently sway. The length of the branches scales rhythmically with a sine wave to simulate breathing or organic growth. Rendered in `py5.P3D` as the camera slowly orbits the glowing, neon-colored tree. 15s 60fps MP4.
+- **Description**: A digital Yggdrasil. A massive, glowing neon tree grows upward from the void, branching out endlessly into thousands of delicate, mathematical twigs. The camera slowly orbits the three-dimensional fractal structure while a gentle, invisible wind rustles the glowing branches. The colors organically shift from deep roots of purple to electric cyan leaves, creating a mesmerizing fusion of nature and computation.

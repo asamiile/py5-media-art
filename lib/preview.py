@@ -27,10 +27,15 @@ def exit_after_preview_py5(
     sketch_dir: Path,
     filename: str = "preview.png",
 ) -> None:
-    """Save a preview image then exit the sketch."""
+    """Save a preview image then forcefully exit the sketch."""
+    import os
     import py5
+    import time
     save_preview_py5(sketch_dir, filename=filename)
     py5.exit_sketch()
+    # Force process exit to prevent macOS JVM/AWT threads from hanging
+    time.sleep(0.5)
+    os._exit(0)
 
 
 def maybe_save_exit_on_frame(

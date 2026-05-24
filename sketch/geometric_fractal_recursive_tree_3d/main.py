@@ -2,6 +2,7 @@ from pathlib import Path
 import shutil
 import subprocess
 import sys
+import numpy as np
 import py5
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
@@ -21,73 +22,79 @@ TOTAL_FRAMES = DURATION_SEC * FPS
 PREVIEW_FILENAME = f"{WORK_NAME}_p1.png"
 PREVIEW_SIZE, OUTPUT_SIZE, SIZE = get_sizes()
 
+MAX_DEPTH = 11
+
 def setup():
     py5.size(*SIZE, py5.P3D)
     py5.pixel_density(1)
     py5.color_mode(py5.HSB, 360, 100, 100, 100)
     FRAMES_DIR.mkdir(exist_ok=True)
     
-def draw_branch(length, depth, max_depth, t):
+def draw_branch(len, depth, t):
     if depth == 0:
         return
         
-    # Draw the current branch segment
-    py5.stroke_weight(py5.remap(depth, 0, max_depth, 0.5, 12))
+    # Stroke weight thinner as it goes up
+    sw = py5.remap(depth, 1, MAX_DEPTH, 0.5, 8.0)
+    py5.stroke_weight(sw)
     
-    # Color based on depth and time
-    hue = (120 + depth * 25 + t * 50) % 360
-    brightness = py5.remap(depth, 0, max_depth, 100, 50)
-    py5.stroke(hue, 80, brightness, 80)
+    # Color changes from trunk (brown/purple) to leaves (neon cyan/pink)
+    hue = py5.remap(depth, 1, MAX_DEPTH, 200, 280) + t * 20
+    py5.stroke(hue % 360, 80, 100)
     
-    py5.line(0, 0, 0, 0, -length, 0)
+    # Draw the branch
+    py5.line(0, 0, 0, 0, -len, 0)
     
     # Move to the end of the branch
-    py5.translate(0, -length, 0)
+    py5.translate(0, -len, 0)
     
-    # Wind sway factor using Perlin noise
-    sway = py5.noise(depth * 0.1, t * 1.5) * py5.PI / 8 - py5.PI / 16
+    # Add wind (noise) that affects thinner branches more
+    wind_x = py5.noise(depth * 0.1, t * 1.5) * 0.4 - 0.2
+    wind_z = py5.noise(depth * 0.1 + 100, t * 1.5) * 0.4 - 0.2
     
-    # Spawn 3 child branches in 3D space
-    num_branches = 3
-    angle_spread = py5.PI / 3 + py5.sin(t + depth * 0.5) * 0.2
+    # Growth animation: branches slowly expand and contract slightly
+    growth = py5.sin(t * 2.0 + depth * 0.5) * 0.1 + 0.9
     
-    for i in range(num_branches):
+    # Right branch
+    py5.push_matrix()
+    py5.rotate_x(0.3 + wind_x)
+    py5.rotate_z(0.4 + wind_z)
+    py5.rotate_y(t * 0.5) # Spiral growth
+    draw_branch(len * 0.72 * growth, depth - 1, t)
+    py5.pop_matrix()
+    
+    # Left branch
+    py5.push_matrix()
+    py5.rotate_x(-0.2 + wind_x)
+    py5.rotate_z(-0.5 + wind_z)
+    py5.rotate_y(-t * 0.3)
+    draw_branch(len * 0.68 * growth, depth - 1, t)
+    py5.pop_matrix()
+    
+    # Sometimes add a 3rd branch in 3D
+    if depth > 4:
         py5.push_matrix()
-        
-        # Rotate around Y axis to spread branches outward in a circle
-        py5.rotate_y(i * py5.TWO_PI / num_branches + t * 0.5 * (1 if depth % 2 == 0 else -1))
-        
-        # Tilt outwards and add wind sway
-        py5.rotate_z(angle_spread + sway)
-        
-        # Add some curl
-        py5.rotate_x(py5.sin(t * 2 + depth) * 0.1)
-        
-        # Recursive call with shorter length
-        draw_branch(length * 0.65, depth - 1, max_depth, t)
-        
+        py5.rotate_x(-0.4 + wind_x)
+        py5.rotate_z(0.1 + wind_z)
+        py5.rotate_y(py5.PI / 2 + t * 0.4)
+        draw_branch(len * 0.6 * growth, depth - 1, t)
         py5.pop_matrix()
 
 def draw():
-    py5.background(10)
+    py5.background(10, 15, 25)
     
-    t = py5.frame_count * 0.015
+    t = py5.frame_count * 0.02
     
-    py5.translate(py5.width / 2, py5.height, 0)
+    # Setup camera
+    py5.translate(py5.width / 2, py5.height - 100, -300)
     
-    # Spin the entire tree slowly
+    # Slowly orbit around the tree
     py5.rotate_y(t * 0.3)
+    # Tilt down slightly
+    py5.rotate_x(-0.2)
     
-    # Tilt the camera slightly down
-    py5.rotate_x(-py5.PI / 8)
-    
-    # Move up slightly so the base isn't completely off-screen
-    py5.translate(0, py5.height * 0.2, 0)
-    
-    # Start recursive branching
-    max_depth = 9
-    initial_length = 350.0
-    draw_branch(initial_length, max_depth, max_depth, t)
+    # Draw the fractal tree
+    draw_branch(280, MAX_DEPTH, t)
 
     py5.save_frame(str(FRAMES_DIR / "frame-####.png"))
 

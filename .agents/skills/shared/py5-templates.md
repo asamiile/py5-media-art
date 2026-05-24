@@ -99,7 +99,9 @@ def draw():
         if FRAMES_DIR.exists():
             shutil.rmtree(FRAMES_DIR)
             print("[Render Cleanup] Temporary frames directory successfully removed.")
-
+            
+        import os
+        os._exit(0)  # Force exit to prevent macOS JVM hangs
 
 py5.run_sketch()
 ```

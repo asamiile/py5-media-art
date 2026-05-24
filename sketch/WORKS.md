@@ -3074,3 +3074,10 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Description**: A stunning continuous cellular automaton simulation where organic violet and cyan cell bodies slide dynamically over an obsidian background, forming active golden cores. As they glide and mutate, 100,000 golden particles are drawn along the density gradients, trailing glowing bioluminescent dust that highlights the self-organizing flow.
 
 <!-- Add new works above this line using the format below:
+
+## kinetic_tensegrity_sculpture_3d
+
+- **Date**: 2026-05-24
+- **Theme**: Kinetic sculpture, tensegrity, balance, physics simulation, tension vs compression, impossible floating geometry.
+- **Technique**: Simulates a 3D system of nodes with rigid distance constraints (struts) and dynamic spring constraints (cables). The resting lengths of the cables are continuously modulated by a 3D Perlin noise field and sine waves. This causes the tensegrity structure to organically breathe, fold, twist, and turn inside out in 3D space, constantly seeking a new equilibrium. The struts are rendered as thick, bright, glowing white/cyan bars, while the cables are thin, semi-transparent magenta/blue lines using additive blending. 15s 60fps MP4.
+- **Description**: A delicate, glowing tensegrity structure floats in the dark. Built from rigid, neon-cyan struts and semi-transparent magenta tension cables, the entire object seems to defy gravity. As invisible forces continuously pull and release the tension in the cables, the structure breathes and twists, collapsing in on itself before expanding outward into complex, shifting geometric forms. The organic motion of the cables contrasts beautifully with the sharp, rigid geometry of the struts, creating a mesmerizing kinetic sculpture.

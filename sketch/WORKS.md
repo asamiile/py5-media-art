@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## generative_kaleidoscopic_glass_tunnel
+
+- **Date**: 2026-05-24
+- **Theme**: Falling infinitely through a shifting, glowing stained-glass tunnel where the geometry recursively folds into itself.
+- **Technique**: Uses a rolling buffer of Z-coordinates to create the illusion of an infinitely moving 3D tunnel. The tunnel is constructed using 60 polygonal rings connected by `QUAD_STRIP` meshes. Instead of static shapes, the radius and twist of each ring are continually warped by complex, interfering sine wave functions, giving the tunnel an organic, breathing quality. Additive blending combined with dynamic opacity creates a radiant, translucent glass effect that fades naturally into the dark void.
+- **Description**: An infinite, psychedelic flight through an undulating, crystalline glass tunnel.
+
 ## kinetic_orbital_resonator_3d
 
 - **Date**: 2026-05-24

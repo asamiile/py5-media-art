@@ -3172,3 +3172,10 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Theme**: A microscopic view of an artificial geometric bloom.
 - **Technique**: Concentric 3D polygons scaling and rotating via a 2D interference ripple, rendered with additive blending.
 - **Description**: A mesmerizing animation of concentric 3D polygons that bloom and ripple rhythmically. As the shapes scale and rotate, the sine wave interference patterns combine with additive blending to create a radiant, microscopic floral structure that breathes gracefully over time.
+
+## abstract_neon_plasma_tornado
+
+- **Date**: 2026-05-25
+- **Theme**: A hyper-energetic, contained digital storm tearing through a dark void.
+- **Technique**: thousands of additive-blended points mapped to a cylindrical vector flow field (vortex equation).
+- **Description**: A swirling volumetric tornado of neon plasma particles constructed from mathematical vector flow fields mapping to a 3D vortex. The particles spiral inward and upward, driven by an invisible force, leaving a glowing trail that builds a massive kinetic cyclone of light.

@@ -3186,3 +3186,10 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Theme**: A neon digital wireframe ocean under a dark cybernetic sky.
 - **Technique**: A dense 2D grid mapped to a scrolling 3D Perlin noise field, rendered strictly as `LINES` and `POINTS` (no faces), with wave peaks glowing intensely using additive blending.
 - **Description**: A vast, scrolling 3D wireframe landscape that ripples with geometric interference waves. The simulation acts as a digital ocean made of rigid lines, endlessly advancing toward the camera while glowing wave peaks create hypnotic depth and movement in a dark void.
+
+## sumi_ink_dissolution
+
+- **Date**: 2026-05-25
+- **Theme**: The ephemeral beauty of ink surrendering to water — watching structure dissolve into ghostly plumes that curl, branch, and disappear on warm parchment.
+- **Technique**: 2D diffusion-advection simulation on a 960×540 grid with curl-noise advection, Laplacian diffusion, semi-Lagrangian transport, and 4 substeps per frame. Four-zone weighted color mapping (parchment → sepia → indigo → sumi black) with Gaussian paper texture. 15s 4K/60fps MP4.
+- **Description**: Drops of dark ink bloom on warm parchment, stretching into organic tendrils driven by invisible swirling currents. The ink dissolves through sepia mid-tones and deep indigo before fading into ghostly wisps — a digital sumi-e that inverts the collection's typical dark-background aesthetic into a quiet, contemplative ink wash.

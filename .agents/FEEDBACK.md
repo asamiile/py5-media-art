@@ -4,6 +4,46 @@
 Agents MUST NOT write anything in the `Comment` field. When registering a new work, Agents must leave the `Rating` and `Comment` fields empty or with their default labels as placeholders for the user.
 The Artist reads this file before starting a new sketch to understand preferences.
 
+## generative_kaleidoscopic_glass_tunnel
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_orbital_resonator_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## generative_topographic_reaction_diffusion
+
+- **Rating**: 
+- **Comment**: 
+
+## generative_topological_torus_knot
+
+- **Rating**: 
+- **Comment**: 
+
+## abstract_liquid_neon_threads
+
+- **Rating**: 
+- **Comment**: 
+
+## abstract_cybernetic_glitch_core
+
+- **Rating**: 
+- **Comment**: 
+
+## geometric_fractal_hilbert_curve_3d
+
+- **Rating**: 
+- **Comment**:
+
+## kinetic_tensegrity_sculpture_3d
+
+- **Rating**: 
+- **Comment**:
+
 ## geometric_fractal_recursive_tree_3d
 
 - **Rating**: 
@@ -17,7 +57,7 @@ The Artist reads this file before starting a new sketch to understand preference
 ## abstract_generative_strange_attractor_lorenz
 
 - **Rating**: 
-- **Comment**: 
+- **Comment**: It's all white and nothing visible.
 
 ## geometric_fractal_kaleidoscope_mirrors
 
@@ -26,12 +66,12 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## abstract_generative_boids_flocking_3d
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## abstract_generative_cellular_automata_1d
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## geometric_generative_phyllotaxis_spiral
@@ -46,12 +86,12 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## abstract_liquid_displacement_map
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## geometric_sacred_flower_of_life
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## abstract_reaction_diffusion_slime
@@ -66,7 +106,7 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## abstract_particle_spring_physics_mesh
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## geometric_fractal_recursive_tree_3d
@@ -76,7 +116,7 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## abstract_topological_moebius_strip
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## generative_vector_field_perlin_flow
@@ -86,7 +126,7 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## generative_liquid_metaballs_threshold
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## geometric_isometric_cyber_city
@@ -96,12 +136,12 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## geometric_fractal_polyhedron_subdivision
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## abstract_quantum_wavefunction_collapse
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## abstract_cellular_automata_1d
@@ -116,7 +156,7 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## optical_illusion_moire_patterns
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## abstract_strange_attractor_particle_flow
@@ -126,13 +166,13 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## generative_neural_network_graph
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## geometric_flower_of_venus
 
 - **Rating**: 
-- **Comment**: 
+- **Comment**: It's completely white and I can't see anything.
 
 ## hyperbolic_tessellation_poincare
 
@@ -146,13 +186,13 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## geometric_origami_tessellation
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## generative_cymatics_chladni
 
 - **Rating**: 
-- **Comment**: 
+- **Comment**: It starts out black and suddenly turns white, which makes it difficult to watch.
 
 ## kinetic_string_art_geometry
 
@@ -171,7 +211,7 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## chromatic_glitch_cube_field
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## sacred_geometry_flower_of_life
@@ -191,8 +231,8 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## quantum_orbital_electron_cloud
 
-- **Rating**: 
-- **Comment**: 
+- **Rating**: OK.
+- **Comment**: Nice Color and degree of blurring.
 
 ## recursive_fractal_tree_3d
 
@@ -206,12 +246,12 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## recursive_fractal_spirograph
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## generative_terrain_topography
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## geometric_metatron_cube_3d
@@ -231,17 +271,17 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## algorithmic_crystal_growth
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## quantum_interference_waves
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## neon_wireframe_torus_knot
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## generative_architecture_cityscape
@@ -266,12 +306,12 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## fractal_brownian_motion_terrain
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## differential_growth_coral
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## sacred_geometry_mandala
@@ -296,12 +336,12 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## lorenz_attractor_particle_flow
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## boids_flocking_swirl
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## magnetic_pendulum_fractal
@@ -336,7 +376,7 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## lissajous_knot_orbital_decay
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## non_euclidean_poincare_disk
@@ -371,17 +411,17 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## bifurcation_attractor_swarm
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## fractal_brownian_terrain
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## chromatic_vector_field_glitch
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## holographic_lattice_collapse
@@ -391,17 +431,17 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## quantum_interference_glitch
 
-- **Rating**: 
-- **Comment**: 
+- **Rating**: OK.
+- **Comment**: Nice Glitch Effect and Color.
 
 ## neon_cellular_datamosh
 
-- **Rating**: 
-- **Comment**: 
+- **Rating**: OK.
+- **Comment**: Nice Color.
 
 ## cybernetic_flora_corruption
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## lbm_karman_vortex_street
@@ -416,7 +456,7 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## hopf_fibration_projection
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## crystal_dislocation_glide

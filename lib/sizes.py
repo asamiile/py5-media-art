@@ -14,11 +14,10 @@ def get_sizes(
     """
     Return (preview_size, output_size, size_for_py5).
 
-    For this project, sketches commonly render at preview resolution and save
-    only `preview.png` (output/mp4 generation is handled separately).
+    For this project, sketches must render at 4K resolution (output_size).
     """
     ps = preview_size or PREVIEW_SIZE
     os = output_size or OUTPUT_SIZE
-    size_for_py5 = ps
+    size_for_py5 = os
     return ps, os, size_for_py5
 

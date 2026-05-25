@@ -3,6 +3,48 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## generative_kaleidoscopic_glass_tunnel
+
+- **Date**: 2026-05-24
+- **Theme**: Falling infinitely through a shifting, glowing stained-glass tunnel where the geometry recursively folds into itself.
+- **Technique**: Uses a rolling buffer of Z-coordinates to create the illusion of an infinitely moving 3D tunnel. The tunnel is constructed using 60 polygonal rings connected by `QUAD_STRIP` meshes. Instead of static shapes, the radius and twist of each ring are continually warped by complex, interfering sine wave functions, giving the tunnel an organic, breathing quality. Additive blending combined with dynamic opacity creates a radiant, translucent glass effect that fades naturally into the dark void.
+- **Description**: An infinite, psychedelic flight through an undulating, crystalline glass tunnel.
+
+## kinetic_orbital_resonator_3d
+
+- **Date**: 2026-05-24
+- **Theme**: A delicate, hypnotic 3D kinetic sculpture of interlocking golden rings that rotate on multiple axes, connected by shimmering energetic strings.
+- **Technique**: Calculates independent 3D rotation matrices for 18 concentric rings in absolute space using NumPy. The rotation speeds are mathematically linked using harmonic ratios (1:2, 2:3, etc.). As the rings orbit on different axes, thousands of translucent "energetic strings" are drawn between corresponding points on adjacent rings with a dynamic oscillating twist. The strings periodically align into perfect geometric patterns before dissolving into chaotic webs, simulating physical resonance and intricate clockwork. Additive blending enhances the glow of the golden mechanical construct.
+- **Description**: An elegant 3D mechanical sculpture of interlocking golden rings connected by harmonic, shimmering strings.
+
+## generative_topographic_reaction_diffusion
+
+- **Date**: 2026-05-24
+- **Theme**: A high-tech digital contour map of an evolving, living alien landscape.
+- **Technique**: Instead of slow iterative simulation, this sketch evaluates a massive, complex mathematical interference pattern in real-time using NumPy vectorization. Five intersecting sine-wave fields, modulated by spatial distortions and rotating phase shifts, produce an incredibly organic scalar field. The script mathematically extracts the isobars (contour lines) of this field, rendering them as thousands of 3D points. The resulting animation looks like a topological map of a breathing, dividing biological organism, viewed through an orbiting camera.
+- **Description**: A glowing 3D topological map of a breathing, dividing biological organism.
+
+## generative_topological_torus_knot
+
+- **Date**: 2026-05-24
+- **Theme**: A glowing energetic torus knot that constantly twists and folds itself through higher dimensions.
+- **Technique**: A parameterized 3D torus knot ($p=3, q=7$) rendered using 20,000 instanced glowing points. An orthonormal basis is calculated across the entire complex mathematical curve to generate a dense, volumetric 3D tube. The points are displaced radially by a high-frequency traveling sine wave. Additive blending combined with a slow background fade leaves majestic, sweeping plasma trails as the camera orbits the knot.
+- **Description**: A mesmerizing 3D animated torus knot made of glowing particles that writhes and pulses with mathematical noise.
+
+## abstract_liquid_neon_threads
+
+- **Date**: 2026-05-24
+- **Theme**: Fiber optic cables weaving themselves into complex liquid knots and unraveling in a dark void.
+- **Technique**: N-body particle simulation with 4 orbiting gravity wells. 15,000 particles are rendered as continuous lines with additive blending. Instead of completely clearing the background, a very faint black rectangle is drawn to create extremely long, sweeping trails. The gravity wells' masses oscillate with sine waves, causing the trails to form intricate, looping Lissajous-like knots that resemble glowing liquid threads.
+- **Description**: Thousands of glowing particles form intricate, swirling liquid threads around invisible gravity wells.
+
+## abstract_cybernetic_glitch_core
+
+- **Date**: 2026-05-24
+- **Theme**: Data corruption in an old quantum computer, mixing sharp geometric structures with fluid, melting glitch effects.
+- **Technique**: A 3D wireframe mesh that periodically displaces its vertices using high-frequency 3D Perlin noise and chromatic aberration separation on the X/Y axes when a "glitch" threshold is hit. It avoids extreme additive blending build-up by clearing the background with a low-opacity black each frame to create a controlled blur without blowing out to white.
+- **Description**: A dynamic 3D cybernetic mesh glitches and distorts with chromatic aberration, creating a dark, moody energetic field.
+
 ## geometric_fractal_recursive_tree_3d
 
 - **Date**: 2026-05-23
@@ -3074,3 +3116,24 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Description**: A stunning continuous cellular automaton simulation where organic violet and cyan cell bodies slide dynamically over an obsidian background, forming active golden cores. As they glide and mutate, 100,000 golden particles are drawn along the density gradients, trailing glowing bioluminescent dust that highlights the self-organizing flow.
 
 <!-- Add new works above this line using the format below:
+
+## kinetic_tensegrity_sculpture_3d
+
+- **Date**: 2026-05-24
+- **Theme**: Kinetic sculpture, tensegrity, balance, physics simulation, tension vs compression, impossible floating geometry.
+- **Technique**: Simulates a 3D system of nodes with rigid distance constraints (struts) and dynamic spring constraints (cables). The resting lengths of the cables are continuously modulated by a 3D Perlin noise field and sine waves. This causes the tensegrity structure to organically breathe, fold, twist, and turn inside out in 3D space, constantly seeking a new equilibrium. The struts are rendered as thick, bright, glowing white/cyan bars, while the cables are thin, semi-transparent magenta/blue lines using additive blending. 15s 60fps MP4.
+- **Description**: A delicate, glowing tensegrity structure floats in the dark. Built from rigid, neon-cyan struts and semi-transparent magenta tension cables, the entire object seems to defy gravity. As invisible forces continuously pull and release the tension in the cables, the structure breathes and twists, collapsing in on itself before expanding outward into complex, shifting geometric forms. The organic motion of the cables contrasts beautifully with the sharp, rigid geometry of the struts, creating a mesmerizing kinetic sculpture.
+
+## geometric_fractal_hilbert_curve_3d
+
+- **Date**: 2026-05-24
+- **Theme**: Fractals, space-filling curves, infinity, digital circuitry, labyrinth, dimensionality, sacred math.
+- **Technique**: Generates an 8,000-point 3D lattice self-avoiding random walk that mimics the dense geometry of a 3D Hilbert Curve. The entire structure is drawn as a single continuous line using `py5.begin_shape(py5.LINE_STRIP)` with additive blending. To create a mesmerizing kinetic effect, the coordinate scale is modulated by an expanding and collapsing sine wave over time. High-frequency 3D noise is injected into the vertices as they expand, making the rigid digital circuitry crackle with electric energy. The color smoothly cycles through the HSB spectrum based on vertex index and time. 15s 60fps MP4.
+- **Description**: A dense, microscopic cluster of glowing neon energy suddenly expands outward, revealing itself to be a massive, perfectly cubic labyrinth of digital circuitry. The continuous 3D line folds and weaves through space, filling the entire volume of the cube without ever intersecting itself. As the structure reaches its maximum expansion, the energetic lines crackle with rainbow light before slowly collapsing back into a dense, glowing singularity.
+
+## generative_particle_life_ecosystem
+
+- **Date**: 2026-05-24
+- **Theme**: Artificial life, emergent behavior, microscopic organisms, cells, particle physics, chemistry.
+- **Technique**: Simulates 2,500 particles divided into 4 color "species". The behavior is governed by a 4x4 interaction matrix of attraction and repulsion forces, optimized using NumPy vectorization. The values in the interaction matrix slowly oscillate over time using 2D Perlin noise, causing the ecosystem to continuously transition between chaotic swarms and structured cells. Rendered in 4K with additive blending.
+- **Description**: A vibrant, microscopic petri dish of artificial life. Four distinct species of brightly colored particles dance and swarm together, constantly forming temporary cell-like structures, wriggling worms, and crystalline clusters before dissolving back into a chaotic soup as the laws of their physics continuously mutate.

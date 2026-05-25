@@ -3179,3 +3179,10 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Theme**: A hyper-energetic, contained digital storm tearing through a dark void.
 - **Technique**: thousands of additive-blended points mapped to a cylindrical vector flow field (vortex equation).
 - **Description**: A swirling volumetric tornado of neon plasma particles constructed from mathematical vector flow fields mapping to a 3D vortex. The particles spiral inward and upward, driven by an invisible force, leaving a glowing trail that builds a massive kinetic cyclone of light.
+
+## kinetic_wireframe_ocean_3d
+
+- **Date**: 2026-05-25
+- **Theme**: A neon digital wireframe ocean under a dark cybernetic sky.
+- **Technique**: A dense 2D grid mapped to a scrolling 3D Perlin noise field, rendered strictly as `LINES` and `POINTS` (no faces), with wave peaks glowing intensely using additive blending.
+- **Description**: A vast, scrolling 3D wireframe landscape that ripples with geometric interference waves. The simulation acts as a digital ocean made of rigid lines, endlessly advancing toward the camera while glowing wave peaks create hypnotic depth and movement in a dark void.

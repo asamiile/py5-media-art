@@ -3165,3 +3165,10 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Theme**: Artificial life, emergent behavior, microscopic organisms, cells, particle physics, chemistry.
 - **Technique**: Simulates 2,500 particles divided into 4 color "species". The behavior is governed by a 4x4 interaction matrix of attraction and repulsion forces, optimized using NumPy vectorization. The values in the interaction matrix slowly oscillate over time using 2D Perlin noise, causing the ecosystem to continuously transition between chaotic swarms and structured cells. Rendered in 4K with additive blending.
 - **Description**: A vibrant, microscopic petri dish of artificial life. Four distinct species of brightly colored particles dance and swarm together, constantly forming temporary cell-like structures, wriggling worms, and crystalline clusters before dissolving back into a chaotic soup as the laws of their physics continuously mutate.
+
+## geometric_interference_bloom_3d
+
+- **Date**: 2026-05-25
+- **Theme**: A microscopic view of an artificial geometric bloom.
+- **Technique**: Concentric 3D polygons scaling and rotating via a 2D interference ripple, rendered with additive blending.
+- **Description**: A mesmerizing animation of concentric 3D polygons that bloom and ripple rhythmically. As the shapes scale and rotate, the sine wave interference patterns combine with additive blending to create a radiant, microscopic floral structure that breathes gracefully over time.

@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## water_treatment_clarifier
+
+- **Date**: 2026-05-26
+- **Theme**: A wastewater clarifier translates settling floc and rake motion into process telemetry.
+- **Technique**: Headless procedural animation with elliptical tank geometry, rotating rake arms, drifting floc particles, settling-depth modulation, and turbidity trace panels. 10s 4K/60fps MP4.
+- **Description**: Blue-green water bands rotate inside a concrete clarifier while amber and pale floc particles settle through the basin. The work treats treatment infrastructure as a quiet kinetic diagram where process control becomes visual rhythm.
+
 ## tidal_marsh_carbon_flux
 
 - **Date**: 2026-05-26

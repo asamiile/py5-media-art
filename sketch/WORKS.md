@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## annealing_glass_stress
+
+- **Date**: 2026-05-26
+- **Theme**: Invisible thermal stress in moving glass sheets becomes visible as a quiet factory ritual.
+- **Technique**: Procedural crossed-polarizer animation with moving glass panes, layered stress-contour waves, annealing heat-zone glows, roller motion, crack-seed highlights, and diagnostic meters. 10s 4K/60fps MP4.
+- **Description**: Translucent panes slide through a dark annealing line while cyan, violet, and amber birefringence contours ripple through the glass. The scene turns manufacturing tolerance into a restrained luminous instrument, with rollers and heat columns framing the material as it relaxes.
+
 ## diel_migration_sonar
 
 - **Date**: 2026-05-26

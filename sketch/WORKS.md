@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## kiln_pyrometry_rings
+
+- **Date**: 2026-05-26
+- **Theme**: A ceramic kiln records heat as bending cones, glaze witnesses, and circular thermal memory.
+- **Technique**: Procedural kiln monitor animation with pulsing thermal rings, witness tiles, melting glaze drips, pyrometric cone bend markers, ash motes, and firing telemetry traces. 10s 4K/60fps MP4.
+- **Description**: A dark kiln chamber fills with amber heat rings while ceramic witness tiles and cones shift through the firing cycle. The work turns glaze melt and cone deformation into a precise nocturnal pyrometry display.
+
 ## library_stack_luminance
 
 - **Date**: 2026-05-26

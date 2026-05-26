@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## rail_interlocking_memory
+
+- **Date**: 2026-05-26
+- **Theme**: A night signal cabinet remembers every permitted route as relay light moving through a rail schematic.
+- **Technique**: Procedural rail interlocking board with route-lock edges, track-circuit nodes, moving scan beam, relay occupancy blocks, sparse electrical dust, and cyan/green/amber/red signal states. 10s 4K/60fps MP4.
+- **Description**: A graphite control panel holds a rail network schematic where glowing route locks and relay pulses move between signal nodes. The work turns railway safety logic into a restrained nocturnal memory board.
+
 ## jacquard_signal_weave
 
 - **Date**: 2026-05-26

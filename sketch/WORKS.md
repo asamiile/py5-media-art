@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## greenhouse_stomata_clock
+
+- **Date**: 2026-05-26
+- **Theme**: A greenhouse monitor watches leaf pores open and close as climate control becomes a living clock.
+- **Technique**: Procedural overhead crop-bed animation with leaf silhouettes, animated stomata apertures, moving light curtain, mist particles, and CO2/humidity/light telemetry traces. 10s 4K/60fps MP4.
+- **Description**: Dark green leaves fill a monitored greenhouse bed while cyan stomata pulses open under a scanning light curtain. Telemetry traces for CO2, humidity, light, vapor pressure, and temperature translate plant breathing into a precise climate-control display.
+
 ## radiosonde_wind_profile
 
 - **Date**: 2026-05-26

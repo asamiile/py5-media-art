@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## orbital_debris_cloud_tracker
+
+- **Date**: 2026-05-26
+- **Theme**: A procedural radar scope tracking tens of thousands of space debris fragments orbiting in a massive 3D cloud.
+- **Technique**: Uses py5.points() with numpy vectorization to handle 45,000 points in real-time, grouped into orbital shells based on Keplerian distribution. Points are colored based on proximity and velocity to simulate critical alerts.
+- **Description**: A dense cloud of cyan and dim green particles orbits a central black occlusion sphere, representing Earth. Fast-moving inner fragments are highlighted in amber. A HUD overlay tracks object count, sweep angle, and critical proximity alerts.
+
 ## iridescent_membrane_waves
 
 - **Date**: 2026-05-26

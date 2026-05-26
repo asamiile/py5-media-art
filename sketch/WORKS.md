@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## tidal_marsh_carbon_flux
+
+- **Date**: 2026-05-26
+- **Theme**: A salt marsh breathes carbon through roots, sediment, and tide pulses.
+- **Technique**: Procedural marsh cross-section animation with layered peat strata, moving tide height, swaying stems, root flux lines, carbon bubbles, and biogeochemical telemetry traces. 10s 4K/60fps MP4.
+- **Description**: A dark marsh section fills with cyan tide bands, green stems, and glowing root respiration paths while bubbles rise through peat layers. The work turns sediment carbon exchange into a quiet ecological instrument display.
+
 ## subway_platform_airflow
 
 - **Date**: 2026-05-26

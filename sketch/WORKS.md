@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## jacquard_signal_weave
+
+- **Date**: 2026-05-26
+- **Theme**: A loom reads punched-card memory and turns control logic into a living woven signal.
+- **Technique**: Procedural Jacquard loom animation with moving punched-card holes, lifted warp threads, partial weft passes, shuttle motion, interlaced motif markers, and drifting lint. 10s 4K/60fps MP4.
+- **Description**: A dark loom bed fills with vertical warp threads and advancing weft passes while a punched-card strip scrolls above. Cyan, amber, mulberry, and indigo signal threads reveal the hidden lift map, making textile machinery feel like an early computational display.
+
 ## archive_microfiche_drift
 
 - **Date**: 2026-05-26

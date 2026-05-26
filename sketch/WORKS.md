@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## diel_migration_sonar
+
+- **Date**: 2026-05-26
+- **Theme**: A living deep-ocean scattering layer rises through darkness as if the water column is breathing.
+- **Technique**: Procedural sonar animation with a seamless diel migration curve, sine-folded organism density bands, sweeping acoustic rings, diagnostic signal traces, and restrained blue-green bioluminescent particles. 10s 4K/60fps MP4.
+- **Description**: A dark sonar field reveals thousands of cyan and green organisms drifting upward in a dense horizontal layer while acoustic sweep lines pass through the water. Small amber and coral signals flicker inside the migration cloud, turning nocturnal ocean ecology into a precise, luminous instrument display.
+
 ## optical_illusion_3d_moire_spheres
 
 - **Date**: 2026-05-25

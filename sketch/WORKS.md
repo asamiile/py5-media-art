@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## library_stack_luminance
+
+- **Date**: 2026-05-26
+- **Theme**: A quiet library stack remembers circulation as shelf light, call numbers, and scanner traces.
+- **Technique**: Procedural shelf animation with dense book rows, shifting call-number color blocks, moving scanner beam, checkout arcs, dust, and environmental trace panel. 10s 4K/60fps MP4.
+- **Description**: Rows of muted books glow under a cyan shelf scan while circulation traces arc from the stacks into a side panel. The piece turns library movement and call-number order into a quiet luminous memory system.
+
 ## greenhouse_stomata_clock
 
 - **Date**: 2026-05-26

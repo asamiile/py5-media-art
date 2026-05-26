@@ -3,6 +3,34 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## optical_illusion_3d_moire_spheres
+
+- **Date**: 2026-05-25
+- **Theme**: Two intersecting spherical cages of high-frequency lines slowly rotating to create mind-bending 3D Moiré interference patterns.
+- **Technique**: Two concentric, dense wireframe spheres (longitude/latitude lines). One rotates slightly faster and on a different axis than the other. When rendered with additive blending, the overlapping lines create massive, moving interference bands.
+- **Description**: A minimal optical illusion where overlapping geometric lines create the perception of swirling, macroscopic waves that don't actually exist.
+
+## isometric_magnetic_flow_lattice
+
+- **Date**: 2026-05-25
+- **Theme**: A massive geometric lattice channeling invisible magnetic streams in isometric projection.
+- **Technique**: Isometric 3D particle simulation where particles are constrained to grid axes but swept along a magnetic vector field, leaving geometric, neon laser-like trails.
+- **Description**: Thousands of glowing particles forge sharp, right-angled paths through space, building a dense, glowing cybernetic grid in a dark void.
+
+## abstract_cellular_growth_nodes
+
+- **Date**: 2026-05-25
+- **Theme**: Organic alien cells linking together and pulsating in a microscopic dark ecosystem.
+- **Technique**: 2D N-body physics simulation using springs with distance constraints to simulate cell division and membrane bonding, connected by semi-transparent pulsating webbing.
+- **Description**: Bioluminescent cells swarm and link together with glowing cyan webbing in a dark teal environment.
+
+## neon_memory_corruption_rings
+
+- **Date**: 2026-05-25
+- **Theme**: Corrupted memory addresses reading as shifting topological rings in a cybernetic dream.
+- **Technique**: Parametric 3D rings that distort with high-frequency 1D Perlin noise and chromatic aberration. Rendered in P3D with additive blending and motion blur.
+- **Description**: Spinning, glitching rings of neon light breaking apart in a dark void.
+
 ## generative_kaleidoscopic_glass_tunnel
 
 - **Date**: 2026-05-24
@@ -3137,3 +3165,31 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Theme**: Artificial life, emergent behavior, microscopic organisms, cells, particle physics, chemistry.
 - **Technique**: Simulates 2,500 particles divided into 4 color "species". The behavior is governed by a 4x4 interaction matrix of attraction and repulsion forces, optimized using NumPy vectorization. The values in the interaction matrix slowly oscillate over time using 2D Perlin noise, causing the ecosystem to continuously transition between chaotic swarms and structured cells. Rendered in 4K with additive blending.
 - **Description**: A vibrant, microscopic petri dish of artificial life. Four distinct species of brightly colored particles dance and swarm together, constantly forming temporary cell-like structures, wriggling worms, and crystalline clusters before dissolving back into a chaotic soup as the laws of their physics continuously mutate.
+
+## geometric_interference_bloom_3d
+
+- **Date**: 2026-05-25
+- **Theme**: A microscopic view of an artificial geometric bloom.
+- **Technique**: Concentric 3D polygons scaling and rotating via a 2D interference ripple, rendered with additive blending.
+- **Description**: A mesmerizing animation of concentric 3D polygons that bloom and ripple rhythmically. As the shapes scale and rotate, the sine wave interference patterns combine with additive blending to create a radiant, microscopic floral structure that breathes gracefully over time.
+
+## abstract_neon_plasma_tornado
+
+- **Date**: 2026-05-25
+- **Theme**: A hyper-energetic, contained digital storm tearing through a dark void.
+- **Technique**: thousands of additive-blended points mapped to a cylindrical vector flow field (vortex equation).
+- **Description**: A swirling volumetric tornado of neon plasma particles constructed from mathematical vector flow fields mapping to a 3D vortex. The particles spiral inward and upward, driven by an invisible force, leaving a glowing trail that builds a massive kinetic cyclone of light.
+
+## kinetic_wireframe_ocean_3d
+
+- **Date**: 2026-05-25
+- **Theme**: A neon digital wireframe ocean under a dark cybernetic sky.
+- **Technique**: A dense 2D grid mapped to a scrolling 3D Perlin noise field, rendered strictly as `LINES` and `POINTS` (no faces), with wave peaks glowing intensely using additive blending.
+- **Description**: A vast, scrolling 3D wireframe landscape that ripples with geometric interference waves. The simulation acts as a digital ocean made of rigid lines, endlessly advancing toward the camera while glowing wave peaks create hypnotic depth and movement in a dark void.
+
+## sumi_ink_dissolution
+
+- **Date**: 2026-05-25
+- **Theme**: The ephemeral beauty of ink surrendering to water — watching structure dissolve into ghostly plumes that curl, branch, and disappear on warm parchment.
+- **Technique**: 2D diffusion-advection simulation on a 960×540 grid with curl-noise advection, Laplacian diffusion, semi-Lagrangian transport, and 4 substeps per frame. Four-zone weighted color mapping (parchment → sepia → indigo → sumi black) with Gaussian paper texture. 15s 4K/60fps MP4.
+- **Description**: Drops of dark ink bloom on warm parchment, stretching into organic tendrils driven by invisible swirling currents. The ink dissolves through sepia mid-tones and deep indigo before fading into ghostly wisps — a digital sumi-e that inverts the collection's typical dark-background aesthetic into a quiet, contemplative ink wash.

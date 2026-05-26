@@ -4,6 +4,26 @@
 Agents MUST NOT write anything in the `Comment` field. When registering a new work, Agents must leave the `Rating` and `Comment` fields empty or with their default labels as placeholders for the user.
 The Artist reads this file before starting a new sketch to understand preferences.
 
+## optical_illusion_3d_moire_spheres
+
+- **Rating**: 
+- **Comment**: 
+
+## isometric_magnetic_flow_lattice
+
+- **Rating**: 
+- **Comment**: 
+
+## abstract_cellular_growth_nodes
+
+- **Rating**: 
+- **Comment**: 
+
+## neon_memory_corruption_rings
+
+- **Rating**: 
+- **Comment**: 
+
 ## generative_kaleidoscopic_glass_tunnel
 
 - **Rating**: 
@@ -2182,4 +2202,24 @@ Add any notes on color, density, theme, or mood in the Comment field.
 ## lenia_morphogenesis
 
 - **Rating**: OK.
+- **Comment**: 
+
+## geometric_interference_bloom_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## abstract_neon_plasma_tornado
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_wireframe_ocean_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## sumi_ink_dissolution
+
+- **Rating**: 
 - **Comment**: 

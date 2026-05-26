@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## subway_platform_airflow
+
+- **Date**: 2026-05-26
+- **Theme**: A subway platform reveals train arrivals as pressure waves, ventilation currents, and particulate traces.
+- **Technique**: Procedural station cross-section animation with moving train body, airflow streamlines, platform figures, particulate motes, ventilation scan beam, and PM/CO2/temperature/fan telemetry. 10s 4K/60fps MP4.
+- **Description**: A dark station section fills with cyan, amber, and green airflow lines as a train pressure pulse passes through columns, platform figures, and track space. Sensor traces turn public transit air movement into a precise environmental map.
+
 ## kiln_pyrometry_rings
 
 - **Date**: 2026-05-26

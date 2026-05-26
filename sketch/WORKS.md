@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## archive_microfiche_drift
+
+- **Date**: 2026-05-26
+- **Theme**: Forgotten records drift through a scanner gate, turning bureaucratic memory into a phosphor-lit current.
+- **Technique**: Procedural archival scanner animation with layered skewed microfiche cards, unreadable microtext rows, registration notches, moving scan beam, drifting dust and scratches, and bottom signal waveforms. 10s 4K/60fps MP4.
+- **Description**: Dark green film cards slide through a quiet scanner bed while phosphor microtext, amber index marks, and aged cream scratches pass under a vertical scan gate. The piece turns archival decay and machine registration into a restrained luminous drift.
+
 ## annealing_glass_stress
 
 - **Date**: 2026-05-26

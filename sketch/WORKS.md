@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## radiosonde_wind_profile
+
+- **Date**: 2026-05-26
+- **Theme**: A weather balloon translates a dark atmosphere into pressure, wind, and temperature memory.
+- **Technique**: Procedural atmospheric sounding chart with skewed pressure layers, animated temperature/dewpoint traces, rising balloon path, wind barbs, drifting moisture patches, and telemetry waveform panel. 10s 4K/60fps MP4.
+- **Description**: A dark upper-air chart glows with cyan, magenta, and amber profile curves while a balloon ascends through pressure levels. Wind barbs and telemetry traces turn invisible vertical atmosphere into a precise nocturnal instrument display.
+
 ## rail_interlocking_memory
 
 - **Date**: 2026-05-26

@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## tectonic_strain_topography
+
+- **Date**: 2026-05-26
+- **Theme**: A dynamic 3D topographic map showing shifting fault lines and stress accumulation, glowing in thermal reds and cool blues.
+- **Technique**: Uses a 3D py5.QUAD_STRIP mesh deformed by py5.noise() for the base terrain. A central fault line is animated using a sine wave offset, splitting the mesh into two dynamically shifting tectonic plates. The color and lighting adapt dynamically to the simulated strain (shift magnitude) to highlight areas of high stress.
+- **Description**: A dark void features a floating segment of rugged terrain colored in deep blues and vivid purples. A jagged trench runs down the center, representing an active fault line. The two landmasses rhythmically grind against each other back and forth, causing the strain heat (bright red and yellow) to peak at maximum displacement.
+
 ## orbital_debris_cloud_tracker
 
 - **Date**: 2026-05-26

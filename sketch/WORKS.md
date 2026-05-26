@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## iridescent_membrane_waves
+
+- **Date**: 2026-05-26
+- **Theme**: A thin luminescent membrane suspended in darkness, rippling with standing wave interference and thin-film color shifts.
+- **Technique**: High-performance 2D wave equation simulation with interactive wave sources, mapped to a 3D QUAD_STRIP mesh. Surface colors are calculated using a thin-film interference simulation mapping normalized displacement to oscillating RGB values. 15s 4K/60fps MP4.
+- **Description**: A dark teal void contains a massive glowing liquid membrane. As invisible drops strike the surface, ripples propagate outward, causing the geometry to physically warp. The varying thickness of the membrane creates striking, iridescent pools of rose-gold, electric white, and teal-violet that dance dynamically as the waves intersect.
+
 ## water_treatment_clarifier
 
 - **Date**: 2026-05-26

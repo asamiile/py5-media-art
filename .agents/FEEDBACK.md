@@ -4,6 +4,81 @@
 Agents MUST NOT write anything in the `Comment` field. When registering a new work, Agents must leave the `Rating` and `Comment` fields empty or with their default labels as placeholders for the user.
 The Artist reads this file before starting a new sketch to understand preferences.
 
+## tectonic_strain_topography
+
+- **Rating**: 
+- **Comment**: 
+
+## orbital_debris_cloud_tracker
+
+- **Rating**: 
+- **Comment**: 
+
+## iridescent_membrane_waves
+
+- **Rating**: 
+- **Comment**: 
+
+## water_treatment_clarifier
+
+- **Rating**: 
+- **Comment**: 
+
+## tidal_marsh_carbon_flux
+
+- **Rating**: 
+- **Comment**: 
+
+## subway_platform_airflow
+
+- **Rating**: 
+- **Comment**: 
+
+## kiln_pyrometry_rings
+
+- **Rating**: 
+- **Comment**: 
+
+## library_stack_luminance
+
+- **Rating**: 
+- **Comment**: 
+
+## greenhouse_stomata_clock
+
+- **Rating**: 
+- **Comment**: 
+
+## radiosonde_wind_profile
+
+- **Rating**: 
+- **Comment**: 
+
+## rail_interlocking_memory
+
+- **Rating**: 
+- **Comment**: 
+
+## jacquard_signal_weave
+
+- **Rating**: 
+- **Comment**: 
+
+## archive_microfiche_drift
+
+- **Rating**: 
+- **Comment**: 
+
+## annealing_glass_stress
+
+- **Rating**: 
+- **Comment**: 
+
+## diel_migration_sonar
+
+- **Rating**: 
+- **Comment**: 
+
 ## optical_illusion_3d_moire_spheres
 
 - **Rating**: 

@@ -3,6 +3,111 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## tectonic_strain_topography
+
+- **Date**: 2026-05-26
+- **Theme**: A dynamic 3D topographic map showing shifting fault lines and stress accumulation, glowing in thermal reds and cool blues.
+- **Technique**: Uses a 3D py5.QUAD_STRIP mesh deformed by py5.noise() for the base terrain. A central fault line is animated using a sine wave offset, splitting the mesh into two dynamically shifting tectonic plates. The color and lighting adapt dynamically to the simulated strain (shift magnitude) to highlight areas of high stress.
+- **Description**: A dark void features a floating segment of rugged terrain colored in deep blues and vivid purples. A jagged trench runs down the center, representing an active fault line. The two landmasses rhythmically grind against each other back and forth, causing the strain heat (bright red and yellow) to peak at maximum displacement.
+
+## orbital_debris_cloud_tracker
+
+- **Date**: 2026-05-26
+- **Theme**: A procedural radar scope tracking tens of thousands of space debris fragments orbiting in a massive 3D cloud.
+- **Technique**: Uses py5.points() with numpy vectorization to handle 45,000 points in real-time, grouped into orbital shells based on Keplerian distribution. Points are colored based on proximity and velocity to simulate critical alerts.
+- **Description**: A dense cloud of cyan and dim green particles orbits a central black occlusion sphere, representing Earth. Fast-moving inner fragments are highlighted in amber. A HUD overlay tracks object count, sweep angle, and critical proximity alerts.
+
+## iridescent_membrane_waves
+
+- **Date**: 2026-05-26
+- **Theme**: A thin luminescent membrane suspended in darkness, rippling with standing wave interference and thin-film color shifts.
+- **Technique**: High-performance 2D wave equation simulation with interactive wave sources, mapped to a 3D QUAD_STRIP mesh. Surface colors are calculated using a thin-film interference simulation mapping normalized displacement to oscillating RGB values. 15s 4K/60fps MP4.
+- **Description**: A dark teal void contains a massive glowing liquid membrane. As invisible drops strike the surface, ripples propagate outward, causing the geometry to physically warp. The varying thickness of the membrane creates striking, iridescent pools of rose-gold, electric white, and teal-violet that dance dynamically as the waves intersect.
+
+## water_treatment_clarifier
+
+- **Date**: 2026-05-26
+- **Theme**: A wastewater clarifier translates settling floc and rake motion into process telemetry.
+- **Technique**: Headless procedural animation with elliptical tank geometry, rotating rake arms, drifting floc particles, settling-depth modulation, and turbidity trace panels. 10s 4K/60fps MP4.
+- **Description**: Blue-green water bands rotate inside a concrete clarifier while amber and pale floc particles settle through the basin. The work treats treatment infrastructure as a quiet kinetic diagram where process control becomes visual rhythm.
+
+## tidal_marsh_carbon_flux
+
+- **Date**: 2026-05-26
+- **Theme**: A salt marsh breathes carbon through roots, sediment, and tide pulses.
+- **Technique**: Procedural marsh cross-section animation with layered peat strata, moving tide height, swaying stems, root flux lines, carbon bubbles, and biogeochemical telemetry traces. 10s 4K/60fps MP4.
+- **Description**: A dark marsh section fills with cyan tide bands, green stems, and glowing root respiration paths while bubbles rise through peat layers. The work turns sediment carbon exchange into a quiet ecological instrument display.
+
+## subway_platform_airflow
+
+- **Date**: 2026-05-26
+- **Theme**: A subway platform reveals train arrivals as pressure waves, ventilation currents, and particulate traces.
+- **Technique**: Procedural station cross-section animation with moving train body, airflow streamlines, platform figures, particulate motes, ventilation scan beam, and PM/CO2/temperature/fan telemetry. 10s 4K/60fps MP4.
+- **Description**: A dark station section fills with cyan, amber, and green airflow lines as a train pressure pulse passes through columns, platform figures, and track space. Sensor traces turn public transit air movement into a precise environmental map.
+
+## kiln_pyrometry_rings
+
+- **Date**: 2026-05-26
+- **Theme**: A ceramic kiln records heat as bending cones, glaze witnesses, and circular thermal memory.
+- **Technique**: Procedural kiln monitor animation with pulsing thermal rings, witness tiles, melting glaze drips, pyrometric cone bend markers, ash motes, and firing telemetry traces. 10s 4K/60fps MP4.
+- **Description**: A dark kiln chamber fills with amber heat rings while ceramic witness tiles and cones shift through the firing cycle. The work turns glaze melt and cone deformation into a precise nocturnal pyrometry display.
+
+## library_stack_luminance
+
+- **Date**: 2026-05-26
+- **Theme**: A quiet library stack remembers circulation as shelf light, call numbers, and scanner traces.
+- **Technique**: Procedural shelf animation with dense book rows, shifting call-number color blocks, moving scanner beam, checkout arcs, dust, and environmental trace panel. 10s 4K/60fps MP4.
+- **Description**: Rows of muted books glow under a cyan shelf scan while circulation traces arc from the stacks into a side panel. The piece turns library movement and call-number order into a quiet luminous memory system.
+
+## greenhouse_stomata_clock
+
+- **Date**: 2026-05-26
+- **Theme**: A greenhouse monitor watches leaf pores open and close as climate control becomes a living clock.
+- **Technique**: Procedural overhead crop-bed animation with leaf silhouettes, animated stomata apertures, moving light curtain, mist particles, and CO2/humidity/light telemetry traces. 10s 4K/60fps MP4.
+- **Description**: Dark green leaves fill a monitored greenhouse bed while cyan stomata pulses open under a scanning light curtain. Telemetry traces for CO2, humidity, light, vapor pressure, and temperature translate plant breathing into a precise climate-control display.
+
+## radiosonde_wind_profile
+
+- **Date**: 2026-05-26
+- **Theme**: A weather balloon translates a dark atmosphere into pressure, wind, and temperature memory.
+- **Technique**: Procedural atmospheric sounding chart with skewed pressure layers, animated temperature/dewpoint traces, rising balloon path, wind barbs, drifting moisture patches, and telemetry waveform panel. 10s 4K/60fps MP4.
+- **Description**: A dark upper-air chart glows with cyan, magenta, and amber profile curves while a balloon ascends through pressure levels. Wind barbs and telemetry traces turn invisible vertical atmosphere into a precise nocturnal instrument display.
+
+## rail_interlocking_memory
+
+- **Date**: 2026-05-26
+- **Theme**: A night signal cabinet remembers every permitted route as relay light moving through a rail schematic.
+- **Technique**: Procedural rail interlocking board with route-lock edges, track-circuit nodes, moving scan beam, relay occupancy blocks, sparse electrical dust, and cyan/green/amber/red signal states. 10s 4K/60fps MP4.
+- **Description**: A graphite control panel holds a rail network schematic where glowing route locks and relay pulses move between signal nodes. The work turns railway safety logic into a restrained nocturnal memory board.
+
+## jacquard_signal_weave
+
+- **Date**: 2026-05-26
+- **Theme**: A loom reads punched-card memory and turns control logic into a living woven signal.
+- **Technique**: Procedural Jacquard loom animation with moving punched-card holes, lifted warp threads, partial weft passes, shuttle motion, interlaced motif markers, and drifting lint. 10s 4K/60fps MP4.
+- **Description**: A dark loom bed fills with vertical warp threads and advancing weft passes while a punched-card strip scrolls above. Cyan, amber, mulberry, and indigo signal threads reveal the hidden lift map, making textile machinery feel like an early computational display.
+
+## archive_microfiche_drift
+
+- **Date**: 2026-05-26
+- **Theme**: Forgotten records drift through a scanner gate, turning bureaucratic memory into a phosphor-lit current.
+- **Technique**: Procedural archival scanner animation with layered skewed microfiche cards, unreadable microtext rows, registration notches, moving scan beam, drifting dust and scratches, and bottom signal waveforms. 10s 4K/60fps MP4.
+- **Description**: Dark green film cards slide through a quiet scanner bed while phosphor microtext, amber index marks, and aged cream scratches pass under a vertical scan gate. The piece turns archival decay and machine registration into a restrained luminous drift.
+
+## annealing_glass_stress
+
+- **Date**: 2026-05-26
+- **Theme**: Invisible thermal stress in moving glass sheets becomes visible as a quiet factory ritual.
+- **Technique**: Procedural crossed-polarizer animation with moving glass panes, layered stress-contour waves, annealing heat-zone glows, roller motion, crack-seed highlights, and diagnostic meters. 10s 4K/60fps MP4.
+- **Description**: Translucent panes slide through a dark annealing line while cyan, violet, and amber birefringence contours ripple through the glass. The scene turns manufacturing tolerance into a restrained luminous instrument, with rollers and heat columns framing the material as it relaxes.
+
+## diel_migration_sonar
+
+- **Date**: 2026-05-26
+- **Theme**: A living deep-ocean scattering layer rises through darkness as if the water column is breathing.
+- **Technique**: Procedural sonar animation with a seamless diel migration curve, sine-folded organism density bands, sweeping acoustic rings, diagnostic signal traces, and restrained blue-green bioluminescent particles. 10s 4K/60fps MP4.
+- **Description**: A dark sonar field reveals thousands of cyan and green organisms drifting upward in a dense horizontal layer while acoustic sweep lines pass through the water. Small amber and coral signals flicker inside the migration cloud, turning nocturnal ocean ecology into a precise, luminous instrument display.
+
 ## optical_illusion_3d_moire_spheres
 
 - **Date**: 2026-05-25

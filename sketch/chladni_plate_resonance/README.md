@@ -1,13 +1,6 @@
 # chladni_plate_resonance
 
-A brass plate vibrating at multiple shifting resonant frequencies, causing golden sand particles to dance and gather along the intricate, shifting nodal lines.
-
-## Technical Details
-
-- **Type**: Animation (15s @ 60fps)
-- **Algorithm**: 2D particle simulation (150,000 particles) using the Chladni resonance equation $Z(x,y) = \sin(n \pi x) \sin(m \pi y) + \sin(m \pi x) \sin(n \pi y)$. Particles are advected toward the nodal lines where $Z \approx 0$ by moving along the negative gradient of $|Z|^2$.
-- **Rendering**: Multi-pass additive point rendering using `py5.points` with a "Brass / Gold / Amber" HSB palette against a dark slate background to simulate motion blur and accumulation.
-
-## Preview
-
-![Preview](chladni_plate_resonance_p1.png)
+- **Date**: 2026-05-27
+- **Theme**: A simulation of a vibrating metal plate covered in thousands of glowing particles that fluidly rearrange themselves into complex geometric standing wave patterns (nodes).
+- **Technique**: A 2D particle system. Particles move down the gradient (towards 0) of the Chladni function `abs(sin(n*x)*sin(m*y) + sin(m*x)*sin(n*y))`. `n` and `m` are animated over time.
+- **Description**: An animated 2D Chladni plate resonance simulation.

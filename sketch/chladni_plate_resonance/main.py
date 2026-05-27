@@ -16,124 +16,99 @@ from lib.sizes import get_sizes
 SKETCH_DIR = sketch_dir(__file__)
 WORK_NAME = SKETCH_DIR.name
 FRAMES_DIR = SKETCH_DIR / "frames"
-DURATION_SEC = 15
+DURATION_SEC = 15  # 15s animation
 FPS = 60
 TOTAL_FRAMES = DURATION_SEC * FPS
 PREVIEW_FILENAME = f"{WORK_NAME}_p1.png"
-PREVIEW_SIZE, OUTPUT_SIZE, SIZE = get_sizes()
+PREVIEW_SIZE, OUTPUT_SIZE, _ = get_sizes()
+SIZE = OUTPUT_SIZE
 
-NUM_PARTICLES = 150000
-
-class ChladniSimulation:
-    def __init__(self, w, h, num_particles):
-        self.w = w
-        self.h = h
-        self.num_particles = num_particles
-        
-        # Position [x, y]
-        self.pos = np.random.rand(self.num_particles, 2)
-        
-        # Velocity
-        self.vel = np.zeros((self.num_particles, 2))
-        
-        # Color initialization
-        self.hue = np.random.uniform(35, 55, self.num_particles) # Gold/Amber
-        self.sat = np.random.uniform(180, 255, self.num_particles)
-        self.bri = np.random.uniform(200, 255, self.num_particles)
-        
-        # Colors packed into ARGB32
-        a = np.full(self.num_particles, 100, dtype=np.uint32)
-        r = np.full(self.num_particles, 255, dtype=np.uint32)
-        g = np.full(self.num_particles, 200, dtype=np.uint32)
-        b = np.full(self.num_particles, 100, dtype=np.uint32)
-        self.colors = (a << 24) | (r << 16) | (g << 8) | b
-        
-    def get_gradient(self, x, y, t):
-        # Time-varying parameters
-        # n transitions from 2 to 6, m transitions from 3 to 7
-        n = 3.0 + 2.0 * np.sin(t * np.pi * 2.0 + 0.0)
-        m = 4.0 + 2.0 * np.cos(t * np.pi * 2.0 * 1.5)
-        
-        px = x * np.pi
-        py = y * np.pi
-        
-        # Z = sin(n*px)*sin(m*py) + sin(m*px)*sin(n*py)
-        Z = np.sin(n * px) * np.sin(m * py) + np.sin(m * px) * np.sin(n * py)
-        
-        # dZ/dx = n*pi*cos(n*px)*sin(m*py) + m*pi*cos(m*px)*sin(n*py)
-        dZdx = n * np.pi * np.cos(n * px) * np.sin(m * py) + m * np.pi * np.cos(m * px) * np.sin(n * py)
-        
-        # dZ/dy = m*pi*sin(n*px)*cos(m*py) + n*pi*sin(m*px)*cos(n*py)
-        dZdy = m * np.pi * np.sin(n * px) * np.cos(m * py) + n * np.pi * np.sin(m * px) * np.cos(n * py)
-        
-        # grad(Z^2) = 2 * Z * grad(Z)
-        gx = 2.0 * Z * dZdx
-        gy = 2.0 * Z * dZdy
-        
-        return gx, gy
-
-    def step(self, t):
-        # Calculate gradients at particle positions
-        gx, gy = self.get_gradient(self.pos[:, 0], self.pos[:, 1], t)
-        
-        # Force pushes towards nodes (where Z^2 is minimum, so opposite to gradient)
-        # Add some noise to prevent clumping to a single point perfectly
-        force_x = -gx * 0.002 + (np.random.randn(self.num_particles) * 0.001)
-        force_y = -gy * 0.002 + (np.random.randn(self.num_particles) * 0.001)
-        
-        self.vel[:, 0] = self.vel[:, 0] * 0.9 + force_x
-        self.vel[:, 1] = self.vel[:, 1] * 0.9 + force_y
-        
-        self.pos += self.vel
-        
-        # Wrap around edges or bounce
-        out_of_bounds_x = (self.pos[:, 0] < 0) | (self.pos[:, 0] > 1)
-        out_of_bounds_y = (self.pos[:, 1] < 0) | (self.pos[:, 1] > 1)
-        
-        self.pos[out_of_bounds_x, 0] = np.random.rand(np.sum(out_of_bounds_x))
-        self.pos[out_of_bounds_x, 1] = np.random.rand(np.sum(out_of_bounds_x))
-        self.pos[out_of_bounds_y, 0] = np.random.rand(np.sum(out_of_bounds_y))
-        self.pos[out_of_bounds_y, 1] = np.random.rand(np.sum(out_of_bounds_y))
-
-sim = None
+num_particles = 30000
+px = None
+py = None
+vx = None
+vy = None
 
 def setup():
-    global sim
+    global px, py, vx, vy
     py5.size(*SIZE)
     py5.pixel_density(1)
+    py5.background(0)
+    py5.color_mode(py5.HSB, 360, 100, 100, 100)
+    py5.blend_mode(py5.ADD)
     FRAMES_DIR.mkdir(exist_ok=True)
-    py5.background(15, 20, 25)
-    sim = ChladniSimulation(py5.width, py5.height, NUM_PARTICLES)
-    py5.color_mode(py5.HSB, 360, 255, 255, 255)
+    
+    px = np.random.uniform(0, py5.width, num_particles)
+    py = np.random.uniform(0, py5.height, num_particles)
+    vx = np.zeros(num_particles)
+    vy = np.zeros(num_particles)
 
+def chladni(x, y, n, m):
+    # Map pixel coords to -1..1
+    nx = py5.remap(x, 0, py5.width, -1, 1)
+    ny = py5.remap(y, 0, py5.height, -1, 1)
+    
+    val = np.sin(n * py5.PI * nx) * np.sin(m * py5.PI * ny) + \
+          np.sin(m * py5.PI * nx) * np.sin(n * py5.PI * ny)
+    return np.abs(val)
 
 def draw():
-    global sim
+    global px, py, vx, vy
     
-    # Fade background slightly for motion blur
-    py5.no_stroke()
-    py5.fill(15, 20, 25, 30)
-    py5.rect(0, 0, py5.width, py5.height)
-    
-    t = py5.frame_count / TOTAL_FRAMES
-    sim.step(t)
-    
-    # Render particles directly using py5.points()
-    px = sim.pos[:, 0] * py5.width
-    py = sim.pos[:, 1] * py5.height
-    points_array = np.column_stack((px, py))
-    
-    py5.blend_mode(py5.ADD)
-    py5.stroke_weight(1.5)
-    
-    # We can draw all points with a single color for performance, 
-    # relying on the additive blending to create intensity.
-    py5.stroke(45, 200, 255, 100) # Amber color with some transparency
-    py5.points(points_array)
-    
+    # Fade trail
     py5.blend_mode(py5.BLEND)
+    py5.fill(0, 0, 0, 15)
+    py5.no_stroke()
+    py5.rect(0, 0, py5.width, py5.height)
+    py5.blend_mode(py5.ADD)
     
+    time = py5.frame_count * 0.01
+    
+    # Animate resonance frequencies
+    n = py5.remap(np.sin(time * 0.5), -1, 1, 2, 7)
+    m = py5.remap(np.cos(time * 0.3), -1, 1, 3, 8)
+    
+    # Calculate gradient via finite difference
+    eps = 1.0
+    val_center = chladni(px, py, n, m)
+    val_right = chladni(px + eps, py, n, m)
+    val_top = chladni(px, py + eps, n, m)
+    
+    grad_x = (val_right - val_center) / eps
+    grad_y = (val_top - val_center) / eps
+    
+    # Particles move towards 0 (so down the gradient)
+    force_x = -grad_x * 50.0
+    force_y = -grad_y * 50.0
+    
+    # Add some random noise to break them out of local minima
+    noise_force_x = np.random.uniform(-0.5, 0.5, num_particles)
+    noise_force_y = np.random.uniform(-0.5, 0.5, num_particles)
+    
+    vx = vx * 0.8 + force_x + noise_force_x
+    vy = vy * 0.8 + force_y + noise_force_y
+    
+    px += vx
+    py += vy
+    
+    # Wrap around
+    px = np.mod(px, py5.width)
+    py = np.mod(py, py5.height)
+    
+    # Draw
+    py5.stroke(40, 80, 50, 40) # Amber/Gold
+    py5.stroke_weight(2)
+    py5.points(np.column_stack((px, py)))
+
     py5.save_frame(str(FRAMES_DIR / "frame-####.png"))
+
+    # Fail-safe: abort if nothing is drawn
+    if py5.frame_count == 2:
+        py5.load_np_pixels()
+        if py5.np_pixels.std() == 0:
+            print("[Error] Blank screen detected on frame 2 (std=0). Aborting.")
+            import os
+            os._exit(1)
 
     if py5.frame_count % 60 == 0:
         print(f"[Render Progress] Frame {py5.frame_count}/{TOTAL_FRAMES} ({py5.frame_count/TOTAL_FRAMES*100:.1f}%)")
@@ -143,7 +118,7 @@ def draw():
         
         print(f"[Render FFmpeg] Compiling {TOTAL_FRAMES} frames into video...")
         subprocess.run([
-            "/opt/homebrew/bin/ffmpeg", "-y", "-r", str(FPS),
+            "ffmpeg", "-y", "-r", str(FPS),
             "-i", str(FRAMES_DIR / "frame-%04d.png"),
             "-vcodec", "libx264", "-pix_fmt", "yuv420p",
             str(SKETCH_DIR / f"{WORK_NAME}.mp4"),
@@ -155,5 +130,8 @@ def draw():
         if FRAMES_DIR.exists():
             shutil.rmtree(FRAMES_DIR)
             print("[Render Cleanup] Temporary frames directory successfully removed.")
+            
+        import os
+        os._exit(0)
 
 py5.run_sketch()

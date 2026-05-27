@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## chladni_plate_resonance
+
+- **Date**: 2026-05-27
+- **Theme**: A simulation of a vibrating metal plate covered in thousands of glowing particles that fluidly rearrange themselves into complex geometric standing wave patterns (nodes).
+- **Technique**: A 2D particle system. Particles move down the gradient (towards 0) of the Chladni function `abs(sin(n*x)*sin(m*y) + sin(m*x)*sin(n*y))`. `n` and `m` are animated over time.
+- **Description**: An animated 2D Chladni plate resonance simulation.
+
 ## digital_glitch_topography
 
 - **Date**: 2026-05-27

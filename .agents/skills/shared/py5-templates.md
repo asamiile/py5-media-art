@@ -33,6 +33,14 @@ def setup():
 
 def draw():
     # drawing logic
+    
+    if py5.frame_count == PREVIEW_FRAME:
+        py5.load_np_pixels()
+        if py5.np_pixels.std() == 0:
+            print("[Error] Blank screen detected (std=0). Aborting.")
+            import os
+            os._exit(1)
+
     maybe_save_exit_on_frame(PREVIEW_FRAME, SKETCH_DIR, filename=PREVIEW_FILENAME)
 
 
@@ -76,6 +84,14 @@ def setup():
 def draw():
     # drawing logic; choose intentionally whether to call background() each frame
     py5.save_frame(str(FRAMES_DIR / "frame-####.png"))
+
+    # Fail-safe: abort if nothing is drawn
+    if py5.frame_count == 2:
+        py5.load_np_pixels()
+        if py5.np_pixels.std() == 0:
+            print("[Error] Blank screen detected on frame 2 (std=0). Aborting.")
+            import os
+            os._exit(1)
 
     # Progress feedback: prevents silent timeouts and makes it clear the render is healthy
     if py5.frame_count % 60 == 0:

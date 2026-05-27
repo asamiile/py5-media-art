@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## black_hole_accretion_disk
+
+- **Date**: 2026-05-27
+- **Theme**: A glowing, ultra-hot accretion disk swirling around a dark event horizon. Particles near the center are stretched and moving incredibly fast.
+- **Technique**: A 3D particle system. Particles are generated in a flat disk with Keplerian orbits (angular velocity inversely proportional to distance). The Z coordinate is warped near the event horizon to simulate relativistic space-time curvature (gravitational lensing).
+- **Description**: An animated 3D black hole accretion disk.
+
 ## fibonacci_lattice_sphere_3d
 
 - **Date**: 2026-05-27

@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## strange_attractor_clifford_morph_2d
+
+- **Date**: 2026-05-28
+- **Theme**: A high-density render of a Clifford strange attractor (a classic chaotic mathematical system) that slowly morphs its parameters over time, sweeping through a vast range of delicate, intricate butterfly-like patterns.
+- **Technique**: Point cloud rendering (millions of points calculated iteratively). Because py5 python loops are slow, we will use numpy vectorization to compute the Clifford attractor equations iteratively over large batches of coordinates, then draw them to the screen using py5.points() or similar array drawing. The parameters (a, b, c, d) slowly interpolate using sine functions.
+- **Description**: An animated glowing high-density Clifford strange attractor morphing over time.
+
 ## stochastic_lissajous_web_3d
 
 - **Date**: 2026-05-28

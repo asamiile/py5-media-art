@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## quantum_flux_lattice_3d
+
+- **Date**: 2026-05-28
+- **Theme**: A microscopic view of quantum flux pinning in a type-II superconductor. Vortices of magnetic flux form a perfect Abrikosov lattice that twists and distorts under a simulated thermal gradient.
+- **Technique**: A 3D isometric view of glowing hexagonal lattice pillars representing flux tubes. The height and color of each pillar are modulated by 3D Perlin noise to represent thermal fluctuations. The lattice overall rotates and pulses.
+- **Description**: An animated 3D quantum flux lattice.
+
 ## cymatic_plasma_resonator_3d
 
 - **Date**: 2026-05-28

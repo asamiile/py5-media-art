@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## digital_mycelium_network_3d
+
+- **Date**: 2026-05-28
+- **Theme**: A microscopic 3D view of glowing, fungal-like mycelium threads spreading and branching across an invisible structure, forming a dense biological network.
+- **Technique**: A 3D system using a random walk / differential growth algorithm. Connections are drawn as additive blended lines that grow over time. The camera rotates slowly over the structure.
+- **Description**: An animated 3D network of growing digital mycelium.
+
 ## cybernetic_data_stream_glitch_matrix_2d
 
 - **Date**: 2026-05-28

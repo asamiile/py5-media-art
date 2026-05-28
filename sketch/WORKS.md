@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## sacred_geometry_mandala_morph_2d
+
+- **Date**: 2026-05-28
+- **Theme**: A hypnotic, symmetrical 2D mandala based on sacred geometry that smoothly morphs and evolves its petal structures over time.
+- **Technique**: Procedural drawing using polar coordinates, recursive petal shapes, and `bezierVertex()` for smooth curves. Color palette shifts continuously.
+- **Description**: An animated 2D sacred geometry mandala morph.
+
 ## strange_attractor_particle_swarm_3d
 
 - **Date**: 2026-05-28

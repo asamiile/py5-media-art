@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## sacred_mandala_particle_emitter_2d
+
+- **Date**: 2026-05-28
+- **Theme**: A hypnotic, symmetrical 2D mandala formed by millions of glowing particles emitted from the center and flowing outward along complex parametric pathways dictated by trig functions.
+- **Technique**: Particle system with radial symmetry. Emitters at the center spawn particles with velocities determined by polar functions `r = f(theta)`. Use numpy for fast particle updates (position, velocity, lifetime). Render using `py5.points()` with additive blending to create a glowing effect.
+- **Description**: An animated glowing 2D particle mandala.
+
 ## cybernetic_grid_displacement_3d
 
 - **Date**: 2026-05-28

@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## stochastic_reaction_diffusion_cellular_growth_3d
+
+- **Date**: 2026-05-28
+- **Theme**: Simulating a 3D growth pattern based on reaction-diffusion principles, but visualized as interconnected growing cells (spheres or cubes) in 3D space, which change color and size based on the concentration of chemicals.
+- **Technique**: We can approximate this by generating a 3D grid, computing a simple cellular automaton or reaction-diffusion step iteratively, and rendering only the cells where concentration passes a threshold, coloring them based on the gradient. We can rotate the camera slowly around the growing structure.
+- **Description**: An animated 3D cellular growth simulation based on stochastic rules.
+
 ## sacred_mandala_particle_emitter_2d
 
 - **Date**: 2026-05-28

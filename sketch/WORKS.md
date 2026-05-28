@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## strange_attractor_particle_swarm_3d
+
+- **Date**: 2026-05-28
+- **Theme**: Simulating a Lorentz-like strange attractor where a massive swarm of particles trace chaotic orbits, slowly evolving and revealing the attractor's butterfly-like geometry over time.
+- **Technique**: Particle system governed by differential equations of the Lorenz system. Thousands of particles with glowing trails.
+- **Description**: An animated 3D strange attractor particle swarm.
+
 ## algorithmic_cityscape_wireframe_3d
 
 - **Date**: 2026-05-28

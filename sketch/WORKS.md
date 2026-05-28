@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## hyperbolic_tessellation_zoom_2d
+
+- **Date**: 2026-05-28
+- **Theme**: A continuous zooming animation into a Poincaré disk model, showing an infinitely repeating hyperbolic tessellation that morphs slightly.
+- **Technique**: Simulated hyperbolic math by mapping a grid of triangles onto a complex exponential map, creating an infinite zoom effect (Droste effect/Mobius transformation).
+- **Description**: An animated infinite zoom into a hyperbolic 2D tessellation.
+
 ## stochastic_reaction_diffusion_3d_slice
 
 - **Date**: 2026-05-28

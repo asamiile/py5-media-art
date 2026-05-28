@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## geometric_fractal_hypercube_4d
+
+- **Date**: 2026-05-28
+- **Theme**: A projection of a 4D tesseract (hypercube) into 3D space, rotating across both 3D axes and 4D space, creating mind-bending optical illusions as the inner cube folds outward.
+- **Technique**: 4D to 3D projection matrix math. The vertices of a tesseract are projected into 3D using perspective, then drawn as glowing lines.
+- **Description**: An animated geometric fractal hypercube in 4D.
+
 ## kinetic_metaball_isosurface_3d
 
 - **Date**: 2026-05-28

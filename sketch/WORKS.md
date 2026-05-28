@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## stochastic_reaction_diffusion_3d_slice
+
+- **Date**: 2026-05-28
+- **Theme**: A 3D slice through a simulated reaction-diffusion system (Turing patterns). The simulation runs on a 2D grid but is rendered by stacking historical states along the Z-axis, creating a 3D extrusion of the pattern evolution.
+- **Technique**: Reaction-diffusion simulation (Gray-Scott model) on a 2D grid. Save past grids in a buffer. Render the buffer as a sequence of translucent planes or a point cloud stacked in 3D, mapping concentration to opacity/color.
+- **Description**: An animated 3D point cloud of a 2D reaction-diffusion history buffer.
+
 ## kaleidoscopic_cellular_automata_2d
 
 - **Date**: 2026-05-28

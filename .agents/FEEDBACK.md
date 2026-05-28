@@ -4,6 +4,131 @@
 Agents MUST NOT write anything in the `Comment` field. When registering a new work, Agents must leave the `Rating` and `Comment` fields empty or with their default labels as placeholders for the user.
 The Artist reads this file before starting a new sketch to understand preferences.
 
+## cyber_rain_caustics
+
+- **Rating**: 
+- **Comment**: 
+
+## black_hole_accretion_disk
+
+- **Rating**: 
+- **Comment**: 
+
+## fibonacci_lattice_sphere_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## synthwave_neon_grid_horizon
+
+- **Rating**: 
+- **Comment**: 
+
+## chladni_plate_resonance
+
+- **Rating**: 
+- **Comment**: 
+
+## digital_glitch_topography
+
+- **Rating**: 
+- **Comment**: 
+
+## fbm_displaced_stellar_core
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_cube_matrix_wave
+
+- **Rating**: 
+- **Comment**: 
+
+## lissajous_knot_tracer
+
+- **Rating**: 
+- **Comment**: 
+
+## kaleidoscopic_geometry_mandala
+
+- **Rating**: 
+- **Comment**: 
+
+## cybernetic_neural_network_nodes
+
+- **Rating**: 
+- **Comment**: 
+
+## infinite_polygon_hyperspace_tunnel
+
+- **Rating**: 
+- **Comment**: 
+
+## procedural_voxel_city_pulse
+
+- **Rating**: 
+- **Comment**: 
+
+## curl_noise_particle_flow_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## l_system_bioluminescent_coral
+
+- **Rating**: 
+- **Comment**: 
+
+## strange_attractor_aizawa_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## moire_interference_waves
+
+- **Rating**: 
+- **Comment**: 
+
+## cybernetic_wireframe_topography
+
+- **Rating**: 
+- **Comment**: 
+
+## algorithmic_mandala_spirograph
+
+- **Rating**: 
+- **Comment**: 
+
+## recursive_fractal_canopy
+
+- **Rating**: 
+- **Comment**: 
+
+## perlin_flow_ribbons_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## isometric_cyber_waterfall
+
+- **Rating**: 
+- **Comment**: 
+
+## parametric_silk_weaver_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## voronoi_shatter_topology
+
+- **Rating**: 
+- **Comment**: 
+
+## superfluid_vortex_lattice_2d
+
+- **Rating**: 
+- **Comment**: 
+
 ## tectonic_strain_topography
 
 - **Rating**: 

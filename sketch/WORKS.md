@@ -3,6 +3,181 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## cyber_rain_caustics
+
+- **Date**: 2026-05-27
+- **Theme**: A stylized top-down view of glowing, neon-colored rain hitting a dark metallic surface. When a raindrop hits, it creates expanding ripples that intersect and blend additively, creating chaotic caustics.
+- **Technique**: A 2D particle system. Ripples expand over time and fade out. Rendered with additive blending and multiple rings per ripple to create intense intersections.
+- **Description**: An animated 2D cyber rain caustics simulation.
+
+## black_hole_accretion_disk
+
+- **Date**: 2026-05-27
+- **Theme**: A glowing, ultra-hot accretion disk swirling around a dark event horizon. Particles near the center are stretched and moving incredibly fast.
+- **Technique**: A 3D particle system. Particles are generated in a flat disk with Keplerian orbits (angular velocity inversely proportional to distance). The Z coordinate is warped near the event horizon to simulate relativistic space-time curvature (gravitational lensing).
+- **Description**: An animated 3D black hole accretion disk.
+
+## fibonacci_lattice_sphere_3d
+
+- **Date**: 2026-05-27
+- **Theme**: A mathematically perfect sphere made of interconnected glowing nodes placed using the Fibonacci spiral. The sphere breathes and pulsates.
+- **Technique**: A 3D mesh. Vertices are calculated using the Fibonacci sphere algorithm. Points that are close to each other in sequence are connected. The golden ratio parameter is animated to twist the spirals over time.
+- **Description**: An animated 3D fibonacci lattice sphere.
+
+## synthwave_neon_grid_horizon
+
+- **Date**: 2026-05-27
+- **Theme**: A classic synthwave/retrowave scene. A glowing neon wireframe grid rolls over a mountainous terrain toward the camera. In the background, a massive glowing sun slowly sinks or pulses.
+- **Technique**: A 3D terrain grid generated with Perlin noise. The camera is fixed low to the ground. A large 2D circle with horizontal scanline cutouts is drawn in the background. Additive blending is used.
+- **Description**: An animated 3D synthwave neon grid horizon.
+
+## chladni_plate_resonance
+
+- **Date**: 2026-05-27
+- **Theme**: A simulation of a vibrating metal plate covered in thousands of glowing particles that fluidly rearrange themselves into complex geometric standing wave patterns (nodes).
+- **Technique**: A 2D particle system. Particles move down the gradient (towards 0) of the Chladni function `abs(sin(n*x)*sin(m*y) + sin(m*x)*sin(n*y))`. `n` and `m` are animated over time.
+- **Description**: An animated 2D Chladni plate resonance simulation.
+
+## digital_glitch_topography
+
+- **Date**: 2026-05-27
+- **Theme**: A digital, retro-cyberpunk corrupted landscape. A wireframe grid terrain flies toward the camera. Extreme high-frequency noise causes sharp, jagged spikes resembling data corruption.
+- **Technique**: A 3D grid with Z-height driven by low-frequency noise (hills) combined with a high-frequency noise threshold (spikes). The scene uses additive blending to create chromatic aberration (red, green, blue color channels offset).
+- **Description**: An animated 3D digital glitch topography.
+
+## fbm_displaced_stellar_core
+
+- **Date**: 2026-05-27
+- **Theme**: A glowing, pulsing stellar core or alien sun. The surface undulates violently yet smoothly, resembling plasma.
+- **Technique**: A 3D sphere constructed from latitude and longitude loops. Each vertex's distance from the center is modulated by summing multiple octaves of 3D Perlin noise (fBm), offset by time. Rendered as a glowing point cloud.
+- **Description**: An animated 3D fbm displaced stellar core.
+
+## kinetic_cube_matrix_wave
+
+- **Date**: 2026-05-27
+- **Theme**: An isometric view of a massive field of 3D cubes. The cubes constantly rotate and scale, driven by an invisible complex wave function, looking like a kinetic sculpture.
+- **Technique**: A 2D nested loop creating instances of py5.box(). The scale, rotation, and color of each box are determined by its (x,y) index, passed through Perlin noise and sine functions mapped over time.
+- **Description**: An animated 3D kinetic cube matrix wave.
+
+## lissajous_knot_tracer
+
+- **Date**: 2026-05-27
+- **Theme**: A complex, infinitely weaving 3D ribbon tracing mathematical Lissajous knots in space.
+- **Technique**: A parametric equation combining multiple sine and cosine waves to define a 3D path. A trail of previous points is stored and drawn as a continuous glowing line segment series.
+- **Description**: An animated 3D lissajous knot tracer.
+
+## kaleidoscopic_geometry_mandala
+
+- **Date**: 2026-05-27
+- **Theme**: A mesmerizing, infinite kaleidoscope of overlapping, semi-transparent neon geometric shapes (triangles, squares, hexagons).
+- **Technique**: A nested loop of push/pop matrices that draw polygons with varying rotations and scales. The scale and rotation are modulated by sine waves and time. Additive blending is used to create bright intersections.
+- **Description**: An animated kaleidoscopic geometry mandala.
+
+## cybernetic_neural_network_nodes
+
+- **Date**: 2026-05-27
+- **Theme**: A dense, glowing network of interconnected nodes resembling a neural network. Nodes pulse with data and lines connect them based on proximity.
+- **Technique**: 2D points bouncing around the canvas with velocity and bounce logic. For every pair of points within a certain distance, a line is drawn connecting them. The line opacity and thickness depend on the distance. Additive blending creates the glowing effect.
+- **Description**: An animated 2D cybernetic neural network.
+
+## infinite_polygon_hyperspace_tunnel
+
+- **Date**: 2026-05-27
+- **Theme**: An infinite, hypnotic tunnel flight through a twisting corridor of glowing wireframe polygons.
+- **Technique**: A series of concentric polygons drawn along a 3D path. The path is warped by sine waves and Perlin noise. The polygons shift their Z-coordinates toward the camera and reset, creating an infinite loop effect.
+- **Description**: An animated 3D wireframe hyperspace tunnel.
+
+## procedural_voxel_city_pulse
+
+- **Date**: 2026-05-27
+- **Theme**: An isometric view over a glowing "voxel city" where blocks smoothly rise and fall like a pulsing cityscape.
+- **Technique**: A 2D grid of 3D boxes. The height of each box is determined by a combination of a 2D spatial sine wave and Perlin noise. The colors shift based on height and time.
+- **Description**: An animated procedural voxel city.
+
+## curl_noise_particle_flow_3d
+
+- **Date**: 2026-05-27
+- **Theme**: A dense swarm of glowing particles flowing through a 3D curl noise vector field. The trails twist and curl back on themselves, creating organic, fluid-like wisps.
+- **Technique**: Particles have position and velocity, updated continuously by reading a 3D Perlin noise field and computing the curl (the cross product of the gradient). Particles leave glowing trails using additive blending.
+- **Description**: An animated 3D curl noise particle flow.
+
+## l_system_bioluminescent_coral
+
+- **Date**: 2026-05-27
+- **Theme**: A mesmerizing and intricate bioluminescent coral growing organically through a recursive L-system. The branching structure dynamically sways as if underwater.
+- **Technique**: A 3D L-System interpreted via turtle graphics. The angle of rotation varies slightly over time using `np.sin` to simulate water currents.
+- **Description**: A 3D L-system mimicking bioluminescent coral.
+
+## strange_attractor_aizawa_3d
+
+- **Date**: 2026-05-27
+- **Theme**: A mesmerizing and chaotic 3D orbit tracing the Aizawa strange attractor. A continuously glowing trail of thousands of particles draws a beautiful, tangled geometric butterfly-like shape.
+- **Technique**: Iterative calculation of the Aizawa attractor differential equations. Particles follow the vector field, fading out to create smooth glowing trails.
+- **Description**: An animated 3D strange attractor (Aizawa).
+
+## moire_interference_waves
+
+- **Date**: 2026-05-27
+- **Theme**: A hypnotic kinetic art simulation using the Moiré effect. Overlapping concentric wave patterns that expand and contract, creating dynamic interference patterns.
+- **Technique**: Multiple sets of concentric circles or sinusoidal rings are drawn. They slowly rotate, offset, and expand at different frequencies. Additive blending makes the interference fringes pulse with bright light.
+- **Description**: An animated Moiré interference pattern.
+
+## cybernetic_wireframe_topography
+
+- **Date**: 2026-05-27
+- **Theme**: An endless flight over a glowing, neon-wireframe landscape generated by procedural 3D Perlin noise. The terrain shifts and morphs, resembling an old-school synthwave cyberspace grid, but with chaotic mountains and valleys.
+- **Technique**: A 2D grid of points in 3D space. The Z-height (or Y-height in py5 coords) is determined by `py5.os_noise` with scrolling offsets to simulate flying forward. The grid is drawn as a wireframe mesh with `py5.begin_shape(py5.TRIANGLE_STRIP)`.
+- **Description**: A synthwave procedural wireframe terrain generated with Perlin noise.
+
+## algorithmic_mandala_spirograph
+
+- **Date**: 2026-05-27
+- **Theme**: A mesmerizing kaleidoscopic mandala made of countless glowing orbits, evolving dynamically like spirographs.
+- **Technique**: Complex trigonometric functions (combining multiple rotating circles) are used to generate coordinates. The coordinates are mirrored and rotated symmetrically (12-fold symmetry) to form a complex mandala.
+- **Description**: An animated spirograph mandala with iridescent coloring.
+
+## recursive_fractal_canopy
+
+- **Date**: 2026-05-27
+- **Theme**: A surreal, infinite fractal canopy of glowing crystalline branches that sway as if underwater.
+- **Technique**: A recursive 2D branching tree drawn from the center, using sinusoidal rotations to simulate an underwater current. The color shifts dynamically with depth and time.
+- **Description**: A fractal tree structure with glowing crystalline branches.
+
+## perlin_flow_ribbons_2d
+
+- **Date**: 2026-05-27
+- **Theme**: A mesmerizing flow field of vibrant ribbons that swirl and tangle gracefully, guided by multi-scale Perlin noise.
+- **Technique**: A system of 4,000 particles is traced over time through a vector field generated by octaves of simplex/Perlin noise. The trails fade slowly with a low-opacity background overlay. The ribbons change color based on the vector field angle.
+- **Description**: An abstract flow field using 2D Perlin noise and ribbons.
+
+## isometric_cyber_waterfall
+
+- **Date**: 2026-05-27
+- **Theme**: A mesmerizing, endless waterfall of digital cubes cascading down invisible isometric steps, representing the flow of raw data.
+- **Technique**: 3D cubes are drawn using `py5.box` with an orthographic camera (`py5.ortho`) set to isometric angles. Cubes spawn at the top and fall under simulated gravity, bouncing off invisible stair-step colliders. Additive blending and emissive materials create a neon digital aesthetic.
+- **Description**: A cascading isometric waterfall of cubes.
+
+## parametric_silk_weaver_3d
+
+- **Date**: 2026-05-27
+- **Theme**: A luminescent mechanical loom continuously weaving and unwinding delicate threads of neon silk in three-dimensional space.
+- **Technique**: A complex parametric equation (combining multiple rotating 3D Lissajous curves) generates continuous, smooth coordinates. A rolling buffer of 30,000 points is connected by semi-transparent bezier curves or lines, shifting colors based on spatial depth to simulate woven fiber optics.
+- **Description**: A spinning 3D geometric shape resembling a luminous woven basket or flower that continuously morphs and folds into itself.
+
+## voronoi_shatter_topology
+
+- **Date**: 2026-05-27
+- **Theme**: A fragile, crystalline digital surface that continually fractures into geometric cells and slowly repairs itself, like glowing ice cracking under pressure.
+- **Technique**: 2D Delaunay triangulation and Voronoi diagram generation based on moving particle seeds. The edges of the Voronoi cells are drawn with additive blending, glowing brightest where the cells are smallest (highest fracture density).
+- **Description**: A sharp, glowing network of cracked glass that shifts and crawls across the screen as if the surface is under immense strain.
+
+## superfluid_vortex_lattice_2d
+
+- **Date**: 2026-05-27
+- **Theme**: A swirling hexagonal lattice of quantum vortices capturing the delicate rotational dynamics of a cold superfluid.
+- **Technique**: 2D procedural vector field using a hexagonal arrangement of rotating attractors with low-opacity particle trails to prevent blowout.
+- **Description**: A grid of glowing micro-whirlpools emerges from darkness, spinning intricate threads of light that weave together.
+
 ## tectonic_strain_topography
 
 - **Date**: 2026-05-26

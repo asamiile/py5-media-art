@@ -23,82 +23,69 @@ PREVIEW_FILENAME = f"{WORK_NAME}_p1.png"
 PREVIEW_SIZE, OUTPUT_SIZE, _ = get_sizes()
 SIZE = OUTPUT_SIZE
 
-num_particles = 30000
-px = None
-py = None
-vx = None
-vy = None
+cols, rows = 0, 0
+scl = 40
+w = 3000
+h = 3000
 
 def setup():
-    global px, py, vx, vy
-    py5.size(*SIZE)
+    global cols, rows
+    py5.size(*SIZE, py5.P3D)
     py5.pixel_density(1)
     py5.background(0)
-    py5.color_mode(py5.HSB, 360, 100, 100, 100)
-    py5.blend_mode(py5.ADD)
     FRAMES_DIR.mkdir(exist_ok=True)
     
-    px = np.random.uniform(0, py5.width, num_particles)
-    py = np.random.uniform(0, py5.height, num_particles)
-    vx = np.zeros(num_particles)
-    vy = np.zeros(num_particles)
+    cols = w // scl
+    rows = h // scl
 
-def chladni(x, y, n, m):
-    # Map pixel coords to -1..1
-    nx = py5.remap(x, 0, py5.width, -1, 1)
-    ny = py5.remap(y, 0, py5.height, -1, 1)
+def draw_terrain(channel_color, x_offset):
+    py5.push_matrix()
+    py5.translate(x_offset, 0, 0)
+    py5.stroke(*channel_color)
+    py5.no_fill()
+    py5.stroke_weight(2)
     
-    val = np.sin(n * py5.PI * nx) * np.sin(m * py5.PI * ny) + \
-          np.sin(m * py5.PI * nx) * np.sin(n * py5.PI * ny)
-    return np.abs(val)
+    time_offset = py5.frame_count * 0.1
+    
+    for y in range(rows - 1):
+        py5.begin_shape(py5.TRIANGLE_STRIP)
+        for x in range(cols):
+            for dy in (0, 1):
+                cy = y + dy
+                # Low frequency noise for hills
+                low_noise = py5.os_noise(x * 0.05, cy * 0.05 - time_offset)
+                # High frequency noise for glitch spikes
+                high_noise = py5.os_noise(x * 0.5, cy * 0.5 - time_offset * 2)
+                
+                z = py5.remap(low_noise, 0, 1, -200, 200)
+                
+                # Apply glitch threshold
+                if high_noise > 0.85:
+                    z += py5.remap(high_noise, 0.85, 1.0, 0, 800)
+                
+                px = x * scl - w / 2
+                py = cy * scl - h / 2
+                py5.vertex(px, py, z)
+        py5.end_shape()
+        
+    py5.pop_matrix()
 
 def draw():
-    global px, py, vx, vy
-    
-    # Fade trail
     py5.blend_mode(py5.BLEND)
-    py5.fill(0, 0, 0, 15)
-    py5.no_stroke()
-    py5.rect(0, 0, py5.width, py5.height)
+    py5.background(0)
     py5.blend_mode(py5.ADD)
     
-    time = py5.frame_count * 0.01
+    py5.push_matrix()
+    py5.translate(py5.width/2, py5.height/2 + 200, -500)
+    py5.rotate_x(py5.PI / 3)
     
-    # Animate resonance frequencies
-    n = py5.remap(np.sin(time * 0.5), -1, 1, 2, 7)
-    m = py5.remap(np.cos(time * 0.3), -1, 1, 3, 8)
+    # Red, Green, Blue with slight offsets for chromatic aberration
+    aberration = 15
+    draw_terrain((255, 0, 0), -aberration)
+    draw_terrain((0, 255, 0), 0)
+    draw_terrain((0, 0, 255), aberration)
     
-    # Calculate gradient via finite difference
-    eps = 1.0
-    val_center = chladni(px, py, n, m)
-    val_right = chladni(px + eps, py, n, m)
-    val_top = chladni(px, py + eps, n, m)
-    
-    grad_x = (val_right - val_center) / eps
-    grad_y = (val_top - val_center) / eps
-    
-    # Particles move towards 0 (so down the gradient)
-    force_x = -grad_x * 50.0
-    force_y = -grad_y * 50.0
-    
-    # Add some random noise to break them out of local minima
-    noise_force_x = np.random.uniform(-0.5, 0.5, num_particles)
-    noise_force_y = np.random.uniform(-0.5, 0.5, num_particles)
-    
-    vx = vx * 0.8 + force_x + noise_force_x
-    vy = vy * 0.8 + force_y + noise_force_y
-    
-    px += vx
-    py += vy
-    
-    # Wrap around
-    px = np.mod(px, py5.width)
-    py = np.mod(py, py5.height)
-    
-    # Draw
-    py5.stroke(40, 80, 50, 40) # Amber/Gold
-    py5.stroke_weight(2)
-    py5.points(np.column_stack((px, py)))
+    py5.pop_matrix()
 
     py5.save_frame(str(FRAMES_DIR / "frame-####.png"))
 

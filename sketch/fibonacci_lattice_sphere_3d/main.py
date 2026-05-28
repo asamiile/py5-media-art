@@ -23,82 +23,75 @@ PREVIEW_FILENAME = f"{WORK_NAME}_p1.png"
 PREVIEW_SIZE, OUTPUT_SIZE, _ = get_sizes()
 SIZE = OUTPUT_SIZE
 
-num_particles = 30000
-px = None
-py = None
-vx = None
-vy = None
-
 def setup():
-    global px, py, vx, vy
-    py5.size(*SIZE)
+    py5.size(*SIZE, py5.P3D)
     py5.pixel_density(1)
     py5.background(0)
     py5.color_mode(py5.HSB, 360, 100, 100, 100)
-    py5.blend_mode(py5.ADD)
     FRAMES_DIR.mkdir(exist_ok=True)
-    
-    px = np.random.uniform(0, py5.width, num_particles)
-    py = np.random.uniform(0, py5.height, num_particles)
-    vx = np.zeros(num_particles)
-    vy = np.zeros(num_particles)
-
-def chladni(x, y, n, m):
-    # Map pixel coords to -1..1
-    nx = py5.remap(x, 0, py5.width, -1, 1)
-    ny = py5.remap(y, 0, py5.height, -1, 1)
-    
-    val = np.sin(n * py5.PI * nx) * np.sin(m * py5.PI * ny) + \
-          np.sin(m * py5.PI * nx) * np.sin(n * py5.PI * ny)
-    return np.abs(val)
 
 def draw():
-    global px, py, vx, vy
-    
-    # Fade trail
     py5.blend_mode(py5.BLEND)
-    py5.fill(0, 0, 0, 15)
-    py5.no_stroke()
-    py5.rect(0, 0, py5.width, py5.height)
+    py5.background(0)
     py5.blend_mode(py5.ADD)
     
-    time = py5.frame_count * 0.01
+    time = py5.frame_count * 0.02
     
-    # Animate resonance frequencies
-    n = py5.remap(np.sin(time * 0.5), -1, 1, 2, 7)
-    m = py5.remap(np.cos(time * 0.3), -1, 1, 3, 8)
+    py5.translate(py5.width/2, py5.height/2, 0)
+    py5.rotate_x(time * 0.5)
+    py5.rotate_y(time * 0.7)
     
-    # Calculate gradient via finite difference
-    eps = 1.0
-    val_center = chladni(px, py, n, m)
-    val_right = chladni(px + eps, py, n, m)
-    val_top = chladni(px, py + eps, n, m)
+    # Animated golden ratio parameter
+    golden_ratio = (1 + np.sqrt(5)) / 2
+    animated_ratio = golden_ratio + np.sin(time) * 0.05
     
-    grad_x = (val_right - val_center) / eps
-    grad_y = (val_top - val_center) / eps
+    num_pts = 1000
+    radius = 600 + np.sin(time * 2) * 100
     
-    # Particles move towards 0 (so down the gradient)
-    force_x = -grad_x * 50.0
-    force_y = -grad_y * 50.0
+    points = []
     
-    # Add some random noise to break them out of local minima
-    noise_force_x = np.random.uniform(-0.5, 0.5, num_particles)
-    noise_force_y = np.random.uniform(-0.5, 0.5, num_particles)
+    # Calculate Fibonacci sphere points
+    for i in range(num_pts):
+        t = i / float(num_pts - 1)
+        # y goes from 1 to -1
+        y = 1 - (t * 2)
+        r = np.sqrt(1 - y * y)
+        theta = py5.PI * 2 * animated_ratio * i
+        
+        x = np.cos(theta) * r
+        z = np.sin(theta) * r
+        
+        points.append(np.array([x * radius, y * radius, z * radius]))
     
-    vx = vx * 0.8 + force_x + noise_force_x
-    vy = vy * 0.8 + force_y + noise_force_y
-    
-    px += vx
-    py += vy
-    
-    # Wrap around
-    px = np.mod(px, py5.width)
-    py = np.mod(py, py5.height)
-    
-    # Draw
-    py5.stroke(40, 80, 50, 40) # Amber/Gold
+    # Draw points and connections
     py5.stroke_weight(2)
-    py5.points(np.column_stack((px, py)))
+    py5.begin_shape(py5.LINES)
+    
+    for i in range(num_pts):
+        p1 = points[i]
+        
+        # Color based on index and time
+        hue = (i * 0.5 + time * 20) % 360
+        py5.stroke(hue, 80, 100, 80)
+        
+        # Connect to a few neighbors in sequence
+        # (Since points are sequentially close in spiral, connecting i to i+1..i+5 creates interesting meshes)
+        for j in range(1, 6):
+            if i + j < num_pts:
+                p2 = points[i + j]
+                py5.vertex(*p1)
+                py5.vertex(*p2)
+                
+    py5.end_shape()
+    
+    # Draw glowing nodes
+    py5.stroke_weight(6)
+    py5.begin_shape(py5.POINTS)
+    for i in range(num_pts):
+        hue = (i * 0.5 + time * 20) % 360
+        py5.stroke(hue, 50, 100, 100)
+        py5.vertex(*points[i])
+    py5.end_shape()
 
     py5.save_frame(str(FRAMES_DIR / "frame-####.png"))
 

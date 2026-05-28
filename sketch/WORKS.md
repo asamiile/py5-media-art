@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## geometric_origami_tessellation_morph_3d
+
+- **Date**: 2026-05-28
+- **Theme**: A 3D plane of connected triangles that fold and morph like origami, driven by a combination of sine waves and noise to create complex, shifting geometric tessellations.
+- **Technique**: Create a grid of points in the X-Z plane and connect them into triangles using `py5.begin_shape(py5.TRIANGLE_STRIP)`. For each vertex, calculate its Y (height) displacement and color based on its coordinates, time, and noise. Use `P3D` renderer and slow camera rotation.
+- **Description**: An animated 3D origami tessellation simulation.
+
 ## stochastic_reaction_diffusion_cellular_growth_3d
 
 - **Date**: 2026-05-28

@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## cybernetic_data_stream_glitch_matrix_2d
+
+- **Date**: 2026-05-28
+- **Theme**: A high-tech, Matrix-like digital rain of data streams that occasionally glitters or glitches, displaying flowing arrays of shifting symbols or bright colored lines descending over the screen with varying speeds and intensities.
+- **Technique**: Create a series of vertical "streams" represented as arrays of points or line segments that travel down the screen. Use a 2D grid and numpy to manage positions and colors. Apply additive blending and stochastic glitch offsets (sudden horizontal shifts or brightness spikes) based on noise or probability.
+- **Description**: An animated cybernetic data stream with glitch effects.
+
 ## stochastic_flow_field_ribbons_3d
 
 - **Date**: 2026-05-28

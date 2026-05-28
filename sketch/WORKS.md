@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## cymatic_plasma_resonator_3d
+
+- **Date**: 2026-05-28
+- **Theme**: A 3D standing wave simulation resembling a glowing plasma trapped in an acoustic levitation field. The plasma forms intricate, pulsating geometric nodes based on spherical harmonics.
+- **Technique**: A 3D mesh (sphere) whose vertices are displaced radially based on combinations of spherical harmonic functions over time. Additive blending and neon colors mapped to displacement depth.
+- **Description**: An animated 3D spherical harmonics plasma node.
+
 ## cyber_rain_caustics
 
 - **Date**: 2026-05-27

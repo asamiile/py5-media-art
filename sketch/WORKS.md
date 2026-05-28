@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## sacred_geometry_merkaba_rotation_3d
+
+- **Date**: 2026-05-28
+- **Theme**: A 3D wireframe and translucent solid rendering of nested Platonic solids (specifically a star tetrahedron / Merkaba) that slowly rotate independently on multiple axes, creating complex Moire-like overlaps and optical illusions.
+- **Technique**: Construct 3D geometric shapes (tetrahedrons, octahedrons, icosahedrons) using raw 3D coordinates. Group them inside nested `push_matrix()` / `pop_matrix()` blocks and apply continuous rotation. Add slow camera movement or FOV breathing.
+- **Description**: An animated 3D rendering of nested Platonic solids.
+
 ## biomechanical_voronoi_tissues_2d
 
 - **Date**: 2026-05-28

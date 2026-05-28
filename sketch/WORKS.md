@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## kaleidoscopic_cellular_automata_2d
+
+- **Date**: 2026-05-28
+- **Theme**: A complex 2D cellular automata running on a hexagonal grid, with rules that produce continuously growing organic structures, mirrored symmetrically like a kaleidoscope.
+- **Technique**: 2D hexagonal grid array simulation for CA. Rendering maps the hex coordinates to screen space. Symmetrical mirroring is applied in the `draw()` loop by duplicating the output using matrix transformations.
+- **Description**: An animated 2D kaleidoscopic cellular automata.
+
 ## cybernetic_neuro_synapse_3d
 
 - **Date**: 2026-05-28

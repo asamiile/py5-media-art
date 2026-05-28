@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## cybernetic_neuro_synapse_3d
+
+- **Date**: 2026-05-28
+- **Theme**: A microscopic journey inside a digital brain. Glowing cybernetic neurons connect via electrical synapses, flashing and firing data pulses across a complex 3D network.
+- **Technique**: A 3D graph network where nodes (neurons) drift slowly. Edges (synapses) connect nodes that are close to each other. "Data pulses" are simulated by small glowing spheres traversing the edges. Camera pans slowly through the network.
+- **Description**: An animated 3D cybernetic neuro synapse graph.
+
 ## sacred_geometry_mandala_morph_2d
 
 - **Date**: 2026-05-28

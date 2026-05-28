@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## kinetic_metaball_isosurface_3d
+
+- **Date**: 2026-05-28
+- **Theme**: A 3D fluid simulation using a custom marching cubes algorithm (or simulating isosurfaces with points) to draw melting, fusing blobs of liquid metal. 
+- **Technique**: 3D point cloud simulation where points are drawn inside a cubic boundary only if their distance sum to several orbiting attractor nodes (metaballs) crosses a threshold. The points are colored based on their spatial position and normal derivative.
+- **Description**: An animated 3D kinetic metaball isosurface.
+
 ## quantum_flux_lattice_3d
 
 - **Date**: 2026-05-28

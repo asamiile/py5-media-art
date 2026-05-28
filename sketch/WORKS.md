@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## procedural_bioluminescent_jellyfish_3d
+
+- **Date**: 2026-05-28
+- **Theme**: A graceful, organic bioluminescent creature swimming through a dark abyss, simulated using 3D procedural physics and soft-body constraints.
+- **Technique**: A dome (bell) modeled using trigonometric functions that pulses using a sine wave mapped to time. Tentacles trail behind, calculated using a chain of particles linked by spring physics (Hooke's law) with a drag force. Additive blending creates the bioluminescent glow.
+- **Description**: An animated 3D procedural bioluminescent jellyfish.
+
 ## geometric_fractal_hypercube_4d
 
 - **Date**: 2026-05-28

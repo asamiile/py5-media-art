@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## geometric_crystal_growth_time_lapse
+
+- **Date**: 2026-05-28
+- **Theme**: A high-speed macro view of iridescent geometric crystals rapidly growing, intersecting, and forming complex faceted clusters in a dark void.
+- **Technique**: Procedurally generating growing polygons (tetrahedrons and octahedrons) where new crystals branch off the faces of existing ones. We can use a recursive branching algorithm but drawn dynamically over time by expanding the scale of each branch. We'll use semi-transparent additive blending with P3D.
+- **Description**: An animated 3D network of growing faceted crystals.
+
 ## digital_mycelium_network_3d
 
 - **Date**: 2026-05-28

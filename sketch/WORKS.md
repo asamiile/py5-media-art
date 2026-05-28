@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## biomechanical_voronoi_tissues_2d
+
+- **Date**: 2026-05-28
+- **Theme**: An abstract representation of growing biological tissues merging with synthetic structures, simulated using a dynamic Voronoi diagram where cells split and merge.
+- **Technique**: Moving 2D seed points for a Voronoi diagram, computed efficiently using 3D orthographic projection depth buffering of overlapping cones.
+- **Description**: An animated biomechanical voronoi tissue pattern using depth buffer projection.
+
 ## quantum_interference_wave_field_3d
 
 - **Date**: 2026-05-28

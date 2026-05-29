@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## subterranean_bioluminescent_fungi_3d
+
+- **Date**: 2026-05-29
+- **Theme**: A macro view of bioluminescent alien fungi growing and breathing in a dark subterranean cave.
+- **Technique**: A 3D L-System-like branching structure built using py5 shapes, ending in glowing py5.sphere caps. The structure gently sways using sine waves.
+- **Description**: An animated creeping pan through glowing cyan alien mushrooms in the dark.
+
 ## chromatic_aberration_glass_prisms_3d
 
 - **Date**: 2026-05-29

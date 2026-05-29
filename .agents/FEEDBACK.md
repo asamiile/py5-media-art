@@ -4,6 +4,136 @@
 Agents MUST NOT write anything in the `Comment` field. When registering a new work, Agents must leave the `Rating` and `Comment` fields empty or with their default labels as placeholders for the user.
 The Artist reads this file before starting a new sketch to understand preferences.
 
+## sacred_geometry_torus_knot_wireframe_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## geometric_crystal_growth_time_lapse
+
+- **Rating**: 
+- **Comment**: 
+
+## digital_mycelium_network_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## cybernetic_data_stream_glitch_matrix_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## stochastic_flow_field_ribbons_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## geometric_origami_tessellation_morph_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## stochastic_reaction_diffusion_cellular_growth_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## sacred_mandala_particle_emitter_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## cybernetic_grid_displacement_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## strange_attractor_clifford_morph_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## stochastic_lissajous_web_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## sacred_geometry_merkaba_rotation_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## biomechanical_voronoi_tissues_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## quantum_interference_wave_field_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## hyperbolic_tessellation_zoom_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## stochastic_reaction_diffusion_3d_slice
+
+- **Rating**: 
+- **Comment**: 
+
+## kaleidoscopic_cellular_automata_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## cybernetic_neuro_synapse_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## sacred_geometry_mandala_morph_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## strange_attractor_particle_swarm_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## algorithmic_cityscape_wireframe_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## procedural_bioluminescent_jellyfish_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## geometric_fractal_hypercube_4d
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_metaball_isosurface_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## quantum_flux_lattice_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## cymatic_plasma_resonator_3d
+
+- **Rating**: 
+- **Comment**: 
+
 ## cyber_rain_caustics
 
 - **Rating**: 

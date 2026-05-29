@@ -3,6 +3,188 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## sacred_geometry_torus_knot_wireframe_3d
+
+- **Date**: 2026-05-28
+- **Theme**: A mathematical representation of a sacred geometry torus knot rendered as an intricate, glowing 3D wireframe that rotates and twists dynamically.
+- **Technique**: Procedurally generated using parametric equations for a torus knot (p=3, q=7). Calculates a Frenet frame for the path to extrude a custom 3D tube wireframe. Uses additive blending and dynamic lighting.
+- **Description**: An animated 3D wireframe of a sacred geometry torus knot.
+
+## geometric_crystal_growth_time_lapse
+
+- **Date**: 2026-05-28
+- **Theme**: A high-speed macro view of iridescent geometric crystals rapidly growing, intersecting, and forming complex faceted clusters in a dark void.
+- **Technique**: Procedurally generating growing polygons (tetrahedrons and octahedrons) where new crystals branch off the faces of existing ones. We can use a recursive branching algorithm but drawn dynamically over time by expanding the scale of each branch. We'll use semi-transparent additive blending with P3D.
+- **Description**: An animated 3D network of growing faceted crystals.
+
+## digital_mycelium_network_3d
+
+- **Date**: 2026-05-28
+- **Theme**: A microscopic 3D view of glowing, fungal-like mycelium threads spreading and branching across an invisible structure, forming a dense biological network.
+- **Technique**: A 3D system using a random walk / differential growth algorithm. Connections are drawn as additive blended lines that grow over time. The camera rotates slowly over the structure.
+- **Description**: An animated 3D network of growing digital mycelium.
+
+## cybernetic_data_stream_glitch_matrix_2d
+
+- **Date**: 2026-05-28
+- **Theme**: A high-tech, Matrix-like digital rain of data streams that occasionally glitters or glitches, displaying flowing arrays of shifting symbols or bright colored lines descending over the screen with varying speeds and intensities.
+- **Technique**: Create a series of vertical "streams" represented as arrays of points or line segments that travel down the screen. Use a 2D grid and numpy to manage positions and colors. Apply additive blending and stochastic glitch offsets (sudden horizontal shifts or brightness spikes) based on noise or probability.
+- **Description**: An animated cybernetic data stream with glitch effects.
+
+## stochastic_flow_field_ribbons_3d
+
+- **Date**: 2026-05-28
+- **Theme**: A dense 3D flow field driven by Perlin noise, visualized not by single particles but by sweeping ribbons or trails that continuously trace the vector field, creating volumetric abstract forms that shift over time.
+- **Technique**: Create thousands of particles whose paths form continuous lines or ribbons. Instead of full physics, update paths based on 3D noise vectors and time. Render using `py5.begin_shape()` with lines and additive blending in 3D.
+- **Description**: An animated 3D flow field ribbon visualization.
+
+## geometric_origami_tessellation_morph_3d
+
+- **Date**: 2026-05-28
+- **Theme**: A 3D plane of connected triangles that fold and morph like origami, driven by a combination of sine waves and noise to create complex, shifting geometric tessellations.
+- **Technique**: Create a grid of points in the X-Z plane and connect them into triangles using `py5.begin_shape(py5.TRIANGLE_STRIP)`. For each vertex, calculate its Y (height) displacement and color based on its coordinates, time, and noise. Use `P3D` renderer and slow camera rotation.
+- **Description**: An animated 3D origami tessellation simulation.
+
+## stochastic_reaction_diffusion_cellular_growth_3d
+
+- **Date**: 2026-05-28
+- **Theme**: Simulating a 3D growth pattern based on reaction-diffusion principles, but visualized as interconnected growing cells (spheres or cubes) in 3D space, which change color and size based on the concentration of chemicals.
+- **Technique**: We can approximate this by generating a 3D grid, computing a simple cellular automaton or reaction-diffusion step iteratively, and rendering only the cells where concentration passes a threshold, coloring them based on the gradient. We can rotate the camera slowly around the growing structure.
+- **Description**: An animated 3D cellular growth simulation based on stochastic rules.
+
+## sacred_mandala_particle_emitter_2d
+
+- **Date**: 2026-05-28
+- **Theme**: A hypnotic, symmetrical 2D mandala formed by millions of glowing particles emitted from the center and flowing outward along complex parametric pathways dictated by trig functions.
+- **Technique**: Particle system with radial symmetry. Emitters at the center spawn particles with velocities determined by polar functions `r = f(theta)`. Use numpy for fast particle updates (position, velocity, lifetime). Render using `py5.points()` with additive blending to create a glowing effect.
+- **Description**: An animated glowing 2D particle mandala.
+
+## cybernetic_grid_displacement_3d
+
+- **Date**: 2026-05-28
+- **Theme**: A rigid 3D grid of lines that displaces dramatically based on a wandering 3D Perlin noise field, creating a digital landscape that undulates like a cybernetic ocean.
+- **Technique**: Create a 2D array of grid points in the X-Z plane. Loop through the grid points and modify their Y-coordinates based on `py5.os_noise()` (OpenSimplex noise) with time and spatial coordinates as inputs. Draw the grid by connecting adjacent points with lines in P3D space.
+- **Description**: An animated 3D grid landscape displaced by Perlin noise.
+
+## strange_attractor_clifford_morph_2d
+
+- **Date**: 2026-05-28
+- **Theme**: A high-density render of a Clifford strange attractor (a classic chaotic mathematical system) that slowly morphs its parameters over time, sweeping through a vast range of delicate, intricate butterfly-like patterns.
+- **Technique**: Point cloud rendering (millions of points calculated iteratively). Because py5 python loops are slow, we will use numpy vectorization to compute the Clifford attractor equations iteratively over large batches of coordinates, then draw them to the screen using py5.points() or similar array drawing. The parameters (a, b, c, d) slowly interpolate using sine functions.
+- **Description**: An animated glowing high-density Clifford strange attractor morphing over time.
+
+## stochastic_lissajous_web_3d
+
+- **Date**: 2026-05-28
+- **Theme**: An intricate, glowing web formed by thousands of overlapping 3D Lissajous curves with slowly varying frequencies and phases.
+- **Technique**: Parametric 3D equations driven by sine/cosine with varying phase offsets and frequency ratios. Draw curves by connecting points with translucent, additive-blended lines in P3D, slowly rotating the entire bundle.
+- **Description**: An animated glowing 3D web of stochastic Lissajous curves.
+
+## sacred_geometry_merkaba_rotation_3d
+
+- **Date**: 2026-05-28
+- **Theme**: A 3D wireframe and translucent solid rendering of nested Platonic solids (specifically a star tetrahedron / Merkaba) that slowly rotate independently on multiple axes, creating complex Moire-like overlaps and optical illusions.
+- **Technique**: Construct 3D geometric shapes (tetrahedrons, octahedrons, icosahedrons) using raw 3D coordinates. Group them inside nested `push_matrix()` / `pop_matrix()` blocks and apply continuous rotation. Add slow camera movement or FOV breathing.
+- **Description**: An animated 3D rendering of nested Platonic solids.
+
+## biomechanical_voronoi_tissues_2d
+
+- **Date**: 2026-05-28
+- **Theme**: An abstract representation of growing biological tissues merging with synthetic structures, simulated using a dynamic Voronoi diagram where cells split and merge.
+- **Technique**: Moving 2D seed points for a Voronoi diagram, computed efficiently using 3D orthographic projection depth buffering of overlapping cones.
+- **Description**: An animated biomechanical voronoi tissue pattern using depth buffer projection.
+
+## quantum_interference_wave_field_3d
+
+- **Date**: 2026-05-28
+- **Theme**: A 3D topographical landscape representing probability waves of quantum interference. Multiple wave sources ripple, intersect, and create complex interference patterns that shift in frequency and phase.
+- **Technique**: 3D point cloud or wireframe terrain generation where the Z-axis (height) is determined by the sum of several sine/cosine functions originating from moving focal points. Coloring is based on wave amplitude and height.
+- **Description**: An animated 3D topographic landscape of quantum wave interference patterns.
+
+## hyperbolic_tessellation_zoom_2d
+
+- **Date**: 2026-05-28
+- **Theme**: A continuous zooming animation into a Poincaré disk model, showing an infinitely repeating hyperbolic tessellation that morphs slightly.
+- **Technique**: Simulated hyperbolic math by mapping a grid of triangles onto a complex exponential map, creating an infinite zoom effect (Droste effect/Mobius transformation).
+- **Description**: An animated infinite zoom into a hyperbolic 2D tessellation.
+
+## stochastic_reaction_diffusion_3d_slice
+
+- **Date**: 2026-05-28
+- **Theme**: A 3D slice through a simulated reaction-diffusion system (Turing patterns). The simulation runs on a 2D grid but is rendered by stacking historical states along the Z-axis, creating a 3D extrusion of the pattern evolution.
+- **Technique**: Reaction-diffusion simulation (Gray-Scott model) on a 2D grid. Save past grids in a buffer. Render the buffer as a sequence of translucent planes or a point cloud stacked in 3D, mapping concentration to opacity/color.
+- **Description**: An animated 3D point cloud of a 2D reaction-diffusion history buffer.
+
+## kaleidoscopic_cellular_automata_2d
+
+- **Date**: 2026-05-28
+- **Theme**: A complex 2D cellular automata running on a hexagonal grid, with rules that produce continuously growing organic structures, mirrored symmetrically like a kaleidoscope.
+- **Technique**: 2D hexagonal grid array simulation for CA. Rendering maps the hex coordinates to screen space. Symmetrical mirroring is applied in the `draw()` loop by duplicating the output using matrix transformations.
+- **Description**: An animated 2D kaleidoscopic cellular automata.
+
+## cybernetic_neuro_synapse_3d
+
+- **Date**: 2026-05-28
+- **Theme**: A microscopic journey inside a digital brain. Glowing cybernetic neurons connect via electrical synapses, flashing and firing data pulses across a complex 3D network.
+- **Technique**: A 3D graph network where nodes (neurons) drift slowly. Edges (synapses) connect nodes that are close to each other. "Data pulses" are simulated by small glowing spheres traversing the edges. Camera pans slowly through the network.
+- **Description**: An animated 3D cybernetic neuro synapse graph.
+
+## sacred_geometry_mandala_morph_2d
+
+- **Date**: 2026-05-28
+- **Theme**: A hypnotic, symmetrical 2D mandala based on sacred geometry that smoothly morphs and evolves its petal structures over time.
+- **Technique**: Procedural drawing using polar coordinates, recursive petal shapes, and `bezierVertex()` for smooth curves. Color palette shifts continuously.
+- **Description**: An animated 2D sacred geometry mandala morph.
+
+## strange_attractor_particle_swarm_3d
+
+- **Date**: 2026-05-28
+- **Theme**: Simulating a Lorentz-like strange attractor where a massive swarm of particles trace chaotic orbits, slowly evolving and revealing the attractor's butterfly-like geometry over time.
+- **Technique**: Particle system governed by differential equations of the Lorenz system. Thousands of particles with glowing trails.
+- **Description**: An animated 3D strange attractor particle swarm.
+
+## algorithmic_cityscape_wireframe_3d
+
+- **Date**: 2026-05-28
+- **Theme**: A neon, retro-futuristic synthwave cityscape generated algorithmically with a glowing sun and moving grid plane.
+- **Technique**: Procedurally generated building blocks using `box()`. A moving floor plane created by scrolling lines, and a glowing sphere in the background.
+- **Description**: An animated 3D retro-futuristic synthwave cityscape.
+
+## procedural_bioluminescent_jellyfish_3d
+
+- **Date**: 2026-05-28
+- **Theme**: A graceful, organic bioluminescent creature swimming through a dark abyss, simulated using 3D procedural physics and soft-body constraints.
+- **Technique**: A dome (bell) modeled using trigonometric functions that pulses using a sine wave mapped to time. Tentacles trail behind, calculated using a chain of particles linked by spring physics (Hooke's law) with a drag force. Additive blending creates the bioluminescent glow.
+- **Description**: An animated 3D procedural bioluminescent jellyfish.
+
+## geometric_fractal_hypercube_4d
+
+- **Date**: 2026-05-28
+- **Theme**: A projection of a 4D tesseract (hypercube) into 3D space, rotating across both 3D axes and 4D space, creating mind-bending optical illusions as the inner cube folds outward.
+- **Technique**: 4D to 3D projection matrix math. The vertices of a tesseract are projected into 3D using perspective, then drawn as glowing lines.
+- **Description**: An animated geometric fractal hypercube in 4D.
+
+## kinetic_metaball_isosurface_3d
+
+- **Date**: 2026-05-28
+- **Theme**: A 3D fluid simulation using a custom marching cubes algorithm (or simulating isosurfaces with points) to draw melting, fusing blobs of liquid metal. 
+- **Technique**: 3D point cloud simulation where points are drawn inside a cubic boundary only if their distance sum to several orbiting attractor nodes (metaballs) crosses a threshold. The points are colored based on their spatial position and normal derivative.
+- **Description**: An animated 3D kinetic metaball isosurface.
+
+## quantum_flux_lattice_3d
+
+- **Date**: 2026-05-28
+- **Theme**: A microscopic view of quantum flux pinning in a type-II superconductor. Vortices of magnetic flux form a perfect Abrikosov lattice that twists and distorts under a simulated thermal gradient.
+- **Technique**: A 3D isometric view of glowing hexagonal lattice pillars representing flux tubes. The height and color of each pillar are modulated by 3D Perlin noise to represent thermal fluctuations. The lattice overall rotates and pulses.
+- **Description**: An animated 3D quantum flux lattice.
+
+## cymatic_plasma_resonator_3d
+
+- **Date**: 2026-05-28
+- **Theme**: A 3D standing wave simulation resembling a glowing plasma trapped in an acoustic levitation field. The plasma forms intricate, pulsating geometric nodes based on spherical harmonics.
+- **Technique**: A 3D mesh (sphere) whose vertices are displaced radially based on combinations of spherical harmonic functions over time. Additive blending and neon colors mapped to displacement depth.
+- **Description**: An animated 3D spherical harmonics plasma node.
+
 ## cyber_rain_caustics
 
 - **Date**: 2026-05-27

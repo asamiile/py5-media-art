@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## molecular_glass_lattice_3d
+
+- **Date**: 2026-05-29
+- **Theme**: A microscopic view of a glowing glass molecular lattice expanding and contracting in 3D space, resembling artificial crystal growth.
+- **Technique**: A 3D lattice of py5.sphere nodes connected by py5.line bonds. The position of each node pulses based on a spherical distance function and sine wave.
+- **Description**: An animated dense 3D grid of glowing amber glass spheres interconnected by orange lasers that pulses in a wave-like breathing motion.
+
 ## holographic_data_stream_tunnel_3d
 
 - **Date**: 2026-05-29

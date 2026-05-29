@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## fluid_kinetic_typography_3d
+
+- **Date**: 2026-05-29
+- **Theme**: A swarm of 3D cubes forming abstract geometric structure dissolving into chaotic fluid simulation ripples.
+- **Technique**: A 3D particle system using py5.box primitives attracted to target points, disrupted by a 3D Perlin noise field.
+- **Description**: An animated sharp, high-contrast grid of white cubes rapidly dissolving into a fluid magenta storm.
+
 ## monolithic_brutalist_echoes_3d
 
 - **Date**: 2026-05-29

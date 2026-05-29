@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## biomechanical_voronoi_tissues_3d
+
+- **Date**: 2026-05-29
+- **Theme**: An abstract representation of growing biological tissues merging with synthetic structures, simulated using a dynamic 3D Voronoi-like cellular membrane that pulses with life.
+- **Technique**: A 3D simulation using py5.begin_shape(py5.TRIANGLES) to connect N-body points that act as Voronoi seeds. As points move based on noise and sine-wave breathing, their connections form a living web.
+- **Description**: An animated pulsing fleshy 3D web structure with synthetic threads.
+
 ## cybernetic_hologram_circuit_city
 
 - **Date**: 2026-05-29

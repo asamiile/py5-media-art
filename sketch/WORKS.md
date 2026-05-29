@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## cybernetic_mycelium_glitch_bloom
+
+- **Date**: 2026-05-29
+- **Theme**: A microscopic view of digital spores taking root, blossoming into an intricate cyber-organic structure that periodically glitches.
+- **Technique**: A 3D simulation guided by vector fields. Particles expand and branch outward organically. Sudden vertex displacements simulate data glitch events.
+- **Description**: An animated cyber-organic structure that glitches.
+
 ## sacred_geometry_torus_knot_wireframe_3d
 
 - **Date**: 2026-05-28

@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## quantum_superposition_fractal_3d
+
+- **Date**: 2026-05-29
+- **Theme**: A visual representation of a quantum particle in superposition, forming a vast, multi-layered Mandelbox-like fractal that continuously folds into itself.
+- **Technique**: A 3D generative system using recursive py5.box primitives whose scales and positions iterate based on a folding equation.
+- **Description**: An animated blindingly complex, infinite golden-magenta recursive box structure.
+
 ## biomechanical_voronoi_tissues_3d
 
 - **Date**: 2026-05-29

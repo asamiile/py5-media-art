@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## biomechanical_jellyfish_swarm_3d
+
+- **Date**: 2026-05-29
+- **Theme**: A swarm of abstract, 3D wireframe jellyfish swimming upwards through a dense, foggy abyss.
+- **Technique**: A flocking/particle system where each entity has a wireframe bell and trailing py5.line tentacles with sine waves.
+- **Description**: An animated slow, majestic ascent as hundreds of glowing wireframe creatures with flowing tentacles swim upwards through the dark water.
+
 ## cybernetic_shatter_core_3d
 
 - **Date**: 2026-05-29

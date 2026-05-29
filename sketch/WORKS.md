@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## stochastic_cellular_drift_3d
+
+- **Date**: 2026-05-29
+- **Theme**: A tranquil deep-sea observation of glowing organic cells drifting in a dark 3D current, occasionally interacting softly.
+- **Technique**: A 3D N-body system where cells drift according to a 3D curl noise field, rendered as soft glowing spheres using py5.sphere.
+- **Description**: An animated tranquil 3D field of drifting, glowing organic cells.
+
 ## magnetic_ferrofluid_spikes_3d
 
 - **Date**: 2026-05-29

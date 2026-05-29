@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## abstract_data_ocean_waves_3d
+
+- **Date**: 2026-05-29
+- **Theme**: A vast, dark ocean of shimmering data points. The surface undulates in massive, slow waves, while abstract structural pillars rise out of the depths.
+- **Technique**: A 3D grid of py5.point elements driven by moving 2D Perlin noise. The pillars are sparse py5.lines that stretch from the depths to above the waves.
+- **Description**: An animated slow, rolling ocean made entirely of glowing cyan data points beneath a dark navy sky.
+
 ## subterranean_bioluminescent_fungi_3d
 
 - **Date**: 2026-05-29

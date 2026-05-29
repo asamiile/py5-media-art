@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## neon_glitch_typography_mandala_3d
+
+- **Date**: 2026-05-29
+- **Theme**: A mandala built entirely out of floating, glitching neon typography and digital symbols rotating recursively.
+- **Technique**: A generative 3D mandala using py5.text rendered on many rotated planes. Characters periodically glitch to random ASCII symbols.
+- **Description**: An animated perfect circular mandala made of floating green letters that suddenly shudder as rings of text violently glitch into white shapes.
+
 ## abstract_data_ocean_waves_3d
 
 - **Date**: 2026-05-29

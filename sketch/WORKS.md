@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## monolithic_brutalist_echoes_3d
+
+- **Date**: 2026-05-29
+- **Theme**: Massive, imposing brutalist concrete architecture floating in a surreal void.
+- **Technique**: A 3D generative system using dense clusters of large, untextured py5.box primitives overlapping to form megastructures with stark chiaroscuro lighting.
+- **Description**: An animated cinematic tracking shot past floating concrete monoliths in deep shadows.
+
 ## crystalline_data_lattice_3d
 
 - **Date**: 2026-05-29

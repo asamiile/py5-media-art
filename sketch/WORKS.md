@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## cybernetic_shatter_core_3d
+
+- **Date**: 2026-05-29
+- **Theme**: A futuristic glowing core that rhythmically shatters and reassembles, throwing geometric debris outwards.
+- **Technique**: A central glowing py5 sphere surrounded by small py5.box debris. The debris is pushed outward based on an impulse wave function and pulled back by spring physics.
+- **Description**: An animated glowing orange core that violently explodes into electric blue shards, only for them to snap back to the center in a rapid rhythmic heartbeat.
+
 ## molecular_glass_lattice_3d
 
 - **Date**: 2026-05-29

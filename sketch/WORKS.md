@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## chromatic_aberration_glass_prisms_3d
+
+- **Date**: 2026-05-29
+- **Theme**: A field of slowly tumbling triangular glass prisms that catch light, refracting it into severe chromatic aberration and spectral rainbows as they intersect.
+- **Technique**: A 3D generative system drawing rotating translucent triangles. Chromatic aberration is simulated by drawing the same shapes three times (red, green, blue) with slight spatial offsets and py5.ADD blending.
+- **Description**: An animated optical field of tumbling translucent glass with RGB chromatic aberration.
+
 ## fluid_kinetic_typography_3d
 
 - **Date**: 2026-05-29

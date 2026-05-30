@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## abyssal_curl_whorls
+
+- **Date**: 2026-05-30
+- **Theme**: Bioluminescent ethereal vines weaving through a dark aquatic abyss, guided by an invisible curl noise current.
+- **Technique**: Vectorized Curl Noise flowfield. Millions of particles trace the curl of a simplex noise field, creating beautiful whorls and vortices that never collide.
+- **Description**: 300,000 glowing particles gracefully trace divergence-free loops, emitting trails of teal, magenta, and lime as they form intricate floral-like whorls against an abyssal navy backdrop.
+
 ## substrate_crystal_growth
 
 - **Date**: 2026-05-30

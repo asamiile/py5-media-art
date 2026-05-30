@@ -3,6 +3,146 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## quantum_interference_wave_particle_3d
+
+- **Date**: 2026-05-29
+- **Theme**: A visual representation of wave-particle duality. A rigid 3D lattice of particles collapses into swirling interference waves and reforms.
+- **Technique**: A massive grid of py5 points. Their positions interpolate between a strict 3D grid layout and a complex combination of overlapping 3D sine waves.
+- **Description**: An animated perfect rigid grid of white dots that suddenly bends and collapses into smooth, overlapping red and cyan ripples, then snaps back to a grid.
+
+## biomechanical_jellyfish_swarm_3d
+
+- **Date**: 2026-05-29
+- **Theme**: A swarm of abstract, 3D wireframe jellyfish swimming upwards through a dense, foggy abyss.
+- **Technique**: A flocking/particle system where each entity has a wireframe bell and trailing py5.line tentacles with sine waves.
+- **Description**: An animated slow, majestic ascent as hundreds of glowing wireframe creatures with flowing tentacles swim upwards through the dark water.
+
+## cybernetic_shatter_core_3d
+
+- **Date**: 2026-05-29
+- **Theme**: A futuristic glowing core that rhythmically shatters and reassembles, throwing geometric debris outwards.
+- **Technique**: A central glowing py5 sphere surrounded by small py5.box debris. The debris is pushed outward based on an impulse wave function and pulled back by spring physics.
+- **Description**: An animated glowing orange core that violently explodes into electric blue shards, only for them to snap back to the center in a rapid rhythmic heartbeat.
+
+## molecular_glass_lattice_3d
+
+- **Date**: 2026-05-29
+- **Theme**: A microscopic view of a glowing glass molecular lattice expanding and contracting in 3D space, resembling artificial crystal growth.
+- **Technique**: A 3D lattice of py5.sphere nodes connected by py5.line bonds. The position of each node pulses based on a spherical distance function and sine wave.
+- **Description**: An animated dense 3D grid of glowing amber glass spheres interconnected by orange lasers that pulses in a wave-like breathing motion.
+
+## holographic_data_stream_tunnel_3d
+
+- **Date**: 2026-05-29
+- **Theme**: A high-speed flight through a hexagonal tunnel made of cascading, glowing holographic data streams and geometric wireframes.
+- **Technique**: A 3D tunnel drawn using concentric hexagonal wireframe rings that scale up and move towards the camera, with flowing py5.lines connecting them.
+- **Description**: An animated continuous, dizzying rush forward through an endless glowing cyan and magenta hexagonal tunnel.
+
+## liquid_chrome_geometric_fracture_3d
+
+- **Date**: 2026-05-29
+- **Theme**: A floating mass of liquid chrome geometry that slowly pulls apart and fractures into thousands of mirrored shards, then coalesces back together.
+- **Technique**: A 3D mesh representing a fractured sphere with intense specular lighting. The vertices move outward along their normals based on a sine wave.
+- **Description**: An animated sleek, highly reflective metal sphere that explodes outward into spinning chrome shards catching blue and orange light.
+
+## neon_glitch_typography_mandala_3d
+
+- **Date**: 2026-05-29
+- **Theme**: A mandala built entirely out of floating, glitching neon typography and digital symbols rotating recursively.
+- **Technique**: A generative 3D mandala using py5.text rendered on many rotated planes. Characters periodically glitch to random ASCII symbols.
+- **Description**: An animated perfect circular mandala made of floating green letters that suddenly shudder as rings of text violently glitch into white shapes.
+
+## abstract_data_ocean_waves_3d
+
+- **Date**: 2026-05-29
+- **Theme**: A vast, dark ocean of shimmering data points. The surface undulates in massive, slow waves, while abstract structural pillars rise out of the depths.
+- **Technique**: A 3D grid of py5.point elements driven by moving 2D Perlin noise. The pillars are sparse py5.lines that stretch from the depths to above the waves.
+- **Description**: An animated slow, rolling ocean made entirely of glowing cyan data points beneath a dark navy sky.
+
+## subterranean_bioluminescent_fungi_3d
+
+- **Date**: 2026-05-29
+- **Theme**: A macro view of bioluminescent alien fungi growing and breathing in a dark subterranean cave.
+- **Technique**: A 3D L-System-like branching structure built using py5 shapes, ending in glowing py5.sphere caps. The structure gently sways using sine waves.
+- **Description**: An animated creeping pan through glowing cyan alien mushrooms in the dark.
+
+## chromatic_aberration_glass_prisms_3d
+
+- **Date**: 2026-05-29
+- **Theme**: A field of slowly tumbling triangular glass prisms that catch light, refracting it into severe chromatic aberration and spectral rainbows as they intersect.
+- **Technique**: A 3D generative system drawing rotating translucent triangles. Chromatic aberration is simulated by drawing the same shapes three times (red, green, blue) with slight spatial offsets and py5.ADD blending.
+- **Description**: An animated optical field of tumbling translucent glass with RGB chromatic aberration.
+
+## fluid_kinetic_typography_3d
+
+- **Date**: 2026-05-29
+- **Theme**: A swarm of 3D cubes forming abstract geometric structure dissolving into chaotic fluid simulation ripples.
+- **Technique**: A 3D particle system using py5.box primitives attracted to target points, disrupted by a 3D Perlin noise field.
+- **Description**: An animated sharp, high-contrast grid of white cubes rapidly dissolving into a fluid magenta storm.
+
+## monolithic_brutalist_echoes_3d
+
+- **Date**: 2026-05-29
+- **Theme**: Massive, imposing brutalist concrete architecture floating in a surreal void.
+- **Technique**: A 3D generative system using dense clusters of large, untextured py5.box primitives overlapping to form megastructures with stark chiaroscuro lighting.
+- **Description**: An animated cinematic tracking shot past floating concrete monoliths in deep shadows.
+
+## crystalline_data_lattice_3d
+
+- **Date**: 2026-05-29
+- **Theme**: An immense structure of transparent, sharp crystal shards growing and intersecting in 3D space, channeling beams of light.
+- **Technique**: A 3D generative system using py5.begin_shape(py5.TRIANGLES) to draw intersecting semi-transparent pyramids and irregular sharp polygons.
+- **Description**: An animated slow, majestic rotation of intricate, translucent glacier-blue and violet crystals on a stark white background.
+
+## quantum_superposition_fractal_3d
+
+- **Date**: 2026-05-29
+- **Theme**: A visual representation of a quantum particle in superposition, forming a vast, multi-layered Mandelbox-like fractal that continuously folds into itself.
+- **Technique**: A 3D generative system using recursive py5.box primitives whose scales and positions iterate based on a folding equation.
+- **Description**: An animated blindingly complex, infinite golden-magenta recursive box structure.
+
+## biomechanical_voronoi_tissues_3d
+
+- **Date**: 2026-05-29
+- **Theme**: An abstract representation of growing biological tissues merging with synthetic structures, simulated using a dynamic 3D Voronoi-like cellular membrane that pulses with life.
+- **Technique**: A 3D simulation using py5.begin_shape(py5.TRIANGLES) to connect N-body points that act as Voronoi seeds. As points move based on noise and sine-wave breathing, their connections form a living web.
+- **Description**: An animated pulsing fleshy 3D web structure with synthetic threads.
+
+## cybernetic_hologram_circuit_city
+
+- **Date**: 2026-05-29
+- **Theme**: A futuristic city skyline built out of pure holographic circuit traces. Data pulses fly through the intricate vertical PCB structures.
+- **Technique**: A procedural 3D city generator using py5.box and py5.line to draw translucent, glowing wireframes. Particles (data pulses) travel along the edges of the boxes.
+- **Description**: An animated glowing wireframe city of electric cyan and neon orange data pulses.
+
+## stochastic_cellular_drift_3d
+
+- **Date**: 2026-05-29
+- **Theme**: A tranquil deep-sea observation of glowing organic cells drifting in a dark 3D current, occasionally interacting softly.
+- **Technique**: A 3D N-body system where cells drift according to a 3D curl noise field, rendered as soft glowing spheres using py5.sphere.
+- **Description**: An animated tranquil 3D field of drifting, glowing organic cells.
+
+## magnetic_ferrofluid_spikes_3d
+
+- **Date**: 2026-05-29
+- **Theme**: A dense cluster of liquid magnetic ferrofluid that rapidly forms sharp geometric spikes and smooth liquid bridges under shifting, invisible magnetic fields.
+- **Technique**: A 3D simulation using a dynamic triangulated mesh wrapped around a sphere. The vertices are displaced outwards based on 3D Perlin noise parameterized to simulate sharp spikes that undulate and merge.
+- **Description**: An animated glossy, spiky metallic structure writhing against a bright void.
+
+## algorithmic_resonance_chambers
+
+- **Date**: 2026-05-29
+- **Theme**: Abstract architectural spaces constructed of pure frequency where standing waves form glowing, translucent geometric structures that hum and phase out of existence.
+- **Technique**: A 3D simulation of multiple intersecting spherical harmonics acting as constructive interference fields. Uses an isometric camera view with additive-blended py5.points to trace the complex nodal shapes as the frequencies slide over time.
+- **Description**: An animated glowing architectural geometry governed by spherical harmonics.
+
+## cybernetic_mycelium_glitch_bloom
+
+- **Date**: 2026-05-29
+- **Theme**: A microscopic view of digital spores taking root, blossoming into an intricate cyber-organic structure that periodically glitches.
+- **Technique**: A 3D simulation guided by vector fields. Particles expand and branch outward organically. Sudden vertex displacements simulate data glitch events.
+- **Description**: An animated cyber-organic structure that glitches.
+
 ## sacred_geometry_torus_knot_wireframe_3d
 
 - **Date**: 2026-05-28

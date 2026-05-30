@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## primordial_reaction_diffusion
+
+- **Date**: 2026-05-30
+- **Theme**: A macroscopic view of an alien brain coral bleaching and blooming, as labyrinthine biochemical reactions spread rapidly across a membrane.
+- **Technique**: Gray-Scott Reaction-Diffusion simulated using NumPy vectorized Laplacian operator. Calculations run at 1080p and are rapidly upscaled to 4K to render thick organic membranes.
+- **Description**: Deep emerald voids are slowly consumed by creeping, fleshy coral pink and bone white labyrinths that continually split and merge in an endless chemical dance.
+
 ## silken_clifford_attractor
 
 - **Date**: 2026-05-30

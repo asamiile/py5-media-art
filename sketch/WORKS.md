@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## vascular_space_colonization
+
+- **Date**: 2026-05-31
+- **Theme**: A vast neural network or mycelial web sprawling outwards to consume floating energy clusters.
+- **Technique**: Space Colonization Algorithm. Thousands of floating "attractor" points pull growing branches towards them. When a branch gets close enough, it consumes the attractor. The algorithm is heavily vectorized using `scipy.spatial.cKDTree` to simulate 60,000 attractors and tens of thousands of branches in real-time.
+- **Description**: A dark void is illuminated by tens of thousands of pinkish energy spores. From the center, a cyan root system rapidly branches outwards, extending countless tendrils that seek out and consume the spores, leaving a massive glowing neural web in its wake.
+
 ## aizawa_chaotic_sphere
 
 - **Date**: 2026-05-31

@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## bioluminescent_volumetric_beams
+
+- **Date**: 2026-05-30
+- **Theme**: Beams of soft, bioluminescent light piercing through a deep oceanic fog, illuminating drifting micro-organic particles as they float in a slow current.
+- **Technique**: Multiple light shafts modeled using sine-based angular oscillations and Perlin noise, intersecting with a 1,200 particle system. Intersection calculations (distance and angle) are vectorized in NumPy. Rendered with additive blending, HSB color palettes, and motion blur trails in 4K at 60fps.
+- **Description**: An animated sequence showing slow-moving shafts of electric cyan, emerald green, lavender, and amber light sweeping across a dark navy screen. Drifting bioluminescent spores glow intensely when they cross the paths of the light beams, leaving faint glowing trails in the water, while the rest of the ocean remains in deep shadow.
+
 ## quantum_interference_wave_particle_3d
 
 - **Date**: 2026-05-29

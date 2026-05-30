@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## silken_clifford_attractor
+
+- **Date**: 2026-05-30
+- **Theme**: Silken veils of mathematical smoke folding through higher dimensions, capturing the ghostly signature of a chaotic strange attractor.
+- **Technique**: Animated Clifford Attractor. Millions of chaotic orbits are accumulated per frame into a high-dynamic-range density buffer, which is tone-mapped to colors. Parameters smoothly drift over time.
+- **Description**: Ethereal ribbons of crimson and indigo twist slowly on a pitch black canvas, occasionally burning with blinding golden light where the chaotic orbits infinitely overlap.
+
 ## abyssal_curl_whorls
 
 - **Date**: 2026-05-30

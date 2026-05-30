@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## crystalline_cyber_bloom
+
+- **Date**: 2026-05-31
+- **Theme**: A crystalline cyber-bloom rotating in a void. Geometric forms unfold and scale infinitely inside each other like a high-tech mandelbrot.
+- **Technique**: Hardware-accelerated 3D recursive geometry using py5's P3D renderer. Nested coordinate matrices scale and rotate 3D box primitives to build a complex, pulsating fractal structure.
+- **Description**: A monolithic cuboid entity slowly rotates in deep space, its surfaces endlessly subdividing into smaller, glowing cyan and violet structures that breathe and pulse with light.
+
 ## langtons_woven_tapestry
 
 - **Date**: 2026-05-30

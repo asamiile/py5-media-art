@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## aizawa_chaotic_sphere
+
+- **Date**: 2026-05-31
+- **Theme**: A chaotic storm of 1.5 million particles swept into the beautiful sphere-and-tube geometry of the Aizawa Strange Attractor.
+- **Technique**: Millions of particles simulating the Aizawa non-linear differential equations using Euler integration. The 3D coordinates are dynamically rotated and projected into 2D perspective using NumPy matrix math, and then written directly into pixel memory with depth-based dimming.
+- **Description**: In a dark void, 1.5 million glowing neon purple, pink, and cyan particles violently swirl into a complex, chaotic, yet highly structured 3D sphere pierced by an intricate tube structure.
+
 ## chladni_acoustic_resonance
 
 - **Date**: 2026-05-31

@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## chladni_acoustic_resonance
+
+- **Date**: 2026-05-31
+- **Theme**: Chladni Acoustic Resonance: Sand particles dancing on a vibrating metal plate, forming geometric standing waves as the frequency shifts.
+- **Technique**: Millions of particles are placed on a 2D grid and moved using the mathematical gradient of the Chladni plate equation. Points randomly jitter based on the vibration amplitude at their position, causing them to gather precisely on the nodal lines (where vibration is zero). Fully vectorized using Numpy and directly mapped to pixel memory.
+- **Description**: Half a million golden sand particles dance wildly across a slate plate, suddenly snapping into perfect, complex geometric standing wave patterns as resonant frequencies sweep across the surface.
+
 ## differential_growth_coral
 
 - **Date**: 2026-05-31

@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## langtons_woven_tapestry
+
+- **Date**: 2026-05-30
+- **Theme**: A woven tapestry of time, constructed by millions of microscopic agents navigating a chaotic lattice.
+- **Technique**: Multi-Agent Generalized Langton's Ant. 1.5 million ants interacting across 11 states on a 4K grid. Computed fully in parallel using NumPy, leveraging race conditions to generate organic chaotic defects in the intricate weaving patterns.
+- **Description**: Millions of ants carve brilliant neon and gold trails against an obsidian background, slowly organizing chaos into perfect crystalline highways and complex fractal knots.
+
 ## primordial_reaction_diffusion
 
 - **Date**: 2026-05-30

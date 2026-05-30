@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## differential_growth_coral
+
+- **Date**: 2026-05-31
+- **Theme**: An organic, meandering brain-coral structure that grows and folds continuously over itself.
+- **Technique**: Differential Growth Algorithm. A closed loop of points grows continuously by splitting when edges get too long. Points repel each other using `scipy.spatial.cKDTree` for lightning-fast radius searches, forcing the curve to fold into complex, brain-coral-like meandering patterns.
+- **Description**: A single glowing ring of cyan light begins to expand, wrinkling and folding over itself infinitely to pack as much surface area as possible, resembling an abstract, neon-lit brain coral.
+
 ## liquid_marble_domain_warp
 
 - **Date**: 2026-05-31

@@ -4,6 +4,7 @@ import subprocess
 import sys
 import numpy as np
 import py5
+from scipy.spatial import cKDTree
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 if str(PROJECT_ROOT) not in sys.path:
@@ -16,134 +17,168 @@ from lib.sizes import get_sizes
 SKETCH_DIR = sketch_dir(__file__)
 WORK_NAME = SKETCH_DIR.name
 FRAMES_DIR = SKETCH_DIR / "frames"
-DURATION_SEC = 15
+DURATION_SEC = 20
 FPS = 60
 TOTAL_FRAMES = DURATION_SEC * FPS
 PREVIEW_FILENAME = f"{WORK_NAME}_p1.png"
-PREVIEW_SIZE, OUTPUT_SIZE, SIZE = get_sizes()
+PREVIEW_SIZE, OUTPUT_SIZE, _ = get_sizes()
+SIZE = OUTPUT_SIZE
+W, H = SIZE
 
-# Differential growth parameters
-REPULSION_RADIUS = 15.0
-MAX_EDGE_LEN = 10.0
-MIN_EDGE_LEN = 2.0
-REPULSION_FORCE = 0.5
-SPRING_FORCE = 0.2
+# Differential Growth parameters
+MAX_POINTS = 30000
+REPULSION_RADIUS = 30.0
+ATTRACTION_RADIUS = 40.0
+MAX_EDGE_LEN = 15.0
+SPLIT_EDGE_LEN = 25.0
+MIN_EDGE_LEN = 5.0
+REPULSION_FACTOR = 0.8
+ATTRACTION_FACTOR = 0.1
+SPRING_FACTOR = 0.4
 
-# Nodes initialized as a small circle
-NUM_INITIAL_NODES = 30
-angles = np.linspace(0, 2*np.pi, NUM_INITIAL_NODES, endpoint=False)
-nodes_x = np.cos(angles) * 50.0 + SIZE[0]/2
-nodes_y = np.sin(angles) * 50.0 + SIZE[1]/2
-
-nodes = np.stack([nodes_x, nodes_y], axis=-1).tolist()
-
-def update_growth():
-    global nodes
-    
-    n = len(nodes)
-    if n > 8000:
-        return # Cap to prevent physics from lagging too much
-        
-    pts = np.array(nodes, dtype=np.float32)
-    forces = np.zeros_like(pts)
-    
-    # 1. Repulsion (O(N^2) but we use a small radius limit approximation via numpy)
-    # To keep it fast, we do pure vectorized pairwise distances for N < 8000
-    # but that's a 64M element array. We'll do chunked or just subset it.
-    
-    # Simple spring forces between neighbors
-    next_pts = np.roll(pts, -1, axis=0)
-    prev_pts = np.roll(pts, 1, axis=0)
-    
-    # Pull towards neighbors
-    forces += (next_pts - pts) * SPRING_FORCE
-    forces += (prev_pts - pts) * SPRING_FORCE
-    
-    # Fast vectorized repulsion
-    # Pick random subset to repulse against for performance if n > 1000
-    if n > 1000:
-        subset_size = 500
-        indices = np.random.choice(n, subset_size, replace=False)
-        repulsors = pts[indices]
-    else:
-        repulsors = pts
-        
-    for i in range(len(repulsors)):
-        diff = pts - repulsors[i]
-        dist_sq = diff[:, 0]**2 + diff[:, 1]**2
-        mask = (dist_sq > 0.1) & (dist_sq < REPULSION_RADIUS**2)
-        forces[mask] += (diff[mask] / np.sqrt(dist_sq[mask])[:, None]) * REPULSION_FORCE
-
-    pts += forces
-    
-    # Center the structure
-    center_offset = np.mean(pts, axis=0) - np.array([SIZE[0]/2, SIZE[1]/2])
-    pts -= center_offset * 0.05
-    
-    # 2. Add new nodes if edge is too long
-    new_nodes = []
-    for i in range(n):
-        new_nodes.append(pts[i].tolist())
-        p1 = pts[i]
-        p2 = pts[(i+1)%n]
-        d = np.linalg.norm(p2 - p1)
-        if d > MAX_EDGE_LEN:
-            mid = (p1 + p2) * 0.5
-            new_nodes.append(mid.tolist())
-            
-    nodes = new_nodes
-
+points = None
 
 def setup():
-    py5.size(*SIZE, py5.P2D)
+    py5.size(*SIZE)
     py5.pixel_density(1)
+    py5.background(20, 20, 25)
     py5.color_mode(py5.HSB, 360, 100, 100, 100)
     FRAMES_DIR.mkdir(exist_ok=True)
-    py5.background(0)
+    
+    global points
+    # Start with a small circle
+    num_initial = 100
+    angles = np.linspace(0, 2 * np.pi, num_initial, endpoint=False)
+    r = 200
+    points = np.zeros((num_initial, 2))
+    points[:, 0] = W / 2 + np.cos(angles) * r
+    points[:, 1] = H / 2 + np.sin(angles) * r
+
+def update_growth():
+    global points
+    N = len(points)
+    
+    if N >= MAX_POINTS:
+        return
+        
+    forces = np.zeros_like(points)
+    
+    # 1. Spring forces between neighbors
+    p_prev = np.roll(points, 1, axis=0)
+    p_next = np.roll(points, -1, axis=0)
+    
+    # Vector to prev and next
+    v_prev = p_prev - points
+    v_next = p_next - points
+    
+    # Spring force pulling towards neighbors
+    forces += v_prev * SPRING_FACTOR
+    forces += v_next * SPRING_FACTOR
+    
+    # 2. Repulsion from nearby points using KDTree
+    tree = cKDTree(points)
+    pairs = tree.query_pairs(r=REPULSION_RADIUS)
+    
+    # Apply repulsion using vectorized numpy
+    pairs_list = list(pairs)
+    if len(pairs_list) > 0:
+        pairs_arr = np.array(pairs_list)
+        i_idx = pairs_arr[:, 0]
+        j_idx = pairs_arr[:, 1]
+        
+        # Filter out immediate neighbors
+        diff_idx = np.abs(i_idx - j_idx)
+        mask = (diff_idx != 1) & (diff_idx != N - 1)
+        i_idx = i_idx[mask]
+        j_idx = j_idx[mask]
+        
+        if len(i_idx) > 0:
+            diffs = points[i_idx] - points[j_idx]
+            dist_sq = np.sum(diffs**2, axis=1)
+            
+            valid = dist_sq > 0
+            if np.any(valid):
+                i_v = i_idx[valid]
+                j_v = j_idx[valid]
+                diffs_v = diffs[valid]
+                dists_v = np.sqrt(dist_sq[valid])
+                
+                rep_mags = (REPULSION_RADIUS - dists_v) / dists_v * REPULSION_FACTOR
+                force_vectors = diffs_v * rep_mags[:, np.newaxis]
+                
+                np.add.at(forces, i_v, force_vectors)
+                np.add.at(forces, j_v, -force_vectors)
+            
+    # Update positions
+    points += forces
+    
+    # 3. Add new points (Growth)
+    # Calculate distances to next point
+    diffs = p_next - points
+    dists = np.sqrt(np.sum(diffs**2, axis=1))
+    
+    # Find edges that are too long
+    split_indices = np.where(dists > SPLIT_EDGE_LEN)[0]
+    
+    if len(split_indices) > 0 and N < MAX_POINTS:
+        # Create new points at the midpoints
+        new_points = points[split_indices] + diffs[split_indices] * 0.5
+        
+        # Insert them into the array
+        # np.insert handles multiple indices based on the original array size automatically
+        insert_positions = split_indices + 1
+        
+        points = np.insert(points, insert_positions, new_points, axis=0)
 
 def draw():
-    global nodes
+    # Draw background with slight trail/fade
+    py5.fill(20, 20, 25, 10)
+    py5.no_stroke()
+    py5.rect(0, 0, W, H)
     
-    py5.background(0)
-    
-    for _ in range(5):
+    # Run multiple growth steps per frame for speed
+    for _ in range(3):
         update_growth()
-    
+        
+    # Draw points as a continuous smooth shape
     py5.no_fill()
-    
-    # Draw the coral
+    py5.stroke(180, 80, 90, 80) # Cyan-ish
     py5.stroke_weight(2.0)
     
-    # We draw the polygon with gradient color
+    # We want a thick organic glow
+    py5.stroke(320, 80, 90, 40) # Pinkish glow
+    py5.stroke_weight(8.0)
     py5.begin_shape()
-    n = len(nodes)
-    for i in range(n):
-        # Color based on index / total and time
-        hue = (i / n * 360 * 3 + py5.frame_count) % 360
-        py5.stroke(hue, 80, 100)
-        py5.vertex(nodes[i][0], nodes[i][1])
+    for p in points:
+        py5.vertex(p[0], p[1])
     py5.end_shape(py5.CLOSE)
     
-    # Draw a faint glow
-    py5.stroke_weight(10.0)
+    # Core line
+    py5.stroke(180, 60, 100, 90) # Cyan core
+    py5.stroke_weight(2.0)
     py5.begin_shape()
-    for i in range(n):
-        hue = (i / n * 360 * 3 + py5.frame_count) % 360
-        py5.stroke(hue, 80, 100, 20)
-        py5.vertex(nodes[i][0], nodes[i][1])
+    for p in points:
+        py5.vertex(p[0], p[1])
     py5.end_shape(py5.CLOSE)
     
     py5.save_frame(str(FRAMES_DIR / "frame-####.png"))
 
+    if py5.frame_count == 2:
+        py5.load_np_pixels()
+        if py5.np_pixels.std() == 0:
+            print("[Error] Blank screen detected on frame 2 (std=0). Aborting.")
+            import os
+            os._exit(1)
+
     if py5.frame_count % 60 == 0:
-        print(f"[Render Progress] Frame {py5.frame_count}/{TOTAL_FRAMES} ({py5.frame_count/TOTAL_FRAMES*100:.1f}%) Nodes: {n}")
+        print(f"[Render Progress] Frame {py5.frame_count}/{TOTAL_FRAMES} ({py5.frame_count/TOTAL_FRAMES*100:.1f}%) | Points: {len(points)}")
 
     if py5.frame_count >= TOTAL_FRAMES:
         py5.exit_sketch()
         
         print(f"[Render FFmpeg] Compiling {TOTAL_FRAMES} frames into video...")
         subprocess.run([
-            "/opt/homebrew/bin/ffmpeg", "-y", "-r", str(FPS),
+            "ffmpeg", "-y", "-r", str(FPS),
             "-i", str(FRAMES_DIR / "frame-%04d.png"),
             "-vcodec", "libx264", "-pix_fmt", "yuv420p",
             str(SKETCH_DIR / f"{WORK_NAME}.mp4"),

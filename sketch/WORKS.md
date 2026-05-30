@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## bioluminescent_curl_vines
+
+- **Date**: 2026-05-30
+- **Theme**: Bioluminescent climbing vines branching and growing upwards along an invisible structure in a dark primordial forest, sprouting glowing leaves and soft mossy spores that pulse with life.
+- **Technique**: Swarms of 340+ growth paths guided by 2D vector curl noise gradients (numerical Perlin noise gradients) combined with a vertical bias and column-attraction physics. Uses HSB color shifting along the tapered vines, leaf-sprouting geometry, and progressive clears for additive trailing motion. Rendered in 4K at 60fps.
+- **Description**: Several glowing columns of electric emerald, teal, and gold vines winding upwards against a dark slate background. As they climb, the vines twist organically and branch into soft, glowing leaves and mossy spores, leaving luminous trails that hang in the dark air.
+
 ## cyclic_cellular_spirals
 
 - **Date**: 2026-05-30

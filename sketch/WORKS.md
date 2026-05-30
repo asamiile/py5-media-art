@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## physarum_sentient_network
+
+- **Date**: 2026-05-30
+- **Theme**: An invisible city mapped by the creeping, collective intelligence of glowing biological nodes constantly seeking the most efficient pathways.
+- **Technique**: Vectorized Physarum (slime mold) transport network simulation in 2D. 800,000 agents follow and deposit chemoattractants, forming branching, pulsating luminous veins.
+- **Description**: A dark canvas where bright, thread-like veins of electric blue and silver rapidly grow, merge, and pulse, searching for paths before decaying into dust.
+
 ## recaman_orbital_harmonics
 
 - **Date**: 2026-05-30

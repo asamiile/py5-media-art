@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## substrate_crystal_growth
+
+- **Date**: 2026-05-30
+- **Theme**: A high-speed macro recording of microscopic bismuth crystals rapidly growing, colliding, and freezing into perfect right-angled geometric networks on a frosted glass slide.
+- **Technique**: Substrate algorithm (Jared Tarbell). Thousands of crack lines grow simultaneously and spawn perpendicular child lines when colliding, filling the canvas with an intricate grid.
+- **Description**: A dark canvas rapidly fills with rigid, perfectly straight lines of silver, cyan, and gold that crash into each other and branch at sharp 90 degree angles, forming an impossibly dense crystalline city map.
+
 ## complex_domain_mandalas
 
 - **Date**: 2026-05-30

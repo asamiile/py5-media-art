@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## liquid_marble_domain_warp
+
+- **Date**: 2026-05-31
+- **Theme**: An infinitely recursive, liquid marble domain warp that resembles swirling liquid gold and deep ocean currents.
+- **Technique**: Iterative image displacement (Domain Warping) using OpenCV `cv2.remap` for extremely fast, hardware-optimized CPU pixel sampling. Generates perfect fluid dynamics without the performance cost of pure Python noise generation.
+- **Description**: Deep ocean blues are violently churned by invisible currents, exposing bright veins of cyan and blinding liquid gold that fold infinitely into themselves like fluid marble.
+
 ## crystalline_cyber_bloom
 
 - **Date**: 2026-05-31

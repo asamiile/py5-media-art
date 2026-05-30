@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## cyclic_cellular_spirals
+
+- **Date**: 2026-05-30
+- **Theme**: Expanding, self-organizing geometric spirals in a multi-state cyclic cellular automaton, evoking the rhythmic ripples of chemical crystallization or thermodynamic self-organization.
+- **Technique**: A 2D cell grid ($480 \times 270$ cells) evaluated using vectorized neighbor checks in NumPy and shifted arrays (`np.roll`). States map to HSB-interpolated RGB colors, multiplied by a circular vignette mask, and drawn to a scaled py5 image. Rendered in 4K at 60fps.
+- **Description**: Multiple spiral wavefronts expanding across the screen in concentric waves of deep indigo, electric teal, soft gold, and radiant magenta. When the waves collide, they form intricate, twisting spiral galaxies that rotate and interlock continuously against a dark, vignette shadow.
+
 ## bioluminescent_volumetric_beams
 
 - **Date**: 2026-05-30

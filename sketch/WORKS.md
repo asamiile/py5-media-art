@@ -3,6 +3,14 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## chromatic_glass_monoliths_3d
+
+- **Date**: 2026-05-31
+- **Theme**: Floating, brutalist glass monoliths rotating slowly in an endless neon-lit canyon, reflecting vibrant accents.
+- **Technique**: 3D generation of large transparent `py5.box` elements with slow rotational matrices, lit by colored point lights and directional lights.
+- **Description**: Majestic, slow rotation of immense glass structures catching colorful light.
+
+
 ## algorithmic_dendritic_frost_3d
 
 - **Date**: 2026-05-31

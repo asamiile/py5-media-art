@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## bioluminescent_crystalline_fractal_tree_3d
+
+- **Date**: 2026-05-31
+- **Theme**: An ethereal, bioluminescent crystalline tree growing and branching in a dark void.
+- **Technique**: 3D Recursive branching (L-system) using `py5.push_matrix()` and `py5.pop_matrix()`. The angles of the branches slowly sway using OpenSimplex noise.
+- **Description**: An animated glowing fractal tree that dynamically breathes and branches in 3D space.
+
 ## kinetic_topographic_fingerprint_2d
 
 - **Date**: 2026-05-31

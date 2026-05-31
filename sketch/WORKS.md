@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## sierpinski_octahedron_crystal_fractal_3d
+
+- **Date**: 2026-05-31
+- **Theme**: A mathematically pure, recursively subdivided Sierpinski Octahedron that slowly rotates, while emitting pulsing geometric light from its core like an intricate magical crystal.
+- **Technique**: Generating a 3D fractal structure through a 5-level recursive function. This creates 7,776 individual translucent octahedrons in 3D space.
+- **Description**: An animated glowing amethyst and hot pink Sierpinski octahedron fractal.
+
 ## neural_plexus_synaptic_web_3d
 
 - **Date**: 2026-05-31

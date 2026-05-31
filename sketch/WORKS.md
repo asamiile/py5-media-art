@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## luminescent_silk_interference_3d
+
+- **Date**: 2026-05-31
+- **Theme**: Floating ribbons of bioluminescent silk that intersect and create interference patterns, drifting in a slow current.
+- **Technique**: 3D bezier ribbons whose control points are driven by low-frequency 3D Perlin noise and sine waves. Additive blending where the ribbons overlap.
+- **Description**: An animated 3D network of glowing parametric ribbons that simulate silk floating in fluid.
+
 ## vascular_space_colonization
 
 - **Date**: 2026-05-31

@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## cyberpunk_neon_terrain_flyover_3d
+
+- **Date**: 2026-05-31
+- **Theme**: A high-speed flight over an alien cyber-landscape composed of a glowing wireframe terrain, split by a flat data highway running down the center.
+- **Technique**: A massive 3D grid mapped via `py5.begin_shape(py5.TRIANGLE_STRIP)`. The Z-height of each vertex is governed by 3D OpenSimplex noise traversing a circle in time.
+- **Description**: An animated glowing magenta and cyan retro-futuristic terrain.
+
 ## quantum_supercomputer_voxel_core_3d
 
 - **Date**: 2026-05-31

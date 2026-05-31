@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## dynamic_truchet_maze_cpu
+
+- **Date**: 2026-05-31
+- **Theme**: A microscopic view of an alien CPU where continuous glowing pathways dynamically reroute themselves in a perfectly synchronized maze.
+- **Technique**: Animated multi-scale Truchet tiles. Using arcs on a grid where each cell rotates by 90 degrees based on a spatial noise field that shifts over time.
+- **Description**: An animated glowing cyan and neon green truchet maze that continuously shifts and re-routes like an alien CPU.
+
 ## kinetic_sand_gravity_sim
 
 - **Date**: 2026-05-31

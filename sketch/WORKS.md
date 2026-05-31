@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## quantum_supercomputer_voxel_core_3d
+
+- **Date**: 2026-05-31
+- **Theme**: A massive monolithic quantum supercomputer core composed of thousands of floating, glowing cubes. The cubes constantly shift their scale and brightness as data ripples through them.
+- **Technique**: A 3D grid of `py5.box()` primitives. The size, brightness, and hue of each individual voxel are controlled by a complex trigonometric 3D interference pattern.
+- **Description**: An animated glowing cyan and blue 3D voxel interference matrix.
+
 ## sacred_harmonograph_mandala_3d
 
 - **Date**: 2026-05-31

@@ -3,6 +3,132 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## vascular_space_colonization
+
+- **Date**: 2026-05-31
+- **Theme**: A vast neural network or mycelial web sprawling outwards to consume floating energy clusters.
+- **Technique**: Space Colonization Algorithm. Thousands of floating "attractor" points pull growing branches towards them. When a branch gets close enough, it consumes the attractor. The algorithm is heavily vectorized using `scipy.spatial.cKDTree` to simulate 60,000 attractors and tens of thousands of branches in real-time.
+- **Description**: A dark void is illuminated by tens of thousands of pinkish energy spores. From the center, a cyan root system rapidly branches outwards, extending countless tendrils that seek out and consume the spores, leaving a massive glowing neural web in its wake.
+
+## aizawa_chaotic_sphere
+
+- **Date**: 2026-05-31
+- **Theme**: A chaotic storm of 1.5 million particles swept into the beautiful sphere-and-tube geometry of the Aizawa Strange Attractor.
+- **Technique**: Millions of particles simulating the Aizawa non-linear differential equations using Euler integration. The 3D coordinates are dynamically rotated and projected into 2D perspective using NumPy matrix math, and then written directly into pixel memory with depth-based dimming.
+- **Description**: In a dark void, 1.5 million glowing neon purple, pink, and cyan particles violently swirl into a complex, chaotic, yet highly structured 3D sphere pierced by an intricate tube structure.
+
+## chladni_acoustic_resonance
+
+- **Date**: 2026-05-31
+- **Theme**: Chladni Acoustic Resonance: Sand particles dancing on a vibrating metal plate, forming geometric standing waves as the frequency shifts.
+- **Technique**: Millions of particles are placed on a 2D grid and moved using the mathematical gradient of the Chladni plate equation. Points randomly jitter based on the vibration amplitude at their position, causing them to gather precisely on the nodal lines (where vibration is zero). Fully vectorized using Numpy and directly mapped to pixel memory.
+- **Description**: Half a million golden sand particles dance wildly across a slate plate, suddenly snapping into perfect, complex geometric standing wave patterns as resonant frequencies sweep across the surface.
+
+## differential_growth_coral
+
+- **Date**: 2026-05-31
+- **Theme**: An organic, meandering brain-coral structure that grows and folds continuously over itself.
+- **Technique**: Differential Growth Algorithm. A closed loop of points grows continuously by splitting when edges get too long. Points repel each other using `scipy.spatial.cKDTree` for lightning-fast radius searches, forcing the curve to fold into complex, brain-coral-like meandering patterns.
+- **Description**: A single glowing ring of cyan light begins to expand, wrinkling and folding over itself infinitely to pack as much surface area as possible, resembling an abstract, neon-lit brain coral.
+
+## liquid_marble_domain_warp
+
+- **Date**: 2026-05-31
+- **Theme**: An infinitely recursive, liquid marble domain warp that resembles swirling liquid gold and deep ocean currents.
+- **Technique**: Iterative image displacement (Domain Warping) using OpenCV `cv2.remap` for extremely fast, hardware-optimized CPU pixel sampling. Generates perfect fluid dynamics without the performance cost of pure Python noise generation.
+- **Description**: Deep ocean blues are violently churned by invisible currents, exposing bright veins of cyan and blinding liquid gold that fold infinitely into themselves like fluid marble.
+
+## crystalline_cyber_bloom
+
+- **Date**: 2026-05-31
+- **Theme**: A crystalline cyber-bloom rotating in a void. Geometric forms unfold and scale infinitely inside each other like a high-tech mandelbrot.
+- **Technique**: Hardware-accelerated 3D recursive geometry using py5's P3D renderer. Nested coordinate matrices scale and rotate 3D box primitives to build a complex, pulsating fractal structure.
+- **Description**: A monolithic cuboid entity slowly rotates in deep space, its surfaces endlessly subdividing into smaller, glowing cyan and violet structures that breathe and pulse with light.
+
+## langtons_woven_tapestry
+
+- **Date**: 2026-05-30
+- **Theme**: A woven tapestry of time, constructed by millions of microscopic agents navigating a chaotic lattice.
+- **Technique**: Multi-Agent Generalized Langton's Ant. 1.5 million ants interacting across 11 states on a 4K grid. Computed fully in parallel using NumPy, leveraging race conditions to generate organic chaotic defects in the intricate weaving patterns.
+- **Description**: Millions of ants carve brilliant neon and gold trails against an obsidian background, slowly organizing chaos into perfect crystalline highways and complex fractal knots.
+
+## primordial_reaction_diffusion
+
+- **Date**: 2026-05-30
+- **Theme**: A macroscopic view of an alien brain coral bleaching and blooming, as labyrinthine biochemical reactions spread rapidly across a membrane.
+- **Technique**: Gray-Scott Reaction-Diffusion simulated using NumPy vectorized Laplacian operator. Calculations run at 1080p and are rapidly upscaled to 4K to render thick organic membranes.
+- **Description**: Deep emerald voids are slowly consumed by creeping, fleshy coral pink and bone white labyrinths that continually split and merge in an endless chemical dance.
+
+## silken_clifford_attractor
+
+- **Date**: 2026-05-30
+- **Theme**: Silken veils of mathematical smoke folding through higher dimensions, capturing the ghostly signature of a chaotic strange attractor.
+- **Technique**: Animated Clifford Attractor. Millions of chaotic orbits are accumulated per frame into a high-dynamic-range density buffer, which is tone-mapped to colors. Parameters smoothly drift over time.
+- **Description**: Ethereal ribbons of crimson and indigo twist slowly on a pitch black canvas, occasionally burning with blinding golden light where the chaotic orbits infinitely overlap.
+
+## abyssal_curl_whorls
+
+- **Date**: 2026-05-30
+- **Theme**: Bioluminescent ethereal vines weaving through a dark aquatic abyss, guided by an invisible curl noise current.
+- **Technique**: Vectorized Curl Noise flowfield. Millions of particles trace the curl of a simplex noise field, creating beautiful whorls and vortices that never collide.
+- **Description**: 300,000 glowing particles gracefully trace divergence-free loops, emitting trails of teal, magenta, and lime as they form intricate floral-like whorls against an abyssal navy backdrop.
+
+## substrate_crystal_growth
+
+- **Date**: 2026-05-30
+- **Theme**: A high-speed macro recording of microscopic bismuth crystals rapidly growing, colliding, and freezing into perfect right-angled geometric networks on a frosted glass slide.
+- **Technique**: Substrate algorithm (Jared Tarbell). Thousands of crack lines grow simultaneously and spawn perpendicular child lines when colliding, filling the canvas with an intricate grid.
+- **Description**: A dark canvas rapidly fills with rigid, perfectly straight lines of silver, cyan, and gold that crash into each other and branch at sharp 90 degree angles, forming an impossibly dense crystalline city map.
+
+## complex_domain_mandalas
+
+- **Date**: 2026-05-30
+- **Theme**: A dive into the fundamental fabric of reality, represented by a twisting, infinitely morphing mathematical landscape mapped to shifting hues.
+- **Technique**: Vectorized Complex Domain Coloring. Millions of points in the complex plane are mapped through a dynamic Mobius-like complex function ($z \mapsto \frac{a(t) z^3 + b(t)}{c(t) z + d(t)}$). Phase and magnitude dictate the output color via a continuous cosine color palette.
+- **Description**: A stark black void gives way to infinite fractal curves that fold in on themselves, revealing deep sapphire oceans and bright amber ridges that continuously twist and zoom.
+
+## physarum_sentient_network
+
+- **Date**: 2026-05-30
+- **Theme**: An invisible city mapped by the creeping, collective intelligence of glowing biological nodes constantly seeking the most efficient pathways.
+- **Technique**: Vectorized Physarum (slime mold) transport network simulation in 2D. 800,000 agents follow and deposit chemoattractants, forming branching, pulsating luminous veins.
+- **Description**: A dark canvas where bright, thread-like veins of electric blue and silver rapidly grow, merge, and pulse, searching for paths before decaying into dust.
+
+## recaman_orbital_harmonics
+
+- **Date**: 2026-05-30
+- **Theme**: An abstract mathematical cosmic engine whose nested, expanding orbits build structural pathways in space, reflecting the elegant, non-repeating growth of number sequences.
+- **Technique**: 3D projection of the Recamán sequence. The sequence dictates the radii of a series of interlocking semi-circular arcs. The arcs are rotated in 3D space and animated using a sinusoidal wave phase shift propagating through the sequence indices, creating a breathing, multi-axis gyroscopic rotation.
+- **Description**: A delicate, glowing blue and cyan gyroscopic ring sphere floats in darkness, slowly rotating and expanding as nested orange arches sprout from the core and sweep outwards.
+
+## interlocking_heesch_deformation
+
+- **Date**: 2026-05-30
+- **Theme**: Interlocking figures that breathe and shift in unison, changing from rigid geometry to organic, fluid creatures and back, evoking the collective harmony of a living mosaic.
+- **Technique**: Dynamic Heesch (IH01) hexagonal deformation tiling. The Bezier control points of the tiling boundaries oscillate using multi-frequency sine waves and OpenSimplex noise over time, morphing the tiles between hexagons and organic figures.
+- **Description**: A perfectly fitted honeycomb pattern of electric teal and violet figures glows against a dark background, breathing and morphing as their boundaries stretch into interlocking bird-like shapes that drift and pulse.
+
+## bioluminescent_curl_vines
+
+- **Date**: 2026-05-30
+- **Theme**: Bioluminescent climbing vines branching and growing upwards along an invisible structure in a dark primordial forest, sprouting glowing leaves and soft mossy spores that pulse with life.
+- **Technique**: Swarms of 340+ growth paths guided by 2D vector curl noise gradients (numerical Perlin noise gradients) combined with a vertical bias and column-attraction physics. Uses HSB color shifting along the tapered vines, leaf-sprouting geometry, and progressive clears for additive trailing motion. Rendered in 4K at 60fps.
+- **Description**: Several glowing columns of electric emerald, teal, and gold vines winding upwards against a dark slate background. As they climb, the vines twist organically and branch into soft, glowing leaves and mossy spores, leaving luminous trails that hang in the dark air.
+
+## cyclic_cellular_spirals
+
+- **Date**: 2026-05-30
+- **Theme**: Expanding, self-organizing geometric spirals in a multi-state cyclic cellular automaton, evoking the rhythmic ripples of chemical crystallization or thermodynamic self-organization.
+- **Technique**: A 2D cell grid ($480 \times 270$ cells) evaluated using vectorized neighbor checks in NumPy and shifted arrays (`np.roll`). States map to HSB-interpolated RGB colors, multiplied by a circular vignette mask, and drawn to a scaled py5 image. Rendered in 4K at 60fps.
+- **Description**: Multiple spiral wavefronts expanding across the screen in concentric waves of deep indigo, electric teal, soft gold, and radiant magenta. When the waves collide, they form intricate, twisting spiral galaxies that rotate and interlock continuously against a dark, vignette shadow.
+
+## bioluminescent_volumetric_beams
+
+- **Date**: 2026-05-30
+- **Theme**: Beams of soft, bioluminescent light piercing through a deep oceanic fog, illuminating drifting micro-organic particles as they float in a slow current.
+- **Technique**: Multiple light shafts modeled using sine-based angular oscillations and Perlin noise, intersecting with a 1,200 particle system. Intersection calculations (distance and angle) are vectorized in NumPy. Rendered with additive blending, HSB color palettes, and motion blur trails in 4K at 60fps.
+- **Description**: An animated sequence showing slow-moving shafts of electric cyan, emerald green, lavender, and amber light sweeping across a dark navy screen. Drifting bioluminescent spores glow intensely when they cross the paths of the light beams, leaving faint glowing trails in the water, while the rest of the ocean remains in deep shadow.
+
 ## quantum_interference_wave_particle_3d
 
 - **Date**: 2026-05-29

@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## bioluminescent_tension_web_3d
+
+- **Date**: 2026-05-31
+- **Theme**: An ethereal, infinite spiderweb woven from bioluminescent threads that react and pluck themselves like harp strings.
+- **Technique**: A 3D network of nodes connected by edges. Nodes are continuously disturbed by a wandering 3D Perlin noise field, sending rippling waves of tension across the connected string segments.
+- **Description**: An animated glowing cyan and violet 3D web structure that softly ripples and breathes under tension.
+
 ## dynamic_truchet_maze_cpu
 
 - **Date**: 2026-05-31

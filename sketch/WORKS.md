@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## algorithmic_dendritic_frost_3d
+
+- **Date**: 2026-05-31
+- **Theme**: A high-speed macro simulation of intricate frost crystals and ice dendrites rapidly branching and growing across an invisible 3D surface.
+- **Technique**: A 3D random walk branching algorithm where glowing icy blue `py5.line` segments grow outward, snapping to angles that mimic water crystallization (hexagonal/60-degree branching). Additive blending creates an intense cold glow, enhanced by slight Z-axis displacement from 3D Perlin noise.
+- **Description**: An animated 3D network of glowing ice crystals rapidly branching and growing on an invisible surface.
+
 ## kinetic_optical_fiber_wave_3d
 
 - **Date**: 2026-05-31

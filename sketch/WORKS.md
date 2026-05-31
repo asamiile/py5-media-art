@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## quantum_spin_foam_3d
+
+- **Date**: 2026-05-31
+- **Theme**: A microscopic look at quantum spin foam, represented as interlocking 3D rings that constantly flip orientations and flash brightly when they connect.
+- **Technique**: 3D generative layout of `py5.ellipse` objects using `py5.rotate_x` and `py5.rotate_y` driven by Perlin noise, creating a shifting interconnected mesh of quantum loops.
+- **Description**: An animated 3D network of glowing overlapping rings that flip and flash dynamically based on noise.
+
 ## luminescent_silk_interference_3d
 
 - **Date**: 2026-05-31

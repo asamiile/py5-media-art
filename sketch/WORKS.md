@@ -3,6 +3,14 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## kinetic_sand_gravity_sim
+
+- **Date**: 2026-05-31
+- **Theme**: A falling simulation of hundreds of thousands of neon sand grains accumulating and tumbling down geometric steps.
+- **Technique**: Cellular Automata falling sand simulation with physics rules for stacking and tumbling.
+- **Description**: Brightly colored sand pouring in from the top and settling into beautiful layered dunes over geometric obstacles.
+
+
 ## chromatic_glass_monoliths_3d
 
 - **Date**: 2026-05-31

@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## synthetic_viral_capsid_geodesic_3d
+
+- **Date**: 2026-05-31
+- **Theme**: A microscopic view of a synthetic viral capsid, represented as a geodesic sphere of interlocking triangles that rhythmically breathes, distorts, and glows as if alive.
+- **Technique**: Procedural generation of an icosahedron recursively subdivided into a high-density geodesic sphere. The spherical vertices are radially displaced in real-time using 3D OpenSimplex noise.
+- **Description**: An animated glowing dark crimson and electric orange pulsating geometric virus.
+
 ## bioluminescent_crystalline_fractal_tree_3d
 
 - **Date**: 2026-05-31

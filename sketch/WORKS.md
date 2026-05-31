@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## sacred_harmonograph_mandala_3d
+
+- **Date**: 2026-05-31
+- **Theme**: A high-frequency cosmic mandala made of overlapping, phase-shifted Lissajous curves that breathe in and out in 3D space.
+- **Technique**: Generating 150 complex parametric 3D curves using harmonograph/spirograph trigonometric equations. The phase of each curve is modulated by its index and a global time phase, ensuring a perfect 10-second loop. 
+- **Description**: An animated glowing gold and electric cyan 3D spirograph mandala.
+
 ## synthetic_viral_capsid_geodesic_3d
 
 - **Date**: 2026-05-31

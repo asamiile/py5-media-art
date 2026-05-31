@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## cybernetic_mobius_hyper_racer_3d
+
+- **Date**: 2026-05-31
+- **Theme**: A high-speed race along the glowing wireframe surface of an infinite, twisting Möbius strip floating in a dark abyss.
+- **Technique**: 3D procedural generation of a Möbius strip using a parametric surface mapped to P3D with `py5.begin_shape(py5.QUAD_STRIP)`. The strip's edge coloring and opacity are animated using a high-speed sine wave flow to simulate pulsing data traveling at light-speed along the non-Euclidean loop.
+- **Description**: An animated glowing magenta and cyan Möbius strip racing through a black void.
+
 ## liquid_gold_honeycomb_domain_warp
 
 - **Date**: 2026-05-31

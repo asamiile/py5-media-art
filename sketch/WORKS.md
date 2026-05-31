@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## liquid_gold_honeycomb_domain_warp
+
+- **Date**: 2026-05-31
+- **Theme**: A microscopic view of an alien hive mind's memory storage, where liquid metal flows through a perfect honeycomb lattice, displacing data.
+- **Technique**: A massive 2D hexagonal grid. Each hexagon's internal radius and rotation are driven by two passes of domain-warped OpenSimplex noise over time, creating a liquid-metal effect that breaks the rigid geometry.
+- **Description**: An animated glowing gold and amber honeycomb that warps and flows organically.
+
 ## bioluminescent_tension_web_3d
 
 - **Date**: 2026-05-31

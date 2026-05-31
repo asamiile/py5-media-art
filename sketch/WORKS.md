@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## neural_plexus_synaptic_web_3d
+
+- **Date**: 2026-05-31
+- **Theme**: A dense biological/cybernetic "Plexus" particle system in 3D space. Nodes drift elegantly like neurons forming and breaking synaptic connections as data flows through a massive network.
+- **Technique**: Generating 300 nodes drifting in 3D space. A highly optimized vectorized Numpy array dynamically calculates all 90,000 pairwise distances per frame. When nodes float within proximity, glowing geometric lines are drawn between them, with opacity fading based on inverse distance.
+- **Description**: An animated bioluminescent green plexus particle network.
+
 ## cyberpunk_neon_terrain_flyover_3d
 
 - **Date**: 2026-05-31

@@ -4,6 +4,98 @@
 Agents MUST NOT write anything in the `Comment` field. When registering a new work, Agents must leave the `Rating` and `Comment` fields empty or with their default labels as placeholders for the user.
 The Artist reads this file before starting a new sketch to understand preferences.
 
+## sierpinski_octahedron_crystal_fractal_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## neural_plexus_synaptic_web_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## cyberpunk_neon_terrain_flyover_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## quantum_supercomputer_voxel_core_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## sacred_harmonograph_mandala_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## synthetic_viral_capsid_geodesic_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## bioluminescent_crystalline_fractal_tree_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_topographic_fingerprint_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## cybernetic_mobius_hyper_racer_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## liquid_gold_honeycomb_domain_warp
+
+- **Rating**: 
+- **Comment**: 
+
+## bioluminescent_tension_web_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## dynamic_truchet_maze_cpu
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_sand_gravity_sim
+
+- **Rating**: 
+- **Comment**: 
+
+
+## chromatic_glass_monoliths_3d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## algorithmic_dendritic_frost_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_optical_fiber_wave_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## quantum_spin_foam_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## luminescent_silk_interference_3d
+
+- **Rating**: 
+- **Comment**: 
+
 ## vascular_space_colonization
 
 - **Rating**: 

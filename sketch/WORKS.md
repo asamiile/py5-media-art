@@ -3,6 +3,134 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## sierpinski_octahedron_crystal_fractal_3d
+
+- **Date**: 2026-05-31
+- **Theme**: A mathematically pure, recursively subdivided Sierpinski Octahedron that slowly rotates, while emitting pulsing geometric light from its core like an intricate magical crystal.
+- **Technique**: Generating a 3D fractal structure through a 5-level recursive function. This creates 7,776 individual translucent octahedrons in 3D space.
+- **Description**: An animated glowing amethyst and hot pink Sierpinski octahedron fractal.
+
+## neural_plexus_synaptic_web_3d
+
+- **Date**: 2026-05-31
+- **Theme**: A dense biological/cybernetic "Plexus" particle system in 3D space. Nodes drift elegantly like neurons forming and breaking synaptic connections as data flows through a massive network.
+- **Technique**: Generating 300 nodes drifting in 3D space. A highly optimized vectorized Numpy array dynamically calculates all 90,000 pairwise distances per frame. When nodes float within proximity, glowing geometric lines are drawn between them, with opacity fading based on inverse distance.
+- **Description**: An animated bioluminescent green plexus particle network.
+
+## cyberpunk_neon_terrain_flyover_3d
+
+- **Date**: 2026-05-31
+- **Theme**: A high-speed flight over an alien cyber-landscape composed of a glowing wireframe terrain, split by a flat data highway running down the center.
+- **Technique**: A massive 3D grid mapped via `py5.begin_shape(py5.TRIANGLE_STRIP)`. The Z-height of each vertex is governed by 3D OpenSimplex noise traversing a circle in time.
+- **Description**: An animated glowing magenta and cyan retro-futuristic terrain.
+
+## quantum_supercomputer_voxel_core_3d
+
+- **Date**: 2026-05-31
+- **Theme**: A massive monolithic quantum supercomputer core composed of thousands of floating, glowing cubes. The cubes constantly shift their scale and brightness as data ripples through them.
+- **Technique**: A 3D grid of `py5.box()` primitives. The size, brightness, and hue of each individual voxel are controlled by a complex trigonometric 3D interference pattern.
+- **Description**: An animated glowing cyan and blue 3D voxel interference matrix.
+
+## sacred_harmonograph_mandala_3d
+
+- **Date**: 2026-05-31
+- **Theme**: A high-frequency cosmic mandala made of overlapping, phase-shifted Lissajous curves that breathe in and out in 3D space.
+- **Technique**: Generating 150 complex parametric 3D curves using harmonograph/spirograph trigonometric equations. The phase of each curve is modulated by its index and a global time phase, ensuring a perfect 10-second loop. 
+- **Description**: An animated glowing gold and electric cyan 3D spirograph mandala.
+
+## synthetic_viral_capsid_geodesic_3d
+
+- **Date**: 2026-05-31
+- **Theme**: A microscopic view of a synthetic viral capsid, represented as a geodesic sphere of interlocking triangles that rhythmically breathes, distorts, and glows as if alive.
+- **Technique**: Procedural generation of an icosahedron recursively subdivided into a high-density geodesic sphere. The spherical vertices are radially displaced in real-time using 3D OpenSimplex noise.
+- **Description**: An animated glowing dark crimson and electric orange pulsating geometric virus.
+
+## bioluminescent_crystalline_fractal_tree_3d
+
+- **Date**: 2026-05-31
+- **Theme**: An ethereal, bioluminescent crystalline tree growing and branching in a dark void.
+- **Technique**: 3D Recursive branching (L-system) using `py5.push_matrix()` and `py5.pop_matrix()`. The angles of the branches slowly sway using OpenSimplex noise.
+- **Description**: An animated glowing fractal tree that dynamically breathes and branches in 3D space.
+
+## kinetic_topographic_fingerprint_2d
+
+- **Date**: 2026-05-31
+- **Theme**: A hypnotic, undulating topographical map that resembles a fingerprint, constantly changing its ridges and valleys as if terraforming a digital landscape.
+- **Technique**: Procedurally drawing dense contour lines (iso-bands). Concentric circles are generated and their vertices are heavily displaced using a 2D OpenSimplex noise field that drifts over time.
+- **Description**: An animated glowing seafoam green topological contour map that continuously shifts.
+
+## cybernetic_mobius_hyper_racer_3d
+
+- **Date**: 2026-05-31
+- **Theme**: A high-speed race along the glowing wireframe surface of an infinite, twisting Möbius strip floating in a dark abyss.
+- **Technique**: 3D procedural generation of a Möbius strip using a parametric surface mapped to P3D with `py5.begin_shape(py5.QUAD_STRIP)`. The strip's edge coloring and opacity are animated using a high-speed sine wave flow to simulate pulsing data traveling at light-speed along the non-Euclidean loop.
+- **Description**: An animated glowing magenta and cyan Möbius strip racing through a black void.
+
+## liquid_gold_honeycomb_domain_warp
+
+- **Date**: 2026-05-31
+- **Theme**: A microscopic view of an alien hive mind's memory storage, where liquid metal flows through a perfect honeycomb lattice, displacing data.
+- **Technique**: A massive 2D hexagonal grid. Each hexagon's internal radius and rotation are driven by two passes of domain-warped OpenSimplex noise over time, creating a liquid-metal effect that breaks the rigid geometry.
+- **Description**: An animated glowing gold and amber honeycomb that warps and flows organically.
+
+## bioluminescent_tension_web_3d
+
+- **Date**: 2026-05-31
+- **Theme**: An ethereal, infinite spiderweb woven from bioluminescent threads that react and pluck themselves like harp strings.
+- **Technique**: A 3D network of nodes connected by edges. Nodes are continuously disturbed by a wandering 3D Perlin noise field, sending rippling waves of tension across the connected string segments.
+- **Description**: An animated glowing cyan and violet 3D web structure that softly ripples and breathes under tension.
+
+## dynamic_truchet_maze_cpu
+
+- **Date**: 2026-05-31
+- **Theme**: A microscopic view of an alien CPU where continuous glowing pathways dynamically reroute themselves in a perfectly synchronized maze.
+- **Technique**: Animated multi-scale Truchet tiles. Using arcs on a grid where each cell rotates by 90 degrees based on a spatial noise field that shifts over time.
+- **Description**: An animated glowing cyan and neon green truchet maze that continuously shifts and re-routes like an alien CPU.
+
+## kinetic_sand_gravity_sim
+
+- **Date**: 2026-05-31
+- **Theme**: A falling simulation of hundreds of thousands of neon sand grains accumulating and tumbling down geometric steps.
+- **Technique**: Cellular Automata falling sand simulation with physics rules for stacking and tumbling.
+- **Description**: Brightly colored sand pouring in from the top and settling into beautiful layered dunes over geometric obstacles.
+
+
+## chromatic_glass_monoliths_3d
+
+- **Date**: 2026-05-31
+- **Theme**: Floating, brutalist glass monoliths rotating slowly in an endless neon-lit canyon, reflecting vibrant accents.
+- **Technique**: 3D generation of large transparent `py5.box` elements with slow rotational matrices, lit by colored point lights and directional lights.
+- **Description**: Majestic, slow rotation of immense glass structures catching colorful light.
+
+
+## algorithmic_dendritic_frost_3d
+
+- **Date**: 2026-05-31
+- **Theme**: A high-speed macro simulation of intricate frost crystals and ice dendrites rapidly branching and growing across an invisible 3D surface.
+- **Technique**: A 3D random walk branching algorithm where glowing icy blue `py5.line` segments grow outward, snapping to angles that mimic water crystallization (hexagonal/60-degree branching). Additive blending creates an intense cold glow, enhanced by slight Z-axis displacement from 3D Perlin noise.
+- **Description**: An animated 3D network of glowing ice crystals rapidly branching and growing on an invisible surface.
+
+## kinetic_optical_fiber_wave_3d
+
+- **Date**: 2026-05-31
+- **Theme**: An immersive 3D wave composed of thousands of glowing optical fiber tips, sweeping gracefully over an invisible terrain.
+- **Technique**: A 2D grid of `py5.line` elements stretching upwards. The height (y-coordinate) of the top vertex is driven by a 2D Perlin noise map that scrolls over time. The tips are drawn with additive blended `py5.points` to simulate glowing ends of optical fiber.
+- **Description**: An animated 3D topography composed of glowing lines that act like optical fibers, shifting in fluid motion.
+
+## quantum_spin_foam_3d
+
+- **Date**: 2026-05-31
+- **Theme**: A microscopic look at quantum spin foam, represented as interlocking 3D rings that constantly flip orientations and flash brightly when they connect.
+- **Technique**: 3D generative layout of `py5.ellipse` objects using `py5.rotate_x` and `py5.rotate_y` driven by Perlin noise, creating a shifting interconnected mesh of quantum loops.
+- **Description**: An animated 3D network of glowing overlapping rings that flip and flash dynamically based on noise.
+
+## luminescent_silk_interference_3d
+
+- **Date**: 2026-05-31
+- **Theme**: Floating ribbons of bioluminescent silk that intersect and create interference patterns, drifting in a slow current.
+- **Technique**: 3D bezier ribbons whose control points are driven by low-frequency 3D Perlin noise and sine waves. Additive blending where the ribbons overlap.
+- **Description**: An animated 3D network of glowing parametric ribbons that simulate silk floating in fluid.
+
 ## vascular_space_colonization
 
 - **Date**: 2026-05-31

@@ -3,6 +3,14 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## neon_magnetic_fluid_vortex_2d
+
+- **Date**: 2026-06-01
+- **Theme**: A hypnotic, top-down view of a microscopic magnetic fluid where glowing particles form tightly wound vortexes that repel and attract each other.
+- **Technique**: 2D Particle system driven by a time-varying magnetic dipole vector field with curl noise to add turbulence. Particles leave additive blended trails.
+- **Description**: An animated glowing magnetic fluid vortex simulation with violet, cyan, and neon pink particles.
+
+
 ## sierpinski_octahedron_crystal_fractal_3d
 
 - **Date**: 2026-05-31

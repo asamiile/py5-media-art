@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## algorithmic_origami_bloom
+
+- **Date**: 2026-06-01
+- **Theme**: Abstract geometric shapes folding and unfolding into each other like hyper-dimensional origami, simulating a blooming mechanical flower.
+- **Technique**: 3D rotational matrices applying smooth trigonometric sine waves to nested coordinate systems (push/pop matrix) with transparent filled polygons.
+- **Description**: An animated glowing 3D geometric origami flower that continuously unfolds.
+
 ## kinetic_pendulum_wave_cascade
 
 - **Date**: 2026-06-01

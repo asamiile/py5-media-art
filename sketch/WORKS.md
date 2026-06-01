@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## lissajous_torus_knot_weaving
+
+- **Date**: 2026-06-01
+- **Theme**: A high-frequency multidimensional Lissajous knot that rapidly weaves and breathes, forming a dense but delicate topological torus structure in 3D space.
+- **Technique**: Parametric 3D curve generation using sine and cosine functions with rational frequency ratios. Over time, the phase shifts, causing the knot to morph and "breathe". Rendering with 25,000 points and additive blending.
+- **Description**: An animated glowing 3D Lissajous torus knot weaving simulation.
+
 ## algorithmic_origami_bloom
 
 - **Date**: 2026-06-01

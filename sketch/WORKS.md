@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## kinetic_pendulum_wave_cascade
+
+- **Date**: 2026-06-01
+- **Theme**: A hypnotic cascade of hundreds of glowing pendulums, each with a slightly different frequency, forming beautiful shifting wave patterns as they swing out of and back into phase.
+- **Technique**: A mathematical pendulum wave simulation mapping 250 oscillators to a color gradient spanning Amber, Crimson, and Cyan, with additive blending and motion blur trails.
+- **Description**: An animated glowing pendulum wave cascade.
+
 ## neon_magnetic_fluid_vortex_2d
 
 - **Date**: 2026-06-01

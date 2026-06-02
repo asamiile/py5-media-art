@@ -3,6 +3,35 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## lissajous_torus_knot_weaving
+
+- **Date**: 2026-06-01
+- **Theme**: A high-frequency multidimensional Lissajous knot that rapidly weaves and breathes, forming a dense but delicate topological torus structure in 3D space.
+- **Technique**: Parametric 3D curve generation using sine and cosine functions with rational frequency ratios. Over time, the phase shifts, causing the knot to morph and "breathe". Rendering with 25,000 points and additive blending.
+- **Description**: An animated glowing 3D Lissajous torus knot weaving simulation.
+
+## algorithmic_origami_bloom
+
+- **Date**: 2026-06-01
+- **Theme**: Abstract geometric shapes folding and unfolding into each other like hyper-dimensional origami, simulating a blooming mechanical flower.
+- **Technique**: 3D rotational matrices applying smooth trigonometric sine waves to nested coordinate systems (push/pop matrix) with transparent filled polygons.
+- **Description**: An animated glowing 3D geometric origami flower that continuously unfolds.
+
+## kinetic_pendulum_wave_cascade
+
+- **Date**: 2026-06-01
+- **Theme**: A hypnotic cascade of hundreds of glowing pendulums, each with a slightly different frequency, forming beautiful shifting wave patterns as they swing out of and back into phase.
+- **Technique**: A mathematical pendulum wave simulation mapping 250 oscillators to a color gradient spanning Amber, Crimson, and Cyan, with additive blending and motion blur trails.
+- **Description**: An animated glowing pendulum wave cascade.
+
+## neon_magnetic_fluid_vortex_2d
+
+- **Date**: 2026-06-01
+- **Theme**: A hypnotic, top-down view of a microscopic magnetic fluid where glowing particles form tightly wound vortexes that repel and attract each other.
+- **Technique**: 2D Particle system driven by a time-varying magnetic dipole vector field with curl noise to add turbulence. Particles leave additive blended trails.
+- **Description**: An animated glowing magnetic fluid vortex simulation with violet, cyan, and neon pink particles.
+
+
 ## sierpinski_octahedron_crystal_fractal_3d
 
 - **Date**: 2026-05-31

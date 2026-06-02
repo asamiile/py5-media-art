@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## synthetic_immune_swarm_3d
+
+- **Date**: 2026-06-02
+- **Theme**: An aggressive swarm of synthetic diamond-shaped hunters overwhelming organic, rounded cellular bodies in a microscopic fluid environment.
+- **Technique**: 3D flocking algorithm (Boids approach) where hunters seek out slow-moving target spheres. Implements custom 3D drawing (`py5.begin_shape`) for hunter pyramids and dynamic damage/health simulation for targets.
+- **Description**: An animated bioluminescent neon cyan and crimson synthetic swarm in a deep space background.
+
 ## geometric_tesseract_4d_rotation
 
 - **Date**: 2026-06-02

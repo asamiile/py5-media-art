@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## gravitational_wave_line_distortion_2d
+
+- **Date**: 2026-06-02
+- **Theme**: The invisible weight of massive celestial bodies passing through spacetime, represented by a dense grid of parallel lines that smoothly bends, stretches, and distorts.
+- **Technique**: 2D vector field displacement. A grid of horizontal lines is drawn, but the Y-coordinates of vertices are heavily displaced by a combination of inverse-square gravity wells (Gaussian distribution) and 2D Perlin noise. The gravity wells slowly orbit a central point.
+- **Description**: An animated monochrome representation of gravity waves rippling through spacetime.
+
 ## synthetic_immune_swarm_3d
 
 - **Date**: 2026-06-02

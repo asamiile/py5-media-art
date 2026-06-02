@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## optical_glitch_fiber_tunnel_3d
+
+- **Date**: 2026-06-02
+- **Theme**: A high-speed journey along an endless, glitching optical fiber cable illuminating deep subterranean caverns.
+- **Technique**: 3D generative tunnel using `py5.curve_vertex` points displaced by 1D noise, with neon light pulses traveling down the tunnel path using high-speed phase offsets.
+- **Description**: An animated glowing dark blue and cyan neon optical fiber tunnel.
+
 ## kinetic_tessellation_flower_3d
 
 - **Date**: 2026-06-02

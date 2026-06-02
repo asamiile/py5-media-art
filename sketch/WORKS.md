@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## geometric_tesseract_4d_rotation
+
+- **Date**: 2026-06-02
+- **Theme**: A 4D hypercube (tesseract) slowly rotating and casting a 3D shadow into our reality, its vertices connected by glowing energy beams that pulse as they cross dimensional planes.
+- **Technique**: 4D to 3D projection math. 16 vertices of a tesseract in 4D space are multiplied by 4D rotation matrices (using combinations of XW, YW, ZW planes) and then projected down to 3D using perspective projection.
+- **Description**: An animated glowing 4D tesseract rotation.
+
 ## fluid_cellular_mitosis_3d
 
 - **Date**: 2026-06-02

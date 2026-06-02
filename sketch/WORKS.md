@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## fluid_cellular_mitosis_3d
+
+- **Date**: 2026-06-02
+- **Theme**: A microscopic view of an alien memory cell dividing and rapidly growing intricate patterns across its glowing membrane.
+- **Technique**: 3D metaball scalar field constructed via distance functions to two separating centers, mapped with 3D Perlin noise to create an organic, bubbling membrane. The surface is rendered using a massive point cloud array based on a Fibonacci sphere distribution.
+- **Description**: An animated glowing cellular mitosis simulation in 3D.
+
 ## optical_glitch_fiber_tunnel_3d
 
 - **Date**: 2026-06-02

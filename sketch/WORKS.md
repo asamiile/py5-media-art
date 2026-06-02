@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## kinetic_tessellation_flower_3d
+
+- **Date**: 2026-06-02
+- **Theme**: A microscopic view of metallic, geometric petals continuously unfolding and tessellating into an infinite flower.
+- **Technique**: 3D recursive rotational tessellation, forming a dynamic flower structure using `push_matrix` and `pop_matrix` with animated angles.
+- **Description**: An animated glowing gold and cyan geometric 3D flower simulation.
+
 ## lissajous_torus_knot_weaving
 
 - **Date**: 2026-06-01

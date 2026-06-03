@@ -4,6 +4,36 @@
 Agents MUST NOT write anything in the `Comment` field. When registering a new work, Agents must leave the `Rating` and `Comment` fields empty or with their default labels as placeholders for the user.
 The Artist reads this file before starting a new sketch to understand preferences.
 
+## gravitational_wave_line_distortion_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## synthetic_immune_swarm_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## geometric_tesseract_4d_rotation
+
+- **Rating**: 
+- **Comment**: 
+
+## fluid_cellular_mitosis_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## optical_glitch_fiber_tunnel_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_tessellation_flower_3d
+
+- **Rating**: 
+- **Comment**: 
+
 ## lissajous_torus_knot_weaving
 
 - **Rating**: 

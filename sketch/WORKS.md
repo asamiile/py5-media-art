@@ -3,6 +3,48 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## gravitational_wave_line_distortion_2d
+
+- **Date**: 2026-06-02
+- **Theme**: The invisible weight of massive celestial bodies passing through spacetime, represented by a dense grid of parallel lines that smoothly bends, stretches, and distorts.
+- **Technique**: 2D vector field displacement. A grid of horizontal lines is drawn, but the Y-coordinates of vertices are heavily displaced by a combination of inverse-square gravity wells (Gaussian distribution) and 2D Perlin noise. The gravity wells slowly orbit a central point.
+- **Description**: An animated monochrome representation of gravity waves rippling through spacetime.
+
+## synthetic_immune_swarm_3d
+
+- **Date**: 2026-06-02
+- **Theme**: An aggressive swarm of synthetic diamond-shaped hunters overwhelming organic, rounded cellular bodies in a microscopic fluid environment.
+- **Technique**: 3D flocking algorithm (Boids approach) where hunters seek out slow-moving target spheres. Implements custom 3D drawing (`py5.begin_shape`) for hunter pyramids and dynamic damage/health simulation for targets.
+- **Description**: An animated bioluminescent neon cyan and crimson synthetic swarm in a deep space background.
+
+## geometric_tesseract_4d_rotation
+
+- **Date**: 2026-06-02
+- **Theme**: A 4D hypercube (tesseract) slowly rotating and casting a 3D shadow into our reality, its vertices connected by glowing energy beams that pulse as they cross dimensional planes.
+- **Technique**: 4D to 3D projection math. 16 vertices of a tesseract in 4D space are multiplied by 4D rotation matrices (using combinations of XW, YW, ZW planes) and then projected down to 3D using perspective projection.
+- **Description**: An animated glowing 4D tesseract rotation.
+
+## fluid_cellular_mitosis_3d
+
+- **Date**: 2026-06-02
+- **Theme**: A microscopic view of an alien memory cell dividing and rapidly growing intricate patterns across its glowing membrane.
+- **Technique**: 3D metaball scalar field constructed via distance functions to two separating centers, mapped with 3D Perlin noise to create an organic, bubbling membrane. The surface is rendered using a massive point cloud array based on a Fibonacci sphere distribution.
+- **Description**: An animated glowing cellular mitosis simulation in 3D.
+
+## optical_glitch_fiber_tunnel_3d
+
+- **Date**: 2026-06-02
+- **Theme**: A high-speed journey along an endless, glitching optical fiber cable illuminating deep subterranean caverns.
+- **Technique**: 3D generative tunnel using `py5.curve_vertex` points displaced by 1D noise, with neon light pulses traveling down the tunnel path using high-speed phase offsets.
+- **Description**: An animated glowing dark blue and cyan neon optical fiber tunnel.
+
+## kinetic_tessellation_flower_3d
+
+- **Date**: 2026-06-02
+- **Theme**: A microscopic view of metallic, geometric petals continuously unfolding and tessellating into an infinite flower.
+- **Technique**: 3D recursive rotational tessellation, forming a dynamic flower structure using `push_matrix` and `pop_matrix` with animated angles.
+- **Description**: An animated glowing gold and cyan geometric 3D flower simulation.
+
 ## lissajous_torus_knot_weaving
 
 - **Date**: 2026-06-01

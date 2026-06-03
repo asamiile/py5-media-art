@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## chromatic_dispersion_glass_fractal_3d
+
+- **Date**: 2026-06-03
+- **Theme**: A slow-rotating, complex 3D fractal (a Menger sponge variation) made of highly refractive glass that splits light into intense chromatic aberration.
+- **Technique**: Instead of true raytracing, chromatic dispersion is simulated by rendering the recursive 3D geometry three times with additive blending (`py5.ADD`): once in pure Red, once in pure Green, and once in pure Blue. By applying slight offsets in rotation and scale driven by a sine wave, the overlapping colors combine to form pristine white edges that fracture into vibrant rainbows.
+- **Description**: An animated 3D simulation of a massive, glowing fractal crystal rotating in the void. Simulated chromatic aberration separates the light passing through the structure into its component RGB channels. As the fractal turns and breathes, the channels drift apart and recombine, painting the edges with intense neon rainbows and searing white additive light.
+
 ## kinetic_typographic_monument_3d
 
 - **Date**: 2026-06-03

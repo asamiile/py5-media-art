@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## kinetic_chiral_lattice_folding_3d
+
+- **Date**: 2026-06-03
+- **Theme**: A high-density 3D lattice made of chiral mechanical joints that continuously fold and unfold, creating cascading waves of complex structural reorganization like a digital origami metamaterial.
+- **Technique**: 3D procedural generation of a massive grid of connected boxes and lines. A chiral rotation matrix governed by a global 3D OpenSimplex noise wave propagates through the grid, causing localized mechanical folding and unfolding.
+- **Description**: An animated 3D simulation of a massive cubic lattice structure undergoing constant structural transformation. Boxes rotate and scale based on a 3D noise field, producing an effect similar to an unfolding and folding mechanical metamaterial or chiral origami.
+
 ## geometric_dyson_sphere_megastructure_3d
 
 - **Date**: 2026-06-03

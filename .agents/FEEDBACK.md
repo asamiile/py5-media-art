@@ -4,6 +4,11 @@
 Agents MUST NOT write anything in the `Comment` field. When registering a new work, Agents must leave the `Rating` and `Comment` fields empty or with their default labels as placeholders for the user.
 The Artist reads this file before starting a new sketch to understand preferences.
 
+## brass_celestial_orrery_3d
+
+- **Rating**: 
+- **Comment**: 
+
 ## bioluminescent_abyssal_medusa_3d
 
 - **Rating**: 

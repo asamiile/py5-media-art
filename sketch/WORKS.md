@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## kinetic_ferrofluid_magnetic_sculpture_3d
+
+- **Date**: 2026-06-03
+- **Theme**: Dark, oily ferrofluid spiking and reacting dynamically to a shifting magnetic field in 3D.
+- **Technique**: A high-density 3D sphere is dynamically deformed using 4D OpenSimplex noise mapped to spherical coordinates. To simulate the iconic sharp spikes of ferrofluid, the noise values are processed with an absolute power function (`abs(noise)**4`), causing sharp peaks to emerge organically from the smooth base. The mesh is rendered with `py5.TRIANGLE_STRIP`. Material properties are tuned for high specularity (glossiness), interacting with multiple directional and point lights to create realistic reflections and shadows.
+- **Description**: An animated 3D simulation of a massive globule of ferrofluid suspended in a clinical white environment. As an invisible, shifting magnetic field passes through the space, sharp, organic spikes of glossy obsidian liquid erupt and recede across its surface. High-contrast specular highlights gleam along the shifting curves, while a faint, magnetic blue under-light hints at the invisible forces driving the fluid's hypnotic, mechanical dance.
+
 ## neon_synthwave_grid_terrain_3d
 
 - **Date**: 2026-06-03

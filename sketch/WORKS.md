@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## stellar_magnetic_reconnection_3d
+
+- **Date**: 2026-06-03
+- **Theme**: The violent but beautiful snapping and reconnection of magnetic field lines in the corona of a star.
+- **Technique**: 3D bezier curves connected between shifting points on a spherical surface. As points drift apart due to noise, the bezier curves stretch and abruptly snap to new closer neighbors.
+- **Description**: An animated 3D simulation of magnetic reconnection where glowing orange and crimson field lines stretch and violently snap to new configurations, glowing blinding white at the reconnection points.
+
 ## gravitational_wave_line_distortion_2d
 
 - **Date**: 2026-06-02

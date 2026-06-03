@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## bioluminescent_coral_turing_patterns_3d
+
+- **Date**: 2026-06-03
+- **Theme**: A sprawling, alien coral reef structure that slowly grows and pulses, governed by 3D Turing patterns (Reaction-Diffusion).
+- **Technique**: 3D point cloud rendering simulating a simplified Reaction-Diffusion system. High concentration nodes are rendered as glowing organic orbs connected by fluid, translucent structures, reacting to simulated currents over time.
+- **Description**: An animated 3D simulation of a massive spherical coral-like structure. By calculating absolute differences between multi-scale 3D noise fields, a labyrinthine Turing pattern is generated. The "cells" pulse and drift like bioluminescent deep sea organisms.
+
 ## kinetic_chiral_lattice_folding_3d
 
 - **Date**: 2026-06-03

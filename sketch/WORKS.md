@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## cybernetic_data_monolith_glitch_3d
+
+- **Date**: 2026-06-03
+- **Theme**: A monolithic, imposing brutalist cybernetic structure covered in flowing streams of data points, with periodic horizontal scanline glitches and displacement waves traversing its surface.
+- **Technique**: 3D Box geometry modified dynamically by pushing vertices along their normals based on a noise threshold and time, combined with texture-like data points generated via a particle system clinging to the faces.
+- **Description**: An animated 3D simulation of a massive brutalist data structure slowly rotating. A sweeping horizontal scanline intermittently glitches out sections of the wall, shifting colors to magenta and green while scattering geometry. Glowing data nodes emerge and retreat based on an underlying 3D noise field.
+
 ## bioluminescent_coral_turing_patterns_3d
 
 - **Date**: 2026-06-03

@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## synaptic_hyper_network_3d
+
+- **Date**: 2026-06-03
+- **Theme**: A vast, complex 3D network of glowing synapses and pulsing neurons, dynamically routing light packets across interconnected nodes.
+- **Technique**: Procedurally generated 3D network using `scipy.spatial.Delaunay` within a sphere. Edges are filtered by length to ensure localized connections. Pulses of light travel along the lines (synapses) driven by a time-varying noise function, and nodes pulse when stimulated. Additive blending is used for the synapses.
+- **Description**: An animated 3D simulation of a complex neural or cybernetic network. Thousands of connections between nodes form a spherical web. As time progresses, waves of activity (driven by 3D noise) sweep through the network, causing individual synapses to flare hot magenta and connected nodes to glow brightly before fading back to a deep electric blue baseline state.
+
 ## quantum_interference_glitch_3d
 
 - **Date**: 2026-06-03

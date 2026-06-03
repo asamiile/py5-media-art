@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## biomechanical_fractal_spores_3d
+
+- **Date**: 2026-06-03
+- **Theme**: Microscopic spores that resemble both organic cells and metallic fractal structures, drifting and colliding to form larger colonies.
+- **Technique**: 3D fractal generation (Mandelbulb-like recursive spheres) combined with soft body physics and collision detection, rendered with deep sea bioluminescence colors.
+- **Description**: An animated 3D macro simulation of biomechanical fractal spores drifting through a dark abyss, glowing with cyan, neon green, and pale pink bioluminescence.
+
 ## stellar_magnetic_reconnection_3d
 
 - **Date**: 2026-06-03

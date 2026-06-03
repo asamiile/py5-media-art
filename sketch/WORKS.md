@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## hyperbolic_tessellation_portal_3d
+
+- **Date**: 2026-06-03
+- **Theme**: A swirling, non-Euclidean tunnel composed of interconnected triangular prisms that warp and distort, creating the illusion of a hyperbolic tessellation stretching to infinity.
+- **Technique**: Generating concentric rings of geometry that scale down exponentially as they approach the center vanishing point. The rings rotate slowly and use additive color blending. The inner rings move outward fractally to simulate continuous forward motion through the portal.
+- **Description**: An animated 3D simulation of a mesmerizing cosmic portal. Rings of twisted geometry extend infinitely into the distance, rotating and expanding outward. Additive blending creates intense, fiery glowing effects as gold, crimson, and solar white panels overlap in the darkness.
+
 ## synaptic_hyper_network_3d
 
 - **Date**: 2026-06-03

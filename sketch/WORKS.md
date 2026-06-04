@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## liquid_prism_caustic_ripples_3d
+
+- **Date**: 2026-06-05
+- **Theme**: A slow-moving pool of liquid crystal where undulating ripples refract light, casting intricate, colorful caustic patterns.
+- **Technique**: A high-resolution 3D grid plane deformed by multiple overlapping sine waves (ripples). The faces of the grid are colored based on their normal vectors (simulating refraction/caustics), blending bright cyan, magenta, and gold against a dark background.
+- **Description**: An animated 3D simulation of thick, colorful liquid slowly undulating. As the fluid ripples and shifts, overlapping sine waves create a hypnotic dance of light refraction on the surface, bending iridescent cyans and glowing magentas into liquid gold highlights against an obsidian void.
+
 ## kinetic_ferrofluid_magnetic_sculpture_3d
 
 - **Date**: 2026-06-03

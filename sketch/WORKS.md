@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## kinetic_typography_cylinder_glitch_3d
+
+- **Date**: 2026-06-05
+- **Theme**: A massive, rotating cylindrical pillar of glowing data (hexadecimal characters) spinning in a void. Occasional glitches scramble the characters and distort the cylinder's shape.
+- **Technique**: A 3D cylinder composed of a grid of text elements mapped using cylindrical coordinates (radius, angle, height). Characters flip randomly and localized 3D noise offsets push them inward or outward.
+- **Description**: An animated 3D simulation of a towering pillar of hacker-esque data spinning ominously. Hexadecimal characters form a solid cylinder colored in neon lime and electric cyan. As the cylinder rotates, waves of corruption traverse its surface, scrambling the data and causing stark white glitched characters to violently extrude from the core.
+
 ## liquid_prism_caustic_ripples_3d
 
 - **Date**: 2026-06-05

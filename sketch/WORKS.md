@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## monolithic_glass_pendulum_array_3d
+
+- **Date**: 2026-06-05
+- **Theme**: A vast, silent array of massive glass pendulums swinging in perfect mathematical harmony, refracting single beams of pure white light.
+- **Technique**: A 2D grid of 3D pendulum objects (box primitives). The angle of each pendulum is driven by a sine wave whose phase shifts according to its grid position, creating a hypnotic wave of motion. Rendered using alpha blending to simulate glass, illuminated by a single stark directional light against a pure black background.
+- **Description**: An animated 3D simulation of a towering array of heavy glass swinging silently. A sleek, geometric monolithic bob at the end of each pendulum catches stark white and icy blue lights, refracting and swinging in a mesmerizing, synchronized wave across a pitch-black void.
+
 ## kinetic_typography_cylinder_glitch_3d
 
 - **Date**: 2026-06-05

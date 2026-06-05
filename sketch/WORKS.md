@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## neon_rain_forcefield_3d
+
+- **Date**: 2026-06-06
+- **Theme**: Thousands of glowing neon needles falling like rain, bouncing off an invisible spherical forcefield in the center, creating glowing ripple effects upon impact.
+- **Technique**: A 3D particle system with simple gravity and sphere-collision detection.
+- **Description**: An animated 10s simulation of a mesmerizing downpour of neon rain that reveals an invisible sphere in the center through collisions.
+
 ## digital_origami_tessellation_morph_3d
 
 - **Date**: 2026-06-05

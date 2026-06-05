@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## biomechanical_voronoi_shatter_3d
+
+- **Date**: 2026-06-05
+- **Theme**: A slowly rotating 3D bio-mechanical egg that shatters into thousands of cells glowing with internal energy, drifting apart into the abyss.
+- **Technique**: A procedurally generated 3D sphere mapped with complex noise to simulate individual shattered pieces drifting outward along their normal vectors.
+- **Description**: An animated 12s simulation of a 3D voronoi-like shattering sphere.
+
 ## synthwave_cyber_prism_highway_3d
 
 - **Date**: 2026-06-05

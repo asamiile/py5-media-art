@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## quantum_entangled_particle_strings_3d
+
+- **Date**: 2026-06-05
+- **Theme**: A 3D simulation of glowing quantum strings snapping together with intense light when they become entangled.
+- **Technique**: Procedurally generated 3D splines with high-performance NumPy pair-wise distance tracking for proximity rendering.
+- **Description**: An animated 12s simulation of strings wandering in space and entangling with bright connections.
+
 ## kinetic_brass_gyroscope_swarm_3d
 
 - **Date**: 2026-06-05

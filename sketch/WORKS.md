@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## liquid_glass_metaball_flow_3d
+
+- **Date**: 2026-06-05
+- **Theme**: A mesmerizing simulation of liquid glass metaballs floating in zero gravity, merging and separating continuously.
+- **Technique**: An optimized 3D marching cubes approximation running on a NumPy grid to evaluate isosurfaces from multiple moving spherical field sources. Rendered with additive blending.
+- **Description**: An animated 10s simulation of flowing liquid 3D metaballs.
+
 ## sacred_geometry_mandala_bloom_3d
 
 - **Date**: 2026-06-05

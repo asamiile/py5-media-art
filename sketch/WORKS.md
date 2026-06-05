@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## synthwave_cyber_prism_highway_3d
+
+- **Date**: 2026-06-05
+- **Theme**: A high-speed flight through a neon synthwave highway populated by rotating geometric prisms that refract the neon sunset.
+- **Technique**: Procedurally generated scrolling 3D wireframe terrain with a center highway path, filled with flying 3D geometric shapes and additive blending.
+- **Description**: An animated 10s simulation of a cyber highway speeding toward a neon digital sunset.
+
 ## liquid_neon_magnetic_vortex_3d
 
 - **Date**: 2026-06-05

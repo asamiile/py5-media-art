@@ -4267,3 +4267,18 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Theme**: The ephemeral beauty of ink surrendering to water — watching structure dissolve into ghostly plumes that curl, branch, and disappear on warm parchment.
 - **Technique**: 2D diffusion-advection simulation on a 960×540 grid with curl-noise advection, Laplacian diffusion, semi-Lagrangian transport, and 4 substeps per frame. Four-zone weighted color mapping (parchment → sepia → indigo → sumi black) with Gaussian paper texture. 15s 4K/60fps MP4.
 - **Description**: Drops of dark ink bloom on warm parchment, stretching into organic tendrils driven by invisible swirling currents. The ink dissolves through sepia mid-tones and deep indigo before fading into ghostly wisps — a digital sumi-e that inverts the collection's typical dark-background aesthetic into a quiet, contemplative ink wash.
+
+## bioluminescent_neural_ocean_3d
+
+- **Date**: 2026-06-04
+- **Theme**: A vast, deep-sea network of glowing synapses undulating gracefully in an invisible ocean current.
+- **Technique**: 3D Boids flocking combined with a spring-physics network where nearest neighbors are connected by glowing `py5.lines`. The flock moves through a 3D OpenSimplex noise field to simulate ocean currents.
+- **Description**: Hundreds of softly glowing nodes drift downwards and sideways, connected by fine threads that stretch and snap. The entire web pulses as if breathing in the dark water.
+
+
+## geometric_glass_refraction_matrix_3d
+
+- **Date**: 2026-06-04
+- **Theme**: Floating, glowing glass cubes in a 3D matrix that refract and reflect light, shifting dynamically based on noise.
+- **Technique**: 3D matrix of cubes with individual noise-driven rotations and additive blending to simulate glass refraction and reflections.
+- **Description**: A grid of floating glass cubes rotates around its center in a dark environment. As the grid moves, the individual cubes rotate and twist on multiple axes, driven by 3D noise. Through additive blending, overlapping transparent shapes combine into intense, glowing geometric structures in shades of amber, cyan, and magenta.

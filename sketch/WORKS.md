@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## kinetic_brass_gyroscope_swarm_3d
+
+- **Date**: 2026-06-05
+- **Theme**: A chaotic swarm of glowing brass gyroscopes spinning in a dark void.
+- **Technique**: 3D rotational matrices, nested Push/Pop.
+- **Description**: An animated 10s simulation of a swarm of golden gyroscopes rotating in 3D space.
+
 ## monolithic_glass_pendulum_array_3d
 
 - **Date**: 2026-06-05

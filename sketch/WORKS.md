@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## chromatic_crystal_cavern_3d
+
+- **Date**: 2026-06-05
+- **Theme**: A slow cinematic flight through an endless, abstract crystal cavern rendered with multi-layered chromatic dispersion effects.
+- **Technique**: Procedurally generated 3D cave walls using layered Perlin noise meshes. Shifting RGB layers simulate chromatic aberration and refraction with additive blending.
+- **Description**: An animated 10s simulation of a deep chromatic cavern with floating crystals.
+
 ## cybernetic_holographic_flower_3d
 
 - **Date**: 2026-06-05

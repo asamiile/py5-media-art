@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## sacred_geometry_mandala_bloom_3d
+
+- **Date**: 2026-06-05
+- **Theme**: A rotating, intricate 3D mandala made of interlocking rings, geometric starbursts, and intricate polyhedrons that slowly shift into place.
+- **Technique**: Procedurally generated 3D polar geometries consisting of stacked counter-rotating rings and wireframe spheres, rendered with additive blending and neon glow.
+- **Description**: An animated 15s simulation of a hypnotic overlapping geometric mandala bloom.
+
 ## plasma_fluid_interference_patterns_3d
 
 - **Date**: 2026-06-05

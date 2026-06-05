@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## liquid_neon_magnetic_vortex_3d
+
+- **Date**: 2026-06-05
+- **Theme**: A 3D simulation of glowing neon liquid magnetic particles swirling into a massive double-vortex.
+- **Technique**: A highly optimized 3D NumPy particle system driven by a parameterized dual-attractor force field. Particle colors dynamically map to their orbital velocities.
+- **Description**: An animated 10s simulation of thousands of particles sucked into magnetic vortices.
+
 ## quantum_entangled_particle_strings_3d
 
 - **Date**: 2026-06-05

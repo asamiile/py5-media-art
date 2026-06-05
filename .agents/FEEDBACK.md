@@ -4,6 +4,111 @@
 Agents MUST NOT write anything in the `Comment` field. When registering a new work, Agents must leave the `Rating` and `Comment` fields empty or with their default labels as placeholders for the user.
 The Artist reads this file before starting a new sketch to understand preferences.
 
+## kinetic_ferrofluid_magnetic_sculpture_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## neon_synthwave_grid_terrain_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## brass_celestial_orrery_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## bioluminescent_abyssal_medusa_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_architectural_origami_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## stellar_strange_attractor_plasma_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## cyber_holographic_topography_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## parametric_wireframe_orchid_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## fluid_vector_field_topology_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## chromatic_dispersion_glass_fractal_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_typographic_monument_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## hyperbolic_tessellation_portal_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## synaptic_hyper_network_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## quantum_interference_glitch_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## sacred_geometry_crystal_growth_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## cybernetic_data_monolith_glitch_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## bioluminescent_coral_turing_patterns_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_chiral_lattice_folding_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## geometric_dyson_sphere_megastructure_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## biomechanical_fractal_spores_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## stellar_magnetic_reconnection_3d
+
+- **Rating**: 
+- **Comment**: 
+
 ## gravitational_wave_line_distortion_2d
 
 - **Rating**: 

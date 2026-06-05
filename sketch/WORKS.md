@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## cybernetic_holographic_flower_3d
+
+- **Date**: 2026-06-05
+- **Theme**: A delicate 3D holographic flower that continuously unfolds its geometric petals, made of glowing neon wireframes.
+- **Technique**: Procedurally generated parametric surfaces (using sine/cosine/exponential functions for petals) rendered as py5.LINES with additive blending. The flower's multi-layered petals bend outward continuously to simulate a blooming motion.
+- **Description**: An animated 15s simulation of a 3D blooming holographic cyber flower.
+
 ## biomechanical_voronoi_shatter_3d
 
 - **Date**: 2026-06-05

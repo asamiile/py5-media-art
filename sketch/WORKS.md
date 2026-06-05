@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## plasma_fluid_interference_patterns_3d
+
+- **Date**: 2026-06-05
+- **Theme**: A flowing 3D field of interacting sine waves creating interference patterns that resemble glowing liquid plasma.
+- **Technique**: A dense grid of 3D points where height and color are calculated by summing high-frequency sine waves from multiple moving origins.
+- **Description**: An animated 10s simulation of plasma interference patterns mapped to a 3D grid.
+
 ## chromatic_crystal_cavern_3d
 
 - **Date**: 2026-06-05

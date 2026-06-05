@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## digital_origami_tessellation_morph_3d
+
+- **Date**: 2026-06-05
+- **Theme**: A 3D field of glowing digital origami triangles that continuously fold, unfold, and tessellate into complex geometries.
+- **Technique**: A procedurally generated hexagonal grid where triangular faces continuously fold and rotate on their edges driven by 2D simplex noise and simulated ripples.
+- **Description**: An animated 12s simulation of a cybernetic morphing origami landscape.
+
 ## liquid_glass_metaball_flow_3d
 
 - **Date**: 2026-06-05

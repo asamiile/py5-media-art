@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## holographic_data_sphere_glitch_3d
+
+- **Date**: 2026-06-06
+- **Theme**: A dense 3D sphere made of glowing alphanumeric characters (like a 3D Matrix rain sphere) that slowly rotates while bands of characters randomly offset and change colors to simulate data corruption and transmission.
+- **Technique**: A spherical arrangement of py5.text() calls. The sphere rotates and is perturbed by 2D OpenSimplex noise that acts as a threshold for glitch effects (shifting color to red and adding spatial offset).
+- **Description**: An animated 10s simulation of a cybernetic data core experiencing transmission glitches.
+
 ## fluid_nebula_particle_attractor_3d
 
 - **Date**: 2026-06-06

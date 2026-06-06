@@ -3,6 +3,104 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## digital_origami_tessellation_morph_3d
+
+- **Date**: 2026-06-05
+- **Theme**: A 3D field of glowing digital origami triangles that continuously fold, unfold, and tessellate into complex geometries.
+- **Technique**: A procedurally generated hexagonal grid where triangular faces continuously fold and rotate on their edges driven by 2D simplex noise and simulated ripples.
+- **Description**: An animated 12s simulation of a cybernetic morphing origami landscape.
+
+## liquid_glass_metaball_flow_3d
+
+- **Date**: 2026-06-05
+- **Theme**: A mesmerizing simulation of liquid glass metaballs floating in zero gravity, merging and separating continuously.
+- **Technique**: An optimized 3D marching cubes approximation running on a NumPy grid to evaluate isosurfaces from multiple moving spherical field sources. Rendered with additive blending.
+- **Description**: An animated 10s simulation of flowing liquid 3D metaballs.
+
+## sacred_geometry_mandala_bloom_3d
+
+- **Date**: 2026-06-05
+- **Theme**: A rotating, intricate 3D mandala made of interlocking rings, geometric starbursts, and intricate polyhedrons that slowly shift into place.
+- **Technique**: Procedurally generated 3D polar geometries consisting of stacked counter-rotating rings and wireframe spheres, rendered with additive blending and neon glow.
+- **Description**: An animated 15s simulation of a hypnotic overlapping geometric mandala bloom.
+
+## plasma_fluid_interference_patterns_3d
+
+- **Date**: 2026-06-05
+- **Theme**: A flowing 3D field of interacting sine waves creating interference patterns that resemble glowing liquid plasma.
+- **Technique**: A dense grid of 3D points where height and color are calculated by summing high-frequency sine waves from multiple moving origins.
+- **Description**: An animated 10s simulation of plasma interference patterns mapped to a 3D grid.
+
+## chromatic_crystal_cavern_3d
+
+- **Date**: 2026-06-05
+- **Theme**: A slow cinematic flight through an endless, abstract crystal cavern rendered with multi-layered chromatic dispersion effects.
+- **Technique**: Procedurally generated 3D cave walls using layered Perlin noise meshes. Shifting RGB layers simulate chromatic aberration and refraction with additive blending.
+- **Description**: An animated 10s simulation of a deep chromatic cavern with floating crystals.
+
+## cybernetic_holographic_flower_3d
+
+- **Date**: 2026-06-05
+- **Theme**: A delicate 3D holographic flower that continuously unfolds its geometric petals, made of glowing neon wireframes.
+- **Technique**: Procedurally generated parametric surfaces (using sine/cosine/exponential functions for petals) rendered as py5.LINES with additive blending. The flower's multi-layered petals bend outward continuously to simulate a blooming motion.
+- **Description**: An animated 15s simulation of a 3D blooming holographic cyber flower.
+
+## biomechanical_voronoi_shatter_3d
+
+- **Date**: 2026-06-05
+- **Theme**: A slowly rotating 3D bio-mechanical egg that shatters into thousands of cells glowing with internal energy, drifting apart into the abyss.
+- **Technique**: A procedurally generated 3D sphere mapped with complex noise to simulate individual shattered pieces drifting outward along their normal vectors.
+- **Description**: An animated 12s simulation of a 3D voronoi-like shattering sphere.
+
+## synthwave_cyber_prism_highway_3d
+
+- **Date**: 2026-06-05
+- **Theme**: A high-speed flight through a neon synthwave highway populated by rotating geometric prisms that refract the neon sunset.
+- **Technique**: Procedurally generated scrolling 3D wireframe terrain with a center highway path, filled with flying 3D geometric shapes and additive blending.
+- **Description**: An animated 10s simulation of a cyber highway speeding toward a neon digital sunset.
+
+## liquid_neon_magnetic_vortex_3d
+
+- **Date**: 2026-06-05
+- **Theme**: A 3D simulation of glowing neon liquid magnetic particles swirling into a massive double-vortex.
+- **Technique**: A highly optimized 3D NumPy particle system driven by a parameterized dual-attractor force field. Particle colors dynamically map to their orbital velocities.
+- **Description**: An animated 10s simulation of thousands of particles sucked into magnetic vortices.
+
+## quantum_entangled_particle_strings_3d
+
+- **Date**: 2026-06-05
+- **Theme**: A 3D simulation of glowing quantum strings snapping together with intense light when they become entangled.
+- **Technique**: Procedurally generated 3D splines with high-performance NumPy pair-wise distance tracking for proximity rendering.
+- **Description**: An animated 12s simulation of strings wandering in space and entangling with bright connections.
+
+## kinetic_brass_gyroscope_swarm_3d
+
+- **Date**: 2026-06-05
+- **Theme**: A chaotic swarm of glowing brass gyroscopes spinning in a dark void.
+- **Technique**: 3D rotational matrices, nested Push/Pop.
+- **Description**: An animated 10s simulation of a swarm of golden gyroscopes rotating in 3D space.
+
+## monolithic_glass_pendulum_array_3d
+
+- **Date**: 2026-06-05
+- **Theme**: A vast, silent array of massive glass pendulums swinging in perfect mathematical harmony, refracting single beams of pure white light.
+- **Technique**: A 2D grid of 3D pendulum objects (box primitives). The angle of each pendulum is driven by a sine wave whose phase shifts according to its grid position, creating a hypnotic wave of motion. Rendered using alpha blending to simulate glass, illuminated by a single stark directional light against a pure black background.
+- **Description**: An animated 3D simulation of a towering array of heavy glass swinging silently. A sleek, geometric monolithic bob at the end of each pendulum catches stark white and icy blue lights, refracting and swinging in a mesmerizing, synchronized wave across a pitch-black void.
+
+## kinetic_typography_cylinder_glitch_3d
+
+- **Date**: 2026-06-05
+- **Theme**: A massive, rotating cylindrical pillar of glowing data (hexadecimal characters) spinning in a void. Occasional glitches scramble the characters and distort the cylinder's shape.
+- **Technique**: A 3D cylinder composed of a grid of text elements mapped using cylindrical coordinates (radius, angle, height). Characters flip randomly and localized 3D noise offsets push them inward or outward.
+- **Description**: An animated 3D simulation of a towering pillar of hacker-esque data spinning ominously. Hexadecimal characters form a solid cylinder colored in neon lime and electric cyan. As the cylinder rotates, waves of corruption traverse its surface, scrambling the data and causing stark white glitched characters to violently extrude from the core.
+
+## liquid_prism_caustic_ripples_3d
+
+- **Date**: 2026-06-05
+- **Theme**: A slow-moving pool of liquid crystal where undulating ripples refract light, casting intricate, colorful caustic patterns.
+- **Technique**: A high-resolution 3D grid plane deformed by multiple overlapping sine waves (ripples). The faces of the grid are colored based on their normal vectors (simulating refraction/caustics), blending bright cyan, magenta, and gold against a dark background.
+- **Description**: An animated 3D simulation of thick, colorful liquid slowly undulating. As the fluid ripples and shifts, overlapping sine waves create a hypnotic dance of light refraction on the surface, bending iridescent cyans and glowing magentas into liquid gold highlights against an obsidian void.
+
 ## kinetic_ferrofluid_magnetic_sculpture_3d
 
 - **Date**: 2026-06-03

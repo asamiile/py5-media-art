@@ -4,6 +4,76 @@
 Agents MUST NOT write anything in the `Comment` field. When registering a new work, Agents must leave the `Rating` and `Comment` fields empty or with their default labels as placeholders for the user.
 The Artist reads this file before starting a new sketch to understand preferences.
 
+## digital_origami_tessellation_morph_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## liquid_glass_metaball_flow_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## sacred_geometry_mandala_bloom_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## plasma_fluid_interference_patterns_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## chromatic_crystal_cavern_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## cybernetic_holographic_flower_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## biomechanical_voronoi_shatter_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## synthwave_cyber_prism_highway_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## liquid_neon_magnetic_vortex_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## quantum_entangled_particle_strings_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_brass_gyroscope_swarm_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## monolithic_glass_pendulum_array_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_typography_cylinder_glitch_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## liquid_prism_caustic_ripples_3d
+
+- **Rating**: 
+- **Comment**: 
+
 ## kinetic_ferrofluid_magnetic_sculpture_3d
 
 - **Rating**: 

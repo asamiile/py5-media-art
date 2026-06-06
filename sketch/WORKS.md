@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## geometric_minimalist_bauhaus_mobile_3d
+
+- **Date**: 2026-06-06
+- **Theme**: An elegant, Alexander Calder-style kinetic mobile moving smoothly in 3D space. It features primary colors (Red, Blue, Yellow, Black) and simple geometric shapes (circle, square, triangle) balancing on recursive wireframe arms.
+- **Technique**: A recursive function `draw_mobile` that draws horizontal arms, vertical strings, and geometric primitive shapes at the leaves. The angle of rotation relies on time and depth, creating a complex but peaceful counter-rotating kinetic sculpture with `lights()`.
+- **Description**: An animated 10s kinetic sculpture simulation of a Bauhaus-inspired mobile.
+
 ## kinetic_magnetic_pendulum_chaos_3d
 
 - **Date**: 2026-06-06

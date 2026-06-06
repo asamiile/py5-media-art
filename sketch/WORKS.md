@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## fluid_ferrofluid_magnetic_spikes_3d
+
+- **Date**: 2026-06-06
+- **Theme**: A 3D dark, shiny sphere that organically extends sharp, metallic-looking spikes based on 3D noise fields, mimicking ferrofluid interacting with an invisible moving magnetic field.
+- **Technique**: A 3D sphere drawn with `QUAD_STRIP` using spherical coordinates. The radius at each vertex is modulated by `pow(os_noise(), 3)` to create sharp peaks while leaving the baseline spherical. Multiple `point_light` sources and `directional_light` give a shiny, metallic finish to the geometry.
+- **Description**: An animated 10s geometric simulation of a spikey, reactive ferrofluid blob.
+
 ## cybernetic_data_stream_hologram_3d
 
 - **Date**: 2026-06-06

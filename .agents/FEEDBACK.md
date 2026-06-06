@@ -4,6 +4,11 @@
 Agents MUST NOT write anything in the `Comment` field. When registering a new work, Agents must leave the `Rating` and `Comment` fields empty or with their default labels as placeholders for the user.
 The Artist reads this file before starting a new sketch to understand preferences.
 
+## abstract_quantum_wave_function_3d
+
+- **Rating**: 
+- **Comment**: 
+
 ## geometric_golden_ratio_sunflower_3d
 
 - **Rating**: 

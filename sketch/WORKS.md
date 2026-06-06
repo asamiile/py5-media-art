@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## abstract_quantum_wave_function_3d
+
+- **Date**: 2026-06-06
+- **Theme**: A 3D representation of a quantum wave function collapsing and expanding. Uses a dense grid of points where the z-height, color, and size of the points pulse and shift according to sine waves, perlin noise, and time, creating an ethereal, mathematical ocean.
+- **Technique**: Procedurally generated 2D grid of particles with height and probability density mapped to a combination of sine/cosine waves and OpenSimplex noise. Probability determines color alpha, particle size, and z-height.
+- **Description**: An animated 10s mathematical simulation of wave functions in 3D space.
+
 ## geometric_golden_ratio_sunflower_3d
 
 - **Date**: 2026-06-06

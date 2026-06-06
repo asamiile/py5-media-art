@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## geometric_golden_ratio_sunflower_3d
+
+- **Date**: 2026-06-06
+- **Theme**: A 3D sunflower layout generated using the golden ratio (phyllotaxis). Hundreds of spheres arranged in a perfect spiral, expanding outwards, with wave-like height displacements propagating through the seeds.
+- **Technique**: Procedurally generated using phyllotaxis (golden angle) layout. Spheres are placed in expanding spirals with dynamic z-displacement based on distance from center and OpenSimplex noise to create an organic breathing effect.
+- **Description**: An animated 10s simulation of a rhythmic, breathing geometric sunflower.
+
 ## neon_holographic_dna_helix_3d
 
 - **Date**: 2026-06-06

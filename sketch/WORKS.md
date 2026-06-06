@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## fluid_chromatic_ribbon_vortex_3d
+
+- **Date**: 2026-06-06
+- **Theme**: A swirling vortex of thousands of thick, semi-transparent ribbons, each glowing with intense chromatic aberration, intertwining like a tornado of color in 3D space.
+- **Technique**: Procedurally generated 3D ribbons using QUAD_STRIP with vertices displaced by 3D OpenSimplex noise and sine waves. Additive blending creates intense glowing colors based on the ribbon index and time.
+- **Description**: An animated 10s simulation of a hypnotic, glowing chromatic ribbon vortex swirling in a dark abyss.
+
 ## kinetic_aperture_light_matrix_3d
 
 - **Date**: 2026-06-06

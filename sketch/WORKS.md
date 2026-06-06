@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## kinetic_magnetic_ferrofluid_spikes_3d
+
+- **Date**: 2026-06-06
+- **Theme**: A sphere that pulsates and generates spikes using noise, simulating ferrofluid reacting to a changing magnetic field.
+- **Technique**: Procedurally generated using a triangle strip mapped onto a sphere. 3D OpenSimplex noise modulates the radius at each vertex; a threshold creates sharp, dynamic spikes. Specular lighting and shininess add a metallic, magnetic fluid effect.
+- **Description**: An animated 10s dark and shiny 3D simulation of magnetic ferrofluid.
+
 ## abstract_quantum_wave_function_3d
 
 - **Date**: 2026-06-06

@@ -27,60 +27,60 @@ def setup():
     py5.pixel_density(1)
     FRAMES_DIR.mkdir(exist_ok=True)
     py5.color_mode(py5.HSB, 360, 100, 100, 100)
-    py5.hint(py5.DISABLE_DEPTH_TEST)  # Additive blending
 
 def draw():
-    py5.background(5, 5, 5)
-    py5.blend_mode(py5.ADD)
+    py5.background(15, 10, 15)
+    py5.blend_mode(py5.BLEND)
     
-    py5.translate(py5.width / 2, py5.height / 2, -200)
+    py5.translate(py5.width / 2, py5.height / 2, 0)
     
     t = py5.frame_count * 0.05
     
-    num_ribbons = 50
-    points_per_ribbon = 200
+    py5.rotate_x(py5.PI / 3)
+    py5.rotate_z(t * 0.2)
     
-    py5.rotate_x(py5.sin(t * 0.2) * 0.5)
-    py5.rotate_y(t * 0.5)
+    py5.no_stroke()
+    
+    num_ribbons = 8
+    ribbon_length = 200
     
     for r in range(num_ribbons):
         py5.begin_shape(py5.QUAD_STRIP)
-        py5.no_stroke()
         
-        hue = (r * (360 / num_ribbons) + t * 50) % 360
-        py5.fill(hue, 90, 80, 40)
+        angle_offset = (py5.TWO_PI / num_ribbons) * r
         
-        base_radius = 200 + py5.sin(r * 0.5 + t) * 100
-        
-        for p in range(points_per_ribbon):
-            pt = p / points_per_ribbon
-            angle = pt * py5.TWO_PI * 5 + r + t
+        for i in range(ribbon_length):
+            # Parametric coordinates for the ribbon path
+            z = py5.remap(i, 0, ribbon_length, -600, 600)
             
-            y = -py5.height * 1.5 + pt * py5.height * 3
+            # Twisting radius
+            radius = 150 + py5.sin(z * 0.01 + t) * 50
             
-            # Vortex shape: wider at top and bottom, narrow in middle
-            radius = base_radius * (1 + py5.cos(pt * py5.PI * 2)) + p * 2
+            # The twist angle
+            angle = z * 0.02 + angle_offset + t
             
-            # Add noise for turbulence
-            nx = py5.os_noise(r * 0.1, pt * 5, t * 0.5) * 200
-            ny = py5.os_noise(r * 0.1 + 100, pt * 5, t * 0.5) * 200
-            nz = py5.os_noise(r * 0.1 + 200, pt * 5, t * 0.5) * 200
-            
-            x = py5.cos(angle) * radius + nx
-            z = py5.sin(angle) * radius + nz
+            x1 = py5.cos(angle) * radius
+            y1 = py5.sin(angle) * radius
             
             # Ribbon width
-            w = 50 + py5.sin(pt * py5.PI * 10 + t * 2) * 30
+            w = 40 + py5.sin(z * 0.05 - t * 2) * 20
             
-            py5.vertex(x, y + ny, z)
-            py5.vertex(x + py5.cos(angle)*w, y + ny, z + py5.sin(angle)*w)
+            # Normal for the ribbon width (tangent to the circle)
+            dx = py5.cos(angle + py5.PI/2) * w
+            dy = py5.sin(angle + py5.PI/2) * w
+            
+            hue = (i + r * 30 + t * 20) % 360
+            py5.fill(hue, 80, 90, 60)
+            
+            py5.vertex(x1 - dx, y1 - dy, z)
+            py5.vertex(x1 + dx, y1 + dy, z)
             
         py5.end_shape()
 
     if py5.frame_count == 2:
         py5.load_np_pixels()
         if py5.np_pixels.std() == 0:
-            print("[Error] Blank screen detected on frame 2 (std=0). Aborting.")
+            print("[Error] Blank screen detected on frame 2. Aborting.")
             import os
             os._exit(1)
 

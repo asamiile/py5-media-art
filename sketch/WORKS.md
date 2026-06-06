@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## fluid_chromatic_ribbon_vortex_3d
+
+- **Date**: 2026-06-06
+- **Theme**: A twisting vortex of overlapping, translucent, colorful ribbons generated via parametric equations swirling through a 3D cylinder.
+- **Technique**: Multiple 3D ribbons drawn using `QUAD_STRIP`. Parametric functions mapping depth (Z) to radius and angle dictate the twist. Sine waves modulate the radius and the width of each ribbon. Colors shift based on depth and time.
+- **Description**: An animated 10s simulation of a swirling vortex of translucent chromatic ribbons.
+
 ## generative_attractor_lorenz_butterfly_3d
 
 - **Date**: 2026-06-06

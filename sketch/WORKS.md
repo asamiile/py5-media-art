@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## bioluminescent_deep_sea_anemone_3d
+
+- **Date**: 2026-06-06
+- **Theme**: A massive, glowing deep-sea anemone with hundreds of flowing tentacles that react to unseen ocean currents using 3D noise, glowing in deep violet and neon pink.
+- **Technique**: A 3D system of line strips emanating from a hemisphere. Each segment's position is driven by a 4D OpenSimplex noise flow field (x, y, z, time). Additive blending creates intense bioluminescence.
+- **Description**: An animated 12s simulation of a hypnotic, glowing bioluminescent anemone swaying in deep-sea currents.
+
 ## fluid_chromatic_ribbon_vortex_3d
 
 - **Date**: 2026-06-06

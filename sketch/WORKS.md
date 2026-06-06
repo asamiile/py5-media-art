@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## hyper_dimensional_tesseract_wireframe_3d
+
+- **Date**: 2026-06-06
+- **Theme**: A hypercube (tesseract) mathematically projected into 3D space, rotating across 4D axes (XW, YW, ZW), creating a mesmerising optical illusion of inner cubes turning inside out, rendered with glowing cyan and magenta wireframes.
+- **Technique**: Manual 4D matrix rotations and stereographic projection of 16 vertices. Edges connecting vertices differing by one bit are rendered as 3D lines. Node spheres and edges use additive blending.
+- **Description**: An animated 10s simulation of a 4D tesseract rotating in multi-dimensional space, appearing to fold inward on itself.
+
 ## holographic_data_sphere_glitch_3d
 
 - **Date**: 2026-06-06

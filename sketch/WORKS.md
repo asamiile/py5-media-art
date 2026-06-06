@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## cyber_neon_laser_grid_synthwave_3d
+
+- **Date**: 2026-06-06
+- **Theme**: A classic synthwave endless moving grid with a glowing neon sun in the background, elevated with 3D terrain that shifts dynamically using Perlin noise.
+- **Technique**: Procedurally generated 3D terrain grid using `TRIANGLE_STRIP` with height mapped to OpenSimplex noise. The terrain moves continuously towards the camera. A distant glowing sun with synthwave-style horizontal cutouts creates depth.
+- **Description**: An animated 10s retro-futuristic synthwave flight simulation over digital mountains.
+
 ## kinetic_magnetic_ferrofluid_spikes_3d
 
 - **Date**: 2026-06-06

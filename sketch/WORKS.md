@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## generative_kaleidoscopic_glass_tunnel_3d
+
+- **Date**: 2026-06-06
+- **Theme**: A fast-moving flight through an endless hexagonal/octagonal tunnel made of glowing semi-transparent glass panels that change colors and rotate slowly.
+- **Technique**: Procedural 3D tunnel generation using `QUADS` drawn in a loop along the Z-axis. Modulo arithmetic creates the illusion of infinite forward movement. The radius of rings is modulated by sine functions to create expansions/contractions in the tunnel geometry.
+- **Description**: An animated 10s geometric flight simulation through a glowing, twisting glass tunnel.
+
 ## bioluminescent_jellyfish_tentacles_3d
 
 - **Date**: 2026-06-06

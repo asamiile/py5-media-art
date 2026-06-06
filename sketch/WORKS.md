@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## abstract_geometric_origami_tessellation_3d
+
+- **Date**: 2026-06-06
+- **Theme**: A sheet of interconnected triangular faces that fold and unfold procedurally based on 2D Perlin noise, creating a wave-like breathing origami structure.
+- **Technique**: A grid drawn with `TRIANGLE_STRIP` in 3D. The Z-height (depth) of each vertex is determined by `os_noise` cubed for sharp, mountain-like folds, mixed with a geometric sine ripple originating from the center. 3D lighting creates sharp highlights and shadows across the folds.
+- **Description**: An animated 10s geometric simulation of a breathing, folding origami tessellation matrix.
+
 ## generative_kaleidoscopic_glass_tunnel_3d
 
 - **Date**: 2026-06-06

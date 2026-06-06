@@ -4,6 +4,11 @@
 Agents MUST NOT write anything in the `Comment` field. When registering a new work, Agents must leave the `Rating` and `Comment` fields empty or with their default labels as placeholders for the user.
 The Artist reads this file before starting a new sketch to understand preferences.
 
+## spectral_light_scattering_prism_3d
+
+- **Rating**: 
+- **Comment**: 
+
 ## hyper_dimensional_tesseract_wireframe_3d
 
 - **Rating**: 

@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## spectral_light_scattering_prism_3d
+
+- **Date**: 2026-06-06
+- **Theme**: A glowing 3D prism made of semi-transparent triangles that slowly rotates while beams of light (lines) scatter from its core, separating into spectral colors.
+- **Technique**: Procedurally generated 3D triangular prism combined with 100 scattered lines acting as light rays. 1D/2D OpenSimplex noise dictates the ray origins inside the core and their direction (phi, theta), mapping colors across the spectrum.
+- **Description**: An animated 10s simulation of a mysterious prism scattering light rays.
+
 ## hyper_dimensional_tesseract_wireframe_3d
 
 - **Date**: 2026-06-06

@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## neon_holographic_dna_helix_3d
+
+- **Date**: 2026-06-06
+- **Theme**: A massive double helix structure made of glowing cyan and magenta spheres, slowly rotating. The connecting base pairs act like energetic neon lines bridging the two strands, occasionally glitching out.
+- **Technique**: Procedurally generated 3D helix using sine/cosine for two opposite strands. Interconnecting lines simulate base pairs, with a 2D OpenSimplex noise threshold determining glitch intensity, color shifts, and geometric displacement.
+- **Description**: An animated 10s simulation of a glitching neon cybernetic DNA sequence.
+
 ## spectral_light_scattering_prism_3d
 
 - **Date**: 2026-06-06

@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## abstract_topological_torus_knot_3d
+
+- **Date**: 2026-06-06
+- **Theme**: A beautifully glowing torus knot constructed out of thousands of small spheres, rotating slowly while light pulses travel along its path.
+- **Technique**: Procedurally generated 3D parametric equations for a (3,7) torus knot. Uses 2000 individual spheres with a base structure and an outer glowing shell (ADD blend mode), modulated by sine waves to create traveling light pulses.
+- **Description**: An animated 10s geometric simulation of a glowing torus knot in 3D space.
+
 ## cyber_neon_laser_grid_synthwave_3d
 
 - **Date**: 2026-06-06

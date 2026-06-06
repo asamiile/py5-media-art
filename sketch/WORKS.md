@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## geometric_optical_illusion_moiré_3d
+
+- **Date**: 2026-06-06
+- **Theme**: Two densely packed, nested spherical point clouds that rotate at slightly different speeds. The overlapping points create intense moiré interference patterns as they shift.
+- **Technique**: Two 3D spheres generated using a Fibonacci lattice algorithm (20,000 points each) to ensure perfectly even point distribution. Drawn with `POINTS` and `blend_mode(ADD)`. The inner and outer spheres rotate in opposite directions at slightly different speeds.
+- **Description**: An animated 10s simulation of a hypnotic 3D geometric optical moiré illusion.
+
 ## abstract_quantum_entanglement_web_3d
 
 - **Date**: 2026-06-06

@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## cybernetic_data_stream_hologram_3d
+
+- **Date**: 2026-06-06
+- **Theme**: A 3D cylindrical volume of digital "data" represented by glowing cyan/green points and line segments falling downward and occasionally bursting into horizontal branches.
+- **Technique**: Particle system tracing cylindrical coordinates. Each particle has a head (drawn as a `point`), a tail (drawn as a `line`), and occasionally spawns horizontal line "bursts" using random probability. Additive blending creates intense glowing overlaps when streams cross.
+- **Description**: An animated 10s simulation of a cybernetic data stream matrix in a rotating 3D space.
+
 ## fluid_chromatic_ribbon_vortex_3d
 
 - **Date**: 2026-06-06

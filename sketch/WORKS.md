@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## fluid_chromatic_liquid_metal_blob_3d
+
+- **Date**: 2026-06-06
+- **Theme**: A highly displaced 3D spherical blob that deforms smoothly like liquid metal or mercury. The surface is warped by multi-layered 3D noise, and the vertex colors shift through a metallic chromatic spectrum based on the noise displacement.
+- **Technique**: A 3D sphere mapped with `QUAD_STRIP`. The radius of each vertex is modified by summing low-frequency and high-frequency `os_noise()`. Complex lighting (`ambient_light`, `directional_light`, and multiple `point_light`s) gives a glossy, reflective appearance.
+- **Description**: An animated 10s simulation of a mutating, colorful liquid metal blob.
+
 ## generative_fractal_menger_sponge_3d
 
 - **Date**: 2026-06-06

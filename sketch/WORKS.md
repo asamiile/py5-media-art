@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## generative_attractor_lorenz_butterfly_3d
+
+- **Date**: 2026-06-06
+- **Theme**: A 3D particle system that traces the famous Lorenz "butterfly" attractor equations, rendering a glowing, pulsing orbital path in 3D space.
+- **Technique**: Precomputed 10,000 points of the Lorenz system (`sigma=10.0`, `rho=28.0`, `beta=8.0/3.0`). Rendered using `LINE_STRIP` in 3D space with additive blending. The color and alpha of the line dynamically pulse, simulating a bright energy traveling along the chaotic path.
+- **Description**: An animated 10s simulation of the chaotic Lorenz attractor, presented as a glowing 3D energy stream.
+
 ## spectral_audio_waveform_topography_3d
 
 - **Date**: 2026-06-06

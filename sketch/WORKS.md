@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## abstract_quantum_entanglement_web_3d
+
+- **Date**: 2026-06-06
+- **Theme**: A 3D network of glowing nodes and edges where connections spontaneously form and break based on spatial proximity as the entire structure shifts organically.
+- **Technique**: $N$ points drifting through 3D space driven by 3D `os_noise`. An $O(N^2)$ distance check connects nearby nodes with lines. Color and opacity of the lines are mapped to distance, creating a breathing, glowing neural/quantum web.
+- **Description**: An animated 10s simulation of an interconnected quantum web drifting through 3D space.
+
 ## fluid_ferrofluid_magnetic_spikes_3d
 
 - **Date**: 2026-06-06

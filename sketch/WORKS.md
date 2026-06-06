@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## holographic_cymatic_frequency_waves_3d
+
+- **Date**: 2026-06-06
+- **Theme**: A 3D representation of cymatics (sound waves creating patterns in sand/water). A dense particle system forming intricate geometric standing wave patterns that shift over time as the frequency changes.
+- **Technique**: Chladni plate standing wave approximation (`cos(nx*kx)*cos(ny*ky) - cos(nx*ky)*cos(ny*kx)`) applied over a 120x120 grid. Frequencies `kx` and `ky` are modulated by sine waves over time. Where the wave amplitude is near zero, "sand" collects, represented by glowing 3D pillars using `rect` and `z`-translation.
+- **Description**: An animated 10s geometric simulation of sound waves forming intricate 3D cymatic standing patterns.
+
 ## algorithmic_fractal_tree_bloom_3d
 
 - **Date**: 2026-06-06

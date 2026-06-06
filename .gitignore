@@ -19,3 +19,9 @@ sketch/*/frames/
 *.mp4
 *.mov
 *.webm
+
+# Medium article drafts
+medium/
+
+# Environment variables
+.env

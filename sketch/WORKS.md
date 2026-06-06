@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## algorithmic_fractal_tree_bloom_3d
+
+- **Date**: 2026-06-06
+- **Theme**: A 3D fractal tree that branches out recursively and sways in a digital wind, ending with glowing blossoms.
+- **Technique**: Recursive fractal branching algorithm with depth-based color mapping and line thickness. OpenSimplex noise is used to create a subtle "wind" swaying effect. The leaves/blooms are rendered as glowing spheres at the final recursive depth.
+- **Description**: An animated 10s simulation of a bioluminescent recursive fractal tree blowing in the wind.
+
 ## abstract_topological_torus_knot_3d
 
 - **Date**: 2026-06-06

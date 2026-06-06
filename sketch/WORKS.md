@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## bioluminescent_jellyfish_tentacles_3d
+
+- **Date**: 2026-06-06
+- **Theme**: Hypnotic 3D jellyfish tentacles drifting downwards with organic sway, pulsating bioluminescence, and occasional glowing orbs.
+- **Technique**: Procedural generation of tentacles using `LINE_STRIP`. Sine/Cosine phase shifts combined with `os_noise` create natural, flowing underwater movements. Colors transition gracefully from cyan to blue to purple. Occasional spheres are drawn along the lines for bioluminescent nodes.
+- **Description**: An animated 10s geometric simulation of bioluminescent jellyfish tentacles swaying in an underwater current.
+
 ## holographic_cymatic_frequency_waves_3d
 
 - **Date**: 2026-06-06

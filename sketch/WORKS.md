@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## generative_fractal_menger_sponge_3d
+
+- **Date**: 2026-06-06
+- **Theme**: A classic Menger Sponge recursive fractal in 3D. To give it an organic, mechanical feel, the constituent sub-cubes breathe (scale up and down) over time based on their spatial position and a sine wave.
+- **Technique**: A recursive 3D function `draw_sponge` nested to depth 3 ($20 \times 20 = 400$ boxes). At the deepest level, the `box()` scale is multiplied by a mapped `sin()` function tied to $X, Y, Z$ coordinates and time. Drawn with `lights()` and `directional_light()` to give the shifting fractal depth and shadows.
+- **Description**: An animated 10s geometric simulation of a breathing, recursive 3D fractal object.
+
 ## neon_vaporwave_grid_landscape_3d
 
 - **Date**: 2026-06-06

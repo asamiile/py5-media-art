@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## kinetic_magnetic_pendulum_chaos_3d
+
+- **Date**: 2026-06-06
+- **Theme**: A dynamic physics simulation of a metallic pendulum swinging chaotically between three invisible magnetic attractors. The pendulum leaves a long, glowing trail that shifts through the color spectrum over time.
+- **Technique**: A custom physics engine using Euler integration with sub-stepping for accuracy. The pendulum is attracted to the center by gravity and pulled by three stationary magnets using an inverse-cube force law. The history of positions is stored in a list and drawn as a fading `begin_shape()` trail.
+- **Description**: An animated 10s kinetic simulation of a chaotic magnetic pendulum.
+
 ## fluid_chromatic_liquid_metal_blob_3d
 
 - **Date**: 2026-06-06

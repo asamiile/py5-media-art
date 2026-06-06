@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## fluid_nebula_particle_attractor_3d
+
+- **Date**: 2026-06-06
+- **Theme**: A swirling vortex of millions of points mimicking a beautiful nebula with varying shades of teal and pink.
+- **Technique**: A 3D spiral particle attractor with 15000 points. Vertices are distorted by 3D OpenSimplex noise, creating a swirling fluid effect.
+- **Description**: An animated 10s simulation of a hypnotic, glowing nebula swirling in a deep dark space.
+
 ## neon_holographic_magnetic_field_3d
 
 - **Date**: 2026-06-06

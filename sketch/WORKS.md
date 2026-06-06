@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## spectral_audio_waveform_topography_3d
+
+- **Date**: 2026-06-06
+- **Theme**: A 3D wireframe terrain that shifts and pulses as if reacting to an invisible audio track, creating deep valleys and high peaks that roll across the screen.
+- **Technique**: Procedurally generated 1D "audio" spectrum applied to a 2D grid (`TRIANGLE_STRIP`). The spectrum propagates from the front of the grid to the back over time, mixed with baseline Perlin noise. The alpha values dampen towards the background to create a depth fading effect.
+- **Description**: An animated 10s geometric simulation of a spectral audio-reactive topography landscape.
+
 ## abstract_geometric_origami_tessellation_3d
 
 - **Date**: 2026-06-06

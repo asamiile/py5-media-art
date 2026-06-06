@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## neon_holographic_magnetic_field_3d
+
+- **Date**: 2026-06-06
+- **Theme**: A glowing magnetic field visualization with hundreds of electric blue and magenta lines of force bending and twisting around two slowly orbiting magnetic poles.
+- **Technique**: Procedurally generated 3D vector fields using dipole math combined with 3D OpenSimplex noise for turbulence. Lines are drawn using LINE_STRIP and additive blending around two sphere poles.
+- **Description**: An animated 10s simulation of a mesmerizing, holographic magnetic field with flowing neon lines.
+
 ## bioluminescent_deep_sea_anemone_3d
 
 - **Date**: 2026-06-06

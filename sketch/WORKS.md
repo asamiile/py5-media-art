@@ -4732,3 +4732,4 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Description**: An animated 15s simulation of an organic, distorted 3D Klein bottle rendering in iridescent colors.
 - [quantum_singularity_shard_vortex_3d](./quantum_singularity_shard_vortex_3d/)
 - [algorithmic_crystal_growth_fractal_3d](./algorithmic_crystal_growth_fractal_3d/)
+- [neon_cyberpunk_infinity_city_3d](./neon_cyberpunk_infinity_city_3d/)

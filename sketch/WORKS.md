@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## molten_gold_organic_flowfield_3d
+
+- **Date**: 2026-06-07
+- **Theme**: A swirling, organic fluid simulation resembling liquid gold and nebula dust, moving in 3D space.
+- **Technique**: Volumetric particles driven by a 4D Perlin noise flowfield, rendered with additive blending and size scaling.
+- **Description**: An animated 10s flowfield simulation with 3D particles resembling molten gold.
+
 ## hypnotic_geometric_fractal_tunnel_3d
 
 - **Date**: 2026-06-07

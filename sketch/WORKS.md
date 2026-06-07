@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## cyber_wormhole_hyper_tunnel_3d
+
+- **Date**: 2026-06-07
+- **Theme**: A hyper-speed tunnel effect using warped 3D geometric rings that give the illusion of traveling through a glowing cyber-wormhole.
+- **Technique**: An array of 3D rings drawn with stretched boxes along the Z-axis, continuously wrapping to simulate forward movement. Rings are distorted via 4D OpenSimplex noise.
+- **Description**: An animated flythrough of a cybernetic hyper-tunnel wormhole.
+
 ## pulsating_crystal_lattice_heart_3d
 
 - **Date**: 2026-06-07

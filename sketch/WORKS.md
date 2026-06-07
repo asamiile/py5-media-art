@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## digital_wireframe_sand_dunes_3d
+
+- **Date**: 2026-06-07
+- **Theme**: A minimalist landscape of rolling sand dunes made entirely of glowing digital wireframes that shift endlessly.
+- **Technique**: Triangle strip mesh modulated by a moving 3D OpenSimplex noise field.
+- **Description**: An animated flyover of digital wireframe sand dunes.
+
 ## neon_fluid_torus_knot_organism_3d
 
 - **Date**: 2026-06-07

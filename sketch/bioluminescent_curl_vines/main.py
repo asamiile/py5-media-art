@@ -41,8 +41,8 @@ class Vine:
         self.prev_x = self.x
         self.prev_y = self.y
         self.age = 0
-        self.max_age = self.rng.randint(280, 520)
-        self.speed = self.rng.uniform(2.5, 4.5)
+        self.max_age = self.rng.randint(400, 700)
+        self.speed = self.rng.uniform(5.5, 8.5)
         self.seed = self.rng.randint(0, 100000)
         self.active = True
 
@@ -94,7 +94,7 @@ class Vine:
         
         # Tapering stroke weight
         weight = py5.remap(self.age, 0, self.max_age, 5.5, 0.4)
-        alpha = py5.remap(self.age, 0, self.max_age, 82, 10)
+        alpha = py5.remap(self.age, 0, self.max_age, 25, 2)
         
         # Shift color along the vine: base is emerald/teal, tip is teal/neon yellow
         # Base: hue 160 (Emerald) -> 200 (Teal) -> 45 (Gold) at tip
@@ -137,8 +137,9 @@ class Vine:
 vines_list = []
 
 def setup():
-    py5.size(*SIZE, py5.P2D)
+    py5.size(*SIZE, py5.P3D)
     py5.pixel_density(1)
+    py5.hint(py5.DISABLE_DEPTH_TEST)
     py5.color_mode(py5.HSB, 360, 100, 100, 100)
     py5.stroke_cap(py5.ROUND)
     FRAMES_DIR.mkdir(exist_ok=True)
@@ -160,7 +161,8 @@ def setup():
 def draw():
     # Progressive clearing for trails
     py5.blend_mode(py5.BLEND)
-    py5.fill(210, 60, 6, 6)  # Dark teal-black with 6/255 opacity
+    py5.no_stroke()
+    py5.fill(210, 60, 6, 12)  # Dark teal-black with 12/100 opacity to clear trails faster
     py5.rect(0, 0, SIZE[0], SIZE[1])
     
     py5.blend_mode(py5.ADD)

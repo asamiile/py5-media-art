@@ -27,16 +27,7 @@ If no argument is given, ask the user which work to write about before proceedin
 - **Read the matching entry** from `sketch/WORKS.md` (find the `## {work_name}` heading and read its Date, Theme, Technique, and Description fields).
 - If README.md is absent, derive article content entirely from main.py analysis and the WORKS.md entry.
 
-### 2. Collect image URLs
-
-- List files in `sketch/{work_name}/` and look for preview images (`*_p1.png`, `*_p2.png`, etc.).
-- If preview images exist, build GitHub raw URLs:
-  ```
-  https://raw.githubusercontent.com/asamiile/py5-media-art/main/sketch/{work_name}/{filename}
-  ```
-- If no preview images exist (video-only work), omit `![...]()` tags. Instead write: *"See the animation in the [GitHub repository](https://github.com/asamiile/py5-media-art)."*
-
-### 3. Generate the article
+### 2. Generate the article
 
 Write the article to `medium/{today_YYYY-MM-DD}_{work_name}_medium.md`.
 
@@ -44,7 +35,7 @@ Write the article to `medium/{today_YYYY-MM-DD}_{work_name}_medium.md`.
 - If a file with the same name already exists, overwrite it.
 - Do **not** include YAML front-matter. Start directly with `# Title`.
 
-### 4. Report
+### 3. Report
 
 Print the article title and output file path. Remind the user to open the file and paste its contents into Medium's editor.
 
@@ -64,7 +55,6 @@ Catchy and professional title for a tech/creative coding audience. Include the c
 - Rendering technique, geometry, lighting model, and color palette.
 - Key algorithms: noise functions, particle systems, 3D math, shader-equivalent tricks in py5, etc.
 - **Tone**: cinematic and realistic. Do not reference anime, cartoon, or stylized aesthetics.
-- Embed preview images with GitHub raw URLs if they exist (see Step 2).
 
 ### 4. Code & Technical Breakdown
 - Identify the 2–3 most important functions or sections in `main.py`.
@@ -101,3 +91,5 @@ Catchy and professional title for a tech/creative coding audience. Include the c
 - Do **not** modify any sketch files or WORKS.md.
 - Do **not** run any scripts or the sketch.
 - Output only to `medium/` directory.
+- Do **not** use Markdown image syntax (`![alt](url)`) — Medium's editor cannot render it.
+- Do **not** use Markdown tables — Medium's editor does not support them.

@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## spectral_aurora_borealis_ribbons_3d
+
+- **Date**: 2026-06-07
+- **Theme**: An ethereal 3D simulation of the Aurora Borealis, consisting of sheer, glowing vertical ribbons of light that undulate organically in the polar sky.
+- **Technique**: 3D `QUAD_STRIP` curtains displaced by 4D OpenSimplex noise. Colors shift smoothly between emerald green, neon violet, and magenta using HSB mapping. Additive blending gives the ethereal glow.
+- **Description**: An animated 10s geometric simulation of glowing aurora ribbons in 3D space.
+
 ## algorithmic_superformula_blobs_3d
 
 - **Date**: 2026-06-07

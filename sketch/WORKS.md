@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## neon_cyberpunk_megacity_grid_3d
+
+- **Date**: 2026-06-07
+- **Theme**: A sprawling, procedurally generated futuristic megacity glowing with neon data streams.
+- **Technique**: Procedural 3D box generation representing buildings with additive blending, moving particles representing traffic, and a camera flying through the city grid.
+- **Description**: An animated 10s geometric simulation of a neon cyberpunk megacity in 3D space.
+
 ## molten_gold_organic_flowfield_3d
 
 - **Date**: 2026-06-07

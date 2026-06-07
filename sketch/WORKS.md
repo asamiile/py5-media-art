@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## kinetic_cybernetic_mandala_gear_3d
+
+- **Date**: 2026-06-07
+- **Theme**: A hypnotic, multi-layered cybernetic mandala built from interlocking, independently rotating 3D gears connected by sparking tissue.
+- **Technique**: Procedurally generated 3D polar geometries consisting of stacked counter-rotating gears rendered with additive blending and neon cyan/magenta glow.
+- **Description**: An animated 10s geometric simulation of a glowing cybernetic mandala gear in 3D space.
+
 ## kinetic_particle_accelerator_ring_3d
 
 - **Date**: 2026-06-07

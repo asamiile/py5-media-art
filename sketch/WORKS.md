@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## ancient_alien_sacred_geometry_temple_3d
+
+- **Date**: 2026-06-07
+- **Theme**: A sprawling, ancient alien architectural complex dissolving into glowing sacred geometry patterns.
+- **Technique**: Procedural structural grid with heightmaps modified by 3D noise. The structures dissolve into floating particles, overlaid by vector sacred geometry lines.
+- **Description**: An animated 10s simulation of an ancient alien sacred geometry temple in 3D.
+
 ## hypnotic_neon_torus_knot_3d
 
 - **Date**: 2026-06-07

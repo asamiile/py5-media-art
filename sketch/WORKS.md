@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## iridescent_gravitational_galaxy_3d
+
+- **Date**: 2026-06-07
+- **Theme**: A swirling galaxy of iridescent particles that react to invisible gravitational attractors, forming an organic, glowing cosmic structure in 3D space.
+- **Technique**: A spiral particle system where a 3D Perlin noise field determines Z-axis displacement and scaling. Additive blending and HSB color rotation create the glowing look.
+- **Description**: An animated 3D simulation of a glowing iridescent galaxy.
+
 ## optical_fiber_fractal_tree_3d
 
 - **Date**: 2026-06-07

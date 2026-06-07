@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## bioluminescent_neural_swarm_boids_3d
+
+- **Date**: 2026-06-07
+- **Theme**: A microscopic view of abstract, bioluminescent neural organisms multiplying and interacting.
+- **Technique**: Boids (flocking) algorithm with glowing trails and additive blending, simulating organic swarming behavior in 3D space.
+- **Description**: An animated 10s geometric simulation of a bioluminescent neural swarm using boids.
+
 ## prismatic_spectral_glass_shatter_3d
 
 - **Date**: 2026-06-07

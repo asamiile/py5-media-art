@@ -3327,3 +3327,9 @@ Add any notes on color, density, theme, or mood in the Comment field.
 - **Type:** Video
 - **Rating:** [TBD]
 - **Comment:** [TBD]
+
+## algorithmic_crystal_growth_fractal_3d
+- **Date:** 2026-06-07
+- **Type:** Video
+- **Rating:** [TBD]
+- **Comment:** [TBD]

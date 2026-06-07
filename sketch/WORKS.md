@@ -4731,3 +4731,4 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: 3D parametric figure-8 Klein bottle mesh with 3D simplex noise distortion acting as an organic breathing effect. Additive blending and lighting simulate iridescent refraction.
 - **Description**: An animated 15s simulation of an organic, distorted 3D Klein bottle rendering in iridescent colors.
 - [quantum_singularity_shard_vortex_3d](./quantum_singularity_shard_vortex_3d/)
+- [algorithmic_crystal_growth_fractal_3d](./algorithmic_crystal_growth_fractal_3d/)

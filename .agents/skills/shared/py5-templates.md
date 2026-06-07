@@ -34,10 +34,10 @@ def setup():
 def draw():
     # drawing logic
     
-    if py5.frame_count == PREVIEW_FRAME:
+    if py5.frame_count == 2 or py5.frame_count == PREVIEW_FRAME:
         py5.load_np_pixels()
-        if py5.np_pixels.std() == 0:
-            print("[Error] Blank screen detected (std=0). Aborting.")
+        if py5.np_pixels.std() < 1.0:
+            print(f"[Error] Blank screen detected on frame {py5.frame_count} (std < 1.0). Aborting.")
             import os
             os._exit(1)
 
@@ -86,10 +86,10 @@ def draw():
     py5.save_frame(str(FRAMES_DIR / "frame-####.png"))
 
     # Fail-safe: abort if nothing is drawn
-    if py5.frame_count == 2:
+    if py5.frame_count == 2 or py5.frame_count % 60 == 0:
         py5.load_np_pixels()
-        if py5.np_pixels.std() == 0:
-            print("[Error] Blank screen detected on frame 2 (std=0). Aborting.")
+        if py5.np_pixels.std() < 1.0:
+            print(f"[Error] Blank screen detected on frame {py5.frame_count} (std < 1.0). Aborting.")
             import os
             os._exit(1)
 

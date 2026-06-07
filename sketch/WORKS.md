@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## hypnotic_neon_torus_knot_3d
+
+- **Date**: 2026-06-07
+- **Theme**: A hypnotic, infinite loop of glowing, neon-lit, 3D toroidal ribbons twisting into a mesmerizing knot.
+- **Technique**: Parametric 3D formulas defining a Torus Knot. Ribbons drawn with thick strokes, glowing blending, and slow rotation.
+- **Description**: An animated 10s simulation of a hypnotic neon torus knot in 3D.
+
 ## nanobot_crystalline_assembler_swarm_3d
 
 - **Date**: 2026-06-07

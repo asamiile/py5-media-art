@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## kinetic_particle_accelerator_ring_3d
+
+- **Date**: 2026-06-07
+- **Theme**: A high-energy particle physics experiment. Hundreds of particles racing through a massive toroidal accelerator tube, glowing intensely.
+- **Technique**: A 3D torus drawn using lines with additive blending. Particles (drawn as spheres) orbit the torus at varying speeds.
+- **Description**: An animated 10s geometric simulation of a glowing particle accelerator in 3D space.
+
 ## abstract_topological_mobius_strip_3d
 
 - **Date**: 2026-06-07

@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## neon_fluid_torus_knot_organism_3d
+
+- **Date**: 2026-06-07
+- **Theme**: A fluid, swirling torus knot that is composed of thousands of overlapping translucent spheres, undulating and shifting colors like a living neon organism.
+- **Technique**: Mathematical torus knot points distorted by 3D OpenSimplex noise. Translucent glowing spheres drawn with additive blending.
+- **Description**: An animated 3D simulation of a fluid torus knot organism.
+
 ## cyber_wormhole_hyper_tunnel_3d
 
 - **Date**: 2026-06-07

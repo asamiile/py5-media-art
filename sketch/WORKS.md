@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## prismatic_spectral_glass_shatter_3d
+
+- **Date**: 2026-06-07
+- **Theme**: Thousands of shattered glass shards imploding and exploding in a mesmerizing 3D pattern, refracting bright prismatic colors.
+- **Technique**: 3D particles with rotational dynamics and additive blending to simulate glowing glass shards. The shards follow a sine wave animation to continuously explode and implode in a loop.
+- **Description**: An animated 10s simulation of exploding/imploding prismatic glass shards.
+
 ## neon_cyberpunk_megacity_grid_3d
 
 - **Date**: 2026-06-07

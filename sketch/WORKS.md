@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## kinetic_metallic_piston_ocean_3d
+
+- **Date**: 2026-06-07
+- **Theme**: A dense, metallic array of geometric cubes acting as a piston engine, moving up and down continuously based on a multi-scale Perlin noise field, resembling a hyper-advanced metallic ocean.
+- **Technique**: 3D cubes drawn in a grid. Their heights are dynamically driven by 3D OpenSimplex noise. Complex directional and ambient lighting creates a metallic, mechanical look.
+- **Description**: An animated 10s geometric simulation of a cybernetic metallic piston ocean.
+
 ## spectral_aurora_borealis_ribbons_3d
 
 - **Date**: 2026-06-07

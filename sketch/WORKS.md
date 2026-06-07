@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## hyperdimensional_tesseract_wireframe_3d
+
+- **Date**: 2026-06-07
+- **Theme**: A 4D hypercube (Tesseract) projection into 3D, rotating along multiple 4D axes and leaving glowing holographic trails.
+- **Technique**: Parametric 4D to 3D stereographic matrix projection. The vertices of a tesseract are multiplied by 4D rotation matrices and then projected to 3D. Rendered using glowing lines with additive blending.
+- **Description**: An animated 12s geometric simulation of a 4D hypercube in 3D space.
+
 ## kinetic_cybernetic_mandala_gear_3d
 
 - **Date**: 2026-06-07

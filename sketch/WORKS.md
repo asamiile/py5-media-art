@@ -4716,3 +4716,10 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Theme**: An intricate, mechanical 3D vine structure that grows and weaves itself around a central vertical column, simulating a cyber-botanical organism hacking its environment.
 - **Technique**: Procedurally generated using a 3D L-System-inspired continuous growth algorithm with cylindrical coordinate constraints. The vines grow upwards with 2D/3D Simplex noise determining their radial spread, combined with an additive blend mode to create intense glowing neon green and deep purple hues.
 - **Description**: An animated 15s simulation of glowing cybernetic vines growing upwards and intertwining in 3D space.
+
+## glass_school_cyber_ocean_3d
+
+- **Date**: 2026-06-07
+- **Theme**: A hypnotic 3D simulation of a massive school of geometric glass fish swimming through a glowing liquid cyber-ocean.
+- **Technique**: 3D geometric fish with rotation driven by velocity, constrained in a space. Swimming direction influenced by a 3D Simplex noise vector field.
+- **Description**: An animated 15s simulation of glass-like geometric fish swimming through a cyber ocean.

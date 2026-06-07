@@ -4709,3 +4709,10 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Theme**: Floating, glowing glass cubes in a 3D matrix that refract and reflect light, shifting dynamically based on noise.
 - **Technique**: 3D matrix of cubes with individual noise-driven rotations and additive blending to simulate glass refraction and reflections.
 - **Description**: A grid of floating glass cubes rotates around its center in a dark environment. As the grid moves, the individual cubes rotate and twist on multiple axes, driven by 3D noise. Through additive blending, overlapping transparent shapes combine into intense, glowing geometric structures in shades of amber, cyan, and magenta.
+
+## neon_cyber_botanical_vines_3d
+
+- **Date**: $(date +%Y-%m-%d)
+- **Theme**: An intricate, mechanical 3D vine structure that grows and weaves itself around a central vertical column, simulating a cyber-botanical organism hacking its environment.
+- **Technique**: Procedurally generated using a 3D L-System-inspired continuous growth algorithm with cylindrical coordinate constraints. The vines grow upwards with 2D/3D Simplex noise determining their radial spread, combined with an additive blend mode to create intense glowing neon green and deep purple hues.
+- **Description**: An animated 15s simulation of glowing cybernetic vines growing upwards and intertwining in 3D space.

@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## cyber_neural_synapse_matrix_3d
+
+- **Date**: 2026-06-07
+- **Theme**: A glowing 3D matrix of cybernetic neural synapses, pulsing with neon data streams.
+- **Technique**: Procedurally generated network of nodes and connections (lines), with flowing particles moving along the connections using additive blending.
+- **Description**: An animated 10s geometric simulation of a neural network synapse matrix in 3D space.
+
 ## hyperdimensional_tesseract_wireframe_3d
 
 - **Date**: 2026-06-07

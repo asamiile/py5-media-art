@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## cosmic_stellar_gravity_web_3d
+
+- **Date**: 2026-06-07
+- **Theme**: A cosmic stellar web showing gravity wells and pulsating star clusters.
+- **Technique**: 3D point cloud with distance-based gravitational attraction toward moving gravity wells. Additive blending for a deep space look.
+- **Description**: An animated 10s geometric simulation of a cosmic stellar gravity web.
+
 ## hyper_speed_neon_terrain_wireframe_3d
 
 - **Date**: 2026-06-07

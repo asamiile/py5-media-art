@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## nanobot_crystalline_assembler_swarm_3d
+
+- **Date**: 2026-06-07
+- **Theme**: A microscopic swarm of crystalline nanobots assembling structures that constantly dissolve into glowing dust.
+- **Technique**: Boids-like system with constraints, rendering additive lines and using depth-fading colors to visualize proximity connections.
+- **Description**: An animated 10s simulation of a nanobot crystalline assembler swarm in 3D.
+
 ## liquid_metal_fractal_tree_3d
 
 - **Date**: 2026-06-07

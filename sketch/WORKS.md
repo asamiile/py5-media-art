@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## hyper_speed_neon_terrain_wireframe_3d
+
+- **Date**: 2026-06-07
+- **Theme**: A hyper-speed journey through a digital wireframe terrain that morphs like sand dunes in the wind.
+- **Technique**: Procedurally generated 3D terrain grid using 2D Perlin noise that shifts over time. The camera moves forward simulating a journey. Additive blending with wireframe lines.
+- **Description**: An animated 10s geometric simulation of a hyper-speed neon wireframe terrain.
+
 ## bioluminescent_neural_swarm_boids_3d
 
 - **Date**: 2026-06-07

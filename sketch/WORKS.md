@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## chaotic_data_galaxy_curl_field_3d
+
+- **Date**: 2026-06-07
+- **Theme**: A swirling, chaotic galaxy of abstract data points coalescing into geometric shapes and then exploding.
+- **Technique**: Particle system with 3D Perlin noise simulated curl fields, drawing additive blended lines and points.
+- **Description**: An animated 10s simulation of a chaotic data galaxy curl field in 3D.
+
 ## alien_geometric_dna_helix_3d
 
 - **Date**: 2026-06-07

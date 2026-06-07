@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## cybernetic_shard_swarm_gravity_well_3d
+
+- **Date**: 2026-06-07
+- **Theme**: A mesmerizing swarm of glowing geometric shards swirling around a central gravity well, moving like a school of cybernetic fish.
+- **Technique**: Custom particle system with gravity and vortex swirl forces. Particles stretch along velocity vectors and use additive blending.
+- **Description**: An animated 3D simulation of a cybernetic shard swarm gravity well.
+
 ## digital_wireframe_sand_dunes_3d
 
 - **Date**: 2026-06-07

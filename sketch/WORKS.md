@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## pulsating_crystal_lattice_heart_3d
+
+- **Date**: 2026-06-07
+- **Theme**: A mesmerizing 3D lattice of interconnected geometric nodes that rhythmically expand and contract, pulsating with energy like a living crystal heart.
+- **Technique**: A dense 3D grid of boxes whose sizes are modulated by both 3D OpenSimplex noise and a sinusoidal pulsing function. Nodes outside a spherical radius are culled. Additive blending and dynamic HSB coloring create a glowing core effect.
+- **Description**: An animated 3D simulation of a pulsating crystal geometric heart.
+
 ## iridescent_gravitational_galaxy_3d
 
 - **Date**: 2026-06-07

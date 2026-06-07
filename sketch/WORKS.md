@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## liquid_metal_fractal_tree_3d
+
+- **Date**: 2026-06-07
+- **Theme**: A fractal tree structure made of liquid metal branching out into space, with flowing metallic drips.
+- **Technique**: Recursive 3D tree drawing with dynamic metallic lighting and spheres simulating liquid flow along the branches.
+- **Description**: An animated 10s simulation of a liquid metal fractal tree in 3D.
+
 ## chaotic_data_galaxy_curl_field_3d
 
 - **Date**: 2026-06-07

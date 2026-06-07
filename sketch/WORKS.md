@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## optical_fiber_fractal_tree_3d
+
+- **Date**: 2026-06-07
+- **Theme**: An intricate, 3D fractal-like tree structure made of glowing optical fibers that grows and branches recursively, swaying gently in an invisible wind.
+- **Technique**: Recursive branching in 3D space. Additive blending combined with partial transparency to simulate the glowing optical fiber look. A 4D Perlin noise field determines the branch sway (wind).
+- **Description**: An animated 3D simulation of a glowing optical fiber fractal tree swaying in the wind.
+
 ## infinite_neon_glass_labyrinth_3d
 
 - **Date**: 2026-06-07

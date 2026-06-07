@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## hypnotic_geometric_fractal_tunnel_3d
+
+- **Date**: 2026-06-07
+- **Theme**: A hypnotic, infinite tunnel of glowing geometric fractal rings.
+- **Technique**: Procedurally layered 3D objects with depth-based opacity, rotating and wrapping back towards the camera to create an endless tunnel effect using additive blending.
+- **Description**: An animated 10s endless geometric tunnel in 3D space.
+
 ## holographic_quantum_interference_cube_3d
 
 - **Date**: 2026-06-07

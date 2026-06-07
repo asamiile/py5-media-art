@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## abstract_topological_mobius_strip_3d
+
+- **Date**: 2026-06-07
+- **Theme**: An infinite, non-orientable topological surface (a Mobius strip) that constantly flows with glowing energy lines, symbolizing eternity and impossible geometry.
+- **Technique**: Parametric 3D generation of a Mobius strip using a dense grid of QUADS. Additive blending and neon glowing materials. Energy flows trace the UV paths along the surface using sine waves and frame count.
+- **Description**: An animated 12s geometric simulation of a glowing Mobius strip in 3D space.
+
 ## chromatic_liquid_lissajous_knot_3d
 
 - **Date**: 2026-06-07

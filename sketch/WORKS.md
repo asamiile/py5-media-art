@@ -4723,3 +4723,10 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Theme**: A hypnotic 3D simulation of a massive school of geometric glass fish swimming through a glowing liquid cyber-ocean.
 - **Technique**: 3D geometric fish with rotation driven by velocity, constrained in a space. Swimming direction influenced by a 3D Simplex noise vector field.
 - **Description**: An animated 15s simulation of glass-like geometric fish swimming through a cyber ocean.
+
+## iridescent_klein_bottle_refraction_3d
+
+- **Date**: 2026-06-07
+- **Theme**: An organic, pulsating membrane that folds into itself like a Klein bottle, shifting in iridescent hues of pearl, cyan, and pink.
+- **Technique**: 3D parametric figure-8 Klein bottle mesh with 3D simplex noise distortion acting as an organic breathing effect. Additive blending and lighting simulate iridescent refraction.
+- **Description**: An animated 15s simulation of an organic, distorted 3D Klein bottle rendering in iridescent colors.

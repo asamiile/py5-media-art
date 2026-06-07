@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## metallic_monolith_ripple_ring_3d
+
+- **Date**: 2026-06-07
+- **Theme**: A massive ring of floating metallic monolithic pillars that ripple and change height based on a complex mathematical beat.
+- **Technique**: Two concentric rings of 3D boxes. Heights driven by overlapping sinusoidal functions and OpenSimplex noise. Dynamic lighting and depth testing.
+- **Description**: An animated 3D simulation of metallic monoliths rippling in a ring.
+
 ## cybernetic_shard_swarm_gravity_well_3d
 
 - **Date**: 2026-06-07

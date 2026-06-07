@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## alien_geometric_dna_helix_3d
+
+- **Date**: 2026-06-07
+- **Theme**: A microscopic view of an alien geometric DNA strand spinning and glowing in the deep ocean.
+- **Technique**: Two intertwined helical strands made of glowing orbs, with connected lines representing base pairs. The helix rotates and softly undulates with 1D noise.
+- **Description**: An animated 10s simulation of an alien geometric DNA helix in 3D.
+
 ## cosmic_stellar_gravity_web_3d
 
 - **Date**: 2026-06-07

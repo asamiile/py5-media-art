@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## kinetic_metropolis_clockwork_cube_3d
+
+- **Date**: 2026-06-08
+- **Theme**: A massive, impossible geometric machine where thousands of smaller glowing cubes shift and slide endlessly like a giant 3D puzzle.
+- **Technique**: A 3D grid array of cubes. Sub-sections (rows, columns, planes) of the array randomly rotate around their local axes in 90-degree increments, smoothly animated with sine-easing.
+- **Description**: An animated 15s geometric simulation of a glowing clockwork cube in 3D space.
+
 ## iridescent_topological_klein_bottle_3d
 
 - **Date**: 2026-06-08

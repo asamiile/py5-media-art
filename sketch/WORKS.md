@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## generative_karesansui_zen_garden_3d
+
+- **Date**: 2026-06-08
+- **Theme**: A minimalist, contemplative Japanese rock garden where the sand ripples are procedurally drawn as sweeping, concentric topographic lines that flow around stark, dark geometric "stones".
+- **Technique**: A 3D plane slightly tilted. Sand lines are generated using a distance field around fixed spheres combined with OpenSimplex noise. The distance is fed into a sine wave to create sharp, flowing ridges. Slow camera pan with deep contemplative purple/indigo coloring.
+- **Description**: An animated 15s simulation of a contemplative generative Zen sand garden with obsidian stones.
+
 ## abelian_sandpile_fractal_growth
 
 - **Date**: 2026-06-08

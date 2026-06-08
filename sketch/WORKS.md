@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## gray_scott_reaction_diffusion_morphogenesis
+
+- **Date**: 2026-06-08
+- **Theme**: Nature's secret pattern language — two invisible chemicals reacting and diffusing across a dark surface to spontaneously generate the spotted coats of leopards, the stripes of zebrafish, and the branching arms of coral.
+- **Technique**: Gray-Scott PDE (F=0.055, K=0.062, coral/maze regime) solved on a 960×540 grid using scipy 5-point Laplacian convolution; 20 integration steps per frame; U concentration contrast-stretched and mapped to warm earth-tone palette; nearest-neighbor upscaled to 4K.
+- **Description**: An animated 25s simulation of Gray-Scott reaction-diffusion morphogenesis showing Turing pattern self-organization.
+
 ## lorenz_butterfly_chaos_attractor_3d
 
 - **Date**: 2026-06-08

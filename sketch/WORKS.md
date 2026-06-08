@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## gyroid_minimal_surface_flow_2d
+
+- **Date**: 2026-06-08
+- **Theme**: Cross-sectional slices of four triply periodic minimal surfaces (TPMS) — Gyroid, Schwarz D, Schwarz P, and Neovius — animated as the slicing plane sweeps through Z while the surfaces smoothly blend into one another.
+- **Technique**: Vectorized numpy evaluation of TPMS scalar fields on a 960×540 grid, 4× upscaled to 4K. Z-phase sweeps 0→2π over 20 s while smooth interpolation blends between four surface types. Gaussian-falloff glow at the primary isosurface (f=0) and secondary contours (f=±1.8) with a slowly cycling cool-to-warm hue palette.
+- **Description**: An animated 20s visualization of four TPMS cross-sections morphing through 3D space, creating hypnotic glowing lattice patterns on a dark background.
+
 ## gray_scott_reaction_diffusion_morphogenesis
 
 - **Date**: 2026-06-08

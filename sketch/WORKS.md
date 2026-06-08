@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## iridescent_topological_klein_bottle_3d
+
+- **Date**: 2026-06-08
+- **Theme**: An impossibly intertwined mathematical surface that continuously flows into itself, rendered in translucent, iridescent glass.
+- **Technique**: Parametric 3D equations for a Klein bottle drawn with a dense QUAD_STRIP mesh. Multi-pass rendering with slight spatial/rotational offsets for R, G, B channels creates a chromatic aberration glass effect.
+- **Description**: An animated 15s geometric simulation of a glowing iridescent Klein bottle in 3D space.
+
 ## ancient_alien_sacred_geometry_temple_3d
 
 - **Date**: 2026-06-07

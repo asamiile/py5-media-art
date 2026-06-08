@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## abelian_sandpile_fractal_growth
+
+- **Date**: 2026-06-08
+- **Theme**: Chip-firing self-organised fractal: a single over-loaded cell at the centre topples grains outward, and the cumulative integer avalanche patterns form a perfect self-similar mandala disc with exact 4-fold symmetry.
+- **Technique**: 540×540 integer grid; vectorised parallel toppling via numpy bit-masking (unstable mask, subtract 4×mask, shift to 4 neighbours with array slicing); 175 grains added per frame; 4-level discrete palette (navy/cobalt/amber/ivory) mapped by grain count; 4× nearest-neighbour upscale centred in 4K canvas with 840 px side bars.
+- **Description**: An animated ~22 s simulation of an Abelian sandpile growing from a seeded centre into a sprawling self-similar fractal disc.
+
 ## gyroid_minimal_surface_flow_2d
 
 - **Date**: 2026-06-08

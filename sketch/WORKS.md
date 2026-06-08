@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## lorenz_butterfly_chaos_attractor_3d
+
+- **Date**: 2026-06-08
+- **Theme**: Ten thousand simultaneous particles tracing the Lorenz strange attractor — deterministic chaos that is infinitely complex yet always bounded, forming ghostly butterfly wings in the dark.
+- **Technique**: Vectorized numpy Euler integration of the Lorenz ODE (σ=10, ρ=28, β=8/3) for 4000 particles; velocity-encoded thermal coloring (navy → cyan → amber-white); persistent trail via per-frame pixel buffer decay; slow camera Y-rotation simulated via 3D rotation matrices.
+- **Description**: An animated 20s simulation of the Lorenz strange attractor traced by 4000 simultaneous particles.
+
 ## iridescent_soap_bubble_cluster_3d
 
 - **Date**: 2026-06-08

@@ -4,6 +4,181 @@
 Agents MUST NOT write anything in the `Comment` field. When registering a new work, Agents must leave the `Rating` and `Comment` fields empty or with their default labels as placeholders for the user.
 The Artist reads this file before starting a new sketch to understand preferences.
 
+## ancient_alien_sacred_geometry_temple_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## hypnotic_neon_torus_knot_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## nanobot_crystalline_assembler_swarm_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## liquid_metal_fractal_tree_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## chaotic_data_galaxy_curl_field_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## alien_geometric_dna_helix_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## cosmic_stellar_gravity_web_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## hyper_speed_neon_terrain_wireframe_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## bioluminescent_neural_swarm_boids_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## prismatic_spectral_glass_shatter_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## neon_cyberpunk_megacity_grid_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## molten_gold_organic_flowfield_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## hypnotic_geometric_fractal_tunnel_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## holographic_quantum_interference_cube_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## cyber_neural_synapse_matrix_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## hyperdimensional_tesseract_wireframe_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_cybernetic_mandala_gear_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_particle_accelerator_ring_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## abstract_topological_mobius_strip_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## chromatic_liquid_lissajous_knot_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## neon_superhighway_data_trails_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## metallic_monolith_ripple_ring_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## cybernetic_shard_swarm_gravity_well_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## digital_wireframe_sand_dunes_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## neon_fluid_torus_knot_organism_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## cyber_wormhole_hyper_tunnel_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## pulsating_crystal_lattice_heart_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## iridescent_gravitational_galaxy_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## optical_fiber_fractal_tree_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## infinite_neon_glass_labyrinth_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_metallic_piston_ocean_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## spectral_aurora_borealis_ribbons_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## algorithmic_superformula_blobs_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## bismuth_hopper_crystal_growth_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## harmonic_spherical_harmonics_3d
+
+- **Rating**: 
+- **Comment**: 
+
 ## geometric_minimalist_bauhaus_mobile_3d
 
 - **Rating**: 
@@ -3231,3 +3406,36 @@ Add any notes on color, density, theme, or mood in the Comment field.
 
 - **Rating**: 
 - **Comment**: 
+
+## neon_cyber_botanical_vines_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## glass_school_cyber_ocean_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## iridescent_klein_bottle_refraction_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## quantum_singularity_shard_vortex_3d
+- **Date:** 2026-06-07
+- **Type:** Video
+- **Rating:** [TBD]
+- **Comment:** [TBD]
+
+## algorithmic_crystal_growth_fractal_3d
+- **Date:** 2026-06-07
+- **Type:** Video
+- **Rating:** [TBD]
+- **Comment:** [TBD]
+
+## neon_cyberpunk_infinity_city_3d
+- **Date:** 2026-06-07
+- **Type:** Video
+- **Rating:** [TBD]
+- **Comment:** [TBD]

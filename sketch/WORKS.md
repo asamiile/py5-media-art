@@ -3,6 +3,251 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## ancient_alien_sacred_geometry_temple_3d
+
+- **Date**: 2026-06-07
+- **Theme**: A sprawling, ancient alien architectural complex dissolving into glowing sacred geometry patterns.
+- **Technique**: Procedural structural grid with heightmaps modified by 3D noise. The structures dissolve into floating particles, overlaid by vector sacred geometry lines.
+- **Description**: An animated 10s simulation of an ancient alien sacred geometry temple in 3D.
+
+## hypnotic_neon_torus_knot_3d
+
+- **Date**: 2026-06-07
+- **Theme**: A hypnotic, infinite loop of glowing, neon-lit, 3D toroidal ribbons twisting into a mesmerizing knot.
+- **Technique**: Parametric 3D formulas defining a Torus Knot. Ribbons drawn with thick strokes, glowing blending, and slow rotation.
+- **Description**: An animated 10s simulation of a hypnotic neon torus knot in 3D.
+
+## nanobot_crystalline_assembler_swarm_3d
+
+- **Date**: 2026-06-07
+- **Theme**: A microscopic swarm of crystalline nanobots assembling structures that constantly dissolve into glowing dust.
+- **Technique**: Boids-like system with constraints, rendering additive lines and using depth-fading colors to visualize proximity connections.
+- **Description**: An animated 10s simulation of a nanobot crystalline assembler swarm in 3D.
+
+## liquid_metal_fractal_tree_3d
+
+- **Date**: 2026-06-07
+- **Theme**: A fractal tree structure made of liquid metal branching out into space, with flowing metallic drips.
+- **Technique**: Recursive 3D tree drawing with dynamic metallic lighting and spheres simulating liquid flow along the branches.
+- **Description**: An animated 10s simulation of a liquid metal fractal tree in 3D.
+
+## chaotic_data_galaxy_curl_field_3d
+
+- **Date**: 2026-06-07
+- **Theme**: A swirling, chaotic galaxy of abstract data points coalescing into geometric shapes and then exploding.
+- **Technique**: Particle system with 3D Perlin noise simulated curl fields, drawing additive blended lines and points.
+- **Description**: An animated 10s simulation of a chaotic data galaxy curl field in 3D.
+
+## alien_geometric_dna_helix_3d
+
+- **Date**: 2026-06-07
+- **Theme**: A microscopic view of an alien geometric DNA strand spinning and glowing in the deep ocean.
+- **Technique**: Two intertwined helical strands made of glowing orbs, with connected lines representing base pairs. The helix rotates and softly undulates with 1D noise.
+- **Description**: An animated 10s simulation of an alien geometric DNA helix in 3D.
+
+## cosmic_stellar_gravity_web_3d
+
+- **Date**: 2026-06-07
+- **Theme**: A cosmic stellar web showing gravity wells and pulsating star clusters.
+- **Technique**: 3D point cloud with distance-based gravitational attraction toward moving gravity wells. Additive blending for a deep space look.
+- **Description**: An animated 10s geometric simulation of a cosmic stellar gravity web.
+
+## hyper_speed_neon_terrain_wireframe_3d
+
+- **Date**: 2026-06-07
+- **Theme**: A hyper-speed journey through a digital wireframe terrain that morphs like sand dunes in the wind.
+- **Technique**: Procedurally generated 3D terrain grid using 2D Perlin noise that shifts over time. The camera moves forward simulating a journey. Additive blending with wireframe lines.
+- **Description**: An animated 10s geometric simulation of a hyper-speed neon wireframe terrain.
+
+## bioluminescent_neural_swarm_boids_3d
+
+- **Date**: 2026-06-07
+- **Theme**: A microscopic view of abstract, bioluminescent neural organisms multiplying and interacting.
+- **Technique**: Boids (flocking) algorithm with glowing trails and additive blending, simulating organic swarming behavior in 3D space.
+- **Description**: An animated 10s geometric simulation of a bioluminescent neural swarm using boids.
+
+## prismatic_spectral_glass_shatter_3d
+
+- **Date**: 2026-06-07
+- **Theme**: Thousands of shattered glass shards imploding and exploding in a mesmerizing 3D pattern, refracting bright prismatic colors.
+- **Technique**: 3D particles with rotational dynamics and additive blending to simulate glowing glass shards. The shards follow a sine wave animation to continuously explode and implode in a loop.
+- **Description**: An animated 10s simulation of exploding/imploding prismatic glass shards.
+
+## neon_cyberpunk_megacity_grid_3d
+
+- **Date**: 2026-06-07
+- **Theme**: A sprawling, procedurally generated futuristic megacity glowing with neon data streams.
+- **Technique**: Procedural 3D box generation representing buildings with additive blending, moving particles representing traffic, and a camera flying through the city grid.
+- **Description**: An animated 10s geometric simulation of a neon cyberpunk megacity in 3D space.
+
+## molten_gold_organic_flowfield_3d
+
+- **Date**: 2026-06-07
+- **Theme**: A swirling, organic fluid simulation resembling liquid gold and nebula dust, moving in 3D space.
+- **Technique**: Volumetric particles driven by a 4D Perlin noise flowfield, rendered with additive blending and size scaling.
+- **Description**: An animated 10s flowfield simulation with 3D particles resembling molten gold.
+
+## hypnotic_geometric_fractal_tunnel_3d
+
+- **Date**: 2026-06-07
+- **Theme**: A hypnotic, infinite tunnel of glowing geometric fractal rings.
+- **Technique**: Procedurally layered 3D objects with depth-based opacity, rotating and wrapping back towards the camera to create an endless tunnel effect using additive blending.
+- **Description**: An animated 10s endless geometric tunnel in 3D space.
+
+## holographic_quantum_interference_cube_3d
+
+- **Date**: 2026-06-07
+- **Theme**: A massive, rotating 3D cube made of thousands of translucent, glowing data-planes. Inside the cube, complex 3D sine waves create interference patterns that flow through the planes.
+- **Technique**: Volumetric rendering using stacked 2D planes with additive blending. The planes map a 3D interference function (sine waves) to color and opacity.
+- **Description**: An animated 12s geometric simulation of a volumetric interference pattern in 3D space.
+
+## cyber_neural_synapse_matrix_3d
+
+- **Date**: 2026-06-07
+- **Theme**: A glowing 3D matrix of cybernetic neural synapses, pulsing with neon data streams.
+- **Technique**: Procedurally generated network of nodes and connections (lines), with flowing particles moving along the connections using additive blending.
+- **Description**: An animated 10s geometric simulation of a neural network synapse matrix in 3D space.
+
+## hyperdimensional_tesseract_wireframe_3d
+
+- **Date**: 2026-06-07
+- **Theme**: A 4D hypercube (Tesseract) projection into 3D, rotating along multiple 4D axes and leaving glowing holographic trails.
+- **Technique**: Parametric 4D to 3D stereographic matrix projection. The vertices of a tesseract are multiplied by 4D rotation matrices and then projected to 3D. Rendered using glowing lines with additive blending.
+- **Description**: An animated 12s geometric simulation of a 4D hypercube in 3D space.
+
+## kinetic_cybernetic_mandala_gear_3d
+
+- **Date**: 2026-06-07
+- **Theme**: A hypnotic, multi-layered cybernetic mandala built from interlocking, independently rotating 3D gears connected by sparking tissue.
+- **Technique**: Procedurally generated 3D polar geometries consisting of stacked counter-rotating gears rendered with additive blending and neon cyan/magenta glow.
+- **Description**: An animated 10s geometric simulation of a glowing cybernetic mandala gear in 3D space.
+
+## kinetic_particle_accelerator_ring_3d
+
+- **Date**: 2026-06-07
+- **Theme**: A high-energy particle physics experiment. Hundreds of particles racing through a massive toroidal accelerator tube, glowing intensely.
+- **Technique**: A 3D torus drawn using lines with additive blending. Particles (drawn as spheres) orbit the torus at varying speeds.
+- **Description**: An animated 10s geometric simulation of a glowing particle accelerator in 3D space.
+
+## abstract_topological_mobius_strip_3d
+
+- **Date**: 2026-06-07
+- **Theme**: An infinite, non-orientable topological surface (a Mobius strip) that constantly flows with glowing energy lines, symbolizing eternity and impossible geometry.
+- **Technique**: Parametric 3D generation of a Mobius strip using a dense grid of QUADS. Additive blending and neon glowing materials. Energy flows trace the UV paths along the surface using sine waves and frame count.
+- **Description**: An animated 12s geometric simulation of a glowing Mobius strip in 3D space.
+
+## chromatic_liquid_lissajous_knot_3d
+
+- **Date**: 2026-06-07
+- **Theme**: A hypnotic, continuous loop of thick, glossy liquid metal tying itself into complex Lissajous knots, reflecting a spectrum of intense chromatic light.
+- **Technique**: Parametric 3D Lissajous curves drawn with spheres. The radius modulates with sine waves. Additive blending (drawn 3 times for RGB offsets) creates the chromatic liquid metal look.
+- **Description**: An animated 10s geometric simulation of a glowing liquid metal knot in 3D space.
+
+## neon_superhighway_data_trails_3d
+
+- **Date**: 2026-06-07
+- **Theme**: A futuristic glowing neon superhighway stretching into infinity, with fast-moving data packets leaving bright light trails.
+- **Technique**: Perspective lines combined with hundreds of 3D boxes moving along the Z-axis. Additive blending creates intense glowing synthwave colors.
+- **Description**: An animated flyover of a cybernetic data superhighway.
+
+## metallic_monolith_ripple_ring_3d
+
+- **Date**: 2026-06-07
+- **Theme**: A massive ring of floating metallic monolithic pillars that ripple and change height based on a complex mathematical beat.
+- **Technique**: Two concentric rings of 3D boxes. Heights driven by overlapping sinusoidal functions and OpenSimplex noise. Dynamic lighting and depth testing.
+- **Description**: An animated 3D simulation of metallic monoliths rippling in a ring.
+
+## cybernetic_shard_swarm_gravity_well_3d
+
+- **Date**: 2026-06-07
+- **Theme**: A mesmerizing swarm of glowing geometric shards swirling around a central gravity well, moving like a school of cybernetic fish.
+- **Technique**: Custom particle system with gravity and vortex swirl forces. Particles stretch along velocity vectors and use additive blending.
+- **Description**: An animated 3D simulation of a cybernetic shard swarm gravity well.
+
+## digital_wireframe_sand_dunes_3d
+
+- **Date**: 2026-06-07
+- **Theme**: A minimalist landscape of rolling sand dunes made entirely of glowing digital wireframes that shift endlessly.
+- **Technique**: Triangle strip mesh modulated by a moving 3D OpenSimplex noise field.
+- **Description**: An animated flyover of digital wireframe sand dunes.
+
+## neon_fluid_torus_knot_organism_3d
+
+- **Date**: 2026-06-07
+- **Theme**: A fluid, swirling torus knot that is composed of thousands of overlapping translucent spheres, undulating and shifting colors like a living neon organism.
+- **Technique**: Mathematical torus knot points distorted by 3D OpenSimplex noise. Translucent glowing spheres drawn with additive blending.
+- **Description**: An animated 3D simulation of a fluid torus knot organism.
+
+## cyber_wormhole_hyper_tunnel_3d
+
+- **Date**: 2026-06-07
+- **Theme**: A hyper-speed tunnel effect using warped 3D geometric rings that give the illusion of traveling through a glowing cyber-wormhole.
+- **Technique**: An array of 3D rings drawn with stretched boxes along the Z-axis, continuously wrapping to simulate forward movement. Rings are distorted via 4D OpenSimplex noise.
+- **Description**: An animated flythrough of a cybernetic hyper-tunnel wormhole.
+
+## pulsating_crystal_lattice_heart_3d
+
+- **Date**: 2026-06-07
+- **Theme**: A mesmerizing 3D lattice of interconnected geometric nodes that rhythmically expand and contract, pulsating with energy like a living crystal heart.
+- **Technique**: A dense 3D grid of boxes whose sizes are modulated by both 3D OpenSimplex noise and a sinusoidal pulsing function. Nodes outside a spherical radius are culled. Additive blending and dynamic HSB coloring create a glowing core effect.
+- **Description**: An animated 3D simulation of a pulsating crystal geometric heart.
+
+## iridescent_gravitational_galaxy_3d
+
+- **Date**: 2026-06-07
+- **Theme**: A swirling galaxy of iridescent particles that react to invisible gravitational attractors, forming an organic, glowing cosmic structure in 3D space.
+- **Technique**: A spiral particle system where a 3D Perlin noise field determines Z-axis displacement and scaling. Additive blending and HSB color rotation create the glowing look.
+- **Description**: An animated 3D simulation of a glowing iridescent galaxy.
+
+## optical_fiber_fractal_tree_3d
+
+- **Date**: 2026-06-07
+- **Theme**: An intricate, 3D fractal-like tree structure made of glowing optical fibers that grows and branches recursively, swaying gently in an invisible wind.
+- **Technique**: Recursive branching in 3D space. Additive blending combined with partial transparency to simulate the glowing optical fiber look. A 4D Perlin noise field determines the branch sway (wind).
+- **Description**: An animated 3D simulation of a glowing optical fiber fractal tree swaying in the wind.
+
+## infinite_neon_glass_labyrinth_3d
+
+- **Date**: 2026-06-07
+- **Theme**: A slow, continuous flythrough of an infinite 3D labyrinth made of translucent frosted glass illuminated by moving neon light sources, producing intense caustics and refractions.
+- **Technique**: 3D boxes drawn along a rotating, infinite Z-axis tunnel. Additive blending (`py5.blend_mode(py5.ADD)`) and disabled depth testing simulate translucent, glowing frosted glass. Colors shift dynamically using frame count and 3D positioning.
+- **Description**: An animated flythrough of a cybernetic glass labyrinth with additive neon lighting.
+
+## kinetic_metallic_piston_ocean_3d
+
+- **Date**: 2026-06-07
+- **Theme**: A dense, metallic array of geometric cubes acting as a piston engine, moving up and down continuously based on a multi-scale Perlin noise field, resembling a hyper-advanced metallic ocean.
+- **Technique**: 3D cubes drawn in a grid. Their heights are dynamically driven by 3D OpenSimplex noise. Complex directional and ambient lighting creates a metallic, mechanical look.
+- **Description**: An animated 10s geometric simulation of a cybernetic metallic piston ocean.
+
+## spectral_aurora_borealis_ribbons_3d
+
+- **Date**: 2026-06-07
+- **Theme**: An ethereal 3D simulation of the Aurora Borealis, consisting of sheer, glowing vertical ribbons of light that undulate organically in the polar sky.
+- **Technique**: 3D `QUAD_STRIP` curtains displaced by 4D OpenSimplex noise. Colors shift smoothly between emerald green, neon violet, and magenta using HSB mapping. Additive blending gives the ethereal glow.
+- **Description**: An animated 10s geometric simulation of glowing aurora ribbons in 3D space.
+
+## algorithmic_superformula_blobs_3d
+
+- **Date**: 2026-06-07
+- **Theme**: A mesmerizing 3D visualization of multiple geometric blobs defined by the Superformula, morphing into complex petals and spiked spheres, floating like deep-sea diatoms.
+- **Technique**: Procedurally generated using spherical coordinates mapped through Johan Gielis' Superformula. Parameters (m, n1, n2, n3) oscillate via sine waves to create continuous morphological changes. Rendered with additive blending and HSB mapping based on radius.
+- **Description**: An animated 10s geometric simulation of morphing superformula shapes.
+
+## bismuth_hopper_crystal_growth_3d
+
+- **Date**: 2026-06-07
+- **Theme**: Iridescent, highly structured rectangular crystals stepping inward to form hopper crystals (like Bismuth), growing and rotating in space.
+- **Technique**: Procedurally generating nested hollow boxes with rotational offsets and height shifts based on recursive growth. Applying a rainbow iridescent metallic shader using directional lights and HSB mapping.
+- **Description**: An animated 10s geometric simulation of iridescent bismuth hopper crystals growing.
+
+## harmonic_spherical_harmonics_3d
+
+- **Date**: 2026-06-07
+- **Theme**: A mesmerizing, slowly vibrating 3D geometric energy core based on spherical harmonic math, emitting pulsating light.
+- **Technique**: Procedurally generated using a parametric quad strip deformed by spherical harmonic equations (m, l parameters animated via sine waves). Additive blending creates intense glowing overlaps across the animated wireframe-like surface.
+- **Description**: An animated 10s geometric simulation of a vibrating, glowing spherical harmonic energy core.
+
 ## geometric_minimalist_bauhaus_mobile_3d
 
 - **Date**: 2026-06-06
@@ -4604,3 +4849,27 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Theme**: Floating, glowing glass cubes in a 3D matrix that refract and reflect light, shifting dynamically based on noise.
 - **Technique**: 3D matrix of cubes with individual noise-driven rotations and additive blending to simulate glass refraction and reflections.
 - **Description**: A grid of floating glass cubes rotates around its center in a dark environment. As the grid moves, the individual cubes rotate and twist on multiple axes, driven by 3D noise. Through additive blending, overlapping transparent shapes combine into intense, glowing geometric structures in shades of amber, cyan, and magenta.
+
+## neon_cyber_botanical_vines_3d
+
+- **Date**: $(date +%Y-%m-%d)
+- **Theme**: An intricate, mechanical 3D vine structure that grows and weaves itself around a central vertical column, simulating a cyber-botanical organism hacking its environment.
+- **Technique**: Procedurally generated using a 3D L-System-inspired continuous growth algorithm with cylindrical coordinate constraints. The vines grow upwards with 2D/3D Simplex noise determining their radial spread, combined with an additive blend mode to create intense glowing neon green and deep purple hues.
+- **Description**: An animated 15s simulation of glowing cybernetic vines growing upwards and intertwining in 3D space.
+
+## glass_school_cyber_ocean_3d
+
+- **Date**: 2026-06-07
+- **Theme**: A hypnotic 3D simulation of a massive school of geometric glass fish swimming through a glowing liquid cyber-ocean.
+- **Technique**: 3D geometric fish with rotation driven by velocity, constrained in a space. Swimming direction influenced by a 3D Simplex noise vector field.
+- **Description**: An animated 15s simulation of glass-like geometric fish swimming through a cyber ocean.
+
+## iridescent_klein_bottle_refraction_3d
+
+- **Date**: 2026-06-07
+- **Theme**: An organic, pulsating membrane that folds into itself like a Klein bottle, shifting in iridescent hues of pearl, cyan, and pink.
+- **Technique**: 3D parametric figure-8 Klein bottle mesh with 3D simplex noise distortion acting as an organic breathing effect. Additive blending and lighting simulate iridescent refraction.
+- **Description**: An animated 15s simulation of an organic, distorted 3D Klein bottle rendering in iridescent colors.
+- [quantum_singularity_shard_vortex_3d](./quantum_singularity_shard_vortex_3d/)
+- [algorithmic_crystal_growth_fractal_3d](./algorithmic_crystal_growth_fractal_3d/)
+- [neon_cyberpunk_infinity_city_3d](./neon_cyberpunk_infinity_city_3d/)

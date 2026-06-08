@@ -34,10 +34,10 @@ def setup():
 def draw():
     # drawing logic
     
-    if py5.frame_count == PREVIEW_FRAME:
+    if py5.frame_count == 2 or py5.frame_count == PREVIEW_FRAME:
         py5.load_np_pixels()
-        if py5.np_pixels.std() == 0:
-            print("[Error] Blank screen detected (std=0). Aborting.")
+        if py5.np_pixels.std() < 1.0:
+            print(f"[Error] Blank screen detected on frame {py5.frame_count} (std < 1.0). Aborting.")
             import os
             os._exit(1)
 
@@ -54,6 +54,7 @@ from pathlib import Path
 import shutil
 import subprocess
 import sys
+import random
 import py5
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
@@ -67,7 +68,7 @@ from lib.sizes import get_sizes
 SKETCH_DIR = sketch_dir(__file__)
 WORK_NAME = SKETCH_DIR.name
 FRAMES_DIR = SKETCH_DIR / "frames"
-DURATION_SEC = 10  # Adjust between 10–30 seconds depending on content
+DURATION_SEC = random.randint(15, 30)  # Random duration up to 30s
 FPS = 60
 TOTAL_FRAMES = DURATION_SEC * FPS
 PREVIEW_FILENAME = f"{WORK_NAME}_p1.png"
@@ -86,10 +87,10 @@ def draw():
     py5.save_frame(str(FRAMES_DIR / "frame-####.png"))
 
     # Fail-safe: abort if nothing is drawn
-    if py5.frame_count == 2:
+    if py5.frame_count == 2 or py5.frame_count % 60 == 0:
         py5.load_np_pixels()
-        if py5.np_pixels.std() == 0:
-            print("[Error] Blank screen detected on frame 2 (std=0). Aborting.")
+        if py5.np_pixels.std() < 1.0:
+            print(f"[Error] Blank screen detected on frame {py5.frame_count} (std < 1.0). Aborting.")
             import os
             os._exit(1)
 

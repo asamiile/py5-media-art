@@ -4,6 +4,51 @@
 Agents MUST NOT write anything in the `Comment` field. When registering a new work, Agents must leave the `Rating` and `Comment` fields empty or with their default labels as placeholders for the user.
 The Artist reads this file before starting a new sketch to understand preferences.
 
+## generative_karesansui_zen_garden_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## iridescent_soap_bubble_cluster_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## abelian_sandpile_fractal_growth
+
+- **Rating**: 
+- **Comment**: 
+
+## gyroid_minimal_surface_flow_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## gray_scott_reaction_diffusion_morphogenesis
+
+- **Rating**: 
+- **Comment**: 
+
+## lorenz_butterfly_chaos_attractor_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## iridescent_soap_bubble_cluster_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_metropolis_clockwork_cube_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## iridescent_topological_klein_bottle_3d
+
+- **Rating**: 
+- **Comment**: 
+
 ## ancient_alien_sacred_geometry_temple_3d
 
 - **Rating**: 

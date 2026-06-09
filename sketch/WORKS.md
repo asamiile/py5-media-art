@@ -3,6 +3,62 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## generative_karesansui_zen_garden_3d
+
+- **Date**: 2026-06-08
+- **Theme**: A minimalist, contemplative Japanese rock garden where the sand ripples are procedurally drawn as sweeping, concentric topographic lines that flow around stark, dark geometric "stones".
+- **Technique**: A 3D plane slightly tilted. Sand lines are generated using a distance field around fixed spheres combined with OpenSimplex noise. The distance is fed into a sine wave to create sharp, flowing ridges. Slow camera pan with deep contemplative purple/indigo coloring.
+- **Description**: An animated 15s simulation of a contemplative generative Zen sand garden with obsidian stones.
+
+## abelian_sandpile_fractal_growth
+
+- **Date**: 2026-06-08
+- **Theme**: Chip-firing self-organised fractal: a single over-loaded cell at the centre topples grains outward, and the cumulative integer avalanche patterns form a perfect self-similar mandala disc with exact 4-fold symmetry.
+- **Technique**: 540×540 integer grid; vectorised parallel toppling via numpy bit-masking (unstable mask, subtract 4×mask, shift to 4 neighbours with array slicing); 175 grains added per frame; 4-level discrete palette (navy/cobalt/amber/ivory) mapped by grain count; 4× nearest-neighbour upscale centred in 4K canvas with 840 px side bars.
+- **Description**: An animated ~22 s simulation of an Abelian sandpile growing from a seeded centre into a sprawling self-similar fractal disc.
+
+## gyroid_minimal_surface_flow_2d
+
+- **Date**: 2026-06-08
+- **Theme**: Cross-sectional slices of four triply periodic minimal surfaces (TPMS) — Gyroid, Schwarz D, Schwarz P, and Neovius — animated as the slicing plane sweeps through Z while the surfaces smoothly blend into one another.
+- **Technique**: Vectorized numpy evaluation of TPMS scalar fields on a 960×540 grid, 4× upscaled to 4K. Z-phase sweeps 0→2π over 20 s while smooth interpolation blends between four surface types. Gaussian-falloff glow at the primary isosurface (f=0) and secondary contours (f=±1.8) with a slowly cycling cool-to-warm hue palette.
+- **Description**: An animated 20s visualization of four TPMS cross-sections morphing through 3D space, creating hypnotic glowing lattice patterns on a dark background.
+
+## gray_scott_reaction_diffusion_morphogenesis
+
+- **Date**: 2026-06-08
+- **Theme**: Nature's secret pattern language — two invisible chemicals reacting and diffusing across a dark surface to spontaneously generate the spotted coats of leopards, the stripes of zebrafish, and the branching arms of coral.
+- **Technique**: Gray-Scott PDE (F=0.055, K=0.062, coral/maze regime) solved on a 960×540 grid using scipy 5-point Laplacian convolution; 20 integration steps per frame; U concentration contrast-stretched and mapped to warm earth-tone palette; nearest-neighbor upscaled to 4K.
+- **Description**: An animated 25s simulation of Gray-Scott reaction-diffusion morphogenesis showing Turing pattern self-organization.
+
+## lorenz_butterfly_chaos_attractor_3d
+
+- **Date**: 2026-06-08
+- **Theme**: Ten thousand simultaneous particles tracing the Lorenz strange attractor — deterministic chaos that is infinitely complex yet always bounded, forming ghostly butterfly wings in the dark.
+- **Technique**: Vectorized numpy Euler integration of the Lorenz ODE (σ=10, ρ=28, β=8/3) for 4000 particles; velocity-encoded thermal coloring (navy → cyan → amber-white); persistent trail via per-frame pixel buffer decay; slow camera Y-rotation simulated via 3D rotation matrices.
+- **Description**: An animated 20s simulation of the Lorenz strange attractor traced by 4000 simultaneous particles.
+
+## iridescent_soap_bubble_cluster_3d
+
+- **Date**: 2026-06-08
+- **Theme**: A slow-drifting cluster of weightless, intersecting soap bubbles that wobble organically and refract a highly saturated, iridescent rainbow.
+- **Technique**: Multiple intersecting 3D `QUAD_STRIP` spheres. To simulate the wobble, the radius of each vertex is modulated with 4D OpenSimplex noise. The color is mapped into HSB space using the simulated surface normal to create dynamic chromatic iridescence.
+- **Description**: An animated 15s simulation of intersecting iridescent soap bubbles floating in a dark void.
+
+## kinetic_metropolis_clockwork_cube_3d
+
+- **Date**: 2026-06-08
+- **Theme**: A massive, impossible geometric machine where thousands of smaller glowing cubes shift and slide endlessly like a giant 3D puzzle.
+- **Technique**: A 3D grid array of cubes. Sub-sections (rows, columns, planes) of the array randomly rotate around their local axes in 90-degree increments, smoothly animated with sine-easing.
+- **Description**: An animated 15s geometric simulation of a glowing clockwork cube in 3D space.
+
+## iridescent_topological_klein_bottle_3d
+
+- **Date**: 2026-06-08
+- **Theme**: An impossibly intertwined mathematical surface that continuously flows into itself, rendered in translucent, iridescent glass.
+- **Technique**: Parametric 3D equations for a Klein bottle drawn with a dense QUAD_STRIP mesh. Multi-pass rendering with slight spatial/rotational offsets for R, G, B channels creates a chromatic aberration glass effect.
+- **Description**: An animated 15s geometric simulation of a glowing iridescent Klein bottle in 3D space.
+
 ## ancient_alien_sacred_geometry_temple_3d
 
 - **Date**: 2026-06-07

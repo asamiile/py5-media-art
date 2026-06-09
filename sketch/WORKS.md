@@ -3,6 +3,14 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## spectral_interference_ripple_matrix_2d
+
+- **Date**: 2026-06-09
+- **Theme**: A top-down 2D matrix of overlapping ripples from multiple moving droplets, creating intense spectral interference patterns.
+- **Technique**: Vectorized 2D NumPy grid evaluating the sum of sine waves based on distance to multiple orbiting centers. Colors are mapped from the resulting -1 to 1 amplitude to a deep cyan-magenta spectrum, with bright golden yellow accents for highest amplitudes.
+- **Description**: An animated 15s sequence of highly saturated spectral interference patterns morphing over time.
+
+
 ## bioluminescent_lsystem_coral_reef_3d
 
 - **Date**: 2026-06-09

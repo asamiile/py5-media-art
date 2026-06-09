@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## cyber_glitch_crt_typography_2d
+
+- **Date**: 2026-06-09
+- **Theme**: An old, malfunctioning military CRT monitor violently glitching while displaying dense, cryptic machine code, hexadecimal arrays, and complex typographic layouts.
+- **Technique**: 2D rendering of random dense monospace text blocks. The visual is heavily post-processed in real-time using NumPy to simulate analog video corruption: intense horizontal tracking errors, dynamic RGB channel separation (chromatic aberration), moving scanlines, and sudden vertical sync rolls driven by bursts of 1D Perlin noise.
+- **Description**: An intense, real-time 2D typographic simulation of a critically failing military CRT monitor rendering streams of data under severe analog degradation.
+
 ## brutalist_kinetic_architecture_monolith_3d
 
 - **Date**: 2026-06-09

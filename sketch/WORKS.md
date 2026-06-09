@@ -4964,3 +4964,10 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Theme**: An ethereal, bioluminescent single-celled organism (amoeba) floating gracefully in a dark microscopic abyss. Its soft-body membrane undulates organically while internal glowing organelles drift and repel each other.
 - **Technique**: A custom 2D soft-body physics engine simulating a mass-spring network for the perimeter and spokes connected to a central heavy nucleus. Perlin noise modulates the spring rest lengths to cause organic pulsing and breathing. The membrane is drawn with additive blending and varying offsets to create a thick glowing boundary, while organelles use overlapping transparent circles. Resolution relies on high-DPI (Retina) scaling via py5.pixel_density(2) for sharp rendering.
 - **Description**: An animated 15s simulation of an ethereal amoeba using a custom soft-body physics engine.
+
+## cybernetic_honeycomb_hive_mind_3d
+
+- **Date**: 2026-06-09
+- **Theme**: A colossal, glowing hexagonal honeycomb structure that undulates with complex interference wave patterns, resembling a living cybernetic hive mind breathing.
+- **Technique**: A 3D hex grid constructed from custom extruded hexagon polygons in py5. The height and glow of each hexagonal pillar is driven by an interfering set of overlapping circular sine waves and 3D Perlin noise. Metallic directional lighting is used to give it an industrial cybernetic aesthetic!
+- **Description**: An animated 15s simulation of a cybernetic honeycomb using 3D procedurally extruded prisms.

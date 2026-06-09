@@ -4957,3 +4957,10 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - [quantum_singularity_shard_vortex_3d](./quantum_singularity_shard_vortex_3d/)
 - [algorithmic_crystal_growth_fractal_3d](./algorithmic_crystal_growth_fractal_3d/)
 - [neon_cyberpunk_infinity_city_3d](./neon_cyberpunk_infinity_city_3d/)
+
+## ethereal_amoeba_soft_body_2d
+
+- **Date**: 2026-06-09
+- **Theme**: An ethereal, bioluminescent single-celled organism (amoeba) floating gracefully in a dark microscopic abyss. Its soft-body membrane undulates organically while internal glowing organelles drift and repel each other.
+- **Technique**: A custom 2D soft-body physics engine simulating a mass-spring network for the perimeter and spokes connected to a central heavy nucleus. Perlin noise modulates the spring rest lengths to cause organic pulsing and breathing. The membrane is drawn with additive blending and varying offsets to create a thick glowing boundary, while organelles use overlapping transparent circles. Resolution relies on high-DPI (Retina) scaling via py5.pixel_density(2) for sharp rendering.
+- **Description**: An animated 15s simulation of an ethereal amoeba using a custom soft-body physics engine.

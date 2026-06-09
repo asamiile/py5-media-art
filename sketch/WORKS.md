@@ -4971,3 +4971,10 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Theme**: A colossal, glowing hexagonal honeycomb structure that undulates with complex interference wave patterns, resembling a living cybernetic hive mind breathing.
 - **Technique**: A 3D hex grid constructed from custom extruded hexagon polygons in py5. The height and glow of each hexagonal pillar is driven by an interfering set of overlapping circular sine waves and 3D Perlin noise. Metallic directional lighting is used to give it an industrial cybernetic aesthetic!
 - **Description**: An animated 15s simulation of a cybernetic honeycomb using 3D procedurally extruded prisms.
+
+## recursive_lsystem_cyber_city_3d
+
+- **Date**: 2026-06-09
+- **Theme**: A glowing procedural futuristic city that grows organically like an L-System tree out of a dark void, with neon highways coursing through the branches.
+- **Technique**: Orthogonal 3D recursive L-system branching, with py5.box() nodes and heavy stroke lines forming glowing building blocks.
+- **Description**: An animated 15s simulation of an L-system growing a massive orthogonal cyber-city in 3D.

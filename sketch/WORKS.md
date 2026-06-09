@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## bioluminescent_lsystem_coral_reef_3d
+
+- **Date**: 2026-06-09
+- **Theme**: An intricate, procedural L-system coral reef growing organically in a deep oceanic abyss. The entire structure pulses with bioluminescent colors and sways gently, as if affected by invisible underwater currents.
+- **Technique**: 3D recursive branching (L-system) implemented via a recursive function utilizing `py5.push_matrix`, `py5.pop_matrix`, `py5.translate`, and `py5.rotate`. The coral structure is composed of hundreds of glowing cylinders or elongated spheres. To create organic motion, the branching angles and lengths are continuously modulated by 3D Perlin noise over time, making the entire structure breathe and sway harmoniously.
+- **Description**: An animated 15s sequence of an intricate 3D procedural bioluminescent coral reef swaying smoothly in invisible ocean currents.
+
 ## cyber_glitch_crt_typography_2d
 
 - **Date**: 2026-06-09

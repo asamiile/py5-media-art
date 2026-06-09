@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## fractal_electrical_lichtenberg_discharge_2d
+
+- **Date**: 2026-06-09
+- **Theme**: A slow-motion visualization of high-voltage dielectric breakdown, where aggressive, jagged lightning branches aggressively carve glowing, burning paths across a dark insulating surface.
+- **Technique**: A modified Diffusion-Limited Aggregation (DLA) or branching tree algorithm tailored for rapid, jagged, lightning-like growth. Branches expand outward from the center, snapping at sharp angles and emitting localized flashes. The trails fade from intense neon violet and white down to deep burnt amber.
+- **Description**: An animated 20s visualization of high-voltage fractal electrical discharge branching rapidly across an insulating surface.
+
 ## generative_karesansui_zen_garden_3d
 
 - **Date**: 2026-06-08

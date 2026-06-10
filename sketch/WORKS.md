@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## neon_geometric_mandala_bloom_2d
+
+- **Date**: 2026-06-10
+- **Theme**: A hypnotic, blooming neon geometric mandala that unfolds procedurally, with intricate interlocking layers of pulsing sacred geometry.
+- **Technique**: Procedural 2D recursive rings of shapes (circles, triangles, stars) rotating at varying harmonic speeds, drawn with additive blending and varying glowing colors.
+- **Description**: An animated 15s sequence of a mesmerizing, infinite mechanical bloom of glowing neon light.
+
 ## belousov_zhabotinsky_spiral_waves_2d
 
 - **Date**: 2026-06-10

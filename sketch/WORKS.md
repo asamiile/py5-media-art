@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## generative_aizawa_strange_attractor_3d
+
+- **Date**: 2026-06-10
+- **Theme**: A mesmerizing, glowing ribbon tracing the chaotic, spherical, swirling path of the Aizawa strange attractor in 3D space.
+- **Technique**: Precomputing a 25,000-point trail of the Aizawa ODE using Euler integration. Rendered dynamically using a thick `LINE_STRIP` with a neon gradient color palette and additive blending, rotating slowly.
+- **Description**: An animated 15s sequence of a hypnotic, glowing 3D energy ribbon tangled in a spherical vortex.
+
 ## kinetic_spirograph_nebula_3d
 
 - **Date**: 2026-06-10

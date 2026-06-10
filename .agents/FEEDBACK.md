@@ -4,6 +4,11 @@
 Agents MUST NOT write anything in the `Comment` field. When registering a new work, Agents must leave the `Rating` and `Comment` fields empty or with their default labels as placeholders for the user.
 The Artist reads this file before starting a new sketch to understand preferences.
 
+## belousov_zhabotinsky_spiral_waves_2d
+
+- **Rating**: 
+- **Comment**: 
+
 ## cybernetic_curl_noise_particle_flow_2d
 
 - **Rating**: 

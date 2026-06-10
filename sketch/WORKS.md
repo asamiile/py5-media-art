@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## belousov_zhabotinsky_spiral_waves_2d
+
+- **Date**: 2026-06-10
+- **Theme**: The mesmerizing Belousov-Zhabotinsky chemical reaction, creating pulsating, continuous spiral waves of color that naturally form, expand, and annihilate each other.
+- **Technique**: 2D Numpy grid simulation of the Belousov-Zhabotinsky chemical oscillator using the Hodgepod machine model, mapped to a vibrant cyan and magenta color gradient.
+- **Description**: An animated 15s sequence of pulsating spiral waves that organically self-organize from chaos.
+
 ## cybernetic_curl_noise_particle_flow_2d
 
 - **Date**: 2026-06-10

@@ -4,6 +4,31 @@
 Agents MUST NOT write anything in the `Comment` field. When registering a new work, Agents must leave the `Rating` and `Comment` fields empty or with their default labels as placeholders for the user.
 The Artist reads this file before starting a new sketch to understand preferences.
 
+## spectral_interference_ripple_matrix_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## bioluminescent_lsystem_coral_reef_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## cyber_glitch_crt_typography_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## brutalist_kinetic_architecture_monolith_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## fractal_electrical_lichtenberg_discharge_2d
+
+- **Rating**: 
+- **Comment**: 
+
 ## generative_karesansui_zen_garden_3d
 
 - **Rating**: 
@@ -3484,3 +3509,18 @@ Add any notes on color, density, theme, or mood in the Comment field.
 - **Type:** Video
 - **Rating:** [TBD]
 - **Comment:** [TBD]
+
+## ethereal_amoeba_soft_body_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## cybernetic_honeycomb_hive_mind_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## recursive_lsystem_cyber_city_3d
+
+- **Rating**: 
+- **Comment**: 

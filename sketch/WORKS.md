@@ -3,6 +3,42 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## spectral_interference_ripple_matrix_2d
+
+- **Date**: 2026-06-09
+- **Theme**: A top-down 2D matrix of overlapping ripples from multiple moving droplets, creating intense spectral interference patterns.
+- **Technique**: Vectorized 2D NumPy grid evaluating the sum of sine waves based on distance to multiple orbiting centers. Colors are mapped from the resulting -1 to 1 amplitude to a deep cyan-magenta spectrum, with bright golden yellow accents for highest amplitudes.
+- **Description**: An animated 15s sequence of highly saturated spectral interference patterns morphing over time.
+
+
+## bioluminescent_lsystem_coral_reef_3d
+
+- **Date**: 2026-06-09
+- **Theme**: An intricate, procedural L-system coral reef growing organically in a deep oceanic abyss. The entire structure pulses with bioluminescent colors and sways gently, as if affected by invisible underwater currents.
+- **Technique**: 3D recursive branching (L-system) implemented via a recursive function utilizing `py5.push_matrix`, `py5.pop_matrix`, `py5.translate`, and `py5.rotate`. The coral structure is composed of hundreds of glowing cylinders or elongated spheres. To create organic motion, the branching angles and lengths are continuously modulated by 3D Perlin noise over time, making the entire structure breathe and sway harmoniously.
+- **Description**: An animated 15s sequence of an intricate 3D procedural bioluminescent coral reef swaying smoothly in invisible ocean currents.
+
+## cyber_glitch_crt_typography_2d
+
+- **Date**: 2026-06-09
+- **Theme**: An old, malfunctioning military CRT monitor violently glitching while displaying dense, cryptic machine code, hexadecimal arrays, and complex typographic layouts.
+- **Technique**: 2D rendering of random dense monospace text blocks. The visual is heavily post-processed in real-time using NumPy to simulate analog video corruption: intense horizontal tracking errors, dynamic RGB channel separation (chromatic aberration), moving scanlines, and sudden vertical sync rolls driven by bursts of 1D Perlin noise.
+- **Description**: An intense, real-time 2D typographic simulation of a critically failing military CRT monitor rendering streams of data under severe analog degradation.
+
+## brutalist_kinetic_architecture_monolith_3d
+
+- **Date**: 2026-06-09
+- **Theme**: Massive, imposing concrete-like brutalist structures sliding, interlocking, and reshaping themselves continuously under harsh, dramatic lighting, resembling an impossible mechanical building.
+- **Technique**: 3D boxes arranged in asymmetrical, top-heavy structural grids. The scales and positions of entire building sectors slide linearly along orthogonal axes using eased trigonometric functions, creating a mechanical puzzle of light and deep shadow.
+- **Description**: An animated 20s visualization of imposing brutalist kinetic architecture shifting gracefully over time.
+
+## fractal_electrical_lichtenberg_discharge_2d
+
+- **Date**: 2026-06-09
+- **Theme**: A slow-motion visualization of high-voltage dielectric breakdown, where aggressive, jagged lightning branches aggressively carve glowing, burning paths across a dark insulating surface.
+- **Technique**: A modified Diffusion-Limited Aggregation (DLA) or branching tree algorithm tailored for rapid, jagged, lightning-like growth. Branches expand outward from the center, snapping at sharp angles and emitting localized flashes. The trails fade from intense neon violet and white down to deep burnt amber.
+- **Description**: An animated 20s visualization of high-voltage fractal electrical discharge branching rapidly across an insulating surface.
+
 ## generative_karesansui_zen_garden_3d
 
 - **Date**: 2026-06-08
@@ -4929,3 +4965,24 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - [quantum_singularity_shard_vortex_3d](./quantum_singularity_shard_vortex_3d/)
 - [algorithmic_crystal_growth_fractal_3d](./algorithmic_crystal_growth_fractal_3d/)
 - [neon_cyberpunk_infinity_city_3d](./neon_cyberpunk_infinity_city_3d/)
+
+## ethereal_amoeba_soft_body_2d
+
+- **Date**: 2026-06-09
+- **Theme**: An ethereal, bioluminescent single-celled organism (amoeba) floating gracefully in a dark microscopic abyss. Its soft-body membrane undulates organically while internal glowing organelles drift and repel each other.
+- **Technique**: A custom 2D soft-body physics engine simulating a mass-spring network for the perimeter and spokes connected to a central heavy nucleus. Perlin noise modulates the spring rest lengths to cause organic pulsing and breathing. The membrane is drawn with additive blending and varying offsets to create a thick glowing boundary, while organelles use overlapping transparent circles. Resolution relies on high-DPI (Retina) scaling via py5.pixel_density(2) for sharp rendering.
+- **Description**: An animated 15s simulation of an ethereal amoeba using a custom soft-body physics engine.
+
+## cybernetic_honeycomb_hive_mind_3d
+
+- **Date**: 2026-06-09
+- **Theme**: A colossal, glowing hexagonal honeycomb structure that undulates with complex interference wave patterns, resembling a living cybernetic hive mind breathing.
+- **Technique**: A 3D hex grid constructed from custom extruded hexagon polygons in py5. The height and glow of each hexagonal pillar is driven by an interfering set of overlapping circular sine waves and 3D Perlin noise. Metallic directional lighting is used to give it an industrial cybernetic aesthetic!
+- **Description**: An animated 15s simulation of a cybernetic honeycomb using 3D procedurally extruded prisms.
+
+## recursive_lsystem_cyber_city_3d
+
+- **Date**: 2026-06-09
+- **Theme**: A glowing procedural futuristic city that grows organically like an L-System tree out of a dark void, with neon highways coursing through the branches.
+- **Technique**: Orthogonal 3D recursive L-system branching, with py5.box() nodes and heavy stroke lines forming glowing building blocks.
+- **Description**: An animated 15s simulation of an L-system growing a massive orthogonal cyber-city in 3D.

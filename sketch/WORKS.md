@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## neon_metaball_plasma_cluster_3d
+
+- **Date**: 2026-06-10
+- **Theme**: A hypnotic, glowing cluster of neon plasma spheres that organically merge and split in 3D space, resembling a high-tech lava lamp.
+- **Technique**: A 3D physics system of 80 mutually attracting spheres rendered without strokes using additive blending. 3D OpenSimplex noise applies fluid-like forces.
+- **Description**: An animated 15s sequence of a vibrant, glowing blob of plasma that continuously mutates and breathes.
+
 ## neon_geometric_mandala_bloom_2d
 
 - **Date**: 2026-06-10

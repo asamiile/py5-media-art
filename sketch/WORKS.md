@@ -3,6 +3,13 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## kinetic_spirograph_nebula_3d
+
+- **Date**: 2026-06-10
+- **Theme**: A dense, glowing cosmic nebula constructed out of millions of fine, interlocking spirograph (hypotrochoid) curves rotating gracefully in 3D space.
+- **Technique**: 3D nested rotational matrices driving parametric hypotrochoid equations drawn using continuous line strips and additive blending.
+- **Description**: An animated 15s sequence of an impossibly intricate, glowing wireframe nebula that looks both mechanical and celestial.
+
 ## neon_metaball_plasma_cluster_3d
 
 - **Date**: 2026-06-10

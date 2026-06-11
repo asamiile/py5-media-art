@@ -3,6 +3,49 @@
 Read this file before creating any new artwork.
 Use it to avoid repeating themes, techniques, or algorithms from past works.
 
+## generative_aizawa_strange_attractor_3d
+
+- **Date**: 2026-06-10
+- **Theme**: A mesmerizing, glowing ribbon tracing the chaotic, spherical, swirling path of the Aizawa strange attractor in 3D space.
+- **Technique**: Precomputing a 25,000-point trail of the Aizawa ODE using Euler integration. Rendered dynamically using a thick `LINE_STRIP` with a neon gradient color palette and additive blending, rotating slowly.
+- **Description**: An animated 15s sequence of a hypnotic, glowing 3D energy ribbon tangled in a spherical vortex.
+
+## kinetic_spirograph_nebula_3d
+
+- **Date**: 2026-06-10
+- **Theme**: A dense, glowing cosmic nebula constructed out of millions of fine, interlocking spirograph (hypotrochoid) curves rotating gracefully in 3D space.
+- **Technique**: 3D nested rotational matrices driving parametric hypotrochoid equations drawn using continuous line strips and additive blending.
+- **Description**: An animated 15s sequence of an impossibly intricate, glowing wireframe nebula that looks both mechanical and celestial.
+
+## neon_metaball_plasma_cluster_3d
+
+- **Date**: 2026-06-10
+- **Theme**: A hypnotic, glowing cluster of neon plasma spheres that organically merge and split in 3D space, resembling a high-tech lava lamp.
+- **Technique**: A 3D physics system of 80 mutually attracting spheres rendered without strokes using additive blending. 3D OpenSimplex noise applies fluid-like forces.
+- **Description**: An animated 15s sequence of a vibrant, glowing blob of plasma that continuously mutates and breathes.
+
+## neon_geometric_mandala_bloom_2d
+
+- **Date**: 2026-06-10
+- **Theme**: A hypnotic, blooming neon geometric mandala that unfolds procedurally, with intricate interlocking layers of pulsing sacred geometry.
+- **Technique**: Procedural 2D recursive rings of shapes (circles, triangles, stars) rotating at varying harmonic speeds, drawn with additive blending and varying glowing colors.
+- **Description**: An animated 15s sequence of a mesmerizing, infinite mechanical bloom of glowing neon light.
+
+## belousov_zhabotinsky_spiral_waves_2d
+
+- **Date**: 2026-06-10
+- **Theme**: The mesmerizing Belousov-Zhabotinsky chemical reaction, creating pulsating, continuous spiral waves of color that naturally form, expand, and annihilate each other.
+- **Technique**: 2D Numpy grid simulation of the Belousov-Zhabotinsky chemical oscillator using the Hodgepod machine model, mapped to a vibrant cyan and magenta color gradient.
+- **Description**: An animated 15s sequence of pulsating spiral waves that organically self-organize from chaos.
+
+## cybernetic_curl_noise_particle_flow_2d
+
+- **Date**: 2026-06-10
+- **Theme**: 150,000 glowing neon particles swept through a turbulent mathematical curl noise field, leaving long fading trails that weave together to form a cybernetic, geometric lattice structure.
+- **Technique**: Vectorized 2D NumPy particle simulation evaluating the analytical derivative of a complex sine-based noise function to generate divergence-free curl. Particles are split into Cyan, Magenta, and Yellow groups with different speeds, using `py5.blend_mode(py5.ADD)` and a fading background to create luminous trails.
+- **Description**: An animated 20s sequence of 150k glowing particles weaving through a cybernetic curl noise field.
+
+
 ## spectral_interference_ripple_matrix_2d
 
 - **Date**: 2026-06-09

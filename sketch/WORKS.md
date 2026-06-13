@@ -1,3 +1,10 @@
+## fluvial_meander_oxbow_migration_2d
+
+- **Date**: 2026-06-14
+- **Theme**: A lowland river slowly rewrites its own path across a floodplain over centuries — bends sharpen, necks pinch off into still oxbow lakes, and abandoned channels fossilize as scroll-bar ridges.
+- **Technique**: A simplified Howard & Knutson meander-migration model. A numpy centerline migrates outward along its normal by upstream-weighted local curvature so bends amplify; the line is arc-length resampled each step, and `scipy.spatial.cKDTree` detects neck cutoffs that abandon a loop as a permanent oxbow lake. A persistent py5 graphics buffer accumulates past channel positions as low-alpha sediment plus inner-bank accretion ridges, building concentric point-bar scroll bars.
+- **Description**: An animated ~20s aerial view of a meandering river crawling across a warm, textured floodplain. Ochre-to-sienna scroll bars trail each migrating bend while a cool slate-teal channel snakes through; occasional neck cutoffs leave still teal oxbow lakes behind.
+
 ## generative_lissajous_knot_matrix_3d
 
 - **Date**: 2026-06-14

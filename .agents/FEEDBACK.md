@@ -1,3 +1,8 @@
+## kinetic_solar_flare_plasma_arcs_3d
+
+- **Rating**: 
+- **Comment**: 
+
 ## holographic_quantum_foam_interference_3d
 
 - **Rating**: 

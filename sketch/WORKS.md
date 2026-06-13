@@ -1,3 +1,10 @@
+## kinetic_solar_flare_plasma_arcs_3d
+
+- **Date**: 2026-06-13
+- **Theme**: A turbulent stellar surface where massive glowing arcs of plasma erupt violently along invisible magnetic field lines.
+- **Technique**: Thousands of 3D particles tracing arcs constructed with `bezierVertex`. The arcs' endpoints and control points are perturbed by high-frequency 4D OpenSimplex noise to simulate intense plasma turbulence. Additive blending with deep oranges, intense yellows, and pure white hot spots.
+- **Description**: An animated 15s sequence of a terrifying and beautiful macro view of a star's surface violently erupting with glowing energy.
+
 ## holographic_quantum_foam_interference_3d
 
 - **Date**: 2026-06-13

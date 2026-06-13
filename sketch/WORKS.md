@@ -1,3 +1,10 @@
+## cyber_phyllotaxis_data_core_3d
+
+- **Date**: 2026-06-14
+- **Theme**: A massive 3D data core built using the golden ratio phyllotaxis pattern, where thousands of glowing fiber-optic pillars extrude outward from a central sphere, pulsing with binary data streams.
+- **Technique**: Calculating spherical coordinates using the golden ratio and Fibonacci sequence. Placing 3000 `py5.box` elements stretched along their normal vectors. An OpenSimplex noise field combined with sine waves modulates the length and color intensity of the pillars to simulate data pulses.
+- **Description**: An animated 15s sequence showing a hyper-dense, mathematically perfect mechanical sphere covered in thousands of glowing, shifting rectangular columns.
+
 ## kinetic_kaleidoscope_mirror_room_3d
 
 - **Date**: 2026-06-14

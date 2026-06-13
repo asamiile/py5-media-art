@@ -1,3 +1,10 @@
+## crystalline_fractal_tree_refraction_3d
+
+- **Date**: 2026-06-13
+- **Theme**: A sprawling, crystalline algorithmic tree that grows dynamically in 3D space, heavily refracting light like a complex prism. Its branches continuously split and rotate, simulating a 3D L-System but constructed from translucent, glowing geometric shards.
+- **Technique**: 3D recursive branching function using `py5.push_matrix()` and `py5.pop_matrix()`. The angles of rotation are driven by time to make the branches continuously fold and unfold. Triangles are drawn using `TRIANGLE_STRIP` with additive blending and stroke colors that shift based on depth to simulate refraction.
+- **Description**: An animated 20s sequence of a folding 3D crystalline fractal tree.
+
 ## kinetic_moire_interference_illusion_2d
 
 - **Date**: 2026-06-13

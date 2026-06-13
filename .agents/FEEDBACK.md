@@ -1,3 +1,8 @@
+## hyper_sphere_geometric_cross_sections_3d
+
+- **Rating**: 
+- **Comment**: 
+
 ## kinetic_chladni_resonance_patterns_2d
 
 - **Rating**: 

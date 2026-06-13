@@ -1,3 +1,8 @@
+## brutalist_megastructure_morphogenesis_3d
+
+- **Rating**: 
+- **Comment**: 
+
 ## neon_harmonograph_orbital_paths_3d
 
 - **Rating**: 

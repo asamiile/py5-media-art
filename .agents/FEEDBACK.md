@@ -1,3 +1,8 @@
+## kinetic_chladni_resonance_patterns_2d
+
+- **Rating**: 
+- **Comment**: 
+
 ## generative_isometric_cityscape_builder_3d
 
 - **Rating**: 

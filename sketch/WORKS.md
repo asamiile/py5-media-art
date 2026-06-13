@@ -1,3 +1,10 @@
+## kinetic_chladni_resonance_patterns_2d
+
+- **Date**: 2026-06-13
+- **Theme**: The visualization of sound frequencies visualizing as geometric patterns in sand on a vibrating metal plate (Chladni figures). As the invisible frequency sweeps, the intricate geometric patterns dissolve and reform into more complex standing waves.
+- **Technique**: Vectorized Numpy and py5's efficient point array drawing render 100,000 geometric particles mapping the gradient of the mathematical Chladni equation.
+- **Description**: An animated 20s sequence of dynamic Chladni standing waves forming from a particle system.
+
 ## generative_isometric_cityscape_builder_3d
 
 - **Date**: 2026-06-13

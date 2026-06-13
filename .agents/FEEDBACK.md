@@ -1,3 +1,8 @@
+## cyber_optical_fiber_bloom_3d
+
+- **Rating**: 
+- **Comment**: 
+
 ## cybernetic_ascii_matrix_hologram_3d
 
 - **Rating**: 

@@ -1,3 +1,8 @@
+## algorithmic_diatom_glass_sculpture_3d
+
+- **Rating**: 
+- **Comment**: 
+
 ## magnetic_field_iron_filing_fractal_2d
 
 - **Rating**: 

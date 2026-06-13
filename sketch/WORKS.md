@@ -1,3 +1,10 @@
+## algorithmic_diatom_glass_sculpture_3d
+
+- **Date**: 2026-06-13
+- **Theme**: A microscopic view of an intricate, translucent silica shell (like a marine diatom) that slowly morphs and rotates, scattering prismatic light.
+- **Technique**: Procedurally generated 3D polar geometry with a dense QUAD_STRIP mesh. Parametric equations modified by 3D spherical harmonics dictate the intricate pores and ridges. ambient_light and point_light setup with additive blending and depth testing for a glass-like feel.
+- **Description**: An animated 15s sequence of a delicate, crystalline diatom organism floating in deep space.
+
 ## magnetic_field_iron_filing_fractal_2d
 
 - **Date**: 2026-06-13

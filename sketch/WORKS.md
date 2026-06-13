@@ -1,3 +1,10 @@
+## kinetic_kaleidoscope_mirror_room_3d
+
+- **Date**: 2026-06-14
+- **Theme**: A 3D simulation of looking into a massive kaleidoscope tube filled with floating, glowing shards of neon glass that reflect infinitely.
+- **Technique**: A hexagonal prism drawn with additive blending. The camera is placed inside the prism looking down the Z-axis. Thousands of floating 3D triangle shards are duplicated and rotated recursively by 60 degrees around the Z-axis to simulate physical mirrored reflections.
+- **Description**: An animated 15s sequence showing an overwhelming array of perfectly symmetrical, colorful geometric shapes shifting and folding infinitely into the distance.
+
 ## cybernetic_data_cube_fractal_subdivision_3d
 
 - **Date**: 2026-06-14

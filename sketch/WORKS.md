@@ -5,6 +5,13 @@
 - **Technique**: A simplified Howard & Knutson meander-migration model. A numpy centerline migrates outward along its normal by upstream-weighted local curvature so bends amplify; the line is arc-length resampled each step, and `scipy.spatial.cKDTree` detects neck cutoffs that abandon a loop as a permanent oxbow lake. A persistent py5 graphics buffer accumulates past channel positions as low-alpha sediment plus inner-bank accretion ridges, building concentric point-bar scroll bars.
 - **Description**: An animated ~20s aerial view of a meandering river crawling across a warm, textured floodplain. Ochre-to-sienna scroll bars trail each migrating bend while a cool slate-teal channel snakes through; occasional neck cutoffs leave still teal oxbow lakes behind.
 
+## kinetic_origami_tessellation_folding_3d
+
+- **Date**: 2026-06-14
+- **Theme**: A colossal sheet of glowing digital paper that continuously folds and unfolds itself into impossibly complex geometric origami tessellations.
+- **Technique**: A 2D grid of triangles mapped into 3D. Over time, the vertices displace and fold along invisible seams based on overlapping 4D OpenSimplex noise and absolute sine waves, using additive blending with sharp, semi-transparent colored polygons.
+- **Description**: An animated 15s sequence of a fluid folding of sharp geometric polygons transitioning from a flat plane into a spiky, complex origami structure and back.
+
 ## generative_lissajous_knot_matrix_3d
 
 - **Date**: 2026-06-14

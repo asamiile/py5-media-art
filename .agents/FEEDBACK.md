@@ -1,3 +1,8 @@
+## monolithic_clockwork_mandala_3d
+
+- **Rating**: 
+- **Comment**: 
+
 ## cyber_optical_fiber_bloom_3d
 
 - **Rating**: 

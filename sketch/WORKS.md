@@ -1,3 +1,10 @@
+## monolithic_clockwork_mandala_3d
+
+- **Date**: 2026-06-13
+- **Theme**: A colossal, intricately nested series of metallic rings and interlocking gears forming a giant 3D clockwork mandala in deep space.
+- **Technique**: Procedurally generated concentric rings built from dense geometric primitives (boxes). Rings rotate independently on multiple axes with varied speeds. Dynamic lighting highlights the metallic structures against a void, using a cool cyan and glowing gold color palette.
+- **Description**: An animated 20s sequence of a colossal 3D clockwork mandala rotating in deep space.
+
 ## cyber_optical_fiber_bloom_3d
 
 - **Date**: 2026-06-13

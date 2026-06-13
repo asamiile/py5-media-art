@@ -1,3 +1,10 @@
+## quantum_chromodynamics_lattice_3d
+
+- **Date**: 2026-06-13
+- **Theme**: A visualization of boiling quantum foam where the strong force binds colorful quarks together in a 3D lattice, constantly snapping and reconnecting in a chaotic dance.
+- **Technique**: A 3D grid of particles with spring constraints that constantly break and reform based on a noisy temperature field. Additive blending with RGB primaries (representing color charge).
+- **Description**: An animated 15s sequence of boiling quantum foam and color charge dynamics in 3D space.
+
 ## bioluminescent_neural_network_growth_2d
 
 - **Date**: 2026-06-13

@@ -1,3 +1,8 @@
+## quantum_chromodynamics_lattice_3d
+
+- **Rating**: 
+- **Comment**: 
+
 ## bioluminescent_neural_network_growth_2d
 
 - **Rating**: 

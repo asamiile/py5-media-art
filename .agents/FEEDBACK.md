@@ -1,3 +1,8 @@
+## bioluminescent_neural_network_growth_2d
+
+- **Rating**: 
+- **Comment**: 
+
 ## brutalist_megastructure_morphogenesis_3d
 
 - **Rating**: 

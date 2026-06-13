@@ -1,3 +1,10 @@
+## bioluminescent_neural_network_growth_2d
+
+- **Date**: 2026-06-13
+- **Theme**: A glowing neural network that autonomously searches for connections, extending luminous dendrites that snap together with bright flashes.
+- **Technique**: 2D agent-based network growth using flocking for nodes and dynamic proximity checks. Nodes extend lines towards nearest neighbors, highlighting active connections with additive blending.
+- **Description**: An animated 15s sequence of a bioluminescent neural network organically growing and forming glowing connections.
+
 ## brutalist_megastructure_morphogenesis_3d
 
 - **Date**: 2026-06-13

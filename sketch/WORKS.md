@@ -1,3 +1,31 @@
+## cybernetic_ascii_matrix_hologram_3d
+
+- **Date**: 2026-06-12
+- **Theme**: A 3D hologram of a rotating cybernetic torus knot built entirely out of floating, glowing ASCII characters that stream and shift.
+- **Technique**: Generates a 3D point cloud of a torus knot, drawing a random text character at each point. The text characters use "billboarding" (always facing the camera) while the entire structure rotates. Additive blending and neon green/cyan colors mimic a classic matrix-style hologram, with bright pulses traveling along the knot's geometry.
+- **Description**: An animated 15s sequence of a 3D hologram of a rotating cybernetic torus knot built entirely out of floating, glowing ASCII characters that stream and shift.
+
+## kinetic_wireframe_black_hole_accretion_disk_3d
+
+- **Date**: 2026-06-12
+- **Theme**: A massive, terrifying black hole surrounded by a violently swirling, glowing wireframe accretion disk that bends light and space.
+- **Technique**: Uses a 3D particle system revolving around a central void. The particles simulate a Keplerian velocity profile, speeding up dramatically near the event horizon. A pseudo gravitational lensing effect distorts a background starfield, and additive blending creates an intense core glow shifting from deep orange to intense cyan/white near the horizon.
+- **Description**: An animated 15s sequence of a massive, terrifying black hole surrounded by a violently swirling, glowing wireframe accretion disk that bends light and space.
+
+## isometric_data_coral_reef_growth_3d
+
+- **Date**: 2026-06-12
+- **Theme**: A rigid, isometric 3D grid slowly overgrown by an organic, sprawling data coral reef, combining brutalist geometry with organic growth.
+- **Technique**: Cellular automaton in a 3D grid where blocks "grow" outward based on neighbor counts. The blocks are rendered in an isometric projection, with colors shifting from deep cyan to bright magenta as the coral structure ages.
+- **Description**: An animated 15s sequence of a rigid, isometric 3D grid slowly overgrown by an organic, sprawling data coral reef, combining brutalist geometry with organic growth via a 3D cellular automaton.
+
+## chromatic_aberration_lens_flare_geometry_2d
+
+- **Date**: 2026-06-12
+- **Theme**: A hypnotic, slow-rotating series of overlapping simple geometric shapes that act as optical lenses, distorting and coloring the space behind them.
+- **Technique**: 2D drawing of transparent polygons with intense color shifts (chromatic aberration). The background is a grid of fine lines, and as the "lenses" pass over, the lines are mathematically warped using 2D distance fields and drawn in separated RGB channels.
+- **Description**: An animated 15s sequence of a precise, high-contrast optical illusion featuring overlapping geometric "lenses" that mathematically distort a laser grid underneath, causing intense chromatic aberration.
+
 ## cybernetic_hurricane_shard_vortex_3d
 
 - **Date**: 2026-06-11

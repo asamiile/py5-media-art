@@ -1,3 +1,10 @@
+## holographic_quantum_foam_interference_3d
+
+- **Date**: 2026-06-13
+- **Theme**: A visualization of boiling quantum foam where spatial interference creates continuously morphing holographic topological waves.
+- **Technique**: A 3D grid of particles whose positions are determined by a sum of multiple high-frequency 4D OpenSimplex noise fields simulating interference patterns. Additive blending with deep violet and neon pink colors.
+- **Description**: An animated 15s sequence of a chaotic but highly structured holographic wave matrix that boils and folds in upon itself continuously.
+
 ## algorithmic_diatom_glass_sculpture_3d
 
 - **Date**: 2026-06-13

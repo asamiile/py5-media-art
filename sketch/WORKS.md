@@ -1,3 +1,10 @@
+## generative_lissajous_knot_matrix_3d
+
+- **Date**: 2026-06-14
+- **Theme**: A 3D matrix of interconnected Lissajous knots drawing themselves in space, rendered with glowing neon colors.
+- **Technique**: Simulated multiple 3D Lissajous curves arranged in a spatial 3D grid. Each knot evaluates its parametric path ($x=A\sin(at+\delta), y=B\sin(bt), z=C\sin(ct)$), and they are rendered as intricate geometric paths using additive blending.
+- **Description**: An animated 15s sequence of glowing neon intricate geometric knots intertwined in a 3D matrix layout.
+
 ## cyber_phyllotaxis_data_core_3d
 
 - **Date**: 2026-06-14

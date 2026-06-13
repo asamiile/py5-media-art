@@ -1,3 +1,10 @@
+## magnetic_field_iron_filing_fractal_2d
+
+- **Date**: 2026-06-13
+- **Theme**: An invisible magnetic dipole field slowly rotating and pulsing, made visible by thousands of fine metallic filings that align and stretch into a fractal web.
+- **Technique**: A 2D vector field simulation based on magnetic dipole equations. Particles act like iron filings, stretching along the field lines and clustering at higher field intensities. Rendered in stark black and white with high contrast.
+- **Description**: An animated 15s sequence of magnetic dipole fields reacting with metallic particle filings.
+
 ## cyber_fluid_laminar_flow_3d
 
 - **Date**: 2026-06-13

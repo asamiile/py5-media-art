@@ -5,6 +5,13 @@
 - **Technique**: A simplified Howard & Knutson meander-migration model. A numpy centerline migrates outward along its normal by upstream-weighted local curvature so bends amplify; the line is arc-length resampled each step, and `scipy.spatial.cKDTree` detects neck cutoffs that abandon a loop as a permanent oxbow lake. A persistent py5 graphics buffer accumulates past channel positions as low-alpha sediment plus inner-bank accretion ridges, building concentric point-bar scroll bars.
 - **Description**: An animated ~20s aerial view of a meandering river crawling across a warm, textured floodplain. Ochre-to-sienna scroll bars trail each migrating bend while a cool slate-teal channel snakes through; occasional neck cutoffs leave still teal oxbow lakes behind.
 
+## kinetic_dna_helix_particle_swarm_3d
+
+- **Date**: 2026-06-14
+- **Theme**: A massive swarm of glowing neon particles swirling together to form a colossal, chaotic double helix structure in 3D space, mimicking digital DNA.
+- **Technique**: A parametric double helix equation wrapped in 4D OpenSimplex noise. Thousands of particles are drawn using `py5.point()`. Each particle is assigned a base position on the helix, but heavily displaced by the noise field and an absolute sine wave pulse, creating the illusion of a swirling, flocking swarm trying to maintain the DNA structure.
+- **Description**: An animated 15s sequence showing a towering, glowing structure of swirling dust that resembles a strand of DNA constantly breaking apart and reassembling itself.
+
 ## kinetic_origami_tessellation_folding_3d
 
 - **Date**: 2026-06-14

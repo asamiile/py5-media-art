@@ -1,3 +1,10 @@
+## cybernetic_data_cube_fractal_subdivision_3d
+
+- **Date**: 2026-06-14
+- **Theme**: A massive glowing data cube that continuously subdivides itself recursively into an infinite Octree, while data pulses through its active geometric leaves.
+- **Technique**: A custom 3D Octree implementation where `py5.box()` elements recursively subdivide based on a translating 4D OpenSimplex noise field. Deeply nested boxes light up with glowing cyan and magenta colors.
+- **Description**: An animated 15s sequence of an impossibly complex and chaotic piece of digital architecture constantly rebuilding itself from the inside out.
+
 ## kinetic_solar_flare_plasma_arcs_3d
 
 - **Date**: 2026-06-13

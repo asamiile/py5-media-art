@@ -1,3 +1,31 @@
+## cybernetic_hurricane_shard_vortex_3d
+
+- **Date**: 2026-06-11
+- **Theme**: A massive, slow-moving storm of geometric shards over a digital ocean, resembling a cybernetic hurricane.
+- **Technique**: A 3D particle system organized into a massive swirling funnel using cylindrical coordinates and Perlin noise for turbulence. The "ocean" below is a shifting wireframe grid. Additive blending with deep cyan and electric blue colors.
+- **Description**: An animated 15s sequence of a massive cybernetic hurricane funnel composed of glowing geometric shards.
+
+## celestial_de_jong_veil_2d
+
+- **Date**: 2026-06-11
+- **Theme**: A wispy, celestial glowing veil of billions of microscopic stars, forming intricate folding shapes of a Peter de Jong attractor.
+- **Technique**: A high-density 2D particle simulation where 150,000 agents accumulate through 25 iterations of the Peter de Jong equations per frame, forming a high dynamic range density map rendered with a custom color gradient.
+- **Description**: An animated 15s sequence of a dynamically morphing Peter de Jong strange attractor.
+
+## neon_ribbon_sweep_dance_3d
+
+- **Date**: 2026-06-11
+- **Theme**: Elegant, glowing neon ribbons performing a complex, synchronized dance in 3D space, twisting and folding over themselves.
+- **Technique**: Multiple parametric 3D curves where a `QUAD_STRIP` ribbon is extruded along the path. The paths are driven by layered sine waves and 3D Perlin noise.
+- **Description**: An animated 15s sequence of glowing neon ribbons performing a synchronized 3D dance.
+
+## physarum_slime_mold_network_2d
+
+- **Date**: 2026-06-11
+- **Theme**: A glowing bioluminescent network that slowly grows, explores, and optimizes its paths to find resources, resembling a living alien organism.
+- **Technique**: 2D particle simulation of Physarum polycephalum where agents deposit and follow chemical trails with diffusion and decay.
+- **Description**: An animated 15s sequence of an organically growing and optimizing network.
+
 # Works Registry
 
 Read this file before creating any new artwork.

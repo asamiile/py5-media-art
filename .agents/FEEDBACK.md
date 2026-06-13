@@ -1,3 +1,8 @@
+## kinetic_cymatic_resonance_plates_3d
+
+- **Rating**: 
+- **Comment**: 
+
 ## quantum_chromodynamics_lattice_3d
 
 - **Rating**: 

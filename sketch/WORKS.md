@@ -1,3 +1,10 @@
+## kinetic_cymatic_resonance_plates_3d
+
+- **Date**: 2026-06-13
+- **Theme**: A 3D physical simulation of sand grains bouncing on a vibrating metal plate, forming intricate, symmetrical cymatic resonance patterns as the frequency slowly sweeps.
+- **Technique**: A 2D array of particles whose Z-height is determined by bouncing off a plate that vibrates according to 2D Chladni standing wave equations. High-frequency 3D noise is added for chaotic bouncing. Drawn with tiny glowing points.
+- **Description**: An animated 15s sequence of 3D cymatic resonance patterns.
+
 ## quantum_chromodynamics_lattice_3d
 
 - **Date**: 2026-06-13

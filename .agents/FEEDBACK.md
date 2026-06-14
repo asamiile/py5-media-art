@@ -1,3 +1,8 @@
+## kinetic_truchet_circuit_maze_2d
+
+- **Rating**: 
+- **Comment**: 
+
 ## generative_kaleidoscopic_mandala_zoom_2d
 
 - **Rating**: 

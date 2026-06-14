@@ -1,3 +1,8 @@
+## generative_clifford_attractor_woven_tapestry_2d
+
+- **Rating**: 
+- **Comment**: 
+
 ## celestial_n_body_orbital_resonance_3d
 
 - **Rating**: 

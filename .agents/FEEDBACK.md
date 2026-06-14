@@ -1,3 +1,8 @@
+## monolithic_kinetic_wave_interference_lattice_3d
+
+- **Rating**: 
+- **Comment**: 
+
 ## kinetic_harmonograph_pendulum_spirograph_3d
 
 - **Rating**: 

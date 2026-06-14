@@ -1,3 +1,129 @@
+## kinetic_solar_flare_plasma_arcs_3d
+
+- **Date**: 2026-06-13
+- **Theme**: A turbulent stellar surface where massive glowing arcs of plasma erupt violently along invisible magnetic field lines.
+- **Technique**: Thousands of 3D particles tracing arcs constructed with `bezierVertex`. The arcs' endpoints and control points are perturbed by high-frequency 4D OpenSimplex noise to simulate intense plasma turbulence. Additive blending with deep oranges, intense yellows, and pure white hot spots.
+- **Description**: An animated 15s sequence of a terrifying and beautiful macro view of a star's surface violently erupting with glowing energy.
+
+## holographic_quantum_foam_interference_3d
+
+- **Date**: 2026-06-13
+- **Theme**: A visualization of boiling quantum foam where spatial interference creates continuously morphing holographic topological waves.
+- **Technique**: A 3D grid of particles whose positions are determined by a sum of multiple high-frequency 4D OpenSimplex noise fields simulating interference patterns. Additive blending with deep violet and neon pink colors.
+- **Description**: An animated 15s sequence of a chaotic but highly structured holographic wave matrix that boils and folds in upon itself continuously.
+
+## algorithmic_diatom_glass_sculpture_3d
+
+- **Date**: 2026-06-13
+- **Theme**: A microscopic view of an intricate, translucent silica shell (like a marine diatom) that slowly morphs and rotates, scattering prismatic light.
+- **Technique**: Procedurally generated 3D polar geometry with a dense QUAD_STRIP mesh. Parametric equations modified by 3D spherical harmonics dictate the intricate pores and ridges. ambient_light and point_light setup with additive blending and depth testing for a glass-like feel.
+- **Description**: An animated 15s sequence of a delicate, crystalline diatom organism floating in deep space.
+
+## magnetic_field_iron_filing_fractal_2d
+
+- **Date**: 2026-06-13
+- **Theme**: An invisible magnetic dipole field slowly rotating and pulsing, made visible by thousands of fine metallic filings that align and stretch into a fractal web.
+- **Technique**: A 2D vector field simulation based on magnetic dipole equations. Particles act like iron filings, stretching along the field lines and clustering at higher field intensities. Rendered in stark black and white with high contrast.
+- **Description**: An animated 15s sequence of magnetic dipole fields reacting with metallic particle filings.
+
+## cyber_fluid_laminar_flow_3d
+
+- **Date**: 2026-06-13
+- **Theme**: A cross-section of a high-tech conduit where multiple colored streams of glowing cybernetic fluid merge and interact through laminar flow, creating beautiful, non-mixing ribbons of neon light.
+- **Technique**: A 3D particle system using continuous layered Perlin noise to simulate laminar flow dynamics along a cylindrical pipe. Particles are drawn as long additive trails to visualize the fluid paths.
+- **Description**: An animated 15s sequence of 3D laminar fluid flow.
+
+## kinetic_cymatic_resonance_plates_3d
+
+- **Date**: 2026-06-13
+- **Theme**: A 3D physical simulation of sand grains bouncing on a vibrating metal plate, forming intricate, symmetrical cymatic resonance patterns as the frequency slowly sweeps.
+- **Technique**: A 2D array of particles whose Z-height is determined by bouncing off a plate that vibrates according to 2D Chladni standing wave equations. High-frequency 3D noise is added for chaotic bouncing. Drawn with tiny glowing points.
+- **Description**: An animated 15s sequence of 3D cymatic resonance patterns.
+
+## quantum_chromodynamics_lattice_3d
+
+- **Date**: 2026-06-13
+- **Theme**: A visualization of boiling quantum foam where the strong force binds colorful quarks together in a 3D lattice, constantly snapping and reconnecting in a chaotic dance.
+- **Technique**: A 3D grid of particles with spring constraints that constantly break and reform based on a noisy temperature field. Additive blending with RGB primaries (representing color charge).
+- **Description**: An animated 15s sequence of boiling quantum foam and color charge dynamics in 3D space.
+
+## bioluminescent_neural_network_growth_2d
+
+- **Date**: 2026-06-13
+- **Theme**: A glowing neural network that autonomously searches for connections, extending luminous dendrites that snap together with bright flashes.
+- **Technique**: 2D agent-based network growth using flocking for nodes and dynamic proximity checks. Nodes extend lines towards nearest neighbors, highlighting active connections with additive blending.
+- **Description**: An animated 15s sequence of a bioluminescent neural network organically growing and forming glowing connections.
+
+## brutalist_megastructure_morphogenesis_3d
+
+- **Date**: 2026-06-13
+- **Theme**: An infinite, procedural brutalist megastructure built from thousands of floating, interlocking concrete-textured blocks that slowly assemble and disassemble themselves in a low-gravity environment.
+- **Technique**: A dense 3D grid of boxes. Using 3D Perlin noise (`py5.os_noise`), the scale and presence of each box are determined. The 3D noise field translates through space, causing the megastructure to appear as if it is endlessly morphing. Harsh directional lighting simulates concrete architectural shading.
+- **Description**: An animated 20s sequence of a morphing brutalist 3D megastructure.
+
+## neon_harmonograph_orbital_paths_3d
+
+- **Date**: 2026-06-13
+- **Theme**: A massive, glowing multi-axis harmonograph that continuously draws and erases complex, infinitely looping spirograph patterns in 3D space.
+- **Technique**: A 3D particle path is mathematically generated using coupled sine waves with shifting frequencies to simulate a harmonograph. It calculates and draws hundreds of glowing line segments each frame with an fading history tail and additive color blending.
+- **Description**: An animated 20s sequence of a 3D neon harmonograph drawing itself.
+
+## crystalline_fractal_tree_refraction_3d
+
+- **Date**: 2026-06-13
+- **Theme**: A sprawling, crystalline algorithmic tree that grows dynamically in 3D space, heavily refracting light like a complex prism. Its branches continuously split and rotate, simulating a 3D L-System but constructed from translucent, glowing geometric shards.
+- **Technique**: 3D recursive branching function using `py5.push_matrix()` and `py5.pop_matrix()`. The angles of rotation are driven by time to make the branches continuously fold and unfold. Triangles are drawn using `TRIANGLE_STRIP` with additive blending and stroke colors that shift based on depth to simulate refraction.
+- **Description**: An animated 20s sequence of a folding 3D crystalline fractal tree.
+
+## kinetic_moire_interference_illusion_2d
+
+- **Date**: 2026-06-13
+- **Theme**: A hypnotic, chromatic optical illusion where dense, overlapping concentric wave patterns continuously shift and interfere with each other, creating intense moiré patterns that appear to pulse and move in impossible directions.
+- **Technique**: Additive color blending of four sweeping geometric rings (Red, Green, Blue, Yellow). Sine wave modulation drives the line thickness and center coordinates to create fluid, overlapping moiré interference patterns on a high-contrast dark canvas.
+- **Description**: An animated 20s sequence of dynamic optical moiré interference.
+
+## retrowave_endless_neon_terrain_3d
+
+- **Date**: 2026-06-13
+- **Theme**: A classic retro-synthwave infinite wireframe grid driving into a digital sunset, featuring rolling mountains that shift continuously under a deep purple sky.
+- **Technique**: A 3D grid drawn using `py5.begin_shape(py5.TRIANGLE_STRIP)`. The Z-axis terrain height is determined by 2D Perlin noise that translates over time to simulate forward motion. Includes a glowing synthwave sun with procedurally generated scanlines and additive blending for neon effects.
+- **Description**: An animated 20s sequence of an endless synthwave terrain flight.
+
+## hyper_sphere_geometric_cross_sections_3d
+
+- **Date**: 2026-06-13
+- **Theme**: A massive, glowing 3D hyper-sphere that is continuously sliced by invisible, rotating planes, revealing intricate internal geometries and glowing cross-sections.
+- **Technique**: A dense 3D Fibonacci sphere point cloud. Points are drawn dynamically when they fall within a threshold distance of rotating mathematical planes `Ax + By + Cz + D = 0`. Uses vectorized Numpy operations to mask and render cross-sections efficiently with additive blending.
+- **Description**: An animated 20s sequence of glowing geometric cross-sections of a hyper-sphere.
+
+## kinetic_chladni_resonance_patterns_2d
+
+- **Date**: 2026-06-13
+- **Theme**: The visualization of sound frequencies visualizing as geometric patterns in sand on a vibrating metal plate (Chladni figures). As the invisible frequency sweeps, the intricate geometric patterns dissolve and reform into more complex standing waves.
+- **Technique**: Vectorized Numpy and py5's efficient point array drawing render 100,000 geometric particles mapping the gradient of the mathematical Chladni equation.
+- **Description**: An animated 20s sequence of dynamic Chladni standing waves forming from a particle system.
+
+## generative_isometric_cityscape_builder_3d
+
+- **Date**: 2026-06-13
+- **Theme**: A time-lapse visualization of a futuristic, isometric city building itself from the ground up, block by block, in a mesmerizing procedural cascade.
+- **Technique**: Isometric orthographic projection (`py5.ortho()`). A 3D grid where boxes scale up from 0 to their final height using an elastic easing function, triggered radially from the center outward. Cool corporate blues and bright orange highlights for active construction zones.
+- **Description**: An animated 20s sequence of a procedural isometric city building itself over time.
+
+## monolithic_clockwork_mandala_3d
+
+- **Date**: 2026-06-13
+- **Theme**: A colossal, intricately nested series of metallic rings and interlocking gears forming a giant 3D clockwork mandala in deep space.
+- **Technique**: Procedurally generated concentric rings built from dense geometric primitives (boxes). Rings rotate independently on multiple axes with varied speeds. Dynamic lighting highlights the metallic structures against a void, using a cool cyan and glowing gold color palette.
+- **Description**: An animated 20s sequence of a colossal 3D clockwork mandala rotating in deep space.
+
+## cyber_optical_fiber_bloom_3d
+
+- **Date**: 2026-06-13
+- **Theme**: An intricate, 3D fractal-like tree structure made of glowing optical fibers that grows and branches recursively, swaying gently in an invisible wind.
+- **Technique**: Procedurally generated using parametric lines and golden ratio distribution, with dynamic 3D noise adding a rotational wind effect. Additive blending with a dynamic hue cycle.
+- **Description**: An animated 15s sequence of a bioluminescent recursive fractal tree blowing in the wind.
+
 ## cybernetic_ascii_matrix_hologram_3d
 
 - **Date**: 2026-06-12

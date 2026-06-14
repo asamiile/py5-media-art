@@ -1,3 +1,10 @@
+## fractal_brownian_motion_nebula_2d
+
+- **Date**: 2026-06-14
+- **Theme**: A swirling interstellar nebula cloud made using Fractal Brownian Motion (fBm) based on layered Perlin noise, shifting slowly in hue and density.
+- **Technique**: A particle system of 20,000 tiny semi-transparent particles is driven by an fBm flow field, leaving long trails that build up into glowing cloud structures. The flow field is constructed using 3 octaves of py5.os_noise. A fast numpy implementation is used to update particle positions efficiently. Additive blending and faint glowing points are used to accumulate the trails into thick nebulae over time.
+- **Description**: An animated 20s sequence of a swirling interstellar nebula cloud.
+
 ## bioluminescent_deep_sea_jellyfish_3d
 
 - **Date**: 2026-06-14

@@ -1,3 +1,8 @@
+## fractal_brownian_motion_nebula_2d
+
+- **Rating**: 
+- **Comment**: 
+
 ## bioluminescent_deep_sea_jellyfish_3d
 
 - **Rating**: 

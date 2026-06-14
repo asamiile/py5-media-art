@@ -1,3 +1,8 @@
+## cybernetic_lorenz_attractor_swarm_3d
+
+- **Rating**: 
+- **Comment**: 
+
 ## sacred_geometry_metatron_cube_kaleidoscope_2d
 
 - **Rating**: 

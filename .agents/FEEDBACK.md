@@ -1,3 +1,8 @@
+## abstract_cellular_voronoi_tessellation_3d
+
+- **Rating**: 
+- **Comment**: 
+
 ## abstract_bauhaus_geometric_composition_2d
 
 - **Rating**: 

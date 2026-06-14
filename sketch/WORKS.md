@@ -1,3 +1,10 @@
+## microscopic_amoeba_predator_prey_2d
+
+- **Date**: 2026-06-14
+- **Theme**: A high-density microscopic ecosystem with a fluid dark background. Hundreds of glowing teal amoeba particles gently pulse, while a few large deep-crimson predator cells chase them. When they collide, sparks of bright yellow burst out.
+- **Technique**: 2D agent-based simulation. The predators use an attraction force towards nearby prey, while the prey repel each other slightly. Movement paths are disturbed by a global Perlin noise flowfield simulating a liquid slide. Additive blending with organic curves for the cells.
+- **Description**: An animated 20s sequence of an organic microscopic predator-prey ecosystem in a turbulent fluid.
+
 ## surreal_non_euclidean_gearscape_2d
 
 - **Date**: 2026-06-14

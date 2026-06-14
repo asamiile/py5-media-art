@@ -1,3 +1,8 @@
+## abstract_geometry_kinetic_sculpture_3d
+
+- **Rating**: 
+- **Comment**: 
+
 ## generative_floral_spirograph_mandala_2d
 
 - **Rating**: 

@@ -1,3 +1,8 @@
+## kinetic_harmonograph_pendulum_spirograph_3d
+
+- **Rating**: 
+- **Comment**: 
+
 ## generative_clifford_attractor_woven_tapestry_2d
 
 - **Rating**: 

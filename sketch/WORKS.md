@@ -1,3 +1,10 @@
+## generative_recursive_bioluminescent_fern_3d
+
+- **Date**: 2026-06-14
+- **Theme**: A hyper-detailed 3D fractal plant structure that gently unfurls and sways in an invisible, slow-moving current. The tips of the structure are covered in bioluminescent nodes that pulse with soft, radiant light.
+- **Technique**: A recursive 3D branching algorithm (similar to a parametric L-System). The angle of each branch is modulated by a slow-moving 3D OpenSimplex noise field. Additive blending spheres simulate glowing bioluminescence on the tips.
+- **Description**: An animated 15s sequence showing an intricate, glowing fractal fern slowly swaying underwater in a deep abyss.
+
 ## kinetic_op_art_interference_spiral_2d
 
 - **Date**: 2026-06-14

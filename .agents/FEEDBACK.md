@@ -1,3 +1,8 @@
+## generative_kaleidoscopic_mandala_zoom_2d
+
+- **Rating**: 
+- **Comment**: 
+
 ## fractal_menger_sponge_hyper_glitch_3d
 
 - **Rating**: 

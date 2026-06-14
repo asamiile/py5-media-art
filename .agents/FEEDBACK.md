@@ -1,3 +1,8 @@
+## fluid_dynamics_ink_marbling_2d
+
+- **Rating**: 
+- **Comment**: 
+
 ## cybernetic_lorenz_attractor_swarm_3d
 
 - **Rating**: 

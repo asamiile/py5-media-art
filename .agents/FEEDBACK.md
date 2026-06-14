@@ -1,3 +1,8 @@
+## abstract_bauhaus_geometric_composition_2d
+
+- **Rating**: 
+- **Comment**: 
+
 ## fractal_brownian_motion_nebula_2d
 
 - **Rating**: 

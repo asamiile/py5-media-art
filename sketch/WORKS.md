@@ -1,3 +1,10 @@
+## celestial_planetary_gear_gravity_3d
+
+- **Date**: 2026-06-15
+- **Theme**: A 3D "planetary gear" system where thousands of glowing particles are caught between multiple massive rotating rings, dragging them into chaotic orbits.
+- **Technique**: A physics simulation using rotational drag and gravity fields constrained to toroidal regions in 3D space, combined with swirling drag simulating a fluid or space-time deformation.
+- **Description**: An animated 10s sequence of a 3D particle swarm caught in a binary planetary gear system.
+
 ## cosmic_mitosis_particle_swarm_2d
 
 - **Date**: 2026-06-15

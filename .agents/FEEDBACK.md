@@ -1,3 +1,203 @@
+## abstract_sacred_geometry_torus_knot_mandala_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## abstract_magnetic_field_iron_filings_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## abstract_fractal_tree_canopy_recursive_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## generative_op_art_interference_patterns_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## minimalist_zen_sand_garden_topography_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## surreal_crystal_cave_refractions_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## cybernetic_holographic_data_sphere_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## surreal_fluid_flow_field_vectors_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## retro_pixel_art_isometric_cityscape_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## abstract_cellular_voronoi_tessellation_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## abstract_bauhaus_geometric_composition_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## fractal_brownian_motion_nebula_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## bioluminescent_deep_sea_jellyfish_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## generative_origami_tessellation_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## fluid_dynamics_ink_marbling_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## cybernetic_lorenz_attractor_swarm_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## sacred_geometry_metatron_cube_kaleidoscope_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## retro_synthwave_neon_grid_sun_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## cellular_automata_coral_growth_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## abstract_geometry_kinetic_sculpture_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## generative_floral_spirograph_mandala_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## isometric_neon_rain_ripples_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## microscopic_amoeba_predator_prey_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## surreal_non_euclidean_gearscape_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_truchet_circuit_maze_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## generative_kaleidoscopic_mandala_zoom_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## fractal_menger_sponge_hyper_glitch_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## fluid_perlin_vector_field_iridescence_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## generative_recursive_bioluminescent_fern_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_op_art_interference_spiral_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## monolithic_kinetic_wave_interference_lattice_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_harmonograph_pendulum_spirograph_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## generative_clifford_attractor_woven_tapestry_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## celestial_n_body_orbital_resonance_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_dna_helix_particle_swarm_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_origami_tessellation_folding_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## generative_lissajous_knot_matrix_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## cyber_phyllotaxis_data_core_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_kaleidoscope_mirror_room_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## cybernetic_data_cube_fractal_subdivision_3d
+
+- **Rating**: 
+- **Comment**: 
+
 ## kinetic_solar_flare_plasma_arcs_3d
 
 - **Rating**: 
@@ -133,6 +333,11 @@
 **CRITICAL RULE**: ONLY the USER may write to the `Rating` and `Comment` field.
 Agents MUST NOT write anything in the `Comment` field. When registering a new work, Agents must leave the `Rating` and `Comment` fields empty or with their default labels as placeholders for the user.
 The Artist reads this file before starting a new sketch to understand preferences.
+
+## surreal_non_euclidean_gearscape_2d
+
+- **Rating**: 
+- **Comment**: 
 
 ## generative_aizawa_strange_attractor_3d
 
@@ -3681,6 +3886,11 @@ Add any notes on color, density, theme, or mood in the Comment field.
 - **Comment**: 
 
 ## recursive_lsystem_cyber_city_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## fluvial_meander_oxbow_migration_2d
 
 - **Rating**: 
 - **Comment**: 

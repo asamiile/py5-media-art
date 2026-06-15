@@ -1,3 +1,290 @@
+## abstract_sacred_geometry_torus_knot_mandala_3d
+
+- **Date**: 2026-06-15
+- **Theme**: A 3D hyperbolic geometry tessellation projected onto multiple interlocking Torus Knots, slowly rotating and breathing.
+- **Technique**: Five complex Torus Knots (p=3, q=7) are drawn using py5.begin_shape(py5.LINE_STRIP). Each knot is rotated symmetrically to form a star-like 3D mandala. The geometry is distorted by py5.os_noise based on its position and time, giving it an organic, breathing quality. The entire structure rotates in 3D space with a glowing neon hue mapped to the drawing index and time. Additive blending (py5.ADD) emphasizes the interlocking density at the center.
+- **Description**: An animated 20s sequence of multiple intertwined 3D Torus Knots that rotate and interlock.
+
+## abstract_magnetic_field_iron_filings_2d
+
+- **Date**: 2026-06-15
+- **Theme**: Simulating iron filings aligning to moving magnetic fields using thousands of tiny particles.
+- **Technique**: A dense grid of 9,600 small line segments (filings) is drawn across the screen. Three invisible 'magnets' (two attractors and one repulsor) orbit the screen using sine/cosine waves over time. For each filing, the vector forces from all magnets are calculated and summed to determine the angle and magnitude of the magnetic field at that point. The filings are rotated to align with the field, with their length and color mapping to the field's strength. Glowing tips and additive blending give it an electric, futuristic look.
+- **Description**: An animated 20s sequence simulating iron filings aligning to moving magnetic fields.
+
+## abstract_fractal_tree_canopy_recursive_3d
+
+- **Date**: 2026-06-15
+- **Theme**: A 3D recursive fractal tree structure where the camera slowly orbits and zooms through the branches, which glow with shifting colors.
+- **Technique**: A recursive function draw_branch() draws lines that progressively scale down and rotate, creating an organic tree shape up to a depth of 7. The angles of branching are driven by py5.os_noise, creating a swaying, living canopy. The camera (py5.camera) slowly orbits the structure in 3D space. Additive blending (py5.ADD) and depth-based coloring give the fractal tree a majestic, luminous presence.
+- **Description**: An animated 20s sequence of a 3D recursive fractal tree structure.
+
+## generative_op_art_interference_patterns_2d
+
+- **Date**: 2026-06-15
+- **Theme**: A high-contrast black and white optical art animation, inspired by Bridget Riley or Victor Vasarely, using moving concentric shapes and grids that create moiré and interference patterns.
+- **Technique**: A base layer of thick concentric circles is drawn statically. A second layer of matching concentric circles is drawn over it, offset by slow-moving sine and cosine waves based on time. py5.DIFFERENCE blend mode is used, meaning overlapping white lines invert the underlying black lines, creating a harsh, high-contrast strobing moiré effect. A rotating starburst of radial lines is added to maximize the optical illusion.
+- **Description**: An animated 15s sequence of high-contrast black and white optical art.
+
+## minimalist_zen_sand_garden_topography_2d
+
+- **Date**: 2026-06-15
+- **Theme**: A 2D animation of minimalist generative topography lines slowly shifting, reminiscent of a zen sand garden or map contour lines.
+- **Technique**: 150 horizontal lines are drawn, consisting of 300 points each. The y-coordinate of each point is offset using py5.os_noise, creating a topographic map effect. The noise shifts over time, animating the peaks and valleys. The edges are smoothly tapered, and lines are filled below to occlude the lines drawn underneath.
+- **Description**: An animated 15s sequence of minimalist generative topography lines slowly shifting.
+
+## surreal_crystal_cave_refractions_3d
+
+- **Date**: 2026-06-14
+- **Theme**: A 3D journey through a surreal cave made of crystalline structures that refract and reflect neon light, producing sharp geometric patterns.
+- **Technique**: 300 geometric crystals (octahedron-like primitives drawn with py5.begin_shape(py5.TRIANGLES)) are distributed along the walls of a deep cylindrical tunnel. The camera (py5.camera) flies through this tunnel continuously. The crystals rotate slowly, and py5.ADD blend mode with low opacity fills and point lights create glowing, refracted reflections. A wrapping logic ensures the tunnel stretches infinitely as the camera moves forward.
+- **Description**: An animated 20s sequence of a 3D journey through a surreal cave made of crystalline structures.
+
+## cybernetic_holographic_data_sphere_3d
+
+- **Date**: 2026-06-14
+- **Theme**: A 3D wireframe sphere that looks like a high-tech holographic data core, with rings of floating data points orbiting it, shifting rapidly like a futuristic UI element.
+- **Technique**: py5.begin_shape(py5.LINES) is used to draw a sphere built from lat/long segments, but many segments are dropped randomly using noise (py5.os_noise) to make it look fragmented and glitchy. Rings of small rectangles orbit the sphere. A neon cyan and orange color palette on a pure black background is used with additive blending for a glowing holographic effect.
+- **Description**: An animated 20s sequence of a 3D wireframe sphere that looks like a high-tech holographic data core.
+
+## surreal_fluid_flow_field_vectors_2d
+
+- **Date**: 2026-06-14
+- **Theme**: A high-contrast visualization of a 2D fluid flow field using thousands of animated vectors/arrows that shift and twist based on a simulated fluid dynamic or evolving noise field.
+- **Technique**: A grid of arrow-like vectors is drawn where each arrow's angle and length are determined by a time-evolving Perlin noise field (py5.os_noise). The arrows use additive blending (py5.ADD) and leave slight motion blur trails. Colors shift hypnotically based on the angle of the noise field, creating a fluid, surreal motion.
+- **Description**: An animated 20s sequence of a high-contrast visualization of a 2D fluid flow field using animated vectors.
+
+## retro_pixel_art_isometric_cityscape_2d
+
+- **Date**: 2026-06-14
+- **Theme**: A scrolling isometric cityscape with retro-wave synth aesthetics, where buildings vary in height driven by Perlin noise.
+- **Technique**: Isometric 2D math (x = (c - r) * w, y = (c + r) * h/2 - z) is used to project cubes in a 3D space from back to front using a painter's algorithm. The heights of the cubes are mapped from py5.os_noise which shifts over time to create a continuous scrolling effect. Taller buildings have cyan to pink glowing tops.
+- **Description**: An animated 15s sequence of a scrolling 2D isometric pixel-art cityscape.
+
+## abstract_cellular_voronoi_tessellation_3d
+
+- **Date**: 2026-06-14
+- **Theme**: A 3D animation of shifting Voronoi cells that look like microscopic tissues or alien geology. The cells slowly shift upwards like mountains and then descend.
+- **Technique**: A grid of 3D triangle strips is generated. For each point on the grid, the distance to the nearest of N moving seed points is calculated (a basic Voronoi distance). That distance is mapped to the Z height of the 3D grid, creating cellular peaks. The seed points drift smoothly across the field using py5.os_noise. Additive lighting and neon colors give it a vibrant, organic look.
+- **Description**: An animated 15s sequence of a 3D animation of shifting Voronoi cells.
+
+## abstract_bauhaus_geometric_composition_2d
+
+- **Date**: 2026-06-14
+- **Theme**: A 2D animation of shifting Bauhaus-style geometric shapes (circles, semi-circles, rectangles) intersecting in primary colors.
+- **Technique**: Abstract composition using primary geometric forms and clean, minimalist aesthetics. A grid of cells where each cell contains a rotating or shifting shape. The cells scale and shift based on slow-moving Perlin noise (py5.os_noise). Different shapes are assigned to different cells, and colors are drawn from a strict Bauhaus palette.
+- **Description**: An animated 15s sequence of shifting Bauhaus-style geometric shapes in primary colors.
+
+## fractal_brownian_motion_nebula_2d
+
+- **Date**: 2026-06-14
+- **Theme**: A swirling interstellar nebula cloud made using Fractal Brownian Motion (fBm) based on layered Perlin noise, shifting slowly in hue and density.
+- **Technique**: A particle system of 20,000 tiny semi-transparent particles is driven by an fBm flow field, leaving long trails that build up into glowing cloud structures. The flow field is constructed using 3 octaves of py5.os_noise. A fast numpy implementation is used to update particle positions efficiently. Additive blending and faint glowing points are used to accumulate the trails into thick nebulae over time.
+- **Description**: An animated 20s sequence of a swirling interstellar nebula cloud.
+
+## bioluminescent_deep_sea_jellyfish_3d
+
+- **Date**: 2026-06-14
+- **Theme**: A 3D animation of a bioluminescent jellyfish floating gracefully in a deep, dark ocean, with pulsing translucent neon gradients and flowing tentacles.
+- **Technique**: 3D modeling using py5 primitives. The bell of the jellyfish is a hemisphere made using py5.begin_shape(py5.TRIANGLE_STRIP) with spherical coordinates that ripple over time using a sine wave. The tentacles are drawn using multiple py5.curve_vertex points that lag behind the main body's movement (simulated using delayed sine waves). Additive blending and glowing cyan/purple colors are used to simulate bioluminescence.
+- **Description**: An animated 20s sequence of a 3D bioluminescent jellyfish floating gracefully in a deep ocean.
+
+## generative_origami_tessellation_3d
+
+- **Date**: 2026-06-14
+- **Theme**: A 3D animation of a flat sheet of virtual paper dynamically folding and unfolding into complex origami-like tessellations (like the Miura fold).
+- **Technique**: 3D rendering using py5.P3D. The geometry consists of a grid of triangle strips where the Z-depth and folding angles are driven by a combination of alternating sine and cosine waves. The phase shifts continuously over time, making the surface ripple with zig-zag folds. The paper is shaded using py5.directional_light() and py5.ambient_light() to give it a smooth, realistic paper/plastic appearance.
+- **Description**: An animated 15s 3D sequence of a flat sheet of virtual paper dynamically folding.
+
+## fluid_dynamics_ink_marbling_2d
+
+- **Date**: 2026-06-14
+- **Theme**: An ethereal simulation of ink marbling on water, where virtual drops of ink are dropped and swirled by procedural vortex fields to simulate Suminagashi or Turkish Ebru marbling effects.
+- **Technique**: A dense flow field displaces a highly detailed set of colored particles representing ink. The particles leave trails, blending colors. The flow field is driven by Py5's py5.os_noise generating a curl noise-like technique where the angle of movement is derived from 2D perlin noise multiplied by 4pi. The slow trailing effect is achieved by painting a semi-transparent background rectangle each frame.
+- **Description**: An ethereal 20s simulation of ink marbling on water.
+
+## cybernetic_lorenz_attractor_swarm_3d
+
+- **Date**: 2026-06-14
+- **Theme**: A 3D swarm of particles tracing a Lorenz strange attractor, leaving glowing neon blue and hot pink trails that fade out over time, creating a cybernetic butterfly wing shape.
+- **Technique**: 3D coordinates calculated iteratively using the Lorenz system differential equations. Particle histories are stored and drawn as lines using py5.begin_shape() / py5.vertex() / py5.end_shape() with glowing additive blending and fading alpha. The camera slowly orbits around the attractor to showcase its complex 3D shape.
+- **Description**: An animated 20s sequence of a 3D swarm of particles tracing a Lorenz strange attractor, leaving glowing trails.
+
+## sacred_geometry_metatron_cube_kaleidoscope_2d
+
+- **Date**: 2026-06-14
+- **Theme**: A golden, glowing Metatron's Cube that slowly rotates while a kaleidoscope of sacred geometry patterns unfolds and morphs around it in deep space.
+- **Technique**: 2D drawing with intense additive blending. Metatron's cube is drawn procedurally (13 circles connected by lines). The kaleidoscope effect is created with py5.push_matrix, py5.rotate, and py5.scale in a nested loop to duplicate geometric polygons into radial symmetry.
+- **Description**: An animated 20s sequence of a glowing Metatron's Cube and a shifting kaleidoscope background.
+
+## retro_synthwave_neon_grid_sun_3d
+
+- **Date**: 2026-06-14
+- **Theme**: A retro-futuristic synthwave-inspired 3D landscape with a scrolling glowing wireframe grid terrain over a dark sky. A bright glowing sun with horizontal cuts sets in the background.
+- **Technique**: 3D rendering using py5.P3D. The terrain is generated using a triangle strip mapped to Perlin noise (py5.os_noise) which shifts along the y-axis over time to simulate forward motion. The terrain attenuates into a valley shape. The background sun is drawn as 2D slices without depth to give a stylized 80s graphic look, with slices scrolling upwards and cutting out near the bottom.
+- **Description**: An animated 15s sequence of a retro-futuristic synthwave-inspired 3D landscape.
+
+## cellular_automata_coral_growth_2d
+
+- **Date**: 2026-06-14
+- **Theme**: A vibrant simulation of branching coral growth radiating from the base, taking on vibrant rainbow hues that shift over time.
+- **Technique**: Procedurally generated recursive fractal trees. The branching structure is calculated using recursive functions with branching angles modified by continuous Perlin noise (py5.os_noise) and varying stroke weights. This gives a very organic and undulating appearance similar to coral in sea currents.
+- **Description**: An animated 15s sequence of vibrant branching coral growth radiating from the base, using procedurally generated fractal L-systems.
+
+## abstract_geometry_kinetic_sculpture_3d
+
+- **Date**: 2026-06-14
+- **Theme**: A floating, slowly expanding and contracting geometric object made of hundreds of interlocking transparent cubes and pyramids that rotate in a complex synchronized pattern.
+- **Technique**: 3D scene using py5.P3D. Multiple nested push_matrix and rotate operations driven by sine waves of varying frequencies to create a mesmerizing kinetic mechanism. Lighting is directional with a mix of cyan and amber. Elements are spherically distributed using Fibonacci lattice-inspired angular math.
+- **Description**: An animated 15s sequence of a floating, slowly expanding and contracting geometric object made of interlocking transparent cubes and pyramids that rotate in a complex synchronized pattern.
+
+## generative_floral_spirograph_mandala_2d
+
+- **Date**: 2026-06-14
+- **Theme**: A slow-blooming, intricate floral mandala composed of thousands of intersecting spirograph lines.
+- **Technique**: 2D parametric equations for a hypotrochoid and epitrochoid combined. A massive array of py5.vertex points is generated procedurally with slowly rotating phases to give a blooming effect, with Perlin noise added for subtle organic wobble.
+- **Description**: An animated 20s sequence of a blooming, intricate floral mandala composed of thousands of intersecting spirograph lines.
+
+## isometric_neon_rain_ripples_3d
+
+- **Date**: 2026-06-14
+- **Theme**: A 3D isometric simulation of a minimalist rainstorm.
+- **Technique**: Orthographic 3D projection using py5.ortho. A flat plane composed of a dense grid. Raindrops are particles falling from the sky. When they hit the grid, they spawn expanding circular ripples. The ripples intersect and create interference patterns, mapped to bright cyan and magenta colors against a dark background with additive blending.
+- **Description**: An animated 15s sequence of neon magenta and cyan raindrops falling onto a metallic grid and creating glowing circular ripples.
+
+## microscopic_amoeba_predator_prey_2d
+
+- **Date**: 2026-06-14
+- **Theme**: A high-density microscopic ecosystem with a fluid dark background. Hundreds of glowing teal amoeba particles gently pulse, while a few large deep-crimson predator cells chase them. When they collide, sparks of bright yellow burst out.
+- **Technique**: 2D agent-based simulation. The predators use an attraction force towards nearby prey, while the prey repel each other slightly. Movement paths are disturbed by a global Perlin noise flowfield simulating a liquid slide. Additive blending with organic curves for the cells.
+- **Description**: An animated 20s sequence of an organic microscopic predator-prey ecosystem in a turbulent fluid.
+
+## surreal_non_euclidean_gearscape_2d
+
+- **Date**: 2026-06-14
+- **Theme**: A surreal, melting clockwork landscape in 2D where gears turn but their shapes morph and distort mathematically as they rotate, simulating a non-Euclidean dreamscape.
+- **Technique**: 2D drawing of gears using procedural geometry. As the vertices of the gears are calculated, they are passed through a non-linear mathematical distortion using Perlin noise that scales based on their distance from a slow-moving center. This causes rigid rotating gears to appear to bend, stretch, and melt into each other.
+- **Description**: An animated 15s sequence showing high-contrast neon magenta and deep indigo gears smoothly turning and distorting like liquid.
+
+## kinetic_truchet_circuit_maze_2d
+
+- **Date**: 2026-06-14
+- **Theme**: A vast, ever-shifting labyrinth of glowing neon circuits. The pathways continuously disconnect and reconnect as the underlying tiles smoothly rotate.
+- **Technique**: A 2D grid of classic Truchet tiles. The tiles randomly select a new rotation and smoothly interpolate to it over time. The rotation targets are driven by a slow-moving 3D noise field to create sweeping waves of reorganization.
+- **Description**: An animated 15s sequence showing dense glowing blue and green curves seamlessly twisting to form new continuous pathways in a mesmerizing display.
+
+## generative_kaleidoscopic_mandala_zoom_2d
+
+- **Date**: 2026-06-14
+- **Theme**: An impossibly intricate, infinitely zooming kaleidoscope mandala composed of glowing geometric forms.
+- **Technique**: Symmetrical rotational drawing (12-fold symmetry) combined with a modulo-based infinite zoom scaling trick. Complex nested geometric primitives are drawn in a single wedge and then rotated and mirrored to form the mandala.
+- **Description**: An animated 15s sequence showing a mesmerizing, jewel-toned mandala rotating and zooming endlessly towards the viewer.
+
+## fractal_menger_sponge_hyper_glitch_3d
+
+- **Date**: 2026-06-14
+- **Theme**: A monolithic 3D Menger Sponge that slowly rotates in the void, but violently glitches, fractures, and disintegrates into glowing shards based on high-frequency noise.
+- **Technique**: Recursive 3D drawing of boxes to form a level-3 Menger sponge. At deeper recursion levels, the boxes' positions and rotations are aggressively displaced, and their colors shifted (chromatic aberration), based on a high-frequency, jittery temporal noise function.
+- **Description**: An animated 15s sequence showing a stark concrete Menger sponge tearing apart into jagged RGB shards.
+
+## fluid_perlin_vector_field_iridescence_2d
+
+- **Date**: 2026-06-14
+- **Theme**: Millions of micro-particles flowing through a turbulent, invisible 2D vector field driven by multi-layered noise, leaving glowing, iridescent hair-like trails.
+- **Technique**: A high-density 2D particle simulation running entirely on vectorized Numpy arrays for speed. Particle velocities are derived from a 3D OpenSimplex noise field. The background is minimally cleared each frame with a highly transparent black to create long, overlapping motion blur trails. Colors shift through a holographic spectrum based on particle angles.
+- **Description**: An animated 15s sequence showing 50,000 microscopic glowing particles swirling into turbulent, iridescent rivers over a black abyss.
+
+## generative_recursive_bioluminescent_fern_3d
+
+- **Date**: 2026-06-14
+- **Theme**: A hyper-detailed 3D fractal plant structure that gently unfurls and sways in an invisible, slow-moving current. The tips of the structure are covered in bioluminescent nodes that pulse with soft, radiant light.
+- **Technique**: A recursive 3D branching algorithm (similar to a parametric L-System). The angle of each branch is modulated by a slow-moving 3D OpenSimplex noise field. Additive blending spheres simulate glowing bioluminescence on the tips.
+- **Description**: An animated 15s sequence showing an intricate, glowing fractal fern slowly swaying underwater in a deep abyss.
+
+## kinetic_op_art_interference_spiral_2d
+
+- **Date**: 2026-06-14
+- **Theme**: A hypnotic, high-contrast optical illusion inspired by 1960s Op Art, where overlapping geometric rings and spirals interfere to create impossible, pulsating depth.
+- **Technique**: 2D drawing of thick, precise black and white vector graphics. Multiple rotating layers of logarithmic spirals and concentric circles. Uses `py5.blend_mode(py5.DIFFERENCE)` to create intense moiré interference patterns as the layers counter-rotate.
+- **Description**: An animated 15s sequence showing high-contrast black and white spirals overlapping to form a mesmerizing, pulsating optical illusion.
+
+## monolithic_kinetic_wave_interference_lattice_3d
+
+- **Date**: 2026-06-14
+- **Theme**: A massive, brutalist 3D grid of metallic monolithic pillars that ripple continuously like a liquid ocean, driven by unseen crossing energy waves.
+- **Technique**: A dense 3D grid of tall boxes. Their height and Y-position are modulated by the summation of multiple sweeping 2D sine wave interference patterns, combined with low-frequency OpenSimplex noise. Dynamic directional lighting creates harsh shadows.
+- **Description**: An animated 15s sequence showing a massive city of glowing bronze monolithic pillars that rise and fall organically in fluid, intersecting waves.
+
+## kinetic_harmonograph_pendulum_spirograph_3d
+
+- **Date**: 2026-06-14
+- **Theme**: A colossal, invisible multi-axis harmonograph machine tracing out luminous, impossibly complex 3D spirographs in a dark void.
+- **Technique**: Parametric 3D formulas combining multiple decaying sine waves with phase offsets on all three axes (X, Y, Z). The curves are drawn as glowing line strips with a neon color gradient that shifts across the drawn path, accumulating into a beautiful mathematical flower.
+- **Description**: An animated 15s sequence showing a single sharp line rapidly spinning to leave glowing trails that form a precise geometric web.
+
+## generative_clifford_attractor_woven_tapestry_2d
+
+- **Date**: 2026-06-14
+- **Theme**: Thousands of fine silk threads intricately weaving a dense, glowing tapestry based on the chaotic but structured math of the Clifford Attractor, slowly shifting colors and patterns over time.
+- **Technique**: 2D particle simulation evaluating the Clifford Attractor equations. Rendering uses highly transparent, fine strokes with additive blending, accumulating density to form an intricate, luminous, woven texture.
+- **Description**: An animated 15s sequence showing thousands of interwoven particles drawing an increasingly complex and dense geometric tapestry that shifts continuously.
+
+## celestial_n_body_orbital_resonance_3d
+
+- **Date**: 2026-06-14
+- **Theme**: A cosmic dance of planetary bodies locked in complex orbital resonance, their gravitational paths tracing out immense glowing celestial mandalas in the dark void.
+- **Technique**: 3D multi-body gravitational physics simulation. N-bodies orbit multiple heavy central masses. Their trajectories leave long, fading additive blending trails that weave together into complex orbital resonance patterns (like spirographs but physically simulated).
+- **Description**: An animated 15s sequence showing glowing cyan and amber particle paths looping around three massive attractors, creating an intense, structured celestial structure in a dark void.
+
+## fluvial_meander_oxbow_migration_2d
+
+- **Date**: 2026-06-14
+- **Theme**: A lowland river slowly rewrites its own path across a floodplain over centuries — bends sharpen, necks pinch off into still oxbow lakes, and abandoned channels fossilize as scroll-bar ridges.
+- **Technique**: A simplified Howard & Knutson meander-migration model. A numpy centerline migrates outward along its normal by upstream-weighted local curvature so bends amplify; the line is arc-length resampled each step, and `scipy.spatial.cKDTree` detects neck cutoffs that abandon a loop as a permanent oxbow lake. A persistent py5 graphics buffer accumulates past channel positions as low-alpha sediment plus inner-bank accretion ridges, building concentric point-bar scroll bars.
+- **Description**: An animated ~20s aerial view of a meandering river crawling across a warm, textured floodplain. Ochre-to-sienna scroll bars trail each migrating bend while a cool slate-teal channel snakes through; occasional neck cutoffs leave still teal oxbow lakes behind.
+
+## kinetic_dna_helix_particle_swarm_3d
+
+- **Date**: 2026-06-14
+- **Theme**: A massive swarm of glowing neon particles swirling together to form a colossal, chaotic double helix structure in 3D space, mimicking digital DNA.
+- **Technique**: A parametric double helix equation wrapped in 4D OpenSimplex noise. Thousands of particles are drawn using `py5.point()`. Each particle is assigned a base position on the helix, but heavily displaced by the noise field and an absolute sine wave pulse, creating the illusion of a swirling, flocking swarm trying to maintain the DNA structure.
+- **Description**: An animated 15s sequence showing a towering, glowing structure of swirling dust that resembles a strand of DNA constantly breaking apart and reassembling itself.
+
+## kinetic_origami_tessellation_folding_3d
+
+- **Date**: 2026-06-14
+- **Theme**: A colossal sheet of glowing digital paper that continuously folds and unfolds itself into impossibly complex geometric origami tessellations.
+- **Technique**: A 2D grid of triangles mapped into 3D. Over time, the vertices displace and fold along invisible seams based on overlapping 4D OpenSimplex noise and absolute sine waves, using additive blending with sharp, semi-transparent colored polygons.
+- **Description**: An animated 15s sequence of a fluid folding of sharp geometric polygons transitioning from a flat plane into a spiky, complex origami structure and back.
+
+## generative_lissajous_knot_matrix_3d
+
+- **Date**: 2026-06-14
+- **Theme**: A 3D matrix of interconnected Lissajous knots drawing themselves in space, rendered with glowing neon colors.
+- **Technique**: Simulated multiple 3D Lissajous curves arranged in a spatial 3D grid. Each knot evaluates its parametric path ($x=A\sin(at+\delta), y=B\sin(bt), z=C\sin(ct)$), and they are rendered as intricate geometric paths using additive blending.
+- **Description**: An animated 15s sequence of glowing neon intricate geometric knots intertwined in a 3D matrix layout.
+
+## cyber_phyllotaxis_data_core_3d
+
+- **Date**: 2026-06-14
+- **Theme**: A massive 3D data core built using the golden ratio phyllotaxis pattern, where thousands of glowing fiber-optic pillars extrude outward from a central sphere, pulsing with binary data streams.
+- **Technique**: Calculating spherical coordinates using the golden ratio and Fibonacci sequence. Placing 3000 `py5.box` elements stretched along their normal vectors. An OpenSimplex noise field combined with sine waves modulates the length and color intensity of the pillars to simulate data pulses.
+- **Description**: An animated 15s sequence showing a hyper-dense, mathematically perfect mechanical sphere covered in thousands of glowing, shifting rectangular columns.
+
+## kinetic_kaleidoscope_mirror_room_3d
+
+- **Date**: 2026-06-14
+- **Theme**: A 3D simulation of looking into a massive kaleidoscope tube filled with floating, glowing shards of neon glass that reflect infinitely.
+- **Technique**: A hexagonal prism drawn with additive blending. The camera is placed inside the prism looking down the Z-axis. Thousands of floating 3D triangle shards are duplicated and rotated recursively by 60 degrees around the Z-axis to simulate physical mirrored reflections.
+- **Description**: An animated 15s sequence showing an overwhelming array of perfectly symmetrical, colorful geometric shapes shifting and folding infinitely into the distance.
+
+## cybernetic_data_cube_fractal_subdivision_3d
+
+- **Date**: 2026-06-14
+- **Theme**: A massive glowing data cube that continuously subdivides itself recursively into an infinite Octree, while data pulses through its active geometric leaves.
+- **Technique**: A custom 3D Octree implementation where `py5.box()` elements recursively subdivide based on a translating 4D OpenSimplex noise field. Deeply nested boxes light up with glowing cyan and magenta colors.
+- **Description**: An animated 15s sequence of an impossibly complex and chaotic piece of digital architecture constantly rebuilding itself from the inside out.
+
 ## kinetic_solar_flare_plasma_arcs_3d
 
 - **Date**: 2026-06-13

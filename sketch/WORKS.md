@@ -1,3 +1,10 @@
+## abstract_string_theory_vibrations_3d
+
+- **Date**: 2026-06-15
+- **Theme**: Visualizing 11-dimensional string theory through vibrating, multi-colored neon loops that intersect and form complex topologies in 3D space.
+- **Technique**: Multiple py5.curve_vertex loops whose radii and offsets are driven by high-frequency py5.os_noise and sine waves, creating erratic but structured vibrations. Rendered with additive blending and neon HSB colors.
+- **Description**: An animated 10s sequence of chaotic but structured neon vibrating loops intersecting in 3D space.
+
 ## abstract_sacred_geometry_torus_knot_mandala_3d
 
 - **Date**: 2026-06-15

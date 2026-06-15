@@ -1,3 +1,8 @@
+## abstract_string_theory_vibrations_3d
+
+- **Rating**: 
+- **Comment**: 
+
 ## abstract_sacred_geometry_torus_knot_mandala_3d
 
 - **Rating**: 

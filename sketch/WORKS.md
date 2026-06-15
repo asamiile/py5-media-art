@@ -1,3 +1,10 @@
+## cosmic_mitosis_particle_swarm_2d
+
+- **Date**: 2026-06-15
+- **Theme**: A macroscopic visualization of biological cell division combined with celestial nebulae, depicting cosmic mitosis where glowing orbs tear apart into star clusters.
+- **Technique**: A 2D particle simulation using an attraction-repulsion system constrained within two slowly separating gravitational centers with fluid noise fields.
+- **Description**: An animated 10s sequence showing a dense glowing particle swarm tearing apart into two separate clusters.
+
 ## isometric_data_archive_network_3d
 
 - **Date**: 2026-06-15

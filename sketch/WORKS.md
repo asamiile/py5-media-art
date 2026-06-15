@@ -1,3 +1,10 @@
+## isometric_data_archive_network_3d
+
+- **Date**: 2026-06-15
+- **Theme**: An isometric 3D visualization of a massive, endless server farm or digital library where glowing data packets transfer rapidly along vertical and horizontal lines.
+- **Technique**: Using py5.ortho() to create a 3D grid of tall cubes (servers). Thin glowing lines are drawn to represent data connections, using py5.os_noise and time to animate fast-moving bright pulses along these lines.
+- **Description**: An animated 10s sequence of an isometric 3D server farm with data packets.
+
 ## abstract_string_theory_vibrations_3d
 
 - **Date**: 2026-06-15

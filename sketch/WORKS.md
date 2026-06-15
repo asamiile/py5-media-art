@@ -1,3 +1,10 @@
+## kinetic_boids_symbol_formation_2d
+
+- **Date**: 2026-06-15
+- **Theme**: A kinetic typography animation where a swarm of glowing points organically form an intricate geometric symbol, hold it for a moment, and then disperse back into chaos like a flock of birds.
+- **Technique**: A 2D flocking simulation (boids) where the particles have a secondary attraction force to a pre-computed set of target points that form a complex 5:4 Lissajous knot. The attraction force pulses over time.
+- **Description**: An animated 10s sequence of a particle swarm converging into a complex glowing symbol and exploding back into a chaotic wander field.
+
 ## celestial_planetary_gear_gravity_3d
 
 - **Date**: 2026-06-15

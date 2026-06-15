@@ -1,3 +1,8 @@
+## kinetic_boids_symbol_formation_2d
+
+- **Rating**: 
+- **Comment**: 
+
 ## celestial_planetary_gear_gravity_3d
 
 - **Rating**: 

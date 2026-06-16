@@ -1,3 +1,8 @@
+## cyclic_cellular_automata_spirals_2d
+
+- **Rating**: 
+- **Comment**: 
+
 ## cybernetic_fractal_circuit_board_2d
 
 - **Rating**: 

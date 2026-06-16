@@ -1,3 +1,10 @@
+## cyclic_cellular_automata_spirals_2d
+
+- **Date**: 2026-06-16
+- **Theme**: A hypnotic, multi-colored cellular automata simulation where multiple species compete in a cyclic rock-paper-scissors dynamic, forming mesmerizing spirals and wave fronts.
+- **Technique**: 2D grid processing using numpy. Each pixel represents a species. In each frame, species consume their prey in neighboring pixels, leading to complex spiral patterns.
+- **Description**: An animated 15s sequence of colorful spiral structures emerging from a random noise field via cyclic competition.
+
 ## cybernetic_fractal_circuit_board_2d
 
 - **Date**: 2026-06-16

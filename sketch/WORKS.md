@@ -1,3 +1,10 @@
+## surreal_fluid_plasma_turbulence_3d
+
+- **Date**: 2026-06-16
+- **Theme**: A surreal 3D particle system visualizing turbulent plasma flow fields using multi-layered noise.
+- **Technique**: A 3D particle simulation where coordinates are driven by 3D `py5.os_noise`. Additive blending and faint background clear create luminous overlapping motion trails. The hue of the trails shifts dynamically based on time and particle index, generating intense neon ribbons.
+- **Description**: An animated 20s sequence of surreal fluid plasma turbulence leaving glowing ribbons in a 3D volume.
+
 ## luminescent_crystal_growth_fractal_3d
 
 - **Date**: 2026-06-16

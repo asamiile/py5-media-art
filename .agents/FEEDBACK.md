@@ -1,3 +1,8 @@
+## surreal_fluid_plasma_turbulence_3d
+
+- **Rating**: 
+- **Comment**: 
+
 ## luminescent_crystal_growth_fractal_3d
 
 - **Rating**: 

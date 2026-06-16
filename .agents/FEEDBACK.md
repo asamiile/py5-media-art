@@ -1,3 +1,8 @@
+## abstract_woven_fiber_tapestry_3d
+
+- **Rating**: 
+- **Comment**: 
+
 ## surreal_fluid_plasma_turbulence_3d
 
 - **Rating**: 

@@ -1,3 +1,10 @@
+## abstract_woven_fiber_tapestry_3d
+
+- **Date**: 2026-06-16
+- **Theme**: An abstract 3D visualization of glowing woven fibers connecting points on a rotating cylinder, creating a dynamic tapestry.
+- **Technique**: Procedural generation using `py5.line` to connect opposite points on a parametric cylinder, perturbed by `py5.os_noise`. Additive blending and subtle background dimming create ethereal woven light trails.
+- **Description**: An animated 15s sequence of glowing fibers weaving a 3D tapestry in deep space.
+
 ## surreal_fluid_plasma_turbulence_3d
 
 - **Date**: 2026-06-16

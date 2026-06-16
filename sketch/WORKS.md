@@ -1,3 +1,10 @@
+## abyssal_bioluminescent_swarm_2d
+
+- **Date**: 2026-06-16
+- **Theme**: A massive swarm of glowing jellyfish-like entities pulsing and swimming upwards through a deep oceanic void.
+- **Technique**: A 2D simulation using overlapping bezier curves for tentacles and semi-transparent ellipses for bells. The tentacles are animated using 1D noise to create a realistic organic wiggling motion and they react to pulse phases.
+- **Description**: An animated 10s sequence of bioluminescent jellies migrating upwards in the dark abyss.
+
 ## cymatic_resonance_dust_patterns_2d
 
 - **Date**: 2026-06-16

@@ -1,3 +1,10 @@
+## cymatic_resonance_dust_patterns_2d
+
+- **Date**: 2026-06-16
+- **Theme**: A visual representation of a synesthetic audio wave: hundreds of thousands of tiny glowing dust particles reacting to an invisible low-frequency bass drop, forming shifting cymatic patterns.
+- **Technique**: A 2D simulation of a thin fluid layer reacting to vibration. We use a Chladni plate simulation algorithm: a 2D scalar field representing standing wave interference, with particles pushed towards the nodal lines of the field via a calculated gradient.
+- **Description**: An animated 10s sequence of fine dust settling into evolving resonant geometries over time.
+
 ## kinetic_boids_symbol_formation_2d
 
 - **Date**: 2026-06-15

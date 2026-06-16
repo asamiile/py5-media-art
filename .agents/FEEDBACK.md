@@ -1,3 +1,8 @@
+## luminescent_crystal_growth_fractal_3d
+
+- **Rating**: 
+- **Comment**: 
+
 ## abyssal_bioluminescent_swarm_2d
 
 - **Rating**: 

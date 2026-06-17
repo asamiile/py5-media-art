@@ -1,3 +1,10 @@
+## celestial_black_hole_gravitational_lensing_3d
+
+- **Date**: 2026-06-17
+- **Theme**: A 3D simulation of a black hole where light rays (particles) bend around an invisible immense mass, creating an accretion disk and severe gravitational lensing effects.
+- **Technique**: A 3D particle system simulating photon paths affected by Newtonian gravity. Velocity vectors bend towards the origin inversely proportional to the distance squared, creating lensing. Additive blending with deep oranges and bright whites forms the intense accretion disk.
+- **Description**: An animated 20s sequence of a 3D celestial black hole and accretion disk.
+
 ## isometric_brutalist_concrete_maze_3d
 
 - **Date**: 2026-06-17

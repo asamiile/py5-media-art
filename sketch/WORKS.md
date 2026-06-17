@@ -1,3 +1,38 @@
+## kinetic_boids_symbol_formation_2d
+
+- **Date**: 2026-06-15
+- **Theme**: A kinetic typography animation where a swarm of glowing points organically form an intricate geometric symbol, hold it for a moment, and then disperse back into chaos like a flock of birds.
+- **Technique**: A 2D flocking simulation (boids) where the particles have a secondary attraction force to a pre-computed set of target points that form a complex 5:4 Lissajous knot. The attraction force pulses over time.
+- **Description**: An animated 10s sequence of a particle swarm converging into a complex glowing symbol and exploding back into a chaotic wander field.
+
+## celestial_planetary_gear_gravity_3d
+
+- **Date**: 2026-06-15
+- **Theme**: A 3D "planetary gear" system where thousands of glowing particles are caught between multiple massive rotating rings, dragging them into chaotic orbits.
+- **Technique**: A physics simulation using rotational drag and gravity fields constrained to toroidal regions in 3D space, combined with swirling drag simulating a fluid or space-time deformation.
+- **Description**: An animated 10s sequence of a 3D particle swarm caught in a binary planetary gear system.
+
+## cosmic_mitosis_particle_swarm_2d
+
+- **Date**: 2026-06-15
+- **Theme**: A macroscopic visualization of biological cell division combined with celestial nebulae, depicting cosmic mitosis where glowing orbs tear apart into star clusters.
+- **Technique**: A 2D particle simulation using an attraction-repulsion system constrained within two slowly separating gravitational centers with fluid noise fields.
+- **Description**: An animated 10s sequence showing a dense glowing particle swarm tearing apart into two separate clusters.
+
+## isometric_data_archive_network_3d
+
+- **Date**: 2026-06-15
+- **Theme**: An isometric 3D visualization of a massive, endless server farm or digital library where glowing data packets transfer rapidly along vertical and horizontal lines.
+- **Technique**: Using py5.ortho() to create a 3D grid of tall cubes (servers). Thin glowing lines are drawn to represent data connections, using py5.os_noise and time to animate fast-moving bright pulses along these lines.
+- **Description**: An animated 10s sequence of an isometric 3D server farm with data packets.
+
+## abstract_string_theory_vibrations_3d
+
+- **Date**: 2026-06-15
+- **Theme**: Visualizing 11-dimensional string theory through vibrating, multi-colored neon loops that intersect and form complex topologies in 3D space.
+- **Technique**: Multiple py5.curve_vertex loops whose radii and offsets are driven by high-frequency py5.os_noise and sine waves, creating erratic but structured vibrations. Rendered with additive blending and neon HSB colors.
+- **Description**: An animated 10s sequence of chaotic but structured neon vibrating loops intersecting in 3D space.
+
 ## abstract_sacred_geometry_torus_knot_mandala_3d
 
 - **Date**: 2026-06-15

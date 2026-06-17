@@ -1,3 +1,10 @@
+## generative_voronoi_stained_glass_fracture_2d
+
+- **Date**: 2026-06-17
+- **Theme**: A 2D animation of a stained glass window that continuously fractures and morphs into new Voronoi cell shapes, illuminated by slowly shifting light colors.
+- **Technique**: A 2D Voronoi diagram simulation where the seed points slowly drift according to multi-layered Perlin noise. Cells are rendered with thick black borders, mimicking stained glass lead, and the inner hues shift over time with a dark vignette applied towards the edges.
+- **Description**: An animated 20s sequence of a generative stained glass window fracturing and rebuilding itself.
+
 ## celestial_black_hole_gravitational_lensing_3d
 
 - **Date**: 2026-06-17

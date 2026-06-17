@@ -1,3 +1,52 @@
+## cyclic_cellular_automata_spirals_2d
+
+- **Date**: 2026-06-16
+- **Theme**: A hypnotic, multi-colored cellular automata simulation where multiple species compete in a cyclic rock-paper-scissors dynamic, forming mesmerizing spirals and wave fronts.
+- **Technique**: 2D grid processing using numpy. Each pixel represents a species. In each frame, species consume their prey in neighboring pixels, leading to complex spiral patterns.
+- **Description**: An animated 15s sequence of colorful spiral structures emerging from a random noise field via cyclic competition.
+
+## cybernetic_fractal_circuit_board_2d
+
+- **Date**: 2026-06-16
+- **Theme**: An infinitely zooming, self-generating cybernetic circuit board with golden pathways branching at 90 and 45 degree angles, pulsing with data packets.
+- **Technique**: 2D recursive branching using orthogonal and diagonal constraints. Lines are drawn with metallic golden hues, and glowing cyan points (data) travel along the completed paths.
+- **Description**: An animated 15s sequence of glowing cyan data traveling across self-generating gold circuits.
+
+## abstract_woven_fiber_tapestry_3d
+
+- **Date**: 2026-06-16
+- **Theme**: An abstract 3D visualization of glowing woven fibers connecting points on a rotating cylinder, creating a dynamic tapestry.
+- **Technique**: Procedural generation using `py5.line` to connect opposite points on a parametric cylinder, perturbed by `py5.os_noise`. Additive blending and subtle background dimming create ethereal woven light trails.
+- **Description**: An animated 15s sequence of glowing fibers weaving a 3D tapestry in deep space.
+
+## surreal_fluid_plasma_turbulence_3d
+
+- **Date**: 2026-06-16
+- **Theme**: A surreal 3D particle system visualizing turbulent plasma flow fields using multi-layered noise.
+- **Technique**: A 3D particle simulation where coordinates are driven by 3D `py5.os_noise`. Additive blending and faint background clear create luminous overlapping motion trails. The hue of the trails shifts dynamically based on time and particle index, generating intense neon ribbons.
+- **Description**: An animated 20s sequence of surreal fluid plasma turbulence leaving glowing ribbons in a 3D volume.
+
+## luminescent_crystal_growth_fractal_3d
+
+- **Date**: 2026-06-16
+- **Theme**: A recursive 3D fractal crystal structure that grows dynamically and pulses with color.
+- **Technique**: Recursive 3D drawing using `py5.push_matrix()`, `py5.pop_matrix()`, and `py5.box()`, mapping colors to depth, frame_count, and rotation. Lighting and translation add depth and cinematic feel to the 3D scene.
+- **Description**: An animated 15s sequence of a folding 3D luminescent crystal fractal.
+
+## abyssal_bioluminescent_swarm_2d
+
+- **Date**: 2026-06-16
+- **Theme**: A massive swarm of glowing jellyfish-like entities pulsing and swimming upwards through a deep oceanic void.
+- **Technique**: A 2D simulation using overlapping bezier curves for tentacles and semi-transparent ellipses for bells. The tentacles are animated using 1D noise to create a realistic organic wiggling motion and they react to pulse phases.
+- **Description**: An animated 10s sequence of bioluminescent jellies migrating upwards in the dark abyss.
+
+## cymatic_resonance_dust_patterns_2d
+
+- **Date**: 2026-06-16
+- **Theme**: A visual representation of a synesthetic audio wave: hundreds of thousands of tiny glowing dust particles reacting to an invisible low-frequency bass drop, forming shifting cymatic patterns.
+- **Technique**: A 2D simulation of a thin fluid layer reacting to vibration. We use a Chladni plate simulation algorithm: a 2D scalar field representing standing wave interference, with particles pushed towards the nodal lines of the field via a calculated gradient.
+- **Description**: An animated 10s sequence of fine dust settling into evolving resonant geometries over time.
+
 ## kinetic_boids_symbol_formation_2d
 
 - **Date**: 2026-06-15

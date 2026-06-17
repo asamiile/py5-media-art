@@ -1,3 +1,38 @@
+## cyclic_cellular_automata_spirals_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## cybernetic_fractal_circuit_board_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## abstract_woven_fiber_tapestry_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## surreal_fluid_plasma_turbulence_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## luminescent_crystal_growth_fractal_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## abyssal_bioluminescent_swarm_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## cymatic_resonance_dust_patterns_2d
+
+- **Rating**: 
+- **Comment**: 
+
 ## kinetic_boids_symbol_formation_2d
 
 - **Rating**: 

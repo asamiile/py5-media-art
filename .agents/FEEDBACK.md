@@ -1,3 +1,8 @@
+## ethereal_bioluminescent_mycelium_network_3d
+
+- **Rating**: 
+- **Comment**: 
+
 ## surreal_luminescent_moss_growth_3d
 
 - **Rating**: 

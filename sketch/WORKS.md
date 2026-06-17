@@ -1,3 +1,10 @@
+## ethereal_bioluminescent_mycelium_network_3d
+
+- **Date**: 2026-06-17
+- **Theme**: A slow-growing, ethereal 3D network of bioluminescent fungal mycelium that branches and connects to form a pulsing, glowing organism in the dark.
+- **Technique**: 3D agent-based simulation where thousands of particles draw trails through an OpenSimplex curl-noise vector field, spontaneously branching into child particles to form an organic, tree-like structure. The color mapping creates a jade and cyan glow.
+- **Description**: An animated 20s sequence of a bioluminescent 3D mycelium network growing.
+
 ## surreal_luminescent_moss_growth_3d
 
 - **Date**: 2026-06-17

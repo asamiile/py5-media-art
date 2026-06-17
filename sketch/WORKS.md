@@ -1,3 +1,10 @@
+## cyber_optical_illusion_mandala_2d
+
+- **Date**: 2026-06-17
+- **Theme**: A 2D animation of a highly complex geometric mandala that rotates and pulses in a way that creates a strong optical illusion of depth and movement, using high-contrast neon colors on black.
+- **Technique**: Using nested `py5.push_matrix` and `py5.rotate` to draw layered concentric geometric patterns (polygons and arcs) that rotate in alternating directions. Modulating the line thickness and scaling with sine waves based on time to create a hypnotic breathing effect.
+- **Description**: An animated sequence of a dense pulsing cyber optical illusion mandala.
+
 ## kinetic_fluid_string_theory_vibrations_3d
 
 - **Date**: 2026-06-17

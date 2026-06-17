@@ -1,3 +1,8 @@
+## cyber_optical_illusion_mandala_2d
+
+- **Rating**: 
+- **Comment**: 
+
 ## kinetic_fluid_string_theory_vibrations_3d
 
 - **Rating**: 

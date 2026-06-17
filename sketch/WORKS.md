@@ -1,3 +1,10 @@
+## neon_geometric_recursive_fractal_tree_3d
+
+- **Date**: 2026-06-17
+- **Theme**: A 3D animation of a complex geometric L-system tree growing and branching out symmetrically, with leaves/nodes pulsating with light.
+- **Technique**: Uses recursion (`push_matrix()`, `translate()`, `rotate()`, `pop_matrix()`) to generate a 3D branching structure up to a depth of 8. The branching angles are driven by slow sine waves, making the neon fractal tree continuously sway and bloom over time while the camera revolves around it.
+- **Description**: An animated sequence of a 3D recursive glowing fractal tree.
+
 ## generative_chladni_cymatics_resonance_2d
 
 - **Date**: 2026-06-17

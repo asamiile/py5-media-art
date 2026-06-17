@@ -1,3 +1,10 @@
+## isometric_brutalist_concrete_maze_3d
+
+- **Date**: 2026-06-17
+- **Theme**: An isometric view of an endless brutalist concrete maze where walls slide vertically out of the ground in a mesmerizing wave, creating shifting geometric shadows.
+- **Technique**: Orthographic 3D projection (`py5.ortho()`). A dense 3D grid of boxes representing walls. The height of each box is determined by a sweeping 2D Perlin noise field and sine waves. Harsh directional lighting is used to create strong minimalist shadows and concrete textures.
+- **Description**: An animated 20s sequence of an endless brutalist concrete maze shifting vertically.
+
 ## ethereal_bioluminescent_mycelium_network_3d
 
 - **Date**: 2026-06-17

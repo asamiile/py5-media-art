@@ -1,3 +1,8 @@
+## isometric_brutalist_concrete_maze_3d
+
+- **Rating**: 
+- **Comment**: 
+
 ## ethereal_bioluminescent_mycelium_network_3d
 
 - **Rating**: 

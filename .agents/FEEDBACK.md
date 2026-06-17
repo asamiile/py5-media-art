@@ -1,3 +1,8 @@
+## kinetic_fluid_string_theory_vibrations_3d
+
+- **Rating**: 
+- **Comment**: 
+
 ## generative_voronoi_stained_glass_fracture_2d
 
 - **Rating**: 

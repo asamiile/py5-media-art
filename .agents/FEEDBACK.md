@@ -1,3 +1,8 @@
+## kinetic_typography_glitch_matrix_2d
+
+- **Rating**: 
+- **Comment**: 
+
 ## generative_lissajous_knot_orbitals_3d
 
 - **Rating**: 

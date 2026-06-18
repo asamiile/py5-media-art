@@ -1,3 +1,10 @@
+## kinetic_typography_glitch_matrix_2d
+
+- **Date**: 2026-06-18
+- **Theme**: A chaotic grid of glitching matrix typography.
+- **Technique**: Rendering a grid of characters where each cell's character, scale, and color are determined by 3D Perlin noise (`py5.noise()`) sampled over time and 2D space. The text occasionally glitches with sharp horizontal offsets and color channel separation (chromatic aberration) mimicking a digital signal breaking down.
+- **Description**: An animated sequence of glitching kinetic typography.
+
 ## generative_lissajous_knot_orbitals_3d
 
 - **Date**: 2026-06-18

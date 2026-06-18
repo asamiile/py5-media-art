@@ -1,3 +1,10 @@
+## digital_bismuth_crystal_growth_3d
+
+- **Date**: 2026-06-18
+- **Theme**: A 3D animation of geometric bismuth crystals growing, featuring iridescent, rainbow-colored stepped terraces and right-angle formations.
+- **Technique**: Using 3D boxes (`py5.box()`) stacked in a spiral staircase pattern to mimic bismuth's hopper crystal growth. The color shifts through the HSB spectrum over time and space to mimic the oxide layer iridescence. Camera slowly rotates around the growing formation.
+- **Description**: An animated sequence of bismuth crystal geometry.
+
 ## neon_geometric_recursive_fractal_tree_3d
 
 - **Date**: 2026-06-17

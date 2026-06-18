@@ -1,3 +1,8 @@
+## digital_bismuth_crystal_growth_3d
+
+- **Rating**: 
+- **Comment**: 
+
 ## neon_geometric_recursive_fractal_tree_3d
 
 - **Rating**: 

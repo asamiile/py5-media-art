@@ -1,3 +1,10 @@
+## generative_vector_field_flow_particles_2d
+
+- **Date**: 2026-06-18
+- **Theme**: A continuous generative painting made of organic flow lines.
+- **Technique**: Using 40,000 particles mapped to a 3D Perlin noise vector field (`py5.noise()`). The field angles evolve slowly over time, pushing the particles in swirling motions. The particles leave a soft translucent trail by drawing the background with a low alpha, creating a continuous generative painting effect.
+- **Description**: An animated sequence of flowing particles in a vector field.
+
 ## kinetic_typography_glitch_matrix_2d
 
 - **Date**: 2026-06-18

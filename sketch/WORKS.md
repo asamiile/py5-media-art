@@ -1,3 +1,66 @@
+## neon_geometric_recursive_fractal_tree_3d
+
+- **Date**: 2026-06-17
+- **Theme**: A 3D animation of a complex geometric L-system tree growing and branching out symmetrically, with leaves/nodes pulsating with light.
+- **Technique**: Uses recursion (`push_matrix()`, `translate()`, `rotate()`, `pop_matrix()`) to generate a 3D branching structure up to a depth of 8. The branching angles are driven by slow sine waves, making the neon fractal tree continuously sway and bloom over time while the camera revolves around it.
+- **Description**: An animated sequence of a 3D recursive glowing fractal tree.
+
+## generative_chladni_cymatics_resonance_2d
+
+- **Date**: 2026-06-17
+- **Theme**: A 2D simulation of Chladni figures—patterns formed by sand on a vibrating metal plate—evolving over time as the resonant frequencies change.
+- **Technique**: Uses 30,000 particles whose velocities are influenced by a 2D scalar field representing acoustic standing waves (the Chladni equation for a square plate). Particles migrate towards the nodes (areas of zero vibration). The frequencies ($n$ and $m$) slowly sweep over time, causing the particles to transition organically into new symmetric mandala-like patterns.
+- **Description**: An animated sequence of cymatics resonance patterns evolving.
+
+## cyber_optical_illusion_mandala_2d
+
+- **Date**: 2026-06-17
+- **Theme**: A 2D animation of a highly complex geometric mandala that rotates and pulses in a way that creates a strong optical illusion of depth and movement, using high-contrast neon colors on black.
+- **Technique**: Using nested `py5.push_matrix` and `py5.rotate` to draw layered concentric geometric patterns (polygons and arcs) that rotate in alternating directions. Modulating the line thickness and scaling with sine waves based on time to create a hypnotic breathing effect.
+- **Description**: An animated sequence of a dense pulsing cyber optical illusion mandala.
+
+## kinetic_fluid_string_theory_vibrations_3d
+
+- **Date**: 2026-06-17
+- **Theme**: A 3D animation representing an abstract view of 11-dimensional string theory, where complex, multi-colored neon loops intersect, vibrate, and form fluid topological structures.
+- **Technique**: Uses multiple `py5.curve_vertex` loops with radii and offsets driven by high-frequency `py5.os_noise` and sine waves. This generates erratic but structured fluid vibrations in 3D space. Combined with an additive blending color palette and a rotating camera orbit, it creates an immersive topology.
+- **Description**: An animated sequence of glowing vibrating loops simulating string theory.
+
+## generative_voronoi_stained_glass_fracture_2d
+
+- **Date**: 2026-06-17
+- **Theme**: A 2D animation of a stained glass window that continuously fractures and morphs into new Voronoi cell shapes, illuminated by slowly shifting light colors.
+- **Technique**: A 2D Voronoi diagram simulation where the seed points slowly drift according to multi-layered Perlin noise. Cells are rendered with thick black borders, mimicking stained glass lead, and the inner hues shift over time with a dark vignette applied towards the edges.
+- **Description**: An animated 20s sequence of a generative stained glass window fracturing and rebuilding itself.
+
+## celestial_black_hole_gravitational_lensing_3d
+
+- **Date**: 2026-06-17
+- **Theme**: A 3D simulation of a black hole where light rays (particles) bend around an invisible immense mass, creating an accretion disk and severe gravitational lensing effects.
+- **Technique**: A 3D particle system simulating photon paths affected by Newtonian gravity. Velocity vectors bend towards the origin inversely proportional to the distance squared, creating lensing. Additive blending with deep oranges and bright whites forms the intense accretion disk.
+- **Description**: An animated 20s sequence of a 3D celestial black hole and accretion disk.
+
+## isometric_brutalist_concrete_maze_3d
+
+- **Date**: 2026-06-17
+- **Theme**: An isometric view of an endless brutalist concrete maze where walls slide vertically out of the ground in a mesmerizing wave, creating shifting geometric shadows.
+- **Technique**: Orthographic 3D projection (`py5.ortho()`). A dense 3D grid of boxes representing walls. The height of each box is determined by a sweeping 2D Perlin noise field and sine waves. Harsh directional lighting is used to create strong minimalist shadows and concrete textures.
+- **Description**: An animated 20s sequence of an endless brutalist concrete maze shifting vertically.
+
+## ethereal_bioluminescent_mycelium_network_3d
+
+- **Date**: 2026-06-17
+- **Theme**: A slow-growing, ethereal 3D network of bioluminescent fungal mycelium that branches and connects to form a pulsing, glowing organism in the dark.
+- **Technique**: 3D agent-based simulation where thousands of particles draw trails through an OpenSimplex curl-noise vector field, spontaneously branching into child particles to form an organic, tree-like structure. The color mapping creates a jade and cyan glow.
+- **Description**: An animated 20s sequence of a bioluminescent 3D mycelium network growing.
+
+## surreal_luminescent_moss_growth_3d
+
+- **Date**: 2026-06-17
+- **Theme**: A time-lapse of surreal luminescent moss colonizing a dark monolithic structure in a deep, damp cave.
+- **Technique**: 3D particle simulation where agents crawl across a hidden mesh using vector flow and noise, leaving glowing additive-blended trails that harden into mossy clumps.
+- **Description**: An animated 20s sequence of surreal luminescent moss growing.
+
 ## cyclic_cellular_automata_spirals_2d
 
 - **Date**: 2026-06-16

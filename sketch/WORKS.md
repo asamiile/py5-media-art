@@ -1,3 +1,59 @@
+## ambient_generative_aurora_borealis_3d
+
+- **Date**: 2026-06-19
+- **Theme**: An ethereal aurora borealis drifting across a starry night.
+- **Technique**: Generating ribbons of `py5.quad_strip()` using 3D Perlin noise that drift and ripple over time. The colors transition smoothly between neon greens, teals, and purples. A subtle blend mode (`py5.ADD`) and translucent gradients create the ethereal glow of the northern lights, backed by a subtly twinkling starfield.
+- **Description**: An animated sequence of the aurora borealis.
+
+## geometric_sacred_mandala_kaleidoscope_2d
+
+- **Date**: 2026-06-18
+- **Theme**: A slowly blooming geometric mandala in kaleidocopic space.
+- **Technique**: Using `py5.push_matrix()`, `py5.rotate()`, and `py5.scale()` in a loop to draw symmetrical layers of geometric shapes (triangles, circles, lines). The shapes expand and contract using `sin()` waves over time. Colors cycle smoothly through the HSB spectrum.
+- **Description**: An animated sequence of a blooming sacred geometry mandala.
+
+## ethereal_volumetric_fog_light_beams_3d
+
+- **Date**: 2026-06-18
+- **Theme**: Glowing orbs illuminating a dense, volumetric fog in 3D space.
+- **Technique**: Rendering 2,000 tiny dust particles floating in 3D space that light up when they enter the radius of two orbiting light spheres. This creates a beautiful volumetric illumination effect using `py5.blend_mode(py5.ADD)` and 3D Perlin noise for the dust motion.
+- **Description**: An animated sequence of glowing particles reacting to moving light sources.
+
+## cyberpunk_isometric_data_cityscape_3d
+
+- **Date**: 2026-06-18
+- **Theme**: A neon-lit cyberpunk motherboard city oscillating with data flow.
+- **Technique**: Rendering a 2D grid of 3D boxes (`py5.box()`) transformed into an isometric projection. The heights of the "buildings" oscillate dynamically using sine waves and Perlin noise. The structures pulse in neon pink, cyan, and deep blue to mimic flowing data lines in a massive metropolis layout.
+- **Description**: An animated sequence of a glowing cyberpunk 3D city grid.
+
+## generative_vector_field_flow_particles_2d
+
+- **Date**: 2026-06-18
+- **Theme**: A continuous generative painting made of organic flow lines.
+- **Technique**: Using 40,000 particles mapped to a 3D Perlin noise vector field (`py5.noise()`). The field angles evolve slowly over time, pushing the particles in swirling motions. The particles leave a soft translucent trail by drawing the background with a low alpha, creating a continuous generative painting effect.
+- **Description**: An animated sequence of flowing particles in a vector field.
+
+## kinetic_typography_glitch_matrix_2d
+
+- **Date**: 2026-06-18
+- **Theme**: A chaotic grid of glitching matrix typography.
+- **Technique**: Rendering a grid of characters where each cell's character, scale, and color are determined by 3D Perlin noise (`py5.noise()`) sampled over time and 2D space. The text occasionally glitches with sharp horizontal offsets and color channel separation (chromatic aberration) mimicking a digital signal breaking down.
+- **Description**: An animated sequence of glitching kinetic typography.
+
+## generative_lissajous_knot_orbitals_3d
+
+- **Date**: 2026-06-18
+- **Theme**: A 3D animation of complex, intertwined Lissajous knots tracing orbital paths that glow with intense neon light.
+- **Technique**: Using parametric equations for 3D Lissajous curves to draw continuous, looping paths through space. Multiple paths are drawn with different phase shifts and thickness. A motion blur effect allows the scene to slowly fade, while the parametric constants slowly modulate over time, causing the glowing neon knots to writhe and evolve organically.
+- **Description**: An animated sequence of a glowing generative Lissajous knot.
+
+## digital_bismuth_crystal_growth_3d
+
+- **Date**: 2026-06-18
+- **Theme**: A 3D animation of geometric bismuth crystals growing, featuring iridescent, rainbow-colored stepped terraces and right-angle formations.
+- **Technique**: Using 3D boxes (`py5.box()`) stacked in a spiral staircase pattern to mimic bismuth's hopper crystal growth. The color shifts through the HSB spectrum over time and space to mimic the oxide layer iridescence. Camera slowly rotates around the growing formation.
+- **Description**: An animated sequence of bismuth crystal geometry.
+
 ## neon_geometric_recursive_fractal_tree_3d
 
 - **Date**: 2026-06-17

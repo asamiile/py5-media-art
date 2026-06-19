@@ -1,3 +1,43 @@
+## ambient_generative_aurora_borealis_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## geometric_sacred_mandala_kaleidoscope_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## ethereal_volumetric_fog_light_beams_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## cyberpunk_isometric_data_cityscape_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## generative_vector_field_flow_particles_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_typography_glitch_matrix_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## generative_lissajous_knot_orbitals_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## digital_bismuth_crystal_growth_3d
+
+- **Rating**: 
+- **Comment**: 
+
 ## neon_geometric_recursive_fractal_tree_3d
 
 - **Rating**: 

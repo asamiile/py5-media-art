@@ -1,3 +1,10 @@
+## cyber_glitch_vhs_tape_distortion_2d
+
+- **Date**: 2026-06-19
+- **Theme**: An old VHS tape containing corrupted neon cyber-data, glitching and distorting heavily.
+- **Technique**: 2D drawing of horizontal pixel scanlines that are randomly offset horizontally by 1D Perlin noise and random spikes, with chromatic aberration applied via color blending.
+- **Description**: An animated 15s sequence of a glitching VHS cyber-data tape.
+
 ## kinetic_liquid_cloth_wireframe_3d
 
 - **Date**: 2026-06-19

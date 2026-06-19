@@ -1,3 +1,10 @@
+## kinetic_liquid_cloth_wireframe_3d
+
+- **Date**: 2026-06-19
+- **Theme**: A 3D wireframe mesh that distorts and ripples like a liquid cloth in a zero-gravity environment.
+- **Technique**: A 3D triangle strip mesh where the Z height is displaced using a sweeping 3D OpenSimplex noise field.
+- **Description**: An animated 15s sequence of a glowing neon wireframe mesh billowing and flowing over a deep dark blue background.
+
 ## kinetic_analog_oscilloscope_interference_2d
 
 - **Date**: 2026-06-19

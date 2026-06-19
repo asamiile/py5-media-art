@@ -1,3 +1,10 @@
+## ambient_generative_aurora_borealis_3d
+
+- **Date**: 2026-06-19
+- **Theme**: An ethereal aurora borealis drifting across a starry night.
+- **Technique**: Generating ribbons of `py5.quad_strip()` using 3D Perlin noise that drift and ripple over time. The colors transition smoothly between neon greens, teals, and purples. A subtle blend mode (`py5.ADD`) and translucent gradients create the ethereal glow of the northern lights, backed by a subtly twinkling starfield.
+- **Description**: An animated sequence of the aurora borealis.
+
 ## geometric_sacred_mandala_kaleidoscope_2d
 
 - **Date**: 2026-06-18

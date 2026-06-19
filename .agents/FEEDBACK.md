@@ -1,3 +1,8 @@
+## ambient_generative_aurora_borealis_3d
+
+- **Rating**: 
+- **Comment**: 
+
 ## geometric_sacred_mandala_kaleidoscope_2d
 
 - **Rating**: 

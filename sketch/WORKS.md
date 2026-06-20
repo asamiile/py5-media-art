@@ -1,3 +1,10 @@
+## cybernetic_organic_lsystem_3d
+
+- **Date**: 2026-06-20
+- **Theme**: A glowing, cybernetic L-system plant that continuously grows, branches, and gently sways in 3D space.
+- **Technique**: A recursive branching function where the depth or length of branches pulses with a sine wave or noise, colored with additive blending.
+- **Description**: An animated 10s sequence of a swaying, glowing cybernetic tree.
+
 ## kinetic_typographic_glitch_flow_2d
 
 - **Date**: 2026-06-20

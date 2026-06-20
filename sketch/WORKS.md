@@ -1,3 +1,10 @@
+## generative_chladni_plate_resonance_3d
+
+- **Date**: 2026-06-20
+- **Theme**: 3D simulation of sand particles organizing into complex Chladni resonance patterns on a vibrating metal plate.
+- **Technique**: A 3D physics approximation where thousands of particles fall and bounce towards the nodes of a 2D interference standing wave equation, mapped into 3D space.
+- **Description**: An animated 10s sequence of tiny golden particles scattering and re-organizing into sacred geometry shapes.
+
 ## generative_voronoi_stippling_growth_2d
 
 - **Date**: 2026-06-20

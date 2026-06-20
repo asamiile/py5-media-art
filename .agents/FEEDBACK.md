@@ -1,3 +1,19 @@
+## generative_chladni_plate_resonance_3d
+
+### Ratings
+
+| Axis | Score |
+| :--- | :--- |
+| Originality |  |
+| Visual Impact |  |
+| Technique |  |
+| Concept |  |
+| **Average** |  |
+
+### Comments
+
+
+
 ## generative_voronoi_stippling_growth_2d
 
 ### Ratings

@@ -1,3 +1,19 @@
+## generative_crystallization_reaction_diffusion_3d
+
+### Ratings
+
+| Axis | Score |
+| :--- | :--- |
+| Originality |  |
+| Visual Impact |  |
+| Technique |  |
+| Concept |  |
+| **Average** |  |
+
+### Comments
+
+
+
 ## kinetic_typographic_data_stream_2d
 
 ### Ratings

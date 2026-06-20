@@ -1,3 +1,10 @@
+## generative_crystallization_reaction_diffusion_3d
+
+- **Date**: 2026-06-20
+- **Theme**: 3D geometric crystallization mimicking a reaction-diffusion system growing outward from a center point.
+- **Technique**: A cellular automaton or branching algorithm in 3D that spawns cubes based on neighboring density. Additive blending and neon purples/magentas give a crystalline sci-fi aesthetic.
+- **Description**: An animated 10s sequence of a beautiful purple crystal lattice expanding in 3D space.
+
 ## kinetic_typographic_data_stream_2d
 
 - **Date**: 2026-06-20

@@ -1,3 +1,10 @@
+## kinetic_optical_illusion_waves_2d
+
+- **Date**: 2026-06-20
+- **Theme**: Optical illusion using expanding, contrasting concentric shapes that create a false sense of motion or depth.
+- **Technique**: Concentric black-and-white or high-contrast neon shapes whose line thickness pulses with 2D Perlin noise and sine waves.
+- **Description**: An animated 10s sequence of kinetic optical illusion waves.
+
 ## abstract_quantum_entanglement_flow_3d
 
 - **Date**: 2026-06-20

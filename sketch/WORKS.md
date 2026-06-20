@@ -1,3 +1,10 @@
+## cybernetic_data_corridor_tunnel_3d
+
+- **Date**: 2026-06-20
+- **Theme**: A high-speed flight through a cybernetic data tunnel or corridor.
+- **Technique**: Ray-marching or drawing receding rectangular frames that shift colors and sizes to create a tunnel illusion.
+- **Description**: An animated 10s sequence flying through a winding digital data corridor.
+
 ## abstract_neon_crystal_growth_3d
 
 - **Date**: 2026-06-20

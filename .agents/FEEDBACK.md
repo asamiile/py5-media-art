@@ -1,3 +1,19 @@
+## generative_architectural_wireframe_city_3d
+
+### Ratings
+
+| Axis | Score |
+| :--- | :--- |
+| Originality |  |
+| Visual Impact |  |
+| Technique |  |
+| Concept |  |
+| **Average** |  |
+
+### Comments
+
+
+
 ## generative_magnetic_field_lines_3d
 
 ### Ratings

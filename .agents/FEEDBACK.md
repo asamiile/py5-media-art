@@ -1,3 +1,8 @@
+## kinetic_cellular_automata_woven_2d
+
+- **Rating**: 
+- **Comment**: 
+
 ## generative_fractal_sponges_3d
 
 - **Rating**: 

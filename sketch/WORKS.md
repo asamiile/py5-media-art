@@ -1,3 +1,10 @@
+## kinetic_cellular_automata_woven_2d
+
+- **Date**: 2026-06-20
+- **Theme**: A 1D cellular automata woven into a cylindrical 3D rug structure.
+- **Technique**: A 1D CA rule generated line by line and wrapped around a cylinder using `py5.points`.
+- **Description**: An animated 10s sequence of a rotating cylinder made from 1D cellular automata logic.
+
 ## generative_fractal_sponges_3d
 
 - **Date**: 2026-06-20

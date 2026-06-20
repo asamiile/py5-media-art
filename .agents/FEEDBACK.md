@@ -1,3 +1,19 @@
+## generative_lipid_bilayer_fluidity_3d
+
+### Ratings
+
+| Axis | Score |
+| :--- | :--- |
+| Originality |  |
+| Visual Impact |  |
+| Technique |  |
+| Concept |  |
+| **Average** |  |
+
+### Comments
+
+
+
 ## ambient_mitotic_spindle_formation_3d
 
 ### Ratings

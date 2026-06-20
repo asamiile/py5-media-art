@@ -1,3 +1,10 @@
+## generative_lipid_bilayer_fluidity_3d
+
+- **Date**: 2026-06-20
+- **Theme**: Visualizing the fluid mosaic model of a cell membrane, showing lipid molecules undulating in a bilayer (inspired by GO:0016020).
+- **Technique**: A 3D grid of instanced dual-sphere structures (representing lipid heads and tails) oscillating via 2D noise, with larger floating blocks representing transmembrane proteins.
+- **Description**: An animated 10s sequence of an organic, undulating cellular membrane surface flowing continuously.
+
 ## ambient_mitotic_spindle_formation_3d
 
 - **Date**: 2026-06-20

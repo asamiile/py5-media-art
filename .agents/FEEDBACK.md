@@ -1,3 +1,19 @@
+## generative_voronoi_stippling_growth_2d
+
+### Ratings
+
+| Axis | Score |
+| :--- | :--- |
+| Originality |  |
+| Visual Impact |  |
+| Technique |  |
+| Concept |  |
+| **Average** |  |
+
+### Comments
+
+
+
 ## ambient_bioluminescent_fractal_spores_3d
 
 ### Ratings

@@ -1,3 +1,10 @@
+## generative_voronoi_stippling_growth_2d
+
+- **Date**: 2026-06-20
+- **Theme**: A mathematical stippling growth pattern based on an evolving Voronoi diagram.
+- **Technique**: An animated sequence that starts with a few seed points and organically spawns new points over time in the largest empty circles, giving a cellular or bacterial growth appearance. Rendered purely as points and connecting lines (Delaunay triangulation) in monochrome.
+- **Description**: A 10s animation showing an intricate network of stippling points growing to fill the canvas.
+
 ## ambient_bioluminescent_fractal_spores_3d
 
 - **Date**: 2026-06-20

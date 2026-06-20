@@ -1,3 +1,10 @@
+## cybernetic_data_fabric_flow_3d
+
+- **Date**: 2026-06-20
+- **Theme**: A high-density flow of information forming a 3D cybernetic fabric that ripples like silk.
+- **Technique**: A 3D particle system using `py5.points` and `py5.lines` tracing a continuous flow field over a parametric cylinder. Additive blending and neon hues simulate data transfer.
+- **Description**: An animated 12s sequence of glowing data flowing across a cybernetic 3D fabric.
+
 ## generative_crystallized_topography_2d
 
 - **Date**: 2026-06-20

@@ -1,3 +1,10 @@
+## generative_liquid_metal_interference_2d
+
+- **Date**: 2026-06-20
+- **Theme**: Simulating the psychedelic interference patterns of light reflecting off liquid metal or an oil slick.
+- **Technique**: Utilizing py5.os_noise with high octaves and frequency mapped directly to hue and saturation across a dense grid of points or quads.
+- **Description**: An animated 10s sequence of morphing, iridescent liquid metal patterns.
+
 ## generative_crystallography_fracture_3d
 
 - **Date**: 2026-06-20

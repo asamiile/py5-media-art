@@ -1,3 +1,19 @@
+## generative_liquid_metal_interference_2d
+
+### Ratings
+
+| Axis | Score |
+| :--- | :--- |
+| Originality |  |
+| Visual Impact |  |
+| Technique |  |
+| Concept |  |
+| **Average** |  |
+
+### Comments
+
+
+
 ## generative_crystallography_fracture_3d
 
 ### Ratings

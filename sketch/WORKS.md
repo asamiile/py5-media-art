@@ -1,3 +1,10 @@
+## generative_cytoskeleton_assembly_2d
+
+- **Date**: 2026-06-20
+- **Theme**: Visualizing the dynamic assembly and disassembly of a cellular cytoskeleton (microtubules and actin filaments) (inspired by GO:0007010).
+- **Technique**: A 2D simulation using thousands of short, colored line segments that align their angles to a slow-moving, multi-octave flow field, creating structures that rapidly polymerize and depolymerize.
+- **Description**: An animated 10s sequence of fibrous organic structures dynamically building and breaking apart in a fluid-like environment.
+
 ## ambient_neural_action_potential_3d
 
 - **Date**: 2026-06-20

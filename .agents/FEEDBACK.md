@@ -1,3 +1,19 @@
+## generative_cytoskeleton_assembly_2d
+
+### Ratings
+
+| Axis | Score |
+| :--- | :--- |
+| Originality |  |
+| Visual Impact |  |
+| Technique |  |
+| Concept |  |
+| **Average** |  |
+
+### Comments
+
+
+
 ## ambient_neural_action_potential_3d
 
 ### Ratings

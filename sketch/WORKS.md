@@ -1,3 +1,10 @@
+## ambient_neural_action_potential_3d
+
+- **Date**: 2026-06-20
+- **Theme**: Visualizing action potentials propagating through a complex 3D neural network (inspired by GO:0001508).
+- **Technique**: Utilizing a 3D graph of interconnected nodes where bright pulses of light travel along the edges based on distance and time, with additive blending for a glowing, ambient aesthetic.
+- **Description**: An animated 10s sequence of a neural network firing, with action potentials cascading through the synapses.
+
 ## generative_voronoi_reaction_diffusion_2d
 
 - **Date**: 2026-06-20

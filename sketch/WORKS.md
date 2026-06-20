@@ -1,3 +1,10 @@
+## ambient_topological_ocean_currents_2d
+
+- **Date**: 2026-06-20
+- **Theme**: An abstract, calming representation of ocean currents moving across a topological map.
+- **Technique**: Millions of faint blue/teal particles drawn on a 2D canvas, driven by an evolving vector flow field using multi-scale Perlin noise. The particles leave long trails with very slow alpha decay, creating silky, continuous lines.
+- **Description**: An animated 10s sequence of beautiful silky blue currents flowing across a dark canvas.
+
 ## generative_mitophagy_organelle_degradation_3d
 
 - **Date**: 2026-06-20

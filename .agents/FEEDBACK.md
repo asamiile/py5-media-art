@@ -1,3 +1,19 @@
+## ambient_topological_ocean_currents_2d
+
+### Ratings
+
+| Axis | Score |
+| :--- | :--- |
+| Originality |  |
+| Visual Impact |  |
+| Technique |  |
+| Concept |  |
+| **Average** |  |
+
+### Comments
+
+
+
 ## generative_mitophagy_organelle_degradation_3d
 
 ### Ratings

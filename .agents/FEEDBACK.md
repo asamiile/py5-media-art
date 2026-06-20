@@ -1,3 +1,24 @@
+## kinetic_fluid_glass_ribbons_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## ambient_lysosomal_degradation_3d
+
+### Ratings
+
+| Axis | Score |
+| :--- | :--- |
+| Originality |  |
+| Visual Impact |  |
+| Technique |  |
+| Concept |  |
+| **Average** |  |
+
+### Comments
+
+
+
 ## generative_apoptosis_fragmentation_2d
 
 ### Ratings

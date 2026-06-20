@@ -1,3 +1,17 @@
+## kinetic_fluid_glass_ribbons_3d
+
+- **Date**: 2026-06-20
+- **Theme**: Smooth, semi-transparent glass ribbons flowing and twisting like liquid through zero-gravity space.
+- **Technique**: 3D triangle strips governed by a curl-noise field, with low alpha and additive blending to create overlapping iridescent layers.
+- **Description**: An animated 15s sequence of glowing, overlapping glass ribbons floating in 3D space.
+
+## ambient_lysosomal_degradation_3d
+
+- **Date**: 2026-06-20
+- **Theme**: Simulating lysosomal degradation, where cellular waste is enveloped and broken down into reusable building blocks (inspired by GO:0005764).
+- **Technique**: A 3D environment with a large translucent sphere (lysosome) filled with aggressive, fast-moving particles (enzymes) that dissolve intricate geometric structures (waste) passing through it, converting them into floating bright glowing orbs.
+- **Description**: An animated 10s sequence of cellular recycling, where structured geometries are dissolved into glowing ambient energy within a cellular vesicle.
+
 ## generative_apoptosis_fragmentation_2d
 
 - **Date**: 2026-06-20

@@ -1,3 +1,10 @@
+## abstract_quantum_entanglement_flow_3d
+
+- **Date**: 2026-06-20
+- **Theme**: Delicate, interwoven particle trails mimicking quantum entanglement.
+- **Technique**: Multiple emitter systems that follow complex Lissajous curves in 3D, leaving a fading trail of additive particles behind.
+- **Description**: An animated 10s sequence of entangled quantum particle trails.
+
 ## cybernetic_data_corridor_tunnel_3d
 
 - **Date**: 2026-06-20

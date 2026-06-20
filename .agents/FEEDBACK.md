@@ -1,3 +1,19 @@
+## generative_mitophagy_organelle_degradation_3d
+
+### Ratings
+
+| Axis | Score |
+| :--- | :--- |
+| Originality |  |
+| Visual Impact |  |
+| Technique |  |
+| Concept |  |
+| **Average** |  |
+
+### Comments
+
+
+
 ## generative_cellular_autophagy_2d
 
 ### Ratings

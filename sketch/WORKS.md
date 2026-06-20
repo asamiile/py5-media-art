@@ -1,3 +1,10 @@
+## generative_mitophagy_organelle_degradation_3d
+
+- **Date**: 2026-06-20
+- **Theme**: A 3D representation of mitophagy (autophagy of mitochondrion, GO:0000422). Large, complex mitochondrial structures are encapsulated and broken down into simple elemental particles by a surrounding autophagosome membrane.
+- **Technique**: A 3D particle system where a central structured cluster (mitochondrion) is slowly dissolved into independent boids that swarm outward, constrained by a translucent outer sphere (vacuole).
+- **Description**: An animated 10s sequence of a glowing organelle disintegrating into a swarm of energy particles within a cellular bubble.
+
 ## generative_cellular_autophagy_2d
 
 - **Date**: 2026-06-20

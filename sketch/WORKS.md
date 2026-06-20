@@ -1,3 +1,10 @@
+## generative_vector_field_ribbons_3d
+
+- **Date**: 2026-06-20
+- **Theme**: Smooth ribbons flowing through a 3D vector field, creating a silk-like appearance.
+- **Technique**: Particles with trails forming ribbons, guided by 3D Perlin noise and winding around the center.
+- **Description**: An animated 10s sequence of generative vector field ribbons.
+
 ## abstract_cybernetic_mandala_zoom_2d
 
 - **Date**: 2026-06-20

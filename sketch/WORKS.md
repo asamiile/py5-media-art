@@ -1,3 +1,10 @@
+## generative_crystallography_fracture_3d
+
+- **Date**: 2026-06-20
+- **Theme**: An abstract 3D simulation of a growing crystal that suddenly fractures into hundreds of sharp shards under intense pressure.
+- **Technique**: Using 3D primitive shapes (boxes, spheres) combined with boolean-like clipping (simulated via rapid translation and scaling) and a chaotic explosive physics pass around frame 300 to scatter the shards.
+- **Description**: An animated 10s sequence of a beautiful crystalline structure growing, glowing, and then violently shattering into geometric shards.
+
 ## generative_magnetic_flux_tubes_3d
 
 - **Date**: 2026-06-20

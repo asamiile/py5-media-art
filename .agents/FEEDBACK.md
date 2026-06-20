@@ -1,3 +1,19 @@
+## generative_crystallography_fracture_3d
+
+### Ratings
+
+| Axis | Score |
+| :--- | :--- |
+| Originality |  |
+| Visual Impact |  |
+| Technique |  |
+| Concept |  |
+| **Average** |  |
+
+### Comments
+
+
+
 ## generative_magnetic_flux_tubes_3d
 
 ### Ratings

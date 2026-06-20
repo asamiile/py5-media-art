@@ -1,3 +1,10 @@
+## ambient_bioluminescent_fractal_spores_3d
+
+- **Date**: 2026-06-20
+- **Theme**: Thousands of tiny bioluminescent spores drifting through a 3D cavern, governed by a fractal flow field.
+- **Technique**: A 3D particle system where velocities are derived from a multi-octave 3D Perlin noise vector field. Spheres with additive blending mimic glowing spores. The camera slowly tracks forward.
+- **Description**: An animated 10s sequence of beautiful glowing green and cyan particles drifting in 3D space.
+
 ## cybernetic_fluid_simulation_grid_2d
 
 - **Date**: 2026-06-20

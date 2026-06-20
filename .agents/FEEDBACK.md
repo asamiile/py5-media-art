@@ -1,3 +1,19 @@
+## ambient_bioluminescent_fractal_spores_3d
+
+### Ratings
+
+| Axis | Score |
+| :--- | :--- |
+| Originality |  |
+| Visual Impact |  |
+| Technique |  |
+| Concept |  |
+| **Average** |  |
+
+### Comments
+
+
+
 ## cybernetic_fluid_simulation_grid_2d
 
 ### Ratings

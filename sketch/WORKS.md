@@ -1,3 +1,10 @@
+## kinetic_typographic_glitch_flow_2d
+
+- **Date**: 2026-06-20
+- **Theme**: A glitching, moving flow of digital typography cascading like a cyber-waterfall.
+- **Technique**: Text characters falling and shifting according to a 1D noise field, with chromatic aberration and occasional horizontal tearing effects.
+- **Description**: An animated 10s sequence of glitching data cascading down the screen.
+
 ## cybernetic_neuro_synaptic_web_2d
 
 - **Date**: 2026-06-20

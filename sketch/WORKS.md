@@ -1,3 +1,10 @@
+## generative_kinetic_typography_pulse_2d
+
+- **Date**: 2026-06-20
+- **Theme**: An intense, pulsing grid of kinetic typography where fragmented data streams assemble and dissolve rhythmically.
+- **Technique**: Utilizing a grid of characters drawn with a custom monospace font. The scale, rotation, and character itself shift based on an underlying multi-layered noise and distance field from pulsing center points.
+- **Description**: An animated 10s sequence of rhythmic kinetic typography forming complex waves of information.
+
 ## generative_liquid_metal_interference_2d
 
 - **Date**: 2026-06-20

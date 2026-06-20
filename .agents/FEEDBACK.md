@@ -1,3 +1,19 @@
+## generative_kinetic_typography_pulse_2d
+
+### Ratings
+
+| Axis | Score |
+| :--- | :--- |
+| Originality |  |
+| Visual Impact |  |
+| Technique |  |
+| Concept |  |
+| **Average** |  |
+
+### Comments
+
+
+
 ## generative_liquid_metal_interference_2d
 
 ### Ratings

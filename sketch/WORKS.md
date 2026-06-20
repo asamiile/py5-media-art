@@ -1,3 +1,10 @@
+## abstract_generative_topography_3d
+
+- **Date**: 2026-06-20
+- **Theme**: Abstract 3D terrain shifting and forming from data points like an evolving digital landscape.
+- **Technique**: A 3D mesh grid whose Z-height is driven by scrolling 2D Perlin noise. The grid is drawn as a wireframe with neon stroke colors.
+- **Description**: An animated 10s sequence of an undulating cybernetic wireframe landscape.
+
 ## cybernetic_geometric_mandala_2d
 
 - **Date**: 2026-06-20

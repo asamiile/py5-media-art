@@ -1,3 +1,10 @@
+## abstract_neon_crystal_growth_3d
+
+- **Date**: 2026-06-20
+- **Theme**: A cluster of jagged neon crystals growing out of the void.
+- **Technique**: Generating random 3D pyramids (crystals) pointing outwards, colored with high saturation, additive blending, and slowly scaling up based on noise.
+- **Description**: An animated 10s sequence of growing cybernetic neon crystals in 3D space.
+
 ## cybernetic_organic_lsystem_3d
 
 - **Date**: 2026-06-20

@@ -1,3 +1,8 @@
+## abstract_neon_crystal_growth_3d
+
+- **Rating**: 
+- **Comment**: 
+
 ## cybernetic_organic_lsystem_3d
 
 - **Rating**: 

@@ -1,3 +1,10 @@
+## cybernetic_quantum_tunneling_matrix_3d
+
+- **Date**: 2026-06-20
+- **Theme**: An abstract representation of quantum tunneling in a cybernetic matrix, where particles instantly jump between enclosed neon containment grids.
+- **Technique**: A 3D grid of semi-transparent boxes. Particles travel linearly but suddenly teleport to opposite sides or inner cells, leaving a bright decaying motion trail. Additive blending and high contrast colors.
+- **Description**: An animated 10s sequence of glowing neon quantum particles tunneling through a 3D matrix.
+
 ## cybernetic_data_fabric_flow_3d
 
 - **Date**: 2026-06-20

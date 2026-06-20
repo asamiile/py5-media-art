@@ -1,3 +1,10 @@
+## kinetic_sacred_geometry_pulse_2d
+
+- **Date**: 2026-06-20
+- **Theme**: Sacred geometry patterns (Seed of Life / Flower of Life) pulsing with neon outlines and generative colors.
+- **Technique**: Nested circles arranged in hexagonal grids that dynamically expand, contract, and shift hues.
+- **Description**: An animated 10s sequence of kinetic sacred geometry pulsing.
+
 ## generative_vector_field_ribbons_3d
 
 - **Date**: 2026-06-20

@@ -1,3 +1,19 @@
+## generative_magnetic_field_lines_3d
+
+### Ratings
+
+| Axis | Score |
+| :--- | :--- |
+| Originality |  |
+| Visual Impact |  |
+| Technique |  |
+| Concept |  |
+| **Average** |  |
+
+### Comments
+
+
+
 ## cybernetic_bacterial_colony_growth_2d
 
 ### Ratings

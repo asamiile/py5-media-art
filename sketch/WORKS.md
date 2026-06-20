@@ -1,3 +1,10 @@
+## generative_magnetic_field_lines_3d
+
+- **Date**: 2026-06-20
+- **Theme**: 3D visualization of magnetic field lines connecting two oscillating magnetic poles, with glowing particles racing along the field lines.
+- **Technique**: A mathematical dipole magnetic field simulation. Particles trace the field lines using the vector equation of a dipole field. Additive blending and trails.
+- **Description**: An animated 10s sequence showing neon blue and purple particles rapidly flowing along the curved magnetic lines of two oscillating poles in 3D space.
+
 ## cybernetic_bacterial_colony_growth_2d
 
 - **Date**: 2026-06-20

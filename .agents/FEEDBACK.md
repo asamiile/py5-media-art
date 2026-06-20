@@ -1,3 +1,8 @@
+## abstract_plasma_fluid_dynamics_3d
+
+- **Rating**: 
+- **Comment**: 
+
 ## kinetic_sacred_geometry_pulse_2d
 
 - **Rating**: 

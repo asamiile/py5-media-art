@@ -1,3 +1,10 @@
+## abstract_plasma_fluid_dynamics_3d
+
+- **Date**: 2026-06-20
+- **Theme**: A swirling, volumetric plasma fluid simulation represented by colored points and spheres on a 3D grid.
+- **Technique**: A 3D grid of points where position and color are driven by multiple layers of 3D Perlin noise and time.
+- **Description**: An animated 10s sequence of abstract plasma fluid dynamics.
+
 ## kinetic_sacred_geometry_pulse_2d
 
 - **Date**: 2026-06-20

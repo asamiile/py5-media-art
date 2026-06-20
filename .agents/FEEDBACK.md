@@ -1,3 +1,8 @@
+## kinetic_moire_interference_patterns_2d
+
+- **Rating**: 
+- **Comment**: 
+
 ## cybernetic_holographic_data_sphere_3d
 
 - **Rating**: 

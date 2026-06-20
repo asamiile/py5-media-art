@@ -1,3 +1,10 @@
+## kinetic_moire_interference_patterns_2d
+
+- **Date**: 2026-06-20
+- **Theme**: Two overlapping sets of dense, thin lines rotating to create mesmerizing moiré patterns.
+- **Technique**: Drawing two grids or radial bursts of lines. One is stationary, the other rotates slowly, colored with high-contrast neon on dark.
+- **Description**: An animated 10s sequence of kinetic moiré interference patterns.
+
 ## cybernetic_holographic_data_sphere_3d
 
 - **Date**: 2026-06-20

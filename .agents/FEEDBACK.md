@@ -1,3 +1,18 @@
+## cyber_glitch_vhs_tape_distortion_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_liquid_cloth_wireframe_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_analog_oscilloscope_interference_2d
+
+- **Rating**: 
+- **Comment**: 
+
 ## ambient_generative_aurora_borealis_3d
 
 - **Rating**: 

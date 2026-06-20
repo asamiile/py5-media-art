@@ -1,3 +1,24 @@
+## cyber_glitch_vhs_tape_distortion_2d
+
+- **Date**: 2026-06-19
+- **Theme**: An old VHS tape containing corrupted neon cyber-data, glitching and distorting heavily.
+- **Technique**: 2D drawing of horizontal pixel scanlines that are randomly offset horizontally by 1D Perlin noise and random spikes, with chromatic aberration applied via color blending.
+- **Description**: An animated 15s sequence of a glitching VHS cyber-data tape.
+
+## kinetic_liquid_cloth_wireframe_3d
+
+- **Date**: 2026-06-19
+- **Theme**: A 3D wireframe mesh that distorts and ripples like a liquid cloth in a zero-gravity environment.
+- **Technique**: A 3D triangle strip mesh where the Z height is displaced using a sweeping 3D OpenSimplex noise field.
+- **Description**: An animated 15s sequence of a glowing neon wireframe mesh billowing and flowing over a deep dark blue background.
+
+## kinetic_analog_oscilloscope_interference_2d
+
+- **Date**: 2026-06-19
+- **Theme**: The chaotic hum of a vintage oscilloscope rendering unstable high-frequency signals.
+- **Technique**: Procedurally generating Lissajous figures with continuously shifting phase and frequency ratios, using additive blending and a phosphor-decay motion blur to mimic an analog CRT screen.
+- **Description**: An animated 10s sequence of fast-moving glowing lines twisting and folding into complex interference patterns with a classic retro-tech aesthetic.
+
 ## ambient_generative_aurora_borealis_3d
 
 - **Date**: 2026-06-19

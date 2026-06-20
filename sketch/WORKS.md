@@ -1,3 +1,10 @@
+## generative_apoptosis_fragmentation_2d
+
+- **Date**: 2026-06-20
+- **Theme**: Simulating programmed cell death (apoptosis) where a large structured cell slowly fragments into smaller apoptotic bodies (inspired by GO:0006915).
+- **Technique**: A 2D Voronoi cellular automaton where cells shrink, disconnect, and drift apart over time, accompanied by a shift in color from healthy warm tones to cool, fading tones.
+- **Description**: An animated 10s sequence of a beautifully structured organic mesh slowly dissolving and fragmenting into isolated glowing particles.
+
 ## generative_ribosomal_translation_pulse_3d
 
 - **Date**: 2026-06-20

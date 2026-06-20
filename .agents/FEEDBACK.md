@@ -1,3 +1,19 @@
+## generative_apoptosis_fragmentation_2d
+
+### Ratings
+
+| Axis | Score |
+| :--- | :--- |
+| Originality |  |
+| Visual Impact |  |
+| Technique |  |
+| Concept |  |
+| **Average** |  |
+
+### Comments
+
+
+
 ## generative_ribosomal_translation_pulse_3d
 
 ### Ratings

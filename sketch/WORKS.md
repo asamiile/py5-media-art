@@ -1,3 +1,10 @@
+## abstract_cybernetic_mandala_zoom_2d
+
+- **Date**: 2026-06-20
+- **Theme**: An infinite zoom into a complex, rotating, cybernetic geometric mandala.
+- **Technique**: Concentric geometric shapes (polygons, circles) scaled with `scale()` based on time modulo, creating a continuous zoom effect.
+- **Description**: An animated 10s sequence of an infinite cybernetic mandala zoom.
+
 ## kinetic_moire_interference_patterns_2d
 
 - **Date**: 2026-06-20

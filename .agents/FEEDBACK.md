@@ -1,3 +1,8 @@
+## abstract_cybernetic_mandala_zoom_2d
+
+- **Rating**: 
+- **Comment**: 
+
 ## kinetic_moire_interference_patterns_2d
 
 - **Rating**: 

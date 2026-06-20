@@ -1,3 +1,19 @@
+## kinetic_typographic_data_stream_2d
+
+### Ratings
+
+| Axis | Score |
+| :--- | :--- |
+| Originality |  |
+| Visual Impact |  |
+| Technique |  |
+| Concept |  |
+| **Average** |  |
+
+### Comments
+
+
+
 ## generative_chladni_plate_resonance_3d
 
 ### Ratings

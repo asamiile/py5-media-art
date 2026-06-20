@@ -1,3 +1,19 @@
+## generative_fractal_mycelium_network_2d
+
+### Ratings
+
+| Axis | Score |
+| :--- | :--- |
+| Originality |  |
+| Visual Impact |  |
+| Technique |  |
+| Concept |  |
+| **Average** |  |
+
+### Comments
+
+
+
 ## cybernetic_data_constellation_web_3d
 
 ### Ratings

@@ -1,3 +1,10 @@
+## generative_cellular_autophagy_2d
+
+- **Date**: 2026-06-20
+- **Theme**: An abstract cellular simulation inspired by autophagy (GO:0006914), where larger cellular bodies systematically digest smaller internal materials to remodel themselves.
+- **Technique**: A soft-body physics simulation using springs and repulsion where 'macromolecular' particles are pulled into and dissolved by a larger wandering central vacuole-like entity.
+- **Description**: An animated 10s sequence of abstract microscopic cellular processes consuming glowing particles.
+
 ## cybernetic_geometric_mandala_2d
 
 - **Date**: 2026-06-20

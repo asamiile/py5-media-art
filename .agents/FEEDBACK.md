@@ -1,3 +1,19 @@
+## generative_cellular_autophagy_2d
+
+### Ratings
+
+| Axis | Score |
+| :--- | :--- |
+| Originality |  |
+| Visual Impact |  |
+| Technique |  |
+| Concept |  |
+| **Average** |  |
+
+### Comments
+
+
+
 ## cybernetic_geometric_mandala_2d
 
 ### Ratings

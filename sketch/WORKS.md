@@ -1,3 +1,10 @@
+## generative_ribosomal_translation_pulse_3d
+
+- **Date**: 2026-06-20
+- **Theme**: Visualizing the process of protein synthesis, where mRNA is translated by ribosomes into a polypeptide chain (inspired by GO:0006412).
+- **Technique**: A 3D continuous loop showing a large multi-part structure (ribosome) moving along a central spine (mRNA), while emitting a growing, twisting chain of colorful spheres (amino acids) that fold into a complex protein structure using a simulated random walk.
+- **Description**: An animated 10s sequence of dynamic biological manufacturing, emitting a glowing, folding ribbon of new protein in 3D space.
+
 ## generative_lipid_bilayer_fluidity_3d
 
 - **Date**: 2026-06-20

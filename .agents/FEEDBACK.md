@@ -1,3 +1,19 @@
+## ambient_mitotic_spindle_formation_3d
+
+### Ratings
+
+| Axis | Score |
+| :--- | :--- |
+| Originality |  |
+| Visual Impact |  |
+| Technique |  |
+| Concept |  |
+| **Average** |  |
+
+### Comments
+
+
+
 ## generative_cytoskeleton_assembly_2d
 
 ### Ratings

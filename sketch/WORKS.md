@@ -1,3 +1,10 @@
+## ambient_mitotic_spindle_formation_3d
+
+- **Date**: 2026-06-20
+- **Theme**: Simulating the formation of the mitotic spindle apparatus during cell division (inspired by GO:0000286).
+- **Technique**: A 3D simulation with two centrosome poles from which glowing microtubule fibers radiate outwards, connecting to chromosomes at the metaphase plate.
+- **Description**: An animated 10s sequence of dynamic glowing microtubules reaching out and organizing chromosomes in 3D space.
+
 ## generative_cytoskeleton_assembly_2d
 
 - **Date**: 2026-06-20

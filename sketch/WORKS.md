@@ -1,3 +1,10 @@
+## cybernetic_geometric_mandala_2d
+
+- **Date**: 2026-06-20
+- **Theme**: An intricate, rotating geometric mandala constructed from hundreds of concentric cybernetic rings, pulsing to a hidden rhythm.
+- **Technique**: Procedural generation of nested polar coordinate shapes (polygons, arcs, lines) that rotate at varying harmonic speeds. Rendered with high contrast glowing lines and additive blending.
+- **Description**: An animated 10s sequence of a mesmerizing, highly symmetrical digital mandala rotating and transforming.
+
 ## generative_crystallization_reaction_diffusion_3d
 
 - **Date**: 2026-06-20

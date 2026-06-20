@@ -1,3 +1,19 @@
+## cybernetic_geometric_mandala_2d
+
+### Ratings
+
+| Axis | Score |
+| :--- | :--- |
+| Originality |  |
+| Visual Impact |  |
+| Technique |  |
+| Concept |  |
+| **Average** |  |
+
+### Comments
+
+
+
 ## generative_crystallization_reaction_diffusion_3d
 
 ### Ratings

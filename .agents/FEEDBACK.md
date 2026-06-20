@@ -1,3 +1,19 @@
+## generative_voronoi_reaction_diffusion_2d
+
+### Ratings
+
+| Axis | Score |
+| :--- | :--- |
+| Originality |  |
+| Visual Impact |  |
+| Technique |  |
+| Concept |  |
+| **Average** |  |
+
+### Comments
+
+
+
 ## generative_chromatin_folding_loop_3d
 
 ### Ratings

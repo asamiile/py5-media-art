@@ -1,3 +1,10 @@
+## generative_voronoi_reaction_diffusion_2d
+
+- **Date**: 2026-06-20
+- **Theme**: Simulating cellular division and chemical reaction-diffusion inside a moving Voronoi diagram.
+- **Technique**: Utilizing py5.voronoi (or a custom implementation) on moving points, where the cells are colored based on a reaction-diffusion-like noise function mapped to their centroids.
+- **Description**: An animated 10s sequence of organic cellular growth and chemical gradients within a shifting cellular matrix.
+
 ## generative_chromatin_folding_loop_3d
 
 - **Date**: 2026-06-20

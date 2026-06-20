@@ -1,3 +1,17 @@
+## cybernetic_fluid_simulation_grid_2d
+
+- **Date**: 2026-06-20
+- **Theme**: A 2D liquid simulation represented through a strict cellular grid. The fluid behaves like glowing plasma, shifting colors as it flows through the cells.
+- **Technique**: An Eulerian fluid simulation approximation using multi-octave 3D noise to drive flow density across a low-resolution grid, rendered as high-contrast glowing rectangles.
+- **Description**: An animated 10s sequence of a vibrant plasma fluid flowing through a rigid digital grid.
+
+## generative_lissajous_knot_matrix_3d
+
+- **Date**: 2026-06-20
+- **Theme**: A complex 3D knot formed by interlacing Lissajous curves that slowly unspools and twists into new harmonic ratios.
+- **Technique**: Parametric equations for 3D Lissajous knots with time-varying harmonic coefficients. Rendered as a glowing neon ribbon with additive blending.
+- **Description**: An animated 10s sequence of a massive, slowly mutating neon knot in deep space.
+
 ## generative_vector_flow_field_topography_2d
 
 - **Date**: 2026-06-20

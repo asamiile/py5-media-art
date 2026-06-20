@@ -1,3 +1,8 @@
+## kinetic_chladni_resonance_patterns_2d
+
+- **Rating**: 
+- **Comment**: 
+
 ## abstract_plasma_fluid_dynamics_3d
 
 - **Rating**: 

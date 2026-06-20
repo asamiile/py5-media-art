@@ -1,3 +1,10 @@
+## kinetic_chladni_resonance_patterns_2d
+
+- **Date**: 2026-06-20
+- **Theme**: A simulation of Chladni resonance patterns where particles collect on nodal lines of a vibrating plate.
+- **Technique**: Thousands of particles whose velocities are influenced by gradients of a 2D Chladni standing wave equation.
+- **Description**: An animated 10s sequence of kinetic Chladni resonance patterns.
+
 ## abstract_plasma_fluid_dynamics_3d
 
 - **Date**: 2026-06-20

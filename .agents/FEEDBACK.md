@@ -1,3 +1,19 @@
+## cybernetic_bacterial_colony_growth_2d
+
+### Ratings
+
+| Axis | Score |
+| :--- | :--- |
+| Originality |  |
+| Visual Impact |  |
+| Technique |  |
+| Concept |  |
+| **Average** |  |
+
+### Comments
+
+
+
 ## kinetic_neural_web_weaving_3d
 
 - **Rating**: 

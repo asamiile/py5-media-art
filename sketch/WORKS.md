@@ -1,3 +1,10 @@
+## cybernetic_bacterial_colony_growth_2d
+
+- **Date**: 2026-06-20
+- **Theme**: A high-density simulation of a cybernetic bacterial colony expanding outward, fighting for resources, and dying out, leaving complex branching pathways.
+- **Technique**: 2D agent-based growth where agents leave thick, brightly colored trails. Old trails slowly decay and change color from bright neon to a rusty dark red.
+- **Description**: An animated 10s sequence showing neon green/yellow branches crawling out across a dark abyss, eventually turning into a dark, dead red structure.
+
 ## kinetic_neural_web_weaving_3d
 
 - **Date**: 2026-06-20

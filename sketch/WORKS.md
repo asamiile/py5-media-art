@@ -1,3 +1,10 @@
+## cybernetic_holographic_data_sphere_3d
+
+- **Date**: 2026-06-20
+- **Theme**: A floating holographic sphere made of spinning concentric data rings and particles.
+- **Technique**: Concentric rings on different axes rotating at different speeds, dotted with glowing data points.
+- **Description**: An animated 10s sequence of a holographic 3D data sphere.
+
 ## kinetic_optical_illusion_waves_2d
 
 - **Date**: 2026-06-20

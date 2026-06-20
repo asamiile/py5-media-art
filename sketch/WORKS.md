@@ -1,3 +1,10 @@
+## cybernetic_geometric_mandala_2d
+
+- **Date**: 2026-06-20
+- **Theme**: A hypnotic, self-assembling 2D geometric mandala built from pulsing cybernetic lines and polygons.
+- **Technique**: Layered 2D rotation grids and sine-wave driven scaling parameters. Neon outlines with additive blending.
+- **Description**: An animated 10s sequence of a glowing geometric cyber-mandala.
+
 ## ambient_vector_field_flocking_3d
 
 - **Date**: 2026-06-20

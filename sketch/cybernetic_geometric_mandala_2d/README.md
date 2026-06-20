@@ -1,12 +1,10 @@
 # cybernetic_geometric_mandala_2d
 
-An intricate, rotating geometric mandala constructed from hundreds of concentric cybernetic rings, pulsing to a hidden rhythm.
+A hypnotic, self-assembling 2D geometric mandala built from pulsing cybernetic lines and polygons.
+
+![Preview](cybernetic_geometric_mandala_2d_p1.png)
 
 ## Details
-
-- **Type**: 2D animation
-- **Length**: 10 seconds (60fps)
-
-## Technique
-
-Procedural generation of nested polar coordinate shapes (polygons, arcs, lines) that rotate at varying harmonic speeds and pulse their radii. Rendered with high contrast glowing lines and additive blending, simulating a complex digital artifact.
+- **Date**: 2026-06-20
+- **Technique**: Layered 2D rotation grids and sine-wave driven scaling parameters. Neon outlines with additive blending.
+- **Format**: Animation (10s @ 60fps)

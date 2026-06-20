@@ -1,3 +1,8 @@
+## cybernetic_geometric_mandala_2d
+
+- **Rating**: 
+- **Comment**: 
+
 ## ambient_vector_field_flocking_3d
 
 - **Rating**: 

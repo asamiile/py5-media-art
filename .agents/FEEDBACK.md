@@ -1,3 +1,19 @@
+## generative_magnetic_flux_tubes_3d
+
+### Ratings
+
+| Axis | Score |
+| :--- | :--- |
+| Originality |  |
+| Visual Impact |  |
+| Technique |  |
+| Concept |  |
+| **Average** |  |
+
+### Comments
+
+
+
 ## generative_fractal_mycelium_network_2d
 
 ### Ratings

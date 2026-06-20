@@ -1,3 +1,10 @@
+## generative_magnetic_flux_tubes_3d
+
+- **Date**: 2026-06-20
+- **Theme**: Simulating solar magnetic flux tubes twisting and erupting from a central sphere.
+- **Technique**: Using 3D bezier curves and particle trails along parametric paths to create thick, glowing ribbons of plasma.
+- **Description**: An animated 10s sequence of twisting magnetic flux tubes made of bright orange and magenta plasma.
+
 ## generative_fractal_mycelium_network_2d
 
 - **Date**: 2026-06-20

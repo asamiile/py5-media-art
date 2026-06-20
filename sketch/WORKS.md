@@ -1,3 +1,10 @@
+## ambient_vector_field_flocking_3d
+
+- **Date**: 2026-06-20
+- **Theme**: Thousands of glowing particles flocking together through a massive invisible 3D vector field.
+- **Technique**: Particles with velocity and acceleration guided by a vectorized 3D mathematical field. Additive blending and faint background redraw for trails.
+- **Description**: An animated 12s sequence of 10,000 glowing boids navigating a fluid-like vector field.
+
 ## kinetic_cellular_automata_woven_2d
 
 - **Date**: 2026-06-20

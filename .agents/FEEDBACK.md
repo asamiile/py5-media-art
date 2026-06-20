@@ -1,3 +1,8 @@
+## ambient_vector_field_flocking_3d
+
+- **Rating**: 
+- **Comment**: 
+
 ## kinetic_cellular_automata_woven_2d
 
 - **Rating**: 

@@ -1,3 +1,10 @@
+## generative_fractal_sponges_3d
+
+- **Date**: 2026-06-20
+- **Theme**: A continuously rotating Menger Sponge fractal that grows and pulses in a 3D isometric view.
+- **Technique**: Recursive 3D boxes drawing a Menger sponge up to depth 3, with additive neon blending and an oscillating camera.
+- **Description**: An animated 10s sequence of a glowing recursive 3D Menger sponge.
+
 ## cybernetic_quantum_tunneling_matrix_3d
 
 - **Date**: 2026-06-20

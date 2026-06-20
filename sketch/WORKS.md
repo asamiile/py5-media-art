@@ -1,3 +1,10 @@
+## generative_crystallized_topography_2d
+
+- **Date**: 2026-06-20
+- **Theme**: A microscopic view of an alien geometric crystal growing through a rugged landscape.
+- **Technique**: A 2D simulation using space colonization, rendering dense fractal layers of sharp intersecting triangles.
+- **Description**: An animated 10s sequence of expanding crystal-like geometry in 2D space.
+
 ## kinetic_fluid_glass_ribbons_3d
 
 - **Date**: 2026-06-20

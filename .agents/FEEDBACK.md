@@ -1,3 +1,8 @@
+## cybernetic_neuro_synaptic_web_2d
+
+- **Rating**: 
+- **Comment**: 
+
 ## abstract_generative_topography_3d
 
 - **Rating**: 

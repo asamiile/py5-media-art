@@ -1,3 +1,10 @@
+## cybernetic_neuro_synaptic_web_2d
+
+- **Date**: 2026-06-20
+- **Theme**: An intricate, organic web resembling neural pathways flashing with data signals.
+- **Technique**: Randomly distributed nodes connected by proximity lines. Signal pulses (small bright dots) travel along the lines between nodes. Nodes pulse when a signal arrives.
+- **Description**: An animated 10s sequence of a flashing 2D neural data network.
+
 ## abstract_generative_topography_3d
 
 - **Date**: 2026-06-20

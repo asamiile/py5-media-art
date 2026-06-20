@@ -1,3 +1,19 @@
+## generative_chromatin_folding_loop_3d
+
+### Ratings
+
+| Axis | Score |
+| :--- | :--- |
+| Originality |  |
+| Visual Impact |  |
+| Technique |  |
+| Concept |  |
+| **Average** |  |
+
+### Comments
+
+
+
 ## generative_kinetic_typography_pulse_2d
 
 ### Ratings

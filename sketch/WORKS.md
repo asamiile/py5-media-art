@@ -1,3 +1,10 @@
+## generative_chromatin_folding_loop_3d
+
+- **Date**: 2026-06-20
+- **Theme**: Simulating the folding and looping of chromatin fibers (DNA and histones) into higher-order structures within a nucleus (inspired by GO:0006338).
+- **Technique**: Utilizing 3D physics-based spring nodes (or parametric equivalent) to simulate a long fiber that dynamically folds into tight fractal globules.
+- **Description**: An animated 10s sequence of a glowing chromatin fiber continuously looping and folding in 3D space.
+
 ## generative_kinetic_typography_pulse_2d
 
 - **Date**: 2026-06-20

@@ -1,3 +1,8 @@
+## generative_algorithmic_neural_network_sparks_2d
+
+- **Rating**: 
+- **Comment**: 
+
 ## abstract_luminescent_crystal_growth_3d
 
 - **Rating**: 

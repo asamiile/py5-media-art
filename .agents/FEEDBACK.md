@@ -1,3 +1,8 @@
+## ambient_volumetric_smoke_columns_3d
+
+- **Rating**: 
+- **Comment**: 
+
 ## abstract_chromatic_ribbon_flow_2d
 
 - **Rating**: 

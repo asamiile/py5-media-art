@@ -1,3 +1,8 @@
+## ambient_deep_sea_hydrothermal_vents_3d
+
+- **Rating**: 
+- **Comment**: 
+
 ## generative_cyber_fractal_glitch_cube_3d
 
 - **Rating**: 

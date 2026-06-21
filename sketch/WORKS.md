@@ -1,3 +1,10 @@
+## ambient_deep_sea_hydrothermal_vents_3d
+
+- **Date**: 2026-06-21
+- **Theme**: A dark deep-sea environment where glowing hydrothermal vents spew neon energy particles into the cold water, creating organic blooming smoke trails.
+- **Technique**: 3D particle system emitting from base cylinders. Particles have upward velocity and slowly disperse via 3D Perlin noise to simulate underwater turbulence. Rendered with additive blending, fading to darkness as they cool off.
+- **Description**: An animated 15s sequence of generative deep-sea hydrothermal vents.
+
 ## generative_cyber_fractal_glitch_cube_3d
 
 - **Date**: 2026-06-21

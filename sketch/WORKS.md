@@ -1,3 +1,10 @@
+## abstract_luminescent_geometric_spiderweb_2d
+
+- **Date**: 2026-06-21
+- **Theme**: An endless zooming view into a luminescent, infinitely complex spiderweb. The web geometry builds radially and connects points randomly with glowing neon lines.
+- **Technique**: Keeps an array of points forming a web. Over time, it uses scaling to slowly zoom into the center. It draws lines between points based on proximity using additive blending to create a glowing effect.
+- **Description**: An animated 15s sequence of a geometric zooming spiderweb.
+
 ## generative_quantum_superposition_clouds_3d
 
 - **Date**: 2026-06-21

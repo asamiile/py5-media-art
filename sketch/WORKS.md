@@ -1,3 +1,10 @@
+## abstract_cybernetic_circuit_sparks_2d
+
+- **Date**: 2026-06-21
+- **Theme**: A high-speed cybernetic simulation where glowing sparks travel rapidly along a dense network of complex orthogonal circuit traces.
+- **Technique**: Generates an intricate orthogonal grid path network using active walkers that only turn 90 degrees. These "sparks" leave bright additive fading trails behind them, building a glowing circuit board map as they travel over the 15 seconds.
+- **Description**: An animated 15s sequence of generative cybernetic circuit sparks.
+
 ## generative_fluid_chromatic_vortices_3d
 
 - **Date**: 2026-06-21

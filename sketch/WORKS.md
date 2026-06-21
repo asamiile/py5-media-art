@@ -1,3 +1,10 @@
+## generative_algorithmic_crystalline_aurora_3d
+
+- **Date**: 2026-06-21
+- **Theme**: A 3D landscape of crystalline structures that undulate and glow with the colors of an aurora borealis as invisible winds sweep over them.
+- **Technique**: A 3D mesh grid (terrain) displaced by moving Perlin noise. The vertices are drawn as translucent triangles. The color of each vertex depends on its height and the noise value, creating sweeping bands of green, cyan, and purple that resemble the northern lights.
+- **Description**: An animated 15s sequence of a generative crystalline aurora simulation.
+
 ## abstract_cybernetic_circuit_board_maze_2d
 
 - **Date**: 2026-06-21

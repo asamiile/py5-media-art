@@ -1,3 +1,8 @@
+## generative_algorithmic_geometric_fractal_tree_3d
+
+- **Rating**: 
+- **Comment**: 
+
 ## abstract_cybernetic_circuit_grid_routing_2d
 
 - **Rating**: 

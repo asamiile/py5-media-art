@@ -1,3 +1,8 @@
+## generative_quantum_interference_pattern_2d
+
+- **Rating**: 
+- **Comment**: 
+
 ## ambient_volumetric_smoke_columns_3d
 
 - **Rating**: 

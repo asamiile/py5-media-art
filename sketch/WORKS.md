@@ -1,3 +1,10 @@
+## generative_quantum_interference_pattern_2d
+
+- **Date**: 2026-06-21
+- **Theme**: An intricate, mesmerizing visualization of quantum interference. Concentric ripples emanate from multiple moving points and overlap to create complex moiré patterns and vibrant interference fringes.
+- **Technique**: Using many concentric circles radiating from moving focal points. As these circles overlap with additive blending, bright interference patterns naturally emerge, simulating a pixel-shader-like effect.
+- **Description**: An animated 15s sequence of a generative quantum interference pattern.
+
 ## ambient_volumetric_smoke_columns_3d
 
 - **Date**: 2026-06-21

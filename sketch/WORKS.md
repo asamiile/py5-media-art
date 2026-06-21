@@ -1,3 +1,10 @@
+## abstract_generative_op_art_checkerboard_2d
+
+- **Date**: 2026-06-21
+- **Theme**: An optical illusion checkerboard that distorts, twists, and waves over time.
+- **Technique**: Drawing a dense grid of quadrilaterals whose vertices are displaced by 2D Perlin noise and sine waves.
+- **Description**: An animated 10s sequence of abstract generative op art checkerboard.
+
 ## abstract_luminescent_jellyfish_geometry_3d
 
 - **Date**: 2026-06-21

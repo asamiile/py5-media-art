@@ -1,3 +1,10 @@
+## abstract_fluid_chromatic_vortices_3d
+
+- **Date**: 2026-06-21
+- **Theme**: A swirling, high-density field of neon chromatic particles caught in rotating 3D vortices. As the particles spiral inward, they change colors forming a vibrant, abstract fluid-like simulation.
+- **Technique**: A large number of 3D particles updating their positions using multiple overlapping sine and cosine waves to create a vortex effect, mapped to a rainbow color palette with trails enabled by partial background clearing.
+- **Description**: An animated 15s sequence of generative swirling chromatic vortices.
+
 ## ambient_deep_sea_hydrothermal_vents_3d
 
 - **Date**: 2026-06-21

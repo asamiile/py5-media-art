@@ -1,3 +1,8 @@
+## abstract_fluid_chromatic_vortices_3d
+
+- **Rating**: 
+- **Comment**: 
+
 ## ambient_deep_sea_hydrothermal_vents_3d
 
 - **Rating**: 

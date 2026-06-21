@@ -1,3 +1,10 @@
+## abstract_cellular_division_organics_2d
+
+- **Date**: 2026-06-21
+- **Theme**: A microscopic, organic look resembling cellular division or petri dish growth. Soft, blobby shapes expand, split, and merge with each other over time.
+- **Technique**: Uses a 2D scalar field evaluated using 3D perlin noise (where Z is time). It thresholds the noise to draw filled shapes. Iterating over a grid, if noise > threshold, it draws a circle, effectively creating a marching-squares-like organic cellular structure.
+- **Description**: An animated 15s sequence of generative cellular organic division.
+
 ## generative_topological_mesh_distortion_3d
 
 - **Date**: 2026-06-21

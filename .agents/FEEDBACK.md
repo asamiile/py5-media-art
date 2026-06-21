@@ -1,3 +1,8 @@
+## generative_fluid_chromatic_vortices_3d
+
+- **Rating**: 
+- **Comment**: 
+
 ## abstract_cybernetic_mandala_pulse_3d
 
 - **Rating**: 

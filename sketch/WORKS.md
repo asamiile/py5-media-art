@@ -1,3 +1,10 @@
+## abstract_luminescent_jellyfish_geometry_3d
+
+- **Date**: 2026-06-21
+- **Theme**: A glowing, ethereal structure resembling a jellyfish or deep-sea creature swimming gracefully.
+- **Technique**: Complex 3D triangle strips governed by multiple phase-shifted sine waves, mimicking bioluminescent undulating motion.
+- **Description**: An animated 10s sequence of abstract luminescent jellyfish geometry.
+
 ## abstract_cybernetic_fractal_circuitry_2d
 
 - **Date**: 2026-06-21

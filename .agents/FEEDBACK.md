@@ -1,3 +1,8 @@
+## abstract_luminescent_jellyfish_geometry_3d
+
+- **Rating**: 
+- **Comment**: 
+
 ## abstract_cybernetic_fractal_circuitry_2d
 
 - **Rating**: 

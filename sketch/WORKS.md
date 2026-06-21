@@ -1,3 +1,10 @@
+## abstract_geometric_chromatic_aberration_2d
+
+- **Date**: 2026-06-21
+- **Theme**: Geometric shapes colliding and separating with intense RGB color shifting (chromatic aberration effect).
+- **Technique**: Drawing shapes multiple times with red, green, and blue blend modes slightly offset based on sine wave motion.
+- **Description**: An animated 10s sequence of abstract geometric chromatic aberration.
+
 ## kinetic_chladni_resonance_patterns_2d
 
 - **Date**: 2026-06-20

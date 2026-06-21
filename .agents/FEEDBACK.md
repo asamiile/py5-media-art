@@ -1,3 +1,8 @@
+## abstract_geometric_chromatic_aberration_2d
+
+- **Rating**: 
+- **Comment**: 
+
 ## kinetic_chladni_resonance_patterns_2d
 
 - **Rating**: 

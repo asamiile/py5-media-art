@@ -1,3 +1,10 @@
+## abstract_cybernetic_circuit_grid_routing_2d
+
+- **Date**: 2026-06-21
+- **Theme**: A high-tech cybernetic circuit board where neon energy pulses travel along a dense grid of orthogonal pathways.
+- **Technique**: Spawns pulses that travel along a grid. When they hit an intersection, they turn left, right, or go straight randomly. Draws the background traces dark and the pulses as bright glowing neon segments with a decaying trail.
+- **Description**: An animated 15s sequence of a generative abstract circuit routing.
+
 ## abstract_cellular_automata_bacterial_growth_2d
 
 - **Date**: 2026-06-21

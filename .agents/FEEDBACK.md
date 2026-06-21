@@ -1,3 +1,8 @@
+## abstract_cybernetic_circuit_grid_routing_2d
+
+- **Rating**: 
+- **Comment**: 
+
 ## abstract_cellular_automata_bacterial_growth_2d
 
 - **Rating**: 

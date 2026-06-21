@@ -1,3 +1,8 @@
+## generative_algorithmic_silk_strands_2d
+
+- **Rating**: 
+- **Comment**: 
+
 ## abstract_cellular_automata_crystals_3d
 
 - **Rating**: 

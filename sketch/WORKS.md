@@ -1,3 +1,10 @@
+## abstract_cybernetic_neon_matrix_rain_3d
+
+- **Date**: 2026-06-21
+- **Theme**: A 3D interpretation of "digital rain" (like the Matrix code), but instead of characters, we have glowing cubic voxels falling through a deep 3D grid, leaving fading trails.
+- **Technique**: Maintains a grid of vertical columns. Each column has a "droplet" that falls downwards at varying speeds. The droplet is a bright 3D box. The trail is made of smaller, fading boxes. The camera slowly pans around the falling grid.
+- **Description**: An animated 15s sequence of a generative 3D matrix rain.
+
 ## abstract_geometric_kaleidoscope_shatter_2d
 
 - **Date**: 2026-06-21

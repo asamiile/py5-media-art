@@ -1,3 +1,10 @@
+## generative_magnetic_field_lines_2d
+
+- **Date**: 2026-06-21
+- **Theme**: A visualization of intense magnetic fields where thousands of particles flow along dynamic, invisible force lines that shift over time, creating sweeping glowing paths.
+- **Technique**: A 2D vector field based on Perlin noise where the angle of the field changes gradually. Thousands of particles trace the field, leaving semi-transparent trails behind them to visualize the flow. Additive blending with neon colors.
+- **Description**: An animated 15s sequence of a generative magnetic field lines simulation.
+
 ## abstract_geometric_cityscape_wireframe_3d
 
 - **Date**: 2026-06-21

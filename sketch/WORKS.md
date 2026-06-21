@@ -1,3 +1,10 @@
+## abstract_cybernetic_mandala_pulse_2d
+
+- **Date**: 2026-06-21
+- **Theme**: A high-tech cybernetic mandala. Concentric rings of neon geometric shapes expand and contract to complex polyrhythms, creating a hypnotic digital pulse.
+- **Technique**: 2D procedural generation using polar coordinates, `py5.arc`, `py5.rect`, and `py5.triangle` functions. Complex rotation matrices that shift back and forth mapped to sine/cosine waves of different frequencies.
+- **Description**: An animated 15s sequence of a generative cybernetic mandala.
+
 ## abstract_mycelial_network_growth_3d
 
 - **Date**: 2026-06-21

@@ -1,3 +1,8 @@
+## abstract_cybernetic_mandala_pulse_2d
+
+- **Rating**: 
+- **Comment**: 
+
 ## abstract_mycelial_network_growth_3d
 
 - **Rating**: 

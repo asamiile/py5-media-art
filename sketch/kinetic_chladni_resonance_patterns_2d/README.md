@@ -1,11 +1,10 @@
 # kinetic_chladni_resonance_patterns_2d
 
-The visualization of sound frequencies visualizing as geometric patterns in sand on a vibrating metal plate (Chladni figures). As the invisible frequency sweeps, the intricate geometric patterns dissolve and reform into more complex standing waves.
+A simulation of Chladni resonance patterns where particles collect on nodal lines of a vibrating plate.
 
-## Technique
+![Preview](kinetic_chladni_resonance_patterns_2d_p1.png)
 
-Vectorized Numpy and py5's efficient point array drawing render 100,000 geometric particles mapping the gradient of the mathematical Chladni equation.
-
-## Output
-
-Animation (20s @ 60fps)
+## Details
+- **Date**: 2026-06-20
+- **Technique**: Thousands of particles whose velocities are influenced by gradients of a 2D Chladni standing wave equation.
+- **Format**: Animation (10s @ 60fps)

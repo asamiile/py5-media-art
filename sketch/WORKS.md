@@ -1,3 +1,10 @@
+## kinetic_iridescent_interference_ripples_2d
+
+- **Date**: 2026-06-21
+- **Theme**: An organic fluid-like visual simulating liquid crystal light interference.
+- **Technique**: Layering and remapping multiple 2D Perlin noise fields to calculate wave interference fringes, resulting in iridescent color bands.
+- **Description**: An animated 10s sequence of kinetic iridescent interference ripples.
+
 ## abstract_geometric_chromatic_aberration_2d
 
 - **Date**: 2026-06-21

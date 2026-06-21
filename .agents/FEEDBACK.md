@@ -1,3 +1,8 @@
+## kinetic_iridescent_interference_ripples_2d
+
+- **Rating**: 
+- **Comment**: 
+
 ## abstract_geometric_chromatic_aberration_2d
 
 - **Rating**: 

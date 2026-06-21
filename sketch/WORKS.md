@@ -1,3 +1,10 @@
+## ambient_bioluminescent_plankton_waves_3d
+
+- **Date**: 2026-06-21
+- **Theme**: Waves of bioluminescent plankton crashing in the dark, lighting up as they collide with invisible shores and obstacles.
+- **Technique**: A dense field of 3D particles that move according to sine waves and 3D Perlin noise. When particles move quickly or reach the crest of a wave, their brightness and size temporarily spike, simulating a bioluminescent flash. Additive blending in a dark background.
+- **Description**: An animated 15s sequence of generative bioluminescent plankton waves.
+
 ## generative_algorithmic_neural_network_sparks_2d
 
 - **Date**: 2026-06-21

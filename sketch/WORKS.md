@@ -1,3 +1,10 @@
+## generative_magnetic_ferrofluid_spikes_3d
+
+- **Date**: 2026-06-21
+- **Theme**: A 3D simulation of magnetic ferrofluid reacting to dynamic magnetic fields, forming intricate, glossy black spikes that pulse and shift.
+- **Technique**: 3D sphere with displaced vertices based on high-contrast 3D noise simulating magnetic field spikes, rendered with high specularity and neon under-glow.
+- **Description**: An animated 15s sequence of a generative 3D magnetic ferrofluid.
+
 ## abstract_luminescent_coral_reef_3d
 
 - **Date**: 2026-06-21

@@ -1,3 +1,8 @@
+## generative_magnetic_ferrofluid_spikes_3d
+
+- **Rating**: 
+- **Comment**: 
+
 ## abstract_luminescent_coral_reef_3d
 
 - **Rating**: 

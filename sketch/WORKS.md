@@ -1,3 +1,10 @@
+## abstract_luminescent_geometric_flower_2d
+
+- **Date**: 2026-06-21
+- **Theme**: A complex, unfolding geometric flower constructed of thin, glowing, neon outlines. As it spins, the petals multiply and expand using polar coordinates and sine waves.
+- **Technique**: Layering many `py5.curve_vertex` points within a polar math loop, driven by continuous frame_count variables. It uses additive blending to make the overlapping wireframes bright and saturated like a neon sign.
+- **Description**: An animated 15s sequence of a generative neon geometric flower.
+
 ## abstract_cybernetic_circuit_sparks_2d
 
 - **Date**: 2026-06-21

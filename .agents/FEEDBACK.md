@@ -1,3 +1,8 @@
+## abstract_fluid_magnetic_field_lines_2d
+
+- **Rating**: 
+- **Comment**: 
+
 ## generative_algorithmic_voronoi_crystal_shatter_2d
 
 - **Rating**: 

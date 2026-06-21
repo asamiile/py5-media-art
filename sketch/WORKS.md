@@ -1,3 +1,10 @@
+## generative_bioluminescent_jellyfish_umbrella_3d
+
+- **Date**: 2026-06-21
+- **Theme**: A hypnotic, rhythmic pulsing motion of an abstract jellyfish bell and long trailing tentacles rendered with glowing, translucent geometries.
+- **Technique**: 3D hemisphere modified by sine waves to create the pulsing swimming motion. Long trailing splines for tentacles using a history of positions with 3D noise adding organic waving. Additive blending in a dark background.
+- **Description**: An animated 15s sequence of a generative bioluminescent jellyfish.
+
 ## generative_quantum_superposition_fields_3d
 
 - **Date**: 2026-06-21

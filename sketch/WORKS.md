@@ -1,3 +1,10 @@
+## generative_turing_pattern_topography_2d
+
+- **Date**: 2026-06-21
+- **Theme**: Smooth, organic contours resembling Turing patterns, zebra stripes, or fingerprints that slowly drift and warp over time.
+- **Technique**: Calculates `sin(noise(x,y,t) * scale)` to create contour lines. Uses the sine thresholding to draw thick organic lines, mimicking the appearance of reaction-diffusion or cellular automata on a 2D grid.
+- **Description**: An animated 15s sequence of generative Turing pattern contours.
+
 ## generative_isometric_cityscape_pulse_3d
 
 - **Date**: 2026-06-21

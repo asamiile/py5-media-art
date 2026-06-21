@@ -1,3 +1,10 @@
+## generative_isometric_cityscape_build_3d
+
+- **Date**: 2026-06-21
+- **Theme**: An isometric view of an abstract cityscape growing, pulsating, and shrinking.
+- **Technique**: A 2D grid of 3D boxes where height and color are modulated by moving Perlin noise fields. Orthographic projection for isometric look.
+- **Description**: An animated 10s sequence of generative isometric cityscape building.
+
 ## abstract_generative_op_art_checkerboard_2d
 
 - **Date**: 2026-06-21

@@ -1,3 +1,10 @@
+## abstract_fluid_ink_drop_diffusion_2d
+
+- **Date**: 2026-06-21
+- **Theme**: An ink drop that slowly diffuses and spreads outward in a fluid-like manner, driven by a vector field.
+- **Technique**: Uses thousands of tiny semi-transparent particles that start at the center and are pushed outwards by random forces. The forces are correlated in space using Perlin noise to give it a swirling, fluid motion. We draw their trails with low opacity to simulate dark blue ink on off-white paper.
+- **Description**: An animated 15s sequence of a generative abstract fluid ink drop.
+
 ## abstract_cellular_automata_conways_game_of_life_2d
 
 - **Date**: 2026-06-21

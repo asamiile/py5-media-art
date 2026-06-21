@@ -1,3 +1,8 @@
+## abstract_cellular_automata_crystals_3d
+
+- **Rating**: 
+- **Comment**: 
+
 ## generative_quantum_interference_pattern_2d
 
 - **Rating**: 

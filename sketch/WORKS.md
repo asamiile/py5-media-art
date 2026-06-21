@@ -1,3 +1,10 @@
+## abstract_geometric_kaleidoscope_fractal_2d
+
+- **Date**: 2026-06-21
+- **Theme**: An intricate, constantly shifting geometric kaleidoscope that branches into smaller repeating shapes, creating a fractal-like illusion.
+- **Technique**: A recursive drawing algorithm that generates a 2D radial symmetry pattern. As time passes, the angles, sizes, and depth of recursion slowly change based on overlapping sine waves. The blending mode ensures colors overlap dynamically.
+- **Description**: An animated 15s sequence of a generative geometric kaleidoscope fractal.
+
 ## generative_algorithmic_crystalline_aurora_3d
 
 - **Date**: 2026-06-21

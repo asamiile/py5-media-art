@@ -1,3 +1,8 @@
+## abstract_cybernetic_mandala_pulse_3d
+
+- **Rating**: 
+- **Comment**: 
+
 ## generative_algorithmic_silk_strands_2d
 
 - **Rating**: 

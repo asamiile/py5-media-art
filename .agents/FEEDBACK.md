@@ -1,3 +1,8 @@
+## generative_liquid_metal_displacement_3d
+
+- **Rating**: 
+- **Comment**: 
+
 ## abstract_geometric_kaleidoscope_fractal_2d
 
 - **Rating**: 

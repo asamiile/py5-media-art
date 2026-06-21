@@ -1,3 +1,10 @@
+## generative_botanical_fractal_bloom_2d
+
+- **Date**: 2026-06-21
+- **Theme**: A delicate, intricate fractal plant that gracefully grows from the bottom up, smoothly unfolding its branches and blossoming at its tips.
+- **Technique**: Uses a recursive tree growth function where branches scale their length based on time elapsed relative to their depth in the tree. Uses a sine wave for wind sway. Blooms are drawn as additive glowing circles at the leaf nodes once they reach full growth.
+- **Description**: An animated 15s sequence of a generative abstract botanical fractal bloom.
+
 ## abstract_fluid_optical_flow_glitch_2d
 
 - **Date**: 2026-06-21

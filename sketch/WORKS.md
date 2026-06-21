@@ -1,3 +1,10 @@
+## abstract_luminescent_crystal_growth_3d
+
+- **Date**: 2026-06-21
+- **Theme**: Crystals growing from a central mass outward, refracting a light source.
+- **Technique**: Procedurally generated 3D polygonal crystals using Fibonacci sphere point generation for even distribution. The size and length of crystals change over time with sine-based growth patterns, and a dynamic point light source rotates around them to create specular highlights and depth. Additive blending with neon purple/pink colors.
+- **Description**: An animated 15s sequence of generative luminescent crystal growth.
+
 ## generative_magnetic_field_lines_2d
 
 - **Date**: 2026-06-21

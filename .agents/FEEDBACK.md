@@ -1,3 +1,8 @@
+## abstract_luminescent_crystal_growth_3d
+
+- **Rating**: 
+- **Comment**: 
+
 ## generative_magnetic_field_lines_2d
 
 - **Rating**: 

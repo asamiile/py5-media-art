@@ -1,3 +1,8 @@
+## abstract_cellular_automata_bacterial_growth_2d
+
+- **Rating**: 
+- **Comment**: 
+
 ## abstract_luminescent_geometric_spiral_3d
 
 - **Rating**: 

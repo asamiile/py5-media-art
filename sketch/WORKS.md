@@ -1,3 +1,10 @@
+## abstract_mycelial_network_growth_3d
+
+- **Date**: 2026-06-21
+- **Theme**: A 3D representation of mycelial networks growing and branching outward, lighting up with bio-luminescent pulses.
+- **Technique**: A recursive branching structure using py5's 3D capabilities. The branches grow outward over time (based on frame count) and the tips emit a soft glowing light using an attached particle system and animated sphere rendering.
+- **Description**: An animated 15s sequence of generative growing mycelial networks.
+
 ## generative_liquid_crystal_interference_2d
 
 - **Date**: 2026-06-21

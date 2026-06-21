@@ -1,3 +1,8 @@
+## abstract_mycelial_network_growth_3d
+
+- **Rating**: 
+- **Comment**: 
+
 ## generative_liquid_crystal_interference_2d
 
 - **Rating**: 

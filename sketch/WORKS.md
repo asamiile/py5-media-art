@@ -1,3 +1,10 @@
+## abstract_chromatic_ribbon_flow_2d
+
+- **Date**: 2026-06-21
+- **Theme**: Smooth, semi-transparent ribbons of vibrant chromatic colors flow gracefully across the screen, twisting and intertwining like silk in the wind.
+- **Technique**: A series of connected particles moving along complex sine wave paths, drawing continuous ribbons with bezier curves. The ribbons' colors cycle through the HSB spectrum, and their thickness varies based on Perlin noise, creating a 3D depth effect in 2D space.
+- **Description**: An animated 15s sequence of a generative chromatic ribbon flow.
+
 ## generative_liquid_metal_displacement_3d
 
 - **Date**: 2026-06-21

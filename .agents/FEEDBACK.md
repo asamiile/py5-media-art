@@ -1,3 +1,8 @@
+## abstract_chromatic_ribbon_flow_2d
+
+- **Rating**: 
+- **Comment**: 
+
 ## generative_liquid_metal_displacement_3d
 
 - **Rating**: 

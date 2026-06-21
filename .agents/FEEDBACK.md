@@ -1,3 +1,8 @@
+## abstract_cybernetic_mandala_tessellation_2d
+
+- **Rating**: 
+- **Comment**: 
+
 ## abstract_fluid_magnetic_field_lines_2d
 
 - **Rating**: 

@@ -1,3 +1,10 @@
+## abstract_geometric_kaleidoscope_shatter_2d
+
+- **Date**: 2026-06-21
+- **Theme**: A kaleidoscope made of shattered geometric glass shards that constantly rotate, reflect, and re-arrange themselves.
+- **Technique**: Generates a set of random polygons (shards). Draws them in a central slice. Uses a loop to apply rotational symmetry `py5.rotate(angle)` and reflect the drawing to create a kaleidoscope effect.
+- **Description**: An animated 15s sequence of a generative kaleidoscope shatter.
+
 ## generative_botanical_fractal_bloom_2d
 
 - **Date**: 2026-06-21

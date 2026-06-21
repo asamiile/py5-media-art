@@ -1,3 +1,8 @@
+## abstract_cellular_automata_conways_game_of_life_2d
+
+- **Rating**: 
+- **Comment**: 
+
 ## abstract_cybernetic_neon_matrix_rain_3d
 
 - **Rating**: 

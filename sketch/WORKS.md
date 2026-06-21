@@ -1,3 +1,10 @@
+## abstract_cellular_automata_conways_game_of_life_2d
+
+- **Date**: 2026-06-21
+- **Theme**: An aesthetically stylized Conway's Game of Life simulation that zooms out continuously while cells are born and die, creating complex gliders and still lifes.
+- **Technique**: Maintains a grid of cells. Updates the grid each frame using Conway's rules via fast Numpy operations. Renders the cells with varying hues based on their age, and slowly scales and translates the camera so the view zooms out over time.
+- **Description**: An animated 15s sequence of a generative conway's game of life simulation.
+
 ## abstract_cybernetic_neon_matrix_rain_3d
 
 - **Date**: 2026-06-21

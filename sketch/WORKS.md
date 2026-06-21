@@ -1,3 +1,10 @@
+## abstract_cybernetic_fractal_circuitry_2d
+
+- **Date**: 2026-06-21
+- **Theme**: Fractal geometry resembling a complex, glowing cybernetic circuit board.
+- **Technique**: Recursive subdivision of space using quadtrees, where edges glow with data streams.
+- **Description**: An animated 10s sequence of abstract cybernetic fractal circuitry.
+
 ## kinetic_iridescent_interference_ripples_2d
 
 - **Date**: 2026-06-21

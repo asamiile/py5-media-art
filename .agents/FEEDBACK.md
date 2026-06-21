@@ -1,3 +1,8 @@
+## abstract_cybernetic_fractal_circuitry_2d
+
+- **Rating**: 
+- **Comment**: 
+
 ## kinetic_iridescent_interference_ripples_2d
 
 - **Rating**: 

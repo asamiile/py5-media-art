@@ -1,3 +1,10 @@
+## generative_geometric_kaleidoscope_2d
+
+- **Date**: 2026-06-21
+- **Theme**: An intricate, infinitely zooming geometric kaleidoscope.
+- **Technique**: Polar coordinate mapping and recursive geometric shape rendering, producing an infinite zooming psychedelic illusion.
+- **Description**: An animated 10s sequence of a generative geometric kaleidoscope.
+
 ## generative_isometric_cityscape_build_3d
 
 - **Date**: 2026-06-21

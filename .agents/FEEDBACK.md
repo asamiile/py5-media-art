@@ -1,3 +1,8 @@
+## abstract_geometric_mandala_tessellation_2d
+
+- **Rating**: 
+- **Comment**: 
+
 ## generative_algorithmic_crystalline_growth_3d
 
 - **Rating**: 

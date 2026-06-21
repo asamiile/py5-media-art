@@ -1,3 +1,8 @@
+## abstract_luminescent_geometric_spiral_3d
+
+- **Rating**: 
+- **Comment**: 
+
 ## generative_turing_pattern_topography_2d
 
 - **Rating**: 

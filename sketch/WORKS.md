@@ -1,3 +1,10 @@
+## abstract_geometric_cityscape_wireframe_3d
+
+- **Date**: 2026-06-21
+- **Theme**: A high-tech futuristic city visualized as glowing 3D wireframe buildings that grow, shrink, and pulse to an unseen rhythm, with a camera flying over the abstract metropolis.
+- **Technique**: A grid of 3D boxes with `py5.no_fill()` and neon strokes, whose heights are determined by 3D Perlin noise. The camera moves continuously across the grid to simulate flight. Additive blending in a dark background.
+- **Description**: An animated 15s sequence of a generative geometric cityscape wireframe.
+
 ## generative_bioluminescent_jellyfish_umbrella_3d
 
 - **Date**: 2026-06-21

@@ -1,3 +1,8 @@
+## generative_algorithmic_crystalline_growth_3d
+
+- **Rating**: 
+- **Comment**: 
+
 ## abstract_cellular_division_organics_2d
 
 - **Rating**: 

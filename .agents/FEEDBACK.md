@@ -1,3 +1,8 @@
+## abstract_cellular_automata_belousov_zhabotinsky_2d
+
+- **Rating**: 
+- **Comment**: 
+
 ## abstract_cybernetic_circuit_board_routing_2d
 
 - **Rating**: 

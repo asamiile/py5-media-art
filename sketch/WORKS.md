@@ -1,3 +1,10 @@
+## abstract_fluid_ferrofluid_magnetic_spikes_3d
+
+- **Date**: 2026-06-21
+- **Theme**: A 3D simulation of a ferrofluid reacting to a magnetic field, forming sharp spikes that undulate and shift over time.
+- **Technique**: Generates a dense 3D sphere mesh. Deforms the vertices along their normals based on a 3D OpenSimplex noise field to create the characteristic spiked appearance of a ferrofluid. As the noise field translates over time, the spikes shift and animate. Drawn with dark shiny material.
+- **Description**: An animated 15s sequence of a generative abstract fluid ferrofluid magnetic spikes.
+
 ## abstract_cellular_automata_conway_game_of_life_3d
 
 - **Date**: 2026-06-21

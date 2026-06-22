@@ -1,3 +1,8 @@
+## abstract_fluid_ferrofluid_magnetic_spikes_3d
+
+- **Rating**: 
+- **Comment**: 
+
 ## abstract_cellular_automata_conway_game_of_life_3d
 
 - **Rating**: 

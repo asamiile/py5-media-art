@@ -1,3 +1,8 @@
+## abstract_cybernetic_neural_network_activation_3d
+
+- **Rating**: 
+- **Comment**: 
+
 ## generative_geometric_fractal_sierpinski_tetrahedron_3d
 
 - **Rating**: 

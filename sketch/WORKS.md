@@ -1,3 +1,10 @@
+## abstract_cybernetic_neural_network_activation_3d
+
+- **Date**: 2026-06-22
+- **Theme**: An animated 3D visualization of a neural network activation. Nodes connected by edges flash as "data" pulses through them.
+- **Technique**: Generates a 3D graph of nodes and edges in layers. Particles travel along the edges from the input layer to the output layer, activating nodes and causing them to pulse and glow brightly.
+- **Description**: An animated 15s sequence of an abstract cybernetic neural network activation 3D.
+
 ## generative_geometric_fractal_sierpinski_tetrahedron_3d
 
 - **Date**: 2026-06-21

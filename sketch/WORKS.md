@@ -1,3 +1,10 @@
+## generative_algorithmic_diffuse_reaction_reaction_diffusion_2d
+
+- **Date**: 2026-06-21
+- **Theme**: Reaction diffusion simulation using Gray-Scott model, simulating the complex patterns of biological morphogenesis (like animal stripes and spots).
+- **Technique**: Implements a Gray-Scott Reaction-Diffusion system on a 2D grid using numpy arrays and Laplacian convolution approximations. Scaled up and mapped to RGB channels to create fluid, cell-like organic patterns that split and merge.
+- **Description**: An animated 15s sequence of a generative algorithmic reaction diffusion.
+
 ## abstract_geometric_hexagonal_grid_folding_3d
 
 - **Date**: 2026-06-21

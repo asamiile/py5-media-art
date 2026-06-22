@@ -1,3 +1,10 @@
+## abstract_geometric_hexagonal_grid_folding_3d
+
+- **Date**: 2026-06-21
+- **Theme**: An animated 3D grid of hexagons that fold up and down like origami or a mechanical surface.
+- **Technique**: Generates a hexagonal grid in 3D. The center of each hexagon moves up/down in Z based on OpenSimplex noise. Individual hexagons tilt based on a 2D noise field. Rendered with directional lighting and shiny materials, it looks like a mechanical or futuristic folding surface.
+- **Description**: An animated 15s sequence of generative abstract geometric hexagonal grid folding.
+
 ## abstract_fluid_optical_fiber_interference_3d
 
 - **Date**: 2026-06-21

@@ -1,3 +1,8 @@
+## abstract_geometric_hexagonal_grid_folding_3d
+
+- **Rating**: 
+- **Comment**: 
+
 ## abstract_fluid_optical_fiber_interference_3d
 
 - **Rating**: 

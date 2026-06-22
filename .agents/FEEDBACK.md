@@ -1,3 +1,8 @@
+## generative_architectural_brutalism_3d
+
+- **Rating**: 
+- **Comment**: 
+
 ## abstract_cybernetic_particle_swarm_optimization_3d
 
 - **Rating**: 

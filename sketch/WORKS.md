@@ -1,3 +1,10 @@
+## generative_architectural_brutalism_3d
+
+- **Date**: 2026-06-22
+- **Theme**: A stark, brutalist concrete architecture that slowly shifts and reorganizes its colossal blocks in a void.
+- **Technique**: 3D recursive boxes with sharp directional lighting, simulating ambient occlusion and cast shadows on moving brutalist forms.
+- **Description**: An animated 15s sequence of a generative architectural brutalism structure in 3D.
+
 ## abstract_cybernetic_particle_swarm_optimization_3d
 
 - **Date**: 2026-06-22

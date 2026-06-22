@@ -1,3 +1,465 @@
+## abstract_cybernetic_particle_swarm_optimization_3d
+
+- **Date**: 2026-06-22
+- **Theme**: An animated 3D visualization of a particle swarm optimization algorithm. A swarm of particles searches for a moving global optimum in a 3D noise landscape, leaving glowing trails as they move.
+- **Technique**: Implements the classic PSO (Particle Swarm Optimization) algorithm in 3D. Each particle remembers its personal best position and is drawn towards both it and the global best position. The fitness landscape is dynamically generated using `py5.os_noise`, making the global optimum constantly shift in 3D space.
+- **Description**: An animated 15s sequence of an abstract cybernetic particle swarm optimization 3D.
+
+## abstract_cybernetic_neural_network_activation_3d
+
+- **Date**: 2026-06-22
+- **Theme**: An animated 3D visualization of a neural network activation. Nodes connected by edges flash as "data" pulses through them.
+- **Technique**: Generates a 3D graph of nodes and edges in layers. Particles travel along the edges from the input layer to the output layer, activating nodes and causing them to pulse and glow brightly.
+- **Description**: An animated 15s sequence of an abstract cybernetic neural network activation 3D.
+
+## generative_geometric_fractal_sierpinski_tetrahedron_3d
+
+- **Date**: 2026-06-21
+- **Theme**: A pulsing, rotating Sierpinski tetrahedron fractal in 3D. The inner sections shift in color based on their depth in the recursion.
+- **Technique**: Draws a 3D tetrahedron recursively using `py5.push_matrix` and `py5.pop_matrix`. The entire fractal rotates in 3D space, and a sine wave oscillates the distance between recursive parts, creating an expanding and contracting "breathing" effect.
+- **Description**: An animated 15s sequence of a generative geometric fractal Sierpinski tetrahedron 3D.
+
+## generative_algorithmic_maze_depth_first_search_2d
+
+- **Date**: 2026-06-21
+- **Theme**: A generative maze that builds itself using a randomized depth-first search algorithm. As the algorithm explores, the current path glows brightly and leaves a trail of walls behind.
+- **Technique**: Implements depth-first search on a grid. The algorithm maintains a stack of cells and processes multiple steps per frame for speed. The current stack is drawn with glowing colors, and finalized cells are drawn as walls. Includes a motion blur effect for visual flair.
+- **Description**: An animated 15s sequence of a generative algorithmic maze using depth-first search.
+
+## abstract_fluid_ferrofluid_magnetic_spikes_3d
+
+- **Date**: 2026-06-21
+- **Theme**: A 3D simulation of a ferrofluid reacting to a magnetic field, forming sharp spikes that undulate and shift over time.
+- **Technique**: Generates a dense 3D sphere mesh. Deforms the vertices along their normals based on a 3D OpenSimplex noise field to create the characteristic spiked appearance of a ferrofluid. As the noise field translates over time, the spikes shift and animate. Drawn with dark shiny material.
+- **Description**: An animated 15s sequence of a generative abstract fluid ferrofluid magnetic spikes.
+
+## abstract_cellular_automata_conway_game_of_life_3d
+
+- **Date**: 2026-06-21
+- **Theme**: An animated 3D visualization of Conway's Game of Life on a rotating grid. Instead of drawing it on a plane, we extrude each living cell as a glowing 3D box, and we stack previous generations beneath it or simply make the boxes transition smoothly.
+- **Technique**: Implements Conway's Game of Life on a 2D grid. Each cell has an "animation value" (float from 0 to 1) that approaches its current binary state over time. Draws a 3D box at each coordinate where the height and size depend on the animation value. The grid slowly rotates in 3D space with directional lighting.
+- **Description**: An animated 15s sequence of a generative abstract cellular automata Conway's Game of Life 3D.
+
+## abstract_cybernetic_quantum_tunneling_particles_3d
+
+- **Date**: 2026-06-21
+- **Theme**: An abstract visualization of quantum tunneling. Particles are trapped in a potential well (a glowing torus or cylinder) and occasionally "tunnel" out, shooting away with high energy trails.
+- **Technique**: Generates a central potential well using `py5.sphere` drawn as a transparent surface. A large number of particles bounce around inside the well. Each frame, they have a small probability of tunneling outside the well and flying away in random directions, leaving glowing, thick trails.
+- **Description**: An animated 15s sequence of a generative abstract cybernetic quantum tunneling particles.
+
+## generative_algorithmic_diffuse_reaction_reaction_diffusion_2d
+
+- **Date**: 2026-06-21
+- **Theme**: Reaction diffusion simulation using Gray-Scott model, simulating the complex patterns of biological morphogenesis (like animal stripes and spots).
+- **Technique**: Implements a Gray-Scott Reaction-Diffusion system on a 2D grid using numpy arrays and Laplacian convolution approximations. Scaled up and mapped to RGB channels to create fluid, cell-like organic patterns that split and merge.
+- **Description**: An animated 15s sequence of a generative algorithmic reaction diffusion.
+
+## abstract_geometric_hexagonal_grid_folding_3d
+
+- **Date**: 2026-06-21
+- **Theme**: An animated 3D grid of hexagons that fold up and down like origami or a mechanical surface.
+- **Technique**: Generates a hexagonal grid in 3D. The center of each hexagon moves up/down in Z based on OpenSimplex noise. Individual hexagons tilt based on a 2D noise field. Rendered with directional lighting and shiny materials, it looks like a mechanical or futuristic folding surface.
+- **Description**: An animated 15s sequence of generative abstract geometric hexagonal grid folding.
+
+## abstract_fluid_optical_fiber_interference_3d
+
+- **Date**: 2026-06-21
+- **Theme**: An abstract visualization resembling the interior of fiber optic cables. Glowing strands flow longitudinally in 3D, bending and twisting gently while interference patterns travel down them.
+- **Technique**: Generates multiple 3D curves running along the Z axis. Animates a camera moving through the strands over time to create a tunnel effect. Uses OpenSimplex noise to make the strands twist and uses a sine wave pulse for interference lighting patterns along the length of the strands.
+- **Description**: An animated 15s sequence of a generative abstract fluid optical fiber interference.
+
+## abstract_cellular_automata_belousov_zhabotinsky_2d
+
+- **Date**: 2026-06-21
+- **Theme**: A continuous Belousov-Zhabotinsky reaction simulation. This creates beautiful scrolling spiral waves of color that behave like a chemical clock.
+- **Technique**: Implements a simplified BZ reaction using a 2D cellular automata grid with 3 states (A, B, C) represented as floats. Each frame diffuses the states and applies the reaction rules. Maps A, B, C to RGB channels for psychedelic swirling patterns. Runs the simulation on a smaller grid and scales it up to 4K for performance.
+- **Description**: An animated 15s sequence of a generative Belousov-Zhabotinsky reaction cellular automata.
+
+## abstract_cybernetic_circuit_board_routing_2d
+
+- **Date**: 2026-06-21
+- **Theme**: A high-tech circuit board assembling itself. Traces shoot out from nodes, turn at 45 or 90 degree angles, and connect to other nodes. The traces glow with data pulses.
+- **Technique**: Spawns moving agents (traces) on a grid that follow orthogonal and diagonal paths, leaving trails. When traces hit existing paths, they stop. Draws glowing data pulses at the head of each active trace.
+- **Description**: An animated 15s sequence of generative abstract cybernetic circuit board routing.
+
+## generative_botanical_l-system_bonsai_2d
+
+- **Date**: 2026-06-21
+- **Theme**: A generative L-System drawing a complex bonsai tree over time. As it grows, it sprouts leaves that flutter in a simulated wind.
+- **Technique**: Generates the full L-System string using a custom axiom and rules. Draws the whole tree each frame, but animates the branch lengths and angles using a 2D noise field (wind) so the bonsai tree sways and its cherry blossom leaves flutter.
+- **Description**: An animated 15s sequence of a generative L-system botanical bonsai.
+
+## abstract_cybernetic_mandala_tessellation_2d
+
+- **Date**: 2026-06-21
+- **Theme**: A cybernetic mandala. Geometric shapes rotating and interlocking in perfect symmetry, but styled like neon glowing HUD elements instead of traditional patterns.
+- **Technique**: Builds concentric layers of geometry. Draws a single complex wedge of the mandala and repeats it 12 times radially using `py5.rotate`. Over time, the layers rotate in opposite directions and pulse with neon colors.
+- **Description**: An animated 15s sequence of a generative abstract cybernetic mandala.
+
+## abstract_fluid_magnetic_field_lines_2d
+
+- **Date**: 2026-06-21
+- **Theme**: A visualization of magnetic field lines. We'll have several "poles" (positive and negative) moving around. Particles represent iron filings that align to the vector field generated by these poles.
+- **Technique**: Places multiple magnetic poles with varying strengths and moves them slowly using Lissajous curves. Fills the screen with thousands of particles. Each frame, calculates the net magnetic force vector at the particle's position. Aligns the particle to that vector and moves it slightly. Trails form beautiful loops between the poles.
+- **Description**: An animated 15s sequence of a generative abstract fluid magnetic field lines.
+
+## generative_algorithmic_voronoi_crystal_shatter_2d
+
+- **Date**: 2026-06-21
+- **Theme**: A shattered crystal effect using a moving Voronoi diagram. The cell seeds move around slowly, and each polygonal cell is colored with vibrant jewel tones.
+- **Technique**: Uses `scipy.spatial.Voronoi` to compute polygons for moving points. Calculates the centroid of each polygon to pulse brightness based on a sine wave propagating from the center, creating a shimmering glass/crystal effect.
+- **Description**: An animated 15s sequence of a generative voronoi crystal shatter.
+
+## generative_algorithmic_geometric_spiral_phyllotaxis_2d
+
+- **Date**: 2026-06-21
+- **Theme**: A 2D animation based on the phyllotaxis pattern (sunflower seed arrangement), but using animated, rotating, glowing geometric shapes (like triangles) instead of simple dots. The pattern spirals outwards infinitely.
+- **Technique**: Generates positions using `r = c * sqrt(n)` and `theta = n * 137.5 degrees`. Each frame, offsets the `n` values to make it look like it's spiraling outward continuously. Draws rotating triangles whose size and brightness decrease outwards.
+- **Description**: An animated 15s sequence of a generative geometric phyllotaxis spiral.
+
+## abstract_cybernetic_wireframe_landscape_3d
+
+- **Date**: 2026-06-21
+- **Theme**: A retro-futuristic wireframe landscape, simulating an endless flight over a neon grid mountain range.
+- **Technique**: Generates a 2D array of heights using Perlin noise. The camera moves forward through the grid by shifting the "z" offset of the noise over time. Draws the terrain as a triangle strip using `py5.begin_shape(py5.TRIANGLE_STRIP)` with a neon pink wireframe and a synthwave sun in the background.
+- **Description**: An animated 15s sequence of a generative 3D wireframe landscape.
+
+## abstract_fluid_ink_drop_diffusion_2d
+
+- **Date**: 2026-06-21
+- **Theme**: An ink drop that slowly diffuses and spreads outward in a fluid-like manner, driven by a vector field.
+- **Technique**: Uses thousands of tiny semi-transparent particles that start at the center and are pushed outwards by random forces. The forces are correlated in space using Perlin noise to give it a swirling, fluid motion. We draw their trails with low opacity to simulate dark blue ink on off-white paper.
+- **Description**: An animated 15s sequence of a generative abstract fluid ink drop.
+
+## abstract_cellular_automata_conways_game_of_life_2d
+
+- **Date**: 2026-06-21
+- **Theme**: An aesthetically stylized Conway's Game of Life simulation that zooms out continuously while cells are born and die, creating complex gliders and still lifes.
+- **Technique**: Maintains a grid of cells. Updates the grid each frame using Conway's rules via fast Numpy operations. Renders the cells with varying hues based on their age, and slowly scales and translates the camera so the view zooms out over time.
+- **Description**: An animated 15s sequence of a generative conway's game of life simulation.
+
+## abstract_cybernetic_neon_matrix_rain_3d
+
+- **Date**: 2026-06-21
+- **Theme**: A 3D interpretation of "digital rain" (like the Matrix code), but instead of characters, we have glowing cubic voxels falling through a deep 3D grid, leaving fading trails.
+- **Technique**: Maintains a grid of vertical columns. Each column has a "droplet" that falls downwards at varying speeds. The droplet is a bright 3D box. The trail is made of smaller, fading boxes. The camera slowly pans around the falling grid.
+- **Description**: An animated 15s sequence of a generative 3D matrix rain.
+
+## abstract_geometric_kaleidoscope_shatter_2d
+
+- **Date**: 2026-06-21
+- **Theme**: A kaleidoscope made of shattered geometric glass shards that constantly rotate, reflect, and re-arrange themselves.
+- **Technique**: Generates a set of random polygons (shards). Draws them in a central slice. Uses a loop to apply rotational symmetry `py5.rotate(angle)` and reflect the drawing to create a kaleidoscope effect.
+- **Description**: An animated 15s sequence of a generative kaleidoscope shatter.
+
+## generative_botanical_fractal_bloom_2d
+
+- **Date**: 2026-06-21
+- **Theme**: A delicate, intricate fractal plant that gracefully grows from the bottom up, smoothly unfolding its branches and blossoming at its tips.
+- **Technique**: Uses a recursive tree growth function where branches scale their length based on time elapsed relative to their depth in the tree. Uses a sine wave for wind sway. Blooms are drawn as additive glowing circles at the leaf nodes once they reach full growth.
+- **Description**: An animated 15s sequence of a generative abstract botanical fractal bloom.
+
+## abstract_fluid_optical_flow_glitch_2d
+
+- **Date**: 2026-06-21
+- **Theme**: A glitch art inspired piece where multiple layers of noise drive pixel displacement to create an optical flow effect, simulating melting or smearing of bright chromatic colors.
+- **Technique**: Uses thousands of tiny semi-transparent particles that leave trails, driven by a vector field (flow field). The vector field changes over time and has sharp angular constraints to give a "glitchy" digital look instead of purely smooth organic curves.
+- **Description**: An animated 15s sequence of a generative abstract glitch optical flow.
+
+## generative_algorithmic_geometric_fractal_tree_3d
+
+- **Date**: 2026-06-21
+- **Theme**: A 3D fractal tree that grows and sways in the wind, made out of simple geometric primitives (boxes) that change color based on depth.
+- **Technique**: Uses a recursive function `branch(depth, length)` to draw a 3D tree. Applies `rotate_z(sin(time + depth))` at each level to create a swaying effect. Uses `py5.box()` for branches and varies color based on recursion depth.
+- **Description**: An animated 15s sequence of a generative 3D fractal tree.
+
+## abstract_cybernetic_circuit_grid_routing_2d
+
+- **Date**: 2026-06-21
+- **Theme**: A high-tech cybernetic circuit board where neon energy pulses travel along a dense grid of orthogonal pathways.
+- **Technique**: Spawns pulses that travel along a grid. When they hit an intersection, they turn left, right, or go straight randomly. Draws the background traces dark and the pulses as bright glowing neon segments with a decaying trail.
+- **Description**: An animated 15s sequence of a generative abstract circuit routing.
+
+## abstract_cellular_automata_bacterial_growth_2d
+
+- **Date**: 2026-06-21
+- **Theme**: A microscopic view of an abstract bacterial colony expanding. The "bacteria" are small capsules or circles that push each other apart, divide, and change color as they age.
+- **Technique**: Maintains a list of particles (bacteria). Each frame, they repel each other slightly using a spatial physics check. If they reach a certain age, they divide into two, pushing each other apart. Drawn as soft circles with membranes.
+- **Description**: An animated 15s sequence of a generative abstract bacterial colony.
+
+## abstract_luminescent_geometric_spiral_3d
+
+- **Date**: 2026-06-21
+- **Theme**: A 3D glowing spiral staircase structure that continuously unwinds. The structure is built of glowing cubes that fade out as they travel upwards.
+- **Technique**: Iterates over an array of boxes, calculating their angle, radius, and height based on their index. Uses the frame count to offset their index to create an infinite loop. Boxes pulse in width based on a sine wave.
+- **Description**: An animated 15s sequence of a generative glowing spiral.
+
+## generative_turing_pattern_topography_2d
+
+- **Date**: 2026-06-21
+- **Theme**: Smooth, organic contours resembling Turing patterns, zebra stripes, or fingerprints that slowly drift and warp over time.
+- **Technique**: Calculates `sin(noise(x,y,t) * scale)` to create contour lines. Uses the sine thresholding to draw thick organic lines, mimicking the appearance of reaction-diffusion or cellular automata on a 2D grid.
+- **Description**: An animated 15s sequence of generative Turing pattern contours.
+
+## generative_isometric_cityscape_pulse_3d
+
+- **Date**: 2026-06-21
+- **Theme**: An isometric view of a futuristic abstract city made of glowing blocks. The blocks pulse up and down based on a 2D noise field, simulating data traffic or energy flow across the grid.
+- **Technique**: Uses standard 3D rotation to simulate an isometric perspective. Renders a grid of 3D boxes. Modifies the height of each box based on a scrolling noise field and a radial distance sine wave to simulate sweeping energy pulses. Points with high energy emit a glowing neon hue.
+- **Description**: An animated 15s sequence of a generative isometric cityscape.
+
+## abstract_fluid_metallic_flow_3d
+
+- **Date**: 2026-06-21
+- **Theme**: A swirling, metallic liquid surface (like liquid mercury or gold). Waves of varying heights reflect lights, creating a highly dynamic organic texture.
+- **Technique**: Generates a dense 3D grid of vertices. The Z-coordinate of each vertex is displaced by 3D perlin noise. Uses `py5.ambient_light()`, `py5.directional_light()`, and `py5.specular()` to make the surface look shiny and metallic.
+- **Description**: An animated 15s sequence of generative fluid metallic flow.
+
+## abstract_cybernetic_neon_data_stream_2d
+
+- **Date**: 2026-06-21
+- **Theme**: A high-speed, vertical "Matrix-style" data stream, but abstract. Glowing bars of varying lengths drop down the screen at different speeds, leaving trails behind them. They occasionally branch or glitch.
+- **Technique**: Creates a `DataDrop` class that manages a vertical line segment dropping down. As it drops, it occasionally glitches left or right and flashes red. Uses a motion blur effect (drawing a low alpha black rectangle over the screen each frame instead of `py5.background()`).
+- **Description**: An animated 15s sequence of a falling neon data stream.
+
+## abstract_luminescent_geometric_spiderweb_2d
+
+- **Date**: 2026-06-21
+- **Theme**: An endless zooming view into a luminescent, infinitely complex spiderweb. The web geometry builds radially and connects points randomly with glowing neon lines.
+- **Technique**: Keeps an array of points forming a web. Over time, it uses scaling to slowly zoom into the center. It draws lines between points based on proximity using additive blending to create a glowing effect.
+- **Description**: An animated 15s sequence of a geometric zooming spiderweb.
+
+## generative_quantum_superposition_clouds_3d
+
+- **Date**: 2026-06-21
+- **Theme**: A dense, cloudy structure built from millions of tiny overlapping points in 3D space. The points follow probability clouds generated by complex noise functions, simulating quantum superposition states.
+- **Technique**: Generates points using spherical coordinates where the radius is modulated by 3D perlin noise. Using a very low alpha point render, it builds up dense volumetric shapes that look like electron clouds or nebulae.
+- **Description**: An animated 15s sequence of generative quantum superposition clouds in 3D.
+
+## abstract_geometric_mandala_tessellation_2d
+
+- **Date**: 2026-06-21
+- **Theme**: A flat, 2D interlocking geometric tessellation that continuously morphs and spins like a complex optical illusion mandala.
+- **Technique**: Divides the screen radially. Inside each radial segment, it draws a mirrored polygonal tessellation pattern. As time progresses, the radii, angles, and colors of the polygons shift using sine waves, creating a kaleidoscopic breathing effect.
+- **Description**: An animated 15s sequence of a generative mandala tessellation.
+
+## generative_algorithmic_crystalline_growth_3d
+
+- **Date**: 2026-06-21
+- **Theme**: A cluster of jagged 3D crystals growing and rotating.
+- **Technique**: Generates a random array of 3D box shapes, stretched along the Y-axis. Uses scaling with an easing function on the frame count so they appear to sprout out from the center over time. Adds point lights to give it a sharp, shiny 3D look.
+- **Description**: An animated 15s sequence of a generative 3D crystal growth.
+
+## abstract_cellular_division_organics_2d
+
+- **Date**: 2026-06-21
+- **Theme**: A microscopic, organic look resembling cellular division or petri dish growth. Soft, blobby shapes expand, split, and merge with each other over time.
+- **Technique**: Uses a 2D scalar field evaluated using 3D perlin noise (where Z is time). It thresholds the noise to draw filled shapes. Iterating over a grid, if noise > threshold, it draws a circle, effectively creating a marching-squares-like organic cellular structure.
+- **Description**: An animated 15s sequence of generative cellular organic division.
+
+## generative_topological_mesh_distortion_3d
+
+- **Date**: 2026-06-21
+- **Theme**: A high-contrast, glowing 3D mesh that distorts continuously, creating mountain-like peaks and valleys that roll across the surface like waves.
+- **Technique**: Generates a grid of vertices in 3D. It uses 2D perlin noise mapped to the Z-axis, driven by time so the noise moves across the grid over time. Using `py5.TRIANGLE_STRIP`, it renders the surface as a wireframe.
+- **Description**: An animated 15s sequence of a generative 3D topological mesh.
+
+## abstract_luminescent_geometric_flower_2d
+
+- **Date**: 2026-06-21
+- **Theme**: A complex, unfolding geometric flower constructed of thin, glowing, neon outlines. As it spins, the petals multiply and expand using polar coordinates and sine waves.
+- **Technique**: Layering many `py5.curve_vertex` points within a polar math loop, driven by continuous frame_count variables. It uses additive blending to make the overlapping wireframes bright and saturated like a neon sign.
+- **Description**: An animated 15s sequence of a generative neon geometric flower.
+
+## abstract_cybernetic_circuit_sparks_2d
+
+- **Date**: 2026-06-21
+- **Theme**: A high-speed cybernetic simulation where glowing sparks travel rapidly along a dense network of complex orthogonal circuit traces.
+- **Technique**: Generates an intricate orthogonal grid path network using active walkers that only turn 90 degrees. These "sparks" leave bright additive fading trails behind them, building a glowing circuit board map as they travel over the 15 seconds.
+- **Description**: An animated 15s sequence of generative cybernetic circuit sparks.
+
+## generative_fluid_chromatic_vortices_3d
+
+- **Date**: 2026-06-21
+- **Theme**: Smooth, swirling vortices of color flowing into and out of each other in a 3D field, mimicking colorful fluid dynamics.
+- **Technique**: Generates a 3D vector field based on perlin noise to direct thousands of colorful particles. The particles are drawn with low opacity using additive blending. When they move along the vector field, they naturally form swirling vortices.
+- **Description**: An animated 15s sequence of generative fluid chromatic vortices in 3D.
+
+## abstract_cybernetic_mandala_pulse_3d
+
+- **Date**: 2026-06-21
+- **Theme**: A 3D cybernetic mandala floating in a void. Concentric rings of detailed geometry slowly rotate in opposite directions. The geometry pulsates outward to a virtual beat.
+- **Technique**: Using 3D rotations, and drawing complex intersecting arcs, boxes, and lines arranged radially. The radius and scale of components throb rhythmically based on `py5.sin(frame_count)`. It uses an isometric camera projection to make it look like a technical schematic.
+- **Description**: An animated 15s sequence of a generative cybernetic mandala.
+
+## generative_algorithmic_silk_strands_2d
+
+- **Date**: 2026-06-21
+- **Theme**: Delicate, luminous strands of silk blowing in a virtual wind. They interweave and layer on top of each other, forming complex, undulating abstract fabrics that glow softly against a dark background.
+- **Technique**: A large number of particles trace paths across the screen. The angle of each particle is driven by a 3D noise field where time is the Z-axis, creating coherent, flowing wind patterns. Additive blending and very low opacity create the glowing, layered silk effect.
+- **Description**: An animated 15s sequence of generative silk strands.
+
+## abstract_cellular_automata_crystals_3d
+
+- **Date**: 2026-06-21
+- **Theme**: A 3D cellular automata system that grows and dies over time, forming geometric crystalline structures that assemble and disassemble in a void.
+- **Technique**: A sparse 3D grid where cells are instantiated as Py5 boxes based on a continuous noise threshold instead of discrete rules for visual smoothness. As time progresses, the noise field shifts, causing new crystalline blocks to appear and others to vanish, creating the illusion of a living, evolving geometric structure.
+- **Description**: An animated 15s sequence of abstract cellular automata crystals.
+
+## generative_quantum_interference_pattern_2d
+
+- **Date**: 2026-06-21
+- **Theme**: An intricate, mesmerizing visualization of quantum interference. Concentric ripples emanate from multiple moving points and overlap to create complex moiré patterns and vibrant interference fringes.
+- **Technique**: Using many concentric circles radiating from moving focal points. As these circles overlap with additive blending, bright interference patterns naturally emerge, simulating a pixel-shader-like effect.
+- **Description**: An animated 15s sequence of a generative quantum interference pattern.
+
+## ambient_volumetric_smoke_columns_3d
+
+- **Date**: 2026-06-21
+- **Theme**: Thick, dense columns of smoke slowly rising and interacting with each other in 3D space, lit from within by glowing embers.
+- **Technique**: A massive particle system where points are drawn as semi-transparent textures (using overlapping additive circles). They drift upwards, pushed laterally by 3D Perlin noise wind. Glowing "ember" particles occasionally spiral up through the smoke columns.
+- **Description**: An animated 15s sequence of an ambient volumetric smoke columns simulation.
+
+## abstract_chromatic_ribbon_flow_2d
+
+- **Date**: 2026-06-21
+- **Theme**: Smooth, semi-transparent ribbons of vibrant chromatic colors flow gracefully across the screen, twisting and intertwining like silk in the wind.
+- **Technique**: A series of connected particles moving along complex sine wave paths, drawing continuous ribbons with bezier curves. The ribbons' colors cycle through the HSB spectrum, and their thickness varies based on Perlin noise, creating a 3D depth effect in 2D space.
+- **Description**: An animated 15s sequence of a generative chromatic ribbon flow.
+
+## generative_liquid_metal_displacement_3d
+
+- **Date**: 2026-06-21
+- **Theme**: A reflective, viscous surface of liquid metal that constantly morphs and forms ripples, spikes, and waves in response to invisible forces.
+- **Technique**: A high-density 3D sphere mesh where vertex normals are pushed out by 3D Perlin noise to create shifting liquid spikes and craters. Metallic shaders with a directional light and ambient light give the specular reflections of molten metal.
+- **Description**: An animated 15s sequence of a generative liquid metal displacement simulation.
+
+## abstract_geometric_kaleidoscope_fractal_2d
+
+- **Date**: 2026-06-21
+- **Theme**: An intricate, constantly shifting geometric kaleidoscope that branches into smaller repeating shapes, creating a fractal-like illusion.
+- **Technique**: A recursive drawing algorithm that generates a 2D radial symmetry pattern. As time passes, the angles, sizes, and depth of recursion slowly change based on overlapping sine waves. The blending mode ensures colors overlap dynamically.
+- **Description**: An animated 15s sequence of a generative geometric kaleidoscope fractal.
+
+## generative_algorithmic_crystalline_aurora_3d
+
+- **Date**: 2026-06-21
+- **Theme**: A 3D landscape of crystalline structures that undulate and glow with the colors of an aurora borealis as invisible winds sweep over them.
+- **Technique**: A 3D mesh grid (terrain) displaced by moving Perlin noise. The vertices are drawn as translucent triangles. The color of each vertex depends on its height and the noise value, creating sweeping bands of green, cyan, and purple that resemble the northern lights.
+- **Description**: An animated 15s sequence of a generative crystalline aurora simulation.
+
+## abstract_cybernetic_circuit_board_maze_2d
+
+- **Date**: 2026-06-21
+- **Theme**: A high-tech digital circuit board dynamically drawing neon traces through a complex maze of components, pulsing with light as "data" packets travel across the screen.
+- **Technique**: A 2D grid-based random walk algorithm. Hundreds of "tracers" start at random nodes and navigate the grid, turning 90 degrees at random intervals. As they travel, they leave behind glowing paths. Additive blending in a dark background.
+- **Description**: An animated 15s sequence of a generative cybernetic circuit board maze.
+
+## ambient_bioluminescent_plankton_waves_3d
+
+- **Date**: 2026-06-21
+- **Theme**: Waves of bioluminescent plankton crashing in the dark, lighting up as they collide with invisible shores and obstacles.
+- **Technique**: A dense field of 3D particles that move according to sine waves and 3D Perlin noise. When particles move quickly or reach the crest of a wave, their brightness and size temporarily spike, simulating a bioluminescent flash. Additive blending in a dark background.
+- **Description**: An animated 15s sequence of generative bioluminescent plankton waves.
+
+## generative_algorithmic_neural_network_sparks_2d
+
+- **Date**: 2026-06-21
+- **Theme**: A 2D visualization of a dense neural network. Nodes pulse with energy and send electric sparks along the synapses to connected nodes, creating cascading waves of light.
+- **Technique**: A graph of nodes spread randomly across the screen. Lines are drawn between nearby nodes. A particle system generates "sparks" that travel along the edges from node to node. Additive blending makes the high-traffic nodes glow brightly.
+- **Description**: An animated 15s sequence of a generative algorithmic neural network sparks simulation.
+
+## abstract_luminescent_crystal_growth_3d
+
+- **Date**: 2026-06-21
+- **Theme**: Crystals growing from a central mass outward, refracting a light source.
+- **Technique**: Procedurally generated 3D polygonal crystals using Fibonacci sphere point generation for even distribution. The size and length of crystals change over time with sine-based growth patterns, and a dynamic point light source rotates around them to create specular highlights and depth. Additive blending with neon purple/pink colors.
+- **Description**: An animated 15s sequence of generative luminescent crystal growth.
+
+## generative_magnetic_field_lines_2d
+
+- **Date**: 2026-06-21
+- **Theme**: A visualization of intense magnetic fields where thousands of particles flow along dynamic, invisible force lines that shift over time, creating sweeping glowing paths.
+- **Technique**: A 2D vector field based on Perlin noise where the angle of the field changes gradually. Thousands of particles trace the field, leaving semi-transparent trails behind them to visualize the flow. Additive blending with neon colors.
+- **Description**: An animated 15s sequence of a generative magnetic field lines simulation.
+
+## abstract_geometric_cityscape_wireframe_3d
+
+- **Date**: 2026-06-21
+- **Theme**: A high-tech futuristic city visualized as glowing 3D wireframe buildings that grow, shrink, and pulse to an unseen rhythm, with a camera flying over the abstract metropolis.
+- **Technique**: A grid of 3D boxes with `py5.no_fill()` and neon strokes, whose heights are determined by 3D Perlin noise. The camera moves continuously across the grid to simulate flight. Additive blending in a dark background.
+- **Description**: An animated 15s sequence of a generative geometric cityscape wireframe.
+
+## generative_bioluminescent_jellyfish_umbrella_3d
+
+- **Date**: 2026-06-21
+- **Theme**: A hypnotic, rhythmic pulsing motion of an abstract jellyfish bell and long trailing tentacles rendered with glowing, translucent geometries.
+- **Technique**: 3D hemisphere modified by sine waves to create the pulsing swimming motion. Long trailing splines for tentacles using a history of positions with 3D noise adding organic waving. Additive blending in a dark background.
+- **Description**: An animated 15s sequence of a generative bioluminescent jellyfish.
+
+## generative_quantum_superposition_fields_3d
+
+- **Date**: 2026-06-21
+- **Theme**: A visualization of quantum superposition fields where particles exist in multiple probabilistic states simultaneously, rendered as interconnected glowing webs in a 3D space.
+- **Technique**: A network of 3D nodes that draw lines to their nearest neighbors if they are within a certain distance, simulating entanglement. The positions of the nodes jitter based on 3D noise to simulate superposition. Additive blending and neon coloring.
+- **Description**: An animated 15s sequence of a generative quantum superposition field.
+
+## abstract_cybernetic_mandala_pulse_2d
+
+- **Date**: 2026-06-21
+- **Theme**: A high-tech cybernetic mandala. Concentric rings of neon geometric shapes expand and contract to complex polyrhythms, creating a hypnotic digital pulse.
+- **Technique**: 2D procedural generation using polar coordinates, `py5.arc`, `py5.rect`, and `py5.triangle` functions. Complex rotation matrices that shift back and forth mapped to sine/cosine waves of different frequencies.
+- **Description**: An animated 15s sequence of a generative cybernetic mandala.
+
+## abstract_mycelial_network_growth_3d
+
+- **Date**: 2026-06-21
+- **Theme**: A 3D representation of mycelial networks growing and branching outward, lighting up with bio-luminescent pulses.
+- **Technique**: A recursive branching structure using py5's 3D capabilities. The branches grow outward over time (based on frame count) and the tips emit a soft glowing light using an attached particle system and animated sphere rendering.
+- **Description**: An animated 15s sequence of generative growing mycelial networks.
+
+## generative_liquid_crystal_interference_2d
+
+- **Date**: 2026-06-21
+- **Theme**: A 2D simulation of liquid crystal interference patterns, blending polarized light through organic, mathematically defined ripples that mimic cellular noise and wave interference.
+- **Technique**: A high-density 2D grid where pixel colors are calculated using multiple interacting py5.os_noise values offset by sine/cosine waves based on time to simulate phase shifts in polarized light.
+- **Description**: An animated 15s sequence of generative liquid crystal interference patterns.
+
+## abstract_fluid_chromatic_vortices_3d
+
+- **Date**: 2026-06-21
+- **Theme**: A swirling, high-density field of neon chromatic particles caught in rotating 3D vortices. As the particles spiral inward, they change colors forming a vibrant, abstract fluid-like simulation.
+- **Technique**: A large number of 3D particles updating their positions using multiple overlapping sine and cosine waves to create a vortex effect, mapped to a rainbow color palette with trails enabled by partial background clearing.
+- **Description**: An animated 15s sequence of generative swirling chromatic vortices.
+
+## ambient_deep_sea_hydrothermal_vents_3d
+
+- **Date**: 2026-06-21
+- **Theme**: A dark deep-sea environment where glowing hydrothermal vents spew neon energy particles into the cold water, creating organic blooming smoke trails.
+- **Technique**: 3D particle system emitting from base cylinders. Particles have upward velocity and slowly disperse via 3D Perlin noise to simulate underwater turbulence. Rendered with additive blending, fading to darkness as they cool off.
+- **Description**: An animated 15s sequence of generative deep-sea hydrothermal vents.
+
+## generative_cyber_fractal_glitch_cube_3d
+
+- **Date**: 2026-06-21
+- **Theme**: A glowing hypercube that recursively subdivides into smaller data cubes, glitching with chromatic aberration and shifting its geometry to the beat of an invisible clock.
+- **Technique**: 3D recursive boxes that rotate and scale down based on 3D noise and sine waves, with random glitches disrupting the position and colors using py5 blend modes.
+- **Description**: An animated 15s sequence of a generative 3D cybernetic fractal glitch cube.
+
+## generative_magnetic_ferrofluid_spikes_3d
+
+- **Date**: 2026-06-21
+- **Theme**: A 3D simulation of magnetic ferrofluid reacting to dynamic magnetic fields, forming intricate, glossy black spikes that pulse and shift.
+- **Technique**: 3D sphere with displaced vertices based on high-contrast 3D noise simulating magnetic field spikes, rendered with high specularity and neon under-glow.
+- **Description**: An animated 15s sequence of a generative 3D magnetic ferrofluid.
+
+## abstract_luminescent_coral_reef_3d
+
+- **Date**: 2026-06-21
+- **Theme**: A glowing, ethereal coral reef simulation where polyps pulse and sway.
+- **Technique**: 3D recursive branching using cylinders and spheres, governed by a 3D Perlin noise vector field for swaying, with additive blending and neon color maps.
+- **Description**: An animated 15s sequence of a generative 3D coral reef.
+
 ## generative_geometric_kaleidoscope_2d
 
 - **Date**: 2026-06-21

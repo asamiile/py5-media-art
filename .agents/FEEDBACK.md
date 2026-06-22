@@ -1,3 +1,8 @@
+## generative_geometric_fractal_sierpinski_tetrahedron_3d
+
+- **Rating**: 
+- **Comment**: 
+
 ## generative_algorithmic_maze_depth_first_search_2d
 
 - **Rating**: 

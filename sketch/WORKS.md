@@ -1,3 +1,10 @@
+## generative_geometric_fractal_sierpinski_tetrahedron_3d
+
+- **Date**: 2026-06-21
+- **Theme**: A pulsing, rotating Sierpinski tetrahedron fractal in 3D. The inner sections shift in color based on their depth in the recursion.
+- **Technique**: Draws a 3D tetrahedron recursively using `py5.push_matrix` and `py5.pop_matrix`. The entire fractal rotates in 3D space, and a sine wave oscillates the distance between recursive parts, creating an expanding and contracting "breathing" effect.
+- **Description**: An animated 15s sequence of a generative geometric fractal Sierpinski tetrahedron 3D.
+
 ## generative_algorithmic_maze_depth_first_search_2d
 
 - **Date**: 2026-06-21

@@ -1,3 +1,8 @@
+## abstract_cybernetic_quantum_tunneling_particles_3d
+
+- **Rating**: 
+- **Comment**: 
+
 ## generative_algorithmic_diffuse_reaction_reaction_diffusion_2d
 
 - **Rating**: 

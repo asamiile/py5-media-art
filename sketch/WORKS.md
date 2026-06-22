@@ -1,3 +1,10 @@
+## kinetic_luminescent_glass_spheres_3d
+
+- **Date**: 2026-06-22
+- **Theme**: An array of fragile, luminescent glass spheres colliding in slow motion in a zero-gravity environment, refracting light through their surfaces.
+- **Technique**: 3D spheres with highly specular materials and low opacity, bouncing off each other within a bounding box. A moving point light creates sharp reflections.
+- **Description**: An animated 15s sequence of kinetic luminescent glass spheres colliding.
+
 ## generative_architectural_brutalism_3d
 
 - **Date**: 2026-06-22

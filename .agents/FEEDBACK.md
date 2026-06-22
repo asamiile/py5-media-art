@@ -1,3 +1,8 @@
+## kinetic_luminescent_glass_spheres_3d
+
+- **Rating**: 
+- **Comment**: 
+
 ## generative_architectural_brutalism_3d
 
 - **Rating**: 

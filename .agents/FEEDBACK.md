@@ -1,3 +1,8 @@
+## generative_algorithmic_maze_depth_first_search_2d
+
+- **Rating**: 
+- **Comment**: 
+
 ## abstract_fluid_ferrofluid_magnetic_spikes_3d
 
 - **Rating**: 

@@ -1,3 +1,8 @@
+## abstract_fluid_smoke_rings_3d
+
+- **Rating**: 
+- **Comment**: 
+
 ## abstract_biological_cell_division_2d
 
 - **Rating**: 

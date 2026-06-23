@@ -1,3 +1,10 @@
+## abstract_fluid_smoke_rings_3d
+
+- **Date**: 2026-06-23
+- **Theme**: Volumetric smoke rings (toroids) that slowly drift through a 3D fluid field, intersecting and disturbing each other's flow.
+- **Technique**: A particle system where points are emitted along moving torus equations. The particles drift through a 3D noise field over time and fade out.
+- **Description**: An animated 15s sequence of abstract volumetric fluid smoke rings.
+
 ## abstract_biological_cell_division_2d
 
 - **Date**: 2026-06-22

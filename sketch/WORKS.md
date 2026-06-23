@@ -1,3 +1,10 @@
+## ambient_fractal_dandelion_dispersion_3d
+
+- **Date**: 2026-06-23
+- **Theme**: A fractal dandelion made of luminous seeds blowing apart in a slow-motion wind field.
+- **Technique**: A 3D sphere packing setup that explodes outward. Each seed is a tiny recursive structure driven by a 3D vector field.
+- **Description**: An animated 15s sequence of an ambient fractal dandelion dispersion.
+
 ## generative_magnetic_core_containment_3d
 
 - **Date**: 2026-06-23

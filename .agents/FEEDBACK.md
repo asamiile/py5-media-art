@@ -1,3 +1,8 @@
+## ambient_fractal_dandelion_dispersion_3d
+
+- **Rating**: 
+- **Comment**: 
+
 ## generative_magnetic_core_containment_3d
 
 - **Rating**: 

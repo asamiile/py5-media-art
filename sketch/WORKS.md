@@ -1,3 +1,10 @@
+## ambient_holographic_data_nebula_3d
+
+- **Date**: 2026-06-23
+- **Theme**: A swirling, glowing nebula made entirely of flowing data packets and geometric light paths.
+- **Technique**: A 3D particle system constrained by multiple layered Perlin noise fields with connected nearest neighbors.
+- **Description**: An animated 15s sequence of an ambient holographic data nebula in 3D.
+
 ## ambient_fractal_dandelion_dispersion_3d
 
 - **Date**: 2026-06-23

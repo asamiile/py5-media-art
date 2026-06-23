@@ -1,3 +1,10 @@
+## generative_luminescent_geometric_bloom_2d
+
+- **Date**: 2026-06-23
+- **Theme**: A glowing geometric flower that slowly unfolds and blooms symmetrically.
+- **Technique**: Polar coordinates with multiple recursive layers rotating in opposite directions with additive blending.
+- **Description**: An animated 15s sequence of a generative luminescent geometric bloom.
+
 ## ambient_holographic_data_nebula_3d
 
 - **Date**: 2026-06-23

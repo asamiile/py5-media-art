@@ -1,3 +1,10 @@
+## generative_magnetic_core_containment_3d
+
+- **Date**: 2026-06-23
+- **Theme**: A high-energy magnetic containment field holding a violently shifting plasma core.
+- **Technique**: 3D torus rings combined with a dense particle system constrained by a boundary distance function and deformed by 3D Perlin noise.
+- **Description**: An animated 15s sequence of generative magnetic core containment in 3D.
+
 ## ambient_subatomic_particle_collisions_3d
 
 - **Date**: 2026-06-23

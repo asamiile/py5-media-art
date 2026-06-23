@@ -1,3 +1,8 @@
+## generative_magnetic_core_containment_3d
+
+- **Rating**: 
+- **Comment**: 
+
 ## ambient_subatomic_particle_collisions_3d
 
 - **Rating**: 

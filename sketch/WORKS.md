@@ -1,3 +1,10 @@
+## generative_algorithmic_reaction_diffusion_cellular_automata_2d
+
+- **Date**: 2026-06-24
+- **Theme**: A continuous cellular automata simulating reaction-diffusion, creating intricate zebra stripes and fingerprint-like patterns that evolve and merge smoothly, glowing in vibrant colors.
+- **Technique**: A numerical approximation of the Gray-Scott reaction-diffusion model, accelerated with numpy, dynamically varying feed/kill rates across space to create morphing organic patterns.
+- **Description**: An animated 15s sequence of generative algorithmic reaction diffusion cellular automata in 2D.
+
 ## abstract_geometric_chromatic_aberration_kaleidoscope_2d
 
 - **Date**: 2026-06-24

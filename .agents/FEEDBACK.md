@@ -1,3 +1,8 @@
+## generative_algorithmic_reaction_diffusion_cellular_automata_2d
+
+- **Rating**: 
+- **Comment**: 
+
 ## abstract_geometric_chromatic_aberration_kaleidoscope_2d
 
 - **Rating**: 

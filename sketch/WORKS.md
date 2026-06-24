@@ -1,3 +1,10 @@
+## abstract_generative_neon_circuit_board_2d
+
+- **Date**: 2026-06-24
+- **Theme**: A labyrinth of neon circuit board traces generating dynamically across the canvas. It resembles a cyberpunk city map or a dense microprocessor layout being built in real-time.
+- **Technique**: A grid-based procedural generation system where lines grow from seeds, moving orthogonally and leaving glowing trails. When they hit other trails or bounds, they create a bright node and spawn new branches.
+- **Description**: An animated 15s sequence of a generative neon circuit board in 2D.
+
 ## generative_algorithmic_phyllotaxis_spirals_2d
 
 - **Date**: 2026-06-24

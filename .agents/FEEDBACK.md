@@ -1,3 +1,28 @@
+## generative_luminescent_geometric_bloom_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## ambient_holographic_data_nebula_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## ambient_fractal_dandelion_dispersion_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## generative_magnetic_core_containment_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## ambient_subatomic_particle_collisions_3d
+
+- **Rating**: 
+- **Comment**: 
+
 ## abstract_fluid_smoke_rings_3d
 
 - **Rating**: 

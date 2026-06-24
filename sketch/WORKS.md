@@ -1,3 +1,38 @@
+## generative_luminescent_geometric_bloom_2d
+
+- **Date**: 2026-06-23
+- **Theme**: A glowing geometric flower that slowly unfolds and blooms symmetrically.
+- **Technique**: Polar coordinates with multiple recursive layers rotating in opposite directions with additive blending.
+- **Description**: An animated 15s sequence of a generative luminescent geometric bloom.
+
+## ambient_holographic_data_nebula_3d
+
+- **Date**: 2026-06-23
+- **Theme**: A swirling, glowing nebula made entirely of flowing data packets and geometric light paths.
+- **Technique**: A 3D particle system constrained by multiple layered Perlin noise fields with connected nearest neighbors.
+- **Description**: An animated 15s sequence of an ambient holographic data nebula in 3D.
+
+## ambient_fractal_dandelion_dispersion_3d
+
+- **Date**: 2026-06-23
+- **Theme**: A fractal dandelion made of luminous seeds blowing apart in a slow-motion wind field.
+- **Technique**: A 3D sphere packing setup that explodes outward. Each seed is a tiny recursive structure driven by a 3D vector field.
+- **Description**: An animated 15s sequence of an ambient fractal dandelion dispersion.
+
+## generative_magnetic_core_containment_3d
+
+- **Date**: 2026-06-23
+- **Theme**: A high-energy magnetic containment field holding a violently shifting plasma core.
+- **Technique**: 3D torus rings combined with a dense particle system constrained by a boundary distance function and deformed by 3D Perlin noise.
+- **Description**: An animated 15s sequence of generative magnetic core containment in 3D.
+
+## ambient_subatomic_particle_collisions_3d
+
+- **Date**: 2026-06-23
+- **Theme**: A visualization of a particle accelerator. High-energy particles collide in the center of the screen, creating showers of smaller glowing subatomic particles that spiral outwards due to abstract magnetic fields.
+- **Technique**: A 3D particle system with parent-child decay. Particles update velocity based on cross products with a Z-axis magnetic field vector, causing spiraling, along with 3D noise for turbulence. Rendered with additive blending.
+- **Description**: An animated sequence of abstract subatomic particle collisions.
+
 ## abstract_fluid_smoke_rings_3d
 
 - **Date**: 2026-06-23

@@ -1,3 +1,8 @@
+## generative_liquid_crystal_birefringence_2d
+
+- **Rating**: 
+- **Comment**: 
+
 ## generative_algorithmic_reaction_diffusion_cellular_automata_2d
 
 - **Rating**: 

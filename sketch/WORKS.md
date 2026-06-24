@@ -1,3 +1,31 @@
+## abstract_fluid_smoke_rings_3d
+
+- **Date**: 2026-06-23
+- **Theme**: Volumetric smoke rings (toroids) that slowly drift through a 3D fluid field, intersecting and disturbing each other's flow.
+- **Technique**: A particle system where points are emitted along moving torus equations. The particles drift through a 3D noise field over time and fade out.
+- **Description**: An animated 15s sequence of abstract volumetric fluid smoke rings.
+
+## abstract_biological_cell_division_2d
+
+- **Date**: 2026-06-22
+- **Theme**: Abstract representation of cellular division (mitosis) in a fluid environment.
+- **Technique**: Soft metaball-like shapes generated using `py5.curve_vertex` and `py5.os_noise`. As time progresses, a sine wave deformation simulates the cell pinching in the middle and stretching apart before division.
+- **Description**: An animated 15s sequence of abstract biological cell division.
+
+## kinetic_luminescent_glass_spheres_3d
+
+- **Date**: 2026-06-22
+- **Theme**: An array of fragile, luminescent glass spheres colliding in slow motion in a zero-gravity environment, refracting light through their surfaces.
+- **Technique**: 3D spheres with highly specular materials and low opacity, bouncing off each other within a bounding box. A moving point light creates sharp reflections.
+- **Description**: An animated 15s sequence of kinetic luminescent glass spheres colliding.
+
+## generative_architectural_brutalism_3d
+
+- **Date**: 2026-06-22
+- **Theme**: A stark, brutalist concrete architecture that slowly shifts and reorganizes its colossal blocks in a void.
+- **Technique**: 3D recursive boxes with sharp directional lighting, simulating ambient occlusion and cast shadows on moving brutalist forms.
+- **Description**: An animated 15s sequence of a generative architectural brutalism structure in 3D.
+
 ## abstract_cybernetic_particle_swarm_optimization_3d
 
 - **Date**: 2026-06-22

@@ -1,3 +1,23 @@
+## abstract_fluid_smoke_rings_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## abstract_biological_cell_division_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_luminescent_glass_spheres_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## generative_architectural_brutalism_3d
+
+- **Rating**: 
+- **Comment**: 
+
 ## abstract_cybernetic_particle_swarm_optimization_3d
 
 - **Rating**: 

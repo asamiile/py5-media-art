@@ -1,3 +1,10 @@
+## generative_liquid_neon_glitch_topography_2d
+
+- **Date**: 2026-06-24
+- **Theme**: A 2D topographical landscape made of liquid neon that glitches out, with sharp geometric displacement simulating digital corruption flowing across organic waves.
+- **Technique**: A grid of lines drawn as 2D noise topography. Over time, the noise field shifts to simulate flowing liquid. At random intervals, specific vertices experience sharp displacement spikes mimicking digital glitching.
+- **Description**: An animated 15s sequence of a generative liquid neon glitch topography.
+
 ## generative_luminescent_geometric_bloom_2d
 
 - **Date**: 2026-06-23

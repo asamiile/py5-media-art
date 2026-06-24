@@ -1,3 +1,10 @@
+## abstract_cybernetic_optical_fiber_datastreams_2d
+
+- **Date**: 2026-06-24
+- **Theme**: Thousands of fine glowing optical fibers flowing in a bundle, transmitting neon pulses of data that snake across the screen in 2D space using fluid curves.
+- **Technique**: A particle system where particles leave trailing lines with low opacity. The angle of movement is driven by a 2D Perlin noise flow field, creating coherent sweeping curves.
+- **Description**: An animated 15s sequence of abstract cybernetic optical fiber datastreams in 2D.
+
 ## generative_liquid_neon_glitch_topography_2d
 
 - **Date**: 2026-06-24

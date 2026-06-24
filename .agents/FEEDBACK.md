@@ -1,3 +1,8 @@
+## abstract_geometric_chromatic_aberration_kaleidoscope_2d
+
+- **Rating**: 
+- **Comment**: 
+
 ## abstract_generative_neon_circuit_board_2d
 
 - **Rating**: 

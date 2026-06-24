@@ -1,3 +1,10 @@
+## abstract_geometric_chromatic_aberration_kaleidoscope_2d
+
+- **Date**: 2026-06-24
+- **Theme**: A kaleidoscope of sharp interlocking geometric shards slowly rotating, with a simulated lens chromatic aberration effect (RGB separation) at the edges.
+- **Technique**: Additive blending of independent red, green, and blue shard layers. The radial distance controls the spatial separation of the RGB channels, simulating lens distortion.
+- **Description**: An animated 15s sequence of an abstract geometric chromatic aberration kaleidoscope in 2D.
+
 ## abstract_generative_neon_circuit_board_2d
 
 - **Date**: 2026-06-24

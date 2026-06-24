@@ -1,3 +1,8 @@
+## abstract_geometric_hexagonal_interference_2d
+
+- **Rating**: 
+- **Comment**: 
+
 ## abstract_cybernetic_optical_fiber_datastreams_2d
 
 - **Rating**: 

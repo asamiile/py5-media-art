@@ -1,3 +1,10 @@
+## abstract_geometric_hexagonal_interference_2d
+
+- **Date**: 2026-06-24
+- **Theme**: A pulsing, shifting grid of hexagons that overlap to create moiré interference patterns, with a sweeping neon gradient passing over them.
+- **Technique**: Generating a dense 2D hexagonal grid and drawing multiple layers of slightly offset hexagons that rotate slowly in opposite directions. The interference creates larger-scale optical illusions.
+- **Description**: An animated 15s sequence of abstract geometric hexagonal interference in 2D.
+
 ## abstract_cybernetic_optical_fiber_datastreams_2d
 
 - **Date**: 2026-06-24

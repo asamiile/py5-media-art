@@ -1,3 +1,8 @@
+## generative_kinetic_cellular_automata_2d
+
+- **Rating**: 
+- **Comment**: 
+
 ## generative_kinetic_harmonograph_pendulum_2d
 
 - **Rating**: 
@@ -989,7 +994,7 @@
 
 ## cybernetic_fluid_simulation_grid_2d
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 

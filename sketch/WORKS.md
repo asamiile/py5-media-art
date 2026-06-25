@@ -1,3 +1,10 @@
+## generative_kinetic_cellular_automata_2d
+
+- **Date**: 2026-06-25
+- **Theme**: A continuous 2D cellular automata generating hypnotic, propagating wave patterns.
+- **Technique**: Cyclic Cellular Automata evaluated with NumPy, producing spiral waves mapped to a shifting color spectrum.
+- **Description**: An animated 15s sequence of cascading cellular waves.
+
 ## generative_kinetic_harmonograph_pendulum_2d
 
 - **Date**: 2026-06-25

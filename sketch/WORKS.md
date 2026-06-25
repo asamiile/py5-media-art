@@ -1,3 +1,10 @@
+## generative_kinetic_harmonograph_pendulum_2d
+
+- **Date**: 2026-06-25
+- **Theme**: A simulation of a complex mechanical harmonograph with multiple coupled pendulums drawing a continuous overlapping curve.
+- **Technique**: Parametric equations mapping multiple decaying sine waves, drawn incrementally over 15 seconds.
+- **Description**: An animated 15s sequence of a complex harmonograph curve drawing itself.
+
 ## generative_algorithmic_voronoi_shatter_2d
 
 - **Date**: 2026-06-25

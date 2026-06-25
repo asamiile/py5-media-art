@@ -1,3 +1,10 @@
+## generative_algorithmic_voronoi_shatter_2d
+
+- **Date**: 2026-06-25
+- **Theme**: A geometric field fracturing into a Voronoi diagram that dynamically shifts over time.
+- **Technique**: Uses `scipy.spatial.Voronoi` and Perlin noise to drive point motion, with center-weighted stroke rendering.
+- **Description**: An animated 15s sequence of a fracturing geometric field.
+
 ## generative_lsystem_space_filling_curve_2d
 
 - **Date**: 2026-06-25

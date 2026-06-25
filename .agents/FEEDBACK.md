@@ -1,3 +1,8 @@
+## generative_algorithmic_voronoi_shatter_2d
+
+- **Rating**: 
+- **Comment**: 
+
 ## generative_lsystem_space_filling_curve_2d
 
 - **Rating**: 
@@ -973,114 +978,46 @@
 
 ## ambient_bioluminescent_fractal_spores_3d
 
-### Ratings
-
-| Axis | Score |
-| :--- | :--- |
-| Originality |  |
-| Visual Impact |  |
-| Technique |  |
-| Concept |  |
-| **Average** |  |
-
-### Comments
-
+- **Rating**: OK.
+- **Comment**: 
 
 
 ## cybernetic_fluid_simulation_grid_2d
 
-### Ratings
-
-| Axis | Score |
-| :--- | :--- |
-| Originality |  |
-| Visual Impact |  |
-| Technique |  |
-| Concept |  |
-| **Average** |  |
-
-### Comments
-
+- **Rating**: 
+- **Comment**: 
 
 
 ## generative_lissajous_knot_matrix_3d
 
-### Ratings
-
-| Axis | Score |
-| :--- | :--- |
-| Originality |  |
-| Visual Impact |  |
-| Technique |  |
-| Concept |  |
-| **Average** |  |
-
-### Comments
+- **Rating**: 
+- **Comment**: 
 
 
 
 ## generative_vector_flow_field_topography_2d
 
-### Ratings
-
-| Axis | Score |
-| :--- | :--- |
-| Originality |  |
-| Visual Impact |  |
-| Technique |  |
-| Concept |  |
-| **Average** |  |
-
-### Comments
-
+- **Rating**: 
+- **Comment**: 
 
 
 ## generative_architectural_wireframe_city_3d
 
-### Ratings
-
-| Axis | Score |
-| :--- | :--- |
-| Originality |  |
-| Visual Impact |  |
-| Technique |  |
-| Concept |  |
-| **Average** |  |
-
-### Comments
-
+- **Rating**: 
+- **Comment**: 
 
 
 ## generative_magnetic_field_lines_3d
 
-### Ratings
-
-| Axis | Score |
-| :--- | :--- |
-| Originality |  |
-| Visual Impact |  |
-| Technique |  |
-| Concept |  |
-| **Average** |  |
-
-### Comments
+- **Rating**: 
+- **Comment**: 
 
 
 
 ## cybernetic_bacterial_colony_growth_2d
 
-### Ratings
-
-| Axis | Score |
-| :--- | :--- |
-| Originality |  |
-| Visual Impact |  |
-| Technique |  |
-| Concept |  |
-| **Average** |  |
-
-### Comments
-
+- **Rating**: 
+- **Comment**: 
 
 
 ## kinetic_neural_web_weaving_3d

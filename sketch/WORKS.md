@@ -1,3 +1,10 @@
+## generative_fbm_domain_warping_2d
+
+- **Date**: 2026-06-25
+- **Theme**: Liquid neon currents shaped by layered fractal noise, representing an abstract topographic map or magnetic fluid.
+- **Technique**: Fractional Brownian Motion (fBM) domain warping applied to a dense 2D particle system.
+- **Description**: An animated 15s sequence of fluid currents.
+
 ## generative_reaction_diffusion_cellular_growth_2d
 
 - **Date**: 2026-06-25

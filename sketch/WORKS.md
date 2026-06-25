@@ -6814,3 +6814,10 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Theme**: Thousands of semi-transparent neon particles flowing across the screen driven by a 2D vector field based on Simplex noise, creating a fluid dynamic optical flow effect.
 - **Technique**: Generates a 2D vector field using `py5.os_noise` to govern the velocity and trajectory of thousands of point particles. A motion blur effect is created by drawing a low-opacity rectangle over the frame rather than clearing the background.
 - **Description**: An animated sequence of generative optical flow particles in 2D.
+
+## generative_sacred_geometry_fractal_bloom_2d
+
+- **Date**: 2026-06-25
+- **Theme**: A neon-colored, geometric fractal bloom that pulses and grows recursively, reminiscent of sacred geometry and mystical mandalas.
+- **Technique**: Recursive tree-branching algorithm drawing lines outward in a radial pattern. The length of the branches pulses using a sine wave, and the entire structure is rendered with additive blending and motion blur.
+- **Description**: An animated sequence of a generative sacred geometry fractal bloom.

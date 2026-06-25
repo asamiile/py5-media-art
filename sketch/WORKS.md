@@ -1,3 +1,10 @@
+## generative_boids_flocking_behavior_2d
+
+- **Date**: 2026-06-25
+- **Theme**: A swarm of boids mimicking flocking birds or schooling fish, leaving glowing trails as they move across a dark void.
+- **Technique**: Boids algorithm (Separation, Alignment, Cohesion) vectorized with NumPy for performance, rendered with additive blending.
+- **Description**: An animated 15s sequence of emergent flocking behavior.
+
 ## generative_fbm_domain_warping_2d
 
 - **Date**: 2026-06-25

@@ -1,3 +1,8 @@
+## generative_boids_flocking_behavior_2d
+
+- **Rating**: 
+- **Comment**: 
+
 ## generative_fbm_domain_warping_2d
 
 - **Rating**: 
@@ -475,7 +480,7 @@
 
 ## abstract_geometric_chromatic_aberration_2d
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## kinetic_chladni_resonance_patterns_2d

@@ -6807,3 +6807,10 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Theme**: A glowing procedural futuristic city that grows organically like an L-System tree out of a dark void, with neon highways coursing through the branches.
 - **Technique**: Orthogonal 3D recursive L-system branching, with py5.box() nodes and heavy stroke lines forming glowing building blocks.
 - **Description**: An animated 15s simulation of an L-system growing a massive orthogonal cyber-city in 3D.
+
+## generative_optical_flow_particles_2d
+
+- **Date**: 2026-06-25
+- **Theme**: Thousands of semi-transparent neon particles flowing across the screen driven by a 2D vector field based on Simplex noise, creating a fluid dynamic optical flow effect.
+- **Technique**: Generates a 2D vector field using `py5.os_noise` to govern the velocity and trajectory of thousands of point particles. A motion blur effect is created by drawing a low-opacity rectangle over the frame rather than clearing the background.
+- **Description**: An animated sequence of generative optical flow particles in 2D.

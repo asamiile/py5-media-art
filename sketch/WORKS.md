@@ -1,3 +1,10 @@
+## generative_algorithmic_quadtree_subdivision_2d
+
+- **Date**: 2026-06-25
+- **Theme**: A recursive spatial subdivision (quadtree) that dynamically splits and merges based on the motion of invisible attractors.
+- **Technique**: 2D Quadtree algorithm. Recursively divides rectangles if an attractor is within bounds, drawn as glowing neon wireframes.
+- **Description**: An animated 15s sequence of a generative quadtree subdivision.
+
 ## generative_algorithmic_geometric_interference_2d
 
 - **Date**: 2026-06-25

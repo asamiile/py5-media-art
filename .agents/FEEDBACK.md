@@ -1,3 +1,8 @@
+## generative_algorithmic_quadtree_subdivision_2d
+
+- **Rating**: 
+- **Comment**: 
+
 ## generative_algorithmic_geometric_interference_2d
 
 - **Rating**: 

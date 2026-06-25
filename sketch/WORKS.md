@@ -1,3 +1,10 @@
+## generative_reaction_diffusion_cellular_growth_2d
+
+- **Date**: 2026-06-25
+- **Theme**: A Gray-Scott reaction-diffusion system simulating organic, cellular growth patterns mimicking coral or brain tissue.
+- **Technique**: 2D Gray-Scott Reaction-Diffusion using NumPy convolution mapped to an iridescent color gradient.
+- **Description**: An animated 15s sequence of generative cellular growth.
+
 ## generative_algorithmic_quadtree_subdivision_2d
 
 - **Date**: 2026-06-25

@@ -1,3 +1,10 @@
+## generative_lsystem_space_filling_curve_2d
+
+- **Date**: 2026-06-25
+- **Theme**: A space-filling curve (the Dragon curve) that incrementally draws itself, leaving a glowing trail that fades over time.
+- **Technique**: L-System fractal generation (14 iterations) translated into drawing instructions, rendered with Py5 using additive blending.
+- **Description**: An animated 15s sequence of a fractal drawing itself.
+
 ## generative_boids_flocking_behavior_2d
 
 - **Date**: 2026-06-25

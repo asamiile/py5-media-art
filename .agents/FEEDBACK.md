@@ -1,3 +1,8 @@
+## generative_lsystem_space_filling_curve_2d
+
+- **Rating**: 
+- **Comment**: 
+
 ## generative_boids_flocking_behavior_2d
 
 - **Rating**: 
@@ -490,7 +495,7 @@
 
 ## abstract_plasma_fluid_dynamics_3d
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## kinetic_sacred_geometry_pulse_2d

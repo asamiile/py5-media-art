@@ -1,15 +1,15 @@
 import os
 
-works_content = """## abstract_geometric_spirograph_mandala_2d
+works_content = """## generative_wavy_sine_landscapes_2d
 
 - **Date**: 2026-06-26
-- **Theme**: A glowing, hypnotic digital spirograph that traces complex mandala patterns over time.
-- **Technique**: Uses compounded trigonometric functions (sine and cosine waves with differing frequencies and amplitudes) to calculate the paths of 12 distinct points. As the animation progresses, these points trace out intricate, overlapping geometric motifs on a non-clearing background. The `ADD` blend mode ensures that overlapping strokes build up intensely bright, glowing intersections, mimicking long-exposure light painting.
-- **Description**: An animated 15s sequence tracing out a glowing spirograph mandala.
+- **Theme**: A scrolling, atmospheric 2D landscape of undulating mountains and waves, featuring a vibrant retro-synthwave color palette.
+- **Technique**: Renders 25 layered polygon shapes drawn back-to-front. The vertices of each layer are modulated by a combination of OpenSimplex noise and sine waves, creating organic, rolling terrain. A parallax scrolling effect is achieved by increasing the horizontal offset speed for layers closer to the foreground. Colors are algorithmically shifted based on time and depth, creating a dynamic, atmospheric haze.
+- **Description**: An animated 15s sequence of a scrolling layered mountain landscape.
 
 """
 
-feedback_content = """## abstract_geometric_spirograph_mandala_2d
+feedback_content = """## generative_wavy_sine_landscapes_2d
 
 - **Rating**: 
 - **Comment**: 

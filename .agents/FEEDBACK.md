@@ -1,3 +1,8 @@
+## generative_wavy_sine_landscapes_2d
+
+- **Rating**: 
+- **Comment**: 
+
 ## abstract_geometric_spirograph_mandala_2d
 
 - **Rating**: 

@@ -1,15 +1,15 @@
 import os
 
-works_content = """## generative_recursive_tree_canopy_2d
+works_content = """## abstract_geometric_spirograph_mandala_2d
 
 - **Date**: 2026-06-26
-- **Theme**: A forest canopy of abstract, recursive geometric trees that sway continuously in an invisible, mathematically generated wind.
-- **Technique**: Uses a recursive fractal branching algorithm to generate tree structures. The angle of each branch varies dynamically using continuous OpenSimplex noise and trigonometric functions, simulating organic growth and environmental wind forces. Colored glowing circles represent leaves blooming at the tips of the branches.
-- **Description**: An animated 15s sequence of recursive swaying fractal trees.
+- **Theme**: A glowing, hypnotic digital spirograph that traces complex mandala patterns over time.
+- **Technique**: Uses compounded trigonometric functions (sine and cosine waves with differing frequencies and amplitudes) to calculate the paths of 12 distinct points. As the animation progresses, these points trace out intricate, overlapping geometric motifs on a non-clearing background. The `ADD` blend mode ensures that overlapping strokes build up intensely bright, glowing intersections, mimicking long-exposure light painting.
+- **Description**: An animated 15s sequence tracing out a glowing spirograph mandala.
 
 """
 
-feedback_content = """## generative_recursive_tree_canopy_2d
+feedback_content = """## abstract_geometric_spirograph_mandala_2d
 
 - **Rating**: 
 - **Comment**: 

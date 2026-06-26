@@ -1,15 +1,15 @@
 import os
 
-works_content = """## generative_boids_flocking_simulation_2d
+works_content = """## generative_cyberpunk_neon_rain_matrix_2d
 
 - **Date**: 2026-06-26
-- **Theme**: A simulation of avian murmuration, where hundreds of digital entities flock and weave across the canvas, guided by shifting invisible currents.
-- **Technique**: Uses a modified boids steering behavior algorithm optimized for Python execution speed. Rather than O(N^2) pairwise distance checks for alignment and cohesion, the boids are steered by a globally continuous 3D OpenSimplex noise field that mimics macroscopic group flow. The boids are drawn as oriented triangles that leave semi-transparent trails as they move.
-- **Description**: An animated 15s sequence of digital boids flocking through a noise field.
+- **Theme**: A stylized, glitching digital rain sequence inspired by cyberpunk aesthetics and the classic Matrix digital rain, replaced with abstract glowing geometric segments.
+- **Technique**: Uses thousands of independent dropping particles with simulated depth (z-index) determining their size, speed, and brightness. High-frequency OpenSimplex noise is sampled as the drops fall to trigger sudden horizontal glitch displacements and color inversions, adding a dynamic, corrupted digital feel. Rendered in a 2D context using semi-transparent background clearing for motion trails.
+- **Description**: An animated 15s sequence of digital neon rain with glitch effects.
 
 """
 
-feedback_content = """## generative_boids_flocking_simulation_2d
+feedback_content = """## generative_cyberpunk_neon_rain_matrix_2d
 
 - **Rating**: 
 - **Comment**: 

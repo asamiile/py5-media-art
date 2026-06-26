@@ -1,15 +1,15 @@
 import os
 
-works_content = """## kinetic_magnetic_compass_array_2d
+works_content = """## kinetic_chladni_plate_resonance_2d
 
 - **Date**: 2026-06-26
-- **Theme**: A vast 2D array of tiny magnetic compass needles, reacting to unseen magnetic currents passing underneath them.
-- **Technique**: 2D point grid where each point represents the anchor of a compass needle. A 3D noise vector field determines the angle of the compasses, creating sweeping, colorful waves across the grid.
-- **Description**: An animated 15s sequence of kinetic magnetic compass needles.
+- **Theme**: A visualization of Chladni figures, simulating sand particles organizing themselves into intricate, shifting geometric patterns driven by unseen acoustic vibrations.
+- **Technique**: 2D particle system physics simulation. A mathematical standing wave equation determines the nodal lines across the surface. Particles are pushed down the gradient of the amplitude towards the nodes.
+- **Description**: An animated 15s sequence of kinetic sand particles resonating on a plate.
 
 """
 
-feedback_content = """## kinetic_magnetic_compass_array_2d
+feedback_content = """## kinetic_chladni_plate_resonance_2d
 
 - **Rating**: 
 - **Comment**: 

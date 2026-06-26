@@ -1,3 +1,8 @@
+## kinetic_chladni_plate_resonance_2d
+
+- **Rating**: 
+- **Comment**: 
+
 ## kinetic_magnetic_compass_array_2d
 
 - **Rating**: 

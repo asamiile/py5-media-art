@@ -1,3 +1,10 @@
+## kinetic_chladni_plate_resonance_2d
+
+- **Date**: 2026-06-26
+- **Theme**: A visualization of Chladni figures, simulating sand particles organizing themselves into intricate, shifting geometric patterns driven by unseen acoustic vibrations.
+- **Technique**: 2D particle system physics simulation. A mathematical standing wave equation determines the nodal lines across the surface. Particles are pushed down the gradient of the amplitude towards the nodes.
+- **Description**: An animated 15s sequence of kinetic sand particles resonating on a plate.
+
 ## kinetic_magnetic_compass_array_2d
 
 - **Date**: 2026-06-26

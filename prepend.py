@@ -1,15 +1,15 @@
 import os
 
-works_content = """## kinetic_chladni_plate_resonance_2d
+works_content = """## generative_isometric_labyrinth_2d
 
 - **Date**: 2026-06-26
-- **Theme**: A visualization of Chladni figures, simulating sand particles organizing themselves into intricate, shifting geometric patterns driven by unseen acoustic vibrations.
-- **Technique**: 2D particle system physics simulation. A mathematical standing wave equation determines the nodal lines across the surface. Particles are pushed down the gradient of the amplitude towards the nodes.
-- **Description**: An animated 15s sequence of kinetic sand particles resonating on a plate.
+- **Theme**: A shifting, Escher-like maze of isometric columns that rise and fall based on 3D noise patterns.
+- **Technique**: Uses standard 2D vector drawing to simulate a 3D isometric projection, completely bypassing OpenGL/P3D engine. Sorts blocks back-to-front based on grid iteration. Color and column height are driven by OpenSimplex noise parameterized by time.
+- **Description**: An animated 15s sequence of an isometric labyrinth continuously shifting.
 
 """
 
-feedback_content = """## kinetic_chladni_plate_resonance_2d
+feedback_content = """## generative_isometric_labyrinth_2d
 
 - **Rating**: 
 - **Comment**: 

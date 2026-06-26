@@ -1,3 +1,8 @@
+## generative_isometric_labyrinth_2d
+
+- **Rating**: 
+- **Comment**: 
+
 ## kinetic_chladni_plate_resonance_2d
 
 - **Rating**: 

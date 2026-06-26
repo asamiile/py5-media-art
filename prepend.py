@@ -1,15 +1,15 @@
 import os
 
-works_content = """## abstract_geometric_kaleidoscope_fractal_2d
+works_content = """## generative_boids_flocking_simulation_2d
 
 - **Date**: 2026-06-26
-- **Theme**: A glowing, infinitely unfolding geometric fractal that mimics the shifting mirrors of a kaleidoscope.
-- **Technique**: Uses standard 2D recursive rendering. At each level of recursion, the shape splits into 6 branches that rotate and translate based on time and their recursive depth. The ADD blend mode creates intense glowing intersections where the semi-transparent layers overlap.
-- **Description**: An animated 15s sequence of a geometric fractal kaleidoscope unfolding.
+- **Theme**: A simulation of avian murmuration, where hundreds of digital entities flock and weave across the canvas, guided by shifting invisible currents.
+- **Technique**: Uses a modified boids steering behavior algorithm optimized for Python execution speed. Rather than O(N^2) pairwise distance checks for alignment and cohesion, the boids are steered by a globally continuous 3D OpenSimplex noise field that mimics macroscopic group flow. The boids are drawn as oriented triangles that leave semi-transparent trails as they move.
+- **Description**: An animated 15s sequence of digital boids flocking through a noise field.
 
 """
 
-feedback_content = """## abstract_geometric_kaleidoscope_fractal_2d
+feedback_content = """## generative_boids_flocking_simulation_2d
 
 - **Rating**: 
 - **Comment**: 

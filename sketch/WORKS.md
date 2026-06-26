@@ -1,3 +1,10 @@
+## generative_boids_flocking_simulation_2d
+
+- **Date**: 2026-06-26
+- **Theme**: A simulation of avian murmuration, where hundreds of digital entities flock and weave across the canvas, guided by shifting invisible currents.
+- **Technique**: Uses a modified boids steering behavior algorithm optimized for Python execution speed. Rather than O(N^2) pairwise distance checks for alignment and cohesion, the boids are steered by a globally continuous 3D OpenSimplex noise field that mimics macroscopic group flow. The boids are drawn as oriented triangles that leave semi-transparent trails as they move.
+- **Description**: An animated 15s sequence of digital boids flocking through a noise field.
+
 ## abstract_geometric_kaleidoscope_fractal_2d
 
 - **Date**: 2026-06-26

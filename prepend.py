@@ -1,15 +1,15 @@
 import os
 
-works_content = """## generative_cyberpunk_neon_rain_matrix_2d
+works_content = """## generative_recursive_tree_canopy_2d
 
 - **Date**: 2026-06-26
-- **Theme**: A stylized, glitching digital rain sequence inspired by cyberpunk aesthetics and the classic Matrix digital rain, replaced with abstract glowing geometric segments.
-- **Technique**: Uses thousands of independent dropping particles with simulated depth (z-index) determining their size, speed, and brightness. High-frequency OpenSimplex noise is sampled as the drops fall to trigger sudden horizontal glitch displacements and color inversions, adding a dynamic, corrupted digital feel. Rendered in a 2D context using semi-transparent background clearing for motion trails.
-- **Description**: An animated 15s sequence of digital neon rain with glitch effects.
+- **Theme**: A forest canopy of abstract, recursive geometric trees that sway continuously in an invisible, mathematically generated wind.
+- **Technique**: Uses a recursive fractal branching algorithm to generate tree structures. The angle of each branch varies dynamically using continuous OpenSimplex noise and trigonometric functions, simulating organic growth and environmental wind forces. Colored glowing circles represent leaves blooming at the tips of the branches.
+- **Description**: An animated 15s sequence of recursive swaying fractal trees.
 
 """
 
-feedback_content = """## generative_cyberpunk_neon_rain_matrix_2d
+feedback_content = """## generative_recursive_tree_canopy_2d
 
 - **Rating**: 
 - **Comment**: 

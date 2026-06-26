@@ -1,3 +1,8 @@
+## kinetic_magnetic_compass_array_2d
+
+- **Rating**: 
+- **Comment**: 
+
 ## generative_kinetic_cellular_automata_2d
 
 - **Rating**: 

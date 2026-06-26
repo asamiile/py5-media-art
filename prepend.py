@@ -1,15 +1,15 @@
 import os
 
-works_content = """## generative_flow_field_topography_2d
+works_content = """## abstract_geometric_kaleidoscope_fractal_2d
 
 - **Date**: 2026-06-26
-- **Theme**: A continuous generation of contour-like lines flowing across the screen, mimicking the look of dynamically shifting topographical maps.
-- **Technique**: Uses thousands of individual particles navigating through a time-varying OpenSimplex noise vector field. A semi-transparent background clearing technique is used to create smooth, lingering trails that fade over time.
-- **Description**: An animated 15s sequence of topographic flow fields evolving dynamically.
+- **Theme**: A glowing, infinitely unfolding geometric fractal that mimics the shifting mirrors of a kaleidoscope.
+- **Technique**: Uses standard 2D recursive rendering. At each level of recursion, the shape splits into 6 branches that rotate and translate based on time and their recursive depth. The ADD blend mode creates intense glowing intersections where the semi-transparent layers overlap.
+- **Description**: An animated 15s sequence of a geometric fractal kaleidoscope unfolding.
 
 """
 
-feedback_content = """## generative_flow_field_topography_2d
+feedback_content = """## abstract_geometric_kaleidoscope_fractal_2d
 
 - **Rating**: 
 - **Comment**: 

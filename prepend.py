@@ -1,15 +1,15 @@
 import os
 
-works_content = """## generative_isometric_labyrinth_2d
+works_content = """## generative_flow_field_topography_2d
 
 - **Date**: 2026-06-26
-- **Theme**: A shifting, Escher-like maze of isometric columns that rise and fall based on 3D noise patterns.
-- **Technique**: Uses standard 2D vector drawing to simulate a 3D isometric projection, completely bypassing OpenGL/P3D engine. Sorts blocks back-to-front based on grid iteration. Color and column height are driven by OpenSimplex noise parameterized by time.
-- **Description**: An animated 15s sequence of an isometric labyrinth continuously shifting.
+- **Theme**: A continuous generation of contour-like lines flowing across the screen, mimicking the look of dynamically shifting topographical maps.
+- **Technique**: Uses thousands of individual particles navigating through a time-varying OpenSimplex noise vector field. A semi-transparent background clearing technique is used to create smooth, lingering trails that fade over time.
+- **Description**: An animated 15s sequence of topographic flow fields evolving dynamically.
 
 """
 
-feedback_content = """## generative_isometric_labyrinth_2d
+feedback_content = """## generative_flow_field_topography_2d
 
 - **Rating**: 
 - **Comment**: 

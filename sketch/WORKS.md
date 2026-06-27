@@ -1,3 +1,10 @@
+## generative_orbital_gravity_dance_2d
+
+- **Date**: 2026-06-27
+- **Theme**: Simulation of an n-body gravity system where several heavy stars and hundreds of tiny planets interact, creating beautiful orbital trails.
+- **Technique**: N-body physics calculation for gravity mechanics. Planets trace glowing, varying colored trails based on their velocity using additive blending.
+- **Description**: An animated 15s sequence of a generative orbital gravity dance.
+
 ## generative_fluid_vortex_street_2d
 
 - **Date**: 2026-06-27

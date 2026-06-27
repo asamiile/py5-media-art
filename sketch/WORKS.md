@@ -1,3 +1,10 @@
+## abstract_cellular_automata_cyclic_2d
+
+- **Date**: 2026-06-27
+- **Theme**: A cyclic cellular automaton creating beautiful spiral waves of color.
+- **Technique**: Fast numpy array operations simulate a continuous grid where cells advance to the next state if enough neighbors are in that state, producing self-organizing spiral patterns over time.
+- **Description**: An animated 15s sequence of an abstract cyclic cellular automaton.
+
 ## abstract_geometric_truchet_tiling_2d
 
 - **Date**: 2026-06-27

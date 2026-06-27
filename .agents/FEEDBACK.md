@@ -1,3 +1,8 @@
+## abstract_cellular_automata_cyclic_2d
+
+- **Rating**: 
+- **Comment**: 
+
 ## abstract_geometric_truchet_tiling_2d
 
 - **Rating**: 

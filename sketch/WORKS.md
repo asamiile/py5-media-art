@@ -1,3 +1,10 @@
+## generative_vector_flow_topography_2d
+
+- **Date**: 2026-06-27
+- **Theme**: A mesmerizingly intricate topographic map that constantly redraws and evolves itself over time.
+- **Technique**: A 2D particle system where particles follow an OpenSimplex noise flow field, leaving trails with additive blending. The background is partially cleared each frame to create motion blur.
+- **Description**: An animated 15s sequence of generative vector flow topography in 2D.
+
 ## abstract_cellular_automata_cyclic_2d
 
 - **Date**: 2026-06-27

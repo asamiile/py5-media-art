@@ -1,3 +1,10 @@
+## abstract_geometric_kaleidoscope_mandala_2d
+
+- **Date**: 2026-06-27
+- **Theme**: A classic glowing kaleidoscope of rotating polygons and lines that multiply and mirror recursively.
+- **Technique**: Render a mutating slice of sine-wave driven geometry and duplicate/rotate it around the center using py5 matrix transformations and additive blending.
+- **Description**: An animated 15s sequence of an abstract geometric kaleidoscope mandala.
+
 ## generative_fluid_ink_marbling_2d
 
 - **Date**: 2026-06-27

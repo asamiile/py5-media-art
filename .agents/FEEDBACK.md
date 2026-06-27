@@ -1,3 +1,8 @@
+## abstract_geometric_kaleidoscope_mandala_2d
+
+- **Rating**: 
+- **Comment**: 
+
 ## generative_fluid_ink_marbling_2d
 
 - **Rating**: 

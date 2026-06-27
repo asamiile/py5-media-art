@@ -1,3 +1,10 @@
+## generative_magnetic_pendulum_fractals_2d
+
+- **Date**: 2026-06-27
+- **Theme**: Simulating a magnetic pendulum with multiple magnets, revealing intricate fractal basins of attraction through thousands of drawn trajectories.
+- **Technique**: Physics simulation of thousands of pendulums moving under gravity, friction, and magnetic forces, rendered as glowing 2D trails that blend additively over time.
+- **Description**: An animated 15s sequence of generative magnetic pendulum fractals.
+
 ## abstract_fluid_chromatic_aberration_vortices_2d
 
 - **Date**: 2026-06-27

@@ -1,3 +1,8 @@
+## generative_magnetic_pendulum_fractals_2d
+
+- **Rating**: 
+- **Comment**: 
+
 ## abstract_fluid_chromatic_aberration_vortices_2d
 
 - **Rating**: 

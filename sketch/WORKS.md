@@ -1,3 +1,10 @@
+## generative_bioluminescent_deep_sea_snow_2d
+
+- **Date**: 2026-06-27
+- **Theme**: A majestic descent through a deep-sea trench, surrounded by glowing marine snow and rhythmic bioluminescent organisms.
+- **Technique**: A 2D simulation faking 3D parallax and depth, mapping depth parameters to particle sizes and alpha transparency with additive blending.
+- **Description**: An animated 15s sequence of a bioluminescent deep-sea descent.
+
 ## abstract_strange_attractor_morph_2d
 
 - **Date**: 2026-06-27

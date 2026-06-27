@@ -1,3 +1,10 @@
+## generative_neon_wave_cityscape_3d
+
+- **Date**: 2026-06-27
+- **Theme**: A futuristic neon cityscape made of abstract glowing monoliths that undulate in waves, driven by an invisible force field.
+- **Technique**: A pseudo-3D isometric scene. A grid of tall boxes is rendered using 2D polygons. The height of each box is determined by a 2D OpenSimplex noise field that shifts over time. The boxes have brightly colored neon strokes and dark faces.
+- **Description**: An animated 15s sequence of generative neon wave cityscape in 2D isometric projection.
+
 ## kinetic_woven_lissajous_fabric_2d
 
 - **Date**: 2026-06-27

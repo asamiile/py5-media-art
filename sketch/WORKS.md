@@ -1,3 +1,10 @@
+## abstract_strange_attractor_morph_2d
+
+- **Date**: 2026-06-27
+- **Theme**: Millions of glowing particles tracing out complex strange attractors (Peter de Jong attractors) that slowly mutate over time.
+- **Technique**: Using basic 2D points to iteratively draw attractors with additive blending, slowly interpolating the attractor parameters over time to make the shape breathe and morph. Draws 200,000 points per frame.
+- **Description**: An animated 15s sequence of strange attractors morphing.
+
 ## abstract_fractal_spirograph_2d
 
 - **Date**: 2026-06-27

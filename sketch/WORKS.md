@@ -1,3 +1,10 @@
+## abstract_optical_illusion_moire_2d
+
+- **Date**: 2026-06-27
+- **Theme**: Multiple rotating concentric layers of fine contrasting lines that overlap to create hypnotic moiré interference patterns.
+- **Technique**: 2D drawing of densely packed radial and concentric lines that slowly rotate in opposite directions with precise mathematical offsets. The slight shifts in frequency and angle generate large-scale pulsing optical illusions.
+- **Description**: An animated 15s sequence of moire interference patterns.
+
 ## generative_botanical_stained_glass_2d
 
 - **Date**: 2026-06-27

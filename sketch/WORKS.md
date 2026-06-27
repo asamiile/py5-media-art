@@ -1,3 +1,10 @@
+## generative_reaction_diffusion_cellular_2d
+
+- **Date**: 2026-06-27
+- **Theme**: An accelerated simulation of the Gray-Scott reaction-diffusion model.
+- **Technique**: Fast numpy matrix shifting (roll) is used to compute the Laplacian and simulate chemical diffusion, resulting in Turing patterns that dynamically shift from spots to labyrinthine stripes as parameters drift.
+- **Description**: An animated 15s sequence of generative reaction diffusion cellular patterns.
+
 ## kinetic_oscillating_pendulum_waves_2d
 
 - **Date**: 2026-06-27

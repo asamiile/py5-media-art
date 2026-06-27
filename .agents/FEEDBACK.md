@@ -1,3 +1,8 @@
+## generative_reaction_diffusion_cellular_2d
+
+- **Rating**: 
+- **Comment**: 
+
 ## kinetic_oscillating_pendulum_waves_2d
 
 - **Rating**: 

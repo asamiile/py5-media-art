@@ -1,3 +1,10 @@
+## generative_botanical_stained_glass_2d
+
+- **Date**: 2026-06-27
+- **Theme**: A vibrant, unfolding stained glass window that slowly grows into a complex botanical mandala.
+- **Technique**: 2D Voronoi tessellation where cell sizes and positions evolve outward in a radial pattern. The cells are drawn with thick, dark borders simulating lead, and filled with highly saturated, jewel-toned colors mapping to an underlying 3D noise field.
+- **Description**: An animated 15s sequence of a vibrant Voronoi stained glass window.
+
 ## kinetic_celestial_mechanics_2d
 
 - **Date**: 2026-06-27

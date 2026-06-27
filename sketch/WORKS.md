@@ -1,3 +1,10 @@
+## generative_chladni_plate_resonance_2d
+
+- **Date**: 2026-06-27
+- **Theme**: Visualizing Chladni figures—patterns formed by fine sand on a vibrating plate.
+- **Technique**: Thousands of particles flow down the numerical gradient of the Chladni resonance equation, settling along the nodal lines (areas of zero vibration) to form intricate, evolving geometric shapes.
+- **Description**: An animated 15s sequence of generative Chladni plate resonance.
+
 ## abstract_geometric_kaleidoscope_mandala_2d
 
 - **Date**: 2026-06-27

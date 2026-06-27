@@ -1,3 +1,8 @@
+## generative_chladni_plate_resonance_2d
+
+- **Rating**: 
+- **Comment**: 
+
 ## abstract_geometric_kaleidoscope_mandala_2d
 
 - **Rating**: 

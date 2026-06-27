@@ -1,3 +1,8 @@
+## abstract_fluid_chromatic_aberration_vortices_2d
+
+- **Rating**: 
+- **Comment**: 
+
 ## generative_bioluminescent_deep_sea_snow_2d
 
 - **Rating**: 

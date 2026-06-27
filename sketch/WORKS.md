@@ -1,3 +1,10 @@
+## abstract_fluid_chromatic_aberration_vortices_2d
+
+- **Date**: 2026-06-27
+- **Theme**: Fluid vortices that swirl and merge, leaving trails with strong simulated chromatic aberration to create a hallucinatory liquid effect.
+- **Technique**: Simulating a 2D vector field using curl noise. Particles are drawn three times (Red, Green, Blue) with spatial offsets based on velocity.
+- **Description**: An animated 15s sequence of fluid vortices with chromatic aberration.
+
 ## generative_bioluminescent_deep_sea_snow_2d
 
 - **Date**: 2026-06-27

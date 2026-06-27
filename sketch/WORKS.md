@@ -1,3 +1,10 @@
+## kinetic_celestial_mechanics_2d
+
+- **Date**: 2026-06-27
+- **Theme**: A 2D top-down view of an intricate celestial orrery, simulating planetary orbits with glowing mechanical precision and sweeping luminous trails.
+- **Technique**: Nested rotational transformations using py5.rotate and py5.translate, combined with motion blur using a semi-transparent dark overlay. Planets and moons orbit at varying speeds.
+- **Description**: An animated 15s sequence of glowing celestial mechanics.
+
 ## generative_optical_illusion_truchet_tiles_2d
 
 - **Date**: 2026-06-26

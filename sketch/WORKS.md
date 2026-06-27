@@ -1,3 +1,10 @@
+## abstract_fractal_spirograph_2d
+
+- **Date**: 2026-06-27
+- **Theme**: A continuously evolving, intricate spirograph made of glowing multi-colored threads that slowly trace complex fractal geometry.
+- **Technique**: Layering py5.curve_vertex lines using mathematical hypotrochoid equations, with time acting as the progression variable, rendered using cyan, magenta, and yellow with additive blending.
+- **Description**: An animated 15s sequence of a mathematical fractal spirograph.
+
 ## generative_alien_typography_cascade_2d
 
 - **Date**: 2026-06-27

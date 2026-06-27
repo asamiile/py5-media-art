@@ -1,3 +1,8 @@
+## abstract_cybernetic_neural_network_2d
+
+- **Rating**: 
+- **Comment**: 
+
 ## generative_chladni_plate_resonance_2d
 
 - **Rating**: 

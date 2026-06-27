@@ -1,3 +1,10 @@
+## abstract_cybernetic_neural_network_2d
+
+- **Date**: 2026-06-27
+- **Theme**: A biological or cybernetic neural network where glowing data pulses travel along synaptic connections.
+- **Technique**: Particles acting as data signals traverse the edges of a drifting network graph, leaving glowing trails with additive blending to simulate data transmission.
+- **Description**: An animated 15s sequence of an abstract cybernetic neural network.
+
 ## generative_chladni_plate_resonance_2d
 
 - **Date**: 2026-06-27

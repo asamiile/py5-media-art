@@ -12,6 +12,13 @@
 - **Technique**: A series of glowing circles move harmonically left and right. Their frequencies are tuned linearly, causing them to form intricate Lissajous-like interference patterns and waves that slowly drift into chaos and then realign.
 - **Description**: An animated 15s sequence of kinetic oscillating pendulum waves.
 
+## abstract_kinetic_topographical_interference_2d
+
+- **Date**: 2026-06-27
+- **Theme**: A kinetic simulation of mathematical interference patterns that mimic overlapping topographical maps or moire rings. The patterns continually shift, align, and break apart.
+- **Technique**: A fast, vectorized 2D grid of points using `numpy`. Complex sine and cosine interference equations are calculated over the grid, and only points above a certain interference threshold are drawn, resulting in pulsing contour lines and moire effects.
+- **Description**: An animated sequence of abstract kinetic topographical interference.
+
 ## abstract_fluid_iridescent_oil_spill_2d
 
 - **Date**: 2026-06-27

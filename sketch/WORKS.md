@@ -5,6 +5,13 @@
 - **Technique**: A series of glowing circles move harmonically left and right. Their frequencies are tuned linearly, causing them to form intricate Lissajous-like interference patterns and waves that slowly drift into chaos and then realign.
 - **Description**: An animated 15s sequence of kinetic oscillating pendulum waves.
 
+## generative_quantum_foam_bubbles_2d
+
+- **Date**: 2026-06-27
+- **Theme**: Quantum foam, the theoretical bubbling of spacetime at the Planck length. Visualized as densely packed, overlapping, and constantly morphing neon bubbles (circles) that spawn and pop rapidly.
+- **Technique**: A grid/space populated by thousands of circles. The radii of circles are determined by a fast-shifting 3D noise field, making them expand and contract. Additive blending creates intense hot spots where bubbles overlap.
+- **Description**: An animated 15s sequence of generative quantum foam bubbles.
+
 ## abstract_cybernetic_neural_network_2d
 
 - **Date**: 2026-06-27

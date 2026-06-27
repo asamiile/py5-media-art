@@ -1,3 +1,10 @@
+## abstract_geometric_truchet_tiling_2d
+
+- **Date**: 2026-06-27
+- **Theme**: An animated labyrinth of Truchet tiles that continuously shape-shifts.
+- **Technique**: The canvas is divided into a grid, with each cell drawing arcs that connect its edges. A slow-moving noise field sweeps across the canvas, smoothly rotating each tile to form an ever-changing maze of glowing paths.
+- **Description**: An animated 15s sequence of abstract geometric Truchet tiling.
+
 ## generative_reaction_diffusion_cellular_2d
 
 - **Date**: 2026-06-27

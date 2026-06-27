@@ -1,3 +1,10 @@
+## generative_fluid_ink_marbling_2d
+
+- **Date**: 2026-06-27
+- **Theme**: Simulation of Suminagashi (Japanese ink marbling) where rings of ink are distorted by turbulent flow.
+- **Technique**: Multiple concentric rings of points are subjected to a continuous cumulative displacement field driven by Perlin curl noise, stretching and folding the rings into marbled patterns.
+- **Description**: An animated 15s sequence of a generative fluid ink marbling.
+
 ## generative_orbital_gravity_dance_2d
 
 - **Date**: 2026-06-27

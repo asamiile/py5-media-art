@@ -1,3 +1,10 @@
+## kinetic_oscillating_pendulum_waves_2d
+
+- **Date**: 2026-06-27
+- **Theme**: A 2D simulation of the classic pendulum wave experiment.
+- **Technique**: A series of glowing circles move harmonically left and right. Their frequencies are tuned linearly, causing them to form intricate Lissajous-like interference patterns and waves that slowly drift into chaos and then realign.
+- **Description**: An animated 15s sequence of kinetic oscillating pendulum waves.
+
 ## abstract_cybernetic_neural_network_2d
 
 - **Date**: 2026-06-27

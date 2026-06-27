@@ -1,3 +1,8 @@
+## kinetic_oscillating_pendulum_waves_2d
+
+- **Rating**: 
+- **Comment**: 
+
 ## abstract_cybernetic_neural_network_2d
 
 - **Rating**: 

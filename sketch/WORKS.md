@@ -12,6 +12,13 @@
 - **Technique**: A series of glowing circles move harmonically left and right. Their frequencies are tuned linearly, causing them to form intricate Lissajous-like interference patterns and waves that slowly drift into chaos and then realign.
 - **Description**: An animated 15s sequence of kinetic oscillating pendulum waves.
 
+## abstract_fluid_iridescent_oil_spill_2d
+
+- **Date**: 2026-06-27
+- **Theme**: An abstract representation of an iridescent oil spill on water. Colors shift continuously in metallic neon hues as the fluid warps and twists.
+- **Technique**: Dense 2D particle field vectorized with numpy for performance. Colored by a full HSB spectrum for iridescence. The points are continuously displaced by a complex trigonometric flow field mimicking curl noise over time.
+- **Description**: An animated sequence of an abstract fluid iridescent oil spill.
+
 ## generative_quantum_foam_bubbles_2d
 
 - **Date**: 2026-06-27

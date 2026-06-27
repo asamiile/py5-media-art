@@ -8,6 +8,11 @@
 - **Rating**: 
 - **Comment**: 
 
+## abstract_fluid_iridescent_oil_spill_2d
+
+- **Rating**: 
+- **Comment**: 
+
 ## generative_quantum_foam_bubbles_2d
 
 - **Rating**: 

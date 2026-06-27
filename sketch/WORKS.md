@@ -1,3 +1,10 @@
+## generative_alien_typography_cascade_2d
+
+- **Date**: 2026-06-27
+- **Theme**: A cascading waterfall of abstract geometric glyphs that shift and mutate into each other, resembling alien typography raining down.
+- **Technique**: Grid-based drawing using py5's 2D primitives. Drawing random symbol configurations that drop like rain and fade out using a semi-transparent background.
+- **Description**: An animated 15s sequence of alien data cascading.
+
 ## abstract_optical_illusion_moire_2d
 
 - **Date**: 2026-06-27

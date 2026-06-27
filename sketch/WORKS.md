@@ -1,3 +1,10 @@
+## generative_fluid_vortex_street_2d
+
+- **Date**: 2026-06-27
+- **Theme**: Simulating a Kármán vortex street, the repeating pattern of swirling vortices caused by fluid flow separating around a cylindrical object.
+- **Technique**: An approximation of potential flow around a cylinder perturbed with noise to simulate turbulence. Thousands of particles trace the flow and leave glowing trails using additive blending.
+- **Description**: An animated 15s sequence of a generative fluid vortex street.
+
 ## generative_magnetic_pendulum_fractals_2d
 
 - **Date**: 2026-06-27

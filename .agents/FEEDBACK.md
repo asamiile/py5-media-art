@@ -1,3 +1,8 @@
+## generative_fluid_vortex_street_2d
+
+- **Rating**: 
+- **Comment**: 
+
 ## generative_magnetic_pendulum_fractals_2d
 
 - **Rating**: 

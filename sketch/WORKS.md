@@ -1,3 +1,10 @@
+## generative_vector_field_flow_2d
+- **Date**: 2026-06-28
+- **Type**: Animation (450 frames, 30fps)
+- **Concept**: A massive, chaotic flow field simulation where 100,000 glowing particles are swept through a complex, time-varying vector field, leaving fading neon trails that weave intricate tapestries of light.
+- **Techniques**: Tracking the velocity and position of 100,000 particles simultaneously using NumPy arrays. At each frame, the particles' velocities are updated by integrating an angular force derived from intersecting spatial sine waves. By segregating the points into speed buckets (slow vs. fast), we natively color-map them using `py5.vertices()` for ultimate high-density rendering performance. Additive blending creates intense glowing trails.
+- **Palette**: Deep electric blue and purple (slow) mixing with bright neon cyan (fast) on fading black motion trails.
+
 ## generative_phyllotaxis_sunflower_spiral_2d
 - **Date**: 2026-06-28
 - **Type**: Animation (450 frames, 30fps)

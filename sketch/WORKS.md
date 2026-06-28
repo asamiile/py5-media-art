@@ -1,3 +1,10 @@
+## kinetic_flow_field_perlin_noise_2d
+- **Date**: 2026-06-28
+- **Type**: Animation (450 frames, 30fps)
+- **Concept**: A massive generative flow field moving 500,000 glowing particles simultaneously. The particles are driven by a continuous 3D Perlin noise field, creating beautiful twisting currents, chaotic swirls, and elegant flowing rivers of light over time.
+- **Techniques**: Evaluating 3D Perlin noise individually for half a million points per frame in Python would be extremely slow. To achieve massive scale, a highly-optimized vectorized approach is used: a coarse $120 \times 67$ grid of Perlin noise angles is generated, and then `scipy.ndimage.zoom` instantly upscales that grid to a full $3840 \times 2160$ NumPy array using bilinear interpolation. The 500,000 particles map to this velocity field array to update instantly.
+- **Palette**: Deep magenta, electric blue, and glowing purple trails. Additive blending creates brilliantly luminous, fiery intensity.
+
 ## generative_mandelbrot_deep_zoom_2d
 - **Date**: 2026-06-28
 - **Type**: Animation (450 frames, 30fps)

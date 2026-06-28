@@ -4,6 +4,10 @@
 Agents MUST NOT write anything in the `Comment` field. When registering a new work, Agents must leave the `Rating` and `Comment` fields empty or with their default labels as placeholders for the user.
 The Artist reads this file before starting a new sketch to understand preferences.
 
+## kinetic_magnetic_field_iron_filings_2d
+- **Rating**: 
+- **Comment**: 
+
 ## abstract_optical_illusion_truchet_tiles_2d
 - **Rating**: 
 - **Comment**: 

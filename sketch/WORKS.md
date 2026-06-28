@@ -1,3 +1,59 @@
+## generative_kinetic_cellular_automata_2d
+
+- **Date**: 2026-06-25
+- **Theme**: A continuous 2D cellular automata generating hypnotic, propagating wave patterns.
+- **Technique**: Cyclic Cellular Automata evaluated with NumPy, producing spiral waves mapped to a shifting color spectrum.
+- **Description**: An animated 15s sequence of cascading cellular waves.
+
+## generative_kinetic_harmonograph_pendulum_2d
+
+- **Date**: 2026-06-25
+- **Theme**: A simulation of a complex mechanical harmonograph with multiple coupled pendulums drawing a continuous overlapping curve.
+- **Technique**: Parametric equations mapping multiple decaying sine waves, drawn incrementally over 15 seconds.
+- **Description**: An animated 15s sequence of a complex harmonograph curve drawing itself.
+
+## generative_algorithmic_voronoi_shatter_2d
+
+- **Date**: 2026-06-25
+- **Theme**: A geometric field fracturing into a Voronoi diagram that dynamically shifts over time.
+- **Technique**: Uses `scipy.spatial.Voronoi` and Perlin noise to drive point motion, with center-weighted stroke rendering.
+- **Description**: An animated 15s sequence of a fracturing geometric field.
+
+## generative_lsystem_space_filling_curve_2d
+
+- **Date**: 2026-06-25
+- **Theme**: A space-filling curve (the Dragon curve) that incrementally draws itself, leaving a glowing trail that fades over time.
+- **Technique**: L-System fractal generation (14 iterations) translated into drawing instructions, rendered with Py5 using additive blending.
+- **Description**: An animated 15s sequence of a fractal drawing itself.
+
+## generative_boids_flocking_behavior_2d
+
+- **Date**: 2026-06-25
+- **Theme**: A swarm of boids mimicking flocking birds or schooling fish, leaving glowing trails as they move across a dark void.
+- **Technique**: Boids algorithm (Separation, Alignment, Cohesion) vectorized with NumPy for performance, rendered with additive blending.
+- **Description**: An animated 15s sequence of emergent flocking behavior.
+
+## generative_fbm_domain_warping_2d
+
+- **Date**: 2026-06-25
+- **Theme**: Liquid neon currents shaped by layered fractal noise, representing an abstract topographic map or magnetic fluid.
+- **Technique**: Fractional Brownian Motion (fBM) domain warping applied to a dense 2D particle system.
+- **Description**: An animated 15s sequence of fluid currents.
+
+## generative_reaction_diffusion_cellular_growth_2d
+
+- **Date**: 2026-06-25
+- **Theme**: A Gray-Scott reaction-diffusion system simulating organic, cellular growth patterns mimicking coral or brain tissue.
+- **Technique**: 2D Gray-Scott Reaction-Diffusion using NumPy convolution mapped to an iridescent color gradient.
+- **Description**: An animated 15s sequence of generative cellular growth.
+
+## generative_algorithmic_quadtree_subdivision_2d
+
+- **Date**: 2026-06-25
+- **Theme**: A recursive spatial subdivision (quadtree) that dynamically splits and merges based on the motion of invisible attractors.
+- **Technique**: 2D Quadtree algorithm. Recursively divides rectangles if an attractor is within bounds, drawn as glowing neon wireframes.
+- **Description**: An animated 15s sequence of a generative quadtree subdivision.
+
 ## generative_algorithmic_geometric_interference_2d
 
 - **Date**: 2026-06-25
@@ -6751,3 +6807,24 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Theme**: A glowing procedural futuristic city that grows organically like an L-System tree out of a dark void, with neon highways coursing through the branches.
 - **Technique**: Orthogonal 3D recursive L-system branching, with py5.box() nodes and heavy stroke lines forming glowing building blocks.
 - **Description**: An animated 15s simulation of an L-system growing a massive orthogonal cyber-city in 3D.
+
+## generative_optical_flow_particles_2d
+
+- **Date**: 2026-06-25
+- **Theme**: Thousands of semi-transparent neon particles flowing across the screen driven by a 2D vector field based on Simplex noise, creating a fluid dynamic optical flow effect.
+- **Technique**: Generates a 2D vector field using `py5.os_noise` to govern the velocity and trajectory of thousands of point particles. A motion blur effect is created by drawing a low-opacity rectangle over the frame rather than clearing the background.
+- **Description**: An animated sequence of generative optical flow particles in 2D.
+
+## generative_sacred_geometry_fractal_bloom_2d
+
+- **Date**: 2026-06-25
+- **Theme**: A neon-colored, geometric fractal bloom that pulses and grows recursively, reminiscent of sacred geometry and mystical mandalas.
+- **Technique**: Recursive tree-branching algorithm drawing lines outward in a radial pattern. The length of the branches pulses using a sine wave, and the entire structure is rendered with additive blending and motion blur.
+- **Description**: An animated sequence of a generative sacred geometry fractal bloom.
+
+## generative_verlet_cloth_tearing_2d
+
+- **Date**: 2026-06-25
+- **Theme**: A glowing neon cybernetic net that is dragged through a turbulent wind. Under intense pressure, the links of the net stretch and snap, flailing wildly as the structure violently tears apart.
+- **Technique**: A 2D Verlet physics engine with thousands of points and springs. An OpenSimplex noise field applies varying wind forces to the points. When a spring's length exceeds its physical limit, it breaks. It is rendered with additive blending and motion blur.
+- **Description**: An animated sequence of a generative verlet cloth tearing simulation.

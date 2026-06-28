@@ -1,3 +1,10 @@
+## generative_luminous_noise_ribbons_2d
+
+- **Date**: 2026-06-28
+- **Theme**: A continuous flow of highly detailed, translucent ribbons curving through a complex 3D noise vector field, creating organic glowing folds.
+- **Technique**: Uses a dense 2D particle array managed by Numpy. Particles move through a 3D OpenSimplex noise field. Each frame draws line segments with low opacity and additive blending, accumulating complex shapes.
+- **Description**: An animated sequence of luminous noise-driven ribbons.
+
 ## generative_retro_wireframe_terrain_2d
 
 - **Date**: 2026-06-28

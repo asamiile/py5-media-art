@@ -1,3 +1,10 @@
+## kinetic_crystalline_fractal_canopy_2d
+- **Date**: 2026-06-28
+- **Type**: Animation (900 frames, 30fps)
+- **Concept**: A recursive geometric tree/canopy made of crystalline structures that breathe and sway mathematically with a faux wind.
+- **Techniques**: Recursive drawing of polygons to form branches. Branch angles and lengths modulated by Perlin noise over time. Heavy alpha blending for density.
+- **Palette**: Amethyst and Gold (Deep purple, lavender, bright gold, white highlights on a very dark charcoal background).
+
 ## kinetic_boids_luminescent_flock_2d
 - **Date**: 2026-06-28
 - **Type**: Animation (900 frames, 30fps)

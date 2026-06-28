@@ -1,3 +1,10 @@
+## generative_stained_glass_voronoi_2d
+- **Date**: 2026-06-28
+- **Type**: Animation (900 frames, 30fps)
+- **Concept**: A dynamic, shifting Voronoi diagram that resembles living, breathing stained glass from a cathedral.
+- **Techniques**: Utilizing `scipy.spatial.Voronoi` to efficiently calculate the diagram. Seeds move continuously using 2D Perlin noise. The alpha (opacity) of each region pulses independently based on secondary noise. Heavy black strokes act as lead came.
+- **Palette**: Cathedral Glass (ruby red, sapphire blue, emerald green, vibrant yellow, deep indigo).
+
 ## kinetic_crystalline_fractal_canopy_2d
 - **Date**: 2026-06-28
 - **Type**: Animation (900 frames, 30fps)

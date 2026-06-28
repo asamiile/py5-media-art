@@ -2,6 +2,16 @@
 - **Rating**: 
 - **Comment**: 
 
+## generative_stained_glass_voronoi_2d
+Critique:
+- Originality: 8/10 (Voronoi is common, but applying it to simulate pulsing cathedral stained glass via Perlin noise seeds is visually captivating)
+- Visual Impact: 9/10 (The deep blacks contrasted with the rich cathedral palette, plus pulsing opacity, produces a very strong graphic aesthetic)
+- Technical Execution: 10/10 (Using `scipy.spatial.Voronoi` was extremely smart and efficient, allowing real-time performance at ~150 polygons instead of relying on heavy pixel-by-pixel shader ops)
+- Conceptual Depth: 8/10 (Explores the intersection of rigid mathematical partitions and fluid, organic movement)
+- **Total: 35/40**
+Verdict: APPROVE.
+Suggestions for future: Could introduce a slight rotation to the polygons or deform their vertices with another layer of noise to simulate imperfections in hand-cut glass.
+
 ## kinetic_crystalline_fractal_canopy_2d
 Critique:
 - Originality: 9/10 (A recursive tree is a classic, but replacing standard lines with thick overlapping crystalline polygons gives it a very fresh and complex look)

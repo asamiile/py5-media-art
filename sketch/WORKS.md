@@ -1,3 +1,10 @@
+## generative_unknown_pleasures_landscape_2d
+- **Date**: 2026-06-28
+- **Type**: Animation (900 frames, 30fps)
+- **Concept**: A continuous, shifting mountainous landscape made entirely of parallel horizontal lines, inspired by Joy Division's "Unknown Pleasures" album art.
+- **Techniques**: Grid of lines with Y-axis displacement driven by 3D Perlin noise. Polygons are drawn back-to-front and filled with black to create a perfect faux-3D occlusion effect.
+- **Palette**: Deep space black background with glowing lines. Low elevations are crisp white, while highest peaks transition through an electric cyan-to-magenta gradient.
+
 ## kinetic_harmonic_pendulum_web_2d
 - **Date**: 2026-06-28
 - **Type**: Animation (900 frames, 30fps)

@@ -1,3 +1,10 @@
+## kinetic_orbital_spirograph_mandala_2d
+
+- **Date**: 2026-06-28
+- **Theme**: A highly complex, intricate spirograph mandala built from hundreds of interlocking orbital mechanics, tracing glowing geometric patterns in the void.
+- **Technique**: Uses pure Python sine/cosine calculations to modulate the radius and angles of 200 translucent sweeping bezier curves that revolve and breathe over time. Additive blending combined with a trailing motion blur creates glowing intersections.
+- **Description**: An animated sequence of a glowing breathing spirograph mandala.
+
 ## generative_luminous_noise_ribbons_2d
 
 - **Date**: 2026-06-28

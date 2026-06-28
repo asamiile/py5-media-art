@@ -1,3 +1,13 @@
+## kinetic_metaball_lava_lamp_2d
+Critique:
+- Originality: 7/10 (Metaballs are standard, but executing them at 4K resolution dynamically via numpy broadcasting is an interesting technical approach).
+- Visual Impact: 9/10 (The glowing colors and smooth merging/splitting are mesmerizing, exactly like a real lava lamp but neon).
+- Technical Execution: 10/10 (Calculating a full distance field in numpy at quarter resolution and upscaling with Py5's `create_image_from_numpy()` provides an excellent balance of speed and visual fidelity).
+- Conceptual Depth: 6/10 (Simple aesthetic simulation).
+- **Total: 32/40**
+Verdict: APPROVE.
+Suggestions for future: Add a noisy gravity or wind field so the metaballs flow like liquid rather than just bouncing like billiard balls.
+
 ## generative_synthwave_wireframe_landscape_3d
 Critique:
 - Originality: 7/10 (Synthwave sunsets are a classic trope, but generating one entirely from scratch with a custom math projection engine is novel).

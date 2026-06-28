@@ -1,3 +1,10 @@
+## kinetic_metaball_lava_lamp_2d
+- **Date**: 2026-06-28
+- **Type**: Animation (450 frames, 30fps)
+- **Concept**: A glowing neon lava lamp made of organic, merging 2D metaballs that slowly drift, combine, and separate.
+- **Techniques**: True metaball distance field calculation is utilized: `sum(R^2 / distance^2)`. Since calculating this for millions of pixels per frame is very heavy in Python, it's optimized by computing a 1/4th resolution grid (960x540) via NumPy vectorized broadcasting in real-time. This produces smooth neon color gradients based on the field thresholds. The generated image is instantly written to Py5 using `create_image_from_numpy()` and upscaled seamlessly via bilinear filtering to perfect 4K.
+- **Palette**: Bright neon pink and orange cores fading into cyan and magenta edges on a deep blue background.
+
 ## generative_synthwave_wireframe_landscape_3d
 - **Date**: 2026-06-28
 - **Type**: Animation (450 frames, 30fps)

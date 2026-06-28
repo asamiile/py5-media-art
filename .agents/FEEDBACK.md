@@ -1,3 +1,13 @@
+## generative_reaction_diffusion_coral_2d
+Critique:
+- Originality: 7/10 (Gray-Scott is very common, but the dynamic morphing parameters give it a unique organic feel).
+- Visual Impact: 9/10 (The custom colormap mapping the concentration to neon pinks and blues makes it look like deep-sea bioluminescence, which is stunning).
+- Technical Execution: 10/10 (Using `scipy.signal.convolve2d` and mapping it natively to `py5.create_image_from_numpy()` provides a massive speedup over traditional nested loops).
+- Conceptual Depth: 8/10 (Effectively simulates biological growth and spatial complexity through simple chemical rules).
+- **Total: 34/40**
+Verdict: APPROVE.
+Suggestions for future: Consider using a non-uniform diffusion rate across the grid (e.g. controlled by Perlin noise) to break the homogeneity of the simulation.
+
 ## generative_chladni_plate_cymatics_2d
 Critique:
 - Originality: 9/10 (A brilliant digital interpretation of physical Chladni resonance).

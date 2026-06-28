@@ -1,3 +1,10 @@
+## generative_reaction_diffusion_coral_2d
+- **Date**: 2026-06-28
+- **Type**: Animation (450 frames, 30fps)
+- **Concept**: A vibrant, glowing simulation of the Gray-Scott reaction-diffusion model that organically grows and breathes like bioluminescent neon coral on the seafloor.
+- **Techniques**: Evaluating Laplacian convolutions and reaction kinetics equations iteratively over a high-resolution 2D grid. The continuous drifting of the feed and kill rates causes the mathematical "coral" to morph from spots to stripes to dense maze-like structures. Py5's optimized NumPy array mapping draws the grid instantly.
+- **Palette**: Neon coral pink, deep aquatic blue, and bright bioluminescent cyan.
+
 ## generative_chladni_plate_cymatics_2d
 - **Date**: 2026-06-28
 - **Type**: Animation (450 frames, 30fps)

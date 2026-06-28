@@ -1,3 +1,10 @@
+## generative_chaotic_strange_attractor_dust_2d
+- **Date**: 2026-06-28
+- **Type**: Animation (450 frames, 30fps)
+- **Concept**: A billion glowing particles mapped over time by a Peter de Jong strange attractor, creating slowly morphing nebula-like dust clouds.
+- **Techniques**: Utilizing NumPy vectorization to calculate the attractor equations for 150,000 points per frame simultaneously. Rendered with additive blending, deep violet and cosmic magenta colors to create a dense, celestial effect.
+- **Palette**: Deep violet, cosmic magenta, and bright starlight cyan on a black void.
+
 ## kinetic_oscilloscope_lissajous_knot_3d
 - **Date**: 2026-06-28
 - **Type**: Animation (900 frames, 30fps)

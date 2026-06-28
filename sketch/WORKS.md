@@ -1,3 +1,10 @@
+## generative_chladni_plate_cymatics_2d
+- **Date**: 2026-06-28
+- **Type**: Animation (450 frames, 30fps)
+- **Concept**: A generative simulation of Chladni plate cymatics, where fine golden sand particles organize into complex, symmetrical interference patterns on a vibrating metal plate driven by resonant frequencies.
+- **Techniques**: Evaluating the gradient of the mathematical Chladni function across a massive array of 150,000 points. The particles are driven toward the nodal lines (where Z = 0) to form the patterns. As the N and M frequencies slowly shift via noise, the patterns elegantly restructure themselves.
+- **Palette**: Glowing golden sand on a dark bronze metal background.
+
 ## generative_chaotic_strange_attractor_dust_2d
 - **Date**: 2026-06-28
 - **Type**: Animation (450 frames, 30fps)

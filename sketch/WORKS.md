@@ -1,3 +1,10 @@
+## kinetic_oscilloscope_lissajous_knot_3d
+- **Date**: 2026-06-28
+- **Type**: Animation (900 frames, 30fps)
+- **Concept**: A glowing green electron beam traces an infinitely complex 3D knot on an old analog oscilloscope, leaving a phosphor trail that slowly decays.
+- **Techniques**: 3D Torus knot parametric equations driven by continuous time parameters. The drawing is rendered using pure 2D lines projected mathematically from 3D space with additive blending and manual "ghosts" arrays for performance.
+- **Palette**: Pitch black background with glowing retro oscilloscope phosphor green lines.
+
 ## generative_unknown_pleasures_landscape_2d
 - **Date**: 2026-06-28
 - **Type**: Animation (900 frames, 30fps)

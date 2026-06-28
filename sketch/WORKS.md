@@ -1,3 +1,10 @@
+## kinetic_harmonic_pendulum_web_2d
+- **Date**: 2026-06-28
+- **Type**: Animation (900 frames, 30fps)
+- **Concept**: A web of silky, luminous trails produced by interconnected, swinging pendulums whose frequencies and phases drift over time.
+- **Techniques**: Additive blending (`py5.blend_mode(ADD)`), motion blur via partial screen clearing, and 4-tier nested trigonometric oscillators driven by Perlin noise.
+- **Palette**: Neon CMYK (Cyan, Magenta, Yellow, Spring Green, White) on Pitch Black.
+
 ## generative_stained_glass_voronoi_2d
 - **Date**: 2026-06-28
 - **Type**: Animation (900 frames, 30fps)

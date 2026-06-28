@@ -1,3 +1,10 @@
+## kinetic_boids_luminescent_flock_2d
+- **Date**: 2026-06-28
+- **Type**: Animation (900 frames, 30fps)
+- **Concept**: A swarm of glowing entities simulating flocking behavior (boids).
+- **Techniques**: Separation, alignment, cohesion algorithms with vectorized numpy math. Glowing additive trails and arrow-like boid geometry.
+- **Palette**: Bioluminescence (deep ocean blue, cyan, aqua, glowing green).
+
 ## kinetic_cyberpunk_glitch_grid_2d
 - **Date**: 2026-06-28
 - **Type**: Animation (900 frames, 30fps)

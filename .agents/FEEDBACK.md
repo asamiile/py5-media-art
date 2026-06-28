@@ -2,6 +2,16 @@
 - **Rating**: 
 - **Comment**: 
 
+## kinetic_boids_luminescent_flock_2d
+Critique:
+- Originality: 9/10 (A very nice implementation of classical boids algorithm with a beautiful aesthetic twist of glowing trails)
+- Visual Impact: 9/10 (The glowing additive blending and the trails make the flock look like deep sea bioluminescent creatures. Very striking.)
+- Technical Execution: 9/10 (Flocking behavior is clearly visible with distinct groups forming and moving smoothly. Vectorized numpy math handled the calculations well, though slowly)
+- Conceptual Depth: 8/10 (Successfully captures the organic, emergent behavior of swarms/flocks using simple rules)
+- **Total: 35/40**
+Verdict: APPROVE.
+Suggestions for future: Maybe experiment with obstacles that the boids have to avoid, or a predator boid that scatters the flock, to add more dynamic storytelling to the animation.
+
 ## kinetic_cyberpunk_glitch_grid_2d
 Critique:
 - Originality: 8/10 (Different style, horizontal blocky glitch is a new visual compared to past fluid/orbital sketches)

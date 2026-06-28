@@ -1,3 +1,10 @@
+## generative_retro_wireframe_terrain_2d
+
+- **Date**: 2026-06-28
+- **Theme**: An endless flight over a retro-futuristic, neon wireframe mountain landscape, reminiscent of 80s synthwave aesthetics.
+- **Technique**: Calculates a 3D grid of points using noise for elevation and projects them to 2D using a perspective projection matrix in numpy. A motion blur fade adds depth and atmosphere.
+- **Description**: An animated sequence of a retro wireframe terrain in 2D.
+
 ## kinetic_strange_attractor_nebula_2d
 
 - **Date**: 2026-06-28

@@ -1,3 +1,10 @@
+## generative_isometric_cyber_circuit_board_2d
+- **Date**: 2026-06-28
+- **Type**: Animation (450 frames, 30fps)
+- **Concept**: An isometric view of a massive, glowing futuristic motherboard where neon data packets race along complex orthogonal traces.
+- **Techniques**: Procedurally generating a dense orthogonal grid of 1,500 trace paths, then simulating the continuous movement of 5,000 "data packets" along these paths by mapping time onto segment ratios. The entire 2D scene is then mapped through an isometric 3D projection matrix (using 2D scale and rotate) which dynamically wobbles to give a sense of depth and scale.
+- **Palette**: Neon cyan, magenta, and yellow data packets on dark cyan trace lines over a deep cybernetic navy blue background.
+
 ## generative_kinetic_moire_interference_2d
 - **Date**: 2026-06-28
 - **Type**: Animation (450 frames, 30fps)

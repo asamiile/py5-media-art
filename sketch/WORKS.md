@@ -1,3 +1,10 @@
+## kinetic_cyberpunk_glitch_grid_2d
+- **Date**: 2026-06-28
+- **Type**: Animation (900 frames, 30fps)
+- **Concept**: A relentless, glowing grid of neon data blocks that distort, split, and tear horizontally, mimicking an overloaded cyberpunk server grid.
+- **Techniques**: Noise-driven coordinate offsets to snap and jitter brightly colored blocks across a 40x60 grid. Intermittent scanning lines and "digital snow" particles simulate video corruption, with a subtractive trailing blur to create sweeping light trails.
+- **Palette**: Cyberpunk Neon (Hot Pink, Cyan, Yellow, White, Grey on a Dark Espresso background).
+
 ## kinetic_orbital_spirograph_mandala_2d
 
 - **Date**: 2026-06-28

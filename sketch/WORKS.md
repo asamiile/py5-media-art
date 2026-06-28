@@ -1,3 +1,10 @@
+## generative_synthwave_wireframe_landscape_3d
+- **Date**: 2026-06-28
+- **Type**: Animation (450 frames, 30fps)
+- **Concept**: A retro-futuristic 80s synthwave wireframe mountain landscape that infinitely scrolls towards the camera beneath a massive glowing digital sun.
+- **Techniques**: To ensure perfect rendering performance in a headless 4K environment without OpenGL context crashes, a custom math-driven 3D projection engine was built in NumPy. It generates a 120x120 NumPy heightmap grid infused with scrolling Perlin-like noise and manually projects the `(X, Y, Z)` coordinates into 2D perspective. The points are drawn as a sweeping neon wireframe that fades into the distance using `py5.vertices()`. A massive additive-blended sun with retro scanlines completes the background.
+- **Palette**: Glowing neon purple/pink grid against a dark purple sky with a blazing yellow/orange sun.
+
 ## generative_slit_scan_glitch_landscape_2d
 - **Date**: 2026-06-28
 - **Type**: Animation (450 frames, 30fps)

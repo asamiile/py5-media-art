@@ -1,3 +1,10 @@
+## abstract_math_strange_attractor_clifford_2d
+- **Date**: 2026-06-28
+- **Type**: Animation (450 frames, 30fps)
+- **Concept**: We draw an incredibly detailed Strange Attractor (specifically, the Clifford Attractor) which gradually and organically morphs as its mathematical parameters drift.
+- **Techniques**: A single Clifford attractor is drawn using the iterative equations $x_{n+1} = \sin(a y_n) + c \cos(a x_n)$ and $y_{n+1} = \sin(b x_n) + d \cos(b y_n)$. Because drawing an attractor point-by-point in Python is too slow for 4K video, a massive parallelization technique is used. 10,000 independent particles are initialized and iterated simultaneously 30 times per frame using highly optimized vectorized NumPy arrays. This allows `py5` to draw exactly **300,000 individual points** per frame. To animate the attractor, the fundamental mathematical parameters subtly drift along continuous Perlin noise loops, causing the attractor to organically fold, spread, and morph without any jagged jumps.
+- **Palette**: The 300,000 points are drawn with highly transparent, tiny additive strokes. The RGB values slowly oscillate, shifting the glowing ethereal dust cloud between deep electric blue, cyan, and magenta. The background is nearly black, letting the bright mathematical structure shine through.
+
 ## kinetic_magnetic_field_iron_filings_2d
 - **Date**: 2026-06-28
 - **Type**: Animation (450 frames, 30fps)

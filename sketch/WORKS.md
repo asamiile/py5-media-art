@@ -1,3 +1,192 @@
+## kinetic_pendulum_wave_harmonics_2d
+
+- **Date**: 2026-06-27
+- **Theme**: A hypnotic, rhythmic display of pendulum wave harmonics. A grid of swinging orbs perfectly synchronize and desynchronize, forming shifting waves and complex interference patterns before resolving back into unity.
+- **Technique**: A 2D array of hundreds of pendulums represented by glowing circles. The frequency of each pendulum is a function of its index or distance from the center, creating the classic pendulum wave effect but extended to a 2D grid. The circles have trailing motion blur (drawn with low alpha over previous frames).
+- **Description**: An animated 15s sequence of kinetic pendulum wave harmonics in 2D.
+
+## generative_neon_wave_cityscape_3d
+
+- **Date**: 2026-06-27
+- **Theme**: A futuristic neon cityscape made of abstract glowing monoliths that undulate in waves, driven by an invisible force field.
+- **Technique**: A pseudo-3D isometric scene. A grid of tall boxes is rendered using 2D polygons. The height of each box is determined by a 2D OpenSimplex noise field that shifts over time. The boxes have brightly colored neon strokes and dark faces.
+- **Description**: An animated 15s sequence of generative neon wave cityscape in 2D isometric projection.
+
+## kinetic_woven_lissajous_fabric_2d
+
+- **Date**: 2026-06-27
+- **Theme**: A mesmerizing, tightly woven fabric of glowing threads that slowly unweaves itself and reweaves into new interference patterns.
+- **Technique**: Hundreds of overlapping Lissajous curves drawn with very fine, semi-transparent lines. The frequencies of the sine waves driving the X and Y positions are incremented slightly across the population of curves, causing them to phase out of alignment and create complex moiré patterns and 3D-looking cylindrical tubes of light.
+- **Description**: An animated 15s sequence of kinetic woven lissajous fabric in 2D.
+
+## generative_algorithmic_mosaic_subdivision_2d
+
+- **Date**: 2026-06-27
+- **Theme**: A glowing stained-glass mosaic that recursively subdivides itself, with individual tiles shifting hues and breathing in a slow, rhythmic pattern.
+- **Technique**: A 2D spatial subdivision algorithm. The grid recursively divides driven by an OpenSimplex noise field. Tiles are filled with semi-transparent neon colors, creating a constantly shifting stained-glass effect.
+- **Description**: An animated 15s sequence of generative algorithmic mosaic subdivision in 2D.
+
+## generative_vector_flow_topography_2d
+
+- **Date**: 2026-06-27
+- **Theme**: A mesmerizingly intricate topographic map that constantly redraws and evolves itself over time.
+- **Technique**: A 2D particle system where particles follow an OpenSimplex noise flow field, leaving trails with additive blending. The background is partially cleared each frame to create motion blur.
+- **Description**: An animated 15s sequence of generative vector flow topography in 2D.
+
+## abstract_cellular_automata_cyclic_2d
+
+- **Date**: 2026-06-27
+- **Theme**: A cyclic cellular automaton creating beautiful spiral waves of color.
+- **Technique**: Fast numpy array operations simulate a continuous grid where cells advance to the next state if enough neighbors are in that state, producing self-organizing spiral patterns over time.
+- **Description**: An animated 15s sequence of an abstract cyclic cellular automaton.
+
+## abstract_geometric_truchet_tiling_2d
+
+- **Date**: 2026-06-27
+- **Theme**: An animated labyrinth of Truchet tiles that continuously shape-shifts.
+- **Technique**: The canvas is divided into a grid, with each cell drawing arcs that connect its edges. A slow-moving noise field sweeps across the canvas, smoothly rotating each tile to form an ever-changing maze of glowing paths.
+- **Description**: An animated 15s sequence of abstract geometric Truchet tiling.
+
+## generative_reaction_diffusion_cellular_2d
+
+- **Date**: 2026-06-27
+- **Theme**: An accelerated simulation of the Gray-Scott reaction-diffusion model.
+- **Technique**: Fast numpy matrix shifting (roll) is used to compute the Laplacian and simulate chemical diffusion, resulting in Turing patterns that dynamically shift from spots to labyrinthine stripes as parameters drift.
+- **Description**: An animated 15s sequence of generative reaction diffusion cellular patterns.
+
+## kinetic_oscillating_pendulum_waves_2d
+
+- **Date**: 2026-06-27
+- **Theme**: A 2D simulation of the classic pendulum wave experiment.
+- **Technique**: A series of glowing circles move harmonically left and right. Their frequencies are tuned linearly, causing them to form intricate Lissajous-like interference patterns and waves that slowly drift into chaos and then realign.
+- **Description**: An animated 15s sequence of kinetic oscillating pendulum waves.
+
+## abstract_kinetic_topographical_interference_2d
+
+- **Date**: 2026-06-27
+- **Theme**: A kinetic simulation of mathematical interference patterns that mimic overlapping topographical maps or moire rings. The patterns continually shift, align, and break apart.
+- **Technique**: A fast, vectorized 2D grid of points using `numpy`. Complex sine and cosine interference equations are calculated over the grid, and only points above a certain interference threshold are drawn, resulting in pulsing contour lines and moire effects.
+- **Description**: An animated sequence of abstract kinetic topographical interference.
+
+## abstract_fluid_iridescent_oil_spill_2d
+
+- **Date**: 2026-06-27
+- **Theme**: An abstract representation of an iridescent oil spill on water. Colors shift continuously in metallic neon hues as the fluid warps and twists.
+- **Technique**: Dense 2D particle field vectorized with numpy for performance. Colored by a full HSB spectrum for iridescence. The points are continuously displaced by a complex trigonometric flow field mimicking curl noise over time.
+- **Description**: An animated sequence of an abstract fluid iridescent oil spill.
+
+## generative_quantum_foam_bubbles_2d
+
+- **Date**: 2026-06-27
+- **Theme**: Quantum foam, the theoretical bubbling of spacetime at the Planck length. Visualized as densely packed, overlapping, and constantly morphing neon bubbles (circles) that spawn and pop rapidly.
+- **Technique**: A grid/space populated by thousands of circles. The radii of circles are determined by a fast-shifting 3D noise field, making them expand and contract. Additive blending creates intense hot spots where bubbles overlap.
+- **Description**: An animated 15s sequence of generative quantum foam bubbles.
+
+## abstract_cybernetic_neural_network_2d
+
+- **Date**: 2026-06-27
+- **Theme**: A biological or cybernetic neural network where glowing data pulses travel along synaptic connections.
+- **Technique**: Particles acting as data signals traverse the edges of a drifting network graph, leaving glowing trails with additive blending to simulate data transmission.
+- **Description**: An animated 15s sequence of an abstract cybernetic neural network.
+
+## generative_chladni_plate_resonance_2d
+
+- **Date**: 2026-06-27
+- **Theme**: Visualizing Chladni figures—patterns formed by fine sand on a vibrating plate.
+- **Technique**: Thousands of particles flow down the numerical gradient of the Chladni resonance equation, settling along the nodal lines (areas of zero vibration) to form intricate, evolving geometric shapes.
+- **Description**: An animated 15s sequence of generative Chladni plate resonance.
+
+## abstract_geometric_kaleidoscope_mandala_2d
+
+- **Date**: 2026-06-27
+- **Theme**: A classic glowing kaleidoscope of rotating polygons and lines that multiply and mirror recursively.
+- **Technique**: Render a mutating slice of sine-wave driven geometry and duplicate/rotate it around the center using py5 matrix transformations and additive blending.
+- **Description**: An animated 15s sequence of an abstract geometric kaleidoscope mandala.
+
+## generative_fluid_ink_marbling_2d
+
+- **Date**: 2026-06-27
+- **Theme**: Simulation of Suminagashi (Japanese ink marbling) where rings of ink are distorted by turbulent flow.
+- **Technique**: Multiple concentric rings of points are subjected to a continuous cumulative displacement field driven by Perlin curl noise, stretching and folding the rings into marbled patterns.
+- **Description**: An animated 15s sequence of a generative fluid ink marbling.
+
+## generative_orbital_gravity_dance_2d
+
+- **Date**: 2026-06-27
+- **Theme**: Simulation of an n-body gravity system where several heavy stars and hundreds of tiny planets interact, creating beautiful orbital trails.
+- **Technique**: N-body physics calculation for gravity mechanics. Planets trace glowing, varying colored trails based on their velocity using additive blending.
+- **Description**: An animated 15s sequence of a generative orbital gravity dance.
+
+## generative_fluid_vortex_street_2d
+
+- **Date**: 2026-06-27
+- **Theme**: Simulating a Kármán vortex street, the repeating pattern of swirling vortices caused by fluid flow separating around a cylindrical object.
+- **Technique**: An approximation of potential flow around a cylinder perturbed with noise to simulate turbulence. Thousands of particles trace the flow and leave glowing trails using additive blending.
+- **Description**: An animated 15s sequence of a generative fluid vortex street.
+
+## generative_magnetic_pendulum_fractals_2d
+
+- **Date**: 2026-06-27
+- **Theme**: Simulating a magnetic pendulum with multiple magnets, revealing intricate fractal basins of attraction through thousands of drawn trajectories.
+- **Technique**: Physics simulation of thousands of pendulums moving under gravity, friction, and magnetic forces, rendered as glowing 2D trails that blend additively over time.
+- **Description**: An animated 15s sequence of generative magnetic pendulum fractals.
+
+## abstract_fluid_chromatic_aberration_vortices_2d
+
+- **Date**: 2026-06-27
+- **Theme**: Fluid vortices that swirl and merge, leaving trails with strong simulated chromatic aberration to create a hallucinatory liquid effect.
+- **Technique**: Simulating a 2D vector field using curl noise. Particles are drawn three times (Red, Green, Blue) with spatial offsets based on velocity.
+- **Description**: An animated 15s sequence of fluid vortices with chromatic aberration.
+
+## generative_bioluminescent_deep_sea_snow_2d
+
+- **Date**: 2026-06-27
+- **Theme**: A majestic descent through a deep-sea trench, surrounded by glowing marine snow and rhythmic bioluminescent organisms.
+- **Technique**: A 2D simulation faking 3D parallax and depth, mapping depth parameters to particle sizes and alpha transparency with additive blending.
+- **Description**: An animated 15s sequence of a bioluminescent deep-sea descent.
+
+## abstract_strange_attractor_morph_2d
+
+- **Date**: 2026-06-27
+- **Theme**: Millions of glowing particles tracing out complex strange attractors (Peter de Jong attractors) that slowly mutate over time.
+- **Technique**: Using basic 2D points to iteratively draw attractors with additive blending, slowly interpolating the attractor parameters over time to make the shape breathe and morph. Draws 200,000 points per frame.
+- **Description**: An animated 15s sequence of strange attractors morphing.
+
+## abstract_fractal_spirograph_2d
+
+- **Date**: 2026-06-27
+- **Theme**: A continuously evolving, intricate spirograph made of glowing multi-colored threads that slowly trace complex fractal geometry.
+- **Technique**: Layering py5.curve_vertex lines using mathematical hypotrochoid equations, with time acting as the progression variable, rendered using cyan, magenta, and yellow with additive blending.
+- **Description**: An animated 15s sequence of a mathematical fractal spirograph.
+
+## generative_alien_typography_cascade_2d
+
+- **Date**: 2026-06-27
+- **Theme**: A cascading waterfall of abstract geometric glyphs that shift and mutate into each other, resembling alien typography raining down.
+- **Technique**: Grid-based drawing using py5's 2D primitives. Drawing random symbol configurations that drop like rain and fade out using a semi-transparent background.
+- **Description**: An animated 15s sequence of alien data cascading.
+
+## abstract_optical_illusion_moire_2d
+
+- **Date**: 2026-06-27
+- **Theme**: Multiple rotating concentric layers of fine contrasting lines that overlap to create hypnotic moiré interference patterns.
+- **Technique**: 2D drawing of densely packed radial and concentric lines that slowly rotate in opposite directions with precise mathematical offsets. The slight shifts in frequency and angle generate large-scale pulsing optical illusions.
+- **Description**: An animated 15s sequence of moire interference patterns.
+
+## generative_botanical_stained_glass_2d
+
+- **Date**: 2026-06-27
+- **Theme**: A vibrant, unfolding stained glass window that slowly grows into a complex botanical mandala.
+- **Technique**: 2D Voronoi tessellation where cell sizes and positions evolve outward in a radial pattern. The cells are drawn with thick, dark borders simulating lead, and filled with highly saturated, jewel-toned colors mapping to an underlying 3D noise field.
+- **Description**: An animated 15s sequence of a vibrant Voronoi stained glass window.
+
+## kinetic_celestial_mechanics_2d
+
+- **Date**: 2026-06-27
+- **Theme**: A 2D top-down view of an intricate celestial orrery, simulating planetary orbits with glowing mechanical precision and sweeping luminous trails.
+- **Technique**: Nested rotational transformations using py5.rotate and py5.translate, combined with motion blur using a semi-transparent dark overlay. Planets and moons orbit at varying speeds.
+- **Description**: An animated 15s sequence of glowing celestial mechanics.
+
 ## generative_optical_illusion_truchet_tiles_2d
 
 - **Date**: 2026-06-26

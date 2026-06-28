@@ -1,5 +1,9 @@
-## abstract_fluid_iridescent_plasma_2d
+## generative_cymatic_frequency_mandala_2d
 
+- **Rating**: 
+- **Comment**: 
+
+## abstract_fluid_iridescent_plasma_2d
 - **Rating**: 
 - **Comment**: 
 

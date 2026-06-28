@@ -1,5 +1,11 @@
-## abstract_fluid_iridescent_plasma_2d
+## generative_cymatic_frequency_mandala_2d
 
+- **Date**: 2026-06-28
+- **Theme**: An animated mandala created by intersecting standing waves on a fluid surface, simulating cymatic resonance patterns.
+- **Technique**: High-performance vectorized 2D grid evaluation of multiple radially decaying sine waves with rotating centers and phase shifts, mapped to high-contrast neon interference nodes.
+- **Description**: An animated 2D sequence of glowing cymatic frequency standing waves.
+
+## abstract_fluid_iridescent_plasma_2d
 - **Date**: 2026-06-28
 - **Theme**: An abstract fluid simulation of iridescent plasma. Thousands of particles drift through a curling noise field, tracing long, glowing, multi-colored lines.
 - **Technique**: High-performance 2D particle simulation using numpy. The fluid motion is driven by a time-varying 3D OpenSimplex noise field approximating curl noise. Particles leave semi-transparent trails using additive blending, colored continuously via the HSB spectrum.

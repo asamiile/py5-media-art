@@ -1,3 +1,10 @@
+## generative_abelian_sandpile_fractal_2d
+- **Date**: 2026-06-28
+- **Type**: Animation (450 frames, 30fps)
+- **Concept**: The Abelian Sandpile Model produces incredibly intricate, Persian-rug-like fractal patterns. When a massive number of virtual "sand grains" are dropped into the center of a grid, any cell that accumulates 4 or more grains topples over, sending exactly 1 grain to each of its 4 cardinal neighbors. As the toppling cascades outward, complex, perfectly symmetrical geometric patterns naturally emerge.
+- **Techniques**: Because toppling cascades can easily take billions of iterations in Python, this sketch completely vectorizes the logic using 2D NumPy array masks and `np.roll` shifts. The simulation runs 250 topple steps per frame. Over 15 seconds, millions of sand grains are dropped into the center, generating a spectacular expanding fractal.
+- **Palette**: Neon Pink, Bright Orange, Electric Cyan, and Deep Space Blue.
+
 ## generative_domain_warping_liquid_2d
 - **Date**: 2026-06-28
 - **Type**: Animation (450 frames, 30fps)

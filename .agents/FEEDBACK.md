@@ -1,12 +1,16 @@
+# User Feedback
+
+**CRITICAL RULE**: ONLY the USER may write to the `Rating` and `Comment` field.
+Agents MUST NOT write anything in the `Comment` field. When registering a new work, Agents must leave the `Rating` and `Comment` fields empty or with their default labels as placeholders for the user.
+The Artist reads this file before starting a new sketch to understand preferences.
+
+## kinetic_chaos_game_fractal_mandala_2d
+- **Rating**: 
+- **Comment**: 
+
 ## generative_hodgepodge_machine_bz_reaction_2d
-Critique:
-- Originality: 9/10 (The Hodgepodge Machine is a known algorithm, but implementing it to generate 4K high-resolution fluid-like spiral waves in a deep neon color palette is spectacular).
-- Visual Impact: 10/10 (The perfectly smooth continuous gradients produced by mapping states to trigonometric functions look like a mesmerizing glowing fluid).
-- Technical Execution: 10/10 (Extracting an 8-neighbor sum and performing discrete logic across half a million grid cells using `np.roll()` and vectorized conditionals is the absolute peak of Python performance optimization).
-- Conceptual Depth: 9/10 (A brilliant digital representation of an analog chemical oscillator).
-- **Total: 38/40**
-Verdict: APPROVE.
-Suggestions for future: Consider wrapping the 2D grid around a 3D sphere to simulate the chemical reaction spreading across a planetary surface.
+- **Rating**: 
+- **Comment**: 
 
 ## generative_differential_line_growth_2d
 - **Rating**: 
@@ -141,7 +145,7 @@ Suggestions for future: Consider wrapping the 2D grid around a 3D sphere to simu
 
 ## generative_algorithmic_mosaic_subdivision_2d
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## generative_vector_flow_topography_2d
@@ -181,7 +185,7 @@ Suggestions for future: Consider wrapping the 2D grid around a 3D sphere to simu
 
 ## generative_quantum_foam_bubbles_2d
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## abstract_cybernetic_neural_network_2d
@@ -231,7 +235,7 @@ Suggestions for future: Consider wrapping the 2D grid around a 3D sphere to simu
 
 ## abstract_strange_attractor_morph_2d
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## abstract_fractal_spirograph_2d

@@ -4,6 +4,10 @@
 Agents MUST NOT write anything in the `Comment` field. When registering a new work, Agents must leave the `Rating` and `Comment` fields empty or with their default labels as placeholders for the user.
 The Artist reads this file before starting a new sketch to understand preferences.
 
+## abstract_math_lissajous_interference_web_2d
+- **Rating**: 
+- **Comment**: 
+
 ## generative_synthwave_terrain_flight_2d
 - **Rating**: 
 - **Comment**: 

@@ -1,3 +1,7 @@
+## kinetic_strange_attractor_nebula_2d
+- **Rating**: 
+- **Comment**: 
+
 ## generative_cymatic_frequency_mandala_2d
 
 - **Rating**: 

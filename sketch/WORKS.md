@@ -1,3 +1,10 @@
+## kinetic_strange_attractor_nebula_2d
+
+- **Date**: 2026-06-28
+- **Theme**: A dense, swirling nebula of particles tracing a morphing strange attractor. The parameters of a Clifford attractor shift slowly, causing millions of particles to weave and fold into complex luminous sheets.
+- **Technique**: High-performance 2D particle simulation using numpy to evaluate the Clifford strange attractor formulas for 100,000 points per frame. The points leave glowing trails via an additive blending motion-blur effect.
+- **Description**: An animated sequence of a morphing Clifford strange attractor nebula.
+
 ## generative_cymatic_frequency_mandala_2d
 
 - **Date**: 2026-06-28

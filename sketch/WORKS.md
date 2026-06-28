@@ -1,3 +1,10 @@
+## abstract_fluid_iridescent_plasma_2d
+
+- **Date**: 2026-06-28
+- **Theme**: An abstract fluid simulation of iridescent plasma. Thousands of particles drift through a curling noise field, tracing long, glowing, multi-colored lines.
+- **Technique**: High-performance 2D particle simulation using numpy. The fluid motion is driven by a time-varying 3D OpenSimplex noise field approximating curl noise. Particles leave semi-transparent trails using additive blending, colored continuously via the HSB spectrum.
+- **Description**: An animated sequence of iridescent plasma flowing in a vector field.
+
 ## kinetic_pendulum_wave_harmonics_2d
 
 - **Date**: 2026-06-27

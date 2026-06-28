@@ -2,7 +2,7 @@ from pathlib import Path
 import shutil
 import subprocess
 import sys
-import math
+import random
 import py5
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
@@ -22,60 +22,76 @@ PREVIEW_FILENAME = f"{WORK_NAME}_p1.png"
 PREVIEW_SIZE, OUTPUT_SIZE, _ = get_sizes()
 SIZE = OUTPUT_SIZE
 
+class Drop:
+    def __init__(self, w, h):
+        self.w = w
+        self.h = h
+        self.reset()
+        self.y = random.uniform(0, h) # Start anywhere initially
+
+    def reset(self):
+        self.x = random.uniform(0, self.w)
+        self.y = random.uniform(-100, -10)
+        self.z = random.uniform(0, 20) # Depth
+        self.len = py5.remap(self.z, 0, 20, 10, 40)
+        self.yspeed = py5.remap(self.z, 0, 20, 4, 15)
+        # Cyberpunk colors: Cyan, Magenta, Neon Blue
+        self.hue = random.choice([190, 320, 280])
+
+    def fall(self, t):
+        # Noise-based glitching
+        glitch_chance = py5.os_noise(self.x * 0.01, self.y * 0.01, t * 5.0)
+        
+        glitch_offset = 0
+        if glitch_chance > 0.7:
+            glitch_offset = random.uniform(-20, 20)
+            
+        self.y += self.yspeed
+        
+        # Reset at bottom
+        if self.y > self.h:
+            self.reset()
+            
+        return glitch_offset
+
+NUM_DROPS = 1500
+drops = []
+
 def setup():
     py5.size(*SIZE)
     py5.pixel_density(1)
     FRAMES_DIR.mkdir(exist_ok=True)
     py5.color_mode(py5.HSB, 360, 100, 100, 255)
     py5.no_stroke()
-    # Blend mode ADD for glowing overlaps
-    py5.blend_mode(py5.ADD)
-
-def draw_fractal(length, depth, max_depth, t):
-    if depth == 0:
-        return
-        
-    hue = (depth * 20 + py5.frame_count * 0.5) % 360
-    py5.fill(hue, 90, 80, 50)
     
-    # Draw shape
-    py5.circle(0, 0, length)
-    
-    # Recursion
-    new_length = length * 0.5
-    num_branches = 6
-    
-    # Base rotation that evolves
-    base_rot = math.sin(t + depth * 0.2) * math.pi / 4
-    
-    for i in range(num_branches):
-        py5.push_matrix()
-        angle = i * (py5.TWO_PI / num_branches) + base_rot
-        
-        # Position offset
-        offset_dist = length * 0.6 * math.cos(t * 0.5 + depth)
-        py5.rotate(angle)
-        py5.translate(offset_dist, 0)
-        
-        # Recursive rotation
-        py5.rotate(t * 2)
-        
-        draw_fractal(new_length, depth - 1, max_depth, t)
-        py5.pop_matrix()
+    for _ in range(NUM_DROPS):
+        drops.append(Drop(py5.width, py5.height))
 
 def draw():
-    py5.background(5, 80, 10)
+    # Matrix fade effect
+    py5.fill(240, 90, 5, 40)
+    py5.rect(0, 0, py5.width, py5.height)
     
-    t = py5.frame_count * 0.015
+    t = py5.frame_count * 0.01
     
-    py5.translate(py5.width/2, py5.height/2)
-    
-    # Global rotation
-    py5.rotate(t * 0.5)
-    
-    # Start recursive drawing
-    # Decrease max_depth slightly to ensure smooth 60fps
-    draw_fractal(py5.height * 0.4, 5, 5, t)
+    for d in drops:
+        offset = d.fall(t)
+        
+        # Draw line segment based on z-depth
+        thick = py5.remap(d.z, 0, 20, 1, 4)
+        
+        # Glitch color
+        h = d.hue
+        if offset != 0:
+            h = (h + 180) % 360 # Invert color on glitch
+            
+        # Glowing trail
+        py5.fill(h, 90, 100, 200)
+        py5.rect(d.x + offset, d.y, thick, d.len)
+        
+        # Bright head
+        py5.fill(0, 0, 100, 255)
+        py5.rect(d.x + offset, d.y + d.len - thick, thick, thick)
 
     py5.save_frame(str(FRAMES_DIR / "frame-####.png"))
 

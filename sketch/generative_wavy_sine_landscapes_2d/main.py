@@ -2,7 +2,6 @@ from pathlib import Path
 import shutil
 import subprocess
 import sys
-import math
 import py5
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
@@ -28,54 +27,51 @@ def setup():
     FRAMES_DIR.mkdir(exist_ok=True)
     py5.color_mode(py5.HSB, 360, 100, 100, 255)
     py5.no_stroke()
-    # Blend mode ADD for glowing overlaps
-    py5.blend_mode(py5.ADD)
-
-def draw_fractal(length, depth, max_depth, t):
-    if depth == 0:
-        return
-        
-    hue = (depth * 20 + py5.frame_count * 0.5) % 360
-    py5.fill(hue, 90, 80, 50)
-    
-    # Draw shape
-    py5.circle(0, 0, length)
-    
-    # Recursion
-    new_length = length * 0.5
-    num_branches = 6
-    
-    # Base rotation that evolves
-    base_rot = math.sin(t + depth * 0.2) * math.pi / 4
-    
-    for i in range(num_branches):
-        py5.push_matrix()
-        angle = i * (py5.TWO_PI / num_branches) + base_rot
-        
-        # Position offset
-        offset_dist = length * 0.6 * math.cos(t * 0.5 + depth)
-        py5.rotate(angle)
-        py5.translate(offset_dist, 0)
-        
-        # Recursive rotation
-        py5.rotate(t * 2)
-        
-        draw_fractal(new_length, depth - 1, max_depth, t)
-        py5.pop_matrix()
 
 def draw():
-    py5.background(5, 80, 10)
-    
+    # Gradient background
+    for y in range(0, py5.height, 20):
+        py5.fill(280, 80, py5.remap(y, 0, py5.height, 10, 40))
+        py5.rect(0, y, py5.width, 20)
+
     t = py5.frame_count * 0.015
     
-    py5.translate(py5.width/2, py5.height/2)
+    num_layers = 25
+    y_step = py5.height / num_layers
     
-    # Global rotation
-    py5.rotate(t * 0.5)
-    
-    # Start recursive drawing
-    # Decrease max_depth slightly to ensure smooth 60fps
-    draw_fractal(py5.height * 0.4, 5, 5, t)
+    for i in range(num_layers):
+        base_y = py5.height * 0.15 + i * y_step
+        
+        # Color mapped by depth
+        hue = (180 + i * 5 - py5.frame_count * 0.2) % 360
+        sat = 80
+        bri = py5.remap(i, 0, num_layers - 1, 20, 100)
+        
+        py5.fill(hue, sat, bri, 240)
+        
+        py5.begin_shape()
+        py5.vertex(0, py5.height)
+        
+        # Draw wave curve
+        for x in range(0, py5.width + 100, 100):
+            # Noise-driven terrain
+            noise_val = py5.os_noise(x * 0.002, i * 0.1, t)
+            
+            # Additional sine wave for rhythm
+            sine_val = py5.sin(x * 0.005 + t * 2 + i) * 50
+            
+            y_offset = py5.remap(noise_val, 0, 1, -150, 150) + sine_val
+            
+            # Parallax scrolling
+            px = x - (py5.frame_count * py5.remap(i, 0, num_layers-1, 1, 5)) % 100
+            
+            if px < 0:
+                px = 0
+            
+            py5.vertex(px, base_y + y_offset)
+            
+        py5.vertex(py5.width, py5.height)
+        py5.end_shape(py5.CLOSE)
 
     py5.save_frame(str(FRAMES_DIR / "frame-####.png"))
 

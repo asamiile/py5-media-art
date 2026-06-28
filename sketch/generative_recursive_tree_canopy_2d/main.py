@@ -3,6 +3,7 @@ import shutil
 import subprocess
 import sys
 import math
+import random
 import py5
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
@@ -27,55 +28,59 @@ def setup():
     py5.pixel_density(1)
     FRAMES_DIR.mkdir(exist_ok=True)
     py5.color_mode(py5.HSB, 360, 100, 100, 255)
-    py5.no_stroke()
-    # Blend mode ADD for glowing overlaps
-    py5.blend_mode(py5.ADD)
 
-def draw_fractal(length, depth, max_depth, t):
+def draw_branch(length, depth, t, x_offset):
     if depth == 0:
+        # Draw a leaf or bloom
+        py5.no_stroke()
+        hue = (100 + depth * 20 + py5.frame_count * 0.5) % 360
+        py5.fill(hue, 80, 100, 200)
+        leaf_size = length * 1.5 * (1 + math.sin(t * 2 + x_offset))
+        py5.circle(0, 0, leaf_size)
         return
-        
-    hue = (depth * 20 + py5.frame_count * 0.5) % 360
-    py5.fill(hue, 90, 80, 50)
+
+    # Draw branch
+    py5.stroke(40, 60, 40) # Brown-ish
+    py5.stroke_weight(depth * 1.5)
+    py5.line(0, 0, 0, -length)
     
-    # Draw shape
-    py5.circle(0, 0, length)
+    py5.translate(0, -length)
     
-    # Recursion
-    new_length = length * 0.5
-    num_branches = 6
+    # Calculate wind sway using noise
+    # Based on depth and overall time
+    wind = py5.remap(py5.os_noise(x_offset * 0.01, depth * 0.1, t * 0.5), 0, 1, -0.3, 0.3)
     
-    # Base rotation that evolves
-    base_rot = math.sin(t + depth * 0.2) * math.pi / 4
+    # Left branch
+    py5.push_matrix()
+    angle_left = math.pi / 6 + wind + math.sin(t + depth) * 0.1
+    py5.rotate(-angle_left)
+    draw_branch(length * 0.75, depth - 1, t, x_offset - length)
+    py5.pop_matrix()
     
-    for i in range(num_branches):
-        py5.push_matrix()
-        angle = i * (py5.TWO_PI / num_branches) + base_rot
-        
-        # Position offset
-        offset_dist = length * 0.6 * math.cos(t * 0.5 + depth)
-        py5.rotate(angle)
-        py5.translate(offset_dist, 0)
-        
-        # Recursive rotation
-        py5.rotate(t * 2)
-        
-        draw_fractal(new_length, depth - 1, max_depth, t)
-        py5.pop_matrix()
+    # Right branch
+    py5.push_matrix()
+    angle_right = math.pi / 5 - wind + math.cos(t + depth) * 0.1
+    py5.rotate(angle_right)
+    draw_branch(length * 0.7, depth - 1, t, x_offset + length)
+    py5.pop_matrix()
 
 def draw():
-    py5.background(5, 80, 10)
+    py5.background(20, 80, 15)
     
-    t = py5.frame_count * 0.015
+    t = py5.frame_count * 0.02
     
-    py5.translate(py5.width/2, py5.height/2)
+    # Draw several trees
+    num_trees = 5
+    spacing = py5.width / (num_trees + 1)
     
-    # Global rotation
-    py5.rotate(t * 0.5)
-    
-    # Start recursive drawing
-    # Decrease max_depth slightly to ensure smooth 60fps
-    draw_fractal(py5.height * 0.4, 5, 5, t)
+    for i in range(1, num_trees + 1):
+        py5.push_matrix()
+        py5.translate(i * spacing, py5.height)
+        
+        # Give each tree a slightly different starting wind offset based on position
+        draw_branch(py5.height * 0.25, 9, t, i * spacing)
+        
+        py5.pop_matrix()
 
     py5.save_frame(str(FRAMES_DIR / "frame-####.png"))
 

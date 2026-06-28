@@ -1,3 +1,58 @@
+## generative_optical_illusion_truchet_tiles_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## generative_wavy_sine_landscapes_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## abstract_geometric_spirograph_mandala_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## generative_recursive_tree_canopy_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## generative_cyberpunk_neon_rain_matrix_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## generative_boids_flocking_simulation_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## abstract_geometric_kaleidoscope_fractal_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## generative_flow_field_topography_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## generative_isometric_labyrinth_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_chladni_plate_resonance_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_magnetic_compass_array_2d
+
+- **Rating**: 
+- **Comment**: 
+
 ## generative_kinetic_cellular_automata_2d
 
 - **Rating**: 

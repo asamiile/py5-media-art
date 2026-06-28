@@ -27,55 +27,50 @@ def setup():
     py5.pixel_density(1)
     FRAMES_DIR.mkdir(exist_ok=True)
     py5.color_mode(py5.HSB, 360, 100, 100, 255)
-    py5.no_stroke()
-    # Blend mode ADD for glowing overlaps
+    py5.background(10, 80, 10)
+    py5.no_fill()
     py5.blend_mode(py5.ADD)
 
-def draw_fractal(length, depth, max_depth, t):
-    if depth == 0:
-        return
-        
-    hue = (depth * 20 + py5.frame_count * 0.5) % 360
-    py5.fill(hue, 90, 80, 50)
-    
-    # Draw shape
-    py5.circle(0, 0, length)
-    
-    # Recursion
-    new_length = length * 0.5
-    num_branches = 6
-    
-    # Base rotation that evolves
-    base_rot = math.sin(t + depth * 0.2) * math.pi / 4
-    
-    for i in range(num_branches):
-        py5.push_matrix()
-        angle = i * (py5.TWO_PI / num_branches) + base_rot
-        
-        # Position offset
-        offset_dist = length * 0.6 * math.cos(t * 0.5 + depth)
-        py5.rotate(angle)
-        py5.translate(offset_dist, 0)
-        
-        # Recursive rotation
-        py5.rotate(t * 2)
-        
-        draw_fractal(new_length, depth - 1, max_depth, t)
-        py5.pop_matrix()
-
 def draw():
-    py5.background(5, 80, 10)
+    # Keep background without clearing to draw the spirograph cumulatively
+    # But occasionally dim it slightly so it doesn't blow out to pure white
+    if py5.frame_count % 10 == 0:
+        py5.blend_mode(py5.BLEND)
+        py5.fill(10, 80, 10, 5)
+        py5.no_stroke()
+        py5.rect(0, 0, py5.width, py5.height)
+        py5.blend_mode(py5.ADD)
+        py5.no_fill()
+
+    t = py5.frame_count * 0.05
     
-    t = py5.frame_count * 0.015
+    py5.translate(py5.width / 2, py5.height / 2)
     
-    py5.translate(py5.width/2, py5.height/2)
-    
-    # Global rotation
-    py5.rotate(t * 0.5)
-    
-    # Start recursive drawing
-    # Decrease max_depth slightly to ensure smooth 60fps
-    draw_fractal(py5.height * 0.4, 5, 5, t)
+    num_points = 12
+    for i in range(num_points):
+        angle_offset = (py5.TWO_PI / num_points) * i
+        
+        # Complex oscillatory path
+        r1 = py5.width * 0.3 * math.sin(t * 0.5 + angle_offset)
+        r2 = py5.width * 0.15 * math.cos(t * 1.3 + angle_offset)
+        r3 = py5.width * 0.05 * math.sin(t * 2.7)
+        
+        x = r1 * math.cos(t * 0.2 + angle_offset) + r2 * math.cos(t * 0.7) + r3 * math.cos(t * 3.1)
+        y = r1 * math.sin(t * 0.2 + angle_offset) + r2 * math.sin(t * 0.7) + r3 * math.sin(t * 3.1)
+        
+        hue = (i * (360 / num_points) + py5.frame_count * 0.5) % 360
+        py5.stroke(hue, 90, 80, 150)
+        py5.stroke_weight(2)
+        
+        # Draw a shape at the calculated point
+        py5.push_matrix()
+        py5.translate(x, y)
+        py5.rotate(t * 2 + angle_offset)
+        
+        # Draw a small geometric motif
+        radius = 40 * (1 + math.sin(t + angle_offset))
+        py5.ellipse(0, 0, radius, radius * 0.3)
+        py5.pop_matrix()
 
     py5.save_frame(str(FRAMES_DIR / "frame-####.png"))
 

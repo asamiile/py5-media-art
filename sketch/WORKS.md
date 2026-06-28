@@ -1,3 +1,80 @@
+## generative_optical_illusion_truchet_tiles_2d
+
+- **Date**: 2026-06-26
+- **Theme**: A mesmerizing grid of flowing lines that constantly shift, connect, and disconnect, creating optical illusions of labyrinthine paths.
+- **Technique**: Utilizes a classic Truchet tiling system where each cell contains two diagonal arcs. However, instead of being statically randomized, the rotation of each tile is mapped to a 3D OpenSimplex noise field moving through time. This causes the tiles to smoothly animate between 90-degree orientations, continually redrawing the maze in an undulating wave of glowing colors.
+- **Description**: An animated 15s sequence of dynamic Truchet tiles.
+
+## generative_wavy_sine_landscapes_2d
+
+- **Date**: 2026-06-26
+- **Theme**: A scrolling, atmospheric 2D landscape of undulating mountains and waves, featuring a vibrant retro-synthwave color palette.
+- **Technique**: Renders 25 layered polygon shapes drawn back-to-front. The vertices of each layer are modulated by a combination of OpenSimplex noise and sine waves, creating organic, rolling terrain. A parallax scrolling effect is achieved by increasing the horizontal offset speed for layers closer to the foreground. Colors are algorithmically shifted based on time and depth, creating a dynamic, atmospheric haze.
+- **Description**: An animated 15s sequence of a scrolling layered mountain landscape.
+
+## abstract_geometric_spirograph_mandala_2d
+
+- **Date**: 2026-06-26
+- **Theme**: A glowing, hypnotic digital spirograph that traces complex mandala patterns over time.
+- **Technique**: Uses compounded trigonometric functions (sine and cosine waves with differing frequencies and amplitudes) to calculate the paths of 12 distinct points. As the animation progresses, these points trace out intricate, overlapping geometric motifs on a non-clearing background. The `ADD` blend mode ensures that overlapping strokes build up intensely bright, glowing intersections, mimicking long-exposure light painting.
+- **Description**: An animated 15s sequence tracing out a glowing spirograph mandala.
+
+## generative_recursive_tree_canopy_2d
+
+- **Date**: 2026-06-26
+- **Theme**: A forest canopy of abstract, recursive geometric trees that sway continuously in an invisible, mathematically generated wind.
+- **Technique**: Uses a recursive fractal branching algorithm to generate tree structures. The angle of each branch varies dynamically using continuous OpenSimplex noise and trigonometric functions, simulating organic growth and environmental wind forces. Colored glowing circles represent leaves blooming at the tips of the branches.
+- **Description**: An animated 15s sequence of recursive swaying fractal trees.
+
+## generative_cyberpunk_neon_rain_matrix_2d
+
+- **Date**: 2026-06-26
+- **Theme**: A stylized, glitching digital rain sequence inspired by cyberpunk aesthetics and the classic Matrix digital rain, replaced with abstract glowing geometric segments.
+- **Technique**: Uses thousands of independent dropping particles with simulated depth (z-index) determining their size, speed, and brightness. High-frequency OpenSimplex noise is sampled as the drops fall to trigger sudden horizontal glitch displacements and color inversions, adding a dynamic, corrupted digital feel. Rendered in a 2D context using semi-transparent background clearing for motion trails.
+- **Description**: An animated 15s sequence of digital neon rain with glitch effects.
+
+## generative_boids_flocking_simulation_2d
+
+- **Date**: 2026-06-26
+- **Theme**: A simulation of avian murmuration, where hundreds of digital entities flock and weave across the canvas, guided by shifting invisible currents.
+- **Technique**: Uses a modified boids steering behavior algorithm optimized for Python execution speed. Rather than O(N^2) pairwise distance checks for alignment and cohesion, the boids are steered by a globally continuous 3D OpenSimplex noise field that mimics macroscopic group flow. The boids are drawn as oriented triangles that leave semi-transparent trails as they move.
+- **Description**: An animated 15s sequence of digital boids flocking through a noise field.
+
+## abstract_geometric_kaleidoscope_fractal_2d
+
+- **Date**: 2026-06-26
+- **Theme**: A glowing, infinitely unfolding geometric fractal that mimics the shifting mirrors of a kaleidoscope.
+- **Technique**: Uses standard 2D recursive rendering. At each level of recursion, the shape splits into 6 branches that rotate and translate based on time and their recursive depth. The ADD blend mode creates intense glowing intersections where the semi-transparent layers overlap.
+- **Description**: An animated 15s sequence of a geometric fractal kaleidoscope unfolding.
+
+## generative_flow_field_topography_2d
+
+- **Date**: 2026-06-26
+- **Theme**: A continuous generation of contour-like lines flowing across the screen, mimicking the look of dynamically shifting topographical maps.
+- **Technique**: Uses thousands of individual particles navigating through a time-varying OpenSimplex noise vector field. A semi-transparent background clearing technique is used to create smooth, lingering trails that fade over time.
+- **Description**: An animated 15s sequence of topographic flow fields evolving dynamically.
+
+## generative_isometric_labyrinth_2d
+
+- **Date**: 2026-06-26
+- **Theme**: A shifting, Escher-like maze of isometric columns that rise and fall based on 3D noise patterns.
+- **Technique**: Uses standard 2D vector drawing to simulate a 3D isometric projection, completely bypassing OpenGL/P3D engine. Sorts blocks back-to-front based on grid iteration. Color and column height are driven by OpenSimplex noise parameterized by time.
+- **Description**: An animated 15s sequence of an isometric labyrinth continuously shifting.
+
+## kinetic_chladni_plate_resonance_2d
+
+- **Date**: 2026-06-26
+- **Theme**: A visualization of Chladni figures, simulating sand particles organizing themselves into intricate, shifting geometric patterns driven by unseen acoustic vibrations.
+- **Technique**: 2D particle system physics simulation. A mathematical standing wave equation determines the nodal lines across the surface. Particles are pushed down the gradient of the amplitude towards the nodes.
+- **Description**: An animated 15s sequence of kinetic sand particles resonating on a plate.
+
+## kinetic_magnetic_compass_array_2d
+
+- **Date**: 2026-06-26
+- **Theme**: A vast 2D array of tiny magnetic compass needles, reacting to unseen magnetic currents passing underneath them.
+- **Technique**: 2D point grid where each point represents the anchor of a compass needle. A 3D noise vector field determines the angle of the compasses, creating sweeping, colorful waves across the grid.
+- **Description**: An animated 15s sequence of kinetic magnetic compass needles.
+
 ## generative_kinetic_cellular_automata_2d
 
 - **Date**: 2026-06-25

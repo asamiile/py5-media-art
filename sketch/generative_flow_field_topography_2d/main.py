@@ -3,6 +3,7 @@ import shutil
 import subprocess
 import sys
 import math
+import random
 import py5
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
@@ -22,60 +23,65 @@ PREVIEW_FILENAME = f"{WORK_NAME}_p1.png"
 PREVIEW_SIZE, OUTPUT_SIZE, _ = get_sizes()
 SIZE = OUTPUT_SIZE
 
+NUM_PARTICLES = 15000
+particles = []
+
+class Particle:
+    def __init__(self, w, h):
+        self.x = random.uniform(0, w)
+        self.y = random.uniform(0, h)
+        self.life = random.randint(50, 200)
+        self.max_life = self.life
+
+    def update(self, w, h, t):
+        # Determine angle from noise field
+        noise_val = py5.os_noise(self.x * 0.002, self.y * 0.002, t * 0.1)
+        angle = noise_val * py5.TWO_PI * 4
+        
+        # Move particle
+        speed = 4.0
+        self.x += math.cos(angle) * speed
+        self.y += math.sin(angle) * speed
+        
+        self.life -= 1
+        
+        # Reset if dead or off screen
+        if self.life <= 0 or self.x < 0 or self.x > w or self.y < 0 or self.y > h:
+            self.x = random.uniform(0, w)
+            self.y = random.uniform(0, h)
+            self.life = random.randint(50, 200)
+            self.max_life = self.life
+
 def setup():
     py5.size(*SIZE)
     py5.pixel_density(1)
     FRAMES_DIR.mkdir(exist_ok=True)
     py5.color_mode(py5.HSB, 360, 100, 100, 255)
+    py5.background(10, 80, 15)
     py5.no_stroke()
-    # Blend mode ADD for glowing overlaps
-    py5.blend_mode(py5.ADD)
-
-def draw_fractal(length, depth, max_depth, t):
-    if depth == 0:
-        return
-        
-    hue = (depth * 20 + py5.frame_count * 0.5) % 360
-    py5.fill(hue, 90, 80, 50)
     
-    # Draw shape
-    py5.circle(0, 0, length)
-    
-    # Recursion
-    new_length = length * 0.5
-    num_branches = 6
-    
-    # Base rotation that evolves
-    base_rot = math.sin(t + depth * 0.2) * math.pi / 4
-    
-    for i in range(num_branches):
-        py5.push_matrix()
-        angle = i * (py5.TWO_PI / num_branches) + base_rot
-        
-        # Position offset
-        offset_dist = length * 0.6 * math.cos(t * 0.5 + depth)
-        py5.rotate(angle)
-        py5.translate(offset_dist, 0)
-        
-        # Recursive rotation
-        py5.rotate(t * 2)
-        
-        draw_fractal(new_length, depth - 1, max_depth, t)
-        py5.pop_matrix()
+    for _ in range(NUM_PARTICLES):
+        particles.append(Particle(py5.width, py5.height))
 
 def draw():
-    py5.background(5, 80, 10)
+    # Motion blur effect
+    py5.fill(10, 80, 15, 8)
+    py5.rect(0, 0, py5.width, py5.height)
     
-    t = py5.frame_count * 0.015
+    t = py5.frame_count * 0.01
     
-    py5.translate(py5.width/2, py5.height/2)
-    
-    # Global rotation
-    py5.rotate(t * 0.5)
-    
-    # Start recursive drawing
-    # Decrease max_depth slightly to ensure smooth 60fps
-    draw_fractal(py5.height * 0.4, 5, 5, t)
+    for p in particles:
+        p.update(py5.width, py5.height, t)
+        
+        # Determine color from position
+        n = py5.os_noise(p.x * 0.001, p.y * 0.001, t * 0.05)
+        hue = (n * 180 + 180 + py5.frame_count * 0.1) % 360
+        
+        # Fade based on life
+        alpha = py5.remap(p.life, 0, p.max_life, 0, 255)
+        
+        py5.fill(hue, 80, 100, alpha)
+        py5.circle(p.x, p.y, 3)
 
     py5.save_frame(str(FRAMES_DIR / "frame-####.png"))
 

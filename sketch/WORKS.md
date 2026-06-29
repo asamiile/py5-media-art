@@ -1,3 +1,10 @@
+## kinetic_fluid_plasma_field_2d
+- **Date**: 2026-06-29
+- **Type**: Animation (1080 frames, 60fps)
+- **Concept**: A kinetic flow field driven by Perlin noise, creating a dynamic, glowing plasma simulation where fluid-like particles move across the canvas.
+- **Techniques**: Dense 2D grid vector flow field utilizing py5's noise function. Particle sizing and positions pulsate organically via a secondary noise map, generating fluid dynamics.
+- **Palette**: Full HSB neon spectrum cycling smoothly over a dark semi-transparent canvas for trail effects.
+
 ## generative_math_rose_pattern_interference_2d
 - **Date**: 2026-06-29
 - **Type**: Animation (1680 frames, 60fps)

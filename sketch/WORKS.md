@@ -1,3 +1,10 @@
+## generative_algorithmic_origami_tessellation_2d
+- **Date**: 2026-06-29
+- **Type**: Animation (1020 frames, 60fps)
+- **Concept**: A continuous unfolding and folding of geometric shapes that mimic a massive, breathing origami tessellation, undulating like a landscape.
+- **Techniques**: A hexagonal grid of triangles is constructed, where the vertices move in 3D space driven by 2D Perlin noise. The entire grid is projected isometrically. The faces are drawn with varying opacities and colors based on height to simulate folding and light catching the planes.
+- **Palette**: Iridescent paper colors (pearlescent whites, soft pinks, and baby blues) with sharp, glowing crease lines.
+
 ## abstract_math_strange_attractor_clifford_2d
 - **Date**: 2026-06-28
 - **Type**: Animation (450 frames, 30fps)

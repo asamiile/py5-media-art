@@ -1,3 +1,10 @@
+## generative_math_rose_pattern_interference_2d
+- **Date**: 2026-06-29
+- **Type**: Animation (1680 frames, 60fps)
+- **Concept**: Mathematical rose curves ($r = \cos(k\theta)$) that shift their parameters continuously, creating intricate blooming flower-like interference patterns that rotate and overlap.
+- **Techniques**: High-resolution arrays (10,000 points) are evaluated natively using NumPy trigonometric functions. The parameters of six overlapping roses drift in a fluid motion using py5's noise and time variables. Additive blending generates bright, luminous interference nodes.
+- **Palette**: Neon spectrum (shifting through all hues over time) on a dark space background with slight trails.
+
 ## generative_algorithmic_fractal_tree_roots_2d
 - **Date**: 2026-06-29
 - **Type**: Animation (1140 frames, 60fps)

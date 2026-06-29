@@ -1,3 +1,10 @@
+## generative_algorithmic_fractal_tree_roots_2d
+- **Date**: 2026-06-29
+- **Type**: Animation (1140 frames, 60fps)
+- **Concept**: A massive network of organic roots expanding outward across the canvas, searching for connection points using a continuous space colonization algorithm.
+- **Techniques**: A highly optimized numpy grid simulating the Space Colonization Algorithm using SciPy's KDTree.
+- **Palette**: Bioluminescent cyan and green on a dark background.
+
 ## generative_algorithmic_origami_tessellation_2d
 - **Date**: 2026-06-29
 - **Type**: Animation (1020 frames, 60fps)

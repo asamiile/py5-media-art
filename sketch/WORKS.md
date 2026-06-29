@@ -1,3 +1,10 @@
+## generative_isometric_labyrinth_growth_2d
+- **Date**: 2026-06-29
+- **Type**: Animation (1740 frames, 60fps)
+- **Concept**: A procedural labyrinth maze that grows continuously via a Depth-First Search (DFS) algorithm, rendered from a 2D isometric perspective.
+- **Techniques**: 2D standard vector drawing mimicking a 3D isometric projection. Fast iterative DFS maze generation algorithms mapped onto a grid.
+- **Palette**: Dark blue/grey background with cyan structural lines and a glowing bright blue "head" block marking the current construction cell.
+
 ## kinetic_fluid_plasma_field_2d
 - **Date**: 2026-06-29
 - **Type**: Animation (1080 frames, 60fps)

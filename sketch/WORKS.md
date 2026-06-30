@@ -1,3 +1,10 @@
+## kinetic_gravitational_lensing_accretion_disk_2d
+- **Date**: 2026-06-30
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: An abstract visualization of a super-massive gravitational lens distorting a field of stars into a glowing accretion disk around a dark event horizon.
+- **Techniques**: High-performance 2D particle system (15,000 particles) using numpy for vectorized gravity and rotational force. Speed-based bucketing maps colors based on relativistic velocity, with additive blending to create a dense glowing starfield.
+- **Palette**: Deep Void Space (#020005), Starlight Cyan (#88CCFF), Relativistic Violet (#AA44FF), Superheated White (#FFFFFF).
+
 ## kinetic_magnetic_ferrofluid_spikes_2d
 - **Date**: 2026-06-30
 - **Type**: Animation (900 frames, 60fps)

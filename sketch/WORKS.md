@@ -1,3 +1,10 @@
+## kinetic_magnetic_ferrofluid_spikes_2d
+- **Date**: 2026-06-30
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A simulation of magnetic ferrofluid reacting to dynamic, pulsating magnetic poles on a glossy metallic surface.
+- **Techniques**: Vectorized 2D particle simulation using numpy, driven by a trigonometric flow field and geometric Lissajous attractors. Rendered using py5.vertices() to simulate sharp, spiky ferrofluid structures.
+- **Palette**: High-contrast, glossy black (#0A0A0A) and magnetic blue (#102040) spikes on an off-white silver (#F0F0F0) background.
+
 ## kinetic_metaball_plasma_2d
 - **Date**: 2026-06-30
 - **Type**: Animation (1620 frames, 60fps)

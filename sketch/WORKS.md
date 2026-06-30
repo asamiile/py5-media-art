@@ -1,3 +1,17 @@
+## abstract_geometric_bauhaus_clockwork_2d
+- **Date**: 2026-06-30
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A minimalist, op-art kinetic sculpture composed of intersecting geometric shapes (circles, arcs, and grids) that move with precise, mechanical choreography.
+- **Techniques**: Pure 2D vector geometry with MULTIPLY blending mode to create complex overlapping intersections. Animated with precise trigonometric easing functions.
+- **Palette**: Cream / Off-White (#F5F5F0), Deep Red (#AA1122), Warm Mustard Yellow (#DDAA22), Charcoal Black (#111111).
+
+## abstract_geometric_bauhaus_clockwork_2d
+- **Date**: 2026-06-30
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A minimalist, op-art kinetic sculpture composed of intersecting geometric shapes (circles, arcs, and grids) that move with precise, mechanical choreography.
+- **Techniques**: Pure 2D vector geometry with  blending mode to create complex overlapping intersections. Animated with precise trigonometric easing functions.
+- **Palette**: Cream / Off-White (#F5F5F0), Deep Red (#AA1122), Warm Mustard Yellow (#DDAA22), Charcoal Black (#111111).
+
 ## recursive_anemone_fractal_tree_2d
 - **Date**: 2026-06-30
 - **Type**: Animation (900 frames, 60fps)

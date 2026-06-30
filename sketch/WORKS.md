@@ -1,3 +1,10 @@
+## kinetic_metaball_plasma_2d
+- **Date**: 2026-06-30
+- **Type**: Animation (1620 frames, 60fps)
+- **Concept**: A glowing plasma simulation using dynamic metaballs. Bouncing particles merge and interact with each other in an organic way, with their colors shifting continuously through the neon spectrum to create a vibrant fluid effect.
+- **Techniques**: Native vector additive blending (`py5.ADD`) and concentric transparent circles simulate a soft radial gradient. These overlapping soft sprites create a glowing, faux-metaball plasma field at 60fps.
+- **Palette**: Highly saturated neon colors on a dark background.
+
 ## generative_isometric_labyrinth_growth_2d
 - **Date**: 2026-06-29
 - **Type**: Animation (1740 frames, 60fps)

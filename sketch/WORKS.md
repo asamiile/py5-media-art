@@ -1,3 +1,10 @@
+## kinetic_fiber_optic_string_weaving_2d
+- **Date**: 2026-06-30
+- **Type**: Animation (450 frames, 30fps)
+- **Concept**: A kinetic visualization of thousands of glowing fiber optic strings weaving a complex geometric tapestry.
+- **Techniques**: Dense line arrays drawn with `py5.vertices()` using `LINES` mode. Lines connect parameterized points along the border, generating interference and 3D illusion in the center. The frames are drawn internally at 1080p to optimize Java's image buffer processing, then upscaled to 4K during FFMPEG encoding to achieve fluid performance.
+- **Palette**: Deep charcoal background with electric red, bright magenta, and intense additive white interference patterns.
+
 ## kinetic_cyberpunk_data_cityscape_2d
 - **Date**: 2026-06-30
 - **Type**: Animation (900 frames, 60fps)

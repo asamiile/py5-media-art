@@ -1,3 +1,10 @@
+## kinetic_cyberpunk_data_cityscape_2d
+- **Date**: 2026-06-30
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A dense, top-down view of a massive cyberpunk city grid where glowing data packets pulse and stream through intricate, labyrinthine circuit blocks.
+- **Techniques**: Grid-based procedural routing system for 2,000 data streams with additive blending to create bright neon flashes at intersections.
+- **Palette**: Deep Navy/Black (#050510), Slate Blue (#152030), Neon Cyan (#00FFFF), Hot Magenta (#FF00FF), Electric Orange (#FF6600).
+
 ## abstract_geometric_bauhaus_clockwork_2d
 - **Date**: 2026-06-30
 - **Type**: Animation (900 frames, 60fps)

@@ -1,3 +1,10 @@
+## recursive_anemone_fractal_tree_2d
+- **Date**: 2026-06-30
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: An intricate, swaying recursive fractal tree structure that visually resembles a bioluminescent sea anemone breathing in a deep ocean current.
+- **Techniques**: Pure recursive branching algorithm (L-system inspired) reaching 12 levels of depth. OpenSimplex noise smoothly modulates branching angles over time to create fluid, organic motion. 
+- **Palette**: Deep Slate Ocean (#051015), Bioluminescent Green (#33FFAA), Deep Teal (#118888).
+
 ## kinetic_gravitational_lensing_accretion_disk_2d
 - **Date**: 2026-06-30
 - **Type**: Animation (900 frames, 60fps)

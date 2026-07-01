@@ -1,3 +1,10 @@
+## kinetic_barnsley_fern_morph_2d
+- **Date**: 2026-07-01
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: An animated sequence demonstrating an Iterated Function System (IFS) morphing organically. The classic Barnsley Fern fractal breathes, sways, and curls as its affine transformations shift continuously.
+- **Techniques**: NumPy vectorization evaluates the IFS for 300,000 independent particles simultaneously. Boolean masks distribute the points across the four affine transformations based on cumulative probabilities. The $b$ and $c$ matrix coefficients are modulated with trigonometric time variables to simulate wind. The particles are drawn natively with `py5.POINTS`.
+- **Palette**: Pitch black/dark green background. Particles are colored distinct glowing neon shades (Green, Cyan, Yellow-Green) based on which affine transformation was just applied to them.
+
 ## kinetic_lorenz_attractor_butterfly_2d
 - **Date**: 2026-07-01
 - **Type**: Animation (900 frames, 60fps)

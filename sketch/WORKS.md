@@ -1,3 +1,10 @@
+## kinetic_gumowski_mira_attractor_morph_2d
+- **Date**: 2026-07-01
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A kinetic generative visualization of the Gumowski-Mira attractor, morphing smoothly over time to reveal organic, biological-like geometries.
+- **Techniques**: NumPy simultaneously maps 300,000 particles through the 2D discrete Gumowski-Mira equations. The primary non-linear parameter $a$ is modulated with a sine wave, causing organic stretching and phase-space breathing. The dense point cloud is rendered instantly via `py5.POINTS`.
+- **Palette**: Additive blending against a dark purple canvas. A radial gradient separates the attractor into glowing sectors of Red/Orange, Cyan/Blue, and Purple/Magenta.
+
 ## kinetic_particles_curl_noise_flow_2d
 - **Date**: 2026-07-01
 - **Type**: Animation (900 frames, 60fps)

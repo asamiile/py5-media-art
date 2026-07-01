@@ -1,3 +1,10 @@
+## kinetic_lorenz_attractor_butterfly_2d
+- **Date**: 2026-07-01
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A mutating, glowing 3D visualization of the Lorenz strange attractor, demonstrating the chaotic "butterfly effect".
+- **Techniques**: NumPy vectorization solves the Lorenz differential equations for 250,000 independent particles simultaneously via Euler integration. The $\rho$ (Rayleigh) parameter is modulated by a sine wave to force the chaotic system to expand and compress dynamically. The 3D coordinates are rotated and projected into 2D with `py5.POINTS`.
+- **Palette**: Pitch black background. Left wing mapped to glowing Cyan, right wing to glowing Magenta, creating dense white intersections via additive blending.
+
 ## generative_continuous_1d_automata_waterfall_2d
 - **Date**: 2026-07-01
 - **Type**: Animation (900 frames, 60fps)

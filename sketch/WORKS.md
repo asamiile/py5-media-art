@@ -1,3 +1,10 @@
+## kinetic_organic_reaction_diffusion_mitosis_2d
+- **Date**: 2026-07-01
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A kinetic generative simulation of the Gray-Scott Reaction-Diffusion model, demonstrating organic cellular division morphing into coral-like labyrinths.
+- **Techniques**: Solves PDEs over a 1920x1080 grid using highly optimized NumPy convolutions (`np.roll`) to evaluate 15 simulation steps per frame. The mathematical feed ($f$) and kill ($k$) rates smoothly transition over time, forcing a structural phase change from "mitosis" to "maze". The grid is upscaled to 4K during the final py5 render pass.
+- **Palette**: Density mapped to a bioluminescent gradient: midnight blue background, vivid magenta borders, and glowing gold centers.
+
 ## kinetic_fractal_julia_set_morph_2d
 - **Date**: 2026-07-01
 - **Type**: Animation (900 frames, 60fps)

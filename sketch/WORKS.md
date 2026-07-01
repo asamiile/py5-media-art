@@ -1,3 +1,10 @@
+## kinetic_hopf_fibration_projection_2d
+- **Date**: 2026-07-01
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A visualization of the Hopf Fibration, mapping 4-dimensional hyperspheres into deeply interlocking, continuously rotating 3D tori projected onto a 2D canvas.
+- **Techniques**: NumPy evaluates 90,000 coordinates in 4D space, applies a 4D rotation matrix over time, and uses a stereographic projection ($p_{3d} = \vec{p}_{4d} / (1 - w)$) to map them into 3D. A final perspective projection maps them to the screen, where they are rendered using dense additive point clouds.
+- **Palette**: Ghostly additive neon colors (Red, Green, Blue hues mapping the $\eta$ parameter) glowing heavily against a dark trailing background.
+
 ## kinetic_fourier_epicycle_mandala_2d
 - **Date**: 2026-07-01
 - **Type**: Animation (900 frames, 60fps)

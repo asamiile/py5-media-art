@@ -1,3 +1,10 @@
+## kinetic_fourier_epicycle_mandala_2d
+- **Date**: 2026-07-01
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: Thousands of nested Fourier epicycles continuously drawing overlapping complex geometric curves, producing a living, breathing mandala of light.
+- **Techniques**: NumPy vectorization evaluates the complex exponential series $Z(t) = \sum C_n e^{i(\omega t + \phi)}$ to compute the coordinates of 500 distinct curves (each composed of 7 epicycles) simultaneously. The paths are drawn by connecting $t-dt$ to $t$ using `py5.LINES`.
+- **Palette**: Pitch black background with intense RGB additive neon colors (Cyan, Magenta, Yellow) layered to create intense white hotspots.
+
 ## kinetic_chromatic_aberration_vortex_2d
 - **Date**: 2026-07-01
 - **Type**: Animation (900 frames, 60fps)

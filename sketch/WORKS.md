@@ -1,3 +1,10 @@
+## kinetic_physics_double_pendulum_swarm_2d
+- **Date**: 2026-07-01
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A visualization of deterministic chaos using a swarm of 200,000 double pendulums that start nearly identical and gracefully shatter into a fractal-like cloud of orbits.
+- **Techniques**: Evaluates the Hamiltonian equations of motion for 200,000 pendulums using highly vectorized NumPy arrays. A semi-implicit Euler integration with sub-stepping ensures physical stability. The tips of the pendulums are drawn with additive blending, mapped to a velocity-based color palette to trace out chaotic attractors in phase space.
+- **Palette**: Velocity-based mapping: Cyan (fastest), Purple (medium), Magenta (slowest), drawn on a dark navy background with motion blur.
+
 ## kinetic_organic_reaction_diffusion_mitosis_2d
 - **Date**: 2026-07-01
 - **Type**: Animation (900 frames, 60fps)

@@ -1,3 +1,10 @@
+## kinetic_clifford_attractor_morph_2d
+- **Date**: 2026-07-01
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A kinetic generative visualization of the Clifford Attractor, morphing smoothly over time to reveal smoky, veil-like mathematical interference patterns.
+- **Techniques**: NumPy simultaneously maps 500,000 particles through the 2D discrete Clifford equations. The 4 structural parameters are modulated with sine functions, causing organic stretching and phase-space reorganisation. The dense point cloud is rendered instantly via `py5.POINTS`.
+- **Palette**: Additive blending against a black canvas with very low opacity to accumulate glowing textures. Spatial coloring divides the attractor into gradients of Cyan, Magenta, and Gold.
+
 ## kinetic_strange_attractor_aizawa_2d
 - **Date**: 2026-07-01
 - **Type**: Animation (900 frames, 60fps)

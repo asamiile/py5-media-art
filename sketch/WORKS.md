@@ -1,3 +1,52 @@
+## kinetic_fiber_optic_string_weaving_2d
+- **Date**: 2026-06-30
+- **Type**: Animation (450 frames, 30fps)
+- **Concept**: A kinetic visualization of thousands of glowing fiber optic strings weaving a complex geometric tapestry.
+- **Techniques**: Dense line arrays drawn with `py5.vertices()` using `LINES` mode. Lines connect parameterized points along the border, generating interference and 3D illusion in the center. The frames are drawn internally at 1080p to optimize Java's image buffer processing, then upscaled to 4K during FFMPEG encoding to achieve fluid performance.
+- **Palette**: Deep charcoal background with electric red, bright magenta, and intense additive white interference patterns.
+
+## kinetic_cyberpunk_data_cityscape_2d
+- **Date**: 2026-06-30
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A dense, top-down view of a massive cyberpunk city grid where glowing data packets pulse and stream through intricate, labyrinthine circuit blocks.
+- **Techniques**: Grid-based procedural routing system for 2,000 data streams with additive blending to create bright neon flashes at intersections.
+- **Palette**: Deep Navy/Black (#050510), Slate Blue (#152030), Neon Cyan (#00FFFF), Hot Magenta (#FF00FF), Electric Orange (#FF6600).
+
+## abstract_geometric_bauhaus_clockwork_2d
+- **Date**: 2026-06-30
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A minimalist, op-art kinetic sculpture composed of intersecting geometric shapes (circles, arcs, and grids) that move with precise, mechanical choreography.
+- **Techniques**: Pure 2D vector geometry with MULTIPLY blending mode to create complex overlapping intersections. Animated with precise trigonometric easing functions.
+- **Palette**: Cream / Off-White (#F5F5F0), Deep Red (#AA1122), Warm Mustard Yellow (#DDAA22), Charcoal Black (#111111).
+
+## abstract_geometric_bauhaus_clockwork_2d
+- **Date**: 2026-06-30
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A minimalist, op-art kinetic sculpture composed of intersecting geometric shapes (circles, arcs, and grids) that move with precise, mechanical choreography.
+- **Techniques**: Pure 2D vector geometry with  blending mode to create complex overlapping intersections. Animated with precise trigonometric easing functions.
+- **Palette**: Cream / Off-White (#F5F5F0), Deep Red (#AA1122), Warm Mustard Yellow (#DDAA22), Charcoal Black (#111111).
+
+## recursive_anemone_fractal_tree_2d
+- **Date**: 2026-06-30
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: An intricate, swaying recursive fractal tree structure that visually resembles a bioluminescent sea anemone breathing in a deep ocean current.
+- **Techniques**: Pure recursive branching algorithm (L-system inspired) reaching 12 levels of depth. OpenSimplex noise smoothly modulates branching angles over time to create fluid, organic motion. 
+- **Palette**: Deep Slate Ocean (#051015), Bioluminescent Green (#33FFAA), Deep Teal (#118888).
+
+## kinetic_gravitational_lensing_accretion_disk_2d
+- **Date**: 2026-06-30
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: An abstract visualization of a super-massive gravitational lens distorting a field of stars into a glowing accretion disk around a dark event horizon.
+- **Techniques**: High-performance 2D particle system (15,000 particles) using numpy for vectorized gravity and rotational force. Speed-based bucketing maps colors based on relativistic velocity, with additive blending to create a dense glowing starfield.
+- **Palette**: Deep Void Space (#020005), Starlight Cyan (#88CCFF), Relativistic Violet (#AA44FF), Superheated White (#FFFFFF).
+
+## kinetic_magnetic_ferrofluid_spikes_2d
+- **Date**: 2026-06-30
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A simulation of magnetic ferrofluid reacting to dynamic, pulsating magnetic poles on a glossy metallic surface.
+- **Techniques**: Vectorized 2D particle simulation using numpy, driven by a trigonometric flow field and geometric Lissajous attractors. Rendered using py5.vertices() to simulate sharp, spiky ferrofluid structures.
+- **Palette**: High-contrast, glossy black (#0A0A0A) and magnetic blue (#102040) spikes on an off-white silver (#F0F0F0) background.
+
 ## kinetic_metaball_plasma_2d
 - **Date**: 2026-06-30
 - **Type**: Animation (1620 frames, 60fps)

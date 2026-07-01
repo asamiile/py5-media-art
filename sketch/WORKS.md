@@ -1,3 +1,10 @@
+## generative_organic_differential_growth_2d
+- **Date**: 2026-07-01
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A generative simulation of differential line growth, mimicking biological processes like brain coral expansion or fingerprint formation.
+- **Techniques**: A closed loop of nodes expands dynamically. A balance of spring-like attraction between neighbors and spatial repulsion between all nearby nodes forces the line to meander and fold. Spatial queries are accelerated using `scipy.spatial.cKDTree` for high performance.
+- **Palette**: Dark charcoal background with a warm coral/peach organic line, emphasizing the naturalistic shape.
+
 ## kinetic_cellular_automata_lenia_2d
 - **Date**: 2026-07-01
 - **Type**: Animation (900 frames, 60fps)

@@ -1,3 +1,10 @@
+## kinetic_chromatic_aberration_vortex_2d
+- **Date**: 2026-07-01
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A swirling vortex of geometric shapes being pulled into a central black hole, with intense chromatic aberration separating their RGB layers as they spiral inwards.
+- **Techniques**: A fast particle system with 15,000 interacting vertices using NumPy arrays. Squares are rendered natively via `py5.begin_shape(py5.QUADS)` in three separate additive layers (Red, Green, Blue) that offset progressively more based on distance from the center.
+- **Palette**: Pitch black background with intense RGB additive neon colors (Red, Green, Blue) separating into cyan and magenta motion trails.
+
 ## kinetic_fiber_optic_string_weaving_2d
 - **Date**: 2026-06-30
 - **Type**: Animation (450 frames, 30fps)

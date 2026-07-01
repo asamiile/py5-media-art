@@ -1,3 +1,10 @@
+## kinetic_math_spirograph_lissajous_3d
+- **Date**: 2026-07-01
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: An intricate 3D spirograph forming complex Lissajous knots out of a thick, braided geometric ribbon that continuously re-weaves itself.
+- **Techniques**: Evaluates 400,000 coordinates using 3D Lissajous parametric equations ($X, Y, Z$ sine waves). The phase offsets drift over time, causing the knot to mutate and breathe. High-frequency offsets create the 100 individual strands that form the ribbon. A 3D rotation and perspective projection maps it to the canvas.
+- **Palette**: Depth-based color mapping: distant geometry is Dark Purple, mid-ground is Cyan, and foreground is glowing White/Cyan, all drawn additively against a dark blue background.
+
 ## kinetic_gumowski_mira_attractor_morph_2d
 - **Date**: 2026-07-01
 - **Type**: Animation (900 frames, 60fps)

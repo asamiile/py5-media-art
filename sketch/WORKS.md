@@ -1,3 +1,10 @@
+## kinetic_cellular_automata_lenia_2d
+- **Date**: 2026-07-01
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A visualization of Lenia, a continuous cellular automata, where organic, alien-like lifeforms self-organize and swim across a digital petri dish.
+- **Techniques**: The continuous spatial convolution is computed efficiently at 1920x1080 resolution using NumPy's Fast Fourier Transform (`np.fft.fft2`). A smooth Gaussian growth function drives the evolution of the field, which stabilizes into moving, dividing structures ("Orbium" species).
+- **Palette**: Bioluminescent microbiology. A dark teal background supports glowing, neon-green biological structures that fade to pure white at their densest cores.
+
 ## kinetic_physics_double_pendulum_swarm_2d
 - **Date**: 2026-07-01
 - **Type**: Animation (900 frames, 60fps)

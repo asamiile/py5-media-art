@@ -1,3 +1,10 @@
+## kinetic_interference_standing_waves_2d
+- **Date**: 2026-07-01
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A kinetic visualization of complex wave interference patterns on a massive 2D membrane, shown in 3D perspective.
+- **Techniques**: NumPy evaluates a 800x800 meshgrid (640,000 points) to compute the superposition of 5 distinct, drifting sine-wave oscillators. The amplitude dictates the $Z$ height, which is then mapped through a 3D perspective projection. The points are binned by height into three NumPy masks and rendered instantly using `py5.POINTS`.
+- **Palette**: Additive blending against a pitch black canvas. High peaks are glowing Pink/Red, mid-levels are Cyan/Blue, and deep valleys are Purple/Dark Blue.
+
 ## kinetic_barnsley_fern_morph_2d
 - **Date**: 2026-07-01
 - **Type**: Animation (900 frames, 60fps)

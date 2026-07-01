@@ -1,3 +1,10 @@
+## kinetic_chaotic_attractor_volumetric_cloud_3d
+- **Date**: 2026-07-01
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A kinetic 3D chaotic attractor that visualizes 300,000 points forming a dense, morphing volumetric cloud of mathematical "smoke".
+- **Techniques**: Evaluates a custom 3D system of trigonometric difference equations. Nine structural parameters are continuously mutated over time to organically fold and breathe the geometry. A 3D rotation and perspective projection map the cloud to the 2D canvas, rendered additively via `py5.POINTS`.
+- **Palette**: Depth-based volumetric coloring. The foreground glows Cyan, the midground is Magenta, and the deep background is Gold, creating a luminous, holographic vapor effect.
+
 ## kinetic_optical_illusion_droste_spiral_2d
 - **Date**: 2026-07-01
 - **Type**: Animation (900 frames, 60fps, seamless loop)

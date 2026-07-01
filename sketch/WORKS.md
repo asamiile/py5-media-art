@@ -1,3 +1,10 @@
+## kinetic_particles_curl_noise_flow_2d
+- **Date**: 2026-07-01
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A kinetic fluid simulation of 300,000 particles swirling in a divergence-free vector field.
+- **Techniques**: Instead of using Perlin noise or Navier-Stokes, an analytical scalar potential field $\Psi$ is constructed from 10 harmonic sine waves. The partial derivatives of $\Psi$ yield a curl velocity field that is mathematically incompressible. NumPy vectorization evaluates this field instantly, producing perfect, swirling eddies that evolve over time.
+- **Palette**: Deep midnight blue background. Particles are binned into three glowing neon color groups: Cyan, Gold, and Purple, rendering via `py5.POINTS` with additive blending.
+
 ## kinetic_clifford_attractor_morph_2d
 - **Date**: 2026-07-01
 - **Type**: Animation (900 frames, 60fps)

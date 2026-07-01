@@ -1,3 +1,10 @@
+## kinetic_fractal_julia_set_morph_2d
+- **Date**: 2026-07-01
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A kinetic morphing of the complex Julia set ($z_{n+1} = z_n^2 + c$), exploring its infinite fractal geometry as the constant $c$ changes.
+- **Techniques**: Evaluates the Julia set over an 8.2 million pixel grid using NumPy vectorization. The parameter $c$ traces a path through the complex plane, forcing the fractal to organically unfold and reorganize. A smooth-iteration potential algorithm is used to calculate escape times without banding.
+- **Palette**: A cyclic trigonometric gradient spanning deep purples, glowing cyans, and vibrant magentas, enveloping the pitch-black interior of the set.
+
 ## kinetic_chaotic_attractor_volumetric_cloud_3d
 - **Date**: 2026-07-01
 - **Type**: Animation (900 frames, 60fps)

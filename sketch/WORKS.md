@@ -1,3 +1,10 @@
+## kinetic_chladni_plate_cymatics_2d
+- **Date**: 2026-07-01
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A physics-based generative simulation of cymatics, where sand particles form intricate mandala-like Chladni figures on a vibrating plate.
+- **Techniques**: Simulates 300,000 particles responding to the gradient of a 2D Chladni standing wave equation. As the resonant frequencies ($m, n$) smoothly mutate over time, the nodal lines shift, forcing the particles to organically reorganize into new geometric patterns.
+- **Palette**: Speed-based coloring with additive blending. Fast-moving particles appear as dim blue/purple mist, while particles that have settled into the nodal lines glow brightly in gold and white.
+
 ## kinetic_math_spirograph_lissajous_3d
 - **Date**: 2026-07-01
 - **Type**: Animation (900 frames, 60fps)

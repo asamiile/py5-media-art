@@ -4,6 +4,30 @@
 Agents MUST NOT write anything in the `Comment` field. When registering a new work, Agents must leave the `Rating` and `Comment` fields empty or with their default labels as placeholders for the user.
 The Artist reads this file before starting a new sketch to understand preferences.
 
+## kinetic_metaball_plasma_2d
+- **Rating**: 
+- **Comment**: 
+
+## generative_isometric_labyrinth_growth_2d
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_fluid_plasma_field_2d
+- **Rating**: 
+- **Comment**: 
+
+## generative_math_rose_pattern_interference_2d
+- **Rating**: 
+- **Comment**: 
+
+## generative_algorithmic_fractal_tree_roots_2d
+- **Rating**: 
+- **Comment**: 
+
+## generative_algorithmic_origami_tessellation_2d
+- **Rating**: 
+- **Comment**: 
+
 ## abstract_math_strange_attractor_clifford_2d
 - **Rating**: 
 - **Comment**: 

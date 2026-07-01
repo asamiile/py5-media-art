@@ -1,3 +1,45 @@
+## kinetic_metaball_plasma_2d
+- **Date**: 2026-06-30
+- **Type**: Animation (1620 frames, 60fps)
+- **Concept**: A glowing plasma simulation using dynamic metaballs. Bouncing particles merge and interact with each other in an organic way, with their colors shifting continuously through the neon spectrum to create a vibrant fluid effect.
+- **Techniques**: Native vector additive blending (`py5.ADD`) and concentric transparent circles simulate a soft radial gradient. These overlapping soft sprites create a glowing, faux-metaball plasma field at 60fps.
+- **Palette**: Highly saturated neon colors on a dark background.
+
+## generative_isometric_labyrinth_growth_2d
+- **Date**: 2026-06-29
+- **Type**: Animation (1740 frames, 60fps)
+- **Concept**: A procedural labyrinth maze that grows continuously via a Depth-First Search (DFS) algorithm, rendered from a 2D isometric perspective.
+- **Techniques**: 2D standard vector drawing mimicking a 3D isometric projection. Fast iterative DFS maze generation algorithms mapped onto a grid.
+- **Palette**: Dark blue/grey background with cyan structural lines and a glowing bright blue "head" block marking the current construction cell.
+
+## kinetic_fluid_plasma_field_2d
+- **Date**: 2026-06-29
+- **Type**: Animation (1080 frames, 60fps)
+- **Concept**: A kinetic flow field driven by Perlin noise, creating a dynamic, glowing plasma simulation where fluid-like particles move across the canvas.
+- **Techniques**: Dense 2D grid vector flow field utilizing py5's noise function. Particle sizing and positions pulsate organically via a secondary noise map, generating fluid dynamics.
+- **Palette**: Full HSB neon spectrum cycling smoothly over a dark semi-transparent canvas for trail effects.
+
+## generative_math_rose_pattern_interference_2d
+- **Date**: 2026-06-29
+- **Type**: Animation (1680 frames, 60fps)
+- **Concept**: Mathematical rose curves ($r = \cos(k\theta)$) that shift their parameters continuously, creating intricate blooming flower-like interference patterns that rotate and overlap.
+- **Techniques**: High-resolution arrays (10,000 points) are evaluated natively using NumPy trigonometric functions. The parameters of six overlapping roses drift in a fluid motion using py5's noise and time variables. Additive blending generates bright, luminous interference nodes.
+- **Palette**: Neon spectrum (shifting through all hues over time) on a dark space background with slight trails.
+
+## generative_algorithmic_fractal_tree_roots_2d
+- **Date**: 2026-06-29
+- **Type**: Animation (1140 frames, 60fps)
+- **Concept**: A massive network of organic roots expanding outward across the canvas, searching for connection points using a continuous space colonization algorithm.
+- **Techniques**: A highly optimized numpy grid simulating the Space Colonization Algorithm using SciPy's KDTree.
+- **Palette**: Bioluminescent cyan and green on a dark background.
+
+## generative_algorithmic_origami_tessellation_2d
+- **Date**: 2026-06-29
+- **Type**: Animation (1020 frames, 60fps)
+- **Concept**: A continuous unfolding and folding of geometric shapes that mimic a massive, breathing origami tessellation, undulating like a landscape.
+- **Techniques**: A hexagonal grid of triangles is constructed, where the vertices move in 3D space driven by 2D Perlin noise. The entire grid is projected isometrically. The faces are drawn with varying opacities and colors based on height to simulate folding and light catching the planes.
+- **Palette**: Iridescent paper colors (pearlescent whites, soft pinks, and baby blues) with sharp, glowing crease lines.
+
 ## abstract_math_strange_attractor_clifford_2d
 - **Date**: 2026-06-28
 - **Type**: Animation (450 frames, 30fps)

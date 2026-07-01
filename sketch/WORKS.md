@@ -1,3 +1,10 @@
+## kinetic_optical_illusion_droste_spiral_2d
+- **Date**: 2026-07-01
+- **Type**: Animation (900 frames, 60fps, seamless loop)
+- **Concept**: A hypnotic, perfectly looping op-art animation of an infinitely deep, spiraling checkerboard tunnel (the Droste effect).
+- **Techniques**: A Cartesian grid is built in a complex logarithmically transformed space $(u = \ln(r), v = \theta)$. By shearing and shifting this grid linearly and mapping it back via the exponential function, a seamless infinite zoom is produced. `py5.QUADS` efficiently renders the distorted tessellation.
+- **Palette**: High-contrast monochrome. Off-white and dark charcoal grey create a stark, mind-bending optical illusion.
+
 ## kinetic_chladni_plate_cymatics_2d
 - **Date**: 2026-07-01
 - **Type**: Animation (900 frames, 60fps)

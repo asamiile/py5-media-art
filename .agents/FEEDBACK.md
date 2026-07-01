@@ -1,5 +1,195 @@
-## kinetic_pendulum_wave_harmonics_2d
+# User Feedback
 
+**CRITICAL RULE**: ONLY the USER may write to the `Rating` and `Comment` field.
+Agents MUST NOT write anything in the `Comment` field. When registering a new work, Agents must leave the `Rating` and `Comment` fields empty or with their default labels as placeholders for the user.
+The Artist reads this file before starting a new sketch to understand preferences.
+
+## abstract_math_strange_attractor_clifford_2d
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_magnetic_field_iron_filings_2d
+- **Rating**: 
+- **Comment**: 
+
+## abstract_optical_illusion_truchet_tiles_2d
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_voronoi_stained_glass_fluid_2d
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_recursive_fractal_canopy_2d
+- **Rating**: 
+- **Comment**: 
+
+## abstract_math_lissajous_interference_web_2d
+- **Rating**: 
+- **Comment**: 
+
+## generative_synthwave_terrain_flight_2d
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_flow_field_perlin_noise_2d
+- **Rating**: 
+- **Comment**: 
+
+## generative_mandelbrot_deep_zoom_2d
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_galaxy_n_body_collision_2d
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_boids_flocking_attractors_2d
+- **Rating**: 
+- **Comment**: 
+
+## generative_turing_pattern_reaction_diffusion_2d
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_curl_noise_vortex_flow_2d
+- **Rating**: 
+- **Comment**: 
+
+## generative_abelian_sandpile_fractal_2d
+- **Rating**: 
+- **Comment**: 
+
+## generative_domain_warping_liquid_2d
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_chaos_game_fractal_mandala_2d
+- **Rating**: 
+- **Comment**: 
+
+## generative_hodgepodge_machine_bz_reaction_2d
+- **Rating**: 
+- **Comment**: 
+
+## generative_differential_line_growth_2d
+- **Rating**: 
+- **Comment**: 
+
+## generative_langtons_ant_colony_2d
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_lissajous_web_2d
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_metaball_lava_lamp_2d
+- **Rating**: 
+- **Comment**: 
+
+## generative_synthwave_wireframe_landscape_3d
+- **Rating**: 
+- **Comment**: 
+
+## generative_slit_scan_glitch_landscape_2d
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_spirograph_mandala_2d
+- **Rating**: 
+- **Comment**: 
+
+## generative_vector_field_flow_2d
+- **Rating**: 
+- **Comment**: 
+
+## generative_phyllotaxis_sunflower_spiral_2d
+- **Rating**: 
+- **Comment**: 
+
+## generative_voronoi_stained_glass_2d
+- **Rating**: 
+- **Comment**: 
+
+## generative_isometric_cyber_circuit_board_2d
+- **Rating**: 
+- **Comment**: 
+
+## generative_kinetic_moire_interference_2d
+- **Rating**: 
+- **Comment**: 
+
+## generative_boids_flocking_swirl_2d
+- **Rating**: 
+- **Comment**: 
+
+## generative_reaction_diffusion_coral_2d
+- **Rating**: 
+- **Comment**: 
+
+## generative_chladni_plate_cymatics_2d
+- **Rating**: 
+- **Comment**: 
+
+## generative_chaotic_strange_attractor_dust_2d
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_oscilloscope_lissajous_knot_3d
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_orbital_spirograph_mandala_2d
+- **Rating**: 
+- **Comment**: 
+
+## generative_unknown_pleasures_landscape_2d
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_harmonic_pendulum_web_2d
+- **Rating**: 
+- **Comment**: 
+
+## generative_stained_glass_voronoi_2d
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_crystalline_fractal_canopy_2d
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_boids_luminescent_flock_2d
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_cyberpunk_glitch_grid_2d
+- **Rating**: 
+- **Comment**: 
+
+## generative_luminous_noise_ribbons_2d
+- **Rating**: 
+- **Comment**: 
+
+## generative_retro_wireframe_terrain_2d
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_strange_attractor_nebula_2d
+- **Rating**: 
+- **Comment**: 
+
+## generative_cymatic_frequency_mandala_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## abstract_fluid_iridescent_plasma_2d
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_pendulum_wave_harmonics_2d
 - **Rating**: 
 - **Comment**: 
 
@@ -10,12 +200,12 @@
 
 ## kinetic_woven_lissajous_fabric_2d
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## generative_algorithmic_mosaic_subdivision_2d
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## generative_vector_flow_topography_2d
@@ -55,7 +245,7 @@
 
 ## generative_quantum_foam_bubbles_2d
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## abstract_cybernetic_neural_network_2d
@@ -105,7 +295,7 @@
 
 ## abstract_strange_attractor_morph_2d
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## abstract_fractal_spirograph_2d
@@ -120,7 +310,7 @@
 
 ## abstract_optical_illusion_moire_2d
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## generative_botanical_stained_glass_2d
@@ -195,7 +385,7 @@
 
 ## generative_kinetic_harmonograph_pendulum_2d
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## generative_algorithmic_voronoi_shatter_2d
@@ -215,7 +405,7 @@
 
 ## generative_fbm_domain_warping_2d
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## generative_reaction_diffusion_cellular_growth_2d
@@ -5064,7 +5254,7 @@ Add any notes on color, density, theme, or mood in the Comment field.
 
 ## generative_optical_flow_particles_2d
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## generative_sacred_geometry_fractal_bloom_2d

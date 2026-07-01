@@ -1,3 +1,10 @@
+## kinetic_strange_attractor_aizawa_2d
+- **Date**: 2026-07-01
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A kinetic 3D volumetric visualization of the Aizawa strange attractor, showcasing its spherical, tubular geometry.
+- **Techniques**: NumPy simultaneously solves the Aizawa differential equations for 300,000 particles using Euler integration. Mathematical constants $a$ and $c$ drift via trigonometric functions to cause the attractor to stretch and breathe. The particles undergo continuous 3D rotation and perspective projection. Rendered using `py5.POINTS` and additive blending.
+- **Palette**: Pitch dark blue background. The particles are color-mapped by their elevation $Z$: Gold/Orange for the top pole, Cyan for the equatorial region, and Deep Purple for the bottom.
+
 ## kinetic_interference_standing_waves_2d
 - **Date**: 2026-07-01
 - **Type**: Animation (900 frames, 60fps)

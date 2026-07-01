@@ -1,3 +1,143 @@
+## generative_organic_differential_growth_2d
+- **Date**: 2026-07-01
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A generative simulation of differential line growth, mimicking biological processes like brain coral expansion or fingerprint formation.
+- **Techniques**: A closed loop of nodes expands dynamically. A balance of spring-like attraction between neighbors and spatial repulsion between all nearby nodes forces the line to meander and fold. Spatial queries are accelerated using `scipy.spatial.cKDTree` for high performance.
+- **Palette**: Dark charcoal background with a warm coral/peach organic line, emphasizing the naturalistic shape.
+
+## kinetic_cellular_automata_lenia_2d
+- **Date**: 2026-07-01
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A visualization of Lenia, a continuous cellular automata, where organic, alien-like lifeforms self-organize and swim across a digital petri dish.
+- **Techniques**: The continuous spatial convolution is computed efficiently at 1920x1080 resolution using NumPy's Fast Fourier Transform (`np.fft.fft2`). A smooth Gaussian growth function drives the evolution of the field, which stabilizes into moving, dividing structures ("Orbium" species).
+- **Palette**: Bioluminescent microbiology. A dark teal background supports glowing, neon-green biological structures that fade to pure white at their densest cores.
+
+## kinetic_physics_double_pendulum_swarm_2d
+- **Date**: 2026-07-01
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A visualization of deterministic chaos using a swarm of 200,000 double pendulums that start nearly identical and gracefully shatter into a fractal-like cloud of orbits.
+- **Techniques**: Evaluates the Hamiltonian equations of motion for 200,000 pendulums using highly vectorized NumPy arrays. A semi-implicit Euler integration with sub-stepping ensures physical stability. The tips of the pendulums are drawn with additive blending, mapped to a velocity-based color palette to trace out chaotic attractors in phase space.
+- **Palette**: Velocity-based mapping: Cyan (fastest), Purple (medium), Magenta (slowest), drawn on a dark navy background with motion blur.
+
+## kinetic_organic_reaction_diffusion_mitosis_2d
+- **Date**: 2026-07-01
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A kinetic generative simulation of the Gray-Scott Reaction-Diffusion model, demonstrating organic cellular division morphing into coral-like labyrinths.
+- **Techniques**: Solves PDEs over a 1920x1080 grid using highly optimized NumPy convolutions (`np.roll`) to evaluate 15 simulation steps per frame. The mathematical feed ($f$) and kill ($k$) rates smoothly transition over time, forcing a structural phase change from "mitosis" to "maze". The grid is upscaled to 4K during the final py5 render pass.
+- **Palette**: Density mapped to a bioluminescent gradient: midnight blue background, vivid magenta borders, and glowing gold centers.
+
+## kinetic_fractal_julia_set_morph_2d
+- **Date**: 2026-07-01
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A kinetic morphing of the complex Julia set ($z_{n+1} = z_n^2 + c$), exploring its infinite fractal geometry as the constant $c$ changes.
+- **Techniques**: Evaluates the Julia set over an 8.2 million pixel grid using NumPy vectorization. The parameter $c$ traces a path through the complex plane, forcing the fractal to organically unfold and reorganize. A smooth-iteration potential algorithm is used to calculate escape times without banding.
+- **Palette**: A cyclic trigonometric gradient spanning deep purples, glowing cyans, and vibrant magentas, enveloping the pitch-black interior of the set.
+
+## kinetic_chaotic_attractor_volumetric_cloud_3d
+- **Date**: 2026-07-01
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A kinetic 3D chaotic attractor that visualizes 300,000 points forming a dense, morphing volumetric cloud of mathematical "smoke".
+- **Techniques**: Evaluates a custom 3D system of trigonometric difference equations. Nine structural parameters are continuously mutated over time to organically fold and breathe the geometry. A 3D rotation and perspective projection map the cloud to the 2D canvas, rendered additively via `py5.POINTS`.
+- **Palette**: Depth-based volumetric coloring. The foreground glows Cyan, the midground is Magenta, and the deep background is Gold, creating a luminous, holographic vapor effect.
+
+## kinetic_optical_illusion_droste_spiral_2d
+- **Date**: 2026-07-01
+- **Type**: Animation (900 frames, 60fps, seamless loop)
+- **Concept**: A hypnotic, perfectly looping op-art animation of an infinitely deep, spiraling checkerboard tunnel (the Droste effect).
+- **Techniques**: A Cartesian grid is built in a complex logarithmically transformed space $(u = \ln(r), v = \theta)$. By shearing and shifting this grid linearly and mapping it back via the exponential function, a seamless infinite zoom is produced. `py5.QUADS` efficiently renders the distorted tessellation.
+- **Palette**: High-contrast monochrome. Off-white and dark charcoal grey create a stark, mind-bending optical illusion.
+
+## kinetic_chladni_plate_cymatics_2d
+- **Date**: 2026-07-01
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A physics-based generative simulation of cymatics, where sand particles form intricate mandala-like Chladni figures on a vibrating plate.
+- **Techniques**: Simulates 300,000 particles responding to the gradient of a 2D Chladni standing wave equation. As the resonant frequencies ($m, n$) smoothly mutate over time, the nodal lines shift, forcing the particles to organically reorganize into new geometric patterns.
+- **Palette**: Speed-based coloring with additive blending. Fast-moving particles appear as dim blue/purple mist, while particles that have settled into the nodal lines glow brightly in gold and white.
+
+## kinetic_math_spirograph_lissajous_3d
+- **Date**: 2026-07-01
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: An intricate 3D spirograph forming complex Lissajous knots out of a thick, braided geometric ribbon that continuously re-weaves itself.
+- **Techniques**: Evaluates 400,000 coordinates using 3D Lissajous parametric equations ($X, Y, Z$ sine waves). The phase offsets drift over time, causing the knot to mutate and breathe. High-frequency offsets create the 100 individual strands that form the ribbon. A 3D rotation and perspective projection maps it to the canvas.
+- **Palette**: Depth-based color mapping: distant geometry is Dark Purple, mid-ground is Cyan, and foreground is glowing White/Cyan, all drawn additively against a dark blue background.
+
+## kinetic_gumowski_mira_attractor_morph_2d
+- **Date**: 2026-07-01
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A kinetic generative visualization of the Gumowski-Mira attractor, morphing smoothly over time to reveal organic, biological-like geometries.
+- **Techniques**: NumPy simultaneously maps 300,000 particles through the 2D discrete Gumowski-Mira equations. The primary non-linear parameter $a$ is modulated with a sine wave, causing organic stretching and phase-space breathing. The dense point cloud is rendered instantly via `py5.POINTS`.
+- **Palette**: Additive blending against a dark purple canvas. A radial gradient separates the attractor into glowing sectors of Red/Orange, Cyan/Blue, and Purple/Magenta.
+
+## kinetic_particles_curl_noise_flow_2d
+- **Date**: 2026-07-01
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A kinetic fluid simulation of 300,000 particles swirling in a divergence-free vector field.
+- **Techniques**: Instead of using Perlin noise or Navier-Stokes, an analytical scalar potential field $\Psi$ is constructed from 10 harmonic sine waves. The partial derivatives of $\Psi$ yield a curl velocity field that is mathematically incompressible. NumPy vectorization evaluates this field instantly, producing perfect, swirling eddies that evolve over time.
+- **Palette**: Deep midnight blue background. Particles are binned into three glowing neon color groups: Cyan, Gold, and Purple, rendering via `py5.POINTS` with additive blending.
+
+## kinetic_clifford_attractor_morph_2d
+- **Date**: 2026-07-01
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A kinetic generative visualization of the Clifford Attractor, morphing smoothly over time to reveal smoky, veil-like mathematical interference patterns.
+- **Techniques**: NumPy simultaneously maps 500,000 particles through the 2D discrete Clifford equations. The 4 structural parameters are modulated with sine functions, causing organic stretching and phase-space reorganisation. The dense point cloud is rendered instantly via `py5.POINTS`.
+- **Palette**: Additive blending against a black canvas with very low opacity to accumulate glowing textures. Spatial coloring divides the attractor into gradients of Cyan, Magenta, and Gold.
+
+## kinetic_strange_attractor_aizawa_2d
+- **Date**: 2026-07-01
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A kinetic 3D volumetric visualization of the Aizawa strange attractor, showcasing its spherical, tubular geometry.
+- **Techniques**: NumPy simultaneously solves the Aizawa differential equations for 300,000 particles using Euler integration. Mathematical constants $a$ and $c$ drift via trigonometric functions to cause the attractor to stretch and breathe. The particles undergo continuous 3D rotation and perspective projection. Rendered using `py5.POINTS` and additive blending.
+- **Palette**: Pitch dark blue background. The particles are color-mapped by their elevation $Z$: Gold/Orange for the top pole, Cyan for the equatorial region, and Deep Purple for the bottom.
+
+## kinetic_interference_standing_waves_2d
+- **Date**: 2026-07-01
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A kinetic visualization of complex wave interference patterns on a massive 2D membrane, shown in 3D perspective.
+- **Techniques**: NumPy evaluates a 800x800 meshgrid (640,000 points) to compute the superposition of 5 distinct, drifting sine-wave oscillators. The amplitude dictates the $Z$ height, which is then mapped through a 3D perspective projection. The points are binned by height into three NumPy masks and rendered instantly using `py5.POINTS`.
+- **Palette**: Additive blending against a pitch black canvas. High peaks are glowing Pink/Red, mid-levels are Cyan/Blue, and deep valleys are Purple/Dark Blue.
+
+## kinetic_barnsley_fern_morph_2d
+- **Date**: 2026-07-01
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: An animated sequence demonstrating an Iterated Function System (IFS) morphing organically. The classic Barnsley Fern fractal breathes, sways, and curls as its affine transformations shift continuously.
+- **Techniques**: NumPy vectorization evaluates the IFS for 300,000 independent particles simultaneously. Boolean masks distribute the points across the four affine transformations based on cumulative probabilities. The $b$ and $c$ matrix coefficients are modulated with trigonometric time variables to simulate wind. The particles are drawn natively with `py5.POINTS`.
+- **Palette**: Pitch black/dark green background. Particles are colored distinct glowing neon shades (Green, Cyan, Yellow-Green) based on which affine transformation was just applied to them.
+
+## kinetic_lorenz_attractor_butterfly_2d
+- **Date**: 2026-07-01
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A mutating, glowing 3D visualization of the Lorenz strange attractor, demonstrating the chaotic "butterfly effect".
+- **Techniques**: NumPy vectorization solves the Lorenz differential equations for 250,000 independent particles simultaneously via Euler integration. The $\rho$ (Rayleigh) parameter is modulated by a sine wave to force the chaotic system to expand and compress dynamically. The 3D coordinates are rotated and projected into 2D with `py5.POINTS`.
+- **Palette**: Pitch black background. Left wing mapped to glowing Cyan, right wing to glowing Magenta, creating dense white intersections via additive blending.
+
+## generative_continuous_1d_automata_waterfall_2d
+- **Date**: 2026-07-01
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A continuously falling waterfall of digital data, generated using a continuous-state 1D cellular automaton that drifts its rule weights over time.
+- **Techniques**: A high-resolution 1080p NumPy float array is updated iteratively row-by-row using `scipy.ndimage.convolve1d` with shifting trigonometric weights. A fractal modulo ($val = val - \lfloor val \rfloor$) keeps the values bounded and chaotic. The matrix is mapped to a bright neon color palette and upscaled to 4K natively in Py5.
+- **Palette**: Pitch black background with an intense, neon RGB spectrum (Cyan, Magenta, Yellow, Blue) mapping the continuous values.
+
+## kinetic_hopf_fibration_projection_2d
+- **Date**: 2026-07-01
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A visualization of the Hopf Fibration, mapping 4-dimensional hyperspheres into deeply interlocking, continuously rotating 3D tori projected onto a 2D canvas.
+- **Techniques**: NumPy evaluates 90,000 coordinates in 4D space, applies a 4D rotation matrix over time, and uses a stereographic projection ($p_{3d} = \vec{p}_{4d} / (1 - w)$) to map them into 3D. A final perspective projection maps them to the screen, where they are rendered using dense additive point clouds.
+- **Palette**: Ghostly additive neon colors (Red, Green, Blue hues mapping the $\eta$ parameter) glowing heavily against a dark trailing background.
+
+## kinetic_fourier_epicycle_mandala_2d
+- **Date**: 2026-07-01
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: Thousands of nested Fourier epicycles continuously drawing overlapping complex geometric curves, producing a living, breathing mandala of light.
+- **Techniques**: NumPy vectorization evaluates the complex exponential series $Z(t) = \sum C_n e^{i(\omega t + \phi)}$ to compute the coordinates of 500 distinct curves (each composed of 7 epicycles) simultaneously. The paths are drawn by connecting $t-dt$ to $t$ using `py5.LINES`.
+- **Palette**: Pitch black background with intense RGB additive neon colors (Cyan, Magenta, Yellow) layered to create intense white hotspots.
+
+## kinetic_chromatic_aberration_vortex_2d
+- **Date**: 2026-07-01
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A swirling vortex of geometric shapes being pulled into a central black hole, with intense chromatic aberration separating their RGB layers as they spiral inwards.
+- **Techniques**: A fast particle system with 15,000 interacting vertices using NumPy arrays. Squares are rendered natively via `py5.begin_shape(py5.QUADS)` in three separate additive layers (Red, Green, Blue) that offset progressively more based on distance from the center.
+- **Palette**: Pitch black background with intense RGB additive neon colors (Red, Green, Blue) separating into cyan and magenta motion trails.
+
 ## kinetic_fiber_optic_string_weaving_2d
 - **Date**: 2026-06-30
 - **Type**: Animation (450 frames, 30fps)

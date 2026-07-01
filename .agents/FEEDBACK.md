@@ -4,8 +4,88 @@
 Agents MUST NOT write anything in the `Comment` field. When registering a new work, Agents must leave the `Rating` and `Comment` fields empty or with their default labels as placeholders for the user.
 The Artist reads this file before starting a new sketch to understand preferences.
 
-## kinetic_fiber_optic_string_weaving_2d
+## generative_organic_differential_growth_2d
 - **Rating**: 
+- **Comment**: 
+
+## kinetic_cellular_automata_lenia_2d
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_physics_double_pendulum_swarm_2d
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_organic_reaction_diffusion_mitosis_2d
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_fractal_julia_set_morph_2d
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_chaotic_attractor_volumetric_cloud_3d
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_optical_illusion_droste_spiral_2d
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_chladni_plate_cymatics_2d
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_math_spirograph_lissajous_3d
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_gumowski_mira_attractor_morph_2d
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_particles_curl_noise_flow_2d
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_clifford_attractor_morph_2d
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_strange_attractor_aizawa_2d
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_interference_standing_waves_2d
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_barnsley_fern_morph_2d
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_lorenz_attractor_butterfly_2d
+- **Rating**: 
+- **Comment**: 
+
+## generative_continuous_1d_automata_waterfall_2d
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_hopf_fibration_projection_2d
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_fourier_epicycle_mandala_2d
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_chromatic_aberration_vortex_2d
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_fiber_optic_string_weaving_2d
+- **Rating**: OK.
 - **Comment**: 
 
 ## kinetic_cyberpunk_data_cityscape_2d
@@ -13,11 +93,7 @@ The Artist reads this file before starting a new sketch to understand preference
 - **Comment**: 
 
 ## abstract_geometric_bauhaus_clockwork_2d
-- **Rating**: 
-- **Comment**: 
-
-## abstract_geometric_bauhaus_clockwork_2d
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## recursive_anemone_fractal_tree_2d
@@ -25,15 +101,15 @@ The Artist reads this file before starting a new sketch to understand preference
 - **Comment**: 
 
 ## kinetic_gravitational_lensing_accretion_disk_2d
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## kinetic_magnetic_ferrofluid_spikes_2d
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## kinetic_metaball_plasma_2d
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## generative_isometric_labyrinth_growth_2d
@@ -53,19 +129,19 @@ The Artist reads this file before starting a new sketch to understand preference
 - **Comment**: 
 
 ## generative_algorithmic_origami_tessellation_2d
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## abstract_math_strange_attractor_clifford_2d
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## kinetic_magnetic_field_iron_filings_2d
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## abstract_optical_illusion_truchet_tiles_2d
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## kinetic_voronoi_stained_glass_fluid_2d
@@ -77,7 +153,7 @@ The Artist reads this file before starting a new sketch to understand preference
 - **Comment**: 
 
 ## abstract_math_lissajous_interference_web_2d
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## generative_synthwave_terrain_flight_2d
@@ -85,7 +161,7 @@ The Artist reads this file before starting a new sketch to understand preference
 - **Comment**: 
 
 ## kinetic_flow_field_perlin_noise_2d
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## generative_mandelbrot_deep_zoom_2d
@@ -137,7 +213,7 @@ The Artist reads this file before starting a new sketch to understand preference
 - **Comment**: 
 
 ## kinetic_metaball_lava_lamp_2d
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## generative_synthwave_wireframe_landscape_3d
@@ -153,11 +229,11 @@ The Artist reads this file before starting a new sketch to understand preference
 - **Comment**: 
 
 ## generative_vector_field_flow_2d
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## generative_phyllotaxis_sunflower_spiral_2d
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## generative_voronoi_stained_glass_2d
@@ -165,7 +241,7 @@ The Artist reads this file before starting a new sketch to understand preference
 - **Comment**: 
 
 ## generative_isometric_cyber_circuit_board_2d
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## generative_kinetic_moire_interference_2d
@@ -185,7 +261,7 @@ The Artist reads this file before starting a new sketch to understand preference
 - **Comment**: 
 
 ## generative_chaotic_strange_attractor_dust_2d
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## kinetic_oscilloscope_lissajous_knot_3d
@@ -197,11 +273,11 @@ The Artist reads this file before starting a new sketch to understand preference
 - **Comment**: 
 
 ## generative_unknown_pleasures_landscape_2d
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## kinetic_harmonic_pendulum_web_2d
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## generative_stained_glass_voronoi_2d
@@ -221,7 +297,7 @@ The Artist reads this file before starting a new sketch to understand preference
 - **Comment**: 
 
 ## generative_luminous_noise_ribbons_2d
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## generative_retro_wireframe_terrain_2d
@@ -234,11 +310,11 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## generative_cymatic_frequency_mandala_2d
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## abstract_fluid_iridescent_plasma_2d
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## kinetic_pendulum_wave_harmonics_2d

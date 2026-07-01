@@ -1,3 +1,10 @@
+## generative_continuous_1d_automata_waterfall_2d
+- **Date**: 2026-07-01
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A continuously falling waterfall of digital data, generated using a continuous-state 1D cellular automaton that drifts its rule weights over time.
+- **Techniques**: A high-resolution 1080p NumPy float array is updated iteratively row-by-row using `scipy.ndimage.convolve1d` with shifting trigonometric weights. A fractal modulo ($val = val - \lfloor val \rfloor$) keeps the values bounded and chaotic. The matrix is mapped to a bright neon color palette and upscaled to 4K natively in Py5.
+- **Palette**: Pitch black background with an intense, neon RGB spectrum (Cyan, Magenta, Yellow, Blue) mapping the continuous values.
+
 ## kinetic_hopf_fibration_projection_2d
 - **Date**: 2026-07-01
 - **Type**: Animation (900 frames, 60fps)

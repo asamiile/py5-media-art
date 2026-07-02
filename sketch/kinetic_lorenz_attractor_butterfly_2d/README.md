@@ -1,18 +1,7 @@
 # kinetic_lorenz_attractor_butterfly_2d
 
-![Preview](kinetic_lorenz_attractor_butterfly_2d_p1.png)
+An animated sequence of kinetic lorenz attractor butterfly in 2D.
 
-## Metadata
-- **Date**: 2026-07-01
-- **Theme**: An animated visualization of a mutating Lorenz strange attractor, demonstrating the iconic "butterfl
-- **Technique**: Unknown
-- **Logic Lab Reference**: 
-
-## Concept
-An animated visualization of a mutating Lorenz strange attractor, demonstrating the iconic "butterfly effect" of chaos theory.
-
-## Technical Details
-- **Renderer**: Unknown
-- **Simulation**: Unknown
-- **Visuals**: Unknown
-- **Animation**: Contains animation details
+- **Theme**: A mesmerizing visualization of chaos theory. 50,000 autonomous particles trace the 3D Lorenz Attractor, their paths projected onto a 2D plane. Starting from a tightly packed cluster, the particles rapidly diverge, mapping out the iconic "butterfly" manifold in continuous motion, leaving ethereal, glowing trails.
+- **Technique**: High-performance Ordinary Differential Equation (ODE) integration using NumPy. The system uses the Euler method to step 50,000 particles through the Lorenz vector field. The 3D coordinates are projected into 2D using a subtle isometric rotation. Particles leave semi-transparent trails using additive blending, colored continuously via their depth (Z-coordinate) into 10 depth bins.
+- **Format**: Animation (15s @ 60fps)

@@ -1,18 +1,16 @@
-# kinetic_boids_flocking_attractors_2d
-
-![Preview](kinetic_boids_flocking_attractors_2d_p1.png)
-
-## Metadata
-- **Date**: 2026-06-28
-- **Theme**: Craig Reynolds' classic "Boids" artificial life algorithm
-- **Technique**: Evaluating the 3 rules for 3,000 birds means calculating 9,000,000 pairwise distances per step. By vectorizing the entire algorithm using `scipy.spatial.distance.cdist` and heavy NumPy array broadcasting, I'm able to run the simulation extremely quickly. I also added an invisible global attractor in the center to gently pull the flocks back onto the screen so they don't wander off.
-- **Logic Lab Reference**: 
+# Kinetic Boids Flocking Attractors 2D
 
 ## Concept
-Craig Reynolds' classic "Boids" artificial life algorithm. This algorithm simulates the emergent flocking behavior of birds or schools of fish based on three simple rules: Separation, Alignment, and Cohesion. When applied to 3,000 interacting particles simultaneously, they form beautiful, fluid, self-organizing streams and chaotic schooling patterns.
+A massive swarm of luminous, bird-like particles following complex emergent behavior (Boids algorithm) around moving gravitational attractors, painting glowing trails in the void.
 
-## Technical Details
-- **Renderer**: Unknown
-- **Simulation**: Unknown
-- **Visuals**: Unknown
-- **Animation**: Contains animation details
+## Technical Implementation
+- 2,500 boids simulated in numpy at 60 frames per second.
+- Uses `scipy.spatial.KDTree` to efficiently find spatial neighbors, enabling large-scale Separation, Alignment, and Cohesion forces calculation.
+- Two orbital attractors introduce gravitational pull that disrupts the flock and sends them into swirling vortexes.
+- Rendered with an additive blend over a low-alpha rect background to create beautiful, long-fading neon motion trails using `py5.lines()` from old to new positions.
+
+## Execution
+- `Boids`: 2,500
+- `FPS`: 60
+- `Duration`: 15 Seconds
+- `Resolution`: 3840x2160

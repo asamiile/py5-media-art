@@ -1,3 +1,10 @@
+## kinetic_boids_flocking_attractors_2d
+- **Date**: 2026-07-02
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A massive swarm of luminous, bird-like particles following complex emergent behavior (Boids algorithm) around moving gravitational attractors, painting glowing trails in the void.
+- **Techniques**: 2,500 boids simulated using numpy and `scipy.spatial.KDTree`. Additive blending and faint background fading (`py5.rect` with low alpha) creates glowing trails.
+- **Palette**: Dark void background with bioluminescent neon green, teal, and deep blue boid trails.
+
 ## kinetic_chaos_game_fractal_mandala_2d
 - **Date**: 2026-07-02
 - **Type**: Animation (900 frames, 60fps)

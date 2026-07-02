@@ -1,10 +1,18 @@
 # abstract_cybernetic_fractal_circuitry_2d
 
-Fractal geometry resembling a complex, glowing cybernetic circuit board.
-
 ![Preview](abstract_cybernetic_fractal_circuitry_2d_p1.png)
 
-## Details
+## Metadata
 - **Date**: 2026-06-21
-- **Technique**: Recursive subdivision of space using quadtrees, where edges glow with data streams.
-- **Format**: Animation (10s @ 60fps)
+- **Theme**: Fractal geometry resembling a complex, glowing cybernetic circuit board
+- **Technique**: Unknown
+- **Logic Lab Reference**: 
+
+## Concept
+Fractal geometry resembling a complex, glowing cybernetic circuit board.
+
+## Technical Details
+- **Renderer**: Unknown
+- **Simulation**: Unknown
+- **Visuals**: Unknown
+- **Animation**: Contains animation details

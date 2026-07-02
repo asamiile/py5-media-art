@@ -19,6 +19,7 @@ if str(PROJECT_ROOT) not in sys.path:
 
 from lib.paths import sketch_dir
 from lib.sizes import get_sizes
+from lib.safety import apply_anti_flicker_filter
 
 SKETCH_DIR = sketch_dir(__file__)
 WORK_NAME = SKETCH_DIR.name
@@ -146,6 +147,7 @@ def draw():
     py5.np_pixels[:bh, :bw, 3] = B[:bh, :bw]
     py5.update_np_pixels()
     
+    apply_anti_flicker_filter(0.5)
     py5.save_frame(str(FRAMES_DIR / "frame-####.png"))
 
     if fc % FPS == 0:

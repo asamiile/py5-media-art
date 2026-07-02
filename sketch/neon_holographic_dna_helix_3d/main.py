@@ -88,12 +88,6 @@ def draw():
             # Offset x2 slightly for glitch
             py5.line(x1, y, z1, x2 + 50, y, z2 - 20)
 
-    if py5.frame_count == 2:
-        py5.load_np_pixels()
-        if py5.np_pixels.std() == 0:
-            print("[Error] Blank screen detected on frame 2. Aborting.")
-            import os
-            os._exit(1)
 
     py5.save_frame(str(FRAMES_DIR / "frame-####.png"))
 

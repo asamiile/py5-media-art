@@ -1,14 +1,18 @@
 # subway_platform_airflow
 
-## Theme
+![Preview](subway_platform_airflow_p1.png)
 
-A subway platform reveals train arrivals as pressure waves, ventilation currents, and particulate traces.
+## Metadata
+- **Date**: 2026-05-26
+- **Theme**: Generative Art
+- **Technique**: This 10-second 60fps animation renders a station cross-section with a moving train, airflow streamlines, platform figures, particulate motes, sensor traces, and a ventilation scan beam.
+- **Logic Lab Reference**: 
 
-## Technique
+## Concept
+No concept description provided.
 
-This 10-second 60fps animation renders a station cross-section with a moving train, airflow streamlines, platform figures, particulate motes, sensor traces, and a ventilation scan beam.
-
-## Outputs
-
-- `subway_platform_airflow_p1.png` - midpoint preview image
-- `subway_platform_airflow.mp4` - generated animation output
+## Technical Details
+- **Renderer**: Unknown
+- **Simulation**: Unknown
+- **Visuals**: Unknown
+- **Animation**: Contains animation details

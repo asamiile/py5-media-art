@@ -1,17 +1,16 @@
 # abstract_fluid_smoke_rings_3d
 
-## Theme
-Volumetric smoke rings (toroids) that slowly drift through a 3D fluid field, intersecting and disturbing each other's flow.
+## Metadata
+- **Date**: 2026-06-23
+- **Theme**: Generative Art
+- **Technique**: A particle system where points are emitted along moving torus equations. The particles drift through a 3D noise field over time and fade out. Rendered with additive blending for a glowing neon fluid aesthetic.
+- **Logic Lab Reference**: 
 
-## Technique
-A particle system where points are emitted along moving torus equations. The particles drift through a 3D noise field over time and fade out. Rendered with additive blending for a glowing neon fluid aesthetic.
+## Concept
+No concept description provided.
 
-## Palette
-- Background: Very dark blue (almost black)
-- Dominant: Translucent magenta
-- Secondary: Electric cyan
-- Accent: Bright white
-
-## Preview
-
-![Preview](abstract_fluid_smoke_rings_3d_p1.png)
+## Technical Details
+- **Renderer**: Unknown
+- **Simulation**: Unknown
+- **Visuals**: Unknown
+- **Animation**: Unknown

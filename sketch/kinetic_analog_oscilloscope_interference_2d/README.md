@@ -1,9 +1,18 @@
 # kinetic_analog_oscilloscope_interference_2d
 
-An animated sequence of fast-moving glowing lines twisting and folding into complex interference patterns with a classic retro-tech aesthetic.
+![Preview](kinetic_analog_oscilloscope_interference_2d_p1.png)
+
+## Metadata
+- **Date**: 2026-06-19
+- **Theme**: The chaotic hum of a vintage oscilloscope rendering unstable high-frequency signals
+- **Technique**: Procedurally generating Lissajous figures with continuously shifting phase and frequency ratios, using additive blending and a phosphor-decay motion blur to mimic an analog CRT screen.
+- **Logic Lab Reference**: 
 
 ## Concept
 The chaotic hum of a vintage oscilloscope rendering unstable high-frequency signals.
 
-## Technique
-Procedurally generating Lissajous figures with continuously shifting phase and frequency ratios, using additive blending and a phosphor-decay motion blur to mimic an analog CRT screen.
+## Technical Details
+- **Renderer**: Unknown
+- **Simulation**: Unknown
+- **Visuals**: Unknown
+- **Animation**: Unknown

@@ -1,10 +1,18 @@
 # kinetic_moire_interference_patterns_2d
 
-Two overlapping sets of dense, thin lines rotating to create mesmerizing moiré patterns.
-
 ![Preview](kinetic_moire_interference_patterns_2d_p1.png)
 
-## Details
+## Metadata
 - **Date**: 2026-06-20
-- **Technique**: Drawing two grids or radial bursts of lines. One is stationary, the other rotates slowly, colored with high-contrast neon on dark.
-- **Format**: Animation (10s @ 60fps)
+- **Theme**: Two overlapping sets of dense, thin lines rotating to create mesmerizing moiré patterns
+- **Technique**: Unknown
+- **Logic Lab Reference**: 
+
+## Concept
+Two overlapping sets of dense, thin lines rotating to create mesmerizing moiré patterns.
+
+## Technical Details
+- **Renderer**: Unknown
+- **Simulation**: Unknown
+- **Visuals**: Unknown
+- **Animation**: Contains animation details

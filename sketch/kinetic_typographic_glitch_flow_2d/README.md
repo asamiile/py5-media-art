@@ -1,10 +1,18 @@
 # kinetic_typographic_glitch_flow_2d
 
-A glitching, moving flow of digital typography cascading like a cyber-waterfall.
-
 ![Preview](kinetic_typographic_glitch_flow_2d_p1.png)
 
-## Details
+## Metadata
 - **Date**: 2026-06-20
-- **Technique**: Text characters falling and shifting according to a 1D noise field, with chromatic aberration and occasional horizontal tearing effects.
-- **Format**: Animation (10s @ 60fps)
+- **Theme**: A glitching, moving flow of digital typography cascading like a cyber-waterfall
+- **Technique**: Unknown
+- **Logic Lab Reference**: 
+
+## Concept
+A glitching, moving flow of digital typography cascading like a cyber-waterfall.
+
+## Technical Details
+- **Renderer**: Unknown
+- **Simulation**: Unknown
+- **Visuals**: Unknown
+- **Animation**: Contains animation details

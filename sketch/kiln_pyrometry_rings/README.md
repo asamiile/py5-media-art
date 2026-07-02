@@ -1,14 +1,18 @@
 # kiln_pyrometry_rings
 
-## Theme
+![Preview](kiln_pyrometry_rings_p1.png)
 
-A ceramic kiln records heat as bending cones, glaze witnesses, and circular thermal memory.
+## Metadata
+- **Date**: 2026-05-26
+- **Theme**: Generative Art
+- **Technique**: This 10-second 60fps animation renders a dark kiln chamber with pulsing pyrometry rings, witness tiles, melting glaze drips, pyrometric cones, ash motes, and side telemetry traces.
+- **Logic Lab Reference**: 
 
-## Technique
+## Concept
+No concept description provided.
 
-This 10-second 60fps animation renders a dark kiln chamber with pulsing pyrometry rings, witness tiles, melting glaze drips, pyrometric cones, ash motes, and side telemetry traces.
-
-## Outputs
-
-- `kiln_pyrometry_rings_p1.png` - midpoint preview image
-- `kiln_pyrometry_rings.mp4` - generated animation output
+## Technical Details
+- **Renderer**: Unknown
+- **Simulation**: Unknown
+- **Visuals**: Unknown
+- **Animation**: Contains animation details

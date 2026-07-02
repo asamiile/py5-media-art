@@ -1,4 +1,11 @@
 import py5
+import sys
+from pathlib import Path
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.append(str(PROJECT_ROOT))
+
+from lib.safety import apply_anti_flicker_filter
 import numpy as np
 from pathlib import Path
 
@@ -110,8 +117,10 @@ def draw():
     py5.update_np_pixels()
     
     # Save preview
+    apply_anti_flicker_filter(0.5)
     py5.save_frame(str(OUTPUT_DIR / "preview.png"))
     print(f"Saved preview to {OUTPUT_DIR / 'preview.png'}")
+    py5.exit_sketch()
 
 if __name__ == "__main__":
     py5.run_sketch()

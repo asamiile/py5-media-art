@@ -1,10 +1,18 @@
 # generative_geometric_kaleidoscope_2d
 
-An intricate, infinitely zooming geometric kaleidoscope.
-
 ![Preview](generative_geometric_kaleidoscope_2d_p1.png)
 
-## Details
+## Metadata
 - **Date**: 2026-06-21
-- **Technique**: Polar coordinate mapping and recursive geometric shape rendering, producing an infinite zooming psychedelic illusion.
-- **Format**: Animation (10s @ 60fps)
+- **Theme**: An intricate, infinitely zooming geometric kaleidoscope
+- **Technique**: Unknown
+- **Logic Lab Reference**: 
+
+## Concept
+An intricate, infinitely zooming geometric kaleidoscope.
+
+## Technical Details
+- **Renderer**: Unknown
+- **Simulation**: Unknown
+- **Visuals**: Unknown
+- **Animation**: Contains animation details

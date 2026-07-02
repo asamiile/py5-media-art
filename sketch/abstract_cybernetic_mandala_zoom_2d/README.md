@@ -1,10 +1,18 @@
 # abstract_cybernetic_mandala_zoom_2d
 
-An infinite zoom into a complex, rotating, cybernetic geometric mandala.
-
 ![Preview](abstract_cybernetic_mandala_zoom_2d_p1.png)
 
-## Details
+## Metadata
 - **Date**: 2026-06-20
-- **Technique**: Concentric geometric shapes (polygons, circles) scaled with `scale()` based on time modulo, creating a continuous zoom effect.
-- **Format**: Animation (10s @ 60fps)
+- **Theme**: An infinite zoom into a complex, rotating, cybernetic geometric mandala
+- **Technique**: Unknown
+- **Logic Lab Reference**: 
+
+## Concept
+An infinite zoom into a complex, rotating, cybernetic geometric mandala.
+
+## Technical Details
+- **Renderer**: Unknown
+- **Simulation**: Unknown
+- **Visuals**: Unknown
+- **Animation**: Contains animation details

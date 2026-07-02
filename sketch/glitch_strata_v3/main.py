@@ -12,6 +12,7 @@ if str(PROJECT_ROOT) not in sys.path:
 from lib.paths import sketch_dir
 from lib.preview import preview_filename
 from lib.sizes import get_sizes
+from lib.safety import apply_anti_flicker_filter
 
 # Sketch Directory and Naming Conventions
 SKETCH_DIR = sketch_dir(__file__)
@@ -232,6 +233,7 @@ def draw():
     py5.update_np_pixels()
 
     # Save sequential frames for ffmpeg
+    apply_anti_flicker_filter(0.5)
     py5.save_frame(str(FRAMES_DIR / "frame-####.png"))
 
     # Auto-termination and video assembly

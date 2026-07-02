@@ -12,6 +12,7 @@ if str(PROJECT_ROOT) not in sys.path:
 from lib.paths import sketch_dir
 from lib.preview import preview_filename
 from lib.sizes import get_sizes
+from lib.safety import apply_anti_flicker_filter
 
 SKETCH_DIR = sketch_dir(__file__)
 WORK_NAME = SKETCH_DIR.name
@@ -85,6 +86,7 @@ def draw():
     img = py5.create_image_from_numpy(pixel_array, "RGBA")
     py5.image(img, 0, 0)
     
+    apply_anti_flicker_filter(0.5)
     py5.save_frame(str(FRAMES_DIR / "frame-####.png"))
 
     if py5.frame_count % 30 == 0:

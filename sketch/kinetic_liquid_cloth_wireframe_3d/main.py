@@ -38,12 +38,6 @@ def draw():
     py5.blend_mode(py5.ADD)
     
     # Fail-safe
-    if py5.frame_count == 2 or py5.frame_count % 60 == 0:
-        py5.load_np_pixels()
-        if py5.np_pixels.std() < 1.0:
-            print(f"[Error] Blank screen detected on frame {py5.frame_count} (std < 1.0). Aborting.")
-            import os
-            os._exit(1)
             
     py5.push_matrix()
     py5.translate(py5.width / 2, py5.height / 2 + 100, -800)

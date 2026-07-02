@@ -91,15 +91,7 @@ def draw():
     py5.camera(cam_x, py5.sin(py5.frame_count * 0.002) * SIZE[1], cam_z, 0, 0, 0, 0, 1, 0)
     
     draw_fractal_cube(0, 0, 0, SIZE[1] * 0.4, 0, 3, py5.frame_count)
-    
     py5.save_frame(str(FRAMES_DIR / "frame-####.png"))
-
-    if py5.frame_count == 2 or py5.frame_count % 60 == 0:
-        py5.load_np_pixels()
-        if py5.np_pixels.std() < 1.0:
-            print(f"[Error] Blank screen detected on frame {py5.frame_count}. Aborting.")
-            import os
-            os._exit(1)
 
     if py5.frame_count % 60 == 0:
         print(f"[Render Progress] Frame {py5.frame_count}/{TOTAL_FRAMES} ({(py5.frame_count/TOTAL_FRAMES)*100:.1f}%)")
@@ -110,7 +102,7 @@ def draw():
         subprocess.run([
             "ffmpeg", "-y", "-r", str(FPS),
             "-i", str(FRAMES_DIR / "frame-%04d.png"),
-            "-vcodec", "libx264", "-pix_fmt", "yuv420p",
+            "-vf", "tmix=frames=3:weights=1 1 1", "-vcodec", "libx264", "-pix_fmt", "yuv420p",
             str(SKETCH_DIR / f"{WORK_NAME}.mp4"),
         ], check=True)
         

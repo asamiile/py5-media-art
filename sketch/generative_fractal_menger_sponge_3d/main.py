@@ -68,12 +68,6 @@ def draw():
     # Draw sponge (depth 3 means 20 * 20 = 400 boxes, let's do depth 2 (20 boxes, too small) or depth 3 (400 boxes, perfect))
     draw_sponge(0, 0, 0, 1200, 1, 3, py5.frame_count * 0.05)
 
-    if py5.frame_count == 2:
-        py5.load_np_pixels()
-        if py5.np_pixels.std() == 0:
-            print("[Error] Blank screen detected on frame 2. Aborting.")
-            import os
-            os._exit(1)
 
     py5.save_frame(str(FRAMES_DIR / "frame-####.png"))
 

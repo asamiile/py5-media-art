@@ -1,10 +1,18 @@
 # abstract_generative_op_art_checkerboard_2d
 
-An optical illusion checkerboard that distorts, twists, and waves over time.
-
 ![Preview](abstract_generative_op_art_checkerboard_2d_p1.png)
 
-## Details
+## Metadata
 - **Date**: 2026-06-21
-- **Technique**: Drawing a dense grid of quadrilaterals whose vertices are displaced by 2D Perlin noise and sine waves.
-- **Format**: Animation (10s @ 60fps)
+- **Theme**: An optical illusion checkerboard that distorts, twists, and waves over time
+- **Technique**: Unknown
+- **Logic Lab Reference**: 
+
+## Concept
+An optical illusion checkerboard that distorts, twists, and waves over time.
+
+## Technical Details
+- **Renderer**: Unknown
+- **Simulation**: Unknown
+- **Visuals**: Unknown
+- **Animation**: Contains animation details

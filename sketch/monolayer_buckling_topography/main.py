@@ -20,8 +20,8 @@ TOTAL_FRAMES = DURATION_SEC * FPS
 PREVIEW_FILENAME = f"{WORK_NAME}_p1.png"
 PREVIEW_SIZE, OUTPUT_SIZE, SIZE = get_sizes()
 
-# グリッドの解像度（100x100 = 1万ポリゴン）
-# 高速化とディテールのバランス
+# Grid resolution (100x100 = 10,000 polygons)
+# Balance between performance and detail
 RES = 100
 
 def setup():
@@ -33,20 +33,20 @@ def setup():
 def draw():
     py5.background(10, 10, 15) # Deep Charcoal
     
-    # カメラ設定
+    # Camera setup
     py5.camera(SIZE[0]*0.8, -SIZE[1]*0.6, SIZE[0]*0.8, 0, 0, 0, 0, 1, 0)
     
-    # ライティング（真珠のような光沢）
+    # Lighting (pearl-like gloss)
     py5.ambient_light(40, 40, 60)
     py5.point_light(255, 255, 255, 500, -800, 500)
     py5.specular(255, 255, 255)
     py5.shininess(20.0)
 
-    # 圧縮パラメータ（時間経過で座屈が激しくなる）
+    # Compression parameter (buckling becomes severe over time)
     progress = py5.frame_count / TOTAL_FRAMES
     compression = py5.remap(progress, 0, 1, 0, 1)
     
-    # メッシュ描画
+    # Draw mesh
     w = SIZE[0] * 1.5
     h = SIZE[1] * 1.5
     step_w = w / RES
@@ -60,13 +60,13 @@ def draw():
             x1 = x0 + step_w
             z1 = z0 + step_h
             
-            # 座標計算（高速化のため一括計算したいが、py5のループ内では個別に行う）
-            # 座屈ノイズ（複数の周波数を重ねる）
+            # Coordinate calculation (ideally batched for performance, but done individually in py5 loop)
+            # Buckling noise (layering multiple frequencies)
             def get_height(x, z):
                 amp = 150 * compression
-                # 基底のうねり
+                # Base undulation
                 v = py5.os_noise(x * 0.002, z * 0.002, py5.frame_count * 0.01)
-                # 高周波の座屈（シワ）
+                # High-frequency buckling (wrinkles)
                 v += 0.4 * py5.os_noise(x * 0.01, z * 0.01, py5.frame_count * 0.02) * compression
                 return v * amp
 
@@ -75,8 +75,8 @@ def draw():
             y11 = get_height(x1, z1)
             y01 = get_height(x0, z1)
             
-            # 色の計算（法線に基づいた干渉色）
-            # 近似的な法線勾配で色を変化させる
+            # Color calculation (interference color based on normal)
+            # Change color using approximate normal gradient
             diff = abs(y00 - y10) + abs(y00 - y01)
             hue_offset = py5.remap(diff, 0, 20, 0, 60)
             
@@ -84,7 +84,7 @@ def draw():
             py5.vertex(x0, y00, z0)
             py5.vertex(x1, y10, z0)
             
-            # 尾根の部分にシアンの発光
+            # Cyan glow on the ridges
             if diff > 10 * compression:
                 py5.fill(200, 255, 255, 150) # Cyan accent
             

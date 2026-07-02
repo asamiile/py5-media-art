@@ -1,10 +1,18 @@
 # kinetic_fluid_glass_ribbons_3d
 
-Smooth, semi-transparent glass ribbons flowing and twisting like liquid through zero-gravity space.
-
 ![Preview](kinetic_fluid_glass_ribbons_3d_p1.png)
 
-## Details
+## Metadata
 - **Date**: 2026-06-20
-- **Technique**: 3D triangle strips governed by a curl-noise field, with low alpha and additive blending to create overlapping iridescent layers.
-- **Format**: Animation (15s @ 60fps)
+- **Theme**: Smooth, semi-transparent glass ribbons flowing and twisting like liquid through zero-gravity space
+- **Technique**: Unknown
+- **Logic Lab Reference**: 
+
+## Concept
+Smooth, semi-transparent glass ribbons flowing and twisting like liquid through zero-gravity space.
+
+## Technical Details
+- **Renderer**: Unknown
+- **Simulation**: Unknown
+- **Visuals**: Unknown
+- **Animation**: Contains animation details

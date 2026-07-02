@@ -1,11 +1,18 @@
 # generative_isometric_cityscape_builder_3d
 
+![Preview](generative_isometric_cityscape_builder_3d_p1.png)
+
+## Metadata
+- **Date**: 2026-06-13
+- **Theme**: A time-lapse visualization of a futuristic, isometric city building itself from the ground up, block
+- **Technique**: Isometric orthographic projection (`py5.ortho()`). A 3D grid where boxes scale up from 0 to their final height using an elastic easing function, triggered radially from the center outward. Cool corporate blues and bright orange highlights for active construction zones.
+- **Logic Lab Reference**: 
+
+## Concept
 A time-lapse visualization of a futuristic, isometric city building itself from the ground up, block by block, in a mesmerizing procedural cascade.
 
-## Technique
-
-Isometric orthographic projection (`py5.ortho()`). A 3D grid where boxes scale up from 0 to their final height using an elastic easing function, triggered radially from the center outward. Cool corporate blues and bright orange highlights for active construction zones.
-
-## Output
-
-Animation (20s @ 60fps)
+## Technical Details
+- **Renderer**: Unknown
+- **Simulation**: Unknown
+- **Visuals**: Unknown
+- **Animation**: Animation (20s @ 60fps)

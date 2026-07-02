@@ -1,10 +1,18 @@
 # abstract_quantum_entanglement_flow_3d
 
-Delicate, interwoven particle trails mimicking quantum entanglement.
-
 ![Preview](abstract_quantum_entanglement_flow_3d_p1.png)
 
-## Details
+## Metadata
 - **Date**: 2026-06-20
-- **Technique**: Multiple emitter systems that follow complex Lissajous curves in 3D, leaving a fading trail of additive particles behind.
-- **Format**: Animation (10s @ 60fps)
+- **Theme**: Delicate, interwoven particle trails mimicking quantum entanglement
+- **Technique**: Unknown
+- **Logic Lab Reference**: 
+
+## Concept
+Delicate, interwoven particle trails mimicking quantum entanglement.
+
+## Technical Details
+- **Renderer**: Unknown
+- **Simulation**: Unknown
+- **Visuals**: Unknown
+- **Animation**: Contains animation details

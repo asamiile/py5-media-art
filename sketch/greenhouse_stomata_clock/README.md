@@ -1,14 +1,18 @@
 # greenhouse_stomata_clock
 
-## Theme
+![Preview](greenhouse_stomata_clock_p1.png)
 
-A greenhouse monitor watches leaf pores open and close as climate control becomes a living clock.
+## Metadata
+- **Date**: 2026-05-26
+- **Theme**: Generative Art
+- **Technique**: This 10-second 60fps animation renders an overhead crop bed with leaf silhouettes, hundreds of animated stomata apertures, a moving light curtain, mist particles, and CO2/humidity/light telemetry traces.
+- **Logic Lab Reference**: 
 
-## Technique
+## Concept
+No concept description provided.
 
-This 10-second 60fps animation renders an overhead crop bed with leaf silhouettes, hundreds of animated stomata apertures, a moving light curtain, mist particles, and CO2/humidity/light telemetry traces.
-
-## Outputs
-
-- `greenhouse_stomata_clock_p1.png` - midpoint preview image
-- `greenhouse_stomata_clock.mp4` - generated animation output
+## Technical Details
+- **Renderer**: Unknown
+- **Simulation**: Unknown
+- **Visuals**: Unknown
+- **Animation**: Contains animation details

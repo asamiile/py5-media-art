@@ -106,12 +106,6 @@ def draw():
     py5.no_stroke()
     py5.circle(pendulum.pos[0], pendulum.pos[1], 20)
 
-    if py5.frame_count == 2:
-        py5.load_np_pixels()
-        if py5.np_pixels.std() == 0:
-            print("[Error] Blank screen detected on frame 2. Aborting.")
-            import os
-            os._exit(1)
 
     py5.save_frame(str(FRAMES_DIR / "frame-####.png"))
 

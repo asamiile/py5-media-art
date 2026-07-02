@@ -1,13 +1,18 @@
 # kinetic_metropolis_clockwork_cube_3d
 
-## Theme
-A massive, impossible geometric machine where thousands of smaller glowing cubes shift and slide endlessly like a giant 3D puzzle.
+![Preview](kinetic_metropolis_clockwork_cube_3d_p1.png)
 
-## Technique
-A 3D grid array of cubes. Sub-sections (rows, columns, planes) of the array randomly rotate around their local axes in 90-degree increments, smoothly animated with sine-easing.
+## Metadata
+- **Date**: 2026-06-08
+- **Theme**: Generative Art
+- **Technique**: A 3D grid array of cubes. Sub-sections (rows, columns, planes) of the array randomly rotate around their local axes in 90-degree increments, smoothly animated with sine-easing.
+- **Logic Lab Reference**: 
 
-## Format
-Animation (15s @ 60fps)
+## Concept
+No concept description provided.
 
-## Output
-[kinetic_metropolis_clockwork_cube_3d_p1.png](kinetic_metropolis_clockwork_cube_3d_p1.png)
+## Technical Details
+- **Renderer**: Unknown
+- **Simulation**: Unknown
+- **Visuals**: Unknown
+- **Animation**: [kinetic_metropolis_clockwork_cube_3d_p1.png](kinetic_metropolis_clockwork_cube_3d_p1.png)

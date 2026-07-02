@@ -1,10 +1,16 @@
 # bioluminescent_neural_swarm_boids_3d
 
-## Details
+## Metadata
 - **Date**: 2026-06-07
-- **Theme**: A microscopic view of abstract, bioluminescent neural organisms multiplying and interacting.
-- **Technique**: Boids (flocking) algorithm with glowing trails and additive blending, simulating organic swarming behavior in 3D space.
-- **Palette**: Obsidian background, electric blue, bioluminescent green, and neon magenta.
+- **Theme**: Generative Art
+- **Technique**: Unknown
+- **Logic Lab Reference**: 
 
-## Media
-![Preview](bioluminescent_neural_swarm_boids_3d_p1.png)
+## Concept
+No concept description provided.
+
+## Technical Details
+- **Renderer**: Unknown
+- **Simulation**: Unknown
+- **Visuals**: Unknown
+- **Animation**: Unknown

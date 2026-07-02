@@ -1,16 +1,18 @@
 # kinetic_topographic_fingerprint_2d
 
-## Theme
-A hypnotic, undulating topographical map that resembles a fingerprint, constantly changing its ridges and valleys as if terraforming a digital landscape.
+![Preview](kinetic_topographic_fingerprint_2d_p1.png)
 
-## Technique
-Procedurally drawing dense contour lines (iso-bands). Concentric circles are generated and their vertices are heavily displaced using a 2D OpenSimplex noise field that drifts over time. Additive blending creates intense glowing hotspots where the simulated contours bunch together.
+## Metadata
+- **Date**: 2026-05-31
+- **Theme**: Generative Art
+- **Technique**: Procedurally drawing dense contour lines (iso-bands). Concentric circles are generated and their vertices are heavily displaced using a 2D OpenSimplex noise field that drifts over time. Additive blending creates intense glowing hotspots where the simulated contours bunch together.
+- **Logic Lab Reference**: 
 
-## Color palette
-- Background: Very dark teal
-- Dominant (60%): Luminous seafoam green
-- Secondary (30%): Deep turquoise
-- Mood: Mesmerizing / Fluid / Organic
+## Concept
+No concept description provided.
 
-## Format
-Animation (10s @ 60fps)
+## Technical Details
+- **Renderer**: Unknown
+- **Simulation**: Unknown
+- **Visuals**: Unknown
+- **Animation**: Contains animation details

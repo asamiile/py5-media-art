@@ -1,5 +1,12 @@
 import os
+import sys
+from pathlib import Path
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.append(str(PROJECT_ROOT))
+
 import py5
+from lib.safety import apply_anti_flicker_filter
 import numpy as np
 
 # ----------------------------------------------------------------------------
@@ -108,6 +115,7 @@ def draw():
 
     # Save frame
     frame_filename = os.path.join(OUTPUT_DIR, f"frame-{state['frame_count']:04d}.png")
+    apply_anti_flicker_filter(0.5)
     py5.save_frame(frame_filename)
     
     # Safety Check

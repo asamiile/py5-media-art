@@ -1,14 +1,18 @@
 # tidal_marsh_carbon_flux
 
-## Theme
+![Preview](tidal_marsh_carbon_flux_p1.png)
 
-A salt marsh breathes carbon through roots, sediment, and tide pulses.
+## Metadata
+- **Date**: 2026-05-26
+- **Theme**: Generative Art
+- **Technique**: This 10-second 60fps animation renders a marsh cross-section with layered peat, moving tide height, swaying stems, root flux lines, carbon bubbles, and biogeochemical telemetry traces.
+- **Logic Lab Reference**: 
 
-## Technique
+## Concept
+No concept description provided.
 
-This 10-second 60fps animation renders a marsh cross-section with layered peat, moving tide height, swaying stems, root flux lines, carbon bubbles, and biogeochemical telemetry traces.
-
-## Outputs
-
-- `tidal_marsh_carbon_flux_p1.png` - midpoint preview image
-- `tidal_marsh_carbon_flux.mp4` - generated animation output
+## Technical Details
+- **Renderer**: Unknown
+- **Simulation**: Unknown
+- **Visuals**: Unknown
+- **Animation**: Contains animation details

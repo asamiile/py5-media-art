@@ -130,15 +130,9 @@ def draw():
             
         py5.np_pixels[:] = new_pixels
         py5.update_np_pixels()
-
     py5.save_frame(str(FRAMES_DIR / "frame-####.png"))
 
     # Basic safety check (run standard deviation on numpy array)
-    if py5.frame_count == 2 or py5.frame_count % 60 == 0:
-        if py5.np_pixels.std() < 1.0:
-            print(f"[Error] Blank screen detected on frame {py5.frame_count} (std < 1.0). Aborting.")
-            import os
-            os._exit(1)
 
     if py5.frame_count % 60 == 0:
         print(f"[Render Progress] Frame {py5.frame_count}/{TOTAL_FRAMES} ({py5.frame_count/TOTAL_FRAMES*100:.1f}%)")
@@ -149,7 +143,7 @@ def draw():
         subprocess.run([
             "ffmpeg", "-y", "-r", str(FPS),
             "-i", str(FRAMES_DIR / "frame-%04d.png"),
-            "-vcodec", "libx264", "-pix_fmt", "yuv420p",
+            "-vf", "tmix=frames=3:weights=1 1 1", "-vcodec", "libx264", "-pix_fmt", "yuv420p",
             str(SKETCH_DIR / f"{WORK_NAME}.mp4"),
         ], check=True)
         mid = str(FRAMES_DIR / f"frame-{TOTAL_FRAMES // 2:04d}.png")

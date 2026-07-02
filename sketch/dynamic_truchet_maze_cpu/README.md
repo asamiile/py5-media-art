@@ -1,16 +1,18 @@
 # dynamic_truchet_maze_cpu
 
-## Theme
-A microscopic view of an alien CPU where continuous glowing pathways dynamically reroute themselves in a perfectly synchronized maze.
+![Preview](dynamic_truchet_maze_cpu_p1.png)
 
-## Technique
-Animated multi-scale Truchet tiles. Using arcs on a grid where each cell rotates by 90 degrees based on a spatial noise field that shifts over time.
+## Metadata
+- **Date**: 2026-05-31
+- **Theme**: Generative Art
+- **Technique**: Animated multi-scale Truchet tiles. Using arcs on a grid where each cell rotates by 90 degrees based on a spatial noise field that shifts over time.
+- **Logic Lab Reference**: 
 
-## Color palette
-- Background: Very dark grey (almost black)
-- Dominant (60%): Electric cyan/blue
-- Secondary (30%): Neon green
-- Mood: High-tech / Cybernetic
+## Concept
+No concept description provided.
 
-## Format
-Animation (10s @ 60fps)
+## Technical Details
+- **Renderer**: Unknown
+- **Simulation**: Unknown
+- **Visuals**: Unknown
+- **Animation**: Contains animation details

@@ -1,10 +1,18 @@
-# Kinetic Tessellation Flower 3D
+# kinetic_tessellation_flower_3d
 
-## Description
-A microscopic view of metallic, geometric petals continuously unfolding and tessellating into an infinite flower. The animation explores the concept of mechanical botany, utilizing a 3D recursive rotational tessellation of pentagons and hexagons. The structure continuously breathes and blooms via animated transformations.
+![Preview](kinetic_tessellation_flower_3d_p1.png)
+
+## Metadata
+- **Date**: 2026-06-02
+- **Theme**: Generative Art
+- **Technique**: Unknown
+- **Logic Lab Reference**: 
+
+## Concept
+No concept description provided.
 
 ## Technical Details
-- **Format:** Animation (10s @ 60fps)
-- **Palette:** Dark slate background, with warm gold, cool cyan, and white geometric accents.
-- **Algorithm:** 3D recursive rotational tessellation, utilizing complex push/pop matrices and sinusoidal oscillation for organic movement simulation.
-- **Renderer:** py5.P3D with multi-source lighting (ambient + directional) for realistic metallic highlights.
+- **Renderer**: P3D
+- **Simulation**: Unknown
+- **Visuals**: Unknown
+- **Animation**: Contains animation details

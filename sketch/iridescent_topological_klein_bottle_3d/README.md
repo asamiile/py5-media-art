@@ -1,13 +1,18 @@
 # iridescent_topological_klein_bottle_3d
 
-## Theme
-An impossibly intertwined mathematical surface that continuously flows into itself, rendered in translucent, iridescent glass.
+![Preview](iridescent_topological_klein_bottle_3d_p1.png)
 
-## Technique
-Parametric 3D equations for a Klein bottle drawn with a dense QUAD_STRIP mesh. Multi-pass rendering with slight spatial/rotational offsets for R, G, B channels creates a chromatic aberration glass effect.
+## Metadata
+- **Date**: 2026-06-08
+- **Theme**: Generative Art
+- **Technique**: Parametric 3D equations for a Klein bottle drawn with a dense QUAD_STRIP mesh. Multi-pass rendering with slight spatial/rotational offsets for R, G, B channels creates a chromatic aberration glass effect.
+- **Logic Lab Reference**: 
 
-## Format
-Animation (15s @ 60fps)
+## Concept
+No concept description provided.
 
-## Output
-[iridescent_topological_klein_bottle_3d_p1.png](iridescent_topological_klein_bottle_3d_p1.png)
+## Technical Details
+- **Renderer**: Unknown
+- **Simulation**: Unknown
+- **Visuals**: Unknown
+- **Animation**: [iridescent_topological_klein_bottle_3d_p1.png](iridescent_topological_klein_bottle_3d_p1.png)

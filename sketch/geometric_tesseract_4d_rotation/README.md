@@ -1,10 +1,18 @@
-# Geometric Tesseract 4D Rotation
+# geometric_tesseract_4d_rotation
 
-## Description
-A 4D hypercube (tesseract) slowly rotating and casting a 3D shadow into our reality, its vertices connected by glowing energy beams that pulse as they cross dimensional planes. The animation explores higher-dimensional geometry and stereographic projection in generative art.
+![Preview](geometric_tesseract_4d_rotation_p1.png)
+
+## Metadata
+- **Date**: 2026-06-02
+- **Theme**: Generative Art
+- **Technique**: Unknown
+- **Logic Lab Reference**: 
+
+## Concept
+No concept description provided.
 
 ## Technical Details
-- **Format:** Animation (10s @ 60fps)
-- **Palette:** Dark void background with electric cyan edges and bright white pulsing spherical vertices.
-- **Algorithm:** 4D to 3D projection math. 16 vertices of a tesseract in 4D space are multiplied by 4D rotation matrices (using combinations of XW, YW, ZW planes) and then projected down to 3D using perspective projection.
-- **Renderer:** py5.P3D with HSB depth-based color sorting and custom matrix transformations.
+- **Renderer**: P3D
+- **Simulation**: Unknown
+- **Visuals**: Unknown
+- **Animation**: Contains animation details

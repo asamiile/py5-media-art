@@ -1,10 +1,18 @@
 # abstract_plasma_fluid_dynamics_3d
 
-A swirling, volumetric plasma fluid simulation represented by colored points and spheres on a 3D grid.
-
 ![Preview](abstract_plasma_fluid_dynamics_3d_p1.png)
 
-## Details
+## Metadata
 - **Date**: 2026-06-20
-- **Technique**: A 3D grid of points where position and color are driven by multiple layers of 3D Perlin noise and time.
-- **Format**: Animation (10s @ 60fps)
+- **Theme**: A swirling, volumetric plasma fluid simulation represented by colored points and spheres on a 3D gri
+- **Technique**: Unknown
+- **Logic Lab Reference**: 
+
+## Concept
+A swirling, volumetric plasma fluid simulation represented by colored points and spheres on a 3D grid.
+
+## Technical Details
+- **Renderer**: Unknown
+- **Simulation**: Unknown
+- **Visuals**: Unknown
+- **Animation**: Contains animation details

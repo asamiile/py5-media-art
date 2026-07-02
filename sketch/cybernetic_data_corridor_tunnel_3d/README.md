@@ -1,10 +1,18 @@
 # cybernetic_data_corridor_tunnel_3d
 
-A high-speed flight through a cybernetic data tunnel or corridor.
-
 ![Preview](cybernetic_data_corridor_tunnel_3d_p1.png)
 
-## Details
+## Metadata
 - **Date**: 2026-06-20
-- **Technique**: Ray-marching or drawing receding rectangular frames that shift colors and sizes to create a tunnel illusion.
-- **Format**: Animation (10s @ 60fps)
+- **Theme**: A high-speed flight through a cybernetic data tunnel or corridor
+- **Technique**: Unknown
+- **Logic Lab Reference**: 
+
+## Concept
+A high-speed flight through a cybernetic data tunnel or corridor.
+
+## Technical Details
+- **Renderer**: Unknown
+- **Simulation**: Unknown
+- **Visuals**: Unknown
+- **Animation**: Contains animation details

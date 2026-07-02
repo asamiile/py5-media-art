@@ -1,10 +1,18 @@
 # cybernetic_organic_lsystem_3d
 
-A glowing, cybernetic L-system plant that continuously grows, branches, and gently sways in 3D space.
-
 ![Preview](cybernetic_organic_lsystem_3d_p1.png)
 
-## Details
+## Metadata
 - **Date**: 2026-06-20
-- **Technique**: A recursive branching function where the depth or length of branches pulses with a sine wave or noise, colored with additive blending.
-- **Format**: Animation (10s @ 60fps)
+- **Theme**: A glowing, cybernetic L-system plant that continuously grows, branches, and gently sways in 3D space
+- **Technique**: Unknown
+- **Logic Lab Reference**: 
+
+## Concept
+A glowing, cybernetic L-system plant that continuously grows, branches, and gently sways in 3D space.
+
+## Technical Details
+- **Renderer**: Unknown
+- **Simulation**: Unknown
+- **Visuals**: Unknown
+- **Animation**: Contains animation details

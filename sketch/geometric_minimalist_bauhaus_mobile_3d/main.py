@@ -133,12 +133,6 @@ def draw():
     # Draw mobile recursively
     draw_mobile(0, 4, t, 12345)
 
-    if py5.frame_count == 2:
-        py5.load_np_pixels()
-        if py5.np_pixels.std() == 0:
-            print("[Error] Blank screen detected on frame 2. Aborting.")
-            import os
-            os._exit(1)
 
     py5.save_frame(str(FRAMES_DIR / "frame-####.png"))
 

@@ -1,16 +1,18 @@
 # synthetic_viral_capsid_geodesic_3d
 
-## Theme
-A microscopic view of a synthetic viral capsid, represented as a geodesic sphere of interlocking triangles that rhythmically breathes, distorts, and glows as if alive.
+![Preview](synthetic_viral_capsid_geodesic_3d_p1.png)
 
-## Technique
-Procedural generation of an icosahedron recursively subdivided into a high-density geodesic sphere. The spherical vertices are radially displaced in real-time using 3D OpenSimplex noise. Additive blending and dynamic coloring based on face normals create a glowing, organic microscopic aesthetic.
+## Metadata
+- **Date**: 2026-05-31
+- **Theme**: Generative Art
+- **Technique**: Procedural generation of an icosahedron recursively subdivided into a high-density geodesic sphere. The spherical vertices are radially displaced in real-time using 3D OpenSimplex noise. Additive blending and dynamic coloring based on face normals create a glowing, organic microscopic aesthetic.
+- **Logic Lab Reference**: 
 
-## Color palette
-- Background: Very dark crimson
-- Dominant: Luminous bio-luminescent red
-- Secondary: Electric orange / yellow
-- Mood: Dangerous / Microscopic / Organic
+## Concept
+No concept description provided.
 
-## Format
-Animation (10s @ 60fps)
+## Technical Details
+- **Renderer**: Unknown
+- **Simulation**: Unknown
+- **Visuals**: Unknown
+- **Animation**: Contains animation details

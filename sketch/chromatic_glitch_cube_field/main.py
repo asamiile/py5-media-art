@@ -108,7 +108,6 @@ def draw():
     py5.fill(0, 50)
     for y in range(0, py5.height, 4):
         py5.rect(0, y, py5.width, 2)
-
     py5.save_frame(str(FRAMES_DIR / "frame-####.png"))
 
     if py5.frame_count % 60 == 0:
@@ -121,7 +120,7 @@ def draw():
         subprocess.run([
             "/opt/homebrew/bin/ffmpeg", "-y", "-r", str(FPS),
             "-i", str(FRAMES_DIR / "frame-%04d.png"),
-            "-vcodec", "libx264", "-pix_fmt", "yuv420p",
+            "-vf", "tmix=frames=3:weights=1 1 1", "-vcodec", "libx264", "-pix_fmt", "yuv420p",
             str(SKETCH_DIR / f"{WORK_NAME}.mp4"),
         ], check=True)
         

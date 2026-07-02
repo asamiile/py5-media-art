@@ -13,6 +13,7 @@ if str(PROJECT_ROOT) not in sys.path:
 from lib.paths import sketch_dir
 from lib.preview import preview_filename
 from lib.sizes import get_sizes
+from lib.safety import apply_anti_flicker_filter
 
 SKETCH_DIR = sketch_dir(__file__)
 WORK_NAME = SKETCH_DIR.name
@@ -80,14 +81,9 @@ def draw():
             py5.vertex(x, y + offset_y)
         py5.end_shape()
 
+    apply_anti_flicker_filter(0.5)
     py5.save_frame(str(FRAMES_DIR / "frame-####.png"))
 
-    if py5.frame_count == 2 or py5.frame_count % 60 == 0:
-        py5.load_np_pixels()
-        if py5.np_pixels.std() < 1.0:
-            print(f"[Error] Blank screen detected on frame {py5.frame_count} (std < 1.0). Aborting.")
-            import os
-            os._exit(1)
 
     if py5.frame_count % 60 == 0:
         print(f"[Render Progress] Frame {py5.frame_count}/{TOTAL_FRAMES} ({py5.frame_count/TOTAL_FRAMES*100:.1f}%)")

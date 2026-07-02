@@ -1,8 +1,18 @@
-# Generative Retro Wireframe Terrain 2D
+# generative_retro_wireframe_terrain_2d
 
+![Preview](generative_retro_wireframe_terrain_2d_p1.png)
+
+## Metadata
+- **Date**: 2026-06-28
+- **Theme**: An endless flight over a retro-futuristic, neon wireframe mountain landscape, reminiscent of 80s syn
+- **Technique**: Unknown
+- **Logic Lab Reference**: 
+
+## Concept
 An endless flight over a retro-futuristic, neon wireframe mountain landscape, reminiscent of 80s synthwave aesthetics.
 
-## Details
-- **Dimensions**: 3840x2160 (Rendered at 1920x1080 preview size internally if not adjusted)
-- **Framework**: py5
-- **Features**: 3D projection, Perlin noise terrain, vectorization, motion blur, synthwave colors.
+## Technical Details
+- **Renderer**: Unknown
+- **Simulation**: Unknown
+- **Visuals**: Unknown
+- **Animation**: Unknown

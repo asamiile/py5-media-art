@@ -14,14 +14,14 @@ from lib.sizes import get_sizes
 SKETCH_DIR = sketch_dir(__file__)
 WORK_NAME = SKETCH_DIR.name
 FRAMES_DIR = SKETCH_DIR / "frames"
-# 高速化のため10秒に変更
+# Changed to 10 seconds for performance
 DURATION_SEC = 10
 FPS = 60
 TOTAL_FRAMES = DURATION_SEC * FPS
 PREVIEW_FILENAME = f"{WORK_NAME}_p1.png"
 PREVIEW_SIZE, OUTPUT_SIZE, SIZE = get_sizes()
 
-# パラメータの最適化
+# Parameter optimization
 GRID_SIZE = 128
 NUM_PARTICLES = 40_000 
 NUM_STARS = 5_000
@@ -38,7 +38,7 @@ def setup():
     py5.background(0)
     FRAMES_DIR.mkdir(exist_ok=True)
 
-    # 初期化
+    # Initialization
     r, i = np.random.normal(0, 0.2, (2, GRID_SIZE, GRID_SIZE))
     psi[:] = r + 1j * i
     particles[:, 0] = np.random.uniform(-SIZE[0]//2, SIZE[0]//2, NUM_PARTICLES)
@@ -73,7 +73,7 @@ def draw():
     py5.background(0)
     py5.blend_mode(py5.ADD)
     
-    # Stars (高速化のためまとめて描画)
+    # Stars (batched drawing for performance)
     sx, sy, sf = project(stars)
     py5.stroke(255, 60); py5.stroke_weight(1)
     py5.points(np.stack([sx, sy], axis=1))
@@ -81,7 +81,7 @@ def draw():
     evolve_field()
     vx, vy, p_f = get_vel(particles)
     
-    # 物理演算の最適化
+    # Physics calculation optimization
     ang = np.arctan2(particles[:, 1], particles[:, 0])
     velocities[:, 0] = velocities[:, 0]*0.85 + vx*6.0 - np.sin(ang)*1.2
     velocities[:, 1] = velocities[:, 1]*0.85 + vy*6.0 + np.cos(ang)*1.2
@@ -93,7 +93,7 @@ def draw():
     particles[particles[:,1]>SIZE[1]//2,1]-=SIZE[1]; particles[particles[:,1]<-SIZE[1]//2,1]+=SIZE[1]
     particles[particles[:,2]>800,2]-=800; particles[particles[:,2]<0,2]+=800
     
-    # Rendering (バッチ処理で高速化)
+    # Rendering (batched processing for performance)
     px, py, pf = project(particles)
     phase = np.angle(p_f)
     py5.color_mode(py5.HSB, 360, 100, 100, 100)

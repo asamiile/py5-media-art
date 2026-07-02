@@ -1,14 +1,18 @@
 # jacquard_signal_weave
 
-## Theme
+![Preview](jacquard_signal_weave_p1.png)
 
-A loom reads punched-card memory and turns control logic into a living woven signal.
+## Metadata
+- **Date**: 2026-05-26
+- **Theme**: Generative Art
+- **Technique**: This 10-second 60fps animation renders a Jacquard-like loom with moving punched-card holes, lifted warp threads, partial weft passes, shuttle motion, and an emerging woven motif. The palette uses graphite, linen, cyan, mulberry, amber, and indigo.
+- **Logic Lab Reference**: 
 
-## Technique
+## Concept
+No concept description provided.
 
-This 10-second 60fps animation renders a Jacquard-like loom with moving punched-card holes, lifted warp threads, partial weft passes, shuttle motion, and an emerging woven motif. The palette uses graphite, linen, cyan, mulberry, amber, and indigo.
-
-## Outputs
-
-- `jacquard_signal_weave_p1.png` - midpoint preview image
-- `jacquard_signal_weave.mp4` - generated animation output
+## Technical Details
+- **Renderer**: Unknown
+- **Simulation**: Unknown
+- **Visuals**: Unknown
+- **Animation**: Contains animation details

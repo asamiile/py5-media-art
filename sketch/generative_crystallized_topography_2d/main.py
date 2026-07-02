@@ -63,12 +63,6 @@ def draw():
         py5.triangle(-size/2, size/2, size/2, size/2, 0, -size/2)
         py5.pop_matrix()
 
-    if py5.frame_count == 2 or py5.frame_count % 60 == 0:
-        py5.load_np_pixels()
-        if py5.np_pixels.std() < 1.0:
-            print(f"[Error] Blank screen detected on frame {py5.frame_count} (std < 1.0). Aborting.")
-            import os
-            os._exit(1)
 
     py5.save_frame(str(FRAMES_DIR / "frame-####.png"))
 

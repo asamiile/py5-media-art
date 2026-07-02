@@ -1,9 +1,10 @@
+import os
 from pathlib import Path
 import shutil
 import subprocess
 import sys
-import numpy as np
 import py5
+import numpy as np
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 if str(PROJECT_ROOT) not in sys.path:
@@ -16,121 +17,130 @@ from lib.sizes import get_sizes
 SKETCH_DIR = sketch_dir(__file__)
 WORK_NAME = SKETCH_DIR.name
 FRAMES_DIR = SKETCH_DIR / "frames"
+FINAL_VIDEO = SKETCH_DIR / f"{WORK_NAME}.mp4"
+
 DURATION_SEC = 15
-FPS = 30
+FPS = 60
 TOTAL_FRAMES = DURATION_SEC * FPS
 PREVIEW_FILENAME = f"{WORK_NAME}_p1.png"
 PREVIEW_SIZE, OUTPUT_SIZE, _ = get_sizes()
 SIZE = OUTPUT_SIZE
 
-NUM_PARTICLES = 1000000
+# Particle setup
+N_PARTICLES = 30000
+MAX_SPEED = 6.0
+NOISE_SCALE = 0.003
+TIME_SCALE = 0.005
+
+positions = np.zeros((N_PARTICLES, 2))
+colors = np.zeros((N_PARTICLES, 3))
 
 def setup():
     py5.size(*SIZE)
-    py5.no_smooth()
     py5.pixel_density(1)
-    py5.background(0)
     FRAMES_DIR.mkdir(exist_ok=True)
+    py5.color_mode(py5.RGB, 255)
+    py5.background(10, 15, 20)
     
-    global pos_x, pos_y, colors
+    positions[:, 0] = np.random.uniform(0, SIZE[0], N_PARTICLES)
+    positions[:, 1] = np.random.uniform(0, SIZE[1], N_PARTICLES)
     
-    # Initialize particles uniformly across the screen
-    pos_x = np.random.uniform(0, py5.width, NUM_PARTICLES)
-    pos_y = np.random.uniform(0, py5.height, NUM_PARTICLES)
+    # Assign gradient colors (Gold to Crimson to Magenta)
+    t_colors = np.random.uniform(0, 1, N_PARTICLES)
     
-    # Assign a color to each particle based on its initial location
-    # Map them to a vibrant palette
-    norm_x = pos_x / py5.width
-    norm_y = pos_y / py5.height
-    
-    r = (np.sin(norm_x * py5.PI * 2) * 0.5 + 0.5) * 255
-    g = (np.sin((norm_x + norm_y) * py5.PI * 2 + 2.0) * 0.5 + 0.5) * 255
-    b = (np.cos(norm_y * py5.PI * 2) * 0.5 + 0.5) * 255
-    
-    colors = np.column_stack((r, g, b, np.full(NUM_PARTICLES, 15))) # low alpha for trails
+    # Gold (255, 215, 0), Crimson (220, 20, 60), Magenta (255, 0, 255)
+    # Color interpolation based on t_colors
+    for i in range(N_PARTICLES):
+        tc = t_colors[i]
+        if tc < 0.5:
+            # Gold to Crimson
+            ratio = tc * 2
+            r = 255 * (1 - ratio) + 220 * ratio
+            g = 215 * (1 - ratio) + 20 * ratio
+            b = 0 * (1 - ratio) + 60 * ratio
+        else:
+            # Crimson to Magenta
+            ratio = (tc - 0.5) * 2
+            r = 220 * (1 - ratio) + 255 * ratio
+            g = 20 * (1 - ratio) + 0 * ratio
+            b = 60 * (1 - ratio) + 255 * ratio
+        
+        colors[i] = [r, g, b]
 
-def velocity(x, y, t):
-    # Scale coordinates down so the noise features are large
-    sx = x * 0.003
-    sy = y * 0.003
+def get_curl_velocities(px, py, pz):
+    e = 1.0
     
-    # Analytical partial derivatives of a nested sine/cosine potential field
-    # P(x, y) = sin(x + t)*cos(y - t/2) + 0.5*sin(2x - 1.2t)*cos(2y + 0.8t) + 0.25*sin(4x + 0.9t)*cos(4y - 1.1t)
-    # v_x = dP/dy
-    # v_y = -dP/dx
+    # Calculate gradients of the noise field using vectorized py5.os_noise
+    # Make sure inputs to py5.os_noise are float arrays
+    n1 = py5.os_noise((px + e) * NOISE_SCALE, py * NOISE_SCALE, np.full_like(px, pz))
+    n2 = py5.os_noise((px - e) * NOISE_SCALE, py * NOISE_SCALE, np.full_like(px, pz))
+    n3 = py5.os_noise(px * NOISE_SCALE, (py + e) * NOISE_SCALE, np.full_like(px, pz))
+    n4 = py5.os_noise(px * NOISE_SCALE, (py - e) * NOISE_SCALE, np.full_like(px, pz))
     
-    dP_dy = (
-        -np.sin(sx*1.0 + t) * np.sin(sy*1.0 - t*0.5) * 1.0 +
-        -np.sin(sx*2.0 - t*1.2) * np.sin(sy*2.0 + t*0.8) * 1.0 +
-        -np.sin(sx*4.0 + t*0.9) * np.sin(sy*4.0 - t*1.1) * 1.0
-    )
-    dP_dx = (
-        np.cos(sx*1.0 + t) * np.cos(sy*1.0 - t*0.5) * 1.0 +
-        np.cos(sx*2.0 - t*1.2) * np.cos(sy*2.0 + t*0.8) * 1.0 +
-        np.cos(sx*4.0 + t*0.9) * np.cos(sy*4.0 - t*1.1) * 1.0
-    )
+    dx = (n1 - n2) / (2 * e)
+    dy = (n3 - n4) / (2 * e)
     
-    # Return velocity vector
-    return dP_dy, -dP_dx
+    # The curl of a 2D scalar field (0, 0, N) is (dy, -dx, 0)
+    vx = dy * 20000.0  # Scale up the velocity
+    vy = -dx * 20000.0
+    
+    return vx, vy
 
 def draw():
-    global pos_x, pos_y
-    
-    t = py5.frame_count / TOTAL_FRAMES * py5.PI * 2
-    
-    # Darken background slightly to leave trails
+    # Fading background for trails
     py5.blend_mode(py5.BLEND)
+    py5.fill(10, 15, 20, 12)
     py5.no_stroke()
-    py5.fill(0, 0, 0, 10)
     py5.rect(0, 0, py5.width, py5.height)
     
-    # Additive blend mode for glowing trails
     py5.blend_mode(py5.ADD)
     
-    # Perform a few Euler steps per frame to make it fast
-    STEPS = 5
-    dt = 2.0
+    global positions
     
-    for _ in range(STEPS):
-        vx, vy = velocity(pos_x, pos_y, t)
-        pos_x += vx * dt
-        pos_y += vy * dt
+    t = py5.frame_count * TIME_SCALE
+    
+    old_positions = positions.copy()
+    
+    # Get curl noise velocities
+    vx, vy = get_curl_velocities(positions[:, 0], positions[:, 1], t)
+    
+    # Limit speed
+    speeds = np.sqrt(vx**2 + vy**2)
+    mask = speeds > MAX_SPEED
+    vx[mask] = (vx[mask] / speeds[mask]) * MAX_SPEED
+    vy[mask] = (vy[mask] / speeds[mask]) * MAX_SPEED
+    
+    positions[:, 0] += vx
+    positions[:, 1] += vy
+    
+    # Wrap around boundaries
+    positions[:, 0] = positions[:, 0] % py5.width
+    positions[:, 1] = positions[:, 1] % py5.height
+    
+    # Draw trails
+    dist = np.sqrt((positions[:, 0] - old_positions[:, 0])**2 + (positions[:, 1] - old_positions[:, 1])**2)
+    valid = dist < MAX_SPEED * 2
+    
+    if np.any(valid):
+        p1 = old_positions[valid]
+        p2 = positions[valid]
+        c = colors[valid]
         
-        # Toroidal wrap around screen bounds
-        pos_x = np.mod(pos_x, py5.width)
-        pos_y = np.mod(pos_y, py5.height)
+        lines_array = np.column_stack((p1[:, 0], p1[:, 1], p2[:, 0], p2[:, 1]))
         
-    # Draw points
-    # Since we can't easily pass a custom color array to py5.points(),
-    # we will split the particles into 5 color buckets to draw them efficiently
-    py5.stroke_weight(1)
-    
-    # Very fast bucketing based on the pre-computed color array
-    # We use the dominant color channel
-    dom_color = np.argmax(colors[:, :3], axis=1)
-    
-    palette = [
-        (255, 50, 50, 20),
-        (50, 255, 50, 20),
-        (50, 50, 255, 20)
-    ]
-    
-    points = np.column_stack((pos_x, pos_y))
-    
-    for i in range(3):
-        mask = (dom_color == i)
-        if np.any(mask):
-            py5.stroke(*palette[i])
-            py5.points(points[mask])
-    
-    py5.save_frame(str(FRAMES_DIR / "frame-####.png"))
+        py5.stroke_weight(2)
+        # We can't batch draw lines with individual colors easily, so we use a generic blend color
+        # that mimics the spectrum 
+        py5.stroke(255, 100, 50, 40)
+        py5.lines(lines_array)
 
-    if py5.frame_count % 30 == 0:
-        print(f"[Render Progress] Frame {py5.frame_count}/{TOTAL_FRAMES}")
+    py5.save_frame(str(FRAMES_DIR / "frame-####.png"))
+    
+    if py5.frame_count % 60 == 0:
+        print(f"[Render Progress] Frame {py5.frame_count}/{TOTAL_FRAMES} ({py5.frame_count/TOTAL_FRAMES*100:.1f}%)")
 
     if py5.frame_count >= TOTAL_FRAMES:
         py5.exit_sketch()
-        
         print(f"[Render FFmpeg] Compiling {TOTAL_FRAMES} frames into video...")
         subprocess.run([
             "ffmpeg", "-y", "-r", str(FPS),
@@ -144,9 +154,9 @@ def draw():
         
         if FRAMES_DIR.exists():
             shutil.rmtree(FRAMES_DIR)
-            print("[Render Cleanup] Temporary frames directory successfully removed.")
-            
+        
         import os
         os._exit(0)
 
-py5.run_sketch()
+if __name__ == '__main__':
+    py5.run_sketch()

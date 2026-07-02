@@ -620,6 +620,13 @@
 - **Technique**: High-performance 2D particle simulation using numpy. The fluid motion is driven by a time-varying 3D OpenSimplex noise field approximating curl noise. Particles leave semi-transparent trails using additive blending, colored continuously via the HSB spectrum.
 - **Description**: An animated sequence of iridescent plasma flowing in a vector field.
 
+## kinetic_neon_boids_flocking_2d
+
+- **Date**: 2026-07-02
+- **Theme**: A mesmerizing flock of luminous, neon-colored boids swimming through a dark fluid-like space. They exhibit complex emergent flocking behaviors—alignment, cohesion, and separation—while leaving glowing, dissipating trails behind them.
+- **Technique**: A 2D particle simulation using the classic Boids algorithm. The particles are updated each frame using vectorized NumPy operations for high performance. The screen leaves a motion blur trail, and boids are colored dynamically based on their local heading or cluster density.
+- **Description**: An animated 15s sequence of kinetic neon boids flocking in 2D.
+
 ## kinetic_chladni_plate_resonance_2d
 
 - **Date**: 2026-07-02

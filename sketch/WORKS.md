@@ -1,3 +1,10 @@
+## kinetic_optical_illusion_tessellation_2d
+- **Date**: 2026-07-02
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A dizzying, high-contrast optical illusion where geometric tessellations continuously fold and invert themselves, playing with the viewer's depth perception.
+- **Techniques**: Procedurally drawn Escher-like isometric cubes over a hexagonal grid. Rhythmically shifting shading and face-rotation parameters using a global trigonometric wave produce the illusion of 3D geometry from purely 2D polygon operations.
+- **Palette**: Stark Off-White background with Charcoal Black lines, shifting faces of Terracotta and Slate Blue.
+
 ## kinetic_harmonic_pendulum_wave_3d
 - **Date**: 2026-07-02
 - **Type**: Animation (900 frames, 60fps)

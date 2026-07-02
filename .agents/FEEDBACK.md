@@ -317,6 +317,11 @@ The Artist reads this file before starting a new sketch to understand preference
 - **Rating**: OK.
 - **Comment**: 
 
+## kinetic_chladni_plate_resonance_2d
+
+- **Rating**: 
+- **Comment**: 
+
 ## generative_recursive_origami_bloom_2d
 
 - **Rating**: 

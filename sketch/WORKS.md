@@ -620,6 +620,13 @@
 - **Technique**: High-performance 2D particle simulation using numpy. The fluid motion is driven by a time-varying 3D OpenSimplex noise field approximating curl noise. Particles leave semi-transparent trails using additive blending, colored continuously via the HSB spectrum.
 - **Description**: An animated sequence of iridescent plasma flowing in a vector field.
 
+## kinetic_chladni_plate_resonance_2d
+
+- **Date**: 2026-07-02
+- **Theme**: A visual simulation of a Chladni plate, where fine sand particles are scattered across a vibrating surface. As the vibrational frequencies sweep and shift, the particles self-organize into intricate, highly geometric nodal patterns.
+- **Technique**: A 2D simulation with thousands of particles. The target position of each particle is influenced by a 2D standing wave equation (e.g. `cos(n*x)*cos(m*y) - cos(m*x)*cos(n*y) = 0`). The wave parameters (n, m) smoothly interpolate over time. Particles randomly jitter but strongly drift towards the nodal lines where the vibration amplitude is close to zero.
+- **Description**: An animated 15s sequence of kinetic chladni plate resonance in 2D.
+
 ## generative_recursive_origami_bloom_2d
 
 - **Date**: 2026-06-27

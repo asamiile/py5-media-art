@@ -1,9 +1,10 @@
+import os
 from pathlib import Path
 import shutil
 import subprocess
 import sys
-import numpy as np
 import py5
+import numpy as np
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 if str(PROJECT_ROOT) not in sys.path:
@@ -16,6 +17,8 @@ from lib.sizes import get_sizes
 SKETCH_DIR = sketch_dir(__file__)
 WORK_NAME = SKETCH_DIR.name
 FRAMES_DIR = SKETCH_DIR / "frames"
+FINAL_VIDEO = SKETCH_DIR / f"{WORK_NAME}.mp4"
+
 DURATION_SEC = 15
 FPS = 60
 TOTAL_FRAMES = DURATION_SEC * FPS
@@ -23,121 +26,142 @@ PREVIEW_FILENAME = f"{WORK_NAME}_p1.png"
 PREVIEW_SIZE, OUTPUT_SIZE, _ = get_sizes()
 SIZE = OUTPUT_SIZE
 
-NUM_PARTICLES = 15000
-positions = None
-velocities = None
+# Setup particles for accretion disk
+N_PARTICLES = 150000
+G_MASS = 8000.0   # Gravitational parameter
+SOFTENING = 20.0  # Prevent infinite gravity at singularity
+
+positions = np.zeros((N_PARTICLES, 2))
+velocities = np.zeros((N_PARTICLES, 2))
+masses = np.random.uniform(0.5, 2.0, N_PARTICLES)
 
 def setup():
-    global positions, velocities
     py5.size(*SIZE)
     py5.pixel_density(1)
     FRAMES_DIR.mkdir(exist_ok=True)
+    py5.color_mode(py5.RGB, 255)
+    py5.background(0)
     
-    # Initialize particles outside the center
-    positions = np.random.rand(NUM_PARTICLES, 2) * [SIZE[0], SIZE[1]]
-    velocities = (np.random.rand(NUM_PARTICLES, 2) - 0.5) * 4.0
+    # Initialize particles in a disk around the center
+    # Density should be higher near the center, lower outwards
+    r = np.random.normal(SIZE[1]*0.3, SIZE[1]*0.1, N_PARTICLES)
+    r = np.abs(r) + 50 # Avoid absolute center
+    theta = np.random.uniform(0, 2 * np.pi, N_PARTICLES)
     
-    py5.background(2, 0, 5)
+    positions[:, 0] = SIZE[0]/2 + r * np.cos(theta)
+    positions[:, 1] = SIZE[1]/2 + r * np.sin(theta)
+    
+    # Orbital velocity v = sqrt(G*M / r) for circular orbit
+    v_mag = np.sqrt(G_MASS / r) * 15.0 # Scaled for visual effect
+    
+    # Add some turbulence
+    v_mag += np.random.normal(0, v_mag * 0.1)
+    
+    # Tangent vector is (-sin, cos)
+    velocities[:, 0] = -np.sin(theta) * v_mag
+    velocities[:, 1] = np.cos(theta) * v_mag
+    
+    # We want an elliptical/tilted look, so we scale Y to fake 3D perspective
+    positions[:, 1] = SIZE[1]/2 + (positions[:, 1] - SIZE[1]/2) * 0.3
+    velocities[:, 1] *= 0.3
 
 def draw():
-    global positions, velocities
-    
-    # Subtractive trail effect
-    py5.fill(2, 0, 5, 30)
+    # Subtle background fade for trails
+    py5.blend_mode(py5.BLEND)
+    py5.fill(0, 0, 5, 20)
     py5.no_stroke()
     py5.rect(0, 0, py5.width, py5.height)
     
-    cx, cy = SIZE[0] / 2, SIZE[1] / 2
-    
-    # Black hole singularity gravity
-    diff = np.array([cx, cy]) - positions
-    dist_sq = np.sum(diff**2, axis=1, keepdims=True)
-    dist = np.sqrt(dist_sq)
-    
-    # Inverse square gravity, very strong
-    force = diff / np.clip(dist_sq, 1000.0, None) * 1000.0
-    
-    # Add a tangential rotational force (accretion disk)
-    tangent = np.stack([-diff[:, 1], diff[:, 0]], axis=-1)
-    tangent_force = tangent / np.clip(dist_sq, 1000.0, None) * 2000.0
-    
-    velocities += force + tangent_force
-    
-    # Friction
-    velocities *= 0.98
-    
-    # Update positions
-    prev_positions = positions.copy()
-    positions += velocities
-    
-    # Re-spawn particles that fall into the event horizon or go too far off screen
-    event_horizon = dist < 50.0
-    off_screen = (positions[:, 0] < -1000) | (positions[:, 0] > SIZE[0] + 1000) | \
-                 (positions[:, 1] < -1000) | (positions[:, 1] > SIZE[1] + 1000)
-    reset_mask = event_horizon.flatten() | off_screen
-    
-    if np.any(reset_mask):
-        num_reset = np.sum(reset_mask)
-        # spawn far away
-        angle = np.random.rand(num_reset) * 2 * np.pi
-        rad = np.random.rand(num_reset) * 500 + 1000
-        positions[reset_mask, 0] = cx + rad * np.cos(angle)
-        positions[reset_mask, 1] = cy + rad * np.sin(angle)
-        
-        v_angle = angle + np.pi/2 # tangent
-        velocities[reset_mask, 0] = np.cos(v_angle) * 5.0
-        velocities[reset_mask, 1] = np.sin(v_angle) * 5.0
-        prev_positions[reset_mask] = positions[reset_mask]
-
-    # Draw lines
     py5.blend_mode(py5.ADD)
     
-    # Color mapping based on speed (relativistic blue shift)
-    speeds = np.linalg.norm(velocities, axis=1)
+    global positions, velocities
     
-    verts = np.empty((NUM_PARTICLES * 2, 2))
-    verts[0::2] = prev_positions
-    verts[1::2] = positions
+    center = np.array([py5.width/2, py5.height/2])
     
-    # Fast drawing with buckets based on speed
-    slow_mask = speeds < 10.0
-    med_mask = (speeds >= 10.0) & (speeds < 30.0)
-    fast_mask = speeds >= 30.0
+    # Calculate gravity vector towards center
+    d = center - positions
     
-    def draw_bucket(mask, color, weight):
-        if not np.any(mask): return
-        v_sub = np.empty((np.sum(mask) * 2, 2))
-        v_sub[0::2] = prev_positions[mask]
-        v_sub[1::2] = positions[mask]
-        py5.stroke(*color)
-        py5.stroke_weight(weight)
-        py5.begin_shape(py5.LINES)
-        py5.vertices(v_sub)
-        py5.end_shape()
+    # Fake 3D distance by un-scaling Y for physics calculations
+    d_phys = d.copy()
+    d_phys[:, 1] /= 0.3
+    
+    dist_sq = np.sum(d_phys**2, axis=1, keepdims=True)
+    dist = np.sqrt(dist_sq)
+    
+    # F = G * M / (r^2 + softening^2)
+    force_mag = G_MASS / (dist_sq + SOFTENING**2)
+    
+    # Direction vector
+    direction = d_phys / (dist + 0.001)
+    
+    # Acceleration
+    accel = direction * force_mag
+    
+    # Re-scale acceleration back to our fake 3D projection
+    accel[:, 1] *= 0.3
+    
+    velocities += accel
+    
+    # Add a tiny bit of drag so they spiral in very slowly
+    velocities *= 0.998
+    
+    old_positions = positions.copy()
+    positions += velocities
+    
+    # Draw particles
+    # Calculate color based on speed and distance
+    speed = np.linalg.norm(velocities, axis=1)
+    
+    # Blue shifted (fast, inner) to Red shifted (slow, outer)
+    # Using py5.lines for trails
+    py5.stroke_weight(1.5)
+    
+    # To draw efficiently with varying colors in py5, we can't vectorize different stroke colors in a single py5.lines call
+    # Instead we'll split into 3 speed buckets (Hot Blue, Orange, Red)
+    speed_percentile = np.percentile(speed, [33, 66])
+    
+    mask_slow = speed < speed_percentile[0]
+    mask_med = (speed >= speed_percentile[0]) & (speed < speed_percentile[1])
+    mask_fast = speed >= speed_percentile[1]
+    
+    # Slow - Deep Red
+    if np.any(mask_slow):
+        p1 = old_positions[mask_slow]
+        p2 = positions[mask_slow]
+        lines_array = np.column_stack((p1[:, 0], p1[:, 1], p2[:, 0], p2[:, 1]))
+        py5.stroke(200, 30, 30, 80)
+        py5.lines(lines_array)
+        
+    # Medium - Gold/Orange
+    if np.any(mask_med):
+        p1 = old_positions[mask_med]
+        p2 = positions[mask_med]
+        lines_array = np.column_stack((p1[:, 0], p1[:, 1], p2[:, 0], p2[:, 1]))
+        py5.stroke(255, 150, 50, 120)
+        py5.lines(lines_array)
+        
+    # Fast - Bright Cyan/White (Inner disk)
+    if np.any(mask_fast):
+        p1 = old_positions[mask_fast]
+        p2 = positions[mask_fast]
+        lines_array = np.column_stack((p1[:, 0], p1[:, 1], p2[:, 0], p2[:, 1]))
+        py5.stroke(150, 230, 255, 180)
+        py5.lines(lines_array)
 
-    # Violet/Blue for slow
-    draw_bucket(slow_mask, (170, 68, 255, 100), 1.5)
-    # Cyan for medium
-    draw_bucket(med_mask, (136, 204, 255, 150), 2.0)
-    # White for fast
-    draw_bucket(fast_mask, (255, 255, 255, 200), 2.5)
-    
+    # Draw the central black hole (pure black to occlude)
     py5.blend_mode(py5.BLEND)
-
-    # Draw event horizon (black circle)
     py5.fill(0)
     py5.no_stroke()
-    py5.circle(cx, cy, 100)
-
+    py5.ellipse(center[0], center[1], 80, 80 * 0.3)
+    
     py5.save_frame(str(FRAMES_DIR / "frame-####.png"))
-
-
+    
     if py5.frame_count % 60 == 0:
-        print(f"[Render Progress] Frame {py5.frame_count}/{TOTAL_FRAMES} ({py5.frame_count/TOTAL_FRAMES*100:.1f}%)", flush=True)
+        print(f"[Render Progress] Frame {py5.frame_count}/{TOTAL_FRAMES} ({py5.frame_count/TOTAL_FRAMES*100:.1f}%)")
 
     if py5.frame_count >= TOTAL_FRAMES:
         py5.exit_sketch()
-        print(f"[Render FFmpeg] Compiling {TOTAL_FRAMES} frames into video...", flush=True)
+        print(f"[Render FFmpeg] Compiling {TOTAL_FRAMES} frames into video...")
         subprocess.run([
             "ffmpeg", "-y", "-r", str(FPS),
             "-i", str(FRAMES_DIR / "frame-%04d.png"),
@@ -150,8 +174,9 @@ def draw():
         
         if FRAMES_DIR.exists():
             shutil.rmtree(FRAMES_DIR)
-            
+        
         import os
         os._exit(0)
 
-py5.run_sketch()
+if __name__ == '__main__':
+    py5.run_sketch()

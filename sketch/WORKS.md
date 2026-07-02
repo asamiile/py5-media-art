@@ -1,3 +1,10 @@
+## kinetic_gravitational_lensing_accretion_disk_2d
+- **Date**: 2026-07-02
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A massive black hole distorts an accretion disk of glowing particles. The immense gravity warps the trajectories and the spatial field around it. A fake 3D perspective creates a dramatic tilted orbital plane.
+- **Techniques**: Newtonian 2D physics simulation of 150,000 particles orbiting a massive central attractor. Fake 3D perspective is achieved by squishing the Y-axis coordinates during rendering, but restoring them during physics calculations. A faint amount of drag is applied so particles slowly spiral into the event horizon.
+- **Palette**: Dark void background. Particles are split into 3 speed percentiles, mapping color from deep red (slow outer rim) to glowing cyan/white (fast inner disk) to simulate heat and blue-shifting.
+
 ## kinetic_curl_noise_vortex_flow_2d
 - **Date**: 2026-07-02
 - **Type**: Animation (900 frames, 60fps)

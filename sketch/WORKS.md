@@ -620,6 +620,13 @@
 - **Technique**: High-performance 2D particle simulation using numpy. The fluid motion is driven by a time-varying 3D OpenSimplex noise field approximating curl noise. Particles leave semi-transparent trails using additive blending, colored continuously via the HSB spectrum.
 - **Description**: An animated sequence of iridescent plasma flowing in a vector field.
 
+## kinetic_delaunay_crystal_facet_2d
+
+- **Date**: 2026-07-02
+- **Theme**: A living crystal structure formed by dynamic Delaunay triangulation. A constellation of autonomous nodes continuously reorganizes itself, creating a faceted, low-poly surface that shimmers and shifts like a liquid gemstone.
+- **Technique**: High-performance geometric graph rendering using `scipy.spatial.Delaunay`. 1,500 autonomous particles drift through a 2D space, governed by simple kinetic physics (velocity, boundary reflection). Each frame, the nodes are triangulated to form a contiguous mesh. The fill color of each triangle is determined by the spatial position of its centroid, mapping to an iridescent gradient.
+- **Description**: An animated 15s sequence of kinetic delaunay crystal facet in 2D.
+
 ## kinetic_vasarely_op_art_lattice_2d
 
 - **Date**: 2026-07-02

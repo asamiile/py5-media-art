@@ -317,7 +317,13 @@ The Artist reads this file before starting a new sketch to understand preference
 - **Rating**: OK.
 - **Comment**: 
 
+## generative_recursive_origami_bloom_2d
+
+- **Rating**: 
+- **Comment**: 
+
 ## kinetic_pendulum_wave_harmonics_2d
+
 - **Rating**: 
 - **Comment**: 
 

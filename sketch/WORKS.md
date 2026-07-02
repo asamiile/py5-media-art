@@ -620,6 +620,13 @@
 - **Technique**: High-performance 2D particle simulation using numpy. The fluid motion is driven by a time-varying 3D OpenSimplex noise field approximating curl noise. Particles leave semi-transparent trails using additive blending, colored continuously via the HSB spectrum.
 - **Description**: An animated sequence of iridescent plasma flowing in a vector field.
 
+## generative_recursive_origami_bloom_2d
+
+- **Date**: 2026-06-27
+- **Theme**: A mathematically perfect digital origami that recursively folds and unfolds, revealing endless layers of intricate geometric petals.
+- **Technique**: A recursive drawing function that uses push_matrix and pop_matrix to draw nested polygons (hexagons). The scale, rotation angle, and stroke weight of the inner polygons are modulated by a slow-moving sine wave over time, making the entire structure breathe and bloom like a flower.
+- **Description**: An animated 15s sequence of generative recursive origami bloom in 2D.
+
 ## kinetic_pendulum_wave_harmonics_2d
 
 - **Date**: 2026-06-27

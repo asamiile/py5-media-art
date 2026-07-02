@@ -1,3 +1,10 @@
+## abstract_geometric_bauhaus_clockwork_2d
+- **Date**: 2026-07-02
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A complex array of rigid geometric shapes (circles, semi-circles, thick lines, and arcs) colored in a classic Bauhaus palette (Red, Blue, Yellow, Black, Off-White) that interlock and rotate like a massive, abstract clockwork mechanism.
+- **Techniques**: Constructed using a hierarchical tree of rotating "Gear" nodes. Drawing uses `py5.push_matrix()`, `py5.rotate()`, and `py5.translate()` to calculate relative child geometry dynamically. Speeds are pseudo-geared to relative sizes.
+- **Palette**: Classic Bauhaus Red, Deep Blue, Yellow, Black, and Off-White.
+
 ## kinetic_gravitational_lensing_accretion_disk_2d
 - **Date**: 2026-07-02
 - **Type**: Animation (900 frames, 60fps)

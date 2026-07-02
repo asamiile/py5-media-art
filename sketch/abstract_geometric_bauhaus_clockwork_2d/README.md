@@ -1,18 +1,16 @@
-# abstract_geometric_bauhaus_clockwork_2d
-
-![Preview](abstract_geometric_bauhaus_clockwork_2d_p1.png)
-
-## Metadata
-- **Date**: 2026-06-30
-- **Theme**: A minimalist, op-art kinetic sculpture composed of intersecting geometric shapes (circles, arcs, and
-- **Technique**: This piece uses pure 2D vector geometry rather than physics or particle systems. A large rotating grid in mustard yellow serves as the backdrop, while deep red concentric circles expand and contract using trigonometric easing functions. Heavy charcoal black arcs and clock-like hands sweep across the canvas. The entire scene uses `py5.blend_mode(py5.MULTIPLY)`, which creates beautiful, deeper secondary colors where the geometric elements intersect, adding depth to the otherwise flat, graphic composition.
-- **Logic Lab Reference**: 
+# Abstract Geometric Bauhaus Clockwork 2D
 
 ## Concept
-A minimalist, op-art kinetic sculpture composed of intersecting geometric shapes (circles, arcs, and grids) that move with precise, mechanical choreography. The sketch evokes a sense of intricate clockwork or a constructivist poster brought to life.
+A complex array of rigid geometric shapes (circles, semi-circles, thick lines, and arcs) colored in a classic Bauhaus palette (Red, Blue, Yellow, Black, Off-White) that interlock and rotate like a massive, abstract clockwork mechanism.
 
-## Technical Details
-- **Renderer**: Unknown
-- **Simulation**: Unknown
-- **Visuals**: Unknown
-- **Animation**: Contains animation details
+## Technical Implementation
+- Constructed using a hierarchical tree of rotating "Gear" nodes, up to a depth of 4.
+- Drawing uses standard `py5.push_matrix()`, `py5.rotate()`, and `py5.translate()` to calculate relative child geometry dynamically.
+- Each node picks a primitive shape at random (circle, semi-circle, arc, or cross) and assigns itself a gear speed based on a pseudo-gear ratio calculation relative to its parent radius to ensure meshing speeds.
+- Uses a fixed `np.random.seed()` so the mechanical layout stays consistent across the frames while the time-based rotation sweeps through dynamically.
+
+## Execution
+- `Format`: Vector rendering using classic 2D matrix transformations.
+- `FPS`: 60
+- `Duration`: 15 Seconds
+- `Resolution`: 3840x2160

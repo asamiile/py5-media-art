@@ -620,6 +620,13 @@
 - **Technique**: High-performance 2D particle simulation using numpy. The fluid motion is driven by a time-varying 3D OpenSimplex noise field approximating curl noise. Particles leave semi-transparent trails using additive blending, colored continuously via the HSB spectrum.
 - **Description**: An animated sequence of iridescent plasma flowing in a vector field.
 
+## kinetic_physarum_transport_network_2d
+
+- **Date**: 2026-07-02
+- **Theme**: A computational recreation of the Physarum polycephalum (slime mold) foraging behavior. Hundreds of thousands of microscopic autonomous agents navigate a void, leaving pheromone trails that diffuse and decay. The resulting emergent patterns form organic, interconnected transport networks resembling blood vessels, neural pathways, or cosmic webs.
+- **Technique**: High-performance sensory-motor agent simulation (Physarum) using NumPy. 500,000 agents evaluate a scalar pheromone field at three sensor offsets (forward, left, right) to determine their steering angle. Agents advance and deposit pheromones. The environment field undergoes continuous $3 \times 3$ kernel diffusion and exponential decay. The pheromone density is mapped to an otherworldly, luminescent biological color palette.
+- **Description**: An animated 15s sequence of kinetic physarum transport network in 2D.
+
 ## kinetic_iridescent_metaballs_2d
 
 - **Date**: 2026-07-02

@@ -1,3 +1,10 @@
+## kinetic_crystallographic_lattice_fracture_3d
+- **Date**: 2026-07-02
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: This sketch explores the simulation of a highly dense, semi-stable crystalline lattice undergoing catastrophic fracture points. Using purely generative point structures, it projects a 3D field of vertices into a 2D canvas, using an optical depth approach to simulate distance. As spherical waves of instability pass through the lattice, points displace violently outwards, glowing with bright magenta energy, contrasting against the stable glowing cyan structure.
+- **Techniques**: Pure Python 2D projection from a synthetic 3D dataset. 100,000 discrete points clustered around a uniform grid lattice structure. Mask-based point categorization to selectively color vertices and alter stroke weights efficiently using NumPy indexing. ADD blend mode over a dark void background to build an accumulated neon exposure.
+- **Palette**: Pitch dark void background. Stable structures glow in cyan (#32C8FF) while fractured elements burst in vivid magenta and red (#FF64C8).
+
 ## generative_organic_differential_growth_2d
 - **Date**: 2026-07-01
 - **Type**: Animation (900 frames, 60fps)

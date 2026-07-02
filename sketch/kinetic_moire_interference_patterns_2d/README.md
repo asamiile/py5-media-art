@@ -1,18 +1,7 @@
 # kinetic_moire_interference_patterns_2d
 
-![Preview](kinetic_moire_interference_patterns_2d_p1.png)
+An animated sequence of kinetic moiré interference patterns in 2D.
 
-## Metadata
-- **Date**: 2026-06-20
-- **Theme**: Two overlapping sets of dense, thin lines rotating to create mesmerizing moiré patterns
-- **Technique**: Unknown
-- **Logic Lab Reference**: 
-
-## Concept
-Two overlapping sets of dense, thin lines rotating to create mesmerizing moiré patterns.
-
-## Technical Details
-- **Renderer**: Unknown
-- **Simulation**: Unknown
-- **Visuals**: Unknown
-- **Animation**: Contains animation details
+- **Theme**: A hypnotic exploration of Moiré interference patterns. Concentric rings and radiating lines slowly overlap, scale, and rotate against each other, creating mesmerizing optical illusions and emergent macro-structures.
+- **Technique**: High-frequency geometric primitives (thousands of fine concentric circles and radiating spokes) are drawn in contrasting layers with a DIFFERENCE blend mode. The underlying layers slowly rotate and translate parametrically, producing intense visual interference patterns and chromatic fringes.
+- **Format**: Animation (15s @ 60fps)

@@ -620,6 +620,13 @@
 - **Technique**: High-performance 2D particle simulation using numpy. The fluid motion is driven by a time-varying 3D OpenSimplex noise field approximating curl noise. Particles leave semi-transparent trails using additive blending, colored continuously via the HSB spectrum.
 - **Description**: An animated sequence of iridescent plasma flowing in a vector field.
 
+## kinetic_moire_interference_patterns_2d
+
+- **Date**: 2026-07-02
+- **Theme**: A hypnotic exploration of Moiré interference patterns. Concentric rings and radiating lines slowly overlap, scale, and rotate against each other, creating mesmerizing optical illusions and emergent macro-structures.
+- **Technique**: High-frequency geometric primitives (thousands of fine concentric circles and radiating spokes) are drawn in contrasting layers with a DIFFERENCE blend mode. The underlying layers slowly rotate and translate parametrically, producing intense visual interference patterns and chromatic fringes.
+- **Description**: An animated 15s sequence of kinetic moiré interference patterns in 2D.
+
 ## generative_guilloche_banknote_patterns_2d
 
 - **Date**: 2026-07-02

@@ -1,3 +1,10 @@
+## kinetic_cybernetic_neural_network_activation_3d
+- **Date**: 2026-07-02
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A massive 3D brain-like network of artificial neurons firing in cascading sequence, representing synthetic thought. A volumetric wave of energy propagates through the connections, igniting paths with brilliant neon electricity.
+- **Techniques**: Scipy KDTree graph generation from 2000 3D normal-distributed nodes. Custom 3D isometric rotation/projection. Procedural volumetric wave activation logic dynamically altering line weights and opacities under ADD blend mode.
+- **Palette**: Dark void background with intense Electric Blue and Neon Cyan lines, accented by pure White node bursts.
+
 ## kinetic_optical_illusion_tessellation_2d
 - **Date**: 2026-07-02
 - **Type**: Animation (900 frames, 60fps)

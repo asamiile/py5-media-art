@@ -1,3 +1,10 @@
+## kinetic_chaos_game_fractal_mandala_2d
+- **Date**: 2026-07-02
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A mesmerizing, morphing fractal generated using the Chaos Game algorithm (Iterated Function Systems). Thousands of glowing particles jump towards dynamic attractor points arranged in a hexagonal mandala shape, slowly revealing a glowing, incredibly intricate fractal geometry that breathes as the attractors rotate.
+- **Techniques**: Simulates a classic Chaos Game on a hexagon with 6 dynamically shifting attractor vertices. 300,000 persistent points jump halfway towards a randomly chosen vertex 5 times per frame. Vectorized numpy arrays handle the jumping math and color interpolation concurrently.
+- **Palette**: Total void background with bioluminescent Teal, Purple, Pink, Green, Blue, and Cyan points mapped to their chosen vertex.
+
 ## kinetic_moire_interference_waves_2d
 - **Date**: 2026-07-02
 - **Type**: Animation (900 frames, 60fps)

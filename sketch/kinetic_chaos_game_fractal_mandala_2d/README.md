@@ -1,18 +1,17 @@
-# kinetic_chaos_game_fractal_mandala_2d
-
-![Preview](kinetic_chaos_game_fractal_mandala_2d_p1.png)
-
-## Metadata
-- **Date**: 2026-06-28
-- **Theme**: An animated and kaleidoscopic take on the "Chaos Game", a mathematical process that draws geometric 
-- **Technique**: Instead of letting a single point jump millions of times (which would take too long per frame in Python), this sketch initializes an array of 500,000 points in NumPy. Every frame, these 500k points simultaneously pick a random target vertex and jump towards it. By animating the position of the vertices (a slow rotation) and smoothly oscillating the jump distance modifier using sine waves, the structure breathes and morphs continuously. The points are drawn with heavy transparency using `py5.blend_mode(ADD)`, leaving beautiful glowing density histograms.
-- **Logic Lab Reference**: 
+# Kinetic Chaos Game Fractal Mandala 2D
 
 ## Concept
-An animated and kaleidoscopic take on the "Chaos Game", a mathematical process that draws geometric fractals (like the Sierpinski pentagon) through millions of localized point jumps towards random vertices.
+A mesmerizing, morphing fractal generated using the Chaos Game algorithm (Iterated Function Systems). Thousands of glowing particles jump towards dynamic attractor points arranged in a hexagonal mandala shape, slowly revealing a glowing, incredibly intricate fractal geometry that breathes as the attractors rotate.
 
-## Technical Details
-- **Renderer**: Unknown
-- **Simulation**: Unknown
-- **Visuals**: Unknown
-- **Animation**: Contains animation details
+## Technical Implementation
+- Simulates a classic Chaos Game on a hexagon with 6 dynamically shifting attractor vertices.
+- The 6 vertices slowly pulse in and out radially and rotate over time, creating a breathing motion.
+- 300,000 persistent points jump halfway towards a randomly chosen vertex 5 times per frame at 60fps.
+- Vectorized numpy arrays handle the jumping math and color interpolation concurrently.
+- Points are rendered as tiny additive dots using `py5.points`, grouped by their target vertex color to accumulate a continuous Sierpinski-like fractal mandala.
+
+## Execution
+- `Particles`: 300,000 persistent points
+- `FPS`: 60
+- `Duration`: 15 Seconds
+- `Resolution`: 3840x2160

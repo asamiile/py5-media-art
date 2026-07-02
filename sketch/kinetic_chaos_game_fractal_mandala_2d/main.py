@@ -1,9 +1,10 @@
+import os
 from pathlib import Path
 import shutil
 import subprocess
 import sys
-import numpy as np
 import py5
+import numpy as np
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 if str(PROJECT_ROOT) not in sys.path:
@@ -16,89 +17,97 @@ from lib.sizes import get_sizes
 SKETCH_DIR = sketch_dir(__file__)
 WORK_NAME = SKETCH_DIR.name
 FRAMES_DIR = SKETCH_DIR / "frames"
+FINAL_VIDEO = SKETCH_DIR / f"{WORK_NAME}.mp4"
+
 DURATION_SEC = 15
-FPS = 30
+FPS = 60
 TOTAL_FRAMES = DURATION_SEC * FPS
 PREVIEW_FILENAME = f"{WORK_NAME}_p1.png"
 PREVIEW_SIZE, OUTPUT_SIZE, _ = get_sizes()
 SIZE = OUTPUT_SIZE
 
-NUM_POINTS = 500000
-NUM_VERTICES = 5
+# Chaos Game Setup
+N_POINTS = 300000
+N_VERTICES = 6
+JUMP_FACTOR = 0.5  # Standard for Sierpinski
+
+# We keep the state of points persistent across frames
+points = np.zeros((N_POINTS, 2))
+colors = np.zeros((N_POINTS, 3))
+
+# Define colors for the 6 vertices (Bioluminescent Teal, Purple, Pink, Green, Blue, Cyan)
+vertex_colors = np.array([
+    [0, 255, 200],   # Teal
+    [150, 0, 255],   # Purple
+    [255, 0, 150],   # Pink
+    [0, 255, 100],   # Green
+    [0, 100, 255],   # Blue
+    [0, 255, 255]    # Cyan
+])
 
 def setup():
     py5.size(*SIZE)
     py5.pixel_density(1)
-    py5.background(0)
     FRAMES_DIR.mkdir(exist_ok=True)
+    py5.color_mode(py5.RGB, 255)
     
-    global points, cx, cy
-    cx, cy = py5.width / 2, py5.height / 2
-    
-    # Initialize points clustered in the center
-    points = np.random.normal(loc=[cx, cy], scale=100, size=(NUM_POINTS, 2))
+    # Initialize random starting points near the center
+    points[:, 0] = np.random.uniform(SIZE[0]/2 - 100, SIZE[0]/2 + 100, N_POINTS)
+    points[:, 1] = np.random.uniform(SIZE[1]/2 - 100, SIZE[1]/2 + 100, N_POINTS)
 
 def draw():
-    global points
-    
-    # Darken background slightly to leave trails
-    py5.blend_mode(py5.BLEND)
-    py5.no_stroke()
-    py5.fill(0, 0, 0, 20)
-    py5.rect(0, 0, py5.width, py5.height)
-    
+    # We clear the background each frame, drawing the current state of the fractal
+    py5.background(0)
     py5.blend_mode(py5.ADD)
     
-    # Animate the parameters
-    t = py5.frame_count / TOTAL_FRAMES
+    t = py5.frame_count / TOTAL_FRAMES * 2 * np.pi
     
-    # Vertices rotate over time
-    angle_offset = t * py5.PI * 2
-    angles = np.linspace(0, py5.PI * 2, NUM_VERTICES, endpoint=False) + angle_offset
-    radius = 800 + np.sin(t * py5.PI * 4) * 200
+    # Calculate the positions of the 6 attractor vertices
+    # They form a hexagon that breathes and rotates
+    base_radius = py5.height * 0.45
+    breathe = 1.0 + 0.15 * np.sin(t * 3)
+    radius = base_radius * breathe
+    rotation = t
     
-    vertices = np.column_stack((
-        cx + np.cos(angles) * radius,
-        cy + np.sin(angles) * radius
-    ))
+    angles = np.linspace(0, 2*np.pi, N_VERTICES, endpoint=False) + rotation
+    vertices = np.empty((N_VERTICES, 2))
+    vertices[:, 0] = SIZE[0]/2 + np.cos(angles) * radius
+    vertices[:, 1] = SIZE[1]/2 + np.sin(angles) * radius
     
-    # Jump factor oscillates
-    jump_factor = 0.5 + np.sin(t * py5.PI * 2) * 0.15
-    
-    # Vectorized Chaos Game steps
-    # We do a few steps per frame so the fractal structure forms instantly
-    STEPS = 5
-    for _ in range(STEPS):
-        target_indices = np.random.randint(0, NUM_VERTICES, NUM_POINTS)
-        targets = vertices[target_indices]
-        points = points + (targets - points) * jump_factor
+    # Perform a few iterations of the chaos game per frame to quickly settle points 
+    # onto the new attractor positions
+    for _ in range(5):
+        # Pick random vertices for each point
+        choices = np.random.randint(0, N_VERTICES, N_POINTS)
+        target_vertices = vertices[choices]
         
-    # Draw points
-    # We can split them by their last target index to color them
-    colors = [
-        (255, 50, 50, 10),
-        (50, 255, 50, 10),
-        (50, 50, 255, 10),
-        (255, 255, 50, 10),
-        (50, 255, 255, 10)
-    ]
+        # Jump halfway to the chosen vertex
+        points[:] = points + (target_vertices - points) * JUMP_FACTOR
+        
+        # Interpolate color towards the chosen vertex color to create gradients
+        colors[:] = colors * 0.8 + vertex_colors[choices] * 0.2
+        
+    # Draw all points
+    py5.stroke_weight(1.5)
     
-    py5.stroke_weight(1)
-    for i in range(NUM_VERTICES):
-        mask = (target_indices == i)
-        cluster = points[mask]
-        if len(cluster) > 0:
-            py5.stroke(*colors[i])
-            py5.points(cluster)
+    # It is faster to draw points using a vectorized approach in py5
+    # Since py5.points() doesn't take colors directly, we will draw them in groups by dominant color
+    # For a glowing effect, we just use a generic bioluminescent cyan color and map alpha
+    # But for full color we can chunk them by choice (the last chosen vertex)
+    for i in range(N_VERTICES):
+        mask = choices == i
+        pts = points[mask]
+        c = vertex_colors[i]
+        py5.stroke(c[0], c[1], c[2], 100)
+        py5.points(pts)
 
     py5.save_frame(str(FRAMES_DIR / "frame-####.png"))
-
-    if py5.frame_count % 30 == 0:
-        print(f"[Render Progress] Frame {py5.frame_count}/{TOTAL_FRAMES} (Time: {t:.2f})")
+    
+    if py5.frame_count % 60 == 0:
+        print(f"[Render Progress] Frame {py5.frame_count}/{TOTAL_FRAMES} ({py5.frame_count/TOTAL_FRAMES*100:.1f}%)")
 
     if py5.frame_count >= TOTAL_FRAMES:
         py5.exit_sketch()
-        
         print(f"[Render FFmpeg] Compiling {TOTAL_FRAMES} frames into video...")
         subprocess.run([
             "ffmpeg", "-y", "-r", str(FPS),
@@ -112,9 +121,9 @@ def draw():
         
         if FRAMES_DIR.exists():
             shutil.rmtree(FRAMES_DIR)
-            print("[Render Cleanup] Temporary frames directory successfully removed.")
-            
+        
         import os
         os._exit(0)
 
-py5.run_sketch()
+if __name__ == '__main__':
+    py5.run_sketch()

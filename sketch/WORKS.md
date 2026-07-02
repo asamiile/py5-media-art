@@ -1,3 +1,10 @@
+## kinetic_harmonic_pendulum_wave_3d
+- **Date**: 2026-07-02
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A hypnotic array of suspended pendulums swinging in precise mathematical harmony, mapped into a deep 3D space to show wave-like patterns as frequencies drift in and out of phase.
+- **Techniques**: Simulates 100 pendulums using physical harmonic equations, manually projected into 3D space over a rotating camera matrix. The lines and points are rendered natively using vectorized py5 methods.
+- **Palette**: Dark moody background with highly luminous Cyan, Magenta, and White additive points representing the pendulum bobs.
+
 ## kinetic_crystallographic_lattice_fracture_3d
 - **Date**: 2026-07-02
 - **Type**: Animation (900 frames, 60fps)

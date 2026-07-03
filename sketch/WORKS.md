@@ -1,3 +1,10 @@
+## kinetic_generative_chladni_plate_resonance_3d
+- **Date**: 2026-07-03
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 3D topographical visualization of Chladni resonance patterns. We use the Chladni equation, mapping the Z value to height in 3D and color.
+- **Techniques**: Evaluate the equation on a 400x400 grid. The resonance frequencies N and M are animated slowly to create moving nodes and peaks. The camera slowly orbits the 3D surface.
+- **Palette**: Deep violet for valleys/nodes, electric cyan for mid-heights, and gold for the peaks against a dark background.
+
 ## kinetic_physics_gravitational_lensing_accretion_disk_3d
 - **Date**: 2026-07-03
 - **Type**: Animation (900 frames, 60fps)

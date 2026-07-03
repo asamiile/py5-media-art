@@ -27,73 +27,67 @@ def setup():
     py5.size(*SIZE)
     py5.pixel_density(1)
     FRAMES_DIR.mkdir(exist_ok=True)
+    py5.background(1, 16, 21)
     
 def draw():
-    py5.background(255)
-    py5.no_fill()
-    py5.stroke_weight(2.0)
+    # Motion blur / fade
+    py5.fill(1, 16, 21, 60)
+    py5.no_stroke()
+    py5.rect(0, 0, py5.width, py5.height)
     
     t = py5.frame_count / TOTAL_FRAMES
     
-    # Render two overlapping layers with difference blend mode
-    py5.blend_mode(py5.DIFFERENCE)
-    
-    # ----- LAYER 1: Base Grid & Concentric Circles -----
-    py5.push_matrix()
     py5.translate(py5.width / 2, py5.height / 2)
+    py5.no_fill()
+    py5.stroke_weight(1.5)
     
-    # A slight slow rotation for layer 1
-    py5.rotate(math.sin(t * math.pi * 2) * 0.1)
-    
-    py5.stroke(255, 0, 127) # Magenta-ish, difference with white makes it cyan-green
-    
-    num_rings = 150
-    ring_spacing = 20
-    for i in range(1, num_rings):
-        r = i * ring_spacing
-        py5.circle(0, 0, r * 2)
+    # We will draw 3 separate intertwining guilloche patterns
+    for pattern_idx in range(3):
         
-    num_spokes = 300
-    for i in range(num_spokes):
-        angle = (i / num_spokes) * py5.TWO_PI
-        x = math.cos(angle) * (num_rings * ring_spacing)
-        y = math.sin(angle) * (num_rings * ring_spacing)
-        py5.line(0, 0, x, y)
+        py5.begin_shape()
         
-    py5.pop_matrix()
-    
-    # ----- LAYER 2: Moving Grid & Concentric Circles -----
-    py5.push_matrix()
-    
-    # Move the center in a Lissajous curve
-    cx = py5.width / 2 + math.sin(t * math.pi * 2) * 300
-    cy = py5.height / 2 + math.cos(t * math.pi * 4) * 150
-    
-    py5.translate(cx, cy)
-    
-    # Faster rotation
-    py5.rotate(-t * math.pi * 2)
-    
-    py5.stroke(0, 255, 255) # Cyan, difference makes it red
-    
-    # Create the interference pattern
-    for i in range(1, num_rings):
-        r = i * ring_spacing
-        py5.circle(0, 0, r * 2)
+        # Base colors: Cyan and Chartreuse
+        if pattern_idx == 0:
+            py5.stroke(0, 229, 255, 180) # Cyan
+        elif pattern_idx == 1:
+            py5.stroke(118, 255, 3, 180) # Chartreuse
+        else:
+            py5.stroke(255, 255, 255, 100) # Bright White
+            
+        steps = 3000
+        loops = 80 # Number of full revolutions for theta
         
-    for i in range(num_spokes):
-        angle = (i / num_spokes) * py5.TWO_PI
-        x = math.cos(angle) * (num_rings * ring_spacing)
-        y = math.sin(angle) * (num_rings * ring_spacing)
-        py5.line(0, 0, x, y)
+        # Parametric parameters, driven by noise
+        n1 = py5.os_noise(t * 1.5, pattern_idx * 10)
+        n2 = py5.os_noise(t * 1.5 + 100, pattern_idx * 10)
+        n3 = py5.os_noise(t * 1.5 + 200, pattern_idx * 10)
         
-    py5.pop_matrix()
-    
-    # The combination of DIFFERENCE blending and the overlapping
-    # magenta/cyan lines will create dark moire bands and vivid colored fringes.
-    
-    py5.blend_mode(py5.BLEND) # Reset blend mode
-    
+        R = 400 + 100 * n1
+        r = 150 + 80 * n2
+        d = 200 + 150 * n3
+        
+        # Second layer of complexity
+        R2 = 100 + 50 * math.sin(t * math.pi * 2)
+        r2 = 40 + 20 * math.cos(t * math.pi * 2 + pattern_idx)
+        d2 = 80 + 30 * n1
+        
+        phase = t * math.pi * 2
+        
+        for i in range(steps):
+            theta = (i / steps) * (py5.TWO_PI * loops)
+            
+            # Primary epitrochoid
+            x1 = (R + r) * math.cos(theta + phase) + d * math.cos(((R + r) / r) * theta)
+            y1 = (R + r) * math.sin(theta + phase) + d * math.sin(((R + r) / r) * theta)
+            
+            # Secondary hypotrochoid offset
+            x2 = (R2 - r2) * math.cos(theta) + d2 * math.cos(((R2 - r2) / r2) * theta)
+            y2 = (R2 - r2) * math.sin(theta) - d2 * math.sin(((R2 - r2) / r2) * theta)
+            
+            py5.vertex(x1 + x2, y1 + y2)
+            
+        py5.end_shape()
+        
     py5.save_frame(str(FRAMES_DIR / "frame-####.png"))
 
     if py5.frame_count == 2 or py5.frame_count % 60 == 0:

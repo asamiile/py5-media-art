@@ -620,6 +620,97 @@
 - **Technique**: High-performance 2D particle simulation using numpy. The fluid motion is driven by a time-varying 3D OpenSimplex noise field approximating curl noise. Particles leave semi-transparent trails using additive blending, colored continuously via the HSB spectrum.
 - **Description**: An animated sequence of iridescent plasma flowing in a vector field.
 
+## generative_epicycle_spirograph_mandala_2d
+
+- **Date**: 2026-07-02
+- **Theme**: A hyper-complex, breathing sacred geometry mandala. Formed by the continuous mathematical path of 120 interlocking orbital epicycles (Fourier series), the spirograph constantly mutates. The frequencies, amplitudes, and phases of the orbits slowly evolve, causing the mandala to bloom, fold, and collapse into kaleidoscopic symmetries.
+- **Technique**: High-performance parametric curve evaluation using NumPy. 120 harmonic epicycles (sine/cosine waves) are summed over 50,000 angular steps to form a continuous, high-resolution closed loop path. The coefficients of the epicycles are modulated by a slow time parameter, creating fluid mutations in the geometric structure. The curve is rendered using a vibrant, phase-mapped color gradient across 20 distinct color bins.
+- **Description**: An animated 15s sequence of generative epicycle spirograph mandala in 2D.
+
+## kinetic_stained_glass_voronoi_2d
+
+- **Date**: 2026-07-02
+- **Theme**: A living stained glass window. 1,200 autonomous cells continuously shift and jostle, generating a flawless Voronoi tessellation. The cellular boundaries flex and morph as if breathing, while the interior of each cell shimmers with an iridescent, jewel-toned gradient that responds to the fluid motion.
+- **Technique**: High-performance geometric tessellation using `scipy.spatial.Voronoi`. 1,200 dynamic seed points move according to a subtle fluid flow field (Perlin/Simplex noise) to avoid chaotic bouncing. Each frame, the Voronoi regions are computed and rendered as filled polygons. To handle boundaries cleanly, static anchor points are placed far outside the canvas. Colors are sampled from a slow-moving, multi-dimensional noise space based on the centroid of each cell.
+- **Description**: An animated 15s sequence of kinetic stained glass voronoi in 2D.
+
+## kinetic_lorenz_attractor_butterfly_2d
+
+- **Date**: 2026-07-02
+- **Theme**: A mesmerizing visualization of chaos theory. 50,000 autonomous particles trace the 3D Lorenz Attractor, their paths projected onto a 2D plane. Starting from a tightly packed cluster, the particles rapidly diverge, mapping out the iconic "butterfly" manifold in continuous motion, leaving ethereal, glowing trails.
+- **Technique**: High-performance Ordinary Differential Equation (ODE) integration using NumPy. The system uses the Euler method to step 50,000 particles through the Lorenz vector field. The 3D coordinates are projected into 2D using a subtle isometric rotation. Particles leave semi-transparent trails using additive blending, colored continuously via their depth (Z-coordinate) into 10 depth bins.
+- **Description**: An animated 15s sequence of kinetic lorenz attractor butterfly in 2D.
+
+## kinetic_physarum_transport_network_2d
+
+- **Date**: 2026-07-02
+- **Theme**: A computational recreation of the Physarum polycephalum (slime mold) foraging behavior. Hundreds of thousands of microscopic autonomous agents navigate a void, leaving pheromone trails that diffuse and decay. The resulting emergent patterns form organic, interconnected transport networks resembling blood vessels, neural pathways, or cosmic webs.
+- **Technique**: High-performance sensory-motor agent simulation (Physarum) using NumPy. 500,000 agents evaluate a scalar pheromone field at three sensor offsets (forward, left, right) to determine their steering angle. Agents advance and deposit pheromones. The environment field undergoes continuous $3 \times 3$ kernel diffusion and exponential decay. The pheromone density is mapped to an otherworldly, luminescent biological color palette.
+- **Description**: An animated 15s sequence of kinetic physarum transport network in 2D.
+
+## kinetic_iridescent_metaballs_2d
+
+- **Date**: 2026-07-02
+- **Theme**: A mesmerizing simulation of fluid metabolic blobs (Metaballs). 30 iridescent fluid droplets merge and split dynamically, resembling a futuristic digital lava lamp. The scalar field is evaluated across the entire canvas, creating perfectly smooth, organic, cellular membranes that snap together when close.
+- **Technique**: High-performance scalar field evaluation (Metaballs) using NumPy. For each pixel, the inverse-square distance to 30 kinetic points is accumulated. The resulting scalar energy field is mapped through a strict threshold and a vibrant color gradient, generating continuous, organic isosurfaces that merge and split. The rendering is done at 1080p internally and upscaled to 4K.
+- **Description**: An animated 15s sequence of kinetic iridescent metaballs in 2D.
+
+## kinetic_delaunay_crystal_facet_2d
+
+- **Date**: 2026-07-02
+- **Theme**: A living crystal structure formed by dynamic Delaunay triangulation. A constellation of autonomous nodes continuously reorganizes itself, creating a faceted, low-poly surface that shimmers and shifts like a liquid gemstone.
+- **Technique**: High-performance geometric graph rendering using `scipy.spatial.Delaunay`. 1,500 autonomous particles drift through a 2D space, governed by simple kinetic physics (velocity, boundary reflection). Each frame, the nodes are triangulated to form a contiguous mesh. The fill color of each triangle is determined by the spatial position of its centroid, mapping to an iridescent gradient.
+- **Description**: An animated 15s sequence of kinetic delaunay crystal facet in 2D.
+
+## kinetic_vasarely_op_art_lattice_2d
+
+- **Date**: 2026-07-02
+- **Theme**: A homage to Victor Vasarely and the Op-Art movement. A dense lattice of geometric primitives (spheres) forms a continuous, undulating optical illusion. The size and color of each element shift based on a slow-moving, multi-dimensional noise field, creating the perception of a breathing 3D topological surface on a 2D plane.
+- **Technique**: 2D geometric grid rendering. A hexagonal lattice is generated mathematically. The radius and color of each lattice node are driven by `py5.os_noise()`, mapping a low-frequency 3D noise space to size and a curated color palette. Pure vector shapes (`py5.ellipse`) scale infinitely well.
+- **Description**: An animated 15s sequence of kinetic vasarely op art lattice in 2D.
+
+## generative_reaction_diffusion_turing_patterns_2d
+
+- **Date**: 2026-07-02
+- **Theme**: A mesmerizing visual simulation of Turing patterns using the Gray-Scott reaction-diffusion model. The system continuously evolves, simulating the chemical reactions that form animal coats, coral structures, and cellular membranes.
+- **Technique**: High-performance 2D cellular automaton in NumPy using the Gray-Scott equations. Spatial convolution (the Laplacian) is computed using rapid array shifting (`np.roll`). The simulation runs on a lower resolution grid (960x540) for performance, taking multiple sub-steps per frame, and is scaled up using bi-linear interpolation to 4K. The chemical concentration is mapped to a striking neon bioluminescent colormap.
+- **Description**: An animated 15s sequence of generative reaction diffusion turing patterns in 2D.
+
+## generative_clifford_attractor_nebula_2d
+
+- **Date**: 2026-07-02
+- **Theme**: A slowly evolving Clifford strange attractor forming a chaotic, wispy, nebula-like cloud. The mathematical parameters shift smoothly over time, causing the attractor's topological shape to fold and morph endlessly into beautiful wisps of light.
+- **Technique**: High-performance 2D density accumulation (histogram) using numpy. Every frame, 6 million points are generated by iteratively feeding 2 million walkers through the Clifford equations. The density map is accumulated with a decay factor to leave a glowing trail, then mapped to a vivid "magma" colormap logarithmically.
+- **Description**: An animated 15s sequence of generative clifford attractor nebula in 2D.
+
+## kinetic_moire_interference_patterns_2d
+
+- **Date**: 2026-07-02
+- **Theme**: A hypnotic exploration of Moiré interference patterns. Concentric rings and radiating lines slowly overlap, scale, and rotate against each other, creating mesmerizing optical illusions and emergent macro-structures.
+- **Technique**: High-frequency geometric primitives (thousands of fine concentric circles and radiating spokes) are drawn in contrasting layers with a DIFFERENCE blend mode. The underlying layers slowly rotate and translate parametrically, producing intense visual interference patterns and chromatic fringes.
+- **Description**: An animated 15s sequence of kinetic moiré interference patterns in 2D.
+
+## generative_guilloche_banknote_patterns_2d
+
+- **Date**: 2026-07-02
+- **Theme**: A hypnotic, continuously evolving Guilloché pattern (banknote security pattern) formed by parametric equations of nested epitrochoids and hypotrochoids. The intricate webs of fine, glowing threads weave in and out of phase.
+- **Technique**: A 2D sketch that draws overlapping parametric curves. The parameters for the radii and frequencies slowly shift using OpenSimplex noise. To get the classic banknote look, thousands of vertices are connected via begin_shape() and end_shape(). We use additive blending and thin strokes.
+- **Description**: An animated 15s sequence of generative guilloche banknote patterns in 2D.
+
+## kinetic_neon_boids_flocking_2d
+
+- **Date**: 2026-07-02
+- **Theme**: A mesmerizing flock of luminous, neon-colored boids swimming through a dark fluid-like space. They exhibit complex emergent flocking behaviors—alignment, cohesion, and separation—while leaving glowing, dissipating trails behind them.
+- **Technique**: A 2D particle simulation using the classic Boids algorithm. The particles are updated each frame using vectorized NumPy operations for high performance. The screen leaves a motion blur trail, and boids are colored dynamically based on their local heading or cluster density.
+- **Description**: An animated 15s sequence of kinetic neon boids flocking in 2D.
+
+## kinetic_chladni_plate_resonance_2d
+
+- **Date**: 2026-07-02
+- **Theme**: A visual simulation of a Chladni plate, where fine sand particles are scattered across a vibrating surface. As the vibrational frequencies sweep and shift, the particles self-organize into intricate, highly geometric nodal patterns.
+- **Technique**: A 2D simulation with thousands of particles. The target position of each particle is influenced by a 2D standing wave equation (e.g. `cos(n*x)*cos(m*y) - cos(m*x)*cos(n*y) = 0`). The wave parameters (n, m) smoothly interpolate over time. Particles randomly jitter but strongly drift towards the nodal lines where the vibration amplitude is close to zero.
+- **Description**: An animated 15s sequence of kinetic chladni plate resonance in 2D.
+
 ## generative_recursive_origami_bloom_2d
 
 - **Date**: 2026-06-27

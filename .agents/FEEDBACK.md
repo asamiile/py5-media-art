@@ -4,6 +4,66 @@
 Agents MUST NOT write anything in the `Comment` field. When registering a new work, Agents must leave the `Rating` and `Comment` fields empty or with their default labels as placeholders for the user.
 The Artist reads this file before starting a new sketch to understand preferences.
 
+## generative_epicycle_spirograph_mandala_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_stained_glass_voronoi_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_lorenz_attractor_butterfly_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_physarum_transport_network_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_iridescent_metaballs_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_delaunay_crystal_facet_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_vasarely_op_art_lattice_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## generative_reaction_diffusion_turing_patterns_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## generative_clifford_attractor_nebula_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_moire_interference_patterns_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## generative_guilloche_banknote_patterns_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_neon_boids_flocking_2d
+
+- **Rating**: 
+- **Comment**: 
+
 ## generative_organic_differential_growth_2d
 - **Rating**: 
 - **Comment**: 
@@ -315,6 +375,11 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## abstract_fluid_iridescent_plasma_2d
 - **Rating**: OK.
+- **Comment**: 
+
+## kinetic_chladni_plate_resonance_2d
+
+- **Rating**: 
 - **Comment**: 
 
 ## generative_recursive_origami_bloom_2d

@@ -1,3 +1,10 @@
+## kinetic_algorithmic_flow_field_delaunay_triangulation_2d
+- **Date**: 2026-07-03
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A constellation of 500 points flowing through an invisible noise field. A dynamic Delaunay triangulation connects the points, creating an overlapping shattered glass effect.
+- **Techniques**: Uses SciPy's spatial Delaunay triangulation on moving points every frame. The area of each generated triangle dictates its brightness and opacity, emphasizing small, dense clusters over large sparse areas.
+- **Palette**: Highly saturated neon colors transitioning smoothly across the grid over time, rendered with additive blending for a glowing look.
+
 ## kinetic_physics_double_pendulum_chaos_cloud_2d
 - **Date**: 2026-07-03
 - **Type**: Animation (900 frames, 60fps)

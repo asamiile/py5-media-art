@@ -1,3 +1,10 @@
+## kinetic_organic_cellular_automata_belousov_zhabotinsky_2d
+- **Date**: 2026-07-03
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: The Belousov-Zhabotinsky (BZ) chemical reaction modeled as a cellular automaton (the Hodgepodge machine), creating mesmerizing spirals and concentric rings that organically evolve over time.
+- **Techniques**: 2D numpy array grid evolving with specific threshold rules based on Moore neighborhood convolution, producing continuous spiral waves. Rendered by converting HSB color states to ARGB integers manually and blitting an image to py5.
+- **Palette**: Extremely vivid psychedelic colors, cycling through the color wheel as the state value goes from 0 to N.
+
 ## kinetic_math_lorenz_attractor_butterfly_3d
 - **Date**: 2026-07-03
 - **Type**: Animation (900 frames, 60fps)

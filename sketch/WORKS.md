@@ -1,3 +1,10 @@
+## kinetic_bioluminescent_jellyfish_fractal_2d
+- **Date**: 2026-07-03
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A floating, pulsing fractal structure resembling a bioluminescent jellyfish, using recursive trigonometry to create trailing tentacles that respond to a simulated underwater current.
+- **Techniques**: Recursive branching where branch length and angle are modulated by a sine wave (breathing) and Perlin noise (current). Trails are rendered using additive transparent polygons.
+- **Palette**: Pitch black void, glowing cyan and electric blue tentacles, bright pink/magenta core.
+
 ## abstract_geometric_bauhaus_clockwork_2d
 - **Date**: 2026-07-02
 - **Type**: Animation (900 frames, 60fps)

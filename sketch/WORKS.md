@@ -1,3 +1,10 @@
+## kinetic_math_spirograph_morph_3d
+- **Date**: 2026-07-04
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A complex 3D Fourier series spirograph that breathes and writhes as its phase components are continuously modulated.
+- **Techniques**: Evaluates a 3D parametric equation with prime frequencies (11, 41, 107) across 50,000 points per frame. The phase shifts are modulated by time, breaking the static closed-loop nature into a continuously mutating tangled knot. Drawn using per-vertex HSB coloring and additive blending to create a glowing laser-light intersection effect, projected onto 2D with a custom software perspective engine.
+- **Palette**: Full glowing neon rainbow spectrum against an absolute black void.
+
 ## generative_cybernetic_neural_network_flow_3d
 - **Date**: 2026-07-04
 - **Type**: Animation (900 frames, 60fps)

@@ -1,3 +1,10 @@
+## generative_vector_field_flow_particle_traces_2d
+- **Date**: 2026-07-04
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A massive swarm of 100,000 particles flowing through a continuously morphing trigonometric vector field.
+- **Techniques**: Evaluates a complex 3D trigonometric interference pattern to generate a seamless, looping vector field. The particles are integrated each frame and drawn as glowing points with fading trails. A high-performance hue-binning technique using numpy vectorization allows py5 to render the massive point cloud at full 60fps. The point-based trails create an emergent 3D woven ribbon texture.
+- **Palette**: Neon aurora spectrum reflecting the vector field angles, over a fading black void.
+
 ## kinetic_math_spirograph_morph_3d
 - **Date**: 2026-07-04
 - **Type**: Animation (900 frames, 60fps)

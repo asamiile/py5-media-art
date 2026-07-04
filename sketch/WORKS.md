@@ -1,3 +1,10 @@
+## generative_cellular_automata_bz_reaction_2d
+- **Date**: 2026-07-04
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 16-state Cyclic Cellular Automaton simulating a Belousov-Zhabotinsky (BZ) chemical reaction, forming intricate square spirals and labyrinthine waves.
+- **Techniques**: Computes the cellular automaton rules across an 8K High-DPI grid (33 million pixels) per frame. To achieve this in python, standard loops and drawing functions were bypassed entirely; instead, the grid states are evaluated using highly optimized `numpy.roll` parallel operations, and the precomputed colormap is streamed directly into `py5.np_pixels`. The Moore neighborhood rule causes the macroscopic waves to organize into mesmerizing square-shaped "Aztec" spirals from initial noise blocks.
+- **Palette**: Highly saturated, iridescent neon color cycle.
+
 ## generative_vector_field_flow_particle_traces_2d
 - **Date**: 2026-07-04
 - **Type**: Animation (900 frames, 60fps)

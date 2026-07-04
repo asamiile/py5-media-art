@@ -1,3 +1,10 @@
+## generative_cybernetic_neural_network_flow_3d
+- **Date**: 2026-07-04
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 3D cybernetic neural network where thousands of data packets traverse the synapses of a giant geometric brain.
+- **Techniques**: Generates a 3D random geometric graph of 400 nodes and thousands of edges. A custom software 3D projection engine maps the 3D coordinates to a 2D plane to avoid OpenGL JVM crashes at 4K resolution. 4,000 packets move along the network edges, with an emergent teleportation glitch creating the appearance of data streaking through the void outside the core network.
+- **Palette**: Dark cyberpunk aesthetic. Pitch black void, faint dark purple edges, and bright neon cyan and pink data packets.
+
 ## kinetic_physics_chladni_plate_resonance_2d
 - **Date**: 2026-07-04
 - **Type**: Animation (1200 frames, 60fps)

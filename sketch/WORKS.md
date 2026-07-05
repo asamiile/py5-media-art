@@ -1,3 +1,9 @@
+## kinetic_math_clifford_attractor_morph_2d
+- **Date**: 2026-07-05
+- **Type**: Animation (536 frames, 60fps)
+- **Concept**: A continuously morphing Peter de Jong strange attractor, visualized as a massive density map glowing in neon colors.
+- **Techniques**: To avoid the massive overhead of drawing millions of individual points per frame via `py5.points()`, the attractor mathematics were vectorized and rewritten to use a highly optimized Numpy 2D histogram approach. Each frame calculates 30 million mathematical coordinates spanning the attractor manifold, accumulating their hit frequencies into a massive 8K density matrix. The raw density is logarithmically scaled and mapped directly to RGB channels using trigonometric color cycling, producing a breathtaking, high-fidelity fractal structure.
+
 ## generative_cellular_automata_bz_reaction_2d
 - **Date**: 2026-07-04
 - **Type**: Animation (900 frames, 60fps)

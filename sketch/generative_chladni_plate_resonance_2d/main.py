@@ -2,8 +2,9 @@ from pathlib import Path
 import shutil
 import subprocess
 import sys
-import py5
+import random
 import numpy as np
+import py5
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 if str(PROJECT_ROOT) not in sys.path:
@@ -16,85 +17,115 @@ from lib.sizes import get_sizes
 SKETCH_DIR = sketch_dir(__file__)
 WORK_NAME = SKETCH_DIR.name
 FRAMES_DIR = SKETCH_DIR / "frames"
-DURATION_SEC = 15
+DURATION_SEC = random.randint(15, 30)
 FPS = 60
 TOTAL_FRAMES = DURATION_SEC * FPS
 PREVIEW_FILENAME = f"{WORK_NAME}_p1.png"
 PREVIEW_SIZE, OUTPUT_SIZE, _ = get_sizes()
 SIZE = OUTPUT_SIZE
 
-num_particles = 30000
-positions = None
+N_PARTICLES = 150000
+
+px = None
+py = None
+vx = None
+vy = None
 
 def setup():
+    global px, py, vx, vy
     py5.size(*SIZE)
     py5.pixel_density(1)
+    py5.background(20, 10, 5)
     FRAMES_DIR.mkdir(exist_ok=True)
     
-    global positions
-    
-    positions = np.zeros((num_particles, 2), dtype=np.float32)
-    positions[:, 0] = np.random.uniform(0, SIZE[0], num_particles)
-    positions[:, 1] = np.random.uniform(0, SIZE[1], num_particles)
-    
-    py5.background(20)
-    py5.color_mode(py5.HSB, 360, 100, 100, 100)
+    px = np.random.uniform(0, SIZE[0], N_PARTICLES).astype(np.float32)
+    py = np.random.uniform(0, SIZE[1], N_PARTICLES).astype(np.float32)
+    vx = np.zeros(N_PARTICLES, dtype=np.float32)
+    vy = np.zeros(N_PARTICLES, dtype=np.float32)
 
-def chladni(x, y, n, m, L):
-    nx = x / L
-    ny = y / L
-    v1 = np.cos(n * np.pi * nx) * np.cos(m * np.pi * ny)
-    v2 = np.cos(m * np.pi * nx) * np.cos(n * np.pi * ny)
-    return abs(v1 - v2)
+def chladni_val_and_grad(x, y, n, m, a=1.0, b=1.0):
+    # Map coordinates to [-pi, pi] based on screen size
+    scale = np.pi / min(SIZE) * 2.0
+    sx = (x - SIZE[0]/2) * scale
+    sy = (y - SIZE[1]/2) * scale
+    
+    snx = np.sin(n * sx)
+    sny = np.sin(n * sy)
+    smx = np.sin(m * sx)
+    smy = np.sin(m * sy)
+    
+    cnx = np.cos(n * sx)
+    cny = np.cos(n * sy)
+    cmx = np.cos(m * sx)
+    cmy = np.cos(m * sy)
+    
+    L = a * snx * smy + b * smx * sny
+    
+    dL_dx = (a * n * cnx * smy + b * m * cmx * sny) * scale
+    dL_dy = (a * m * snx * cmy + b * n * smx * cny) * scale
+    
+    fx = -2.0 * L * dL_dx
+    fy = -2.0 * L * dL_dy
+    
+    return fx, fy
 
 def draw():
-    global positions
+    global px, py, vx, vy
     
+    # Very slight fade for motion blur
     py5.blend_mode(py5.BLEND)
-    py5.fill(20, 15) 
     py5.no_stroke()
+    py5.fill(20, 10, 5, 20)
     py5.rect(0, 0, SIZE[0], SIZE[1])
     
-    py5.blend_mode(py5.ADD)
-    
+    # Smoothly transition parameters
     t = py5.frame_count * 0.005
+    n = 2.0 + np.sin(t * 1.3) * 1.5
+    m = 3.0 + np.cos(t * 0.9) * 2.0
     
-    L = min(SIZE[0], SIZE[1])
+    fx, fy = chladni_val_and_grad(px, py, n, m)
     
-    n = 3.0 + 2.0 * np.sin(t * 0.5)
-    m = 5.0 + 3.0 * np.cos(t * 0.3)
+    # Add some noise to prevent them from getting completely stuck
+    noise_str = 2.0
+    nx = py5.os_noise(px * 0.01, py * 0.01, t) * 2 - 1
+    ny = py5.os_noise(px * 0.01 + 100, py * 0.01 + 100, t) * 2 - 1
     
-    eps = 2.0 
-    step_size = 20.0
+    # Accelerate
+    force_mult = 50.0
+    vx += fx * force_mult + nx * noise_str
+    vy += fy * force_mult + ny * noise_str
     
-    for i in range(num_particles):
-        x = positions[i, 0]
-        y = positions[i, 1]
-        
-        c_center = chladni(x, y, n, m, L)
-        c_dx = chladni(x + eps, y, n, m, L)
-        c_dy = chladni(x, y + eps, n, m, L)
-        
-        grad_x = (c_dx - c_center) / eps
-        grad_y = (c_dy - c_center) / eps
-        
-        positions[i, 0] -= grad_x * step_size
-        positions[i, 1] -= grad_y * step_size
-        
-        positions[i, 0] += np.random.uniform(-1, 1) * c_center * 5.0
-        positions[i, 1] += np.random.uniform(-1, 1) * c_center * 5.0
-        
-        if positions[i, 0] < 0 or positions[i, 0] > SIZE[0] or positions[i, 1] < 0 or positions[i, 1] > SIZE[1]:
-            positions[i, 0] = np.random.uniform(0, SIZE[0])
-            positions[i, 1] = np.random.uniform(0, SIZE[1])
-            
-    py5.no_stroke()
-    py5.fill((t * 20) % 360, 40, 90, 40)
-    for i in range(num_particles):
-        py5.ellipse(positions[i, 0], positions[i, 1], 1.5, 1.5)
+    # Drag
+    vx *= 0.90
+    vy *= 0.90
+    
+    px += vx
+    py += vy
+    
+    # Keep on screen by wrapping
+    px = np.mod(px, SIZE[0])
+    py = np.mod(py, SIZE[1])
+    
+    # Draw points
+    py5.blend_mode(py5.ADD)
+    py5.stroke(255, 240, 200, 100)
+    py5.stroke_weight(1.5)
+    
+    py5.begin_shape(py5.POINTS)
+    for i in range(N_PARTICLES):
+        py5.vertex(px[i], py[i])
+    py5.end_shape()
 
     py5.save_frame(str(FRAMES_DIR / "frame-####.png"))
 
+    if py5.frame_count == 2 or py5.frame_count % 60 == 0:
+        py5.load_np_pixels()
+        if py5.np_pixels.std() < 1.0:
+            print(f"[Error] Blank screen detected on frame {py5.frame_count} (std < 1.0). Aborting.")
+            import os
+            import sys
+            sys.stdout.flush()
+            os._exit(1)
 
     if py5.frame_count % 60 == 0:
         print(f"[Render Progress] Frame {py5.frame_count}/{TOTAL_FRAMES} ({py5.frame_count/TOTAL_FRAMES*100:.1f}%)")

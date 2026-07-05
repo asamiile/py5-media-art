@@ -2,9 +2,11 @@ from pathlib import Path
 import shutil
 import subprocess
 import sys
+import random
+import math
 import numpy as np
-import scipy.spatial as spatial
 import py5
+from scipy.spatial import cKDTree
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 if str(PROJECT_ROOT) not in sys.path:
@@ -17,151 +19,119 @@ from lib.sizes import get_sizes
 SKETCH_DIR = sketch_dir(__file__)
 WORK_NAME = SKETCH_DIR.name
 FRAMES_DIR = SKETCH_DIR / "frames"
-DURATION_SEC = 15
-FPS = 30
+DURATION_SEC = random.randint(15, 30)
+FPS = 60
 TOTAL_FRAMES = DURATION_SEC * FPS
 PREVIEW_FILENAME = f"{WORK_NAME}_p1.png"
 PREVIEW_SIZE, OUTPUT_SIZE, _ = get_sizes()
 SIZE = OUTPUT_SIZE
 
 # Differential growth parameters
-MAX_EDGE_LEN = 15.0
-MIN_EDGE_LEN = 5.0
-REPULSION_RADIUS = 25.0
-REPULSION_FORCE = 1.0
+REPULSION_RADIUS = 12.0
+REPULSION_FORCE = 0.8
 ATTRACTION_FORCE = 0.5
-ALIGNMENT_FORCE = 0.1
+MAX_EDGE_LEN = 8.0
+MIN_EDGE_LEN = 2.0
+
+nodes = None
 
 def setup():
+    global nodes
     py5.size(*SIZE)
     py5.pixel_density(1)
-    py5.background(10, 5, 15)
+    py5.background(240, 240, 235)
     FRAMES_DIR.mkdir(exist_ok=True)
     
-    global points, velocities
-    
-    # Start with a small circle
-    num_initial = 50
-    angles = np.linspace(0, py5.PI * 2, num_initial, endpoint=False)
-    radius = 50.0
-    cx, cy = py5.width / 2, py5.height / 2
-    
-    x = cx + np.cos(angles) * radius
-    y = cy + np.sin(angles) * radius
-    
-    points = np.column_stack((x, y))
-    velocities = np.zeros_like(points)
+    # Initialize a small circle of nodes
+    n_initial = 20
+    r = 10.0
+    cx, cy = SIZE[0]/2, SIZE[1]/2
+    theta = np.linspace(0, 2*math.pi, n_initial, endpoint=False)
+    nodes = np.column_stack((cx + r*np.cos(theta), cy + r*np.sin(theta))).astype(np.float32)
 
 def draw():
-    global points, velocities
+    global nodes
     
-    # Run the simulation for multiple steps per frame
-    # We want it to grow rapidly within 450 frames
-    STEPS = 5
+    py5.background(240, 240, 235)
     
-    for step in range(STEPS):
-        # 1. Repulsion using KDTree for efficiency
-        tree = spatial.KDTree(points)
-        pairs = tree.query_pairs(REPULSION_RADIUS)
-        
-        forces = np.zeros_like(points)
-        
-        if len(pairs) > 0:
-            i, j = np.array(list(pairs)).T
-            
-            p_i = points[i]
-            p_j = points[j]
-            
-            diff = p_i - p_j
-            dist = np.linalg.norm(diff, axis=1, keepdims=True)
-            # Avoid division by zero
-            dist = np.maximum(dist, 0.001)
-            
-            # Inverse distance weighting for repulsion
-            repel = (diff / dist) * (1.0 - dist / REPULSION_RADIUS) * REPULSION_FORCE
-            
-            # Accumulate forces
-            np.add.at(forces, i, repel)
-            np.add.at(forces, j, -repel)
-            
-        # 2. Edge attraction (keep connected points together)
-        num_pts = len(points)
-        next_idx = (np.arange(num_pts) + 1) % num_pts
-        prev_idx = (np.arange(num_pts) - 1) % num_pts
-        
-        p_next = points[next_idx]
-        p_prev = points[prev_idx]
-        
-        # Pull towards neighbors
-        attract_next = (p_next - points) * ATTRACTION_FORCE
-        attract_prev = (p_prev - points) * ATTRACTION_FORCE
-        
-        # 3. Alignment (try to stay in a smooth line)
-        midpoint = (p_next + p_prev) / 2.0
-        alignment = (midpoint - points) * ALIGNMENT_FORCE
-        
-        # Apply forces to velocities
-        velocities += forces + attract_next + attract_prev + alignment
-        
-        # Friction
-        velocities *= 0.5
-        
-        # Update positions
-        points += velocities
-        
-        # Keep inside bounds
-        # points = np.clip(points, 50, py5.width - 50) # Allow it to grow off screen
-        
-        # 4. Growth / Subdivision
-        # Find segments that are too long
-        diffs = points[next_idx] - points
-        dists = np.linalg.norm(diffs, axis=1)
-        
-        too_long = np.where(dists > MAX_EDGE_LEN)[0]
-        
-        if len(too_long) > 0:
-            # We insert new points at the midpoint of long segments
-            new_points = []
-            
-            # Since inserting shifts indices, we do it carefully or build a new list
-            # We can use np.insert, but doing it in bulk is tricky due to indices
-            # For simplicity, we just rebuild the array if there are subdivisions
-            
-            new_pts_list = []
-            new_vels_list = []
-            for idx in range(num_pts):
-                new_pts_list.append(points[idx])
-                new_vels_list.append(velocities[idx])
-                
-                if dists[idx] > MAX_EDGE_LEN:
-                    mid = (points[idx] + points[next_idx[idx]]) / 2.0
-                    new_pts_list.append(mid)
-                    new_vels_list.append((velocities[idx] + velocities[next_idx[idx]]) / 2.0)
-                    
-            points = np.array(new_pts_list)
-            velocities = np.array(new_vels_list)
-            
-    # Draw the shape
-    # We use a slightly transparent black background to leave trails
-    py5.blend_mode(py5.BLEND)
-    py5.fill(10, 5, 15, 20)
-    py5.no_stroke()
-    py5.rect(0, 0, py5.width, py5.height)
+    # 1. Growth: Subdivide edges that are too long
+    # Calculate edge vectors
+    diffs = np.diff(nodes, axis=0, append=nodes[:1])
+    dists = np.linalg.norm(diffs, axis=1)
     
-    py5.blend_mode(py5.ADD)
+    # Find edges to split
+    split_idx = np.where(dists > MAX_EDGE_LEN)[0]
+    
+    if len(split_idx) > 0:
+        # Create new nodes at midpoints
+        new_nodes = nodes[split_idx] + diffs[split_idx] * 0.5
+        
+        inserts = split_idx + 1
+        nodes = np.insert(nodes, inserts, new_nodes, axis=0)
+
+    # 2. Physics step
+    forces = np.zeros_like(nodes)
+    
+    # Attraction to neighbors
+    diffs = np.diff(nodes, axis=0, append=nodes[:1]) # vector to next
+    forces += diffs * ATTRACTION_FORCE
+    
+    prev_diffs = nodes - np.roll(nodes, 1, axis=0) # vector to prev
+    forces -= prev_diffs * ATTRACTION_FORCE
+    
+    # Repulsion using KDTree
+    tree = cKDTree(nodes)
+    pairs = tree.query_pairs(REPULSION_RADIUS)
+    
+    if pairs:
+        idx1, idx2 = np.array(list(pairs)).T
+        p1 = nodes[idx1]
+        p2 = nodes[idx2]
+        
+        d_vec = p1 - p2
+        dist = np.linalg.norm(d_vec, axis=1)
+        
+        dist = np.maximum(dist, 0.0001)
+        
+        mag = (REPULSION_RADIUS - dist) / REPULSION_RADIUS * REPULSION_FORCE
+        f_vec = (d_vec / dist[:, None]) * mag[:, None]
+        
+        np.add.at(forces, idx1, f_vec)
+        np.add.at(forces, idx2, -f_vec)
+        
+    # Boundary repulsion
+    margin = 50
+    forces[:, 0] += np.maximum(0, margin - nodes[:, 0]) * 0.5
+    forces[:, 1] += np.maximum(0, margin - nodes[:, 1]) * 0.5
+    forces[:, 0] -= np.maximum(0, nodes[:, 0] - (SIZE[0] - margin)) * 0.5
+    forces[:, 1] -= np.maximum(0, nodes[:, 1] - (SIZE[1] - margin)) * 0.5
+        
+    # Update positions
+    nodes += forces
+    
+    # 3. Draw
     py5.no_fill()
-    py5.stroke(255, 150, 50, 150)
-    py5.stroke_weight(2)
+    py5.stroke(20, 20, 25)
+    py5.stroke_weight(1.5)
     
-    # Draw the continuous organic line
     py5.begin_shape()
-    py5.vertices(points)
+    for i in range(len(nodes)):
+        py5.vertex(nodes[i, 0], nodes[i, 1])
     py5.end_shape(py5.CLOSE)
 
     py5.save_frame(str(FRAMES_DIR / "frame-####.png"))
 
-    if py5.frame_count % 30 == 0:
-        print(f"[Render Progress] Frame {py5.frame_count}/{TOTAL_FRAMES} (Nodes: {len(points)})")
+    if py5.frame_count == 2 or py5.frame_count % 60 == 0:
+        py5.load_np_pixels()
+        if py5.np_pixels.std() < 1.0:
+            print(f"[Error] Blank screen detected on frame {py5.frame_count} (std < 1.0). Aborting.")
+            import os
+            import sys
+            sys.stdout.flush()
+            os._exit(1)
+
+    if py5.frame_count % 60 == 0:
+        print(f"[Render Progress] Frame {py5.frame_count}/{TOTAL_FRAMES} ({py5.frame_count/TOTAL_FRAMES*100:.1f}%), Nodes: {len(nodes)}")
 
     if py5.frame_count >= TOTAL_FRAMES:
         py5.exit_sketch()

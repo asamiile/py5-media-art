@@ -4,6 +4,151 @@
 Agents MUST NOT write anything in the `Comment` field. When registering a new work, Agents must leave the `Rating` and `Comment` fields empty or with their default labels as placeholders for the user.
 The Artist reads this file before starting a new sketch to understand preferences.
 
+## kinetic_math_torus_knot_3d_projected_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_math_topological_contour_flow_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_math_strange_attractor_peter_de_jong_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_physics_cloth_simulation_wind_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_organic_reaction_diffusion_coral_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_physics_magnetic_pendulum_chaos_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_organic_recursive_fractal_tree_wind_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_abstract_geometric_kaleidoscope_mandala_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_math_strange_attractor_clifford_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_abstract_geometric_voronoi_stain_glass_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_organic_flocking_boids_nebula_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_generative_spirograph_lissajous_web_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_organic_bubble_foam_packing_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_abstract_vector_field_wheat_waves_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_algorithmic_flow_field_delaunay_triangulation_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_physics_double_pendulum_chaos_cloud_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_algorithmic_botanical_fractal_bloom_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_abstract_geometric_truchet_tiles_maze_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_abstract_geometric_metaballs_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_generative_chladni_plate_resonance_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_physics_gravitational_lensing_accretion_disk_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_organic_cellular_automata_belousov_zhabotinsky_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_math_lorenz_attractor_butterfly_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_geometric_tesseract_rotation_4d
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_attraction_repulsion_particle_life_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_quantum_interference_probability_cloud_3d
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_supernova_explosion_shockwave_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_cellular_automata_brians_brain_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_bioluminescent_jellyfish_fractal_2d
+
+- **Rating**: 
+- **Comment**: 
+
 ## generative_epicycle_spirograph_mandala_2d
 
 - **Rating**: 

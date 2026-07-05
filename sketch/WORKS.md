@@ -1,3 +1,206 @@
+## kinetic_math_torus_knot_3d_projected_2d
+- **Date**: 2026-07-03
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 3D Torus Knot (p=3, q=7) rendered purely in 2D using custom 3D rotation matrices and perspective projection to circumvent hardware 3D rendering bugs.
+- **Techniques**: Generates 80,000 points forming a thick "tube" around the mathematical knot. Applies 3D rotation and perspective division, then sorts the points by depth (Painter's algorithm) to draw them back-to-front, creating a perfect illusion of voluminous 3D geometry using only 2D circles.
+- **Palette**: "Iridescent Hologram": The tube shimmers through cyan, magenta, and yellow, with depth-based brightness fading into the dark background to create a volumetric fog effect.
+
+## kinetic_math_topological_contour_flow_2d
+- **Date**: 2026-07-03
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A generative topographic map where 15,000 glowing particles continuously trace the contour lines of an unseen, slowly shifting 3D Perlin noise landscape.
+- **Techniques**: Computes the 2D gradient of a Perlin noise field and rotates the vectors by 90 degrees to find the contour direction. Particles flow perfectly perpendicular to the gradient, drawing out intricate, shifting topographic rings and valleys.
+- **Palette**: "Neon Topography": Electric purple and bright pink particles leaving glowing trails against a very dark, near-black background.
+
+## kinetic_math_strange_attractor_peter_de_jong_2d
+- **Date**: 2026-07-03
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A visualization of the Peter de Jong strange attractor, an iterative chaotic map. Over time, the parameters of the equations slowly drift, causing the attractor's shape to continuously fold, unfold, and evolve into new intricate fractal patterns.
+- **Techniques**: Computes 500,000 points per frame using vectorized NumPy arrays by simulating 10,000 independent parallel trajectories. Renders the massive point cloud using additive blending and a slight motion blur trail.
+- **Palette**: "Stellar Dust": Bright, glowing golden and orange points scattered across a deep midnight blue background, giving the appearance of cosmic dust or a glowing nebula.
+
+## kinetic_physics_cloth_simulation_wind_2d
+- **Date**: 2026-07-03
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A physics-based simulation of a massive sheet of cloth blowing in an invisible, turbulent wind. The fabric bends, folds, and ripples dynamically.
+- **Techniques**: Verlet integration for rigid distance constraints applied across a 60x40 grid of interconnected points. The wind force is driven by Perlin noise, pushing the cloth organically while the top edge remains partially pinned.
+- **Palette**: "Shimmering Silk": The fabric color shifts from deep purple and cyan to bright magenta based on the velocity of each section, contrasted against a warm, muted copper background.
+
+## kinetic_organic_reaction_diffusion_coral_2d
+- **Date**: 2026-07-03
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A simulation of the Gray-Scott reaction-diffusion model, creating organic, coral-like structures that slowly grow, pulse, and shift across the screen.
+- **Techniques**: Numerically integrates the reaction-diffusion partial differential equations using heavily vectorized NumPy operations (`np.roll`) on a lower-resolution grid for high performance. The parameters dynamically oscillate, causing the growth patterns to breathe and morph over time. The chemical concentrations are directly mapped to pixel colors using `img.np_pixels`.
+- **Palette**: A deep ocean teal background contrasting with bright, glowing coral pink and orange cellular structures.
+
+## kinetic_physics_magnetic_pendulum_chaos_2d
+- **Date**: 2026-07-03
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A visualization of the classic "magnetic pendulum" physics problem. 200 pendulums swing over four magnets, tracing chaotic, fractal-like paths driven by gravity, magnetism, and friction.
+- **Techniques**: A custom physics engine running multiple numerical integration steps per frame. Pendulum trajectories are drawn with motion blur, and their colors are dynamically mapped to the nearest dominant magnet at each moment in time.
+- **Palette**: Deep black background with sharp, vivid primary and secondary colors (Red, Green, Cyan, Purple) blending together through additive synthesis.
+
+## kinetic_organic_recursive_fractal_tree_wind_2d
+- **Date**: 2026-07-03
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A majestic recursive fractal tree that sways organically as if blowing in a strong wind, generating thousands of dynamic branches.
+- **Techniques**: A deeply recursive branching algorithm (depth 12) combining spatial coordinates and time via 1D Perlin noise to calculate dynamic wind angles. Additive blending creates a glowing effect at the denser, overlapping tips of the tree.
+- **Palette**: "Autumn glowing": Dark brown, thick trunks fading into bright red, orange, and yellow glowing tips against a deep forest green background.
+
+## kinetic_abstract_geometric_kaleidoscope_mandala_2d
+- **Date**: 2026-07-03
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A slowly rotating, procedurally generated mandala that functions like a kaleidoscope.
+- **Techniques**: Generates geometric shapes (pentagons) that move organically using Perlin noise. The coordinate space is divided into 12 radial segments, mirrored and duplicated symmetrically using `py5.push_matrix`, `py5.rotate`, and `py5.scale`. Additive blending and motion blur create a glowing, hypnotic effect.
+- **Palette**: Rich golds, ambers, and deep crimsons against a dark background, evoking mystical or cosmic energy.
+
+## kinetic_math_strange_attractor_clifford_2d
+- **Date**: 2026-07-03
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A visualization of the Clifford strange attractor continuously morphing its defining parameters over time. 300,000 independent particles trace out the attractor's complex, folding fractal structure.
+- **Techniques**: Highly optimized NumPy vectorization iterating the Clifford map equations for 300,000 points simultaneously. The points are drawn with very low opacity to build up a density map, creating ghostly, smooth motion blur.
+- **Palette**: Monochromatic-adjacent glowing structure that shifts gradually from cyan to magenta, built up through additive blending on a deep dark background.
+
+## kinetic_abstract_geometric_voronoi_stain_glass_2d
+- **Date**: 2026-07-03
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A continuously shifting and morphing Voronoi diagram that resembles liquid, animated stained glass.
+- **Techniques**: Uses SciPy's `Voronoi` to compute the geometric regions of 100 points wandering through a Perlin noise field. A ring of phantom points ensures all visible regions remain finite and renderable.
+- **Palette**: Deep, rich stained glass hues (reds, blues, yellows, purples) with bold, dark dividing lines.
+
+## kinetic_organic_flocking_boids_nebula_2d
+- **Date**: 2026-07-03
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: 2,500 glowing particles (boids) flocking in a 2D space, exhibiting collective behavior and leaving a fading trail. They behave like a fluid, intelligent nebula or a giant swarm of deep-sea bioluminescence.
+- **Techniques**: A highly optimized, fully vectorized flocking algorithm using SciPy's `cKDTree.sparse_distance_matrix` to compute nearest neighbors extremely fast. The density of the flock dynamically changes each boid's color in real time.
+- **Palette**: "Nebula" colors: Deep space blues and purples in sparse areas, shifting up to hot pink and bright cyan in densely packed clusters.
+
+## kinetic_generative_spirograph_lissajous_web_2d
+- **Date**: 2026-07-03
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A mesmerizing complex web of lines generated by multiple interlocking Lissajous/harmonograph curves. The moving "pen" connects back to its own history, creating intricate, glowing geometric thread-art.
+- **Techniques**: Computes a continuous path using four combined sine/cosine frequencies with evolving phase shifts. The current point is connected via lines to older points in a rolling history buffer at specific phase intervals, forming a structural web.
+- **Palette**: Deep magenta to cyan gradients with additive blending over a dark purple background, mimicking glowing thread or laser light.
+
+## kinetic_organic_bubble_foam_packing_2d
+- **Date**: 2026-07-03
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: An organic, continuous circle packing algorithm. Circles spawn and grow until they hit each other. Each has a finite lifespan before popping, leaving space for new circles and creating a boiling, foam-like kinetic texture.
+- **Techniques**: Uses optimized NumPy broadcasting to check collisions between 1,500 growing bubbles every frame. Rendered using transparent fills and bright edges.
+- **Palette**: Deep ocean blues and bioluminescent cyan against a dark copper background, resembling sea foam or alien soap bubbles.
+
+## kinetic_abstract_vector_field_wheat_waves_2d
+- **Date**: 2026-07-03
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: Thousands of tiny lines (vectors) arranged in a dense grid, all rotating according to an evolving procedural noise vector field, creating a visual effect similar to a field of wheat waving in the wind.
+- **Techniques**: Computes a fast 2D procedural noise field using combining sine and cosine functions. Maps the resulting angles to line orientations and colors, drawn efficiently via `py5.begin_shape(py5.LINES)`.
+- **Palette**: "Golden Hour" palette: rich gold, amber, and deep brown, glowing against a dark background with a slight fade trail.
+
+## kinetic_algorithmic_flow_field_delaunay_triangulation_2d
+- **Date**: 2026-07-03
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A constellation of 500 points flowing through an invisible noise field. A dynamic Delaunay triangulation connects the points, creating an overlapping shattered glass effect.
+- **Techniques**: Uses SciPy's spatial Delaunay triangulation on moving points every frame. The area of each generated triangle dictates its brightness and opacity, emphasizing small, dense clusters over large sparse areas.
+- **Palette**: Highly saturated neon colors transitioning smoothly across the grid over time, rendered with additive blending for a glowing look.
+
+## kinetic_physics_double_pendulum_chaos_cloud_2d
+- **Date**: 2026-07-03
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A visualization of deterministic chaos. 25,000 double pendulums start with infinitesimally small differences in their initial angles, eventually separating into an expanding, swirling chaotic fractal cloud.
+- **Techniques**: Simulates the exact differential equations of motion for 25,000 double pendulums simultaneously using NumPy vectorization. The end effectors are drawn with additive blending.
+- **Palette**: Deep cyan and magenta representing the slight phase differences between the pendulums, creating a glowing cloud of chaos.
+
+## kinetic_algorithmic_botanical_fractal_bloom_2d
+- **Date**: 2026-07-03
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: An algorithmic flower that recursively blooms, folds, and rotates. The branches split recursively into intricate patterns with organic, continuous breathing motion.
+- **Techniques**: A recursive depth-based L-system logic rendered in 2D using `py5` transforms (`push_matrix()`, `pop_matrix()`). Branching angles and lengths are driven by sinusoidal waves that ripple through the depth of the recursion.
+- **Palette**: Deep emerald green bases transitioning to bright bioluminescent pinks and whites at the fractal tips, using additive blending on a dark background.
+
+## kinetic_abstract_geometric_truchet_tiles_maze_2d
+- **Date**: 2026-07-03
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A constantly evolving Truchet tile maze. Tiles rotate smoothly, continuously creating and destroying winding geometric paths.
+- **Techniques**: A grid of tiles where each tile contains curved arcs. A 2D array stores the continuous rotation state. A 2D sine/cosine noise wave passes over the grid, triggering smooth rotations between 0 and 90 degrees.
+- **Palette**: Neon cyber-colors mapped to the spatial coordinates, leaving a faint glowing trail behind moving paths.
+
+## kinetic_abstract_geometric_metaballs_2d
+- **Date**: 2026-07-03
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: 40 glowing, squishy "metaballs" (isosurfaces) drifting, merging, and splitting organically in 2D space, mimicking liquid metal.
+- **Techniques**: Evaluates the metaball field over a dense grid using NumPy. Instead of a solid threshold, it maps the field intensity to hue and sine-wave based contours for a fluid rainbow interference effect.
+- **Palette**: Highly saturated liquid rainbow colors mapped to the field strength, with glowing bright cores and dark drop-offs.
+
+## kinetic_generative_chladni_plate_resonance_3d
+- **Date**: 2026-07-03
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 3D topographical visualization of Chladni resonance patterns. We use the Chladni equation, mapping the Z value to height in 3D and color.
+- **Techniques**: Evaluate the equation on a 400x400 grid. The resonance frequencies N and M are animated slowly to create moving nodes and peaks. The camera slowly orbits the 3D surface.
+- **Palette**: Deep violet for valleys/nodes, electric cyan for mid-heights, and gold for the peaks against a dark background.
+
+## kinetic_physics_gravitational_lensing_accretion_disk_3d
+- **Date**: 2026-07-03
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A simulation of an accretion disk around a binary black hole system. 150,000 glowing particles orbit the singularities, getting accelerated, color-shifted by speed, and swept into glowing rings.
+- **Techniques**: O(N) gravity calculation from two central moving point masses using NumPy. Particles start in a disk and are slowly pulled in or ejected.
+- **Palette**: Extremely bright orange, yellow, and white around the cores, with cyan and purple ejections.
+
+## kinetic_organic_cellular_automata_belousov_zhabotinsky_2d
+- **Date**: 2026-07-03
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: The Belousov-Zhabotinsky (BZ) chemical reaction modeled as a cellular automaton (the Hodgepodge machine), creating mesmerizing spirals and concentric rings that organically evolve over time.
+- **Techniques**: 2D numpy array grid evolving with specific threshold rules based on Moore neighborhood convolution, producing continuous spiral waves. Rendered by converting HSB color states to ARGB integers manually and blitting an image to py5.
+- **Palette**: Extremely vivid psychedelic colors, cycling through the color wheel as the state value goes from 0 to N.
+
+## kinetic_math_lorenz_attractor_butterfly_3d
+- **Date**: 2026-07-03
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 3D simulation of the classic Lorenz attractor ("butterfly effect").
+- **Techniques**: 50,000 points integrated using the Euler method to trace the Lorenz manifold, leaving glowing trails as they orbit the two butterfly lobes. Rendered with additive blending and a slowly rotating 3D camera.
+- **Palette**: Velocity-based coloring from fiery orange and magenta (fast) down to deep blue/cyan (slow) against a dark background.
+
+## kinetic_geometric_tesseract_rotation_4d
+- **Date**: 2026-07-03
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: Projecting a 4D hypercube (Tesseract) into 3D, and then into 2D. We rotate it in 4D space across the XW and YZ planes, generating a shape that continuously turns itself inside out.
+- **Techniques**: 16 vertices connected by 32 edges. Manual 4D rotation matrices, followed by a stereographic projection into 3D, then perspective into 2D. Drawn with 40 nested tesseracts with slightly offset rotation phases.
+- **Palette**: Wireframe matrix-green/cyan with additive blending.
+
+## kinetic_attraction_repulsion_particle_life_2d
+- **Date**: 2026-07-03
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: "Particle Life" or simulated artificial chemistry. 4 different colors of particles interact with specific attraction and repulsion forces, creating emergent structures like crawling worms, spinning cells, and crystal lattices.
+- **Techniques**: O(N^2) simulation over 4800 particles using numpy to calculate pairwise distances. Softened inverse square forces based on a 4x4 interaction matrix.
+- **Palette**: Neon Pink, Cyan, Yellow, and Purple against a dark space background.
+
+## kinetic_quantum_interference_probability_cloud_3d
+- **Date**: 2026-07-03
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: Simulating the probability density of an electron orbital (like the Hydrogen atom 4f orbital) using half a million points, slowly rotating the orbital in 3D space.
+- **Techniques**: Evaluates a spherical harmonic function combined with a radial distribution over 500,000 points. 3D coordinates are mapped to the probability density function, filtering out points below a probability threshold, and rendered with additive blending while rotating the camera.
+- **Palette**: Deep space background. The probability lobes are rendered in glowing cyan and magenta, representing positive and negative phase.
+
+## kinetic_supernova_explosion_shockwave_2d
+- **Date**: 2026-07-03
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A particle simulation of a stellar explosion, with an expanding shockwave of plasma that cools into glowing gas filaments as it expands.
+- **Techniques**: 100,000 particles moving outwards with an inverse-square deceleration and random turbulence added to their velocity over time, giving it an organic, stringy, nebular look.
+- **Palette**: Intense white/gold at the core, expanding into bright magenta and cooling into deep cyan and purple towards the edges. Additive blending against a pitch black void.
+
+## kinetic_cellular_automata_brians_brain_2d
+- **Date**: 2026-07-03
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A visualization of the "Brian's Brain" cellular automaton, which creates spectacular expanding diamond-like patterns reminiscent of firing neural synapses.
+- **Techniques**: Vectorized 2D cellular automata using SciPy's 2D convolution over a 3-state grid (Ready, Firing, Refractory). The grid is continually stimulated by random noise spikes to keep the pattern evolving endlessly.
+- **Palette**: Firing cells are brilliant cyan, Refractory are deep purple, and Ready are dark blue space background.
+
+## kinetic_bioluminescent_jellyfish_fractal_2d
+- **Date**: 2026-07-03
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A floating, pulsing fractal structure resembling a bioluminescent jellyfish, using recursive trigonometry to create trailing tentacles that respond to a simulated underwater current.
+- **Techniques**: Recursive branching where branch length and angle are modulated by a sine wave (breathing) and Perlin noise (current). Trails are rendered using additive transparent polygons.
+- **Palette**: Pitch black void, glowing cyan and electric blue tentacles, bright pink/magenta core.
+
 ## abstract_geometric_bauhaus_clockwork_2d
 - **Date**: 2026-07-02
 - **Type**: Animation (900 frames, 60fps)

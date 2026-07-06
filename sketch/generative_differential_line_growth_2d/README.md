@@ -1,18 +1,13 @@
 # generative_differential_line_growth_2d
 
-![Preview](generative_differential_line_growth_2d_p1.png)
-
-## Metadata
-- **Date**: 2026-06-28
-- **Theme**: A continuous differential line growth algorithm simulating biological cellular expansion, slowly blo
-- **Technique**: Differential line growth requires applying local repulsion forces while maintaining segment connectivity and handling dynamic subdivision as segments grow too long. This becomes computationally expensive $O(N^2)$ and generally destroys rendering speeds with thousands of nodes. To optimize this, the algorithm uses a pure Python/NumPy integration of `scipy.spatial.KDTree` to rapidly query local spatial neighborhoods in underlying C/C++ every frame. This allows the organic form to efficiently subdivide and grow into thousands of nodes without bottlenecking the real-time Py5 loop.
-- **Logic Lab Reference**: 
+**Date**: 2026-07-05
+**Type**: Animation (10-30s @ 60fps)
 
 ## Concept
-A continuous differential line growth algorithm simulating biological cellular expansion, slowly blooming into intricate, brain-like or fingerprint-like patterns.
+A single closed line that slowly expands, folds, and crumples into itself like a brain coral or a living organism. It mimics cellular growth in a confined space.
 
-## Technical Details
-- **Renderer**: Unknown
-- **Simulation**: Unknown
-- **Visuals**: Unknown
-- **Animation**: Contains animation details
+## Techniques
+Differential growth algorithm using numpy and scipy.spatial.cKDTree. A list of nodes connected by springs. Nodes experience a repulsive force from all other nearby nodes, but an attractive force to their immediate neighbors. New nodes are periodically inserted between adjacent nodes that stretch too far apart.
+
+## Palette
+Monochromatic organic. A clean, off-white background with a thin, intricate, dark charcoal line that grows continuously, overlapping into complex moiré patterns.

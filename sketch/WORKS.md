@@ -1,3 +1,108 @@
+## generative_lissajous_web_2d
+- **Date**: 2026-07-06
+- **Type**: Animation
+- **Concept**: A complex 3D-looking web constructed entirely from 2D Lissajous curves that slowly shift their phase and frequency over time. The curves are drawn with low opacity and high iteration counts to create volumetric forms.
+- **Techniques**: Connect points evaluated on parametric Lissajous equations `x = A sin(a*t + p), y = B sin(b*t + q)` where `a, b, p, q` are slowly mutating. Draw fine lines between successive points or across phase shifts to weave a web.
+- **Palette**: Iridescent synth. Deep cyan background with curves transitioning through magenta, yellow, and bright white.
+
+## generative_chladni_plate_resonance_2d
+- **Date**: 2026-07-05
+- **Type**: Animation
+- **Concept**: A simulation of Chladni figures, where fine sand particles organize into complex geometric patterns based on resonant acoustic frequencies. The frequency slowly shifts, causing the particles to dissolve into chaos before reforming into a new, higher-order symmetric pattern.
+- **Techniques**: A high-density particle system where each particle's velocity is driven toward the nodal lines of a 2D standing wave equation (sum of orthogonal sines and cosines). As the wave parameters animate, the nodal lines move, dragging the particles.
+- **Palette**: Elegant contrast. A warm, dark mahogany background (like a wooden soundboard) with bright, fine golden-white sand particles.
+
+## generative_recursive_voronoi_shatter_2d
+- **Date**: 2026-07-05
+- **Type**: Animation
+- **Concept**: A plane of color is shattered into a Voronoi diagram. The cell centers slowly drift. Periodically, the largest cells shatter into smaller Voronoi diagrams recursively, creating a fractal-like breaking pattern reminiscent of cracked glass or dry earth.
+- **Techniques**: Uses scipy.spatial.Voronoi to generate the cell polygons from a set of moving points. New points are added dynamically over time into regions with low point density.
+- **Palette**: Monochromatic architectural. Clean white background with fine, sharp black lines. Slowly, some cells fill with desaturated ochre or slate blue.
+
+## generative_slit_scan_video_feedback_2d
+- **Date**: 2026-07-05
+- **Type**: Animation
+- **Concept**: Emulating the classic slit-scan technique combined with video feedback loops. A central rotating object (or moving shape) is continuously sampled in horizontal slits. These slits are then fed back into the main canvas with slight scaling and color shifts, creating a tunnel-like, melting temporal smear.
+- **Techniques**: Screen pixel sampling and offset copying.
+- **Palette**: Retro glitch. High contrast black, white, and intense primary colors (red, green, blue).
+
+## generative_differential_line_growth_2d
+- **Date**: 2026-07-05
+- **Type**: Animation
+- **Concept**: A single closed line that slowly expands, folds, and crumples into itself like a brain coral or a living organism. It mimics cellular growth in a confined space.
+- **Techniques**: Differential growth algorithm using numpy and scipy.spatial.cKDTree. A list of nodes connected by springs. Nodes experience a repulsive force from all other nearby nodes, but an attractive force to their immediate neighbors. New nodes are periodically inserted between adjacent nodes that stretch too far apart.
+- **Palette**: Monochromatic organic. A clean, off-white background with a thin, intricate, dark charcoal line that grows continuously, overlapping into complex moiré patterns.
+
+## generative_isometric_cityscape_builder_2d
+- **Date**: 2026-07-05
+- **Type**: Animation
+- **Concept**: A procedural pseudo-3D isometric cityscape that constantly builds and rebuilds itself. Skyscrapers rise and fall rhythmically based on multiple overlapping 2D Perlin noise fields, creating the illusion of a breathing metropolis.
+- **Techniques**: Uses a dense grid of 2D quads drawn with an isometric projection offset. The height of each building is driven by moving noise functions. Depth sorting is natively achieved by iterating from back to front.
+- **Palette**: Synthwave sunset. A deep purple background, with buildings transitioning vertically from dark navy to bright magenta and glowing neon orange.
+
+## kinetic_particle_physics_vortex_2d
+- **Date**: 2026-07-05
+- **Type**: Animation
+- **Concept**: A swirling, physics-based particle vortex. Millions of small particles are drawn towards a central gravity well, but an orthogonal force field creates turbulence and orbital decay, resulting in a mesmerizing galaxy-like spin.
+- **Techniques**: Uses a dense array of particle positions and velocities, updated via basic Newtonian physics (gravity + drag + rotational forces). Rendered quickly with points. Added core repulsion to prevent singularity collapse and pixel density artifacts.
+- **Palette**: Star-forming nebula. Deep blue/black background with particles ranging from bright cyan and white to deep purple and crimson.
+
+## kinetic_optical_flow_typography_distortion_2d
+- **Date**: 2026-07-05
+- **Type**: Animation
+- **Concept**: Large, bold typography slowly scrolling or flashing on screen, while being dynamically distorted by an invisible optical flow field. It creates the illusion of text melting, smearing, and being pulled through a viscous fluid.
+- **Techniques**: Uses a hidden buffer where text is rendered cleanly. A 2D noise field (Perlin) creates flow vectors. The main sketch samples the hidden buffer, offset by the flow vectors, and redraws it with slight alpha fading, leading to a feedback loop of text melting across the screen.
+- **Palette**: Cyberpunk data corruption. Bright yellow and cyan text over a deep CRT-glitched scanline background.
+
+## kinetic_strange_attractor_particle_swarm_2d
+- **Date**: 2026-07-05
+- **Type**: Animation
+- **Concept**: A visual exploration of chaotic strange attractors mapped into a 2D space. 150,000 tiny glowing particles trace the complex chaotic orbits, sweeping out detailed, gossamer-like folded structures that evolve as the attractor parameters slowly drift over time.
+- **Techniques**: Initializes 150,000 particles at random coordinates. Every frame, applies a parameterized Clifford strange attractor equation to update each particle's position. The parameters of the equation (a, b, c, d) slowly interpolate using a smoothstep function, causing the entire swarm to smoothly mutate from one attractor shape into another. Rendered with additive blending using py5.POINTS.
+- **Palette**: Iridescent bioluminescence. Deep void black background, with glowing cyan, electric magenta, and warm gold particles.
+
+## kinetic_fractal_cellular_growth_2d
+- **Date**: 2026-07-05
+- **Type**: Animation
+- **Concept**: An incredibly detailed, organic visualization of recursive cellular division that morphs into a fractal labyrinth over time.
+- **Techniques**: A variation of the Ulam spiral and cellular automata. Uses highly vectorized Numpy bitwise operations on a grid of integers to simulate rapidly expanding cellular structures. At a certain generation, cells mutate and start emitting secondary fractal patterns, generating a hypnotic, infinite expansion effect.
+- **Palette**: Monochromatic neon. Deep charcoal grey, with glowing hot pink and electric violet cells.
+
+## generative_vector_field_interference_waves_2d
+- **Date**: 2026-07-05
+- **Type**: Animation
+- **Concept**: A visual exploration of multiple overlapping sinusoidal interference patterns mapped across a highly dense vector field. Millions of tiny line segments rotate dynamically in response to the constructive and destructive interference of the invisible waves passing through them.
+- **Techniques**: Generates a grid of 60,000 tiny line segments. The angle of each segment is derived by summing 4 distinct rotating 2D sine waves with different frequencies and phases. Rendered natively with py5.LINES, utilizing numpy arrays to calculate all angles simultaneously and dynamically set the stroke color based on the local wave intensity.
+- **Palette**: Electric neon interference. Deep black background with vivid, searing hues of magenta, neon green, and bright yellow.
+
+## kinetic_fluid_smoke_advection_2d
+- **Date**: 2026-07-05
+- **Type**: Animation
+- **Concept**: A generative fluid simulation of dense, luminescent smoke advecting across the canvas. A hidden density field drives the flow, with smoke continually injected from multiple moving emitters. It forms beautiful swirling eddies and dissipating trails.
+- **Techniques**: Solves a lightweight Eulerian fluid simulation (Navier-Stokes) on a lower-resolution grid to keep performance at 60fps. The velocity field advects the density field, and then the density field is mapped to Py5's `np_pixels` with bilinear interpolation for a smooth, organic appearance.
+- **Palette**: Neon gas. A dark navy void, with dense smoke glowing in vivid pink, electric blue, and toxic green, slowly cooling to dark purple as it dissipates.
+
+## kinetic_geometric_tesselation_kaleidoscope_2d
+- **Date**: 2026-07-05
+- **Type**: Animation
+- **Concept**: A hypnotic, rotating kaleidoscope built from procedurally generated geometric tessellations. The shapes continuously fold, intersect, and change color, creating a deeply relaxing and infinitely complex mandala.
+- **Techniques**: Uses polar coordinates and a high degree of symmetry. A base triangular wedge is drawn with overlapping transparent polygons whose vertices shift using Perlin noise. This wedge is then cloned, rotated, and mirrored multiple times to form a complete 360-degree mandala. Additive blending creates intense glowing overlaps.
+- **Palette**: Deep space blue void. Glowing shapes in cyan, magenta, and electric blue.
+
+## kinetic_fluid_tensor_magnetic_field_2d
+- **Date**: 2026-07-05
+- **Type**: Animation
+- **Concept**: A generative simulation of iron filings being pushed around by a massive set of shifting magnetic dipoles, but rendered with smooth, flowing tensors rather than discrete lines. It produces an intricate, silky, high-contrast magnetic interference pattern.
+- **Techniques**: Calculates the magnetic vector field from 20 moving dipoles. Instead of discrete particles, it evaluates a high-resolution 2D grid of field lines using a localized Line Integral Convolution (LIC) technique or a smooth vector field tracer that draws overlapping translucent curves. The curves twist and align to the magnetic field.
+- **Palette**: Deep obsidian black background. The field lines are glowing copper, gold, and deep bronze, mapping to the field intensity.
+
+## kinetic_optical_flow_glitch_grid_2d
+- **Date**: 2026-07-05
+- **Type**: Animation
+- **Concept**: A high-contrast grid of symbols or simple shapes that glitch and shift rapidly, driven by an underlying optical flow algorithm running over invisible Perlin noise fields. It creates a feeling of a malfunctioning cybernetic matrix or a digital display under extreme electromagnetic interference.
+- **Techniques**: A dense 2D grid structure. At each grid point, a simple glyph (like a square, line, or circle) is drawn. The size, rotation, and color are determined by the curl noise flow field at that point. We add random, high-frequency "glitch" offsets (sudden jumps in X/Y or color inversion) based on a secondary noise layer threshold to simulate digital tearing.
+- **Palette**: Harsh cyberpunk contrast. Pitch black background, pure white base grid, with intense sudden flashes of pure magenta and cyan.
+
 ## kinetic_math_clifford_attractor_morph_2d
 - **Date**: 2026-07-05
 - **Type**: Animation (536 frames, 60fps)

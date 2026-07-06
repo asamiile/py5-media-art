@@ -17,103 +17,70 @@ from lib.sizes import get_sizes
 SKETCH_DIR = sketch_dir(__file__)
 WORK_NAME = SKETCH_DIR.name
 FRAMES_DIR = SKETCH_DIR / "frames"
-DURATION_SEC = random.randint(15, 30)
+DURATION_SEC = random.randint(15, 30)  # Random duration up to 30s
 FPS = 60
 TOTAL_FRAMES = DURATION_SEC * FPS
 PREVIEW_FILENAME = f"{WORK_NAME}_p1.png"
 PREVIEW_SIZE, OUTPUT_SIZE, _ = get_sizes()
 SIZE = OUTPUT_SIZE
 
+# Particle system
 N_PARTICLES = 150000
+x = np.random.uniform(-3, 3, N_PARTICLES).astype(np.float32)
+y = np.random.uniform(-3, 3, N_PARTICLES).astype(np.float32)
 
-px = None
-py = None
-vx = None
-vy = None
+# Clifford attractor params
+# a, b, c, d
+params_start = np.array([1.4, 1.56, 1.4, -6.56])
+params_end = np.array([-1.7, 1.3, -0.1, -1.2])
 
 def setup():
-    global px, py, vx, vy
     py5.size(*SIZE)
     py5.pixel_density(1)
-    py5.background(20, 10, 5)
+    py5.background(5)
     FRAMES_DIR.mkdir(exist_ok=True)
-    
-    px = np.random.uniform(0, SIZE[0], N_PARTICLES).astype(np.float32)
-    py = np.random.uniform(0, SIZE[1], N_PARTICLES).astype(np.float32)
-    vx = np.zeros(N_PARTICLES, dtype=np.float32)
-    vy = np.zeros(N_PARTICLES, dtype=np.float32)
-
-def chladni_val_and_grad(x, y, n, m, a=1.0, b=1.0):
-    # Map coordinates to [-pi, pi] based on screen size
-    scale = np.pi / min(SIZE) * 2.0
-    sx = (x - SIZE[0]/2) * scale
-    sy = (y - SIZE[1]/2) * scale
-    
-    snx = np.sin(n * sx)
-    sny = np.sin(n * sy)
-    smx = np.sin(m * sx)
-    smy = np.sin(m * sy)
-    
-    cnx = np.cos(n * sx)
-    cny = np.cos(n * sy)
-    cmx = np.cos(m * sx)
-    cmy = np.cos(m * sy)
-    
-    L = a * snx * smy + b * smx * sny
-    
-    dL_dx = (a * n * cnx * smy + b * m * cmx * sny) * scale
-    dL_dy = (a * m * snx * cmy + b * n * smx * cny) * scale
-    
-    fx = -2.0 * L * dL_dx
-    fy = -2.0 * L * dL_dy
-    
-    return fx, fy
 
 def draw():
-    global px, py, vx, vy
+    global x, y
     
-    # Very slight fade for motion blur
+    # Trails fade
     py5.blend_mode(py5.BLEND)
     py5.no_stroke()
-    py5.fill(20, 10, 5, 20)
+    py5.fill(5, 5, 8, 20)
     py5.rect(0, 0, SIZE[0], SIZE[1])
     
-    # Smoothly transition parameters
-    t = py5.frame_count * 0.005
-    n = 2.0 + np.sin(t * 1.3) * 1.5
-    m = 3.0 + np.cos(t * 0.9) * 2.0
+    # Interpolate parameters
+    progress = py5.frame_count / TOTAL_FRAMES
+    # Smoothstep interpolation
+    progress = progress * progress * (3 - 2 * progress)
     
-    fx, fy = chladni_val_and_grad(px, py, n, m)
+    p = params_start + (params_end - params_start) * progress
+    a, b, c, d = p
     
-    # Add some noise to prevent them from getting completely stuck
-    noise_str = 2.0
-    nx = py5.os_noise(px * 0.01, py * 0.01, t) * 2 - 1
-    ny = py5.os_noise(px * 0.01 + 100, py * 0.01 + 100, t) * 2 - 1
+    # Clifford Attractor step
+    x_new = np.sin(a * y) + c * np.cos(a * x)
+    y_new = np.sin(b * x) + d * np.cos(b * y)
     
-    # Accelerate
-    force_mult = 50.0
-    vx += fx * force_mult + nx * noise_str
-    vy += fy * force_mult + ny * noise_str
+    x[:] = x_new
+    y[:] = y_new
     
-    # Drag
-    vx *= 0.90
-    vy *= 0.90
+    # Map to screen
+    scale = SIZE[1] * 0.18
+    screen_x = x * scale + SIZE[0] / 2
+    screen_y = y * scale + SIZE[1] / 2
     
-    px += vx
-    py += vy
-    
-    # Keep on screen by wrapping
-    px = np.mod(px, SIZE[0])
-    py = np.mod(py, SIZE[1])
-    
-    # Draw points
+    # Fast rendering
     py5.blend_mode(py5.ADD)
-    py5.stroke(255, 240, 200, 100)
-    py5.stroke_weight(1.5)
+    py5.stroke_weight(1)
+    
+    r_val = int(50 + progress * 100)
+    g_val = int(200 - progress * 100)
+    b_val = 255
+    py5.stroke(r_val, g_val, b_val, 120)
     
     py5.begin_shape(py5.POINTS)
     for i in range(N_PARTICLES):
-        py5.vertex(px[i], py[i])
+        py5.vertex(screen_x[i], screen_y[i])
     py5.end_shape()
 
     py5.save_frame(str(FRAMES_DIR / "frame-####.png"))
@@ -123,8 +90,6 @@ def draw():
         if py5.np_pixels.std() < 1.0:
             print(f"[Error] Blank screen detected on frame {py5.frame_count} (std < 1.0). Aborting.")
             import os
-            import sys
-            sys.stdout.flush()
             os._exit(1)
 
     if py5.frame_count % 60 == 0:

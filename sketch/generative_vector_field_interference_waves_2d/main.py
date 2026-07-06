@@ -3,6 +3,7 @@ import shutil
 import subprocess
 import sys
 import random
+import math
 import numpy as np
 import py5
 
@@ -17,103 +18,66 @@ from lib.sizes import get_sizes
 SKETCH_DIR = sketch_dir(__file__)
 WORK_NAME = SKETCH_DIR.name
 FRAMES_DIR = SKETCH_DIR / "frames"
-DURATION_SEC = random.randint(15, 30)
+DURATION_SEC = random.randint(15, 30)  # Random duration up to 30s
 FPS = 60
 TOTAL_FRAMES = DURATION_SEC * FPS
 PREVIEW_FILENAME = f"{WORK_NAME}_p1.png"
 PREVIEW_SIZE, OUTPUT_SIZE, _ = get_sizes()
 SIZE = OUTPUT_SIZE
 
-N_PARTICLES = 150000
-
-px = None
-py = None
-vx = None
-vy = None
+# Grid config
+STEP = 15
+COLS = SIZE[0] // STEP
+ROWS = SIZE[1] // STEP
+x_coords, y_coords = np.meshgrid(np.arange(COLS) * STEP + STEP/2, np.arange(ROWS) * STEP + STEP/2)
 
 def setup():
-    global px, py, vx, vy
     py5.size(*SIZE)
     py5.pixel_density(1)
-    py5.background(20, 10, 5)
+    py5.background(10)
     FRAMES_DIR.mkdir(exist_ok=True)
     
-    px = np.random.uniform(0, SIZE[0], N_PARTICLES).astype(np.float32)
-    py = np.random.uniform(0, SIZE[1], N_PARTICLES).astype(np.float32)
-    vx = np.zeros(N_PARTICLES, dtype=np.float32)
-    vy = np.zeros(N_PARTICLES, dtype=np.float32)
-
-def chladni_val_and_grad(x, y, n, m, a=1.0, b=1.0):
-    # Map coordinates to [-pi, pi] based on screen size
-    scale = np.pi / min(SIZE) * 2.0
-    sx = (x - SIZE[0]/2) * scale
-    sy = (y - SIZE[1]/2) * scale
-    
-    snx = np.sin(n * sx)
-    sny = np.sin(n * sy)
-    smx = np.sin(m * sx)
-    smy = np.sin(m * sy)
-    
-    cnx = np.cos(n * sx)
-    cny = np.cos(n * sy)
-    cmx = np.cos(m * sx)
-    cmy = np.cos(m * sy)
-    
-    L = a * snx * smy + b * smx * sny
-    
-    dL_dx = (a * n * cnx * smy + b * m * cmx * sny) * scale
-    dL_dy = (a * m * snx * cmy + b * n * smx * cny) * scale
-    
-    fx = -2.0 * L * dL_dx
-    fy = -2.0 * L * dL_dy
-    
-    return fx, fy
-
 def draw():
-    global px, py, vx, vy
-    
-    # Very slight fade for motion blur
+    # Subtle fading for trails
     py5.blend_mode(py5.BLEND)
     py5.no_stroke()
-    py5.fill(20, 10, 5, 20)
+    py5.fill(10, 10, 15, 20)
     py5.rect(0, 0, SIZE[0], SIZE[1])
     
-    # Smoothly transition parameters
-    t = py5.frame_count * 0.005
-    n = 2.0 + np.sin(t * 1.3) * 1.5
-    m = 3.0 + np.cos(t * 0.9) * 2.0
+    t = py5.frame_count * 0.02
     
-    fx, fy = chladni_val_and_grad(px, py, n, m)
-    
-    # Add some noise to prevent them from getting completely stuck
-    noise_str = 2.0
-    nx = py5.os_noise(px * 0.01, py * 0.01, t) * 2 - 1
-    ny = py5.os_noise(px * 0.01 + 100, py * 0.01 + 100, t) * 2 - 1
-    
-    # Accelerate
-    force_mult = 50.0
-    vx += fx * force_mult + nx * noise_str
-    vy += fy * force_mult + ny * noise_str
-    
-    # Drag
-    vx *= 0.90
-    vy *= 0.90
-    
-    px += vx
-    py += vy
-    
-    # Keep on screen by wrapping
-    px = np.mod(px, SIZE[0])
-    py = np.mod(py, SIZE[1])
-    
-    # Draw points
     py5.blend_mode(py5.ADD)
-    py5.stroke(255, 240, 200, 100)
-    py5.stroke_weight(1.5)
     
-    py5.begin_shape(py5.POINTS)
-    for i in range(N_PARTICLES):
-        py5.vertex(px[i], py[i])
+    # Calculate wave fields
+    w1 = np.sin((x_coords * 0.005) + (y_coords * 0.01) - t)
+    w2 = np.sin((x_coords * -0.008) + (y_coords * 0.005) + t * 1.5)
+    w3 = np.cos((x_coords * 0.01) + (y_coords * -0.007) + t * 0.8)
+    w4 = np.sin(np.sqrt((x_coords - SIZE[0]/2)**2 + (y_coords - SIZE[1]/2)**2) * 0.01 - t * 2)
+    
+    total_field = w1 + w2 + w3 + w4
+    
+    angles = total_field * py5.PI
+    magnitudes = (np.abs(total_field) / 4.0)
+    
+    # Colors mapped from magnitude
+    r_field = np.clip(100 + np.sin(magnitudes * 10) * 155, 0, 255)
+    g_field = np.clip(100 + np.sin(magnitudes * 10 + 2) * 155, 0, 255)
+    b_field = np.clip(100 + np.sin(magnitudes * 10 + 4) * 155, 0, 255)
+    
+    line_len = STEP * 1.2
+    
+    x1 = x_coords - np.cos(angles) * line_len * 0.5
+    y1 = y_coords - np.sin(angles) * line_len * 0.5
+    x2 = x_coords + np.cos(angles) * line_len * 0.5
+    y2 = y_coords + np.sin(angles) * line_len * 0.5
+    
+    py5.stroke_weight(2)
+    py5.begin_shape(py5.LINES)
+    for i in range(ROWS):
+        for j in range(COLS):
+            py5.stroke(r_field[i, j], g_field[i, j], b_field[i, j], 150)
+            py5.vertex(x1[i, j], y1[i, j])
+            py5.vertex(x2[i, j], y2[i, j])
     py5.end_shape()
 
     py5.save_frame(str(FRAMES_DIR / "frame-####.png"))
@@ -123,8 +87,6 @@ def draw():
         if py5.np_pixels.std() < 1.0:
             print(f"[Error] Blank screen detected on frame {py5.frame_count} (std < 1.0). Aborting.")
             import os
-            import sys
-            sys.stdout.flush()
             os._exit(1)
 
     if py5.frame_count % 60 == 0:

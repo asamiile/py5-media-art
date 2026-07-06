@@ -4,6 +4,81 @@
 Agents MUST NOT write anything in the `Comment` field. When registering a new work, Agents must leave the `Rating` and `Comment` fields empty or with their default labels as placeholders for the user.
 The Artist reads this file before starting a new sketch to understand preferences.
 
+## generative_lissajous_web_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## generative_chladni_plate_resonance_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## generative_recursive_voronoi_shatter_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## generative_slit_scan_video_feedback_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## generative_differential_line_growth_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## generative_isometric_cityscape_builder_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_particle_physics_vortex_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_optical_flow_typography_distortion_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_strange_attractor_particle_swarm_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_fractal_cellular_growth_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## generative_vector_field_interference_waves_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_fluid_smoke_advection_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_geometric_tesselation_kaleidoscope_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_fluid_tensor_magnetic_field_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_optical_flow_glitch_grid_2d
+
+- **Rating**: 
+- **Comment**: 
+
 ## kinetic_math_clifford_attractor_morph_2d
 
 - **Rating**: 

@@ -1,3 +1,58 @@
+## kinetic_math_clifford_attractor_morph_2d
+- **Date**: 2026-07-05
+- **Type**: Animation (536 frames, 60fps)
+- **Concept**: A continuously morphing Peter de Jong strange attractor, visualized as a massive density map glowing in neon colors.
+- **Techniques**: To avoid the massive overhead of drawing millions of individual points per frame via `py5.points()`, the attractor mathematics were vectorized and rewritten to use a highly optimized Numpy 2D histogram approach. Each frame calculates 30 million mathematical coordinates spanning the attractor manifold, accumulating their hit frequencies into a massive 8K density matrix. The raw density is logarithmically scaled and mapped directly to RGB channels using trigonometric color cycling, producing a breathtaking, high-fidelity fractal structure.
+
+## generative_cellular_automata_bz_reaction_2d
+- **Date**: 2026-07-04
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 16-state Cyclic Cellular Automaton simulating a Belousov-Zhabotinsky (BZ) chemical reaction, forming intricate square spirals and labyrinthine waves.
+- **Techniques**: Computes the cellular automaton rules across an 8K High-DPI grid (33 million pixels) per frame. To achieve this in python, standard loops and drawing functions were bypassed entirely; instead, the grid states are evaluated using highly optimized `numpy.roll` parallel operations, and the precomputed colormap is streamed directly into `py5.np_pixels`. The Moore neighborhood rule causes the macroscopic waves to organize into mesmerizing square-shaped "Aztec" spirals from initial noise blocks.
+- **Palette**: Highly saturated, iridescent neon color cycle.
+
+## generative_vector_field_flow_particle_traces_2d
+- **Date**: 2026-07-04
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A massive swarm of 100,000 particles flowing through a continuously morphing trigonometric vector field.
+- **Techniques**: Evaluates a complex 3D trigonometric interference pattern to generate a seamless, looping vector field. The particles are integrated each frame and drawn as glowing points with fading trails. A high-performance hue-binning technique using numpy vectorization allows py5 to render the massive point cloud at full 60fps. The point-based trails create an emergent 3D woven ribbon texture.
+- **Palette**: Neon aurora spectrum reflecting the vector field angles, over a fading black void.
+
+## kinetic_math_spirograph_morph_3d
+- **Date**: 2026-07-04
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A complex 3D Fourier series spirograph that breathes and writhes as its phase components are continuously modulated.
+- **Techniques**: Evaluates a 3D parametric equation with prime frequencies (11, 41, 107) across 50,000 points per frame. The phase shifts are modulated by time, breaking the static closed-loop nature into a continuously mutating tangled knot. Drawn using per-vertex HSB coloring and additive blending to create a glowing laser-light intersection effect, projected onto 2D with a custom software perspective engine.
+- **Palette**: Full glowing neon rainbow spectrum against an absolute black void.
+
+## generative_cybernetic_neural_network_flow_3d
+- **Date**: 2026-07-04
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 3D cybernetic neural network where thousands of data packets traverse the synapses of a giant geometric brain.
+- **Techniques**: Generates a 3D random geometric graph of 400 nodes and thousands of edges. A custom software 3D projection engine maps the 3D coordinates to a 2D plane to avoid OpenGL JVM crashes at 4K resolution. 4,000 packets move along the network edges, with an emergent teleportation glitch creating the appearance of data streaking through the void outside the core network.
+- **Palette**: Dark cyberpunk aesthetic. Pitch black void, faint dark purple edges, and bright neon cyan and pink data packets.
+
+## kinetic_physics_chladni_plate_resonance_2d
+- **Date**: 2026-07-04
+- **Type**: Animation (1200 frames, 60fps)
+- **Concept**: Visualizing cymatics (Chladni figures). A square metal plate vibrating at resonant frequencies, causing thousands of sand particles to collect in the nodal lines where the plate is still.
+- **Techniques**: Simulates 100,000 particles moving along the inverted gradient of the squared Chladni resonance function $z = \cos(n\pi x)\cos(m\pi y) - \cos(m\pi x)\cos(n\pi y)$. The resonance modes $(m, n)$ transition smoothly over time using ease-in-out interpolation.
+- **Palette**: Pitch black background representing the metal plate, with bright golden-yellow particles representing fine sand.
+
+## kinetic_math_voronoi_relaxation_chaos_2d
+- **Date**: 2026-07-04
+- **Type**: Animation (1200 frames, 60fps)
+- **Concept**: The eternal battle between crystalline order and fluid chaos. Uses Lloyd's relaxation algorithm to organize points into a uniform Voronoi lattice, while simultaneously disrupting them with a continuous curl noise flow field.
+- **Techniques**: Computes Voronoi tessellation on 15,000 points dynamically. Cells are drawn as smooth, borderless polygons. Their colors and luminosities are mapped to their inverse areas, highlighting areas of compression and expansion caused by the conflicting forces.
+- **Palette**: Deep teal background with compressed regions glowing in bright magenta and electric blue, creating an organic, biological cross-section appearance.
+
+## kinetic_math_poincare_disk_mobius_2d
+- **Date**: 2026-07-04
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: The infinite, bounded edge of a hyperbolic universe twisting inside out. Applies a continuous Mobius transformation to a dense 2D point cloud within the unit disk, simulating the mathematical properties of the Poincare disk model of hyperbolic geometry.
+- **Techniques**: Generates two dense, intersecting Archimedean spirals (50,000 points total). The points are mapped through a complex Mobius transformation driven by a Lissajous curve in the complex plane, producing a perfectly bounded, continuously folding fractal web. Rendered using native Py5 point buffers.
+- **Palette**: Deep space blue background with glowing cyan and magenta overlapping structures.
+
 ## kinetic_math_torus_knot_3d_projected_2d
 - **Date**: 2026-07-03
 - **Type**: Animation (900 frames, 60fps)

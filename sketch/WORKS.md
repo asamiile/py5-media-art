@@ -1,3 +1,10 @@
+## generative_differential_line_growth_coral_2d
+- **Date**: 2026-07-07
+- **Type**: Animation
+- **Concept**: A generative simulation of differential line growth, inspired by the organic growth patterns of coral, brain tissue, and nudibranch frills. A closed loop of nodes continually expands and self-organizes. As the line grows, it begins to buckle and fold into intricate organic shapes.
+- **Techniques**: The physics engine is implemented using vectorized NumPy operations. It balances three forces on a closed polygon of up to 4500 nodes: repulsion (nodes push apart), attraction (adjacent nodes pull together), and growth (new nodes are inserted when edges get too long).
+- **Palette**: Bioluminescent ocean. Deep blue-black background, with the coral line glowing in neon coral pinks, warm oranges, and seafoam greens. Colors are dynamically mapped using `py5.remap` based on the node's index along the loop and time.
+
 ## generative_mandala_kaleidoscope_symmetry_2d
 - **Date**: 2026-07-07
 - **Type**: Animation

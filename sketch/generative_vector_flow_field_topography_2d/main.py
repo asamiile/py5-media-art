@@ -2,6 +2,7 @@ from pathlib import Path
 import shutil
 import subprocess
 import sys
+import random
 import numpy as np
 import py5
 
@@ -16,58 +17,107 @@ from lib.sizes import get_sizes
 SKETCH_DIR = sketch_dir(__file__)
 WORK_NAME = SKETCH_DIR.name
 FRAMES_DIR = SKETCH_DIR / "frames"
-DURATION_SEC = 10
+DURATION_SEC = random.randint(15, 30)
 FPS = 60
 TOTAL_FRAMES = DURATION_SEC * FPS
 PREVIEW_FILENAME = f"{WORK_NAME}_p1.png"
 PREVIEW_SIZE, OUTPUT_SIZE, _ = get_sizes()
 SIZE = OUTPUT_SIZE
 
+NUM_PARTICLES = 25000
+
+pos = None
+vel = None
+colors = None
+
 def setup():
-    py5.size(*SIZE, py5.P2D)
+    global pos, vel, colors
+    py5.size(*SIZE)
     py5.pixel_density(1)
+    py5.background(2, 5, 12)
     FRAMES_DIR.mkdir(exist_ok=True)
-    py5.color_mode(py5.HSB, 360, 100, 100, 100)
-    py5.noise_seed(99)
+    
+    pos = np.random.rand(NUM_PARTICLES, 2) * [SIZE[0], SIZE[1]]
+    vel = np.zeros((NUM_PARTICLES, 2))
+    
+    # Pre-calculate colors (Deep sea bioluminescence)
+    colors = np.zeros((NUM_PARTICLES, 3), dtype=np.uint8)
+    for i in range(NUM_PARTICLES):
+        r = random.randint(10, 50)
+        g = random.randint(150, 255)
+        b = random.randint(150, 255)
+        colors[i] = [r, g, b]
 
 def draw():
-    py5.background(10, 10, 15)
+    global pos, vel, colors
     
+    # Motion blur fade
+    py5.blend_mode(py5.BLEND)
+    py5.no_stroke()
+    py5.fill(2, 5, 12, 12)
+    py5.rect(0, 0, SIZE[0], SIZE[1])
+    
+    W, H = SIZE[0], SIZE[1]
+    t = py5.frame_count * 0.005
+    
+    # Calculate angles from 3D noise (x, y, t)
+    # Scale coordinates to get smooth noise field
+    nx = pos[:, 0] * 0.0015
+    ny = pos[:, 1] * 0.0015
+    
+    angles = np.zeros(NUM_PARTICLES)
+    
+    for i in range(NUM_PARTICLES):
+        angles[i] = py5.os_noise(nx[i], ny[i], t) * py5.TWO_PI * 4.0
+        
+    speed = 4.0
+    vel[:, 0] = np.cos(angles) * speed
+    vel[:, 1] = np.sin(angles) * speed
+    
+    pos += vel
+    
+    # Out of bounds check
+    out_of_bounds = (pos[:, 0] < 0) | (pos[:, 0] > W) | (pos[:, 1] < 0) | (pos[:, 1] > H)
+    num_out = np.sum(out_of_bounds)
+    if num_out > 0:
+        pos[out_of_bounds, 0] = np.random.uniform(0, W, num_out)
+        pos[out_of_bounds, 1] = np.random.uniform(0, H, num_out)
+        
+    # Draw particles
     py5.blend_mode(py5.ADD)
-    py5.stroke_weight(2)
+    py5.stroke_weight(1.5)
     
-    grid_size = 30
-    cols = py5.width // grid_size + 2
-    rows = py5.height // grid_size + 2
-    
-    z_offset = py5.frame_count * 0.008
-    
-    for y in range(rows):
-        for x in range(cols):
-            x_pos = x * grid_size
-            y_pos = y * grid_size
-            
-            angle = py5.os_noise(x * 0.03, y * 0.03, z_offset) * py5.TWO_PI * 3
-            v = py5.os_noise(x * 0.02, y * 0.02, z_offset + 100)
-            
-            length = py5.remap(v, -1, 1, 10, grid_size * 2.5)
-            
-            hue = py5.remap(py5.sin(angle), -1, 1, 150, 280)
-            py5.stroke(hue, 90, 90, 80)
-            
-            py5.push_matrix()
-            py5.translate(x_pos, y_pos)
-            py5.rotate(angle)
-            py5.line(-length/2, 0, length/2, 0)
-            py5.pop_matrix()
+    # Draw in chunks for color
+    chunk_size = NUM_PARTICLES // 10
+    for i in range(10):
+        start = i * chunk_size
+        end = (i + 1) * chunk_size
+        
+        avg_r = np.mean(colors[start:end, 0])
+        avg_g = np.mean(colors[start:end, 1])
+        avg_b = np.mean(colors[start:end, 2])
+        
+        py5.stroke(avg_r, avg_g, avg_b, 60)
+        py5.points(pos[start:end])
 
     py5.save_frame(str(FRAMES_DIR / "frame-####.png"))
 
+    if py5.frame_count == 2 or py5.frame_count % 60 == 0:
+        py5.load_np_pixels()
+        if py5.np_pixels.std() < 1.0:
+            print(f"[Error] Blank screen detected on frame {py5.frame_count} (std < 1.0). Aborting.")
+            import os
+            import sys
+            sys.stdout.flush()
+            os._exit(1)
+
     if py5.frame_count % 60 == 0:
-        print(f"[Render Progress] Frame {py5.frame_count}/{TOTAL_FRAMES}")
+        print(f"[Render Progress] Frame {py5.frame_count}/{TOTAL_FRAMES} ({py5.frame_count/TOTAL_FRAMES*100:.1f}%)")
 
     if py5.frame_count >= TOTAL_FRAMES:
         py5.exit_sketch()
+        
+        print(f"[Render FFmpeg] Compiling {TOTAL_FRAMES} frames into video...")
         subprocess.run([
             "ffmpeg", "-y", "-r", str(FPS),
             "-i", str(FRAMES_DIR / "frame-%04d.png"),
@@ -80,6 +130,7 @@ def draw():
         
         if FRAMES_DIR.exists():
             shutil.rmtree(FRAMES_DIR)
+            print("[Render Cleanup] Temporary frames directory successfully removed.")
             
         import os
         os._exit(0)

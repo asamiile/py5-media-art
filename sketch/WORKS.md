@@ -1,3 +1,10 @@
+## kinetic_phyllotaxis_golden_spiral_bloom_2d
+- **Date**: 2026-07-08
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A mesmerizing, breathing phyllotaxis spiral generated using the golden ratio. Thousands of glowing florets spiral outwards, expanding and contracting like a living organism.
+- **Techniques**: Polar coordinate math using the golden angle (137.5 degrees). The divergence angle oscillates slightly, warping the spiral arms dynamically. Florets pulse in size and color over time.
+- **Palette**: Bioluminescent neon green, turquoise, and deep ocean blue.
+
 ## kinetic_cyberpunk_glitch_cityscape_2d
 - **Date**: 2026-07-08
 - **Type**: Animation (900 frames, 60fps)

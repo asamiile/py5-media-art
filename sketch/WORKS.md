@@ -1,3 +1,10 @@
+## kinetic_optical_illusion_droste_spiral_2d
+- **Date**: 2026-07-08
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: An optical illusion utilizing the Droste effect, creating an infinite, seamless zoom into a twisting geometric tunnel.
+- **Techniques**: Concentric polygons (hexagons) are drawn with exponentially decreasing scale and rotating angles. By animating the base scale logarithmically, a perfect loop is achieved. Vertices are displaced using 3D Perlin noise mapped to time, giving the tunnel an organic, pulsing feel.
+- **Palette**: High contrast black and white core geometry with a subtle, shifting neon iridescent stroke on the edges.
+
 ## kinetic_isometric_data_grid_matrix_2d
 - **Date**: 2026-07-08
 - **Type**: Animation (900 frames, 60fps)

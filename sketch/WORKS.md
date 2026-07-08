@@ -1,3 +1,10 @@
+## generative_isometric_recursive_cubes_2d
+- **Date**: 2026-07-08
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A monolithic, infinite alien architecture that constantly builds itself inward in an impossible optical illusion.
+- **Techniques**: Procedural generation of a 3D grid of cubes drawn using an isometric 2D projection. We recursively subdivide larger cubes into smaller cubes based on a 3D noise field.
+- **Palette**: Monochromatic slate and ash gray, with stark directional shadows and intense neon magenta accents deep inside the structure.
+
 ## kinetic_organic_fluid_marbling_2d
 - **Date**: 2026-07-08
 - **Type**: Animation (900 frames, 60fps)

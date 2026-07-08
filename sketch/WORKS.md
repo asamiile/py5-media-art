@@ -1,3 +1,10 @@
+## kinetic_sacred_geometry_metatrons_cube_2d
+- **Date**: 2026-07-08
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: An animated, glowing construction of Metatron's Cube, a sacred geometry figure composed of 13 circles and the lines connecting their centers.
+- **Techniques**: The 13 center points are mathematically placed and slowly rotated. The connections and circle radii pulse with overlapping sine waves and 2D Perlin noise based on their distance from the center, creating a cosmic heartbeat effect.
+- **Palette**: Deep cosmic purple background with brilliant gold, cyan, and white glowing geometric lines.
+
 ## kinetic_abstract_geometric_truchet_tiles_maze_2d
 - **Date**: 2026-07-08
 - **Type**: Animation (900 frames, 60fps)

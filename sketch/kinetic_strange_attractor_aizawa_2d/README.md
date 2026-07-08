@@ -1,18 +1,15 @@
 # kinetic_strange_attractor_aizawa_2d
 
-![Preview](kinetic_strange_attractor_aizawa_2d_p1.png)
-
-## Metadata
-- **Date**: 2026-07-01
-- **Theme**: An animated 3D visualization of the Aizawa strange attractor, a chaotic mathematical system known fo
-- **Technique**: Unknown
-- **Logic Lab Reference**: 
+**Date**: 2026-07-07
+**Type**: Animation (10-30s @ 60fps)
 
 ## Concept
-An animated 3D visualization of the Aizawa strange attractor, a chaotic mathematical system known for its beautiful, spherical, tube-like structure.
+A generative visualization of the Aizawa strange attractor. We simulate thousands of particles tracing the paths of the chaotic Aizawa equations. As they move, they draw glowing trails that slowly build up a beautiful, sphere-like complex chaotic structure in 2D projection. The attractor slowly rotates in 3D space before being projected to 2D.
 
-## Technical Details
-- **Renderer**: Unknown
-- **Simulation**: Unknown
-- **Visuals**: Unknown
-- **Animation**: Contains animation details
+## Techniques
+The Aizawa attractor equations are solved using simple Euler integration for 50,000 points concurrently using NumPy. 
+The 3D points are then rotated around the Y and X axes and projected orthogonally to 2D.
+To keep it fast, we do the math in NumPy, project, and draw them as tiny points with additive blending, creating a dense glowing volumetric cloud.
+
+## Palette
+Neon plasma. A deep amethyst background with the attractor particles glowing in cyan, magenta, and gold. Color is divided into groups of particles to give a layered, volumetric structure.

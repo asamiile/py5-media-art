@@ -4,6 +4,106 @@
 Agents MUST NOT write anything in the `Comment` field. When registering a new work, Agents must leave the `Rating` and `Comment` fields empty or with their default labels as placeholders for the user.
 The Artist reads this file before starting a new sketch to understand preferences.
 
+## generative_vector_flow_field_topography_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_voronoi_cellular_tessellation_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_particle_physics_gravity_wells_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## generative_recursive_fractal_tree_wind_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_strange_attractor_aizawa_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## generative_differential_line_growth_coral_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## generative_mandala_kaleidoscope_symmetry_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_cellular_automata_belousov_zhabotinsky_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## generative_boids_flocking_constellations_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## generative_ascii_glitch_matrix_rain_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## generative_slit_scan_time_displacement_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_geometric_origami_tessellation_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_strange_attractor_lorenz_butterfly_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## generative_chladni_resonance_plates_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## generative_cybernetic_mandala_gear_system_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_quantum_interference_pattern_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_recursive_voronoi_shatter_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## generative_isometric_optical_illusion_stairs_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_particle_string_theory_vibrations_2d
+
+- **Rating**: 
+- **Comment**: 
+
+## kinetic_sacred_geometry_merkaba_2d
+
+- **Rating**: 
+- **Comment**: 
+
 ## generative_delaunay_terrain_morphing_2d
 
 - **Rating**: 

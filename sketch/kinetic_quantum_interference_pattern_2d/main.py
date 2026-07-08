@@ -24,81 +24,81 @@ PREVIEW_FILENAME = f"{WORK_NAME}_p1.png"
 PREVIEW_SIZE, OUTPUT_SIZE, _ = get_sizes()
 SIZE = OUTPUT_SIZE
 
-NUM_PARTICLES = 25000
+# Render at a lower resolution for performance (e.g. 1/4th scale)
+# 3840x2160 -> 960x540
+SCALE = 4
+RENDER_W = SIZE[0] // SCALE
+RENDER_H = SIZE[1] // SCALE
 
-pos = None
-vel = None
-colors = None
+pg = None
+
+# Pre-calculate meshgrid
+x = np.arange(RENDER_W, dtype=np.float32)
+y = np.arange(RENDER_H, dtype=np.float32)
+X, Y = np.meshgrid(x, y)
 
 def setup():
-    global pos, vel, colors
+    global pg
     py5.size(*SIZE)
     py5.pixel_density(1)
-    py5.background(2, 5, 12)
+    py5.background(0)
     FRAMES_DIR.mkdir(exist_ok=True)
     
-    pos = np.random.rand(NUM_PARTICLES, 2) * [SIZE[0], SIZE[1]]
-    vel = np.zeros((NUM_PARTICLES, 2))
-    
-    # Pre-calculate colors (Deep sea bioluminescence)
-    colors = np.zeros((NUM_PARTICLES, 3), dtype=np.uint8)
-    for i in range(NUM_PARTICLES):
-        r = random.randint(10, 50)
-        g = random.randint(150, 255)
-        b = random.randint(150, 255)
-        colors[i] = [r, g, b]
+    pg = py5.create_graphics(RENDER_W, RENDER_H)
 
 def draw():
-    global pos, vel, colors
+    t = py5.frame_count * 0.05
     
-    # Motion blur fade
-    py5.blend_mode(py5.BLEND)
-    py5.no_stroke()
-    py5.fill(2, 5, 12, 12)
-    py5.rect(0, 0, SIZE[0], SIZE[1])
+    # Moving sources
+    # Source 1
+    cx1 = RENDER_W/2 + np.cos(t * 0.7) * 200
+    cy1 = RENDER_H/2 + np.sin(t * 0.5) * 150
+    # Source 2
+    cx2 = RENDER_W/2 + np.cos(t * 0.4 + 2.0) * 300
+    cy2 = RENDER_H/2 + np.sin(t * 0.8 + 1.0) * 100
+    # Source 3
+    cx3 = RENDER_W/2 + np.cos(t * 0.9 - 1.0) * 100
+    cy3 = RENDER_H/2 + np.sin(t * 0.3 - 2.0) * 200
     
-    W, H = SIZE[0], SIZE[1]
-    t = py5.frame_count * 0.005
+    freq = 0.2
     
-    # Calculate angles from 3D noise (x, y, t)
-    # Scale coordinates to get smooth noise field
-    nx = pos[:, 0] * 0.0015
-    ny = pos[:, 1] * 0.0015
+    d1 = np.sqrt((X - cx1)**2 + (Y - cy1)**2)
+    d2 = np.sqrt((X - cx2)**2 + (Y - cy2)**2)
+    d3 = np.sqrt((X - cx3)**2 + (Y - cy3)**2)
     
-    angles = np.zeros(NUM_PARTICLES)
+    w1 = np.sin(d1 * freq - t * 2.0)
+    w2 = np.sin(d2 * freq - t * 2.0)
+    w3 = np.sin(d3 * freq - t * 2.0)
     
-    for i in range(NUM_PARTICLES):
-        angles[i] = py5.os_noise(nx[i], ny[i], t) * py5.TWO_PI * 4.0
-        
-    speed = 4.0
-    vel[:, 0] = np.cos(angles) * speed
-    vel[:, 1] = np.sin(angles) * speed
+    # Interference sum
+    total = w1 + w2 + w3
     
-    pos += vel
+    # Normalize to roughly -1 to 1, then apply non-linear mapping for sharp fringes
+    val = np.sin(total * 2.0) # creates more Moiré
     
-    # Out of bounds check
-    out_of_bounds = (pos[:, 0] < 0) | (pos[:, 0] > W) | (pos[:, 1] < 0) | (pos[:, 1] > H)
-    num_out = np.sum(out_of_bounds)
-    if num_out > 0:
-        pos[out_of_bounds, 0] = np.random.uniform(0, W, num_out)
-        pos[out_of_bounds, 1] = np.random.uniform(0, H, num_out)
-        
-    # Draw particles
-    py5.blend_mode(py5.ADD)
-    py5.stroke_weight(1.5)
+    # Map to colors
+    # Base black and white
+    bw = ((val + 1.0) * 127.5).astype(np.int32)
     
-    # Draw in chunks for color
-    chunk_size = NUM_PARTICLES // 10
-    for i in range(10):
-        start = i * chunk_size
-        end = (i + 1) * chunk_size
-        
-        avg_r = np.mean(colors[start:end, 0])
-        avg_g = np.mean(colors[start:end, 1])
-        avg_b = np.mean(colors[start:end, 2])
-        
-        py5.stroke(avg_r, avg_g, avg_b, 60)
-        py5.points(pos[start:end])
+    # Iridescent cyan/magenta on peaks
+    r = np.clip(bw + (np.sin(total * 3.0) * 100), 0, 255).astype(np.int32)
+    g = np.clip(bw + (np.cos(total * 2.0) * 100), 0, 255).astype(np.int32)
+    b = np.clip(bw + (np.sin(total * 1.5) * 100 + 50), 0, 255).astype(np.int32)
+    pg.begin_draw()
+    pg.load_np_pixels()
+    
+    # Assign to channels directly. In py5 ARGB: A=0, R=1, G=2, B=3
+    pg.np_pixels[:, :, 0] = 255
+    pg.np_pixels[:, :, 1] = r
+    pg.np_pixels[:, :, 2] = g
+    pg.np_pixels[:, :, 3] = b
+    
+    pg.update_np_pixels()
+    pg.end_draw()
+    
+    # Draw scaled up image
+    # Use NO_SMOOTH for crisp pixels, or smooth for softer look
+    py5.image(pg, 0, 0, SIZE[0], SIZE[1])
 
     py5.save_frame(str(FRAMES_DIR / "frame-####.png"))
 

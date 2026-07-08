@@ -24,81 +24,75 @@ PREVIEW_FILENAME = f"{WORK_NAME}_p1.png"
 PREVIEW_SIZE, OUTPUT_SIZE, _ = get_sizes()
 SIZE = OUTPUT_SIZE
 
-NUM_PARTICLES = 25000
-
-pos = None
-vel = None
-colors = None
+NUM_PTS = 150000
+pts = None
 
 def setup():
-    global pos, vel, colors
+    global pts
     py5.size(*SIZE)
     py5.pixel_density(1)
-    py5.background(2, 5, 12)
+    py5.background(10, 5, 5)
     FRAMES_DIR.mkdir(exist_ok=True)
     
-    pos = np.random.rand(NUM_PARTICLES, 2) * [SIZE[0], SIZE[1]]
-    vel = np.zeros((NUM_PARTICLES, 2))
-    
-    # Pre-calculate colors (Deep sea bioluminescence)
-    colors = np.zeros((NUM_PARTICLES, 3), dtype=np.uint8)
-    for i in range(NUM_PARTICLES):
-        r = random.randint(10, 50)
-        g = random.randint(150, 255)
-        b = random.randint(150, 255)
-        colors[i] = [r, g, b]
+    # Initialize points randomly across the screen
+    x = np.random.uniform(0, SIZE[0], NUM_PTS)
+    y = np.random.uniform(0, SIZE[1], NUM_PTS)
+    pts = np.column_stack((x, y))
 
 def draw():
-    global pos, vel, colors
-    
-    # Motion blur fade
+    # Subtle fade to leave slight trails and simulate motion blur
     py5.blend_mode(py5.BLEND)
     py5.no_stroke()
-    py5.fill(2, 5, 12, 12)
+    py5.fill(15, 10, 10, 40)
     py5.rect(0, 0, SIZE[0], SIZE[1])
     
-    W, H = SIZE[0], SIZE[1]
     t = py5.frame_count * 0.005
     
-    # Calculate angles from 3D noise (x, y, t)
-    # Scale coordinates to get smooth noise field
-    nx = pos[:, 0] * 0.0015
-    ny = pos[:, 1] * 0.0015
+    # Morphing parameters for Chladni plate
+    # n and m are the resonance modes. We morph them slowly.
+    # Typical modes are integers, but continuous values create chaotic morphing.
+    n = 3.0 + 2.0 * np.sin(t * 0.7)
+    m = 5.0 + 3.0 * np.cos(t * 0.5)
     
-    angles = np.zeros(NUM_PARTICLES)
+    a = 1.0
+    b = 1.0 # can also be -1 for different patterns
     
-    for i in range(NUM_PARTICLES):
-        angles[i] = py5.os_noise(nx[i], ny[i], t) * py5.TWO_PI * 4.0
-        
-    speed = 4.0
-    vel[:, 0] = np.cos(angles) * speed
-    vel[:, 1] = np.sin(angles) * speed
+    # Map positions to [-1, 1]
+    nx = (pts[:, 0] - SIZE[0]/2) / (SIZE[0]/2)
+    ny = (pts[:, 1] - SIZE[1]/2) / (SIZE[1]/2)
     
-    pos += vel
+    # Chladni equation
+    # C(x, y) = a * sin(pi * n * x) * sin(pi * m * y) + b * sin(pi * m * x) * sin(pi * n * y)
+    term1 = a * np.sin(np.pi * n * nx) * np.sin(np.pi * m * ny)
+    term2 = b * np.sin(np.pi * m * nx) * np.sin(np.pi * n * ny)
     
-    # Out of bounds check
-    out_of_bounds = (pos[:, 0] < 0) | (pos[:, 0] > W) | (pos[:, 1] < 0) | (pos[:, 1] > H)
-    num_out = np.sum(out_of_bounds)
-    if num_out > 0:
-        pos[out_of_bounds, 0] = np.random.uniform(0, W, num_out)
-        pos[out_of_bounds, 1] = np.random.uniform(0, H, num_out)
-        
+    C = term1 + term2
+    amp = np.abs(C)
+    
+    # The bounce magnitude depends on the amplitude of vibration
+    # Also add a tiny base noise so they don't get completely stuck forever
+    bounce = amp * 25.0 + 0.1
+    
+    # Update positions with random walk proportional to bounce
+    # We use a mix of pure random and a slight drift towards the center to avoid losing particles
+    noise_x = np.random.randn(NUM_PTS) * bounce
+    noise_y = np.random.randn(NUM_PTS) * bounce
+    
+    pts[:, 0] += noise_x
+    pts[:, 1] += noise_y
+    
+    # Keep particles inside bounds (wrap around or clamp)
+    # Wrapping around creates a cool continuous flow
+    pts[:, 0] = pts[:, 0] % SIZE[0]
+    pts[:, 1] = pts[:, 1] % SIZE[1]
+    
     # Draw particles
     py5.blend_mode(py5.ADD)
+    py5.stroke(255, 220, 150, 150) # Golden sand color
     py5.stroke_weight(1.5)
     
-    # Draw in chunks for color
-    chunk_size = NUM_PARTICLES // 10
-    for i in range(10):
-        start = i * chunk_size
-        end = (i + 1) * chunk_size
-        
-        avg_r = np.mean(colors[start:end, 0])
-        avg_g = np.mean(colors[start:end, 1])
-        avg_b = np.mean(colors[start:end, 2])
-        
-        py5.stroke(avg_r, avg_g, avg_b, 60)
-        py5.points(pos[start:end])
+    # Use py5.points for extremely fast rendering of thousands of points
+    py5.points(pts)
 
     py5.save_frame(str(FRAMES_DIR / "frame-####.png"))
 

@@ -24,80 +24,116 @@ PREVIEW_FILENAME = f"{WORK_NAME}_p1.png"
 PREVIEW_SIZE, OUTPUT_SIZE, _ = get_sizes()
 SIZE = OUTPUT_SIZE
 
-NUM_PARTICLES = 25000
+# Simulation Constants
+NUM_PARTICLES = 30000
+NUM_WELLS = 4
+G_CONST = 1500.0
+SOFTENING = 200.0
 
-pos = None
-vel = None
-colors = None
+pos = np.zeros((NUM_PARTICLES, 2))
+vel = np.zeros((NUM_PARTICLES, 2))
+colors = np.zeros((NUM_PARTICLES, 3), dtype=np.uint8)
 
 def setup():
-    global pos, vel, colors
     py5.size(*SIZE)
     py5.pixel_density(1)
-    py5.background(2, 5, 12)
+    py5.background(5, 5, 8)
     FRAMES_DIR.mkdir(exist_ok=True)
     
-    pos = np.random.rand(NUM_PARTICLES, 2) * [SIZE[0], SIZE[1]]
-    vel = np.zeros((NUM_PARTICLES, 2))
+    # Initialize particles in a large ring
+    angles = np.random.uniform(0, py5.TWO_PI, NUM_PARTICLES)
+    radii = np.random.uniform(SIZE[1]*0.1, SIZE[1]*0.4, NUM_PARTICLES)
     
-    # Pre-calculate colors (Deep sea bioluminescence)
-    colors = np.zeros((NUM_PARTICLES, 3), dtype=np.uint8)
+    cx, cy = SIZE[0] / 2, SIZE[1] / 2
+    pos[:, 0] = cx + np.cos(angles) * radii
+    pos[:, 1] = cy + np.sin(angles) * radii
+    
+    # Initial circular velocity
+    vel[:, 0] = -np.sin(angles) * 3.0
+    vel[:, 1] = np.cos(angles) * 3.0
+    
+    # Pre-calculate colors (Cosmic Gold)
     for i in range(NUM_PARTICLES):
-        r = random.randint(10, 50)
-        g = random.randint(150, 255)
-        b = random.randint(150, 255)
+        r = random.randint(200, 255)
+        g = random.randint(150, 200)
+        b = random.randint(50, 100)
         colors[i] = [r, g, b]
 
 def draw():
-    global pos, vel, colors
-    
-    # Motion blur fade
+    # Subtle fade for motion trail
     py5.blend_mode(py5.BLEND)
     py5.no_stroke()
-    py5.fill(2, 5, 12, 12)
+    py5.fill(5, 5, 8, 30)
     py5.rect(0, 0, SIZE[0], SIZE[1])
     
-    W, H = SIZE[0], SIZE[1]
-    t = py5.frame_count * 0.005
+    t = py5.frame_count * 0.01
+    cx, cy = SIZE[0] / 2, SIZE[1] / 2
     
-    # Calculate angles from 3D noise (x, y, t)
-    # Scale coordinates to get smooth noise field
-    nx = pos[:, 0] * 0.0015
-    ny = pos[:, 1] * 0.0015
+    # Gravity wells moving in Lissajous curves
+    wells_x = np.zeros(NUM_WELLS)
+    wells_y = np.zeros(NUM_WELLS)
     
-    angles = np.zeros(NUM_PARTICLES)
-    
-    for i in range(NUM_PARTICLES):
-        angles[i] = py5.os_noise(nx[i], ny[i], t) * py5.TWO_PI * 4.0
+    for i in range(NUM_WELLS):
+        # Different frequencies and phases for each well
+        freq_x = 1.0 + i * 0.2
+        freq_y = 1.2 + i * 0.3
+        phase = i * py5.TWO_PI / NUM_WELLS
         
-    speed = 4.0
-    vel[:, 0] = np.cos(angles) * speed
-    vel[:, 1] = np.sin(angles) * speed
+        radius_x = SIZE[0] * 0.3
+        radius_y = SIZE[1] * 0.3
+        
+        wells_x[i] = cx + np.sin(t * freq_x + phase) * radius_x
+        wells_y[i] = cy + np.cos(t * freq_y + phase) * radius_y
+    
+    # Update particles
+    global pos, vel
+    
+    for i in range(NUM_WELLS):
+        dx = wells_x[i] - pos[:, 0]
+        dy = wells_y[i] - pos[:, 1]
+        
+        dist_sq = dx**2 + dy**2 + SOFTENING
+        dist = np.sqrt(dist_sq)
+        
+        f = G_CONST / dist_sq
+        
+        vel[:, 0] += f * (dx / dist)
+        vel[:, 1] += f * (dy / dist)
+        
+    # Optional central supermassive well
+    dx = cx - pos[:, 0]
+    dy = cy - pos[:, 1]
+    dist_sq = dx**2 + dy**2 + SOFTENING * 10.0
+    f = (G_CONST * 2.0) / dist_sq
+    vel[:, 0] += f * (dx / np.sqrt(dist_sq))
+    vel[:, 1] += f * (dy / np.sqrt(dist_sq))
+    
+    # Friction
+    vel *= 0.995
     
     pos += vel
     
-    # Out of bounds check
-    out_of_bounds = (pos[:, 0] < 0) | (pos[:, 0] > W) | (pos[:, 1] < 0) | (pos[:, 1] > H)
-    num_out = np.sum(out_of_bounds)
-    if num_out > 0:
-        pos[out_of_bounds, 0] = np.random.uniform(0, W, num_out)
-        pos[out_of_bounds, 1] = np.random.uniform(0, H, num_out)
-        
     # Draw particles
     py5.blend_mode(py5.ADD)
-    py5.stroke_weight(1.5)
+    py5.stroke_weight(2.0)
     
-    # Draw in chunks for color
+    # Py5 doesn't easily let us draw colored point arrays in one call without Py5Shape.
+    # To use colored points efficiently:
+    # Divide into 5 color buckets
+    
+    # Since particles change position but not color, we can just draw them in chunks.
+    # We will use py5.points() for performance.
     chunk_size = NUM_PARTICLES // 10
     for i in range(10):
         start = i * chunk_size
         end = (i + 1) * chunk_size
         
+        # Take the average color of the chunk (good enough since colors are similar)
         avg_r = np.mean(colors[start:end, 0])
         avg_g = np.mean(colors[start:end, 1])
         avg_b = np.mean(colors[start:end, 2])
         
-        py5.stroke(avg_r, avg_g, avg_b, 60)
+        py5.stroke(avg_r, avg_g, avg_b, 100)
         py5.points(pos[start:end])
 
     py5.save_frame(str(FRAMES_DIR / "frame-####.png"))

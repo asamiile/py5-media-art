@@ -1,3 +1,143 @@
+## generative_vector_flow_field_topography_2d
+- **Date**: 2026-07-07
+- **Type**: Animation
+- **Concept**: A generative simulation of a dense vector flow field acting as topographical contours. 25,000 particles are dropped into a continuously evolving Perlin noise field. They trace the invisible currents, drawing smooth, sweeping curves that resemble fluid dynamics, topographical maps, or complex magnetic field lines.
+- **Techniques**: The vector field is driven by `py5.os_noise` in 3D space (x, y, time). Every frame, particles update their heading based on the noise angle and move forward. The topography effect is achieved by softly fading the background with a low-opacity `py5.rect()`, allowing the particles to leave beautiful, semi-permanent glowing trails. Particles that drift off-screen are seamlessly respawned at random coordinates.
+- **Palette**: Deep sea bioluminescence. The canvas is a dark abyssal blue. The particles emit a vibrant glow in deep sea teals, bright cyans, and emerald greens, creating a serene, fluid atmosphere.
+
+## kinetic_voronoi_cellular_tessellation_2d
+- **Date**: 2026-07-07
+- **Type**: Animation
+- **Concept**: A generative simulation of a Voronoi diagram where the seed points are moving organically in a flow field. As the seeds drift, the cellular boundaries warp and shift like a living microscopic tissue or shimmering soap bubbles.
+- **Techniques**: Uses `scipy.spatial.Voronoi` to calculate the exact distance field polygons for 400 seed points every frame. To ensure perfect clipping at the screen boundaries, mirror points are added across the screen's edges. The seed points are displaced continuously using 2D Perlin noise to create fluid, organic motion.
+- **Palette**: Iridescent soap bubble. A dark slate background with the Voronoi cells filled with shifting, translucent pastel gradients (cyan, magenta, yellow) that shimmer as the polygons morph. The cell walls are drawn with sharp, bright white lines.
+
+## kinetic_particle_physics_gravity_wells_2d
+- **Date**: 2026-07-07
+- **Type**: Animation
+- **Concept**: A physics simulation of thousands of particles caught in the gravitational pull of multiple orbiting gravity wells. The wells dance around the center in complex Lissajous curves, pulling the particles into intricate, stylized orbital patterns that resemble a cosmic galaxy or planetary system.
+- **Techniques**: The simulation relies on a custom physics engine built with NumPy vectorization, where 30,000 particles interact with multiple gravity wells. Newton's law of universal gravitation is simulated with a softening parameter. As particles move, they are drawn with additive blending against a fading background to create long, glowing orbital trails.
+- **Palette**: Cosmic gold. A deep, infinite black background with particles glowing in bright golds, ambers, and stark whites.
+
+## generative_recursive_fractal_tree_wind_2d
+- **Date**: 2026-07-07
+- **Type**: Animation
+- **Concept**: A generative visualization of a recursive fractal tree that slowly sways and morphs as if blown by an invisible, organic wind. The structure branches recursively up to 13 generations, creating over 8000 distinct branch segments.
+- **Techniques**: Uses a deeply recursive drawing function. Instead of drawing immediately, it pre-computes the line segments and groups them by depth. This allows py5 to render thousands of lines incredibly fast using batched `py5.begin_shape(py5.LINES)`. The angles of the branches are modulated continuously using overlapping `py5.os_noise` fields to simulate wind.
+- **Palette**: Glowing autumn. A deep slate background. The thickest root branches glow in deep crimson/brown, gradually transitioning through fiery orange and gold, and finally culminating in bright yellow/white tips at the outermost leaves.
+
+## kinetic_strange_attractor_aizawa_2d
+- **Date**: 2026-07-07
+- **Type**: Animation
+- **Concept**: A generative visualization of the Aizawa strange attractor. We simulate thousands of particles tracing the paths of the chaotic Aizawa equations. As they move, they draw glowing trails that slowly build up a beautiful, sphere-like complex chaotic structure in 2D projection. The attractor slowly rotates in 3D space before being projected to 2D.
+- **Techniques**: The Aizawa attractor equations are solved using simple Euler integration for 50,000 points concurrently using NumPy. The 3D points are then rotated around the Y and X axes and projected orthogonally to 2D. To keep it fast, we do the math in NumPy, project, and draw them as tiny points with additive blending, creating a dense glowing volumetric cloud.
+- **Palette**: Neon plasma. A deep amethyst background with the attractor particles glowing in cyan, magenta, and gold. Color is divided into groups of particles to give a layered, volumetric structure.
+
+## generative_differential_line_growth_coral_2d
+- **Date**: 2026-07-07
+- **Type**: Animation
+- **Concept**: A generative simulation of differential line growth, inspired by the organic growth patterns of coral, brain tissue, and nudibranch frills. A closed loop of nodes continually expands and self-organizes. As the line grows, it begins to buckle and fold into intricate organic shapes.
+- **Techniques**: The physics engine is implemented using vectorized NumPy operations. It balances three forces on a closed polygon of up to 4500 nodes: repulsion (nodes push apart), attraction (adjacent nodes pull together), and growth (new nodes are inserted when edges get too long).
+- **Palette**: Bioluminescent ocean. Deep blue-black background, with the coral line glowing in neon coral pinks, warm oranges, and seafoam greens. Colors are dynamically mapped using `py5.remap` based on the node's index along the loop and time.
+
+## generative_mandala_kaleidoscope_symmetry_2d
+- **Date**: 2026-07-07
+- **Type**: Animation
+- **Concept**: A continuously evolving kaleidoscope mandala. The sketch generates a base pie slice of complex, overlapping curves and particles driven by Perlin noise, and then perfectly mirrors and rotates this slice 12 times around the center to create a dynamic, 12-fold symmetric mandala.
+- **Techniques**: Uses `py5.translate()`, `py5.rotate()`, and `py5.scale(1, -1)` for the kaleidoscopic reflection math. The base shape is drawn using multiple layers of `py5.bezier()` curves whose control points and radii drift through a 3D noise field (`py5.os_noise`). Additive blending (`py5.blend_mode(py5.ADD)`) combined with motion blur makes the mandala shimmer.
+- **Palette**: Iridescent opal. A soft dark background with the mandala shimmering in pearl white, soft pinks, and pale cyans, mapped directly from noise loops to HSB color space.
+
+## kinetic_cellular_automata_belousov_zhabotinsky_2d
+- **Date**: 2026-07-07
+- **Type**: Animation
+- **Concept**: A simulation of the Belousov-Zhabotinsky (BZ) reaction, an oscillating chemical reaction that creates mesmerizing spiral waves and expanding rings that annihilate upon collision.
+- **Techniques**: Uses a cyclic multi-state cellular automaton on a dense grid of pixels. The simulation runs on a NumPy array, where cells transition through states based on the states of their Moore neighborhood. NumPy operations (`np.roll`, `np.where`) are used for highly efficient, vectorized grid updates, allowing the CA to run and be rendered as a scaled-up image via `py5.image()`.
+- **Palette**: Fluorescent biological. Deep purple background with the expanding reaction waves glowing in radioactive cyan and electric yellow.
+
+## generative_boids_flocking_constellations_2d
+- **Date**: 2026-07-07
+- **Type**: Animation
+- **Concept**: A simulation of generative "constellations" forming in real-time. Thousands of glowing particles flow through a chaotic noise field, mimicking the fluid movement of flocking birds or neural pathways. Whenever two particles get close enough, a thin glowing line connects them, creating a dynamic, shifting neural network or constellation pattern.
+- **Techniques**: Particles update their velocities based on a Perlin noise vector field (flow field). For the connections, NumPy vectorization (`scipy.spatial.distance` equivalent via broadcasting) efficiently calculates all pairwise distances each frame. Lines are drawn with distance-based alpha blending between any pair of particles within a certain radius.
+- **Palette**: Deep space neural network. Deep navy/black background with particles glowing in soft ethereal blues and purples. The connecting lines are bright white and semi-transparent, creating an intricate web of light.
+
+## generative_ascii_glitch_matrix_rain_2d
+- **Date**: 2026-07-07
+- **Type**: Animation
+- **Concept**: A modern, glitch-art take on the classic "Matrix digital rain". Instead of just falling letters, it features glowing typographical glyphs that spawn, fall, and shatter into smaller particles upon hitting invisible obstacles. Periodically, waves of chromatic aberration sweep across the grid, shifting colors and characters randomly.
+- **Techniques**: A grid system for the falling characters. An array stores the active "droplets" (x, y, speed, char). When a droplet falls, it leaves a fading trail in a secondary pixel buffer or using standard fade. The characters are drawn using `py5.text()`. Glitch effects are achieved by randomly offsetting the X and Y drawing coordinates for the red and blue color channels during the draw loop.
+- **Palette**: Cyberpunk glitch. Base color is high-contrast matrix green on black, but chromatic aberration flashes introduce bright magenta and cyan splitting.
+
+## generative_slit_scan_time_displacement_2d
+- **Date**: 2026-07-07
+- **Type**: Animation
+- **Concept**: A digital slit-scan effect. A background scene consisting of moving abstract geometric shapes is drawn on a dense grid. However, the final output is composed such that each vertical strip (or grid cell) is sampled at a different point in time. This creates a bizarre time-displacement distortion where the left side of the screen shows the past and the right side shows the future.
+- **Techniques**: A grid of 80x45 cells evaluates time as a function of the cell's X coordinate: `t_local = t_global - (x_index / cols) * max_delay`. Each cell draws nested shapes whose rotation, size, and hue depend on `t_local` and the Y coordinate. This pure mathematical approach creates the slit-scan visual perfectly in real-time without needing a massive pixel history buffer.
+- **Palette**: High contrast chromatic aberration. The elements cycle continuously through the HSB color wheel, creating complex rainbow patterns that smear along the time-displaced X-axis.
+
+## kinetic_geometric_origami_tessellation_2d
+- **Date**: 2026-07-07
+- **Type**: Animation
+- **Concept**: A plane of interlocking triangles (like an origami tessellation) that continuously folds and unfolds rhythmically. As "waves" of folding energy pass through the plane, the triangles rotate and cast dynamic shadows, creating a breathing, living geometric surface.
+- **Techniques**: A hexagonal/triangular grid of vertices. We apply a 2D traveling sine wave combined with Perlin noise to modulate the 3D position of each vertex. The triangles are drawn with a simple simulated directional light (Lambertian shading) to enhance the 3D folding effect. Vertex positions are projected back to 2D screen space to render the pseudo-3D scene.
+- **Palette**: Pastel minimalism. Soft peach, mint green, and pale lavender triangles on a pristine white background. Shadows are dynamic based on the simulated directional light.
+
+## kinetic_strange_attractor_lorenz_butterfly_2d
+- **Date**: 2026-07-07
+- **Type**: Animation
+- **Concept**: A 3D chaotic strange attractor (like the Lorenz attractor) rendered as a continuously growing, glowing thread that slowly rotates in space. As the thread grows, the older segments fade away, creating a beautiful "butterfly" wing effect tracing the chaotic orbits.
+- **Techniques**: Uses the Lorenz equations `dx/dt = sigma*(y - x)`, `dy/dt = x*(rho - z) - y`, `dz/dt = x*y - beta*z`. The system is integrated over time to generate points in 3D space. The points are projected and rotated. A `py5.begin_shape()` is used to draw a fading trail of the last 150 positions for 150 different particles.
+- **Palette**: Neon bioluminescence. Deep oceanic blue background with the attractor glowing in intense cyan, shifting to bright magenta at the extremes.
+
+## generative_chladni_resonance_plates_2d
+- **Date**: 2026-07-07
+- **Type**: Animation
+- **Concept**: A simulation of Chladni patterns, where thousands of fine particles on a vibrating 2D plate settle into the nodal lines of complex acoustic resonance frequencies. The frequency slowly shifts, causing the particles to chaotically bounce and reorganize into new, beautiful geometric mandalas.
+- **Techniques**: Uses a particle system. The plate's vibration amplitude at any `(x, y)` is calculated using standing wave equations. Particles are pushed away from high-amplitude areas (antinodes) and settle into low-amplitude areas (nodes) via a magnitude-dependent random walk. The parameters `n` and `m` morph continuously over time.
+- **Palette**: Elegant monochrome sand. Golden/sand colored fine particles scattered across a deep, rich mahogany or matte black background.
+
+## generative_cybernetic_mandala_gear_system_2d
+- **Date**: 2026-07-07
+- **Type**: Animation
+- **Concept**: A complex, interlocking system of gears and concentric rings designed like a futuristic cybernetic mandala. The layers rotate at different speeds and in alternating directions. Some layers consist of glowing code-like glyphs or geometric segments that light up sequentially.
+- **Techniques**: Hierarchical rotations using `py5.push_matrix()` and `py5.pop_matrix()`. Uses polar coordinates to draw segmented arcs, cogs, and glowing dots. A dynamic easing function is applied to the rotation of certain rings to give them a mechanical "stepping" motion.
+- **Palette**: High-tech interface. Dark graphite background with glowing neon green, amber, and cyan accents, reminiscent of a complex HUD or alien artifact.
+
+## kinetic_quantum_interference_pattern_2d
+- **Date**: 2026-07-07
+- **Type**: Animation
+- **Concept**: A visual representation of quantum wave interference. Multiple moving point sources emit concentric ripples. Where the ripples overlap, they create complex Moiré patterns and interference fringes. The sources orbit each other in chaotic patterns, causing the interference structure to shift and warp dramatically.
+- **Techniques**: Uses a dense grid of pixels evaluated via numpy broadcasting for extreme performance. For each point, the intensity is calculated as the sum of sine waves based on the distance to multiple moving sources. The resulting value is mapped to a high-contrast color palette using a non-linear transfer function. Evaluated on a lower resolution off-screen buffer and scaled up.
+- **Palette**: High contrast monochrome with iridescent highlights. Base is stark black and white, but the interference peaks are highlighted in iridescent cyan and magenta.
+
+## kinetic_recursive_voronoi_shatter_2d
+- **Date**: 2026-07-07
+- **Type**: Animation
+- **Concept**: A recursive Voronoi diagram that continuously shatters inward, revealing deeper levels of detail. The cells drift slowly and morph, while the camera slowly zooms in continuously to maintain a constant scale, creating a fractal-like dive.
+- **Techniques**: Uses a dynamic set of points for a Voronoi diagram. As the camera zooms by scaling the point coordinates away from the origin, points that go off-screen are removed, and new points are generated near the center. The edges are drawn with glowing lines, and the cells are filled with shifting, semi-transparent gradients.
+- **Palette**: High contrast neon cyberpunk. Deep purples, electric pinks, and bright cyan against a dark background.
+
+## generative_isometric_optical_illusion_stairs_2d
+- **Date**: 2026-07-07
+- **Type**: Animation
+- **Concept**: A continuously shifting, Escher-like infinite staircase built from isometric blocks. The structure slowly rises or falls, with blocks sliding into place from the void to form impossible geometries. The lighting angle slowly rotates around the scene, casting shifting shadows.
+- **Techniques**: A 3D grid of blocks rendered using an isometric 2D projection. The height of each block is driven by a traveling sine wave combined with Perlin noise. The blocks are drawn back-to-front (depth sorted). Each face (top, left, right) is shaded dynamically based on a rotating light vector.
+- **Palette**: Monochromatic architectural. Clean white and gray blocks with sharp, high-contrast shadows against a stark, pitch-black background.
+
+## kinetic_particle_string_theory_vibrations_2d
+- **Date**: 2026-07-07
+- **Type**: Animation
+- **Concept**: A visual representation of string theory vibrations. Thousands of extremely thin, glowing "strings" (lines) connect in a dense network. Each string vibrates with its own harmonic frequency. The overall structure slowly rotates and morphs between higher-dimensional projections.
+- **Techniques**: Creates a network of nodes on a 3D torus. The connection lines between nodes are not straight, but drawn as high-frequency sine waves using `py5.begin_shape(py5.LINE_STRIP)`. The amplitude and phase of the vibration depends on the distance and orientation in the network.
+- **Palette**: Quantum entanglement. Pitch black void. The vibrating strings are thin, intensely glowing electric blue, neon violet, and pure white.
+
+## kinetic_sacred_geometry_merkaba_2d
+- **Date**: 2026-07-07
+- **Type**: Animation
+- **Concept**: A 2D projection of a 3D Merkaba (star tetrahedron) that slowly rotates and unfolds its faces. The vertices emit soft glowing trails that weave into intricate geometric patterns as the shape spins.
+- **Techniques**: Generates the 8 vertices of two intersecting tetrahedrons. Applies 3D rotation matrices. The edges are drawn with high opacity, while the faces are drawn with semi-transparent blending. Trails are drawn using a fading background buffer.
+- **Palette**: Ethereal gold and bright cyan on a deep space background, creating a mystical, cosmic vibe.
+
 ## generative_delaunay_terrain_morphing_2d
 - **Date**: 2026-07-06
 - **Type**: Animation

@@ -1,18 +1,13 @@
 # generative_vector_flow_field_topography_2d
 
-![Preview](generative_vector_flow_field_topography_2d_p1.png)
-
-## Metadata
-- **Date**: 2026-06-20
-- **Theme**: A dense 2D vector flow field that draws topography lines instead of moving particles
-- **Technique**: A grid of small line segments. The angle of each segment is determined by `py5.os_noise(x, y, z)`. The z parameter increments over time, smoothly evolving the field. The length and color of each segment are mapped to the noise value, creating waves of vibrant colors sweeping across a dark canvas.
-- **Logic Lab Reference**: 
+**Date**: 2026-07-07
+**Type**: Animation (10-30s @ 60fps)
 
 ## Concept
-A dense 2D vector flow field that draws topography lines instead of moving particles. The lines are drawn statically, but the underlying noise field slowly rotates and shifts its Z-offset over time, causing the drawn lines to writhe and form shifting terrain-like patterns.
+A generative simulation of a dense vector flow field acting as topographical contours. 25,000 particles are dropped into a continuously evolving Perlin noise field. They trace the invisible currents, drawing smooth, sweeping curves that resemble fluid dynamics, topographical maps, or complex magnetic field lines.
 
-## Technical Details
-- **Renderer**: Unknown
-- **Simulation**: Unknown
-- **Visuals**: Unknown
-- **Animation**: Contains animation details
+## Techniques
+The vector field is driven by `py5.os_noise` in 3D space (x, y, time). Every frame, particles update their heading based on the noise angle and move forward. The topography effect is achieved by softly fading the background with a low-opacity `py5.rect()`, allowing the particles to leave beautiful, semi-permanent glowing trails. Particles that drift off-screen are seamlessly respawned at random coordinates.
+
+## Palette
+Deep sea bioluminescence. The canvas is a dark abyssal blue. The particles emit a vibrant glow in deep sea teals, bright cyans, and emerald greens, creating a serene, fluid atmosphere.

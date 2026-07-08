@@ -1,3 +1,10 @@
+## kinetic_synthwave_retro_grid_terrain_3d
+- **Date**: 2026-07-08
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A retro-futuristic, synthwave-inspired 3D wireframe terrain that scrolls endlessly towards the viewer beneath a giant sunset.
+- **Techniques**: 2D array of vertices mapped into 3D isometric perspective using standard Py5 2D primitives. Height map is a continuously scrolling Perlin noise field. Triangles fade smoothly into the darkness based on distance.
+- **Palette**: Neon cyan and magenta wires on a deep purple background, with an oversized glowing sun.
+
 ## generative_woven_celtic_knot_mandala_2d
 - **Date**: 2026-07-08
 - **Type**: Animation (900 frames, 60fps)

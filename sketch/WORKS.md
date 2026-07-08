@@ -1,3 +1,10 @@
+## kinetic_isometric_data_grid_matrix_2d
+- **Date**: 2026-07-08
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A cybernetic cityscape or data center viewed from an isometric perspective, where every structure is made of glowing matrix text.
+- **Techniques**: Isometric projection via 2D scale and rotation. A custom 2.5D depth-sorting algorithm renders vertical pillars of typography. Pillar heights oscillate organically using 2D Perlin noise and radial sine waves.
+- **Palette**: Deep cyber blue, glowing matrix green, and bright white highlights.
+
 ## kinetic_matrix_digital_rain_glitch_2d
 - **Date**: 2026-07-08
 - **Type**: Animation (900 frames, 60fps)

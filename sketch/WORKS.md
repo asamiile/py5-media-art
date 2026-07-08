@@ -1,3 +1,10 @@
+## kinetic_brians_brain_cellular_automaton_2d
+- **Date**: 2026-07-08
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A high-density Brian's Brain cellular automaton simulation (a 3-state system: off, on, dying) that generates beautiful, naturally evolving spaceship patterns.
+- **Techniques**: NumPy array simulation using SciPy's 2D convolution for ultra-fast rule application. The 3-state grid is rendered with motion blur to create organic, glowing trails for the 'dying' cells.
+- **Palette**: Neon green and cyan for 'on' cells, fading into dark blue/red for 'dying' cells over a dark void.
+
 ## kinetic_spirograph_harmonograph_pendulum_2d
 - **Date**: 2026-07-08
 - **Type**: Animation (900 frames, 60fps)

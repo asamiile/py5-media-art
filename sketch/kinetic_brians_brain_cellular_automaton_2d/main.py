@@ -1,0 +1,114 @@
+from pathlib import Path
+import shutil
+import subprocess
+import sys
+import py5
+import numpy as np
+from scipy.signal import convolve2d
+
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.append(str(PROJECT_ROOT))
+
+from lib.paths import sketch_dir
+from lib.preview import preview_filename
+from lib.sizes import get_sizes
+
+SKETCH_DIR = sketch_dir(__file__)
+WORK_NAME = SKETCH_DIR.name
+FRAMES_DIR = SKETCH_DIR / "frames"
+DURATION_SEC = 15
+FPS = 60
+TOTAL_FRAMES = DURATION_SEC * FPS
+PREVIEW_FILENAME = f"{WORK_NAME}_p1.png"
+PREVIEW_SIZE, OUTPUT_SIZE, _ = get_sizes()
+SIZE = OUTPUT_SIZE
+
+CELL_SIZE = 12
+GRID_W = SIZE[0] // CELL_SIZE + 1
+GRID_H = SIZE[1] // CELL_SIZE + 1
+
+grid = np.zeros((GRID_H, GRID_W), dtype=np.uint8)
+
+kernel = np.array([[1, 1, 1],
+                   [1, 0, 1],
+                   [1, 1, 1]], dtype=np.uint8)
+
+def setup():
+    py5.size(*SIZE)
+    py5.pixel_density(1)
+    FRAMES_DIR.mkdir(exist_ok=True)
+    py5.color_mode(py5.HSB, 360, 100, 100, 100)
+    py5.background(10, 15, 20)
+    py5.no_stroke()
+    
+    global grid
+    grid = np.random.choice([0, 1, 2], size=(GRID_H, GRID_W), p=[0.8, 0.1, 0.1]).astype(np.uint8)
+    
+def draw():
+    global grid
+    
+    py5.fill(10, 15, 20, 15)
+    py5.rect(0, 0, SIZE[0], SIZE[1])
+    
+    is_on = (grid == 1).astype(np.uint8)
+    
+    neighbors = convolve2d(is_on, kernel, mode='same', boundary='wrap')
+    
+    new_grid = np.zeros_like(grid)
+    new_grid[grid == 1] = 2
+    new_grid[(grid == 0) & (neighbors == 2)] = 1
+    
+    grid = new_grid
+    
+    t = py5.frame_count * 0.05
+    
+    on_y, on_x = np.where(grid == 1)
+    dying_y, dying_x = np.where(grid == 2)
+    
+    py5.fill(210, 90, 80, 50)
+    for x, y in zip(dying_x, dying_y):
+        py5.rect(x * CELL_SIZE, y * CELL_SIZE, CELL_SIZE, CELL_SIZE)
+        
+    for i in range(len(on_x)):
+        x, y = on_x[i], on_y[i]
+        hue = (140 + x * 1.5 + y * 1.5 + t * 50) % 360
+        py5.fill(hue, 90, 100, 100)
+        py5.rect(x * CELL_SIZE, y * CELL_SIZE, CELL_SIZE, CELL_SIZE)
+
+    py5.color_mode(py5.RGB, 255)
+
+    py5.save_frame(str(FRAMES_DIR / "frame-####.png"))
+
+    if py5.frame_count == 2 or py5.frame_count % 60 == 0:
+        py5.load_np_pixels()
+        if py5.np_pixels.std() < 1.0:
+            print(f"[Error] Blank screen detected on frame {py5.frame_count} (std < 1.0). Aborting.")
+            import os
+            os._exit(1)
+
+    if py5.frame_count % 60 == 0:
+        print(f"[Render Progress] Frame {py5.frame_count}/{TOTAL_FRAMES} ({py5.frame_count/TOTAL_FRAMES*100:.1f}%)")
+
+    if py5.frame_count >= TOTAL_FRAMES:
+        py5.exit_sketch()
+        
+        print(f"[Render FFmpeg] Compiling {TOTAL_FRAMES} frames into video...")
+        subprocess.run([
+            "ffmpeg", "-y", "-r", str(FPS),
+            "-i", str(FRAMES_DIR / "frame-%04d.png"),
+            "-vcodec", "libx264", "-pix_fmt", "yuv420p",
+            str(SKETCH_DIR / f"{WORK_NAME}.mp4"),
+        ], check=True)
+        
+        mid = str(FRAMES_DIR / f"frame-{TOTAL_FRAMES // 2:04d}.png")
+        subprocess.run(["cp", mid, str(SKETCH_DIR / PREVIEW_FILENAME)], check=True)
+        
+        if FRAMES_DIR.exists():
+            shutil.rmtree(FRAMES_DIR)
+            print("[Render Cleanup] Temporary frames directory successfully removed.")
+            
+        import os
+        os._exit(0)
+
+py5.run_sketch()

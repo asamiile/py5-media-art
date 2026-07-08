@@ -1,3 +1,10 @@
+## kinetic_retro_crt_typography_glitch_2d
+- **Date**: 2026-07-08
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A cyberpunk-inspired typographical glitch animation that simulates the visual artifacts of a failing CRT monitor displaying a terminal stream.
+- **Techniques**: A grid of random alphanumeric characters and symbols is drawn using a monospace font. Characters randomly mutate based on 2D noise. Visual glitches—including horizontal scanline desyncs, glowing brightness bands that slowly scroll downwards, and severe red/blue chromatic aberration on tearing segments—are created using overlapping sine waves and thresholded Perlin noise.
+- **Palette**: Classic terminal phosphor green on a dark green-black background, highlighted with harsh red and blue fringes during glitch events.
+
 ## kinetic_recursive_fractal_tree_canopy_2d
 - **Date**: 2026-07-08
 - **Type**: Animation (900 frames, 60fps)

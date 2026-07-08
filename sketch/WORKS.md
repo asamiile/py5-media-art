@@ -1,3 +1,10 @@
+## kinetic_sacred_geometry_torus_knot_2d
+- **Date**: 2026-07-08
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A hypnotic, three-dimensional representation of a Torus Knot ((p,q) = (5,13)) projected entirely using 2D rendering mathematics.
+- **Techniques**: Parametric equations calculate the complex looping trajectory of the knot, which is evaluated at 12,000 points. These points are dynamically rotated using 3D Euler angles tied to the global time loop and then projected orthographically with perspective scaling onto the 2D plane. The thickness, brightness, and color of the ribbon are mapped directly to their mathematical Z-depth, creating a perfect illusion of overlapping 3D space with additive blending.
+- **Palette**: Classic Synthwave aesthetic. A deep indigo/black background illuminates glowing ribbons that morph perfectly between neon Pink, Cyan, and deep Violet.
+
 ## kinetic_generative_vector_field_flow_2d
 - **Date**: 2026-07-08
 - **Type**: Animation (900 frames, 60fps)

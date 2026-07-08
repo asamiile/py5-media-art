@@ -1,3 +1,10 @@
+## kinetic_chladni_resonance_plate_2d
+- **Date**: 2026-07-08
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: Simulating Chladni figures where 80,000 "sand" particles gather at the nodes of standing waves on a vibrating plate. As the acoustic frequencies shift, the particles scatter and re-form into new resonant mandalas.
+- **Techniques**: Analytical gradient descent down the squared Chladni equation Z^2. Particles organically seek Z=0 (nodes) combined with slight brownian motion. Motion blur fades the sand's trail.
+- **Palette**: Golden amber, warm sand, and stark white particles over a deep acoustic blue-black background.
+
 ## kinetic_brians_brain_cellular_automaton_2d
 - **Date**: 2026-07-08
 - **Type**: Animation (900 frames, 60fps)

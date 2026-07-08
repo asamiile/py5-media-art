@@ -1,3 +1,10 @@
+## generative_woven_celtic_knot_mandala_2d
+- **Date**: 2026-07-08
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: Thick, colorful bands weaving over and under each other in a complex, shifting celtic knot or mandala pattern.
+- **Techniques**: Draw interwoven arcs. Weaving over/under is achieved by drawing the intersections with thick outer stroke shadows to create an overlapping glass effect.
+- **Palette**: Rich tapestry colors with shifting hues based on ring depth.
+
 ## kinetic_ascii_art_perlin_terrain_2d
 - **Date**: 2026-07-08
 - **Type**: Animation (900 frames, 60fps)

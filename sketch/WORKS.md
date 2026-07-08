@@ -1,3 +1,10 @@
+## kinetic_ascii_art_perlin_terrain_2d
+- **Date**: 2026-07-08
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A constantly scrolling, 3D-looking terrain rendered entirely using retro ASCII characters that shift in size and density.
+- **Techniques**: Evaluate 3D Perlin noise across a grid, projecting an isometric terrain. Map the height values to ASCII characters of varying brightness.
+- **Palette**: Retro terminal green on black, but with density highlights going to bright white.
+
 ## generative_isometric_recursive_cubes_2d
 - **Date**: 2026-07-08
 - **Type**: Animation (900 frames, 60fps)

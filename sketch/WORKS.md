@@ -1,3 +1,10 @@
+## kinetic_abstract_mandala_interference_patterns_2d
+- **Date**: 2026-07-08
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: An intricate moiré interference pattern created by overlapping, semi-transparent geometric mandalas rotating at slightly different harmonious speeds.
+- **Techniques**: Four layers of mandalas consisting of fine interconnected lines are drawn. Additive blending (`py5.ADD`) creates intense glowing intersections where the fine lines overlap. Slight Perlin noise displaces vertices based on time, giving the geometric perfection a slight organic quiver.
+- **Palette**: Highly saturated electric blue, neon pink, bright yellow, and cyan glowing lines on a stark black background.
+
 ## kinetic_sacred_geometry_metatrons_cube_2d
 - **Date**: 2026-07-08
 - **Type**: Animation (900 frames, 60fps)

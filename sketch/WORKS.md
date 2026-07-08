@@ -1,3 +1,10 @@
+## kinetic_optical_illusion_moire_interference_2d
+- **Date**: 2026-07-08
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A kinetic optical illusion utilizing the Moiré effect, creating a hypnotic, hallucinatory visual experience of phantom waves and fringes.
+- **Techniques**: Four distinct, dense geometries are rendered using additive blending: two layers of concentric circles orbiting out of phase, and two sets of dense parallel lines rotating in opposite directions. The sheer density of the overlapping strokes forces the eye and the rendering pixels to create massive interference patterns (Moiré fringes) that appear to pulse, scale, and bend completely independently of the drawn geometries.
+- **Palette**: Pitch black background with extremely vibrant additive colors: Deep Pink, Cyan, Lime Green, and Orange.
+
 ## kinetic_lissajous_curves_spirograph_2d
 - **Date**: 2026-07-08
 - **Type**: Animation (900 frames, 60fps)

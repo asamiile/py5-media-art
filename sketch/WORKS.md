@@ -1,3 +1,10 @@
+## kinetic_generative_chladni_figures_2d
+- **Date**: 2026-07-08
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A generative simulation of Chladni figures (cymatics)—visualizing the nodal lines of 2D standing waves on a resonating plate.
+- **Techniques**: A highly dense grid of points is evaluated against a superposition of two 2D standing wave equations. Particles are rendered only where the amplitude is close to zero (the nodes). By continuously interpolating the weighting coefficients of the two composite frequencies over a time loop, the nodal lines organically dissolve and morph into entirely new geometric configurations, exactly looping over the 15-second duration.
+- **Palette**: A deep, warm reddish-brown background (like a copper plate) populated by glowing amber and gold "sand" grains that vary in brightness based on proximity to absolute zero amplitude.
+
 ## kinetic_optical_illusion_moire_interference_2d
 - **Date**: 2026-07-08
 - **Type**: Animation (900 frames, 60fps)

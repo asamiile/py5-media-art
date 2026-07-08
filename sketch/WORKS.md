@@ -1,3 +1,10 @@
+## kinetic_op_art_chromatic_aberration_waves_2d
+- **Date**: 2026-07-08
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: An optical art illusion (Op Art) of vertical lines warping into a complex, hypnotic wave pattern, enhanced by a severe chromatic aberration effect.
+- **Techniques**: 150 vertical lines are distorted horizontally using a combination of 3 intersecting sine waves with varying spatial and temporal frequencies. The lines are drawn three separate times for the Red, Green, and Blue channels, each with a slight phase offset in time. An easing envelope restricts the distortion to a central circular area.
+- **Palette**: Strictly RGB additive blend over a near-black background, creating pure white where all lines overlap and vivid red, green, blue, cyan, magenta, and yellow fringes where the aberration occurs.
+
 ## kinetic_abstract_mandala_interference_patterns_2d
 - **Date**: 2026-07-08
 - **Type**: Animation (900 frames, 60fps)

@@ -1,3 +1,10 @@
+## kinetic_abstract_geometric_bauhaus_2d
+- **Date**: 2026-07-08
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: An abstract geometric composition inspired by Bauhaus design principles. Large primary-colored shapes (circles, triangles, rectangles, arcs) float and intersect gracefully.
+- **Techniques**: Procedural placement of vector primitives. Shapes are animated using Lissajous curves (sine and cosine waves with varying frequencies and phases) to create complex orbital paths. `MULTIPLY` blend mode is used to simulate transparent ink overlays mixing primary colors.
+- **Palette**: Classic Bauhaus palette: crimson red, deep royal blue, mustard yellow, stark white, and jet black.
+
 ## kinetic_phyllotaxis_golden_spiral_bloom_2d
 - **Date**: 2026-07-08
 - **Type**: Animation (900 frames, 60fps)

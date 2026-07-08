@@ -1,3 +1,10 @@
+## kinetic_lissajous_curves_spirograph_2d
+- **Date**: 2026-07-08
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: An intricate, mathematically precise mathematical drawing (Lissajous curves/Spirograph) that breathes and morphs continuously.
+- **Techniques**: Three composite trigonometric functions with specific prime/co-prime frequencies are summed to produce a complex closed path of 15,000 vertices per frame. By animating the phase shifts of each component wave using a time loop, the entire shape smoothly twists, expands, and folds into itself in a perfect seamless loop. Additive blending creates intense glowing overlaps where the lines bunch together.
+- **Palette**: A velvety dark violet-brown background. The curves themselves are drawn with a dynamic color gradient that sweeps through the full hue spectrum (rainbow), creating spectacular glowing neon threads.
+
 ## kinetic_isometric_metropolis_cityscape_2d
 - **Date**: 2026-07-08
 - **Type**: Animation (900 frames, 60fps)

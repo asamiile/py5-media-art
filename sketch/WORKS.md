@@ -1,3 +1,10 @@
+## kinetic_cyberpunk_glitch_cityscape_2d
+- **Date**: 2026-07-08
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A high-density side-scrolling cyberpunk city filled with glowing windows, neon signs, and intense digital glitch artifacts.
+- **Techniques**: Procedural building generation with layered parallax scrolling. Real-time digital glitches are simulated by randomly slicing and shifting pixel data (numpy array rolling and color channel overrides).
+- **Palette**: Neon cyan, bright magenta, deep violet, and acid yellow on a dark twilight backdrop with an oversized moon.
+
 ## kinetic_optical_illusion_moire_interference_2d
 - **Date**: 2026-07-08
 - **Type**: Animation (900 frames, 60fps)

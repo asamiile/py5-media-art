@@ -1,3 +1,10 @@
+## kinetic_organic_fluid_marbling_2d
+- **Date**: 2026-07-08
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A generative simulation of thick, viscous fluid mixing organically like marble paper.
+- **Techniques**: Curl noise driving a dense array of particles that leave fading trails, with color mapped from the underlying noise field.
+- **Palette**: Dark indigo base, glowing turquoise, electric coral, soft white highlights.
+
 ## generative_vector_flow_field_topography_2d
 - **Date**: 2026-07-07
 - **Type**: Animation

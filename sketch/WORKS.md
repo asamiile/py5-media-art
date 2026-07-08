@@ -1,3 +1,10 @@
+## kinetic_isometric_metropolis_cityscape_2d
+- **Date**: 2026-07-08
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A procedurally generated cyberpunk metropolis rendered in isometric projection, simulating a living, breathing city.
+- **Techniques**: 3D objects (buildings) are drawn purely through 2D math (isometric formulas) on a dense grid. The height of each building organically oscillates using time-looping 2D Perlin noise, shaped by a smoothstep falloff to create a distinct, taller 'downtown' area. Glowing traffic rectangles continuously slide along the grid lines, moving flawlessly across the streets.
+- **Palette**: A deep orange/indigo night sky with buildings colored in deep purples and blues. Neon highlights in bright cyan and magenta cap the tallest buildings, while traffic pulses in bright orange and pink using additive blending.
+
 ## kinetic_retro_crt_typography_glitch_2d
 - **Date**: 2026-07-08
 - **Type**: Animation (900 frames, 60fps)

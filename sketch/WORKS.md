@@ -1,3 +1,10 @@
+## kinetic_abstract_geometric_truchet_tiles_maze_2d
+- **Date**: 2026-07-08
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: An animated maze built from Truchet tiles that constantly rotate to break and re-form complex geometric paths.
+- **Techniques**: A grid of curved Truchet tiles, where each tile's rotation is driven by overlapping 2D Perlin noise fields in a seamless time-loop. A custom cubic easing function causes the tiles to snap to 90-degree increments with an organic, mechanical motion. Line thickness pulsates radially using a sine wave.
+- **Palette**: Dark charcoal background with vivid, high-contrast, smoothly shifting hues outlining the maze paths.
+
 ## kinetic_optical_illusion_droste_spiral_2d
 - **Date**: 2026-07-08
 - **Type**: Animation (900 frames, 60fps)

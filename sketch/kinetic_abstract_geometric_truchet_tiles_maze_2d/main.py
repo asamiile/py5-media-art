@@ -2,8 +2,9 @@ from pathlib import Path
 import shutil
 import subprocess
 import sys
-import numpy as np
+import math
 import py5
+import numpy as np
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 if str(PROJECT_ROOT) not in sys.path:
@@ -23,84 +24,70 @@ PREVIEW_FILENAME = f"{WORK_NAME}_p1.png"
 PREVIEW_SIZE, OUTPUT_SIZE, _ = get_sizes()
 SIZE = OUTPUT_SIZE
 
-# Grid
-TILE_SIZE = 60
-COLS = SIZE[0] // TILE_SIZE + 2
-ROWS = SIZE[1] // TILE_SIZE + 2
-
-# State: 0 or 1 for the two tile orientations
-state = np.random.randint(0, 2, (COLS, ROWS)).astype(np.float32)
-target_state = state.copy()
-# Delay offsets to make rotation look like a wave
-offsets = np.zeros((COLS, ROWS))
-for i in range(COLS):
-    for j in range(ROWS):
-        offsets[i, j] = np.random.uniform(0, 2 * np.pi)
+CELL_SIZE = 80
+COLS = SIZE[0] // CELL_SIZE + 2
+ROWS = SIZE[1] // CELL_SIZE + 2
 
 def setup():
     py5.size(*SIZE)
     py5.pixel_density(1)
-    py5.color_mode(py5.HSB, 360, 100, 100, 100)
-    py5.background(0)
     FRAMES_DIR.mkdir(exist_ok=True)
-    py5.stroke_weight(TILE_SIZE * 0.15)
-    py5.stroke_cap(py5.SQUARE)
-    py5.no_fill()
+    py5.color_mode(py5.HSB, 360, 100, 100, 100)
+    py5.rect_mode(py5.CENTER)
+    
+def ease_in_out_cubic(t):
+    return 4 * t * t * t if t < 0.5 else 1 - math.pow(-2 * t + 2, 3) / 2
 
 def draw():
-    global state, target_state
+    py5.background(15, 20, 25)
     
-    # Trails / motion blur
-    py5.blend_mode(py5.BLEND)
-    py5.no_stroke()
-    py5.fill(0, 0, 0, 30)
-    py5.rect(0, 0, py5.width, py5.height)
+    t = py5.frame_count / TOTAL_FRAMES
+    loop_t = t * py5.TWO_PI
     
-    py5.blend_mode(py5.ADD)
-    py5.no_fill()
+    py5.stroke_weight(12)
+    py5.stroke_cap(py5.SQUARE)
     
-    time_val = py5.frame_count * 0.05
+    cos_t = math.cos(loop_t)
+    sin_t = math.sin(loop_t)
     
-    # Periodically assign new target states based on a wave
     for i in range(COLS):
         for j in range(ROWS):
-            noise_val = np.sin(time_val * 0.5 + i * 0.1) * np.cos(time_val * 0.4 + j * 0.1)
-            if noise_val > 0.8:
-                target_state[i, j] = 1.0
-            elif noise_val < -0.8:
-                target_state[i, j] = 0.0
-                
-            # Smooth interpolation
-            diff = target_state[i, j] - state[i, j]
-            state[i, j] += diff * 0.1
-    
-    # Draw tiles
-    for i in range(COLS):
-        for j in range(ROWS):
-            x = i * TILE_SIZE
-            y = j * TILE_SIZE
+            x = i * CELL_SIZE - CELL_SIZE / 2
+            y = j * CELL_SIZE - CELL_SIZE / 2
             
-            s = state[i, j]
-            # Rotation angle from 0 to PI/2
-            angle = s * (np.pi / 2.0)
+            n_val = py5.noise(i * 0.08, j * 0.08, cos_t * 0.4 + 1.0)
+            n_val2 = py5.noise(i * 0.08, j * 0.08, sin_t * 0.4 + 1.0)
+            
+            rot_target = (n_val + n_val2) * 2.0 
+            
+            base_quad = math.floor(rot_target)
+            fract = rot_target - base_quad
+            
+            smooth_fract = ease_in_out_cubic(fract)
+            
+            rotation = (base_quad + smooth_fract) * py5.PI / 2
+            
+            dist = math.sqrt((x - SIZE[0]/2)**2 + (y - SIZE[1]/2)**2)
+            hue = (dist * 0.1 + t * 360) % 360
+            
+            # Pulsing thickness
+            thick = 8 + math.sin(dist * 0.01 - loop_t * 2) * 4
+            py5.stroke_weight(thick)
+            
+            py5.stroke(hue, 80, 90)
             
             py5.push_matrix()
-            py5.translate(x + TILE_SIZE/2, y + TILE_SIZE/2)
-            py5.rotate(angle)
+            py5.translate(x, y)
+            py5.rotate(rotation)
             
-            # Color shifts across the grid
-            hue = (time_val * 20.0 + i * 5.0 + j * 5.0) % 360.0
-            py5.stroke(hue, 80, 100, 80)
+            py5.no_fill()
             
-            # Draw Truchet arcs
-            r = TILE_SIZE / 2.0
-            
-            py5.arc(-r, -r, TILE_SIZE, TILE_SIZE, 0, np.pi/2)
-            py5.arc(r, r, TILE_SIZE, TILE_SIZE, np.pi, np.pi*1.5)
+            py5.arc(-CELL_SIZE/2, -CELL_SIZE/2, CELL_SIZE, CELL_SIZE, 0, py5.PI/2)
+            py5.arc(CELL_SIZE/2, CELL_SIZE/2, CELL_SIZE, CELL_SIZE, py5.PI, py5.PI + py5.PI/2)
             
             py5.pop_matrix()
 
-    py5.blend_mode(py5.BLEND)
+    py5.color_mode(py5.RGB, 255)
 
     py5.save_frame(str(FRAMES_DIR / "frame-####.png"))
 

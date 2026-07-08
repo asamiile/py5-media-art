@@ -1,3 +1,10 @@
+## kinetic_kaleidoscopic_mandala_tessellation_2d
+- **Date**: 2026-07-08
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A hypnotic, mathematically precise kaleidoscopic mandala that continuously breathes and evolves.
+- **Techniques**: The canvas is divided into 28 radial slices (14-fold symmetry). Within a single slice, complex overlapping Bezier curves and glowing terminal nodes are drawn. This slice is then mirrored and rotated to form a perfect closed mandala. The radius, thickness, control points, and hue of the constituent curves are all modulated by overlapping sine waves tied to a global time loop, causing the entire structure to elegantly unfold and retract like a mechanical lotus.
+- **Palette**: A regal dark orange-red background illuminated by brilliant golden, crimson, and white neon structures.
+
 ## kinetic_generative_chladni_figures_2d
 - **Date**: 2026-07-08
 - **Type**: Animation (900 frames, 60fps)

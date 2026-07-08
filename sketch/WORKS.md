@@ -1,3 +1,10 @@
+## kinetic_recursive_fractal_tree_canopy_2d
+- **Date**: 2026-07-08
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: An organic, recursive fractal tree whose massive canopy sways dynamically in a mathematically simulated, looping wind field.
+- **Techniques**: The tree is drawn using a recursive branching function up to depth 12. At each branch, the split angles are modified by overlapping 2D Perlin noise fields driven by the current position and a looping time vector. This creates a highly realistic, organic swaying motion (like branches in the wind). 
+- **Palette**: A "bioluminescent forest" theme. The background is a dark, moody navy blue, while the tree itself transitions from a dark cyan at the roots to a bright, glowing magenta/pink at the fine tips, rendered with additive blending.
+
 ## kinetic_op_art_chromatic_aberration_waves_2d
 - **Date**: 2026-07-08
 - **Type**: Animation (900 frames, 60fps)

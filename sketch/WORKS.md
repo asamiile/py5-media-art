@@ -1,3 +1,10 @@
+## kinetic_strange_attractor_lorenz_system_2d
+- **Date**: 2026-07-08
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A glowing, chaotic 3D particle simulation tracing the classic Lorenz "butterfly" attractor.
+- **Techniques**: Numerical integration (Euler method) of the Lorenz system equations to track tens of thousands of particles continuously. A manual 3D-to-2D perspective transform is used for stability, accompanied by motion blur via semi-transparent background clearing.
+- **Palette**: Fiery orange, hot pink, and bright yellow particles against a deep black void.
+
 ## kinetic_abstract_geometric_bauhaus_2d
 - **Date**: 2026-07-08
 - **Type**: Animation (900 frames, 60fps)

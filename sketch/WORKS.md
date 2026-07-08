@@ -1,3 +1,10 @@
+## kinetic_spirograph_harmonograph_pendulum_2d
+- **Date**: 2026-07-08
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A complex, multi-pendulum harmonograph simulating an infinite glowing spirograph drawing.
+- **Techniques**: Parametric equations combining multiple sine and cosine waves. Frequencies and amplitudes slowly modulate over time, causing the woven thread to organically evolve its symmetry. Long-tail motion blur traces the paths over time.
+- **Palette**: Electric cyan, purple, and neon blue on a dark midnight green backdrop.
+
 ## kinetic_strange_attractor_lorenz_system_2d
 - **Date**: 2026-07-08
 - **Type**: Animation (900 frames, 60fps)

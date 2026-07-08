@@ -1,3 +1,10 @@
+## kinetic_algorithmic_phyllotaxis_sunflower_2d
+- **Date**: 2026-07-08
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A kinetic exploration of Phyllotaxis, the naturally occurring spiral arrangements found in pinecones and sunflowers.
+- **Techniques**: 9,000 diamond-shaped nodes are distributed using the Golden Angle (~137.5 degrees). Over the 15-second loop, this angle is subjected to a microscopic sine-wave oscillation. This tiny angular variance cascades outward, causing the massive spiral arms of the entire structure to warp, intersect, and reorganize into different Fibonacci sequences, creating intense optical moiré illusions.
+- **Palette**: Deep forest green/black background with the nodes glowing in a vibrant, shifting rainbow spectrum based on their index and distance from the center.
+
 ## kinetic_sacred_geometry_flower_of_life_2d
 - **Date**: 2026-07-08
 - **Type**: Animation (900 frames, 60fps)

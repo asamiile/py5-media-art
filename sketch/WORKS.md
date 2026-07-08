@@ -1,3 +1,10 @@
+## kinetic_optical_illusion_moire_interference_2d
+- **Date**: 2026-07-08
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: Deep, mesmerizing Moiré patterns created by overlapping rotating geometries that generate hallucinatory interference waves.
+- **Techniques**: Draw concentric circles and radiating lines from multiple offset centers that rotate at slightly different rates. The lines themselves pulse in width to create interference ripples.
+- **Palette**: Extremely high contrast monochrome (white on black) with vivid pure red accent rings.
+
 ## kinetic_synthwave_retro_grid_terrain_3d
 - **Date**: 2026-07-08
 - **Type**: Animation (900 frames, 60fps)

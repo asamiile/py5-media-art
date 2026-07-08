@@ -1,3 +1,10 @@
+## kinetic_matrix_digital_rain_glitch_2d
+- **Date**: 2026-07-08
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: An homage to the classic "Matrix Digital Rain" with a modern volumetric glitch twist.
+- **Techniques**: 400 streams of Katakana characters falling at different speeds and scaling factors to simulate a deep Z-axis (parallax). Severe chromatic aberration (red/blue channel splitting) randomly strikes the characters, simulating digital corruption.
+- **Palette**: Matrix green, bright cyan, pure white, and aggressive red/blue glitch artifacts on an almost black background.
+
 ## kinetic_chladni_resonance_plate_2d
 - **Date**: 2026-07-08
 - **Type**: Animation (900 frames, 60fps)

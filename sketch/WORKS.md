@@ -1,3 +1,10 @@
+## kinetic_sacred_geometry_flower_of_life_2d
+- **Date**: 2026-07-08
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A kinetic interpretation of the ancient "Flower of Life" sacred geometry.
+- **Techniques**: A triangular/hexagonal grid spans the canvas, populating it with interlocking circles whose centers are spaced exactly one radius apart. The radius of each circle subtly expands and contracts based on its distance from the screen's center, creating the illusion of a continuous, breathing ripple propagating through the geometry. The entire scene slowly rotates, while additive blending emphasizes the geometric intersections.
+- **Palette**: Radiant luminescent colors over a deep abyss-blue void. A rainbow gradient ripples outward from the center, complementing the structural waves.
+
 ## kinetic_sacred_geometry_torus_knot_2d
 - **Date**: 2026-07-08
 - **Type**: Animation (900 frames, 60fps)

@@ -1,3 +1,10 @@
+## kinetic_cyberpunk_neon_circuit_board_2d
+- **Date**: 2026-07-18
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A microscopic view of an alien, glowing cybernetic circuit board that routes itself in real-time.
+- **Techniques**: Procedural random-walk pathfinding generates growing traces on a grid that glow in neon cyan, pink, and orange against a dark slate background. As traces grow, they bloom into glowing nodes and then slowly fade away, leaving a continuously evolving network of high-tech geometric circuitry.
+- **Palette**: Dark slate background, with glowing neon cyan, pink, and warm amber traces utilizing additive blending.
+
 ## kinetic_generative_oscilloscope_waveforms_2d
 - **Date**: 2026-07-18
 - **Type**: Animation (900 frames, 60fps)

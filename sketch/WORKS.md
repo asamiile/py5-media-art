@@ -1,3 +1,10 @@
+## kinetic_math_polygonal_vortex_2d
+- **Date**: 2026-07-18
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A hypnotic, swirling vortex of sharp geometric polygons that warp and blend into a continuous tunnel of light.
+- **Techniques**: Concentric polygons (triangles, squares, hexagons) are drawn. Their vertices are continuously rotated and scaled using a mathematical vortex field driven by time and Perlin noise, creating a twisted, organic geometry out of rigid shapes.
+- **Palette**: Pitch black background, glowing violet, magenta, and electric orange.
+
 ## kinetic_algorithmic_phyllotaxis_sunflower_2d
 - **Date**: 2026-07-08
 - **Type**: Animation (900 frames, 60fps)

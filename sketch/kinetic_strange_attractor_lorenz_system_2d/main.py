@@ -24,68 +24,85 @@ PREVIEW_FILENAME = f"{WORK_NAME}_p1.png"
 PREVIEW_SIZE, OUTPUT_SIZE, _ = get_sizes()
 SIZE = OUTPUT_SIZE
 
-CELL_SIZE = 80
-COLS = SIZE[0] // CELL_SIZE + 2
-ROWS = SIZE[1] // CELL_SIZE + 2
+SIGMA = 10.0
+RHO = 28.0
+BETA = 8.0 / 3.0
+
+NUM_PARTICLES = 30000
+
+# To make the stream continuous, we track 'ages' for particles and reset them
+x_vals = np.random.uniform(-1, 1, NUM_PARTICLES)
+y_vals = np.random.uniform(-1, 1, NUM_PARTICLES)
+z_vals = np.random.uniform(20, 25, NUM_PARTICLES)
+ages = np.random.uniform(0, 1000, NUM_PARTICLES)
 
 def setup():
     py5.size(*SIZE)
     py5.pixel_density(1)
     FRAMES_DIR.mkdir(exist_ok=True)
     py5.color_mode(py5.HSB, 360, 100, 100, 100)
-    py5.rect_mode(py5.CENTER)
+    py5.background(0)
     
-def ease_in_out_cubic(t):
-    return 4 * t * t * t if t < 0.5 else 1 - math.pow(-2 * t + 2, 3) / 2
-
 def draw():
-    py5.background(15, 20, 25)
+    global x_vals, y_vals, z_vals, ages
     
-    t = py5.frame_count / TOTAL_FRAMES
-    loop_t = t * py5.TWO_PI
+    # Motion blur / fade effect
+    py5.no_stroke()
+    py5.fill(0, 0, 0, 10) # 10% opacity black
+    py5.rect(0, 0, SIZE[0], SIZE[1])
     
-    py5.stroke_weight(12)
-    py5.stroke_cap(py5.SQUARE)
+    t = py5.frame_count * 0.01
+    dt = 0.01
     
-    cos_t = math.cos(loop_t)
-    sin_t = math.sin(loop_t)
+    dx = SIGMA * (y_vals - x_vals) * dt
+    dy = (x_vals * (RHO - z_vals) - y_vals) * dt
+    dz = (x_vals * y_vals - BETA * z_vals) * dt
     
-    for i in range(COLS):
-        for j in range(ROWS):
-            x = i * CELL_SIZE - CELL_SIZE / 2
-            y = j * CELL_SIZE - CELL_SIZE / 2
-            
-            n_val = py5.noise(i * 0.08, j * 0.08, cos_t * 0.4 + 1.0)
-            n_val2 = py5.noise(i * 0.08, j * 0.08, sin_t * 0.4 + 1.0)
-            
-            rot_target = (n_val + n_val2) * 2.0 
-            
-            base_quad = math.floor(rot_target)
-            fract = rot_target - base_quad
-            
-            smooth_fract = ease_in_out_cubic(fract)
-            
-            rotation = (base_quad + smooth_fract) * py5.PI / 2
-            
-            dist = math.sqrt((x - SIZE[0]/2)**2 + (y - SIZE[1]/2)**2)
-            hue = (dist * 0.1 + t * 360) % 360
-            
-            # Pulsing thickness
-            thick = 8 + math.sin(dist * 0.01 - loop_t * 2) * 4
-            py5.stroke_weight(thick)
-            
-            py5.stroke(hue, 80, 90)
-            
-            py5.push_matrix()
-            py5.translate(x, y)
-            py5.rotate(rotation)
-            
-            py5.no_fill()
-            
-            py5.arc(-CELL_SIZE/2, -CELL_SIZE/2, CELL_SIZE, CELL_SIZE, 0, py5.PI/2)
-            py5.arc(CELL_SIZE/2, CELL_SIZE/2, CELL_SIZE, CELL_SIZE, py5.PI, py5.PI + py5.PI/2)
-            
-            py5.pop_matrix()
+    x_vals += dx
+    y_vals += dy
+    z_vals += dz
+    ages += 1
+    
+    # Reset particles that are too old to keep the simulation thick at the origin
+    reset_mask = ages > 400
+    if np.any(reset_mask):
+        x_vals[reset_mask] = np.random.uniform(-0.1, 0.1, np.sum(reset_mask))
+        y_vals[reset_mask] = np.random.uniform(-0.1, 0.1, np.sum(reset_mask))
+        z_vals[reset_mask] = np.random.uniform(20.0, 21.0, np.sum(reset_mask))
+        ages[reset_mask] = 0
+    
+    py5.translate(SIZE[0] / 2, SIZE[1] / 2)
+    
+    rot_y = t * 0.5
+    cos_ry = math.cos(rot_y)
+    sin_ry = math.sin(rot_y)
+    
+    rot_x = math.sin(t * 0.3) * 0.4
+    cos_rx = math.cos(rot_x)
+    sin_rx = math.sin(rot_x)
+    
+    py5.stroke_weight(2)
+    
+    # We will use numpy to calculate the points to speed it up!
+    ox = x_vals
+    oy = y_vals
+    oz = z_vals - 25.0
+    
+    rx1 = ox * cos_ry - oz * sin_ry
+    rz1 = ox * sin_ry + oz * cos_ry
+    
+    ry2 = oy * cos_rx - rz1 * sin_rx
+    rz2 = oy * sin_rx + rz1 * cos_rx
+    
+    scale = 1200 / (1200 + rz2)
+    px = rx1 * scale * 30
+    py_coord = ry2 * scale * 30
+    
+    # Draw points in Python loop (py5 doesn't have vectorized point drawing)
+    for i in range(NUM_PARTICLES):
+        hue = (10 + ages[i] * 0.5 + t * 20) % 360
+        py5.stroke(hue, 90, 100, 70)
+        py5.point(px[i], py_coord[i])
 
     py5.color_mode(py5.RGB, 255)
 

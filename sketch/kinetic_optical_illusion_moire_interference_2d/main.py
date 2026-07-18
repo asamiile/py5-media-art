@@ -4,7 +4,6 @@ import subprocess
 import sys
 import math
 import py5
-import numpy as np
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 if str(PROJECT_ROOT) not in sys.path:
@@ -24,70 +23,66 @@ PREVIEW_FILENAME = f"{WORK_NAME}_p1.png"
 PREVIEW_SIZE, OUTPUT_SIZE, _ = get_sizes()
 SIZE = OUTPUT_SIZE
 
-CELL_SIZE = 80
-COLS = SIZE[0] // CELL_SIZE + 2
-ROWS = SIZE[1] // CELL_SIZE + 2
-
 def setup():
     py5.size(*SIZE)
     py5.pixel_density(1)
     FRAMES_DIR.mkdir(exist_ok=True)
-    py5.color_mode(py5.HSB, 360, 100, 100, 100)
-    py5.rect_mode(py5.CENTER)
     
-def ease_in_out_cubic(t):
-    return 4 * t * t * t if t < 0.5 else 1 - math.pow(-2 * t + 2, 3) / 2
+def draw_lines(spacing, angle, offset_x, offset_y, color):
+    py5.push_matrix()
+    py5.translate(SIZE[0]/2 + offset_x, SIZE[1]/2 + offset_y)
+    py5.rotate(angle)
+    py5.stroke(*color)
+    py5.stroke_weight(spacing * 0.45)
+    diag = math.hypot(SIZE[0], SIZE[1])
+    num_lines = int(diag / spacing) + 2
+    for i in range(-num_lines, num_lines):
+        py5.line(-diag, i * spacing, diag, i * spacing)
+    py5.pop_matrix()
+
+def draw_circles(spacing, center_x, center_y, color):
+    py5.push_matrix()
+    py5.translate(center_x, center_y)
+    py5.no_fill()
+    py5.stroke(*color)
+    py5.stroke_weight(spacing * 0.45)
+    diag = math.hypot(SIZE[0], SIZE[1])
+    num_circles = int(diag / spacing) + 2
+    for i in range(1, num_circles):
+        py5.circle(0, 0, i * spacing * 2)
+    py5.pop_matrix()
 
 def draw():
-    py5.background(15, 20, 25)
+    py5.background(5)
     
     t = py5.frame_count / TOTAL_FRAMES
     loop_t = t * py5.TWO_PI
     
-    py5.stroke_weight(12)
-    py5.stroke_cap(py5.SQUARE)
+    py5.blend_mode(py5.ADD)
     
-    cos_t = math.cos(loop_t)
-    sin_t = math.sin(loop_t)
+    # Layer 1: Concentric circles slowly orbiting
+    spacing1 = 16
+    cx1 = SIZE[0]/2 + math.sin(loop_t) * 200
+    cy1 = SIZE[1]/2 + math.cos(loop_t * 2) * 100
+    draw_circles(spacing1, cx1, cy1, (255, 30, 100)) # Deep Pink
     
-    for i in range(COLS):
-        for j in range(ROWS):
-            x = i * CELL_SIZE - CELL_SIZE / 2
-            y = j * CELL_SIZE - CELL_SIZE / 2
-            
-            n_val = py5.noise(i * 0.08, j * 0.08, cos_t * 0.4 + 1.0)
-            n_val2 = py5.noise(i * 0.08, j * 0.08, sin_t * 0.4 + 1.0)
-            
-            rot_target = (n_val + n_val2) * 2.0 
-            
-            base_quad = math.floor(rot_target)
-            fract = rot_target - base_quad
-            
-            smooth_fract = ease_in_out_cubic(fract)
-            
-            rotation = (base_quad + smooth_fract) * py5.PI / 2
-            
-            dist = math.sqrt((x - SIZE[0]/2)**2 + (y - SIZE[1]/2)**2)
-            hue = (dist * 0.1 + t * 360) % 360
-            
-            # Pulsing thickness
-            thick = 8 + math.sin(dist * 0.01 - loop_t * 2) * 4
-            py5.stroke_weight(thick)
-            
-            py5.stroke(hue, 80, 90)
-            
-            py5.push_matrix()
-            py5.translate(x, y)
-            py5.rotate(rotation)
-            
-            py5.no_fill()
-            
-            py5.arc(-CELL_SIZE/2, -CELL_SIZE/2, CELL_SIZE, CELL_SIZE, 0, py5.PI/2)
-            py5.arc(CELL_SIZE/2, CELL_SIZE/2, CELL_SIZE, CELL_SIZE, py5.PI, py5.PI + py5.PI/2)
-            
-            py5.pop_matrix()
+    # Layer 2: Concentric circles orbiting out of phase
+    spacing2 = 16
+    cx2 = SIZE[0]/2 + math.sin(loop_t + py5.PI) * 200
+    cy2 = SIZE[1]/2 + math.cos(loop_t * 2 + py5.PI) * 100
+    draw_circles(spacing2, cx2, cy2, (30, 200, 255)) # Cyan
+    
+    # Layer 3: Rotating grid of straight lines (clockwise)
+    spacing3 = 18
+    angle3 = loop_t * 0.5
+    draw_lines(spacing3, angle3, math.cos(loop_t)*50, math.sin(loop_t)*50, (100, 255, 50)) # Lime green
+    
+    # Layer 4: Rotating grid of straight lines (counter-clockwise)
+    spacing4 = 18
+    angle4 = -loop_t * 0.5 + py5.PI / 4
+    draw_lines(spacing4, angle4, math.sin(loop_t)*-50, math.cos(loop_t)*-50, (255, 150, 0)) # Orange
 
-    py5.color_mode(py5.RGB, 255)
+    py5.blend_mode(py5.BLEND)
 
     py5.save_frame(str(FRAMES_DIR / "frame-####.png"))
 

@@ -2,9 +2,9 @@ from pathlib import Path
 import shutil
 import subprocess
 import sys
-import math
 import py5
 import numpy as np
+from scipy.signal import convolve2d
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 if str(PROJECT_ROOT) not in sys.path:
@@ -24,68 +24,57 @@ PREVIEW_FILENAME = f"{WORK_NAME}_p1.png"
 PREVIEW_SIZE, OUTPUT_SIZE, _ = get_sizes()
 SIZE = OUTPUT_SIZE
 
-CELL_SIZE = 80
-COLS = SIZE[0] // CELL_SIZE + 2
-ROWS = SIZE[1] // CELL_SIZE + 2
+CELL_SIZE = 12
+GRID_W = SIZE[0] // CELL_SIZE + 1
+GRID_H = SIZE[1] // CELL_SIZE + 1
+
+grid = np.zeros((GRID_H, GRID_W), dtype=np.uint8)
+
+kernel = np.array([[1, 1, 1],
+                   [1, 0, 1],
+                   [1, 1, 1]], dtype=np.uint8)
 
 def setup():
     py5.size(*SIZE)
     py5.pixel_density(1)
     FRAMES_DIR.mkdir(exist_ok=True)
     py5.color_mode(py5.HSB, 360, 100, 100, 100)
-    py5.rect_mode(py5.CENTER)
+    py5.background(10, 15, 20)
+    py5.no_stroke()
     
-def ease_in_out_cubic(t):
-    return 4 * t * t * t if t < 0.5 else 1 - math.pow(-2 * t + 2, 3) / 2
-
+    global grid
+    grid = np.random.choice([0, 1, 2], size=(GRID_H, GRID_W), p=[0.8, 0.1, 0.1]).astype(np.uint8)
+    
 def draw():
-    py5.background(15, 20, 25)
+    global grid
     
-    t = py5.frame_count / TOTAL_FRAMES
-    loop_t = t * py5.TWO_PI
+    py5.fill(10, 15, 20, 15)
+    py5.rect(0, 0, SIZE[0], SIZE[1])
     
-    py5.stroke_weight(12)
-    py5.stroke_cap(py5.SQUARE)
+    is_on = (grid == 1).astype(np.uint8)
     
-    cos_t = math.cos(loop_t)
-    sin_t = math.sin(loop_t)
+    neighbors = convolve2d(is_on, kernel, mode='same', boundary='wrap')
     
-    for i in range(COLS):
-        for j in range(ROWS):
-            x = i * CELL_SIZE - CELL_SIZE / 2
-            y = j * CELL_SIZE - CELL_SIZE / 2
-            
-            n_val = py5.noise(i * 0.08, j * 0.08, cos_t * 0.4 + 1.0)
-            n_val2 = py5.noise(i * 0.08, j * 0.08, sin_t * 0.4 + 1.0)
-            
-            rot_target = (n_val + n_val2) * 2.0 
-            
-            base_quad = math.floor(rot_target)
-            fract = rot_target - base_quad
-            
-            smooth_fract = ease_in_out_cubic(fract)
-            
-            rotation = (base_quad + smooth_fract) * py5.PI / 2
-            
-            dist = math.sqrt((x - SIZE[0]/2)**2 + (y - SIZE[1]/2)**2)
-            hue = (dist * 0.1 + t * 360) % 360
-            
-            # Pulsing thickness
-            thick = 8 + math.sin(dist * 0.01 - loop_t * 2) * 4
-            py5.stroke_weight(thick)
-            
-            py5.stroke(hue, 80, 90)
-            
-            py5.push_matrix()
-            py5.translate(x, y)
-            py5.rotate(rotation)
-            
-            py5.no_fill()
-            
-            py5.arc(-CELL_SIZE/2, -CELL_SIZE/2, CELL_SIZE, CELL_SIZE, 0, py5.PI/2)
-            py5.arc(CELL_SIZE/2, CELL_SIZE/2, CELL_SIZE, CELL_SIZE, py5.PI, py5.PI + py5.PI/2)
-            
-            py5.pop_matrix()
+    new_grid = np.zeros_like(grid)
+    new_grid[grid == 1] = 2
+    new_grid[(grid == 0) & (neighbors == 2)] = 1
+    
+    grid = new_grid
+    
+    t = py5.frame_count * 0.05
+    
+    on_y, on_x = np.where(grid == 1)
+    dying_y, dying_x = np.where(grid == 2)
+    
+    py5.fill(210, 90, 80, 50)
+    for x, y in zip(dying_x, dying_y):
+        py5.rect(x * CELL_SIZE, y * CELL_SIZE, CELL_SIZE, CELL_SIZE)
+        
+    for i in range(len(on_x)):
+        x, y = on_x[i], on_y[i]
+        hue = (140 + x * 1.5 + y * 1.5 + t * 50) % 360
+        py5.fill(hue, 90, 100, 100)
+        py5.rect(x * CELL_SIZE, y * CELL_SIZE, CELL_SIZE, CELL_SIZE)
 
     py5.color_mode(py5.RGB, 255)
 

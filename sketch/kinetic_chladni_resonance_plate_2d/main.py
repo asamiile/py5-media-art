@@ -2,7 +2,6 @@ from pathlib import Path
 import shutil
 import subprocess
 import sys
-import math
 import py5
 import numpy as np
 
@@ -24,68 +23,67 @@ PREVIEW_FILENAME = f"{WORK_NAME}_p1.png"
 PREVIEW_SIZE, OUTPUT_SIZE, _ = get_sizes()
 SIZE = OUTPUT_SIZE
 
-CELL_SIZE = 80
-COLS = SIZE[0] // CELL_SIZE + 2
-ROWS = SIZE[1] // CELL_SIZE + 2
+NUM_PARTICLES = 80000
+
+px = np.random.uniform(-1, 1, NUM_PARTICLES)
+py = np.random.uniform(-1, 1, NUM_PARTICLES)
+p_hue = np.random.uniform(35, 55, NUM_PARTICLES) 
+
+def chladni(x, y, n, m):
+    return np.cos(n * np.pi * x) * np.cos(m * np.pi * y) - np.cos(m * np.pi * x) * np.cos(n * np.pi * y)
 
 def setup():
     py5.size(*SIZE)
     py5.pixel_density(1)
     FRAMES_DIR.mkdir(exist_ok=True)
     py5.color_mode(py5.HSB, 360, 100, 100, 100)
-    py5.rect_mode(py5.CENTER)
+    py5.background(220, 80, 5)
     
-def ease_in_out_cubic(t):
-    return 4 * t * t * t if t < 0.5 else 1 - math.pow(-2 * t + 2, 3) / 2
-
 def draw():
-    py5.background(15, 20, 25)
+    global px, py
     
-    t = py5.frame_count / TOTAL_FRAMES
-    loop_t = t * py5.TWO_PI
+    py5.no_stroke()
+    py5.fill(220, 80, 5, 25)
+    py5.rect(0, 0, SIZE[0], SIZE[1])
     
-    py5.stroke_weight(12)
-    py5.stroke_cap(py5.SQUARE)
+    t = py5.frame_count * 0.005
     
-    cos_t = math.cos(loop_t)
-    sin_t = math.sin(loop_t)
+    n = 3.0 + np.sin(t * 1.5) * 1.5
+    m = 4.0 + np.cos(t * 1.2) * 2.0
     
-    for i in range(COLS):
-        for j in range(ROWS):
-            x = i * CELL_SIZE - CELL_SIZE / 2
-            y = j * CELL_SIZE - CELL_SIZE / 2
-            
-            n_val = py5.noise(i * 0.08, j * 0.08, cos_t * 0.4 + 1.0)
-            n_val2 = py5.noise(i * 0.08, j * 0.08, sin_t * 0.4 + 1.0)
-            
-            rot_target = (n_val + n_val2) * 2.0 
-            
-            base_quad = math.floor(rot_target)
-            fract = rot_target - base_quad
-            
-            smooth_fract = ease_in_out_cubic(fract)
-            
-            rotation = (base_quad + smooth_fract) * py5.PI / 2
-            
-            dist = math.sqrt((x - SIZE[0]/2)**2 + (y - SIZE[1]/2)**2)
-            hue = (dist * 0.1 + t * 360) % 360
-            
-            # Pulsing thickness
-            thick = 8 + math.sin(dist * 0.01 - loop_t * 2) * 4
-            py5.stroke_weight(thick)
-            
-            py5.stroke(hue, 80, 90)
-            
-            py5.push_matrix()
-            py5.translate(x, y)
-            py5.rotate(rotation)
-            
-            py5.no_fill()
-            
-            py5.arc(-CELL_SIZE/2, -CELL_SIZE/2, CELL_SIZE, CELL_SIZE, 0, py5.PI/2)
-            py5.arc(CELL_SIZE/2, CELL_SIZE/2, CELL_SIZE, CELL_SIZE, py5.PI, py5.PI + py5.PI/2)
-            
-            py5.pop_matrix()
+    eps = 0.01
+    lr = 0.003
+    
+    Z = chladni(px, py, n, m)
+    Z2 = Z**2
+    
+    Z_dx = chladni(px + eps, py, n, m)**2
+    Z_dy = chladni(px, py + eps, n, m)**2
+    
+    grad_x = (Z_dx - Z2) / eps
+    grad_y = (Z_dy - Z2) / eps
+    
+    px -= lr * grad_x + np.random.normal(0, 0.005, NUM_PARTICLES)
+    py -= lr * grad_y + np.random.normal(0, 0.005, NUM_PARTICLES)
+    
+    px = np.where(px > 1, -1, px)
+    px = np.where(px < -1, 1, px)
+    py = np.where(py > 1, -1, py)
+    py = np.where(py < -1, 1, py)
+    
+    screen_x = (px + 1) * 0.5 * SIZE[0]
+    screen_y = (py + 1) * 0.5 * SIZE[1]
+    
+    py5.stroke_weight(2)
+    
+    py5.begin_shape(py5.POINTS)
+    for i in range(NUM_PARTICLES):
+        z_abs = min(abs(Z[i]), 1.0)
+        brightness = 100 - z_abs * 70
+        alpha = 90 - z_abs * 80
+        py5.stroke(p_hue[i], 80 - z_abs*60, brightness, alpha)
+        py5.vertex(screen_x[i], screen_y[i])
+    py5.end_shape()
 
     py5.color_mode(py5.RGB, 255)
 

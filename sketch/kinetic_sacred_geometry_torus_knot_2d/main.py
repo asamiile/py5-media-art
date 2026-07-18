@@ -4,7 +4,6 @@ import subprocess
 import sys
 import math
 import py5
-import numpy as np
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 if str(PROJECT_ROOT) not in sys.path:
@@ -24,68 +23,87 @@ PREVIEW_FILENAME = f"{WORK_NAME}_p1.png"
 PREVIEW_SIZE, OUTPUT_SIZE, _ = get_sizes()
 SIZE = OUTPUT_SIZE
 
-CELL_SIZE = 80
-COLS = SIZE[0] // CELL_SIZE + 2
-ROWS = SIZE[1] // CELL_SIZE + 2
-
 def setup():
     py5.size(*SIZE)
     py5.pixel_density(1)
     FRAMES_DIR.mkdir(exist_ok=True)
-    py5.color_mode(py5.HSB, 360, 100, 100, 100)
-    py5.rect_mode(py5.CENTER)
     
-def ease_in_out_cubic(t):
-    return 4 * t * t * t if t < 0.5 else 1 - math.pow(-2 * t + 2, 3) / 2
-
 def draw():
-    py5.background(15, 20, 25)
+    py5.color_mode(py5.HSB, 360, 100, 100, 255)
+    py5.blend_mode(py5.BLEND)
+    py5.background(270, 95, 3) 
+    
+    py5.blend_mode(py5.ADD)
     
     t = py5.frame_count / TOTAL_FRAMES
     loop_t = t * py5.TWO_PI
     
-    py5.stroke_weight(12)
-    py5.stroke_cap(py5.SQUARE)
+    py5.translate(SIZE[0] / 2, SIZE[1] / 2)
     
-    cos_t = math.cos(loop_t)
-    sin_t = math.sin(loop_t)
+    p = 5
+    q = 13
     
-    for i in range(COLS):
-        for j in range(ROWS):
-            x = i * CELL_SIZE - CELL_SIZE / 2
-            y = j * CELL_SIZE - CELL_SIZE / 2
-            
-            n_val = py5.noise(i * 0.08, j * 0.08, cos_t * 0.4 + 1.0)
-            n_val2 = py5.noise(i * 0.08, j * 0.08, sin_t * 0.4 + 1.0)
-            
-            rot_target = (n_val + n_val2) * 2.0 
-            
-            base_quad = math.floor(rot_target)
-            fract = rot_target - base_quad
-            
-            smooth_fract = ease_in_out_cubic(fract)
-            
-            rotation = (base_quad + smooth_fract) * py5.PI / 2
-            
-            dist = math.sqrt((x - SIZE[0]/2)**2 + (y - SIZE[1]/2)**2)
-            hue = (dist * 0.1 + t * 360) % 360
-            
-            # Pulsing thickness
-            thick = 8 + math.sin(dist * 0.01 - loop_t * 2) * 4
-            py5.stroke_weight(thick)
-            
-            py5.stroke(hue, 80, 90)
-            
-            py5.push_matrix()
-            py5.translate(x, y)
-            py5.rotate(rotation)
-            
-            py5.no_fill()
-            
-            py5.arc(-CELL_SIZE/2, -CELL_SIZE/2, CELL_SIZE, CELL_SIZE, 0, py5.PI/2)
-            py5.arc(CELL_SIZE/2, CELL_SIZE/2, CELL_SIZE, CELL_SIZE, py5.PI, py5.PI + py5.PI/2)
-            
-            py5.pop_matrix()
+    num_points = 12000
+    
+    rot_x = loop_t * 1.0
+    rot_y = loop_t * 2.0
+    rot_z = loop_t * 0.5
+    
+    cx, sx = math.cos(rot_x), math.sin(rot_x)
+    cy, sy = math.cos(rot_y), math.sin(rot_y)
+    cz, sz = math.cos(rot_z), math.sin(rot_z)
+    
+    R1 = SIZE[1] * 0.3 
+    R2 = SIZE[1] * 0.15 
+    
+    py5.no_stroke()
+    
+    # We sort points by Z depth so they overlap correctly if we were using BLEND,
+    # but since we are using ADD blending, order doesn't matter mathematically!
+    
+    for i in range(num_points):
+        theta = (i / num_points) * py5.TWO_PI
+        
+        r = R1 + R2 * math.cos(q * theta)
+        x = r * math.cos(p * theta)
+        y = r * math.sin(p * theta)
+        z = R2 * math.sin(q * theta)
+        
+        xy = y * cx - z * sx
+        xz = y * sx + z * cx
+        y = xy
+        z = xz
+        
+        yx = x * cy + z * sy
+        yz = -x * sy + z * cy
+        x = yx
+        z = yz
+        
+        zx = x * cz - y * sz
+        zy = x * sz + y * cz
+        x = zx
+        y = zy
+        
+        z_offset = SIZE[1] * 1.5
+        z_factor = z_offset / (z_offset + z)
+        
+        px = x * z_factor
+        py_val = y * z_factor
+        
+        thickness = py5.remap(z, -R1, R1, 15, 3)
+        
+        base_hue = (theta / py5.TWO_PI * 360 * 4 + t * 360 * 2) % 360
+        # Synthwave remap: push hues towards Cyan (180), Pink (320), Purple (280)
+        hue = 260 + math.sin(base_hue * py5.PI / 180) * 80
+        
+        alpha = py5.remap(z, -R1, R1, 200, 30)
+        
+        py5.fill(hue, 95, 100, alpha)
+        py5.circle(px, py_val, thickness)
+        
+        if i % 8 == 0:
+            py5.fill(hue, 90, 100, alpha * 0.15)
+            py5.circle(px, py_val, thickness * 6)
 
     py5.color_mode(py5.RGB, 255)
 

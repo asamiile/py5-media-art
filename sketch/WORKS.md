@@ -1,3 +1,220 @@
+## kinetic_algorithmic_phyllotaxis_sunflower_2d
+- **Date**: 2026-07-08
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A kinetic exploration of Phyllotaxis, the naturally occurring spiral arrangements found in pinecones and sunflowers.
+- **Techniques**: 9,000 diamond-shaped nodes are distributed using the Golden Angle (~137.5 degrees). Over the 15-second loop, this angle is subjected to a microscopic sine-wave oscillation. This tiny angular variance cascades outward, causing the massive spiral arms of the entire structure to warp, intersect, and reorganize into different Fibonacci sequences, creating intense optical moiré illusions.
+- **Palette**: Deep forest green/black background with the nodes glowing in a vibrant, shifting rainbow spectrum based on their index and distance from the center.
+
+## kinetic_sacred_geometry_flower_of_life_2d
+- **Date**: 2026-07-08
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A kinetic interpretation of the ancient "Flower of Life" sacred geometry.
+- **Techniques**: A triangular/hexagonal grid spans the canvas, populating it with interlocking circles whose centers are spaced exactly one radius apart. The radius of each circle subtly expands and contracts based on its distance from the screen's center, creating the illusion of a continuous, breathing ripple propagating through the geometry. The entire scene slowly rotates, while additive blending emphasizes the geometric intersections.
+- **Palette**: Radiant luminescent colors over a deep abyss-blue void. A rainbow gradient ripples outward from the center, complementing the structural waves.
+
+## kinetic_sacred_geometry_torus_knot_2d
+- **Date**: 2026-07-08
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A hypnotic, three-dimensional representation of a Torus Knot ((p,q) = (5,13)) projected entirely using 2D rendering mathematics.
+- **Techniques**: Parametric equations calculate the complex looping trajectory of the knot, which is evaluated at 12,000 points. These points are dynamically rotated using 3D Euler angles tied to the global time loop and then projected orthographically with perspective scaling onto the 2D plane. The thickness, brightness, and color of the ribbon are mapped directly to their mathematical Z-depth, creating a perfect illusion of overlapping 3D space with additive blending.
+- **Palette**: Classic Synthwave aesthetic. A deep indigo/black background illuminates glowing ribbons that morph perfectly between neon Pink, Cyan, and deep Violet.
+
+## kinetic_generative_vector_field_flow_2d
+- **Date**: 2026-07-08
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A flowing, organic visualization of a mathematical vector field driven by high-dimensional Perlin noise, creating the illusion of wind or fluid currents.
+- **Techniques**: 20,000 independent particles trace paths through a continuous vector field. To achieve a perfect seamless loop over the 15-second duration, the vector field is generated using 4D Perlin noise, where the 3rd and 4th dimensions trace a perfect circle (using Cosine and Sine of the time variable). Particles have a short lifespan and are drawn with fading trails using additive blending.
+- **Palette**: A dark, warm indigo background with millions of overlapping semi-transparent trails glowing in a sweeping rainbow gradient based on their screen position and time.
+
+## kinetic_kaleidoscopic_mandala_tessellation_2d
+- **Date**: 2026-07-08
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A hypnotic, mathematically precise kaleidoscopic mandala that continuously breathes and evolves.
+- **Techniques**: The canvas is divided into 28 radial slices (14-fold symmetry). Within a single slice, complex overlapping Bezier curves and glowing terminal nodes are drawn. This slice is then mirrored and rotated to form a perfect closed mandala. The radius, thickness, control points, and hue of the constituent curves are all modulated by overlapping sine waves tied to a global time loop, causing the entire structure to elegantly unfold and retract like a mechanical lotus.
+- **Palette**: A regal dark orange-red background illuminated by brilliant golden, crimson, and white neon structures.
+
+## kinetic_generative_chladni_figures_2d
+- **Date**: 2026-07-08
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A generative simulation of Chladni figures (cymatics)—visualizing the nodal lines of 2D standing waves on a resonating plate.
+- **Techniques**: A highly dense grid of points is evaluated against a superposition of two 2D standing wave equations. Particles are rendered only where the amplitude is close to zero (the nodes). By continuously interpolating the weighting coefficients of the two composite frequencies over a time loop, the nodal lines organically dissolve and morph into entirely new geometric configurations, exactly looping over the 15-second duration.
+- **Palette**: A deep, warm reddish-brown background (like a copper plate) populated by glowing amber and gold "sand" grains that vary in brightness based on proximity to absolute zero amplitude.
+
+## kinetic_optical_illusion_moire_interference_2d
+- **Date**: 2026-07-08
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A kinetic optical illusion utilizing the Moiré effect, creating a hypnotic, hallucinatory visual experience of phantom waves and fringes.
+- **Techniques**: Four distinct, dense geometries are rendered using additive blending: two layers of concentric circles orbiting out of phase, and two sets of dense parallel lines rotating in opposite directions. The sheer density of the overlapping strokes forces the eye and the rendering pixels to create massive interference patterns (Moiré fringes) that appear to pulse, scale, and bend completely independently of the drawn geometries.
+- **Palette**: Pitch black background with extremely vibrant additive colors: Deep Pink, Cyan, Lime Green, and Orange.
+
+## kinetic_lissajous_curves_spirograph_2d
+- **Date**: 2026-07-08
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: An intricate, mathematically precise mathematical drawing (Lissajous curves/Spirograph) that breathes and morphs continuously.
+- **Techniques**: Three composite trigonometric functions with specific prime/co-prime frequencies are summed to produce a complex closed path of 15,000 vertices per frame. By animating the phase shifts of each component wave using a time loop, the entire shape smoothly twists, expands, and folds into itself in a perfect seamless loop. Additive blending creates intense glowing overlaps where the lines bunch together.
+- **Palette**: A velvety dark violet-brown background. The curves themselves are drawn with a dynamic color gradient that sweeps through the full hue spectrum (rainbow), creating spectacular glowing neon threads.
+
+## kinetic_isometric_metropolis_cityscape_2d
+- **Date**: 2026-07-08
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A procedurally generated cyberpunk metropolis rendered in isometric projection, simulating a living, breathing city.
+- **Techniques**: 3D objects (buildings) are drawn purely through 2D math (isometric formulas) on a dense grid. The height of each building organically oscillates using time-looping 2D Perlin noise, shaped by a smoothstep falloff to create a distinct, taller 'downtown' area. Glowing traffic rectangles continuously slide along the grid lines, moving flawlessly across the streets.
+- **Palette**: A deep orange/indigo night sky with buildings colored in deep purples and blues. Neon highlights in bright cyan and magenta cap the tallest buildings, while traffic pulses in bright orange and pink using additive blending.
+
+## kinetic_retro_crt_typography_glitch_2d
+- **Date**: 2026-07-08
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A cyberpunk-inspired typographical glitch animation that simulates the visual artifacts of a failing CRT monitor displaying a terminal stream.
+- **Techniques**: A grid of random alphanumeric characters and symbols is drawn using a monospace font. Characters randomly mutate based on 2D noise. Visual glitches—including horizontal scanline desyncs, glowing brightness bands that slowly scroll downwards, and severe red/blue chromatic aberration on tearing segments—are created using overlapping sine waves and thresholded Perlin noise.
+- **Palette**: Classic terminal phosphor green on a dark green-black background, highlighted with harsh red and blue fringes during glitch events.
+
+## kinetic_recursive_fractal_tree_canopy_2d
+- **Date**: 2026-07-08
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: An organic, recursive fractal tree whose massive canopy sways dynamically in a mathematically simulated, looping wind field.
+- **Techniques**: The tree is drawn using a recursive branching function up to depth 12. At each branch, the split angles are modified by overlapping 2D Perlin noise fields driven by the current position and a looping time vector. This creates a highly realistic, organic swaying motion (like branches in the wind). 
+- **Palette**: A "bioluminescent forest" theme. The background is a dark, moody navy blue, while the tree itself transitions from a dark cyan at the roots to a bright, glowing magenta/pink at the fine tips, rendered with additive blending.
+
+## kinetic_op_art_chromatic_aberration_waves_2d
+- **Date**: 2026-07-08
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: An optical art illusion (Op Art) of vertical lines warping into a complex, hypnotic wave pattern, enhanced by a severe chromatic aberration effect.
+- **Techniques**: 150 vertical lines are distorted horizontally using a combination of 3 intersecting sine waves with varying spatial and temporal frequencies. The lines are drawn three separate times for the Red, Green, and Blue channels, each with a slight phase offset in time. An easing envelope restricts the distortion to a central circular area.
+- **Palette**: Strictly RGB additive blend over a near-black background, creating pure white where all lines overlap and vivid red, green, blue, cyan, magenta, and yellow fringes where the aberration occurs.
+
+## kinetic_abstract_mandala_interference_patterns_2d
+- **Date**: 2026-07-08
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: An intricate moiré interference pattern created by overlapping, semi-transparent geometric mandalas rotating at slightly different harmonious speeds.
+- **Techniques**: Four layers of mandalas consisting of fine interconnected lines are drawn. Additive blending (`py5.ADD`) creates intense glowing intersections where the fine lines overlap. Slight Perlin noise displaces vertices based on time, giving the geometric perfection a slight organic quiver.
+- **Palette**: Highly saturated electric blue, neon pink, bright yellow, and cyan glowing lines on a stark black background.
+
+## kinetic_sacred_geometry_metatrons_cube_2d
+- **Date**: 2026-07-08
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: An animated, glowing construction of Metatron's Cube, a sacred geometry figure composed of 13 circles and the lines connecting their centers.
+- **Techniques**: The 13 center points are mathematically placed and slowly rotated. The connections and circle radii pulse with overlapping sine waves and 2D Perlin noise based on their distance from the center, creating a cosmic heartbeat effect.
+- **Palette**: Deep cosmic purple background with brilliant gold, cyan, and white glowing geometric lines.
+
+## kinetic_abstract_geometric_truchet_tiles_maze_2d
+- **Date**: 2026-07-08
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: An animated maze built from Truchet tiles that constantly rotate to break and re-form complex geometric paths.
+- **Techniques**: A grid of curved Truchet tiles, where each tile's rotation is driven by overlapping 2D Perlin noise fields in a seamless time-loop. A custom cubic easing function causes the tiles to snap to 90-degree increments with an organic, mechanical motion. Line thickness pulsates radially using a sine wave.
+- **Palette**: Dark charcoal background with vivid, high-contrast, smoothly shifting hues outlining the maze paths.
+
+## kinetic_optical_illusion_droste_spiral_2d
+- **Date**: 2026-07-08
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: An optical illusion utilizing the Droste effect, creating an infinite, seamless zoom into a twisting geometric tunnel.
+- **Techniques**: Concentric polygons (hexagons) are drawn with exponentially decreasing scale and rotating angles. By animating the base scale logarithmically, a perfect loop is achieved. Vertices are displaced using 3D Perlin noise mapped to time, giving the tunnel an organic, pulsing feel.
+- **Palette**: High contrast black and white core geometry with a subtle, shifting neon iridescent stroke on the edges.
+
+## kinetic_isometric_data_grid_matrix_2d
+- **Date**: 2026-07-08
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A cybernetic cityscape or data center viewed from an isometric perspective, where every structure is made of glowing matrix text.
+- **Techniques**: Isometric projection via 2D scale and rotation. A custom 2.5D depth-sorting algorithm renders vertical pillars of typography. Pillar heights oscillate organically using 2D Perlin noise and radial sine waves.
+- **Palette**: Deep cyber blue, glowing matrix green, and bright white highlights.
+
+## kinetic_matrix_digital_rain_glitch_2d
+- **Date**: 2026-07-08
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: An homage to the classic "Matrix Digital Rain" with a modern volumetric glitch twist.
+- **Techniques**: 400 streams of Katakana characters falling at different speeds and scaling factors to simulate a deep Z-axis (parallax). Severe chromatic aberration (red/blue channel splitting) randomly strikes the characters, simulating digital corruption.
+- **Palette**: Matrix green, bright cyan, pure white, and aggressive red/blue glitch artifacts on an almost black background.
+
+## kinetic_chladni_resonance_plate_2d
+- **Date**: 2026-07-08
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: Simulating Chladni figures where 80,000 "sand" particles gather at the nodes of standing waves on a vibrating plate. As the acoustic frequencies shift, the particles scatter and re-form into new resonant mandalas.
+- **Techniques**: Analytical gradient descent down the squared Chladni equation Z^2. Particles organically seek Z=0 (nodes) combined with slight brownian motion. Motion blur fades the sand's trail.
+- **Palette**: Golden amber, warm sand, and stark white particles over a deep acoustic blue-black background.
+
+## kinetic_brians_brain_cellular_automaton_2d
+- **Date**: 2026-07-08
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A high-density Brian's Brain cellular automaton simulation (a 3-state system: off, on, dying) that generates beautiful, naturally evolving spaceship patterns.
+- **Techniques**: NumPy array simulation using SciPy's 2D convolution for ultra-fast rule application. The 3-state grid is rendered with motion blur to create organic, glowing trails for the 'dying' cells.
+- **Palette**: Neon green and cyan for 'on' cells, fading into dark blue/red for 'dying' cells over a dark void.
+
+## kinetic_spirograph_harmonograph_pendulum_2d
+- **Date**: 2026-07-08
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A complex, multi-pendulum harmonograph simulating an infinite glowing spirograph drawing.
+- **Techniques**: Parametric equations combining multiple sine and cosine waves. Frequencies and amplitudes slowly modulate over time, causing the woven thread to organically evolve its symmetry. Long-tail motion blur traces the paths over time.
+- **Palette**: Electric cyan, purple, and neon blue on a dark midnight green backdrop.
+
+## kinetic_strange_attractor_lorenz_system_2d
+- **Date**: 2026-07-08
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A glowing, chaotic 3D particle simulation tracing the classic Lorenz "butterfly" attractor.
+- **Techniques**: Numerical integration (Euler method) of the Lorenz system equations to track tens of thousands of particles continuously. A manual 3D-to-2D perspective transform is used for stability, accompanied by motion blur via semi-transparent background clearing.
+- **Palette**: Fiery orange, hot pink, and bright yellow particles against a deep black void.
+
+## kinetic_abstract_geometric_bauhaus_2d
+- **Date**: 2026-07-08
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: An abstract geometric composition inspired by Bauhaus design principles. Large primary-colored shapes (circles, triangles, rectangles, arcs) float and intersect gracefully.
+- **Techniques**: Procedural placement of vector primitives. Shapes are animated using Lissajous curves (sine and cosine waves with varying frequencies and phases) to create complex orbital paths. `MULTIPLY` blend mode is used to simulate transparent ink overlays mixing primary colors.
+- **Palette**: Classic Bauhaus palette: crimson red, deep royal blue, mustard yellow, stark white, and jet black.
+
+## kinetic_phyllotaxis_golden_spiral_bloom_2d
+- **Date**: 2026-07-08
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A mesmerizing, breathing phyllotaxis spiral generated using the golden ratio. Thousands of glowing florets spiral outwards, expanding and contracting like a living organism.
+- **Techniques**: Polar coordinate math using the golden angle (137.5 degrees). The divergence angle oscillates slightly, warping the spiral arms dynamically. Florets pulse in size and color over time.
+- **Palette**: Bioluminescent neon green, turquoise, and deep ocean blue.
+
+## kinetic_cyberpunk_glitch_cityscape_2d
+- **Date**: 2026-07-08
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A high-density side-scrolling cyberpunk city filled with glowing windows, neon signs, and intense digital glitch artifacts.
+- **Techniques**: Procedural building generation with layered parallax scrolling. Real-time digital glitches are simulated by randomly slicing and shifting pixel data (numpy array rolling and color channel overrides).
+- **Palette**: Neon cyan, bright magenta, deep violet, and acid yellow on a dark twilight backdrop with an oversized moon.
+
+## kinetic_optical_illusion_moire_interference_2d
+- **Date**: 2026-07-08
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: Deep, mesmerizing Moiré patterns created by overlapping rotating geometries that generate hallucinatory interference waves.
+- **Techniques**: Draw concentric circles and radiating lines from multiple offset centers that rotate at slightly different rates. The lines themselves pulse in width to create interference ripples.
+- **Palette**: Extremely high contrast monochrome (white on black) with vivid pure red accent rings.
+
+## kinetic_synthwave_retro_grid_terrain_3d
+- **Date**: 2026-07-08
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A retro-futuristic, synthwave-inspired 3D wireframe terrain that scrolls endlessly towards the viewer beneath a giant sunset.
+- **Techniques**: 2D array of vertices mapped into 3D isometric perspective using standard Py5 2D primitives. Height map is a continuously scrolling Perlin noise field. Triangles fade smoothly into the darkness based on distance.
+- **Palette**: Neon cyan and magenta wires on a deep purple background, with an oversized glowing sun.
+
+## generative_woven_celtic_knot_mandala_2d
+- **Date**: 2026-07-08
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: Thick, colorful bands weaving over and under each other in a complex, shifting celtic knot or mandala pattern.
+- **Techniques**: Draw interwoven arcs. Weaving over/under is achieved by drawing the intersections with thick outer stroke shadows to create an overlapping glass effect.
+- **Palette**: Rich tapestry colors with shifting hues based on ring depth.
+
+## kinetic_ascii_art_perlin_terrain_2d
+- **Date**: 2026-07-08
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A constantly scrolling, 3D-looking terrain rendered entirely using retro ASCII characters that shift in size and density.
+- **Techniques**: Evaluate 3D Perlin noise across a grid, projecting an isometric terrain. Map the height values to ASCII characters of varying brightness.
+- **Palette**: Retro terminal green on black, but with density highlights going to bright white.
+
+## generative_isometric_recursive_cubes_2d
+- **Date**: 2026-07-08
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A monolithic, infinite alien architecture that constantly builds itself inward in an impossible optical illusion.
+- **Techniques**: Procedural generation of a 3D grid of cubes drawn using an isometric 2D projection. We recursively subdivide larger cubes into smaller cubes based on a 3D noise field.
+- **Palette**: Monochromatic slate and ash gray, with stark directional shadows and intense neon magenta accents deep inside the structure.
+
+## kinetic_organic_fluid_marbling_2d
+- **Date**: 2026-07-08
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A generative simulation of thick, viscous fluid mixing organically like marble paper.
+- **Techniques**: Curl noise driving a dense array of particles that leave fading trails, with color mapped from the underlying noise field.
+- **Palette**: Dark indigo base, glowing turquoise, electric coral, soft white highlights.
+
 ## generative_vector_flow_field_topography_2d
 - **Date**: 2026-07-07
 - **Type**: Animation

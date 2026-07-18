@@ -4,7 +4,6 @@ import subprocess
 import sys
 import math
 import py5
-import numpy as np
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 if str(PROJECT_ROOT) not in sys.path:
@@ -24,68 +23,72 @@ PREVIEW_FILENAME = f"{WORK_NAME}_p1.png"
 PREVIEW_SIZE, OUTPUT_SIZE, _ = get_sizes()
 SIZE = OUTPUT_SIZE
 
-CELL_SIZE = 80
-COLS = SIZE[0] // CELL_SIZE + 2
-ROWS = SIZE[1] // CELL_SIZE + 2
-
 def setup():
     py5.size(*SIZE)
     py5.pixel_density(1)
     FRAMES_DIR.mkdir(exist_ok=True)
-    py5.color_mode(py5.HSB, 360, 100, 100, 100)
-    py5.rect_mode(py5.CENTER)
     
-def ease_in_out_cubic(t):
-    return 4 * t * t * t if t < 0.5 else 1 - math.pow(-2 * t + 2, 3) / 2
-
 def draw():
-    py5.background(15, 20, 25)
+    py5.color_mode(py5.HSB, 360, 100, 100, 255)
+    py5.blend_mode(py5.BLEND)
+    py5.background(250, 95, 3) 
+    
+    py5.blend_mode(py5.ADD)
     
     t = py5.frame_count / TOTAL_FRAMES
     loop_t = t * py5.TWO_PI
     
-    py5.stroke_weight(12)
-    py5.stroke_cap(py5.SQUARE)
+    D = 220 
     
-    cos_t = math.cos(loop_t)
-    sin_t = math.sin(loop_t)
+    dy = D * math.sqrt(3) / 2
     
-    for i in range(COLS):
-        for j in range(ROWS):
-            x = i * CELL_SIZE - CELL_SIZE / 2
-            y = j * CELL_SIZE - CELL_SIZE / 2
+    cols = int(SIZE[0] / D) + 6
+    rows = int(SIZE[1] / dy) + 6
+    
+    py5.no_fill()
+    py5.stroke_weight(4)
+    
+    cx_screen = SIZE[0] / 2
+    cy_screen = SIZE[1] / 2
+    
+    # Global rotation for hypnotic effect
+    py5.translate(cx_screen, cy_screen)
+    py5.rotate(math.sin(loop_t) * 0.1)
+    py5.translate(-cx_screen, -cy_screen)
+    
+    for row in range(-rows//2, rows//2 + 1):
+        for col in range(-cols//2, cols//2 + 1):
             
-            n_val = py5.noise(i * 0.08, j * 0.08, cos_t * 0.4 + 1.0)
-            n_val2 = py5.noise(i * 0.08, j * 0.08, sin_t * 0.4 + 1.0)
+            x = cx_screen + col * D
+            if row % 2 != 0:
+                x += D / 2
+                
+            y = cy_screen + row * dy
             
-            rot_target = (n_val + n_val2) * 2.0 
+            dist = math.hypot(x - cx_screen, y - cy_screen)
             
-            base_quad = math.floor(rot_target)
-            fract = rot_target - base_quad
+            # Rippling radius wave 
+            wave = math.sin(dist * 0.003 - loop_t * 2)
             
-            smooth_fract = ease_in_out_cubic(fract)
+            # To preserve the Flower of Life overlapping seed pattern, 
+            # we need some circles to remain exactly at R=D, and maybe just animate thickness?
+            # Or animating the radius slightly creates a breathing flower
+            R = D * (1.0 + wave * 0.12)
             
-            rotation = (base_quad + smooth_fract) * py5.PI / 2
+            # Rainbow gradient expanding outward
+            hue = (200 + dist * 0.08 - t * 360 * 2) % 360
             
-            dist = math.sqrt((x - SIZE[0]/2)**2 + (y - SIZE[1]/2)**2)
-            hue = (dist * 0.1 + t * 360) % 360
+            alpha = py5.remap(dist, 0, SIZE[1], 255, 0)
+            if alpha < 0: alpha = 0
             
-            # Pulsing thickness
-            thick = 8 + math.sin(dist * 0.01 - loop_t * 2) * 4
-            py5.stroke_weight(thick)
-            
-            py5.stroke(hue, 80, 90)
-            
-            py5.push_matrix()
-            py5.translate(x, y)
-            py5.rotate(rotation)
-            
-            py5.no_fill()
-            
-            py5.arc(-CELL_SIZE/2, -CELL_SIZE/2, CELL_SIZE, CELL_SIZE, 0, py5.PI/2)
-            py5.arc(CELL_SIZE/2, CELL_SIZE/2, CELL_SIZE, CELL_SIZE, py5.PI, py5.PI + py5.PI/2)
-            
-            py5.pop_matrix()
+            if -R * 2 < x < SIZE[0] + R * 2 and -R * 2 < y < SIZE[1] + R * 2:
+                # Main circle
+                py5.stroke(hue, 85, 95, alpha)
+                py5.circle(x, y, R * 2)
+                
+                # Secondary inner circle
+                py5.stroke((hue + 180) % 360, 85, 95, alpha * 0.5)
+                py5.circle(x, y, R * 1.5)
 
     py5.color_mode(py5.RGB, 255)
 

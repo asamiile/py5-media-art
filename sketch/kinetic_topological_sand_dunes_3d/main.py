@@ -2,9 +2,8 @@ from pathlib import Path
 import shutil
 import subprocess
 import sys
-import math
+import random
 import py5
-import numpy as np
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 if str(PROJECT_ROOT) not in sys.path:
@@ -17,77 +16,64 @@ from lib.sizes import get_sizes
 SKETCH_DIR = sketch_dir(__file__)
 WORK_NAME = SKETCH_DIR.name
 FRAMES_DIR = SKETCH_DIR / "frames"
-DURATION_SEC = 15
+DURATION_SEC = 15  # 15s
 FPS = 60
 TOTAL_FRAMES = DURATION_SEC * FPS
 PREVIEW_FILENAME = f"{WORK_NAME}_p1.png"
 PREVIEW_SIZE, OUTPUT_SIZE, _ = get_sizes()
 SIZE = OUTPUT_SIZE
 
-CELL_SIZE = 80
-COLS = SIZE[0] // CELL_SIZE + 2
-ROWS = SIZE[1] // CELL_SIZE + 2
+# Sand dunes data
+GRID_W = 100
+GRID_H = 100
+W_STEP = 0
+H_STEP = 0
 
 def setup():
-    py5.size(*SIZE)
+    global W_STEP, H_STEP
+    py5.size(*SIZE, py5.P3D)
     py5.pixel_density(1)
     FRAMES_DIR.mkdir(exist_ok=True)
-    py5.color_mode(py5.HSB, 360, 100, 100, 100)
-    py5.rect_mode(py5.CENTER)
     
-def ease_in_out_cubic(t):
-    return 4 * t * t * t if t < 0.5 else 1 - math.pow(-2 * t + 2, 3) / 2
-
+    W_STEP = SIZE[0] / (GRID_W - 1) * 1.5
+    H_STEP = SIZE[1] / (GRID_H - 1) * 1.5
+    
 def draw():
-    py5.background(15, 20, 25)
+    py5.background(10, 5, 5) # Dark void
+    py5.directional_light(255, 230, 200, 0.5, 0.5, -1) # Warm directional light
+    py5.ambient_light(50, 20, 20)
     
-    t = py5.frame_count / TOTAL_FRAMES
-    loop_t = t * py5.TWO_PI
+    t = py5.frame_count * 0.005
     
-    py5.stroke_weight(12)
-    py5.stroke_cap(py5.SQUARE)
+    py5.translate(SIZE[0]/2, SIZE[1]/2 + 200, -200)
+    py5.rotate_x(py5.PI / 3)
+    py5.translate(-SIZE[0]*0.75, -SIZE[1]*0.75, 0)
     
-    cos_t = math.cos(loop_t)
-    sin_t = math.sin(loop_t)
+    py5.no_stroke()
     
-    for i in range(COLS):
-        for j in range(ROWS):
-            x = i * CELL_SIZE - CELL_SIZE / 2
-            y = j * CELL_SIZE - CELL_SIZE / 2
-            
-            n_val = py5.noise(i * 0.08, j * 0.08, cos_t * 0.4 + 1.0)
-            n_val2 = py5.noise(i * 0.08, j * 0.08, sin_t * 0.4 + 1.0)
-            
-            rot_target = (n_val + n_val2) * 2.0 
-            
-            base_quad = math.floor(rot_target)
-            fract = rot_target - base_quad
-            
-            smooth_fract = ease_in_out_cubic(fract)
-            
-            rotation = (base_quad + smooth_fract) * py5.PI / 2
-            
-            dist = math.sqrt((x - SIZE[0]/2)**2 + (y - SIZE[1]/2)**2)
-            hue = (dist * 0.1 + t * 360) % 360
-            
-            # Pulsing thickness
-            thick = 8 + math.sin(dist * 0.01 - loop_t * 2) * 4
-            py5.stroke_weight(thick)
-            
-            py5.stroke(hue, 80, 90)
-            
-            py5.push_matrix()
-            py5.translate(x, y)
-            py5.rotate(rotation)
-            
-            py5.no_fill()
-            
-            py5.arc(-CELL_SIZE/2, -CELL_SIZE/2, CELL_SIZE, CELL_SIZE, 0, py5.PI/2)
-            py5.arc(CELL_SIZE/2, CELL_SIZE/2, CELL_SIZE, CELL_SIZE, py5.PI, py5.PI + py5.PI/2)
-            
-            py5.pop_matrix()
-
-    py5.color_mode(py5.RGB, 255)
+    for y in range(GRID_H - 1):
+        py5.begin_shape(py5.TRIANGLE_STRIP)
+        for x in range(GRID_W):
+            for dy in (0, 1):
+                cy = y + dy
+                px = x * W_STEP
+                py = cy * H_STEP
+                
+                # Perlin noise for dune height
+                noise_val = py5.os_noise(x * 0.03 + t, cy * 0.03 + t, t * 0.5)
+                # Create ridges using abs function on noise
+                height = abs(noise_val) * 400
+                
+                # Colors
+                if height < 100:
+                    py5.fill(139, 58, 58) # Deep crimson/terracotta
+                elif height < 300:
+                    py5.fill(220, 140, 90) # Peach/gold
+                else:
+                    py5.fill(200, 240, 255) # Cyan ridges
+                
+                py5.vertex(px, py, height)
+        py5.end_shape()
 
     py5.save_frame(str(FRAMES_DIR / "frame-####.png"))
 

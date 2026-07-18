@@ -4,7 +4,6 @@ import subprocess
 import sys
 import math
 import py5
-import numpy as np
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 if str(PROJECT_ROOT) not in sys.path:
@@ -24,68 +23,60 @@ PREVIEW_FILENAME = f"{WORK_NAME}_p1.png"
 PREVIEW_SIZE, OUTPUT_SIZE, _ = get_sizes()
 SIZE = OUTPUT_SIZE
 
-CELL_SIZE = 80
-COLS = SIZE[0] // CELL_SIZE + 2
-ROWS = SIZE[1] // CELL_SIZE + 2
-
 def setup():
     py5.size(*SIZE)
     py5.pixel_density(1)
     FRAMES_DIR.mkdir(exist_ok=True)
-    py5.color_mode(py5.HSB, 360, 100, 100, 100)
-    py5.rect_mode(py5.CENTER)
     
-def ease_in_out_cubic(t):
-    return 4 * t * t * t if t < 0.5 else 1 - math.pow(-2 * t + 2, 3) / 2
-
 def draw():
-    py5.background(15, 20, 25)
+    py5.color_mode(py5.HSB, 360, 100, 100, 255)
+    py5.blend_mode(py5.BLEND)
+    py5.background(280, 80, 5)
+    py5.blend_mode(py5.ADD)
     
     t = py5.frame_count / TOTAL_FRAMES
     loop_t = t * py5.TWO_PI
     
-    py5.stroke_weight(12)
-    py5.stroke_cap(py5.SQUARE)
+    py5.translate(SIZE[0] / 2, SIZE[1] / 2)
+    py5.no_fill()
+    py5.stroke_weight(2.5)
     
-    cos_t = math.cos(loop_t)
-    sin_t = math.sin(loop_t)
+    steps = 15000 
+    loops = 45
     
-    for i in range(COLS):
-        for j in range(ROWS):
-            x = i * CELL_SIZE - CELL_SIZE / 2
-            y = j * CELL_SIZE - CELL_SIZE / 2
-            
-            n_val = py5.noise(i * 0.08, j * 0.08, cos_t * 0.4 + 1.0)
-            n_val2 = py5.noise(i * 0.08, j * 0.08, sin_t * 0.4 + 1.0)
-            
-            rot_target = (n_val + n_val2) * 2.0 
-            
-            base_quad = math.floor(rot_target)
-            fract = rot_target - base_quad
-            
-            smooth_fract = ease_in_out_cubic(fract)
-            
-            rotation = (base_quad + smooth_fract) * py5.PI / 2
-            
-            dist = math.sqrt((x - SIZE[0]/2)**2 + (y - SIZE[1]/2)**2)
-            hue = (dist * 0.1 + t * 360) % 360
-            
-            # Pulsing thickness
-            thick = 8 + math.sin(dist * 0.01 - loop_t * 2) * 4
-            py5.stroke_weight(thick)
-            
-            py5.stroke(hue, 80, 90)
-            
-            py5.push_matrix()
-            py5.translate(x, y)
-            py5.rotate(rotation)
-            
-            py5.no_fill()
-            
-            py5.arc(-CELL_SIZE/2, -CELL_SIZE/2, CELL_SIZE, CELL_SIZE, 0, py5.PI/2)
-            py5.arc(CELL_SIZE/2, CELL_SIZE/2, CELL_SIZE, CELL_SIZE, py5.PI, py5.PI + py5.PI/2)
-            
-            py5.pop_matrix()
+    r1, r2, r3 = 450, 300, 150
+    f1x, f1y = 5, 4
+    f2x, f2y = 11, 13
+    f3x, f3y = 23, 19
+    
+    px1 = math.cos(loop_t) * py5.PI
+    py1 = math.sin(loop_t) * py5.PI
+    
+    px2 = math.cos(loop_t * 2) * py5.PI
+    py2 = math.sin(loop_t * 2) * py5.PI
+    
+    px3 = math.cos(loop_t * 3) * py5.PI
+    py3 = math.sin(loop_t * 3) * py5.PI
+
+    py5.begin_shape(py5.LINES)
+    
+    for i in range(steps):
+        theta = (i / steps) * py5.TWO_PI * loops
+        theta_next = ((i + 1) / steps) * py5.TWO_PI * loops
+        
+        x1 = r1 * math.sin(f1x * theta + px1) + r2 * math.sin(f2x * theta + px2) + r3 * math.sin(f3x * theta + px3)
+        y1 = r1 * math.cos(f1y * theta + py1) + r2 * math.cos(f2y * theta + py2) + r3 * math.cos(f3y * theta + py3)
+        
+        x2 = r1 * math.sin(f1x * theta_next + px1) + r2 * math.sin(f2x * theta_next + px2) + r3 * math.sin(f3x * theta_next + px3)
+        y2 = r1 * math.cos(f1y * theta_next + py1) + r2 * math.cos(f2y * theta_next + py2) + r3 * math.cos(f3y * theta_next + py3)
+        
+        hue = (i / steps * 360 * 5 + t * 360) % 360
+        py5.stroke(hue, 90, 80, 80)
+        
+        py5.vertex(x1, y1)
+        py5.vertex(x2, y2)
+        
+    py5.end_shape()
 
     py5.color_mode(py5.RGB, 255)
 

@@ -2,7 +2,7 @@ from pathlib import Path
 import shutil
 import subprocess
 import sys
-import math
+import random
 import py5
 import numpy as np
 
@@ -24,71 +24,58 @@ PREVIEW_FILENAME = f"{WORK_NAME}_p1.png"
 PREVIEW_SIZE, OUTPUT_SIZE, _ = get_sizes()
 SIZE = OUTPUT_SIZE
 
-CELL_SIZE = 80
-COLS = SIZE[0] // CELL_SIZE + 2
-ROWS = SIZE[1] // CELL_SIZE + 2
-
 def setup():
     py5.size(*SIZE)
     py5.pixel_density(1)
     FRAMES_DIR.mkdir(exist_ok=True)
-    py5.color_mode(py5.HSB, 360, 100, 100, 100)
-    py5.rect_mode(py5.CENTER)
     
-def ease_in_out_cubic(t):
-    return 4 * t * t * t if t < 0.5 else 1 - math.pow(-2 * t + 2, 3) / 2
-
-def draw():
-    py5.background(15, 20, 25)
-    
-    t = py5.frame_count / TOTAL_FRAMES
-    loop_t = t * py5.TWO_PI
-    
-    py5.stroke_weight(12)
+def draw_woven_arc(x, y, r, start_a, end_a, col, thickness):
+    py5.no_fill()
     py5.stroke_cap(py5.SQUARE)
     
-    cos_t = math.cos(loop_t)
-    sin_t = math.sin(loop_t)
+    # Shadow
+    py5.stroke_weight(thickness + 15)
+    py5.stroke(0, 0, 0, 80)
+    py5.arc(x, y, r, r, start_a, end_a)
     
-    for i in range(COLS):
-        for j in range(ROWS):
-            x = i * CELL_SIZE - CELL_SIZE / 2
-            y = j * CELL_SIZE - CELL_SIZE / 2
+    # Core
+    py5.stroke_weight(thickness)
+    py5.stroke(*col)
+    py5.arc(x, y, r, r, start_a, end_a)
+    
+def draw():
+    py5.background(20, 15, 10) # Dark rich background
+    
+    py5.translate(SIZE[0] / 2, SIZE[1] / 2)
+    
+    t = py5.frame_count * 0.01
+    
+    rings = 14
+    nodes = 12
+    
+    py5.color_mode(py5.HSB, 360, 100, 100, 100)
+    
+    # We draw inner to outer to layer correctly
+    for ring in range(1, rings + 1):
+        radius = ring * 100
+        thickness = 50 - ring * 1.5
+        
+        hue = (ring * 25 + py5.frame_count * 0.5) % 360
+        c = (hue, 85, 90, 95)
+        
+        for n in range(nodes):
+            angle_offset = (py5.TWO_PI / nodes) * n
             
-            n_val = py5.noise(i * 0.08, j * 0.08, cos_t * 0.4 + 1.0)
-            n_val2 = py5.noise(i * 0.08, j * 0.08, sin_t * 0.4 + 1.0)
+            wave = py5.sin(t * 2 + ring * 0.5 + n) * 40
             
-            rot_target = (n_val + n_val2) * 2.0 
+            speed = 0.5 if ring % 2 == 0 else -0.5
+            start_a = angle_offset + t * speed
+            end_a = start_a + py5.PI / 4 + py5.sin(t * 3 + ring) * 0.2
             
-            base_quad = math.floor(rot_target)
-            fract = rot_target - base_quad
-            
-            smooth_fract = ease_in_out_cubic(fract)
-            
-            rotation = (base_quad + smooth_fract) * py5.PI / 2
-            
-            dist = math.sqrt((x - SIZE[0]/2)**2 + (y - SIZE[1]/2)**2)
-            hue = (dist * 0.1 + t * 360) % 360
-            
-            # Pulsing thickness
-            thick = 8 + math.sin(dist * 0.01 - loop_t * 2) * 4
-            py5.stroke_weight(thick)
-            
-            py5.stroke(hue, 80, 90)
-            
-            py5.push_matrix()
-            py5.translate(x, y)
-            py5.rotate(rotation)
-            
-            py5.no_fill()
-            
-            py5.arc(-CELL_SIZE/2, -CELL_SIZE/2, CELL_SIZE, CELL_SIZE, 0, py5.PI/2)
-            py5.arc(CELL_SIZE/2, CELL_SIZE/2, CELL_SIZE, CELL_SIZE, py5.PI, py5.PI + py5.PI/2)
-            
-            py5.pop_matrix()
+            draw_woven_arc(0, 0, radius + wave, start_a, end_a, c, thickness)
 
     py5.color_mode(py5.RGB, 255)
-
+    
     py5.save_frame(str(FRAMES_DIR / "frame-####.png"))
 
     if py5.frame_count == 2 or py5.frame_count % 60 == 0:

@@ -2,7 +2,7 @@ from pathlib import Path
 import shutil
 import subprocess
 import sys
-import math
+import random
 import py5
 import numpy as np
 
@@ -24,70 +24,51 @@ PREVIEW_FILENAME = f"{WORK_NAME}_p1.png"
 PREVIEW_SIZE, OUTPUT_SIZE, _ = get_sizes()
 SIZE = OUTPUT_SIZE
 
-CELL_SIZE = 80
-COLS = SIZE[0] // CELL_SIZE + 2
-ROWS = SIZE[1] // CELL_SIZE + 2
+CHARS = " .,-~:;=!*#$@"
+CELL_SIZE = 16
 
 def setup():
     py5.size(*SIZE)
     py5.pixel_density(1)
+    py5.text_font(py5.create_font("Courier New", CELL_SIZE))
+    py5.text_align(py5.CENTER, py5.CENTER)
     FRAMES_DIR.mkdir(exist_ok=True)
-    py5.color_mode(py5.HSB, 360, 100, 100, 100)
-    py5.rect_mode(py5.CENTER)
     
-def ease_in_out_cubic(t):
-    return 4 * t * t * t if t < 0.5 else 1 - math.pow(-2 * t + 2, 3) / 2
-
 def draw():
-    py5.background(15, 20, 25)
+    py5.background(10, 20, 15)
     
-    t = py5.frame_count / TOTAL_FRAMES
-    loop_t = t * py5.TWO_PI
+    t = py5.frame_count * 0.02
     
-    py5.stroke_weight(12)
-    py5.stroke_cap(py5.SQUARE)
+    cols = SIZE[0] // CELL_SIZE + 2
+    rows = int(SIZE[1] // (CELL_SIZE * 0.75)) + 4
     
-    cos_t = math.cos(loop_t)
-    sin_t = math.sin(loop_t)
-    
-    for i in range(COLS):
-        for j in range(ROWS):
-            x = i * CELL_SIZE - CELL_SIZE / 2
-            y = j * CELL_SIZE - CELL_SIZE / 2
+    for y in range(rows):
+        for x in range(cols):
+            nx = x * 0.05
+            ny = y * 0.05 - t * 0.5
             
-            n_val = py5.noise(i * 0.08, j * 0.08, cos_t * 0.4 + 1.0)
-            n_val2 = py5.noise(i * 0.08, j * 0.08, sin_t * 0.4 + 1.0)
+            val = py5.os_noise(nx, ny, t * 0.1)
             
-            rot_target = (n_val + n_val2) * 2.0 
+            height_offset = val * 300
             
-            base_quad = math.floor(rot_target)
-            fract = rot_target - base_quad
+            px = x * CELL_SIZE
+            # Isometric offset: shift odd rows by half width
+            if y % 2 == 1:
+                px += CELL_SIZE / 2
+                
+            py_coord = y * CELL_SIZE * 0.75 - height_offset + 300
             
-            smooth_fract = ease_in_out_cubic(fract)
+            char_idx = int(py5.remap(val, 0, 1, 0, len(CHARS)))
+            char_idx = max(0, min(char_idx, len(CHARS) - 1))
+            char = CHARS[char_idx]
             
-            rotation = (base_quad + smooth_fract) * py5.PI / 2
-            
-            dist = math.sqrt((x - SIZE[0]/2)**2 + (y - SIZE[1]/2)**2)
-            hue = (dist * 0.1 + t * 360) % 360
-            
-            # Pulsing thickness
-            thick = 8 + math.sin(dist * 0.01 - loop_t * 2) * 4
-            py5.stroke_weight(thick)
-            
-            py5.stroke(hue, 80, 90)
-            
-            py5.push_matrix()
-            py5.translate(x, y)
-            py5.rotate(rotation)
-            
-            py5.no_fill()
-            
-            py5.arc(-CELL_SIZE/2, -CELL_SIZE/2, CELL_SIZE, CELL_SIZE, 0, py5.PI/2)
-            py5.arc(CELL_SIZE/2, CELL_SIZE/2, CELL_SIZE, CELL_SIZE, py5.PI, py5.PI + py5.PI/2)
-            
-            py5.pop_matrix()
-
-    py5.color_mode(py5.RGB, 255)
+            brightness = py5.remap(val, 0, 1, 50, 255)
+            if val > 0.6:
+                py5.fill(150, 255, 150, brightness)
+            else:
+                py5.fill(0, 200, 100, brightness)
+                
+            py5.text(char, px, py_coord)
 
     py5.save_frame(str(FRAMES_DIR / "frame-####.png"))
 

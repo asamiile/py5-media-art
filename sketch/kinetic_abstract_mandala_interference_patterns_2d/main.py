@@ -4,7 +4,6 @@ import subprocess
 import sys
 import math
 import py5
-import numpy as np
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 if str(PROJECT_ROOT) not in sys.path:
@@ -24,68 +23,75 @@ PREVIEW_FILENAME = f"{WORK_NAME}_p1.png"
 PREVIEW_SIZE, OUTPUT_SIZE, _ = get_sizes()
 SIZE = OUTPUT_SIZE
 
-CELL_SIZE = 80
-COLS = SIZE[0] // CELL_SIZE + 2
-ROWS = SIZE[1] // CELL_SIZE + 2
+def draw_mandala(radius, num_points, noise_offset, t_loop):
+    py5.begin_shape(py5.LINES)
+    for i in range(num_points):
+        angle1 = i * py5.TWO_PI / num_points
+        
+        for j in range(1, 6): 
+            angle2 = (i + j * (num_points // 6)) * py5.TWO_PI / num_points
+            
+            tx = math.cos(t_loop)
+            ty = math.sin(t_loop)
+            
+            n1 = py5.noise(math.cos(angle1) + noise_offset, math.sin(angle1) + noise_offset, tx * 0.5)
+            n2 = py5.noise(math.cos(angle2) + noise_offset, math.sin(angle2) + noise_offset, ty * 0.5)
+            
+            r1 = radius + py5.remap(n1, 0, 1, -radius*0.1, radius*0.1)
+            r2 = radius + py5.remap(n2, 0, 1, -radius*0.1, radius*0.1)
+            
+            x1 = math.cos(angle1) * r1
+            y1 = math.sin(angle1) * r1
+            x2 = math.cos(angle2) * r2
+            y2 = math.sin(angle2) * r2
+            
+            py5.vertex(x1, y1)
+            py5.vertex(x2, y2)
+    py5.end_shape()
 
 def setup():
     py5.size(*SIZE)
     py5.pixel_density(1)
     FRAMES_DIR.mkdir(exist_ok=True)
     py5.color_mode(py5.HSB, 360, 100, 100, 100)
-    py5.rect_mode(py5.CENTER)
     
-def ease_in_out_cubic(t):
-    return 4 * t * t * t if t < 0.5 else 1 - math.pow(-2 * t + 2, 3) / 2
-
 def draw():
-    py5.background(15, 20, 25)
+    py5.blend_mode(py5.BLEND)
+    py5.background(5, 5, 10)
+    
+    py5.blend_mode(py5.ADD)
+    
+    py5.translate(SIZE[0] / 2, SIZE[1] / 2)
     
     t = py5.frame_count / TOTAL_FRAMES
     loop_t = t * py5.TWO_PI
     
-    py5.stroke_weight(12)
-    py5.stroke_cap(py5.SQUARE)
+    py5.stroke_weight(2)
     
-    cos_t = math.cos(loop_t)
-    sin_t = math.sin(loop_t)
+    py5.push_matrix()
+    py5.rotate(t * py5.TWO_PI / 3) 
+    py5.stroke(200, 90, 80, 50)
+    draw_mandala(max(SIZE) * 0.35, 90, 100, loop_t) 
+    py5.pop_matrix()
     
-    for i in range(COLS):
-        for j in range(ROWS):
-            x = i * CELL_SIZE - CELL_SIZE / 2
-            y = j * CELL_SIZE - CELL_SIZE / 2
-            
-            n_val = py5.noise(i * 0.08, j * 0.08, cos_t * 0.4 + 1.0)
-            n_val2 = py5.noise(i * 0.08, j * 0.08, sin_t * 0.4 + 1.0)
-            
-            rot_target = (n_val + n_val2) * 2.0 
-            
-            base_quad = math.floor(rot_target)
-            fract = rot_target - base_quad
-            
-            smooth_fract = ease_in_out_cubic(fract)
-            
-            rotation = (base_quad + smooth_fract) * py5.PI / 2
-            
-            dist = math.sqrt((x - SIZE[0]/2)**2 + (y - SIZE[1]/2)**2)
-            hue = (dist * 0.1 + t * 360) % 360
-            
-            # Pulsing thickness
-            thick = 8 + math.sin(dist * 0.01 - loop_t * 2) * 4
-            py5.stroke_weight(thick)
-            
-            py5.stroke(hue, 80, 90)
-            
-            py5.push_matrix()
-            py5.translate(x, y)
-            py5.rotate(rotation)
-            
-            py5.no_fill()
-            
-            py5.arc(-CELL_SIZE/2, -CELL_SIZE/2, CELL_SIZE, CELL_SIZE, 0, py5.PI/2)
-            py5.arc(CELL_SIZE/2, CELL_SIZE/2, CELL_SIZE, CELL_SIZE, py5.PI, py5.PI + py5.PI/2)
-            
-            py5.pop_matrix()
+    py5.push_matrix()
+    py5.rotate(-t * py5.TWO_PI / 2) 
+    py5.stroke(320, 90, 80, 50)
+    draw_mandala(max(SIZE) * 0.3, 120, 200, loop_t) 
+    py5.pop_matrix()
+    
+    py5.push_matrix()
+    py5.rotate(t * py5.TWO_PI) 
+    py5.stroke(50, 90, 80, 50)
+    draw_mandala(max(SIZE) * 0.25, 60, 300, loop_t) 
+    py5.pop_matrix()
+    
+    # Extra inner detailed mandala
+    py5.push_matrix()
+    py5.rotate(-t * py5.TWO_PI * 2) 
+    py5.stroke(180, 90, 100, 60) # Cyan
+    draw_mandala(max(SIZE) * 0.15, 30, 400, loop_t) 
+    py5.pop_matrix()
 
     py5.color_mode(py5.RGB, 255)
 

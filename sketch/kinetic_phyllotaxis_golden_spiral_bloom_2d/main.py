@@ -24,68 +24,42 @@ PREVIEW_FILENAME = f"{WORK_NAME}_p1.png"
 PREVIEW_SIZE, OUTPUT_SIZE, _ = get_sizes()
 SIZE = OUTPUT_SIZE
 
-CELL_SIZE = 80
-COLS = SIZE[0] // CELL_SIZE + 2
-ROWS = SIZE[1] // CELL_SIZE + 2
-
 def setup():
     py5.size(*SIZE)
     py5.pixel_density(1)
     FRAMES_DIR.mkdir(exist_ok=True)
     py5.color_mode(py5.HSB, 360, 100, 100, 100)
-    py5.rect_mode(py5.CENTER)
     
-def ease_in_out_cubic(t):
-    return 4 * t * t * t if t < 0.5 else 1 - math.pow(-2 * t + 2, 3) / 2
-
 def draw():
-    py5.background(15, 20, 25)
+    py5.background(220, 80, 5)
     
-    t = py5.frame_count / TOTAL_FRAMES
-    loop_t = t * py5.TWO_PI
+    py5.translate(SIZE[0] / 2, SIZE[1] / 2)
     
-    py5.stroke_weight(12)
-    py5.stroke_cap(py5.SQUARE)
+    t = py5.frame_count * 0.02
     
-    cos_t = math.cos(loop_t)
-    sin_t = math.sin(loop_t)
+    golden_angle = 2.39996 + py5.sin(t * 0.5) * 0.0003
+    c = 18 
     
-    for i in range(COLS):
-        for j in range(ROWS):
-            x = i * CELL_SIZE - CELL_SIZE / 2
-            y = j * CELL_SIZE - CELL_SIZE / 2
-            
-            n_val = py5.noise(i * 0.08, j * 0.08, cos_t * 0.4 + 1.0)
-            n_val2 = py5.noise(i * 0.08, j * 0.08, sin_t * 0.4 + 1.0)
-            
-            rot_target = (n_val + n_val2) * 2.0 
-            
-            base_quad = math.floor(rot_target)
-            fract = rot_target - base_quad
-            
-            smooth_fract = ease_in_out_cubic(fract)
-            
-            rotation = (base_quad + smooth_fract) * py5.PI / 2
-            
-            dist = math.sqrt((x - SIZE[0]/2)**2 + (y - SIZE[1]/2)**2)
-            hue = (dist * 0.1 + t * 360) % 360
-            
-            # Pulsing thickness
-            thick = 8 + math.sin(dist * 0.01 - loop_t * 2) * 4
-            py5.stroke_weight(thick)
-            
-            py5.stroke(hue, 80, 90)
-            
-            py5.push_matrix()
-            py5.translate(x, y)
-            py5.rotate(rotation)
-            
-            py5.no_fill()
-            
-            py5.arc(-CELL_SIZE/2, -CELL_SIZE/2, CELL_SIZE, CELL_SIZE, 0, py5.PI/2)
-            py5.arc(CELL_SIZE/2, CELL_SIZE/2, CELL_SIZE, CELL_SIZE, py5.PI, py5.PI + py5.PI/2)
-            
-            py5.pop_matrix()
+    num_points = 8000
+    
+    py5.no_stroke()
+    
+    for n in range(1, num_points):
+        a = n * golden_angle
+        r = c * math.sqrt(n)
+        
+        breath = 1.0 + py5.sin(t + n * 0.01) * 0.15
+        r *= breath
+        
+        x = r * math.cos(a + t * 0.1)
+        y = r * math.sin(a + t * 0.1)
+        
+        hue = (140 + r * 0.1 - t * 30) % 360
+        py5.fill(hue, 90, 100, 90)
+        
+        size = max(3, (num_points - n) * 0.004 * breath * 12)
+        
+        py5.circle(x, y, size)
 
     py5.color_mode(py5.RGB, 255)
 

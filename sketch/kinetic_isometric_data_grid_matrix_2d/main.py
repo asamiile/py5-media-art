@@ -2,9 +2,9 @@ from pathlib import Path
 import shutil
 import subprocess
 import sys
+import random
 import math
 import py5
-import numpy as np
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 if str(PROJECT_ROOT) not in sys.path:
@@ -24,9 +24,13 @@ PREVIEW_FILENAME = f"{WORK_NAME}_p1.png"
 PREVIEW_SIZE, OUTPUT_SIZE, _ = get_sizes()
 SIZE = OUTPUT_SIZE
 
-SCALE_FACTOR = 0.85
-NUM_LAYERS = 90
-NUM_SIDES = 6
+GRID_COLS = 35
+GRID_ROWS = 35
+SPACING = 60
+CHARSET = [chr(i) for i in range(0x30A0, 0x30FF)] + [str(i) for i in range(10)]
+
+def get_char():
+    return random.choice(CHARSET)
 
 def setup():
     py5.size(*SIZE)
@@ -34,61 +38,72 @@ def setup():
     FRAMES_DIR.mkdir(exist_ok=True)
     py5.color_mode(py5.HSB, 360, 100, 100, 100)
     
+    py5.text_align(py5.CENTER, py5.CENTER)
+    py5.text_size(20)
+    
 def draw():
-    py5.background(10)
+    py5.background(10, 20, 15)
+    
+    t = py5.frame_count * 0.02
+    
     py5.translate(SIZE[0] / 2, SIZE[1] / 2)
     
-    t = (py5.frame_count % TOTAL_FRAMES) / TOTAL_FRAMES
+    angle = py5.PI / 4 + t * 0.05
+    py5.scale(1.0, 0.5)
+    py5.rotate(angle)
     
-    zoom = math.pow(1.0 / SCALE_FACTOR, t)
+    offset_x = (GRID_COLS - 1) * SPACING / 2
+    offset_y = (GRID_ROWS - 1) * SPACING / 2
     
-    base_rotation = t * (py5.TWO_PI / NUM_SIDES)
+    # Simple depth sorting hack: draw based on distance along the viewing axis
+    # View vector is (cos(angle + pi/2), sin(angle + pi/2))
+    view_x = math.cos(angle + py5.PI / 2)
+    view_y = math.sin(angle + py5.PI / 2)
     
-    py5.scale(zoom)
-    py5.rotate(base_rotation)
+    points = []
+    for i in range(GRID_COLS):
+        for j in range(GRID_ROWS):
+            x = i * SPACING - offset_x
+            y = j * SPACING - offset_y
+            depth = x * view_x + y * view_y
+            points.append((x, y, i, j, depth))
+            
+    # Sort by depth descending so furthest points draw first
+    points.sort(key=lambda p: p[4], reverse=True)
     
-    base_radius = max(SIZE) * 2.0
-    
-    for i in range(NUM_LAYERS):
-        layer_scale = math.pow(SCALE_FACTOR, i)
+    for pt in points:
+        x, y, i, j, depth = pt
         
-        offset = i - t 
+        noise_val = py5.noise(i * 0.15, j * 0.15, t * 0.4)
+        pillar_height = int(py5.remap(noise_val, 0, 1, 1, 20))
         
-        layer_rotation = math.sin(offset * 0.15) * 0.6
+        dist = math.sqrt(x*x + y*y)
+        wave = (math.sin(dist * 0.008 - t * 3) + 1) / 2
+        pillar_height += int(wave * 15)
+        
+        hue = (140 + dist * 0.05 + t * 30) % 360
         
         py5.push_matrix()
-        py5.scale(layer_scale)
-        py5.rotate(layer_rotation)
+        py5.translate(x, y)
+        py5.rotate(-angle)
+        py5.scale(1.0, 2.0)
         
-        if i % 2 == 0:
-            py5.fill(10, 100)
-        else:
-            py5.fill(90, 100)
+        for h_idx in range(pillar_height):
+            draw_y = -h_idx * 16
             
-        hue = (t * 360 + i * 15) % 360
-        py5.stroke(hue, 80, 100)
-        py5.stroke_weight(3 / layer_scale) 
-        
-        py5.begin_shape()
-        for j in range(NUM_SIDES):
-            angle = j * py5.TWO_PI / NUM_SIDES
+            brightness = py5.remap(h_idx, 0, pillar_height, 10, 100)
+            alpha = py5.remap(h_idx, 0, pillar_height, 20, 100)
             
-            tx = math.cos(t * py5.TWO_PI)
-            ty = math.sin(t * py5.TWO_PI)
+            if h_idx == pillar_height - 1:
+                py5.fill(0, 0, 100, 100) 
+            else:
+                py5.fill(hue, 90, brightness, alpha)
+                
+            char = get_char() if random.random() > 0.1 else " " 
             
-            n_val = py5.noise(
-                math.cos(angle) * 1.5 + tx * 0.5,
-                math.sin(angle) * 1.5 + ty * 0.5,
-                i * 0.15
-            )
-            
-            r = base_radius + py5.remap(n_val, 0, 1, -base_radius * 0.15, base_radius * 0.15)
-            
-            x = math.cos(angle) * r
-            y = math.sin(angle) * r
-            py5.vertex(x, y)
-        py5.end_shape(py5.CLOSE)
-        
+            if char != " ":
+                py5.text(char, 0, draw_y)
+                
         py5.pop_matrix()
 
     py5.color_mode(py5.RGB, 255)

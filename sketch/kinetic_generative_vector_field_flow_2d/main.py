@@ -4,7 +4,7 @@ import subprocess
 import sys
 import math
 import py5
-import numpy as np
+import random
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 if str(PROJECT_ROOT) not in sys.path:
@@ -24,68 +24,76 @@ PREVIEW_FILENAME = f"{WORK_NAME}_p1.png"
 PREVIEW_SIZE, OUTPUT_SIZE, _ = get_sizes()
 SIZE = OUTPUT_SIZE
 
-CELL_SIZE = 80
-COLS = SIZE[0] // CELL_SIZE + 2
-ROWS = SIZE[1] // CELL_SIZE + 2
+NUM_PARTICLES = 20000
+
+class Particle:
+    def __init__(self):
+        self.reset()
+        self.life = random.random()
+
+    def reset(self):
+        self.x = random.uniform(0, SIZE[0])
+        self.y = random.uniform(0, SIZE[1])
+        self.life = 0.0
+
+    def update(self, loop_t, speed):
+        nx = self.x * 0.0015
+        ny = self.y * 0.0015
+        
+        R = 0.6
+        cx = math.cos(loop_t) * R
+        cy = math.sin(loop_t) * R
+        
+        angle_noise = py5.os_noise(nx, ny, cx, cy) * py5.TWO_PI * 5
+        
+        self.x += math.cos(angle_noise) * speed
+        self.y += math.sin(angle_noise) * speed
+        
+        self.life += 1.0 / (FPS * 2.5) 
+        if self.life > 1.0:
+            self.reset()
+            
+        if self.x < 0: self.x += SIZE[0]
+        if self.x > SIZE[0]: self.x -= SIZE[0]
+        if self.y < 0: self.y += SIZE[1]
+        if self.y > SIZE[1]: self.y -= SIZE[1]
+
+particles = []
 
 def setup():
     py5.size(*SIZE)
     py5.pixel_density(1)
     FRAMES_DIR.mkdir(exist_ok=True)
-    py5.color_mode(py5.HSB, 360, 100, 100, 100)
-    py5.rect_mode(py5.CENTER)
     
-def ease_in_out_cubic(t):
-    return 4 * t * t * t if t < 0.5 else 1 - math.pow(-2 * t + 2, 3) / 2
-
+    for _ in range(NUM_PARTICLES):
+        particles.append(Particle())
+        
+    py5.background(240, 80, 5)
+    
 def draw():
-    py5.background(15, 20, 25)
+    py5.color_mode(py5.HSB, 360, 100, 100, 255)
+    py5.blend_mode(py5.BLEND)
+    
+    py5.fill(250, 80, 3, 20)
+    py5.no_stroke()
+    py5.rect(0, 0, SIZE[0], SIZE[1])
+    
+    py5.blend_mode(py5.ADD)
+    py5.stroke_weight(2.5)
     
     t = py5.frame_count / TOTAL_FRAMES
     loop_t = t * py5.TWO_PI
     
-    py5.stroke_weight(12)
-    py5.stroke_cap(py5.SQUARE)
-    
-    cos_t = math.cos(loop_t)
-    sin_t = math.sin(loop_t)
-    
-    for i in range(COLS):
-        for j in range(ROWS):
-            x = i * CELL_SIZE - CELL_SIZE / 2
-            y = j * CELL_SIZE - CELL_SIZE / 2
+    for p in particles:
+        old_x, old_y = p.x, p.y
+        p.update(loop_t, 16.0)
+        
+        if abs(p.x - old_x) < 50 and abs(p.y - old_y) < 50:
+            hue = (p.x * 0.03 + p.y * 0.03 + t * 360) % 360
+            alpha = math.sin(p.life * py5.PI) * 120
             
-            n_val = py5.noise(i * 0.08, j * 0.08, cos_t * 0.4 + 1.0)
-            n_val2 = py5.noise(i * 0.08, j * 0.08, sin_t * 0.4 + 1.0)
-            
-            rot_target = (n_val + n_val2) * 2.0 
-            
-            base_quad = math.floor(rot_target)
-            fract = rot_target - base_quad
-            
-            smooth_fract = ease_in_out_cubic(fract)
-            
-            rotation = (base_quad + smooth_fract) * py5.PI / 2
-            
-            dist = math.sqrt((x - SIZE[0]/2)**2 + (y - SIZE[1]/2)**2)
-            hue = (dist * 0.1 + t * 360) % 360
-            
-            # Pulsing thickness
-            thick = 8 + math.sin(dist * 0.01 - loop_t * 2) * 4
-            py5.stroke_weight(thick)
-            
-            py5.stroke(hue, 80, 90)
-            
-            py5.push_matrix()
-            py5.translate(x, y)
-            py5.rotate(rotation)
-            
-            py5.no_fill()
-            
-            py5.arc(-CELL_SIZE/2, -CELL_SIZE/2, CELL_SIZE, CELL_SIZE, 0, py5.PI/2)
-            py5.arc(CELL_SIZE/2, CELL_SIZE/2, CELL_SIZE, CELL_SIZE, py5.PI, py5.PI + py5.PI/2)
-            
-            py5.pop_matrix()
+            py5.stroke(hue, 90, 95, alpha)
+            py5.line(old_x, old_y, p.x, p.y)
 
     py5.color_mode(py5.RGB, 255)
 

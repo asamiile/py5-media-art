@@ -4,7 +4,6 @@ import subprocess
 import sys
 import math
 import py5
-import numpy as np
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 if str(PROJECT_ROOT) not in sys.path:
@@ -24,70 +23,57 @@ PREVIEW_FILENAME = f"{WORK_NAME}_p1.png"
 PREVIEW_SIZE, OUTPUT_SIZE, _ = get_sizes()
 SIZE = OUTPUT_SIZE
 
-CELL_SIZE = 80
-COLS = SIZE[0] // CELL_SIZE + 2
-ROWS = SIZE[1] // CELL_SIZE + 2
-
 def setup():
     py5.size(*SIZE)
     py5.pixel_density(1)
     FRAMES_DIR.mkdir(exist_ok=True)
-    py5.color_mode(py5.HSB, 360, 100, 100, 100)
-    py5.rect_mode(py5.CENTER)
     
-def ease_in_out_cubic(t):
-    return 4 * t * t * t if t < 0.5 else 1 - math.pow(-2 * t + 2, 3) / 2
-
 def draw():
-    py5.background(15, 20, 25)
+    py5.blend_mode(py5.BLEND)
+    py5.background(10, 10, 10) 
+    py5.blend_mode(py5.ADD)
     
     t = py5.frame_count / TOTAL_FRAMES
     loop_t = t * py5.TWO_PI
     
-    py5.stroke_weight(12)
-    py5.stroke_cap(py5.SQUARE)
+    py5.stroke_weight(4)
+    py5.no_fill()
     
-    cos_t = math.cos(loop_t)
-    sin_t = math.sin(loop_t)
+    num_lines = 150
+    steps = 120 
     
-    for i in range(COLS):
-        for j in range(ROWS):
-            x = i * CELL_SIZE - CELL_SIZE / 2
-            y = j * CELL_SIZE - CELL_SIZE / 2
+    passes = [
+        (255, 30, 30, 0.0),    
+        (30, 255, 30, 0.05),   
+        (30, 30, 255, 0.1)     
+    ]
+    
+    for r, g, b, p_offset in passes:
+        py5.stroke(r, g, b, 200)
+        
+        for i in range(num_lines):
+            x_base = (i / (num_lines - 1)) * SIZE[0]
             
-            n_val = py5.noise(i * 0.08, j * 0.08, cos_t * 0.4 + 1.0)
-            n_val2 = py5.noise(i * 0.08, j * 0.08, sin_t * 0.4 + 1.0)
-            
-            rot_target = (n_val + n_val2) * 2.0 
-            
-            base_quad = math.floor(rot_target)
-            fract = rot_target - base_quad
-            
-            smooth_fract = ease_in_out_cubic(fract)
-            
-            rotation = (base_quad + smooth_fract) * py5.PI / 2
-            
-            dist = math.sqrt((x - SIZE[0]/2)**2 + (y - SIZE[1]/2)**2)
-            hue = (dist * 0.1 + t * 360) % 360
-            
-            # Pulsing thickness
-            thick = 8 + math.sin(dist * 0.01 - loop_t * 2) * 4
-            py5.stroke_weight(thick)
-            
-            py5.stroke(hue, 80, 90)
-            
-            py5.push_matrix()
-            py5.translate(x, y)
-            py5.rotate(rotation)
-            
-            py5.no_fill()
-            
-            py5.arc(-CELL_SIZE/2, -CELL_SIZE/2, CELL_SIZE, CELL_SIZE, 0, py5.PI/2)
-            py5.arc(CELL_SIZE/2, CELL_SIZE/2, CELL_SIZE, CELL_SIZE, py5.PI, py5.PI + py5.PI/2)
-            
-            py5.pop_matrix()
-
-    py5.color_mode(py5.RGB, 255)
+            py5.begin_shape()
+            for j in range(steps + 1):
+                y = (j / steps) * SIZE[1]
+                
+                dist_center_y = (y - SIZE[1]/2) / SIZE[1]
+                dist_center_x = (x_base - SIZE[0]/2) / SIZE[0]
+                
+                envelope = max(0, 1.0 - math.sqrt(dist_center_x**2 + dist_center_y**2) * 1.5)
+                # Apply smoothstep-like easing to envelope
+                envelope = envelope * envelope * (3 - 2 * envelope)
+                
+                wave1 = math.sin(y * 0.005 + loop_t + p_offset * py5.TWO_PI)
+                wave2 = math.cos(x_base * 0.01 - y * 0.01 + loop_t * 2 + p_offset * py5.TWO_PI)
+                wave3 = math.sin(x_base * 0.003 + y * 0.008 - loop_t * 1.5)
+                
+                x_distortion = (wave1 + wave2 + wave3) * envelope * 250.0
+                
+                py5.vertex(x_base + x_distortion, y)
+                
+            py5.end_shape()
 
     py5.save_frame(str(FRAMES_DIR / "frame-####.png"))
 

@@ -1,3 +1,10 @@
+## kinetic_generative_oscilloscope_waveforms_2d
+- **Date**: 2026-07-18
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: An emulation of a vintage vector oscilloscope displaying complex, overlapping Lissajous figures that morph and twist violently like raw audio waveforms.
+- **Techniques**: Multiple high-frequency sine waves are amplitude and frequency modulated by continuous Perlin noise, creating a dynamic, chaotic line drawing that evokes classic analog synthesizers and vector monitors.
+- **Palette**: Very dark green background with terminal phosphor green variations, utilizing additive blending to create intense bright spots where lines overlap.
+
 ## kinetic_math_spherical_harmonics_3d
 - **Date**: 2026-07-18
 - **Type**: Animation (900 frames, 60fps)

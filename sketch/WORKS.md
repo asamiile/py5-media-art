@@ -1,3 +1,10 @@
+## kinetic_glitch_cybernetic_mandala_2d
+- **Date**: 2026-07-19
+- **Type**: Animation (1200 frames, 60fps)
+- **Concept**: A high-tech, glitching cybernetic mandala. A slowly rotating circular matrix of sharp angular geometric shapes, barcodes, and concentric rings, interrupted by aggressive chromatic aberration and blocky glitch artifacts (mimicking data corruption).
+- **Techniques**: Polar coordinates and trigonometry to draw hundreds of complex angular ring segments. A secondary post-processing "glitch pass" uses direct NumPy pixel array manipulation (`load_np_pixels()`) to displace horizontal bands of the screen and shift color channels randomly.
+- **Palette**: Pure monochrome (white, gray, black) with violent flashes of primary red and cyan during glitches.
+
 ## kinetic_stellar_nebula_particle_accretion_2d
 - **Date**: 2026-07-19
 - **Type**: Animation (1200 frames, 60fps)

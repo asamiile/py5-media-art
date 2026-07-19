@@ -1,3 +1,10 @@
+## kinetic_magnetic_reconnection_flare_2d
+- **Date**: 2026-07-19
+- **Type**: Animation (1200 frames, 60fps)
+- **Concept**: An abstract visualization of solar magnetic reconnection. Magnetic field lines twist, snap, and release bursts of high-energy plasma (particles) in a dynamic dance.
+- **Techniques**: A vector field driven by multiple rotating attractors and repulsors simulating magnetic poles. 40,000 particles follow the field lines. 
+- **Palette**: Intense solar orange, blinding white, and deep space black, with subtle coronal purple edges reflecting energy states.
+
 ## kinetic_woven_fiber_optic_tapestry_2d
 - **Date**: 2026-07-19
 - **Type**: Animation (1200 frames, 60fps)

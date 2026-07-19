@@ -1,3 +1,10 @@
+## kinetic_optical_flow_glitch_typography_2d
+- **Date**: 2026-07-19
+- **Type**: Animation (1200 frames, 60fps)
+- **Concept**: A wall of text that acts like a fluid, where letters push and pull each other based on hidden optical flow vectors. The typography distorts and glitches out like a broken display when turbulence gets too high.
+- **Techniques**: Grid of text characters. The positions of the characters are warped by 2D Perlin noise over time to simulate optical flow. Chromatic aberration (additive blending of offset red and cyan channels) is applied dynamically in high-turbulence zones.
+- **Palette**: Monochrome black/white with bright red/cyan glitch channels.
+
 ## generative_isometric_tomb_architecture_2d
 - **Date**: 2026-07-19
 - **Type**: Animation (1200 frames, 60fps)

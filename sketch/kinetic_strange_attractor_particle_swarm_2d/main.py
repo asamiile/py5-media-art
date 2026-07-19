@@ -17,71 +17,64 @@ from lib.sizes import get_sizes
 SKETCH_DIR = sketch_dir(__file__)
 WORK_NAME = SKETCH_DIR.name
 FRAMES_DIR = SKETCH_DIR / "frames"
-DURATION_SEC = random.randint(15, 30)  # Random duration up to 30s
+DURATION_SEC = 20
 FPS = 60
 TOTAL_FRAMES = DURATION_SEC * FPS
 PREVIEW_FILENAME = f"{WORK_NAME}_p1.png"
 PREVIEW_SIZE, OUTPUT_SIZE, _ = get_sizes()
 SIZE = OUTPUT_SIZE
 
-# Particle system
-N_PARTICLES = 150000
-x = np.random.uniform(-3, 3, N_PARTICLES).astype(np.float32)
-y = np.random.uniform(-3, 3, N_PARTICLES).astype(np.float32)
+NUM_PARTICLES = 300000
+particles = np.random.uniform(-3.0, 3.0, (NUM_PARTICLES, 2)).astype(np.float32)
 
-# Clifford attractor params
-# a, b, c, d
-params_start = np.array([1.4, 1.56, 1.4, -6.56])
-params_end = np.array([-1.7, 1.3, -0.1, -1.2])
+a_target, b_target, c_target, d_target = 1.4, -2.3, 2.4, -2.1
+a, b, c, d = a_target, b_target, c_target, d_target
 
 def setup():
     py5.size(*SIZE)
     py5.pixel_density(1)
-    py5.background(5)
     FRAMES_DIR.mkdir(exist_ok=True)
-
-def draw():
-    global x, y
     
-    # Trails fade
+def draw():
+    global particles, a, b, c, d, a_target, b_target, c_target, d_target
+    
     py5.blend_mode(py5.BLEND)
     py5.no_stroke()
-    py5.fill(5, 5, 8, 20)
+    py5.fill(0, 0, 0, 20)
     py5.rect(0, 0, SIZE[0], SIZE[1])
     
-    # Interpolate parameters
-    progress = py5.frame_count / TOTAL_FRAMES
-    # Smoothstep interpolation
-    progress = progress * progress * (3 - 2 * progress)
+    t = py5.frame_count * 0.01
     
-    p = params_start + (params_end - params_start) * progress
-    a, b, c, d = p
+    if py5.frame_count % 300 == 0:
+        a_target = random.uniform(-3.0, 3.0)
+        b_target = random.uniform(-3.0, 3.0)
+        c_target = random.uniform(-3.0, 3.0)
+        d_target = random.uniform(-3.0, 3.0)
+        
+    a += (a_target - a) * 0.005
+    b += (b_target - b) * 0.005
+    c += (c_target - c) * 0.005
+    d += (d_target - d) * 0.005
     
-    # Clifford Attractor step
-    x_new = np.sin(a * y) + c * np.cos(a * x)
-    y_new = np.sin(b * x) + d * np.cos(b * y)
+    x = particles[:, 0]
+    y = particles[:, 1]
     
-    x[:] = x_new
-    y[:] = y_new
+    nx = np.sin(a * y) - np.cos(b * x)
+    ny = np.sin(c * x) - np.cos(d * y)
     
-    # Map to screen
-    scale = SIZE[1] * 0.18
-    screen_x = x * scale + SIZE[0] / 2
-    screen_y = y * scale + SIZE[1] / 2
+    particles[:, 0] = nx
+    particles[:, 1] = ny
     
-    # Fast rendering
+    screen_x = (nx + 2.5) * (SIZE[0] / 5.0)
+    screen_y = (ny + 2.5) * (SIZE[1] / 5.0)
+    
+    screen_coords = np.column_stack((screen_x, screen_y))
+    
     py5.blend_mode(py5.ADD)
     py5.stroke_weight(1)
+    py5.stroke(100, 200, 255, 30)
     
-    r_val = int(50 + progress * 100)
-    g_val = int(200 - progress * 100)
-    b_val = 255
-    py5.stroke(r_val, g_val, b_val, 120)
-    
-    py5.begin_shape(py5.POINTS)
-    for i in range(N_PARTICLES):
-        py5.vertex(screen_x[i], screen_y[i])
-    py5.end_shape()
+    py5.points(screen_coords)
 
     py5.save_frame(str(FRAMES_DIR / "frame-####.png"))
 

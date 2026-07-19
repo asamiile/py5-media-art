@@ -1,3 +1,10 @@
+## kinetic_strange_attractor_particle_swarm_2d
+- **Date**: 2026-07-19
+- **Type**: Animation (1200 frames, 60fps)
+- **Concept**: A massive swarm of 300,000 glowing particles orbiting a mathematically complex strange attractor (Peter de Jong attractor). The parameters of the attractor drift slowly over time, causing the swarm to continuously transition through chaotic and highly structured orbital states.
+- **Techniques**: Vectorized math via NumPy allows real-time iteration of the chaotic equations for hundreds of thousands of particles, drawing them as a glowing point cloud with very low alpha and additive blending to reveal density structures.
+- **Palette**: Deep black void with the points drawn in an ethereal glowing cyan/white, with velocities colored by speed (fast particles shift towards magenta/red).
+
 ## generative_fractal_lsystem_tree_canopy_2d
 - **Date**: 2026-07-19
 - **Type**: Animation (1200 frames, 60fps)

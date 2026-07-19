@@ -1,3 +1,10 @@
+## generative_isometric_tomb_architecture_2d
+- **Date**: 2026-07-19
+- **Type**: Animation (1200 frames, 60fps)
+- **Concept**: An exploration of ancient, monolithic geometric structures slowly building themselves up block by block, like a forgotten tomb or temple. Built using a 2.5D isometric stacked block generation where blocks are instantiated in layers driven by 2D Perlin noise and cellular automata.
+- **Techniques**: Custom 2.5D isometric projection engine. Uses painters algorithm and depth sorting. Block heights are driven by low-frequency Perlin noise, and glowing blue artifacts occasionally spawn based on noise thresholding.
+- **Palette**: Dark sandstone/ochre, deep shadow browns, occasional faint mystical blue glow.
+
 ## kinetic_fluid_turbulence_ribbons_2d
 - **Date**: 2026-07-19
 - **Type**: Animation (1200 frames, 60fps)

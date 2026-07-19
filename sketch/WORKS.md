@@ -1,3 +1,10 @@
+## kinetic_fractal_mechanical_clockwork_2d
+- **Date**: 2026-07-19
+- **Type**: Animation (1200 frames, 60fps)
+- **Concept**: An impossibly complex, infinitely recursive mechanical gear system where every gear has smaller gears mounted on its perimeter, all spinning in precise synchrony.
+- **Techniques**: A recursive depth-based algorithm calculates interlocking teeth geometry down to depth level 6. It dynamically calculates rotation speeds and angles so the gears "mesh" correctly as they traverse fractal scales. Overlaid with additive blending and varying strokes for a volumetric, glowing effect.
+- **Palette**: Steampunk-inspired: glowing copper, brass, and gold against a dark, industrial slate background.
+
 ## kinetic_ferrofluid_magnetic_spikes_2d
 - **Date**: 2026-07-19
 - **Type**: Animation (1200 frames, 60fps)

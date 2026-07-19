@@ -1,3 +1,10 @@
+## kinetic_woven_fiber_optic_tapestry_2d
+- **Date**: 2026-07-19
+- **Type**: Animation (1200 frames, 60fps)
+- **Concept**: An intricate weaving of glowing fiber-optic threads that undulate like fabric caught in a slow current.
+- **Techniques**: Hundreds of Catmull-Rom splines overlapping with additive blending. The control points are driven by multi-scale Perlin noise fields, creating a highly organized but wavy flow down the screen.
+- **Palette**: Deep abyssal black background with glowing strands of neon cyan, magenta, and pure white light.
+
 ## kinetic_quantum_foam_interference_2d
 - **Date**: 2026-07-19
 - **Type**: Animation (1200 frames, 60fps)

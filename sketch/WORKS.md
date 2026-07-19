@@ -1,3 +1,10 @@
+## kinetic_fluid_turbulence_ribbons_2d
+- **Date**: 2026-07-19
+- **Type**: Animation (1200 frames, 60fps)
+- **Concept**: A simulation of high-velocity plasma streams guided by curl noise, rendered as neon glowing ribbons. The particles trace continuous paths that stretch, tear, and glow intensely under additive blending.
+- **Techniques**: Curl noise generated from 3D Perlin noise to create incompressible fluid-like flow. Hundreds of particles leave a persistent history buffer, drawn as continuous lines with fading alpha using Py5 curve vertex.
+- **Palette**: Pitch black void with intense cyan, electric magenta, and bright lime green ribbons.
+
 ## kinetic_organic_erosion_mesh_2d
 - **Date**: 2026-07-19
 - **Type**: Animation (1200 frames, 60fps)

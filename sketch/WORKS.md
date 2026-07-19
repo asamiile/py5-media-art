@@ -1,3 +1,10 @@
+## kinetic_reaction_diffusion_coral_growth_2d
+- **Date**: 2026-07-19
+- **Type**: Animation (1200 frames, 60fps)
+- **Concept**: A simulated reaction-diffusion system producing Turing patterns that resemble coral or brain-like structures, evolving dynamically over time.
+- **Techniques**: A Gray-Scott model simulation implemented on a 512x512 grid using NumPy for rapid discrete Laplacian operations. The simulation iterates 25 times per frame. The resulting chemical concentrations are mathematically mapped to colors and drawn directly to the screen using `py5.create_image()` and `set_np_pixels()`, bypassing Python loop bottlenecks.
+- **Palette**: Deep oceanic blue background with bioluminescent cyan, magenta, and white coral structures.
+
 ## kinetic_fractal_mechanical_clockwork_2d
 - **Date**: 2026-07-19
 - **Type**: Animation (1200 frames, 60fps)

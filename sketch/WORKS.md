@@ -1,3 +1,10 @@
+## kinetic_wireframe_hyperspace_tunnel_3d
+- **Date**: 2026-07-19
+- **Type**: Animation (1200 frames, 60fps)
+- **Concept**: A high-speed flight through a glowing, twisting hyperspace tunnel. The tunnel is generated as a series of parametric 3D rings that move toward the camera and twist organically, creating an illusion of infinite flight.
+- **Techniques**: 3D geometric generation and 2D perspective projection. The positions and radii of the rings are modulated by 1D and 2D Perlin noise to create organic twists and turns. Connected line segments create the illusion of a wireframe cylinder, and additive blending mimics neon light.
+- **Palette**: Very dark violet background with bright neon cyan, pink, and white wireframe rings.
+
 ## kinetic_optical_flow_glitch_typography_2d
 - **Date**: 2026-07-19
 - **Type**: Animation (1200 frames, 60fps)

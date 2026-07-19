@@ -1,3 +1,10 @@
+## kinetic_stellar_nebula_particle_accretion_2d
+- **Date**: 2026-07-19
+- **Type**: Animation (1200 frames, 60fps)
+- **Concept**: A slow simulation of stellar gas and dust accreting to form a star. Millions of low-opacity particles rotating slowly in a massive gravitational well.
+- **Techniques**: 100,000 particles orbiting in a massive gravitational well, perturbed by Perlin noise fields. Rendered using additive blending and color-mapped by heat (distance to the core).
+- **Palette**: Deep infrared (dark red/orange) transitioning to bright ultraviolet (cyan/blue/white) at the core.
+
 ## kinetic_procedural_neon_cityscape_grid_2d
 - **Date**: 2026-07-19
 - **Type**: Animation (1200 frames, 60fps)

@@ -1,3 +1,10 @@
+## kinetic_organic_erosion_mesh_2d
+- **Date**: 2026-07-19
+- **Type**: Animation (1200 frames, 60fps)
+- **Concept**: An exploration of organic decay through a densely triangulated mesh. Over time, edges in the Delaunay triangulation break according to a shifting Perlin noise field. When nodes lose all their structural connections, they detach and become drifting dust particles.
+- **Techniques**: Scipy spatial Delaunay triangulation over thousands of points. Edges are tracked and systematically broken based on a combination of time and 2D Perlin noise to simulate organic erosion from the bottom up. Orphaned nodes inherit physical velocity and noise fields to simulate ash drifting in the wind.
+- **Palette**: Charcoal background with rust, ochre, ash gray, and occasional glowing embers.
+
 ## kinetic_fluid_typography_matrix_2d
 - **Date**: 2026-07-19
 - **Type**: Animation (900 frames, 60fps)

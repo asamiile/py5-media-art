@@ -1,3 +1,10 @@
+## generative_fractal_lsystem_tree_canopy_2d
+- **Date**: 2026-07-19
+- **Type**: Animation (1200 frames, 60fps)
+- **Concept**: A sprawling, procedurally generated fractal tree canopy that continuously grows, branches, and gently sways in a simulated wind. 
+- **Techniques**: A recursive fractal tree drawn using `py5.rotate` and `py5.translate`. Branching angles are modulated by low-frequency Perlin noise to simulate wind flowing across the canopy. Additive blending is used with a trailing alpha rectangle to create a glowing motion-blur effect.
+- **Palette**: Deep twilight blue background with translucent, glowing bioluminescent green and cyan branches.
+
 ## kinetic_wireframe_hyperspace_tunnel_3d
 - **Date**: 2026-07-19
 - **Type**: Animation (1200 frames, 60fps)

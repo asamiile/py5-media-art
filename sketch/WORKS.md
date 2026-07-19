@@ -1,3 +1,10 @@
+## kinetic_cymatic_resonance_patterns_2d
+- **Date**: 2026-07-19
+- **Type**: Animation (1200 frames, 60fps)
+- **Concept**: Simulated Chladni plates (cymatics). Sand particles organizing themselves into intricate geometric mandalas driven by interfering standing waves.
+- **Techniques**: A 2D simulation with 150,000 particles. The underlying field is calculated as a sum of 2D sine/cosine waves representing resonant frequencies that slowly morph. Particles move down the gradient of the field magnitude using vectorized NumPy calculations, settling in the "nodes" of the standing waves.
+- **Palette**: Deep matte black plate with pure gold, glowing particles accumulating over time.
+
 ## kinetic_strange_attractor_particle_swarm_2d
 - **Date**: 2026-07-19
 - **Type**: Animation (1200 frames, 60fps)

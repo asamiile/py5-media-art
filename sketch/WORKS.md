@@ -1,3 +1,10 @@
+## kinetic_ferrofluid_magnetic_spikes_2d
+- **Date**: 2026-07-19
+- **Type**: Animation (1200 frames, 60fps)
+- **Concept**: A simulation of ferrofluid (magnetic fluid) reacting to dynamic magnetic fields, forming intricate, spiky, 3D-like geometric shapes that morph over time.
+- **Techniques**: A fake 3D depth effect created by layering multiple 2D shapes (circles with procedurally displaced vertices). A combination of low-frequency and thresholded high-frequency Perlin noise drives the shape deformation to simulate magnetic spikes. Additive blending across layers gives it a volumetric, glowing density.
+- **Palette**: Obsidian spikes against a glowing crimson and orange background.
+
 ## kinetic_cymatic_resonance_patterns_2d
 - **Date**: 2026-07-19
 - **Type**: Animation (1200 frames, 60fps)

@@ -1,3 +1,10 @@
+## kinetic_procedural_neon_cityscape_grid_2d
+- **Date**: 2026-07-19
+- **Type**: Animation (1200 frames, 60fps)
+- **Concept**: A top-down view of a futuristic, glowing city grid where data packets (particles) flow along the streets. The streets form organically using a space colonization algorithm or recursive subdivision.
+- **Techniques**: A custom procedural space subdivision algorithm recursively divides the 4K canvas into city blocks. A directed graph of streets is generated, and 15,000 "data packet" particles dynamically navigate this graph network. Buildings pulse with low-frequency noise.
+- **Palette**: Cyberpunk—dark violet, neon pink, and cyan.
+
 ## kinetic_magnetic_reconnection_flare_2d
 - **Date**: 2026-07-19
 - **Type**: Animation (1200 frames, 60fps)

@@ -1,3 +1,10 @@
+## kinetic_cellular_automata_belousov_zhabotinsky_2d
+- **Date**: 2026-07-20
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A continuous-state cellular automata simulating the Belousov-Zhabotinsky (BZ) oscillating chemical reaction, known for producing rotating spiral waves.
+- **Techniques**: Implements a 3-state continuous cellular automaton on a grid using `scipy.signal.convolve2d` to efficiently calculate the 8-way Moore neighborhood for all pixels simultaneously. The simulation rules drive chemical oscillators that self-organize into macro-scale spirals.
+- **Palette**: Neon cyberpunk aesthetic—electric cyan, soft pink, and deep violet.
+
 ## kinetic_diffusion_limited_aggregation_2d
 - **Date**: 2026-07-20
 - **Type**: Animation (900 frames, 60fps)

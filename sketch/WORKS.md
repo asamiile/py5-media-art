@@ -1,3 +1,10 @@
+## kinetic_diffusion_limited_aggregation_2d
+- **Date**: 2026-07-20
+- **Type**: Animation (1200 frames, 60fps)
+- **Concept**: A simulation of Diffusion-Limited Aggregation (DLA) creating a branching, fractal coral-like structure.
+- **Techniques**: Simulates 6,000 random-walking particles in a highly vectorized NumPy grid. When particles collide with the existing structure or the central seed, they freeze in place, mapping their generation (time attached) to their color and brightness to animate a growing organic crystal time-lapse.
+- **Palette**: Deep oceanic gradients from dark violet/blue at the center to bright turquoise and white at the tips, on a pure black background.
+
 ## kinetic_tesseract_wireframe_projection_2d
 - **Date**: 2026-07-20
 - **Type**: Animation (1020 frames, 60fps)

@@ -1,3 +1,10 @@
+## kinetic_cellular_automata_hodgepodge_machine_2d
+- **Date**: 2026-07-20
+- **Type**: Animation (960 frames, 60fps)
+- **Concept**: The Hodgepodge Machine, a cellular automaton model of the Belousov-Zhabotinsky reaction by Gerhardt and Schuster. Generates swirling spirals and concentric rings.
+- **Techniques**: Simulates a 100-state discrete 2D grid using `scipy.signal.convolve2d` to calculate neighborhood infections.
+- **Palette**: Neon Synthwave—electric purple, hot pink, and cyan swirling against a dark grid.
+
 ## kinetic_cellular_automata_brians_brain_2d
 - **Date**: 2026-07-20
 - **Type**: Animation (1080 frames, 60fps)

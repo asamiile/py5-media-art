@@ -1,3 +1,10 @@
+## kinetic_geometric_bauhaus_composition_2d
+- **Date**: 2026-07-20
+- **Type**: Animation (1020 frames, 60fps)
+- **Concept**: A rigid geometric composition inspired by Bauhaus design principles that slowly shifts, scales, and rotates its elements in perfect sync.
+- **Techniques**: Nested matrix transformations mapping simple shapes with distinct easing curves (smoothstep) for a perfect kinetic loop.
+- **Palette**: Primary red, yellow, teal, and black on an off-white parchment background.
+
 ## kinetic_topological_sort_graph_2d
 - **Date**: 2026-07-20
 - **Type**: Animation (1080 frames, 60fps)

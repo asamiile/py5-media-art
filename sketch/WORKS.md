@@ -1,3 +1,10 @@
+## kinetic_fluid_vector_field_particles_2d
+- **Date**: 2026-07-20
+- **Type**: Animation (960 frames, 60fps)
+- **Concept**: A simulated organic fluid flow driven by a kinetic vector field.
+- **Techniques**: Simulating 30,000 particles whose paths are dictated by a dynamic mathematical vector field based on trigonometric interference and swirling attractors. Used vectorized NumPy operations for extremely fast particle updates per frame.
+- **Palette**: Ethereal bioluminescent blues, cyans, and purples against a deep ocean-green background.
+
 ## kinetic_fractal_spirograph_mandala_2d
 - **Date**: 2026-07-20
 - **Type**: Animation (900 frames, 60fps)

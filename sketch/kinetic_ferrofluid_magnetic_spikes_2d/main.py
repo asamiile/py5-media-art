@@ -24,11 +24,23 @@ PREVIEW_FILENAME = f"{WORK_NAME}_p1.png"
 PREVIEW_SIZE, OUTPUT_SIZE, _ = get_sizes()
 SIZE = OUTPUT_SIZE
 
-NUM_PARTICLES = 300000
-particles = np.random.uniform(-3.0, 3.0, (NUM_PARTICLES, 2)).astype(np.float32)
+# Mesh parameters
+NUM_POINTS = 500
+BASE_RADIUS = 300
 
-a_target, b_target, c_target, d_target = 1.4, -2.3, 2.4, -2.1
-a, b, c, d = a_target, b_target, c_target, d_target
+def get_vertex(angle, layer_scale, t):
+    x_n = np.cos(angle)
+    y_n = np.sin(angle)
+    
+    # 2D noise for spikes
+    n1 = py5.os_noise(x_n * 2.0, y_n * 2.0, t * 0.5)
+    n2 = py5.os_noise(x_n * 6.0 + 100, y_n * 6.0 + 100, t)
+    
+    spike = max(0, n2 - 0.6) * 4.0
+    
+    r = BASE_RADIUS * layer_scale + n1 * 300 * layer_scale + spike * 400 * layer_scale
+    
+    return x_n * r, y_n * r
 
 def setup():
     py5.size(*SIZE)
@@ -36,46 +48,38 @@ def setup():
     FRAMES_DIR.mkdir(exist_ok=True)
     
 def draw():
-    global particles, a, b, c, d, a_target, b_target, c_target, d_target
+    py5.background(20, 5, 5)
     
-    py5.blend_mode(py5.BLEND)
-    py5.no_stroke()
-    py5.fill(0, 0, 0, 20)
-    py5.rect(0, 0, SIZE[0], SIZE[1])
+    py5.translate(SIZE[0]/2, SIZE[1]/2)
     
-    t = py5.frame_count * 0.01
+    t = py5.frame_count * 0.02
     
-    if py5.frame_count % 300 == 0:
-        a_target = random.uniform(-3.0, 3.0)
-        b_target = random.uniform(-3.0, 3.0)
-        c_target = random.uniform(-3.0, 3.0)
-        d_target = random.uniform(-3.0, 3.0)
-        
-    a += (a_target - a) * 0.005
-    b += (b_target - b) * 0.005
-    c += (c_target - c) * 0.005
-    d += (d_target - d) * 0.005
-    
-    x = particles[:, 0]
-    y = particles[:, 1]
-    
-    nx = np.sin(a * y) - np.cos(b * x)
-    ny = np.sin(c * x) - np.cos(d * y)
-    
-    particles[:, 0] = nx
-    particles[:, 1] = ny
-    
-    screen_x = (nx + 2.5) * (SIZE[0] / 5.0)
-    screen_y = (ny + 2.5) * (SIZE[1] / 5.0)
-    
-    screen_coords = np.column_stack((screen_x, screen_y))
+    # Draw several overlapping spiked circles for fake 3D depth
+    num_layers = 20
     
     py5.blend_mode(py5.ADD)
-    py5.stroke_weight(1)
-    py5.stroke(100, 200, 255, 30)
+    py5.no_stroke()
     
-    py5.points(screen_coords)
+    for i in range(num_layers, 0, -1):
+        layer_scale = py5.remap(i, 0, num_layers, 1.0, 0.1)
+        
+        c_r = int(py5.remap(i, 0, num_layers, 30, 255))
+        c_g = int(py5.remap(i, 0, num_layers, 5, 100))
+        c_b = int(py5.remap(i, 0, num_layers, 5, 50))
+        alpha = int(py5.remap(i, 0, num_layers, 20, 200))
+        
+        py5.fill(c_r, c_g, c_b, alpha)
+        
+        py5.begin_shape()
+        for j in range(NUM_POINTS):
+            angle = py5.TWO_PI * j / NUM_POINTS
+            # Adding slight rotation offset per layer for parallax
+            angle_offset = angle + i * 0.05 * np.sin(t)
+            vx, vy = get_vertex(angle_offset, layer_scale, t + i * 0.05)
+            py5.vertex(vx, vy)
+        py5.end_shape(py5.CLOSE)
 
+    py5.blend_mode(py5.BLEND)
     py5.save_frame(str(FRAMES_DIR / "frame-####.png"))
 
     if py5.frame_count == 2 or py5.frame_count % 60 == 0:

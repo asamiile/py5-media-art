@@ -24,11 +24,26 @@ PREVIEW_FILENAME = f"{WORK_NAME}_p1.png"
 PREVIEW_SIZE, OUTPUT_SIZE, _ = get_sizes()
 SIZE = OUTPUT_SIZE
 
-NUM_PARTICLES = 300000
-particles = np.random.uniform(-3.0, 3.0, (NUM_PARTICLES, 2)).astype(np.float32)
+rows = 150
+cols = 250
+spacing_x = SIZE[0] / (cols - 1)
+spacing_y = SIZE[1] / (rows - 1)
 
-a_target, b_target, c_target, d_target = 1.4, -2.3, 2.4, -2.1
-a, b, c, d = a_target, b_target, c_target, d_target
+waves = []
+for _ in range(8):
+    dir_x = random.uniform(-1, 1)
+    dir_y = random.uniform(-1, 1)
+    norm = np.hypot(dir_x, dir_y)
+    freq = random.uniform(0.002, 0.015)
+    amp = random.uniform(10, 80)
+    phase_speed = random.uniform(0.01, 0.05)
+    waves.append({
+        'dir_x': dir_x / norm,
+        'dir_y': dir_y / norm,
+        'freq': freq,
+        'amp': amp,
+        'speed': phase_speed
+    })
 
 def setup():
     py5.size(*SIZE)
@@ -36,46 +51,45 @@ def setup():
     FRAMES_DIR.mkdir(exist_ok=True)
     
 def draw():
-    global particles, a, b, c, d, a_target, b_target, c_target, d_target
+    py5.background(5, 0, 15)
     
     py5.blend_mode(py5.BLEND)
     py5.no_stroke()
-    py5.fill(0, 0, 0, 20)
+    py5.fill(5, 0, 15, 40)
     py5.rect(0, 0, SIZE[0], SIZE[1])
     
-    t = py5.frame_count * 0.01
-    
-    if py5.frame_count % 300 == 0:
-        a_target = random.uniform(-3.0, 3.0)
-        b_target = random.uniform(-3.0, 3.0)
-        c_target = random.uniform(-3.0, 3.0)
-        d_target = random.uniform(-3.0, 3.0)
-        
-    a += (a_target - a) * 0.005
-    b += (b_target - b) * 0.005
-    c += (c_target - c) * 0.005
-    d += (d_target - d) * 0.005
-    
-    x = particles[:, 0]
-    y = particles[:, 1]
-    
-    nx = np.sin(a * y) - np.cos(b * x)
-    ny = np.sin(c * x) - np.cos(d * y)
-    
-    particles[:, 0] = nx
-    particles[:, 1] = ny
-    
-    screen_x = (nx + 2.5) * (SIZE[0] / 5.0)
-    screen_y = (ny + 2.5) * (SIZE[1] / 5.0)
-    
-    screen_coords = np.column_stack((screen_x, screen_y))
-    
     py5.blend_mode(py5.ADD)
-    py5.stroke_weight(1)
-    py5.stroke(100, 200, 255, 30)
+    py5.no_fill()
     
-    py5.points(screen_coords)
+    t = py5.frame_count
+    
+    for r in range(rows):
+        y_base = r * spacing_y
+        
+        c_r = int(py5.remap(r, 0, rows, 50, 255))
+        c_g = int(py5.remap(r, 0, rows, 0, 50))
+        c_b = int(py5.remap(r, 0, rows, 255, 100))
+        
+        py5.stroke(c_r, c_g, c_b, 150)
+        py5.stroke_weight(py5.remap(r, 0, rows, 1, 4))
+        
+        py5.begin_shape()
+        for c in range(cols):
+            x = c * spacing_x
+            y = y_base
+            
+            z = 0
+            for w in waves:
+                val = (x * w['dir_x'] + y * w['dir_y']) * w['freq'] + t * w['speed']
+                z += np.sin(val) * w['amp']
+                
+            perspective = py5.remap(r, 0, rows, 0.2, 2.0)
+            y_final = y - z * perspective
+            
+            py5.vertex(x, y_final)
+        py5.end_shape()
 
+    py5.blend_mode(py5.BLEND)
     py5.save_frame(str(FRAMES_DIR / "frame-####.png"))
 
     if py5.frame_count == 2 or py5.frame_count % 60 == 0:

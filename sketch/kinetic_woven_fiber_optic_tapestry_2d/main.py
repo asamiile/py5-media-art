@@ -24,57 +24,50 @@ PREVIEW_FILENAME = f"{WORK_NAME}_p1.png"
 PREVIEW_SIZE, OUTPUT_SIZE, _ = get_sizes()
 SIZE = OUTPUT_SIZE
 
-NUM_PARTICLES = 300000
-particles = np.random.uniform(-3.0, 3.0, (NUM_PARTICLES, 2)).astype(np.float32)
-
-a_target, b_target, c_target, d_target = 1.4, -2.3, 2.4, -2.1
-a, b, c, d = a_target, b_target, c_target, d_target
-
 def setup():
     py5.size(*SIZE)
     py5.pixel_density(1)
     FRAMES_DIR.mkdir(exist_ok=True)
     
 def draw():
-    global particles, a, b, c, d, a_target, b_target, c_target, d_target
-    
     py5.blend_mode(py5.BLEND)
     py5.no_stroke()
-    py5.fill(0, 0, 0, 20)
+    py5.fill(5, 5, 10, 20)
     py5.rect(0, 0, SIZE[0], SIZE[1])
     
-    t = py5.frame_count * 0.01
-    
-    if py5.frame_count % 300 == 0:
-        a_target = random.uniform(-3.0, 3.0)
-        b_target = random.uniform(-3.0, 3.0)
-        c_target = random.uniform(-3.0, 3.0)
-        d_target = random.uniform(-3.0, 3.0)
-        
-    a += (a_target - a) * 0.005
-    b += (b_target - b) * 0.005
-    c += (c_target - c) * 0.005
-    d += (d_target - d) * 0.005
-    
-    x = particles[:, 0]
-    y = particles[:, 1]
-    
-    nx = np.sin(a * y) - np.cos(b * x)
-    ny = np.sin(c * x) - np.cos(d * y)
-    
-    particles[:, 0] = nx
-    particles[:, 1] = ny
-    
-    screen_x = (nx + 2.5) * (SIZE[0] / 5.0)
-    screen_y = (ny + 2.5) * (SIZE[1] / 5.0)
-    
-    screen_coords = np.column_stack((screen_x, screen_y))
-    
     py5.blend_mode(py5.ADD)
-    py5.stroke_weight(1)
-    py5.stroke(100, 200, 255, 30)
+    py5.no_fill()
     
-    py5.points(screen_coords)
+    t = py5.frame_count * 0.005
+    
+    num_strands = 200
+    points_per_strand = 40
+    
+    for i in range(num_strands):
+        base_x = py5.remap(i, 0, num_strands-1, -400, SIZE[0] + 400)
+        
+        r = int(py5.remap(np.sin(i * 0.1 + t), -1, 1, 50, 255))
+        g = int(py5.remap(np.cos(i * 0.15 + t * 0.8), -1, 1, 50, 150))
+        b = int(py5.remap(np.sin(i * 0.05 + t * 1.2), -1, 1, 150, 255))
+        alpha = int(py5.remap(np.sin(i + t*3), -1, 1, 30, 90))
+        
+        py5.stroke(r, g, b, alpha)
+        py5.stroke_weight(py5.remap(np.sin(i*0.5 + t*5), -1, 1, 1, 6))
+        
+        py5.begin_shape()
+        for j in range(points_per_strand):
+            py = py5.remap(j, 0, points_per_strand-1, -200, SIZE[1] + 200)
+            
+            noise_val = py5.os_noise(base_x * 0.001, py * 0.001 + t * 2.0, t)
+            offset = py5.remap(noise_val, 0, 1, -400, 400)
+            
+            noise_val2 = py5.os_noise(base_x * 0.005, py * 0.005 - t, t * 1.5)
+            offset += py5.remap(noise_val2, 0, 1, -100, 100)
+            
+            px = base_x + offset
+            
+            py5.curve_vertex(px, py)
+        py5.end_shape()
 
     py5.save_frame(str(FRAMES_DIR / "frame-####.png"))
 

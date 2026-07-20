@@ -2,7 +2,6 @@ from pathlib import Path
 import shutil
 import subprocess
 import sys
-import random
 import numpy as np
 import py5
 
@@ -17,64 +16,83 @@ from lib.sizes import get_sizes
 SKETCH_DIR = sketch_dir(__file__)
 WORK_NAME = SKETCH_DIR.name
 FRAMES_DIR = SKETCH_DIR / "frames"
-DURATION_SEC = 20
+DURATION_SEC = 15
 FPS = 60
 TOTAL_FRAMES = DURATION_SEC * FPS
 PREVIEW_FILENAME = f"{WORK_NAME}_p1.png"
 PREVIEW_SIZE, OUTPUT_SIZE, _ = get_sizes()
 SIZE = OUTPUT_SIZE
 
-NUM_PARTICLES = 300000
-particles = np.random.uniform(-3.0, 3.0, (NUM_PARTICLES, 2)).astype(np.float32)
+# Grid config
+COLS = 160
+ROWS = 90
+CELL_W = SIZE[0] / COLS
+CELL_H = SIZE[1] / ROWS
 
-a_target, b_target, c_target, d_target = 1.4, -2.3, 2.4, -2.1
-a, b, c, d = a_target, b_target, c_target, d_target
+chars = np.array(list("0123456789ABCDEF@#$%&X+-"))
+char_count = len(chars)
+
+# Text tracking
+current_chars = np.random.choice(chars, size=(ROWS, COLS))
+char_ages = np.zeros((ROWS, COLS))
 
 def setup():
     py5.size(*SIZE)
     py5.pixel_density(1)
     FRAMES_DIR.mkdir(exist_ok=True)
     
+    # We use a built-in font for simplicity, or just default text
+    py5.text_font(py5.create_font("Courier New", 24))
+    py5.text_align(py5.CENTER, py5.CENTER)
+    
+    py5.background(5, 5, 5)
+    py5.color_mode(py5.RGB, 255)
+
 def draw():
-    global particles, a, b, c, d, a_target, b_target, c_target, d_target
+    global current_chars, char_ages
     
+    # Trail / Fade
     py5.blend_mode(py5.BLEND)
-    py5.no_stroke()
-    py5.fill(0, 0, 0, 20)
-    py5.rect(0, 0, SIZE[0], SIZE[1])
-    
-    t = py5.frame_count * 0.01
-    
-    if py5.frame_count % 300 == 0:
-        a_target = random.uniform(-3.0, 3.0)
-        b_target = random.uniform(-3.0, 3.0)
-        c_target = random.uniform(-3.0, 3.0)
-        d_target = random.uniform(-3.0, 3.0)
-        
-    a += (a_target - a) * 0.005
-    b += (b_target - b) * 0.005
-    c += (c_target - c) * 0.005
-    d += (d_target - d) * 0.005
-    
-    x = particles[:, 0]
-    y = particles[:, 1]
-    
-    nx = np.sin(a * y) - np.cos(b * x)
-    ny = np.sin(c * x) - np.cos(d * y)
-    
-    particles[:, 0] = nx
-    particles[:, 1] = ny
-    
-    screen_x = (nx + 2.5) * (SIZE[0] / 5.0)
-    screen_y = (ny + 2.5) * (SIZE[1] / 5.0)
-    
-    screen_coords = np.column_stack((screen_x, screen_y))
+    py5.fill(0, 0, 0, 30)
+    py5.rect(0, 0, py5.width, py5.height)
     
     py5.blend_mode(py5.ADD)
-    py5.stroke_weight(1)
-    py5.stroke(100, 200, 255, 30)
     
-    py5.points(screen_coords)
+    t = py5.frame_count * 0.02
+    
+    py5.no_stroke()
+    
+    # Render loop
+    # We iterate over a subset to keep performance high if needed, but numpy can help determine states.
+    # Actually, let's build the noise field in numpy first.
+    x_coords = np.linspace(0, 4, COLS)
+    y_coords = np.linspace(0, 2.5, ROWS)
+    
+    for r in range(ROWS):
+        for c in range(COLS):
+            # Noise value for this cell
+            n = py5.os_noise(x_coords[c], y_coords[r], t)
+            
+            # Flow magnitude
+            flow = (n - 0.5) * 2.0
+            
+            # Age progression depends on flow
+            char_ages[r, c] += abs(flow) * 0.1
+            
+            if char_ages[r, c] > 1.0:
+                char_ages[r, c] = 0.0
+                current_chars[r, c] = chars[py5.random_int(0, char_count - 1)]
+            
+            # Brightness based on flow intensity and age
+            intensity = (1.0 - char_ages[r, c]) * abs(flow) * 255
+            if intensity > 10:
+                py5.fill(0, intensity, intensity * 0.3, intensity)
+                py5.text(current_chars[r, c], c * CELL_W + CELL_W/2, r * CELL_H + CELL_H/2)
+            
+            # Highlights
+            if intensity > 200:
+                py5.fill(200, 255, 200, intensity)
+                py5.text(current_chars[r, c], c * CELL_W + CELL_W/2, r * CELL_H + CELL_H/2)
 
     py5.save_frame(str(FRAMES_DIR / "frame-####.png"))
 

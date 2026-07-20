@@ -1,3 +1,214 @@
+## kinetic_chromatic_wave_interference_mesh_2d
+- **Date**: 2026-07-20
+- **Type**: Animation (1200 frames, 60fps)
+- **Concept**: A high-density 3D-looking mesh of interlacing sine waves that resembles a digital ocean or topographic map made of glowing string.
+- **Techniques**: A grid of points where the vertical offset is determined by summing 8 interacting 2D sine waves of varying frequencies, amplitudes, and phase speeds. A perspective multiplier adds a faux-3D depth effect. 
+- **Palette**: Synthwave aesthetic—hot pink, electric blue, and deep indigo with additive blending.
+
+## kinetic_glitch_cybernetic_mandala_2d
+- **Date**: 2026-07-19
+- **Type**: Animation (1200 frames, 60fps)
+- **Concept**: A high-tech, glitching cybernetic mandala. A slowly rotating circular matrix of sharp angular geometric shapes, barcodes, and concentric rings, interrupted by aggressive chromatic aberration and blocky glitch artifacts (mimicking data corruption).
+- **Techniques**: Polar coordinates and trigonometry to draw hundreds of complex angular ring segments. A secondary post-processing "glitch pass" uses direct NumPy pixel array manipulation (`load_np_pixels()`) to displace horizontal bands of the screen and shift color channels randomly.
+- **Palette**: Pure monochrome (white, gray, black) with violent flashes of primary red and cyan during glitches.
+
+## kinetic_stellar_nebula_particle_accretion_2d
+- **Date**: 2026-07-19
+- **Type**: Animation (1200 frames, 60fps)
+- **Concept**: A slow simulation of stellar gas and dust accreting to form a star. Millions of low-opacity particles rotating slowly in a massive gravitational well.
+- **Techniques**: 100,000 particles orbiting in a massive gravitational well, perturbed by Perlin noise fields. Rendered using additive blending and color-mapped by heat (distance to the core).
+- **Palette**: Deep infrared (dark red/orange) transitioning to bright ultraviolet (cyan/blue/white) at the core.
+
+## kinetic_procedural_neon_cityscape_grid_2d
+- **Date**: 2026-07-19
+- **Type**: Animation (1200 frames, 60fps)
+- **Concept**: A top-down view of a futuristic, glowing city grid where data packets (particles) flow along the streets. The streets form organically using a space colonization algorithm or recursive subdivision.
+- **Techniques**: A custom procedural space subdivision algorithm recursively divides the 4K canvas into city blocks. A directed graph of streets is generated, and 15,000 "data packet" particles dynamically navigate this graph network. Buildings pulse with low-frequency noise.
+- **Palette**: Cyberpunk—dark violet, neon pink, and cyan.
+
+## kinetic_magnetic_reconnection_flare_2d
+- **Date**: 2026-07-19
+- **Type**: Animation (1200 frames, 60fps)
+- **Concept**: An abstract visualization of solar magnetic reconnection. Magnetic field lines twist, snap, and release bursts of high-energy plasma (particles) in a dynamic dance.
+- **Techniques**: A vector field driven by multiple rotating attractors and repulsors simulating magnetic poles. 40,000 particles follow the field lines. 
+- **Palette**: Intense solar orange, blinding white, and deep space black, with subtle coronal purple edges reflecting energy states.
+
+## kinetic_woven_fiber_optic_tapestry_2d
+- **Date**: 2026-07-19
+- **Type**: Animation (1200 frames, 60fps)
+- **Concept**: An intricate weaving of glowing fiber-optic threads that undulate like fabric caught in a slow current.
+- **Techniques**: Hundreds of Catmull-Rom splines overlapping with additive blending. The control points are driven by multi-scale Perlin noise fields, creating a highly organized but wavy flow down the screen.
+- **Palette**: Deep abyssal black background with glowing strands of neon cyan, magenta, and pure white light.
+
+## kinetic_quantum_foam_interference_2d
+- **Date**: 2026-07-19
+- **Type**: Animation (1200 frames, 60fps)
+- **Concept**: A microscopic view of "quantum foam," representing the chaotic, probability-driven fluctuations of spacetime at the Planck length.
+- **Techniques**: Layering dozens of complex interference patterns (Moiré effects) driven by sine waves of different frequencies, moving continuously. Rendered with thousands of expanding/contracting semi-transparent rings overlapping each other to create interference patterns.
+- **Palette**: Deep violet, electric blue, and blinding white.
+
+## kinetic_reaction_diffusion_coral_growth_2d
+- **Date**: 2026-07-19
+- **Type**: Animation (1200 frames, 60fps)
+- **Concept**: A simulated reaction-diffusion system producing Turing patterns that resemble coral or brain-like structures, evolving dynamically over time.
+- **Techniques**: A Gray-Scott model simulation implemented on a 512x512 grid using NumPy for rapid discrete Laplacian operations. The simulation iterates 25 times per frame. The resulting chemical concentrations are mathematically mapped to colors and drawn directly to the screen using `py5.create_image()` and `set_np_pixels()`, bypassing Python loop bottlenecks.
+- **Palette**: Deep oceanic blue background with bioluminescent cyan, magenta, and white coral structures.
+
+## kinetic_fractal_mechanical_clockwork_2d
+- **Date**: 2026-07-19
+- **Type**: Animation (1200 frames, 60fps)
+- **Concept**: An impossibly complex, infinitely recursive mechanical gear system where every gear has smaller gears mounted on its perimeter, all spinning in precise synchrony.
+- **Techniques**: A recursive depth-based algorithm calculates interlocking teeth geometry down to depth level 6. It dynamically calculates rotation speeds and angles so the gears "mesh" correctly as they traverse fractal scales. Overlaid with additive blending and varying strokes for a volumetric, glowing effect.
+- **Palette**: Steampunk-inspired: glowing copper, brass, and gold against a dark, industrial slate background.
+
+## kinetic_ferrofluid_magnetic_spikes_2d
+- **Date**: 2026-07-19
+- **Type**: Animation (1200 frames, 60fps)
+- **Concept**: A simulation of ferrofluid (magnetic fluid) reacting to dynamic magnetic fields, forming intricate, spiky, 3D-like geometric shapes that morph over time.
+- **Techniques**: A fake 3D depth effect created by layering multiple 2D shapes (circles with procedurally displaced vertices). A combination of low-frequency and thresholded high-frequency Perlin noise drives the shape deformation to simulate magnetic spikes. Additive blending across layers gives it a volumetric, glowing density.
+- **Palette**: Obsidian spikes against a glowing crimson and orange background.
+
+## kinetic_cymatic_resonance_patterns_2d
+- **Date**: 2026-07-19
+- **Type**: Animation (1200 frames, 60fps)
+- **Concept**: Simulated Chladni plates (cymatics). Sand particles organizing themselves into intricate geometric mandalas driven by interfering standing waves.
+- **Techniques**: A 2D simulation with 150,000 particles. The underlying field is calculated as a sum of 2D sine/cosine waves representing resonant frequencies that slowly morph. Particles move down the gradient of the field magnitude using vectorized NumPy calculations, settling in the "nodes" of the standing waves.
+- **Palette**: Deep matte black plate with pure gold, glowing particles accumulating over time.
+
+## kinetic_strange_attractor_particle_swarm_2d
+- **Date**: 2026-07-19
+- **Type**: Animation (1200 frames, 60fps)
+- **Concept**: A massive swarm of 300,000 glowing particles orbiting a mathematically complex strange attractor (Peter de Jong attractor). The parameters of the attractor drift slowly over time, causing the swarm to continuously transition through chaotic and highly structured orbital states.
+- **Techniques**: Vectorized math via NumPy allows real-time iteration of the chaotic equations for hundreds of thousands of particles, drawing them as a glowing point cloud with very low alpha and additive blending to reveal density structures.
+- **Palette**: Deep black void with the points drawn in an ethereal glowing cyan/white, with velocities colored by speed (fast particles shift towards magenta/red).
+
+## generative_fractal_lsystem_tree_canopy_2d
+- **Date**: 2026-07-19
+- **Type**: Animation (1200 frames, 60fps)
+- **Concept**: A sprawling, procedurally generated fractal tree canopy that continuously grows, branches, and gently sways in a simulated wind. 
+- **Techniques**: A recursive fractal tree drawn using `py5.rotate` and `py5.translate`. Branching angles are modulated by low-frequency Perlin noise to simulate wind flowing across the canopy. Additive blending is used with a trailing alpha rectangle to create a glowing motion-blur effect.
+- **Palette**: Deep twilight blue background with translucent, glowing bioluminescent green and cyan branches.
+
+## kinetic_wireframe_hyperspace_tunnel_3d
+- **Date**: 2026-07-19
+- **Type**: Animation (1200 frames, 60fps)
+- **Concept**: A high-speed flight through a glowing, twisting hyperspace tunnel. The tunnel is generated as a series of parametric 3D rings that move toward the camera and twist organically, creating an illusion of infinite flight.
+- **Techniques**: 3D geometric generation and 2D perspective projection. The positions and radii of the rings are modulated by 1D and 2D Perlin noise to create organic twists and turns. Connected line segments create the illusion of a wireframe cylinder, and additive blending mimics neon light.
+- **Palette**: Very dark violet background with bright neon cyan, pink, and white wireframe rings.
+
+## kinetic_optical_flow_glitch_typography_2d
+- **Date**: 2026-07-19
+- **Type**: Animation (1200 frames, 60fps)
+- **Concept**: A wall of text that acts like a fluid, where letters push and pull each other based on hidden optical flow vectors. The typography distorts and glitches out like a broken display when turbulence gets too high.
+- **Techniques**: Grid of text characters. The positions of the characters are warped by 2D Perlin noise over time to simulate optical flow. Chromatic aberration (additive blending of offset red and cyan channels) is applied dynamically in high-turbulence zones.
+- **Palette**: Monochrome black/white with bright red/cyan glitch channels.
+
+## generative_isometric_tomb_architecture_2d
+- **Date**: 2026-07-19
+- **Type**: Animation (1200 frames, 60fps)
+- **Concept**: An exploration of ancient, monolithic geometric structures slowly building themselves up block by block, like a forgotten tomb or temple. Built using a 2.5D isometric stacked block generation where blocks are instantiated in layers driven by 2D Perlin noise and cellular automata.
+- **Techniques**: Custom 2.5D isometric projection engine. Uses painters algorithm and depth sorting. Block heights are driven by low-frequency Perlin noise, and glowing blue artifacts occasionally spawn based on noise thresholding.
+- **Palette**: Dark sandstone/ochre, deep shadow browns, occasional faint mystical blue glow.
+
+## kinetic_fluid_turbulence_ribbons_2d
+- **Date**: 2026-07-19
+- **Type**: Animation (1200 frames, 60fps)
+- **Concept**: A simulation of high-velocity plasma streams guided by curl noise, rendered as neon glowing ribbons. The particles trace continuous paths that stretch, tear, and glow intensely under additive blending.
+- **Techniques**: Curl noise generated from 3D Perlin noise to create incompressible fluid-like flow. Hundreds of particles leave a persistent history buffer, drawn as continuous lines with fading alpha using Py5 curve vertex.
+- **Palette**: Pitch black void with intense cyan, electric magenta, and bright lime green ribbons.
+
+## kinetic_organic_erosion_mesh_2d
+- **Date**: 2026-07-19
+- **Type**: Animation (1200 frames, 60fps)
+- **Concept**: An exploration of organic decay through a densely triangulated mesh. Over time, edges in the Delaunay triangulation break according to a shifting Perlin noise field. When nodes lose all their structural connections, they detach and become drifting dust particles.
+- **Techniques**: Scipy spatial Delaunay triangulation over thousands of points. Edges are tracked and systematically broken based on a combination of time and 2D Perlin noise to simulate organic erosion from the bottom up. Orphaned nodes inherit physical velocity and noise fields to simulate ash drifting in the wind.
+- **Palette**: Charcoal background with rust, ochre, ash gray, and occasional glowing embers.
+
+## kinetic_fluid_typography_matrix_2d
+- **Date**: 2026-07-19
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A kinetic typography piece using ASCII characters mapped to a fluid simulation. The letters warp and flow like liquid before disintegrating into noise.
+- **Techniques**: A dense grid of text characters (binary and hex) driven by a hidden noise field's velocity. The characters change dynamically, and their color/brightness is modulated by the flow field.
+- **Palette**: Classic hacker matrix green and white text on a pitch black background, with subtle glowing trails.
+
+## kinetic_glitch_crystal_waveform_2d
+- **Date**: 2026-07-19
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A visualization of high-frequency audio waveforms passing through a glitching, crystalline prism.
+- **Techniques**: Overlapping sine waves heavily modulated by fast Perlin noise, projected radially to form a sharp, rotating geometric crystal structure. Fast-moving color displacement (chromatic aberration) and additive blending create a violent, beautiful glitch effect.
+- **Palette**: Monochromatic white core with intense RGB (red, green, blue) chromatic aberration splits on a dark charcoal background.
+
+## kinetic_bioluminescent_abyss_2d
+- **Date**: 2026-07-19
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A generative representation of deep sea bioluminescent organisms communicating through rhythmic flashes in a dark trench.
+- **Techniques**: Noise-based vector field pushing glowing "organisms" (particles). They emit bright flashes and trails of light when they collide or come within a certain radius of each other.
+- **Palette**: Pitch black background with deep sea greens, glowing cyan, and electric blue bioluminescence.
+
+## kinetic_retrowave_topography_scan_2d
+- **Date**: 2026-07-19
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A topographic, glitchy wireframe landscape generated from Perlin noise, resembling an 80s retrowave mountain pass, animated with scanning lasers.
+- **Techniques**: Moving 2D grid projected into faux 3D. The height map is generated by shifting 2D Perlin noise. Glowing neon pink grid lines on a black canvas, intersected by a bright cyan scanning "laser" plane that runs across the terrain.
+- **Palette**: Neon pink and cyan wireframes over a deep purple/black void.
+
+## kinetic_math_strange_attractor_glow_2d
+- **Date**: 2026-07-19
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A mathematical visualization of chaotic strange attractors wrapping around a central core, emitting a neon glow.
+- **Techniques**: 3D-projected strange attractor (Thomas' cyclically symmetric attractor) using manual 3D-to-2D projection for headless stability. The points rotate over time with additive blending and fading trails to emphasize the chaotic orbital paths.
+- **Palette**: Deep space blue background with electric blue and hot pink glowing trails.
+
+## kinetic_cosmic_nebula_accretion_2d
+- **Date**: 2026-07-19
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A generative representation of celestial bodies forming from a primordial nebula of cosmic dust, driven by complex gravity interactions.
+- **Techniques**: Multi-species attraction-repulsion simulation (particle life) on a dark canvas. Thousands of particles with species-specific gravity matrices interact, utilizing additive alpha blending to create deep volumetric gas clouds that swirl into dense, glowing stars.
+- **Palette**: Deep space abyss (pitch black), overlaid with swirling magenta, cyan, and gold gas clouds that compress into blinding white cores.
+
+## kinetic_flocking_neural_gates_2d
+- **Date**: 2026-07-19
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A microscopic view of neural pathways self-organizing into logic gates over time.
+- **Techniques**: Boids flocking algorithms with a localized pathfinding connection threshold. Particles snap to a geometric lattice when they slow down, forming rigid geometric links (logic gates) out of organic chaos.
+- **Palette**: Glowing neon amber and pale green on a very dark violet background, with pure white for rigid connections.
+
+## kinetic_cybernetic_quantum_grid_2d
+- **Date**: 2026-07-19
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A shifting isometric grid representing a quantum computer's processing state, where nodes randomly collapse into superpositions (glowing states).
+- **Techniques**: Isometric 3D projection on a 2D canvas of a dense, interconnected grid. Nodes pulse and connect using Perlin noise mapped to sine waves, creating "quantum collapses" (flashes of light) that propagate along the grid lines.
+- **Palette**: Deep quantum blue and glowing neon cyan, accented with intense stark white for quantum collapses on a pitch black void.
+
+
+## kinetic_cyberpunk_neon_circuit_board_2d
+- **Date**: 2026-07-18
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A microscopic view of an alien, glowing cybernetic circuit board that routes itself in real-time.
+- **Techniques**: Procedural random-walk pathfinding generates growing traces on a grid that glow in neon cyan, pink, and orange against a dark slate background. As traces grow, they bloom into glowing nodes and then slowly fade away, leaving a continuously evolving network of high-tech geometric circuitry.
+- **Palette**: Dark slate background, with glowing neon cyan, pink, and warm amber traces utilizing additive blending.
+
+## kinetic_generative_oscilloscope_waveforms_2d
+- **Date**: 2026-07-18
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: An emulation of a vintage vector oscilloscope displaying complex, overlapping Lissajous figures that morph and twist violently like raw audio waveforms.
+- **Techniques**: Multiple high-frequency sine waves are amplitude and frequency modulated by continuous Perlin noise, creating a dynamic, chaotic line drawing that evokes classic analog synthesizers and vector monitors.
+- **Palette**: Very dark green background with terminal phosphor green variations, utilizing additive blending to create intense bright spots where lines overlap.
+
+## kinetic_math_spherical_harmonics_3d
+- **Date**: 2026-07-18
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 3D projection of spherical harmonics generating glowing nodes, oscillating through different quantum energy states.
+- **Techniques**: The radius of a dense spherical mesh is warped based on multiple spherical harmonic equations that blend and morph over time, simulating shifting quantum states. The entire shape slowly rotates in 3D space, leaving additive glowing trails.
+- **Palette**: Dark background with iridescent lines transitioning through cyan, magenta, and yellow based on rotation angles.
+
+## kinetic_math_polygonal_vortex_2d
+- **Date**: 2026-07-18
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A hypnotic, swirling vortex of sharp geometric polygons that warp and blend into a continuous tunnel of light.
+- **Techniques**: Concentric polygons (triangles, squares, hexagons) are drawn. Their vertices are continuously rotated and scaled using a mathematical vortex field driven by time and Perlin noise, creating a twisted, organic geometry out of rigid shapes.
+- **Palette**: Pitch black background, glowing violet, magenta, and electric orange.
+
 ## kinetic_algorithmic_phyllotaxis_sunflower_2d
 - **Date**: 2026-07-08
 - **Type**: Animation (900 frames, 60fps)

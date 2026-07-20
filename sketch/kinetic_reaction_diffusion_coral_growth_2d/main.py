@@ -2,7 +2,6 @@ from pathlib import Path
 import shutil
 import subprocess
 import sys
-import random
 import numpy as np
 import py5
 
@@ -24,57 +23,76 @@ PREVIEW_FILENAME = f"{WORK_NAME}_p1.png"
 PREVIEW_SIZE, OUTPUT_SIZE, _ = get_sizes()
 SIZE = OUTPUT_SIZE
 
-NUM_PARTICLES = 300000
-particles = np.random.uniform(-3.0, 3.0, (NUM_PARTICLES, 2)).astype(np.float32)
+W, H = 512, 512
+dA = 1.0
+dB = 0.5
+feed = 0.055
+k = 0.062
 
-a_target, b_target, c_target, d_target = 1.4, -2.3, 2.4, -2.1
-a, b, c, d = a_target, b_target, c_target, d_target
+A = np.ones((H, W), dtype=np.float32)
+B = np.zeros((H, W), dtype=np.float32)
+
+cx, cy = W // 2, H // 2
+B[cy-10:cy+10, cx-10:cx+10] = 1.0
+
+lapA = np.zeros_like(A)
+lapB = np.zeros_like(B)
+
+img = None
+
+def laplacian(Z, out):
+    out[:] = -Z
+    
+    out += np.roll(Z, 1, axis=0) * 0.2
+    out += np.roll(Z, -1, axis=0) * 0.2
+    out += np.roll(Z, 1, axis=1) * 0.2
+    out += np.roll(Z, -1, axis=1) * 0.2
+    
+    out += np.roll(np.roll(Z, 1, axis=0), 1, axis=1) * 0.05
+    out += np.roll(np.roll(Z, -1, axis=0), 1, axis=1) * 0.05
+    out += np.roll(np.roll(Z, 1, axis=0), -1, axis=1) * 0.05
+    out += np.roll(np.roll(Z, -1, axis=0), -1, axis=1) * 0.05
+    
+def step():
+    global A, B
+    laplacian(A, lapA)
+    laplacian(B, lapB)
+    
+    abb = A * B * B
+    
+    t = py5.frame_count * 0.005
+    f = feed + 0.001 * np.sin(t)
+    k_var = k + 0.001 * np.cos(t * 0.8)
+    
+    A += (dA * lapA - abb + f * (1.0 - A)) * 1.0
+    B += (dB * lapB + abb - (k_var + f) * B) * 1.0
 
 def setup():
     py5.size(*SIZE)
     py5.pixel_density(1)
     FRAMES_DIR.mkdir(exist_ok=True)
+    global img
+    img = py5.create_image(W, H, py5.RGB)
     
 def draw():
-    global particles, a, b, c, d, a_target, b_target, c_target, d_target
+    global A, B
     
-    py5.blend_mode(py5.BLEND)
-    py5.no_stroke()
-    py5.fill(0, 0, 0, 20)
-    py5.rect(0, 0, SIZE[0], SIZE[1])
-    
-    t = py5.frame_count * 0.01
-    
-    if py5.frame_count % 300 == 0:
-        a_target = random.uniform(-3.0, 3.0)
-        b_target = random.uniform(-3.0, 3.0)
-        c_target = random.uniform(-3.0, 3.0)
-        d_target = random.uniform(-3.0, 3.0)
+    for _ in range(25):
+        step()
         
-    a += (a_target - a) * 0.005
-    b += (b_target - b) * 0.005
-    c += (c_target - c) * 0.005
-    d += (d_target - d) * 0.005
+    norm_B = np.clip(B * 2.5, 0, 1)
     
-    x = particles[:, 0]
-    y = particles[:, 1]
+    r = (norm_B ** 2 * 255).astype(np.uint8)
+    g = (norm_B * 200).astype(np.uint8)
+    b = (norm_B * 0.5 * 255 + 40).astype(np.uint8)
     
-    nx = np.sin(a * y) - np.cos(b * x)
-    ny = np.sin(c * x) - np.cos(d * y)
+    alpha = np.full_like(r, 255)
     
-    particles[:, 0] = nx
-    particles[:, 1] = ny
+    pixels = np.dstack((alpha, r, g, b))
     
-    screen_x = (nx + 2.5) * (SIZE[0] / 5.0)
-    screen_y = (ny + 2.5) * (SIZE[1] / 5.0)
+    img.set_np_pixels(pixels)
     
-    screen_coords = np.column_stack((screen_x, screen_y))
-    
-    py5.blend_mode(py5.ADD)
-    py5.stroke_weight(1)
-    py5.stroke(100, 200, 255, 30)
-    
-    py5.points(screen_coords)
+    py5.image(img, 0, 0, SIZE[0], SIZE[1])
 
     py5.save_frame(str(FRAMES_DIR / "frame-####.png"))
 

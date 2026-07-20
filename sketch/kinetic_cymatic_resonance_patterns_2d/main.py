@@ -24,11 +24,26 @@ PREVIEW_FILENAME = f"{WORK_NAME}_p1.png"
 PREVIEW_SIZE, OUTPUT_SIZE, _ = get_sizes()
 SIZE = OUTPUT_SIZE
 
-NUM_PARTICLES = 300000
-particles = np.random.uniform(-3.0, 3.0, (NUM_PARTICLES, 2)).astype(np.float32)
+NUM_PARTICLES = 150000
+particles = np.random.uniform(0, 1.0, (NUM_PARTICLES, 2)).astype(np.float32)
+particles[:, 0] *= SIZE[0]
+particles[:, 1] *= SIZE[1]
 
-a_target, b_target, c_target, d_target = 1.4, -2.3, 2.4, -2.1
-a, b, c, d = a_target, b_target, c_target, d_target
+def chladni(x, y, n, m):
+    nx = (x / SIZE[0]) * 2.0 - 1.0
+    ny = (y / SIZE[1]) * 2.0 - 1.0
+    val = np.cos(n * np.pi * nx) * np.cos(m * np.pi * ny) - np.cos(m * np.pi * nx) * np.cos(n * np.pi * ny)
+    return np.abs(val)
+
+def chladni_grad(x, y, n, m, eps=1.0):
+    c = chladni(x, y, n, m)
+    cx = chladni(x + eps, y, n, m)
+    cy = chladni(x, y + eps, n, m)
+    
+    dx = (cx - c) / eps
+    dy = (cy - c) / eps
+    
+    return dx, dy
 
 def setup():
     py5.size(*SIZE)
@@ -36,43 +51,39 @@ def setup():
     FRAMES_DIR.mkdir(exist_ok=True)
     
 def draw():
-    global particles, a, b, c, d, a_target, b_target, c_target, d_target
+    global particles
     
     py5.blend_mode(py5.BLEND)
     py5.no_stroke()
-    py5.fill(0, 0, 0, 20)
+    py5.fill(10, 10, 12, 60)
     py5.rect(0, 0, SIZE[0], SIZE[1])
     
     t = py5.frame_count * 0.01
     
-    if py5.frame_count % 300 == 0:
-        a_target = random.uniform(-3.0, 3.0)
-        b_target = random.uniform(-3.0, 3.0)
-        c_target = random.uniform(-3.0, 3.0)
-        d_target = random.uniform(-3.0, 3.0)
-        
-    a += (a_target - a) * 0.005
-    b += (b_target - b) * 0.005
-    c += (c_target - c) * 0.005
-    d += (d_target - d) * 0.005
+    n = py5.remap(np.sin(t * 0.5), -1, 1, 2.0, 8.0)
+    m = py5.remap(np.cos(t * 0.3), -1, 1, 2.0, 8.0)
     
     x = particles[:, 0]
     y = particles[:, 1]
     
-    nx = np.sin(a * y) - np.cos(b * x)
-    ny = np.sin(c * x) - np.cos(d * y)
+    dx, dy = chladni_grad(x, y, n, m, 1.0)
+    
+    speed = 15.0
+    
+    nx = x - dx * speed + np.random.normal(0, 0.5, NUM_PARTICLES)
+    ny = y - dy * speed + np.random.normal(0, 0.5, NUM_PARTICLES)
+    
+    nx = np.mod(nx, SIZE[0])
+    ny = np.mod(ny, SIZE[1])
     
     particles[:, 0] = nx
     particles[:, 1] = ny
     
-    screen_x = (nx + 2.5) * (SIZE[0] / 5.0)
-    screen_y = (ny + 2.5) * (SIZE[1] / 5.0)
-    
-    screen_coords = np.column_stack((screen_x, screen_y))
+    screen_coords = np.column_stack((nx, ny))
     
     py5.blend_mode(py5.ADD)
-    py5.stroke_weight(1)
-    py5.stroke(100, 200, 255, 30)
+    py5.stroke_weight(2)
+    py5.stroke(255, 200, 100, 40)
     
     py5.points(screen_coords)
 

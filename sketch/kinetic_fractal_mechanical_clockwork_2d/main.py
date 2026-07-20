@@ -24,58 +24,69 @@ PREVIEW_FILENAME = f"{WORK_NAME}_p1.png"
 PREVIEW_SIZE, OUTPUT_SIZE, _ = get_sizes()
 SIZE = OUTPUT_SIZE
 
-NUM_PARTICLES = 300000
-particles = np.random.uniform(-3.0, 3.0, (NUM_PARTICLES, 2)).astype(np.float32)
-
-a_target, b_target, c_target, d_target = 1.4, -2.3, 2.4, -2.1
-a, b, c, d = a_target, b_target, c_target, d_target
-
 def setup():
     py5.size(*SIZE)
     py5.pixel_density(1)
     FRAMES_DIR.mkdir(exist_ok=True)
     
-def draw():
-    global particles, a, b, c, d, a_target, b_target, c_target, d_target
+def draw_gear(x, y, r, num_teeth, angle, depth):
+    if depth == 0 or r < 10:
+        return
+        
+    py5.push_matrix()
+    py5.translate(x, y)
+    py5.rotate(angle)
     
-    py5.blend_mode(py5.BLEND)
-    py5.no_stroke()
-    py5.fill(0, 0, 0, 20)
-    py5.rect(0, 0, SIZE[0], SIZE[1])
+    c_r = int(py5.remap(depth, 5, 0, 100, 255))
+    c_g = int(py5.remap(depth, 5, 0, 50, 200))
+    c_b = int(py5.remap(depth, 5, 0, 20, 100))
+    alpha = 150
+    
+    py5.stroke(c_r, c_g, c_b, alpha)
+    py5.stroke_weight(py5.remap(depth, 5, 0, 1, 5))
+    py5.no_fill()
+    py5.ellipse(0, 0, r * 2, r * 2)
+    
+    for i in range(4):
+        py5.rotate(py5.HALF_PI)
+        py5.line(0, 0, r, 0)
+        
+    teeth_h = r * 0.15
+    for i in range(num_teeth):
+        theta = py5.TWO_PI * i / num_teeth
+        px1 = r * np.cos(theta)
+        py1 = r * np.sin(theta)
+        px2 = (r + teeth_h) * np.cos(theta)
+        py2 = (r + teeth_h) * np.sin(theta)
+        py5.line(px1, py1, px2, py2)
+        
+    py5.pop_matrix()
+    
+    num_children = 3
+    child_r = r * 0.4
+    child_teeth = int(num_teeth * 0.4)
+    if child_teeth < 4: child_teeth = 4
+    
+    for i in range(num_children):
+        theta = py5.TWO_PI * i / num_children + angle * (1 if depth % 2 == 0 else -1)
+        dist = r + child_r + teeth_h
+        cx = x + dist * np.cos(theta)
+        cy = y + dist * np.sin(theta)
+        
+        child_angle = -angle * (r / child_r)
+        
+        draw_gear(cx, cy, child_r, child_teeth, child_angle, depth - 1)
+
+def draw():
+    py5.background(20, 25, 30)
+    
+    py5.blend_mode(py5.ADD)
     
     t = py5.frame_count * 0.01
     
-    if py5.frame_count % 300 == 0:
-        a_target = random.uniform(-3.0, 3.0)
-        b_target = random.uniform(-3.0, 3.0)
-        c_target = random.uniform(-3.0, 3.0)
-        d_target = random.uniform(-3.0, 3.0)
-        
-    a += (a_target - a) * 0.005
-    b += (b_target - b) * 0.005
-    c += (c_target - c) * 0.005
-    d += (d_target - d) * 0.005
-    
-    x = particles[:, 0]
-    y = particles[:, 1]
-    
-    nx = np.sin(a * y) - np.cos(b * x)
-    ny = np.sin(c * x) - np.cos(d * y)
-    
-    particles[:, 0] = nx
-    particles[:, 1] = ny
-    
-    screen_x = (nx + 2.5) * (SIZE[0] / 5.0)
-    screen_y = (ny + 2.5) * (SIZE[1] / 5.0)
-    
-    screen_coords = np.column_stack((screen_x, screen_y))
-    
-    py5.blend_mode(py5.ADD)
-    py5.stroke_weight(1)
-    py5.stroke(100, 200, 255, 30)
-    
-    py5.points(screen_coords)
+    draw_gear(SIZE[0]/2, SIZE[1]/2, 500, 48, t, 6)
 
+    py5.blend_mode(py5.BLEND)
     py5.save_frame(str(FRAMES_DIR / "frame-####.png"))
 
     if py5.frame_count == 2 or py5.frame_count % 60 == 0:

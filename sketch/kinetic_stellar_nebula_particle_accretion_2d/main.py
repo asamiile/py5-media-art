@@ -24,57 +24,80 @@ PREVIEW_FILENAME = f"{WORK_NAME}_p1.png"
 PREVIEW_SIZE, OUTPUT_SIZE, _ = get_sizes()
 SIZE = OUTPUT_SIZE
 
-NUM_PARTICLES = 300000
-particles = np.random.uniform(-3.0, 3.0, (NUM_PARTICLES, 2)).astype(np.float32)
+NUM_PARTICLES = 100000
 
-a_target, b_target, c_target, d_target = 1.4, -2.3, 2.4, -2.1
-a, b, c, d = a_target, b_target, c_target, d_target
+angles = np.random.uniform(0, py5.TWO_PI, NUM_PARTICLES)
+radii = np.random.normal(SIZE[0]*0.4, SIZE[0]*0.15, NUM_PARTICLES)
+x = SIZE[0]/2 + np.cos(angles) * radii
+y = SIZE[1]/2 + np.sin(angles) * radii
+
+particles = np.column_stack((x, y)).astype(np.float32)
+velocities = np.zeros_like(particles)
+
+orbital_speed = 5.0
+velocities[:, 0] = -np.sin(angles) * orbital_speed
+velocities[:, 1] = np.cos(angles) * orbital_speed
 
 def setup():
     py5.size(*SIZE)
     py5.pixel_density(1)
     FRAMES_DIR.mkdir(exist_ok=True)
+    py5.background(2, 0, 5)
     
 def draw():
-    global particles, a, b, c, d, a_target, b_target, c_target, d_target
+    global particles, velocities
     
     py5.blend_mode(py5.BLEND)
     py5.no_stroke()
-    py5.fill(0, 0, 0, 20)
+    py5.fill(2, 0, 5, 20) 
     py5.rect(0, 0, SIZE[0], SIZE[1])
     
     t = py5.frame_count * 0.01
     
-    if py5.frame_count % 300 == 0:
-        a_target = random.uniform(-3.0, 3.0)
-        b_target = random.uniform(-3.0, 3.0)
-        c_target = random.uniform(-3.0, 3.0)
-        d_target = random.uniform(-3.0, 3.0)
-        
-    a += (a_target - a) * 0.005
-    b += (b_target - b) * 0.005
-    c += (c_target - c) * 0.005
-    d += (d_target - d) * 0.005
+    cx, cy = SIZE[0]/2, SIZE[1]/2
     
-    x = particles[:, 0]
-    y = particles[:, 1]
+    dx = cx - particles[:, 0]
+    dy = cy - particles[:, 1]
     
-    nx = np.sin(a * y) - np.cos(b * x)
-    ny = np.sin(c * x) - np.cos(d * y)
+    dist_sq = dx**2 + dy**2
+    dist = np.sqrt(dist_sq)
     
-    particles[:, 0] = nx
-    particles[:, 1] = ny
+    dist_sq = np.clip(dist_sq, 1000, None)
     
-    screen_x = (nx + 2.5) * (SIZE[0] / 5.0)
-    screen_y = (ny + 2.5) * (SIZE[1] / 5.0)
+    force = 10000.0 / dist_sq
     
-    screen_coords = np.column_stack((screen_x, screen_y))
+    velocities[:, 0] += dx * force
+    velocities[:, 1] += dy * force
+    
+    noise_x = py5.os_noise(particles[:, 0] * 0.005, particles[:, 1] * 0.005, t) - 0.5
+    noise_y = py5.os_noise(particles[:, 0] * 0.005 + 100, particles[:, 1] * 0.005 + 100, t) - 0.5
+    
+    velocities[:, 0] += noise_x * 0.5
+    velocities[:, 1] += noise_y * 0.5
+    
+    velocities *= 0.99
+    
+    particles += velocities
     
     py5.blend_mode(py5.ADD)
     py5.stroke_weight(1)
-    py5.stroke(100, 200, 255, 30)
     
-    py5.points(screen_coords)
+    heat = np.clip(1.0 - (dist / (SIZE[0]*0.5)), 0, 1)
+    
+    hot = heat > 0.8
+    if np.any(hot):
+        py5.stroke(255, 255, 255, 40) 
+        py5.points(particles[hot])
+        
+    warm = (heat <= 0.8) & (heat > 0.4)
+    if np.any(warm):
+        py5.stroke(255, 150, 50, 20) 
+        py5.points(particles[warm])
+        
+    cold = heat <= 0.4
+    if np.any(cold):
+        py5.stroke(100, 20, 50, 10) 
+        py5.points(particles[cold])
 
     py5.save_frame(str(FRAMES_DIR / "frame-####.png"))
 

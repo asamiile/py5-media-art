@@ -24,11 +24,13 @@ PREVIEW_FILENAME = f"{WORK_NAME}_p1.png"
 PREVIEW_SIZE, OUTPUT_SIZE, _ = get_sizes()
 SIZE = OUTPUT_SIZE
 
-NUM_PARTICLES = 300000
-particles = np.random.uniform(-3.0, 3.0, (NUM_PARTICLES, 2)).astype(np.float32)
+NUM_CENTERS = 12
+CENTERS = np.random.uniform(0.1, 0.9, (NUM_CENTERS, 2))
+CENTERS[:, 0] *= SIZE[0]
+CENTERS[:, 1] *= SIZE[1]
 
-a_target, b_target, c_target, d_target = 1.4, -2.3, 2.4, -2.1
-a, b, c, d = a_target, b_target, c_target, d_target
+FREQS = np.random.uniform(0.5, 2.0, NUM_CENTERS)
+PHASES = np.random.uniform(0, py5.TWO_PI, NUM_CENTERS)
 
 def setup():
     py5.size(*SIZE)
@@ -36,45 +38,32 @@ def setup():
     FRAMES_DIR.mkdir(exist_ok=True)
     
 def draw():
-    global particles, a, b, c, d, a_target, b_target, c_target, d_target
-    
     py5.blend_mode(py5.BLEND)
-    py5.no_stroke()
-    py5.fill(0, 0, 0, 20)
-    py5.rect(0, 0, SIZE[0], SIZE[1])
-    
-    t = py5.frame_count * 0.01
-    
-    if py5.frame_count % 300 == 0:
-        a_target = random.uniform(-3.0, 3.0)
-        b_target = random.uniform(-3.0, 3.0)
-        c_target = random.uniform(-3.0, 3.0)
-        d_target = random.uniform(-3.0, 3.0)
-        
-    a += (a_target - a) * 0.005
-    b += (b_target - b) * 0.005
-    c += (c_target - c) * 0.005
-    d += (d_target - d) * 0.005
-    
-    x = particles[:, 0]
-    y = particles[:, 1]
-    
-    nx = np.sin(a * y) - np.cos(b * x)
-    ny = np.sin(c * x) - np.cos(d * y)
-    
-    particles[:, 0] = nx
-    particles[:, 1] = ny
-    
-    screen_x = (nx + 2.5) * (SIZE[0] / 5.0)
-    screen_y = (ny + 2.5) * (SIZE[1] / 5.0)
-    
-    screen_coords = np.column_stack((screen_x, screen_y))
-    
+    py5.background(5, 0, 15)
     py5.blend_mode(py5.ADD)
-    py5.stroke_weight(1)
-    py5.stroke(100, 200, 255, 30)
     
-    py5.points(screen_coords)
+    t = py5.frame_count * 0.05
+    
+    py5.no_fill()
+    py5.stroke_weight(2)
+    
+    max_radius = 4500
+    num_rings = 200
+    
+    for i in range(NUM_CENTERS):
+        cx = CENTERS[i, 0] + np.sin(t * FREQS[i] * 0.2 + PHASES[i]) * 400
+        cy = CENTERS[i, 1] + np.cos(t * FREQS[i] * 0.3 + PHASES[i]) * 400
+        
+        r = int(py5.remap(np.sin(i), -1, 1, 50, 200))
+        g = int(py5.remap(np.cos(i), -1, 1, 50, 150))
+        b = int(py5.remap(np.sin(i*2), -1, 1, 150, 255))
+        
+        py5.stroke(r, g, b, 40)
+        
+        for j in range(num_rings):
+            radius = (j * (max_radius / num_rings) - t * 50 * FREQS[i]) % max_radius
+            if radius > 0:
+                py5.ellipse(cx, cy, radius * 2, radius * 2)
 
     py5.save_frame(str(FRAMES_DIR / "frame-####.png"))
 

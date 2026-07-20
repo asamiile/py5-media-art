@@ -3,7 +3,7 @@ import shutil
 import subprocess
 import sys
 import random
-import numpy as np
+import math
 import py5
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
@@ -17,64 +17,54 @@ from lib.sizes import get_sizes
 SKETCH_DIR = sketch_dir(__file__)
 WORK_NAME = SKETCH_DIR.name
 FRAMES_DIR = SKETCH_DIR / "frames"
-DURATION_SEC = 20
+DURATION_SEC = 15
 FPS = 60
 TOTAL_FRAMES = DURATION_SEC * FPS
 PREVIEW_FILENAME = f"{WORK_NAME}_p1.png"
 PREVIEW_SIZE, OUTPUT_SIZE, _ = get_sizes()
 SIZE = OUTPUT_SIZE
 
-NUM_PARTICLES = 300000
-particles = np.random.uniform(-3.0, 3.0, (NUM_PARTICLES, 2)).astype(np.float32)
-
-a_target, b_target, c_target, d_target = 1.4, -2.3, 2.4, -2.1
-a, b, c, d = a_target, b_target, c_target, d_target
-
 def setup():
     py5.size(*SIZE)
     py5.pixel_density(1)
     FRAMES_DIR.mkdir(exist_ok=True)
-    
-def draw():
-    global particles, a, b, c, d, a_target, b_target, c_target, d_target
-    
-    py5.blend_mode(py5.BLEND)
-    py5.no_stroke()
-    py5.fill(0, 0, 0, 20)
-    py5.rect(0, 0, SIZE[0], SIZE[1])
-    
-    t = py5.frame_count * 0.01
-    
-    if py5.frame_count % 300 == 0:
-        a_target = random.uniform(-3.0, 3.0)
-        b_target = random.uniform(-3.0, 3.0)
-        c_target = random.uniform(-3.0, 3.0)
-        d_target = random.uniform(-3.0, 3.0)
-        
-    a += (a_target - a) * 0.005
-    b += (b_target - b) * 0.005
-    c += (c_target - c) * 0.005
-    d += (d_target - d) * 0.005
-    
-    x = particles[:, 0]
-    y = particles[:, 1]
-    
-    nx = np.sin(a * y) - np.cos(b * x)
-    ny = np.sin(c * x) - np.cos(d * y)
-    
-    particles[:, 0] = nx
-    particles[:, 1] = ny
-    
-    screen_x = (nx + 2.5) * (SIZE[0] / 5.0)
-    screen_y = (ny + 2.5) * (SIZE[1] / 5.0)
-    
-    screen_coords = np.column_stack((screen_x, screen_y))
-    
+    py5.color_mode(py5.HSB, 360, 100, 100, 100)
     py5.blend_mode(py5.ADD)
-    py5.stroke_weight(1)
-    py5.stroke(100, 200, 255, 30)
+    py5.no_fill()
+
+def draw():
+    py5.background(0, 0, 0, 10)
+    py5.translate(py5.width / 2, py5.height / 2)
     
-    py5.points(screen_coords)
+    t = py5.frame_count / FPS
+    
+    num_polygons = 60
+    
+    # We will pick a base number of sides but vary it
+    # We need to use py5's pseudo-random or math functions to make it look interesting
+    base_sides = 6
+    
+    for i in range(num_polygons):
+        r = py5.remap(i, 0, num_polygons, 10, py5.width * 0.8)
+        py5.begin_shape()
+        
+        hue = (280 + i * 2 + t * 30) % 360
+        py5.stroke(hue, 80, 80, 50)
+        py5.stroke_weight(py5.remap(i, 0, num_polygons, 1, 8))
+        
+        sides = base_sides
+        for j in range(sides + 1):
+            angle = j * py5.TWO_PI / sides
+            
+            # Vortex distortion
+            dist = math.sqrt(r)
+            vortex_angle = angle + t * 1.5 + py5.os_noise(i * 0.1, j * 0.1, t * 0.5) * py5.TWO_PI
+            
+            x = r * math.cos(vortex_angle)
+            y = r * math.sin(vortex_angle)
+            py5.vertex(x, y)
+        
+        py5.end_shape()
 
     py5.save_frame(str(FRAMES_DIR / "frame-####.png"))
 

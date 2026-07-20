@@ -1,3 +1,10 @@
+## kinetic_strange_attractor_lorenz_3d
+- **Date**: 2026-07-20
+- **Type**: Animation (1020 frames, 60fps)
+- **Concept**: A visualization of the Lorenz Strange Attractor in 3D, tracing the chaotic paths of particles.
+- **Techniques**: Simulates 30,000 particles following the Lorenz equations over time. Rendered in a mathematically projected 3D space with an orbiting camera, mapping their velocity to color and using additive blending to visualize the density of the chaotic butterfly shape.
+- **Palette**: Cyberpunk gradient from electric blue to hot pink.
+
 ## kinetic_space_colonization_trees_2d
 - **Date**: 2026-07-20
 - **Type**: Animation (900 frames, 60fps)

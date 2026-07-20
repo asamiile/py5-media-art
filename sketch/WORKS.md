@@ -1,3 +1,10 @@
+## kinetic_non_euclidean_hyperbolic_tessellation_2d
+- **Date**: 2026-07-20
+- **Type**: Animation (960 frames, 60fps)
+- **Concept**: A hypnotic, infinite zoom into a hyperbolic (Poincaré disk) tessellation that folds into itself.
+- **Techniques**: Non-Euclidean geometry rendering. A grid of lines mapped through a Möbius transformation to create a breathing, moving Poincaré disk model.
+- **Palette**: Cosmic purple background with glowing neon cyan and magenta lines.
+
 ## kinetic_holographic_data_sphere_3d
 - **Date**: 2026-07-20
 - **Type**: Animation (1020 frames, 60fps)

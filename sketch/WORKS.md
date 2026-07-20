@@ -1,3 +1,10 @@
+## kinetic_generative_botany_l_system_2d
+- **Date**: 2026-07-20
+- **Type**: Animation (1140 frames, 60fps)
+- **Concept**: A generative botanical study featuring an L-System tree that grows organically and sways in a simulated breeze before receding.
+- **Techniques**: Recursive string rewriting (L-System), custom matrix stack, ease-in/ease-out growth animation, and 1D Perlin noise for wind.
+- **Palette**: Organic earthy tones (forest green strokes on a beige background).
+
 ## kinetic_fluid_dynamics_particles_2d
 - **Date**: 2026-07-20
 - **Type**: Animation (1080 frames, 60fps)

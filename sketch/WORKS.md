@@ -1,3 +1,10 @@
+## kinetic_cellular_automata_lenia_flow_field
+- **Date**: 2026-07-20
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: Lenia vector flow field. Computes the biological Lenia cellular automaton, but visually renders the invisible vector currents it generates by rotating the 2D concentration gradients and injecting 30,000 tracer particles into the field.
+- **Techniques**: Simulates a 2D continuous CA using `scipy.signal.fftconvolve`. Then applies `scipy.ndimage.sobel` to compute spatial gradients and rotate them into a swirling flow field. 30,000 tracer particles are integrated over this velocity field with fading trails.
+- **Palette**: Cyberpunk Neon. Dark violet background with glowing high-contrast electric pink (slow) and bright cyan (fast) tracer trails.
+
 ## kinetic_cellular_automata_lenia_3d_slice
 - **Date**: 2026-07-20
 - **Type**: Animation (1140 frames, 60fps)

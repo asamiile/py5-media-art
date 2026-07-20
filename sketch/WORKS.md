@@ -1,3 +1,10 @@
+## kinetic_glitch_chromatic_aberration_wave_2d
+- **Date**: 2026-07-20
+- **Type**: Animation (1080 frames, 60fps)
+- **Concept**: A sine wave topology that undergoes extreme digital degradation, creating horizontal pixel shifts and additive RGB color separation (chromatic aberration).
+- **Techniques**: Additive blending (py5.ADD), pixel buffer manipulation via numpy (`np.roll`), 1D Perlin noise for wave variance, and thresholded noise for glitch triggering.
+- **Palette**: Pure RGB (Red, Green, Blue) overlapping to white on a black background.
+
 ## kinetic_generative_botany_l_system_2d
 - **Date**: 2026-07-20
 - **Type**: Animation (1140 frames, 60fps)

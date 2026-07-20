@@ -1,3 +1,10 @@
+## kinetic_neon_wireframe_cube_rotation_2d
+- **Date**: 2026-07-20
+- **Type**: Animation (1200 frames, 60fps)
+- **Concept**: A visualization of multiple floating, slowly rotating 3D wireframe cubes with a glowing trail effect.
+- **Techniques**: Simulating 3D space with 2D trigonometry and perspective projection, rotating multiple cubes on 3 axes with varying line thicknesses for depth.
+- **Palette**: Electric magenta and neon green on a dark background.
+
 ## kinetic_chladni_resonance_patterns_2d
 - **Date**: 2026-07-20
 - **Type**: Animation (1080 frames, 60fps)

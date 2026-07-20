@@ -1,3 +1,10 @@
+## kinetic_cellular_automata_growth_decay_2d
+- **Date**: 2026-07-20
+- **Type**: Animation (1140 frames, 60fps)
+- **Concept**: A high-resolution cellular automata simulation that explores continuous growth and decay patterns, similar to a reaction-diffusion or game of life variant.
+- **Techniques**: Grid-based cellular automata updated each frame using neighborhood summation and continuous mapping.
+- **Palette**: Monochromatic (black and white) with subtle accents of blood red when cells decay rapidly.
+
 ## kinetic_glitch_typography_data_cascade_2d
 - **Date**: 2026-07-20
 - **Type**: Animation (1080 frames, 60fps)

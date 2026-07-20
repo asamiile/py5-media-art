@@ -1,3 +1,10 @@
+## kinetic_cellular_automata_reaction_diffusion_1d
+- **Date**: 2026-07-20
+- **Type**: Animation (960 frames, 60fps)
+- **Concept**: 1D Gray-Scott Reaction-Diffusion mapped into a 2D spacetime history buffer, revealing intricate Turing patterns as a flowing tapestry of time.
+- **Techniques**: Simulates a 1D array of A and B chemicals using `scipy.ndimage.convolve1d`. Feed and kill rates vary smoothly across the X-axis to create a diverse landscape of patterns from spots to labyrinthine mazes. The history buffer scrolls upwards each frame.
+- **Palette**: Molten Gold to Obsidian—a fiery gradient of black, dark red, bright orange, and pure yellow mapping the chemical B concentration.
+
 ## kinetic_cellular_automata_boids_2d
 - **Date**: 2026-07-20
 - **Type**: Animation (900 frames, 60fps)

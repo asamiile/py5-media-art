@@ -5,6 +5,7 @@ import sys
 import random
 import py5
 import numpy as np
+from scipy.signal import convolve2d
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 if str(PROJECT_ROOT) not in sys.path:
@@ -23,102 +24,96 @@ PREVIEW_FILENAME = f"{WORK_NAME}_p1.png"
 PREVIEW_SIZE, OUTPUT_SIZE, _ = get_sizes()
 SIZE = OUTPUT_SIZE
 
-CELL_SIZE = 8
-GRID_W = SIZE[0] // CELL_SIZE
-GRID_H = SIZE[1] // CELL_SIZE
+# Brian's Brain simulation parameters
+GRID_SCALE = 4
+COLS = SIZE[0] // GRID_SCALE
+ROWS = SIZE[1] // GRID_SCALE
 
-# States: 0 = Off, 1 = On, 2 = Dying
-grid = np.zeros((GRID_H, GRID_W), dtype=np.uint8)
+# States
+OFF = 0
+ON = 1
+DYING = 2
 
-# Initialize randomly (seed the grid)
-# To create cool structures, let's just make a random circle in the center
-center_y, center_x = GRID_H // 2, GRID_W // 2
-Y, X = np.ogrid[:GRID_H, :GRID_W]
-dist_from_center = np.sqrt((X - center_x)**2 + (Y - center_y)**2)
-mask = dist_from_center < 100
-random_starts = np.random.choice([0, 1, 2], size=(GRID_H, GRID_W), p=[0.7, 0.2, 0.1])
-grid[mask] = random_starts[mask]
+# Initialize state with noise in the center
+A = np.zeros((ROWS, COLS), dtype=np.uint8)
+cx, cy = COLS // 2, ROWS // 2
+s = 100
 
-# For rendering effects: keep track of "age" (how long since it was On)
-age_grid = np.zeros((GRID_H, GRID_W), dtype=np.float32)
-# To avoid the grid getting static, we occasionally inject small gliders/noise
-def inject_noise():
-    y = random.randint(10, GRID_H - 10)
-    x = random.randint(10, GRID_W - 10)
-    grid[y:y+5, x:x+5] = np.random.choice([0, 1], size=(5, 5))
+noise = np.random.rand(2*s, 2*s)
+A[cy-s:cy+s, cx-s:cx+s] = np.where(noise > 0.8, ON, np.where(noise > 0.7, DYING, OFF))
+
+kernel = np.array([
+    [1, 1, 1],
+    [1, 0, 1],
+    [1, 1, 1]
+], dtype=np.uint8)
 
 def setup():
     py5.size(*SIZE)
     py5.pixel_density(1)
     FRAMES_DIR.mkdir(exist_ok=True)
     py5.color_mode(py5.HSB, 360, 100, 100, 100)
-    py5.background(280, 80, 10) # deep purple
+    py5.background(0)
 
 def draw():
-    global grid, age_grid
+    global A
     
-    # We do a few steps per frame to make it fast
+    # We step the simulation multiple times per frame
     for _ in range(2):
-        if random.random() < 0.02:
-            inject_noise()
-            
         # Count ON neighbors
-        is_on = (grid == 1).astype(np.uint8)
+        on_cells = (A == ON).astype(np.uint8)
+        neighbors = convolve2d(on_cells, kernel, mode='same', boundary='wrap')
         
-        # Convolve to count neighbors using rolling sum (faster than full convolution matrix)
-        # Using numpy array slicing for speed
-        neighbors_on = sum(
-            np.roll(np.roll(is_on, i, 0), j, 1)
-            for i in (-1, 0, 1) for j in (-1, 0, 1)
-            if (i != 0 or j != 0)
-        )
+        # Next state
+        A_next = np.zeros_like(A)
         
-        # Brian's Brain rules
-        # 1. Any cell in state 1 (On) goes to state 2 (Dying)
-        # 2. Any cell in state 2 (Dying) goes to state 0 (Off)
-        # 3. Any cell in state 0 (Off) with exactly 2 neighbors in state 1 goes to state 1 (On)
+        # OFF turns ON if exactly 2 ON neighbors
+        A_next[(A == OFF) & (neighbors == 2)] = ON
         
-        new_grid = np.zeros_like(grid)
-        new_grid[grid == 1] = 2 # On -> Dying
-        new_grid[(grid == 0) & (neighbors_on == 2)] = 1 # Off -> On
-        # (Dying -> Off is handled by the zeros_like)
+        # ON turns DYING
+        A_next[A == ON] = DYING
         
-        grid = new_grid
+        # DYING turns OFF (implicit, as A_next is initialized to OFF)
         
-        # Update age grid for visual trailing effects
-        age_grid[grid == 1] = 1.0 # Max heat
-        age_grid *= 0.96 # Decay heat over time
-    
-    # Rendering
-    py5.background(280, 80, 10)
-    
-    # Instead of drawing every rectangle which is slow, we map age_grid to pixels
-    # Since CELL_SIZE is 8, we can use py5.load_np_pixels()
+        A = A_next
+        
+    # Render
     py5.load_np_pixels()
     
-    # Map age to colors:
-    # 0 -> Deep Purple (HSV: 280, 80, 10) -> RGB: ~ (15, 5, 25)
-    # >0 -> Yellow/Orange (HSV: 40-60, 100, 100)
-    # But since np_pixels is RGBA, we can just use a fast linear colormap
-    # Or simpler: draw rects but only for age > 0.1 to save time
+    # Palette: Cyberpunk circuitry
+    # OFF: Black (0)
+    # ON: Bright Cyan
+    # DYING: Deep Indigo
     
-    # Actually for 3840x2160, GRID is 480x270. Drawing 129k rects is fast enough if many are 0.
-    py5.no_stroke()
+    r_out = np.zeros_like(A, dtype=np.uint8)
+    g_out = np.zeros_like(A, dtype=np.uint8)
+    b_out = np.zeros_like(A, dtype=np.uint8)
     
-    # Get active indices
-    active_y, active_x = np.where(age_grid > 0.05)
+    r_out[A == ON] = 0
+    g_out[A == ON] = 255
+    b_out[A == ON] = 255
     
-    for i in range(len(active_y)):
-        y = active_y[i]
-        x = active_x[i]
-        age = age_grid[y, x]
-        
-        # age=1.0 is bright yellow (60)
-        # age=0.0 is red/orange (0)
-        hue = age * 60
-        val = 10 + age * 90
-        py5.fill(hue, 100, val, 100)
-        py5.rect(x * CELL_SIZE, y * CELL_SIZE, CELL_SIZE, CELL_SIZE)
+    r_out[A == DYING] = 20
+    g_out[A == DYING] = 0
+    b_out[A == DYING] = 100
+    
+    # Upscale
+    r_scaled = np.kron(r_out, np.ones((GRID_SCALE, GRID_SCALE), dtype=np.uint8))
+    g_scaled = np.kron(g_out, np.ones((GRID_SCALE, GRID_SCALE), dtype=np.uint8))
+    b_scaled = np.kron(b_out, np.ones((GRID_SCALE, GRID_SCALE), dtype=np.uint8))
+    
+    # Crop to screen
+    r_scaled = r_scaled[:py5.height, :py5.width]
+    g_scaled = g_scaled[:py5.height, :py5.width]
+    b_scaled = b_scaled[:py5.height, :py5.width]
+    
+    # In py5, np_pixels is shape (height, width, 4) in ARGB format on Mac
+    py5.np_pixels[:, :, 0] = 255 # Alpha
+    py5.np_pixels[:, :, 1] = r_scaled # Red
+    py5.np_pixels[:, :, 2] = g_scaled # Green
+    py5.np_pixels[:, :, 3] = b_scaled # Blue
+    
+    py5.update_np_pixels()
 
     py5.save_frame(str(FRAMES_DIR / "frame-####.png"))
 

@@ -1,3 +1,10 @@
+## kinetic_cellular_automata_brians_brain_2d
+- **Date**: 2026-07-20
+- **Type**: Animation (1080 frames, 60fps)
+- **Concept**: Brian's Brain cellular automaton. A 3-state system (On, Refractory, Off) that produces chaotic, geometric structures resembling neural networks firing or circuit boards.
+- **Techniques**: Simulates the cellular automaton using `scipy.signal.convolve2d` to efficiently calculate the Moore neighborhood.
+- **Palette**: Cyberpunk circuitry—deep space black background, bright cyan for firing cells, and a fading deep indigo for refractory cells.
+
 ## kinetic_cellular_automata_physarum_2d
 - **Date**: 2026-07-20
 - **Type**: Animation (1080 frames, 60fps)

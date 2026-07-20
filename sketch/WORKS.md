@@ -1,3 +1,10 @@
+## kinetic_navier_stokes_fluid_2d
+- **Date**: 2026-07-20
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A high-performance simulation of a 2D incompressible fluid using a grid-based solver (Jos Stam's stable fluids approach), rendered as glowing neon dye injected into the fluid flow.
+- **Techniques**: Simulates velocity vectors and dye density on a grid. Applies advection, diffusion, and mass-conservation (projection/Poisson solver) steps using NumPy matrix operations to compute the pressure fields. Injects dye dynamically based on Perlin noise to create organic, shifting currents.
+- **Palette**: Neon pink, cyan, and violet swirling together.
+
 ## kinetic_turing_reaction_diffusion_2d
 - **Date**: 2026-07-20
 - **Type**: Animation (960 frames, 60fps)

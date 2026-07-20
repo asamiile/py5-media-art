@@ -1,3 +1,10 @@
+## kinetic_spirograph_mandala_2d
+- **Date**: 2026-07-20
+- **Type**: Animation (1020 frames, 60fps)
+- **Concept**: Intricate rotating geometric mandalas that unfold like a complex spirograph over time.
+- **Techniques**: 24 layers of rotating polygons with varying vertex counts, scaling radially, using an additive blend mode (`py5.blend_mode(py5.ADD)`).
+- **Palette**: Neon pink, cyan, and gold over a very dark purple background.
+
 ## kinetic_moire_interference_pattern_2d
 - **Date**: 2026-07-20
 - **Type**: Animation (1020 frames, 60fps)

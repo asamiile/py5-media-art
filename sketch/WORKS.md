@@ -1,3 +1,10 @@
+## kinetic_strange_attractor_particle_swarm_2d
+- **Date**: 2026-07-20
+- **Type**: Animation (1020 frames, 60fps)
+- **Concept**: A swirling, chaotic particle swarm tracing a 2D projection of a Clifford strange attractor.
+- **Techniques**: Updating 60,000 particles using nonlinear difference equations via vectorized numpy operations, drawn rapidly with fading trails to visualize complex dynamic systems.
+- **Palette**: Glowing cyan-blue on a deep black background.
+
 ## kinetic_neon_wireframe_cube_rotation_2d
 - **Date**: 2026-07-20
 - **Type**: Animation (1200 frames, 60fps)

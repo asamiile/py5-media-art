@@ -1,3 +1,10 @@
+## kinetic_topographic_contour_map_2d
+- **Date**: 2026-07-20
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A shifting topographic map composed of smoothly morphing contour lines mimicking elevation.
+- **Techniques**: 3D Perlin noise evaluated across a dense grid to create thresholded concentric isobar contours.
+- **Palette**: Warm gradients (orange to yellow) on a dark charcoal brown background.
+
 ## kinetic_glitch_chromatic_aberration_wave_2d
 - **Date**: 2026-07-20
 - **Type**: Animation (1080 frames, 60fps)

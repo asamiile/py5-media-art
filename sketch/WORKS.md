@@ -1,3 +1,10 @@
+## kinetic_chladni_resonance_patterns_2d
+- **Date**: 2026-07-20
+- **Type**: Animation (1080 frames, 60fps)
+- **Concept**: A visualization of Chladni resonance patterns, forming intricate symmetrical sand-like figures that vibrate and shift.
+- **Techniques**: Evaluating the exact 2D standing wave equation across a dense 4K grid and thresholding the nodal lines to draw over 150,000 points simulating vibrating sand.
+- **Palette**: Monochromatic off-white sand grains on a dark muted warm brown background.
+
 ## kinetic_generative_synthwave_grid_2d
 - **Date**: 2026-07-20
 - **Type**: Animation (1140 frames, 60fps)

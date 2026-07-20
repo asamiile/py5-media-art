@@ -5,6 +5,7 @@ import sys
 import random
 import py5
 import numpy as np
+from scipy.spatial import cKDTree
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 if str(PROJECT_ROOT) not in sys.path:
@@ -23,155 +24,182 @@ PREVIEW_FILENAME = f"{WORK_NAME}_p1.png"
 PREVIEW_SIZE, OUTPUT_SIZE, _ = get_sizes()
 SIZE = OUTPUT_SIZE
 
-# Space Colonization Algorithm Constants
-MAX_DIST = 400.0  # Max distance an attractor can influence a branch
-MIN_DIST = 15.0   # Distance at which an attractor is "reached" and removed
-BRANCH_LENGTH = 8.0 # How far a branch grows per step
+# Space Colonization Algorithm parameters
 NUM_ATTRACTORS = 15000
+ATTRACT_DIST = py5.height * 0.15 # Max distance to be influenced
+KILL_DIST = py5.height * 0.005  # Distance to eat an attractor
+BRANCH_LEN = py5.height * 0.006
 
-# Attractors: numpy array (N, 2)
 attractors = []
-for _ in range(NUM_ATTRACTORS):
-    # distribute them mostly in a wide circle
-    r = random.uniform(200, SIZE[1] // 2 - 50)
-    theta = random.uniform(0, py5.TWO_PI)
-    cx, cy = SIZE[0] // 2, SIZE[1] // 2
-    attractors.append([cx + r * np.cos(theta), cy + r * np.sin(theta)])
-attractors = np.array(attractors, dtype=np.float32)
-
-# Tree nodes: numpy array (M, 2) of positions, parent index array (M,), and hue array (M,)
-tree = np.array([[SIZE[0]//2, SIZE[1]//2]], dtype=np.float32)
-parents = np.array([-1], dtype=np.int32)
-hues = np.array([160.0], dtype=np.float32)
-
-# To keep the render fast over time, we only consider "active" tree nodes (leaves) that recently grew
-# This is an optimization. We keep a boolean mask of active nodes.
-active_nodes = np.array([True])
+nodes = [] # (x, y, parent_idx, thickness)
+node_pts = None # Nx2 numpy array for fast querying
+KD_TREE_ATTRACTORS = None
 
 def setup():
     py5.size(*SIZE)
     py5.pixel_density(1)
     FRAMES_DIR.mkdir(exist_ok=True)
     py5.color_mode(py5.HSB, 360, 100, 100, 100)
-    py5.background(0, 0, 5) # almost black
-    py5.stroke_weight(2.0)
-    py5.no_fill()
+    
+    py5.background(150, 80, 10) # Dark teal background
+    
+    global attractors, nodes, node_pts
+    
+    # Create attractors in canopy shapes
+    for _ in range(NUM_ATTRACTORS):
+        # Three circular canopies
+        cx, cy = random.choice([
+            (py5.width * 0.2, py5.height * 0.4),
+            (py5.width * 0.5, py5.height * 0.3),
+            (py5.width * 0.8, py5.height * 0.4)
+        ])
+        
+        # Add random scatter
+        r = py5.height * 0.3 * np.sqrt(random.random())
+        theta = random.random() * 2 * np.pi
+        
+        x = cx + r * np.cos(theta)
+        y = cy + r * np.sin(theta)
+        
+        attractors.append(np.array([x, y]))
+        
+    attractors = np.array(attractors, dtype=np.float32)
+    
+    # Create initial root nodes
+    for i, cx in enumerate([py5.width * 0.2, py5.width * 0.5, py5.width * 0.8]):
+        # Start at the bottom
+        x = cx
+        y = py5.height
+        
+        # Grow trunk straight up until it reaches canopy
+        parent_idx = -1
+        while y > py5.height * 0.7:
+            nodes.append((x, y, parent_idx, 0.0))
+            parent_idx = len(nodes) - 1
+            y -= BRANCH_LEN
+            
+    node_pts = np.array([[n[0], n[1]] for n in nodes], dtype=np.float32)
 
 def draw():
-    global attractors, tree, parents, hues, active_nodes
+    global attractors, nodes, node_pts
     
-    # We do a few growth steps per frame
+    # We do multiple growth steps per frame for speed
     for _ in range(2):
         if len(attractors) == 0:
             break
             
-        # Get active tree nodes
-        active_idx = np.where(active_nodes)[0]
-        if len(active_idx) == 0:
+        # Build KD tree of tree nodes to find nearest neighbors for each attractor
+        node_tree = cKDTree(node_pts)
+        
+        # Query nearest node for each attractor
+        dists, indices = node_tree.query(attractors, distance_upper_bound=ATTRACT_DIST)
+        
+        # Find which attractors are eaten
+        eaten = dists < KILL_DIST
+        
+        # Filter out eaten attractors
+        valid = ~eaten
+        active_attractors = attractors[valid]
+        active_dists = dists[valid]
+        active_indices = indices[valid]
+        
+        attractors = active_attractors # Update global list
+        
+        if len(attractors) == 0:
             break
-        active_tree = tree[active_idx]
-        
-        # Calculate distances from all attractors to all active tree nodes
-        # To avoid massive memory allocation (N*M*2 floats), we loop over attractors or use KDTree.
-        # We find the closest active tree node for each attractor in chunks.
-        
-        N = len(attractors)
-        M = len(active_tree)
-        
-        # If no active nodes, break
-        if M == 0: break
-        
-        closest_node_idx_for_attractor = np.zeros(N, dtype=np.int32) - 1
-        min_dist_for_attractor = np.full(N, np.inf)
-        
-        CHUNK_SIZE = 1000
-        for i in range(0, N, CHUNK_SIZE):
-            chunk = attractors[i:i+CHUNK_SIZE] # (C, 2)
-            # diffs: (C, M, 2)
-            diffs = chunk[:, np.newaxis, :] - active_tree[np.newaxis, :, :]
-            dists = np.linalg.norm(diffs, axis=2) # (C, M)
             
-            # Find min dist and index for each attractor in chunk
-            min_idx = np.argmin(dists, axis=1) # (C,)
-            min_dist = dists[np.arange(len(chunk)), min_idx] # (C,)
+        # For each node, find the average direction of all attractors it influences
+        # active_indices contains the index of the nearest node for each active attractor
+        
+        # Accumulate direction vectors
+        node_dirs = np.zeros_like(node_pts)
+        node_counts = np.zeros(len(node_pts), dtype=np.int32)
+        
+        # Only process those within ATTRACT_DIST (scipy cKDTree returns infinity if not found)
+        in_range = active_dists < ATTRACT_DIST
+        
+        valid_attractors = active_attractors[in_range]
+        valid_indices = active_indices[in_range]
+        
+        for i in range(len(valid_attractors)):
+            attr = valid_attractors[i]
+            n_idx = valid_indices[i]
             
-            # Map chunk indices back to global
-            closest_node_idx_for_attractor[i:i+CHUNK_SIZE] = min_idx
-            min_dist_for_attractor[i:i+CHUNK_SIZE] = min_dist
-
-        # Filter attractors that are too far
-        valid_mask = min_dist_for_attractor < MAX_DIST
-        
-        # Remove attractors that are reached
-        reached_mask = min_dist_for_attractor < MIN_DIST
-        
-        # We only care about attractors that are valid and NOT reached
-        active_attractor_mask = valid_mask & ~reached_mask
-        
-        if not np.any(active_attractor_mask):
-            attractors = attractors[~reached_mask]
-            # Randomly deactivate some old nodes so we don't get stuck checking them
-            if random.random() < 0.1:
-                active_nodes[random.choice(active_idx)] = False
-            continue
+            node_pos = node_pts[n_idx]
+            dir_vec = attr - node_pos
+            # Normalize
+            norm = np.linalg.norm(dir_vec)
+            if norm > 0:
+                dir_vec /= norm
+                
+            node_dirs[n_idx] += dir_vec
+            node_counts[n_idx] += 1
             
-        # For each valid attractor, it influences its closest active node
-        valid_attractor_idx = np.where(active_attractor_mask)[0]
-        influencing_attractors = attractors[valid_attractor_idx]
-        influenced_active_nodes = closest_node_idx_for_attractor[valid_attractor_idx] # these are indices into active_tree!
+        # Add new nodes
+        new_nodes = []
+        new_node_pts = []
         
-        # Accumulate directions for each active node
-        node_dir_sum = np.zeros_like(active_tree)
-        node_pull_count = np.zeros(M, dtype=np.int32)
-        
-        # Calculate direction from node to attractor
-        dirs = influencing_attractors - active_tree[influenced_active_nodes]
-        dirs_norm = np.linalg.norm(dirs, axis=1, keepdims=True)
-        dirs_normalized = np.divide(dirs, dirs_norm, out=np.zeros_like(dirs), where=dirs_norm!=0)
-        
-        np.add.at(node_dir_sum, influenced_active_nodes, dirs_normalized)
-        np.add.at(node_pull_count, influenced_active_nodes, 1)
-        
-        # Find which nodes are being pulled
-        pulled_mask = node_pull_count > 0
-        pulled_indices = np.where(pulled_mask)[0]
-        
-        if len(pulled_indices) == 0:
-            attractors = attractors[~reached_mask]
-            continue
+        for n_idx in range(len(node_pts)):
+            if node_counts[n_idx] > 0:
+                avg_dir = node_dirs[n_idx] / node_counts[n_idx]
+                # Normalize again just in case
+                norm = np.linalg.norm(avg_dir)
+                if norm > 0:
+                    avg_dir /= norm
+                    
+                # Add some noise to the direction for organic growth
+                noise_angle = random.uniform(-0.2, 0.2)
+                c, s = np.cos(noise_angle), np.sin(noise_angle)
+                rot_dir = np.array([avg_dir[0]*c - avg_dir[1]*s, avg_dir[0]*s + avg_dir[1]*c])
+                
+                new_pos = node_pts[n_idx] + rot_dir * BRANCH_LEN
+                
+                new_nodes.append((new_pos[0], new_pos[1], n_idx, 0.0))
+                new_node_pts.append(new_pos)
+                
+        if new_nodes:
+            nodes.extend(new_nodes)
+            node_pts = np.vstack([node_pts, np.array(new_node_pts)])
             
-        # Calculate average direction for pulled nodes
-        avg_dirs = node_dir_sum[pulled_indices] / node_pull_count[pulled_indices, np.newaxis]
-        avg_dirs_norm = np.linalg.norm(avg_dirs, axis=1, keepdims=True)
-        avg_dirs_normalized = np.divide(avg_dirs, avg_dirs_norm, out=np.zeros_like(avg_dirs), where=avg_dirs_norm!=0)
+    # Calculate thickness from leaves to root
+    # We do this every frame for the new topology
+    leaf_nodes = set(range(len(nodes)))
+    for n in nodes:
+        if n[2] != -1:
+            leaf_nodes.discard(n[2])
+            
+    area = np.zeros(len(nodes), dtype=np.float32)
+    for i in leaf_nodes:
+        area[i] = 1.0
         
-        # Calculate new node positions
-        new_positions = active_tree[pulled_indices] + avg_dirs_normalized * BRANCH_LENGTH
+    for i in range(len(nodes) - 1, -1, -1):
+        parent_idx = nodes[i][2]
+        if parent_idx != -1:
+            area[parent_idx] += area[i]
+            
+    thickness = np.sqrt(area)
+            
+    # Render
+    py5.background(150, 80, 10)
+    
+    # Draw attractors (leaves)
+    py5.no_stroke()
+    py5.fill(160, 90, 80, 40)
+    for a in attractors:
+        py5.circle(a[0], a[1], 4)
         
-        # The parent index in the FULL tree is active_idx[pulled_indices]
-        new_parents = active_idx[pulled_indices]
-        
-        # Vary hue slightly based on parent hue
-        new_hues = hues[new_parents] + np.random.uniform(-1, 1, size=len(new_parents))
-        new_hues = np.mod(new_hues, 360) # keep it wrapping
-        
-        # Draw the new branches
-        py5.begin_shape(py5.LINES)
-        for i in range(len(new_positions)):
-            py5.stroke(new_hues[i], 90, 100, 80)
-            p_idx = new_parents[i]
-            py5.vertex(tree[p_idx, 0], tree[p_idx, 1])
-            py5.vertex(new_positions[i, 0], new_positions[i, 1])
-        py5.end_shape()
-        
-        # Append new nodes to the full tree
-        tree = np.vstack((tree, new_positions))
-        parents = np.concatenate((parents, new_parents))
-        hues = np.concatenate((hues, new_hues))
-        active_nodes = np.concatenate((active_nodes, np.ones(len(new_positions), dtype=bool)))
-        
-        # Remove reached attractors
-        attractors = attractors[~reached_mask]
+    # Draw branches
+    py5.no_fill()
+    py5.stroke(140, 80, 60)
+    
+    for i in range(len(nodes)):
+        parent_idx = nodes[i][2]
+        if parent_idx != -1:
+            py5.stroke_weight(thickness[i] * 0.5)
+            # Add a slight color gradient based on height
+            h = py5.remap(nodes[i][1], py5.height, 0, 140, 180)
+            py5.stroke(h, 90, 80)
+            py5.line(nodes[i][0], nodes[i][1], nodes[parent_idx][0], nodes[parent_idx][1])
 
     py5.save_frame(str(FRAMES_DIR / "frame-####.png"))
 

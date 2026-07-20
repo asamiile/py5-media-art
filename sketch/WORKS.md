@@ -1,3 +1,10 @@
+## kinetic_space_colonization_trees_2d
+- **Date**: 2026-07-20
+- **Type**: Animation (1020 frames, 60fps)
+- **Concept**: A procedural growth animation using the Space Colonization algorithm to mimic the natural branching of trees.
+- **Techniques**: Simulates a network of branching nodes growing towards a scattered field of 15,000 "attractor" points arranged in canopy shapes. Uses a SciPy KD-Tree for efficient nearest-neighbor queries. As branches get close to attractors, they "eat" them, allowing the tree to split and grow organically. Calculates realistic branch thicknesses using the sum-of-areas method (Leonardo da Vinci's rule of trees).
+- **Palette**: Deep emerald greens, bright lime, and electric teal on a dark teal background.
+
 ## kinetic_metaballs_marching_squares_2d
 - **Date**: 2026-07-20
 - **Type**: Animation (960 frames, 60fps)

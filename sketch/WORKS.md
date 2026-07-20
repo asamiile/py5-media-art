@@ -1,3 +1,10 @@
+## kinetic_tesseract_wireframe_projection_2d
+- **Date**: 2026-07-20
+- **Type**: Animation (1020 frames, 60fps)
+- **Concept**: A 3D projection of a 4D hypercube (tesseract) rotating across multiple 4D planes.
+- **Techniques**: Mathematically defines the 16 vertices of a tesseract in 4D space. Applies 4D matrix rotations across the XY, XW, YW, and ZW planes based on time. Projects the 4D coordinates to a 3D perspective, then to a 2D screen projection, drawing glowing wireframe edges connecting the 32 edges.
+- **Palette**: Deep violet trail fades with wireframes cycling between electric pink and cyan.
+
 ## kinetic_cellular_automaton_drip_2d
 - **Date**: 2026-07-20
 - **Type**: Animation (1080 frames, 60fps)

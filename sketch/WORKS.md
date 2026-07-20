@@ -1,3 +1,10 @@
+## kinetic_holographic_data_sphere_3d
+- **Date**: 2026-07-20
+- **Type**: Animation (1020 frames, 60fps)
+- **Concept**: A high-tech, rotating holographic globe made of floating data points that occasionally glitch out.
+- **Techniques**: 3D point cloud projected to 2D. Points map to spherical coordinates with moving radii. Additive blending.
+- **Palette**: Pitch black background, pure cyan points, occasional bright white and magenta glitch points.
+
 ## kinetic_chromatic_wave_interference_mesh_2d
 - **Date**: 2026-07-20
 - **Type**: Animation (1200 frames, 60fps)

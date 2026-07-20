@@ -1,3 +1,10 @@
+## kinetic_generative_synthwave_grid_2d
+- **Date**: 2026-07-20
+- **Type**: Animation (1140 frames, 60fps)
+- **Concept**: A retro-futuristic synthwave landscape scrolling endlessly towards the viewer.
+- **Techniques**: Simulating 3D perspective projection via quadratically-spaced horizontal lines and vanishing-point vertical lines, combined with 1D noise for scrolling silhouettes of mountains.
+- **Palette**: Classic synthwave neon magenta, cyan, and deep purple with a glowing yellow-pink gradient sun.
+
 ## kinetic_lissajous_web_network_2d
 - **Date**: 2026-07-20
 - **Type**: Animation (1020 frames, 60fps)

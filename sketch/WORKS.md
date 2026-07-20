@@ -1,3 +1,10 @@
+## kinetic_metaballs_marching_squares_2d
+- **Date**: 2026-07-20
+- **Type**: Animation (960 frames, 60fps)
+- **Concept**: A retro 90s demoscene effect—Metaballs—rendered cleanly using the Marching Squares algorithm to extract contour lines from a scalar energy field.
+- **Techniques**: Simulates a dozen bouncing invisible points. For each cell in a coarse grid, the script calculates the sum of the inverse-square distance to all points to determine a scalar "energy" field. It then uses a Marching Squares lookup table and linear interpolation to draw smooth contour lines around the threshold energy. The contours are drawn multiple times with varying opacities and weights to create a glowing effect.
+- **Palette**: Deep violet background with pulsing, glowing neon pink and cyan contour lines.
+
 ## kinetic_kuramoto_sivashinsky_flame_2d
 - **Date**: 2026-07-20
 - **Type**: Animation (900 frames, 60fps)

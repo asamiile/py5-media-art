@@ -1,3 +1,10 @@
+## kinetic_fractal_mandelbrot_deep_zoom_2d
+- **Date**: 2026-07-20
+- **Type**: Animation (960 frames, 60fps)
+- **Concept**: A high-precision zooming animation into the Mandelbrot set, diving deeply into Seahorse Valley.
+- **Techniques**: Custom complex math iteration optimized with NumPy masks and an exponential zoom scale.
+- **Palette**: Fiery red, orange, and gold mapped to a cyclic phase, fading into the black interior.
+
 ## kinetic_cellular_automata_growth_decay_2d
 - **Date**: 2026-07-20
 - **Type**: Animation (1140 frames, 60fps)

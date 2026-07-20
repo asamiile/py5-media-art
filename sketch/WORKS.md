@@ -1,3 +1,10 @@
+## kinetic_neon_city_grid_2d
+- **Date**: 2026-07-20
+- **Type**: Animation (960 frames, 60fps)
+- **Concept**: A simulated fly-through over an abstract, pulsing neon 3D city rendered using isometric 2D techniques.
+- **Techniques**: Simulating a rolling 3D landscape via 2D isometric mathematical projections. Each building is built from polygon faces drawn from back-to-front with depth sorting and distance fading.
+- **Palette**: Deep Synthwave colors—glowing purple, magenta, and cyan with global illumination glow.
+
 ## kinetic_glitch_sorting_waves_2d
 - **Date**: 2026-07-20
 - **Type**: Animation (1080 frames, 60fps)

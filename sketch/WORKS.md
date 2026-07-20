@@ -1,3 +1,10 @@
+## kinetic_cellular_automata_reaction_diffusion_turing
+- **Date**: 2026-07-20
+- **Type**: Animation (960 frames, 60fps)
+- **Concept**: Reaction-Diffusion Turing Patterns. Simulates the classic Gray-Scott model proposed by Alan Turing to explain biological morphogenesis, generating intricate organic structures resembling zebra stripes, leopard spots, and brain coral.
+- **Techniques**: Simulates a two-state (U, V) continuous chemical reaction system representing prey and predator concentrations. Evolves over time using partial differential equations with diffusion calculated via a fast `scipy.signal.convolve2d` Laplacian. Evaluated 12 times per frame for real-time organic growth.
+- **Palette**: Bio-luminescent Deep Sea. A dark indigo background offset by brightly glowing aquamarine boundaries and golden yellow coral cores based on the chemical gradient.
+
 ## kinetic_cellular_automata_belousov_zhabotinsky_3d
 - **Date**: 2026-07-20
 - **Type**: Animation (1080 frames, 60fps)

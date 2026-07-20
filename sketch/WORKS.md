@@ -1,3 +1,10 @@
+## kinetic_fractal_spirograph_mandala_2d
+- **Date**: 2026-07-20
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: Nested, rotating fractal spirographs that bloom out into a complex glowing mandala.
+- **Techniques**: Drawing 15 concentric layers of recursive trigonometric curves (epicycloids/hypocycloids). Layer radii and rotation speed ratios continuously morph based on the time variable. Rendered using additive blending and a subtle trailing feedback effect over a dark background.
+- **Palette**: A full spectrum neon rainbow that organically cycles hue.
+
 ## kinetic_neon_city_grid_2d
 - **Date**: 2026-07-20
 - **Type**: Animation (960 frames, 60fps)

@@ -1,3 +1,10 @@
+## kinetic_morphing_voronoi_cells_2d
+- **Date**: 2026-07-20
+- **Type**: Animation (1020 frames, 60fps)
+- **Concept**: A kinetic stained-glass network of Voronoi cells that morph and shift continuously over time.
+- **Techniques**: Generating moving points using 2D Perlin noise and calculating Voronoi regions using scipy.spatial to render sharp geometric polygons, dynamically colored by centroid position.
+- **Palette**: Bright and shifted hues over a dark background.
+
 ## kinetic_strange_attractor_particle_swarm_2d
 - **Date**: 2026-07-20
 - **Type**: Animation (1020 frames, 60fps)

@@ -1,3 +1,10 @@
+## kinetic_diffusion_limited_aggregation_2d
+- **Date**: 2026-07-20
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A simulation of Diffusion-Limited Aggregation (DLA), a physical process that models how coral grows or snowflakes crystallize.
+- **Techniques**: Simulates particles undergoing a random walk until they hit a growing central cluster, at which point they stick. The physics solver is optimized using a fast spatial grid heuristic to pre-calculate a massive cluster of 30,000 particles. The animation reveals the growth of the coral over time by blooming outwards from the center.
+- **Palette**: Bioluminescent deep sea colors—deep blues, bright glowing cyans, and greens.
+
 ## kinetic_space_colonization_trees_2d
 - **Date**: 2026-07-20
 - **Type**: Animation (1020 frames, 60fps)

@@ -3,9 +3,10 @@ import shutil
 import subprocess
 import sys
 import random
-import math
 import py5
 import numpy as np
+from scipy.spatial import cKDTree
+from collections import deque
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 if str(PROJECT_ROOT) not in sys.path:
@@ -24,22 +25,121 @@ PREVIEW_FILENAME = f"{WORK_NAME}_p1.png"
 PREVIEW_SIZE, OUTPUT_SIZE, _ = get_sizes()
 SIZE = OUTPUT_SIZE
 
-# DLA Simulation properties
-# We'll simulate on a lower resolution grid for performance, then scale up when drawing
-GRID_SCALE = 4
-GRID_W = SIZE[0] // GRID_SCALE
-GRID_H = SIZE[1] // GRID_SCALE
+# DLA Simulation parameters
+# Because simulating DLA during rendering is too slow (random walks take forever),
+# we will generate the cluster instantly using a fast spatial approximation
+# or we just pre-calculate it before rendering starts.
+# Actually, random walks are slow. Let's pre-generate using a fast heuristic:
+# We just add points that are touching existing points, biased towards the center.
+# A true DLA uses random walks, but a close visual approximation is the Eden Growth Model
+# or DLA with a biased attachment probability.
 
-# 0 = empty, > 0 = occupied (stores the generation/time it was attached)
-grid = np.zeros((GRID_H, GRID_W), dtype=np.int32)
-NUM_WALKERS = 6000
-WALKS_PER_FRAME = 300 # How many simulation steps to take per frame
+NUM_PARTICLES = 30000
+PARTICLE_RADIUS = py5.height * 0.003
+CLUSTER_RADIUS = py5.height * 0.45
 
-# Walker states
-walkers_x = np.random.randint(0, GRID_W, NUM_WALKERS)
-walkers_y = np.random.randint(0, GRID_H, NUM_WALKERS)
+tree_pts = [] # List of (x, y)
+tree_colors = []
 
-particles_attached = 0
+def precalculate_dla():
+    global tree_pts
+    
+    print("Pre-calculating DLA cluster...")
+    
+    # Start with a seed in the center
+    cx, cy = py5.width / 2, py5.height / 2
+    tree_pts.append(np.array([cx, cy]))
+    
+    # We will do true DLA but optimized.
+    # We maintain a spawn radius and a kill radius.
+    max_dist_sq = 0.0
+    r_sq = PARTICLE_RADIUS * 2.0
+    r_sq *= r_sq
+    
+    # Fast DLA using a grid to check collisions instead of KDTree for speed
+    grid_size = PARTICLE_RADIUS * 2
+    cols = int(py5.width / grid_size) + 1
+    rows = int(py5.height / grid_size) + 1
+    
+    grid = [[[] for _ in range(rows)] for _ in range(cols)]
+    
+    def add_to_grid(idx, pt):
+        c = int(pt[0] / grid_size)
+        r = int(pt[1] / grid_size)
+        if 0 <= c < cols and 0 <= r < rows:
+            grid[c][r].append(idx)
+            
+    def check_collision(pt):
+        c = int(pt[0] / grid_size)
+        r = int(pt[1] / grid_size)
+        
+        for dc in [-1, 0, 1]:
+            for dr in [-1, 0, 1]:
+                nc = c + dc
+                nr = r + dr
+                if 0 <= nc < cols and 0 <= nr < rows:
+                    for idx in grid[nc][nr]:
+                        other = tree_pts[idx]
+                        dist_sq = (pt[0] - other[0])**2 + (pt[1] - other[1])**2
+                        if dist_sq < r_sq:
+                            return True
+        return False
+        
+    add_to_grid(0, tree_pts[0])
+    
+    max_radius = PARTICLE_RADIUS * 4.0
+    
+    for i in range(1, NUM_PARTICLES):
+        if i % 5000 == 0:
+            print(f"Generated {i}/{NUM_PARTICLES} particles...")
+            
+        spawn_radius = max_radius + PARTICLE_RADIUS * 10
+        
+        if spawn_radius > CLUSTER_RADIUS:
+            break
+            
+        # Spawn random walker
+        theta = random.random() * 2 * np.pi
+        px = cx + spawn_radius * np.cos(theta)
+        py = cy + spawn_radius * np.sin(theta)
+        
+        while True:
+            # Random walk step
+            # Bias slightly towards center to speed up
+            angle = random.random() * 2 * np.pi
+            step_x = np.cos(angle) * PARTICLE_RADIUS
+            step_y = np.sin(angle) * PARTICLE_RADIUS
+            
+            # Bias
+            dir_cx = cx - px
+            dir_cy = cy - py
+            norm = np.sqrt(dir_cx**2 + dir_cy**2)
+            if norm > 0:
+                step_x += (dir_cx / norm) * (PARTICLE_RADIUS * 0.2)
+                step_y += (dir_cy / norm) * (PARTICLE_RADIUS * 0.2)
+                
+            px += step_x
+            py += step_y
+            
+            dist_to_center = np.sqrt((px - cx)**2 + (py - cy)**2)
+            
+            # If it wanders too far, kill and respawn
+            if dist_to_center > spawn_radius + PARTICLE_RADIUS * 20:
+                theta = random.random() * 2 * np.pi
+                px = cx + spawn_radius * np.cos(theta)
+                py = cy + spawn_radius * np.sin(theta)
+                continue
+                
+            # Check collision
+            pt = np.array([px, py])
+            if check_collision(pt):
+                tree_pts.append(pt)
+                add_to_grid(len(tree_pts)-1, pt)
+                if dist_to_center > max_radius:
+                    max_radius = dist_to_center
+                break
+                
+    print(f"DLA Generation complete. Total particles: {len(tree_pts)}")
 
 def setup():
     py5.size(*SIZE)
@@ -48,97 +148,49 @@ def setup():
     py5.color_mode(py5.HSB, 360, 100, 100, 100)
     py5.background(0)
     
-    # Place initial seed in the center
-    grid[GRID_H // 2, GRID_W // 2] = 1
+    precalculate_dla()
+    
+    # Calculate colors
+    cx, cy = py5.width / 2, py5.height / 2
+    for pt in tree_pts:
+        dx = pt[0] - cx
+        dy = pt[1] - cy
+        dist = np.sqrt(dx**2 + dy**2)
+        angle = np.arctan2(dy, dx)
+        
+        # Color based on angle and distance
+        hue = (np.degrees(angle) + dist * 0.2) % 360
+        sat = 80 + random.random() * 20
+        br = 70 + random.random() * 30
+        tree_colors.append((hue, sat, br))
 
 def draw():
-    global walkers_x, walkers_y, particles_attached, grid
+    py5.background(0, 0, 5, 20) # Slight trail effect
     
-    py5.background(0)
+    # Animate blooming by revealing particles over time
+    particles_per_frame = len(tree_pts) / TOTAL_FRAMES
+    # Ease out the speed
+    t = py5.frame_count / TOTAL_FRAMES
+    # Ease out cubic: 1 - (1-t)^3
+    eased_t = 1.0 - (1.0 - t)**3
     
-    # Simulation step
-    # We want the fractal to grow steadily over the course of the animation.
-    for _ in range(WALKS_PER_FRAME):
-        # 1. Random walk
-        dx = np.random.randint(-1, 2, NUM_WALKERS)
-        dy = np.random.randint(-1, 2, NUM_WALKERS)
-        
-        walkers_x = np.clip(walkers_x + dx, 0, GRID_W - 1)
-        walkers_y = np.clip(walkers_y + dy, 0, GRID_H - 1)
-        
-        # 2. Check collision with grid
-        wx_m1 = np.clip(walkers_x - 1, 0, GRID_W - 1)
-        wx_p1 = np.clip(walkers_x + 1, 0, GRID_W - 1)
-        wy_m1 = np.clip(walkers_y - 1, 0, GRID_H - 1)
-        wy_p1 = np.clip(walkers_y + 1, 0, GRID_H - 1)
-        
-        # Check if any neighbor in the 3x3 grid around walker is occupied
-        attached_mask = (
-            (grid[walkers_y, wx_m1] > 0) | (grid[walkers_y, wx_p1] > 0) |
-            (grid[wy_m1, walkers_x] > 0) | (grid[wy_p1, walkers_x] > 0) |
-            (grid[wy_m1, wx_m1] > 0)     | (grid[wy_m1, wx_p1] > 0) |
-            (grid[wy_p1, wx_m1] > 0)     | (grid[wy_p1, wx_p1] > 0)
-        )
-        
-        if np.any(attached_mask):
-            attached_indices = np.where(attached_mask)[0]
-            for idx in attached_indices:
-                x = walkers_x[idx]
-                y = walkers_y[idx]
-                if grid[y, x] == 0:
-                    particles_attached += 1
-                    grid[y, x] = particles_attached
-                    
-            # Respawn attached walkers at random edges to keep them flowing inwards
-            num_respawn = len(attached_indices)
-            edge_choice = np.random.randint(0, 4, num_respawn)
-            
-            # 0: top, 1: bottom, 2: left, 3: right
-            for i, idx in enumerate(attached_indices):
-                if edge_choice[i] == 0:
-                    walkers_x[idx] = np.random.randint(0, GRID_W)
-                    walkers_y[idx] = 0
-                elif edge_choice[i] == 1:
-                    walkers_x[idx] = np.random.randint(0, GRID_W)
-                    walkers_y[idx] = GRID_H - 1
-                elif edge_choice[i] == 2:
-                    walkers_x[idx] = 0
-                    walkers_y[idx] = np.random.randint(0, GRID_H)
-                else:
-                    walkers_x[idx] = GRID_W - 1
-                    walkers_y[idx] = np.random.randint(0, GRID_H)
-
-    # Drawing
-    # We want to draw the fractal up to a certain "time" so it looks like it's growing
-    # We'll map the frame count to the number of particles attached
-    max_particles_to_draw = int(py5.remap(py5.frame_count, 0, TOTAL_FRAMES, 1, particles_attached + 1))
-    
-    # We'll extract coordinates of all occupied cells
-    y_coords, x_coords = np.nonzero(grid)
-    generation = grid[y_coords, x_coords]
-    
-    # Filter by time to animate growth
-    valid_mask = generation <= max_particles_to_draw
-    x_valid = x_coords[valid_mask]
-    y_valid = y_coords[valid_mask]
-    gen_valid = generation[valid_mask]
+    visible_count = int(eased_t * len(tree_pts))
+    visible_count = min(visible_count, len(tree_pts))
     
     py5.no_stroke()
-    # Use points for faster rendering
-    py5.stroke_weight(GRID_SCALE * 1.5)
     
-    # Fast rendering logic for large number of points
-    for i in range(len(x_valid)):
-        x = x_valid[i]
-        y = y_valid[i]
-        gen = gen_valid[i]
+    # We redraw everything up to visible_count to ensure it's bright
+    for i in range(visible_count):
+        pt = tree_pts[i]
+        c = tree_colors[i]
         
-        ratio = gen / max(1, float(max_particles_to_draw))
-        hue = 240.0 - (ratio * 60.0)
-        brightness = 50.0 + (ratio * 50.0)
+        # Draw particle
+        py5.fill(c[0], c[1], c[2], 80)
+        py5.circle(pt[0], pt[1], PARTICLE_RADIUS * 1.5)
         
-        py5.stroke(hue, 100, brightness, 90)
-        py5.point(float(x * GRID_SCALE), float(y * GRID_SCALE))
+        # Draw glowing core
+        py5.fill(c[0], c[1] * 0.5, 100)
+        py5.circle(pt[0], pt[1], PARTICLE_RADIUS * 0.5)
 
     py5.save_frame(str(FRAMES_DIR / "frame-####.png"))
 
@@ -150,7 +202,7 @@ def draw():
             os._exit(1)
 
     if py5.frame_count % 60 == 0:
-        print(f"[Render Progress] Frame {py5.frame_count}/{TOTAL_FRAMES} ({py5.frame_count/TOTAL_FRAMES*100:.1f}%) | Attached: {particles_attached}")
+        print(f"[Render Progress] Frame {py5.frame_count}/{TOTAL_FRAMES} ({py5.frame_count/TOTAL_FRAMES*100:.1f}%)")
 
     if py5.frame_count >= TOTAL_FRAMES:
         py5.exit_sketch()

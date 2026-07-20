@@ -1,3 +1,10 @@
+## kinetic_non_intersecting_random_walk_2d
+- **Date**: 2026-07-20
+- **Type**: Animation (1200 frames, 60fps)
+- **Concept**: A self-avoiding random walk algorithm that builds a complex, maze-like structure filling the screen.
+- **Techniques**: Simulates a swarm of 500 agents on a grid taking random orthogonal steps. They can never step on a grid cell that has already been visited by any agent. If trapped, agents die, and new ones spawn in empty space to ensure the entire canvas is filled with a dense, procedural maze.
+- **Palette**: Synthwave colors (electric cyan, magenta, bright yellow, pure white) on a very dark blue background.
+
 ## kinetic_optical_flow_particles_2d
 - **Date**: 2026-07-20
 - **Type**: Animation (1080 frames, 60fps)

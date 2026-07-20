@@ -1,3 +1,10 @@
+## kinetic_turing_reaction_diffusion_2d
+- **Date**: 2026-07-20
+- **Type**: Animation (960 frames, 60fps)
+- **Concept**: A visualization of Alan Turing's Reaction-Diffusion model which generates natural patterns like animal stripes and spots.
+- **Techniques**: Simulates a two-chemical system (A and B) on a 2D grid using the discrete Laplacian convolution (via scipy.signal). The chemical patterns morph and grow over time, rendered as a glowing fluid.
+- **Palette**: Toxic green, teal, and deep ocean blue on a black canvas.
+
 ## kinetic_chladni_figures_sand_2d
 - **Date**: 2026-07-20
 - **Type**: Animation (1080 frames, 60fps)

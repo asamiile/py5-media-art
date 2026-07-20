@@ -1,3 +1,10 @@
+## kinetic_cellular_automata_belousov_zhabotinsky_3d
+- **Date**: 2026-07-20
+- **Type**: Animation (1080 frames, 60fps)
+- **Concept**: True 3D Belousov-Zhabotinsky Reaction. Extends the oscillating chemical excitable media into a fully 3D volumetric space, generating magnificent expanding spherical shells and 3D scroll waves (scroll rings). Visualized as a moving 2D slice scanning through the Z-axis.
+- **Techniques**: Simulates a 3-state continuous cellular automaton representing chemical concentrations (A, B, C) inside a 120x68x40 volumetric grid. Computes diffusion using a 3x3x3 3D Laplacian kernel via `scipy.ndimage.convolve`. Renders only the current intersecting Z-plane as the slice slowly pans up and down.
+- **Palette**: Toxic Bio-luminescence. A pitch-black void contrasting with chartreuse/yellow-green and acid-blue glowing wave fronts that emerge as they intersect the scanning plane.
+
 ## kinetic_cellular_automata_belousov_zhabotinsky
 - **Date**: 2026-07-20
 - **Type**: Animation (1140 frames, 60fps)

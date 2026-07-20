@@ -1,3 +1,10 @@
+## kinetic_moire_interference_pattern_2d
+- **Date**: 2026-07-20
+- **Type**: Animation (1020 frames, 60fps)
+- **Concept**: A hypnotic moiré interference pattern created by overlapping concentric shapes that scale and rotate relative to one another.
+- **Techniques**: Drawing hundreds of dense concentric circles across two superimposed layers, with one layer scaling and oscillating slightly via 1D noise/sine waves.
+- **Palette**: Stark black and white for maximum optical contrast.
+
 ## kinetic_topographic_contour_map_2d
 - **Date**: 2026-07-20
 - **Type**: Animation (900 frames, 60fps)

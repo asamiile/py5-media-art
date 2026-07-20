@@ -1,3 +1,10 @@
+## kinetic_glitch_typography_data_cascade_2d
+- **Date**: 2026-07-20
+- **Type**: Animation (1080 frames, 60fps)
+- **Concept**: A cyberpunk data cascade of glitching, shifting letters, and blocks of noise sliding vertically and horizontally.
+- **Techniques**: Grid-based text rendering with occasional noisy displacement and color channel splitting (chromatic aberration).
+- **Palette**: Acid green, hot pink, and pure cyan on black.
+
 ## kinetic_fluid_dynamics_vortex_2d
 - **Date**: 2026-07-20
 - **Type**: Animation (1140 frames, 60fps)

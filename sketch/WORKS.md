@@ -1,3 +1,10 @@
+## kinetic_glitch_sorting_waves_2d
+- **Date**: 2026-07-20
+- **Type**: Animation (1080 frames, 60fps)
+- **Concept**: Simulated data-moshing and pixel-sorting of a kinetic wave landscape.
+- **Techniques**: Thousands of thin vertical rectangles generated with Perlin noise, subjected to sudden, localized displacements and hue shifts when intersecting noise boundaries cross a threshold.
+- **Palette**: Dark, desaturated blues and cyans pierced by intensely saturated, bright glitch bands.
+
 ## kinetic_morphing_voronoi_cells_2d
 - **Date**: 2026-07-20
 - **Type**: Animation (1020 frames, 60fps)

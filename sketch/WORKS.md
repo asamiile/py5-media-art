@@ -1,3 +1,10 @@
+## kinetic_lissajous_knot_orbitals_3d
+- **Date**: 2026-07-20
+- **Type**: Animation (960 frames, 60fps)
+- **Concept**: An intricate weaving of 3D Lissajous curves that resemble atomic orbitals or complex Celtic knots, rotating and evolving smoothly in space.
+- **Techniques**: Generates parametric 3D curves using sine and cosine waves with varying frequencies and phase shifts (`x = sin(A*t + delta1)`, `y = sin(B*t + delta2)`, `z = sin(C*t + delta3)`). Animates the frequencies and phase shifts slowly over time to make the knot untangle and retangle into new topologies. Connects 3000 points per strand to render a thick, glowing ribbon using a 3D to 2D projection.
+- **Palette**: Neon electric blue and fiery orange ribbons twisting around each other.
+
 ## kinetic_chladni_plate_resonance_2d
 - **Date**: 2026-07-20
 - **Type**: Animation (1080 frames, 60fps)

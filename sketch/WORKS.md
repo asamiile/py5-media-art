@@ -1,3 +1,10 @@
+## kinetic_fluid_dynamics_particles_2d
+- **Date**: 2026-07-20
+- **Type**: Animation (1080 frames, 60fps)
+- **Concept**: A swirling simulation of fluid dynamics where 15,000 glowing particles trace the vector field of a simulated fluid, leaving fading trails.
+- **Techniques**: 2D Perlin noise vector field guiding semi-transparent particles over time with blending.
+- **Palette**: Deep oceanic colors (teal, aqua, and deep indigo) with glowing trails on a dark background.
+
 ## kinetic_geometric_bauhaus_composition_2d
 - **Date**: 2026-07-20
 - **Type**: Animation (1020 frames, 60fps)

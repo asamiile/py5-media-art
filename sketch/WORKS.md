@@ -1,3 +1,10 @@
+## kinetic_cellular_automata_smoothlife_2d
+- **Date**: 2026-07-20
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: SmoothLife, a continuous space and state generalization of Conway's Game of Life by Stephan Rafler. Produces gliding, amoeba-like continuous patterns.
+- **Techniques**: Simulates a 2D continuous space Cellular Automaton using Fast Fourier Transform (FFT) convolutions with anti-aliased circular disc and ring kernels. Uses smooth sigmoid transition functions for continuous birth and death.
+- **Palette**: Micro-organic alien bioluminescence—soft glowing mint green amoebas floating on a deep abyssal indigo background.
+
 ## kinetic_cellular_automata_hodgepodge_machine_2d
 - **Date**: 2026-07-20
 - **Type**: Animation (960 frames, 60fps)

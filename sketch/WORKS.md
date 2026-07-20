@@ -1,3 +1,10 @@
+## kinetic_lissajous_web_network_2d
+- **Date**: 2026-07-20
+- **Type**: Animation (1020 frames, 60fps)
+- **Concept**: A web of interconnected nodes moving along complex Lissajous curves.
+- **Techniques**: 80 nodes orbit dynamically at varying frequencies, drawing glowing, bright lines between any two nodes that approach each other using an additive blend mode.
+- **Palette**: Cyberpunk cyan, electric blue, and neon pink lines fading into a dark cyan background.
+
 ## kinetic_spirograph_mandala_2d
 - **Date**: 2026-07-20
 - **Type**: Animation (1020 frames, 60fps)

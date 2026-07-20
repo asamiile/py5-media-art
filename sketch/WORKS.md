@@ -1,3 +1,10 @@
+## kinetic_cellular_automata_physarum_2d
+- **Date**: 2026-07-20
+- **Type**: Animation (1080 frames, 60fps)
+- **Concept**: A multi-agent slime mold (Physarum polycephalum) simulation. 300,000 independent sensory particles deposit chemical attractors onto a grid which diffuses and decays. Particles steer towards the highest chemical gradient using 3 forward-facing sensors, spontaneously organizing into intricate fungal networks.
+- **Techniques**: Vectorized particle physics and sensor readings using numpy array indexing and masking. Chemical diffusion is handled by `scipy.signal.convolve2d`.
+- **Palette**: Fungal bioluminescence—deep purple background with glowing golden yellow and bright magenta slime trails.
+
 ## kinetic_cellular_automata_lenia_2d
 - **Date**: 2026-07-20
 - **Type**: Animation (900 frames, 60fps)

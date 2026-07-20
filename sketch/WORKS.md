@@ -1,3 +1,10 @@
+## kinetic_kuramoto_sivashinsky_flame_2d
+- **Date**: 2026-07-20
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A visualization of the Kuramoto-Sivashinsky equation, a partial differential equation that models the chaotic instabilities in laminar flame fronts.
+- **Techniques**: Simulates a 1D interface (the "flame front") evolving over time according to the KS equation. Uses an Exponential Time Differencing (ETD1) pseudo-spectral integration scheme for numeric stability. The history of the 1D interfaces is stacked over the y-axis to create a 2D cascading cellular pattern.
+- **Palette**: Fiery orange, intense yellow, and deep crimson.
+
 ## kinetic_navier_stokes_fluid_2d
 - **Date**: 2026-07-20
 - **Type**: Animation (900 frames, 60fps)

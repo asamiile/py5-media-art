@@ -2,138 +2,140 @@ from pathlib import Path
 import shutil
 import subprocess
 import sys
+import random
 import math
-import numpy as np
 import py5
+import numpy as np
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.append(str(PROJECT_ROOT))
 
 from lib.paths import sketch_dir
-from lib.preview import preview_filename
 from lib.sizes import get_sizes
 
 SKETCH_DIR = sketch_dir(__file__)
 WORK_NAME = SKETCH_DIR.name
 FRAMES_DIR = SKETCH_DIR / "frames"
-DURATION_SEC = 15
+DURATION_SEC = random.randint(15, 20)
 FPS = 60
 TOTAL_FRAMES = DURATION_SEC * FPS
 PREVIEW_FILENAME = f"{WORK_NAME}_p1.png"
 PREVIEW_SIZE, OUTPUT_SIZE, _ = get_sizes()
 SIZE = OUTPUT_SIZE
 
-NUM_PARTICLES = 100_000
+# Physics settings
+NUM_PARTICLES = 100000
+VIBRATION_INTENSITY = 0.06
+PARTICLE_SPEED = 0.12
+EPSILON = 0.001
 
-# Global numpy arrays for particle positions and velocities
-px = None
-py = None
-vx = None
-vy = None
+# Normalize coordinates from screen to -1..1
+# It's faster to do math in -1..1 then project
+px = np.random.uniform(-1, 1, NUM_PARTICLES)
+py = np.random.uniform(-1, 1, NUM_PARTICLES)
+vx = np.zeros(NUM_PARTICLES)
+vy = np.zeros(NUM_PARTICLES)
+
+def chladni(x, y, n, m):
+    # Z = a * sin(n*pi*x) * sin(m*pi*y) + b * sin(m*pi*x) * sin(n*pi*y)
+    # Using a=1, b=1 for simplicity
+    pi = np.pi
+    return np.sin(n * pi * x) * np.sin(m * pi * y) + np.sin(m * pi * x) * np.sin(n * pi * y)
 
 def setup():
-    global px, py, vx, vy
     py5.size(*SIZE)
     py5.pixel_density(1)
     FRAMES_DIR.mkdir(exist_ok=True)
-    py5.background(5, 5, 16)
-    
-    # Initialize particles randomly across the screen
-    px = np.random.uniform(0, py5.width, NUM_PARTICLES)
-    py = np.random.uniform(0, py5.height, NUM_PARTICLES)
-    vx = np.zeros(NUM_PARTICLES)
-    vy = np.zeros(NUM_PARTICLES)
-    
-def get_chladni_gradients(x, y, n, m):
-    # Normalized coordinates from -1 to 1
-    nx = (x / py5.width) * 2 - 1
-    ny = (y / py5.height) * 2 - 1
-    
-    # The Chladni equation
-    # C(x,y) = cos(n*pi*x)*cos(m*pi*y) - cos(m*pi*x)*cos(n*pi*y)
-    
-    # We want gradients to push particles towards C(x,y) = 0
-    # The gradient of C^2 is 2*C * gradient(C)
-    
-    pi_nx = np.pi * nx
-    pi_ny = np.pi * ny
-    
-    cos_n_nx = np.cos(n * pi_nx)
-    cos_m_ny = np.cos(m * pi_ny)
-    cos_m_nx = np.cos(m * pi_nx)
-    cos_n_ny = np.cos(n * pi_ny)
-    
-    sin_n_nx = np.sin(n * pi_nx)
-    sin_m_ny = np.sin(m * pi_ny)
-    sin_m_nx = np.sin(m * pi_nx)
-    sin_n_ny = np.sin(n * pi_ny)
-    
-    C = cos_n_nx * cos_m_ny - cos_m_nx * cos_n_ny
-    
-    # Partial derivatives
-    dC_dnx = -n * np.pi * sin_n_nx * cos_m_ny + m * np.pi * sin_m_nx * cos_n_ny
-    dC_dny = -m * np.pi * cos_n_nx * sin_m_ny + n * np.pi * cos_m_nx * sin_n_ny
-    
-    # Gradient of C^2
-    grad_x = 2 * C * dC_dnx
-    grad_y = 2 * C * dC_dny
-    
-    return grad_x, grad_y
+    py5.color_mode(py5.HSB, 360, 100, 100, 100)
+    py5.background(0)
 
 def draw():
     global px, py, vx, vy
     
-    # Motion blur / fading
-    py5.fill(5, 5, 16, 20)
+    # Motion blur / Trail effect
+    py5.blend_mode(py5.BLEND)
     py5.no_stroke()
+    py5.fill(10, 80, 8, 30) # Very dark crimson trail
     py5.rect(0, 0, py5.width, py5.height)
     
     t = py5.frame_count / TOTAL_FRAMES
     
-    # Smoothly interpolate between (n, m) pairs
-    # Pair 1: (3, 5) -> Pair 2: (4, 7) -> Pair 3: (5, 9)
-    # We'll use continuous functions for n and m
-    n = 3.5 + 2.0 * math.sin(t * math.pi * 2)
-    m = 5.5 + 3.0 * math.cos(t * math.pi * 2)
+    # We want to smoothly interpolate between different resonant modes.
+    # We'll define a few keyframes for (n, m) pairs.
+    modes = [(2, 3), (3, 5), (4, 4), (5, 7), (2, 3)]
+    num_segments = len(modes) - 1
     
-    grad_x, grad_y = get_chladni_gradients(px, py, n, m)
+    segment = int(t * num_segments)
+    if segment >= num_segments:
+        segment = num_segments - 1
+        
+    local_t = (t * num_segments) - segment
     
-    # Force towards nodes (negative gradient of C^2)
-    # Plus some random noise/vibration
-    force_magnitude = 15.0
-    vibration = 2.0
+    # Ease in-out interpolation for smooth transitions
+    ease_t = local_t * local_t * (3 - 2 * local_t) 
     
-    # Update velocities
-    vx -= grad_x * force_magnitude
-    vy -= grad_y * force_magnitude
+    n_curr, m_curr = modes[segment]
+    n_next, m_next = modes[segment + 1]
     
-    # Damping
+    n = n_curr + (n_next - n_curr) * ease_t
+    m = m_curr + (m_next - m_curr) * ease_t
+
+    # Calculate gradients of the Chladni function to move particles
+    # We want particles to move towards Z=0 (nodal lines), so we move down the gradient of abs(Z)
+    z = chladni(px, py, n, m)
+    
+    # Numerical derivative
+    zx = chladni(px + EPSILON, py, n, m)
+    zy = chladni(px, py + EPSILON, n, m)
+    
+    dzdx = (zx - z) / EPSILON
+    dzdy = (zy - z) / EPSILON
+    
+    # For Z near zero, abs(Z) gradient is dz * sign(z)
+    grad_x = dzdx * np.sign(z)
+    grad_y = dzdy * np.sign(z)
+    
+    # Apply forces
+    vx -= grad_x * PARTICLE_SPEED
+    vy -= grad_y * PARTICLE_SPEED
+    
+    # Add random vibration noise proportional to the absolute amplitude Z
+    # Particles vibrate violently at antinodes, but settle down at nodes
+    vibration_x = np.random.uniform(-1, 1, NUM_PARTICLES) * np.abs(z) * VIBRATION_INTENSITY
+    vibration_y = np.random.uniform(-1, 1, NUM_PARTICLES) * np.abs(z) * VIBRATION_INTENSITY
+    
+    vx += vibration_x
+    vy += vibration_y
+    
+    # Friction
     vx *= 0.8
     vy *= 0.8
     
-    # Add vibration (Brownian motion)
-    vx += np.random.normal(0, vibration, NUM_PARTICLES)
-    vy += np.random.normal(0, vibration, NUM_PARTICLES)
-    
-    # Update positions
     px += vx
     py += vy
     
-    # Boundary wrap
-    px = np.mod(px, py5.width)
-    py = np.mod(py, py5.height)
+    # Bouncing off walls
+    mask_x = np.abs(px) > 1.0
+    px[mask_x] = np.sign(px[mask_x]) * 1.0
+    vx[mask_x] *= -0.5
     
-    # Draw particles using points
-    # We use multiple pass for glowing
-    py5.stroke(230, 194, 128, 150) # Golden Sand
+    mask_y = np.abs(py) > 1.0
+    py[mask_y] = np.sign(py[mask_y]) * 1.0
+    vy[mask_y] *= -0.5
+
+    # Map to screen coordinates
+    # We'll map -1.2 to 1.2 so they fill the screen edge to edge nicely
+    screen_x = (px + 1.2) / 2.4 * py5.width
+    screen_y = (py + 1.2) / 2.4 * py5.height
+    
+    py5.blend_mode(py5.ADD)
     py5.stroke_weight(2)
-    py5.points(np.column_stack((px, py)))
     
-    py5.stroke(255, 255, 255, 200) # White core
-    py5.stroke_weight(1)
-    py5.points(np.column_stack((px, py)))
-    
+    # Draw points using raw rendering for speed
+    py5.stroke(45, 70, 90, 40) # Gold / Bronze
+    py5.points(np.column_stack((screen_x, screen_y)))
+
     py5.save_frame(str(FRAMES_DIR / "frame-####.png"))
 
     if py5.frame_count == 2 or py5.frame_count % 60 == 0:
@@ -144,11 +146,10 @@ def draw():
             os._exit(1)
 
     if py5.frame_count % 60 == 0:
-        print(f"[Render Progress] Frame {py5.frame_count}/{TOTAL_FRAMES} ({py5.frame_count/TOTAL_FRAMES*100:.1f}%)")
+        print(f"[Render Progress] Frame {py5.frame_count}/{TOTAL_FRAMES} ({py5.frame_count/TOTAL_FRAMES*100:.1f}%) | Mode: ({n:.2f}, {m:.2f})")
 
     if py5.frame_count >= TOTAL_FRAMES:
         py5.exit_sketch()
-        
         print(f"[Render FFmpeg] Compiling {TOTAL_FRAMES} frames into video...")
         subprocess.run([
             "ffmpeg", "-y", "-r", str(FPS),
@@ -156,14 +157,10 @@ def draw():
             "-vcodec", "libx264", "-pix_fmt", "yuv420p",
             str(SKETCH_DIR / f"{WORK_NAME}.mp4"),
         ], check=True)
-        
         mid = str(FRAMES_DIR / f"frame-{TOTAL_FRAMES // 2:04d}.png")
         subprocess.run(["cp", mid, str(SKETCH_DIR / PREVIEW_FILENAME)], check=True)
-        
         if FRAMES_DIR.exists():
             shutil.rmtree(FRAMES_DIR)
-            print("[Render Cleanup] Temporary frames directory successfully removed.")
-            
         import os
         os._exit(0)
 

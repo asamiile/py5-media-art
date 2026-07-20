@@ -1,3 +1,10 @@
+## kinetic_chladni_plate_resonance_2d
+- **Date**: 2026-07-20
+- **Type**: Animation (1080 frames, 60fps)
+- **Concept**: A visualization of Chladni figures (cymatics) as thousands of particles form geometric patterns at resonant frequencies.
+- **Techniques**: Simulates 100,000 independent particles moving down the gradients of a 2D Chladni function `Z = sin(nx)sin(my) + sin(mx)sin(ny)`. Dynamically morphs the resonance values `(n, m)` over time, causing particles to transition between chaotic noise and structured geometric nodes.
+- **Palette**: Metallic gold and bronze particles leaving a trail over a very dark crimson background.
+
 ## kinetic_diffusion_limited_aggregation_2d
 - **Date**: 2026-07-20
 - **Type**: Animation (1200 frames, 60fps)

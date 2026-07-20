@@ -1,3 +1,10 @@
+## kinetic_cellular_automata_boids_2d
+- **Date**: 2026-07-20
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: Boids flocking simulation by Craig Reynolds. Demonstrates emergent swarming behavior from three simple local rules: separation, alignment, and cohesion.
+- **Techniques**: Simulates 4,000 independent agent particles. Optimized using a spatial KD-Tree (`scipy.spatial.cKDTree`) for fast radius-based neighbor lookup and vectorized numpy forces.
+- **Palette**: Deep Twilight Sky—navy blue and magenta gradient motion blur with glowing white, cyan, and gold starlings.
+
 ## kinetic_cellular_automata_smoothlife_2d
 - **Date**: 2026-07-20
 - **Type**: Animation (900 frames, 60fps)

@@ -1,3 +1,10 @@
+## kinetic_cellular_automata_belousov_zhabotinsky
+- **Date**: 2026-07-20
+- **Type**: Animation (1140 frames, 60fps)
+- **Concept**: Belousov-Zhabotinsky continuous reaction. A mathematical model of an oscillating chemical reaction that acts as an excitable medium, producing mesmerizing spiral waves and concentric target patterns.
+- **Techniques**: Simulates a 3-state continuous cellular automaton representing chemical concentrations (A, B, C). Updates using a coupled system of differential equations with a fast 2D Laplacian convolution for diffusion via `scipy.signal.convolve2d`.
+- **Palette**: Radioactive Neon. A color mapping transformation matrix translates the three chemical states into vibrant lime greens, electric magentas, and deep indigo swirling wave patterns.
+
 ## kinetic_cellular_automata_lenia_flow_field
 - **Date**: 2026-07-20
 - **Type**: Animation (900 frames, 60fps)

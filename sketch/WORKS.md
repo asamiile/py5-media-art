@@ -1,3 +1,10 @@
+## kinetic_fluid_dynamics_vortex_2d
+- **Date**: 2026-07-20
+- **Type**: Animation (1140 frames, 60fps)
+- **Concept**: A high-contrast, mesmerizing simulation of fluid dynamics forming swirling vortexes.
+- **Techniques**: Curl noise / Vector field particles moving and leaving trails.
+- **Palette**: Deep oceanic blue, bright gold, and white on a pitch-black background.
+
 ## kinetic_math_lissajous_knot_3d
 - **Date**: 2026-07-20
 - **Type**: Animation (1020 frames, 60fps)

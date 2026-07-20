@@ -1,3 +1,10 @@
+## kinetic_cellular_automata_lenia_3d_slice
+- **Date**: 2026-07-20
+- **Type**: Animation (1140 frames, 60fps)
+- **Concept**: True 3D Lenia. A continuous volumetric cellular automaton simulated in 3D space, visualized as a moving 2D slice that scans through the Z-axis like an MRI or sonar.
+- **Techniques**: Simulates a 120x68x32 volumetric grid using `scipy.signal.fftconvolve` with a 3D spherical kernel. Evaluates continuous growth functions over the 3D potential field, rendering only the current Z-plane intersection.
+- **Palette**: Deep Ocean Scan—Sonar-like aesthetics. Dark teal background with glowing bright cyan and seafoam green structures intersecting the scan plane.
+
 ## kinetic_cellular_automata_reaction_diffusion_1d
 - **Date**: 2026-07-20
 - **Type**: Animation (960 frames, 60fps)

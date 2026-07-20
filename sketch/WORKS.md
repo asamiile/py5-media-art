@@ -1,3 +1,10 @@
+## kinetic_cyber_grid_parallax_3d
+- **Date**: 2026-07-20
+- **Type**: Animation (1080 frames, 60fps)
+- **Concept**: A high-tech, Tron-like neon 3D grid stretching to infinity with abstract geometric data structures floating past in a parallax effect.
+- **Techniques**: Custom mathematical 2D projection of 3D coordinates to simulate infinite depth and parallax scrolling over time.
+- **Palette**: Neon cyan grid lines, magenta and yellow data structures on a deep dark purple background.
+
 ## kinetic_fractal_mandelbrot_deep_zoom_2d
 - **Date**: 2026-07-20
 - **Type**: Animation (960 frames, 60fps)

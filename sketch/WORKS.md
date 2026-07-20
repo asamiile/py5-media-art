@@ -1,3 +1,10 @@
+## kinetic_glitch_grid_subdivision_2d
+- **Date**: 2026-07-20
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A recursive, pulsing grid that subdivides and glitches out dynamically based on spatial noise.
+- **Techniques**: Recursively subdividing cells (quadtree algorithm) driven by a 3D noise function (x, y, t). Renders glitch blocks and wireframe crosses depending on the local noise density. Finished with a scrolling camera pan and a CRT scanline overlay.
+- **Palette**: High-contrast Cyberpunk colors: Magenta, Cyan, Bright Yellow against a dark gray background.
+
 ## kinetic_topological_ribbon_flow_2d
 - **Date**: 2026-07-20
 - **Type**: Animation (1020 frames, 60fps)

@@ -1,3 +1,10 @@
+## kinetic_topological_sort_graph_2d
+- **Date**: 2026-07-20
+- **Type**: Animation (1080 frames, 60fps)
+- **Concept**: A visual representation of a directed acyclic graph resolving into a topological sort over time, featuring glowing nodes and connecting splines that relax into a hierarchical layout.
+- **Techniques**: Spring force-directed layout combined with a topological sort hierarchy, bezier curves for edges, and smoothstep interpolation.
+- **Palette**: Neon orange nodes and glowing blue edges on a dark grey-blue background.
+
 ## kinetic_cyber_grid_parallax_3d
 - **Date**: 2026-07-20
 - **Type**: Animation (1080 frames, 60fps)

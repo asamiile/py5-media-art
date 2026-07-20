@@ -1,3 +1,10 @@
+## kinetic_optical_illusion_interference_2d
+- **Date**: 2026-07-20
+- **Type**: Animation (1020 frames, 60fps)
+- **Concept**: A high-contrast black-and-white optical illusion using rotating Moiré interference patterns.
+- **Techniques**: Drawing thousands of precisely spaced geometric primitives (concentric circles, expanding rings, and oscillating perpendicular grids) that slowly rotate against each other to create complex, hypnotic Moiré patterns and optical illusions of depth and motion.
+- **Palette**: Strictly high-contrast black and white.
+
 ## kinetic_fluid_vector_field_particles_2d
 - **Date**: 2026-07-20
 - **Type**: Animation (960 frames, 60fps)

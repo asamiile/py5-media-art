@@ -1,3 +1,10 @@
+## kinetic_cellular_automaton_drip_2d
+- **Date**: 2026-07-20
+- **Type**: Animation (1080 frames, 60fps)
+- **Concept**: A continuous 1D cellular automaton stretched vertically into glowing dripping streams of data.
+- **Techniques**: Evaluates 1D Cellular Automata rules row by row using bitwise logic. Dynamically switches between chaotic rules (30, 90, 110, 150) driven by Perlin noise, and injects random bit mutations to prevent the pattern from settling. Renders glowing rectangular cells that shift downwards with a trail-fade effect.
+- **Palette**: Matrix-green to bright cyan on a pitch-black background.
+
 ## kinetic_glitch_grid_subdivision_2d
 - **Date**: 2026-07-20
 - **Type**: Animation (900 frames, 60fps)

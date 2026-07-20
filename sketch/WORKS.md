@@ -1,3 +1,10 @@
+## kinetic_space_colonization_trees_2d
+- **Date**: 2026-07-20
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A visualization of the Space Colonization algorithm, organically growing branching tree structures towards randomly distributed nutrient points (attractors) across the canvas.
+- **Techniques**: Places thousands of invisible "attractors" in a circle. Starts with a central root node. In each frame, finds the nearest tree nodes to each attractor within a certain radius. Those nodes spawn new branches growing towards the average direction of their assigned attractors, simulating natural fractal venation.
+- **Palette**: Bioluminescent glowing teals and vibrant magentas branching out on a pitch black background, resembling coral or a neural network.
+
 ## kinetic_non_intersecting_random_walk_2d
 - **Date**: 2026-07-20
 - **Type**: Animation (1200 frames, 60fps)

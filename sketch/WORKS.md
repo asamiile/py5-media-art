@@ -1,3 +1,10 @@
+## kinetic_cellular_automata_reaction_diffusion_turing_2d
+- **Date**: 2026-07-20
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: The Gray-Scott reaction-diffusion system, which generates organic Turing patterns that resemble animal skin or brain coral.
+- **Techniques**: Simulates a 2-state (U, V) continuous cellular automaton on a grid using `scipy.signal.convolve2d`. The feed and kill parameters dynamically smoothly oscillate over time, causing the pattern to smoothly morph between scattered spots, labyrinthine mazes, and solid stripes.
+- **Palette**: Bioluminescent coral—vivid hot pink, bright orange, and deep oceanic blue.
+
 ## kinetic_cellular_automata_belousov_zhabotinsky_2d
 - **Date**: 2026-07-20
 - **Type**: Animation (900 frames, 60fps)

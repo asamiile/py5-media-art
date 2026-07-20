@@ -1,3 +1,10 @@
+## kinetic_chladni_figures_sand_2d
+- **Date**: 2026-07-20
+- **Type**: Animation (1080 frames, 60fps)
+- **Concept**: A visualization of Chladni figures—patterns formed by fine sand on a vibrating metal plate.
+- **Techniques**: Simulates 60,000 "sand" particles on a 2D plane. By calculating the gradient of a mathematically perfect standing wave equation, the sand is pushed towards the nodal lines over time. The resonance frequencies are slowly morphed to organically form new geometric patterns.
+- **Palette**: Deep, velvety black background with golden, glowing sand particles.
+
 ## kinetic_double_pendulum_fractal_2d
 - **Date**: 2026-07-20
 - **Type**: Animation (1140 frames, 60fps)

@@ -1,3 +1,10 @@
+## kinetic_cellular_automata_lenia_2d
+- **Date**: 2026-07-20
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: Lenia, a system of continuous cellular automata discovered by Bert Chan that produces complex microscopic "creatures" like gliders.
+- **Techniques**: Simulates a single-channel 2D Lenia automaton using a Gaussian bell-shaped neighborhood kernel and a unimodal growth function. Uses Fast Fourier Transform (FFT) convolution via `scipy.signal.fftconvolve` to efficiently calculate the continuous interactions across the entire grid.
+- **Palette**: Microscopic biology aesthetic—vibrant lime green and bright yellow on a dark forest green background.
+
 ## kinetic_cellular_automata_reaction_diffusion_turing_2d
 - **Date**: 2026-07-20
 - **Type**: Animation (900 frames, 60fps)

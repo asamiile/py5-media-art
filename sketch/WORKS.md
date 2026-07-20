@@ -1,3 +1,10 @@
+## kinetic_optical_flow_particles_2d
+- **Date**: 2026-07-20
+- **Type**: Animation (1080 frames, 60fps)
+- **Concept**: An optical illusion of moving fluids generated from OpenSimplex noise vector fields.
+- **Techniques**: Simulates 150,000 independent particles flowing along the vector lines of a 3D OpenSimplex noise field mapped to the 2D plane (where the Z-axis represents time). The particles leave a fading trail behind them as the invisible vector field continuously morphs. 
+- **Palette**: High contrast cyberpunk colors (hot pink, cyan, yellow) against a pitch black background.
+
 ## kinetic_cellular_slime_mold_physarum_2d
 - **Date**: 2026-07-20
 - **Type**: Animation (1080 frames, 60fps)

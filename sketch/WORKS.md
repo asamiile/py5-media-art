@@ -1,3 +1,10 @@
+## kinetic_cellular_automata_brians_brain_2d
+- **Date**: 2026-07-20
+- **Type**: Animation (1140 frames, 60fps)
+- **Concept**: A visualization of Brian's Brain, a cellular automaton with three states: Off, On, and Dying, leading to intricate moving patterns that resemble neural firing or gliders.
+- **Techniques**: Uses a fast 2D numpy grid to compute the automaton's rules across over 129,000 cells. Renders the active cells dynamically based on their age to create a glowing heat-trail effect.
+- **Palette**: Fiery orange, bright yellow, and deep purple.
+
 ## kinetic_strange_attractor_lorenz_3d
 - **Date**: 2026-07-20
 - **Type**: Animation (1020 frames, 60fps)

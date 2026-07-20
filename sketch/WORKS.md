@@ -1,3 +1,10 @@
+## kinetic_double_pendulum_fractal_2d
+- **Date**: 2026-07-20
+- **Type**: Animation (1140 frames, 60fps)
+- **Concept**: A chaotic system visualization of thousands of double pendulums initialized with micro-variations, tracing out a beautiful fractal-like path as they diverge.
+- **Techniques**: Simulates 15,000 double pendulums simultaneously using vectorized numerical integration of the equations of motion in NumPy. The trails are mapped to their initial angle offset to show the sensitive dependence on initial conditions.
+- **Palette**: A vivid rainbow spectrum that starts tightly clustered and then explodes into chaos.
+
 ## kinetic_cellular_automata_brians_brain_2d
 - **Date**: 2026-07-20
 - **Type**: Animation (1140 frames, 60fps)

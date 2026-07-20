@@ -1,3 +1,10 @@
+## kinetic_math_lissajous_knot_3d
+- **Date**: 2026-07-20
+- **Type**: Animation (1020 frames, 60fps)
+- **Concept**: A glowing 3D Lissajous knot weaving into itself.
+- **Techniques**: Parametric 3D equations projected onto 2D. Additive blending.
+- **Palette**: Neon yellow and cyan on dark purple.
+
 ## kinetic_non_euclidean_hyperbolic_tessellation_2d
 - **Date**: 2026-07-20
 - **Type**: Animation (960 frames, 60fps)

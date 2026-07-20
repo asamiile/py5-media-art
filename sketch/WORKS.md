@@ -1,3 +1,10 @@
+## kinetic_topological_ribbon_flow_2d
+- **Date**: 2026-07-20
+- **Type**: Animation (1020 frames, 60fps)
+- **Concept**: A graceful simulation of flowing 3D ribbon-like strips moving through a twisted topological space.
+- **Techniques**: Generating multiple long ribbons composed of 2D quad strips. Driven by a 3D Perlin noise field and modulated by sine waves to calculate the normal vectors, creating twists and pinches along the ribbons. Rendered with additive blending for an ethereal glow.
+- **Palette**: Warm gradient colors (Orange, Gold, Coral) against a deep navy blue space.
+
 ## kinetic_optical_illusion_interference_2d
 - **Date**: 2026-07-20
 - **Type**: Animation (1020 frames, 60fps)

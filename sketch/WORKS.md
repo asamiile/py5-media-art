@@ -1,3 +1,10 @@
+## kinetic_cellular_automata_reaction_diffusion_turing_3d
+- **Date**: 2026-07-20
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: True 3D Reaction-Diffusion Turing Patterns. The Gray-Scott equations are simulated in a fully volumetric 3D space, causing the labyrinthine biological patterns to grow and intertwine like an organic three-dimensional network. Explored via a scanning Z-plane.
+- **Techniques**: Simulates a two-state continuous cellular automaton using a 120x68x40 3D grid. Solves the coupled differential equations with a 3x3x3 3D Laplacian kernel using `scipy.ndimage.convolve`. High simulation speed (6 physics steps per frame).
+- **Palette**: Lava Lamp. A deep obsidian void intersecting with molten gold and crimson structures where the 3D chemical patterns have formed.
+
 ## kinetic_cellular_automata_reaction_diffusion_turing
 - **Date**: 2026-07-20
 - **Type**: Animation (960 frames, 60fps)

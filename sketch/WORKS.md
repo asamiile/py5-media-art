@@ -1,3 +1,10 @@
+## kinetic_cellular_slime_mold_physarum_2d
+- **Date**: 2026-07-20
+- **Type**: Animation (1080 frames, 60fps)
+- **Concept**: A simulation of the Physarum polycephalum (slime mold) growth algorithm.
+- **Techniques**: Millions of tiny agents deposit "attractant" chemicals on a grid as they move, and in turn sense the chemical gradient ahead of them, steering towards higher concentrations. Computed using a vectorized numpy array representing the chemical trail map, and numpy arrays for the agents' positions and headings. The grid diffuses and decays every frame.
+- **Palette**: Toxic neon greens and yellows on a deep purple/black background.
+
 ## kinetic_lissajous_knot_orbitals_3d
 - **Date**: 2026-07-20
 - **Type**: Animation (960 frames, 60fps)

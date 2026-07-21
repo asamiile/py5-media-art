@@ -1,3 +1,10 @@
+## kinetic_reaction_diffusion_coral_2d
+- **Date**: 2026-07-21
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A glowing, organic cellular simulation that grows and divides into intricate brain-coral and maze-like patterns.
+- **Techniques**: Simulates the continuous Gray-Scott reaction-diffusion equations across a 2D grid using fast, vectorized NumPy array slicing to compute the Laplacian. Parameters dynamically shift based on spatial coordinates and time, creating morphing organic behaviors.
+- **Palette**: Acidic, glowing neon yellow-green structures contrasted against a deep, dark violet background.
+
 ## kinetic_spirograph_mandala_bloom_2d
 - **Date**: 2026-07-21
 - **Type**: Animation (900 frames, 60fps)

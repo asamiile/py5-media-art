@@ -1,3 +1,10 @@
+## kinetic_hex_grid_breathing_2d
+- **Date**: 2026-07-21
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A precise, interlocking grid of glowing hexagons that scales and rotates dynamically, breathing like a living machine.
+- **Techniques**: A tight hexagonal grid is rendered with thousands of nested hexagons. Each hexagon's rotation, scale, and base color is driven by a slowly shifting 3D OpenSimplex noise field. The nested outlines rotate in opposing directions at different speeds to create intricate internal mechanisms.
+- **Palette**: Cyberpunk neon cyan, magenta, and yellow on a dark background.
+
 ## kinetic_kaleidoscopic_mandala_2d
 - **Date**: 2026-07-21
 - **Type**: Animation (900 frames, 60fps)

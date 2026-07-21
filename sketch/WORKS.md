@@ -1,3 +1,10 @@
+## kinetic_particle_attractor_strange_2d
+- **Date**: 2026-07-21
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: Millions of particles mapping out a mathematical strange attractor that slowly morphs over time, resembling a dense, glowing ribbon in a void.
+- **Techniques**: A vectorized Clifford Attractor algorithm applied to 1,000,000 particles using NumPy. Parameters gently drift via Perlin noise. Additive blending creates intense, structured luminosity.
+- **Palette**: White-hot cores fading into soft golds, ambers, and purples at the fringes, set against a deep black void.
+
 ## kinetic_metaball_plasma_merger_2d
 - **Date**: 2026-07-21
 - **Type**: Animation (900 frames, 60fps)

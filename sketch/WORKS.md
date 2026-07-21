@@ -1,3 +1,10 @@
+## kinetic_metaball_plasma_merger_2d
+- **Date**: 2026-07-21
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: Fluid, glowing plasma globs merging and splitting in a zero-gravity environment.
+- **Techniques**: Custom soft radial gradient brushes drawn with additive blending. Particles move with curl noise and pull towards the center, merging into bright hot spots when they overlap.
+- **Palette**: Neon greens and bright yellows on a dark background, blending into pure white at high density.
+
 ## kinetic_recursive_mandala_bloom_2d
 - **Date**: 2026-07-21
 - **Type**: Animation (900 frames, 60fps)

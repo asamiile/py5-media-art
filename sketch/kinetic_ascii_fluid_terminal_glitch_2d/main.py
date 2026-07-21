@@ -2,6 +2,7 @@ from pathlib import Path
 import shutil
 import subprocess
 import sys
+import random
 import py5
 import numpy as np
 
@@ -23,58 +24,71 @@ PREVIEW_FILENAME = f"{WORK_NAME}_p1.png"
 PREVIEW_SIZE, OUTPUT_SIZE, _ = get_sizes()
 SIZE = OUTPUT_SIZE
 
-NUM_POINTS = 1200
-t_array = np.linspace(0, np.pi * 2, NUM_POINTS)
+# Grid settings
+COLS = 160
+ROWS = 90
+CELL_W = SIZE[0] / COLS
+CELL_H = SIZE[1] / ROWS
+
+CHARS = list("ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%&*+=-/\\|")
+grid_chars = np.random.choice(CHARS, (ROWS, COLS))
+grid_melt = np.zeros((ROWS, COLS))
+grid_y_offset = np.zeros((ROWS, COLS))
 
 def setup():
     py5.size(*SIZE)
     py5.pixel_density(1)
     FRAMES_DIR.mkdir(exist_ok=True)
-    
+    py5.text_align(py5.CENTER, py5.CENTER)
+    try:
+        font = py5.create_font("Courier New", CELL_H * 1.2)
+        py5.text_font(font)
+    except:
+        py5.text_size(CELL_H * 1.2)
+
 def draw():
-    py5.background(5, 5, 10)
-    py5.translate(SIZE[0] / 2, SIZE[1] / 2)
-    py5.blend_mode(py5.ADD)
+    py5.background(5, 10, 5)
     
-    # Phase shifts that animate over time
-    time = py5.frame_count * 0.015
-    delta1 = time * 1.5
-    delta2 = time * 0.8
+    t = py5.frame_count / 60.0
     
-    # Complex Lissajous parameters
-    a, b = 5, 4
-    c, d = 3, 7
+    # Global melt line moves down
+    melt_line = (t - 2.0) / 10.0 * ROWS
     
-    R = SIZE[1] * 0.45
-    
-    # Generate points
-    x = np.sin(a * t_array + delta1) * np.cos(c * t_array) * R * (SIZE[0]/SIZE[1])
-    y = np.sin(b * t_array + delta2) * np.cos(d * t_array) * R
-    
-    pts = np.column_stack((x, y))
-    
-    py5.no_fill()
-    py5.stroke_weight(1.5)
-    
-    # String art connection offsets
-    offsets = [1, 20, 50, 150, 400]
-    colors = [
-        (255, 255, 255, 150),
-        (0, 200, 255, 80),
-        (255, 50, 100, 60),
-        (100, 50, 255, 40),
-        (255, 150, 0, 30)
-    ]
-    
-    for k, color in zip(offsets, colors):
-        py5.stroke(*color)
-        py5.begin_shape(py5.LINES)
-        for i in range(NUM_POINTS):
-            p1 = pts[i]
-            p2 = pts[(i + k) % NUM_POINTS]
-            py5.vertex(p1[0], p1[1])
-            py5.vertex(p2[0], p2[1])
-        py5.end_shape()
+    for r in range(ROWS):
+        # Noise to make melt line irregular
+        for c in range(COLS):
+            noise_val = py5.os_noise(c * 0.1, r * 0.1, t * 0.5)
+            if r < melt_line + noise_val * 15:
+                grid_melt[r, c] = 1.0
+                
+            if grid_melt[r, c] > 0:
+                # Flow downwards
+                speed = py5.os_noise(c * 0.05, r * 0.05, t) * 3
+                grid_y_offset[r, c] += speed
+                # Change character randomly
+                if random.random() < 0.1:
+                    grid_chars[r, c] = random.choice(CHARS)
+
+    for r in range(ROWS):
+        for c in range(COLS):
+            x = c * CELL_W + CELL_W / 2
+            y = r * CELL_H + CELL_H / 2 + grid_y_offset[r, c]
+            
+            char = grid_chars[r, c]
+            
+            # Color
+            if grid_melt[r, c] > 0:
+                speed = py5.os_noise(c * 0.05, r * 0.05, t) * 3
+                if speed > 2.2:
+                    py5.fill(0, 255, 255) # Cyan glitch
+                elif speed > 1.8:
+                    py5.fill(255, 0, 255) # Magenta glitch
+                else:
+                    py5.fill(0, 255, 65, 200) # Bright green
+            else:
+                py5.fill(0, 143, 17, 150) # Dim green for static text
+                
+            py5.text(char, x, y)
 
     py5.save_frame(str(FRAMES_DIR / "frame-####.png"))
 

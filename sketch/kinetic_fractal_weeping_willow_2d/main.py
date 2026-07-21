@@ -23,8 +23,54 @@ PREVIEW_FILENAME = f"{WORK_NAME}_p1.png"
 PREVIEW_SIZE, OUTPUT_SIZE, _ = get_sizes()
 SIZE = OUTPUT_SIZE
 
-NUM_POINTS = 1200
-t_array = np.linspace(0, np.pi * 2, NUM_POINTS)
+MAX_DEPTH = 13
+
+def branch(length, depth):
+    if depth > MAX_DEPTH:
+        return
+        
+    # Calculate a unique noise value for this depth and time
+    # This creates a sweeping wind effect that travels up the tree
+    time_offset = py5.frame_count * 0.015
+    wind = py5.os_noise(depth * 0.5, time_offset) * 0.4
+    
+    # Base angle spreads branches apart
+    base_angle = 0.4 + (depth * 0.02)
+    
+    # Weeping effect: branches tend to point downwards more at higher depths
+    droop = depth * 0.05
+    
+    py5.stroke_weight(max(1.0, (MAX_DEPTH - depth) * 1.2))
+    
+    # Color: Trunk is dark, tips are bright weeping willow green/gold
+    r = py5.remap(depth, 0, MAX_DEPTH, 20, 150)
+    g = py5.remap(depth, 0, MAX_DEPTH, 30, 255)
+    b = py5.remap(depth, 0, MAX_DEPTH, 40, 100)
+    alpha = py5.remap(depth, 0, MAX_DEPTH, 255, 150)
+    
+    py5.stroke(r, g, b, alpha)
+    py5.line(0, 0, 0, -length)
+    py5.translate(0, -length)
+    
+    # Draw leaf at tip
+    if depth > MAX_DEPTH - 3:
+        py5.push_style()
+        py5.no_stroke()
+        py5.fill(180, 255, 100, 80)
+        py5.circle(0, 0, 6 + (MAX_DEPTH - depth) * 2)
+        py5.pop_style()
+    
+    # Right branch
+    py5.push_matrix()
+    py5.rotate(base_angle + wind + droop)
+    branch(length * 0.76, depth + 1)
+    py5.pop_matrix()
+    
+    # Left branch
+    py5.push_matrix()
+    py5.rotate(-base_angle + wind + droop)
+    branch(length * 0.76, depth + 1)
+    py5.pop_matrix()
 
 def setup():
     py5.size(*SIZE)
@@ -32,49 +78,18 @@ def setup():
     FRAMES_DIR.mkdir(exist_ok=True)
     
 def draw():
-    py5.background(5, 5, 10)
-    py5.translate(SIZE[0] / 2, SIZE[1] / 2)
+    py5.background(10, 15, 12)
+    
     py5.blend_mode(py5.ADD)
     
-    # Phase shifts that animate over time
-    time = py5.frame_count * 0.015
-    delta1 = time * 1.5
-    delta2 = time * 0.8
+    py5.push_matrix()
+    # Move to bottom center of screen
+    py5.translate(SIZE[0] / 2, SIZE[1])
     
-    # Complex Lissajous parameters
-    a, b = 5, 4
-    c, d = 3, 7
+    # Draw the recursive tree
+    branch(400, 0)
     
-    R = SIZE[1] * 0.45
-    
-    # Generate points
-    x = np.sin(a * t_array + delta1) * np.cos(c * t_array) * R * (SIZE[0]/SIZE[1])
-    y = np.sin(b * t_array + delta2) * np.cos(d * t_array) * R
-    
-    pts = np.column_stack((x, y))
-    
-    py5.no_fill()
-    py5.stroke_weight(1.5)
-    
-    # String art connection offsets
-    offsets = [1, 20, 50, 150, 400]
-    colors = [
-        (255, 255, 255, 150),
-        (0, 200, 255, 80),
-        (255, 50, 100, 60),
-        (100, 50, 255, 40),
-        (255, 150, 0, 30)
-    ]
-    
-    for k, color in zip(offsets, colors):
-        py5.stroke(*color)
-        py5.begin_shape(py5.LINES)
-        for i in range(NUM_POINTS):
-            p1 = pts[i]
-            p2 = pts[(i + k) % NUM_POINTS]
-            py5.vertex(p1[0], p1[1])
-            py5.vertex(p2[0], p2[1])
-        py5.end_shape()
+    py5.pop_matrix()
 
     py5.save_frame(str(FRAMES_DIR / "frame-####.png"))
 

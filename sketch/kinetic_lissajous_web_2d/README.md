@@ -1,18 +1,15 @@
 # kinetic_lissajous_web_2d
 
-![Preview](kinetic_lissajous_web_2d_p1.png)
-
-## Metadata
-- **Date**: 2026-06-28
-- **Theme**: A highly complex, glowing neon web woven by 800 interacting nodes moving along overlapping Lissajous
-- **Technique**: A massive array of 800 nodes uses purely trigonometric positional updates (`x = A sin(a*t + d)`). In each frame, a 800x800 distance squared matrix is computed using NumPy broadcasting. A dynamic threshold mask extracts all proximal node pairs, returning interlaced coordinates. These are dumped entirely into a single `py5.vertices(points)` call with `LINES` geometry type, making 4K rendering incredibly fast despite checking 640,000 potential connections per frame. Additive blending combined with low opacity trailing rectangles gives the web a luminous neon glow.
-- **Logic Lab Reference**: 
+**Date**: 2026-07-21
+**Type**: Animation (900 frames, 60fps)
 
 ## Concept
-A highly complex, glowing neon web woven by 800 interacting nodes moving along overlapping Lissajous curves. The nodes leave glowing light trails as they continuously spin and connect to one another.
+A mesmerizing geometric illusion created by wrapping thousands of delicate lines around a continuously shifting Lissajous figure. This mimics the classic "string art" craft, but brought to life as a kinetic, pseudo-3D sculpture.
 
-## Technical Details
-- **Renderer**: Unknown
-- **Simulation**: Unknown
-- **Visuals**: Unknown
-- **Animation**: Contains animation details
+## Techniques
+- **Lissajous Base**: An array of 1200 points is calculated over the domain $[0, 2\pi]$ using complex sinusoidal equations for $X$ and $Y$ (with frequency multipliers $5, 4$ and $3, 7$ respectively).
+- **Phase Shifting**: The internal phase shifts of the sine waves ($\delta_1, \delta_2$) are incremented every frame. This causes the entire point cloud to smoothly morph and fold in on itself, giving a distinct illusion of 3D rotation.
+- **String Art Topology**: Rather than connecting the points sequentially to form a solid line, points are connected across specific array offsets (e.g. $i$ to $i+1$, $i$ to $i+20$, $i$ to $i+150$). Each topological connection layer is given a different vibrant color and drawn with low opacity additive blending.
+
+## Palette
+Neon red, electric blue, violet, orange, and stark white on a black canvas.

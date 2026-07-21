@@ -2,6 +2,7 @@ from pathlib import Path
 import shutil
 import subprocess
 import sys
+import random
 import py5
 import numpy as np
 
@@ -23,58 +24,54 @@ PREVIEW_FILENAME = f"{WORK_NAME}_p1.png"
 PREVIEW_SIZE, OUTPUT_SIZE, _ = get_sizes()
 SIZE = OUTPUT_SIZE
 
-NUM_POINTS = 1200
-t_array = np.linspace(0, np.pi * 2, NUM_POINTS)
-
 def setup():
     py5.size(*SIZE)
     py5.pixel_density(1)
     FRAMES_DIR.mkdir(exist_ok=True)
+
+def draw_grid(spacing, angle, phase):
+    py5.push_matrix()
+    py5.translate(SIZE[0]/2, SIZE[1]/2)
+    py5.rotate(angle)
+    # overscan to ensure it covers the screen while rotating
+    diag = np.hypot(SIZE[0], SIZE[1])
+    py5.translate(-diag, -diag)
     
+    num_lines = int(diag * 2 / spacing)
+    for i in range(num_lines):
+        x = i * spacing + phase
+        py5.line(x, 0, x, diag * 2)
+    py5.pop_matrix()
+
 def draw():
-    py5.background(5, 5, 10)
-    py5.translate(SIZE[0] / 2, SIZE[1] / 2)
-    py5.blend_mode(py5.ADD)
-    
-    # Phase shifts that animate over time
-    time = py5.frame_count * 0.015
-    delta1 = time * 1.5
-    delta2 = time * 0.8
-    
-    # Complex Lissajous parameters
-    a, b = 5, 4
-    c, d = 3, 7
-    
-    R = SIZE[1] * 0.45
-    
-    # Generate points
-    x = np.sin(a * t_array + delta1) * np.cos(c * t_array) * R * (SIZE[0]/SIZE[1])
-    y = np.sin(b * t_array + delta2) * np.cos(d * t_array) * R
-    
-    pts = np.column_stack((x, y))
-    
+    py5.background(0)
+    py5.blend_mode(py5.DIFFERENCE)
     py5.no_fill()
-    py5.stroke_weight(1.5)
+    py5.stroke_weight(4)
     
-    # String art connection offsets
-    offsets = [1, 20, 50, 150, 400]
-    colors = [
-        (255, 255, 255, 150),
-        (0, 200, 255, 80),
-        (255, 50, 100, 60),
-        (100, 50, 255, 40),
-        (255, 150, 0, 30)
-    ]
+    t = py5.frame_count * 0.01
     
-    for k, color in zip(offsets, colors):
-        py5.stroke(*color)
-        py5.begin_shape(py5.LINES)
-        for i in range(NUM_POINTS):
-            p1 = pts[i]
-            p2 = pts[(i + k) % NUM_POINTS]
-            py5.vertex(p1[0], p1[1])
-            py5.vertex(p2[0], p2[1])
-        py5.end_shape()
+    # Layer 1: Concentric expanding circles
+    py5.stroke(0, 255, 255) # Cyan
+    spacing_circ = 40 + np.sin(t * 0.5) * 20
+    phase_circ = (py5.frame_count * 2) % spacing_circ
+    
+    diag = np.hypot(SIZE[0]/2, SIZE[1]/2)
+    num_circles = int(diag / spacing_circ) + 2
+    for i in range(num_circles):
+        r = i * spacing_circ + phase_circ
+        py5.circle(SIZE[0]/2, SIZE[1]/2, r * 2)
+        
+    # Layer 2: Rotating Magenta Grid
+    py5.stroke(255, 0, 255)
+    angle_mag = t * 0.2 + np.sin(t * 0.3) * 0.5
+    draw_grid(30, angle_mag, 0)
+    
+    # Layer 3: Rotating Yellow Grid
+    py5.stroke(255, 255, 0)
+    angle_yel = -t * 0.15 + np.cos(t * 0.4) * 0.5
+    phase_yel = np.sin(t * 1.5) * 15
+    draw_grid(35, angle_yel, phase_yel)
 
     py5.save_frame(str(FRAMES_DIR / "frame-####.png"))
 

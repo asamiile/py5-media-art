@@ -2,6 +2,7 @@ from pathlib import Path
 import shutil
 import subprocess
 import sys
+import random
 import py5
 import numpy as np
 
@@ -23,58 +24,77 @@ PREVIEW_FILENAME = f"{WORK_NAME}_p1.png"
 PREVIEW_SIZE, OUTPUT_SIZE, _ = get_sizes()
 SIZE = OUTPUT_SIZE
 
-NUM_POINTS = 1200
-t_array = np.linspace(0, np.pi * 2, NUM_POINTS)
+MAX_DEPTH = 14
 
 def setup():
     py5.size(*SIZE)
     py5.pixel_density(1)
     FRAMES_DIR.mkdir(exist_ok=True)
+    py5.background(0)
+
+def draw_branch(length, depth, branch_idx):
+    if depth == 0:
+        return
+        
+    py5.stroke_weight(max(1, depth * 0.8))
     
+    # Calculate noise-driven wind angle
+    # The higher up the tree (lower depth), the more it sways
+    wind_factor = (MAX_DEPTH - depth) * 0.08
+    
+    t = py5.frame_count * 0.02
+    # Add a global sway and localized leaf flutter
+    noise_val = py5.noise(t + branch_idx * 0.1, depth * 0.2)
+    angle_offset = (noise_val - 0.5) * wind_factor
+    
+    # Bioluminescent color mapping
+    c_ratio = depth / MAX_DEPTH
+    r = 20
+    g = 150 + c_ratio * 105
+    b_col = 100 + (1 - c_ratio) * 155
+    py5.stroke(r, g, b_col, 150)
+    
+    # Draw current branch
+    py5.line(0, 0, 0, -length)
+    py5.translate(0, -length)
+    
+    # Two recursive branches
+    py5.push_matrix()
+    py5.rotate(0.5 + angle_offset)
+    draw_branch(length * 0.77, depth - 1, branch_idx * 2)
+    py5.pop_matrix()
+    
+    py5.push_matrix()
+    py5.rotate(-0.5 + angle_offset * 1.3)
+    draw_branch(length * 0.77, depth - 1, branch_idx * 2 + 1)
+    py5.pop_matrix()
+
 def draw():
-    py5.background(5, 5, 10)
-    py5.translate(SIZE[0] / 2, SIZE[1] / 2)
+    # Very slight clear for glowing trails
+    py5.blend_mode(py5.BLEND)
+    py5.no_stroke()
+    py5.fill(0, 0, 0, 20)
+    py5.rect(0, 0, SIZE[0], SIZE[1])
+    
     py5.blend_mode(py5.ADD)
     
-    # Phase shifts that animate over time
-    time = py5.frame_count * 0.015
-    delta1 = time * 1.5
-    delta2 = time * 0.8
-    
-    # Complex Lissajous parameters
-    a, b = 5, 4
-    c, d = 3, 7
-    
-    R = SIZE[1] * 0.45
-    
-    # Generate points
-    x = np.sin(a * t_array + delta1) * np.cos(c * t_array) * R * (SIZE[0]/SIZE[1])
-    y = np.sin(b * t_array + delta2) * np.cos(d * t_array) * R
-    
-    pts = np.column_stack((x, y))
-    
-    py5.no_fill()
-    py5.stroke_weight(1.5)
-    
-    # String art connection offsets
-    offsets = [1, 20, 50, 150, 400]
-    colors = [
-        (255, 255, 255, 150),
-        (0, 200, 255, 80),
-        (255, 50, 100, 60),
-        (100, 50, 255, 40),
-        (255, 150, 0, 30)
+    # Draw three main trees
+    tree_positions = [
+        (SIZE[0] * 0.2, SIZE[1] * 0.9, SIZE[1] * 0.15),
+        (SIZE[0] * 0.5, SIZE[1] * 0.95, SIZE[1] * 0.2),
+        (SIZE[0] * 0.8, SIZE[1] * 0.9, SIZE[1] * 0.15)
     ]
     
-    for k, color in zip(offsets, colors):
-        py5.stroke(*color)
-        py5.begin_shape(py5.LINES)
-        for i in range(NUM_POINTS):
-            p1 = pts[i]
-            p2 = pts[(i + k) % NUM_POINTS]
-            py5.vertex(p1[0], p1[1])
-            py5.vertex(p2[0], p2[1])
-        py5.end_shape()
+    for idx, (tx, ty, tlen) in enumerate(tree_positions):
+        py5.push_matrix()
+        py5.translate(tx, ty)
+        
+        # slight global rotation per tree
+        global_sway = (py5.noise(py5.frame_count * 0.01 + idx * 100) - 0.5) * 0.2
+        py5.rotate(global_sway)
+        
+        draw_branch(tlen, MAX_DEPTH, idx)
+        py5.pop_matrix()
 
     py5.save_frame(str(FRAMES_DIR / "frame-####.png"))
 

@@ -1,3 +1,178 @@
+## kinetic_cellular_automata_game_of_life_2d
+- **Date**: 2026-07-21
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A cinematic, cybernetic reimagining of Conway's Game of Life.
+- **Techniques**: Uses a cellular automata algorithm rendered with double-buffered smooth interpolation, giving the grid a glowing, breathing, neural-network-like appearance.
+- **Palette**: Deep navy blue void with cells fading between cyan, magenta, and bright white based on noise and time.
+
+## kinetic_wireframe_terrain_2d
+- **Date**: 2026-07-21
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A retro-futuristic, undulating wireframe landscape that shifts and morphs, simulating a flight over a digital mountain range.
+- **Techniques**: Generates a 3D grid where the Z-axis (height) is determined by a moving 2D OpenSimplex noise field to simulate forward flight. The 3D coordinates are manually projected into 2D orthographic space. 
+- **Palette**: A vibrant Synthwave/Outrun aesthetic featuring neon pink and cyan wireframes on a deep purple canvas, complete with a layered, glowing digital sun on the horizon.
+
+## kinetic_quadtree_subdivision_2d
+- **Date**: 2026-07-21
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A continuously evolving QuadTree that subdivides and merges based on an underlying 3D noise field, heavily inspired by Bauhaus and De Stijl aesthetics.
+- **Techniques**: A recursive spatial subdivision algorithm splits the canvas into smaller rectangles based on local OpenSimplex noise values. The entire grid slowly pans diagonally while cells dynamically shatter into smaller blocks and reform. Inner paddings and procedurally generated geometric motifs (circles, bars) add complexity to the cells.
+- **Palette**: A high-contrast Mondrian/Bauhaus palette of pure white, deep black, crimson red, blue, and yellow.
+
+## kinetic_hex_grid_breathing_2d
+- **Date**: 2026-07-21
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A precise, interlocking grid of glowing hexagons that scales and rotates dynamically, breathing like a living machine.
+- **Techniques**: A tight hexagonal grid is rendered with thousands of nested hexagons. Each hexagon's rotation, scale, and base color is driven by a slowly shifting 3D OpenSimplex noise field. The nested outlines rotate in opposing directions at different speeds to create intricate internal mechanisms.
+- **Palette**: Cyberpunk neon cyan, magenta, and yellow on a dark background.
+
+## kinetic_kaleidoscopic_mandala_2d
+- **Date**: 2026-07-21
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A continuously unfolding, hypnotic geometric mandala with deep kaleidoscopic symmetry.
+- **Techniques**: 150 autonomous agents wander the canvas driven by OpenSimplex noise. Each agent's position is converted to polar coordinates and mirrored 24 times (12-fold rotational symmetry + mirror symmetry). A low-opacity background clear leaves intricate, glowing swept trails that resemble a living, breathing mandala.
+- **Palette**: Rich gold, amber, and deep violet on a pitch-black background.
+
+## kinetic_lissajous_web_2d
+- **Date**: 2026-07-21
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A mesmerizing, shifting web formed by hundreds of interconnected Lissajous curves.
+- **Techniques**: 1200 points are calculated along a complex 2D Lissajous equation. Rather than just drawing the curve, geometric "string art" webs are drawn by connecting points across specific offset intervals in the array (e.g. connecting point $i$ to $i+50$). As the phase of the equations shift, the entire web rotates and morphs in pseudo-3D.
+- **Palette**: Neon red, electric blue, violet, and stark white on a black canvas.
+
+## kinetic_fractal_weeping_willow_2d
+- **Date**: 2026-07-21
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A deeply recursive fractal tree (over 16,000 branches) that resembles a glowing weeping willow, swaying organically in an invisible wind.
+- **Techniques**: A standard recursive branching algorithm is used, driven to a depth of 14. The angle of each branch is modulated by OpenSimplex noise parameterized by branch depth and time, creating a sweeping wind effect. Additive blending makes the dense canopy glow.
+- **Palette**: Ethereal green, gold, and white on a dark forest-green background.
+
+## kinetic_curl_noise_flow_field_2d
+- **Date**: 2026-07-21
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: An ethereal river of glowing particles sweeping across the canvas, driven by a dense, animated curl noise field.
+- **Techniques**: 15,000 particles are animated via a divergence-free velocity field (pseudo-curl noise) derived from the gradient of a 3D OpenSimplex noise space. A semi-transparent background clearing creates beautiful fluid-like motion trails.
+- **Palette**: Neon cyan, teal, and magenta against an inky deep blue background.
+
+## kinetic_lorenz_attractor_ribbon_2d
+- **Date**: 2026-07-21
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A continuously evolving, glowing ribbon tracing the chaotic path of a Lorenz strange attractor in 3D space.
+- **Techniques**: A long array of points is precomputed using Euler integration of the Lorenz equations. At runtime, a trailing window of these points is manually projected from 3D to 2D using NumPy rotation matrices and rendered as a line strip with an additive color gradient.
+- **Palette**: Fiery orange and gold fading into deep dark purple.
+
+## kinetic_voronoi_stippling_flow_2d
+- **Date**: 2026-07-21
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A fluid-like mosaic of shifting Voronoi cells sliding past each other, resembling an underwater cellular structure.
+- **Techniques**: 1200 points are driven by a trigonometric interference field. On every frame, a bounded Voronoi diagram is computed via point-reflection and drawn as polygonal cells. Cells are colored based on their area (shoelace formula).
+- **Palette**: Deep oceanic blues and glowing cyans/teals.
+
+## kinetic_reaction_diffusion_coral_2d
+- **Date**: 2026-07-21
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A glowing, organic cellular simulation that grows and divides into intricate brain-coral and maze-like patterns.
+- **Techniques**: Simulates the continuous Gray-Scott reaction-diffusion equations across a 2D grid using fast, vectorized NumPy array slicing to compute the Laplacian. Parameters dynamically shift based on spatial coordinates and time, creating morphing organic behaviors.
+- **Palette**: Acidic, glowing neon yellow-green structures contrasted against a deep, dark violet background.
+
+## kinetic_spirograph_mandala_bloom_2d
+- **Date**: 2026-07-21
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A hyper-dense, glowing mandala constructed from 12 layers of morphing spirograph (hypotrochoid) curves that bloom like a neon lotus.
+- **Techniques**: Uses vectorized trigonometric hypotrochoid equations across 8000 vertices per layer. The gear ratios and radii oscillate continuously using sine waves, causing the rigid mathematical structure to undulate, fold, and bloom organically.
+- **Palette**: Extremely bright, additive neon pinks, magentas, and electric blues fading into a deep, dark center.
+
+## kinetic_chladni_cymatics_resonance_2d
+- **Date**: 2026-07-21
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A simulation of acoustic levitation and cymatics. 100,000 tiny particles of "sand" dance and settle into the complex, shifting nodal geometries of a vibrating Chladni plate.
+- **Techniques**: The particles are driven by the analytical gradient of a 2D Chladni function $C(x,y)$. As the resonant frequencies modulate over time, the particles re-organize into new interference patterns. Brownian motion keeps the particles fluid while additive blending gives them a luminous glow.
+- **Palette**: Deep velvet-black plate with glowing metallic gold and bronze sand particles.
+
+## kinetic_fluid_vector_field_flow_2d
+- **Date**: 2026-07-21
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A glowing, fluid simulation of 15,000 particles sweeping through a massively turbulent, mathematically generated vector field.
+- **Techniques**: A highly optimized trigonometric vector field is evaluated across thousands of particles per frame using NumPy. The particles leave faint trails via a semi-transparent background clear, creating the appearance of undulating, silken ribbons or glowing oceanic currents.
+- **Palette**: Deep oceanic blues and teals that transition to intense, white-hot highlights where particles gather densely.
+
+## kinetic_kaleidoscope_fractal_tunnel_2d
+- **Date**: 2026-07-21
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: An endless, psychedelic zoom into a deeply nested, rotating fractal kaleidoscope tunnel.
+- **Techniques**: 120 layers of geometric star-polygons are drawn with exponential scaling to simulate an infinite 3D perspective zoom. The layers rotate continuously, and the radius of their vertices oscillates to create sharp, fractal-like folds.
+- **Palette**: A high-contrast synthwave palette featuring electric cyan, neon magenta, and deep purple against absolute black.
+
+## kinetic_lissajous_web_weaver_2d
+- **Date**: 2026-07-21
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: Elegant, sweeping golden ribbons of light tracing intricate 3D Lissajous knots that rotate gracefully in a dark void.
+- **Techniques**: A complex 3D Lissajous curve is parameterized and projected onto the 2D plane using custom numpy rotation matrices. Depth mapping dynamically alters the color and opacity, giving the ribbons an atmospheric, volumetric feel.
+- **Palette**: Deep crimsons and glowing, bright golds set against absolute black.
+
+## kinetic_recursive_fractal_tree_wind_2d
+- **Date**: 2026-07-21
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A glowing forest of recursive, bioluminescent fractal trees that sway gently as if blown by a continuous, mathematical wind.
+- **Techniques**: Deep recursion (depth 14) generates dense, fractal canopies. The rotation angle of every branch is modulated continuously using 2D Perlin noise tied to both time and recursion depth to create fluid, organic motion. Additive blending layers thin strokes into intense light at the leaves.
+- **Palette**: Bioluminescent cyan and white cores with deeper aqua-blue outer leaves against a black void.
+
+## kinetic_moire_interference_warp_2d
+- **Date**: 2026-07-21
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A hypnotic optical illusion created by the interference of dense, rotating grid layers and expanding concentric circles.
+- **Techniques**: Three overlapping high-frequency layers (cyan circles, magenta grid, yellow grid) drawn with DIFFERENCE blend mode. The subtle phase shifts and rotations produce emergent Moiré patterns.
+- **Palette**: Pure CMY (Cyan, Magenta, Yellow) on black, which intersect to form striking subtractive patterns and optical illusions.
+
+## kinetic_particle_attractor_strange_2d
+- **Date**: 2026-07-21
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: Millions of particles mapping out a mathematical strange attractor that slowly morphs over time, resembling a dense, glowing ribbon in a void.
+- **Techniques**: A vectorized Clifford Attractor algorithm applied to 1,000,000 particles using NumPy. Parameters gently drift via Perlin noise. Additive blending creates intense, structured luminosity.
+- **Palette**: White-hot cores fading into soft golds, ambers, and purples at the fringes, set against a deep black void.
+
+## kinetic_metaball_plasma_merger_2d
+- **Date**: 2026-07-21
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: Fluid, glowing plasma globs merging and splitting in a zero-gravity environment.
+- **Techniques**: Custom soft radial gradient brushes drawn with additive blending. Particles move with curl noise and pull towards the center, merging into bright hot spots when they overlap.
+- **Palette**: Neon greens and bright yellows on a dark background, blending into pure white at high density.
+
+## kinetic_recursive_mandala_bloom_2d
+- **Date**: 2026-07-21
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: An intricate, slowly blooming recursive mandala of glowing geometric shapes unfolding from the center.
+- **Techniques**: Recursive drawing of overlapping semi-transparent polygons that rotate and expand outward, modulating their geometry and colors based on time using Perlin noise.
+- **Palette**: Deep teals and cyans blending into bright neon greens, purples and whites, with additive blending for a high-contrast crystalline glow.
+
+## kinetic_lissajous_web_interference_2d
+- **Date**: 2026-07-21
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: Complex geometric webs created by interfering Lissajous curves that slowly phase shift over time.
+- **Techniques**: 150 layered Lissajous curves with additive blending, leaving faint trails that build up into a beautiful moiré interference pattern.
+- **Palette**: Monochromatic gold/amber on a dark charcoal background.
+
+## kinetic_fractal_noise_flowfield_2d
+- **Date**: 2026-07-21
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: Thousands of tiny particles swept away by an unseen chaotic magnetic field.
+- **Techniques**: Curl noise flow field driving 25,000 small particles, generating overlapping long trails via a slow-fading alpha background.
+- **Palette**: High contrast electric pink and purple trails on a deep dark background.
+
+## kinetic_gravitational_spring_mesh_2d
+- **Date**: 2026-07-21
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A fragile geometric structure being slowly pulled apart by invisible gravitational forces. Delicate white/cyan lines form a mesh that stretches and warps near orbiting attractors.
+- **Techniques**: Spring-mass physics system mapped to a 2D mesh, perturbed by orbiting "black hole" attractors that rip the connections when stretched too far.
+- **Palette**: Deep navy background with glowing cyan and magenta lines stretching to their breaking point.
+
+## kinetic_ascii_fluid_terminal_glitch_2d
+- **Date**: 2026-07-21
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A forgotten retro terminal system where the text itself begins to melt and flow like a liquid, eventually glitching into chaos.
+- **Techniques**: Grid-based ASCII rendering with a global melt threshold driven by 2D Perlin noise. Cells below the threshold are advected downwards and their characters are sampled from noise, colored dynamically based on "velocity" (noise derivative approximation).
+- **Palette**: Dark/Moody Retro-terminal. Phosphor green, dim green, and CRT bright cyan/magenta glitches on a dark background.
+
 ## kinetic_cellular_automata_reaction_diffusion_turing_3d
 - **Date**: 2026-07-20
 - **Type**: Animation (900 frames, 60fps)

@@ -2,6 +2,7 @@ from pathlib import Path
 import shutil
 import subprocess
 import sys
+import random
 import py5
 import numpy as np
 
@@ -23,58 +24,71 @@ PREVIEW_FILENAME = f"{WORK_NAME}_p1.png"
 PREVIEW_SIZE, OUTPUT_SIZE, _ = get_sizes()
 SIZE = OUTPUT_SIZE
 
-NUM_POINTS = 1200
-t_array = np.linspace(0, np.pi * 2, NUM_POINTS)
+# Parameters for Lissajous curves
+NUM_CURVES = 150
+curves = []
+for i in range(NUM_CURVES):
+    freq_x = random.uniform(2, 6)
+    freq_y = random.uniform(2, 6)
+    phase_x = random.uniform(0, np.pi * 2)
+    phase_y = random.uniform(0, np.pi * 2)
+    amp_x = random.uniform(300, 1500)
+    amp_y = random.uniform(300, 900)
+    curves.append({
+        'fx': freq_x, 'fy': freq_y,
+        'px': phase_x, 'py': phase_y,
+        'ax': amp_x, 'ay': amp_y
+    })
 
 def setup():
     py5.size(*SIZE)
     py5.pixel_density(1)
     FRAMES_DIR.mkdir(exist_ok=True)
     
-def draw():
-    py5.background(5, 5, 10)
-    py5.translate(SIZE[0] / 2, SIZE[1] / 2)
+    py5.background(20, 20, 22)
+    py5.color_mode(py5.RGB, 255)
     py5.blend_mode(py5.ADD)
+
+def draw():
+    # Very slight fade for long trails
+    py5.blend_mode(py5.BLEND)
+    py5.no_stroke()
+    py5.fill(0, 0, 0, 2)
+    py5.rect(0, 0, SIZE[0], SIZE[1])
     
-    # Phase shifts that animate over time
-    time = py5.frame_count * 0.015
-    delta1 = time * 1.5
-    delta2 = time * 0.8
+    py5.blend_mode(py5.ADD)
+    t = py5.frame_count * 0.02
     
-    # Complex Lissajous parameters
-    a, b = 5, 4
-    c, d = 3, 7
+    cx, cy = SIZE[0] / 2, SIZE[1] / 2
     
-    R = SIZE[1] * 0.45
+    py5.stroke_weight(2)
     
-    # Generate points
-    x = np.sin(a * t_array + delta1) * np.cos(c * t_array) * R * (SIZE[0]/SIZE[1])
-    y = np.sin(b * t_array + delta2) * np.cos(d * t_array) * R
-    
-    pts = np.column_stack((x, y))
-    
-    py5.no_fill()
-    py5.stroke_weight(1.5)
-    
-    # String art connection offsets
-    offsets = [1, 20, 50, 150, 400]
-    colors = [
-        (255, 255, 255, 150),
-        (0, 200, 255, 80),
-        (255, 50, 100, 60),
-        (100, 50, 255, 40),
-        (255, 150, 0, 30)
-    ]
-    
-    for k, color in zip(offsets, colors):
-        py5.stroke(*color)
-        py5.begin_shape(py5.LINES)
-        for i in range(NUM_POINTS):
-            p1 = pts[i]
-            p2 = pts[(i + k) % NUM_POINTS]
-            py5.vertex(p1[0], p1[1])
-            py5.vertex(p2[0], p2[1])
-        py5.end_shape()
+    for i in range(NUM_CURVES):
+        c = curves[i]
+        
+        # Calculate current position
+        x1 = cx + np.sin(c['fx'] * t + c['px']) * c['ax']
+        y1 = cy + np.sin(c['fy'] * t + c['py']) * c['ay']
+        
+        # Calculate next position for drawing a line segment
+        t2 = t + 0.05
+        x2 = cx + np.sin(c['fx'] * t2 + c['px']) * c['ax']
+        y2 = cy + np.sin(c['fy'] * t2 + c['py']) * c['ay']
+        
+        # Gold/Amber color, varied slightly per curve
+        r = 255
+        g = 180 + np.cos(i) * 70
+        b = 50 + np.sin(i*2) * 50
+        
+        # Alpha modulated by time
+        alpha = 80 + np.sin(t * 2 + i) * 60
+        
+        py5.stroke(r, g, b, min(255, max(0, alpha)))
+        py5.line(x1, y1, x2, y2)
+        
+        # Rotate phases slowly
+        c['px'] += 0.005
+        c['py'] += 0.007
 
     py5.save_frame(str(FRAMES_DIR / "frame-####.png"))
 

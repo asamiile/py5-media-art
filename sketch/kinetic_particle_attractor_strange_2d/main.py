@@ -2,6 +2,7 @@ from pathlib import Path
 import shutil
 import subprocess
 import sys
+import random
 import py5
 import numpy as np
 
@@ -23,58 +24,55 @@ PREVIEW_FILENAME = f"{WORK_NAME}_p1.png"
 PREVIEW_SIZE, OUTPUT_SIZE, _ = get_sizes()
 SIZE = OUTPUT_SIZE
 
-NUM_POINTS = 1200
-t_array = np.linspace(0, np.pi * 2, NUM_POINTS)
+NUM_PARTICLES = 1_000_000
+pts_x = np.random.uniform(-2, 2, NUM_PARTICLES).astype(np.float32)
+pts_y = np.random.uniform(-2, 2, NUM_PARTICLES).astype(np.float32)
 
 def setup():
     py5.size(*SIZE)
     py5.pixel_density(1)
     FRAMES_DIR.mkdir(exist_ok=True)
-    
+    py5.background(5, 0, 5)
+
 def draw():
-    py5.background(5, 5, 10)
-    py5.translate(SIZE[0] / 2, SIZE[1] / 2)
+    global pts_x, pts_y
+    
+    # Very slight clear for long trailing
+    py5.blend_mode(py5.BLEND)
+    py5.no_stroke()
+    py5.fill(5, 0, 5, 5) # Reduced fade for longer trails
+    py5.rect(0, 0, SIZE[0], SIZE[1])
+    
+    t = py5.frame_count * 0.005
+    
+    # Clifford Attractor parameters drifting over time
+    a = -1.4 + py5.noise(t, 0) * 2.8
+    b = 1.6 + py5.noise(t, 10) * 1.0
+    c = 1.0 + py5.noise(t, 20) * 1.5
+    d = 0.7 + py5.noise(t, 30) * 1.5
+    
+    # Vectorized step
+    x_new = np.sin(a * pts_y) + c * np.cos(a * pts_x)
+    y_new = np.sin(b * pts_x) + d * np.cos(b * pts_y)
+    
+    pts_x[:] = x_new
+    pts_y[:] = y_new
+    
+    # Map to screen coordinates
+    scale = SIZE[1] / 5.5
+    screen_x = SIZE[0]/2 + pts_x * scale
+    screen_y = SIZE[1]/2 + pts_y * scale
+    
     py5.blend_mode(py5.ADD)
+    py5.stroke_weight(4) # Very thick
     
-    # Phase shifts that animate over time
-    time = py5.frame_count * 0.015
-    delta1 = time * 1.5
-    delta2 = time * 0.8
+    # Solid bright colors
+    r = 255
+    g = 180 + np.cos(t*4)*75
+    b_col = 150 + np.sin(t*2)*100
     
-    # Complex Lissajous parameters
-    a, b = 5, 4
-    c, d = 3, 7
-    
-    R = SIZE[1] * 0.45
-    
-    # Generate points
-    x = np.sin(a * t_array + delta1) * np.cos(c * t_array) * R * (SIZE[0]/SIZE[1])
-    y = np.sin(b * t_array + delta2) * np.cos(d * t_array) * R
-    
-    pts = np.column_stack((x, y))
-    
-    py5.no_fill()
-    py5.stroke_weight(1.5)
-    
-    # String art connection offsets
-    offsets = [1, 20, 50, 150, 400]
-    colors = [
-        (255, 255, 255, 150),
-        (0, 200, 255, 80),
-        (255, 50, 100, 60),
-        (100, 50, 255, 40),
-        (255, 150, 0, 30)
-    ]
-    
-    for k, color in zip(offsets, colors):
-        py5.stroke(*color)
-        py5.begin_shape(py5.LINES)
-        for i in range(NUM_POINTS):
-            p1 = pts[i]
-            p2 = pts[(i + k) % NUM_POINTS]
-            py5.vertex(p1[0], p1[1])
-            py5.vertex(p2[0], p2[1])
-        py5.end_shape()
+    py5.stroke(r, g, b_col, 150) # High alpha
+    py5.points(np.column_stack((screen_x, screen_y)))
 
     py5.save_frame(str(FRAMES_DIR / "frame-####.png"))
 

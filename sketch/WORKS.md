@@ -1,3 +1,10 @@
+## kinetic_kaleidoscopic_mandala_2d
+- **Date**: 2026-07-21
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A continuously unfolding, hypnotic geometric mandala with deep kaleidoscopic symmetry.
+- **Techniques**: 150 autonomous agents wander the canvas driven by OpenSimplex noise. Each agent's position is converted to polar coordinates and mirrored 24 times (12-fold rotational symmetry + mirror symmetry). A low-opacity background clear leaves intricate, glowing swept trails that resemble a living, breathing mandala.
+- **Palette**: Rich gold, amber, and deep violet on a pitch-black background.
+
 ## kinetic_lissajous_web_2d
 - **Date**: 2026-07-21
 - **Type**: Animation (900 frames, 60fps)

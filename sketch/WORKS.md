@@ -1,3 +1,10 @@
+## kinetic_moire_interference_warp_2d
+- **Date**: 2026-07-21
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A hypnotic optical illusion created by the interference of dense, rotating grid layers and expanding concentric circles.
+- **Techniques**: Three overlapping high-frequency layers (cyan circles, magenta grid, yellow grid) drawn with DIFFERENCE blend mode. The subtle phase shifts and rotations produce emergent Moiré patterns.
+- **Palette**: Pure CMY (Cyan, Magenta, Yellow) on black, which intersect to form striking subtractive patterns and optical illusions.
+
 ## kinetic_particle_attractor_strange_2d
 - **Date**: 2026-07-21
 - **Type**: Animation (900 frames, 60fps)

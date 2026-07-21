@@ -1,3 +1,10 @@
+## kinetic_fluid_vector_field_flow_2d
+- **Date**: 2026-07-21
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A glowing, fluid simulation of 15,000 particles sweeping through a massively turbulent, mathematically generated vector field.
+- **Techniques**: A highly optimized trigonometric vector field is evaluated across thousands of particles per frame using NumPy. The particles leave faint trails via a semi-transparent background clear, creating the appearance of undulating, silken ribbons or glowing oceanic currents.
+- **Palette**: Deep oceanic blues and teals that transition to intense, white-hot highlights where particles gather densely.
+
 ## kinetic_kaleidoscope_fractal_tunnel_2d
 - **Date**: 2026-07-21
 - **Type**: Animation (900 frames, 60fps)

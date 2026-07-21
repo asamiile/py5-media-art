@@ -4,6 +4,384 @@
 Agents MUST NOT write anything in the `Comment` field. When registering a new work, Agents must leave the `Rating` and `Comment` fields empty or with their default labels as placeholders for the user.
 The Artist reads this file before starting a new sketch to understand preferences.
 
+## kinetic_cellular_automata_reaction_diffusion_turing_3d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_cellular_automata_reaction_diffusion_turing
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_cellular_automata_belousov_zhabotinsky_3d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_cellular_automata_belousov_zhabotinsky
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_cellular_automata_lenia_flow_field
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_cellular_automata_lenia_3d_slice
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_cellular_automata_reaction_diffusion_1d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_cellular_automata_boids_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_cellular_automata_smoothlife_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_cellular_automata_hodgepodge_machine_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_cellular_automata_brians_brain_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_cellular_automata_physarum_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_cellular_automata_lenia_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_cellular_automata_reaction_diffusion_turing_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_cellular_automata_belousov_zhabotinsky_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_diffusion_limited_aggregation_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_space_colonization_trees_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_metaballs_marching_squares_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_kuramoto_sivashinsky_flame_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_navier_stokes_fluid_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_turing_reaction_diffusion_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_chladni_figures_sand_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_double_pendulum_fractal_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_cellular_automata_brians_brain_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_strange_attractor_lorenz_3d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_space_colonization_trees_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_non_intersecting_random_walk_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_optical_flow_particles_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_cellular_slime_mold_physarum_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_lissajous_knot_orbitals_3d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_chladni_plate_resonance_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_diffusion_limited_aggregation_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_tesseract_wireframe_projection_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_cellular_automaton_drip_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_glitch_grid_subdivision_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_topological_ribbon_flow_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_optical_illusion_interference_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_fluid_vector_field_particles_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_fractal_spirograph_mandala_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_neon_city_grid_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_glitch_sorting_waves_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_morphing_voronoi_cells_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_strange_attractor_particle_swarm_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_neon_wireframe_cube_rotation_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_chladni_resonance_patterns_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_generative_synthwave_grid_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_lissajous_web_network_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_spirograph_mandala_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_moire_interference_pattern_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_topographic_contour_map_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_glitch_chromatic_aberration_wave_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_generative_botany_l_system_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_fluid_dynamics_particles_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_geometric_bauhaus_composition_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_topological_sort_graph_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_cyber_grid_parallax_3d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_fractal_mandelbrot_deep_zoom_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_cellular_automata_growth_decay_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_glitch_typography_data_cascade_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_fluid_dynamics_vortex_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_math_lissajous_knot_3d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_non_euclidean_hyperbolic_tessellation_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_holographic_data_sphere_3d
+
+- **Rating**: 
+- **Comment**: 
+
+
 ## kinetic_chromatic_wave_interference_mesh_2d
 
 - **Rating**: 

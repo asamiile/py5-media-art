@@ -3,78 +3,88 @@ import shutil
 import subprocess
 import sys
 import random
-import numpy as np
 import py5
+import numpy as np
+import math
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.append(str(PROJECT_ROOT))
 
 from lib.paths import sketch_dir
-from lib.preview import preview_filename
 from lib.sizes import get_sizes
 
 SKETCH_DIR = sketch_dir(__file__)
 WORK_NAME = SKETCH_DIR.name
 FRAMES_DIR = SKETCH_DIR / "frames"
-DURATION_SEC = 20
+DURATION_SEC = random.randint(15, 20)
 FPS = 60
 TOTAL_FRAMES = DURATION_SEC * FPS
 PREVIEW_FILENAME = f"{WORK_NAME}_p1.png"
 PREVIEW_SIZE, OUTPUT_SIZE, _ = get_sizes()
 SIZE = OUTPUT_SIZE
 
-NUM_PARTICLES = 300000
-particles = np.random.uniform(-3.0, 3.0, (NUM_PARTICLES, 2)).astype(np.float32)
+# Clifford Attractor Parameters
+# x_{n+1} = sin(a * y_n) + c * cos(a * x_n)
+# y_{n+1} = sin(b * x_n) + d * cos(b * y_n)
 
-a_target, b_target, c_target, d_target = 1.4, -2.3, 2.4, -2.1
-a, b, c, d = a_target, b_target, c_target, d_target
+NUM_PARTICLES = 60000
 
 def setup():
     py5.size(*SIZE)
     py5.pixel_density(1)
     FRAMES_DIR.mkdir(exist_ok=True)
+    py5.color_mode(py5.HSB, 360, 100, 100, 100)
+    
+    global x, y
+    # Initialize particle positions randomly between -2 and 2
+    x = np.random.uniform(-2, 2, NUM_PARTICLES)
+    y = np.random.uniform(-2, 2, NUM_PARTICLES)
+    
+    py5.background(0)
     
 def draw():
-    global particles, a, b, c, d, a_target, b_target, c_target, d_target
+    global x, y
     
+    # Fade background slightly
     py5.blend_mode(py5.BLEND)
     py5.no_stroke()
-    py5.fill(0, 0, 0, 20)
-    py5.rect(0, 0, SIZE[0], SIZE[1])
+    py5.fill(0, 0, 0, 5) # Slow fade
+    py5.rect(0, 0, py5.width, py5.height)
     
-    t = py5.frame_count * 0.01
+    t = py5.frame_count / TOTAL_FRAMES
     
-    if py5.frame_count % 300 == 0:
-        a_target = random.uniform(-3.0, 3.0)
-        b_target = random.uniform(-3.0, 3.0)
-        c_target = random.uniform(-3.0, 3.0)
-        d_target = random.uniform(-3.0, 3.0)
-        
-    a += (a_target - a) * 0.005
-    b += (b_target - b) * 0.005
-    c += (c_target - c) * 0.005
-    d += (d_target - d) * 0.005
+    # Modulate parameters of the Clifford attractor over time
+    a = -1.4 + math.sin(t * py5.TWO_PI) * 0.2
+    b = 1.6 + math.cos(t * py5.TWO_PI * 2) * 0.1
+    c = 1.0 + math.sin(t * py5.TWO_PI * 1.5) * 0.2
+    d = 0.7 + math.cos(t * py5.TWO_PI * 0.5) * 0.15
     
-    x = particles[:, 0]
-    y = particles[:, 1]
-    
-    nx = np.sin(a * y) - np.cos(b * x)
-    ny = np.sin(c * x) - np.cos(d * y)
-    
-    particles[:, 0] = nx
-    particles[:, 1] = ny
-    
-    screen_x = (nx + 2.5) * (SIZE[0] / 5.0)
-    screen_y = (ny + 2.5) * (SIZE[1] / 5.0)
-    
-    screen_coords = np.column_stack((screen_x, screen_y))
-    
+    # Advance the particles by taking multiple steps per frame to trace the lines
     py5.blend_mode(py5.ADD)
-    py5.stroke_weight(1)
-    py5.stroke(100, 200, 255, 30)
+    py5.stroke(190, 80, 100, 20) # Cyan-blue, low opacity
+    py5.stroke_weight(2)
     
-    py5.points(screen_coords)
+    steps_per_frame = 2
+    
+    scale_factor = min(py5.width, py5.height) * 0.2
+    
+    for _ in range(steps_per_frame):
+        # Calculate next positions using numpy vectorized operations
+        nx = np.sin(a * y) + c * np.cos(a * x)
+        ny = np.sin(b * x) + d * np.cos(b * y)
+        
+        # Smoothly interpolate to the next position instead of jumping instantly
+        x = x + (nx - x) * 0.05
+        y = y + (ny - y) * 0.05
+        
+        # Map to screen coordinates
+        screen_x = py5.width / 2 + x * scale_factor
+        screen_y = py5.height / 2 + y * scale_factor
+        
+        points = np.column_stack((screen_x, screen_y))
+        
+        py5.points(points)
 
     py5.save_frame(str(FRAMES_DIR / "frame-####.png"))
 
@@ -90,7 +100,6 @@ def draw():
 
     if py5.frame_count >= TOTAL_FRAMES:
         py5.exit_sketch()
-        
         print(f"[Render FFmpeg] Compiling {TOTAL_FRAMES} frames into video...")
         subprocess.run([
             "ffmpeg", "-y", "-r", str(FPS),
@@ -98,14 +107,10 @@ def draw():
             "-vcodec", "libx264", "-pix_fmt", "yuv420p",
             str(SKETCH_DIR / f"{WORK_NAME}.mp4"),
         ], check=True)
-        
         mid = str(FRAMES_DIR / f"frame-{TOTAL_FRAMES // 2:04d}.png")
         subprocess.run(["cp", mid, str(SKETCH_DIR / PREVIEW_FILENAME)], check=True)
-        
         if FRAMES_DIR.exists():
             shutil.rmtree(FRAMES_DIR)
-            print("[Render Cleanup] Temporary frames directory successfully removed.")
-            
         import os
         os._exit(0)
 

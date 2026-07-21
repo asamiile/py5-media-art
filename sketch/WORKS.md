@@ -1,3 +1,10 @@
+## kinetic_lorenz_attractor_ribbon_2d
+- **Date**: 2026-07-21
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A continuously evolving, glowing ribbon tracing the chaotic path of a Lorenz strange attractor in 3D space.
+- **Techniques**: A long array of points is precomputed using Euler integration of the Lorenz equations. At runtime, a trailing window of these points is manually projected from 3D to 2D using NumPy rotation matrices and rendered as a line strip with an additive color gradient.
+- **Palette**: Fiery orange and gold fading into deep dark purple.
+
 ## kinetic_voronoi_stippling_flow_2d
 - **Date**: 2026-07-21
 - **Type**: Animation (900 frames, 60fps)

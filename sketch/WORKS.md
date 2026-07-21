@@ -1,3 +1,10 @@
+## kinetic_lissajous_web_interference_2d
+- **Date**: 2026-07-21
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: Complex geometric webs created by interfering Lissajous curves that slowly phase shift over time.
+- **Techniques**: 150 layered Lissajous curves with additive blending, leaving faint trails that build up into a beautiful moiré interference pattern.
+- **Palette**: Monochromatic gold/amber on a dark charcoal background.
+
 ## kinetic_fractal_noise_flowfield_2d
 - **Date**: 2026-07-21
 - **Type**: Animation (900 frames, 60fps)

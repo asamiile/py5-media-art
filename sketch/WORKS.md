@@ -1,3 +1,10 @@
+## kinetic_kaleidoscope_fractal_tunnel_2d
+- **Date**: 2026-07-21
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: An endless, psychedelic zoom into a deeply nested, rotating fractal kaleidoscope tunnel.
+- **Techniques**: 120 layers of geometric star-polygons are drawn with exponential scaling to simulate an infinite 3D perspective zoom. The layers rotate continuously, and the radius of their vertices oscillates to create sharp, fractal-like folds.
+- **Palette**: A high-contrast synthwave palette featuring electric cyan, neon magenta, and deep purple against absolute black.
+
 ## kinetic_lissajous_web_weaver_2d
 - **Date**: 2026-07-21
 - **Type**: Animation (900 frames, 60fps)

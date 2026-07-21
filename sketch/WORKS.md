@@ -1,3 +1,10 @@
+## kinetic_quadtree_subdivision_2d
+- **Date**: 2026-07-21
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A continuously evolving QuadTree that subdivides and merges based on an underlying 3D noise field, heavily inspired by Bauhaus and De Stijl aesthetics.
+- **Techniques**: A recursive spatial subdivision algorithm splits the canvas into smaller rectangles based on local OpenSimplex noise values. The entire grid slowly pans diagonally while cells dynamically shatter into smaller blocks and reform. Inner paddings and procedurally generated geometric motifs (circles, bars) add complexity to the cells.
+- **Palette**: A high-contrast Mondrian/Bauhaus palette of pure white, deep black, crimson red, blue, and yellow.
+
 ## kinetic_hex_grid_breathing_2d
 - **Date**: 2026-07-21
 - **Type**: Animation (900 frames, 60fps)

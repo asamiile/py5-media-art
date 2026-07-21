@@ -1,3 +1,10 @@
+## kinetic_recursive_mandala_bloom_2d
+- **Date**: 2026-07-21
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: An intricate, slowly blooming recursive mandala of glowing geometric shapes unfolding from the center.
+- **Techniques**: Recursive drawing of overlapping semi-transparent polygons that rotate and expand outward, modulating their geometry and colors based on time using Perlin noise.
+- **Palette**: Deep teals and cyans blending into bright neon greens, purples and whites, with additive blending for a high-contrast crystalline glow.
+
 ## kinetic_lissajous_web_interference_2d
 - **Date**: 2026-07-21
 - **Type**: Animation (900 frames, 60fps)

@@ -1,3 +1,10 @@
+## kinetic_wireframe_terrain_2d
+- **Date**: 2026-07-21
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A retro-futuristic, undulating wireframe landscape that shifts and morphs, simulating a flight over a digital mountain range.
+- **Techniques**: Generates a 3D grid where the Z-axis (height) is determined by a moving 2D OpenSimplex noise field to simulate forward flight. The 3D coordinates are manually projected into 2D orthographic space. 
+- **Palette**: A vibrant Synthwave/Outrun aesthetic featuring neon pink and cyan wireframes on a deep purple canvas, complete with a layered, glowing digital sun on the horizon.
+
 ## kinetic_quadtree_subdivision_2d
 - **Date**: 2026-07-21
 - **Type**: Animation (900 frames, 60fps)

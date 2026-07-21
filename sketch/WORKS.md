@@ -1,3 +1,10 @@
+## kinetic_curl_noise_flow_field_2d
+- **Date**: 2026-07-21
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: An ethereal river of glowing particles sweeping across the canvas, driven by a dense, animated curl noise field.
+- **Techniques**: 15,000 particles are animated via a divergence-free velocity field (pseudo-curl noise) derived from the gradient of a 3D OpenSimplex noise space. A semi-transparent background clearing creates beautiful fluid-like motion trails.
+- **Palette**: Neon cyan, teal, and magenta against an inky deep blue background.
+
 ## kinetic_lorenz_attractor_ribbon_2d
 - **Date**: 2026-07-21
 - **Type**: Animation (900 frames, 60fps)

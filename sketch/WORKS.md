@@ -1,3 +1,10 @@
+## kinetic_fractal_weeping_willow_2d
+- **Date**: 2026-07-21
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A deeply recursive fractal tree (over 16,000 branches) that resembles a glowing weeping willow, swaying organically in an invisible wind.
+- **Techniques**: A standard recursive branching algorithm is used, driven to a depth of 14. The angle of each branch is modulated by OpenSimplex noise parameterized by branch depth and time, creating a sweeping wind effect. Additive blending makes the dense canopy glow.
+- **Palette**: Ethereal green, gold, and white on a dark forest-green background.
+
 ## kinetic_curl_noise_flow_field_2d
 - **Date**: 2026-07-21
 - **Type**: Animation (900 frames, 60fps)

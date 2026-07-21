@@ -1,3 +1,10 @@
+## kinetic_chladni_cymatics_resonance_2d
+- **Date**: 2026-07-21
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A simulation of acoustic levitation and cymatics. 100,000 tiny particles of "sand" dance and settle into the complex, shifting nodal geometries of a vibrating Chladni plate.
+- **Techniques**: The particles are driven by the analytical gradient of a 2D Chladni function $C(x,y)$. As the resonant frequencies modulate over time, the particles re-organize into new interference patterns. Brownian motion keeps the particles fluid while additive blending gives them a luminous glow.
+- **Palette**: Deep velvet-black plate with glowing metallic gold and bronze sand particles.
+
 ## kinetic_fluid_vector_field_flow_2d
 - **Date**: 2026-07-21
 - **Type**: Animation (900 frames, 60fps)

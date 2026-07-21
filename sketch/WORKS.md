@@ -1,3 +1,10 @@
+## kinetic_lissajous_web_weaver_2d
+- **Date**: 2026-07-21
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: Elegant, sweeping golden ribbons of light tracing intricate 3D Lissajous knots that rotate gracefully in a dark void.
+- **Techniques**: A complex 3D Lissajous curve is parameterized and projected onto the 2D plane using custom numpy rotation matrices. Depth mapping dynamically alters the color and opacity, giving the ribbons an atmospheric, volumetric feel.
+- **Palette**: Deep crimsons and glowing, bright golds set against absolute black.
+
 ## kinetic_recursive_fractal_tree_wind_2d
 - **Date**: 2026-07-21
 - **Type**: Animation (900 frames, 60fps)

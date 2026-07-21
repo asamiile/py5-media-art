@@ -1,3 +1,10 @@
+## kinetic_voronoi_stippling_flow_2d
+- **Date**: 2026-07-21
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A fluid-like mosaic of shifting Voronoi cells sliding past each other, resembling an underwater cellular structure.
+- **Techniques**: 1200 points are driven by a trigonometric interference field. On every frame, a bounded Voronoi diagram is computed via point-reflection and drawn as polygonal cells. Cells are colored based on their area (shoelace formula).
+- **Palette**: Deep oceanic blues and glowing cyans/teals.
+
 ## kinetic_reaction_diffusion_coral_2d
 - **Date**: 2026-07-21
 - **Type**: Animation (900 frames, 60fps)

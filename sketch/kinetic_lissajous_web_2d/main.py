@@ -2,8 +2,8 @@ from pathlib import Path
 import shutil
 import subprocess
 import sys
-import numpy as np
 import py5
+import numpy as np
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 if str(PROJECT_ROOT) not in sys.path:
@@ -17,104 +17,75 @@ SKETCH_DIR = sketch_dir(__file__)
 WORK_NAME = SKETCH_DIR.name
 FRAMES_DIR = SKETCH_DIR / "frames"
 DURATION_SEC = 15
-FPS = 30
+FPS = 60
 TOTAL_FRAMES = DURATION_SEC * FPS
 PREVIEW_FILENAME = f"{WORK_NAME}_p1.png"
 PREVIEW_SIZE, OUTPUT_SIZE, _ = get_sizes()
 SIZE = OUTPUT_SIZE
 
-NUM_NODES = 800
-MAX_DIST = 300.0
+NUM_POINTS = 1200
+t_array = np.linspace(0, np.pi * 2, NUM_POINTS)
 
 def setup():
     py5.size(*SIZE)
     py5.pixel_density(1)
-    py5.background(0)
     FRAMES_DIR.mkdir(exist_ok=True)
     
-    global A, B, a, b, d
-    # A and B are amplitudes
-    A = py5.width * 0.4
-    B = py5.height * 0.4
-    
-    # Frequencies
-    a = np.random.uniform(1.0, 5.0, NUM_NODES)
-    b = np.random.uniform(1.0, 5.0, NUM_NODES)
-    
-    # Phase shifts
-    d = np.linspace(0, py5.PI * 2, NUM_NODES)
-
 def draw():
-    # Fade background slightly to create light trails
-    py5.blend_mode(py5.BLEND)
-    py5.fill(5, 5, 15, 60)
-    py5.no_stroke()
-    py5.rect(0, 0, py5.width, py5.height)
-    
+    py5.background(5, 5, 10)
+    py5.translate(SIZE[0] / 2, SIZE[1] / 2)
     py5.blend_mode(py5.ADD)
     
-    t = py5.frame_count / float(FPS) * 0.5  # Slow down time
+    # Phase shifts that animate over time
+    time = py5.frame_count * 0.015
+    delta1 = time * 1.5
+    delta2 = time * 0.8
     
-    # Compute Lissajous positions
-    cx = py5.width / 2
-    cy = py5.height / 2
+    # Complex Lissajous parameters
+    a, b = 5, 4
+    c, d = 3, 7
     
-    X = cx + A * np.sin(a * t + d)
-    Y = cy + B * np.sin(b * t)
+    R = SIZE[1] * 0.45
     
-    # Compute distances between all pairs
-    # X[:, None] - X[None, :] creates a NUM_NODES x NUM_NODES matrix
-    dx = X[:, None] - X[None, :]
-    dy = Y[:, None] - Y[None, :]
-    dist_sq = dx**2 + dy**2
+    # Generate points
+    x = np.sin(a * t_array + delta1) * np.cos(c * t_array) * R * (SIZE[0]/SIZE[1])
+    y = np.sin(b * t_array + delta2) * np.cos(d * t_array) * R
     
-    # Find pairs that are close enough
-    # We only look at upper triangle to avoid duplicates and self-connections
-    mask = (dist_sq < MAX_DIST**2) & np.triu(np.ones((NUM_NODES, NUM_NODES), dtype=bool), k=1)
+    pts = np.column_stack((x, y))
     
-    i_idx, j_idx = np.where(mask)
+    py5.no_fill()
+    py5.stroke_weight(1.5)
     
-    if len(i_idx) > 0:
-        # Get coordinates of connected pairs
-        p1_x = X[i_idx]
-        p1_y = Y[i_idx]
-        p2_x = X[j_idx]
-        p2_y = Y[j_idx]
-        
-        # Interleave to create line segments: p1, p2, p1, p2...
-        lines_x = np.empty(len(p1_x) * 2, dtype=np.float32)
-        lines_x[0::2] = p1_x
-        lines_x[1::2] = p2_x
-        
-        lines_y = np.empty(len(p1_y) * 2, dtype=np.float32)
-        lines_y[0::2] = p1_y
-        lines_y[1::2] = p2_y
-        
-        points = np.column_stack((lines_x, lines_y))
-        
-        # Draw lines in a few opacity buckets to simulate varying intensity based on distance
-        # But for absolute speed in py5 Python, we'll draw them all with one color
-        # The density of overlapping lines creates the bright nodes naturally
-        
-        py5.stroke(0, 200, 255, 15)
-        py5.stroke_weight(2)
-        py5.no_fill()
-        
+    # String art connection offsets
+    offsets = [1, 20, 50, 150, 400]
+    colors = [
+        (255, 255, 255, 150),
+        (0, 200, 255, 80),
+        (255, 50, 100, 60),
+        (100, 50, 255, 40),
+        (255, 150, 0, 30)
+    ]
+    
+    for k, color in zip(offsets, colors):
+        py5.stroke(*color)
         py5.begin_shape(py5.LINES)
-        py5.vertices(points)
+        for i in range(NUM_POINTS):
+            p1 = pts[i]
+            p2 = pts[(i + k) % NUM_POINTS]
+            py5.vertex(p1[0], p1[1])
+            py5.vertex(p2[0], p2[1])
         py5.end_shape()
-        
-    # Draw the nodes themselves
-    py5.fill(255, 50, 150, 200)
-    py5.no_stroke()
-    
-    # To draw all circles quickly, we can't use a loop if it's too slow, but 800 circles is fast enough
-    for i in range(NUM_NODES):
-        py5.circle(X[i], Y[i], 4)
 
     py5.save_frame(str(FRAMES_DIR / "frame-####.png"))
 
-    if py5.frame_count % 30 == 0:
+    if py5.frame_count == 2 or py5.frame_count % 60 == 0:
+        py5.load_np_pixels()
+        if py5.np_pixels.std() < 1.0:
+            print(f"[Error] Blank screen detected on frame {py5.frame_count} (std < 1.0). Aborting.")
+            import os
+            os._exit(1)
+
+    if py5.frame_count % 60 == 0:
         print(f"[Render Progress] Frame {py5.frame_count}/{TOTAL_FRAMES} ({py5.frame_count/TOTAL_FRAMES*100:.1f}%)")
 
     if py5.frame_count >= TOTAL_FRAMES:

@@ -1,3 +1,10 @@
+## kinetic_lissajous_web_2d
+- **Date**: 2026-07-21
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A mesmerizing, shifting web formed by hundreds of interconnected Lissajous curves.
+- **Techniques**: 1200 points are calculated along a complex 2D Lissajous equation. Rather than just drawing the curve, geometric "string art" webs are drawn by connecting points across specific offset intervals in the array (e.g. connecting point $i$ to $i+50$). As the phase of the equations shift, the entire web rotates and morphs in pseudo-3D.
+- **Palette**: Neon red, electric blue, violet, and stark white on a black canvas.
+
 ## kinetic_fractal_weeping_willow_2d
 - **Date**: 2026-07-21
 - **Type**: Animation (900 frames, 60fps)

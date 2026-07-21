@@ -1,3 +1,10 @@
+## kinetic_recursive_fractal_tree_wind_2d
+- **Date**: 2026-07-21
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A glowing forest of recursive, bioluminescent fractal trees that sway gently as if blown by a continuous, mathematical wind.
+- **Techniques**: Deep recursion (depth 14) generates dense, fractal canopies. The rotation angle of every branch is modulated continuously using 2D Perlin noise tied to both time and recursion depth to create fluid, organic motion. Additive blending layers thin strokes into intense light at the leaves.
+- **Palette**: Bioluminescent cyan and white cores with deeper aqua-blue outer leaves against a black void.
+
 ## kinetic_moire_interference_warp_2d
 - **Date**: 2026-07-21
 - **Type**: Animation (900 frames, 60fps)

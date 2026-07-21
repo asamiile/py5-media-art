@@ -1,3 +1,10 @@
+## kinetic_spirograph_mandala_bloom_2d
+- **Date**: 2026-07-21
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A hyper-dense, glowing mandala constructed from 12 layers of morphing spirograph (hypotrochoid) curves that bloom like a neon lotus.
+- **Techniques**: Uses vectorized trigonometric hypotrochoid equations across 8000 vertices per layer. The gear ratios and radii oscillate continuously using sine waves, causing the rigid mathematical structure to undulate, fold, and bloom organically.
+- **Palette**: Extremely bright, additive neon pinks, magentas, and electric blues fading into a deep, dark center.
+
 ## kinetic_chladni_cymatics_resonance_2d
 - **Date**: 2026-07-21
 - **Type**: Animation (900 frames, 60fps)

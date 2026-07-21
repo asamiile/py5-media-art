@@ -1,3 +1,10 @@
+## kinetic_cellular_automata_game_of_life_2d
+- **Date**: 2026-07-21
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A cinematic, cybernetic reimagining of Conway's Game of Life.
+- **Techniques**: Uses a cellular automata algorithm rendered with double-buffered smooth interpolation, giving the grid a glowing, breathing, neural-network-like appearance.
+- **Palette**: Deep navy blue void with cells fading between cyan, magenta, and bright white based on noise and time.
+
 ## kinetic_wireframe_terrain_2d
 - **Date**: 2026-07-21
 - **Type**: Animation (900 frames, 60fps)

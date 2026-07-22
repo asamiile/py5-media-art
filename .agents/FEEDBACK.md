@@ -180,7 +180,7 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## kinetic_metaball_plasma_merger_2d
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 
@@ -390,7 +390,7 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## kinetic_lissajous_knot_orbitals_3d
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 
@@ -528,7 +528,7 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## kinetic_fluid_dynamics_particles_2d
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 
@@ -600,7 +600,7 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## kinetic_glitch_cybernetic_mandala_2d
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 
@@ -648,7 +648,7 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## kinetic_ferrofluid_magnetic_spikes_2d
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 
@@ -690,7 +690,7 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## kinetic_fluid_turbulence_ribbons_2d
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 
@@ -702,7 +702,7 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## kinetic_fluid_typography_matrix_2d
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## kinetic_glitch_crystal_waveform_2d
@@ -732,7 +732,7 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## kinetic_flocking_neural_gates_2d
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## kinetic_cybernetic_quantum_grid_2d
@@ -2376,7 +2376,7 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## kinetic_chladni_resonance_patterns_2d
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 ## abstract_plasma_fluid_dynamics_3d

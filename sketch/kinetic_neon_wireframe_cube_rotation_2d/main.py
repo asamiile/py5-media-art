@@ -3,9 +3,9 @@ import shutil
 import subprocess
 import sys
 import random
+import math
 import py5
 import numpy as np
-import math
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 if str(PROJECT_ROOT) not in sys.path:
@@ -17,129 +17,75 @@ from lib.sizes import get_sizes
 SKETCH_DIR = sketch_dir(__file__)
 WORK_NAME = SKETCH_DIR.name
 FRAMES_DIR = SKETCH_DIR / "frames"
-DURATION_SEC = random.randint(15, 20)
+DURATION_SEC = random.randint(15, 20)  # Random duration up to 20s
 FPS = 60
 TOTAL_FRAMES = DURATION_SEC * FPS
 PREVIEW_FILENAME = f"{WORK_NAME}_p1.png"
 PREVIEW_SIZE, OUTPUT_SIZE, _ = get_sizes()
 SIZE = OUTPUT_SIZE
 
-# Define a 3D cube vertices (x, y, z)
-# Scaling from -1 to 1
-vertices = np.array([
-    [-1, -1, -1],
-    [ 1, -1, -1],
-    [ 1,  1, -1],
-    [-1,  1, -1],
-    [-1, -1,  1],
-    [ 1, -1,  1],
-    [ 1,  1,  1],
-    [-1,  1,  1]
-])
-
-# Define the edges connecting the vertices
-edges = [
-    (0,1), (1,2), (2,3), (3,0), # back face
-    (4,5), (5,6), (6,7), (7,4), # front face
-    (0,4), (1,5), (2,6), (3,7)  # connecting edges
-]
-
 def setup():
     py5.size(*SIZE)
     py5.pixel_density(1)
     FRAMES_DIR.mkdir(exist_ok=True)
-    py5.color_mode(py5.HSB, 360, 100, 100)
-    # Enable a slight trail effect by not fully clearing the background
-    py5.background(0)
-
-def draw():
-    # Fade background slightly for trails
-    py5.blend_mode(py5.BLEND)
-    py5.fill(0, 0, 0, 30) # Black with low opacity
-    py5.no_stroke()
-    py5.rect(0, 0, py5.width, py5.height)
     
-    t = py5.frame_count / TOTAL_FRAMES
+def draw():
+    py5.background(10, 5, 20) # Very dark purple
     
     py5.blend_mode(py5.ADD)
     
-    # Let's draw multiple rotating cubes!
-    num_cubes = 5
+    t = py5.frame_count * 0.01
     
-    for i in range(num_cubes):
+    py5.translate(SIZE[0] / 2, SIZE[1] / 2)
+    
+    n_cubes = 50
+    for i in range(n_cubes):
+        size = 100 + i * 40
+        rot_x = t * 0.5 + i * 0.1
+        rot_y = t * 0.7 + i * 0.12
+        rot_z = t * 0.3 + i * 0.08
         
-        # Calculate rotation angles based on time, offset per cube
-        angle_x = t * py5.TWO_PI * 1.5 + (i * 0.2)
-        angle_y = t * py5.TWO_PI * 2.0 + (i * 0.3)
-        angle_z = t * py5.TWO_PI * 1.0 + (i * 0.1)
+        # Color based on depth/index
+        if i % 2 == 0:
+            py5.stroke(255, 0, 255, 100 - i) # Neon pink
+        else:
+            py5.stroke(0, 255, 255, 100 - i) # Cyan
+            
+        py5.stroke_weight(2)
+        py5.no_fill()
+        
+        # Manually project a cube
+        vertices = np.array([
+            [-1, -1, -1], [1, -1, -1], [1, 1, -1], [-1, 1, -1],
+            [-1, -1, 1], [1, -1, 1], [1, 1, 1], [-1, 1, 1]
+        ], dtype=np.float32)
         
         # Rotation matrices
-        rot_x = np.array([
-            [1, 0, 0],
-            [0, math.cos(angle_x), -math.sin(angle_x)],
-            [0, math.sin(angle_x), math.cos(angle_x)]
-        ])
+        cx, sx = math.cos(rot_x), math.sin(rot_x)
+        cy, sy = math.cos(rot_y), math.sin(rot_y)
+        cz, sz = math.cos(rot_z), math.sin(rot_z)
         
-        rot_y = np.array([
-            [math.cos(angle_y), 0, math.sin(angle_y)],
-            [0, 1, 0],
-            [-math.sin(angle_y), 0, math.cos(angle_y)]
-        ])
+        Rx = np.array([[1, 0, 0], [0, cx, -sx], [0, sx, cx]])
+        Ry = np.array([[cy, 0, sy], [0, 1, 0], [-sy, 0, cy]])
+        Rz = np.array([[cz, -sz, 0], [sz, cz, 0], [0, 0, 1]])
         
-        rot_z = np.array([
-            [math.cos(angle_z), -math.sin(angle_z), 0],
-            [math.sin(angle_z), math.cos(angle_z), 0],
-            [0, 0, 1]
-        ])
+        R = Rz @ Ry @ Rx
         
-        # Combine rotations (Z * Y * X)
-        rot_matrix = rot_z @ rot_y @ rot_x
+        # Apply rotation and scale
+        transformed = vertices @ R.T * size
         
-        # Scale of this cube
-        cube_scale = 300 + i * 200 + math.sin(t * py5.TWO_PI + i) * 100
+        # Simple orthographic projection
+        pts = transformed[:, :2]
         
-        # Apply rotation and projection to all vertices
-        projected_points = []
-        for v in vertices:
-            # Rotate
-            rotated = rot_matrix @ v
-            
-            # Distance for perspective
-            distance = 4.0
-            
-            # Simple perspective projection
-            z_div = 1.0 / (distance - rotated[2])
-            
-            # Projected X and Y
-            # Fov factor
-            fov = py5.height * 0.8
-            proj_x = rotated[0] * z_div * fov
-            proj_y = rotated[1] * z_div * fov
-            
-            # Add to list, scaling and centering
-            px = py5.width / 2 + proj_x * (cube_scale / 300.0)
-            py_final = py5.height / 2 + proj_y * (cube_scale / 300.0)
-            projected_points.append((px, py_final, rotated[2]))
-            
         # Draw edges
-        # Color based on cube index
-        hue1 = 160 # Neon Green
-        hue2 = 320 # Electric Magenta
-        hue = py5.lerp(hue1, hue2, i / float(num_cubes - 1))
+        edges = [
+            (0, 1), (1, 2), (2, 3), (3, 0),
+            (4, 5), (5, 6), (6, 7), (7, 4),
+            (0, 4), (1, 5), (2, 6), (3, 7)
+        ]
         
-        py5.stroke(hue, 90, 100)
-        
-        for edge in edges:
-            p1 = projected_points[edge[0]]
-            p2 = projected_points[edge[1]]
-            
-            # Thickness based on average Z depth (closer = thicker)
-            avg_z = (p1[2] + p2[2]) / 2.0
-            weight = py5.remap(avg_z, -2.0, 2.0, 1, 8)
-            weight = max(0.5, float(weight))
-            py5.stroke_weight(weight)
-            
-            py5.line(p1[0], p1[1], p2[0], p2[1])
+        for e in edges:
+            py5.line(pts[e[0], 0], pts[e[0], 1], pts[e[1], 0], pts[e[1], 1])
 
     py5.save_frame(str(FRAMES_DIR / "frame-####.png"))
 
@@ -162,10 +108,14 @@ def draw():
             "-vcodec", "libx264", "-pix_fmt", "yuv420p",
             str(SKETCH_DIR / f"{WORK_NAME}.mp4"),
         ], check=True)
+        
         mid = str(FRAMES_DIR / f"frame-{TOTAL_FRAMES // 2:04d}.png")
         subprocess.run(["cp", mid, str(SKETCH_DIR / PREVIEW_FILENAME)], check=True)
+        
         if FRAMES_DIR.exists():
             shutil.rmtree(FRAMES_DIR)
+            print("[Render Cleanup] Temporary frames directory successfully removed.")
+            
         import os
         os._exit(0)
 

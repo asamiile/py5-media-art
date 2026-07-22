@@ -1,3 +1,73 @@
+## kinetic_boids_fluid_flow_2d
+- **Date**: 2026-07-22
+- **Type**: Animation (1020 frames, 60fps)
+- **Concept**: Flocking boids trapped in a chaotic fluid simulation.
+- **Techniques**: Boids algorithm coupled with a fluid flow field, rendering trails.
+- **Palette**: Very dark teal (#010A10), Electric Blue (#00A0FF), Coral Pink (#FF6080), Bright White (#FFFFFF).
+
+## kinetic_magnetic_pendulum_fractal_2d
+- **Date**: 2026-07-22
+- **Type**: Animation (1140 frames, 60fps)
+- **Concept**: Chaotic magnetic pendulum paths tracing colorful fractal patterns.
+- **Techniques**: Simulating a magnetic pendulum swinging over 3 magnets, coloring the path based on the closest magnet and velocity.
+- **Palette**: Deep navy (#0B1021), Gold (#FFD700), Crimson (#DC143C), Royal Blue (#4169E1).
+
+## kinetic_neon_wireframe_cube_rotation_2d
+- **Date**: 2026-07-22
+- **Type**: Animation (1020 frames, 60fps)
+- **Concept**: Retro-futuristic cyberpunk wireframes rotating in a void.
+- **Techniques**: Rotating 3D cubes projected onto 2D, colored brightly, simulating depth and kinetic energy through pure geometric transformations.
+- **Palette**: Pitch black (#000000), Neon pink (#FF00FF), Cyan (#00FFFF).
+
+## kinetic_recursive_fractal_spores_2d
+- **Date**: 2026-07-22
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A mathematical spore explosion driven by recursive L-systems in 2D.
+- **Techniques**: Drawing recursive fractals with slight rotation angles that evolve over time using Perlin noise.
+- **Palette**: Very dark warm grey (#151010), Deep vermilion (#FF3020), Soft orange (#FFA040).
+
+## kinetic_fluid_tensor_field_2d
+- **Date**: 2026-07-22
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: Mathematical beauty exposed in fluid flow.
+- **Techniques**: Particles trace the eigenvector directions of a 2D noise tensor field, generating orthogonal, woven fluid currents.
+- **Palette**: Charcoal grey (#1C1E20), Luminous silver (#E0E0E0), Electric teal (#00C0D0).
+
+## kinetic_reaction_diffusion_cellular_growth_3d
+- **Date**: 2026-07-22
+- **Type**: Animation (1140 frames, 60fps)
+- **Concept**: Alien fungal structures blooming in an abandoned, confined space.
+- **Techniques**: A 3D continuous reaction-diffusion (Gray-Scott) system mapped to a flowing heightmap, resembling organic brain-coral or fungal growths pulsing to life.
+- **Palette**: Pitch black (#000000), Acidic lime green (#80FF00), Toxic violet (#8000FF), Bright yellow (#FFFF00).
+
+## kinetic_fluid_dynamics_vortex_shedding_2d
+- **Date**: 2026-07-22
+- **Type**: Animation (1080 frames, 60fps)
+- **Concept**: Invisible rivers flowing past rigid obstacles, creating turbulent swirling vortices in their wake.
+- **Techniques**: A simulation of fluid dynamics via vector fields, representing a von Kármán vortex street behind cylindrical obstacles, visualized by thousands of floating dust particles.
+- **Palette**: Very dark blue (#040A18), Bioluminescent cyan (#00F0FF), Deep amethyst (#6020A0).
+
+## kinetic_chromatic_aberration_kaleidoscope_2d
+- **Date**: 2026-07-22
+- **Type**: Animation (1020 frames, 60fps)
+- **Concept**: Fragments of a broken lens reassembling in infinite reflections.
+- **Techniques**: A recursive, symmetrical kaleidoscope effect created by drawing shapes with pure Red, Green, and Blue, offset by time-varying amounts, resulting in intense chromatic aberration and pure white intersections.
+- **Palette**: Pitch black (#000000), Pure Red (#FF0000), Pure Green (#00FF00), Pure Blue (#0000FF), Bright white (intersection).
+
+## kinetic_fluid_magnetic_polarization_2d
+- **Date**: 2026-07-22
+- **Type**: Animation (1000 frames, 60fps)
+- **Concept**: Invisible forces repelling and attracting fluid matter in a confined space.
+- **Techniques**: A dense grid of vectors (magnetic domains) that rotate locally based on Perlin noise, pushing particles along them.
+- **Palette**: Very dark warm grey (#0A0808), Molten gold (#FFC040), Crimson red (#B01020), Bright white (#FFFFFF).
+
+## kinetic_shattered_glass_voronoi_2d
+- **Date**: 2026-07-22
+- **Type**: Animation (1200 frames, 60fps)
+- **Concept**: The slow, inevitable fracturing of a rigid structure under invisible stress.
+- **Techniques**: Voronoi fractured polygons projected into a 2D space, slowly separating over time due to Perlin noise.
+- **Palette**: Very dark obsidian (#050508), Cold ice-blue (#A0E0FF), Deep navy (#102040), Stark white (#FFFFFF).
+
 ## kinetic_cellular_automata_game_of_life_2d
 - **Date**: 2026-07-21
 - **Type**: Animation (900 frames, 60fps)

@@ -5,7 +5,6 @@ import sys
 import random
 import math
 import py5
-import numpy as np
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 if str(PROJECT_ROOT) not in sys.path:
@@ -29,63 +28,54 @@ def setup():
     py5.pixel_density(1)
     FRAMES_DIR.mkdir(exist_ok=True)
     
+def draw_kaleidoscope(t, offset, color):
+    num_petals = 12
+    py5.fill(*color)
+    py5.no_stroke()
+    
+    # We use 2D rotation for the petals
+    for i in range(num_petals):
+        angle = i * (py5.TWO_PI / num_petals)
+        with py5.push_matrix():
+            py5.rotate(angle)
+            
+            # Draw something complex
+            for j in range(5):
+                r = py5.noise(t * 0.5, i * 0.1, j * 0.2) * 500 + 100
+                theta = py5.noise(t * 0.3 + 10, i * 0.1, j * 0.2) * py5.TWO_PI
+                size = py5.noise(t * 0.8 + 20, i * 0.1, j * 0.2) * 150 + 20
+                
+                # Apply offset based on the channel
+                x = math.cos(theta) * r + offset[0] * r * 0.05
+                y = math.sin(theta) * r + offset[1] * r * 0.05
+                
+                with py5.push_matrix():
+                    py5.translate(x, y)
+                    py5.rotate(t + j)
+                    # draw a sharp polygon
+                    py5.begin_shape()
+                    for k in range(3):
+                        py5.vertex(math.cos(k * py5.TWO_PI / 3) * size, math.sin(k * py5.TWO_PI / 3) * size)
+                    py5.end_shape(py5.CLOSE)
+
 def draw():
-    py5.background(10, 5, 20) # Very dark purple
-    
+    py5.background(0)
     py5.blend_mode(py5.ADD)
-    
-    t = py5.frame_count * 0.01
     
     py5.translate(SIZE[0] / 2, SIZE[1] / 2)
     
-    n_cubes = 50
-    for i in range(n_cubes):
-        size = 100 + i * 40
-        rot_x = t * 0.5 + i * 0.1
-        rot_y = t * 0.7 + i * 0.12
-        rot_z = t * 0.3 + i * 0.08
-        
-        # Color based on depth/index
-        if i % 2 == 0:
-            py5.stroke(255, 0, 255, 100 - i) # Neon pink
-        else:
-            py5.stroke(0, 255, 255, 100 - i) # Cyan
-            
-        py5.stroke_weight(2)
-        py5.no_fill()
-        
-        # Manually project a cube
-        vertices = np.array([
-            [-1, -1, -1], [1, -1, -1], [1, 1, -1], [-1, 1, -1],
-            [-1, -1, 1], [1, -1, 1], [1, 1, 1], [-1, 1, 1]
-        ], dtype=np.float32)
-        
-        # Rotation matrices
-        cx, sx = math.cos(rot_x), math.sin(rot_x)
-        cy, sy = math.cos(rot_y), math.sin(rot_y)
-        cz, sz = math.cos(rot_z), math.sin(rot_z)
-        
-        Rx = np.array([[1, 0, 0], [0, cx, -sx], [0, sx, cx]])
-        Ry = np.array([[cy, 0, sy], [0, 1, 0], [-sy, 0, cy]])
-        Rz = np.array([[cz, -sz, 0], [sz, cz, 0], [0, 0, 1]])
-        
-        R = Rz @ Ry @ Rx
-        
-        # Apply rotation and scale
-        transformed = vertices @ R.T * size
-        
-        # Simple orthographic projection
-        pts = transformed[:, :2]
-        
-        # Draw edges
-        edges = [
-            (0, 1), (1, 2), (2, 3), (3, 0),
-            (4, 5), (5, 6), (6, 7), (7, 4),
-            (0, 4), (1, 5), (2, 6), (3, 7)
-        ]
-        
-        for e in edges:
-            py5.line(pts[e[0], 0], pts[e[0], 1], pts[e[1], 0], pts[e[1], 1])
+    t = py5.frame_count * 0.01
+    
+    # Slow rotation of the entire view
+    py5.rotate(t * 0.5)
+    
+    # Calculate offset for chromatic aberration based on time
+    ox = math.sin(t * 2) * 1.5
+    oy = math.cos(t * 2.3) * 1.5
+    
+    draw_kaleidoscope(t, (-ox, -oy), (255, 0, 0, 150))
+    draw_kaleidoscope(t, (0, 0), (0, 255, 0, 150))
+    draw_kaleidoscope(t, (ox, oy), (0, 0, 255, 150))
 
     py5.save_frame(str(FRAMES_DIR / "frame-####.png"))
 

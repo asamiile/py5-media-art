@@ -1,3 +1,17 @@
+## kinetic_iterated_function_system_fractal_2d
+- **Date**: 2026-07-23
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A kinetic visualization of a chaos game driven Iterated Function System (IFS). The defining affine transformation matrices smoothly rotate and stretch over time, morphing the underlying fractal geometry continuously.
+- **Techniques**: A highly vectorized NumPy simulation iteratively applies randomly selected affine transformations to 100,000 particles each frame. The points are accumulated on the screen using additive blending to create intense, intricate structural glows.
+- **Palette**: Deep void background with intense Orange, Cyan, and Purple glowing spectral dust.
+
+## kinetic_holographic_topography_2d
+- **Date**: 2026-07-23
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A pulsing topographical map where the elevation lines are driven by interfering sine waves and noise, glowing with holographic neon colors.
+- **Techniques**: Evaluates a mathematical interference pattern across a dense grid, wrapping fractional values to extract contour lines. Holographic gradients are mapped directly to pixel buffers.
+- **Palette**: Dark blue/grey void, intensely glowing Holographic Cyan and Magenta.
+
 ## kinetic_boids_fluid_flow_2d
 - **Date**: 2026-07-22
 - **Type**: Animation (1020 frames, 60fps)

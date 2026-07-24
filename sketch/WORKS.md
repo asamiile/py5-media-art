@@ -1,3 +1,10 @@
+## kinetic_thomas_cyclical_attractor_3d
+- **Date**: 2026-07-24
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 3D volumetric fluid simulation based on the Thomas cyclically symmetric attractor. 600,000 particles flow through a mathematically elegant vector field where each spatial dimension is influenced by the sine of another ($dx = \sin(y) - bx$, etc.).
+- **Techniques**: The particles trace the strange attractor's chaotic orbits, revealing a highly symmetric, crystal-lattice-like structure in 3D space. To give the vector field volume, microscopic Langevin noise (Brownian motion) is applied to the particles. The dissipation parameter $b$ is slowly modulated over time, causing the attractor to "breathe" between states of tight geometric order and loose chaotic tangles.
+- **Palette**: A Cyberpunk Neon gradient (Cyan to Magenta to Yellow/White), mapped spherically based on the particles' distance from the origin.
+
 ## kinetic_buddhabrot_nebula_2d
 - **Date**: 2026-07-24
 - **Type**: Animation (900 frames, 60fps)

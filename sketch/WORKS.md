@@ -1,3 +1,10 @@
+## kinetic_barkley_spiral_waves_2d
+- **Date**: 2026-07-24
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A visualization of the Barkley model for excitable media, generating continuous, self-sustaining spiral reaction waves (often seen in the Belousov-Zhabotinsky chemical reaction or heart muscle fibrillation). The chemical gradients are used as a flow field to advect 1.5 million particles.
+- **Techniques**: The reaction-diffusion equations are solved on a 2D grid using finite difference Laplacians via highly optimized `np.roll` operations. The gradients of the excitation field $u$ are computed to form a vector field, and the particles are injected to surf perpendicularly to the gradients, tracing out the mesmerizing fractal-like outlines of the spiral wavefronts.
+- **Palette**: Deep oceanic bioluminescence. The void regions are dark space, transitioning through Deep Blue to vivid Cyan and Emerald Green along the crests of the excitation waves.
+
 ## kinetic_navier_stokes_particles_2d
 - **Date**: 2026-07-24
 - **Type**: Animation (900 frames, 60fps)

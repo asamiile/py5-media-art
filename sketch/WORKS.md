@@ -1,3 +1,10 @@
+## kinetic_double_pendulum_state_space_fractal_2d
+- **Date**: 2026-07-24
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A visualization of deterministic chaos via the state-space of a double pendulum. It simultaneously calculates the physics for 518,400 independent double pendulums, mapping the screen's X and Y coordinates to the initial angles ($\theta_1, \theta_2$) of each pendulum.
+- **Techniques**: The simulation uses a highly optimized, vectorized Symplectic Euler integration to step over half a million differential equations simultaneously. The color of each pixel represents the phase of its respective second pendulum over time. Because the double pendulum is highly sensitive to initial conditions (the butterfly effect), the initially smooth gradient exponentially shatters into an infinitely complex, unpredictable fractal pattern.
+- **Palette**: A high-contrast, psychedelic neon cyclic colormap (Red -> Yellow -> Green -> Cyan -> Blue -> Magenta) representing phase angles from $0$ to $2\pi$.
+
 ## kinetic_physarum_slime_mold_2d
 - **Date**: 2026-07-24
 - **Type**: Animation (900 frames, 60fps)

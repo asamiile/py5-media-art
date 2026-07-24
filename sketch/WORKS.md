@@ -1,3 +1,10 @@
+## kinetic_reaction_diffusion_morph_2d
+- **Date**: 2026-07-24
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A kinetic simulation of the Gray-Scott Reaction-Diffusion model, visualizing the continuous morphological evolution of Turing patterns.
+- **Techniques**: Instead of using fixed parameters, the simulation applies spatially and temporally varying Feed (F) and Kill (K) rates across the 2D grid. The parameters oscillate like waves over time, causing the chemical patterns to continuously morph between distinct Turing states—from spots to labyrinths to dividing cells—within a single continuous simulation. A 9-point Laplacian stencil and highly vectorized NumPy operations maintain numerical stability at 20 steps per frame.
+- **Palette**: Deep Blue to Cyan to White to Magenta, creating a bioluminescent, deep-sea aesthetic.
+
 ## kinetic_volumetric_curl_noise_flow_3d
 - **Date**: 2026-07-24
 - **Type**: Animation (900 frames, 60fps)

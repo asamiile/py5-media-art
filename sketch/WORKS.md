@@ -1,3 +1,10 @@
+## kinetic_ising_model_phase_transition_2d
+- **Date**: 2026-07-24
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A statistical physics simulation of ferromagnetism using the Ising Model. It visualizes the beautiful, continuous phase transition of magnetic spins as the system's temperature slowly oscillates around the critical point ($T_c \approx 2.269$), blooming into massive fractal domain islands before dissolving into chaotic heat.
+- **Techniques**: The simulation uses a highly optimized, vectorized Metropolis-Hastings algorithm in NumPy. By splitting the grid into a checkerboard pattern (even/odd masks), it safely computes spin flip probabilities for millions of cells simultaneously without overlapping conflicts. The 15 physics steps per frame create a smooth, mesmerizing evolution.
+- **Palette**: Cyan (+1 spin) and Magenta (-1 spin) domains colliding in a neon pixel-art aesthetic.
+
 ## kinetic_differential_growth_folds_2d
 - **Date**: 2026-07-24
 - **Type**: Animation (900 frames, 60fps)

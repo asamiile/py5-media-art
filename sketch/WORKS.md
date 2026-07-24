@@ -1,3 +1,10 @@
+## kinetic_aizawa_attractor_3d
+- **Date**: 2026-07-24
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 3D chaotic fluid simulation governed by the Aizawa Attractor, which naturally forms an elegant spherical vortex (often described as a tornado or the core of an apple).
+- **Techniques**: 600,000 particles are injected into the Aizawa vector field. Microscopic Langevin noise (Brownian motion) transforms the infinitely thin chaotic orbit into a thick, flowing volumetric fluid. Parameters $d$ and $f$ of the attractor equations are slowly modulated over time, causing the vortex tube to twist, breathe, and dramatically open and close. 
+- **Palette**: A fiery plasma colormap mapped to the Z-axis (height). The base of the vortex is a deep, glowing purple, transitioning through intense magenta into a bright orange and yellow core.
+
 ## kinetic_quantum_orbitals_3d
 - **Date**: 2026-07-24
 - **Type**: Animation (900 frames, 60fps)

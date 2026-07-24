@@ -1,3 +1,10 @@
+## kinetic_plasma_lorentz_drift_2d
+- **Date**: 2026-07-24
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A magnetohydrodynamic (plasma physics) simulation. 500,000 charged particles (positive and negative) interact with a strong, spatially varying magnetic field and a radial electric field, experiencing the Lorentz force ($\vec{F} = q(\vec{E} + \vec{v} \times \vec{B})$).
+- **Techniques**: The simulation uses the Boris Algorithm, the standard symplectic integrator in plasma physics, to ensure long-term stability and energy conservation of the particles' rapid cyclotron orbits. As the magnetic and electric landscapes slowly undulate over time, the particles get trapped in magnetic mirrors or swept into deep $\vec{E} \times \vec{B}$ drift currents, forming structures resembling auroras or tokamak plasma instabilities.
+- **Palette**: Cyan for positive charges and Magenta for negative charges, blending additively into bright white where they collide or reach high kinetic energies against a pitch-black void.
+
 ## kinetic_wave_interference_caustics_2d
 - **Date**: 2026-07-24
 - **Type**: Animation (900 frames, 60fps)

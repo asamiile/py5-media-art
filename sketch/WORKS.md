@@ -1,3 +1,10 @@
+## kinetic_chladni_cymatics_2d
+- **Date**: 2026-07-24
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A kinetic simulation of Cymatics (Chladni figures). 1,000,000 sand-like particles bounce across a vibrating plate, settling into the intricate geometric nodal lines where the vibration amplitude is zero. 
+- **Techniques**: The simulation continuously modulates the underlying wave frequencies (the $N$ and $M$ parameters of the 2D standing wave equation) over time. As the frequencies shift, the nodal lines organically morph, and the million particles scramble to find new resting points, resembling a living, shifting mandala. The gradients of the wave equation are calculated analytically, and particle physics (force, friction, thermal noise) are resolved efficiently in NumPy.
+- **Palette**: Dark brown to deep gold to stark white, mimicking glowing sand or dust over a dark metallic surface.
+
 ## kinetic_double_pendulum_state_space_fractal_2d
 - **Date**: 2026-07-24
 - **Type**: Animation (900 frames, 60fps)

@@ -1,3 +1,10 @@
+## kinetic_spherical_curl_fluid_3d
+- **Date**: 2026-07-24
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 3D planetary fluid simulation depicting 600,000 particles swirling in a divergence-free (incompressible) vector field on the surface of a sphere, resembling the violent atmospheric storms of a gas giant like Jupiter.
+- **Techniques**: The simulation evaluates a complex, time-varying 3D scalar potential field composed of interfering sine waves. The velocity of the particles is determined by taking the cross product of the potential's numerical gradient and the sphere's surface normal ($\vec{v} = \nabla S \times \hat{n}$). This mathematical trick perfectly constrains the flow to be both tangent to the sphere and divergence-free. 
+- **Palette**: A latitude-based colormap. The equator burns in Deep Blue and Purple, transitioning through mid-latitude bands of Gold and Orange, and culminating in bright White polar vortices.
+
 ## kinetic_lorenz_attractor_fluid_3d
 - **Date**: 2026-07-24
 - **Type**: Animation (900 frames, 60fps)

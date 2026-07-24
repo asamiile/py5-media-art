@@ -1,3 +1,10 @@
+## kinetic_lenia_artificial_life_2d
+- **Date**: 2026-07-24
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A continuous-space, continuous-time artificial life simulation based on the Lenia framework (a mathematical generalization of Conway's Game of Life).
+- **Techniques**: The simulation uses a 2D Fast Fourier Transform (FFT) via SciPy to efficiently compute the spatial convolution of the continuous state grid (518,400 cells) with a ring-like exponential kernel. The local neighborhood sum is passed through a Gaussian growth function, allowing primordial noise to self-organize into complex, swimming, reproducing alien lifeforms (such as the famous "Orbium"). 
+- **Palette**: A bioluminescent colormap ranging from Deep Teal to Cyan, culminating in bright White/Green, giving the impression of microscopic glowing algae or synthetic biology under a dark-field microscope.
+
 ## kinetic_binary_black_hole_accretion_2d
 - **Date**: 2026-07-24
 - **Type**: Animation (900 frames, 60fps)

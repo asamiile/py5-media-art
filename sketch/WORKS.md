@@ -1,3 +1,10 @@
+## kinetic_acoustic_chladni_lattice_3d
+- **Date**: 2026-07-24
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 3D Chladni figure simulation. In 2D, vibrating a metal plate with sand causes the grains to settle in the "nodes" (areas of zero vibration), forming geometric acoustic patterns. This piece extends that acoustic physics principle into a 3D volumetric space. 
+- **Techniques**: 600,000 particles are subjected to a force vector derived from the negative gradient of the squared 3D standing wave equation ($F = -\nabla V^2$). Strong thermal noise (Brownian motion) keeps the particles flowing along the nodal surfaces instead of freezing in place. The standing wave's component frequencies are slowly morphed over time, forcing the particles to continuously flow and reorganize into new, intricate 3D crystalline lattice structures.
+- **Palette**: A metallic colormap mimicking vibrating metals: from Dark Bronze to shimmering Gold, culminating in Platinum/White highlights.
+
 ## kinetic_multiscale_turing_patterns_2d
 - **Date**: 2026-07-24
 - **Type**: Animation (900 frames, 60fps)

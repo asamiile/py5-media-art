@@ -1,3 +1,10 @@
+## kinetic_differential_growth_folds_2d
+- **Date**: 2026-07-24
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A biological simulation of "Differential Growth," modeling how cellular tissues like brain folds, coral, or intestines grow into tightly packed, meandering structures when constrained by space.
+- **Techniques**: A continuous polyline starts as a simple circle. Each frame, segments that stretch too far are subdivided (simulating cell division). A spatial KD-Tree (`scipy.spatial.cKDTree`) efficiently calculates repulsion forces between all non-adjacent nodes within a radius, while spring forces keep adjacent nodes connected. As the curve expands and folds in on itself, additive blending leaves a glowing, rainbow-hued kinetic trail of its morphological evolution.
+- **Palette**: A slow-shifting HSB rainbow spectrum over a dark void, rendered with high alpha transparency for a luminous motion blur effect.
+
 ## kinetic_thomas_attractor_swarm_3d_projected
 - **Date**: 2026-07-24
 - **Type**: Animation (900 frames, 60fps)

@@ -1,3 +1,10 @@
+## kinetic_neon_cloth_tear_2d
+- **Date**: 2026-07-24
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A physics simulation of a glowing neon wireframe cloth suspended in a void. A chaotic sphere passes through it, tearing the constraints and creating a violent, glowing rupture that slowly falls apart.
+- **Techniques**: Custom 2D Verlet integration engine using fully vectorized NumPy operations. Constraint relaxation handles horizontal and vertical structural links, and a tear threshold dynamically breaks links under high stress, mimicking tearing fabric. Rendered with Py5 lines and additive blending.
+- **Palette**: Neon Cyan and Magenta wireframe grid on a Pitch Black void, with a faint Crimson sphere.
+
 ## kinetic_cellular_automata_wireworld_circuit_2d
 - **Date**: 2026-07-24
 - **Type**: Animation (900 frames, 60fps)

@@ -1,3 +1,10 @@
+## kinetic_lorenz_attractor_fluid_3d
+- **Date**: 2026-07-24
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 3D continuous strange attractor simulation utilizing the historic Lorenz system of differential equations. 600,000 particles trace the chaotic vector field, forming the iconic dual-lobed "butterfly" shape. 
+- **Techniques**: To prevent the points from converging into infinitely thin 1D lines over time (a property of deterministic strange attractors), a microscopic Langevin thermal noise is applied, giving the strange attractor volumetric "thickness" and making it resemble a glowing, turbulent fluid. The Rayleigh number $\rho$ is also slowly modulated over time, causing the entire butterfly structure to "breathe" and warp dynamically in 3D space.
+- **Palette**: A Z-axis mapped colormap transitioning from Deep Blue and Cyan at the base, through White, and into fiery Orange and Red at the top of the chaotic spirals.
+
 ## kinetic_lenia_artificial_life_2d
 - **Date**: 2026-07-24
 - **Type**: Animation (900 frames, 60fps)

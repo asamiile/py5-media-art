@@ -1,3 +1,10 @@
+## kinetic_langtons_ant_swarm_2d
+- **Date**: 2026-07-24
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: An extreme-scale cellular automata simulation of Langton's Ant. 50,000 independent agents following the "RLLR" (Right-Left-Left-Right) rule start from a chaotic central cluster. Over time, the chaos abruptly transitions into order as symmetrical, crystalline highways burst outward, revealing the emergent geometry hidden within the simple rules.
+- **Techniques**: A highly vectorized 2D state machine in NumPy computes the RLLR turns and grid mutations for 50,000 agents simultaneously, iterating 50 steps per frame. The resulting simulation runs seamlessly fast, directly writing state-mapped RGB values into Py5's `np_pixels` array.
+- **Palette**: Pitch Black void, Cyan, Magenta, and bright White for different grid states.
+
 ## kinetic_voronoi_fluid_relaxation_2d
 - **Date**: 2026-07-24
 - **Type**: Animation (900 frames, 60fps)

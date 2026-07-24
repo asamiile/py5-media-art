@@ -1,3 +1,10 @@
+## kinetic_lattice_boltzmann_fluid_2d
+- **Date**: 2026-07-24
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A pure NumPy implementation of the Lattice Boltzmann Method (LBM) in 2D, simulating the emergence of a Von Karman vortex street behind stationary obstacles in a wind tunnel.
+- **Techniques**: The simulation uses the D2Q9 lattice model. Continuous streaming and BGK collision relaxation accurately model the macroscopic Navier-Stokes fluid dynamics without needing a Poisson solver. A constant inlet velocity drives the fluid, while bounce-back boundary conditions on three cylinders generate intricate shedding vortices. 1,000,000 particles are advected through this highly turbulent velocity field.
+- **Palette**: A high-energy thermal colormap (Deep Blue to Cyan to Yellow/Orange) mapping the local fluid velocity magnitude (speed) to each particle, visually highlighting the fast streams and slow vortex cores.
+
 ## kinetic_boids_murmuration_2d
 - **Date**: 2026-07-24
 - **Type**: Animation (900 frames, 60fps)

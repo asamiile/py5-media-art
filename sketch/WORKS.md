@@ -1,3 +1,10 @@
+## kinetic_binary_black_hole_accretion_2d
+- **Date**: 2026-07-24
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A magnetohydrodynamic accretion disk simulation around a binary black hole system. 500,000 plasma particles are caught in the immense gravitational pull of two orbiting supermassive black holes.
+- **Techniques**: The particles follow Newtonian orbits but experience a slight viscous friction (viscosity), causing them to lose orbital energy and spiral inward towards the event horizons. Particles that cross the event horizon are consumed and respawned at the outer edge to maintain a continuous inflow of matter. The system forms a fiery, glowing figure-eight accretion structure.
+- **Palette**: A custom thermal blackbody colormap. As particles speed up due to Kepler's laws while falling inward, their kinetic energy is mapped to color: deep space black to dark red, orange, yellow, pure white, and finally intense blue-white just before crossing the event horizon.
+
 ## kinetic_sdf_fractal_flow_2d
 - **Date**: 2026-07-24
 - **Type**: Animation (900 frames, 60fps)

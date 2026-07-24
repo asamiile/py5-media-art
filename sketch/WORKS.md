@@ -1,3 +1,10 @@
+## kinetic_navier_stokes_particles_2d
+- **Date**: 2026-07-24
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A pure NumPy implementation of a grid-based 2D incompressible fluid solver (Navier-Stokes) that advects 1,000,000 glowing particles, creating mesmerizing, wispy cosmic eddies.
+- **Techniques**: The simulation uses a semi-Lagrangian advection scheme and solves the Poisson equation for pressure projection exactly via Fast Fourier Transform (FFT). Three orbiting "injectors" continuously stir the velocity field. The perfectly divergence-free fluid field is then used to advect the particles.
+- **Palette**: A Vaporwave-inspired colormap (Cyan to Dark Blue to Purple to Hot Pink). The color of each particle is dynamically mapped to the local scalar vorticity ($\nabla \times \vec{V}$) of the fluid at its position.
+
 ## kinetic_hopf_fibration_4d
 - **Date**: 2026-07-24
 - **Type**: Animation (900 frames, 60fps)

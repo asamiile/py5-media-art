@@ -1,3 +1,10 @@
+## kinetic_multiscale_turing_patterns_2d
+- **Date**: 2026-07-24
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A complex reaction-diffusion simulation based on the McCabe Multi-Scale Turing Pattern algorithm. It models the chemical mechanisms that form biological patterns (like animal skin or fingerprints) across multiple spatial scales simultaneously.
+- **Techniques**: The state grid is evaluated using 6 distinct scales of Gaussian blur (simulating diffusion of activator and inhibitor chemicals). At each pixel, the algorithm selects the scale with the smallest spatial variation and updates the state. To make the pattern kinetic and fluid, the blur radii are slowly modulated over time and a continuous 2D drift is applied, causing the patterns to endlessly boil, fold, and flow like a living organism.
+- **Palette**: A deep, organic mineral palette ranging from Dark Emerald Green through vibrant Gold, peaking at pure White in the highest concentration zones.
+
 ## kinetic_thomas_cyclical_attractor_3d
 - **Date**: 2026-07-24
 - **Type**: Animation (900 frames, 60fps)

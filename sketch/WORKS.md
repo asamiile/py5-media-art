@@ -1,3 +1,10 @@
+## kinetic_magnetic_pendulum_chaos_2d
+- **Date**: 2026-07-24
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A visualization of the chaotic trajectories of 5,000 magnetic pendulums swinging over five symmetrically placed magnets.
+- **Techniques**: A fully vectorized physics simulation in NumPy calculates the inverse-square magnetic forces and central gravity applied to thousands of pendulums. The simulation utilizes sub-stepping for numerical stability. Rendered using simple Py5 points with long-exposure motion blur via additive blending.
+- **Palette**: The color of each pendulum (Cyan/Magenta/Blue hues) maps to its initial starting angle, creating an overlapping web of chaotic rainbow trails on a pitch black void.
+
 ## kinetic_neon_cloth_tear_2d
 - **Date**: 2026-07-24
 - **Type**: Animation (900 frames, 60fps)

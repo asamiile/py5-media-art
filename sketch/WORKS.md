@@ -1,3 +1,10 @@
+## kinetic_wave_interference_caustics_2d
+- **Date**: 2026-07-24
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A numerical simulation of the 2D Wave Equation, capturing complex interference patterns and refractive caustics. Five wave emitters orbit in Lissajous patterns, continuously injecting ripples into a fluid. 
+- **Techniques**: Instead of a uniform fluid, the wave speed (refractive index) varies spatially based on a complex landscape of low-frequency sine waves. This creates invisible "acoustic lenses" in the water that bend, focus, and scatter the ripples as they propagate. The simulation uses Verlet integration and a 9-point Laplacian stencil for extreme stability.
+- **Palette**: Deep ocean blue to bioluminescent cyan, peaking at pure white to emphasize the sharp, intense caustic light patterns formed by constructive interference.
+
 ## kinetic_chladni_cymatics_2d
 - **Date**: 2026-07-24
 - **Type**: Animation (900 frames, 60fps)

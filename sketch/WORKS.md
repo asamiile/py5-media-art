@@ -1,3 +1,10 @@
+## kinetic_hopf_fibration_4d
+- **Date**: 2026-07-24
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A visualization of 4-dimensional topology (the Clifford Torus) projected into 3D space, revealing the mesmerizing interlocking rings of the Hopf fibration. 1,000,000 particles flow across the surface of the torus in 4D space.
+- **Techniques**: The particles are defined by two angles ($\theta_1, \theta_2$) in $\mathbb{R}^4$. As they flow, a 4D rotation matrix (rotating the X-W and Y-Z planes) is applied to the hyper-torus. The 4D coordinates are then stereographically projected down to 3D. The resulting visual is a seemingly impossible geometry where a torus turns inside out fluidly without breaking, forming nested, glowing light fibers.
+- **Palette**: A cyclic 4D colormap (Neon Pink to Cyan to Purple) mapped directly to the intrinsic 4D surface coordinates, ensuring that the fibers maintain their color identity as they twist through multiple spatial dimensions.
+
 ## kinetic_binary_blackhole_globular_cluster_3d
 - **Date**: 2026-07-24
 - **Type**: Animation (900 frames, 60fps)

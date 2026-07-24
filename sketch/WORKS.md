@@ -1,3 +1,10 @@
+## kinetic_binary_blackhole_globular_cluster_3d
+- **Date**: 2026-07-24
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 3D N-body gravity simulation of 2,000,000 stars forming a dense globular cluster, disrupted by a pair of supermassive black holes orbiting each other at the core.
+- **Techniques**: Calculating $O(N^2)$ gravity for 2 million stars is computationally impossible in real-time. Instead, a Mean-Field approximation (Plummer Potential) is used to simulate the collective gravity of the cluster, combined with precise, localized Newtonian gravity from the two orbiting black holes. The binary black holes act as a gravitational "eggbeater", slinging stars out of the core to form beautiful, sweeping tidal tails in 3D space.
+- **Palette**: Deep space astrophysics colors. The dense inner core stars burn bright Blue/White, while the outer halo and tidal tails scatter into cooler Golden and Red hues.
+
 ## kinetic_aizawa_attractor_3d
 - **Date**: 2026-07-24
 - **Type**: Animation (900 frames, 60fps)

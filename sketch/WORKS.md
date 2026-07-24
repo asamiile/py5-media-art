@@ -1,3 +1,10 @@
+## kinetic_cellular_automata_wireworld_circuit_2d
+- **Date**: 2026-07-24
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A cellular automata simulation of Wireworld logic gates, visualizing high-speed electrons racing across a massive chaotic circuit.
+- **Techniques**: A highly vectorized NumPy simulation iteratively applies the Wireworld neighborhood rules. The conductor paths are procedurally generated using thresholded OpenSimplex noise to create a labyrinthine printed circuit board aesthetic, scaled using nearest-neighbor upscaling for a crisp pixel-art look.
+- **Palette**: Dark blue/grey void, Cyan (Electron Head), Magenta (Electron Tail), and Gold (Conductor).
+
 ## kinetic_vector_field_bokeh_flow_2d
 - **Date**: 2026-07-24
 - **Type**: Animation (1200 frames, 60fps)

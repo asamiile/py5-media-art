@@ -1,3 +1,10 @@
+## kinetic_quantum_orbitals_3d
+- **Date**: 2026-07-24
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A Monte-Carlo volumetric rendering of Hydrogen atom electron orbitals. 1,500,000 particles are sampled to form a glowing probability density cloud representing the quantum superposition of three distinct states ($3d_{z^2}$, $3d_{x^2-y^2}$, and $4f$).
+- **Techniques**: The simulation evaluates the exact mathematical spherical harmonics and radial wavefunctions for the Hydrogen atom. Over time, the weight coefficients of the superposition continuously morph, causing the orbital to fluidly transition from one quantum state to another. The rendering uses an Importance Sampling weighting to ensure the volumetric density is physically accurate despite concentrating particles near the nucleus for efficiency.
+- **Palette**: The color indicates the mathematical "phase" (sign) of the wavefunction at each point in space. Positive regions glow in Cyan/Blue, while negative regions burn in Red/Orange, mimicking neon plasma suspended in deep space.
+
 ## kinetic_acoustic_chladni_lattice_3d
 - **Date**: 2026-07-24
 - **Type**: Animation (900 frames, 60fps)

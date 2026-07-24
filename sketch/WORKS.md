@@ -1,3 +1,10 @@
+## kinetic_thomas_attractor_swarm_3d_projected
+- **Date**: 2026-07-24
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 3D kinetic visualization of the Thomas cyclically symmetric strange attractor. 300,000 particles explode from a central sphere and are pulled into the complex, continuous knot-like orbits of the attractor's gravitational field, rendered as a spinning turntable animation.
+- **Techniques**: To achieve massive scale without risking JVM crashes in `P3D`, the physics and 3D rotations are calculated purely mathematically in NumPy. The 3D coordinates are then manually projected via a perspective formula onto a 2D native canvas. Depth (Z-axis) controls the fading and color brightness (from Cyan/White in the foreground to Deep Blue in the background) for a faux-volumetric glowing effect, written directly to `py5.np_pixels`.
+- **Palette**: Deep Blue to bright Cyan and White, creating a luminous bioluminescent or plasma-like structure against absolute black.
+
 ## kinetic_langtons_ant_swarm_2d
 - **Date**: 2026-07-24
 - **Type**: Animation (900 frames, 60fps)

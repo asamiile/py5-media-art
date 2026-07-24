@@ -1,3 +1,10 @@
+## kinetic_galaxy_collision_toomre_3d
+- **Date**: 2026-07-24
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 3D astrophysical simulation of a galactic collision using the Toomre Model (restricted 3-body problem). Two supermassive black holes (cores) attract each other, while 600,000 orbiting stars are subjected to their immense gravitational tidal forces, tearing the galaxies apart into long, sweeping tidal tails.
+- **Techniques**: The simulation evaluates $O(N)$ gravity forces for 600,000 massless star particles against two massive moving cores using Symplectic Euler integration. The 3D coordinates are dynamically projected into 2D with perspective and depth-fading, giving the illusion of a volumetric camera panning around the collision event.
+- **Palette**: One galaxy is a burning Cyan/Blue core, while the other is a hot White/Magenta/Orange core. They collide against a deep space void with long additive exposure trails.
+
 ## kinetic_plasma_lorentz_drift_2d
 - **Date**: 2026-07-24
 - **Type**: Animation (900 frames, 60fps)

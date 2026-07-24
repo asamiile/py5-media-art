@@ -1,3 +1,10 @@
+## kinetic_sdf_fractal_flow_2d
+- **Date**: 2026-07-24
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A kinetic fluid-like simulation where 600,000 particles flow along the equipotential contour lines of a dynamically morphing Signed Distance Field (SDF). The underlying spatial field is constructed using a Kaleidoscopic Iterated Function System (IFS) that endlessly folds and rotates space into a complex, fractal mandala.
+- **Techniques**: The velocity of each particle is determined by the numerical gradient of the SDF, specifically the perpendicular vector ($\nabla \text{SDF}^\perp$), creating a divergence-free (incompressible) flow field perfectly tracing the fractal's surface. As the SDF's folding parameters oscillate over time, the particles scramble along the shifting contours like glowing liquid crystal.
+- **Palette**: Deep Blue fading into Magenta, Orange, Yellow, and stark White at regions of highest kinetic energy (where the space folding is most intense).
+
 ## kinetic_galaxy_collision_toomre_3d
 - **Date**: 2026-07-24
 - **Type**: Animation (900 frames, 60fps)

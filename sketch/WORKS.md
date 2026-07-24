@@ -1,3 +1,10 @@
+## kinetic_boids_murmuration_2d
+- **Date**: 2026-07-24
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A macroscopic fluid-like simulation of Craig Reynolds' Boids algorithm, modeling a Starling murmuration with 250,000 birds. Three invisible "predators" orbit the flock, causing dramatic scattering and reforming dynamics.
+- **Techniques**: To achieve real-time performance with 250,000 particles in pure NumPy, a grid-based mean-field approximation is used. The boids are discretized into a density grid, and 2D convolutions (`scipy.signal.convolve2d`) calculate the local averages for Separation, Alignment, and Cohesion forces, bypassing $O(N^2)$ distance checks entirely. 
+- **Palette**: A bioluminescent night-sky aesthetic. The boids are colored based on their local density, shifting from Cyan (sparse) to Deep Blue, Magenta, and finally Bright Pink/White in the densest clusters of the murmuration.
+
 ## kinetic_barkley_spiral_waves_2d
 - **Date**: 2026-07-24
 - **Type**: Animation (900 frames, 60fps)

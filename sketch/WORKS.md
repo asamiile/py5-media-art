@@ -1,3 +1,10 @@
+## kinetic_vector_field_bokeh_flow_2d
+- **Date**: 2026-07-24
+- **Type**: Animation (1200 frames, 60fps)
+- **Concept**: A kinetic visualization of a continuous vector field pushing soft glowing orbs (Bokeh), simulating fluid dynamics through noise.
+- **Techniques**: Driven by 3D Simplex noise mapped to vector angles, using the standard Java 2D renderer for stability. Overlapping particles use a low-opacity additive blend mode to create brilliant hot-spots of cyan and magenta bokeh.
+- **Palette**: Pitch black background, shimmering soft Cyan, Blue, and Magenta glowing orbs.
+
 ## kinetic_iterated_function_system_fractal_2d
 - **Date**: 2026-07-23
 - **Type**: Animation (900 frames, 60fps)

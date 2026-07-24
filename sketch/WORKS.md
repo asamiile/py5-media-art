@@ -1,3 +1,10 @@
+## kinetic_buddhabrot_nebula_2d
+- **Date**: 2026-07-24
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A kinetic reimagining of the classic Buddhabrot (or Nebulabrot) fractal. 3,000,000 particles continuously iterate through the Mandelbrot set equation $Z_{n+1} = Z_n^2 + C$.
+- **Techniques**: To animate the fractal, the complex parameter space $C$ is slowly rotated and translated over time ($C(t) = C_{orig} \cdot e^{it} + \Delta$). The particles are divided into three groups (Red, Green, Blue) based on their "lifetime" (maximum allowed iterations before respawning: 30, 80, and 200). As particles iterate, escape, and respawn, they trace out an endlessly morphing, swirling nebula in the complex plane.
+- **Palette**: Deep cosmos Red, Green, and Blue additive layers mapping to short, medium, and long particle lifespans respectively, mimicking the Hubble Space Telescope's narrowband palette for emission nebulae.
+
 ## kinetic_spherical_curl_fluid_3d
 - **Date**: 2026-07-24
 - **Type**: Animation (900 frames, 60fps)

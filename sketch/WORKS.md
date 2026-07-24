@@ -1,3 +1,10 @@
+## kinetic_voronoi_fluid_relaxation_2d
+- **Date**: 2026-07-24
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A visualization of 4,000 Voronoi cells experiencing continuous fluid advection. As the cells are pushed by turbulence, the Voronoi boundaries squash, stretch, and pop like a dynamic cellular membrane or stained glass.
+- **Techniques**: Uses a mathematical fluid approximation (fake curl noise) to continuously advect 4,000 points. The Voronoi diagram is recomputed each frame using `scipy.spatial.Voronoi`. Additive blending and long-exposure motion blur turn the ridge lines into a continuous kinetic neon web.
+- **Palette**: Neon Cyan, Magenta, and Purple gradients based on initial point distribution, blending additively on a Pitch Black void.
+
 ## kinetic_peter_de_jong_attractor_morph_2d
 - **Date**: 2026-07-24
 - **Type**: Animation (900 frames, 60fps)

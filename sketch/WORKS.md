@@ -1,3 +1,10 @@
+## kinetic_volumetric_curl_noise_flow_3d
+- **Date**: 2026-07-24
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 3D volumetric simulation of 500,000 particles advected through a chaotic fluid field, resembling an ethereal nebula or galaxy.
+- **Techniques**: A continuous divergence-free vector field (faux 3D curl noise) is generated purely through trigonometric interference equations in NumPy. The 500,000 points flow seamlessly through this space while a secondary vortex force keeps them from dispersing indefinitely. Like previous 3D works, it bypasses the `P3D` renderer entirely—handling 3D perspective projection, rotation, and exponential depth-based Z-fading entirely mathematically in Python, and drawing directly to the 2D `py5.np_pixels` array.
+- **Palette**: A bioluminescent gradient of Magenta, Purple, and Cyan that scales dynamically based on the particle's initial radius from the origin.
+
 ## kinetic_ising_model_phase_transition_2d
 - **Date**: 2026-07-24
 - **Type**: Animation (900 frames, 60fps)

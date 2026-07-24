@@ -1,3 +1,10 @@
+## kinetic_peter_de_jong_attractor_morph_2d
+- **Date**: 2026-07-24
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A kinetic visualization of a Peter de Jong strange attractor, rendered as 500,000 independent points morphing through geometric space.
+- **Techniques**: The mathematical parameters $a, b, c, d$ that define the chaotic equations slowly oscillate over time via sinusoidal interpolation. Instead of recursive iteration, 50万 independent particles step through the field once per frame, allowing them to trace fluid kinetic paths. Additive blending directly on `py5.np_pixels` provides extreme rendering speed and a silky, smoke-like motion blur.
+- **Palette**: A high-contrast vaporwave neon gradient, transitioning from Cyan to Magenta based on horizontal displacement, set against absolute black.
+
 ## kinetic_magnetic_pendulum_chaos_2d
 - **Date**: 2026-07-24
 - **Type**: Animation (900 frames, 60fps)

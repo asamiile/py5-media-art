@@ -1,3 +1,10 @@
+## kinetic_physarum_slime_mold_2d
+- **Date**: 2026-07-24
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A biological multi-agent simulation of Physarum polycephalum (slime mold). 600,000 microscopic agents navigate a 2D space, leaving chemical trails and turning towards the highest concentration of pheromones, which results in the spontaneous self-organization of intricate, pulsating, vein-like networks.
+- **Techniques**: The entire system—sensing, rotation, movement, and chemical deposition—is fully vectorized in NumPy. To create a morphing kinetic aesthetic, the agents' sensory angles and rotation speeds are continuously modulated by slow sine waves over time. This causes the network to organically shift its behavior, transitioning smoothly between tight crystal-like webs and fast-flowing fluid rivers.
+- **Palette**: A thermal/neon colormap spanning from absolute Black to Deep Purple, Magenta, Red, Yellow, and bright White at the highest pheromone densities.
+
 ## kinetic_reaction_diffusion_morph_2d
 - **Date**: 2026-07-24
 - **Type**: Animation (900 frames, 60fps)

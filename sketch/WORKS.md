@@ -1,3 +1,10 @@
+## kinetic_martin_attractor_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A biological, cellular matrix multiplying infinitely.
+- **Techniques**: The Hopalong (or Martin) attractor map. We simulate 1M particles. The non-linear map uses a square root and sign function which creates organic, cellular-like fractal patterns. We smoothly modulate the constants `a`, `b`, and `c` using trigonometric functions over time to cause the cells to split and merge.
+- **Palette**: Bioluminescent Green, Soft Yellow, and Deep Oceanic Teal.
+
 ## kinetic_buddhabrot_fractal_2d
 - **Date**: 2026-07-25
 - **Type**: Animation (600 frames, 60fps)

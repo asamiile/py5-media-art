@@ -1,3 +1,10 @@
+## kinetic_rabinovich_fabrikant_attractor_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A continuous 3D chaotic flow with intricate, hypersensitive folded trajectories.
+- **Techniques**: The Rabinovich-Fabrikant Attractor. We numerically integrate the continuous differential equations using the Euler method for 1M particles. The delicate structure is rotated and orthographically projected onto the 2D plane, gently modulating the parameter `gamma` over time.
+- **Palette**: Crimson, Violet, and Midnight.
+
 ## kinetic_rikitake_attractor_2d
 - **Date**: 2026-07-25
 - **Type**: Animation (900 frames, 60fps)

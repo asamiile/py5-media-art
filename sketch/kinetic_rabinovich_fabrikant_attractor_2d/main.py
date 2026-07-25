@@ -26,29 +26,33 @@ SIZE = OUTPUT_SIZE
 # Simulation state
 N = 1000000
 # Initial points spread around the origin
-x = np.random.uniform(-1, 1, N).astype(np.float32)
-y = np.random.uniform(-1, 1, N).astype(np.float32)
-z = np.random.uniform(0, 1, N).astype(np.float32)
+x = np.random.uniform(-0.1, 0.1, N).astype(np.float32)
+y = np.random.uniform(-0.1, 0.1, N).astype(np.float32)
+z = np.random.uniform(-0.1, 0.1, N).astype(np.float32)
 
 density_buffer = np.zeros((SIZE[1], SIZE[0]), dtype=np.float32)
 
-def step_rf(a, g, dt=0.005):
+def step_rabinovich_fabrikant(gamma, dt=0.005):
     global x, y, z
-    # Euler integration step for the Rabinovich-Fabrikant attractor
-    dx = y * (z - 1.0 + x**2) + g * x
-    dy = x * (3.0 * z + 1.0 - x**2) + g * y
-    dz = -2.0 * z * (a + x * y)
+    # Euler integration step for the Rabinovich-Fabrikant Attractor
+    alpha = 0.14
+    
+    x2 = x * x
+    xy = x * y
+    
+    dx = y * (z - 1.0 + x2) + gamma * x
+    dy = x * (3.0 * z + 1.0 - x2) + gamma * y
+    dz = -2.0 * z * (alpha + xy)
     
     x_new = x + dx * dt
     y_new = y + dy * dt
     z_new = z + dz * dt
     
-    # Rabinovich-Fabrikant is EXTREMELY sensitive and explodes easily.
-    # Keep particles bounded tightly.
-    mask = (np.abs(x_new) > 5) | (np.abs(y_new) > 5) | (np.abs(z_new) > 5) | np.isnan(x_new)
-    x_new[mask] = np.random.uniform(-1, 1, np.sum(mask)).astype(np.float32)
-    y_new[mask] = np.random.uniform(-1, 1, np.sum(mask)).astype(np.float32)
-    z_new[mask] = np.random.uniform(0, 1, np.sum(mask)).astype(np.float32)
+    # Keep particles bounded just in case (RF can blow up easily)
+    mask = (np.abs(x_new) > 10) | (np.abs(y_new) > 10) | (np.abs(z_new) > 10) | np.isnan(x_new)
+    x_new[mask] = np.random.uniform(-0.1, 0.1, np.sum(mask)).astype(np.float32)
+    y_new[mask] = np.random.uniform(-0.1, 0.1, np.sum(mask)).astype(np.float32)
+    z_new[mask] = np.random.uniform(-0.1, 0.1, np.sum(mask)).astype(np.float32)
     
     x[:] = x_new
     y[:] = y_new
@@ -64,17 +68,16 @@ def draw():
     
     t = py5.frame_count * 2 * np.pi / TOTAL_FRAMES
     
-    # Rabinovich-Fabrikant parameters
-    a = 0.14
-    g = 0.1 + 0.01 * np.sin(t)
+    # Rabinovich-Fabrikant parameter with continuous modulation
+    gamma = 0.1 + 0.02 * np.sin(t)
     
     # Run integration steps
     for _ in range(5):
-        step_rf(a, g, dt=0.005)
+        step_rabinovich_fabrikant(gamma, dt=0.002)
         
     # Rotate 3D attractor gently over time
-    theta = t * 0.3
-    phi = np.sin(t * 1.5) * 0.5
+    theta = t * 0.4
+    phi = np.sin(t * 1.5) * 0.4
     
     # Rotate around Z
     x_rot1 = x * np.cos(theta) - y * np.sin(theta)
@@ -87,9 +90,9 @@ def draw():
     z_rot2 = y_rot1 * np.sin(phi) + z_rot1 * np.cos(phi)
     
     # Map to screen
-    # RF attractor typical size: x,y in [-2, 2], z in [0, 2]
-    screen_x = (x_rot2 + 2.5) / 5.0 * SIZE[0]
-    screen_y = (y_rot2 + 2.5) / 5.0 * SIZE[1]
+    # Rabinovich-Fabrikant typical size: x,y,z in [-2, 2]
+    screen_x = (x_rot2 + 2.0) / 4.0 * SIZE[0]
+    screen_y = (y_rot2 + 2.0) / 4.0 * SIZE[1]
     
     # Fast 2D histogram
     H, _, _ = np.histogram2d(screen_y, screen_x, bins=(SIZE[1], SIZE[0]), range=[[0, SIZE[1]], [0, SIZE[0]]])
@@ -101,25 +104,25 @@ def draw():
     py5.load_np_pixels()
     
     # Map density to colors
-    # Palette: Turquoise, Mint, and Charcoal Black
+    # Palette: Crimson, Violet, and Midnight
     density_norm = np.clip(density_buffer / 12.0, 0, 1)
     
-    # Charcoal base
-    r_col = 20 * (density_norm ** 1.5)
-    g_col = 25 * (density_norm ** 1.5)
+    # Midnight base
+    r_col = 5 * (density_norm ** 1.5)
+    g_col = 5 * (density_norm ** 1.5)
     b_col = 30 * (density_norm ** 1.5)
     
-    # Turquoise midtones
-    turq_mask = (density_norm > 0.3) & (density_norm < 0.7)
-    r_col[turq_mask] = np.maximum(r_col[turq_mask], 20 + 40 * ((density_norm[turq_mask] - 0.3) / 0.4))
-    g_col[turq_mask] = np.maximum(g_col[turq_mask], 25 + 185 * ((density_norm[turq_mask] - 0.3) / 0.4))
-    b_col[turq_mask] = np.maximum(b_col[turq_mask], 30 + 178 * ((density_norm[turq_mask] - 0.3) / 0.4))
+    # Violet midtones
+    vio_mask = (density_norm > 0.3) & (density_norm < 0.7)
+    r_col[vio_mask] = np.maximum(r_col[vio_mask], 5 + 133 * ((density_norm[vio_mask] - 0.3) / 0.4))
+    g_col[vio_mask] = np.maximum(g_col[vio_mask], 5 + 38 * ((density_norm[vio_mask] - 0.3) / 0.4))
+    b_col[vio_mask] = np.maximum(b_col[vio_mask], 30 + 175 * ((density_norm[vio_mask] - 0.3) / 0.4))
     
-    # Mint highlights
-    mint_mask = density_norm > 0.7
-    r_col[mint_mask] = np.maximum(r_col[mint_mask], 60 + 100 * ((density_norm[mint_mask] - 0.7) / 0.3))
-    g_col[mint_mask] = np.maximum(g_col[mint_mask], 210 + 45 * ((density_norm[mint_mask] - 0.7) / 0.3))
-    b_col[mint_mask] = np.maximum(b_col[mint_mask], 208 + 40 * ((density_norm[mint_mask] - 0.7) / 0.3))
+    # Crimson highlights
+    crim_mask = density_norm > 0.7
+    r_col[crim_mask] = np.maximum(r_col[crim_mask], 138 + 82 * ((density_norm[crim_mask] - 0.7) / 0.3))
+    g_col[crim_mask] = np.maximum(g_col[crim_mask], 43 - 23 * ((density_norm[crim_mask] - 0.7) / 0.3))
+    b_col[crim_mask] = np.maximum(b_col[crim_mask], 205 - 165 * ((density_norm[crim_mask] - 0.7) / 0.3))
     
     py5.np_pixels[:, :, 0] = 255
     py5.np_pixels[:, :, 1] = r_col.astype(np.uint8)

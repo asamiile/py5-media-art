@@ -1,3 +1,10 @@
+## kinetic_sprott_linz_k_attractor_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A continuous 3D chaotic flow forming an intricate folded ribbon structure.
+- **Techniques**: The Sprott-Linz K Attractor. We numerically integrate the continuous differential equations using the Euler method for 1M particles. The elegant structure is rotated and orthographically projected onto the 2D plane, gently modulating the parameter `alpha` over time.
+- **Palette**: Crimson, Burgundy, and Gold.
+
 ## kinetic_sprott_linz_j_attractor_2d
 - **Date**: 2026-07-25
 - **Type**: Animation (900 frames, 60fps)

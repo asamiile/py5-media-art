@@ -1,3 +1,10 @@
+## kinetic_henon_map_attractor_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A swirling, cosmic storm of luminous dust caught in a gravity well.
+- **Techniques**: The Hénon map. It's a discrete-time dynamical system that maps a point (x, y) to a new point. We iterate it for 1M particles. To make it dynamic, we modulate the parameters `a` and `b`. The map can blow up easily to infinity, so bounds checking is used to instantly reset particles escaping the attractor.
+- **Palette**: Neon Orange and Deep Space Purple.
+
 ## kinetic_peter_de_jong_attractor_2d
 - **Date**: 2026-07-25
 - **Type**: Animation (900 frames, 60fps)

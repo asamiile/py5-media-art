@@ -1,3 +1,10 @@
+## kinetic_lorenz_attractor_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 2D projection of the 3D continuous chaotic flow over a strange attractor.
+- **Techniques**: The iconic Lorenz Strange Attractor. We numerically integrate the continuous differential equations using the Euler method for 1M particles, applying a gentle 3D rotation before orthographic projection. Parameters are continuously modulated.
+- **Palette**: Electric Cyan, Violet, and Neon Orange.
+
 ## kinetic_hopalong_attractor_2d
 - **Date**: 2026-07-25
 - **Type**: Animation (900 frames, 60fps)

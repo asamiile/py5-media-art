@@ -1,3 +1,10 @@
+## kinetic_rikitake_attractor_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A continuous 3D chaotic flow simulating the erratic reversals of the Earth's magnetic field.
+- **Techniques**: The Rikitake Dynamo Attractor. We numerically integrate the continuous differential equations using the Euler method for 1M particles. The bilobed chaotic structure is rotated and orthographically projected onto the 2D plane, gently modulating the parameter `mu` over time.
+- **Palette**: Rust, Copper, and Charcoal.
+
 ## kinetic_qi_attractor_2d
 - **Date**: 2026-07-25
 - **Type**: Animation (900 frames, 60fps)

@@ -1,3 +1,10 @@
+## kinetic_gingerbreadman_map_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A chaotic, crystalline storm of hexagonal structures forming and breaking apart.
+- **Techniques**: The Gingerbreadman map. We simulate 1M particles. To keep the delicate fractal structure intact, the map is exact, but a kinetic rotation matrix is applied to the output points, allowing us to pan around the chaotic region.
+- **Palette**: Ice Blue, Sapphire, and Frost White.
+
 ## kinetic_bedhead_attractor_2d
 - **Date**: 2026-07-25
 - **Type**: Animation (600 frames, 60fps)

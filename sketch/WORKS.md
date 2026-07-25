@@ -1,3 +1,10 @@
+## kinetic_chladni_plate_resonance_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (600 frames, 60fps)
+- **Concept**: Sand dances into geometric symmetry as the plate's resonant frequency sweeps through harmonics.
+- **Techniques**: Simulate Ernst Chladni's famous acoustic resonance experiment. Particles move along the gradient of the 2D standing wave equation (sum of sines/cosines). Modulating the (m, n) mode parameters smoothly over time causes the nodal lines (where particles get trapped) to dramatically shift and morph into new intricate patterns.
+- **Palette**: Shimmering gold sand over a deep velvet crimson plate.
+
 ## kinetic_tinkerbell_map_attractor_2d
 - **Date**: 2026-07-25
 - **Type**: Animation (900 frames, 60fps)

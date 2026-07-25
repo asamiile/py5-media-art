@@ -3,7 +3,6 @@ import shutil
 import subprocess
 import sys
 import random
-import math
 import py5
 import numpy as np
 
@@ -12,130 +11,134 @@ if str(PROJECT_ROOT) not in sys.path:
     sys.path.append(str(PROJECT_ROOT))
 
 from lib.paths import sketch_dir
+from lib.preview import preview_filename
 from lib.sizes import get_sizes
 
 SKETCH_DIR = sketch_dir(__file__)
 WORK_NAME = SKETCH_DIR.name
 FRAMES_DIR = SKETCH_DIR / "frames"
-DURATION_SEC = random.randint(15, 20)
+DURATION_SEC = 10
 FPS = 60
 TOTAL_FRAMES = DURATION_SEC * FPS
 PREVIEW_FILENAME = f"{WORK_NAME}_p1.png"
 PREVIEW_SIZE, OUTPUT_SIZE, _ = get_sizes()
 SIZE = OUTPUT_SIZE
 
-# Physics settings
-NUM_PARTICLES = 100000
-VIBRATION_INTENSITY = 0.06
-PARTICLE_SPEED = 0.12
-EPSILON = 0.001
+# Simulation state
+N = 250000
+# Initial points
+x = np.random.uniform(0, 1, N).astype(np.float32)
+y = np.random.uniform(0, 1, N).astype(np.float32)
 
-# Normalize coordinates from screen to -1..1
-# It's faster to do math in -1..1 then project
-px = np.random.uniform(-1, 1, NUM_PARTICLES)
-py = np.random.uniform(-1, 1, NUM_PARTICLES)
-vx = np.zeros(NUM_PARTICLES)
-vy = np.zeros(NUM_PARTICLES)
+density_buffer = np.zeros((SIZE[1], SIZE[0]), dtype=np.float32)
 
-def chladni(x, y, n, m):
-    # Z = a * sin(n*pi*x) * sin(m*pi*y) + b * sin(m*pi*x) * sin(n*pi*y)
-    # Using a=1, b=1 for simplicity
+def chladni_grad(x, y, m, n):
+    # The Chladni equation for a square plate is roughly:
+    # Z = a * sin(m * pi * x) * sin(n * pi * y) + b * sin(n * pi * x) * sin(m * pi * y)
+    # We want particles to move TOWARDS the nodal lines (where Z = 0 or Z^2 is minimum)
+    # So we take the gradient of Z^2, which is 2 * Z * grad(Z), and move in the negative direction.
+    
     pi = np.pi
-    return np.sin(n * pi * x) * np.sin(m * pi * y) + np.sin(m * pi * x) * np.sin(n * pi * y)
+    
+    sin_mx = np.sin(m * pi * x)
+    sin_ny = np.sin(n * pi * y)
+    sin_nx = np.sin(n * pi * x)
+    sin_my = np.sin(m * pi * y)
+    
+    cos_mx = np.cos(m * pi * x)
+    cos_ny = np.cos(n * pi * y)
+    cos_nx = np.cos(n * pi * x)
+    cos_my = np.cos(m * pi * y)
+    
+    Z = sin_mx * sin_ny - sin_nx * sin_my  # using a=1, b=-1 is common
+    
+    dZ_dx = m * pi * cos_mx * sin_ny - n * pi * cos_nx * sin_my
+    dZ_dy = n * pi * sin_mx * cos_ny - m * pi * sin_nx * cos_my
+    
+    # Gradient of Z^2
+    grad_x = 2 * Z * dZ_dx
+    grad_y = 2 * Z * dZ_dy
+    
+    return grad_x, grad_y
+
+def step_chladni(m, n):
+    global x, y
+    grad_x, grad_y = chladni_grad(x, y, m, n)
+    
+    # Move particles towards nodes (negative gradient of Z^2) with some noise
+    # The force scales with distance, but we clamp it to prevent explosions
+    force_x = -grad_x * 0.005
+    force_y = -grad_y * 0.005
+    
+    # Add brownian noise to keep them active
+    noise_x = np.random.normal(0, 0.001, N)
+    noise_y = np.random.normal(0, 0.001, N)
+    
+    x_new = x + force_x + noise_x
+    y_new = y + force_y + noise_y
+    
+    # Bounce off walls
+    mask_x0 = x_new < 0
+    mask_x1 = x_new > 1
+    x_new[mask_x0] *= -1
+    x_new[mask_x1] = 2.0 - x_new[mask_x1]
+    
+    mask_y0 = y_new < 0
+    mask_y1 = y_new > 1
+    y_new[mask_y0] *= -1
+    y_new[mask_y1] = 2.0 - y_new[mask_y1]
+    
+    x[:] = x_new
+    y[:] = y_new
 
 def setup():
     py5.size(*SIZE)
     py5.pixel_density(1)
     FRAMES_DIR.mkdir(exist_ok=True)
-    py5.color_mode(py5.HSB, 360, 100, 100, 100)
-    py5.background(0)
-
+    
 def draw():
-    global px, py, vx, vy
+    global density_buffer
     
-    # Motion blur / Trail effect
-    py5.blend_mode(py5.BLEND)
-    py5.no_stroke()
-    py5.fill(10, 80, 8, 30) # Very dark crimson trail
-    py5.rect(0, 0, py5.width, py5.height)
+    t = py5.frame_count * 2 * np.pi / TOTAL_FRAMES
     
-    t = py5.frame_count / TOTAL_FRAMES
+    # Modulate mode parameters m and n continuously
+    # Transitioning from m=3, n=5 to m=7, n=4
+    m = 5.0 + 2.0 * np.sin(t)
+    n = 4.5 + 1.5 * np.cos(t * 2)
     
-    # We want to smoothly interpolate between different resonant modes.
-    # We'll define a few keyframes for (n, m) pairs.
-    modes = [(2, 3), (3, 5), (4, 4), (5, 7), (2, 3)]
-    num_segments = len(modes) - 1
-    
-    segment = int(t * num_segments)
-    if segment >= num_segments:
-        segment = num_segments - 1
+    # Run steps to settle onto nodes
+    for _ in range(5):
+        step_chladni(m, n)
         
-    local_t = (t * num_segments) - segment
+    # Map to screen
+    screen_x = x * SIZE[0]
+    screen_y = y * SIZE[1]
     
-    # Ease in-out interpolation for smooth transitions
-    ease_t = local_t * local_t * (3 - 2 * local_t) 
+    # Fast 2D histogram
+    H, _, _ = np.histogram2d(screen_y, screen_x, bins=(SIZE[1], SIZE[0]), range=[[0, SIZE[1]], [0, SIZE[0]]])
     
-    n_curr, m_curr = modes[segment]
-    n_next, m_next = modes[segment + 1]
+    # Accumulate with decay (motion blur)
+    density_buffer = density_buffer * 0.7 + H
     
-    n = n_curr + (n_next - n_curr) * ease_t
-    m = m_curr + (m_next - m_curr) * ease_t
-
-    # Calculate gradients of the Chladni function to move particles
-    # We want particles to move towards Z=0 (nodal lines), so we move down the gradient of abs(Z)
-    z = chladni(px, py, n, m)
+    # Render
+    py5.load_np_pixels()
     
-    # Numerical derivative
-    zx = chladni(px + EPSILON, py, n, m)
-    zy = chladni(px, py + EPSILON, n, m)
+    # Map density to colors
+    # Palette: Shimmering gold sand over a deep velvet crimson plate
+    # Plate: Crimson [50, 0, 10]
+    # Sand: Gold [255, 200, 50]
+    density_norm = np.clip(density_buffer / 8.0, 0, 1)
     
-    dzdx = (zx - z) / EPSILON
-    dzdy = (zy - z) / EPSILON
+    r = 50 + 205 * density_norm
+    g = 0 + 200 * density_norm
+    b = 10 + 40 * density_norm
     
-    # For Z near zero, abs(Z) gradient is dz * sign(z)
-    grad_x = dzdx * np.sign(z)
-    grad_y = dzdy * np.sign(z)
+    py5.np_pixels[:, :, 0] = 255
+    py5.np_pixels[:, :, 1] = r.astype(np.uint8)
+    py5.np_pixels[:, :, 2] = g.astype(np.uint8)
+    py5.np_pixels[:, :, 3] = b.astype(np.uint8)
     
-    # Apply forces
-    vx -= grad_x * PARTICLE_SPEED
-    vy -= grad_y * PARTICLE_SPEED
-    
-    # Add random vibration noise proportional to the absolute amplitude Z
-    # Particles vibrate violently at antinodes, but settle down at nodes
-    vibration_x = np.random.uniform(-1, 1, NUM_PARTICLES) * np.abs(z) * VIBRATION_INTENSITY
-    vibration_y = np.random.uniform(-1, 1, NUM_PARTICLES) * np.abs(z) * VIBRATION_INTENSITY
-    
-    vx += vibration_x
-    vy += vibration_y
-    
-    # Friction
-    vx *= 0.8
-    vy *= 0.8
-    
-    px += vx
-    py += vy
-    
-    # Bouncing off walls
-    mask_x = np.abs(px) > 1.0
-    px[mask_x] = np.sign(px[mask_x]) * 1.0
-    vx[mask_x] *= -0.5
-    
-    mask_y = np.abs(py) > 1.0
-    py[mask_y] = np.sign(py[mask_y]) * 1.0
-    vy[mask_y] *= -0.5
-
-    # Map to screen coordinates
-    # We'll map -1.2 to 1.2 so they fill the screen edge to edge nicely
-    screen_x = (px + 1.2) / 2.4 * py5.width
-    screen_y = (py + 1.2) / 2.4 * py5.height
-    
-    py5.blend_mode(py5.ADD)
-    py5.stroke_weight(2)
-    
-    # Draw points using raw rendering for speed
-    py5.stroke(45, 70, 90, 40) # Gold / Bronze
-    py5.points(np.column_stack((screen_x, screen_y)))
-
+    py5.update_np_pixels()
     py5.save_frame(str(FRAMES_DIR / "frame-####.png"))
 
     if py5.frame_count == 2 or py5.frame_count % 60 == 0:
@@ -146,10 +149,11 @@ def draw():
             os._exit(1)
 
     if py5.frame_count % 60 == 0:
-        print(f"[Render Progress] Frame {py5.frame_count}/{TOTAL_FRAMES} ({py5.frame_count/TOTAL_FRAMES*100:.1f}%) | Mode: ({n:.2f}, {m:.2f})")
+        print(f"[Render Progress] Frame {py5.frame_count}/{TOTAL_FRAMES} ({py5.frame_count/TOTAL_FRAMES*100:.1f}%)")
 
     if py5.frame_count >= TOTAL_FRAMES:
         py5.exit_sketch()
+        
         print(f"[Render FFmpeg] Compiling {TOTAL_FRAMES} frames into video...")
         subprocess.run([
             "ffmpeg", "-y", "-r", str(FPS),
@@ -157,10 +161,14 @@ def draw():
             "-vcodec", "libx264", "-pix_fmt", "yuv420p",
             str(SKETCH_DIR / f"{WORK_NAME}.mp4"),
         ], check=True)
+        
         mid = str(FRAMES_DIR / f"frame-{TOTAL_FRAMES // 2:04d}.png")
         subprocess.run(["cp", mid, str(SKETCH_DIR / PREVIEW_FILENAME)], check=True)
+        
         if FRAMES_DIR.exists():
             shutil.rmtree(FRAMES_DIR)
+            print("[Render Cleanup] Temporary frames directory successfully removed.")
+            
         import os
         os._exit(0)
 

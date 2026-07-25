@@ -1,3 +1,10 @@
+## kinetic_moore_spiegel_attractor_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A continuous 3D chaotic flow representing stellar oscillations, forming a dense and erratic ball structure.
+- **Techniques**: The Moore-Spiegel Attractor. We numerically integrate the continuous differential equations using the Euler method for 1M particles. The massive, chaotic ball is rotated and orthographically projected onto the 2D plane, gently modulating the parameter `R` over time.
+- **Palette**: Gold, Amber, and Slate.
+
 ## kinetic_hadley_circulation_attractor_2d
 - **Date**: 2026-07-25
 - **Type**: Animation (900 frames, 60fps)

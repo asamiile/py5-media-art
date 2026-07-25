@@ -1,3 +1,10 @@
+## kinetic_gumowski_mira_attractor_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: High-energy particle collisions forming delicate, winged angelic forms.
+- **Techniques**: The Gumowski-Mira attractor, originally developed at CERN to model particle orbits. Modulating the parameter a and b causes the wings to open, close, and sprout new sub-structures. We render with 2D histograms and additive blending.
+- **Palette**: Ethereal White, Ice Blue, and Deep Crimson on pitch black.
+
 ## kinetic_ikeda_map_attractor_2d
 - **Date**: 2026-07-25
 - **Type**: Animation (600 frames, 60fps)

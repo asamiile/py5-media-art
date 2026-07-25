@@ -26,9 +26,9 @@ SIZE = OUTPUT_SIZE
 # Simulation state
 N = 1000000
 # Initial points spread around the origin
-x = np.random.uniform(-10, 10, N).astype(np.float32)
-y = np.random.uniform(-10, 10, N).astype(np.float32)
-z = np.random.uniform(0, 30, N).astype(np.float32)
+x = np.random.uniform(-1, 1, N).astype(np.float32)
+y = np.random.uniform(-1, 1, N).astype(np.float32)
+z = np.random.uniform(0, 1, N).astype(np.float32)
 
 density_buffer = np.zeros((SIZE[1], SIZE[0]), dtype=np.float32)
 
@@ -44,10 +44,10 @@ def step_chen(a, b, c, dt=0.005):
     z_new = z + dz * dt
     
     # Keep particles bounded just in case
-    mask = (np.abs(x_new) > 100) | (np.abs(y_new) > 100) | (np.abs(z_new) > 200)
-    x_new[mask] = np.random.uniform(-10, 10, np.sum(mask)).astype(np.float32)
-    y_new[mask] = np.random.uniform(-10, 10, np.sum(mask)).astype(np.float32)
-    z_new[mask] = np.random.uniform(0, 30, np.sum(mask)).astype(np.float32)
+    mask = (np.abs(x_new) > 60) | (np.abs(y_new) > 60) | (np.abs(z_new) > 60) | np.isnan(x_new)
+    x_new[mask] = np.random.uniform(-1, 1, np.sum(mask)).astype(np.float32)
+    y_new[mask] = np.random.uniform(-1, 1, np.sum(mask)).astype(np.float32)
+    z_new[mask] = np.random.uniform(0, 1, np.sum(mask)).astype(np.float32)
     
     x[:] = x_new
     y[:] = y_new
@@ -63,13 +63,13 @@ def draw():
     
     t = py5.frame_count * 2 * np.pi / TOTAL_FRAMES
     
-    # Chen attractor parameters with continuous modulation
+    # Chen parameters with continuous modulation
     a = 35.0
     b = 3.0
     c = 28.0 + 2.0 * np.sin(t)
     
     # Run integration steps
-    for _ in range(3):
+    for _ in range(5):
         step_chen(a, b, c, dt=0.002)
         
     # Rotate 3D attractor gently over time
@@ -87,11 +87,9 @@ def draw():
     z_rot2 = y_rot1 * np.sin(phi) + z_rot1 * np.cos(phi)
     
     # Map to screen
-    # Chen attractor typical size: x,y in [-20, 20], z in [0, 40]
-    z_centered = z_rot2 - 20.0
-    
-    screen_x = (x_rot2 + 25.0) / 50.0 * SIZE[0]
-    screen_y = (y_rot2 + 25.0) / 50.0 * SIZE[1]
+    # Chen typical size: x,y in [-30, 30], z in [0, 50]
+    screen_x = (x_rot2 + 40.0) / 80.0 * SIZE[0]
+    screen_y = (y_rot2 + 40.0) / 80.0 * SIZE[1]
     
     # Fast 2D histogram
     H, _, _ = np.histogram2d(screen_y, screen_x, bins=(SIZE[1], SIZE[0]), range=[[0, SIZE[1]], [0, SIZE[0]]])
@@ -103,25 +101,25 @@ def draw():
     py5.load_np_pixels()
     
     # Map density to colors
-    # Palette: Solar Yellow, Tangerine, and Deep Crimson
-    density_norm = np.clip(density_buffer / 20.0, 0, 1)
+    # Palette: Amber, Crimson, and Obsidian
+    density_norm = np.clip(density_buffer / 12.0, 0, 1)
     
-    # Deep Crimson base
-    r_col = 150 * (density_norm ** 1.5)
-    g_col = 0 * (density_norm ** 1.2)
-    b_col = 30 * (density_norm ** 1.0)
+    # Obsidian base
+    r_col = 20 * (density_norm ** 1.5)
+    g_col = 15 * (density_norm ** 1.5)
+    b_col = 25 * (density_norm ** 1.5)
     
-    # Tangerine midtones
-    tang_mask = (density_norm > 0.3) & (density_norm < 0.7)
-    r_col[tang_mask] = np.maximum(r_col[tang_mask], 150 + 105 * ((density_norm[tang_mask] - 0.3) / 0.4))
-    g_col[tang_mask] = np.maximum(g_col[tang_mask], 0 + 130 * ((density_norm[tang_mask] - 0.3) / 0.4))
-    b_col[tang_mask] = np.maximum(b_col[tang_mask], 30 - 30 * ((density_norm[tang_mask] - 0.3) / 0.4))
+    # Crimson midtones
+    crimson_mask = (density_norm > 0.3) & (density_norm < 0.7)
+    r_col[crimson_mask] = np.maximum(r_col[crimson_mask], 20 + 200 * ((density_norm[crimson_mask] - 0.3) / 0.4))
+    g_col[crimson_mask] = np.maximum(g_col[crimson_mask], 15 + 0 * ((density_norm[crimson_mask] - 0.3) / 0.4))
+    b_col[crimson_mask] = np.maximum(b_col[crimson_mask], 25 + 25 * ((density_norm[crimson_mask] - 0.3) / 0.4))
     
-    # Solar Yellow highlights
-    yell_mask = density_norm > 0.7
-    r_col[yell_mask] = np.maximum(r_col[yell_mask], 255)
-    g_col[yell_mask] = np.maximum(g_col[yell_mask], 130 + 125 * ((density_norm[yell_mask] - 0.7) / 0.3))
-    b_col[yell_mask] = np.maximum(b_col[yell_mask], 0)
+    # Amber highlights
+    amber_mask = density_norm > 0.7
+    r_col[amber_mask] = np.maximum(r_col[amber_mask], 220 + 35 * ((density_norm[amber_mask] - 0.7) / 0.3))
+    g_col[amber_mask] = np.maximum(g_col[amber_mask], 15 + 180 * ((density_norm[amber_mask] - 0.7) / 0.3))
+    b_col[amber_mask] = np.maximum(b_col[amber_mask], 50 - 50 * ((density_norm[amber_mask] - 0.7) / 0.3))
     
     py5.np_pixels[:, :, 0] = 255
     py5.np_pixels[:, :, 1] = r_col.astype(np.uint8)

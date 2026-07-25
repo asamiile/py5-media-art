@@ -1,3 +1,10 @@
+## kinetic_sprott_case_f_attractor_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A continuous 3D chaotic flow with a delicate quadratic shape.
+- **Techniques**: The Sprott Case F Attractor. We numerically integrate the continuous differential equations using the Euler method for 1M particles. The delicate 3D structure is rotated and orthographically projected onto the 2D plane, gently modulating the linear coupling parameter over time.
+- **Palette**: Rose Gold, Peach, and Plum.
+
 ## kinetic_aizawa_attractor_2d
 - **Date**: 2026-07-25
 - **Type**: Animation (900 frames, 60fps)

@@ -1,3 +1,10 @@
+## kinetic_thomas_attractor_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A continuous 3D chaotic flow that forms a perfectly symmetrical, endlessly wrapping knot.
+- **Techniques**: Thomas' Cyclically Symmetric Attractor. We numerically integrate the continuous differential equations using the Euler method for 1M particles. We gently rotate the 3D knot before projecting it onto the 2D plane, while modulating the dissipation parameter `b` to dynamically adjust the knot density.
+- **Palette**: Neon Emerald, Azure, and Star White.
+
 ## kinetic_lorenz_attractor_2d
 - **Date**: 2026-07-25
 - **Type**: Animation (900 frames, 60fps)

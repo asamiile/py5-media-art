@@ -1,3 +1,248 @@
+## kinetic_lattice_boltzmann_fluid_2d
+- **Date**: 2026-07-24
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A pure NumPy implementation of the Lattice Boltzmann Method (LBM) in 2D, simulating the emergence of a Von Karman vortex street behind stationary obstacles in a wind tunnel.
+- **Techniques**: The simulation uses the D2Q9 lattice model. Continuous streaming and BGK collision relaxation accurately model the macroscopic Navier-Stokes fluid dynamics without needing a Poisson solver. A constant inlet velocity drives the fluid, while bounce-back boundary conditions on three cylinders generate intricate shedding vortices. 1,000,000 particles are advected through this highly turbulent velocity field.
+- **Palette**: A high-energy thermal colormap (Deep Blue to Cyan to Yellow/Orange) mapping the local fluid velocity magnitude (speed) to each particle, visually highlighting the fast streams and slow vortex cores.
+
+## kinetic_boids_murmuration_2d
+- **Date**: 2026-07-24
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A macroscopic fluid-like simulation of Craig Reynolds' Boids algorithm, modeling a Starling murmuration with 250,000 birds. Three invisible "predators" orbit the flock, causing dramatic scattering and reforming dynamics.
+- **Techniques**: To achieve real-time performance with 250,000 particles in pure NumPy, a grid-based mean-field approximation is used. The boids are discretized into a density grid, and 2D convolutions (`scipy.signal.convolve2d`) calculate the local averages for Separation, Alignment, and Cohesion forces, bypassing $O(N^2)$ distance checks entirely. 
+- **Palette**: A bioluminescent night-sky aesthetic. The boids are colored based on their local density, shifting from Cyan (sparse) to Deep Blue, Magenta, and finally Bright Pink/White in the densest clusters of the murmuration.
+
+## kinetic_barkley_spiral_waves_2d
+- **Date**: 2026-07-24
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A visualization of the Barkley model for excitable media, generating continuous, self-sustaining spiral reaction waves (often seen in the Belousov-Zhabotinsky chemical reaction or heart muscle fibrillation). The chemical gradients are used as a flow field to advect 1.5 million particles.
+- **Techniques**: The reaction-diffusion equations are solved on a 2D grid using finite difference Laplacians via highly optimized `np.roll` operations. The gradients of the excitation field $u$ are computed to form a vector field, and the particles are injected to surf perpendicularly to the gradients, tracing out the mesmerizing fractal-like outlines of the spiral wavefronts.
+- **Palette**: Deep oceanic bioluminescence. The void regions are dark space, transitioning through Deep Blue to vivid Cyan and Emerald Green along the crests of the excitation waves.
+
+## kinetic_navier_stokes_particles_2d
+- **Date**: 2026-07-24
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A pure NumPy implementation of a grid-based 2D incompressible fluid solver (Navier-Stokes) that advects 1,000,000 glowing particles, creating mesmerizing, wispy cosmic eddies.
+- **Techniques**: The simulation uses a semi-Lagrangian advection scheme and solves the Poisson equation for pressure projection exactly via Fast Fourier Transform (FFT). Three orbiting "injectors" continuously stir the velocity field. The perfectly divergence-free fluid field is then used to advect the particles.
+- **Palette**: A Vaporwave-inspired colormap (Cyan to Dark Blue to Purple to Hot Pink). The color of each particle is dynamically mapped to the local scalar vorticity ($\nabla \times \vec{V}$) of the fluid at its position.
+
+## kinetic_hopf_fibration_4d
+- **Date**: 2026-07-24
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A visualization of 4-dimensional topology (the Clifford Torus) projected into 3D space, revealing the mesmerizing interlocking rings of the Hopf fibration. 1,000,000 particles flow across the surface of the torus in 4D space.
+- **Techniques**: The particles are defined by two angles ($\theta_1, \theta_2$) in $\mathbb{R}^4$. As they flow, a 4D rotation matrix (rotating the X-W and Y-Z planes) is applied to the hyper-torus. The 4D coordinates are then stereographically projected down to 3D. The resulting visual is a seemingly impossible geometry where a torus turns inside out fluidly without breaking, forming nested, glowing light fibers.
+- **Palette**: A cyclic 4D colormap (Neon Pink to Cyan to Purple) mapped directly to the intrinsic 4D surface coordinates, ensuring that the fibers maintain their color identity as they twist through multiple spatial dimensions.
+
+## kinetic_binary_blackhole_globular_cluster_3d
+- **Date**: 2026-07-24
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 3D N-body gravity simulation of 2,000,000 stars forming a dense globular cluster, disrupted by a pair of supermassive black holes orbiting each other at the core.
+- **Techniques**: Calculating $O(N^2)$ gravity for 2 million stars is computationally impossible in real-time. Instead, a Mean-Field approximation (Plummer Potential) is used to simulate the collective gravity of the cluster, combined with precise, localized Newtonian gravity from the two orbiting black holes. The binary black holes act as a gravitational "eggbeater", slinging stars out of the core to form beautiful, sweeping tidal tails in 3D space.
+- **Palette**: Deep space astrophysics colors. The dense inner core stars burn bright Blue/White, while the outer halo and tidal tails scatter into cooler Golden and Red hues.
+
+## kinetic_aizawa_attractor_3d
+- **Date**: 2026-07-24
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 3D chaotic fluid simulation governed by the Aizawa Attractor, which naturally forms an elegant spherical vortex (often described as a tornado or the core of an apple).
+- **Techniques**: 600,000 particles are injected into the Aizawa vector field. Microscopic Langevin noise (Brownian motion) transforms the infinitely thin chaotic orbit into a thick, flowing volumetric fluid. Parameters $d$ and $f$ of the attractor equations are slowly modulated over time, causing the vortex tube to twist, breathe, and dramatically open and close. 
+- **Palette**: A fiery plasma colormap mapped to the Z-axis (height). The base of the vortex is a deep, glowing purple, transitioning through intense magenta into a bright orange and yellow core.
+
+## kinetic_quantum_orbitals_3d
+- **Date**: 2026-07-24
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A Monte-Carlo volumetric rendering of Hydrogen atom electron orbitals. 1,500,000 particles are sampled to form a glowing probability density cloud representing the quantum superposition of three distinct states ($3d_{z^2}$, $3d_{x^2-y^2}$, and $4f$).
+- **Techniques**: The simulation evaluates the exact mathematical spherical harmonics and radial wavefunctions for the Hydrogen atom. Over time, the weight coefficients of the superposition continuously morph, causing the orbital to fluidly transition from one quantum state to another. The rendering uses an Importance Sampling weighting to ensure the volumetric density is physically accurate despite concentrating particles near the nucleus for efficiency.
+- **Palette**: The color indicates the mathematical "phase" (sign) of the wavefunction at each point in space. Positive regions glow in Cyan/Blue, while negative regions burn in Red/Orange, mimicking neon plasma suspended in deep space.
+
+## kinetic_acoustic_chladni_lattice_3d
+- **Date**: 2026-07-24
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 3D Chladni figure simulation. In 2D, vibrating a metal plate with sand causes the grains to settle in the "nodes" (areas of zero vibration), forming geometric acoustic patterns. This piece extends that acoustic physics principle into a 3D volumetric space. 
+- **Techniques**: 600,000 particles are subjected to a force vector derived from the negative gradient of the squared 3D standing wave equation ($F = -\nabla V^2$). Strong thermal noise (Brownian motion) keeps the particles flowing along the nodal surfaces instead of freezing in place. The standing wave's component frequencies are slowly morphed over time, forcing the particles to continuously flow and reorganize into new, intricate 3D crystalline lattice structures.
+- **Palette**: A metallic colormap mimicking vibrating metals: from Dark Bronze to shimmering Gold, culminating in Platinum/White highlights.
+
+## kinetic_multiscale_turing_patterns_2d
+- **Date**: 2026-07-24
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A complex reaction-diffusion simulation based on the McCabe Multi-Scale Turing Pattern algorithm. It models the chemical mechanisms that form biological patterns (like animal skin or fingerprints) across multiple spatial scales simultaneously.
+- **Techniques**: The state grid is evaluated using 6 distinct scales of Gaussian blur (simulating diffusion of activator and inhibitor chemicals). At each pixel, the algorithm selects the scale with the smallest spatial variation and updates the state. To make the pattern kinetic and fluid, the blur radii are slowly modulated over time and a continuous 2D drift is applied, causing the patterns to endlessly boil, fold, and flow like a living organism.
+- **Palette**: A deep, organic mineral palette ranging from Dark Emerald Green through vibrant Gold, peaking at pure White in the highest concentration zones.
+
+## kinetic_thomas_cyclical_attractor_3d
+- **Date**: 2026-07-24
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 3D volumetric fluid simulation based on the Thomas cyclically symmetric attractor. 600,000 particles flow through a mathematically elegant vector field where each spatial dimension is influenced by the sine of another ($dx = \sin(y) - bx$, etc.).
+- **Techniques**: The particles trace the strange attractor's chaotic orbits, revealing a highly symmetric, crystal-lattice-like structure in 3D space. To give the vector field volume, microscopic Langevin noise (Brownian motion) is applied to the particles. The dissipation parameter $b$ is slowly modulated over time, causing the attractor to "breathe" between states of tight geometric order and loose chaotic tangles.
+- **Palette**: A Cyberpunk Neon gradient (Cyan to Magenta to Yellow/White), mapped spherically based on the particles' distance from the origin.
+
+## kinetic_buddhabrot_nebula_2d
+- **Date**: 2026-07-24
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A kinetic reimagining of the classic Buddhabrot (or Nebulabrot) fractal. 3,000,000 particles continuously iterate through the Mandelbrot set equation $Z_{n+1} = Z_n^2 + C$.
+- **Techniques**: To animate the fractal, the complex parameter space $C$ is slowly rotated and translated over time ($C(t) = C_{orig} \cdot e^{it} + \Delta$). The particles are divided into three groups (Red, Green, Blue) based on their "lifetime" (maximum allowed iterations before respawning: 30, 80, and 200). As particles iterate, escape, and respawn, they trace out an endlessly morphing, swirling nebula in the complex plane.
+- **Palette**: Deep cosmos Red, Green, and Blue additive layers mapping to short, medium, and long particle lifespans respectively, mimicking the Hubble Space Telescope's narrowband palette for emission nebulae.
+
+## kinetic_spherical_curl_fluid_3d
+- **Date**: 2026-07-24
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 3D planetary fluid simulation depicting 600,000 particles swirling in a divergence-free (incompressible) vector field on the surface of a sphere, resembling the violent atmospheric storms of a gas giant like Jupiter.
+- **Techniques**: The simulation evaluates a complex, time-varying 3D scalar potential field composed of interfering sine waves. The velocity of the particles is determined by taking the cross product of the potential's numerical gradient and the sphere's surface normal ($\vec{v} = \nabla S \times \hat{n}$). This mathematical trick perfectly constrains the flow to be both tangent to the sphere and divergence-free. 
+- **Palette**: A latitude-based colormap. The equator burns in Deep Blue and Purple, transitioning through mid-latitude bands of Gold and Orange, and culminating in bright White polar vortices.
+
+## kinetic_lorenz_attractor_fluid_3d
+- **Date**: 2026-07-24
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 3D continuous strange attractor simulation utilizing the historic Lorenz system of differential equations. 600,000 particles trace the chaotic vector field, forming the iconic dual-lobed "butterfly" shape. 
+- **Techniques**: To prevent the points from converging into infinitely thin 1D lines over time (a property of deterministic strange attractors), a microscopic Langevin thermal noise is applied, giving the strange attractor volumetric "thickness" and making it resemble a glowing, turbulent fluid. The Rayleigh number $\rho$ is also slowly modulated over time, causing the entire butterfly structure to "breathe" and warp dynamically in 3D space.
+- **Palette**: A Z-axis mapped colormap transitioning from Deep Blue and Cyan at the base, through White, and into fiery Orange and Red at the top of the chaotic spirals.
+
+## kinetic_lenia_artificial_life_2d
+- **Date**: 2026-07-24
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A continuous-space, continuous-time artificial life simulation based on the Lenia framework (a mathematical generalization of Conway's Game of Life).
+- **Techniques**: The simulation uses a 2D Fast Fourier Transform (FFT) via SciPy to efficiently compute the spatial convolution of the continuous state grid (518,400 cells) with a ring-like exponential kernel. The local neighborhood sum is passed through a Gaussian growth function, allowing primordial noise to self-organize into complex, swimming, reproducing alien lifeforms (such as the famous "Orbium"). 
+- **Palette**: A bioluminescent colormap ranging from Deep Teal to Cyan, culminating in bright White/Green, giving the impression of microscopic glowing algae or synthetic biology under a dark-field microscope.
+
+## kinetic_binary_black_hole_accretion_2d
+- **Date**: 2026-07-24
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A magnetohydrodynamic accretion disk simulation around a binary black hole system. 500,000 plasma particles are caught in the immense gravitational pull of two orbiting supermassive black holes.
+- **Techniques**: The particles follow Newtonian orbits but experience a slight viscous friction (viscosity), causing them to lose orbital energy and spiral inward towards the event horizons. Particles that cross the event horizon are consumed and respawned at the outer edge to maintain a continuous inflow of matter. The system forms a fiery, glowing figure-eight accretion structure.
+- **Palette**: A custom thermal blackbody colormap. As particles speed up due to Kepler's laws while falling inward, their kinetic energy is mapped to color: deep space black to dark red, orange, yellow, pure white, and finally intense blue-white just before crossing the event horizon.
+
+## kinetic_sdf_fractal_flow_2d
+- **Date**: 2026-07-24
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A kinetic fluid-like simulation where 600,000 particles flow along the equipotential contour lines of a dynamically morphing Signed Distance Field (SDF). The underlying spatial field is constructed using a Kaleidoscopic Iterated Function System (IFS) that endlessly folds and rotates space into a complex, fractal mandala.
+- **Techniques**: The velocity of each particle is determined by the numerical gradient of the SDF, specifically the perpendicular vector ($\nabla \text{SDF}^\perp$), creating a divergence-free (incompressible) flow field perfectly tracing the fractal's surface. As the SDF's folding parameters oscillate over time, the particles scramble along the shifting contours like glowing liquid crystal.
+- **Palette**: Deep Blue fading into Magenta, Orange, Yellow, and stark White at regions of highest kinetic energy (where the space folding is most intense).
+
+## kinetic_galaxy_collision_toomre_3d
+- **Date**: 2026-07-24
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 3D astrophysical simulation of a galactic collision using the Toomre Model (restricted 3-body problem). Two supermassive black holes (cores) attract each other, while 600,000 orbiting stars are subjected to their immense gravitational tidal forces, tearing the galaxies apart into long, sweeping tidal tails.
+- **Techniques**: The simulation evaluates $O(N)$ gravity forces for 600,000 massless star particles against two massive moving cores using Symplectic Euler integration. The 3D coordinates are dynamically projected into 2D with perspective and depth-fading, giving the illusion of a volumetric camera panning around the collision event.
+- **Palette**: One galaxy is a burning Cyan/Blue core, while the other is a hot White/Magenta/Orange core. They collide against a deep space void with long additive exposure trails.
+
+## kinetic_plasma_lorentz_drift_2d
+- **Date**: 2026-07-24
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A magnetohydrodynamic (plasma physics) simulation. 500,000 charged particles (positive and negative) interact with a strong, spatially varying magnetic field and a radial electric field, experiencing the Lorentz force ($\vec{F} = q(\vec{E} + \vec{v} \times \vec{B})$).
+- **Techniques**: The simulation uses the Boris Algorithm, the standard symplectic integrator in plasma physics, to ensure long-term stability and energy conservation of the particles' rapid cyclotron orbits. As the magnetic and electric landscapes slowly undulate over time, the particles get trapped in magnetic mirrors or swept into deep $\vec{E} \times \vec{B}$ drift currents, forming structures resembling auroras or tokamak plasma instabilities.
+- **Palette**: Cyan for positive charges and Magenta for negative charges, blending additively into bright white where they collide or reach high kinetic energies against a pitch-black void.
+
+## kinetic_wave_interference_caustics_2d
+- **Date**: 2026-07-24
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A numerical simulation of the 2D Wave Equation, capturing complex interference patterns and refractive caustics. Five wave emitters orbit in Lissajous patterns, continuously injecting ripples into a fluid. 
+- **Techniques**: Instead of a uniform fluid, the wave speed (refractive index) varies spatially based on a complex landscape of low-frequency sine waves. This creates invisible "acoustic lenses" in the water that bend, focus, and scatter the ripples as they propagate. The simulation uses Verlet integration and a 9-point Laplacian stencil for extreme stability.
+- **Palette**: Deep ocean blue to bioluminescent cyan, peaking at pure white to emphasize the sharp, intense caustic light patterns formed by constructive interference.
+
+## kinetic_chladni_cymatics_2d
+- **Date**: 2026-07-24
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A kinetic simulation of Cymatics (Chladni figures). 1,000,000 sand-like particles bounce across a vibrating plate, settling into the intricate geometric nodal lines where the vibration amplitude is zero. 
+- **Techniques**: The simulation continuously modulates the underlying wave frequencies (the $N$ and $M$ parameters of the 2D standing wave equation) over time. As the frequencies shift, the nodal lines organically morph, and the million particles scramble to find new resting points, resembling a living, shifting mandala. The gradients of the wave equation are calculated analytically, and particle physics (force, friction, thermal noise) are resolved efficiently in NumPy.
+- **Palette**: Dark brown to deep gold to stark white, mimicking glowing sand or dust over a dark metallic surface.
+
+## kinetic_double_pendulum_state_space_fractal_2d
+- **Date**: 2026-07-24
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A visualization of deterministic chaos via the state-space of a double pendulum. It simultaneously calculates the physics for 518,400 independent double pendulums, mapping the screen's X and Y coordinates to the initial angles ($\theta_1, \theta_2$) of each pendulum.
+- **Techniques**: The simulation uses a highly optimized, vectorized Symplectic Euler integration to step over half a million differential equations simultaneously. The color of each pixel represents the phase of its respective second pendulum over time. Because the double pendulum is highly sensitive to initial conditions (the butterfly effect), the initially smooth gradient exponentially shatters into an infinitely complex, unpredictable fractal pattern.
+- **Palette**: A high-contrast, psychedelic neon cyclic colormap (Red -> Yellow -> Green -> Cyan -> Blue -> Magenta) representing phase angles from $0$ to $2\pi$.
+
+## kinetic_physarum_slime_mold_2d
+- **Date**: 2026-07-24
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A biological multi-agent simulation of Physarum polycephalum (slime mold). 600,000 microscopic agents navigate a 2D space, leaving chemical trails and turning towards the highest concentration of pheromones, which results in the spontaneous self-organization of intricate, pulsating, vein-like networks.
+- **Techniques**: The entire system—sensing, rotation, movement, and chemical deposition—is fully vectorized in NumPy. To create a morphing kinetic aesthetic, the agents' sensory angles and rotation speeds are continuously modulated by slow sine waves over time. This causes the network to organically shift its behavior, transitioning smoothly between tight crystal-like webs and fast-flowing fluid rivers.
+- **Palette**: A thermal/neon colormap spanning from absolute Black to Deep Purple, Magenta, Red, Yellow, and bright White at the highest pheromone densities.
+
+## kinetic_reaction_diffusion_morph_2d
+- **Date**: 2026-07-24
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A kinetic simulation of the Gray-Scott Reaction-Diffusion model, visualizing the continuous morphological evolution of Turing patterns.
+- **Techniques**: Instead of using fixed parameters, the simulation applies spatially and temporally varying Feed (F) and Kill (K) rates across the 2D grid. The parameters oscillate like waves over time, causing the chemical patterns to continuously morph between distinct Turing states—from spots to labyrinths to dividing cells—within a single continuous simulation. A 9-point Laplacian stencil and highly vectorized NumPy operations maintain numerical stability at 20 steps per frame.
+- **Palette**: Deep Blue to Cyan to White to Magenta, creating a bioluminescent, deep-sea aesthetic.
+
+## kinetic_volumetric_curl_noise_flow_3d
+- **Date**: 2026-07-24
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 3D volumetric simulation of 500,000 particles advected through a chaotic fluid field, resembling an ethereal nebula or galaxy.
+- **Techniques**: A continuous divergence-free vector field (faux 3D curl noise) is generated purely through trigonometric interference equations in NumPy. The 500,000 points flow seamlessly through this space while a secondary vortex force keeps them from dispersing indefinitely. Like previous 3D works, it bypasses the `P3D` renderer entirely—handling 3D perspective projection, rotation, and exponential depth-based Z-fading entirely mathematically in Python, and drawing directly to the 2D `py5.np_pixels` array.
+- **Palette**: A bioluminescent gradient of Magenta, Purple, and Cyan that scales dynamically based on the particle's initial radius from the origin.
+
+## kinetic_ising_model_phase_transition_2d
+- **Date**: 2026-07-24
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A statistical physics simulation of ferromagnetism using the Ising Model. It visualizes the beautiful, continuous phase transition of magnetic spins as the system's temperature slowly oscillates around the critical point ($T_c \approx 2.269$), blooming into massive fractal domain islands before dissolving into chaotic heat.
+- **Techniques**: The simulation uses a highly optimized, vectorized Metropolis-Hastings algorithm in NumPy. By splitting the grid into a checkerboard pattern (even/odd masks), it safely computes spin flip probabilities for millions of cells simultaneously without overlapping conflicts. The 15 physics steps per frame create a smooth, mesmerizing evolution.
+- **Palette**: Cyan (+1 spin) and Magenta (-1 spin) domains colliding in a neon pixel-art aesthetic.
+
+## kinetic_differential_growth_folds_2d
+- **Date**: 2026-07-24
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A biological simulation of "Differential Growth," modeling how cellular tissues like brain folds, coral, or intestines grow into tightly packed, meandering structures when constrained by space.
+- **Techniques**: A continuous polyline starts as a simple circle. Each frame, segments that stretch too far are subdivided (simulating cell division). A spatial KD-Tree (`scipy.spatial.cKDTree`) efficiently calculates repulsion forces between all non-adjacent nodes within a radius, while spring forces keep adjacent nodes connected. As the curve expands and folds in on itself, additive blending leaves a glowing, rainbow-hued kinetic trail of its morphological evolution.
+- **Palette**: A slow-shifting HSB rainbow spectrum over a dark void, rendered with high alpha transparency for a luminous motion blur effect.
+
+## kinetic_thomas_attractor_swarm_3d_projected
+- **Date**: 2026-07-24
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 3D kinetic visualization of the Thomas cyclically symmetric strange attractor. 300,000 particles explode from a central sphere and are pulled into the complex, continuous knot-like orbits of the attractor's gravitational field, rendered as a spinning turntable animation.
+- **Techniques**: To achieve massive scale without risking JVM crashes in `P3D`, the physics and 3D rotations are calculated purely mathematically in NumPy. The 3D coordinates are then manually projected via a perspective formula onto a 2D native canvas. Depth (Z-axis) controls the fading and color brightness (from Cyan/White in the foreground to Deep Blue in the background) for a faux-volumetric glowing effect, written directly to `py5.np_pixels`.
+- **Palette**: Deep Blue to bright Cyan and White, creating a luminous bioluminescent or plasma-like structure against absolute black.
+
+## kinetic_langtons_ant_swarm_2d
+- **Date**: 2026-07-24
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: An extreme-scale cellular automata simulation of Langton's Ant. 50,000 independent agents following the "RLLR" (Right-Left-Left-Right) rule start from a chaotic central cluster. Over time, the chaos abruptly transitions into order as symmetrical, crystalline highways burst outward, revealing the emergent geometry hidden within the simple rules.
+- **Techniques**: A highly vectorized 2D state machine in NumPy computes the RLLR turns and grid mutations for 50,000 agents simultaneously, iterating 50 steps per frame. The resulting simulation runs seamlessly fast, directly writing state-mapped RGB values into Py5's `np_pixels` array.
+- **Palette**: Pitch Black void, Cyan, Magenta, and bright White for different grid states.
+
+## kinetic_voronoi_fluid_relaxation_2d
+- **Date**: 2026-07-24
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A visualization of 4,000 Voronoi cells experiencing continuous fluid advection. As the cells are pushed by turbulence, the Voronoi boundaries squash, stretch, and pop like a dynamic cellular membrane or stained glass.
+- **Techniques**: Uses a mathematical fluid approximation (fake curl noise) to continuously advect 4,000 points. The Voronoi diagram is recomputed each frame using `scipy.spatial.Voronoi`. Additive blending and long-exposure motion blur turn the ridge lines into a continuous kinetic neon web.
+- **Palette**: Neon Cyan, Magenta, and Purple gradients based on initial point distribution, blending additively on a Pitch Black void.
+
+## kinetic_peter_de_jong_attractor_morph_2d
+- **Date**: 2026-07-24
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A kinetic visualization of a Peter de Jong strange attractor, rendered as 500,000 independent points morphing through geometric space.
+- **Techniques**: The mathematical parameters $a, b, c, d$ that define the chaotic equations slowly oscillate over time via sinusoidal interpolation. Instead of recursive iteration, 50万 independent particles step through the field once per frame, allowing them to trace fluid kinetic paths. Additive blending directly on `py5.np_pixels` provides extreme rendering speed and a silky, smoke-like motion blur.
+- **Palette**: A high-contrast vaporwave neon gradient, transitioning from Cyan to Magenta based on horizontal displacement, set against absolute black.
+
+## kinetic_magnetic_pendulum_chaos_2d
+- **Date**: 2026-07-24
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A visualization of the chaotic trajectories of 5,000 magnetic pendulums swinging over five symmetrically placed magnets.
+- **Techniques**: A fully vectorized physics simulation in NumPy calculates the inverse-square magnetic forces and central gravity applied to thousands of pendulums. The simulation utilizes sub-stepping for numerical stability. Rendered using simple Py5 points with long-exposure motion blur via additive blending.
+- **Palette**: The color of each pendulum (Cyan/Magenta/Blue hues) maps to its initial starting angle, creating an overlapping web of chaotic rainbow trails on a pitch black void.
+
+## kinetic_neon_cloth_tear_2d
+- **Date**: 2026-07-24
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A physics simulation of a glowing neon wireframe cloth suspended in a void. A chaotic sphere passes through it, tearing the constraints and creating a violent, glowing rupture that slowly falls apart.
+- **Techniques**: Custom 2D Verlet integration engine using fully vectorized NumPy operations. Constraint relaxation handles horizontal and vertical structural links, and a tear threshold dynamically breaks links under high stress, mimicking tearing fabric. Rendered with Py5 lines and additive blending.
+- **Palette**: Neon Cyan and Magenta wireframe grid on a Pitch Black void, with a faint Crimson sphere.
+
+## kinetic_cellular_automata_wireworld_circuit_2d
+- **Date**: 2026-07-24
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A cellular automata simulation of Wireworld logic gates, visualizing high-speed electrons racing across a massive chaotic circuit.
+- **Techniques**: A highly vectorized NumPy simulation iteratively applies the Wireworld neighborhood rules. The conductor paths are procedurally generated using thresholded OpenSimplex noise to create a labyrinthine printed circuit board aesthetic, scaled using nearest-neighbor upscaling for a crisp pixel-art look.
+- **Palette**: Dark blue/grey void, Cyan (Electron Head), Magenta (Electron Tail), and Gold (Conductor).
+
+## kinetic_vector_field_bokeh_flow_2d
+- **Date**: 2026-07-24
+- **Type**: Animation (1200 frames, 60fps)
+- **Concept**: A kinetic visualization of a continuous vector field pushing soft glowing orbs (Bokeh), simulating fluid dynamics through noise.
+- **Techniques**: Driven by 3D Simplex noise mapped to vector angles, using the standard Java 2D renderer for stability. Overlapping particles use a low-opacity additive blend mode to create brilliant hot-spots of cyan and magenta bokeh.
+- **Palette**: Pitch black background, shimmering soft Cyan, Blue, and Magenta glowing orbs.
+
 ## kinetic_iterated_function_system_fractal_2d
 - **Date**: 2026-07-23
 - **Type**: Animation (900 frames, 60fps)

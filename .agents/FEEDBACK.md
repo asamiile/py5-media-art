@@ -4,6 +4,216 @@
 Agents MUST NOT write anything in the `Comment` field. When registering a new work, Agents must leave the `Rating` and `Comment` fields empty or with their default labels as placeholders for the user.
 The Artist reads this file before starting a new sketch to understand preferences.
 
+## kinetic_lattice_boltzmann_fluid_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_boids_murmuration_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_barkley_spiral_waves_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_navier_stokes_particles_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_hopf_fibration_4d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_binary_blackhole_globular_cluster_3d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_aizawa_attractor_3d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_quantum_orbitals_3d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_acoustic_chladni_lattice_3d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_multiscale_turing_patterns_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_thomas_cyclical_attractor_3d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_buddhabrot_nebula_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_spherical_curl_fluid_3d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_lorenz_attractor_fluid_3d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_lenia_artificial_life_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_binary_black_hole_accretion_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_sdf_fractal_flow_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_galaxy_collision_toomre_3d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_plasma_lorentz_drift_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_wave_interference_caustics_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_chladni_cymatics_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_double_pendulum_state_space_fractal_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_physarum_slime_mold_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_reaction_diffusion_morph_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_volumetric_curl_noise_flow_3d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_ising_model_phase_transition_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_differential_growth_folds_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_thomas_attractor_swarm_3d_projected
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_langtons_ant_swarm_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_voronoi_fluid_relaxation_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_peter_de_jong_attractor_morph_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_magnetic_pendulum_chaos_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_neon_cloth_tear_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_cellular_automata_wireworld_circuit_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_vector_field_bokeh_flow_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
 ## kinetic_iterated_function_system_fractal_2d
 
 - **Rating**: 

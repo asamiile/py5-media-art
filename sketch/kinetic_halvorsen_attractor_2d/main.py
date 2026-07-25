@@ -26,28 +26,28 @@ SIZE = OUTPUT_SIZE
 # Simulation state
 N = 1000000
 # Initial points spread around the origin
-x = np.random.uniform(-1, 1, N).astype(np.float32)
-y = np.random.uniform(-1, 1, N).astype(np.float32)
-z = np.random.uniform(-1, 1, N).astype(np.float32)
+x = np.random.uniform(-0.1, 0.1, N).astype(np.float32)
+y = np.random.uniform(-0.1, 0.1, N).astype(np.float32)
+z = np.random.uniform(-0.1, 0.1, N).astype(np.float32)
 
 density_buffer = np.zeros((SIZE[1], SIZE[0]), dtype=np.float32)
 
-def step_halvorsen(a, dt=0.005):
+def step_halvorsen(a, dt=0.01):
     global x, y, z
-    # Euler integration step for the Halvorsen attractor
-    dx = -a * x - 4.0 * y - 4.0 * z - y**2
-    dy = -a * y - 4.0 * z - 4.0 * x - z**2
-    dz = -a * z - 4.0 * x - 4.0 * y - x**2
+    # Euler integration step for the Halvorsen Attractor
+    dx = -a * x - 4 * y - 4 * z - y**2
+    dy = -a * y - 4 * z - 4 * x - z**2
+    dz = -a * z - 4 * x - 4 * y - x**2
     
     x_new = x + dx * dt
     y_new = y + dy * dt
     z_new = z + dz * dt
     
     # Keep particles bounded just in case
-    mask = (np.abs(x_new) > 30) | (np.abs(y_new) > 30) | (np.abs(z_new) > 30) | np.isnan(x_new)
-    x_new[mask] = np.random.uniform(-1, 1, np.sum(mask)).astype(np.float32)
-    y_new[mask] = np.random.uniform(-1, 1, np.sum(mask)).astype(np.float32)
-    z_new[mask] = np.random.uniform(-1, 1, np.sum(mask)).astype(np.float32)
+    mask = (np.abs(x_new) > 20) | (np.abs(y_new) > 20) | (np.abs(z_new) > 20) | np.isnan(x_new)
+    x_new[mask] = np.random.uniform(-0.1, 0.1, np.sum(mask)).astype(np.float32)
+    y_new[mask] = np.random.uniform(-0.1, 0.1, np.sum(mask)).astype(np.float32)
+    z_new[mask] = np.random.uniform(-0.1, 0.1, np.sum(mask)).astype(np.float32)
     
     x[:] = x_new
     y[:] = y_new
@@ -64,11 +64,11 @@ def draw():
     t = py5.frame_count * 2 * np.pi / TOTAL_FRAMES
     
     # Halvorsen parameter with continuous modulation
-    a = 1.89 + 0.1 * np.sin(t)
+    a = 1.4 + 0.1 * np.sin(t)
     
     # Run integration steps
     for _ in range(5):
-        step_halvorsen(a, dt=0.002)
+        step_halvorsen(a, dt=0.005)
         
     # Rotate 3D attractor gently over time
     theta = t * 0.4
@@ -85,9 +85,9 @@ def draw():
     z_rot2 = y_rot1 * np.sin(phi) + z_rot1 * np.cos(phi)
     
     # Map to screen
-    # Halvorsen typical size: x,y in [-15, 15], z in [-15, 15]
-    screen_x = (x_rot2 + 15.0) / 30.0 * SIZE[0]
-    screen_y = (y_rot2 + 15.0) / 30.0 * SIZE[1]
+    # Halvorsen typical size: x,y,z in [-10, 10]
+    screen_x = (x_rot2 + 10.0) / 20.0 * SIZE[0]
+    screen_y = (y_rot2 + 10.0) / 20.0 * SIZE[1]
     
     # Fast 2D histogram
     H, _, _ = np.histogram2d(screen_y, screen_x, bins=(SIZE[1], SIZE[0]), range=[[0, SIZE[1]], [0, SIZE[0]]])
@@ -99,25 +99,25 @@ def draw():
     py5.load_np_pixels()
     
     # Map density to colors
-    # Palette: Emerald Green, Cyan, and Deep Midnight Blue
+    # Palette: Emerald, Mint, and Gold
     density_norm = np.clip(density_buffer / 12.0, 0, 1)
     
-    # Deep Midnight Blue base
+    # Emerald base
     r_col = 0 * (density_norm ** 1.5)
-    g_col = 20 * (density_norm ** 1.5)
-    b_col = 60 * (density_norm ** 1.5)
+    g_col = 50 * (density_norm ** 1.5)
+    b_col = 25 * (density_norm ** 1.5)
     
-    # Emerald Green midtones
-    em_mask = (density_norm > 0.3) & (density_norm < 0.7)
-    r_col[em_mask] = np.maximum(r_col[em_mask], 0 + 40 * ((density_norm[em_mask] - 0.3) / 0.4))
-    g_col[em_mask] = np.maximum(g_col[em_mask], 20 + 160 * ((density_norm[em_mask] - 0.3) / 0.4))
-    b_col[em_mask] = np.maximum(b_col[em_mask], 60 + 60 * ((density_norm[em_mask] - 0.3) / 0.4))
+    # Mint midtones
+    mint_mask = (density_norm > 0.3) & (density_norm < 0.7)
+    r_col[mint_mask] = np.maximum(r_col[mint_mask], 0 + 152 * ((density_norm[mint_mask] - 0.3) / 0.4))
+    g_col[mint_mask] = np.maximum(g_col[mint_mask], 50 + 205 * ((density_norm[mint_mask] - 0.3) / 0.4))
+    b_col[mint_mask] = np.maximum(b_col[mint_mask], 25 + 128 * ((density_norm[mint_mask] - 0.3) / 0.4))
     
-    # Cyan highlights
-    cy_mask = density_norm > 0.7
-    r_col[cy_mask] = np.maximum(r_col[cy_mask], 40 + 60 * ((density_norm[cy_mask] - 0.7) / 0.3))
-    g_col[cy_mask] = np.maximum(g_col[cy_mask], 180 + 75 * ((density_norm[cy_mask] - 0.7) / 0.3))
-    b_col[cy_mask] = np.maximum(b_col[cy_mask], 120 + 135 * ((density_norm[cy_mask] - 0.7) / 0.3))
+    # Gold highlights
+    gold_mask = density_norm > 0.7
+    r_col[gold_mask] = np.maximum(r_col[gold_mask], 152 + 103 * ((density_norm[gold_mask] - 0.7) / 0.3))
+    g_col[gold_mask] = np.maximum(g_col[gold_mask], 255 - 40 * ((density_norm[gold_mask] - 0.7) / 0.3))
+    b_col[gold_mask] = np.maximum(b_col[gold_mask], 153 - 153 * ((density_norm[gold_mask] - 0.7) / 0.3))
     
     py5.np_pixels[:, :, 0] = 255
     py5.np_pixels[:, :, 1] = r_col.astype(np.uint8)

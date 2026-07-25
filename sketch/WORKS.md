@@ -1,3 +1,10 @@
+## kinetic_halvorsen_attractor_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A continuous 3D chaotic flow with cubic symmetry.
+- **Techniques**: The Halvorsen Attractor. We numerically integrate the continuous differential equations using the Euler method for 1M particles. The cyclic 3D structure is rotated and orthographically projected onto the 2D plane, gently modulating the parameter `a` over time.
+- **Palette**: Emerald Green, Cyan, and Deep Midnight Blue.
+
 ## kinetic_nose_hoover_attractor_2d
 - **Date**: 2026-07-25
 - **Type**: Animation (900 frames, 60fps)

@@ -1,3 +1,10 @@
+## kinetic_qi_attractor_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A continuous 3D chaotic flow featuring a unique two-lobed structure.
+- **Techniques**: The Qi Attractor. We numerically integrate the continuous differential equations using the Euler method for 1M particles. The cross-term driven 3D structure is rotated and orthographically projected onto the 2D plane, gently modulating the parameter `c` over time.
+- **Palette**: Rose, Peach, and Lavender.
+
 ## kinetic_sakarya_attractor_2d
 - **Date**: 2026-07-25
 - **Type**: Animation (900 frames, 60fps)

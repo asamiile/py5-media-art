@@ -1,3 +1,10 @@
+## kinetic_standard_map_attractor_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: Chaotic ocean currents ripping apart structured flow lines.
+- **Techniques**: The Chirikov standard map. We iterate 1M particles on a toroidal phase space. We modulate the chaos parameter `K` to show the breakdown of KAM tori (islands of stability) into a chaotic sea. Rendered using a 2D histogram.
+- **Palette**: Deep Ocean Blue, Aqua, and Seafoam Green.
+
 ## kinetic_henon_map_attractor_2d
 - **Date**: 2026-07-25
 - **Type**: Animation (900 frames, 60fps)

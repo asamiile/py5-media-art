@@ -1,3 +1,10 @@
+## kinetic_sprott_linz_f_attractor_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A minimalist yet highly elegant chaotic structure discovered by J.C. Sprott.
+- **Techniques**: The Sprott-Linz F Attractor. We numerically integrate the continuous differential equations using the Euler method for 1M particles. The delicate structure is rotated and orthographically projected onto the 2D plane, gently modulating the parameter `alpha` over time.
+- **Palette**: Teal, Indigo, and Silver.
+
 ## kinetic_rabinovich_fabrikant_attractor_2d
 - **Date**: 2026-07-25
 - **Type**: Animation (900 frames, 60fps)

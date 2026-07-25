@@ -1,3 +1,10 @@
+## kinetic_clifford_attractor_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: Infinite, smoky veils twisting and weaving into gossamer sheets of light.
+- **Techniques**: The Clifford attractor map. Modulates the `a`, `b`, `c`, and `d` chaotic constants smoothly with sine/cosine over time. Generates swirling, intricate paths of 1 million particles, rendered as a 2D density histogram with exponential motion blur.
+- **Palette**: Luminous Gold and Deep Emerald.
+
 ## kinetic_standard_map_attractor_2d
 - **Date**: 2026-07-25
 - **Type**: Animation (900 frames, 60fps)

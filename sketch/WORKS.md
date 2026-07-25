@@ -1,3 +1,10 @@
+## kinetic_thomas_cyclically_symmetric_attractor_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A continuously evolving chaotic flow with striking cubic symmetry.
+- **Techniques**: The Thomas Cyclically Symmetric Attractor. We numerically integrate the continuous differential equations using the Euler method for 1M particles. The symmetric 3D structure is rotated and orthographically projected onto the 2D plane, gently modulating the parameter `b` over time.
+- **Palette**: Mint Green, Aquamarine, and Soft Gold.
+
 ## kinetic_chua_circuit_attractor_2d
 - **Date**: 2026-07-25
 - **Type**: Animation (900 frames, 60fps)

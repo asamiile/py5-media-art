@@ -1,3 +1,10 @@
+## kinetic_peter_de_jong_attractor_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: Silky, intertwined loops of light folding infinitely.
+- **Techniques**: The Peter de Jong attractor is a classic 2D map. We simulate 1M particles, modulate parameters a, b, c, d to morph the attractor seamlessly over time, and render using the fast 2D histogram method with additive blending.
+- **Palette**: Ethereal White, Bioluminescent Blue, and Soft Pink.
+
 ## kinetic_chladni_plate_resonance_2d
 - **Date**: 2026-07-25
 - **Type**: Animation (600 frames, 60fps)

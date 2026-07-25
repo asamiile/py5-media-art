@@ -1,3 +1,10 @@
+## kinetic_web_map_attractor_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (793 frames, 60fps)
+- **Concept**: A vast, interconnected cobweb of resonant particle orbits in phase space.
+- **Techniques**: The Zaslavsky Web Map (or simply the Web Map), an area-preserving map that models the dynamics of charged particles in a uniform magnetic field and a broad packet of electrostatic waves. Particles are wrapped on a large torus to prevent infinite diffusion.
+- **Palette**: Neon Magenta, Cyan, and Deep Velvet.
+
 ## kinetic_macmillan_map_2d
 - **Date**: 2026-07-25
 - **Type**: Animation (900 frames, 60fps)

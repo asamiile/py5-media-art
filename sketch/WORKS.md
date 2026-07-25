@@ -1,3 +1,395 @@
+## kinetic_sprott_linz_o_attractor_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A continuous 3D chaotic flow forming an intricate and elegant shape.
+- **Techniques**: The Sprott-Linz O Attractor. We numerically integrate the continuous differential equations using the Euler method for 1M particles. The elegant structure is rotated and orthographically projected onto the 2D plane, gently modulating the parameter `alpha` over time.
+- **Palette**: Teal, Jade, and Emerald.
+
+## kinetic_sprott_linz_n_attractor_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A continuous 3D chaotic flow forming a sharp corner-like structure.
+- **Techniques**: The Sprott-Linz N Attractor. We numerically integrate the continuous differential equations using the Euler method for 1M particles. The elegant structure is rotated and orthographically projected onto the 2D plane, gently modulating the parameter `alpha` over time.
+- **Palette**: Rose, Violet, and Charcoal.
+
+## kinetic_sprott_linz_m_attractor_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A continuous 3D chaotic flow forming an elegant and distinct shape.
+- **Techniques**: The Sprott-Linz M Attractor. We numerically integrate the continuous differential equations using the Euler method for 1M particles. The elegant structure is rotated and orthographically projected onto the 2D plane, gently modulating the parameter `alpha` over time.
+- **Palette**: Tangerine, Coral, and Midnight Blue.
+
+## kinetic_sprott_linz_l_attractor_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A continuous 3D chaotic flow forming an intricate folded ribbon structure.
+- **Techniques**: The Sprott-Linz L Attractor. We numerically integrate the continuous differential equations using the Euler method for 1M particles. The elegant structure is rotated and orthographically projected onto the 2D plane, gently modulating the parameter `alpha` over time.
+- **Palette**: Aquamarine, Sapphire, and Indigo.
+
+## kinetic_sprott_linz_k_attractor_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A continuous 3D chaotic flow forming an intricate folded ribbon structure.
+- **Techniques**: The Sprott-Linz K Attractor. We numerically integrate the continuous differential equations using the Euler method for 1M particles. The elegant structure is rotated and orthographically projected onto the 2D plane, gently modulating the parameter `alpha` over time.
+- **Palette**: Crimson, Burgundy, and Gold.
+
+## kinetic_sprott_linz_j_attractor_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A continuous 3D chaotic flow forming a complex twisting double-lobed shape.
+- **Techniques**: The Sprott-Linz J Attractor. We numerically integrate the continuous differential equations using the Euler method for 1M particles. The intricate double-lobed structure is rotated and orthographically projected onto the 2D plane, gently modulating the parameter `alpha` over time.
+- **Palette**: Rust, Copper, and Cobalt.
+
+## kinetic_sprott_linz_i_attractor_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A continuous 3D chaotic flow forming an elegant layered folding surface.
+- **Techniques**: The Sprott-Linz I Attractor. We numerically integrate the continuous differential equations using the Euler method for 1M particles. The elegant layered folded structure is rotated and orthographically projected onto the 2D plane, gently modulating the parameter `alpha` over time.
+- **Palette**: Teal, Indigo, and Silver.
+
+## kinetic_sprott_linz_h_attractor_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A continuous 3D chaotic flow forming a beautiful folded ribbon shape.
+- **Techniques**: The Sprott-Linz H Attractor. We numerically integrate the continuous differential equations using the Euler method for 1M particles. The elegant folded ribbon structure is rotated and orthographically projected onto the 2D plane, gently modulating the parameter `alpha` over time.
+- **Palette**: Rose, Violet, and Graphite.
+
+## kinetic_sprott_linz_g_attractor_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A continuous 3D chaotic flow with intricate swirling structures.
+- **Techniques**: The Sprott-Linz G Attractor. We numerically integrate the continuous differential equations using the Euler method for 1M particles. The mesmerizing swirling structure is rotated and orthographically projected onto the 2D plane, gently modulating the parameter `alpha` over time.
+- **Palette**: Emerald, Jade, and Charcoal.
+
+## kinetic_moore_spiegel_attractor_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A continuous 3D chaotic flow representing stellar oscillations, forming a dense and erratic ball structure.
+- **Techniques**: The Moore-Spiegel Attractor. We numerically integrate the continuous differential equations using the Euler method for 1M particles. The massive, chaotic ball is rotated and orthographically projected onto the 2D plane, gently modulating the parameter `R` over time.
+- **Palette**: Gold, Amber, and Slate.
+
+## kinetic_hadley_circulation_attractor_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A continuous 3D chaotic flow representing atmospheric convection and global wind patterns.
+- **Techniques**: The Hadley Circulation Attractor. We numerically integrate the continuous differential equations using the Euler method for 1M particles. The resulting beautiful toroidal structure is rotated and orthographically projected onto the 2D plane, gently modulating the parameter `f` over time.
+- **Palette**: Rose, Peach, and Mint.
+
+## kinetic_sprott_linz_f_attractor_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A minimalist yet highly elegant chaotic structure discovered by J.C. Sprott.
+- **Techniques**: The Sprott-Linz F Attractor. We numerically integrate the continuous differential equations using the Euler method for 1M particles. The delicate structure is rotated and orthographically projected onto the 2D plane, gently modulating the parameter `alpha` over time.
+- **Palette**: Teal, Indigo, and Silver.
+
+## kinetic_rabinovich_fabrikant_attractor_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A continuous 3D chaotic flow with intricate, hypersensitive folded trajectories.
+- **Techniques**: The Rabinovich-Fabrikant Attractor. We numerically integrate the continuous differential equations using the Euler method for 1M particles. The delicate structure is rotated and orthographically projected onto the 2D plane, gently modulating the parameter `gamma` over time.
+- **Palette**: Crimson, Violet, and Midnight.
+
+## kinetic_rikitake_attractor_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A continuous 3D chaotic flow simulating the erratic reversals of the Earth's magnetic field.
+- **Techniques**: The Rikitake Dynamo Attractor. We numerically integrate the continuous differential equations using the Euler method for 1M particles. The bilobed chaotic structure is rotated and orthographically projected onto the 2D plane, gently modulating the parameter `mu` over time.
+- **Palette**: Rust, Copper, and Charcoal.
+
+## kinetic_qi_attractor_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A continuous 3D chaotic flow featuring a unique two-lobed structure.
+- **Techniques**: The Qi Attractor. We numerically integrate the continuous differential equations using the Euler method for 1M particles. The cross-term driven 3D structure is rotated and orthographically projected onto the 2D plane, gently modulating the parameter `c` over time.
+- **Palette**: Rose, Peach, and Lavender.
+
+## kinetic_sakarya_attractor_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A continuous 3D chaotic flow with intricate and delicate looping trajectories.
+- **Techniques**: The Sakarya Attractor. We numerically integrate the continuous differential equations using the Euler method for 1M particles. The delicate looping 3D structure is rotated and orthographically projected onto the 2D plane, gently modulating the parameter `a` over time.
+- **Palette**: Teal, Aquamarine, and Midnight Blue.
+
+## kinetic_burke_shaw_attractor_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A continuous 3D chaotic flow with intricate and elegant spiraling vortex flows.
+- **Techniques**: The Burke-Shaw Attractor. We numerically integrate the continuous differential equations using the Euler method for 1M particles. The spiraling 3D structure is rotated and orthographically projected onto the 2D plane, gently modulating the parameter `s` over time.
+- **Palette**: Cyan, Magenta, and Yellow.
+
+## kinetic_coullet_attractor_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A continuous 3D chaotic flow with a delicate, skeletal cubic structure.
+- **Techniques**: The Coullet Attractor. We numerically integrate the continuous differential equations using the Euler method for 1M particles. The skeletal 3D structure is rotated and orthographically projected onto the 2D plane, gently modulating the parameter `a` over time.
+- **Palette**: Ruby, Amethyst, and Crimson.
+
+## kinetic_halvorsen_attractor_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A continuous 3D chaotic flow with intricate cyclic symmetry.
+- **Techniques**: The Halvorsen Attractor. We numerically integrate the continuous differential equations using the Euler method for 1M particles. The symmetric cubic structures are rotated and orthographically projected onto the 2D plane, gently modulating the parameter `a` over time.
+- **Palette**: Emerald, Mint, and Gold.
+
+## kinetic_sprott_case_f_attractor_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A continuous 3D chaotic flow with a delicate quadratic shape.
+- **Techniques**: The Sprott Case F Attractor. We numerically integrate the continuous differential equations using the Euler method for 1M particles. The delicate 3D structure is rotated and orthographically projected onto the 2D plane, gently modulating the linear coupling parameter over time.
+- **Palette**: Rose Gold, Peach, and Plum.
+
+## kinetic_aizawa_attractor_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A continuous 3D chaotic flow with a stunning spherical vortex topology.
+- **Techniques**: The Aizawa Attractor. We numerically integrate the continuous differential equations using the Euler method for 1M particles. The tubular vortex structure is rotated and orthographically projected onto the 2D plane, gently modulating the parameter `a` over time.
+- **Palette**: Coral, Turquoise, and Navy Blue.
+
+## kinetic_dadras_attractor_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A continuous 3D chaotic flow with intricate and dense trajectories.
+- **Techniques**: The Dadras Attractor. We numerically integrate the continuous differential equations using the Euler method for 1M particles. The dense 3D structure is rotated and orthographically projected onto the 2D plane, gently modulating the parameter `c` over time.
+- **Palette**: Orchid, Lavender, and Indigo.
+
+## kinetic_thomas_cyclically_symmetric_attractor_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A continuously evolving chaotic flow with striking cubic symmetry.
+- **Techniques**: The Thomas Cyclically Symmetric Attractor. We numerically integrate the continuous differential equations using the Euler method for 1M particles. The symmetric 3D structure is rotated and orthographically projected onto the 2D plane, gently modulating the parameter `b` over time.
+- **Palette**: Mint Green, Aquamarine, and Soft Gold.
+
+## kinetic_chua_circuit_attractor_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A continuous 3D chaotic flow featuring an iconic double scroll.
+- **Techniques**: The Chua Circuit Attractor. We numerically integrate the continuous differential equations using the Euler method for 1M particles. The double-scroll 3D structure is rotated and orthographically projected onto the 2D plane, gently modulating the parameter `alpha` over time.
+- **Palette**: Electric Blue, Hot Pink, and Deep Cyan.
+
+## kinetic_chen_attractor_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A continuous 3D chaotic flow with complex bounds.
+- **Techniques**: The Chen Attractor. We numerically integrate the continuous differential equations using the Euler method for 1M particles. The cyclic 3D structure is rotated and orthographically projected onto the 2D plane, gently modulating the parameter `c` over time.
+- **Palette**: Amber, Crimson, and Obsidian.
+
+## kinetic_halvorsen_attractor_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A continuous 3D chaotic flow with cubic symmetry.
+- **Techniques**: The Halvorsen Attractor. We numerically integrate the continuous differential equations using the Euler method for 1M particles. The cyclic 3D structure is rotated and orthographically projected onto the 2D plane, gently modulating the parameter `a` over time.
+- **Palette**: Emerald Green, Cyan, and Deep Midnight Blue.
+
+## kinetic_nose_hoover_attractor_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A continuous 3D chaotic flow.
+- **Techniques**: The Nosé-Hoover Attractor. We numerically integrate the continuous differential equations using the Euler method for 1M particles. The 3D structure is rotated and orthographically projected onto the 2D plane, gently modulating the parameter `a` over time.
+- **Palette**: Coral Pink, Mango Yellow, and Deep Violet.
+
+## kinetic_lu_attractor_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A continuous 3D chaotic flow that acts as the transition between the Lorenz and Chen attractors.
+- **Techniques**: The Lü Attractor. We numerically integrate the continuous differential equations using the Euler method for 1M particles. The elegant two-scroll 3D structure is rotated and orthographically projected onto the 2D plane, gently modulating the parameter `c` over time.
+- **Palette**: Rose Gold, Copper, and Deep Burgundy.
+
+## kinetic_burke_shaw_attractor_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A continuous 3D chaotic flow.
+- **Techniques**: The Burke-Shaw Attractor. We numerically integrate the continuous differential equations using the Euler method for 1M particles. The 3D structure is rotated and orthographically projected onto the 2D plane, gently modulating the parameter `v` over time.
+- **Palette**: Sapphire, Cyan, and Platinum.
+
+## kinetic_dadras_attractor_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A continuous 3D chaotic flow.
+- **Techniques**: The Dadras Attractor. We numerically integrate the continuous differential equations using the Euler method for 1M particles. The 3D structure is rotated and orthographically projected onto the 2D plane, gently modulating the parameter `c` over time.
+- **Palette**: Emerald Green, Gold, and Crimson.
+
+## kinetic_sprott_attractor_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A continuous 3D chaotic flow forming an elegant shape.
+- **Techniques**: The Sprott Case B Attractor. We numerically integrate the continuous differential equations using the Euler method for 1M particles. The clean, structured 3D attractor is rotated and orthographically projected onto the 2D plane, gently modulating the parameter `a` over time.
+- **Palette**: Electric Pink, Violet, and Deep Blue.
+
+## kinetic_rabinovich_fabrikant_attractor_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A chaotic system that produces a complex, sharp-edged ribbon structure with deep folds, completely different from the typical smooth curves of Lorenz or Rössler.
+- **Techniques**: The Rabinovich-Fabrikant Attractor. Known for extreme sensitivity to initial conditions. Simulated using the Euler method with a very small `dt` for 1M particles. The 3D structure is gently rotated and orthographically projected onto 2D.
+- **Palette**: Turquoise, Mint, and Charcoal Black.
+
+## kinetic_rossler_attractor_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A continuous 3D chaotic flow forming a thin band that elegantly folds back onto itself.
+- **Techniques**: The Rössler Attractor. We numerically integrate the continuous differential equations using the Euler method for 1M particles. We gently rotate the 3D funnel-shaped band and project it onto the 2D plane, slightly modulating the parameter `c` over time.
+- **Palette**: Coral Pink, Amethyst, and Indigo.
+
+## kinetic_chen_attractor_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A continuous 3D chaotic flow closely related to the Lorenz attractor, but with a more complex, intricate double-scroll structure.
+- **Techniques**: The Chen Attractor. We numerically integrate the continuous differential equations using the Euler method for 1M particles. We gently rotate the 3D butterfly-like structure and project it onto the 2D plane, slightly modulating the parameter `c` over time to make the attractor breathe.
+- **Palette**: Solar Yellow, Tangerine, and Deep Crimson.
+
+## kinetic_aizawa_attractor_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A continuous 3D chaotic flow forming a beautiful, symmetric dual-lobe sphere with a swirling interior.
+- **Techniques**: The Aizawa Attractor. We numerically integrate the continuous differential equations using the Euler method for 1M particles. The 3D form is gently rotated and projected to the 2D plane using orthographic projection. Parameters are slightly modulated to make it breathe over time.
+- **Palette**: Ruby Red, Champagne Gold, and Deep Obsidian.
+
+## kinetic_thomas_attractor_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A continuous 3D chaotic flow that forms a perfectly symmetrical, endlessly wrapping knot.
+- **Techniques**: Thomas' Cyclically Symmetric Attractor. We numerically integrate the continuous differential equations using the Euler method for 1M particles. We gently rotate the 3D knot before projecting it onto the 2D plane, while modulating the dissipation parameter `b` to dynamically adjust the knot density.
+- **Palette**: Neon Emerald, Azure, and Star White.
+
+## kinetic_lorenz_attractor_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 2D projection of the 3D continuous chaotic flow over a strange attractor.
+- **Techniques**: The iconic Lorenz Strange Attractor. We numerically integrate the continuous differential equations using the Euler method for 1M particles, applying a gentle 3D rotation before orthographic projection. Parameters are continuously modulated.
+- **Palette**: Electric Cyan, Violet, and Neon Orange.
+
+## kinetic_hopalong_attractor_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: An intricate, woven tapestry of intersecting particle streams forming complex symmetric knots.
+- **Techniques**: Barry Martin's Hopalong Attractor. Uses alternating signs and square roots to recursively fold the phase space, weaving particle paths together. 1M particles are simulated with continuous modulation of the parameters.
+- **Palette**: Crimson Red, Gold, and Deep Indigo.
+
+## kinetic_web_map_attractor_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (793 frames, 60fps)
+- **Concept**: A vast, interconnected cobweb of resonant particle orbits in phase space.
+- **Techniques**: The Zaslavsky Web Map (or simply the Web Map), an area-preserving map that models the dynamics of charged particles in a uniform magnetic field and a broad packet of electrostatic waves. Particles are wrapped on a large torus to prevent infinite diffusion.
+- **Palette**: Neon Magenta, Cyan, and Deep Velvet.
+
+## kinetic_macmillan_map_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A delicate landscape of intertwined crystalline islands and chaotic seas.
+- **Techniques**: The MacMillan map, a mathematical model originally used for tracing particle trajectories in accelerators. We simulate 1M particles, gently modulating the structural parameter `mu` to cause the crystalline islands of stability to dynamically bifurcate and merge.
+- **Palette**: Jade Green, Turquoise, and Silver.
+
+## kinetic_popcorn_fractal_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: Fluid-like, bounded chaotic drift of particles creating complex, organic fractal patterns.
+- **Techniques**: The Pickover Popcorn map, an unconditionally bounded trigonometric discrete map. 1M particles are simulated with continuous modulation of the secondary frequency parameter to warp the structural boundaries over time.
+- **Palette**: Amethyst Purple, Rose Gold, and Pearl White.
+
+## kinetic_bogdanov_map_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A swirling, chaotic galaxy of particles trapped in a spiraling vortex.
+- **Techniques**: The Bogdanov map. We simulate 1M particles, smoothly modulating the `k` and `mu` parameters to warp the chaotic attractor into dynamic, flowing structures.
+- **Palette**: Solar Yellow, Cosmic Orange, and Deep Space Blue.
+
+## kinetic_gingerbreadman_map_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A chaotic, crystalline storm of hexagonal structures forming and breaking apart.
+- **Techniques**: The Gingerbreadman map. We simulate 1M particles. To keep the delicate fractal structure intact, the map is exact, but a kinetic rotation matrix is applied to the output points, allowing us to pan around the chaotic region.
+- **Palette**: Ice Blue, Sapphire, and Frost White.
+
+## kinetic_bedhead_attractor_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (600 frames, 60fps)
+- **Concept**: A swirling vortex of threads resembling complex magnetic field lines or wild hair.
+- **Techniques**: The Bedhead attractor map. We simulate 250k particles using trigonometric functions mapped to x and y to create highly textured organic waves of particles. We smoothly modulate the constants `a` and `b` using trigonometric functions over time to cause the threads to writhe.
+- **Palette**: Neon Magenta, Cyan, and Pure White on a dark background.
+
+## kinetic_svensson_attractor_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A glowing, ethereal fabric of light that continuously folds in upon itself.
+- **Techniques**: The Svensson attractor map. We simulate 1M particles. The algorithmic fabric is defined by complex sine and cosine interactions. We smoothly modulate the constants `a`, `b`, `c`, and `d` using trigonometric functions over time to warp the manifold.
+- **Palette**: Luminous Pearl White, Violet, and Rose Gold.
+
+## kinetic_martin_attractor_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A biological, cellular matrix multiplying infinitely.
+- **Techniques**: The Hopalong (or Martin) attractor map. We simulate 1M particles. The non-linear map uses a square root and sign function which creates organic, cellular-like fractal patterns. We smoothly modulate the constants `a`, `b`, and `c` using trigonometric functions over time to cause the cells to split and merge.
+- **Palette**: Bioluminescent Green, Soft Yellow, and Deep Oceanic Teal.
+
+## kinetic_buddhabrot_fractal_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (600 frames, 60fps)
+- **Concept**: Unveiling the hidden, radiant architecture of the Mandelbrot set.
+- **Techniques**: The Buddhabrot algorithm. We sample random points in the complex plane, iterate `z = z^2 + c`, and if `z` escapes, we trace its entire trajectory into a 2D histogram. To animate it, a sinusoidal shift is applied to `c`, carving a dynamic slice through the 4D Julia-Mandelbrot space.
+- **Palette**: Deep Nebula Purple, Fiery Orange, and Luminous White.
+
+## kinetic_clifford_attractor_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: Infinite, smoky veils twisting and weaving into gossamer sheets of light.
+- **Techniques**: The Clifford attractor map. Modulates the `a`, `b`, `c`, and `d` chaotic constants smoothly with sine/cosine over time. Generates swirling, intricate paths of 1 million particles, rendered as a 2D density histogram with exponential motion blur.
+- **Palette**: Luminous Gold and Deep Emerald.
+
+## kinetic_standard_map_attractor_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: Chaotic ocean currents ripping apart structured flow lines.
+- **Techniques**: The Chirikov standard map. We iterate 1M particles on a toroidal phase space. We modulate the chaos parameter `K` to show the breakdown of KAM tori (islands of stability) into a chaotic sea. Rendered using a 2D histogram.
+- **Palette**: Deep Ocean Blue, Aqua, and Seafoam Green.
+
+## kinetic_henon_map_attractor_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A swirling, cosmic storm of luminous dust caught in a gravity well.
+- **Techniques**: The Hénon map. It's a discrete-time dynamical system that maps a point (x, y) to a new point. We iterate it for 1M particles. To make it dynamic, we modulate the parameters `a` and `b`. The map can blow up easily to infinity, so bounds checking is used to instantly reset particles escaping the attractor.
+- **Palette**: Neon Orange and Deep Space Purple.
+
+## kinetic_peter_de_jong_attractor_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: Silky, intertwined loops of light folding infinitely.
+- **Techniques**: The Peter de Jong attractor is a classic 2D map. We simulate 1M particles, modulate parameters a, b, c, d to morph the attractor seamlessly over time, and render using the fast 2D histogram method with additive blending.
+- **Palette**: Ethereal White, Bioluminescent Blue, and Soft Pink.
+
+## kinetic_chladni_plate_resonance_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (600 frames, 60fps)
+- **Concept**: Sand dances into geometric symmetry as the plate's resonant frequency sweeps through harmonics.
+- **Techniques**: Simulate Ernst Chladni's famous acoustic resonance experiment. Particles move along the gradient of the 2D standing wave equation (sum of sines/cosines). Modulating the (m, n) mode parameters smoothly over time causes the nodal lines (where particles get trapped) to dramatically shift and morph into new intricate patterns.
+- **Palette**: Shimmering gold sand over a deep velvet crimson plate.
+
+## kinetic_tinkerbell_map_attractor_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: Glowing dust scattered in an endless loop around an invisible source of energy.
+- **Techniques**: The Tinkerbell map. We simulate 1M particles, modulate parameters a, b, c, d to morph the attractor shape and use the fast 2D histogram render method.
+- **Palette**: Golden yellow, bright orange, and pure white on pitch black.
+
+## kinetic_gumowski_mira_attractor_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: High-energy particle collisions forming delicate, winged angelic forms.
+- **Techniques**: The Gumowski-Mira attractor, originally developed at CERN to model particle orbits. Modulating the parameter a and b causes the wings to open, close, and sprout new sub-structures. We render with 2D histograms and additive blending.
+- **Palette**: Ethereal White, Ice Blue, and Deep Crimson on pitch black.
+
+## kinetic_ikeda_map_attractor_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (600 frames, 60fps)
+- **Concept**: Complex quantum interference patterns swirling in a chaotic void.
+- **Techniques**: The Ikeda Map is a discrete-time dynamical system that models light traversing a non-linear optical resonator. It produces beautiful, swirling spiral-like strange attractors. By simulating 1,000,000 points and slowly modulating the u parameter over time, the spiral branches continuously fold and warp into each other.
+- **Palette**: Vaporwave Sunset - Deep Violet, Hot Pink, Bright Orange, and Sun Yellow.
+
+## kinetic_kuramoto_coupled_oscillators_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (458 frames, 60fps)
+- **Concept**: A vast swarm of bioluminescent fireflies slowly falling into hypnotic synchronization.
+- **Techniques**: The Kuramoto model of coupled oscillators simulated on a 2D spatial grid. The phases of thousands of oscillators sync with their neighbors, generating complex, emergent traveling waves of light.
+- **Palette**: Deep forest black, Bioluminescent Lime Green, Glowing Cyan, White highlights.
+
 ## kinetic_lattice_boltzmann_fluid_2d
 - **Date**: 2026-07-24
 - **Type**: Animation (900 frames, 60fps)

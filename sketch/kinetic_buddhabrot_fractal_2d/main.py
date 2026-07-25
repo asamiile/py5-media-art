@@ -2,7 +2,6 @@ from pathlib import Path
 import shutil
 import subprocess
 import sys
-import random
 import py5
 import numpy as np
 
@@ -25,71 +24,43 @@ PREVIEW_SIZE, OUTPUT_SIZE, _ = get_sizes()
 SIZE = OUTPUT_SIZE
 
 # Simulation state
-N = 250000
-# Initial points
-x = np.random.uniform(0, 1, N).astype(np.float32)
-y = np.random.uniform(0, 1, N).astype(np.float32)
+MAX_ITER = 50
+N_SAMPLES = 100000 # Samples per frame
 
 density_buffer = np.zeros((SIZE[1], SIZE[0]), dtype=np.float32)
 
-def chladni_grad(x, y, m, n):
-    # The Chladni equation for a square plate is roughly:
-    # Z = a * sin(m * pi * x) * sin(n * pi * y) + b * sin(n * pi * x) * sin(m * pi * y)
-    # We want particles to move TOWARDS the nodal lines (where Z = 0 or Z^2 is minimum)
-    # So we take the gradient of Z^2, which is 2 * Z * grad(Z), and move in the negative direction.
+def generate_buddhabrot_paths(shift_c):
+    # Random points in complex plane [-2, 2] + [-2, 2]j
+    c = np.random.uniform(-2, 2, N_SAMPLES) + 1j * np.random.uniform(-2, 2, N_SAMPLES)
+    c += shift_c
     
-    pi = np.pi
+    z = np.zeros_like(c, dtype=np.complex64)
+    c_cast = c.astype(np.complex64)
     
-    sin_mx = np.sin(m * pi * x)
-    sin_ny = np.sin(n * pi * y)
-    sin_nx = np.sin(n * pi * x)
-    sin_my = np.sin(m * pi * y)
+    paths = []
+    escaped = np.zeros(N_SAMPLES, dtype=bool)
     
-    cos_mx = np.cos(m * pi * x)
-    cos_ny = np.cos(n * pi * y)
-    cos_nx = np.cos(n * pi * x)
-    cos_my = np.cos(m * pi * y)
+    # Iterate
+    for i in range(MAX_ITER):
+        # Only iterate points that haven't escaped yet (optimization)
+        active = ~escaped
+        z[active] = z[active]**2 + c_cast[active]
+        paths.append(z.copy())
+        
+        # Check escape condition
+        escaped[active] = np.abs(z[active]) > 2.0
     
-    Z = sin_mx * sin_ny - sin_nx * sin_my  # using a=1, b=-1 is common
+    # We only plot paths for points that EVENTUALLY escaped
+    # Convert paths to a big array
+    paths_array = np.array(paths) # Shape: (MAX_ITER, N_SAMPLES)
     
-    dZ_dx = m * pi * cos_mx * sin_ny - n * pi * cos_nx * sin_my
-    dZ_dy = n * pi * sin_mx * cos_ny - m * pi * sin_nx * cos_my
+    # Filter only escaped columns
+    escaped_paths = paths_array[:, escaped] # Shape: (MAX_ITER, N_escaped)
     
-    # Gradient of Z^2
-    grad_x = 2 * Z * dZ_dx
-    grad_y = 2 * Z * dZ_dy
+    # Flatten
+    all_z = escaped_paths.flatten()
     
-    return grad_x, grad_y
-
-def step_chladni(m, n):
-    global x, y
-    grad_x, grad_y = chladni_grad(x, y, m, n)
-    
-    # Move particles towards nodes (negative gradient of Z^2) with some noise
-    # The force scales with distance, but we clamp it to prevent explosions
-    force_x = -grad_x * 0.005
-    force_y = -grad_y * 0.005
-    
-    # Add brownian noise to keep them active
-    noise_x = np.random.normal(0, 0.001, N)
-    noise_y = np.random.normal(0, 0.001, N)
-    
-    x_new = x + force_x + noise_x
-    y_new = y + force_y + noise_y
-    
-    # Bounce off walls
-    mask_x0 = x_new < 0
-    mask_x1 = x_new > 1
-    x_new[mask_x0] *= -1
-    x_new[mask_x1] = 2.0 - x_new[mask_x1]
-    
-    mask_y0 = y_new < 0
-    mask_y1 = y_new > 1
-    y_new[mask_y0] *= -1
-    y_new[mask_y1] = 2.0 - y_new[mask_y1]
-    
-    x[:] = x_new
-    y[:] = y_new
+    return all_z
 
 def setup():
     py5.size(*SIZE)
@@ -101,37 +72,37 @@ def draw():
     
     t = py5.frame_count * 2 * np.pi / TOTAL_FRAMES
     
-    # Modulate mode parameters m and n continuously
-    # Transitioning from m=3, n=5 to m=7, n=4
-    m = 5.0 + 2.0 * np.sin(t)
-    n = 4.5 + 1.5 * np.cos(t * 2)
+    # Modulate a shift to 'c' to animate through the 4D fractal space
+    shift_c = 0.2 * np.sin(t) + 1j * 0.2 * np.cos(t * 1.5)
     
-    # Run steps to settle onto nodes
-    for _ in range(5):
-        step_chladni(m, n)
-        
+    all_z = generate_buddhabrot_paths(shift_c)
+    
     # Map to screen
-    screen_x = x * SIZE[0]
-    screen_y = y * SIZE[1]
+    screen_x = (all_z.real + 2.0) / 4.0 * SIZE[0]
+    screen_y = (all_z.imag + 2.0) / 4.0 * SIZE[1]
     
     # Fast 2D histogram
     H, _, _ = np.histogram2d(screen_y, screen_x, bins=(SIZE[1], SIZE[0]), range=[[0, SIZE[1]], [0, SIZE[0]]])
     
     # Accumulate with decay (motion blur)
-    density_buffer = density_buffer * 0.7 + H
+    density_buffer = density_buffer * 0.85 + H
     
     # Render
     py5.load_np_pixels()
     
     # Map density to colors
-    # Palette: Shimmering gold sand over a deep velvet crimson plate
-    # Plate: Crimson [50, 0, 10]
-    # Sand: Gold [255, 200, 50]
-    density_norm = np.clip(density_buffer / 8.0, 0, 1)
+    # Palette: Deep Nebula Purple, Fiery Orange, and Luminous White
+    density_norm = np.clip(density_buffer / 50.0, 0, 1)
     
-    r = 50 + 205 * density_norm
-    g = 0 + 200 * density_norm
-    b = 10 + 40 * density_norm
+    r = 255 * (density_norm ** 1.5)
+    g = 150 * (density_norm ** 2.0)
+    b = 255 * (density_norm ** 0.8)
+    
+    # Add fiery orange highlights
+    orange_mask = density_norm > 0.5
+    r[orange_mask] = 255
+    g[orange_mask] = 100 + 155 * ((density_norm[orange_mask] - 0.5) / 0.5)
+    b[orange_mask] = 255 - 200 * ((density_norm[orange_mask] - 0.5) / 0.5)
     
     py5.np_pixels[:, :, 0] = 255
     py5.np_pixels[:, :, 1] = r.astype(np.uint8)

@@ -4,6 +4,342 @@
 Agents MUST NOT write anything in the `Comment` field. When registering a new work, Agents must leave the `Rating` and `Comment` fields empty or with their default labels as placeholders for the user.
 The Artist reads this file before starting a new sketch to understand preferences.
 
+## kinetic_sprott_linz_o_attractor_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_sprott_linz_n_attractor_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_sprott_linz_m_attractor_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_sprott_linz_l_attractor_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_sprott_linz_k_attractor_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_sprott_linz_j_attractor_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_sprott_linz_i_attractor_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_sprott_linz_h_attractor_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_sprott_linz_g_attractor_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_moore_spiegel_attractor_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_hadley_circulation_attractor_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_sprott_linz_f_attractor_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_rabinovich_fabrikant_attractor_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_rikitake_attractor_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_qi_attractor_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_sakarya_attractor_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_burke_shaw_attractor_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_coullet_attractor_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_halvorsen_attractor_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_sprott_case_f_attractor_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_aizawa_attractor_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_dadras_attractor_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_thomas_cyclically_symmetric_attractor_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_chua_circuit_attractor_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_chen_attractor_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_halvorsen_attractor_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_nose_hoover_attractor_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_lu_attractor_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_burke_shaw_attractor_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_dadras_attractor_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_sprott_attractor_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_rabinovich_fabrikant_attractor_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_rossler_attractor_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_chen_attractor_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_aizawa_attractor_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_thomas_attractor_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_lorenz_attractor_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_hopalong_attractor_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_web_map_attractor_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_macmillan_map_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_popcorn_fractal_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_bogdanov_map_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_gingerbreadman_map_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_bedhead_attractor_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_svensson_attractor_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_martin_attractor_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_buddhabrot_fractal_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_clifford_attractor_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_standard_map_attractor_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_henon_map_attractor_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_peter_de_jong_attractor_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_chladni_plate_resonance_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_tinkerbell_map_attractor_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_gumowski_mira_attractor_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_ikeda_map_attractor_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_kuramoto_coupled_oscillators_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
 ## kinetic_lattice_boltzmann_fluid_2d
 
 - **Rating**: 

@@ -2,7 +2,6 @@ from pathlib import Path
 import shutil
 import subprocess
 import sys
-import random
 import py5
 import numpy as np
 
@@ -17,7 +16,7 @@ from lib.sizes import get_sizes
 SKETCH_DIR = sketch_dir(__file__)
 WORK_NAME = SKETCH_DIR.name
 FRAMES_DIR = SKETCH_DIR / "frames"
-DURATION_SEC = 10
+DURATION_SEC = 15
 FPS = 60
 TOTAL_FRAMES = DURATION_SEC * FPS
 PREVIEW_FILENAME = f"{WORK_NAME}_p1.png"
@@ -25,69 +24,17 @@ PREVIEW_SIZE, OUTPUT_SIZE, _ = get_sizes()
 SIZE = OUTPUT_SIZE
 
 # Simulation state
-N = 250000
-# Initial points
-x = np.random.uniform(0, 1, N).astype(np.float32)
-y = np.random.uniform(0, 1, N).astype(np.float32)
+N = 1000000
+# Initial points 
+x = np.random.uniform(-0.1, 1.1, N).astype(np.float32)
+y = np.random.uniform(-0.1, 0.1, N).astype(np.float32)
 
 density_buffer = np.zeros((SIZE[1], SIZE[0]), dtype=np.float32)
 
-def chladni_grad(x, y, m, n):
-    # The Chladni equation for a square plate is roughly:
-    # Z = a * sin(m * pi * x) * sin(n * pi * y) + b * sin(n * pi * x) * sin(m * pi * y)
-    # We want particles to move TOWARDS the nodal lines (where Z = 0 or Z^2 is minimum)
-    # So we take the gradient of Z^2, which is 2 * Z * grad(Z), and move in the negative direction.
-    
-    pi = np.pi
-    
-    sin_mx = np.sin(m * pi * x)
-    sin_ny = np.sin(n * pi * y)
-    sin_nx = np.sin(n * pi * x)
-    sin_my = np.sin(m * pi * y)
-    
-    cos_mx = np.cos(m * pi * x)
-    cos_ny = np.cos(n * pi * y)
-    cos_nx = np.cos(n * pi * x)
-    cos_my = np.cos(m * pi * y)
-    
-    Z = sin_mx * sin_ny - sin_nx * sin_my  # using a=1, b=-1 is common
-    
-    dZ_dx = m * pi * cos_mx * sin_ny - n * pi * cos_nx * sin_my
-    dZ_dy = n * pi * sin_mx * cos_ny - m * pi * sin_nx * cos_my
-    
-    # Gradient of Z^2
-    grad_x = 2 * Z * dZ_dx
-    grad_y = 2 * Z * dZ_dy
-    
-    return grad_x, grad_y
-
-def step_chladni(m, n):
+def step_bogdanov(eps, k, mu):
     global x, y
-    grad_x, grad_y = chladni_grad(x, y, m, n)
-    
-    # Move particles towards nodes (negative gradient of Z^2) with some noise
-    # The force scales with distance, but we clamp it to prevent explosions
-    force_x = -grad_x * 0.005
-    force_y = -grad_y * 0.005
-    
-    # Add brownian noise to keep them active
-    noise_x = np.random.normal(0, 0.001, N)
-    noise_y = np.random.normal(0, 0.001, N)
-    
-    x_new = x + force_x + noise_x
-    y_new = y + force_y + noise_y
-    
-    # Bounce off walls
-    mask_x0 = x_new < 0
-    mask_x1 = x_new > 1
-    x_new[mask_x0] *= -1
-    x_new[mask_x1] = 2.0 - x_new[mask_x1]
-    
-    mask_y0 = y_new < 0
-    mask_y1 = y_new > 1
-    y_new[mask_y0] *= -1
-    y_new[mask_y1] = 2.0 - y_new[mask_y1]
-    
+    y_new = y + eps * y + k * x * (x - 1.0) + mu * x * y
+    x_new = x + y_new
     x[:] = x_new
     y[:] = y_new
 
@@ -101,37 +48,50 @@ def draw():
     
     t = py5.frame_count * 2 * np.pi / TOTAL_FRAMES
     
-    # Modulate mode parameters m and n continuously
-    # Transitioning from m=3, n=5 to m=7, n=4
-    m = 5.0 + 2.0 * np.sin(t)
-    n = 4.5 + 1.5 * np.cos(t * 2)
+    # Modulate parameters continuously
+    # Standard parameters: epsilon=0, k=1.2, mu=0
+    # Let's create a chaotic swirling spiral
+    eps = 0.0
+    k = 1.2 + 0.1 * np.sin(t)
+    mu = 0.0 + 0.05 * np.cos(t * 1.5)
     
-    # Run steps to settle onto nodes
-    for _ in range(5):
-        step_chladni(m, n)
+    # Run steps
+    for _ in range(3):
+        step_bogdanov(eps, k, mu)
         
-    # Map to screen
-    screen_x = x * SIZE[0]
-    screen_y = y * SIZE[1]
+    # Map to screen (Bogdanov bounds typically roughly [-0.5, 1.5] for x, [-0.5, 0.5] for y)
+    screen_x = (x + 0.5) / 2.0 * SIZE[0]
+    screen_y = (y + 0.5) / 1.0 * SIZE[1]
     
     # Fast 2D histogram
     H, _, _ = np.histogram2d(screen_y, screen_x, bins=(SIZE[1], SIZE[0]), range=[[0, SIZE[1]], [0, SIZE[0]]])
     
     # Accumulate with decay (motion blur)
-    density_buffer = density_buffer * 0.7 + H
+    density_buffer = density_buffer * 0.85 + H
     
     # Render
     py5.load_np_pixels()
     
     # Map density to colors
-    # Palette: Shimmering gold sand over a deep velvet crimson plate
-    # Plate: Crimson [50, 0, 10]
-    # Sand: Gold [255, 200, 50]
-    density_norm = np.clip(density_buffer / 8.0, 0, 1)
+    # Palette: Solar Yellow, Cosmic Orange, and Deep Space Blue
+    density_norm = np.clip(density_buffer / 10.0, 0, 1)
     
-    r = 50 + 205 * density_norm
-    g = 0 + 200 * density_norm
-    b = 10 + 40 * density_norm
+    # Deep Space Blue base
+    r = 50 * (density_norm ** 1.5)
+    g = 100 * (density_norm ** 1.2) + 20 * density_norm
+    b = 255 * (density_norm ** 0.8)
+    
+    # Cosmic Orange midtones
+    orange_mask = (density_norm > 0.4) & (density_norm < 0.8)
+    r[orange_mask] = np.maximum(r[orange_mask], 255 * ((density_norm[orange_mask] - 0.4) / 0.4))
+    g[orange_mask] = np.maximum(g[orange_mask], 150 * ((density_norm[orange_mask] - 0.4) / 0.4))
+    b[orange_mask] = np.maximum(0, b[orange_mask] - 100 * ((density_norm[orange_mask] - 0.4) / 0.4))
+    
+    # Solar Yellow highlights
+    yellow_mask = density_norm > 0.8
+    r[yellow_mask] = 255
+    g[yellow_mask] = np.maximum(g[yellow_mask], 200 + 55 * ((density_norm[yellow_mask] - 0.8) / 0.2))
+    b[yellow_mask] = np.maximum(0, 100 * ((density_norm[yellow_mask] - 0.8) / 0.2))
     
     py5.np_pixels[:, :, 0] = 255
     py5.np_pixels[:, :, 1] = r.astype(np.uint8)

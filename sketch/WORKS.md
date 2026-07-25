@@ -1,3 +1,10 @@
+## kinetic_rabinovich_fabrikant_attractor_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A chaotic system that produces a complex, sharp-edged ribbon structure with deep folds, completely different from the typical smooth curves of Lorenz or Rössler.
+- **Techniques**: The Rabinovich-Fabrikant Attractor. Known for extreme sensitivity to initial conditions. Simulated using the Euler method with a very small `dt` for 1M particles. The 3D structure is gently rotated and orthographically projected onto 2D.
+- **Palette**: Turquoise, Mint, and Charcoal Black.
+
 ## kinetic_rossler_attractor_2d
 - **Date**: 2026-07-25
 - **Type**: Animation (900 frames, 60fps)

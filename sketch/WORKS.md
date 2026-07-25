@@ -1,3 +1,10 @@
+## kinetic_ikeda_map_attractor_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (600 frames, 60fps)
+- **Concept**: Complex quantum interference patterns swirling in a chaotic void.
+- **Techniques**: The Ikeda Map is a discrete-time dynamical system that models light traversing a non-linear optical resonator. It produces beautiful, swirling spiral-like strange attractors. By simulating 1,000,000 points and slowly modulating the u parameter over time, the spiral branches continuously fold and warp into each other.
+- **Palette**: Vaporwave Sunset - Deep Violet, Hot Pink, Bright Orange, and Sun Yellow.
+
 ## kinetic_kuramoto_coupled_oscillators_2d
 - **Date**: 2026-07-25
 - **Type**: Animation (458 frames, 60fps)

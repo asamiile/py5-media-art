@@ -1,3 +1,10 @@
+## kinetic_chen_attractor_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A continuous 3D chaotic flow closely related to the Lorenz attractor, but with a more complex, intricate double-scroll structure.
+- **Techniques**: The Chen Attractor. We numerically integrate the continuous differential equations using the Euler method for 1M particles. We gently rotate the 3D butterfly-like structure and project it onto the 2D plane, slightly modulating the parameter `c` over time to make the attractor breathe.
+- **Palette**: Solar Yellow, Tangerine, and Deep Crimson.
+
 ## kinetic_aizawa_attractor_2d
 - **Date**: 2026-07-25
 - **Type**: Animation (900 frames, 60fps)

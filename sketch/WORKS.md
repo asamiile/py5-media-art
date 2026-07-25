@@ -1,3 +1,10 @@
+## kinetic_bedhead_attractor_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (600 frames, 60fps)
+- **Concept**: A swirling vortex of threads resembling complex magnetic field lines or wild hair.
+- **Techniques**: The Bedhead attractor map. We simulate 250k particles using trigonometric functions mapped to x and y to create highly textured organic waves of particles. We smoothly modulate the constants `a` and `b` using trigonometric functions over time to cause the threads to writhe.
+- **Palette**: Neon Magenta, Cyan, and Pure White on a dark background.
+
 ## kinetic_svensson_attractor_2d
 - **Date**: 2026-07-25
 - **Type**: Animation (900 frames, 60fps)

@@ -1,3 +1,10 @@
+## kinetic_hadley_circulation_attractor_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A continuous 3D chaotic flow representing atmospheric convection and global wind patterns.
+- **Techniques**: The Hadley Circulation Attractor. We numerically integrate the continuous differential equations using the Euler method for 1M particles. The resulting beautiful toroidal structure is rotated and orthographically projected onto the 2D plane, gently modulating the parameter `f` over time.
+- **Palette**: Rose, Peach, and Mint.
+
 ## kinetic_sprott_linz_f_attractor_2d
 - **Date**: 2026-07-25
 - **Type**: Animation (900 frames, 60fps)

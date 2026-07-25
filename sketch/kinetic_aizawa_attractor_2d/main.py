@@ -26,22 +26,38 @@ SIZE = OUTPUT_SIZE
 # Simulation state
 N = 1000000
 # Initial points spread around the origin
-x = np.random.uniform(-2, 2, N).astype(np.float32)
-y = np.random.uniform(-2, 2, N).astype(np.float32)
-z = np.random.uniform(-2, 2, N).astype(np.float32)
+x = np.random.uniform(-0.1, 0.1, N).astype(np.float32)
+y = np.random.uniform(-0.1, 0.1, N).astype(np.float32)
+z = np.random.uniform(-0.1, 0.1, N).astype(np.float32)
 
 density_buffer = np.zeros((SIZE[1], SIZE[0]), dtype=np.float32)
 
-def step_aizawa(a, b, c, d, e, f_val, dt=0.01):
+def step_aizawa(a, dt=0.01):
     global x, y, z
-    # Euler integration step for the Aizawa attractor
+    # Euler integration step for the Aizawa Attractor
+    b = 0.7
+    c = 0.6
+    d = 3.5
+    e = 0.25
+    f = 0.1
+    
     dx = (z - b) * x - d * y
     dy = d * x + (z - b) * y
-    dz = c + a * z - (z**3) / 3.0 - (x**2 + y**2) * (1.0 + e * z) + f_val * z * (x**3)
+    dz = c + a * z - (z**3) / 3.0 - (x**2 + y**2) * (1 + e * z) + f * z * (x**3)
     
-    x += dx * dt
-    y += dy * dt
-    z += dz * dt
+    x_new = x + dx * dt
+    y_new = y + dy * dt
+    z_new = z + dz * dt
+    
+    # Keep particles bounded just in case
+    mask = (np.abs(x_new) > 5) | (np.abs(y_new) > 5) | (np.abs(z_new) > 5) | np.isnan(x_new)
+    x_new[mask] = np.random.uniform(-0.1, 0.1, np.sum(mask)).astype(np.float32)
+    y_new[mask] = np.random.uniform(-0.1, 0.1, np.sum(mask)).astype(np.float32)
+    z_new[mask] = np.random.uniform(-0.1, 0.1, np.sum(mask)).astype(np.float32)
+    
+    x[:] = x_new
+    y[:] = y_new
+    z[:] = z_new
 
 def setup():
     py5.size(*SIZE)
@@ -53,21 +69,16 @@ def draw():
     
     t = py5.frame_count * 2 * np.pi / TOTAL_FRAMES
     
-    # Aizawa attractor parameters with continuous modulation
-    a = 0.95 + 0.1 * np.sin(t)
-    b = 0.7
-    c = 0.6
-    d = 3.5 + 0.5 * np.cos(t * 1.5)
-    e = 0.25
-    f_val = 0.1
+    # Aizawa parameter with continuous modulation
+    a = 0.95 + 0.05 * np.sin(t)
     
     # Run integration steps
-    for _ in range(2):
-        step_aizawa(a, b, c, d, e, f_val, dt=0.01)
+    for _ in range(5):
+        step_aizawa(a, dt=0.005)
         
     # Rotate 3D attractor gently over time
-    theta = t * 0.5
-    phi = np.sin(t) * 0.5
+    theta = t * 0.4
+    phi = np.sin(t * 1.5) * 0.4
     
     # Rotate around Z
     x_rot1 = x * np.cos(theta) - y * np.sin(theta)
@@ -80,9 +91,9 @@ def draw():
     z_rot2 = y_rot1 * np.sin(phi) + z_rot1 * np.cos(phi)
     
     # Map to screen
-    # Aizawa attractor typical size is roughly [-2.5, 2.5]
-    screen_x = (x_rot2 + 3.0) / 6.0 * SIZE[0]
-    screen_y = (y_rot2 + 3.0) / 6.0 * SIZE[1]
+    # Aizawa typical size: x,y,z in [-2.5, 2.5]
+    screen_x = (x_rot2 + 2.5) / 5.0 * SIZE[0]
+    screen_y = (y_rot2 + 2.5) / 5.0 * SIZE[1]
     
     # Fast 2D histogram
     H, _, _ = np.histogram2d(screen_y, screen_x, bins=(SIZE[1], SIZE[0]), range=[[0, SIZE[1]], [0, SIZE[0]]])
@@ -94,25 +105,25 @@ def draw():
     py5.load_np_pixels()
     
     # Map density to colors
-    # Palette: Ruby Red, Champagne Gold, and Deep Obsidian
-    density_norm = np.clip(density_buffer / 10.0, 0, 1)
+    # Palette: Coral, Turquoise, and Navy Blue
+    density_norm = np.clip(density_buffer / 12.0, 0, 1)
     
-    # Deep Obsidian base
-    r_col = 30 * (density_norm ** 1.5)
-    g_col = 10 * (density_norm ** 1.2)
-    b_col = 30 * (density_norm ** 1.0)
+    # Navy Blue base
+    r_col = 0 * (density_norm ** 1.5)
+    g_col = 0 * (density_norm ** 1.5)
+    b_col = 50 * (density_norm ** 1.5)
     
-    # Ruby Red midtones
-    ruby_mask = (density_norm > 0.3) & (density_norm < 0.7)
-    r_col[ruby_mask] = np.maximum(r_col[ruby_mask], 30 + 195 * ((density_norm[ruby_mask] - 0.3) / 0.4))
-    g_col[ruby_mask] = np.maximum(g_col[ruby_mask], 10 + 10 * ((density_norm[ruby_mask] - 0.3) / 0.4))
-    b_col[ruby_mask] = np.maximum(b_col[ruby_mask], 30 + 30 * ((density_norm[ruby_mask] - 0.3) / 0.4))
+    # Turquoise midtones
+    turq_mask = (density_norm > 0.3) & (density_norm < 0.7)
+    r_col[turq_mask] = np.maximum(r_col[turq_mask], 0 + 64 * ((density_norm[turq_mask] - 0.3) / 0.4))
+    g_col[turq_mask] = np.maximum(g_col[turq_mask], 0 + 224 * ((density_norm[turq_mask] - 0.3) / 0.4))
+    b_col[turq_mask] = np.maximum(b_col[turq_mask], 50 + 208 * ((density_norm[turq_mask] - 0.3) / 0.4))
     
-    # Champagne Gold highlights
-    gold_mask = density_norm > 0.7
-    r_col[gold_mask] = np.maximum(r_col[gold_mask], 225 + 30 * ((density_norm[gold_mask] - 0.7) / 0.3))
-    g_col[gold_mask] = np.maximum(g_col[gold_mask], 20 + 215 * ((density_norm[gold_mask] - 0.7) / 0.3))
-    b_col[gold_mask] = np.maximum(b_col[gold_mask], 60 + 115 * ((density_norm[gold_mask] - 0.7) / 0.3))
+    # Coral highlights
+    coral_mask = density_norm > 0.7
+    r_col[coral_mask] = np.maximum(r_col[coral_mask], 64 + 191 * ((density_norm[coral_mask] - 0.7) / 0.3))
+    g_col[coral_mask] = np.maximum(g_col[coral_mask], 224 - 96 * ((density_norm[coral_mask] - 0.7) / 0.3))
+    b_col[coral_mask] = np.maximum(b_col[coral_mask], 255 - 175 * ((density_norm[coral_mask] - 0.7) / 0.3))
     
     py5.np_pixels[:, :, 0] = 255
     py5.np_pixels[:, :, 1] = r_col.astype(np.uint8)

@@ -1,3 +1,10 @@
+## kinetic_svensson_attractor_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A glowing, ethereal fabric of light that continuously folds in upon itself.
+- **Techniques**: The Svensson attractor map. We simulate 1M particles. The algorithmic fabric is defined by complex sine and cosine interactions. We smoothly modulate the constants `a`, `b`, `c`, and `d` using trigonometric functions over time to warp the manifold.
+- **Palette**: Luminous Pearl White, Violet, and Rose Gold.
+
 ## kinetic_martin_attractor_2d
 - **Date**: 2026-07-25
 - **Type**: Animation (900 frames, 60fps)

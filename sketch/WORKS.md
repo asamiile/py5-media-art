@@ -1,3 +1,10 @@
+## kinetic_popcorn_fractal_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: Fluid-like, bounded chaotic drift of particles creating complex, organic fractal patterns.
+- **Techniques**: The Pickover Popcorn map, an unconditionally bounded trigonometric discrete map. 1M particles are simulated with continuous modulation of the secondary frequency parameter to warp the structural boundaries over time.
+- **Palette**: Amethyst Purple, Rose Gold, and Pearl White.
+
 ## kinetic_bogdanov_map_2d
 - **Date**: 2026-07-25
 - **Type**: Animation (900 frames, 60fps)

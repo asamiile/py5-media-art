@@ -1,3 +1,10 @@
+## kinetic_aizawa_attractor_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A continuous 3D chaotic flow forming a beautiful, symmetric dual-lobe sphere with a swirling interior.
+- **Techniques**: The Aizawa Attractor. We numerically integrate the continuous differential equations using the Euler method for 1M particles. The 3D form is gently rotated and projected to the 2D plane using orthographic projection. Parameters are slightly modulated to make it breathe over time.
+- **Palette**: Ruby Red, Champagne Gold, and Deep Obsidian.
+
 ## kinetic_thomas_attractor_2d
 - **Date**: 2026-07-25
 - **Type**: Animation (900 frames, 60fps)

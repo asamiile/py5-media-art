@@ -1,3 +1,10 @@
+## kinetic_bogdanov_map_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A swirling, chaotic galaxy of particles trapped in a spiraling vortex.
+- **Techniques**: The Bogdanov map. We simulate 1M particles, smoothly modulating the `k` and `mu` parameters to warp the chaotic attractor into dynamic, flowing structures.
+- **Palette**: Solar Yellow, Cosmic Orange, and Deep Space Blue.
+
 ## kinetic_gingerbreadman_map_2d
 - **Date**: 2026-07-25
 - **Type**: Animation (900 frames, 60fps)

@@ -1,3 +1,10 @@
+## kinetic_kuramoto_coupled_oscillators_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (458 frames, 60fps)
+- **Concept**: A vast swarm of bioluminescent fireflies slowly falling into hypnotic synchronization.
+- **Techniques**: The Kuramoto model of coupled oscillators simulated on a 2D spatial grid. The phases of thousands of oscillators sync with their neighbors, generating complex, emergent traveling waves of light.
+- **Palette**: Deep forest black, Bioluminescent Lime Green, Glowing Cyan, White highlights.
+
 ## kinetic_lattice_boltzmann_fluid_2d
 - **Date**: 2026-07-24
 - **Type**: Animation (900 frames, 60fps)

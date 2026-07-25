@@ -1,3 +1,10 @@
+## kinetic_sakarya_attractor_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A continuous 3D chaotic flow with intricate and delicate looping trajectories.
+- **Techniques**: The Sakarya Attractor. We numerically integrate the continuous differential equations using the Euler method for 1M particles. The delicate looping 3D structure is rotated and orthographically projected onto the 2D plane, gently modulating the parameter `a` over time.
+- **Palette**: Teal, Aquamarine, and Midnight Blue.
+
 ## kinetic_burke_shaw_attractor_2d
 - **Date**: 2026-07-25
 - **Type**: Animation (900 frames, 60fps)

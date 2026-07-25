@@ -1,3 +1,10 @@
+## kinetic_dadras_attractor_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A continuous 3D chaotic flow with intricate and dense trajectories.
+- **Techniques**: The Dadras Attractor. We numerically integrate the continuous differential equations using the Euler method for 1M particles. The dense 3D structure is rotated and orthographically projected onto the 2D plane, gently modulating the parameter `c` over time.
+- **Palette**: Orchid, Lavender, and Indigo.
+
 ## kinetic_thomas_cyclically_symmetric_attractor_2d
 - **Date**: 2026-07-25
 - **Type**: Animation (900 frames, 60fps)

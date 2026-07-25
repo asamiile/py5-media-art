@@ -1,3 +1,10 @@
+## kinetic_hopalong_attractor_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: An intricate, woven tapestry of intersecting particle streams forming complex symmetric knots.
+- **Techniques**: Barry Martin's Hopalong Attractor. Uses alternating signs and square roots to recursively fold the phase space, weaving particle paths together. 1M particles are simulated with continuous modulation of the parameters.
+- **Palette**: Crimson Red, Gold, and Deep Indigo.
+
 ## kinetic_web_map_attractor_2d
 - **Date**: 2026-07-25
 - **Type**: Animation (793 frames, 60fps)

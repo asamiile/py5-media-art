@@ -1,3 +1,10 @@
+## kinetic_tinkerbell_map_attractor_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: Glowing dust scattered in an endless loop around an invisible source of energy.
+- **Techniques**: The Tinkerbell map. We simulate 1M particles, modulate parameters a, b, c, d to morph the attractor shape and use the fast 2D histogram render method.
+- **Palette**: Golden yellow, bright orange, and pure white on pitch black.
+
 ## kinetic_gumowski_mira_attractor_2d
 - **Date**: 2026-07-25
 - **Type**: Animation (900 frames, 60fps)

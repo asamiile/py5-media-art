@@ -1,3 +1,10 @@
+## kinetic_buddhabrot_fractal_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (600 frames, 60fps)
+- **Concept**: Unveiling the hidden, radiant architecture of the Mandelbrot set.
+- **Techniques**: The Buddhabrot algorithm. We sample random points in the complex plane, iterate `z = z^2 + c`, and if `z` escapes, we trace its entire trajectory into a 2D histogram. To animate it, a sinusoidal shift is applied to `c`, carving a dynamic slice through the 4D Julia-Mandelbrot space.
+- **Palette**: Deep Nebula Purple, Fiery Orange, and Luminous White.
+
 ## kinetic_clifford_attractor_2d
 - **Date**: 2026-07-25
 - **Type**: Animation (900 frames, 60fps)

@@ -1,3 +1,10 @@
+## kinetic_macmillan_map_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A delicate landscape of intertwined crystalline islands and chaotic seas.
+- **Techniques**: The MacMillan map, a mathematical model originally used for tracing particle trajectories in accelerators. We simulate 1M particles, gently modulating the structural parameter `mu` to cause the crystalline islands of stability to dynamically bifurcate and merge.
+- **Palette**: Jade Green, Turquoise, and Silver.
+
 ## kinetic_popcorn_fractal_2d
 - **Date**: 2026-07-25
 - **Type**: Animation (900 frames, 60fps)

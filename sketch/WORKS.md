@@ -1,3 +1,10 @@
+## kinetic_lu_attractor_2d
+- **Date**: 2026-07-25
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A continuous 3D chaotic flow that acts as the transition between the Lorenz and Chen attractors.
+- **Techniques**: The Lü Attractor. We numerically integrate the continuous differential equations using the Euler method for 1M particles. The elegant two-scroll 3D structure is rotated and orthographically projected onto the 2D plane, gently modulating the parameter `c` over time.
+- **Palette**: Rose Gold, Copper, and Deep Burgundy.
+
 ## kinetic_burke_shaw_attractor_2d
 - **Date**: 2026-07-25
 - **Type**: Animation (900 frames, 60fps)

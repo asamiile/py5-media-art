@@ -26,15 +26,17 @@ SIZE = OUTPUT_SIZE
 # Simulation state
 N = 1000000
 # Initial points spread around the origin
-x = np.random.uniform(-1, 1, N).astype(np.float32)
-y = np.random.uniform(-1, 1, N).astype(np.float32)
-z = np.random.uniform(0, 1, N).astype(np.float32)
+x = np.random.uniform(-0.1, 0.1, N).astype(np.float32)
+y = np.random.uniform(-0.1, 0.1, N).astype(np.float32)
+z = np.random.uniform(-0.1, 0.1, N).astype(np.float32)
 
 density_buffer = np.zeros((SIZE[1], SIZE[0]), dtype=np.float32)
 
-def step_burke_shaw(s, v, dt=0.005):
+def step_burke_shaw(s, dt=0.01):
     global x, y, z
-    # Euler integration step for the Burke-Shaw attractor
+    # Euler integration step for the Burke-Shaw Attractor
+    v = 4.272
+    
     dx = -s * (x + y)
     dy = -y - s * x * z
     dz = s * x * y + v
@@ -45,9 +47,9 @@ def step_burke_shaw(s, v, dt=0.005):
     
     # Keep particles bounded just in case
     mask = (np.abs(x_new) > 5) | (np.abs(y_new) > 5) | (np.abs(z_new) > 5) | np.isnan(x_new)
-    x_new[mask] = np.random.uniform(-1, 1, np.sum(mask)).astype(np.float32)
-    y_new[mask] = np.random.uniform(-1, 1, np.sum(mask)).astype(np.float32)
-    z_new[mask] = np.random.uniform(0, 1, np.sum(mask)).astype(np.float32)
+    x_new[mask] = np.random.uniform(-0.1, 0.1, np.sum(mask)).astype(np.float32)
+    y_new[mask] = np.random.uniform(-0.1, 0.1, np.sum(mask)).astype(np.float32)
+    z_new[mask] = np.random.uniform(-0.1, 0.1, np.sum(mask)).astype(np.float32)
     
     x[:] = x_new
     y[:] = y_new
@@ -64,12 +66,11 @@ def draw():
     t = py5.frame_count * 2 * np.pi / TOTAL_FRAMES
     
     # Burke-Shaw parameter with continuous modulation
-    s = 10.0
-    v = 4.272 + 0.5 * np.sin(t)
+    s = 10.0 + np.sin(t)
     
     # Run integration steps
     for _ in range(5):
-        step_burke_shaw(s, v, dt=0.005)
+        step_burke_shaw(s, dt=0.005)
         
     # Rotate 3D attractor gently over time
     theta = t * 0.4
@@ -86,9 +87,9 @@ def draw():
     z_rot2 = y_rot1 * np.sin(phi) + z_rot1 * np.cos(phi)
     
     # Map to screen
-    # Burke-Shaw typical size: x,y in [-2, 2], z in [-2, 2]
-    screen_x = (x_rot2 + 2.5) / 5.0 * SIZE[0]
-    screen_y = (y_rot2 + 2.5) / 5.0 * SIZE[1]
+    # Burke-Shaw typical size: x,y,z in [-2, 2]
+    screen_x = (x_rot2 + 2.0) / 4.0 * SIZE[0]
+    screen_y = (y_rot2 + 2.0) / 4.0 * SIZE[1]
     
     # Fast 2D histogram
     H, _, _ = np.histogram2d(screen_y, screen_x, bins=(SIZE[1], SIZE[0]), range=[[0, SIZE[1]], [0, SIZE[0]]])
@@ -100,25 +101,25 @@ def draw():
     py5.load_np_pixels()
     
     # Map density to colors
-    # Palette: Sapphire, Cyan, and Platinum
+    # Palette: Cyan, Magenta, and Yellow
     density_norm = np.clip(density_buffer / 12.0, 0, 1)
     
-    # Sapphire base
+    # Cyan base
     r_col = 0 * (density_norm ** 1.5)
-    g_col = 30 * (density_norm ** 1.5)
-    b_col = 130 * (density_norm ** 1.5)
+    g_col = 60 * (density_norm ** 1.5)
+    b_col = 70 * (density_norm ** 1.5)
     
-    # Cyan midtones
-    cyan_mask = (density_norm > 0.3) & (density_norm < 0.7)
-    r_col[cyan_mask] = np.maximum(r_col[cyan_mask], 0 + 0 * ((density_norm[cyan_mask] - 0.3) / 0.4))
-    g_col[cyan_mask] = np.maximum(g_col[cyan_mask], 30 + 170 * ((density_norm[cyan_mask] - 0.3) / 0.4))
-    b_col[cyan_mask] = np.maximum(b_col[cyan_mask], 130 + 125 * ((density_norm[cyan_mask] - 0.3) / 0.4))
+    # Magenta midtones
+    mag_mask = (density_norm > 0.3) & (density_norm < 0.7)
+    r_col[mag_mask] = np.maximum(r_col[mag_mask], 0 + 200 * ((density_norm[mag_mask] - 0.3) / 0.4))
+    g_col[mag_mask] = np.maximum(g_col[mag_mask], 60 - 60 * ((density_norm[mag_mask] - 0.3) / 0.4))
+    b_col[mag_mask] = np.maximum(b_col[mag_mask], 70 + 130 * ((density_norm[mag_mask] - 0.3) / 0.4))
     
-    # Platinum highlights
-    plat_mask = density_norm > 0.7
-    r_col[plat_mask] = np.maximum(r_col[plat_mask], 0 + 230 * ((density_norm[plat_mask] - 0.7) / 0.3))
-    g_col[plat_mask] = np.maximum(g_col[plat_mask], 200 + 35 * ((density_norm[plat_mask] - 0.7) / 0.3))
-    b_col[plat_mask] = np.maximum(b_col[plat_mask], 255 + 0 * ((density_norm[plat_mask] - 0.7) / 0.3))
+    # Yellow highlights
+    yel_mask = density_norm > 0.7
+    r_col[yel_mask] = np.maximum(r_col[yel_mask], 200 + 55 * ((density_norm[yel_mask] - 0.7) / 0.3))
+    g_col[yel_mask] = np.maximum(g_col[yel_mask], 0 + 255 * ((density_norm[yel_mask] - 0.7) / 0.3))
+    b_col[yel_mask] = np.maximum(b_col[yel_mask], 200 - 200 * ((density_norm[yel_mask] - 0.7) / 0.3))
     
     py5.np_pixels[:, :, 0] = 255
     py5.np_pixels[:, :, 1] = r_col.astype(np.uint8)

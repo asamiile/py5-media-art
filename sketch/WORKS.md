@@ -1,3 +1,10 @@
+## kinetic_hyperchaotic_lu_attractor_2d
+- **Date**: 2026-07-26
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A kinetic visualization of the Hyperchaotic Lu system (a 4D extension of the Lu-Chen attractor).
+- **Techniques**: The Hyperchaotic Lu strange attractor. We numerically integrate the continuous 4D differential equations using the Euler method for 1M particles. The complex hyperchaotic structures are rotated and orthographically projected from 4D space down to the 2D plane, continuously modulating the parameter `d` over time.
+- **Palette**: Violet, Gold, and Deep Blue.
+
 ## kinetic_hyperchaotic_chen_attractor_2d
 - **Date**: 2026-07-26
 - **Type**: Animation (900 frames, 60fps)

@@ -1,3 +1,10 @@
+## kinetic_hyperchaotic_chen_attractor_2d
+- **Date**: 2026-07-26
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A kinetic visualization of the Hyperchaotic Chen system.
+- **Techniques**: The Hyperchaotic Chen strange attractor. We numerically integrate the continuous 4D differential equations using the Euler method for 1M particles. The dense hyperchaotic structures are rotated and orthographically projected from 4D space down to the 2D plane, continuously modulating the parameter `r` over time.
+- **Palette**: Chartreuse, Emerald, and Silver.
+
 ## kinetic_hyperchaotic_lorenz_attractor_2d
 - **Date**: 2026-07-26
 - **Type**: Animation (900 frames, 60fps)

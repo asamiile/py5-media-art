@@ -1,3 +1,10 @@
+## kinetic_sprott_case_j_attractor_2d
+- **Date**: 2026-07-26
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A vivid kinetic 3D visualization of the Sprott Case J chaotic system.
+- **Techniques**: The Sprott Case J chaotic flow. We numerically integrate the continuous differential equations using the Euler method for 1M particles. The mesmerizing orbits are gently rotated in 3D and orthographically projected onto the 2D plane, continuously modulating the parameter `a` over time.
+- **Palette**: Emerald, Topaz, and Sapphire.
+
 ## kinetic_sprott_case_i_attractor_2d
 - **Date**: 2026-07-26
 - **Type**: Animation (900 frames, 60fps)

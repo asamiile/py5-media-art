@@ -1,3 +1,10 @@
+## kinetic_qi_chen_attractor_2d
+- **Date**: 2026-07-26
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A kinetic 3D visualization of the Qi-Chen chaotic system.
+- **Techniques**: The Qi-Chen strange attractor. We numerically integrate the continuous differential equations using the Euler method for 1M particles. The complex orbit trajectories are delicately rotated and orthographically projected onto the 2D plane, continuously modulating the parameter `c` over time.
+- **Palette**: Emerald, Gold, and Charcoal.
+
 ## kinetic_sprott_case_s_attractor_2d
 - **Date**: 2026-07-26
 - **Type**: Animation (900 frames, 60fps)

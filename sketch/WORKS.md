@@ -1,3 +1,10 @@
+## kinetic_chen_lee_attractor_2d
+- **Date**: 2026-07-26
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A continuous 3D chaotic flow forming intricate two-scroll structures.
+- **Techniques**: The Chen-Lee Attractor. We numerically integrate the continuous differential equations using the Euler method for 1M particles. The delicate tangled orbits are rotated and orthographically projected onto the 2D plane, gently modulating the parameter `a` over time.
+- **Palette**: Teal, Magenta, and Gold.
+
 ## kinetic_arneodo_attractor_2d
 - **Date**: 2026-07-26
 - **Type**: Animation (900 frames, 60fps)

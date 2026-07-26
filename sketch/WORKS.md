@@ -1,3 +1,10 @@
+## kinetic_wei_attractor_2d
+- **Date**: 2026-07-26
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A kinetic 3D visualization of the Wei chaotic system.
+- **Techniques**: The Wei strange attractor. We numerically integrate the continuous differential equations using the Euler method for 1M particles. The complex spiraling orbits are rotated and orthographically projected onto the 2D plane, continuously modulating the parameter `b` over time.
+- **Palette**: Crimson, Peach, and Cream.
+
 ## kinetic_four_wing_attractor_2d
 - **Date**: 2026-07-26
 - **Type**: Animation (900 frames, 60fps)

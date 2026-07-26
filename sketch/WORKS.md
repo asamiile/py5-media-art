@@ -1,3 +1,10 @@
+## kinetic_sprott_case_e_attractor_2d
+- **Date**: 2026-07-26
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A kinetic visualization of the elegant Sprott Case E strange attractor.
+- **Techniques**: The Sprott Case E chaotic flow. We numerically integrate the continuous differential equations using the Euler method for 1M particles. The flowing strange attractor is gently rotated and orthographically projected onto the 2D plane, continuously modulating the parameter `a` over time.
+- **Palette**: Teal, Coral, and Cream.
+
 ## kinetic_sprott_case_c_attractor_2d
 - **Date**: 2026-07-26
 - **Type**: Animation (900 frames, 60fps)

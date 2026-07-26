@@ -1,3 +1,10 @@
+## kinetic_lorenz_84_attractor_2d
+- **Date**: 2026-07-26
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A continuous 3D chaotic flow representing a low-order model of global atmospheric circulation.
+- **Techniques**: The Lorenz-84 Attractor. We numerically integrate the continuous differential equations using the Euler method for 1M particles. The delicate chaotic structure is rotated and orthographically projected onto the 2D plane, gently modulating the parameter `F` over time.
+- **Palette**: Violet, Turquoise, and Platinum.
+
 ## kinetic_finance_attractor_2d
 - **Date**: 2026-07-26
 - **Type**: Animation (900 frames, 60fps)

@@ -1,3 +1,10 @@
+## kinetic_hindmarsh_rose_attractor_2d
+- **Date**: 2026-07-26
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A continuous 3D chaotic flow simulating the bursting behavior of neurons.
+- **Techniques**: The Hindmarsh-Rose Model. We numerically integrate the continuous differential equations using the Euler method for 1M particles. The neuronal bursts form a chaotic 3D attractor that is rotated and orthographically projected onto the 2D plane, gently modulating the parameter `I` over time.
+- **Palette**: Crimson, Electric Blue, and Silver.
+
 ## kinetic_wimol_banlue_attractor_2d
 - **Date**: 2026-07-26
 - **Type**: Animation (900 frames, 60fps)

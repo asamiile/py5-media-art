@@ -1,3 +1,10 @@
+## kinetic_hyperchaotic_qi_attractor_2d
+- **Date**: 2026-07-26
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A kinetic visualization of the Hyperchaotic Qi system — a 4D chaotic attractor with unusually rich structure.
+- **Techniques**: The Hyperchaotic Qi strange attractor. We numerically integrate the continuous 4D differential equations using the Euler method for 1M particles. The 4D coordinates are blended and projected to 2D via continuous rotation, modulating the parameter `e` over time.
+- **Palette**: Deep Magenta, Saffron, and Pale Gold.
+
 ## kinetic_hyperchaotic_lu_attractor_2d
 - **Date**: 2026-07-26
 - **Type**: Animation (900 frames, 60fps)

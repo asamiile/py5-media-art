@@ -1,3 +1,10 @@
+## kinetic_sprott_linz_s_attractor_2d
+- **Date**: 2026-07-26
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A continuous 3D chaotic flow forming an intricate and elegant shape.
+- **Techniques**: The Sprott-Linz S Attractor. We numerically integrate the continuous differential equations using the Euler method for 1M particles. The elegant structure is rotated and orthographically projected onto the 2D plane, gently modulating the parameter `alpha` over time.
+- **Palette**: Electric Blue, Purple, and Hot Pink.
+
 ## kinetic_sprott_linz_r_attractor_2d
 - **Date**: 2026-07-26
 - **Type**: Animation (900 frames, 60fps)

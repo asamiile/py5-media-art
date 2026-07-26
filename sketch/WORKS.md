@@ -1,3 +1,10 @@
+## kinetic_sprott_case_h_attractor_2d
+- **Date**: 2026-07-26
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A kinetic 3D exploration of the Sprott Case H chaotic system.
+- **Techniques**: The Sprott Case H chaotic flow. We numerically integrate the continuous differential equations using the Euler method for 1M particles. The dynamic orbits are gently rotated in 3D and orthographically projected onto the 2D plane, continuously modulating the parameter `a` over time.
+- **Palette**: Crimson, Navy, and Slate.
+
 ## kinetic_sprott_case_g_attractor_2d
 - **Date**: 2026-07-26
 - **Type**: Animation (900 frames, 60fps)

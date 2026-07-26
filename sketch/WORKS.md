@@ -1,3 +1,10 @@
+## kinetic_sprott_case_c_attractor_2d
+- **Date**: 2026-07-26
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A continuous chaotic flow forming smooth orbits based on Sprott Case C equations.
+- **Techniques**: The Sprott Case C Attractor. We numerically integrate the continuous differential equations using the Euler method for 1M particles. The smooth chaotic structure is gently rotated and orthographically projected onto the 2D plane, modulating the parameter `a` over time.
+- **Palette**: Rust, Olive, and Sand.
+
 ## kinetic_tigan_attractor_2d
 - **Date**: 2026-07-26
 - **Type**: Animation (900 frames, 60fps)

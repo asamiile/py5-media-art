@@ -1,3 +1,10 @@
+## kinetic_hyperchaotic_lorenz_attractor_2d
+- **Date**: 2026-07-26
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A kinetic visualization of the Hyperchaotic Lorenz system (a 4D extension of the classic Lorenz attractor).
+- **Techniques**: The Hyperchaotic Lorenz strange attractor. We numerically integrate the continuous 4D differential equations using the Euler method for 1M particles. The dynamic 4D coordinates are projected into 3D, continuously rotated, and orthographically projected onto the 2D plane, modulating the parameter `d` over time.
+- **Palette**: Turquoise, Lilac, and White.
+
 ## kinetic_lorenz_mod_1_attractor_2d
 - **Date**: 2026-07-26
 - **Type**: Animation (900 frames, 60fps)

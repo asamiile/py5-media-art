@@ -1,3 +1,10 @@
+## kinetic_lorenz_mod_1_attractor_2d
+- **Date**: 2026-07-26
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A kinetic 3D visualization of the Lorenz Mod 1 chaotic system.
+- **Techniques**: The Lorenz Mod 1 strange attractor. We numerically integrate the continuous differential equations using the Euler method for 1M particles. The complex swirling paths are rotated and orthographically projected onto the 2D plane, continuously modulating the parameter `d` over time.
+- **Palette**: Teal, Coral, and Amber.
+
 ## kinetic_wei_attractor_2d
 - **Date**: 2026-07-26
 - **Type**: Animation (900 frames, 60fps)

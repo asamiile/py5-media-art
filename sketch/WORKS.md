@@ -1,3 +1,10 @@
+## kinetic_wang_sun_attractor_2d
+- **Date**: 2026-07-26
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A continuous 3D chaotic flow forming intricate and tightly bound orbital structures.
+- **Techniques**: The Wang-Sun Attractor. We numerically integrate the continuous differential equations using the Euler method for 1M particles. The delicate tangled orbits are rotated and orthographically projected onto the 2D plane, gently modulating the parameter `d` over time.
+- **Palette**: Crimson, Obsidian, and Pearl.
+
 ## kinetic_t_system_attractor_2d
 - **Date**: 2026-07-26
 - **Type**: Animation (900 frames, 60fps)

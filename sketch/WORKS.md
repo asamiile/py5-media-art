@@ -1,3 +1,10 @@
+## kinetic_finance_attractor_2d
+- **Date**: 2026-07-26
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A continuous 3D chaotic flow simulating a dynamic financial system model.
+- **Techniques**: The Finance Attractor. We numerically integrate the continuous differential equations representing interest rate, investment demand, and price index using the Euler method for 1M particles. The resulting chaotic conical structures are rotated and orthographically projected onto the 2D plane, gently modulating the parameter `c` over time.
+- **Palette**: Emerald, Charcoal, and Champagne.
+
 ## kinetic_chen_lee_attractor_2d
 - **Date**: 2026-07-26
 - **Type**: Animation (900 frames, 60fps)

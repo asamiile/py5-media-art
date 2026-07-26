@@ -1,3 +1,10 @@
+## kinetic_tigan_attractor_2d
+- **Date**: 2026-07-26
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A kinetic 3D volumetric visualization of the Tigan strange attractor.
+- **Techniques**: We numerically integrate the Tigan differential equations using the Euler method for 1M particles. The dynamic parameters cause the intricate strange attractor to stretch and breathe. The particles undergo continuous 3D rotation and orthographic projection onto the 2D plane.
+- **Palette**: Turquoise, Cerulean, and Neon Yellow.
+
 ## kinetic_liu_attractor_2d
 - **Date**: 2026-07-26
 - **Type**: Animation (900 frames, 60fps)

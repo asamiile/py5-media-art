@@ -1,3 +1,10 @@
+## kinetic_four_wing_attractor_2d
+- **Date**: 2026-07-26
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A kinetic 3D visualization of the Four-Wing chaotic system.
+- **Techniques**: The Four-Wing strange attractor. We numerically integrate the continuous differential equations using the Euler method for 1M particles. The flowing wing-like structures are slowly rotated and orthographically projected onto the 2D plane, continuously modulating the parameter `b` over time.
+- **Palette**: Rose, Indigo, and Silver.
+
 ## kinetic_qi_chen_attractor_2d
 - **Date**: 2026-07-26
 - **Type**: Animation (900 frames, 60fps)

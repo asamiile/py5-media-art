@@ -1,3 +1,10 @@
+## kinetic_rossler_hyperchaos_attractor_2d
+- **Date**: 2026-07-26
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A continuous 4D hyperchaotic flow exploring higher-dimensional chaos.
+- **Techniques**: The Rössler Hyperchaos Attractor. We numerically integrate the continuous 4D differential equations using the Euler method for 1M particles. The 4th dimension drives complex hyperchaotic perturbations while we rotate and orthographically project the 3D subspace `(x, y, z)` onto the 2D plane, gently modulating the parameter `d` over time.
+- **Palette**: Indigo, Sapphire, and Silver.
+
 ## kinetic_wang_sun_attractor_2d
 - **Date**: 2026-07-26
 - **Type**: Animation (900 frames, 60fps)

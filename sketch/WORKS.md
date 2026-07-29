@@ -1,3 +1,10 @@
+## kinetic_lorenz_mod_2_attractor_2d
+- **Date**: 2026-07-26
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A kinetic visualization of the Lorenz Mod 2 strange attractor — a nonlinear modification of the classic Lorenz system with distinct wing-like topology.
+- **Techniques**: The Lorenz Mod 2 attractor. We numerically integrate the continuous differential equations using the Euler method for 1M particles with a warm-up phase to converge onto the attractor. Adaptive 4σ projection maps the attractor extent dynamically to screen, with continuous rotation and parameter f modulation over time.
+- **Palette**: Midnight Navy, Electric Indigo, and Pale Ice.
+
 ## kinetic_hyperchaotic_qi_attractor_2d
 - **Date**: 2026-07-26
 - **Type**: Animation (900 frames, 60fps)

@@ -279,11 +279,11 @@
 - **Palette**: Ruby, Pearl, and Ash.
 
 ## kinetic_rucklidge_attractor_2d
-- **Date**: 2026-07-26
+- **Date**: 2026-07-29
 - **Type**: Animation (900 frames, 60fps)
-- **Concept**: A continuous 3D chaotic flow forming an intricate and elegant shape.
-- **Techniques**: The Rucklidge Attractor. We numerically integrate the continuous differential equations using the Euler method for 1M particles. The elegant structure is rotated and orthographically projected onto the 2D plane, gently modulating the parameter `b` over time.
-- **Palette**: Rust, Olive, and Sand.
+- **Concept**: 1M particles tracing the Rucklidge strange attractor — an asymmetric butterfly system exhibiting classic chaotic spirals. Lambda modulates over time creating a slow morphing of the attractor's wings.
+- **Techniques**: Euler integration of dx/dt = -k*x + λ*y - y*z, dy/dt = x, dz/dt = -z + y² (k=2, λ≈6.7). Adaptive 4σ projection with gentle 3D rotation.
+- **Palette**: Obsidian base → Emerald Glow midtones → Arctic White highlights.
 
 ## kinetic_sprott_linz_s_attractor_2d
 - **Date**: 2026-07-26

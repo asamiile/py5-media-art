@@ -10,7 +10,6 @@ if str(PROJECT_ROOT) not in sys.path:
     sys.path.append(str(PROJECT_ROOT))
 
 from lib.paths import sketch_dir
-from lib.preview import preview_filename
 from lib.sizes import get_sizes
 
 SKETCH_DIR = sketch_dir(__file__)
@@ -23,141 +22,146 @@ PREVIEW_FILENAME = f"{WORK_NAME}_p1.png"
 PREVIEW_SIZE, OUTPUT_SIZE, _ = get_sizes()
 SIZE = OUTPUT_SIZE
 
-# Simulation state
+# Rucklidge Attractor
+# dx/dt = -k*x + lam*y - y*z
+# dy/dt = x
+# dz/dt = -z + y^2
+# Chaotic params: k=2, lam=6.7  -> asymmetric butterfly strange attractor
 N = 1000000
-# Initial points spread around the origin
-x = np.random.uniform(-0.1, 0.1, N).astype(np.float32)
-y = np.random.uniform(-0.1, 0.1, N).astype(np.float32)
-z = np.random.uniform(-0.1, 0.1, N).astype(np.float32)
+rng = np.random.default_rng()
+x = rng.uniform(-5, 5, N).astype(np.float32)
+y = rng.uniform(-5, 5, N).astype(np.float32)
+z = rng.uniform(0, 30, N).astype(np.float32)
 
 density_buffer = np.zeros((SIZE[1], SIZE[0]), dtype=np.float32)
 
-def step_rucklidge(b, dt=0.01):
+
+def step_rucklidge(lam, dt=0.02):
     global x, y, z
-    a = 2.0
-    
-    # Euler integration step for the Rucklidge Attractor
-    dx = -a * x + b * y - y * z
+
+    k = 2.0
+
+    dx = -k * x + lam * y - y * z
     dy = x
-    dz = -z + y * y
-    
+    dz = -z + y**2
+
     x_new = x + dx * dt
     y_new = y + dy * dt
     z_new = z + dz * dt
-    
-    # Keep particles bounded
-    mask = (np.abs(x_new) > 20) | (np.abs(y_new) > 20) | (np.abs(z_new) > 20) | np.isnan(x_new)
-    x_new[mask] = np.random.uniform(-0.1, 0.1, np.sum(mask)).astype(np.float32)
-    y_new[mask] = np.random.uniform(-0.1, 0.1, np.sum(mask)).astype(np.float32)
-    z_new[mask] = np.random.uniform(-0.1, 0.1, np.sum(mask)).astype(np.float32)
-    
+
+    mask = (np.abs(x_new) > 200) | (np.abs(y_new) > 200) | (np.abs(z_new) > 200) | np.isnan(x_new)
+    n_reset = int(np.sum(mask))
+    if n_reset > 0:
+        x_new[mask] = rng.uniform(-5, 5, n_reset).astype(np.float32)
+        y_new[mask] = rng.uniform(-5, 5, n_reset).astype(np.float32)
+        z_new[mask] = rng.uniform(0, 30, n_reset).astype(np.float32)
+
     x[:] = x_new
     y[:] = y_new
     z[:] = z_new
+
 
 def setup():
     py5.size(*SIZE)
     py5.pixel_density(1)
     FRAMES_DIR.mkdir(exist_ok=True)
-    
+    print("[Setup] Warming up...", flush=True)
+    for _ in range(3000):
+        step_rucklidge(6.7, dt=0.02)
+    print("[Setup] Done.", flush=True)
+
+
 def draw():
     global density_buffer
-    
+
     t = py5.frame_count * 2 * np.pi / TOTAL_FRAMES
-    
-    # Parameter with continuous modulation
-    b = 6.7 + 0.1 * np.sin(t)
-    
-    # Run integration steps
-    for _ in range(5):
-        step_rucklidge(b, dt=0.005)
-        
-    # Rotate 3D attractor gently over time
+
+    lam = 6.7 + 0.3 * np.sin(t)
+
+    for _ in range(4):
+        step_rucklidge(lam, dt=0.02)
+
+    # Gentle rotation
     theta = t * 0.4
-    phi = np.sin(t * 1.5) * 0.4
-    
-    # Rotate around Z
+    phi = np.sin(t * 1.5) * 0.5
+
     x_rot1 = x * np.cos(theta) - y * np.sin(theta)
     y_rot1 = x * np.sin(theta) + y * np.cos(theta)
-    z_rot1 = z
-    
-    # Rotate around X
+
     x_rot2 = x_rot1
-    y_rot2 = y_rot1 * np.cos(phi) - z_rot1 * np.sin(phi)
-    z_rot2 = y_rot1 * np.sin(phi) + z_rot1 * np.cos(phi)
-    
-    # Map to screen
-    # Rucklidge typical size: x,y in [-10, 10], z in [0, 15]
-    screen_x = (x_rot2 + 5.0) / 20.0 * SIZE[0]
-    screen_y = (y_rot2 + 5.0) / 20.0 * SIZE[1]
-    
-    # Fast 2D histogram
-    H, _, _ = np.histogram2d(screen_y, screen_x, bins=(SIZE[1], SIZE[0]), range=[[0, SIZE[1]], [0, SIZE[0]]])
-    
-    # Accumulate with decay (motion blur)
+    y_rot2 = y_rot1 * np.cos(phi) - z * np.sin(phi)
+
+    cx = float(np.median(x_rot2))
+    cy = float(np.median(y_rot2))
+    rx = max(4.0 * float(np.std(x_rot2)), 0.1)
+    ry = max(4.0 * float(np.std(y_rot2)), 0.1)
+
+    screen_x = (x_rot2 - cx) / rx * SIZE[0] + SIZE[0] / 2
+    screen_y = (y_rot2 - cy) / ry * SIZE[1] + SIZE[1] / 2
+
+    H, _, _ = np.histogram2d(screen_y, screen_x, bins=(SIZE[1], SIZE[0]),
+                             range=[[0, SIZE[1]], [0, SIZE[0]]])
+
     density_buffer = density_buffer * 0.85 + H
-    
-    # Render
+
     py5.load_np_pixels()
-    
-    # Map density to colors
-    # Palette: Rust, Olive, and Sand
-    density_norm = np.clip(density_buffer / 12.0, 0, 1)
-    
-    # Olive base
-    r_col = 35 * (density_norm ** 1.5)
-    g_col = 45 * (density_norm ** 1.5)
-    b_col = 15 * (density_norm ** 1.5)
-    
-    # Rust midtones
-    rust_mask = (density_norm > 0.3) & (density_norm < 0.7)
-    r_col[rust_mask] = np.maximum(r_col[rust_mask], 35 + 140 * ((density_norm[rust_mask] - 0.3) / 0.4))
-    g_col[rust_mask] = np.maximum(g_col[rust_mask], 45 + 30 * ((density_norm[rust_mask] - 0.3) / 0.4))
-    b_col[rust_mask] = np.maximum(b_col[rust_mask], 15 + 10 * ((density_norm[rust_mask] - 0.3) / 0.4))
-    
-    # Sand highlights
-    sand_mask = density_norm > 0.7
-    r_col[sand_mask] = np.maximum(r_col[sand_mask], 175 + 60 * ((density_norm[sand_mask] - 0.7) / 0.3))
-    g_col[sand_mask] = np.maximum(g_col[sand_mask], 75 + 140 * ((density_norm[sand_mask] - 0.7) / 0.3))
-    b_col[sand_mask] = np.maximum(b_col[sand_mask], 25 + 160 * ((density_norm[sand_mask] - 0.7) / 0.3))
-    
+
+    # Palette: Obsidian -> Emerald Glow -> Arctic White
+    density_norm = np.clip(density_buffer / 8.0, 0, 1)
+
+    r_col =  5 * (density_norm ** 1.5)
+    g_col = 12 * (density_norm ** 1.5)
+    b_col = 10 * (density_norm ** 1.5)
+
+    mid = (density_norm > 0.25) & (density_norm < 0.7)
+    t_mid = (density_norm[mid] - 0.25) / 0.45
+    r_col[mid] = np.maximum(r_col[mid],   5 +  45 * t_mid)
+    g_col[mid] = np.maximum(g_col[mid],  12 + 203 * t_mid)
+    b_col[mid] = np.maximum(b_col[mid],  10 +  55 * t_mid)
+
+    hi = density_norm > 0.7
+    t_hi = (density_norm[hi] - 0.7) / 0.3
+    r_col[hi] = np.maximum(r_col[hi],  50 + 205 * t_hi)
+    g_col[hi] = np.maximum(g_col[hi], 215 +  40 * t_hi)
+    b_col[hi] = np.maximum(b_col[hi],  65 + 190 * t_hi)
+
     py5.np_pixels[:, :, 0] = 255
-    py5.np_pixels[:, :, 1] = r_col.astype(np.uint8)
-    py5.np_pixels[:, :, 2] = g_col.astype(np.uint8)
-    py5.np_pixels[:, :, 3] = b_col.astype(np.uint8)
-    
+    py5.np_pixels[:, :, 1] = np.clip(r_col, 0, 255).astype(np.uint8)
+    py5.np_pixels[:, :, 2] = np.clip(g_col, 0, 255).astype(np.uint8)
+    py5.np_pixels[:, :, 3] = np.clip(b_col, 0, 255).astype(np.uint8)
+
     py5.update_np_pixels()
     py5.save_frame(str(FRAMES_DIR / "frame-####.png"))
 
-    if py5.frame_count == 2 or py5.frame_count % 60 == 0:
+    if py5.frame_count == 10 or py5.frame_count % 60 == 0:
         py5.load_np_pixels()
         if py5.np_pixels.std() < 1.0:
-            print(f"[Error] Blank screen detected on frame {py5.frame_count} (std < 1.0). Aborting.", flush=True)
-            import os
-            os._exit(1)
+            print(f"[Error] Blank screen at frame {py5.frame_count}. Aborting.", flush=True)
+            import os; os._exit(1)
 
     if py5.frame_count % 60 == 0:
-        print(f"[Render Progress] Frame {py5.frame_count}/{TOTAL_FRAMES} ({py5.frame_count/TOTAL_FRAMES*100:.1f}%)", flush=True)
+        print(f"[Render Progress] Frame {py5.frame_count}/{TOTAL_FRAMES} "
+              f"({py5.frame_count / TOTAL_FRAMES * 100:.1f}%)", flush=True)
 
     if py5.frame_count >= TOTAL_FRAMES:
         py5.exit_sketch()
-        
-        print(f"[Render FFmpeg] Compiling {TOTAL_FRAMES} frames into video...", flush=True)
+
+        print(f"[Render FFmpeg] Compiling {TOTAL_FRAMES} frames...", flush=True)
         subprocess.run([
             "ffmpeg", "-y", "-r", str(FPS),
             "-i", str(FRAMES_DIR / "frame-%04d.png"),
             "-vcodec", "libx264", "-pix_fmt", "yuv420p",
             str(SKETCH_DIR / f"{WORK_NAME}.mp4"),
         ], check=True)
-        
-        mid = str(FRAMES_DIR / f"frame-{TOTAL_FRAMES // 2:04d}.png")
-        subprocess.run(["cp", mid, str(SKETCH_DIR / PREVIEW_FILENAME)], check=True)
-        
+
+        mid_frame = str(FRAMES_DIR / f"frame-{TOTAL_FRAMES // 2:04d}.png")
+        subprocess.run(["cp", mid_frame, str(SKETCH_DIR / PREVIEW_FILENAME)], check=True)
+
         if FRAMES_DIR.exists():
             shutil.rmtree(FRAMES_DIR)
-            print("[Render Cleanup] Temporary frames directory successfully removed.")
-            
-        import os
-        os._exit(0)
+            print("[Render Cleanup] Frames removed.")
+
+        import os; os._exit(0)
+
 
 py5.run_sketch()

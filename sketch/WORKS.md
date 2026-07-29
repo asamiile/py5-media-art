@@ -1,3 +1,10 @@
+## kinetic_lorenz_mod_2_attractor_2d
+- **Date**: 2026-07-26
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A kinetic visualization of the Lorenz Mod 2 strange attractor — a nonlinear modification of the classic Lorenz system with distinct wing-like topology.
+- **Techniques**: The Lorenz Mod 2 attractor. We numerically integrate the continuous differential equations using the Euler method for 1M particles with a warm-up phase to converge onto the attractor. Adaptive 4σ projection maps the attractor extent dynamically to screen, with continuous rotation and parameter f modulation over time.
+- **Palette**: Midnight Navy, Electric Indigo, and Pale Ice.
+
 ## kinetic_hyperchaotic_qi_attractor_2d
 - **Date**: 2026-07-26
 - **Type**: Animation (900 frames, 60fps)
@@ -272,11 +279,11 @@
 - **Palette**: Ruby, Pearl, and Ash.
 
 ## kinetic_rucklidge_attractor_2d
-- **Date**: 2026-07-26
+- **Date**: 2026-07-29
 - **Type**: Animation (900 frames, 60fps)
-- **Concept**: A continuous 3D chaotic flow forming an intricate and elegant shape.
-- **Techniques**: The Rucklidge Attractor. We numerically integrate the continuous differential equations using the Euler method for 1M particles. The elegant structure is rotated and orthographically projected onto the 2D plane, gently modulating the parameter `b` over time.
-- **Palette**: Rust, Olive, and Sand.
+- **Concept**: 1M particles tracing the Rucklidge strange attractor — an asymmetric butterfly system exhibiting classic chaotic spirals. Lambda modulates over time creating a slow morphing of the attractor's wings.
+- **Techniques**: Euler integration of dx/dt = -k*x + λ*y - y*z, dy/dt = x, dz/dt = -z + y² (k=2, λ≈6.7). Adaptive 4σ projection with gentle 3D rotation.
+- **Palette**: Obsidian base → Emerald Glow midtones → Arctic White highlights.
 
 ## kinetic_sprott_linz_s_attractor_2d
 - **Date**: 2026-07-26
@@ -419,11 +426,11 @@
 - **Palette**: Teal, Aquamarine, and Midnight Blue.
 
 ## kinetic_burke_shaw_attractor_2d
-- **Date**: 2026-07-25
+- **Date**: 2026-07-30
 - **Type**: Animation (900 frames, 60fps)
-- **Concept**: A continuous 3D chaotic flow with intricate and elegant spiraling vortex flows.
-- **Techniques**: The Burke-Shaw Attractor. We numerically integrate the continuous differential equations using the Euler method for 1M particles. The spiraling 3D structure is rotated and orthographically projected onto the 2D plane, gently modulating the parameter `s` over time.
-- **Palette**: Cyan, Magenta, and Yellow.
+- **Concept**: 1M particles tracing the Burke-Shaw strange attractor — a twin-lobe chaotic system exhibiting sweeping volumetric spirals and intricate foldings. Parameter v is modulated over time.
+- **Techniques**: Euler integration of dx/dt = -s*(x + y), dy/dt = -y - s*x*z, dz/dt = s*x*y + v (s=10, v≈4.272). Adaptive 4σ projection with gentle 3D rotation and density accumulation.
+- **Palette**: Deep Indigo → Electric Violet → Neon White.
 
 ## kinetic_coullet_attractor_2d
 - **Date**: 2026-07-25

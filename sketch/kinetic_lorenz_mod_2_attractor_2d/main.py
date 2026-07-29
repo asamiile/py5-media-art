@@ -22,37 +22,41 @@ PREVIEW_FILENAME = f"{WORK_NAME}_p1.png"
 PREVIEW_SIZE, OUTPUT_SIZE, _ = get_sizes()
 SIZE = OUTPUT_SIZE
 
-# Burke-Shaw Attractor
-# dx/dt = -s*(x + y)
-# dy/dt = -y - s*x*z
-# dz/dt =  s*x*y + v
-# Chaotic params: s=10, v=4.272  -> twin-lobe strange attractor
+# Lorenz Mod 2 Attractor
+# dx/dt = -a*x + y^2 - z^2 + a*f
+# dy/dt = x*(y - b*z) + g
+# dz/dt = -z + x*(b*y + z)
+# Chaotic params: a=0.9, b=5, f=9.9, g=1
 N = 1000000
 rng = np.random.default_rng()
-x = rng.uniform(-2, 2, N).astype(np.float32)
-y = rng.uniform(-2, 2, N).astype(np.float32)
-z = rng.uniform(-2, 2, N).astype(np.float32)
+x = rng.uniform(-5, 5, N).astype(np.float32)
+y = rng.uniform(-5, 5, N).astype(np.float32)
+z = rng.uniform(-5, 5, N).astype(np.float32)
 
 density_buffer = np.zeros((SIZE[1], SIZE[0]), dtype=np.float32)
 
 
-def step_burke_shaw(s, v, dt=0.01):
+def step_lorenz_mod2(f_val, dt=0.01):
     global x, y, z
 
-    dx = -s * (x + y)
-    dy = -y - s * x * z
-    dz = s * x * y + v
+    a = 0.9
+    b = 5.0
+    g = 1.0
+
+    dx = -a * x + y**2 - z**2 + a * f_val
+    dy = x * (y - b * z) + g
+    dz = -z + x * (b * y + z)
 
     x_new = x + dx * dt
     y_new = y + dy * dt
     z_new = z + dz * dt
 
-    mask = (np.abs(x_new) > 100) | (np.abs(y_new) > 100) | (np.abs(z_new) > 100) | np.isnan(x_new)
+    mask = (np.abs(x_new) > 200) | (np.abs(y_new) > 200) | (np.abs(z_new) > 200) | np.isnan(x_new)
     n_reset = int(np.sum(mask))
     if n_reset > 0:
-        x_new[mask] = rng.uniform(-2, 2, n_reset).astype(np.float32)
-        y_new[mask] = rng.uniform(-2, 2, n_reset).astype(np.float32)
-        z_new[mask] = rng.uniform(-2, 2, n_reset).astype(np.float32)
+        x_new[mask] = rng.uniform(-5, 5, n_reset).astype(np.float32)
+        y_new[mask] = rng.uniform(-5, 5, n_reset).astype(np.float32)
+        z_new[mask] = rng.uniform(-5, 5, n_reset).astype(np.float32)
 
     x[:] = x_new
     y[:] = y_new
@@ -63,9 +67,10 @@ def setup():
     py5.size(*SIZE)
     py5.pixel_density(1)
     FRAMES_DIR.mkdir(exist_ok=True)
+    # Warm-up: drive particles onto the attractor
     print("[Setup] Warming up...", flush=True)
     for _ in range(3000):
-        step_burke_shaw(10.0, 4.272, dt=0.01)
+        step_lorenz_mod2(9.9, dt=0.01)
     print("[Setup] Done.", flush=True)
 
 
@@ -74,29 +79,31 @@ def draw():
 
     t = py5.frame_count * 2 * np.pi / TOTAL_FRAMES
 
-    s = 10.0
-    v = 4.272 + 0.15 * np.sin(t * 1.3)
+    # Modulate f parameter
+    f_val = 9.9 + 0.8 * np.sin(t)
 
-    for _ in range(5):
-        step_burke_shaw(s, v, dt=0.01)
+    for _ in range(3):
+        step_lorenz_mod2(f_val, dt=0.01)
 
-    # Slow rotation
-    theta = t * 0.3
-    phi = np.sin(t * 0.7) * 0.6
+    # Gentle rotation
+    theta = t * 0.4
+    phi = np.sin(t * 1.5) * 0.4
 
     x_rot1 = x * np.cos(theta) - y * np.sin(theta)
     y_rot1 = x * np.sin(theta) + y * np.cos(theta)
+    z_rot1 = z
+
     x_rot2 = x_rot1
-    y_rot2 = y_rot1 * np.cos(phi) - z * np.sin(phi)
+    y_rot2 = y_rot1 * np.cos(phi) - z_rot1 * np.sin(phi)
 
     # Adaptive scale
-    cx = float(np.median(x_rot2))
-    cy = float(np.median(y_rot2))
-    rx = max(4.0 * float(np.std(x_rot2)), 0.1)
-    ry = max(4.0 * float(np.std(y_rot2)), 0.1)
+    x_c = float(np.median(x_rot2))
+    y_c = float(np.median(y_rot2))
+    x_r = max(4.0 * float(np.std(x_rot2)), 1.0)
+    y_r = max(4.0 * float(np.std(y_rot2)), 1.0)
 
-    screen_x = (x_rot2 - cx) / rx * SIZE[0] + SIZE[0] / 2
-    screen_y = (y_rot2 - cy) / ry * SIZE[1] + SIZE[1] / 2
+    screen_x = (x_rot2 - x_c) / x_r * SIZE[0] + SIZE[0] / 2
+    screen_y = (y_rot2 - y_c) / y_r * SIZE[1] + SIZE[1] / 2
 
     H, _, _ = np.histogram2d(screen_y, screen_x, bins=(SIZE[1], SIZE[0]),
                              range=[[0, SIZE[1]], [0, SIZE[0]]])
@@ -105,25 +112,25 @@ def draw():
 
     py5.load_np_pixels()
 
-    # Palette: Deep Indigo -> Electric Violet -> Neon White
-    density_norm = np.clip(density_buffer / 10.0, 0, 1)
+    # Palette: Midnight Navy → Electric Indigo → Pale Ice
+    density_norm = np.clip(density_buffer / 12.0, 0, 1)
 
-    r_col =  8 * (density_norm ** 1.5)
-    g_col =  4 * (density_norm ** 1.5)
-    b_col = 20 * (density_norm ** 1.5)
+    r_col = 10 * (density_norm ** 1.5)
+    g_col =  5 * (density_norm ** 1.5)
+    b_col = 50 * (density_norm ** 1.5)
 
-    # Violet midtones
-    mid = (density_norm > 0.25) & (density_norm < 0.7)
-    t_mid = (density_norm[mid] - 0.25) / 0.45
-    r_col[mid] = np.maximum(r_col[mid],   8 + 167 * t_mid)
-    g_col[mid] = np.maximum(g_col[mid],   4 +  26 * t_mid)
-    b_col[mid] = np.maximum(b_col[mid],  20 + 215 * t_mid)
+    # Electric Indigo midtones
+    mid = (density_norm > 0.3) & (density_norm < 0.7)
+    t_mid = (density_norm[mid] - 0.3) / 0.4
+    r_col[mid] = np.maximum(r_col[mid],  10 + 100 * t_mid)
+    g_col[mid] = np.maximum(g_col[mid],   5 +  30 * t_mid)
+    b_col[mid] = np.maximum(b_col[mid],  50 + 185 * t_mid)
 
-    # Neon White highlights
+    # Pale Ice highlights
     hi = density_norm > 0.7
     t_hi = (density_norm[hi] - 0.7) / 0.3
-    r_col[hi] = np.maximum(r_col[hi], 175 +  80 * t_hi)
-    g_col[hi] = np.maximum(g_col[hi],  30 + 220 * t_hi)
+    r_col[hi] = np.maximum(r_col[hi], 110 + 145 * t_hi)
+    g_col[hi] = np.maximum(g_col[hi],  35 + 195 * t_hi)
     b_col[hi] = np.maximum(b_col[hi], 235 +  20 * t_hi)
 
     py5.np_pixels[:, :, 0] = 255
@@ -147,7 +154,7 @@ def draw():
     if py5.frame_count >= TOTAL_FRAMES:
         py5.exit_sketch()
 
-        print(f"[Render FFmpeg] Compiling {TOTAL_FRAMES} frames...", flush=True)
+        print(f"[Render FFmpeg] Compiling {TOTAL_FRAMES} frames into video...", flush=True)
         subprocess.run([
             "ffmpeg", "-y", "-r", str(FPS),
             "-i", str(FRAMES_DIR / "frame-%04d.png"),

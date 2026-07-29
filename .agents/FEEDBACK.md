@@ -636,7 +636,7 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## kinetic_hopf_fibration_4d
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 
@@ -714,7 +714,7 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## kinetic_galaxy_collision_toomre_3d
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 
@@ -726,7 +726,7 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## kinetic_wave_interference_caustics_2d
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 
@@ -756,13 +756,13 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## kinetic_volumetric_curl_noise_flow_3d
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 
 ## kinetic_ising_model_phase_transition_2d
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 
@@ -816,7 +816,7 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## kinetic_vector_field_bokeh_flow_2d
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 

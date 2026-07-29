@@ -426,11 +426,11 @@
 - **Palette**: Teal, Aquamarine, and Midnight Blue.
 
 ## kinetic_burke_shaw_attractor_2d
-- **Date**: 2026-07-25
+- **Date**: 2026-07-30
 - **Type**: Animation (900 frames, 60fps)
-- **Concept**: A continuous 3D chaotic flow with intricate and elegant spiraling vortex flows.
-- **Techniques**: The Burke-Shaw Attractor. We numerically integrate the continuous differential equations using the Euler method for 1M particles. The spiraling 3D structure is rotated and orthographically projected onto the 2D plane, gently modulating the parameter `s` over time.
-- **Palette**: Cyan, Magenta, and Yellow.
+- **Concept**: 1M particles tracing the Burke-Shaw strange attractor — a twin-lobe chaotic system exhibiting sweeping volumetric spirals and intricate foldings. Parameter v is modulated over time.
+- **Techniques**: Euler integration of dx/dt = -s*(x + y), dy/dt = -y - s*x*z, dz/dt = s*x*y + v (s=10, v≈4.272). Adaptive 4σ projection with gentle 3D rotation and density accumulation.
+- **Palette**: Deep Indigo → Electric Violet → Neon White.
 
 ## kinetic_coullet_attractor_2d
 - **Date**: 2026-07-25

@@ -1,3 +1,10 @@
+## kinetic_chladni_hyperdimensional_resonance_2d
+- **Date**: 2026-07-30
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of hyperdimensional standing wave resonance patterns (Chladni nodes) dynamically shifting in 4D space and projected to a 2D screen.
+- **Techniques**: 4D coordinate embedding, dual-plane 4D rotation, finite difference amplitude gradients, particle advection with velocity capping, and fast 2D box blur glow mapping in NumPy.
+- **Palette**: Obsidian Void, Deep Indigo, Neon Purple, Hot Pink, Pure White.
+
 ## kinetic_quantum_vortex_lattice_2d
 - **Date**: 2026-07-30
 - **Type**: Animation (900 frames, 60fps)

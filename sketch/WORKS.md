@@ -1,3 +1,10 @@
+## kinetic_navier_stokes_karman_vortex_street_2d
+- **Date**: 2026-07-30
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of a Kármán vortex street behind a cylinder using potential flow theory, discrete vortex induction, and vorticity-based streamline color-mapping.
+- **Techniques**: Vectorized particle advection, discrete point vortex shedding (Strouhal frequency), mutual vortex induction velocity solver, and dynamic vorticity-field color signature grouping.
+- **Palette**: Obsidian Void, Electric Cyan, Neon Magenta, Deep Indigo, Coral Crimson.
+
 ## kinetic_chladni_hyperdimensional_resonance_2d
 - **Date**: 2026-07-30
 - **Type**: Animation (900 frames, 60fps)

@@ -1,3 +1,10 @@
+## kinetic_brusselator_reaction_diffusion_2d
+- **Date**: 2026-07-30
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of the Brusselator reaction-diffusion PDE coupled with divergence-free tracer particle flow along concentration contour lines.
+- **Techniques**: Explicit Euler finite-difference simulation of Brusselator equations, periodic five-point Laplacian, gradient-based curl velocity field construction, vectorized particle index advection, and bilinear GPU upscaling with smearing trails.
+- **Palette**: Deep Obsidian, Indigo Violet, Crimson Glow, Luminous Teal, Electric Lavender, Solar Gold.
+
 ## kinetic_navier_stokes_karman_vortex_street_2d
 - **Date**: 2026-07-30
 - **Type**: Animation (900 frames, 60fps)

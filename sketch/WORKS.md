@@ -1,3 +1,10 @@
+## kinetic_quantum_vortex_lattice_2d
+- **Date**: 2026-07-30
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of a Gross-Pitaevskii Bose-Einstein Condensate quantum fluid containing a rotating 37-vortex Abrikosov triangular lattice.
+- **Techniques**: Complex order parameter $\psi = \sqrt{\rho} e^{i\theta}$, 37 point vortex phase accumulation, $\tanh(r/\xi)$ core density suppression, spectral phase wheel mapping, and superfluid tracer particle velocity field advection.
+- **Palette**: Deep Quantum Void, Electric Cyan, Emerald Green, Solar Gold, Crimson Violet.
+
 ## kinetic_aperiodic_pinwheel_tiling_2d
 - **Date**: 2026-07-30
 - **Type**: Animation (900 frames, 60fps)

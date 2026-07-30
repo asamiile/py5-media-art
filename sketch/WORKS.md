@@ -1,3 +1,10 @@
+## kinetic_dendritic_phase_field_crystal_2d
+- **Date**: 2026-07-30
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A kinetic visualization of 2D dendritic ice crystal growth modeled via phase-field partial differential equations coupled with thermal diffusion.
+- **Techniques**: Phase-field model (Karma-Rappel formulation) for order parameter \phi and temperature u. 6-fold anisotropic Laplacian driving hexagonal growth, freeze-timestamp tracking for growth ring contours, and thermal wave ripple rendering.
+- **Palette**: Deep Void Navy, Glacial Cyan, Radiant Violet, and Frost White.
+
 ## kinetic_lorenz_mod_2_attractor_2d
 - **Date**: 2026-07-26
 - **Type**: Animation (900 frames, 60fps)

@@ -1,3 +1,10 @@
+## kinetic_aperiodic_pinwheel_tiling_2d
+- **Date**: 2026-07-30
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of Radin's Pinwheel Aperiodic Tiling — a famous self-similar 2D fractal tiling composed of 1:2 right triangles ($1 : 2 : \sqrt{5}$) that continuously subdivides into 5 congruent sub-triangles.
+- **Techniques**: Exact 5-fold recursive pinwheel vector decomposition in normalized basis $(\mathbf{s}, \mathbf{v})$ where $\mathbf{v} = \mathbf{l}/2$. 12,500 recursive sub-triangles, dual radial phase wave color modulation, high-contrast obsidian void background.
+- **Palette**: Obsidian Void, Neon Cyan, Electric Magenta, Solar Gold, Deep Indigo.
+
 ## kinetic_dendritic_phase_field_crystal_2d
 - **Date**: 2026-07-30
 - **Type**: Animation (900 frames, 60fps)

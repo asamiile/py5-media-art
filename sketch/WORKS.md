@@ -1,3 +1,10 @@
+## kinetic_pickover_biomorph_orbit_trap_2d
+- **Date**: 2026-07-30
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of Pickover Biomorph complex mappings rendered via orbital density accumulation (Buddhabrot-style) to produce bioluminescent organic patterns.
+- **Techniques**: Vectorized complex number iterations in NumPy, integer-power combinations to avoid branch-cut discontinuities, random plane coordinate sampling for grid artifact removal, fast JPEG-based frame saving, and accumulation trail blending.
+- **Palette**: Deep Charcoal, Glowing Emerald Green, Spectral Cyan, Neon Gold, Frost White.
+
 ## kinetic_brusselator_reaction_diffusion_2d
 - **Date**: 2026-07-30
 - **Type**: Animation (900 frames, 60fps)

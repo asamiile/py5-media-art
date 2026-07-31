@@ -1,3 +1,10 @@
+## kinetic_scale_free_network_growth_2d
+- **Date**: 2026-07-31
+- **Type**: Animation (1200 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of the Barabási-Albert preferential attachment model, illustrating the self-similar growth and emergence of a scale-free network topology.
+- **Techniques**: Preferential attachment growth, vectorized Fruchterman-Reingold spring force layout, exponentially smoothed scale transitions, degree-based HSB color mapping, and persistent motion trails.
+- **Palette**: Obsidian Space Void, Glacial Cyan, Electric Violet, Radiant Magenta.
+
 ## kinetic_growing_neural_gas_topologies_2d
 - **Date**: 2026-07-31
 - **Type**: Animation (1200 frames, 60fps)

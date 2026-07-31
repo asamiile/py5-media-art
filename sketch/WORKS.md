@@ -1,3 +1,52 @@
+## kinetic_pickover_biomorph_orbit_trap_2d
+- **Date**: 2026-07-30
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of Pickover Biomorph complex mappings rendered via orbital density accumulation (Buddhabrot-style) to produce bioluminescent organic patterns.
+- **Techniques**: Vectorized complex number iterations in NumPy, integer-power combinations to avoid branch-cut discontinuities, random plane coordinate sampling for grid artifact removal, fast JPEG-based frame saving, and accumulation trail blending.
+- **Palette**: Deep Charcoal, Glowing Emerald Green, Spectral Cyan, Neon Gold, Frost White.
+
+## kinetic_brusselator_reaction_diffusion_2d
+- **Date**: 2026-07-30
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of the Brusselator reaction-diffusion PDE coupled with divergence-free tracer particle flow along concentration contour lines.
+- **Techniques**: Explicit Euler finite-difference simulation of Brusselator equations, periodic five-point Laplacian, gradient-based curl velocity field construction, vectorized particle index advection, and bilinear GPU upscaling with smearing trails.
+- **Palette**: Deep Obsidian, Indigo Violet, Crimson Glow, Luminous Teal, Electric Lavender, Solar Gold.
+
+## kinetic_navier_stokes_karman_vortex_street_2d
+- **Date**: 2026-07-30
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of a Kármán vortex street behind a cylinder using potential flow theory, discrete vortex induction, and vorticity-based streamline color-mapping.
+- **Techniques**: Vectorized particle advection, discrete point vortex shedding (Strouhal frequency), mutual vortex induction velocity solver, and dynamic vorticity-field color signature grouping.
+- **Palette**: Obsidian Void, Electric Cyan, Neon Magenta, Deep Indigo, Coral Crimson.
+
+## kinetic_chladni_hyperdimensional_resonance_2d
+- **Date**: 2026-07-30
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of hyperdimensional standing wave resonance patterns (Chladni nodes) dynamically shifting in 4D space and projected to a 2D screen.
+- **Techniques**: 4D coordinate embedding, dual-plane 4D rotation, finite difference amplitude gradients, particle advection with velocity capping, and fast 2D box blur glow mapping in NumPy.
+- **Palette**: Obsidian Void, Deep Indigo, Neon Purple, Hot Pink, Pure White.
+
+## kinetic_quantum_vortex_lattice_2d
+- **Date**: 2026-07-30
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of a Gross-Pitaevskii Bose-Einstein Condensate quantum fluid containing a rotating 37-vortex Abrikosov triangular lattice.
+- **Techniques**: Complex order parameter $\psi = \sqrt{\rho} e^{i\theta}$, 37 point vortex phase accumulation, $\tanh(r/\xi)$ core density suppression, spectral phase wheel mapping, and superfluid tracer particle velocity field advection.
+- **Palette**: Deep Quantum Void, Electric Cyan, Emerald Green, Solar Gold, Crimson Violet.
+
+## kinetic_aperiodic_pinwheel_tiling_2d
+- **Date**: 2026-07-30
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of Radin's Pinwheel Aperiodic Tiling — a famous self-similar 2D fractal tiling composed of 1:2 right triangles ($1 : 2 : \sqrt{5}$) that continuously subdivides into 5 congruent sub-triangles.
+- **Techniques**: Exact 5-fold recursive pinwheel vector decomposition in normalized basis $(\mathbf{s}, \mathbf{v})$ where $\mathbf{v} = \mathbf{l}/2$. 12,500 recursive sub-triangles, dual radial phase wave color modulation, high-contrast obsidian void background.
+- **Palette**: Obsidian Void, Neon Cyan, Electric Magenta, Solar Gold, Deep Indigo.
+
+## kinetic_dendritic_phase_field_crystal_2d
+- **Date**: 2026-07-30
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A kinetic visualization of 2D dendritic ice crystal growth modeled via phase-field partial differential equations coupled with thermal diffusion.
+- **Techniques**: Phase-field model (Karma-Rappel formulation) for order parameter \phi and temperature u. 6-fold anisotropic Laplacian driving hexagonal growth, freeze-timestamp tracking for growth ring contours, and thermal wave ripple rendering.
+- **Palette**: Deep Void Navy, Glacial Cyan, Radiant Violet, and Frost White.
+
 ## kinetic_lorenz_mod_2_attractor_2d
 - **Date**: 2026-07-26
 - **Type**: Animation (900 frames, 60fps)

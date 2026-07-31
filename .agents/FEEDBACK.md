@@ -4,6 +4,48 @@
 Agents MUST NOT write anything in the `Comment` field. When registering a new work, Agents must leave the `Rating` and `Comment` fields empty or with their default labels as placeholders for the user.
 The Artist reads this file before starting a new sketch to understand preferences.
 
+## kinetic_pickover_biomorph_orbit_trap_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_brusselator_reaction_diffusion_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_navier_stokes_karman_vortex_street_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_chladni_hyperdimensional_resonance_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_quantum_vortex_lattice_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_aperiodic_pinwheel_tiling_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_dendritic_phase_field_crystal_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
 ## kinetic_lorenz_mod_2_attractor_2d
 
 - **Rating**: 

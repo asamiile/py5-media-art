@@ -1,3 +1,10 @@
+## kinetic_growing_neural_gas_topologies_2d
+- **Date**: 2026-07-31
+- **Type**: Animation (1200 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of Fritzke's Growing Neural Gas (GNG) competitive learning network adapting to dynamically moving multi-center attractor signal fields.
+- **Techniques**: Growing Neural Gas (GNG) advection, dynamic node splitting and edge aging, aspect-ratio centered coordinate mapping, noise-based pulsing glow bloom, and persistent translucent motion trails.
+- **Palette**: Obsidian Void, Electric Cyan, Midnight Indigo, Solar Gold.
+
 ## kinetic_pickover_biomorph_orbit_trap_2d
 - **Date**: 2026-07-30
 - **Type**: Animation (900 frames, 60fps)

@@ -1,3 +1,10 @@
+## kinetic_kohonen_som_surface_2d
+- **Date**: 2026-07-31
+- **Type**: Animation (1200 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of a Kohonen Self-Organizing Map (SOM) neural sheet unfolding and wrapping itself around a 3D Torus Knot manifold.
+- **Techniques**: Kohonen Self-Organizing Map learning, torus knot manifold sampling, manual 3D rotation and perspective projection, depth-based line weight and color shading, and persistent motion trails.
+- **Palette**: Obsidian Void, Glacial Cyan, Electric Violet, Radiant Magenta.
+
 ## kinetic_scale_free_network_growth_2d
 - **Date**: 2026-07-31
 - **Type**: Animation (1200 frames, 60fps)

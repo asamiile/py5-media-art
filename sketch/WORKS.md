@@ -1,3 +1,10 @@
+## kinetic_quantum_circuit_collapse_2d
+- **Date**: 2026-08-02
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of Wave Function Collapse resolving a quantum circuit board in a dark void.
+- **Techniques**: Wave Function Collapse (WFC) constraint satisfaction, BFS geodesic path distance calculation, double-pass neon glow line rendering, time-shifted Gaussian pulse waves.
+- **Palette**: Pitch Black, Deep Luminous Blue/Indigo, Ethereal Cyber Cyan, Solar Gold, Electric Violet.
+
 ## kinetic_crystal_solidification_dendrite_2d
 - **Date**: 2026-08-02
 - **Type**: Animation (900 frames, 60fps)

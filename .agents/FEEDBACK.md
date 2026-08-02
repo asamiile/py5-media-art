@@ -4,6 +4,12 @@
 Agents MUST NOT write anything in the `Comment` field. When registering a new work, Agents must leave the `Rating` and `Comment` fields empty or with their default labels as placeholders for the user.
 The Artist reads this file before starting a new sketch to understand preferences.
 
+## kinetic_quantum_circuit_collapse_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
 ## kinetic_crystal_solidification_dendrite_2d
 
 - **Rating**: 
@@ -42,7 +48,7 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## kinetic_kohonen_som_surface_2d
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 
@@ -66,7 +72,7 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## kinetic_brusselator_reaction_diffusion_2d
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 
@@ -492,7 +498,7 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## kinetic_aizawa_attractor_2d
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 
@@ -630,7 +636,7 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## kinetic_bedhead_attractor_2d
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 
@@ -702,7 +708,7 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## kinetic_kuramoto_coupled_oscillators_2d
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 

@@ -1,3 +1,10 @@
+## kinetic_bioluminescent_moss_colony_2d
+- **Date**: 2026-08-02
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of a stochastic cellular automata moss growth model on a cybernetic grid.
+- **Techniques**: Vectorized 2D Stochastic Cellular Automata using shifted NumPy slices, offscreen image buffer upscaling with bilinear filtering, high-resolution screen-space grid overlays, and trigonometric wind sway.
+- **Palette**: Dark Charcoal Void, Bioluminescent Neon Emerald Green, Glowing Solar Amber, Phosphor Mint.
+
 ## kinetic_quantum_circuit_collapse_2d
 - **Date**: 2026-08-02
 - **Type**: Animation (900 frames, 60fps)

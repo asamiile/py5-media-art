@@ -1,3 +1,10 @@
+## kinetic_botanical_l_system_2d
+- **Date**: 2026-08-02
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of a bioluminescent L-System fern canopy growing and swaying under a Perlin noise wind field.
+- **Techniques**: Recursive Lindenmayer System expansion, progressive sentence fraction growth rendering, dynamic Perlin noise branch sway propagation, and HSB gradient leaf/flower shading.
+- **Palette**: Deep Amethyst Space Void, Bioluminescent Forest Emerald, Neon Mint, Glowing Magenta/Pink, Solar Amber.
+
 ## kinetic_hydraulic_erosion_terrain_3d
 - **Date**: 2026-08-02
 - **Type**: Animation (900 frames, 60fps)

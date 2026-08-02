@@ -1,3 +1,10 @@
+## kinetic_logistic_cobweb_chaos_3d
+- **Date**: 2026-08-02
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of the period-doubling route to chaos in the logistic map.
+- **Techniques**: Logistic map iteration, cylindrical 3D coordinate mapping, custom 3D rotations, painters depth sorting, and vectorized multi-pass stroke glow.
+- **Palette**: Obsidian Space Void, Ethereal Cyan, Electric Violet, Solar Gold.
+
 ## kinetic_ivy_structure_growth_2d
 - **Date**: 2026-08-02
 - **Type**: Animation (900 frames, 60fps)

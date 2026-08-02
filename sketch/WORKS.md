@@ -1,3 +1,10 @@
+## kinetic_point_cloud_morph_3d
+- **Date**: 2026-08-02
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of 3D point cloud morphing between mathematical manifolds in a dark space void.
+- **Techniques**: Pre-computed 3D shape generation, cosine-eased coordinate interpolation, manual 3D depth-sorting, custom perspective projection, and vectorized HSB color mapping.
+- **Palette**: Obsidian Space Void, Luminous Nebula Cyan, Ethereal Amethyst, Solar Gold.
+
 ## kinetic_reiter_snowflake_growth_2d
 - **Date**: 2026-08-02
 - **Type**: Animation (1200 frames, 60fps)

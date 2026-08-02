@@ -1,3 +1,10 @@
+## kinetic_crystal_solidification_dendrite_2d
+- **Date**: 2026-08-02
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of dendritic crystal growth using a Phase-Field PDE model.
+- **Techniques**: Karma-Rappel Phase-Field PDE solver, 6-fold hexagonal anisotropy, central finite difference Laplacian/gradient flux solver, direct ARGB NumPy pixel mapping.
+- **Palette**: Dark Cobalt Blue, Pearlescent Ice-Blue, Silver-White, Neon Amber Gold.
+
 ## kinetic_logistic_cobweb_chaos_3d
 - **Date**: 2026-08-02
 - **Type**: Animation (900 frames, 60fps)

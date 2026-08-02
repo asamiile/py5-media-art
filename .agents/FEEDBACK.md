@@ -4,6 +4,66 @@
 Agents MUST NOT write anything in the `Comment` field. When registering a new work, Agents must leave the `Rating` and `Comment` fields empty or with their default labels as placeholders for the user.
 The Artist reads this file before starting a new sketch to understand preferences.
 
+## kinetic_lenia_petri_dish_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_botanical_l_system_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_hydraulic_erosion_terrain_3d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_bioluminescent_moss_colony_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_quantum_circuit_collapse_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_crystal_solidification_dendrite_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_logistic_cobweb_chaos_3d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_ivy_structure_growth_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_van_der_pol_resonance_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_point_cloud_morph_3d
+
+- **Rating**: 
+- **Comment**: 
+
+
 ## kinetic_reiter_snowflake_growth_2d
 
 - **Rating**: 
@@ -12,7 +72,7 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## kinetic_kohonen_som_surface_2d
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 
@@ -36,7 +96,7 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## kinetic_brusselator_reaction_diffusion_2d
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 
@@ -462,7 +522,7 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## kinetic_aizawa_attractor_2d
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 
@@ -600,7 +660,7 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## kinetic_bedhead_attractor_2d
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 
@@ -672,7 +732,7 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## kinetic_kuramoto_coupled_oscillators_2d
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 

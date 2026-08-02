@@ -1,3 +1,80 @@
+## kinetic_neural_gas_emergence_2d
+- **Date**: 2026-08-02
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of a Growing Neural Gas (GNG) network competitively learning a dynamic rotating multi-ring signal distribution, with bioluminescent node scaling, age-based synaptic edge color mapping, and a HUD telemetry overlay.
+- **Techniques**: Fritzke GNG competitive learning (25 updates/frame, up to 450 nodes), dynamic concentric ring sample distribution with orbital rotation, age-based HSB edge color gradients (cyan → violet), error-reactive two-pass neon node glow, vector corner cross HUD.
+- **Palette**: Deep Amethyst Space Void, Neon Cyan, Electric Violet, Bioluminescent Magenta, Emerald Green.
+
+## kinetic_lenia_petri_dish_2d
+- **Date**: 2026-08-02
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 4K simulation of continuous Lenia cellular automata (artificial life) swimming inside a glowing digital petri dish.
+- **Techniques**: Fast Fourier Transform (FFT) neighborhood convolution, continuous growth mapping, ARGB offscreen image bilinear upscaling, and perimeter HUD glass ticking.
+- **Palette**: Deep Amethyst Space Void, Electric Violet, Luminous Cyan, Solar Amber.
+
+## kinetic_botanical_l_system_2d
+- **Date**: 2026-08-02
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of a bioluminescent L-System fern canopy growing and swaying under a Perlin noise wind field.
+- **Techniques**: Recursive Lindenmayer System expansion, progressive sentence fraction growth rendering, dynamic Perlin noise branch sway propagation, and HSB gradient leaf/flower shading.
+- **Palette**: Deep Amethyst Space Void, Bioluminescent Forest Emerald, Neon Mint, Glowing Magenta/Pink, Solar Amber.
+
+## kinetic_hydraulic_erosion_terrain_3d
+- **Date**: 2026-08-02
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of particle-based hydraulic erosion sculpting a 3D wireframe terrain.
+- **Techniques**: Diamond-Square fractal heightmap, bilinear height/gradient interpolation, droplet velocity inertia integration, depth-sorted Painter's occlusion wireframe, and active erosion channel highlights.
+- **Palette**: Dark Obsidian Black, Neon Hologram Cyan, Bioluminescent Amber Gold, Glowing Slate Mint.
+
+## kinetic_bioluminescent_moss_colony_2d
+- **Date**: 2026-08-02
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of a stochastic cellular automata moss growth model on a cybernetic grid.
+- **Techniques**: Vectorized 2D Stochastic Cellular Automata using shifted NumPy slices, offscreen image buffer upscaling with bilinear filtering, high-resolution screen-space grid overlays, and trigonometric wind sway.
+- **Palette**: Dark Charcoal Void, Bioluminescent Neon Emerald Green, Glowing Solar Amber, Phosphor Mint.
+
+## kinetic_quantum_circuit_collapse_2d
+- **Date**: 2026-08-02
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of Wave Function Collapse resolving a quantum circuit board in a dark void.
+- **Techniques**: Wave Function Collapse (WFC) constraint satisfaction, BFS geodesic path distance calculation, double-pass neon glow line rendering, time-shifted Gaussian pulse waves.
+- **Palette**: Pitch Black, Deep Luminous Blue/Indigo, Ethereal Cyber Cyan, Solar Gold, Electric Violet.
+
+## kinetic_crystal_solidification_dendrite_2d
+- **Date**: 2026-08-02
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of dendritic crystal growth using a Phase-Field PDE model.
+- **Techniques**: Karma-Rappel Phase-Field PDE solver, 6-fold hexagonal anisotropy, central finite difference Laplacian/gradient flux solver, direct ARGB NumPy pixel mapping.
+- **Palette**: Dark Cobalt Blue, Pearlescent Ice-Blue, Silver-White, Neon Amber Gold.
+
+## kinetic_logistic_cobweb_chaos_3d
+- **Date**: 2026-08-02
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of the period-doubling route to chaos in the logistic map.
+- **Techniques**: Logistic map iteration, cylindrical 3D coordinate mapping, custom 3D rotations, painters depth sorting, and vectorized multi-pass stroke glow.
+- **Palette**: Obsidian Space Void, Ethereal Cyan, Electric Violet, Solar Gold.
+
+## kinetic_ivy_structure_growth_2d
+- **Date**: 2026-08-02
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of organic ivy growth adapting and climbing around glowing portals.
+- **Techniques**: Obstacle-avoidance steering, noise-based wander force, leaf scaling and rotation wind sway, multi-pass neon stroke glow.
+- **Palette**: Dark Slate Obsidian, Neon Violet/Magenta, Emerald Green, Phosphor Mint, Solar Gold.
+
+## kinetic_van_der_pol_resonance_2d
+- **Date**: 2026-08-02
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of forced entrainment and resonance transitions in coupled limit-cycle oscillators.
+- **Techniques**: Coupled Van der Pol equations, 1D ring lattices, rotating wave forcing, multi-pass neon glow line rendering.
+- **Palette**: Charcoal Void, Phosphor Mint, Luminous Blue/Indigo, Violet, Electric Magenta, Solar Amber.
+
+## kinetic_point_cloud_morph_3d
+- **Date**: 2026-08-02
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of 3D point cloud morphing between mathematical manifolds in a dark space void.
+- **Techniques**: Pre-computed 3D shape generation, cosine-eased coordinate interpolation, manual 3D depth-sorting, custom perspective projection, and vectorized HSB color mapping.
+- **Palette**: Obsidian Space Void, Luminous Nebula Cyan, Ethereal Amethyst, Solar Gold.
+
 ## kinetic_reiter_snowflake_growth_2d
 - **Date**: 2026-08-02
 - **Type**: Animation (1200 frames, 60fps)

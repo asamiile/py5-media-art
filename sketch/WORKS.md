@@ -1,3 +1,10 @@
+## kinetic_reiter_snowflake_growth_2d
+- **Date**: 2026-08-02
+- **Type**: Animation (1200 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of Reiter's offset-row hexagonal lattice diffusion model, illustrating the growth of a six-fold symmetric snowflake crystal.
+- **Techniques**: Reiter's hexagonal diffusion model, finite-difference local equations, temporal color-gradient freeze contour mapping, 1:1 aspect ratio projection, and ambient vapor glow.
+- **Palette**: Obsidian Void, Deep Purple/Violet, Electric Cyan, Glacial Ice White.
+
 ## kinetic_kohonen_som_surface_2d
 - **Date**: 2026-07-31
 - **Type**: Animation (1200 frames, 60fps)

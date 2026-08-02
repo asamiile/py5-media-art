@@ -1,3 +1,10 @@
+## kinetic_neural_gas_emergence_2d
+- **Date**: 2026-08-02
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of a Growing Neural Gas (GNG) network competitively learning a dynamic rotating multi-ring signal distribution, with bioluminescent node scaling, age-based synaptic edge color mapping, and a HUD telemetry overlay.
+- **Techniques**: Fritzke GNG competitive learning (25 updates/frame, up to 450 nodes), dynamic concentric ring sample distribution with orbital rotation, age-based HSB edge color gradients (cyan → violet), error-reactive two-pass neon node glow, vector corner cross HUD.
+- **Palette**: Deep Amethyst Space Void, Neon Cyan, Electric Violet, Bioluminescent Magenta, Emerald Green.
+
 ## kinetic_lenia_petri_dish_2d
 - **Date**: 2026-08-02
 - **Type**: Animation (900 frames, 60fps)

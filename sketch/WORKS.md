@@ -1,3 +1,10 @@
+## kinetic_van_der_pol_resonance_2d
+- **Date**: 2026-08-02
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of forced entrainment and resonance transitions in coupled limit-cycle oscillators.
+- **Techniques**: Coupled Van der Pol equations, 1D ring lattices, rotating wave forcing, multi-pass neon glow line rendering.
+- **Palette**: Charcoal Void, Phosphor Mint, Luminous Blue/Indigo, Violet, Electric Magenta, Solar Amber.
+
 ## kinetic_point_cloud_morph_3d
 - **Date**: 2026-08-02
 - **Type**: Animation (900 frames, 60fps)

@@ -1,3 +1,10 @@
+## kinetic_ivy_structure_growth_2d
+- **Date**: 2026-08-02
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of organic ivy growth adapting and climbing around glowing portals.
+- **Techniques**: Obstacle-avoidance steering, noise-based wander force, leaf scaling and rotation wind sway, multi-pass neon stroke glow.
+- **Palette**: Dark Slate Obsidian, Neon Violet/Magenta, Emerald Green, Phosphor Mint, Solar Gold.
+
 ## kinetic_van_der_pol_resonance_2d
 - **Date**: 2026-08-02
 - **Type**: Animation (900 frames, 60fps)

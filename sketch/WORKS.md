@@ -1,3 +1,10 @@
+## kinetic_lenia_petri_dish_2d
+- **Date**: 2026-08-02
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 4K simulation of continuous Lenia cellular automata (artificial life) swimming inside a glowing digital petri dish.
+- **Techniques**: Fast Fourier Transform (FFT) neighborhood convolution, continuous growth mapping, ARGB offscreen image bilinear upscaling, and perimeter HUD glass ticking.
+- **Palette**: Deep Amethyst Space Void, Electric Violet, Luminous Cyan, Solar Amber.
+
 ## kinetic_botanical_l_system_2d
 - **Date**: 2026-08-02
 - **Type**: Animation (900 frames, 60fps)

@@ -1,3 +1,10 @@
+## kinetic_hydraulic_erosion_terrain_3d
+- **Date**: 2026-08-02
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of particle-based hydraulic erosion sculpting a 3D wireframe terrain.
+- **Techniques**: Diamond-Square fractal heightmap, bilinear height/gradient interpolation, droplet velocity inertia integration, depth-sorted Painter's occlusion wireframe, and active erosion channel highlights.
+- **Palette**: Dark Obsidian Black, Neon Hologram Cyan, Bioluminescent Amber Gold, Glowing Slate Mint.
+
 ## kinetic_bioluminescent_moss_colony_2d
 - **Date**: 2026-08-02
 - **Type**: Animation (900 frames, 60fps)

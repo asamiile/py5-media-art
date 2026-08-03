@@ -1,3 +1,10 @@
+## kinetic_thin_film_interference_2d
+- **Date**: 2026-08-03
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of physical thin-film interference on a soap bubble, featuring swirling gravity convection currents, real-time reflection spectrometers, and CIE 1931 color space trackers.
+- **Techniques**: Vectorized CIE 1931 color matching integration (380-700nm, 15nm steps), domain-warped waves plasma thickness grid, hardware-accelerated bilinear upscaling, real-time reflection spectrometer plotter, and vector CIE 1931 chromaticity coordinates horseshoe tracker.
+- **Palette**: Deep Obsidian Void, Neon Cyan, Solar Amber, Iridescent Spectral Rainbow.
+
 ## kinetic_watts_strogatz_small_world_2d
 - **Date**: 2026-08-03
 - **Type**: Animation (900 frames, 60fps)

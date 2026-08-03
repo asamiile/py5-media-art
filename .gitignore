@@ -25,3 +25,6 @@ medium/
 
 # Environment variables
 .env
+
+# Cowork tasks
+cowork-tasks/

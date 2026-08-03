@@ -1,3 +1,10 @@
+## kinetic_genetic_pathfinder_rockets_2d
+- **Date**: 2026-08-03
+- **Type**: Animation (960 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of a pathfinding genetic algorithm (Smart Rockets) evolving over 4 generations to navigate a slit labyrinth, featuring real-time DNA chromosome maps and fitness histograms.
+- **Techniques**: 2D genetic pathfinding engine (200 agents), tournament selection and crossover, offscreen trail buffer blending, real-time HSB DNA chromosome ribbon overlay, numpy fitness histogram binning, and telemetry HUD.
+- **Palette**: Obsidian Void, Bioluminescent Cyan, Solar Amber Gold, Electric Violet.
+
 ## kinetic_harmonic_pantograph_epicycles_2d
 - **Date**: 2026-08-03
 - **Type**: Animation (1200 frames, 60fps)

@@ -1,3 +1,10 @@
+## kinetic_neuroevolution_ecosystem_2d
+- **Date**: 2026-08-03
+- **Type**: Animation (1200 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of a neuroevolution ecosystem where microscopic creatures equipped with feedforward neural networks compete for survival in a bioluminescent void — intelligence emerges from the pressure of hunger and reproduction.
+- **Techniques**: Feedforward neural networks (15 sensors → 10 hidden → 2 outputs) evolved via mutation-only natural selection, 15-directional radial sensory system, toroidal world with population dynamics (birth/death/reproduction), NumPy vectorized NN inference, genetic lineage hue coloring, health-mapped teal-to-crimson body color, real-time HUD with population history sparkline.
+- **Palette**: Deep Obsidian Void, Bioluminescent Aquamarine/Teal, Crimson/Magenta, Solar Amber Gold.
+
 ## kinetic_thin_film_interference_2d
 - **Date**: 2026-08-03
 - **Type**: Animation (900 frames, 60fps)

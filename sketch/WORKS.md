@@ -1,3 +1,10 @@
+## kinetic_ant_stigmergy_optimization_2d
+- **Date**: 2026-08-03
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of a decentralized ant colony optimizing paths between a nest and orbital food sources using dual pheromones, showing dynamic adaptation to slowly rotating resource orbits.
+- **Techniques**: Vectorized 2D NumPy ant swarm simulation (800 agents), parallel left/center/right pheromone sensing, vectorized pheromone updates with np.add.at, fast box-blur diffusion using rolls, upscaled offscreen texture mapping, and real-time telemetry HUD overlay.
+- **Palette**: Deep Obsidian Black, Solar Amber Gold, Electric Cyan, Bioluminescent Emerald Green.
+
 ## kinetic_neural_gas_emergence_2d
 - **Date**: 2026-08-02
 - **Type**: Animation (900 frames, 60fps)

@@ -1,3 +1,45 @@
+## kinetic_neuroevolution_ecosystem_2d
+- **Date**: 2026-08-03
+- **Type**: Animation (1200 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of a neuroevolution ecosystem where microscopic creatures equipped with feedforward neural networks compete for survival in a bioluminescent void — intelligence emerges from the pressure of hunger and reproduction.
+- **Techniques**: Feedforward neural networks (15 sensors → 10 hidden → 2 outputs) evolved via mutation-only natural selection, 15-directional radial sensory system, toroidal world with population dynamics (birth/death/reproduction), NumPy vectorized NN inference, genetic lineage hue coloring, health-mapped teal-to-crimson body color, real-time HUD with population history sparkline.
+- **Palette**: Deep Obsidian Void, Bioluminescent Aquamarine/Teal, Crimson/Magenta, Solar Amber Gold.
+
+## kinetic_thin_film_interference_2d
+- **Date**: 2026-08-03
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of physical thin-film interference on a soap bubble, featuring swirling gravity convection currents, real-time reflection spectrometers, and CIE 1931 color space trackers.
+- **Techniques**: Vectorized CIE 1931 color matching integration (380-700nm, 15nm steps), domain-warped waves plasma thickness grid, hardware-accelerated bilinear upscaling, real-time reflection spectrometer plotter, and vector CIE 1931 chromaticity coordinates horseshoe tracker.
+- **Palette**: Deep Obsidian Void, Neon Cyan, Solar Amber, Iridescent Spectral Rainbow.
+
+## kinetic_watts_strogatz_small_world_2d
+- **Date**: 2026-08-03
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of the Watts-Strogatz network phase transition from order to randomness, showing the sudden collapse in path lengths as connections rewire, featuring dynamic HUD plotters and real-time connectivity matrices.
+- **Techniques**: Watts-Strogatz graph rewiring engine (120 nodes, $k=8$), randomized BFS shortest-path distance solver, real-time HSB metrics line plotter, active connectivity matrix grid, edge signal pulse generation, and laboratory telemetry HUD.
+- **Palette**: Deep Obsidian Slate, Electric Cyan, Deep Cobalt Indigo, Solar Amber Gold.
+
+## kinetic_genetic_pathfinder_rockets_2d
+- **Date**: 2026-08-03
+- **Type**: Animation (960 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of a pathfinding genetic algorithm (Smart Rockets) evolving over 4 generations to navigate a slit labyrinth, featuring real-time DNA chromosome maps and fitness histograms.
+- **Techniques**: 2D genetic pathfinding engine (200 agents), tournament selection and crossover, offscreen trail buffer blending, real-time HSB DNA chromosome ribbon overlay, numpy fitness histogram binning, and telemetry HUD.
+- **Palette**: Obsidian Void, Bioluminescent Cyan, Solar Amber Gold, Electric Violet.
+
+## kinetic_harmonic_pantograph_epicycles_2d
+- **Date**: 2026-08-03
+- **Type**: Animation (1200 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of a 4-stage Fourier epicyclic drawing machine tracing complex harmonically modulated orbits, featuring real-time diagnostic sweep radars and gear tracks.
+- **Techniques**: 4-stage mechanical linkage rotation, real-time LFO speed and phase drift modulations, HSB trail color sweeps, offscreen decay blur blending, crisp 4K vector gear overlays, and diagnostic telemetry HUD.
+- **Palette**: Obsidian Space Void, Solar Amber Gold, Nebula Indigo, Electric Cyan.
+
+## kinetic_ant_stigmergy_optimization_2d
+- **Date**: 2026-08-03
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of a decentralized ant colony optimizing paths between a nest and orbital food sources using dual pheromones, showing dynamic adaptation to slowly rotating resource orbits.
+- **Techniques**: Vectorized 2D NumPy ant swarm simulation (800 agents), parallel left/center/right pheromone sensing, vectorized pheromone updates with np.add.at, fast box-blur diffusion using rolls, upscaled offscreen texture mapping, and real-time telemetry HUD overlay.
+- **Palette**: Deep Obsidian Black, Solar Amber Gold, Electric Cyan, Bioluminescent Emerald Green.
+
 ## kinetic_neural_gas_emergence_2d
 - **Date**: 2026-08-02
 - **Type**: Animation (900 frames, 60fps)

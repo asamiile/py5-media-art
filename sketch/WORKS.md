@@ -1,3 +1,10 @@
+## kinetic_harmonic_pantograph_epicycles_2d
+- **Date**: 2026-08-03
+- **Type**: Animation (1200 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of a 4-stage Fourier epicyclic drawing machine tracing complex harmonically modulated orbits, featuring real-time diagnostic sweep radars and gear tracks.
+- **Techniques**: 4-stage mechanical linkage rotation, real-time LFO speed and phase drift modulations, HSB trail color sweeps, offscreen decay blur blending, crisp 4K vector gear overlays, and diagnostic telemetry HUD.
+- **Palette**: Obsidian Space Void, Solar Amber Gold, Nebula Indigo, Electric Cyan.
+
 ## kinetic_ant_stigmergy_optimization_2d
 - **Date**: 2026-08-03
 - **Type**: Animation (900 frames, 60fps)

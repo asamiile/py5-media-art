@@ -1,3 +1,10 @@
+## kinetic_watts_strogatz_small_world_2d
+- **Date**: 2026-08-03
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of the Watts-Strogatz network phase transition from order to randomness, showing the sudden collapse in path lengths as connections rewire, featuring dynamic HUD plotters and real-time connectivity matrices.
+- **Techniques**: Watts-Strogatz graph rewiring engine (120 nodes, $k=8$), randomized BFS shortest-path distance solver, real-time HSB metrics line plotter, active connectivity matrix grid, edge signal pulse generation, and laboratory telemetry HUD.
+- **Palette**: Deep Obsidian Slate, Electric Cyan, Deep Cobalt Indigo, Solar Amber Gold.
+
 ## kinetic_genetic_pathfinder_rockets_2d
 - **Date**: 2026-08-03
 - **Type**: Animation (960 frames, 60fps)

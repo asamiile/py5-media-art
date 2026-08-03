@@ -5,6 +5,13 @@ Agents MUST NOT write anything in the `Comment` field. When registering a new wo
 The Artist reads this file before starting a new sketch to understand preferences.
 
 
+
+## kinetic_abelian_sandpile_mandala_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
 ## kinetic_neuroevolution_ecosystem_2d
 
 - **Rating**: 

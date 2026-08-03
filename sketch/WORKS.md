@@ -1,3 +1,10 @@
+## kinetic_abelian_sandpile_mandala_2d
+- **Date**: 2026-08-04
+- **Type**: Animation (1200 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of the Bak-Tang-Wiesenfeld (BTW) Abelian Sandpile model demonstrating self-organized criticality. Sand grains deposited at the center cascade through toppling events, crystallizing a breathtaking fractal mandala with exact 4-fold rotational symmetry from pure local rules.
+- **Techniques**: BTW sandpile toppling rule (≥4→distribute), NumPy vectorized full-grid boolean mask relaxation (50 passes/frame), 2K–8K grains/frame ramp, 4-color grain-count mapping (void/violet/teal/gold), dynamic auto-zoom on active region, signed int32 ARGB pixel blit, pulsing glow frontier ring.
+- **Palette**: Deep Obsidian Void, Electric Violet, Bioluminescent Teal/Cyan, Solar Gold/Amber.
+
 ## kinetic_neuroevolution_ecosystem_2d
 - **Date**: 2026-08-03
 - **Type**: Animation (1200 frames, 60fps)

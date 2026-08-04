@@ -1,3 +1,10 @@
+## kinetic_kuramoto_firefly_sync_2d
+- **Date**: 2026-08-04
+- **Type**: Animation (1200 frames, 60fps)
+- **Concept**: Kuramoto model of coupled phase oscillators rendered as a bioluminescent firefly swarm. 300 oscillators with random natural frequencies (Gaussian σ=0.8) couple via mean-field interaction as K ramps 0→3.2 over 20s, passing through the critical threshold K_c≈1.6 where spontaneous synchronization emerges (R: 0.05→0.96).
+- **Techniques**: N×N vectorized Kuramoto coupling (thetas[None,:]-thetas[:,None]), Euler integration (dt=0.06), float32 trail buffer with per-frame decay (α=0.88), Gaussian glow per oscillator, cos(θ)³ flash modulation, signed int32 ARGB blit, drift+wrap toroidal positions, mean-field order parameter arrow.
+- **Palette**: Pure Black void, Electric Violet/Blue (slow oscillators), Lime Green (mid), Solar Amber/Orange (fast), Golden mean-field arrow.
+
 ## kinetic_abelian_sandpile_mandala_2d
 - **Date**: 2026-08-04
 - **Type**: Animation (1200 frames, 60fps)

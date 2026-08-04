@@ -1,3 +1,38 @@
+## kinetic_underwater_caustic_beams_2d
+- **Date**: 2026-08-04
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of focused sunlight refracting through an undulating water surface, producing moving volumetric light beams and glowing organic dust particles in a deep ocean abyss.
+- **Techniques**: Vectorized light ray refraction (Snell's Law approximation) and depth tracking via NumPy broadcasting, 3-pass fast box blur, 3D Perlin noise particle advection flow, Tyndall scattering glow modulation, and hybrid rendering (upscaled caustic grid + native 4K vector shapes).
+- **Palette**: Deep Ocean Abyss, Bioluminescent Turquoise, Deep Marine Teal, Sunlight Amber.
+
+## kinetic_watercolor_ink_diffusion_2d
+- **Date**: 2026-08-04
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of organic wet-in-wet watercolor ink bleeding, incorporating paper grain texture, physical pigment diffusion, and edge-darkening capillary rings.
+- **Techniques**: Vectorized 2D NumPy array step diffusion (ink and wetness maps), realistic paper texture generation using multi-scale 2D Perlin noise, pigment blending via channel weights, wet edge detection using the Laplacian of the wetness field, and bilinear upscaling to 4K resolution.
+- **Palette**: Off-white linen paper, Deep Prussian Blue, Indigo Teal, Warm Coral Crimson.
+
+## kinetic_physarum_slime_mold_network_2d
+- **Date**: 2026-08-04
+- **Type**: Animation (1200 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of Jeff Jones' agent-based Physarum polycephalum (slime mold) model showing self-organizing transport networks that bridge 6 orbiting food attractors in a bioluminescent void.
+- **Techniques**: Vectorized 3-species Physarum simulation (80,000 agents), heterogeneous sensor distances/angles, NumPy-based 3x3 trail diffusion with wrapping, 2.5D additive agent glow rendering, color lookup table gradient mapping, orbiting food attractor injection, and slow cinematic camera drift.
+- **Palette**: Deep Obsidian Void, Deep Forest Teal, Bioluminescent Mint, Solar Amber Gold, Neon Magenta.
+
+## kinetic_kuramoto_firefly_sync_2d
+- **Date**: 2026-08-04
+- **Type**: Animation (1200 frames, 60fps)
+- **Concept**: Kuramoto model of coupled phase oscillators rendered as a bioluminescent firefly swarm. 300 oscillators with random natural frequencies (Gaussian σ=0.8) couple via mean-field interaction as K ramps 0→3.2 over 20s, passing through the critical threshold K_c≈1.6 where spontaneous synchronization emerges (R: 0.05→0.96).
+- **Techniques**: N×N vectorized Kuramoto coupling (thetas[None,:]-thetas[:,None]), Euler integration (dt=0.06), float32 trail buffer with per-frame decay (α=0.88), Gaussian glow per oscillator, cos(θ)³ flash modulation, signed int32 ARGB blit, drift+wrap toroidal positions, mean-field order parameter arrow.
+- **Palette**: Pure Black void, Electric Violet/Blue (slow oscillators), Lime Green (mid), Solar Amber/Orange (fast), Golden mean-field arrow.
+
+## kinetic_abelian_sandpile_mandala_2d
+- **Date**: 2026-08-04
+- **Type**: Animation (1200 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of the Bak-Tang-Wiesenfeld (BTW) Abelian Sandpile model demonstrating self-organized criticality. Sand grains deposited at the center cascade through toppling events, crystallizing a breathtaking fractal mandala with exact 4-fold rotational symmetry from pure local rules.
+- **Techniques**: BTW sandpile toppling rule (≥4→distribute), NumPy vectorized full-grid boolean mask relaxation (50 passes/frame), 2K–8K grains/frame ramp, 4-color grain-count mapping (void/violet/teal/gold), dynamic auto-zoom on active region, signed int32 ARGB pixel blit, pulsing glow frontier ring.
+- **Palette**: Deep Obsidian Void, Electric Violet, Bioluminescent Teal/Cyan, Solar Gold/Amber.
+
 ## kinetic_neuroevolution_ecosystem_2d
 - **Date**: 2026-08-03
 - **Type**: Animation (1200 frames, 60fps)

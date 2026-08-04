@@ -5,6 +5,39 @@ Agents MUST NOT write anything in the `Comment` field. When registering a new wo
 The Artist reads this file before starting a new sketch to understand preferences.
 
 
+
+
+
+## kinetic_underwater_caustic_beams_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_watercolor_ink_diffusion_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_physarum_slime_mold_network_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_kuramoto_firefly_sync_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_abelian_sandpile_mandala_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
 ## kinetic_neuroevolution_ecosystem_2d
 
 - **Rating**: 

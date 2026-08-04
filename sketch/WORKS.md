@@ -1,3 +1,10 @@
+## kinetic_physarum_slime_mold_network_2d
+- **Date**: 2026-08-04
+- **Type**: Animation (1200 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of Jeff Jones' agent-based Physarum polycephalum (slime mold) model showing self-organizing transport networks that bridge 6 orbiting food attractors in a bioluminescent void.
+- **Techniques**: Vectorized 3-species Physarum simulation (80,000 agents), heterogeneous sensor distances/angles, NumPy-based 3x3 trail diffusion with wrapping, 2.5D additive agent glow rendering, color lookup table gradient mapping, orbiting food attractor injection, and slow cinematic camera drift.
+- **Palette**: Deep Obsidian Void, Deep Forest Teal, Bioluminescent Mint, Solar Amber Gold, Neon Magenta.
+
 ## kinetic_kuramoto_firefly_sync_2d
 - **Date**: 2026-08-04
 - **Type**: Animation (1200 frames, 60fps)

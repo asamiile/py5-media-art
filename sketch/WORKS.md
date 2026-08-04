@@ -1,3 +1,10 @@
+## kinetic_underwater_caustic_beams_2d
+- **Date**: 2026-08-04
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of focused sunlight refracting through an undulating water surface, producing moving volumetric light beams and glowing organic dust particles in a deep ocean abyss.
+- **Techniques**: Vectorized light ray refraction (Snell's Law approximation) and depth tracking via NumPy broadcasting, 3-pass fast box blur, 3D Perlin noise particle advection flow, Tyndall scattering glow modulation, and hybrid rendering (upscaled caustic grid + native 4K vector shapes).
+- **Palette**: Deep Ocean Abyss, Bioluminescent Turquoise, Deep Marine Teal, Sunlight Amber.
+
 ## kinetic_watercolor_ink_diffusion_2d
 - **Date**: 2026-08-04
 - **Type**: Animation (900 frames, 60fps)

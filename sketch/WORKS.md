@@ -1,3 +1,10 @@
+## kinetic_verlet_cloth_membrane_2d
+- **Date**: 2026-08-05
+- **Type**: Animation (1200 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of a silk cloth billowing and tearing in an unseen storm — the tension between structure and surrender rendered through Verlet integration physics.
+- **Techniques**: Vectorized NumPy Verlet integration (2,700 mass nodes), 12-iteration constraint solver per frame (structural + shear springs ~15,000 constraints), dynamic tearing when stretch exceeds 2.6× rest length, diagonal cross-product fold lighting, strain-mapped ivory→amber→crimson coloring, row-depth modulated turbulent wind field.
+- **Palette**: Deep Charcoal Void, Warm Ivory Silk, Aged Linen Amber, Torn-Edge Crimson.
+
 ## kinetic_underwater_caustic_beams_2d
 - **Date**: 2026-08-04
 - **Type**: Animation (900 frames, 60fps)

@@ -1,3 +1,10 @@
+## kinetic_watercolor_ink_diffusion_2d
+- **Date**: 2026-08-04
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of organic wet-in-wet watercolor ink bleeding, incorporating paper grain texture, physical pigment diffusion, and edge-darkening capillary rings.
+- **Techniques**: Vectorized 2D NumPy array step diffusion (ink and wetness maps), realistic paper texture generation using multi-scale 2D Perlin noise, pigment blending via channel weights, wet edge detection using the Laplacian of the wetness field, and bilinear upscaling to 4K resolution.
+- **Palette**: Off-white linen paper, Deep Prussian Blue, Indigo Teal, Warm Coral Crimson.
+
 ## kinetic_physarum_slime_mold_network_2d
 - **Date**: 2026-08-04
 - **Type**: Animation (1200 frames, 60fps)

@@ -1,3 +1,10 @@
+## kinetic_abyssal_space_colonization_2d
+- **Date**: 2026-08-06
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of a bioluminescent vascular network growing and colonizing a cloud of organic attractors in a deep abyssal void.
+- **Techniques**: Space Colonization algorithm, dynamic pipe-model branch thickness calculation (descendant count back-propagation), dual-pass glowing vector lines, HSB depth-based color gradients (warm gold to electric teal), technical HUD telemetry.
+- **Palette**: Abyssal growth gradient (Electric Teal/Cyan, Warm Amber/Gold, Magenta attractors).
+
 ## kinetic_hydrothermal_dye_plume_2d
 - **Date**: 2026-08-06
 - **Type**: Animation (1200 frames, 60fps)

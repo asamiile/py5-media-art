@@ -1,3 +1,10 @@
+## kinetic_gierer_meinhardt_turing_2d
+- **Date**: 2026-08-06
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of the Gierer-Meinhardt reaction-diffusion model, simulating morphogenesis with spots and stripes that dynamically split, fuse, and oscillate in a bioluminescent void.
+- **Techniques**: Vectorized 2D NumPy finite-difference Laplacian (wrapping boundaries), explicit Euler integration of Gierer-Meinhardt PDEs, time-modulated production rate, HSB color blending, and direct memory pixel blitting (np_pixels).
+- **Palette**: Bioluminescent Void (Glowing Teal-Cyan, Coral-Pink, Electric Purple, Deep Obsidian Void).
+
 ## kinetic_predator_prey_spirals_2d
 - **Date**: 2026-08-06
 - **Type**: Animation (900 frames, 60fps)

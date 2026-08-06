@@ -1,3 +1,10 @@
+## kinetic_predator_prey_spirals_2d
+- **Date**: 2026-08-06
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of Lotka-Volterra predator-prey dynamics on a spatial grid, producing emergent spiral waves and oscillating biological fronts.
+- **Techniques**: Vectorized 2D NumPy finite-difference Laplacian (using fast grid rolling), Euler integration of Lotka-Volterra PDEs, custom RGB blend mapping, direct memory pixel blitting (np_pixels).
+- **Palette**: Abyssal Survival (Fluorescent Mint Prey, Bioluminescent Coral Predators, Deep Obsidian Void).
+
 ## kinetic_ifs_fractal_flame_2d
 - **Date**: 2026-08-06
 - **Type**: Animation (1200 frames, 60fps)

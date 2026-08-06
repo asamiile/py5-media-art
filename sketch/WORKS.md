@@ -1,3 +1,10 @@
+## kinetic_ifs_fractal_flame_2d
+- **Date**: 2026-08-06
+- **Type**: Animation (1200 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of an Iterated Function System (IFS) fractal flame morphing its affine transformations over time.
+- **Techniques**: Vectorized Chaos Game algorithm (120,000 particles in parallel), morphing affine transform matrices (LFO-modulated parameters), 2D density grid log-scaled histogram accumulation, vectorized custom color mapping (purple-to-cyan-to-white), direct memory pixel blitting (np_pixels).
+- **Palette**: Neon Flame (Electric Cyan, Glowing Violet, Hot White, Deep Indigo Void).
+
 ## kinetic_abyssal_space_colonization_2d
 - **Date**: 2026-08-06
 - **Type**: Animation (900 frames, 60fps)

@@ -1,3 +1,17 @@
+## kinetic_hydrothermal_dye_plume_2d
+- **Date**: 2026-08-06
+- **Type**: Animation (1200 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of a hydrothermal vent emitting glowing dye plumes that diffuse into a deep abyssal void.
+- **Techniques**: Vectorized 2D NumPy density grid diffusion (via fast rolling box blur), Perlin-like wave advection flow field (sine/cosine summation), dual-pass glowing particle halos, low-alpha volumetric fog upscaling, telemetry HUD.
+- **Palette**: Abyssal Bioluminescent (Glowing Magenta, Cyan, Gold/Yellow on Deep Indigo).
+
+## kinetic_marching_squares_contour_2d
+- **Date**: 2026-08-05
+- **Type**: Animation (1200 frames, 60fps)
+- **Concept**: An alien topographic map etched in light — elevation contours that breathe and shift as the landscape itself dreams.
+- **Techniques**: Vectorized fBm via summed cosine waves (fast NumPy), marching squares isoline extraction, np_pixels terrain fill, additive glow contour lines.
+- **Palette**: Abyss-to-peak gradient (Deep Blue, Teal, Turquoise, Saffron, Solar Yellow).
+
 ## kinetic_verlet_cloth_membrane_2d
 - **Date**: 2026-08-05
 - **Type**: Animation (1200 frames, 60fps)

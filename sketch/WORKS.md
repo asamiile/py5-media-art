@@ -1,3 +1,10 @@
+## kinetic_stable_fluids_turbulence_2d
+- **Date**: 2026-08-06
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 4K kinetic fluid simulation based on Jos Stam's Stable Fluids solver, visualizing turbulent bioluminescent currents in a dark void.
+- **Techniques**: Vectorized 2D semi-Lagrangian advection, Jacobi pressure projection Navier-Stokes solver, separate red/green/blue advection dye grids, bilinear repeat upscaling, and vignette shading.
+- **Palette**: Abyssal Neon (Electric Cyan, Glowing Magenta/Pink, Amethyst Violet, Flare Yellow, Obsidian Background).
+
 ## kinetic_gierer_meinhardt_turing_2d
 - **Date**: 2026-08-06
 - **Type**: Animation (900 frames, 60fps)

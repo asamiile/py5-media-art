@@ -8,6 +8,12 @@ The Artist reads this file before starting a new sketch to understand preference
 
 
 
+## kinetic_stable_fluids_turbulence_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
 ## kinetic_gierer_meinhardt_turing_2d
 
 - **Rating**: 

@@ -1,3 +1,10 @@
+## kinetic_fitzhugh_nagumo_excitable_waves_2d
+- **Date**: 2026-08-07
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of excitable media waves using the FitzHugh-Nagumo reaction-diffusion model, simulating electrical wave propagation through neural fabrics.
+- **Techniques**: Vectorized numerical integration of FitzHugh-Nagumo reaction-diffusion PDEs, periodic boundary Laplacian via NumPy rolls, bilinear upscaling, and hybrid active-front/refractory-tail color blending.
+- **Palette**: Abyssal Excitation (Bioluminescent Cyan, Deep Ultraviolet, Phosphor Amber, Obsidian Abyss).
+
 ## kinetic_bessel_membrane_resonance_2d
 - **Date**: 2026-08-07
 - **Type**: Animation (900 frames, 60fps)

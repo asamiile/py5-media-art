@@ -8,6 +8,30 @@ The Artist reads this file before starting a new sketch to understand preference
 
 
 
+## kinetic_keller_segel_chemotaxis_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_vicsek_flocking_transition_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_fitzhugh_nagumo_excitable_waves_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_bessel_membrane_resonance_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
 ## kinetic_stable_fluids_turbulence_2d
 
 - **Rating**: 
@@ -45,9 +69,6 @@ The Artist reads this file before starting a new sketch to understand preference
 
 
 ## kinetic_marching_squares_contour_2d
-
-- **Rating**: 
-- **Comment**: 
 
 
 ## kinetic_verlet_cloth_membrane_2d
@@ -142,7 +163,7 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## kinetic_bioluminescent_moss_colony_2d
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 
@@ -160,7 +181,7 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## kinetic_logistic_cobweb_chaos_3d
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 
@@ -178,7 +199,7 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## kinetic_point_cloud_morph_3d
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 

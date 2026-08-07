@@ -1,3 +1,31 @@
+## kinetic_keller_segel_chemotaxis_2d
+- **Date**: 2026-08-07
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of self-aggregating biological patterns using the volume-filling Keller-Segel chemotaxis model, simulating cell clustering and vascular network self-assembly.
+- **Techniques**: Vectorized numerical integration of volume-filling Keller-Segel chemotaxis PDEs, central difference chemotactic flux divergence, periodic boundaries, bilinear upscaling, and density-dependent multi-pass color blending.
+- **Palette**: Chemotactic Nest (Bioluminescent Amber, Glowing Violet, Phosphor Cyan, Deep Void).
+
+## kinetic_vicsek_flocking_transition_2d
+- **Date**: 2026-08-07
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of active matter self-organization using the Vicsek flocking model, demonstrating the phase transition from chaotic particle motion to coordinated sweeping swarms.
+- **Techniques**: Vectorized agent-based particle physics, periodic distance matrix evaluation with wrapping, dynamic phase noise modulation, local order parameter extraction, and persistent trail blending.
+- **Palette**: Consensus Void (Bioluminescent Mint, Deep Cobalt Indigo, Solar Amber, Abyss Void).
+
+## kinetic_fitzhugh_nagumo_excitable_waves_2d
+- **Date**: 2026-08-07
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of excitable media waves using the FitzHugh-Nagumo reaction-diffusion model, simulating electrical wave propagation through neural fabrics.
+- **Techniques**: Vectorized numerical integration of FitzHugh-Nagumo reaction-diffusion PDEs, periodic boundary Laplacian via NumPy rolls, bilinear upscaling, and hybrid active-front/refractory-tail color blending.
+- **Palette**: Abyssal Excitation (Bioluminescent Cyan, Deep Ultraviolet, Phosphor Amber, Obsidian Abyss).
+
+## kinetic_bessel_membrane_resonance_2d
+- **Date**: 2026-08-07
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of circular membrane resonance, modeling the acoustic vibration of a clamped drumhead under multi-frequency excitations.
+- **Techniques**: Vectorized linear combination of 2D circular drumhead vibration modes using Bessel functions of the first kind ($J_n(\lambda_{nm} r)$), exact clamped boundary enforcement, nodal line glow highlighting, and direct memory pixel blitting (`np_pixels`).
+- **Palette**: Abyssal Resonance (Electric Cyan, Neon Amethyst, Solar Gold, Deep Amethyst Void).
+
 ## kinetic_stable_fluids_turbulence_2d
 - **Date**: 2026-08-06
 - **Type**: Animation (900 frames, 60fps)

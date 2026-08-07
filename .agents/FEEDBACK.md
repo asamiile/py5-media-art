@@ -163,7 +163,7 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## kinetic_bioluminescent_moss_colony_2d
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 
@@ -181,7 +181,7 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## kinetic_logistic_cobweb_chaos_3d
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 
@@ -199,7 +199,7 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## kinetic_point_cloud_morph_3d
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 

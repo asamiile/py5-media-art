@@ -1,3 +1,10 @@
+## kinetic_keller_segel_chemotaxis_2d
+- **Date**: 2026-08-07
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of self-aggregating biological patterns using the volume-filling Keller-Segel chemotaxis model, simulating cell clustering and vascular network self-assembly.
+- **Techniques**: Vectorized numerical integration of volume-filling Keller-Segel chemotaxis PDEs, central difference chemotactic flux divergence, periodic boundaries, bilinear upscaling, and density-dependent multi-pass color blending.
+- **Palette**: Chemotactic Nest (Bioluminescent Amber, Glowing Violet, Phosphor Cyan, Deep Void).
+
 ## kinetic_fitzhugh_nagumo_excitable_waves_2d
 - **Date**: 2026-08-07
 - **Type**: Animation (900 frames, 60fps)

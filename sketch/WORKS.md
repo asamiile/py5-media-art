@@ -1,3 +1,10 @@
+## kinetic_bessel_membrane_resonance_2d
+- **Date**: 2026-08-07
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of circular membrane resonance, modeling the acoustic vibration of a clamped drumhead under multi-frequency excitations.
+- **Techniques**: Vectorized linear combination of 2D circular drumhead vibration modes using Bessel functions of the first kind ($J_n(\lambda_{nm} r)$), exact clamped boundary enforcement, nodal line glow highlighting, and direct memory pixel blitting (`np_pixels`).
+- **Palette**: Abyssal Resonance (Electric Cyan, Neon Amethyst, Solar Gold, Deep Amethyst Void).
+
 ## kinetic_stable_fluids_turbulence_2d
 - **Date**: 2026-08-06
 - **Type**: Animation (900 frames, 60fps)

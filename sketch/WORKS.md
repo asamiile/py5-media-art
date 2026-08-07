@@ -1,3 +1,52 @@
+## kinetic_stable_fluids_turbulence_2d
+- **Date**: 2026-08-06
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 4K kinetic fluid simulation based on Jos Stam's Stable Fluids solver, visualizing turbulent bioluminescent currents in a dark void.
+- **Techniques**: Vectorized 2D semi-Lagrangian advection, Jacobi pressure projection Navier-Stokes solver, separate red/green/blue advection dye grids, bilinear repeat upscaling, and vignette shading.
+- **Palette**: Abyssal Neon (Electric Cyan, Glowing Magenta/Pink, Amethyst Violet, Flare Yellow, Obsidian Background).
+
+## kinetic_gierer_meinhardt_turing_2d
+- **Date**: 2026-08-06
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of the Gierer-Meinhardt reaction-diffusion model, simulating morphogenesis with spots and stripes that dynamically split, fuse, and oscillate in a bioluminescent void.
+- **Techniques**: Vectorized 2D NumPy finite-difference Laplacian (wrapping boundaries), explicit Euler integration of Gierer-Meinhardt PDEs, time-modulated production rate, HSB color blending, and direct memory pixel blitting (np_pixels).
+- **Palette**: Bioluminescent Void (Glowing Teal-Cyan, Coral-Pink, Electric Purple, Deep Obsidian Void).
+
+## kinetic_predator_prey_spirals_2d
+- **Date**: 2026-08-06
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of Lotka-Volterra predator-prey dynamics on a spatial grid, producing emergent spiral waves and oscillating biological fronts.
+- **Techniques**: Vectorized 2D NumPy finite-difference Laplacian (using fast grid rolling), Euler integration of Lotka-Volterra PDEs, custom RGB blend mapping, direct memory pixel blitting (np_pixels).
+- **Palette**: Abyssal Survival (Fluorescent Mint Prey, Bioluminescent Coral Predators, Deep Obsidian Void).
+
+## kinetic_ifs_fractal_flame_2d
+- **Date**: 2026-08-06
+- **Type**: Animation (1200 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of an Iterated Function System (IFS) fractal flame morphing its affine transformations over time.
+- **Techniques**: Vectorized Chaos Game algorithm (120,000 particles in parallel), morphing affine transform matrices (LFO-modulated parameters), 2D density grid log-scaled histogram accumulation, vectorized custom color mapping (purple-to-cyan-to-white), direct memory pixel blitting (np_pixels).
+- **Palette**: Neon Flame (Electric Cyan, Glowing Violet, Hot White, Deep Indigo Void).
+
+## kinetic_abyssal_space_colonization_2d
+- **Date**: 2026-08-06
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of a bioluminescent vascular network growing and colonizing a cloud of organic attractors in a deep abyssal void.
+- **Techniques**: Space Colonization algorithm, dynamic pipe-model branch thickness calculation (descendant count back-propagation), dual-pass glowing vector lines, HSB depth-based color gradients (warm gold to electric teal), technical HUD telemetry.
+- **Palette**: Abyssal growth gradient (Electric Teal/Cyan, Warm Amber/Gold, Magenta attractors).
+
+## kinetic_hydrothermal_dye_plume_2d
+- **Date**: 2026-08-06
+- **Type**: Animation (1200 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of a hydrothermal vent emitting glowing dye plumes that diffuse into a deep abyssal void.
+- **Techniques**: Vectorized 2D NumPy density grid diffusion (via fast rolling box blur), Perlin-like wave advection flow field (sine/cosine summation), dual-pass glowing particle halos, low-alpha volumetric fog upscaling, telemetry HUD.
+- **Palette**: Abyssal Bioluminescent (Glowing Magenta, Cyan, Gold/Yellow on Deep Indigo).
+
+## kinetic_marching_squares_contour_2d
+- **Date**: 2026-08-05
+- **Type**: Animation (1200 frames, 60fps)
+- **Concept**: An alien topographic map etched in light — elevation contours that breathe and shift as the landscape itself dreams.
+- **Techniques**: Vectorized fBm via summed cosine waves (fast NumPy), marching squares isoline extraction, np_pixels terrain fill, additive glow contour lines.
+- **Palette**: Abyss-to-peak gradient (Deep Blue, Teal, Turquoise, Saffron, Solar Yellow).
+
 ## kinetic_verlet_cloth_membrane_2d
 - **Date**: 2026-08-05
 - **Type**: Animation (1200 frames, 60fps)

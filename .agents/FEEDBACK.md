@@ -8,6 +8,48 @@ The Artist reads this file before starting a new sketch to understand preference
 
 
 
+## kinetic_stable_fluids_turbulence_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_gierer_meinhardt_turing_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_predator_prey_spirals_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_ifs_fractal_flame_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_abyssal_space_colonization_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_hydrothermal_dye_plume_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_marching_squares_contour_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
 ## kinetic_verlet_cloth_membrane_2d
 
 - **Rating**: 

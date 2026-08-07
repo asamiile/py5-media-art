@@ -5,6 +5,13 @@
 - **Techniques**: Vectorized numerical integration of volume-filling Keller-Segel chemotaxis PDEs, central difference chemotactic flux divergence, periodic boundaries, bilinear upscaling, and density-dependent multi-pass color blending.
 - **Palette**: Chemotactic Nest (Bioluminescent Amber, Glowing Violet, Phosphor Cyan, Deep Void).
 
+## kinetic_vicsek_flocking_transition_2d
+- **Date**: 2026-08-07
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of active matter self-organization using the Vicsek flocking model, demonstrating the phase transition from chaotic particle motion to coordinated sweeping swarms.
+- **Techniques**: Vectorized agent-based particle physics, periodic distance matrix evaluation with wrapping, dynamic phase noise modulation, local order parameter extraction, and persistent trail blending.
+- **Palette**: Consensus Void (Bioluminescent Mint, Deep Cobalt Indigo, Solar Amber, Abyss Void).
+
 ## kinetic_fitzhugh_nagumo_excitable_waves_2d
 - **Date**: 2026-08-07
 - **Type**: Animation (900 frames, 60fps)

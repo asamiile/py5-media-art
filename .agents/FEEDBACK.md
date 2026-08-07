@@ -14,6 +14,12 @@ The Artist reads this file before starting a new sketch to understand preference
 - **Comment**: 
 
 
+## kinetic_vicsek_flocking_transition_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
 ## kinetic_fitzhugh_nagumo_excitable_waves_2d
 
 - **Rating**: 

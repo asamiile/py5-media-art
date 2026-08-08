@@ -1,3 +1,10 @@
+## kinetic_faraday_parametric_waves_2d
+- **Date**: 2026-08-08
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of Faraday wave instabilities on a vertically vibrated fluid surface, solving the parametrically forced wave equation.
+- **Techniques**: 2D Finite-Difference Time-Domain (FDTD) wave solver of the Mathieu wave equation, periodic boundary conditions, nonlinear cubic saturation, specular liquid reflection rendering, and bilinear upscaling.
+- **Palette**: Liquid Vibrations (Liquid Platinum, Deep Amethyst, Phosphor Cyan, Obsidian Abyss).
+
 ## kinetic_gear_churn_stable_fluids_2d
 - **Date**: 2026-08-08
 - **Type**: Animation (900 frames, 60fps)

@@ -1,3 +1,17 @@
+## kinetic_faraday_parametric_waves_2d
+- **Date**: 2026-08-08
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of Faraday wave instabilities on a vertically vibrated fluid surface, solving the parametrically forced wave equation.
+- **Techniques**: 2D Finite-Difference Time-Domain (FDTD) wave solver of the Mathieu wave equation, periodic boundary conditions, nonlinear cubic saturation, specular liquid reflection rendering, and bilinear upscaling.
+- **Palette**: Liquid Vibrations (Liquid Platinum, Deep Amethyst, Phosphor Cyan, Obsidian Abyss).
+
+## kinetic_gear_churn_stable_fluids_2d
+- **Date**: 2026-08-08
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 4K kinetic fluid simulation coupling a Stable Fluids Navier-Stokes solver with two rotating gear boundaries, visualizing the churning of bioluminescent currents in a dark void.
+- **Techniques**: Moving boundary fluid-structure interaction (FSI), analytical polar gear teeth modeling, vectorized semi-Lagrangian advection, Jacobi pressure projection, separate dye channel advection, and vector outline overlay.
+- **Palette**: Gear Churn (Electric Cyan, Neon Amethyst, Solar Gold, Obsidian Abyss).
+
 ## kinetic_keller_segel_chemotaxis_2d
 - **Date**: 2026-08-07
 - **Type**: Animation (900 frames, 60fps)

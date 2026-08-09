@@ -1,3 +1,10 @@
+## kinetic_cahn_hilliard_spinodal_decomposition_2d
+- **Date**: 2026-08-09
+- **Type**: Animation (1200 frames, 60fps)
+- **Concept**: A 4K kinetic fluid simulation solving the 2D Cahn-Hilliard equation to visualize spinodal decomposition.
+- **Techniques**: Fourth-order Cahn-Hilliard equation solver, gradient-based boundary outlines, normal mapping, and Blinn-Phong specular shading.
+- **Palette**: Deep Purple Void, Glacial Cobalt Blue, Coral Orange, Golden Glow.
+
 ## kinetic_doppler_wave_interference_2d
 - **Date**: 2026-08-09
 - **Type**: Animation (1200 frames, 60fps)

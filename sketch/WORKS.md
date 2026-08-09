@@ -1,9 +1,17 @@
+## kinetic_reaction_diffusion_advection_2d
+- **Date**: 2026-08-09
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of bioluminescent cells spawning in a nutrient current, undergoing morphogenetic reaction-diffusion while drifted by a thermal wind.
+- **Techniques**: Vectorized Gray-Scott PDE updates with periodic rolls, semi-Lagrangian advection, bilinear interpolation grid mapping.
+- **Palette**: Warm Organic (Solar Amber Gold, Bioluminescent Emerald Green, Warm Plum/Violet, Black).
+
 ## kinetic_fluid_vortex_advection_2d
 - **Date**: 2026-08-09
 - **Type**: Animation (900 frames, 60fps)
 - **Concept**: A 4K kinetic visualization of glowing ink currents dancing in a deep abyss, caught in a swirling vortex structure.
 - **Techniques**: Vectorized particle advection field driven by multiple localized vortex nodes and Perlin noise, direct memory-mapped pixel rendering.
 - **Palette**: Bioluminescent Abyss (Electric Indigo, Neon Aqua, Solar Coral/Gold, Black).
+
 
 ## kinetic_polycrystalline_grain_growth_2d
 - **Date**: 2026-08-09

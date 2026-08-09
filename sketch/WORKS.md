@@ -1,9 +1,17 @@
+## kinetic_fluid_vortex_advection_2d
+- **Date**: 2026-08-09
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of glowing ink currents dancing in a deep abyss, caught in a swirling vortex structure.
+- **Techniques**: Vectorized particle advection field driven by multiple localized vortex nodes and Perlin noise, direct memory-mapped pixel rendering.
+- **Palette**: Bioluminescent Abyss (Electric Indigo, Neon Aqua, Solar Coral/Gold, Black).
+
 ## kinetic_polycrystalline_grain_growth_2d
 - **Date**: 2026-08-09
 - **Type**: Animation (900 frames, 60fps)
 - **Concept**: A 4K kinetic material science simulation of polycrystalline grain growth, domain boundary migration, and periodic dynamic recrystallization.
 - **Techniques**: Vectorized Metropolis Monte Carlo Potts solver with 9-subgrid parallel updates, periodic nucleation injection, boundary gradient extraction, and neon-glowing boundary overlays.
 - **Palette**: Bioluminescent Crystalline (Deep Navy, Solar Amber/Gold, Electric Purple, Bright Mint, Emerald Green, Cyan).
+
 
 ## kinetic_shallow_water_equations_2d
 - **Date**: 2026-08-09

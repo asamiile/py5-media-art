@@ -1,3 +1,10 @@
+## kinetic_kpz_interface_roughening_2d
+- **Date**: 2026-08-09
+- **Type**: Animation (1200 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of stochastic interface growth and kinetic roughening, solving the 2D Kardar-Parisi-Zhang (KPZ) equation to simulate mineral deposition.
+- **Techniques**: Vectorized 2D KPZ PDE solver with periodic boundaries, Blinn-Phong specular shading, normal mapping, low-res rendering with bilinear upscaling, and glowing contour highlights.
+- **Palette**: Obsidian Void, Deep Amethyst, Amber Gold, Phosphor Cyan.
+
 ## kinetic_reaction_diffusion_advection_2d
 - **Date**: 2026-08-09
 - **Type**: Animation (900 frames, 60fps)

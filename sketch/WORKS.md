@@ -1,3 +1,10 @@
+## kinetic_shallow_water_equations_2d
+- **Date**: 2026-08-09
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 4K kinetic fluid simulation solving the 2D Shallow Water Equations (SWE) on a dynamically perturbed basin with complex bottom bathymetry.
+- **Techniques**: Explicit finite difference integration of height and velocity grids, bathymetric refraction, Coriolis gyres, Laplacian viscosity stabilization, and specular normal-mapped liquid rendering.
+- **Palette**: Deep Oceanic Specular (Deep Navy, Electric Teal, Hot White, Emerald Aqua).
+
 ## kinetic_faraday_parametric_waves_2d
 - **Date**: 2026-08-08
 - **Type**: Animation (900 frames, 60fps)

@@ -1,3 +1,10 @@
+## kinetic_doppler_wave_interference_2d
+- **Date**: 2026-08-09
+- **Type**: Animation (1200 frames, 60fps)
+- **Concept**: A 4K kinetic fluid simulation solving the 2D Wave Equation to visualize the acoustic Doppler effect of three orbiting sources.
+- **Techniques**: FDTD Wave Equation solver with viscous damping, orbital source injection, normal mapping, and liquid caustic specular shading.
+- **Palette**: Indigo Void, Cobalt Blue, Solar Amber Gold, Phosphor Mint Green.
+
 ## kinetic_kpz_interface_roughening_2d
 - **Date**: 2026-08-09
 - **Type**: Animation (1200 frames, 60fps)

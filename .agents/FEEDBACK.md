@@ -8,6 +8,54 @@ The Artist reads this file before starting a new sketch to understand preference
 
 
 
+## kinetic_forest_fire_stochastic_percolation_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_cahn_hilliard_spinodal_decomposition_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_doppler_wave_interference_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_kpz_interface_roughening_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_reaction_diffusion_advection_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_fluid_vortex_advection_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_polycrystalline_grain_growth_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_shallow_water_equations_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
 ## kinetic_faraday_parametric_waves_2d
 
 - **Rating**: 

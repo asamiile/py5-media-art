@@ -1,3 +1,61 @@
+## kinetic_forest_fire_stochastic_percolation_2d
+- **Date**: 2026-08-10
+- **Type**: Animation (1200 frames, 60fps)
+- **Concept**: A 4K kinetic simulation of a forest fire front propagating across a forest canopy under wind-driven advection.
+- **Techniques**: Reaction-diffusion-advection PDE solving, biomass consumption modeling, first-order upwind advection, and multi-field color blending.
+- **Palette**: Pitch Black Void, Deep Forest Teal, Blazing Crimson, Golden Solar Yellow, Ash Grey.
+
+## kinetic_cahn_hilliard_spinodal_decomposition_2d
+- **Date**: 2026-08-09
+- **Type**: Animation (1200 frames, 60fps)
+- **Concept**: A 4K kinetic fluid simulation solving the 2D Cahn-Hilliard equation to visualize spinodal decomposition.
+- **Techniques**: Fourth-order Cahn-Hilliard equation solver, gradient-based boundary outlines, normal mapping, and Blinn-Phong specular shading.
+- **Palette**: Deep Purple Void, Glacial Cobalt Blue, Coral Orange, Golden Glow.
+
+## kinetic_doppler_wave_interference_2d
+- **Date**: 2026-08-09
+- **Type**: Animation (1200 frames, 60fps)
+- **Concept**: A 4K kinetic fluid simulation solving the 2D Wave Equation to visualize the acoustic Doppler effect of three orbiting sources.
+- **Techniques**: FDTD Wave Equation solver with viscous damping, orbital source injection, normal mapping, and liquid caustic specular shading.
+- **Palette**: Indigo Void, Cobalt Blue, Solar Amber Gold, Phosphor Mint Green.
+
+## kinetic_kpz_interface_roughening_2d
+- **Date**: 2026-08-09
+- **Type**: Animation (1200 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of stochastic interface growth and kinetic roughening, solving the 2D Kardar-Parisi-Zhang (KPZ) equation to simulate mineral deposition.
+- **Techniques**: Vectorized 2D KPZ PDE solver with periodic boundaries, Blinn-Phong specular shading, normal mapping, low-res rendering with bilinear upscaling, and glowing contour highlights.
+- **Palette**: Obsidian Void, Deep Amethyst, Amber Gold, Phosphor Cyan.
+
+## kinetic_reaction_diffusion_advection_2d
+- **Date**: 2026-08-09
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of bioluminescent cells spawning in a nutrient current, undergoing morphogenetic reaction-diffusion while drifted by a thermal wind.
+- **Techniques**: Vectorized Gray-Scott PDE updates with periodic rolls, semi-Lagrangian advection, bilinear interpolation grid mapping.
+- **Palette**: Warm Organic (Solar Amber Gold, Bioluminescent Emerald Green, Warm Plum/Violet, Black).
+
+## kinetic_fluid_vortex_advection_2d
+- **Date**: 2026-08-09
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of glowing ink currents dancing in a deep abyss, caught in a swirling vortex structure.
+- **Techniques**: Vectorized particle advection field driven by multiple localized vortex nodes and Perlin noise, direct memory-mapped pixel rendering.
+- **Palette**: Bioluminescent Abyss (Electric Indigo, Neon Aqua, Solar Coral/Gold, Black).
+
+
+## kinetic_polycrystalline_grain_growth_2d
+- **Date**: 2026-08-09
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 4K kinetic material science simulation of polycrystalline grain growth, domain boundary migration, and periodic dynamic recrystallization.
+- **Techniques**: Vectorized Metropolis Monte Carlo Potts solver with 9-subgrid parallel updates, periodic nucleation injection, boundary gradient extraction, and neon-glowing boundary overlays.
+- **Palette**: Bioluminescent Crystalline (Deep Navy, Solar Amber/Gold, Electric Purple, Bright Mint, Emerald Green, Cyan).
+
+
+## kinetic_shallow_water_equations_2d
+- **Date**: 2026-08-09
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 4K kinetic fluid simulation solving the 2D Shallow Water Equations (SWE) on a dynamically perturbed basin with complex bottom bathymetry.
+- **Techniques**: Explicit finite difference integration of height and velocity grids, bathymetric refraction, Coriolis gyres, Laplacian viscosity stabilization, and specular normal-mapped liquid rendering.
+- **Palette**: Deep Oceanic Specular (Deep Navy, Electric Teal, Hot White, Emerald Aqua).
+
 ## kinetic_faraday_parametric_waves_2d
 - **Date**: 2026-08-08
 - **Type**: Animation (900 frames, 60fps)

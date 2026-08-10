@@ -1,3 +1,10 @@
+## kinetic_forest_fire_stochastic_percolation_2d
+- **Date**: 2026-08-10
+- **Type**: Animation (1200 frames, 60fps)
+- **Concept**: A 4K kinetic simulation of a forest fire front propagating across a forest canopy under wind-driven advection.
+- **Techniques**: Reaction-diffusion-advection PDE solving, biomass consumption modeling, first-order upwind advection, and multi-field color blending.
+- **Palette**: Pitch Black Void, Deep Forest Teal, Blazing Crimson, Golden Solar Yellow, Ash Grey.
+
 ## kinetic_cahn_hilliard_spinodal_decomposition_2d
 - **Date**: 2026-08-09
 - **Type**: Animation (1200 frames, 60fps)

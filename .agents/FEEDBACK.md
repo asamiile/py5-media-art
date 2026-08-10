@@ -8,6 +8,12 @@ The Artist reads this file before starting a new sketch to understand preference
 
 
 
+## kinetic_forest_fire_stochastic_percolation_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
 ## kinetic_cahn_hilliard_spinodal_decomposition_2d
 
 - **Rating**: 

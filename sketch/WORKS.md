@@ -1,3 +1,10 @@
+## kinetic_gray_scott_turbulent_advection_2d
+- **Date**: 2026-08-11
+- **Type**: Animation (360 frames, 60fps)
+- **Concept**: A visualization of a Gray-Scott reaction-diffusion system coupled with a pseudo-chaotic wind/advection flow field.
+- **Techniques**: Vectorized Gray-Scott PDE solver combined with semi-Lagrangian grid advection driven by a pseudo-noise flow field (fBm wave superposition) and dynamic bilinear upscaling.
+- **Palette**: Pitch Black Void, Bioluminescent Cyan/Teal, Deep Amethyst Violet, Hot White.
+
 ## kinetic_swift_hohenberg_pattern_formation_2d
 - **Date**: 2026-08-10
 - **Type**: Animation (1200 frames, 60fps)

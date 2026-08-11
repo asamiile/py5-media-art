@@ -1,3 +1,10 @@
+## kinetic_differential_growth_attractors_2d
+- **Date**: 2026-08-11
+- **Type**: Animation (360 frames, 60fps)
+- **Concept**: A visualization of differential line growth curves wrapping around moving gravitational attractor wells.
+- **Techniques**: Vectorized differential line growth (nodes with springs, sampling repulsion, and splitting) combined with gravitational acceleration mapping to orbital attractors.
+- **Palette**: Pitch Black Void, Electric Lime/Mint, Glowing Deep Indigo, Warm Solar Gold.
+
 ## kinetic_gray_scott_turbulent_advection_2d
 - **Date**: 2026-08-11
 - **Type**: Animation (360 frames, 60fps)

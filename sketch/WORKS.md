@@ -1,3 +1,10 @@
+## kinetic_reaction_diffusion_cellular_growth_2d
+- **Date**: 2026-08-11
+- **Type**: Animation (360 frames, 60fps)
+- **Concept**: A visualization of cell division and growth containing nested reaction-diffusion waves inside membranes.
+- **Techniques**: Agent-based cell division simulation with mechanical overlap repulsion, circular boundary confinement, and nested localized reaction-diffusion wave calculations.
+- **Palette**: Pitch Black Void, Bioluminescent Violet/Indigo, Phosphor Cyan, Radiant Hot Pink.
+
 ## kinetic_differential_growth_attractors_2d
 - **Date**: 2026-08-11
 - **Type**: Animation (360 frames, 60fps)

@@ -1,3 +1,10 @@
+## kinetic_oregonator_bz_waves_2d
+- **Date**: 2026-08-11
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: An animated 2D visualization of the Belousov-Zhabotinsky (BZ) reaction-diffusion equations modeled using the three-variable Oregonator system.
+- **Techniques**: Vectorized 2D numerical integration of the Tyson-Fife Oregonator reaction-diffusion PDEs using finite-difference Laplacian and Euler sub-stepping. Features dynamic spiral initial seeding and color mapping representing chemical components.
+- **Palette**: Obsidian Abyss, Bioluminescent Emerald, Neon Amethyst, Coral Pink.
+
 ## kinetic_coupled_logistic_map_lattice_2d
 - **Date**: 2026-08-11
 - **Type**: Animation (900 frames, 60fps)

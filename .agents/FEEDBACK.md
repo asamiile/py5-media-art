@@ -8,6 +8,12 @@ The Artist reads this file before starting a new sketch to understand preference
 
 
 
+## kinetic_oregonator_bz_waves_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
 ## kinetic_coupled_logistic_map_lattice_2d
 
 - **Rating**: 

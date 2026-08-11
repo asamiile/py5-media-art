@@ -8,6 +8,12 @@ The Artist reads this file before starting a new sketch to understand preference
 
 
 
+## kinetic_sonoluminescence_cavitation
+
+- **Rating**: 
+- **Comment**: 
+
+
 ## kinetic_swift_hohenberg_pattern_formation_2d
 
 - **Rating**: 

@@ -10826,3 +10826,11 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Theme**: A glowing neon cybernetic net that is dragged through a turbulent wind. Under intense pressure, the links of the net stretch and snap, flailing wildly as the structure violently tears apart.
 - **Technique**: A 2D Verlet physics engine with thousands of points and springs. An OpenSimplex noise field applies varying wind forces to the points. When a spring's length exceeds its physical limit, it breaks. It is rendered with additive blending and motion blur.
 - **Description**: An animated sequence of a generative verlet cloth tearing simulation.
+
+## kinetic_sonoluminescence_cavitation
+
+- **Date**: 2026-08-11
+- **Theme**: Sonoluminescence and acoustic cavitation. Bubbles are trapped in pressure nodes of a sound field, oscillating and collapsing to emit short bursts of light and shockwaves.
+- **Technique**: Manual 3D rotation, perspective projection, depth-sorting (Painter's Algorithm), and depth-fading implemented in Python/NumPy, bypassing the OpenGL `P3D` renderer for headless server stability. Concentric projected rings represent acoustic fields, and bubble collapses trigger glowing hot-spots and expanding billboard-projected shockwave spheres.
+- **Description**: An animated 15-20s simulation of 3D sonoluminescence and acoustic cavitation.
+

@@ -1,3 +1,17 @@
+## kinetic_swift_hohenberg_pattern_formation_2d
+- **Date**: 2026-08-10
+- **Type**: Animation (1200 frames, 60fps)
+- **Concept**: A 4K kinetic simulation of the Swift-Hohenberg PDE visualizing pattern formation and the transition from roll stripes to spot phases.
+- **Techniques**: Vectorized 2D Swift-Hohenberg solver, discrete biharmonic operator computation, spatial control parameter modulation, and high-contrast color mapping.
+- **Palette**: Obsidian Void, Ocean Teal, Coral Sienna, Neon Gold.
+
+## kinetic_anisotropic_perona_malik_diffusion_2d
+- **Date**: 2026-08-10
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 4K kinetic visualization of Perona-Malik Anisotropic Diffusion where organic fluid flows freeze and segment into sharp crystalline cells.
+- **Techniques**: Vectorized 2D Perona-Malik PDE solver, central difference gradient edge-highlights, toroidal coordinate wrapping, and multi-agent attractor deposits.
+- **Palette**: Pitch Black Void, Prussian Blue, Amethyst Purple, Golden Glow.
+
 ## kinetic_forest_fire_stochastic_percolation_2d
 - **Date**: 2026-08-10
 - **Type**: Animation (1200 frames, 60fps)

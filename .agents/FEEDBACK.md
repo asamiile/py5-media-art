@@ -8,6 +8,18 @@ The Artist reads this file before starting a new sketch to understand preference
 
 
 
+## kinetic_swift_hohenberg_pattern_formation_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_anisotropic_perona_malik_diffusion_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
 ## kinetic_forest_fire_stochastic_percolation_2d
 
 - **Rating**: 

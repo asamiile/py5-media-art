@@ -1,3 +1,10 @@
+## kinetic_coupled_logistic_map_lattice_2d
+- **Date**: 2026-08-11
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A high-resolution visualization of Coupled Map Lattice (CML) dynamics showing spatial phase transitions and synchronization boundaries.
+- **Techniques**: Vectorized 2D Coupled Map Lattice simulation running chaotic logistic map updates and 4-neighbor spatial diffusion with wrapping boundaries, rendered using gradient mapping and local boundary extraction.
+- **Palette**: Charcoal Void, Deep Amethyst Purple, Luminous Cyan, Solar Gold.
+
 ## kinetic_reaction_diffusion_cellular_growth_2d
 - **Date**: 2026-08-11
 - **Type**: Animation (360 frames, 60fps)

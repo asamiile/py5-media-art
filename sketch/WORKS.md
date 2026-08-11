@@ -10834,3 +10834,11 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Technique**: Manual 3D rotation, perspective projection, depth-sorting (Painter's Algorithm), and depth-fading implemented in Python/NumPy, bypassing the OpenGL `P3D` renderer for headless server stability. Concentric projected rings represent acoustic fields, and bubble collapses trigger glowing hot-spots and expanding billboard-projected shockwave spheres.
 - **Description**: An animated 15-20s simulation of 3D sonoluminescence and acoustic cavitation.
 
+## dictyostelium_camp_spiral_aggregation
+
+- **Date**: 2026-08-11
+- **Theme**: Multicellular aggregation of Dictyostelium discoideum slime mold cells. Chemotactic movement is guided by rotating waves of cyclic AMP (cAMP) as they coordinate and stream into branching patterns.
+- **Technique**: 3D particle system projected mathematically onto a 2D canvas with depth sorting (Painter's Algorithm) and depth fading. Cell particles follow a combined force field of radial attraction, spiral wavefront flow, and local cell-cell cohesion, forming organic networks of branching streams.
+- **Description**: An animated 15-20s simulation of Dictyostelium chemotactic aggregation along cAMP spiral waves.
+
+

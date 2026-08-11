@@ -8,6 +8,12 @@ The Artist reads this file before starting a new sketch to understand preference
 
 
 
+## dictyostelium_camp_spiral_aggregation
+
+- **Rating**: 
+- **Comment**: 
+
+
 ## kinetic_sonoluminescence_cavitation
 
 - **Rating**: 

@@ -1,3 +1,10 @@
+## kinetic_lattice_gas_fluid_dynamics_2d
+- **Date**: 2026-08-11
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: An animated 2D fluid dynamics visualization simulating a Lattice Gas Automaton (LGA) based on HPP rules past a circular cylinder obstacle.
+- **Techniques**: Vectorized 2D HPP Lattice Gas Automaton. Implements streaming, bounce-back reflections, and head-on scattering collisions on a discrete 2D grid. The resulting local density field is smoothed and rendered as a glowing fluid field, highlighting the obstacle boundary.
+- **Palette**: Obsidian Abyss, Electric Blue, Bright Mint, Solar Gold.
+
 ## kinetic_oregonator_bz_waves_2d
 - **Date**: 2026-08-11
 - **Type**: Animation (900 frames, 60fps)

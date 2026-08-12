@@ -1,3 +1,45 @@
+## kinetic_lattice_gas_fluid_dynamics_2d
+- **Date**: 2026-08-11
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: An animated 2D fluid dynamics visualization simulating a Lattice Gas Automaton (LGA) based on HPP rules past a circular cylinder obstacle.
+- **Techniques**: Vectorized 2D HPP Lattice Gas Automaton. Implements streaming, bounce-back reflections, and head-on scattering collisions on a discrete 2D grid. The resulting local density field is smoothed and rendered as a glowing fluid field, highlighting the obstacle boundary.
+- **Palette**: Obsidian Abyss, Electric Blue, Bright Mint, Solar Gold.
+
+## kinetic_oregonator_bz_waves_2d
+- **Date**: 2026-08-11
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: An animated 2D visualization of the Belousov-Zhabotinsky (BZ) reaction-diffusion equations modeled using the three-variable Oregonator system.
+- **Techniques**: Vectorized 2D numerical integration of the Tyson-Fife Oregonator reaction-diffusion PDEs using finite-difference Laplacian and Euler sub-stepping. Features dynamic spiral initial seeding and color mapping representing chemical components.
+- **Palette**: Obsidian Abyss, Bioluminescent Emerald, Neon Amethyst, Coral Pink.
+
+## kinetic_coupled_logistic_map_lattice_2d
+- **Date**: 2026-08-11
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A high-resolution visualization of Coupled Map Lattice (CML) dynamics showing spatial phase transitions and synchronization boundaries.
+- **Techniques**: Vectorized 2D Coupled Map Lattice simulation running chaotic logistic map updates and 4-neighbor spatial diffusion with wrapping boundaries, rendered using gradient mapping and local boundary extraction.
+- **Palette**: Charcoal Void, Deep Amethyst Purple, Luminous Cyan, Solar Gold.
+
+## kinetic_reaction_diffusion_cellular_growth_2d
+- **Date**: 2026-08-11
+- **Type**: Animation (360 frames, 60fps)
+- **Concept**: A visualization of cell division and growth containing nested reaction-diffusion waves inside membranes.
+- **Techniques**: Agent-based cell division simulation with mechanical overlap repulsion, circular boundary confinement, and nested localized reaction-diffusion wave calculations.
+- **Palette**: Pitch Black Void, Bioluminescent Violet/Indigo, Phosphor Cyan, Radiant Hot Pink.
+
+## kinetic_differential_growth_attractors_2d
+- **Date**: 2026-08-11
+- **Type**: Animation (360 frames, 60fps)
+- **Concept**: A visualization of differential line growth curves wrapping around moving gravitational attractor wells.
+- **Techniques**: Vectorized differential line growth (nodes with springs, sampling repulsion, and splitting) combined with gravitational acceleration mapping to orbital attractors.
+- **Palette**: Pitch Black Void, Electric Lime/Mint, Glowing Deep Indigo, Warm Solar Gold.
+
+## kinetic_gray_scott_turbulent_advection_2d
+- **Date**: 2026-08-11
+- **Type**: Animation (360 frames, 60fps)
+- **Concept**: A visualization of a Gray-Scott reaction-diffusion system coupled with a pseudo-chaotic wind/advection flow field.
+- **Techniques**: Vectorized Gray-Scott PDE solver combined with semi-Lagrangian grid advection driven by a pseudo-noise flow field (fBm wave superposition) and dynamic bilinear upscaling.
+- **Palette**: Pitch Black Void, Bioluminescent Cyan/Teal, Deep Amethyst Violet, Hot White.
+
 ## kinetic_swift_hohenberg_pattern_formation_2d
 - **Date**: 2026-08-10
 - **Type**: Animation (1200 frames, 60fps)
@@ -10826,3 +10868,19 @@ Use it to avoid repeating themes, techniques, or algorithms from past works.
 - **Theme**: A glowing neon cybernetic net that is dragged through a turbulent wind. Under intense pressure, the links of the net stretch and snap, flailing wildly as the structure violently tears apart.
 - **Technique**: A 2D Verlet physics engine with thousands of points and springs. An OpenSimplex noise field applies varying wind forces to the points. When a spring's length exceeds its physical limit, it breaks. It is rendered with additive blending and motion blur.
 - **Description**: An animated sequence of a generative verlet cloth tearing simulation.
+
+## kinetic_sonoluminescence_cavitation
+
+- **Date**: 2026-08-11
+- **Theme**: Sonoluminescence and acoustic cavitation. Bubbles are trapped in pressure nodes of a sound field, oscillating and collapsing to emit short bursts of light and shockwaves.
+- **Technique**: Manual 3D rotation, perspective projection, depth-sorting (Painter's Algorithm), and depth-fading implemented in Python/NumPy, bypassing the OpenGL `P3D` renderer for headless server stability. Concentric projected rings represent acoustic fields, and bubble collapses trigger glowing hot-spots and expanding billboard-projected shockwave spheres.
+- **Description**: An animated 15-20s simulation of 3D sonoluminescence and acoustic cavitation.
+
+## dictyostelium_camp_spiral_aggregation
+
+- **Date**: 2026-08-11
+- **Theme**: Multicellular aggregation of Dictyostelium discoideum slime mold cells. Chemotactic movement is guided by rotating waves of cyclic AMP (cAMP) as they coordinate and stream into branching patterns.
+- **Technique**: 3D particle system projected mathematically onto a 2D canvas with depth sorting (Painter's Algorithm) and depth fading. Cell particles follow a combined force field of radial attraction, spiral wavefront flow, and local cell-cell cohesion, forming organic networks of branching streams.
+- **Description**: An animated 15-20s simulation of Dictyostelium chemotactic aggregation along cAMP spiral waves.
+
+

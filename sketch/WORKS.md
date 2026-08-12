@@ -1,3 +1,10 @@
+## kinetic_quantum_wave_packet_scattering_2d
+- **Date**: 2026-08-12
+- **Type**: Animation (1200 frames, 60fps)
+- **Concept**: An animated 2D quantum mechanical simulation solving the Time-Dependent Schrödinger Equation (TDSE) to visualize wave packet scattering, double-slit diffraction, and obstacle reflection.
+- **Techniques**: Vectorized 2D numerical integration of the TDSE using symplectic FDTD leapfrog updates with sub-stepping, phase-to-hue spectral color mapping, and an absorbing sponge boundary layer.
+- **Palette**: Deep Indigo Void, Iridescent Spectral Rainbow, Glowing Solar Amber.
+
 ## kinetic_lattice_gas_fluid_dynamics_2d
 - **Date**: 2026-08-11
 - **Type**: Animation (900 frames, 60fps)

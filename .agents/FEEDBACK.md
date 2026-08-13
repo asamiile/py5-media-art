@@ -8,6 +8,12 @@ The Artist reads this file before starting a new sketch to understand preference
 
 
 
+## kinetic_swarm_vortex_milling_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
 ## kinetic_quantum_wave_packet_scattering_2d
 
 - **Rating**: 

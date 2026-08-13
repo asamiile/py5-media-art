@@ -1,3 +1,10 @@
+## kinetic_swarm_vortex_milling_2d
+- **Date**: 2026-08-13
+- **Type**: Animation (1200 frames, 60fps)
+- **Concept**: An animated 2D active matter simulation based on the Couzin three-zone swarming model, visualizing the spontaneous emergence of coherent swirling mills and collective vortex motion.
+- **Techniques**: Vectorized 2D agent-based active matter Couzin swarming simulation with repulsion/orientation/attraction zones, circular containment, HSB direction color mapping, and real-time polar order / angular momentum HUD telemetry graphs.
+- **Palette**: Consensus Void (Bioluminescent Mint, Deep Cobalt Indigo, Solar Amber, Abyss Void).
+
 ## kinetic_quantum_wave_packet_scattering_2d
 - **Date**: 2026-08-12
 - **Type**: Animation (1200 frames, 60fps)

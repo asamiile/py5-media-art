@@ -1,3 +1,10 @@
+## kinetic_acoustic_lens_refraction_2d
+- **Date**: 2026-08-14
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A computational wave mechanics visualization illustrating wave refraction and focusing caustics through an acoustic thermal front lens.
+- **Techniques**: Explicit 2D FDTD Wave Equation solver, Blinn-Phong specular caustics normal-mapped shading, HSB phase color wheel.
+- **Palette**: Oceanic Slate, Bioluminescent Cyan, Indigo Navy, Phosphor Amber Gold.
+
 ## kinetic_topographic_gray_scott_3d
 - **Date**: 2026-08-14
 - **Type**: Animation (900 frames, 60fps)

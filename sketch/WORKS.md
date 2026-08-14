@@ -1,3 +1,10 @@
+## kinetic_topographic_gray_scott_3d
+- **Date**: 2026-08-14
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 3D projected topographic wireframe landscape breathing and morphing as Gray-Scott chemical reaction waves ripple across it.
+- **Techniques**: 2D finite difference Gray-Scott solver, 3D coordinate mesh rotations and orthographic projections, depth-sorted Painter's algorithm wireframe.
+- **Palette**: Pitch Slate, Bioluminescent Violet, Neon Aqua, Solar Amber Gold.
+
 ## kinetic_chaotic_n_body_ribbons_2d
 - **Date**: 2026-08-14
 - **Type**: Animation (900 frames, 60fps)

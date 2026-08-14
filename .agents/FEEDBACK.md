@@ -8,6 +8,12 @@ The Artist reads this file before starting a new sketch to understand preference
 
 
 
+## kinetic_topographic_gray_scott_3d
+
+- **Rating**: 
+- **Comment**: 
+
+
 ## kinetic_chaotic_n_body_ribbons_2d
 
 - **Rating**: 

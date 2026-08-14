@@ -1,3 +1,10 @@
+## kinetic_airfoil_vortex_lbm_2d
+- **Date**: 2026-08-14
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: An aerodynamic fluid simulation modeling wake turbulence and vortex shedding downstream of a solid NACA 0012 airfoil.
+- **Techniques**: Vectorized D2Q9 Lattice Boltzmann Method solver, airfoil boundary bounce-back conditions, vorticity HSB neon color field.
+- **Palette**: Wind Tunnel Black, Electric Teal, Blazing Coral, Phosphor Yellow.
+
 ## kinetic_double_diffusion_convection_2d
 - **Date**: 2026-08-14
 - **Type**: Animation (900 frames, 60fps)

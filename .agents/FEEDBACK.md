@@ -8,6 +8,12 @@ The Artist reads this file before starting a new sketch to understand preference
 
 
 
+## kinetic_airfoil_vortex_lbm_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
 ## kinetic_double_diffusion_convection_2d
 
 - **Rating**: 

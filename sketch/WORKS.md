@@ -1,3 +1,10 @@
+## kinetic_double_diffusion_convection_2d
+- **Date**: 2026-08-14
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A physics-driven fluid convection visualization illustrating double-diffusive salt fingering instabilities.
+- **Techniques**: Vectorized buoyancy force equations, local heat/salt diffusion in NumPy, speed-based HSB Temperature color mapping.
+- **Palette**: Oceanic Void, Bioluminescent Orange, Electric Cyan, Phosphor Violet.
+
 ## kinetic_acoustic_lens_refraction_2d
 - **Date**: 2026-08-14
 - **Type**: Animation (900 frames, 60fps)

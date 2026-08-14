@@ -8,6 +8,12 @@ The Artist reads this file before starting a new sketch to understand preference
 
 
 
+## kinetic_double_diffusion_convection_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
 ## kinetic_acoustic_lens_refraction_2d
 
 - **Rating**: 

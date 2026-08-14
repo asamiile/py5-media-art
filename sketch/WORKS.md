@@ -1,3 +1,10 @@
+## kinetic_kelvin_helmholtz_shear_2d
+- **Date**: 2026-08-14
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A visualization of shear flow instabilities at the boundary of two fluid layers moving at different speeds, forming curling spiral scrolls.
+- **Techniques**: Vectorized advection using tanh shear velocity profiling and perturbation fields, HSB speed-modulated mapping, additive blending, and low-alpha trails.
+- **Palette**: Abyss Indigo, Bioluminescent Amber Gold, Deep Cobalt Teal, Electric Rose.
+
 ## kinetic_swarm_vortex_milling_2d
 - **Date**: 2026-08-13
 - **Type**: Animation (1200 frames, 60fps)

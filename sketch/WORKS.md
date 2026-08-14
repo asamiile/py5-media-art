@@ -1,3 +1,10 @@
+## kinetic_chaotic_n_body_ribbons_2d
+- **Date**: 2026-08-14
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A computational gravity simulation modeling 6 stars with oscillating masses warping the orbits of 1,200 passive test particles.
+- **Techniques**: Vectorized gravity solver in NumPy, mass value modulation, speed-based HSB color gradients, additive blending.
+- **Palette**: Obsidian Space, Bioluminescent Mint Green, Electric Indigo Blue, Solar Amber Gold.
+
 ## kinetic_lloyd_liquid_crystal_2d
 - **Date**: 2026-08-14
 - **Type**: Animation (900 frames, 60fps)

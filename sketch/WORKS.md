@@ -1,3 +1,10 @@
+## kinetic_metaball_contours_2d
+- **Date**: 2026-08-14
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A topological visualization extracting concentric field isolines from a moving metaball potential field.
+- **Techniques**: Vectorized metaball field evaluation, Marching Squares contour extraction, additive HSB isoline rendering.
+- **Palette**: Abyss Indigo, Bioluminescent Violet, Neon Teal, Phosphor Mint.
+
 ## kinetic_airfoil_vortex_lbm_2d
 - **Date**: 2026-08-14
 - **Type**: Animation (900 frames, 60fps)

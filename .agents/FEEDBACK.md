@@ -8,6 +8,12 @@ The Artist reads this file before starting a new sketch to understand preference
 
 
 
+## kinetic_viscous_fingering_dbm_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
 ## kinetic_kelvin_helmholtz_shear_2d
 
 - **Rating**: 

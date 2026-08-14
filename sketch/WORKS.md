@@ -1,3 +1,10 @@
+## kinetic_viscous_fingering_dbm_2d
+- **Date**: 2026-08-14
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A computational visualization of Laplacian branching growth using the Dielectric Breakdown Model (DBM), growing lightning-like paths.
+- **Techniques**: Vectorized Jacobi relaxation Laplace solver on grid, dynamic potential gradient-based node attachment, depth-based HSB color gradients, additive blending.
+- **Palette**: Pitch Void, Bioluminescent Cyan, Deep Royal Indigo, Phosphor Lime Green.
+
 ## kinetic_kelvin_helmholtz_shear_2d
 - **Date**: 2026-08-14
 - **Type**: Animation (900 frames, 60fps)

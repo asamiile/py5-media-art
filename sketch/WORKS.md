@@ -1,3 +1,10 @@
+## kinetic_viscoelastic_splat_2d
+- **Date**: 2026-08-14
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A physics-driven visualization of a soft, viscoelastic droplet falling and bouncing off a solid collision boundary.
+- **Techniques**: Vectorized Verlet mass-spring-damper boundary solver, gas-pressure volume preservation constraint, dynamic HSB strain-based mapping.
+- **Palette**: Pitch Black, Bioluminescent Violet, Neon Aqua, Phosphor Amber Gold.
+
 ## kinetic_viscous_fingering_dbm_2d
 - **Date**: 2026-08-14
 - **Type**: Animation (900 frames, 60fps)

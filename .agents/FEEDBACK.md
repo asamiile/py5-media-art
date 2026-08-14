@@ -8,6 +8,12 @@ The Artist reads this file before starting a new sketch to understand preference
 
 
 
+## kinetic_lloyd_liquid_crystal_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
 ## kinetic_viscoelastic_splat_2d
 
 - **Rating**: 

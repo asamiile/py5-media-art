@@ -1,3 +1,10 @@
+## kinetic_lloyd_liquid_crystal_2d
+- **Date**: 2026-08-14
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A computational visualization of dynamic cellular membranes relaxing via Lloyd's algorithm while advected by fluid currents.
+- **Techniques**: Dual-vortex vector field advection and Lloyd's relaxation on grid, Laplacian gradient edge detection for cell walls, HSB hue modulation.
+- **Palette**: Pitch Slate, Bioluminescent Teal, Deep Amethyst Violet, Radiant Amber Gold.
+
 ## kinetic_viscoelastic_splat_2d
 - **Date**: 2026-08-14
 - **Type**: Animation (900 frames, 60fps)

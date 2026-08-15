@@ -1,3 +1,73 @@
+## kinetic_metaball_contours_2d
+- **Date**: 2026-08-14
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A topological visualization extracting concentric field isolines from a moving metaball potential field.
+- **Techniques**: Vectorized metaball field evaluation, Marching Squares contour extraction, additive HSB isoline rendering.
+- **Palette**: Abyss Indigo, Bioluminescent Violet, Neon Teal, Phosphor Mint.
+
+## kinetic_airfoil_vortex_lbm_2d
+- **Date**: 2026-08-14
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: An aerodynamic fluid simulation modeling wake turbulence and vortex shedding downstream of a solid NACA 0012 airfoil.
+- **Techniques**: Vectorized D2Q9 Lattice Boltzmann Method solver, airfoil boundary bounce-back conditions, vorticity HSB neon color field.
+- **Palette**: Wind Tunnel Black, Electric Teal, Blazing Coral, Phosphor Yellow.
+
+## kinetic_double_diffusion_convection_2d
+- **Date**: 2026-08-14
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A physics-driven fluid convection visualization illustrating double-diffusive salt fingering instabilities.
+- **Techniques**: Vectorized buoyancy force equations, local heat/salt diffusion in NumPy, speed-based HSB Temperature color mapping.
+- **Palette**: Oceanic Void, Bioluminescent Orange, Electric Cyan, Phosphor Violet.
+
+## kinetic_acoustic_lens_refraction_2d
+- **Date**: 2026-08-14
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A computational wave mechanics visualization illustrating wave refraction and focusing caustics through an acoustic thermal front lens.
+- **Techniques**: Explicit 2D FDTD Wave Equation solver, Blinn-Phong specular caustics normal-mapped shading, HSB phase color wheel.
+- **Palette**: Oceanic Slate, Bioluminescent Cyan, Indigo Navy, Phosphor Amber Gold.
+
+## kinetic_topographic_gray_scott_3d
+- **Date**: 2026-08-14
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 3D projected topographic wireframe landscape breathing and morphing as Gray-Scott chemical reaction waves ripple across it.
+- **Techniques**: 2D finite difference Gray-Scott solver, 3D coordinate mesh rotations and orthographic projections, depth-sorted Painter's algorithm wireframe.
+- **Palette**: Pitch Slate, Bioluminescent Violet, Neon Aqua, Solar Amber Gold.
+
+## kinetic_chaotic_n_body_ribbons_2d
+- **Date**: 2026-08-14
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A computational gravity simulation modeling 6 stars with oscillating masses warping the orbits of 1,200 passive test particles.
+- **Techniques**: Vectorized gravity solver in NumPy, mass value modulation, speed-based HSB color gradients, additive blending.
+- **Palette**: Obsidian Space, Bioluminescent Mint Green, Electric Indigo Blue, Solar Amber Gold.
+
+## kinetic_lloyd_liquid_crystal_2d
+- **Date**: 2026-08-14
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A computational visualization of dynamic cellular membranes relaxing via Lloyd's algorithm while advected by fluid currents.
+- **Techniques**: Dual-vortex vector field advection and Lloyd's relaxation on grid, Laplacian gradient edge detection for cell walls, HSB hue modulation.
+- **Palette**: Pitch Slate, Bioluminescent Teal, Deep Amethyst Violet, Radiant Amber Gold.
+
+## kinetic_viscoelastic_splat_2d
+- **Date**: 2026-08-14
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A physics-driven visualization of a soft, viscoelastic droplet falling and bouncing off a solid collision boundary.
+- **Techniques**: Vectorized Verlet mass-spring-damper boundary solver, gas-pressure volume preservation constraint, dynamic HSB strain-based mapping.
+- **Palette**: Pitch Black, Bioluminescent Violet, Neon Aqua, Phosphor Amber Gold.
+
+## kinetic_viscous_fingering_dbm_2d
+- **Date**: 2026-08-14
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A computational visualization of Laplacian branching growth using the Dielectric Breakdown Model (DBM), growing lightning-like paths.
+- **Techniques**: Vectorized Jacobi relaxation Laplace solver on grid, dynamic potential gradient-based node attachment, depth-based HSB color gradients, additive blending.
+- **Palette**: Pitch Void, Bioluminescent Cyan, Deep Royal Indigo, Phosphor Lime Green.
+
+## kinetic_kelvin_helmholtz_shear_2d
+- **Date**: 2026-08-14
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A visualization of shear flow instabilities at the boundary of two fluid layers moving at different speeds, forming curling spiral scrolls.
+- **Techniques**: Vectorized advection using tanh shear velocity profiling and perturbation fields, HSB speed-modulated mapping, additive blending, and low-alpha trails.
+- **Palette**: Abyss Indigo, Bioluminescent Amber Gold, Deep Cobalt Teal, Electric Rose.
+
 ## kinetic_swarm_vortex_milling_2d
 - **Date**: 2026-08-13
 - **Type**: Animation (1200 frames, 60fps)

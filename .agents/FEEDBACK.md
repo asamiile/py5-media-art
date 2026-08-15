@@ -8,6 +8,66 @@ The Artist reads this file before starting a new sketch to understand preference
 
 
 
+## kinetic_metaball_contours_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_airfoil_vortex_lbm_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_double_diffusion_convection_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_acoustic_lens_refraction_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_topographic_gray_scott_3d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_chaotic_n_body_ribbons_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_lloyd_liquid_crystal_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_viscoelastic_splat_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_viscous_fingering_dbm_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_kelvin_helmholtz_shear_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
 ## kinetic_swarm_vortex_milling_2d
 
 - **Rating**: 

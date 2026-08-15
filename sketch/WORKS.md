@@ -1,3 +1,17 @@
+## kinetic_barkley_excitable_waves_2d
+- **Date**: 2026-08-15
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: Electric nerve impulses traveling through a living cybernetic mesh, twisting and curling into spirals under a chaotic wind.
+- **Techniques**: Vectorized 2D numerical integration of the Barkley model equations for excitable media coupled with coordinate advection driven by a Perlin noise flow field.
+- **Palette**: Quiet Cyber Slate, Bioluminescent Cyan, Electric Emerald, Radiant Amber.
+
+## kinetic_sine_gordon_breather_solitons_2d
+- **Date**: 2026-08-15
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: Solitary wave packets colliding and passing through one another in a dense medium, representing persistent whispers in a chaotic system.
+- **Techniques**: Vectorized 2D Sine-Gordon PDE integration using finite difference leapfrog scheme, rendering Hamiltonian energy contours.
+- **Palette**: Deep Velvet Space, Bioluminescent Amethyst Violet, Electric Rose Glow, Pale Saffron Gold.
+
 ## kinetic_metaball_contours_2d
 - **Date**: 2026-08-14
 - **Type**: Animation (900 frames, 60fps)

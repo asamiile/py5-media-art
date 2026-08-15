@@ -8,6 +8,12 @@ The Artist reads this file before starting a new sketch to understand preference
 
 
 
+## kinetic_barkley_excitable_waves_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
 ## kinetic_sine_gordon_breather_solitons_2d
 
 - **Rating**: 

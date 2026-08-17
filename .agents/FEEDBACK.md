@@ -8,6 +8,12 @@ The Artist reads this file before starting a new sketch to understand preference
 
 
 
+## kinetic_active_cahn_hilliard_division_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
 ## kinetic_barkley_excitable_waves_2d
 
 - **Rating**: 
@@ -34,7 +40,7 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## kinetic_double_diffusion_convection_2d
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 
@@ -46,13 +52,13 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## kinetic_topographic_gray_scott_3d
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 
 ## kinetic_chaotic_n_body_ribbons_2d
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 
@@ -64,7 +70,7 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## kinetic_viscoelastic_splat_2d
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 
@@ -82,13 +88,13 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## kinetic_swarm_vortex_milling_2d
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 
 ## kinetic_quantum_wave_packet_scattering_2d
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 
@@ -136,7 +142,7 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## kinetic_sonoluminescence_cavitation
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 
@@ -148,7 +154,7 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## kinetic_anisotropic_perona_malik_diffusion_2d
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 
@@ -166,13 +172,13 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## kinetic_doppler_wave_interference_2d
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 
 ## kinetic_kpz_interface_roughening_2d
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 
@@ -184,13 +190,13 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## kinetic_fluid_vortex_advection_2d
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 
 ## kinetic_polycrystalline_grain_growth_2d
 
-- **Rating**: 
+- **Rating**: OK.
 - **Comment**: 
 
 

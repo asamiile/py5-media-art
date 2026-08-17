@@ -1,3 +1,10 @@
+## kinetic_active_cahn_hilliard_division_2d
+- **Date**: 2026-08-16
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: Bioluminescent cells replicating and dividing under chemical pressure, a self-sustaining cycle of birth and division in a deep fluid abyss.
+- **Techniques**: Vectorized 2D Cahn-Hilliard equation coupled with a local chemical reaction term representing production/consumption (active phase separation).
+- **Palette**: Oceanic Void, Bioluminescent Amethyst Violet, Neon Amber Saffron, Phosphor Turquoise.
+
 ## kinetic_barkley_excitable_waves_2d
 - **Date**: 2026-08-15
 - **Type**: Animation (900 frames, 60fps)

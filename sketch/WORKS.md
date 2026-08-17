@@ -1,3 +1,10 @@
+## kinetic_may_leonard_predatory_spirals_2d
+- **Date**: 2026-08-17
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: Three bioluminescent species locked in a cyclic, predatory dance, forming beautiful spirals and waves of dominance.
+- **Techniques**: Vectorized 2D numerical solver of the May-Leonard PDE equations in NumPy, species density color-blending, and a glowing Laplacian edge filter.
+- **Palette**: Pitch Black, Bioluminescent Magenta, Neon Cyan, Solar Amber.
+
 ## kinetic_multiphase_lattice_boltzmann_2d
 - **Date**: 2026-08-17
 - **Type**: Animation (900 frames, 60fps)

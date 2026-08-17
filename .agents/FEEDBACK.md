@@ -8,6 +8,12 @@ The Artist reads this file before starting a new sketch to understand preference
 
 
 
+## kinetic_kadomtsev_petviashvili_solitons_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
 ## kinetic_active_cahn_hilliard_division_2d
 
 - **Rating**: 

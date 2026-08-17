@@ -1,3 +1,10 @@
+## kinetic_kadomtsev_petviashvili_solitons_2d
+- **Date**: 2026-08-17
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A self-organizing web of bioluminescent waves sliding across a shallow fluid plane, where soliton wave fronts collide and form stable, glowing junctions.
+- **Techniques**: Vectorized 2D pseudospectral solver of the Kadomtsev-Petviashvili (KP-II) equation using split-step Fourier methods in NumPy, and a Blinn-Phong specular liquid surface shader.
+- **Palette**: Obsidian Abyss, Electric Teal, Bioluminescent Amber, Phosphor Lime.
+
 ## kinetic_active_cahn_hilliard_division_2d
 - **Date**: 2026-08-16
 - **Type**: Animation (900 frames, 60fps)

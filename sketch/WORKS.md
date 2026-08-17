@@ -1,3 +1,10 @@
+## kinetic_multiphase_lattice_boltzmann_2d
+- **Date**: 2026-08-17
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: Immiscible bioluminescent droplets swirling and merging under shear stress in a chaotic microscopic abyss.
+- **Techniques**: Vectorized 2D Shan-Chen multiphase Lattice Boltzmann Method (LBM) solver in NumPy, and a Blinn-Phong specular liquid surface shader.
+- **Palette**: Obsidian Abyss, Bioluminescent Amethyst, Solar Coral, Phosphor Turquoise.
+
 ## kinetic_kadomtsev_petviashvili_solitons_2d
 - **Date**: 2026-08-17
 - **Type**: Animation (900 frames, 60fps)

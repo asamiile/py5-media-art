@@ -8,6 +8,12 @@ The Artist reads this file before starting a new sketch to understand preference
 
 
 
+## kinetic_chiral_active_matter_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
 ## kinetic_may_leonard_predatory_spirals_2d
 
 - **Rating**: 

@@ -1,3 +1,10 @@
+## kinetic_chiral_active_matter_2d
+- **Date**: 2026-08-17
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A self-propelled particle swarm exhibiting coherent vortical phase motion and collective flocking under chiral torque.
+- **Techniques**: Vectorized Chiral Vicsek model active matter simulation in NumPy with periodic wrapping, multi-phase density coloring, and additive motion trails.
+- **Palette**: Pitch Black, Bioluminescent Amber, Neon Teal, Electric Pink.
+
 ## kinetic_may_leonard_predatory_spirals_2d
 - **Date**: 2026-08-17
 - **Type**: Animation (900 frames, 60fps)

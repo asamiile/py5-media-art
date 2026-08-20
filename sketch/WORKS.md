@@ -1,3 +1,10 @@
+## kinetic_fhp_lattice_gas_fluid_2d
+- **Date**: 2026-08-20
+- **Type**: Animation (1200 frames, 60fps)
+- **Concept**: Fluid flow around a circular cylinder in a microscopic, hexagonal particle world, showing macroscopic vortex shedding and turbulence.
+- **Techniques**: Frisch-Hasslacher-Pomeau (FHP-I) Hexagonal Lattice Gas Automaton, upscaled density flow mapping, and speed-modulated active tracer particles.
+- **Palette**: Pitch Black Void, Electric Teal / Neon Cyan, Deep Amethyst Purple, Solar Amber Glow.
+
 ## kinetic_chiral_active_matter_2d
 - **Date**: 2026-08-17
 - **Type**: Animation (900 frames, 60fps)

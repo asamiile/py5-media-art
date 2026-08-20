@@ -8,6 +8,12 @@ The Artist reads this file before starting a new sketch to understand preference
 
 
 
+## kinetic_fhp_lattice_gas_fluid_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
 ## kinetic_chiral_active_matter_2d
 
 - **Rating**: 

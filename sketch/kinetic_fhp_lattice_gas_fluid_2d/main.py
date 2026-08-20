@@ -223,11 +223,13 @@ def draw():
     rgb_buf[obstacle] = 10
     
     pimg = py5.create_image(SIM_W, SIM_H, py5.RGB)
-    pimg.load_np_pixels()
-    pimg.np_pixels[:, :, 0] = rgb_buf[:, :, 0]
-    pimg.np_pixels[:, :, 1] = rgb_buf[:, :, 1]
-    pimg.np_pixels[:, :, 2] = rgb_buf[:, :, 2]
-    pimg.np_pixels[:, :, 3] = 255
+    pimg.load_pixels()
+    r = rgb_buf[:, :, 0].astype(np.int32)
+    g = rgb_buf[:, :, 1].astype(np.int32)
+    b = rgb_buf[:, :, 2].astype(np.int32)
+    a = np.ones_like(r) * 255
+    argb = (a << 24) | (r << 16) | (g << 8) | b
+    pimg.pixels[:] = argb.flatten()
     pimg.update_pixels()
     
     py5.image(pimg, 0, 0, w_screen, h_screen)

@@ -1,3 +1,31 @@
+## kinetic_chiral_active_matter_2d
+- **Date**: 2026-08-17
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A self-propelled particle swarm exhibiting coherent vortical phase motion and collective flocking under chiral torque.
+- **Techniques**: Vectorized Chiral Vicsek model active matter simulation in NumPy with periodic wrapping, multi-phase density coloring, and additive motion trails.
+- **Palette**: Pitch Black, Bioluminescent Amber, Neon Teal, Electric Pink.
+
+## kinetic_may_leonard_predatory_spirals_2d
+- **Date**: 2026-08-17
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: Three bioluminescent species locked in a cyclic, predatory dance, forming beautiful spirals and waves of dominance.
+- **Techniques**: Vectorized 2D numerical solver of the May-Leonard PDE equations in NumPy, species density color-blending, and a glowing Laplacian edge filter.
+- **Palette**: Pitch Black, Bioluminescent Magenta, Neon Cyan, Solar Amber.
+
+## kinetic_multiphase_lattice_boltzmann_2d
+- **Date**: 2026-08-17
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: Immiscible bioluminescent droplets swirling and merging under shear stress in a chaotic microscopic abyss.
+- **Techniques**: Vectorized 2D Shan-Chen multiphase Lattice Boltzmann Method (LBM) solver in NumPy, and a Blinn-Phong specular liquid surface shader.
+- **Palette**: Obsidian Abyss, Bioluminescent Amethyst, Solar Coral, Phosphor Turquoise.
+
+## kinetic_kadomtsev_petviashvili_solitons_2d
+- **Date**: 2026-08-17
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A self-organizing web of bioluminescent waves sliding across a shallow fluid plane, where soliton wave fronts collide and form stable, glowing junctions.
+- **Techniques**: Vectorized 2D pseudospectral solver of the Kadomtsev-Petviashvili (KP-II) equation using split-step Fourier methods in NumPy, and a Blinn-Phong specular liquid surface shader.
+- **Palette**: Obsidian Abyss, Electric Teal, Bioluminescent Amber, Phosphor Lime.
+
 ## kinetic_active_cahn_hilliard_division_2d
 - **Date**: 2026-08-16
 - **Type**: Animation (900 frames, 60fps)

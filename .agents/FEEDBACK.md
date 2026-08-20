@@ -8,6 +8,30 @@ The Artist reads this file before starting a new sketch to understand preference
 
 
 
+## kinetic_chiral_active_matter_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_may_leonard_predatory_spirals_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_multiphase_lattice_boltzmann_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_kadomtsev_petviashvili_solitons_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
 ## kinetic_active_cahn_hilliard_division_2d
 
 - **Rating**: 

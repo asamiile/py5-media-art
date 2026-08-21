@@ -1,3 +1,18 @@
+## kinetic_microemulsion_cahn_hilliard_2d
+- **Date**: 2026-08-20
+- **Type**: Animation (1200 frames, 60fps)
+- **Concept**: Immiscible fluids swirling, phase-separating, and flowing under a divergence-free, time-varying fluid stream function, creating dynamic labyrinthine structures.
+- **Techniques**: Vectorized 2D Cahn-Hilliard equation solver, semi-Lagrangian advection under divergence-free stream flow, glowing interface detection, and Blinn-Phong specular shading.
+- **Palette**: Obsidian Abyss, Amethyst Purple, Coral Orange, Mint Teal Glow.
+
+## kinetic_fhp_lattice_gas_fluid_2d
+- **Date**: 2026-08-20
+- **Type**: Animation (1200 frames, 60fps)
+- **Concept**: Fluid flow around a circular cylinder in a microscopic, hexagonal particle world, showing macroscopic vortex shedding and turbulence.
+- **Techniques**: Frisch-Hasslacher-Pomeau (FHP-I) Hexagonal Lattice Gas Automaton, upscaled density flow mapping, and speed-modulated active tracer particles.
+- **Palette**: Pitch Black Void, Electric Teal / Neon Cyan, Deep Amethyst Purple, Solar Amber Glow.
+
+
 ## kinetic_chiral_active_matter_2d
 - **Date**: 2026-08-17
 - **Type**: Animation (900 frames, 60fps)

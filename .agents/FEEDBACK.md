@@ -8,6 +8,12 @@ The Artist reads this file before starting a new sketch to understand preference
 
 
 
+## kinetic_maxwell_poynting_flow_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
 ## kinetic_microemulsion_cahn_hilliard_2d
 
 - **Rating**: 

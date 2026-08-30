@@ -1,3 +1,10 @@
+## kinetic_maxwell_poynting_flow_2d
+- **Date**: 2026-08-30
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 2D simulation of TM-polarized electromagnetic waves scattering around a dielectric split-ring resonator, where energy flow is tracked by glowing Poynting vector streamlines.
+- **Techniques**: Vectorized 2D FDTD Maxwell equation solver in NumPy, Yee grid updates, Poynting vector field interpolation, boundary absorbing layer, and particle advection.
+- **Palette**: Pitch Black, Electric Teal, Bright Amber, Neon Purple.
+
 ## kinetic_microemulsion_cahn_hilliard_2d
 - **Date**: 2026-08-20
 - **Type**: Animation (1200 frames, 60fps)

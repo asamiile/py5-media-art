@@ -8,6 +8,12 @@ The Artist reads this file before starting a new sketch to understand preference
 
 
 
+## kinetic_kuramoto_chimera_states_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
 ## kinetic_skyrmion_llg_dynamics_2d
 
 - **Rating**: 

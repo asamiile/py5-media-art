@@ -1,3 +1,10 @@
+## kinetic_kuramoto_chimera_states_2d
+- **Date**: 2026-08-30
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 2D Kuramoto Coupled Oscillator simulation showing the spontaneous coexistence of synchronized domains (order) and desynchronized domains (chaos).
+- **Techniques**: Vectorized Kuramoto equations with non-local coupling in NumPy using 2D FFT convolution, phase lag tuning, local order parameter extraction, and HSL order-to-chaos visual mapping.
+- **Palette**: Pitch Black, Bioluminescent Violet / Amethyst, Emerald Green / Jade, Neon Coral / Rose Pink.
+
 ## kinetic_skyrmion_llg_dynamics_2d
 - **Date**: 2026-08-30
 - **Type**: Animation (900 frames, 60fps)

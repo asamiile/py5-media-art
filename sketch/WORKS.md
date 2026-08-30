@@ -1,3 +1,10 @@
+## kinetic_vortex_dipole_collision_2d
+- **Date**: 2026-08-30
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 2D Navier-Stokes simulation modeling the symmetric collision, pairing, and topological reconnection of counter-rotating vortex dipoles.
+- **Techniques**: Vectorized Vorticity-Stream Function fluid solver, Poisson equation Jacobi relaxation (40 iterations), semi-Lagrangian advection, and speed-colored particle tracers.
+- **Palette**: Pitch Black, Bioluminescent Amber, Neon Cyan, Hot Pink.
+
 ## kinetic_maxwell_poynting_flow_2d
 - **Date**: 2026-08-30
 - **Type**: Animation (900 frames, 60fps)

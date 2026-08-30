@@ -8,6 +8,12 @@ The Artist reads this file before starting a new sketch to understand preference
 
 
 
+## kinetic_vortex_dipole_collision_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
 ## kinetic_maxwell_poynting_flow_2d
 
 - **Rating**: 

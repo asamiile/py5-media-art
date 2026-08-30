@@ -8,6 +8,12 @@ The Artist reads this file before starting a new sketch to understand preference
 
 
 
+## kinetic_skyrmion_llg_dynamics_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
 ## kinetic_aharonov_bohm_quantum_2d
 
 - **Rating**: 

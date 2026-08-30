@@ -1,3 +1,10 @@
+## kinetic_skyrmion_llg_dynamics_2d
+- **Date**: 2026-08-30
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 2D Landau-Lifshitz-Gilbert (LLG) lattice spin dynamics simulation modeling the creation, interaction, and spin-current-driven drift of chiral magnetic skyrmions.
+- **Techniques**: Vectorized 2D LLG spin integration in NumPy, interfacial Dzyaloshinskii-Moriya Interaction (DMI) for chiral stabilization, Zeeman field coupling, spin-transfer torque (STT) current-driven drift, and HSL-to-RGB orientation mapping.
+- **Palette**: Deep Cobalt Void, Bioluminescent Teal / Cyan, Deep Amethyst / Indigo, Electric Saffron / Amber Gold.
+
 ## kinetic_aharonov_bohm_quantum_2d
 - **Date**: 2026-08-30
 - **Type**: Animation (900 frames, 60fps)

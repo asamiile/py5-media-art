@@ -1,3 +1,10 @@
+## kinetic_aharonov_bohm_quantum_2d
+- **Date**: 2026-08-30
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 2D quantum mechanics simulation solving the TDSE in the presence of a vector potential to show phase shifts and topological wave scattering around a shielded flux tube.
+- **Techniques**: Vectorized 2D Schrödinger solver using a covariant lattice gauge leapfrog updates in NumPy, phase-to-HSL spectral mapping, and boundary absorbing sponge layer.
+- **Palette**: Obsidian Void, Iridescent Spectral Rainbow, Luminous Magenta.
+
 ## kinetic_vortex_dipole_collision_2d
 - **Date**: 2026-08-30
 - **Type**: Animation (900 frames, 60fps)

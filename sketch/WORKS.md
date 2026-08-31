@@ -1,3 +1,10 @@
+## kinetic_hyperbolic_reaction_diffusion_2d
+- **Date**: 2026-08-31
+- **Type**: Animation (900-1200 frames, 60fps)
+- **Concept**: Non-Euclidean reaction-diffusion system modeled on a Poincaré disk metric inside a conformally flat 2D canvas, freezing pattern growth near the boundary.
+- **Techniques**: Poincaré disk Laplace-Beltrami integration, conformal factor scaling grid, Gray-Scott model simulation, dynamic glow color mapping.
+- **Palette**: Deep Space Blue, Cobalt Violet, Luminous Magenta, Electric Mint Green.
+
 ## kinetic_pilot_wave_hydrodynamics_2d
 - **Date**: 2026-08-31
 - **Type**: Animation (900-1200 frames, 60fps)

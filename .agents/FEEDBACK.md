@@ -8,6 +8,36 @@ The Artist reads this file before starting a new sketch to understand preference
 
 
 
+## kinetic_kuramoto_chimera_states_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_skyrmion_llg_dynamics_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_aharonov_bohm_quantum_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_vortex_dipole_collision_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_maxwell_poynting_flow_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
 ## kinetic_microemulsion_cahn_hilliard_2d
 
 - **Rating**: 

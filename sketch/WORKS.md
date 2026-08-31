@@ -1,3 +1,38 @@
+## kinetic_kuramoto_chimera_states_2d
+- **Date**: 2026-08-30
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 2D Kuramoto Coupled Oscillator simulation showing the spontaneous coexistence of synchronized domains (order) and desynchronized domains (chaos).
+- **Techniques**: Vectorized Kuramoto equations with non-local coupling in NumPy using 2D FFT convolution, phase lag tuning, local order parameter extraction, and HSL order-to-chaos visual mapping.
+- **Palette**: Pitch Black, Bioluminescent Violet / Amethyst, Emerald Green / Jade, Neon Coral / Rose Pink.
+
+## kinetic_skyrmion_llg_dynamics_2d
+- **Date**: 2026-08-30
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 2D Landau-Lifshitz-Gilbert (LLG) lattice spin dynamics simulation modeling the creation, interaction, and spin-current-driven drift of chiral magnetic skyrmions.
+- **Techniques**: Vectorized 2D LLG spin integration in NumPy, interfacial Dzyaloshinskii-Moriya Interaction (DMI) for chiral stabilization, Zeeman field coupling, spin-transfer torque (STT) current-driven drift, and HSL-to-RGB orientation mapping.
+- **Palette**: Deep Cobalt Void, Bioluminescent Teal / Cyan, Deep Amethyst / Indigo, Electric Saffron / Amber Gold.
+
+## kinetic_aharonov_bohm_quantum_2d
+- **Date**: 2026-08-30
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 2D quantum mechanics simulation solving the TDSE in the presence of a vector potential to show phase shifts and topological wave scattering around a shielded flux tube.
+- **Techniques**: Vectorized 2D Schrödinger solver using a covariant lattice gauge leapfrog updates in NumPy, phase-to-HSL spectral mapping, and boundary absorbing sponge layer.
+- **Palette**: Obsidian Void, Iridescent Spectral Rainbow, Luminous Magenta.
+
+## kinetic_vortex_dipole_collision_2d
+- **Date**: 2026-08-30
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 2D Navier-Stokes simulation modeling the symmetric collision, pairing, and topological reconnection of counter-rotating vortex dipoles.
+- **Techniques**: Vectorized Vorticity-Stream Function fluid solver, Poisson equation Jacobi relaxation (40 iterations), semi-Lagrangian advection, and speed-colored particle tracers.
+- **Palette**: Pitch Black, Bioluminescent Amber, Neon Cyan, Hot Pink.
+
+## kinetic_maxwell_poynting_flow_2d
+- **Date**: 2026-08-30
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: A 2D simulation of TM-polarized electromagnetic waves scattering around a dielectric split-ring resonator, where energy flow is tracked by glowing Poynting vector streamlines.
+- **Techniques**: Vectorized 2D FDTD Maxwell equation solver in NumPy, Yee grid updates, Poynting vector field interpolation, boundary absorbing layer, and particle advection.
+- **Palette**: Pitch Black, Electric Teal, Bright Amber, Neon Purple.
+
 ## kinetic_microemulsion_cahn_hilliard_2d
 - **Date**: 2026-08-20
 - **Type**: Animation (1200 frames, 60fps)

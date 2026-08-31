@@ -1,3 +1,10 @@
+## kinetic_pilot_wave_hydrodynamics_2d
+- **Date**: 2026-08-31
+- **Type**: Animation (900-1200 frames, 60fps)
+- **Concept**: Bouncing silicon droplets surfing on their own wave ripples in a vibrated fluid corral, showing macroscopic wave-particle duality.
+- **Techniques**: 2D Finite-Difference Time-Domain (FDTD) wave solver with viscous damping and parametric excitation, coupled with active inertial particles that steer based on local height gradients.
+- **Palette**: Pitch Black, Deep Cobalt Indigo, Neon Cyan, Solar Amber Gold.
+
 ## kinetic_kuramoto_chimera_states_2d
 - **Date**: 2026-08-30
 - **Type**: Animation (900 frames, 60fps)

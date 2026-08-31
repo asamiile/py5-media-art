@@ -207,8 +207,16 @@ def draw():
     # Draw scaled fluid grid
     img = py5.create_image(W_sim, H_sim, py5.ARGB)
     img.load_np_pixels()
-    img.np_pixels[:] = colored
-    img.update_np_pixels()
+    if img.np_pixels is not None:
+        img.np_pixels[:] = colored
+        img.update_np_pixels()
+    else:
+        r = colored[..., 0].astype(np.int32)
+        g = colored[..., 1].astype(np.int32)
+        b = colored[..., 2].astype(np.int32)
+        a = colored[..., 3].astype(np.int32)
+        img.pixels[:] = (a << 24) | (r << 16) | (g << 8) | b
+        img.update_pixels()
     py5.image(img, 0, 0, py5.width, py5.height)
     
     # --- Draw Circular Corral Boundary in 4K ---

@@ -1,3 +1,10 @@
+## kinetic_ginzburg_landau_vortices_2d
+- **Date**: 2026-08-31
+- **Type**: Animation (900-1200 frames, 60fps)
+- **Concept**: Time-Dependent Ginzburg-Landau (TDGL) simulation modeling quantized Abrikosov vortex lattice dynamics, dynamic defect pinning, and chiral flux flow in a Type-II superconductor.
+- **Techniques**: TDGL order parameter integration, Landau gauge-covariant Laplacian lattice derivative, dynamic Gaussian pinning centers, phase domain coloring with glowing vortex cores and magnetic halos.
+- **Palette**: Pitch Black, Deep Amethyst, Cobalt Violet, Luminous Cyan, Saffron Gold.
+
 ## kinetic_swift_hohenberg_convection_2d
 - **Date**: 2026-08-31
 - **Type**: Animation (900-1200 frames, 60fps)

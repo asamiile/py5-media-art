@@ -1,3 +1,10 @@
+## kinetic_optical_vortex_phase_singularities_2d
+- **Date**: 2026-09-06
+- **Type**: Animation (1080 frames, 60fps)
+- **Concept**: 2D singular optics simulation modeling Laguerre-Gaussian laser beam interference, quantized Orbital Angular Momentum (OAM), moving optical vortex braids, holographic fork dislocations, and Poynting-driven optical tweezers.
+- **Techniques**: Multi-pole complex phase factor synthesis, holographic reference wave interferogram with fork dislocations, transverse Poynting vector energy circulation, and dielectric nanoparticle kinematics in optical traps.
+- **Palette**: Abyssal Obsidian, Holographic Cyan & Aquamarine, Radiant Fuchsia & Magenta, Incandescent Solar Gold & Pure White.
+
 ## kinetic_barkhausen_domain_avalanches_2d
 - **Date**: 2026-09-06
 - **Type**: Animation (1080 frames, 60fps)

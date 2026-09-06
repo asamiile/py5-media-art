@@ -8,6 +8,12 @@ The Artist reads this file before starting a new sketch to understand preference
 
 
 
+## kinetic_faraday_quasicrystal_resonances_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
 ## kinetic_tkachenko_vortex_lattice_waves_2d
 
 - **Rating**: 

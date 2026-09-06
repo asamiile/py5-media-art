@@ -1,3 +1,10 @@
+## kinetic_faraday_quasicrystal_resonances_2d
+- **Date**: 2026-09-07
+- **Type**: Animation (1080 frames, 60fps)
+- **Concept**: 2D fluid dynamics simulation of a two-frequency vertically driven liquid bath undergoing parametric Faraday instability, forming an aperiodic 12-fold (dodecagonal) Faraday quasicrystal standing wave field with 3D liquid metallic specular shading and trapped bouncing pilot-wave micro-droplets.
+- **Techniques**: 12-fold azimuthal plane wave triad resonance, two-frequency subharmonic parametric coupling, surface normal gradient calculation for dual Blinn-Phong specular lighting, and gradient-driven pilot droplet dynamics.
+- **Palette**: Deep Liquid Obsidian, Electric Cyan, Royal Amethyst & Magenta, Blazing Solar Gold & Diamond White.
+
 ## kinetic_tkachenko_vortex_lattice_waves_2d
 - **Date**: 2026-09-06
 - **Type**: Animation (1080 frames, 60fps)

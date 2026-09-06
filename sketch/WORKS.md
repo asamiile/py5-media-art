@@ -1,3 +1,10 @@
+## kinetic_chiral_liquid_crystal_skyrmions_2d
+- **Date**: 2026-09-06
+- **Type**: Animation (1080 frames, 60fps)
+- **Concept**: 2D Polarizing Optical Microscopy (POM) simulation of chiral nematic liquid crystal baby skyrmions, Maltese cross isogyres, Michel-Lévy birefringent interference rings, and topological Skyrmion Hall drift.
+- **Techniques**: Frank-Oseen chiral director wrapping, crossed-polarizer Jones birefringence transmission, topological charge density mapping, and colloidal micro-particle trapping along elastic defect rings.
+- **Palette**: Homeotropic Obsidian Void, Iridescent Peacock Cyan & Emerald, Royal Amethyst & Magenta, Incandescent Solar Gold & White.
+
 ## kinetic_optical_vortex_phase_singularities_2d
 - **Date**: 2026-09-06
 - **Type**: Animation (1080 frames, 60fps)

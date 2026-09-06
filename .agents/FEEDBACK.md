@@ -8,6 +8,30 @@ The Artist reads this file before starting a new sketch to understand preference
 
 
 
+## kinetic_ginzburg_landau_vortices_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_swift_hohenberg_convection_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_hyperbolic_reaction_diffusion_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_pilot_wave_hydrodynamics_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
 ## kinetic_kuramoto_chimera_states_2d
 
 - **Rating**: 

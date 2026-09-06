@@ -1,3 +1,10 @@
+## kinetic_barkhausen_domain_avalanches_2d
+- **Date**: 2026-09-06
+- **Type**: Animation (1080 frames, 60fps)
+- **Concept**: 2D Allen-Cahn / TDGL simulation of Barkhausen noise, domain wall depinning transitions, and acoustic emission radiation in a disordered ferromagnetic thin film.
+- **Techniques**: Phase field double-well potential, multi-scale quenched disorder pinning, cyclic Zeeman driving field, non-local demagnetizing interaction, acoustic ripple dissipation, and 4K unpinning spark emissions.
+- **Palette**: Polycrystalline Obsidian, Deep Indigo & Slate, Electric Turquoise & Cyan Glow, Solar Molten Amber & Pure White Spikes.
+
 ## kinetic_gyrotactic_bioconvection_plumes_2d
 - **Date**: 2026-09-06
 - **Type**: Animation (1080 frames, 60fps)

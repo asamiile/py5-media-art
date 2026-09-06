@@ -8,6 +8,12 @@ The Artist reads this file before starting a new sketch to understand preference
 
 
 
+## kinetic_barkhausen_domain_avalanches_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
 ## kinetic_gyrotactic_bioconvection_plumes_2d
 
 - **Rating**: 

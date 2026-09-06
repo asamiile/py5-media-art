@@ -1,3 +1,10 @@
+## kinetic_tkachenko_vortex_lattice_waves_2d
+- **Date**: 2026-09-06
+- **Type**: Animation (1080 frames, 60fps)
+- **Concept**: 2D quantum hydrodynamic simulation of Tkachenko transverse shear wave modes propagating through a triangular Abrikosov vortex lattice in a rotating superfluid.
+- **Techniques**: Abrikosov triangular lattice elasticity, transverse acoustic shear wave superposition, Voronoi cell boundary deformation, macroscopic wavefunction phase winding, and trapped exciton impurity kinematics.
+- **Palette**: Deep Cryogenic Indigo, Electric Cyan & Emerald, Neon Magenta & Violet, Incandescent Solar Gold & White.
+
 ## kinetic_chiral_liquid_crystal_skyrmions_2d
 - **Date**: 2026-09-06
 - **Type**: Animation (1080 frames, 60fps)

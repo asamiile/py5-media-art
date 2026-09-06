@@ -1,3 +1,10 @@
+## kinetic_gyrotactic_bioconvection_plumes_2d
+- **Date**: 2026-09-06
+- **Type**: Animation (1080 frames, 60fps)
+- **Concept**: 2D incompressible Navier-Stokes simulation coupled with microbial negative buoyancy, active upward gyrotactic swimming advection, and Lagrangian shear-induced bioluminescent tracer kinematics.
+- **Techniques**: Streamfunction Jacobi relaxation with closed-tank boundary conditions, Boussinesq density torque coupling, semi-Lagrangian active advection, and shear-excited bioluminescent tracer kinematics.
+- **Palette**: Abyssal Midnight, Bioluminescent Emerald & Jade, Fluorescent Electric Cyan, Solar Amber Sparks.
+
 ## kinetic_benjamin_feir_rogue_waves_2d
 - **Date**: 2026-09-06
 - **Type**: Animation (1080 frames, 60fps)

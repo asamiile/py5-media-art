@@ -8,6 +8,12 @@ The Artist reads this file before starting a new sketch to understand preference
 
 
 
+## kinetic_gyrotactic_bioconvection_plumes_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
 ## kinetic_benjamin_feir_rogue_waves_2d
 
 - **Rating**: 

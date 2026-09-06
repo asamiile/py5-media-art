@@ -1,3 +1,10 @@
+## kinetic_benjamin_feir_rogue_waves_2d
+- **Date**: 2026-09-06
+- **Type**: Animation (1080 frames, 60fps)
+- **Concept**: 2D Focusing Nonlinear Schrödinger Equation (NLSE) simulation modeling Benjamin-Feir modulational instability, Peregrine breather cresting, and spontaneous oceanic rogue wave formation.
+- **Techniques**: Split-Step Fourier Method (SSFM) with 8th-order spectral anti-aliasing filter, multi-scale Stokes swell superposition, 3D Blinn-Phong liquid specular shading, and dynamic 4K foam/spray particle kinematics.
+- **Palette**: Abyssal Midnight Navy, Deep Cobalt Sapphire, Luminous Electric Cyan, Incandescent Sunlit Gold, Blinding Pure White.
+
 ## kinetic_ginzburg_landau_vortices_2d
 - **Date**: 2026-08-31
 - **Type**: Animation (900-1200 frames, 60fps)

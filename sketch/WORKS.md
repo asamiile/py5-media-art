@@ -1,3 +1,10 @@
+## kinetic_chladni_plate_acoustic_cymatics_2d
+- **Date**: 2026-09-07
+- **Type**: Animation (1080 frames, 60fps)
+- **Concept**: 2D acoustical physics simulation of Chladni plate cymatics, modeling vibrational eigenmode morphing on a circular elastic plate, dynamic nodal line bifurcation, and the collective avalanching of fluorescent sand particles toward acceleration minima.
+- **Techniques**: Multi-harmonic acoustic polar standing wave modal interpolation, acoustic gradient acceleration field calculation, circular anodized plate framing, and dynamic fluorescent sand grain kinematics.
+- **Palette**: Anodized Acoustic Obsidian Plate, Electric Cyan & Mint Emerald, Royal Amethyst & Violet, Solar Gold & Pure White.
+
 ## kinetic_ferrofluid_rosensweig_hexagonal_peaks_2d
 - **Date**: 2026-09-07
 - **Type**: Animation (1080 frames, 60fps)

@@ -8,6 +8,12 @@ The Artist reads this file before starting a new sketch to understand preference
 
 
 
+## kinetic_chladni_plate_acoustic_cymatics_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
 ## kinetic_ferrofluid_rosensweig_hexagonal_peaks_2d
 
 - **Rating**: 

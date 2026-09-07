@@ -1,3 +1,10 @@
+## kinetic_kam_torus_hamiltonian_resonances_2d
+- **Date**: 2026-09-07
+- **Type**: Animation (1080 frames, 60fps)
+- **Concept**: 2D celestial Hamiltonian phase-space simulation of the Kolmogorov-Arnold-Moser (KAM) theorem and Poincaré-Birkhoff resonant island chains, modeling nested invariant tori, adiabatic orbital precession, hyperbolic separatrix bifurcations, and symplectic phase-space particle drift.
+- **Techniques**: Multi-order Hamiltonian resonance potential synthesis, adaptive contour frequency anti-aliasing, divergence-free symplectic velocity field calculation, and celestial phase-space tracer spark dynamics.
+- **Palette**: Celestial Abyssal Obsidian, Invariant Electric Cyan & Mint Jade, Neon Violet & Royal Magenta, Solar Amber & Diamond White.
+
 ## kinetic_belousov_zhabotinsky_spiral_waves_2d
 - **Date**: 2026-09-07
 - **Type**: Animation (1080 frames, 60fps)

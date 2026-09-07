@@ -8,6 +8,66 @@ The Artist reads this file before starting a new sketch to understand preference
 
 
 
+## kinetic_belousov_zhabotinsky_spiral_waves_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_chladni_plate_acoustic_cymatics_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_ferrofluid_rosensweig_hexagonal_peaks_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_faraday_quasicrystal_resonances_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_tkachenko_vortex_lattice_waves_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_chiral_liquid_crystal_skyrmions_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_optical_vortex_phase_singularities_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_barkhausen_domain_avalanches_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_gyrotactic_bioconvection_plumes_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_benjamin_feir_rogue_waves_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
 ## kinetic_ginzburg_landau_vortices_2d
 
 - **Rating**: 

@@ -1,3 +1,73 @@
+## kinetic_belousov_zhabotinsky_spiral_waves_2d
+- **Date**: 2026-09-07
+- **Type**: Animation (1080 frames, 60fps)
+- **Concept**: 2D chemical reaction-diffusion simulation of the Belousov-Zhabotinsky (BZ) reaction and the Oregonator model, capturing multi-rotor Archimedean spiral waves, chiral rotor meanderings, topological phase singularities, and mutual wave annihilation along collision shock fronts.
+- **Techniques**: Complex reaction-diffusion activator field formulation, Archimedean spiral rotor phase synthesis, excitable threshold front extraction, and catalytic spark particle advection.
+- **Palette**: Deep Ferroin Obsidian, Luminescent Ferriin Electric Cyan & Jade Emerald, Neon Violet & Royal Amethyst, Solar Amber & Incandescent White.
+
+## kinetic_chladni_plate_acoustic_cymatics_2d
+- **Date**: 2026-09-07
+- **Type**: Animation (1080 frames, 60fps)
+- **Concept**: 2D acoustical physics simulation of Chladni plate cymatics, modeling vibrational eigenmode morphing on a circular elastic plate, dynamic nodal line bifurcation, and the collective avalanching of fluorescent sand particles toward acceleration minima.
+- **Techniques**: Multi-harmonic acoustic polar standing wave modal interpolation, acoustic gradient acceleration field calculation, circular anodized plate framing, and dynamic fluorescent sand grain kinematics.
+- **Palette**: Anodized Acoustic Obsidian Plate, Electric Cyan & Mint Emerald, Royal Amethyst & Violet, Solar Gold & Pure White.
+
+## kinetic_ferrofluid_rosensweig_hexagonal_peaks_2d
+- **Date**: 2026-09-07
+- **Type**: Animation (1080 frames, 60fps)
+- **Concept**: 2D ferrohydrodynamic simulation of the Rosensweig normal-field instability in a liquid mirror magnetic fluid pool, modeling the gyroscopic precession of a hexagonal array of conical spikes under a rotating magnetic field, with 3D liquid chrome Blinn-Phong specular shading and hopping magnetic spark nanoparticles.
+- **Techniques**: Hexagonal Rosensweig peak soliton array, rotating magnetic field vector precession, surface normal gradient calculation for dual-colored liquid mirror specular reflections, and parabolic magnetic flux spark kinematics.
+- **Palette**: Liquid Chrome Obsidian, Metallic Silver & Electric Cyan, Molten Bronze & Amber, Diamond White & Solar Gold.
+
+## kinetic_faraday_quasicrystal_resonances_2d
+- **Date**: 2026-09-07
+- **Type**: Animation (1080 frames, 60fps)
+- **Concept**: 2D fluid dynamics simulation of a two-frequency vertically driven liquid bath undergoing parametric Faraday instability, forming an aperiodic 12-fold (dodecagonal) Faraday quasicrystal standing wave field with 3D liquid metallic specular shading and trapped bouncing pilot-wave micro-droplets.
+- **Techniques**: 12-fold azimuthal plane wave triad resonance, two-frequency subharmonic parametric coupling, surface normal gradient calculation for dual Blinn-Phong specular lighting, and gradient-driven pilot droplet dynamics.
+- **Palette**: Deep Liquid Obsidian, Electric Cyan, Royal Amethyst & Magenta, Blazing Solar Gold & Diamond White.
+
+## kinetic_tkachenko_vortex_lattice_waves_2d
+- **Date**: 2026-09-06
+- **Type**: Animation (1080 frames, 60fps)
+- **Concept**: 2D quantum hydrodynamic simulation of Tkachenko transverse shear wave modes propagating through a triangular Abrikosov vortex lattice in a rotating superfluid.
+- **Techniques**: Abrikosov triangular lattice elasticity, transverse acoustic shear wave superposition, Voronoi cell boundary deformation, macroscopic wavefunction phase winding, and trapped exciton impurity kinematics.
+- **Palette**: Deep Cryogenic Indigo, Electric Cyan & Emerald, Neon Magenta & Violet, Incandescent Solar Gold & White.
+
+## kinetic_chiral_liquid_crystal_skyrmions_2d
+- **Date**: 2026-09-06
+- **Type**: Animation (1080 frames, 60fps)
+- **Concept**: 2D Polarizing Optical Microscopy (POM) simulation of chiral nematic liquid crystal baby skyrmions, Maltese cross isogyres, Michel-Lévy birefringent interference rings, and topological Skyrmion Hall drift.
+- **Techniques**: Frank-Oseen chiral director wrapping, crossed-polarizer Jones birefringence transmission, topological charge density mapping, and colloidal micro-particle trapping along elastic defect rings.
+- **Palette**: Homeotropic Obsidian Void, Iridescent Peacock Cyan & Emerald, Royal Amethyst & Magenta, Incandescent Solar Gold & White.
+
+## kinetic_optical_vortex_phase_singularities_2d
+- **Date**: 2026-09-06
+- **Type**: Animation (1080 frames, 60fps)
+- **Concept**: 2D singular optics simulation modeling Laguerre-Gaussian laser beam interference, quantized Orbital Angular Momentum (OAM), moving optical vortex braids, holographic fork dislocations, and Poynting-driven optical tweezers.
+- **Techniques**: Multi-pole complex phase factor synthesis, holographic reference wave interferogram with fork dislocations, transverse Poynting vector energy circulation, and dielectric nanoparticle kinematics in optical traps.
+- **Palette**: Abyssal Obsidian, Holographic Cyan & Aquamarine, Radiant Fuchsia & Magenta, Incandescent Solar Gold & Pure White.
+
+## kinetic_barkhausen_domain_avalanches_2d
+- **Date**: 2026-09-06
+- **Type**: Animation (1080 frames, 60fps)
+- **Concept**: 2D Allen-Cahn / TDGL simulation of Barkhausen noise, domain wall depinning transitions, and acoustic emission radiation in a disordered ferromagnetic thin film.
+- **Techniques**: Phase field double-well potential, multi-scale quenched disorder pinning, cyclic Zeeman driving field, non-local demagnetizing interaction, acoustic ripple dissipation, and 4K unpinning spark emissions.
+- **Palette**: Polycrystalline Obsidian, Deep Indigo & Slate, Electric Turquoise & Cyan Glow, Solar Molten Amber & Pure White Spikes.
+
+## kinetic_gyrotactic_bioconvection_plumes_2d
+- **Date**: 2026-09-06
+- **Type**: Animation (1080 frames, 60fps)
+- **Concept**: 2D incompressible Navier-Stokes simulation coupled with microbial negative buoyancy, active upward gyrotactic swimming advection, and Lagrangian shear-induced bioluminescent tracer kinematics.
+- **Techniques**: Streamfunction Jacobi relaxation with closed-tank boundary conditions, Boussinesq density torque coupling, semi-Lagrangian active advection, and shear-excited bioluminescent tracer kinematics.
+- **Palette**: Abyssal Midnight, Bioluminescent Emerald & Jade, Fluorescent Electric Cyan, Solar Amber Sparks.
+
+## kinetic_benjamin_feir_rogue_waves_2d
+- **Date**: 2026-09-06
+- **Type**: Animation (1080 frames, 60fps)
+- **Concept**: 2D Focusing Nonlinear Schrödinger Equation (NLSE) simulation modeling Benjamin-Feir modulational instability, Peregrine breather cresting, and spontaneous oceanic rogue wave formation.
+- **Techniques**: Split-Step Fourier Method (SSFM) with 8th-order spectral anti-aliasing filter, multi-scale Stokes swell superposition, 3D Blinn-Phong liquid specular shading, and dynamic 4K foam/spray particle kinematics.
+- **Palette**: Abyssal Midnight Navy, Deep Cobalt Sapphire, Luminous Electric Cyan, Incandescent Sunlit Gold, Blinding Pure White.
+
 ## kinetic_ginzburg_landau_vortices_2d
 - **Date**: 2026-08-31
 - **Type**: Animation (900-1200 frames, 60fps)

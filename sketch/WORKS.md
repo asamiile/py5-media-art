@@ -1,3 +1,10 @@
+## kinetic_belousov_zhabotinsky_spiral_waves_2d
+- **Date**: 2026-09-07
+- **Type**: Animation (1080 frames, 60fps)
+- **Concept**: 2D chemical reaction-diffusion simulation of the Belousov-Zhabotinsky (BZ) reaction and the Oregonator model, capturing multi-rotor Archimedean spiral waves, chiral rotor meanderings, topological phase singularities, and mutual wave annihilation along collision shock fronts.
+- **Techniques**: Complex reaction-diffusion activator field formulation, Archimedean spiral rotor phase synthesis, excitable threshold front extraction, and catalytic spark particle advection.
+- **Palette**: Deep Ferroin Obsidian, Luminescent Ferriin Electric Cyan & Jade Emerald, Neon Violet & Royal Amethyst, Solar Amber & Incandescent White.
+
 ## kinetic_chladni_plate_acoustic_cymatics_2d
 - **Date**: 2026-09-07
 - **Type**: Animation (1080 frames, 60fps)

@@ -1,3 +1,10 @@
+## kinetic_ferrofluid_rosensweig_hexagonal_peaks_2d
+- **Date**: 2026-09-07
+- **Type**: Animation (1080 frames, 60fps)
+- **Concept**: 2D ferrohydrodynamic simulation of the Rosensweig normal-field instability in a liquid mirror magnetic fluid pool, modeling the gyroscopic precession of a hexagonal array of conical spikes under a rotating magnetic field, with 3D liquid chrome Blinn-Phong specular shading and hopping magnetic spark nanoparticles.
+- **Techniques**: Hexagonal Rosensweig peak soliton array, rotating magnetic field vector precession, surface normal gradient calculation for dual-colored liquid mirror specular reflections, and parabolic magnetic flux spark kinematics.
+- **Palette**: Liquid Chrome Obsidian, Metallic Silver & Electric Cyan, Molten Bronze & Amber, Diamond White & Solar Gold.
+
 ## kinetic_faraday_quasicrystal_resonances_2d
 - **Date**: 2026-09-07
 - **Type**: Animation (1080 frames, 60fps)

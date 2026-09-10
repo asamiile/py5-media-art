@@ -1,3 +1,10 @@
+## kinetic_kerr_ergosphere_penrose_process_2d
+- **Date**: 2026-09-10
+- **Type**: Animation (1080 frames, 60fps)
+- **Concept**: 2D general relativistic Kerr spacetime simulation capturing Lense-Thirring frame dragging, the oblate static limit geometry of the ergosphere, relativistic Doppler beaming and gravitational redshift, and rotational energy extraction via the Penrose process.
+- **Techniques**: Boyer-Lindquist Kerr metric formulation, frame-dragging angular velocity field, kinematic relativistic Doppler flux boosting, and Lagrangian particle fission and escape kinematics.
+- **Palette**: Event Horizon Singularity Obsidian, Gravitationally Redshifted Crimson & Violet, Relativistically Blueshifted Cyan, Incandescent Penrose Beaming Gold & Pure White.
+
 ## kinetic_electrohydrodynamic_taylor_cone_2d
 - **Date**: 2026-09-10
 - **Type**: Animation (1080 frames, 60fps)

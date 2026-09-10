@@ -1,3 +1,10 @@
+## kinetic_polygonal_hydraulic_jump_2d
+- **Date**: 2026-09-10
+- **Type**: Animation (1080 frames, 60fps)
+- **Concept**: 2D fluid dynamics simulation of circular and polygonal hydraulic jumps, modeling supercritical thin-film radial flow, Rayleigh-Plateau azimuthal symmetry-breaking bifurcations into rotating polygonal stars, standing corner recirculation vortices, and concentric capillary wave trains.
+- **Techniques**: Multi-harmonic polygonal boundary mode synthesis, tanh shockfront transition modeling, surface normal gradient calculation for dual Blinn-Phong specular liquid lighting, and Lagrangian micro-droplet tracer kinematics.
+- **Palette**: Abyssal Hydrodynamic Obsidian & Cobalt, Bioluminescent Liquid Cyan & Aquamarine, Incandescent Solar Gold & Foam White.
+
 ## kinetic_kam_torus_hamiltonian_resonances_2d
 - **Date**: 2026-09-07
 - **Type**: Animation (1080 frames, 60fps)

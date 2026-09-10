@@ -1,3 +1,10 @@
+## kinetic_electrohydrodynamic_taylor_cone_2d
+- **Date**: 2026-09-10
+- **Type**: Animation (1080 frames, 60fps)
+- **Concept**: 2D electrohydrodynamic (EHD) simulation of Maxwell stress deformation on a pendant liquid meniscus, capturing the formation of the critical 49.3-degree Taylor cone singularity, Laplace electrostatic equipotential field contours, whipping micro-jet instability, and Coulombic electrospray ion aerosol kinematics.
+- **Techniques**: Analytical Taylor cone cusp formulation, electrostatic potential field synthesis, whipping kink instability wave equation, surface normal gradient specular shading, and Lagrangian charged particle kinematics.
+- **Palette**: High-Voltage Vacuum Obsidian, Ionizing Neon Violet & Ozone Cyan, Incandescent Solar White-Gold.
+
 ## kinetic_polygonal_hydraulic_jump_2d
 - **Date**: 2026-09-10
 - **Type**: Animation (1080 frames, 60fps)

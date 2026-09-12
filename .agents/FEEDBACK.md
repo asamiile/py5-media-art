@@ -8,6 +8,12 @@ The Artist reads this file before starting a new sketch to understand preference
 
 
 
+## kinetic_solutal_marangoni_tears_of_wine_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
 ## kinetic_mhd_alfven_wave_coronal_loop_2d
 
 - **Rating**: 

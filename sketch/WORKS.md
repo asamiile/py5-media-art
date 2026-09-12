@@ -1,3 +1,10 @@
+## kinetic_solutal_marangoni_tears_of_wine_2d
+- **Date**: 2026-09-12
+- **Type**: Animation (1080 frames, 60fps)
+- **Concept**: 2D non-equilibrium fluid dynamics simulation of the solutal Marangoni effect (the Tears of Wine / lacrimae vini instability), capturing upward surface tension gradient pumping, rim accumulation, contact-line finger instabilities, cascading pendant droplets, and alcohol vapor wisps.
+- **Techniques**: Lubrication thin-film Marangoni formulation, contact-line finger perturbation synthesis, smooth asymptotic sigmoidal meniscus modeling, 3D Blinn-Phong specular glass caustics, and Lagrangian tear droplet and vapor kinematics.
+- **Palette**: Wine-Cellar Obsidian Void & Deep Cabernet Violet, Solutal Fluid Ribbon Burgundy, Ruby & Glacial Azure, Incandescent Meniscus White-Gold & Alcohol Vapor Wisps.
+
 ## kinetic_mhd_alfven_wave_coronal_loop_2d
 - **Date**: 2026-09-12
 - **Type**: Animation (1080 frames, 60fps)

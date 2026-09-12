@@ -1,3 +1,24 @@
+## kinetic_kerr_ergosphere_penrose_process_2d
+- **Date**: 2026-09-10
+- **Type**: Animation (1080 frames, 60fps)
+- **Concept**: 2D general relativistic Kerr spacetime simulation capturing Lense-Thirring frame dragging, the oblate static limit geometry of the ergosphere, relativistic Doppler beaming and gravitational redshift, and rotational energy extraction via the Penrose process.
+- **Techniques**: Boyer-Lindquist Kerr metric formulation, frame-dragging angular velocity field, kinematic relativistic Doppler flux boosting, and Lagrangian particle fission and escape kinematics.
+- **Palette**: Event Horizon Singularity Obsidian, Gravitationally Redshifted Crimson & Violet, Relativistically Blueshifted Cyan, Incandescent Penrose Beaming Gold & Pure White.
+
+## kinetic_electrohydrodynamic_taylor_cone_2d
+- **Date**: 2026-09-10
+- **Type**: Animation (1080 frames, 60fps)
+- **Concept**: 2D electrohydrodynamic (EHD) simulation of Maxwell stress deformation on a pendant liquid meniscus, capturing the formation of the critical 49.3-degree Taylor cone singularity, Laplace electrostatic equipotential field contours, whipping micro-jet instability, and Coulombic electrospray ion aerosol kinematics.
+- **Techniques**: Analytical Taylor cone cusp formulation, electrostatic potential field synthesis, whipping kink instability wave equation, surface normal gradient specular shading, and Lagrangian charged particle kinematics.
+- **Palette**: High-Voltage Vacuum Obsidian, Ionizing Neon Violet & Ozone Cyan, Incandescent Solar White-Gold.
+
+## kinetic_polygonal_hydraulic_jump_2d
+- **Date**: 2026-09-10
+- **Type**: Animation (1080 frames, 60fps)
+- **Concept**: 2D fluid dynamics simulation of circular and polygonal hydraulic jumps, modeling supercritical thin-film radial flow, Rayleigh-Plateau azimuthal symmetry-breaking bifurcations into rotating polygonal stars, standing corner recirculation vortices, and concentric capillary wave trains.
+- **Techniques**: Multi-harmonic polygonal boundary mode synthesis, tanh shockfront transition modeling, surface normal gradient calculation for dual Blinn-Phong specular liquid lighting, and Lagrangian micro-droplet tracer kinematics.
+- **Palette**: Abyssal Hydrodynamic Obsidian & Cobalt, Bioluminescent Liquid Cyan & Aquamarine, Incandescent Solar Gold & Foam White.
+
 ## kinetic_kam_torus_hamiltonian_resonances_2d
 - **Date**: 2026-09-07
 - **Type**: Animation (1080 frames, 60fps)

@@ -8,6 +8,24 @@ The Artist reads this file before starting a new sketch to understand preference
 
 
 
+## kinetic_kerr_ergosphere_penrose_process_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_electrohydrodynamic_taylor_cone_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_polygonal_hydraulic_jump_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
 ## kinetic_kam_torus_hamiltonian_resonances_2d
 
 - **Rating**: 

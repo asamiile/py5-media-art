@@ -1,3 +1,10 @@
+## kinetic_topological_edge_magnetoplasmon_2d
+- **Date**: 2026-09-12
+- **Type**: Animation (1080 frames, 60fps)
+- **Concept**: 2D mesoscopic quantum Hall simulation of chiral Edge Magnetoplasmons (EMPs) and cyclotron skipping orbits in a 2D Electron Gas (2DEG), capturing Landau level bulk incompressibility, time-reversal symmetry-broken unidirectional edge channels, Quantum Point Contact (QPC) coherent tunneling, and Aharonov-Bohm quantum phase interferometry.
+- **Techniques**: Broken time-reversal chiral edge potential formulation, non-linear QPC saddle-point tunneling synthesis, Aharonov-Bohm phase fringe modulation, and Lagrangian cycloidal skipping orbit kinematics.
+- **Palette**: Cryogenic Obsidian Void & Bulk Landau Indigo, Chiral Topological Electric Cyan & Emerald Mint, Incandescent QPC Tunneling Solar Gold & Aharonov-Bohm Violet.
+
 ## kinetic_plasma_wakefield_bubble_acceleration_2d
 - **Date**: 2026-09-12
 - **Type**: Animation (1080 frames, 60fps)

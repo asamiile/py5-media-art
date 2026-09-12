@@ -1,3 +1,10 @@
+## kinetic_rayleigh_plateau_capillary_pinchoff_2d
+- **Date**: 2026-09-12
+- **Type**: Animation (1080 frames, 60fps)
+- **Concept**: 2D non-linear fluid dynamics simulation of Rayleigh-Plateau capillary jet breakup, finite-time necking singularities, self-similar Eggers cusps, micro-satellite droplet bead cascades, capillary recoil ripples, and droplet quadrupole oscillations.
+- **Techniques**: Analytical Rayleigh-Plateau spatial growth formulation, Eggers pinch-off singularity cusp modeling, smooth zero-clamped implicit fluid existence envelopes, dual-light Blinn-Phong specular liquid chrome shading, and Lagrangian capillary aerosol and vortex tracer kinematics.
+- **Palette**: Cryogenic Vacuum Obsidian Void & Deep Liquid Chromium, Oscillating Liquid Mercury & Electric Glacial Cyan, Incandescent Singularity Diamond-White & Solar Gold Caustics.
+
 ## kinetic_solutal_marangoni_tears_of_wine_2d
 - **Date**: 2026-09-12
 - **Type**: Animation (1080 frames, 60fps)

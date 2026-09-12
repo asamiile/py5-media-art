@@ -8,6 +8,12 @@ The Artist reads this file before starting a new sketch to understand preference
 
 
 
+## kinetic_supersonic_shock_diamonds_mach_disk_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
 ## kinetic_kerr_ergosphere_penrose_process_2d
 
 - **Rating**: 
@@ -34,7 +40,7 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## kinetic_belousov_zhabotinsky_spiral_waves_2d
 
-- **Rating**: 
+- **Rating**: OK
 - **Comment**: 
 
 
@@ -52,7 +58,7 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## kinetic_faraday_quasicrystal_resonances_2d
 
-- **Rating**: 
+- **Rating**: OK
 - **Comment**: 
 
 
@@ -88,7 +94,7 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## kinetic_benjamin_feir_rogue_waves_2d
 
-- **Rating**: 
+- **Rating**: OK
 - **Comment**: 
 
 
@@ -118,19 +124,19 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## kinetic_kuramoto_chimera_states_2d
 
-- **Rating**: 
+- **Rating**: OK
 - **Comment**: 
 
 
 ## kinetic_skyrmion_llg_dynamics_2d
 
-- **Rating**: 
+- **Rating**: OK
 - **Comment**: 
 
 
 ## kinetic_aharonov_bohm_quantum_2d
 
-- **Rating**: 
+- **Rating**: OK
 - **Comment**: 
 
 

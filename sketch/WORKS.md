@@ -1,3 +1,10 @@
+## kinetic_supersonic_shock_diamonds_mach_disk_2d
+- **Date**: 2026-09-12
+- **Type**: Animation (1080 frames, 60fps)
+- **Concept**: 2D compressible gas dynamics simulation of an underexpanded supersonic rocket plume, capturing Prandtl-Meyer expansion fans, oblique shock diamond reflections, normal Mach disk stems, acoustic screech resonance oscillations, Schlieren refractivity optics, and supersonic Lagrangian plasma spark kinematics.
+- **Techniques**: Multi-cell supersonic shock diamond synthesis, normal Mach stem normal shock modeling, acoustic screech feedback loop, Schlieren density gradient optics, and supersonic Lagrangian plasma filament advection.
+- **Palette**: Abyssal Exhaust Void Obsidian, Supersonic Expansion Cobalt & Indigo, Ionized Shock Cyan & Electric Teal, Incandescent Mach Disk White-Gold & Core Violet.
+
 ## kinetic_kerr_ergosphere_penrose_process_2d
 - **Date**: 2026-09-10
 - **Type**: Animation (1080 frames, 60fps)

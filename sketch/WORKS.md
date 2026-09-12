@@ -1,3 +1,10 @@
+## kinetic_leidenfrost_star_vapor_levitation_2d
+- **Date**: 2026-09-12
+- **Type**: Animation (1080 frames, 60fps)
+- **Concept**: 2D hydrodynamic and thermo-capillary simulation of an oscillating Leidenfrost star droplet levitating on a boiling vapor cushion over a superheated substrate, capturing Rayleigh-Lamb capillary star mode oscillations ($m=3..7$), thin-film optical interference fringes (Newton's rings), internal Marangoni toroidal convection rolls, and Rayleigh-Plateau capillary tip pinch-off shedding micro-satellite droplets.
+- **Techniques**: Sub-harmonic Rayleigh-Lamb capillary star dispersion, dual-layer caustic meniscus modeling, Fabry-Pérot thin-film interference fringe synthesis, 3D specular liquid chrome normal shading, and Lagrangian satellite pearl and Marangoni tracer kinematics.
+- **Palette**: Substrate Obsidian Void & Thermal Infrared Charcoal, Oscillating Liquid Core Cobalt & Glacial Azure, Incandescent Vapor Cushion White-Gold & Thin-Film Iridescent Violet.
+
 ## kinetic_topological_edge_magnetoplasmon_2d
 - **Date**: 2026-09-12
 - **Type**: Animation (1080 frames, 60fps)

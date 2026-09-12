@@ -1,3 +1,10 @@
+## kinetic_baroclinic_rossby_wave_jet_stream_2d
+- **Date**: 2026-09-12
+- **Type**: Animation (1080 frames, 60fps)
+- **Concept**: 2D geophysical fluid dynamics simulation of planetary baroclinic instability, pentagonal Rossby wave jet stream meanders, cut-off cyclonic cold pool eddies, polar vortex pinwheel potential vorticity bands, and jet-streak ageostrophic wind acceleration.
+- **Techniques**: Analytical Rossby planetary wave kinematics with harmonic frontogenesis steepening, multi-core nested isotach stream-tube synthesis, 3D Blinn-Phong specular geopotential relief normal shading, and Lagrangian atmospheric parcel advection.
+- **Palette**: Arctic Stratosphere Obsidian Void & Deep Polar Indigo Abyss, Baroclinic Jet Ribbons, Glacial Cyan & Sapphire Isotachs, Incandescent Jet-Streak Fronts Diamond-White & Solar Gold Cyclonic Nodes.
+
 ## kinetic_talbot_carpet_fresnel_diffraction_2d
 - **Date**: 2026-09-12
 - **Type**: Animation (1080 frames, 60fps)

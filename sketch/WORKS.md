@@ -1,3 +1,10 @@
+## kinetic_plasma_wakefield_bubble_acceleration_2d
+- **Date**: 2026-09-12
+- **Type**: Animation (1080 frames, 60fps)
+- **Concept**: 2D relativistic laser-plasma wakefield simulation in the non-linear blowout/bubble regime, modeling ponderomotive electron cavitation, multi-gigavolt/meter longitudinal accelerating fields, relativistic sheath curvature, serpentine betatron oscillations, and forward-beamed synchrotron x-ray emission.
+- **Techniques**: Non-linear relativistic ion bubble blowout formulation, linear longitudinal accelerating gradient synthesis, Panofsky-Wenzel transverse focusing field modeling, and Lagrangian betatron electron bunch kinematics.
+- **Palette**: Deep Relativistic Vacuum Obsidian, Ion Cavity Cobalt & Cold Plasma Indigo, Relativistic Sheath Cyan & Ozone Blue, Trapped Witness Bunch White-Gold & Betatron Synchrotron Violet.
+
 ## kinetic_supersonic_shock_diamonds_mach_disk_2d
 - **Date**: 2026-09-12
 - **Type**: Animation (1080 frames, 60fps)

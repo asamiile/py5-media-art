@@ -8,6 +8,12 @@ The Artist reads this file before starting a new sketch to understand preference
 
 
 
+## kinetic_plasma_wakefield_bubble_acceleration_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
 ## kinetic_supersonic_shock_diamonds_mach_disk_2d
 
 - **Rating**: 

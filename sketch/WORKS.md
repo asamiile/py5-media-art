@@ -1,3 +1,10 @@
+## kinetic_mhd_alfven_wave_coronal_loop_2d
+- **Date**: 2026-09-12
+- **Type**: Animation (1080 frames, 60fps)
+- **Concept**: 2D magnetohydrodynamic (MHD) simulation of solar coronal loop heating, capturing counter-propagating Elsässer Alfvén wave packets ($z^+$ and $z^-$), multi-strand braided magnetic flux ropes, Parker current sheet reconnection nanoflares, and chromospheric spicule fountain eruptions.
+- **Techniques**: Analytical dipolar magnetic flux formulation $\psi(X, Y)$, non-linear Elsässer wave collision dynamics, Parker current sheet braiding synthesis, and magnetically confined field-aligned Lagrangian particle kinematics.
+- **Palette**: Solar Corona Obsidian Void & Deep Chromospheric Indigo, Braided Magnetic Flux Ropes Electric Amber & Coronal Cyan, Incandescent Nanoflare Reconnection Diamond-White & Extreme UV Violet.
+
 ## kinetic_leidenfrost_star_vapor_levitation_2d
 - **Date**: 2026-09-12
 - **Type**: Animation (1080 frames, 60fps)

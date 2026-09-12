@@ -1,3 +1,10 @@
+## kinetic_talbot_carpet_fresnel_diffraction_2d
+- **Date**: 2026-09-12
+- **Type**: Animation (1080 frames, 60fps)
+- **Concept**: 2D wave optics and near-field quantum simulation of the Talbot Effect and Fresnel Diffraction Carpet, capturing periodic integer and fractional self-imaging revivals, Berry-Klein fractal quantum carpets, Poynting energy streamlines with optical phase singularities, and Bohmian photon tracer trajectories coursing through Talbot caustic funnels.
+- **Techniques**: Analytical paraxial Fresnel harmonic propagator with quadratic phase dispersion, dynamic aperture slit breathing modulation, Kerr optical self-focusing, 3D Blinn-Phong specular relief normal shading, and Lagrangian Bohmian photon kinematics.
+- **Palette**: Quantum Vacuum Obsidian Void & Deep Indigo Shadow, Coherent Laser Azure & Electric Glacial Cyan Interference Fringes, Incandescent Talbot Focal Knots Diamond-White & Solar Gold Caustics.
+
 ## kinetic_rayleigh_plateau_capillary_pinchoff_2d
 - **Date**: 2026-09-12
 - **Type**: Animation (1080 frames, 60fps)

@@ -8,6 +8,12 @@ The Artist reads this file before starting a new sketch to understand preference
 
 
 
+## kinetic_talbot_carpet_fresnel_diffraction_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
 ## kinetic_rayleigh_plateau_capillary_pinchoff_2d
 
 - **Rating**: 

@@ -8,6 +8,60 @@ The Artist reads this file before starting a new sketch to understand preference
 
 
 
+## kinetic_baroclinic_rossby_wave_jet_stream_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_talbot_carpet_fresnel_diffraction_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_rayleigh_plateau_capillary_pinchoff_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_solutal_marangoni_tears_of_wine_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_mhd_alfven_wave_coronal_loop_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_leidenfrost_star_vapor_levitation_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_topological_edge_magnetoplasmon_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_plasma_wakefield_bubble_acceleration_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_supersonic_shock_diamonds_mach_disk_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
 ## kinetic_kerr_ergosphere_penrose_process_2d
 
 - **Rating**: 
@@ -34,7 +88,7 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## kinetic_belousov_zhabotinsky_spiral_waves_2d
 
-- **Rating**: 
+- **Rating**: OK
 - **Comment**: 
 
 
@@ -52,7 +106,7 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## kinetic_faraday_quasicrystal_resonances_2d
 
-- **Rating**: 
+- **Rating**: OK
 - **Comment**: 
 
 
@@ -88,7 +142,7 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## kinetic_benjamin_feir_rogue_waves_2d
 
-- **Rating**: 
+- **Rating**: OK
 - **Comment**: 
 
 
@@ -118,19 +172,19 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## kinetic_kuramoto_chimera_states_2d
 
-- **Rating**: 
+- **Rating**: OK
 - **Comment**: 
 
 
 ## kinetic_skyrmion_llg_dynamics_2d
 
-- **Rating**: 
+- **Rating**: OK
 - **Comment**: 
 
 
 ## kinetic_aharonov_bohm_quantum_2d
 
-- **Rating**: 
+- **Rating**: OK
 - **Comment**: 
 
 

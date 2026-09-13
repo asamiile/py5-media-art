@@ -1,3 +1,66 @@
+## kinetic_baroclinic_rossby_wave_jet_stream_2d
+- **Date**: 2026-09-12
+- **Type**: Animation (1080 frames, 60fps)
+- **Concept**: 2D geophysical fluid dynamics simulation of planetary baroclinic instability, pentagonal Rossby wave jet stream meanders, cut-off cyclonic cold pool eddies, polar vortex pinwheel potential vorticity bands, and jet-streak ageostrophic wind acceleration.
+- **Techniques**: Analytical Rossby planetary wave kinematics with harmonic frontogenesis steepening, multi-core nested isotach stream-tube synthesis, 3D Blinn-Phong specular geopotential relief normal shading, and Lagrangian atmospheric parcel advection.
+- **Palette**: Arctic Stratosphere Obsidian Void & Deep Polar Indigo Abyss, Baroclinic Jet Ribbons, Glacial Cyan & Sapphire Isotachs, Incandescent Jet-Streak Fronts Diamond-White & Solar Gold Cyclonic Nodes.
+
+## kinetic_talbot_carpet_fresnel_diffraction_2d
+- **Date**: 2026-09-12
+- **Type**: Animation (1080 frames, 60fps)
+- **Concept**: 2D wave optics and near-field quantum simulation of the Talbot Effect and Fresnel Diffraction Carpet, capturing periodic integer and fractional self-imaging revivals, Berry-Klein fractal quantum carpets, Poynting energy streamlines with optical phase singularities, and Bohmian photon tracer trajectories coursing through Talbot caustic funnels.
+- **Techniques**: Analytical paraxial Fresnel harmonic propagator with quadratic phase dispersion, dynamic aperture slit breathing modulation, Kerr optical self-focusing, 3D Blinn-Phong specular relief normal shading, and Lagrangian Bohmian photon kinematics.
+- **Palette**: Quantum Vacuum Obsidian Void & Deep Indigo Shadow, Coherent Laser Azure & Electric Glacial Cyan Interference Fringes, Incandescent Talbot Focal Knots Diamond-White & Solar Gold Caustics.
+
+## kinetic_rayleigh_plateau_capillary_pinchoff_2d
+- **Date**: 2026-09-12
+- **Type**: Animation (1080 frames, 60fps)
+- **Concept**: 2D non-linear fluid dynamics simulation of Rayleigh-Plateau capillary jet breakup, finite-time necking singularities, self-similar Eggers cusps, micro-satellite droplet bead cascades, capillary recoil ripples, and droplet quadrupole oscillations.
+- **Techniques**: Analytical Rayleigh-Plateau spatial growth formulation, Eggers pinch-off singularity cusp modeling, smooth zero-clamped implicit fluid existence envelopes, dual-light Blinn-Phong specular liquid chrome shading, and Lagrangian capillary aerosol and vortex tracer kinematics.
+- **Palette**: Cryogenic Vacuum Obsidian Void & Deep Liquid Chromium, Oscillating Liquid Mercury & Electric Glacial Cyan, Incandescent Singularity Diamond-White & Solar Gold Caustics.
+
+## kinetic_solutal_marangoni_tears_of_wine_2d
+- **Date**: 2026-09-12
+- **Type**: Animation (1080 frames, 60fps)
+- **Concept**: 2D non-equilibrium fluid dynamics simulation of the solutal Marangoni effect (the Tears of Wine / lacrimae vini instability), capturing upward surface tension gradient pumping, rim accumulation, contact-line finger instabilities, cascading pendant droplets, and alcohol vapor wisps.
+- **Techniques**: Lubrication thin-film Marangoni formulation, contact-line finger perturbation synthesis, smooth asymptotic sigmoidal meniscus modeling, 3D Blinn-Phong specular glass caustics, and Lagrangian tear droplet and vapor kinematics.
+- **Palette**: Wine-Cellar Obsidian Void & Deep Cabernet Violet, Solutal Fluid Ribbon Burgundy, Ruby & Glacial Azure, Incandescent Meniscus White-Gold & Alcohol Vapor Wisps.
+
+## kinetic_mhd_alfven_wave_coronal_loop_2d
+- **Date**: 2026-09-12
+- **Type**: Animation (1080 frames, 60fps)
+- **Concept**: 2D magnetohydrodynamic (MHD) simulation of solar coronal loop heating, capturing counter-propagating Elsässer Alfvén wave packets ($z^+$ and $z^-$), multi-strand braided magnetic flux ropes, Parker current sheet reconnection nanoflares, and chromospheric spicule fountain eruptions.
+- **Techniques**: Analytical dipolar magnetic flux formulation $\psi(X, Y)$, non-linear Elsässer wave collision dynamics, Parker current sheet braiding synthesis, and magnetically confined field-aligned Lagrangian particle kinematics.
+- **Palette**: Solar Corona Obsidian Void & Deep Chromospheric Indigo, Braided Magnetic Flux Ropes Electric Amber & Coronal Cyan, Incandescent Nanoflare Reconnection Diamond-White & Extreme UV Violet.
+
+## kinetic_leidenfrost_star_vapor_levitation_2d
+- **Date**: 2026-09-12
+- **Type**: Animation (1080 frames, 60fps)
+- **Concept**: 2D hydrodynamic and thermo-capillary simulation of an oscillating Leidenfrost star droplet levitating on a boiling vapor cushion over a superheated substrate, capturing Rayleigh-Lamb capillary star mode oscillations ($m=3..7$), thin-film optical interference fringes (Newton's rings), internal Marangoni toroidal convection rolls, and Rayleigh-Plateau capillary tip pinch-off shedding micro-satellite droplets.
+- **Techniques**: Sub-harmonic Rayleigh-Lamb capillary star dispersion, dual-layer caustic meniscus modeling, Fabry-Pérot thin-film interference fringe synthesis, 3D specular liquid chrome normal shading, and Lagrangian satellite pearl and Marangoni tracer kinematics.
+- **Palette**: Substrate Obsidian Void & Thermal Infrared Charcoal, Oscillating Liquid Core Cobalt & Glacial Azure, Incandescent Vapor Cushion White-Gold & Thin-Film Iridescent Violet.
+
+## kinetic_topological_edge_magnetoplasmon_2d
+- **Date**: 2026-09-12
+- **Type**: Animation (1080 frames, 60fps)
+- **Concept**: 2D mesoscopic quantum Hall simulation of chiral Edge Magnetoplasmons (EMPs) and cyclotron skipping orbits in a 2D Electron Gas (2DEG), capturing Landau level bulk incompressibility, time-reversal symmetry-broken unidirectional edge channels, Quantum Point Contact (QPC) coherent tunneling, and Aharonov-Bohm quantum phase interferometry.
+- **Techniques**: Broken time-reversal chiral edge potential formulation, non-linear QPC saddle-point tunneling synthesis, Aharonov-Bohm phase fringe modulation, and Lagrangian cycloidal skipping orbit kinematics.
+- **Palette**: Cryogenic Obsidian Void & Bulk Landau Indigo, Chiral Topological Electric Cyan & Emerald Mint, Incandescent QPC Tunneling Solar Gold & Aharonov-Bohm Violet.
+
+## kinetic_plasma_wakefield_bubble_acceleration_2d
+- **Date**: 2026-09-12
+- **Type**: Animation (1080 frames, 60fps)
+- **Concept**: 2D relativistic laser-plasma wakefield simulation in the non-linear blowout/bubble regime, modeling ponderomotive electron cavitation, multi-gigavolt/meter longitudinal accelerating fields, relativistic sheath curvature, serpentine betatron oscillations, and forward-beamed synchrotron x-ray emission.
+- **Techniques**: Non-linear relativistic ion bubble blowout formulation, linear longitudinal accelerating gradient synthesis, Panofsky-Wenzel transverse focusing field modeling, and Lagrangian betatron electron bunch kinematics.
+- **Palette**: Deep Relativistic Vacuum Obsidian, Ion Cavity Cobalt & Cold Plasma Indigo, Relativistic Sheath Cyan & Ozone Blue, Trapped Witness Bunch White-Gold & Betatron Synchrotron Violet.
+
+## kinetic_supersonic_shock_diamonds_mach_disk_2d
+- **Date**: 2026-09-12
+- **Type**: Animation (1080 frames, 60fps)
+- **Concept**: 2D compressible gas dynamics simulation of an underexpanded supersonic rocket plume, capturing Prandtl-Meyer expansion fans, oblique shock diamond reflections, normal Mach disk stems, acoustic screech resonance oscillations, Schlieren refractivity optics, and supersonic Lagrangian plasma spark kinematics.
+- **Techniques**: Multi-cell supersonic shock diamond synthesis, normal Mach stem normal shock modeling, acoustic screech feedback loop, Schlieren density gradient optics, and supersonic Lagrangian plasma filament advection.
+- **Palette**: Abyssal Exhaust Void Obsidian, Supersonic Expansion Cobalt & Indigo, Ionized Shock Cyan & Electric Teal, Incandescent Mach Disk White-Gold & Core Violet.
+
 ## kinetic_kerr_ergosphere_penrose_process_2d
 - **Date**: 2026-09-10
 - **Type**: Animation (1080 frames, 60fps)

@@ -8,6 +8,12 @@ The Artist reads this file before starting a new sketch to understand preference
 
 
 
+## kinetic_cherenkov_radiation_shock_front_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
 ## kinetic_baroclinic_rossby_wave_jet_stream_2d
 
 - **Rating**: 

@@ -1,3 +1,10 @@
+## kinetic_cherenkov_radiation_shock_front_2d
+- **Date**: 2026-09-19
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: 2D electrodynamic and relativistic quantum simulation of Cherenkov Radiation and superluminal shock wavefronts in a dielectric medium, capturing asymmetric Mach shock cone geometry, Frank-Tamm chromatic spectral dispersion, Bremsstrahlung deceleration daughter cones, and liquid caustic normal reflections.
+- **Techniques**: Analytical relativistic Huygens shock envelope formulation, Frank-Tamm frequency-dependent dispersion synthesis, smooth sigmoidal shockfront transition modeling, dual Blinn-Phong specular caustic normal shading, and Lagrangian scintillation photon, ionization ember, and delta-ray kinematics.
+- **Palette**: Reactor Pool Obsidian Void & Midnight Indigo Abyss, Cherenkov Shock Wavefronts Electric Cyan & Glacial Azure, Deep Violet & Actinic Ultraviolet Fluorescent Glow, Incandescent Lepton Core Diamond-White & Bremsstrahlung Gold Caustics.
+
 ## kinetic_baroclinic_rossby_wave_jet_stream_2d
 - **Date**: 2026-09-12
 - **Type**: Animation (1080 frames, 60fps)

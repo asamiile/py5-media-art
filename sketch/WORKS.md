@@ -1,3 +1,10 @@
+## kinetic_bloch_oscillations_zener_tunneling_2d
+- **Date**: 2026-09-19
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: 2D quantum mechanical simulation of Bloch Oscillations and Landau-Zener Inter-Band Tunneling in a periodic optical crystal lattice, modeling Lissajous wavepacket orbits, Wannier-Stark ladder resonance fringes, and turning-point tunneling spark bursts.
+- **Techniques**: Tight-binding Schrödinger-Bloch wavepacket formulation, non-adiabatic Landau-Zener inter-band probability tunneling, Wannier-Stark tilted potential resonance modeling, dual Blinn-Phong specular quantum potential normal shading, and Lagrangian Bohmian tracer, tunneling spark, and lattice-well ember kinematics.
+- **Palette**: Quantum Lattice Obsidian Void & Deep Sub-Band Indigo, Luminous Emerald & Mint Wavefronts, Deep Amethyst & Radiant Violet Inter-Band Glow, Incandescent Zener Tunneling Spark Diamond-White & Solar Gold.
+
 ## kinetic_superfluid_helium_fountain_effect_2d
 - **Date**: 2026-09-19
 - **Type**: Animation (900 frames, 60fps)

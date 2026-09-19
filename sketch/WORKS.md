@@ -1,3 +1,10 @@
+## kinetic_poynting_robertson_dust_spiral_2d
+- **Date**: 2026-09-19
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: 2D astrophysical simulation of the Poynting-Robertson radiation drag effect, mean-motion orbital resonance trapping, and solar sublimation flashes within a circumstellar protoplanetary debris disk.
+- **Techniques**: Symplectic Verlet integration of relativistic radiation pressure drag, N-body protoplanet gravitational resonance perturbation, optical density field accumulation with Blinn-Phong specular forward Mie scattering sheen, and Lagrangian sublimation ionization spark kinematics.
+- **Palette**: Cosmic Vacuum Obsidian Void & Stellar Indigo, Resonant Dust Bands & Zodiacal Sheen Radiant Amber & Warm Copper, Solar Core & Sublimation Flash Incandescent Gold & Plasma Cyan.
+
 ## kinetic_acoustic_black_hole_hawking_radiation_2d
 - **Date**: 2026-09-19
 - **Type**: Animation (900 frames, 60fps)

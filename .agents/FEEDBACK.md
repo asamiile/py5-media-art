@@ -8,6 +8,12 @@ The Artist reads this file before starting a new sketch to understand preference
 
 
 
+## kinetic_superfluid_helium_fountain_effect_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
 ## kinetic_cherenkov_radiation_shock_front_2d
 
 - **Rating**: 

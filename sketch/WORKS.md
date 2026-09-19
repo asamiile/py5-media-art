@@ -1,3 +1,10 @@
+## kinetic_superfluid_helium_fountain_effect_2d
+- **Date**: 2026-09-19
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: 2D macroscopic quantum simulation of the Superfluid Helium Fountain Effect (thermomechanical effect) and two-fluid hydrodynamics in Liquid Helium-II, capturing zero-viscosity geyser eruptions, parabolic ballistic umbrella curtains, thermal second sound entropy waves, and Rollin creeping film capillarity.
+- **Techniques**: Landau-Tisza two-fluid thermomechanical formulation ($\Delta P = \rho S \Delta T$), parabolic ballistic jet stream modeling, second sound radial wave propagation, dual Blinn-Phong specular liquid chrome and thermal normal shading, and Lagrangian ballistic helium pearl, thermal phonon, and vortex kinematics.
+- **Palette**: Sub-Kelvin Cryogenic Vacuum Obsidian Void & Indigo Abyss, Superfluid Helium Plume Electric Cyan & Glacial Azure, Thermal Infrared Superleak Glow Amber, Incandescent Fountain Crest Diamond-White & Quantum Vortex Violet.
+
 ## kinetic_cherenkov_radiation_shock_front_2d
 - **Date**: 2026-09-19
 - **Type**: Animation (900 frames, 60fps)

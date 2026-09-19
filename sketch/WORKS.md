@@ -1,3 +1,10 @@
+## kinetic_moire_flat_band_superlattice_2d
+- **Date**: 2026-09-19
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: 2D quantum condensed matter simulation of Moiré Flat Bands and Topological Soliton Superlattices in twisted bilayer systems, modeling dynamic Moiré period breathing, AA-stacking Local Density of States (LDOS) quantum dot localization, and chiral AB/BA domain-wall networks.
+- **Techniques**: Bistritzer-MacDonald continuum model formulation, hexagonal Moiré wavevector harmonic superposition, dynamic twist angle modulation, dual Blinn-Phong specular liquid chrome and copper normal shading, and Lagrangian Moiré exciton and domain-wall soliton kinematics.
+- **Palette**: Graphene Substrate Obsidian Void & Deep Carbon Indigo, AA Flat-Band Molten Copper & Warm Rose Gold, Topological Domain-Wall Sapphire & Electric Iris Violet, Incandescent AA Quantum Dot Core Diamond-White & Solar Platinum.
+
 ## kinetic_bloch_oscillations_zener_tunneling_2d
 - **Date**: 2026-09-19
 - **Type**: Animation (900 frames, 60fps)

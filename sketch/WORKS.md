@@ -1,3 +1,10 @@
+## kinetic_acoustic_black_hole_hawking_radiation_2d
+- **Date**: 2026-09-19
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: 2D analogue gravity simulation of an Acoustic Black Hole (dumb hole) in a transonic de Laval nozzle flow, modeling the sonic event horizon ($v = c_s$), Bogoliubov dispersion, upstream escaping Hawking phonons, and infalling blueshifted partner modes.
+- **Techniques**: Transonic hydrodynamic wave equation with spatially varying advection velocity, Bogoliubov anomalous acoustic dispersion synthesis, de Laval nozzle geometry modeling, dual Blinn-Phong specular acoustic pressure normal shading, and Lagrangian quantum phonon pair and micro-cavitation kinematics.
+- **Palette**: Transonic Acoustic Vacuum Obsidian Void & Midnight Navy, Escaping Hawking Dispersive Waves Cobalt & Electric Cyan, Sonic Horizon Luminous Platinum & Ice White, Supersonic Interior Deep Amethyst & Dark Teal.
+
 ## kinetic_moire_flat_band_superlattice_2d
 - **Date**: 2026-09-19
 - **Type**: Animation (900 frames, 60fps)

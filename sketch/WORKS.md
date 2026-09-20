@@ -1,3 +1,10 @@
+## kinetic_relativistic_jet_helical_kink_2d
+- **Date**: 2026-09-20
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: 2D relativistic magnetohydrodynamic simulation of the current-driven $m=1$ helical kink instability in an astrophysical plasma jet, capturing Kruskal-Shafranov threshold collapse, relativistic Doppler beaming asymmetry, internal recollimation shock diamond knots, braided helical flux ropes, and turbulent cocoon expansion.
+- **Techniques**: 3D helical kink mode formulation projected onto 2D with relativistic Doppler factor $\delta^3$, braided magnetic flux rope topology, standing recollimation shock synthesis, dual-light Blinn-Phong specular plasma chrome normal shading, and Lagrangian synchrotron lepton and shock flare spark kinematics.
+- **Palette**: Doppler-Boosted Spine Electric Glacial Cyan & Luminous Sapphire, Cocoon Plasma & Braided Flux Ropes Incandescent Amber & Solar Gold, Recollimation Shock Diamonds Diamond-White & Solar Platinum, Extragalactic Vacuum Abyss.
+
 ## kinetic_quantum_vortex_reconnection_2d
 - **Date**: 2026-09-20
 - **Type**: Animation (900 frames, 60fps)

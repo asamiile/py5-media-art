@@ -8,6 +8,48 @@ The Artist reads this file before starting a new sketch to understand preference
 
 
 
+## kinetic_dynamical_casimir_vacuum_radiation_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_poynting_robertson_dust_spiral_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_acoustic_black_hole_hawking_radiation_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_moire_flat_band_superlattice_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_bloch_oscillations_zener_tunneling_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_superfluid_helium_fountain_effect_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_cherenkov_radiation_shock_front_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
 ## kinetic_baroclinic_rossby_wave_jet_stream_2d
 
 - **Rating**: 

@@ -1,3 +1,52 @@
+## kinetic_dynamical_casimir_vacuum_radiation_2d
+- **Date**: 2026-09-19
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: 2D quantum electrodynamics simulation of the Dynamical Casimir Effect (DCE), converting zero-point vacuum fluctuations into real, entangled photon pairs via a relativistic oscillating boundary mirror.
+- **Techniques**: 2D continuous parametric wavefield formulation, Moore relativistic cavity boundary modeling, two-mode quadrature squeezing, normal-mapped Blinn-Phong specular glint shading, and Lagrangian entangled photon pair and catenary filament kinematics.
+- **Palette**: Quantum Vacuum Ground State Obsidian Void & Deep Navy, Squeezed Radiation Wavefronts Radiant Electric Cyan & Cosmic Violet, Relativistic Mirror Core Diamond-White & Solar Platinum.
+
+## kinetic_poynting_robertson_dust_spiral_2d
+- **Date**: 2026-09-19
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: 2D astrophysical simulation of the Poynting-Robertson radiation drag effect, mean-motion orbital resonance trapping, and solar sublimation flashes within a circumstellar protoplanetary debris disk.
+- **Techniques**: Symplectic Verlet integration of relativistic radiation pressure drag, N-body protoplanet gravitational resonance perturbation, optical density field accumulation with Blinn-Phong specular forward Mie scattering sheen, and Lagrangian sublimation ionization spark kinematics.
+- **Palette**: Cosmic Vacuum Obsidian Void & Stellar Indigo, Resonant Dust Bands & Zodiacal Sheen Radiant Amber & Warm Copper, Solar Core & Sublimation Flash Incandescent Gold & Plasma Cyan.
+
+## kinetic_acoustic_black_hole_hawking_radiation_2d
+- **Date**: 2026-09-19
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: 2D analogue gravity simulation of an Acoustic Black Hole (dumb hole) in a transonic de Laval nozzle flow, modeling the sonic event horizon ($v = c_s$), Bogoliubov dispersion, upstream escaping Hawking phonons, and infalling blueshifted partner modes.
+- **Techniques**: Transonic hydrodynamic wave equation with spatially varying advection velocity, Bogoliubov anomalous acoustic dispersion synthesis, de Laval nozzle geometry modeling, dual Blinn-Phong specular acoustic pressure normal shading, and Lagrangian quantum phonon pair and micro-cavitation kinematics.
+- **Palette**: Transonic Acoustic Vacuum Obsidian Void & Midnight Navy, Escaping Hawking Dispersive Waves Cobalt & Electric Cyan, Sonic Horizon Luminous Platinum & Ice White, Supersonic Interior Deep Amethyst & Dark Teal.
+
+## kinetic_moire_flat_band_superlattice_2d
+- **Date**: 2026-09-19
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: 2D quantum condensed matter simulation of Moiré Flat Bands and Topological Soliton Superlattices in twisted bilayer systems, modeling dynamic Moiré period breathing, AA-stacking Local Density of States (LDOS) quantum dot localization, and chiral AB/BA domain-wall networks.
+- **Techniques**: Bistritzer-MacDonald continuum model formulation, hexagonal Moiré wavevector harmonic superposition, dynamic twist angle modulation, dual Blinn-Phong specular liquid chrome and copper normal shading, and Lagrangian Moiré exciton and domain-wall soliton kinematics.
+- **Palette**: Graphene Substrate Obsidian Void & Deep Carbon Indigo, AA Flat-Band Molten Copper & Warm Rose Gold, Topological Domain-Wall Sapphire & Electric Iris Violet, Incandescent AA Quantum Dot Core Diamond-White & Solar Platinum.
+
+## kinetic_bloch_oscillations_zener_tunneling_2d
+- **Date**: 2026-09-19
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: 2D quantum mechanical simulation of Bloch Oscillations and Landau-Zener Inter-Band Tunneling in a periodic optical crystal lattice, modeling Lissajous wavepacket orbits, Wannier-Stark ladder resonance fringes, and turning-point tunneling spark bursts.
+- **Techniques**: Tight-binding Schrödinger-Bloch wavepacket formulation, non-adiabatic Landau-Zener inter-band probability tunneling, Wannier-Stark tilted potential resonance modeling, dual Blinn-Phong specular quantum potential normal shading, and Lagrangian Bohmian tracer, tunneling spark, and lattice-well ember kinematics.
+- **Palette**: Quantum Lattice Obsidian Void & Deep Sub-Band Indigo, Luminous Emerald & Mint Wavefronts, Deep Amethyst & Radiant Violet Inter-Band Glow, Incandescent Zener Tunneling Spark Diamond-White & Solar Gold.
+
+## kinetic_superfluid_helium_fountain_effect_2d
+- **Date**: 2026-09-19
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: 2D macroscopic quantum simulation of the Superfluid Helium Fountain Effect (thermomechanical effect) and two-fluid hydrodynamics in Liquid Helium-II, capturing zero-viscosity geyser eruptions, parabolic ballistic umbrella curtains, thermal second sound entropy waves, and Rollin creeping film capillarity.
+- **Techniques**: Landau-Tisza two-fluid thermomechanical formulation ($\Delta P = \rho S \Delta T$), parabolic ballistic jet stream modeling, second sound radial wave propagation, dual Blinn-Phong specular liquid chrome and thermal normal shading, and Lagrangian ballistic helium pearl, thermal phonon, and vortex kinematics.
+- **Palette**: Sub-Kelvin Cryogenic Vacuum Obsidian Void & Indigo Abyss, Superfluid Helium Plume Electric Cyan & Glacial Azure, Thermal Infrared Superleak Glow Amber, Incandescent Fountain Crest Diamond-White & Quantum Vortex Violet.
+
+## kinetic_cherenkov_radiation_shock_front_2d
+- **Date**: 2026-09-19
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: 2D electrodynamic and relativistic quantum simulation of Cherenkov Radiation and superluminal shock wavefronts in a dielectric medium, capturing asymmetric Mach shock cone geometry, Frank-Tamm chromatic spectral dispersion, Bremsstrahlung deceleration daughter cones, and liquid caustic normal reflections.
+- **Techniques**: Analytical relativistic Huygens shock envelope formulation, Frank-Tamm frequency-dependent dispersion synthesis, smooth sigmoidal shockfront transition modeling, dual Blinn-Phong specular caustic normal shading, and Lagrangian scintillation photon, ionization ember, and delta-ray kinematics.
+- **Palette**: Reactor Pool Obsidian Void & Midnight Indigo Abyss, Cherenkov Shock Wavefronts Electric Cyan & Glacial Azure, Deep Violet & Actinic Ultraviolet Fluorescent Glow, Incandescent Lepton Core Diamond-White & Bremsstrahlung Gold Caustics.
+
 ## kinetic_baroclinic_rossby_wave_jet_stream_2d
 - **Date**: 2026-09-12
 - **Type**: Animation (1080 frames, 60fps)

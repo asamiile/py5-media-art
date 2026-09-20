@@ -10,6 +10,13 @@ The Artist reads this file before starting a new sketch to understand preference
 
 
 
+
+## kinetic_josephson_vortex_swihart_solitons_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
 ## kinetic_optomechanical_cavity_backaction_2d
 
 - **Rating**: 

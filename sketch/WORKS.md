@@ -1,3 +1,10 @@
+## kinetic_josephson_vortex_swihart_solitons_2d
+- **Date**: 2026-09-20
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: 2D quantum superconductivity simulation of relativistic Josephson vortices (fluxons) in a Long Josephson Junction (LJJ), capturing near-Swihart velocity propagation, relativistic Lorentz contraction, trailing Cherenkov plasma wake waves, head-on fluxon-antifluxon topological annihilation bursts, and Meissner supercurrent vortex loops.
+- **Techniques**: Analytical Sine-Gordon soliton electrodynamics with dynamic Lorentz contraction $\gamma_L(v)$, Swihart phase kinematics, plasma breather collision synthesis, dual-light Blinn-Phong specular niobium chrome normal shading, and Lagrangian supercurrent tracer and annihilation spark kinematics.
+- **Palette**: Relativistic Fluxon Cores Incandescent Amber & Solar Gold, Superconducting Electrodes Niobium Slate & Titanium Chrome, Cherenkov Plasma Waves Electric Cyan & Actinic Violet, Annihilation Singularity Diamond-White.
+
 ## kinetic_optomechanical_cavity_backaction_2d
 - **Date**: 2026-09-20
 - **Type**: Animation (900 frames, 60fps)

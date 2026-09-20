@@ -8,6 +8,12 @@ The Artist reads this file before starting a new sketch to understand preference
 
 
 
+## kinetic_dynamical_casimir_vacuum_radiation_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
 ## kinetic_poynting_robertson_dust_spiral_2d
 
 - **Rating**: 

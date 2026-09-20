@@ -1,3 +1,10 @@
+## kinetic_dynamical_casimir_vacuum_radiation_2d
+- **Date**: 2026-09-19
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: 2D quantum electrodynamics simulation of the Dynamical Casimir Effect (DCE), converting zero-point vacuum fluctuations into real, entangled photon pairs via a relativistic oscillating boundary mirror.
+- **Techniques**: 2D continuous parametric wavefield formulation, Moore relativistic cavity boundary modeling, two-mode quadrature squeezing, normal-mapped Blinn-Phong specular glint shading, and Lagrangian entangled photon pair and catenary filament kinematics.
+- **Palette**: Quantum Vacuum Ground State Obsidian Void & Deep Navy, Squeezed Radiation Wavefronts Radiant Electric Cyan & Cosmic Violet, Relativistic Mirror Core Diamond-White & Solar Platinum.
+
 ## kinetic_poynting_robertson_dust_spiral_2d
 - **Date**: 2026-09-19
 - **Type**: Animation (900 frames, 60fps)

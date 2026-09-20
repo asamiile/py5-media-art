@@ -1,3 +1,10 @@
+## kinetic_quantum_vortex_reconnection_2d
+- **Date**: 2026-09-20
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: 2D quantum fluid dynamics simulation of topological vortex reconnection in a Bose-Einstein Condensate (BEC), capturing quantized $2\pi$ phase winding singularities, universal square-root reconnection scaling ($\delta(t) \propto \sqrt{|t - t_0|}$), orthogonal cusp recoil, and explosive acoustic phonon sound bursts.
+- **Techniques**: Gross-Pitaevskii macroscopic wavefunction synthesis $\psi = \sqrt{\rho} e^{i\theta}$, healing-length core density suppression, analytical universal reconnection scaling, dual-light Blinn-Phong specular quantum fluid chrome normal shading, and Lagrangian Bohmian tracer and acoustic reconnection spark kinematics.
+- **Palette**: Condensate Density & Phase Fringes Radiant Emerald Mint & Phosphor Turquoise, Vortex Core Halos Actinic Ultraviolet, Acoustic Shock Waves Electric Cyan, Cusp Detonation Diamond-White & Solar Platinum, Sub-Kelvin Ground State Sapphire Navy.
+
 ## kinetic_josephson_vortex_swihart_solitons_2d
 - **Date**: 2026-09-20
 - **Type**: Animation (900 frames, 60fps)

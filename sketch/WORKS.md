@@ -1,3 +1,10 @@
+## kinetic_richtmyer_meshkov_shock_vortices_2d
+- **Date**: 2026-09-20
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: 2D supersonic hydrodynamic simulation of the Richtmyer-Meshkov Instability (RMI), capturing impulsive shock acceleration of a corrugated density boundary, baroclinic vorticity deposition ($\nabla \rho \times \nabla p$), mushroom spike and bubble formation, vortex sheet Biot-Savart roll-up, and supersonic Mach stem diamond reflections.
+- **Techniques**: Analytical impulsive baroclinic vorticity formulation, multi-mode corrugated interface deformation, compressible Mach diamond wavefield synthesis, dual-light Blinn-Phong specular fluid chrome normal shading, and Lagrangian aerosol tracer and triple-point spark kinematics.
+- **Palette**: Heavy Gas Mushroom Scrolls Molten Copper & Radiant Amber, Supersonic Shock Fronts & Mach Diamonds Electric Cyan & Glacial Azure, Triple-Point Cores Diamond-White & Solar Platinum, Cosmic Vacuum Obsidian Void.
+
 ## kinetic_dynamical_casimir_vacuum_radiation_2d
 - **Date**: 2026-09-19
 - **Type**: Animation (900 frames, 60fps)

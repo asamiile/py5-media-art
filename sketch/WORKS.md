@@ -1,3 +1,10 @@
+## kinetic_optomechanical_cavity_backaction_2d
+- **Date**: 2026-09-20
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: 2D quantum optomechanics simulation of radiation-pressure dynamical backaction, capturing self-sustained limit cycle mechanical oscillations of a compliant cantilever mirror, breathing optical standing waves in a Fabry-Pérot cavity, acoustic phononic emission into the silicon substrate, and photoelastic stress birefringence.
+- **Techniques**: Coupled nonlinear optomechanical equations of motion with Lorentzian cavity transmission resonance, clamped-edge cantilever beam bending kinematics, acoustic substrate wave propagation, dual-light Blinn-Phong specular dielectric chrome normal shading, and Lagrangian photon, phonon, and cavity spark kinematics.
+- **Palette**: Circulating Laser Wavefronts Radiant Ruby Crimson & Coherent Rose, Dielectric Bragg Mirrors Glacial Ice & Electric Sapphire, Acoustic Phonon Rings Phosphor Emerald Mint, Cryogenic Vacuum Obsidian Void.
+
 ## kinetic_richtmyer_meshkov_shock_vortices_2d
 - **Date**: 2026-09-20
 - **Type**: Animation (900 frames, 60fps)

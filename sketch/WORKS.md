@@ -1,3 +1,38 @@
+## kinetic_relativistic_jet_helical_kink_2d
+- **Date**: 2026-09-20
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: 2D relativistic magnetohydrodynamic simulation of the current-driven $m=1$ helical kink instability in an astrophysical plasma jet, capturing Kruskal-Shafranov threshold collapse, relativistic Doppler beaming asymmetry, internal recollimation shock diamond knots, braided helical flux ropes, and turbulent cocoon expansion.
+- **Techniques**: 3D helical kink mode formulation projected onto 2D with relativistic Doppler factor $\delta^3$, braided magnetic flux rope topology, standing recollimation shock synthesis, dual-light Blinn-Phong specular plasma chrome normal shading, and Lagrangian synchrotron lepton and shock flare spark kinematics.
+- **Palette**: Doppler-Boosted Spine Electric Glacial Cyan & Luminous Sapphire, Cocoon Plasma & Braided Flux Ropes Incandescent Amber & Solar Gold, Recollimation Shock Diamonds Diamond-White & Solar Platinum, Extragalactic Vacuum Abyss.
+
+## kinetic_quantum_vortex_reconnection_2d
+- **Date**: 2026-09-20
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: 2D quantum fluid dynamics simulation of topological vortex reconnection in a Bose-Einstein Condensate (BEC), capturing quantized $2\pi$ phase winding singularities, universal square-root reconnection scaling ($\delta(t) \propto \sqrt{|t - t_0|}$), orthogonal cusp recoil, and explosive acoustic phonon sound bursts.
+- **Techniques**: Gross-Pitaevskii macroscopic wavefunction synthesis $\psi = \sqrt{\rho} e^{i\theta}$, healing-length core density suppression, analytical universal reconnection scaling, dual-light Blinn-Phong specular quantum fluid chrome normal shading, and Lagrangian Bohmian tracer and acoustic reconnection spark kinematics.
+- **Palette**: Condensate Density & Phase Fringes Radiant Emerald Mint & Phosphor Turquoise, Vortex Core Halos Actinic Ultraviolet, Acoustic Shock Waves Electric Cyan, Cusp Detonation Diamond-White & Solar Platinum, Sub-Kelvin Ground State Sapphire Navy.
+
+## kinetic_josephson_vortex_swihart_solitons_2d
+- **Date**: 2026-09-20
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: 2D quantum superconductivity simulation of relativistic Josephson vortices (fluxons) in a Long Josephson Junction (LJJ), capturing near-Swihart velocity propagation, relativistic Lorentz contraction, trailing Cherenkov plasma wake waves, head-on fluxon-antifluxon topological annihilation bursts, and Meissner supercurrent vortex loops.
+- **Techniques**: Analytical Sine-Gordon soliton electrodynamics with dynamic Lorentz contraction $\gamma_L(v)$, Swihart phase kinematics, plasma breather collision synthesis, dual-light Blinn-Phong specular niobium chrome normal shading, and Lagrangian supercurrent tracer and annihilation spark kinematics.
+- **Palette**: Relativistic Fluxon Cores Incandescent Amber & Solar Gold, Superconducting Electrodes Niobium Slate & Titanium Chrome, Cherenkov Plasma Waves Electric Cyan & Actinic Violet, Annihilation Singularity Diamond-White.
+
+## kinetic_optomechanical_cavity_backaction_2d
+- **Date**: 2026-09-20
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: 2D quantum optomechanics simulation of radiation-pressure dynamical backaction, capturing self-sustained limit cycle mechanical oscillations of a compliant cantilever mirror, breathing optical standing waves in a Fabry-Pérot cavity, acoustic phononic emission into the silicon substrate, and photoelastic stress birefringence.
+- **Techniques**: Coupled nonlinear optomechanical equations of motion with Lorentzian cavity transmission resonance, clamped-edge cantilever beam bending kinematics, acoustic substrate wave propagation, dual-light Blinn-Phong specular dielectric chrome normal shading, and Lagrangian photon, phonon, and cavity spark kinematics.
+- **Palette**: Circulating Laser Wavefronts Radiant Ruby Crimson & Coherent Rose, Dielectric Bragg Mirrors Glacial Ice & Electric Sapphire, Acoustic Phonon Rings Phosphor Emerald Mint, Cryogenic Vacuum Obsidian Void.
+
+## kinetic_richtmyer_meshkov_shock_vortices_2d
+- **Date**: 2026-09-20
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: 2D supersonic hydrodynamic simulation of the Richtmyer-Meshkov Instability (RMI), capturing impulsive shock acceleration of a corrugated density boundary, baroclinic vorticity deposition ($\nabla \rho \times \nabla p$), mushroom spike and bubble formation, vortex sheet Biot-Savart roll-up, and supersonic Mach stem diamond reflections.
+- **Techniques**: Analytical impulsive baroclinic vorticity formulation, multi-mode corrugated interface deformation, compressible Mach diamond wavefield synthesis, dual-light Blinn-Phong specular fluid chrome normal shading, and Lagrangian aerosol tracer and triple-point spark kinematics.
+- **Palette**: Heavy Gas Mushroom Scrolls Molten Copper & Radiant Amber, Supersonic Shock Fronts & Mach Diamonds Electric Cyan & Glacial Azure, Triple-Point Cores Diamond-White & Solar Platinum, Cosmic Vacuum Obsidian Void.
+
 ## kinetic_dynamical_casimir_vacuum_radiation_2d
 - **Date**: 2026-09-19
 - **Type**: Animation (900 frames, 60fps)

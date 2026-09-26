@@ -8,6 +8,41 @@ The Artist reads this file before starting a new sketch to understand preference
 
 
 
+
+
+
+
+
+## kinetic_relativistic_jet_helical_kink_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_quantum_vortex_reconnection_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_josephson_vortex_swihart_solitons_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_optomechanical_cavity_backaction_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_richtmyer_meshkov_shock_vortices_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
 ## kinetic_dynamical_casimir_vacuum_radiation_2d
 
 - **Rating**: 
@@ -46,7 +81,7 @@ The Artist reads this file before starting a new sketch to understand preference
 
 ## kinetic_cherenkov_radiation_shock_front_2d
 
-- **Rating**: 
+- **Rating**: OK
 - **Comment**: 
 
 

@@ -1,3 +1,10 @@
+## kinetic_icf_ablative_implosion_stagnation_2d
+- **Date**: 2026-09-27
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: 2D multi-physics kinetic simulation of Inertial Confinement Fusion (ICF) target capsule implosion, capturing laser/X-ray ablation drive, convergent spherical shock waves, ablative Rayleigh-Taylor instability (RTI) spike-and-bubble growth with Bell-Plesset geometric convergence, core stagnation rebound shock, thermonuclear ignition flash, and relativistic alpha-particle fireworks.
+- **Techniques**: 2D spherical/polar coordinate mapping, multi-mode ablative RTI modal superposition with non-linear Layzer spike sharpening, Bell-Plesset convergence scaling, Bremsstrahlung stagnation flash modeling, dual-light Blinn-Phong specular plasma chrome normal shading, and 3-species Lagrangian particle kinematics (fuel spike tracers, coronal blowoff ions, relativistic alpha sparks).
+- **Palette**: Thermonuclear Hot Spot Flash Diamond-White & Solar Gold, Cryogenic DT Fuel Shell & Inward RTI Spikes Glacial Electric Cyan & Sapphire Blue, X-Ray Ablation Front & Coronal Blowoff Radiant Cerise Magenta & Ionized Violet, Hohlraum Cavity Void Deep Obsidian Indigo.
+
 ## kinetic_acoustic_radiation_acoustophoresis_2d
 - **Date**: 2026-09-27
 - **Type**: Animation (900 frames, 60fps)

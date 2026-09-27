@@ -1,3 +1,10 @@
+## kinetic_dendritic_solidification_2d
+- **Date**: 2026-09-27
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: 2D materials science and non-equilibrium thermodynamics simulation of dendritic crystal solidification in an undercooled liquid melt, capturing Mullins-Sekerka morphological instability, 6-fold hexagonal and 4-fold cubic crystalline anisotropy, competitive Ivantsov parabolic needle growth, secondary and tertiary side-branching, latent heat thermal diffusion and buoyant convection eddies, and crossed-Nicol polarized light birefringence optics.
+- **Techniques**: Vectorized multi-seed anisotropic phase-field distance functions with Mullins-Sekerka side-branch perturbation harmonics, thermal diffusion isotherm modeling, crossed-polarizer optical retardation Michel-Lévy interference equations, dual-light Blinn-Phong specular liquid chrome normal shading, and Lagrangian solute segregation tracer kinematics.
+- **Palette**: Dendritic Needle Spines & Cores Peacock Electric Cyan & Luminous Aquamarine, Birefringent Retardation Fringes Neon Fuchsia & Amethyst Violet, Latent Heat Thermal Isotherms & Solute Impurities Incandescent Solar Gold & Amber Glow, Specular Facet Highlights Diamond White & Liquid Silver Platinum, Undercooled Liquid Melt Abyss Deep Midnight Titanium.
+
 ## kinetic_majorana_anyon_braiding_2d
 - **Date**: 2026-09-27
 - **Type**: Animation (900 frames, 60fps)

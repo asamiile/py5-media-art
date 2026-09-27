@@ -82,6 +82,7 @@ Avoid the default trap of high-saturation full-spectrum rainbow gradients. They 
 - Use the work name from the brief as the directory name; do not overwrite an existing work directory.
 - Design the sketch to auto-save pattern-specific preview images and explicitly auto-exit using `py5.exit_sketch()` to prevent memory leaks in continuous runs
 - Keep code readable with clear intent
+- **Shaders (optional)**: If the brief's `Shader` field is not `none`, follow `.agents/skills/shared/shaders.md` (`lib/shaders.py`: `PostFX` finishing pass, GPU fields via `load_shader` + `draw_fullscreen`). Put custom GLSL in `sketch/{work_name}/*.glsl`. Keep simulation state on CPU when that is where it lives; use shaders to render or finish it.
 
 ## Logic Lab MCP Usage
 

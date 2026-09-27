@@ -28,6 +28,14 @@ If you continue with multiple iterations:
 /create-artworks
 ```
 
+### Shaders (optional)
+
+Sketches can use GLSL shaders via `lib/shaders.py` (finishing pass: bloom, tone map, grain; GPU fragment-shader fields). Requires the `P2D`/`P3D` renderer and py5 >= 0.10.11a0. Check that shaders work on this machine:
+
+```bash
+uv run python scripts/check_shaders.py
+```
+
 ### Generate Article
 
 - Generate a Medium draft article for a sketch

@@ -125,6 +125,26 @@ def draw():
 py5.run_sketch()
 ```
 
+## Shader (optional)
+
+GLSL shaders are an optional tool: a finishing pass (`PostFX`: bloom, tone map, grain...) and GPU fragment-shader fields. They need `py5.P2D`/`py5.P3D`. Usage, when to use / avoid, and gotchas: `.agents/skills/shared/shaders.md`.
+
+```python
+from lib.shaders import PostFX
+
+fx = PostFX(bloom=0.8, tonemap=1.0, grain=0.03)
+
+def setup():
+    py5.size(*SIZE, py5.P2D)
+    py5.pixel_density(1)
+    fx.setup()
+
+def draw():
+    py5.background(0)
+    # drawing logic
+    fx.apply()  # last step before the blank check / save_frame
+```
+
 ## Notes
 
 - Prefer helpers in `lib/`: `lib.paths.sketch_dir`, `lib.sizes.get_sizes`, and `lib.preview`.

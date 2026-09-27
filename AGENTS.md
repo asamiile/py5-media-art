@@ -20,6 +20,7 @@ All agents must follow:
 - **py5 code templates & patterns** — See `.agents/skills/shared/py5-templates.md`
 - **Directory structure** — See `.agents/skills/shared/artwork-conventions.md`
 - **Safety & Aesthetics guidelines** — See `.agents/skills/shared/safety-and-aesthetics.md`
+- **GLSL shaders (optional)** — See `.agents/skills/shared/shaders.md`
 
 ## Key Constraints
 

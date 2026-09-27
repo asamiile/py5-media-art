@@ -5,8 +5,10 @@ Agents MUST NOT write anything in the `Comment` field. When registering a new wo
 The Artist reads this file before starting a new sketch to understand preferences.
 
 
+## kinetic_blandford_znajek_poynting_jet_2d
 
-
+- **Rating**: 
+- **Comment**: 
 
 
 ## kinetic_quincke_rotor_active_flocking_2d

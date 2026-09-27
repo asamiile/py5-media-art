@@ -1,3 +1,10 @@
+## kinetic_blandford_znajek_poynting_jet_2d
+- **Date**: 2026-09-27
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: 2D general-relativistic magnetohydrodynamic (GRMHD) simulation of the Blandford-Znajek mechanism ($P_{BZ} \propto \Omega_H^2 \Phi_B^2$), capturing a rapidly spinning Kerr black hole ($a_* = 0.95$), ergospheric frame dragging, relativistic magnetic Penrose energy extraction, pinch-collimated Poynting flux jet towers with standing recollimation shock diamond pearls, and synchrotron-cooled relativistic lepton cascades.
+- **Techniques**: Vectorized Kerr spacetime metric approximations, Boyer-Lindquist coordinate transformations, multi-mode toroidal and poloidal magnetic streamfunctions, dual-light Blinn-Phong specular plasma chrome normal shading, and Lagrangian multi-species particle kinematics (ergospheric frame-dragged tracers, equatorial accretion plasmoids, and relativistic collimated jet leptons).
+- **Palette**: Blandford-Znajek Relativistic Jet Spine Electric Glacial Cyan & Luminous Sapphire, Kerr Ergosphere & Photon Orbit Spirals Incandescent Solar Amber & Molten Gold, Equatorial Accretion Disk Plasmoids Beaming Laser Cerise & Magenta, Singularity Horizon Abyss Deep Midnight Obsidian.
+
 ## kinetic_quincke_rotor_active_flocking_2d
 - **Date**: 2026-09-27
 - **Type**: Animation (900 frames, 60fps)

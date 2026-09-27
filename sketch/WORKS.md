@@ -1,3 +1,10 @@
+## kinetic_plasmoid_instability_magnetic_reconnection_2d
+- **Date**: 2026-09-27
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: 2D magnetohydrodynamic (MHD) and plasma astrophysics simulation of the spontaneous breakdown of a Sweet-Parker reconnecting current sheet into a dynamic cascading chain of plasmoids (magnetic islands) via the tearing-mode plasmoid instability at extreme Lundquist numbers ($S \gg 10^4$). The animation captures the formation of hierarchical secondary magnetic islands, tearing-mode $X$-points, island coalescence into monster plasmoids, Hall-MHD quadrupolar out-of-plane magnetic fields $B_z$ with alternating polarities around each reconnection site, incandescent ohmic dissipation heating, reconnected hyperbolic separatrix manifolds, and dual-light Blinn-Phong specular plasma sheen.
+- **Techniques**: Continuous 2D magnetic vector potential $A_z(x, y)$ on a high-density computational grid ($480 \times 270$), analytical curl yielding magnetic vector components $B_x, B_y$ and current density $J_z = -\nabla^2 A_z$, Hall quadrupole out-of-plane field generation, multi-harmonic tearing mode coalescence spectrum, dual-light Blinn-Phong specular normal shading, dynamic hyperbolic separatrix curves, and Lagrangian multi-species particle kinematics (3,800 charged particles with $\mathbf{E} \times \mathbf{B}$ drift, Larmor gyration, and Alfvénic jet ejection).
+- **Palette**: Inflow Field Manifolds & Streamlines Deep Sapphire Blue & Glacial Cyan, Ohmic Dissipation & Current Sheets Incandescent Solar Flare Amber & Radiant Gold, Plasmoid Cores & Quadrupole Lobes Hyper Laser Magenta, Ionized Violet & Cerulean Turquoise, Specular Reconnection Sparks Pure Diamond White, Magnetospheric Void Midnight Obsidian.
+
 ## kinetic_bec_quantized_vortex_reconnection_2d
 - **Date**: 2026-09-27
 - **Type**: Animation (900 frames, 60fps)

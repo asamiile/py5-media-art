@@ -1,3 +1,10 @@
+## kinetic_majorana_anyon_braiding_2d
+- **Date**: 2026-09-27
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: 2D topological quantum computing and condensed matter simulation of non-Abelian anyon braiding in a fractional quantum Hall / $p+ip$ topological superconductor thin film, capturing 6 Majorana zero modes (MZMs) bound to quantized vortex cores performing topological braiding operations ($\sigma_i \in B_n$), collective Laughlin-Moore-Read topological wavefunctions with complex polynomial zeros, Moiré quantum interference fringes, dynamic inter-pair quantum tunneling filaments, and chiral boundary edge currents.
+- **Techniques**: Vectorized complex polynomial wavefunctions with lowest Landau level Gaussian confinement envelopes, discrete Blinn-Phong specular topological chrome normal shading, triangular pinning lattice potentials, Biot-Savart vortex velocity streamlines, and Lagrangian chiral edge mode kinematics.
+- **Palette**: Majorana Vortex Cores & Worldline Ribbons Luminous Electric Cyan & Glacial Mint, Topological Berry Phase Interference Halos Neon Fuchsia & Ultraviolet Violet, Chiral Edge Modes & Specular Highlights Radiant Amber Gold & Diamond White, Quantum Hall Mesa Substrate Specular Liquid Chrome & Deep Midnight Obsidian.
+
 ## kinetic_blandford_znajek_poynting_jet_2d
 - **Date**: 2026-09-27
 - **Type**: Animation (900 frames, 60fps)

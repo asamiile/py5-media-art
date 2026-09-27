@@ -1,3 +1,10 @@
+## kinetic_magnetorotational_mri_turbulence_2d
+- **Date**: 2026-09-27
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: 2D magnetohydrodynamic (MHD) simulation of the Balbus-Hawley Magnetorotational Instability (MRI) and accretion disk dynamo turbulence, capturing Keplerian differential shearing, linear channel flow exponential growth, secondary parasitic Kelvin-Helmholtz and tearing-mode breakdown into fully developed MHD turbulence, Maxwell stress tensor angular momentum transport ($M_{xy} = -B_x B_y > 0$), ohmic dissipation heating zones, magnetic reconnection current sheets, and dual-light Blinn-Phong specular plasma sheen.
+- **Techniques**: Vectorized 2D shearing-sheet magnetic flux functions, finite-difference magnetic field vector curls, Maxwell stress and current density tensor calculations, dual-light Blinn-Phong specular plasma chrome normal shading, and multi-species Lagrangian particle advection (420 Keplerian streamline ribbons and 2,800 relativistic synchrotron leptons).
+- **Palette**: Magnetic Flux Ropes Electric Cyan & Sapphire Blue, Maxwell Stress Ohmic Heating Incandescent Solar Gold & Radiant Amber, Reconnection Current Sheets Beaming Laser Magenta & Royal Violet, Specular Plasma Highlights Diamond White & Liquid Platinum, Accretion Disk Void Deep Midnight Obsidian.
+
 ## kinetic_taylor_couette_wavy_vortices_2d
 - **Date**: 2026-09-27
 - **Type**: Animation (900 frames, 60fps)

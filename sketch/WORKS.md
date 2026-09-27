@@ -1,3 +1,10 @@
+## kinetic_sagnac_matter_wave_atom_interferometer_2d
+- **Date**: 2026-09-27
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: 2D quantum optics and atomic physics simulation of coherent matter-wave de Broglie wavepacket splitting, redirection, and recombination in a Mach-Zehnder cold-atom interferometer, sensing inertial rotation via the quantum Sagnac effect ($\Delta \Phi = \frac{4 m}{\hbar} \boldsymbol{\Omega} \cdot \mathbf{A}$). The animation captures three retro-reflected optical Bragg laser standing wave pulse stations ($\pi/2$ splitter, $\pi$ mirror, $\pi/2$ recombiner), diamond Mach-Zehnder matter-wave arm trajectories with de Broglie carrier waves, quantum phase winding $\arg(\Psi)$ across an iridescent quantum color wheel, Sagnac rotation phase accumulation, spatial output interference fringes, and dual-light Blinn-Phong specular chamber optics.
+- **Techniques**: Continuous 2D quantum matter-wave field $\Psi(x, y, t) = \psi_1 + \psi_2$ on a $480 \times 270$ grid with de Broglie carrier waves and Gaussian envelope advection, optical Bragg standing wave modulation ($\cos^2(k_L y)$), quantum phase color-wheel winding mapping, Sagnac phase rotation accumulation, dual-light Blinn-Phong specular normal shading, and Lagrangian atomic kinematics (3,600 laser-cooled Rubidium-87 atoms tracing matter-wave geodesics with Bragg momentum kicks and Sagnac port selection).
+- **Palette**: Optical Bragg Laser Beams Fluorescent Laser Emerald & Electric Mint, Matter-Wave Cores & Guides Electric Glacial Cyan & Sapphire Blue, Quantum Phase Interference Neon Laser Magenta & Royal Amethyst Violet, Sagnac Output Interference Fringes Incandescent Solar Gold, Specular Chamber Optics Liquid Diamond White, Cryogenic Vacuum Void Midnight Obsidian.
+
 ## kinetic_weibel_instability_collisionless_shock_2d
 - **Date**: 2026-09-27
 - **Type**: Animation (900 frames, 60fps)

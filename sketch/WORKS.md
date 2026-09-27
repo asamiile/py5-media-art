@@ -1,3 +1,10 @@
+## kinetic_internal_gravity_wave_stratified_shear_2d
+- **Date**: 2026-09-27
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: 2D geophysical fluid dynamics and physical oceanography simulation of Internal Gravity Waves (IGW) propagating through a stably stratified, sheared pycnocline layer. The animation captures the classic St. Andrew's Cross 4-lobed diagonal radiation pattern radiating from an oscillating topographic core ($\omega = N \cos \theta$), downstream lee wave trains, and breaking Kelvin-Helmholtz cat's-eye vortex billows forming where the local Richardson number falls below the critical threshold ($Ri = N^2 / (dU/dz)^2 < 1/4$). Schlieren refractive gradient aesthetics reveal fine-scale density microstructure alongside dual-light Blinn-Phong specular ocean chrome normal shading.
+- **Techniques**: Vectorized 2D internal gravity wave dispersion streamfunctions, finite-difference Boussinesq density perturbation and Schlieren gradient calculation ($|\nabla \rho|$), dual-light Blinn-Phong specular normal mapping with anisotropic shear curvature, and multi-species Lagrangian tracer kinematics (420 stratified isopycnal streamline ribbons and 3,200 bioluminescent fluid parcel tracers).
+- **Palette**: St. Andrew's Cross Wave Beams & Crests Electric Cyan & Glacial Mint, Kelvin-Helmholtz Breaking Vortex Cores Neon Laser Magenta & Amethyst Purple, Lee Wave Trains & Isopycnal Ribbons Radiant Solar Gold & Amber Sheen, Specular Ocean Chrome Highlights Diamond White & Liquid Platinum, Stratified Abyssal Depths Deep Midnight Obsidian.
+
 ## kinetic_magnetorotational_mri_turbulence_2d
 - **Date**: 2026-09-27
 - **Type**: Animation (900 frames, 60fps)

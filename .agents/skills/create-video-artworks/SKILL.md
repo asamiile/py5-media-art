@@ -20,12 +20,13 @@ Continuously creates py5 media art animations by repeating the single-artwork wo
    5. If REVISE: artist applies feedback and re-runs (max 2 revisions)
    6. Update `sketch/WORKS.md` and `.agents/FEEDBACK.md` (leave Rating and Comment empty per conventions)
    7. Commit and push
-   8. Start next iteration immediately — no user confirmation
+   8. Upload outputs to Google Drive: `uv run python scripts/upload_to_drive.py {work_name}` (see `.agents/skills/shared/drive-upload.md`)
+   9. Start next iteration immediately — no user confirmation
 
 ## Notes
 
 - Always choose a concept, theme, and technique different from every past work
 - Follow shared naming, preview, and staging rules in `.agents/skills/shared/artwork-conventions.md`
 - Entry point filename is always `main.py`
-- Animation is the primary output; ensure `output.mp4` is generated for each work. Commit MP4 files only when explicitly requested.
+- Animation is the primary output; ensure `output.mp4` is generated for each work. Never commit MP4 files; they live on Google Drive after the upload step.
 - The loop continues indefinitely until externally stopped

@@ -19,6 +19,7 @@ Autonomously creates a py5 media art animation by following the workflow defined
 7. If REVISE: artist applies feedback and re-runs (max 2 revisions)
 8. Update `sketch/WORKS.md` and `.agents/FEEDBACK.md` (leave Rating and Comment empty per conventions)
 9. Commit and push
+10. Upload outputs to Google Drive: `uv run python scripts/upload_to_drive.py {work_name}` (see `.agents/skills/shared/drive-upload.md`)
 
 ## Notes
 
@@ -26,4 +27,4 @@ Autonomously creates a py5 media art animation by following the workflow defined
 - Follow shared naming, preview, and staging rules in `.agents/skills/shared/artwork-conventions.md`
 - Entry point filename is always `main.py`
 - Prefer the `logic-lab` MCP server for external algorithm references.
-- Animation is the primary output; ensure `output.mp4` is generated. Commit MP4 files only when explicitly requested.
+- Animation is the primary output; ensure `output.mp4` is generated. Never commit MP4 files; they live on Google Drive after the upload step.

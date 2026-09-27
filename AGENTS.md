@@ -11,6 +11,7 @@ Use `/create-artwork` or `/create-artworks` to automate. Each step reads shared 
 5. **Review** — Critic loop, max 2 revisions (`.agents/skills/critic/SKILL.md`)
 6. **Document** — Add README.md, update `sketch/WORKS.md` and `.agents/FEEDBACK.md`
 7. **Commit & Push**
+8. **Upload** — `uv run python scripts/upload_to_drive.py {work_name}` → stills copied / videos moved to Google Drive (`.agents/skills/shared/drive-upload.md`)
 
 ## Shared Conventions
 
@@ -21,6 +22,7 @@ All agents must follow:
 - **Directory structure** — See `.agents/skills/shared/artwork-conventions.md`
 - **Safety & Aesthetics guidelines** — See `.agents/skills/shared/safety-and-aesthetics.md`
 - **GLSL shaders (optional)** — See `.agents/skills/shared/shaders.md`
+- **Google Drive upload** — See `.agents/skills/shared/drive-upload.md`
 
 ## Key Constraints
 

@@ -33,8 +33,9 @@ Each iteration must produce one complete, independent artwork and commit/push it
       - `sketch/WORKS.md`
       - `.agents/FEEDBACK.md`
    10. Commit and push.
-   11. Report the completed work name, score/verdict, changed files, and commit hash.
-   12. Immediately start the next iteration.
+   11. Upload outputs to Google Drive: `uv run python scripts/upload_to_drive.py {work_name}` (see `.agents/skills/shared/drive-upload.md`).
+   12. Report the completed work name, score/verdict, changed files, and commit hash.
+   13. Immediately start the next iteration.
 
 ## Stop Conditions
 

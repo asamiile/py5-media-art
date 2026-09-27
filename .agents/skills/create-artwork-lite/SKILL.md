@@ -31,7 +31,8 @@ Use this skill when execution speed and fewer model/tool round trips matter more
     - `sketch/WORKS.md`
     - `.agents/FEEDBACK.md`
 11. Commit and push.
-12. Report work name, score/verdict, changed files, and commit hash.
+12. Upload outputs to Google Drive: `uv run python scripts/upload_to_drive.py {work_name}` (see `.agents/skills/shared/drive-upload.md`).
+13. Report work name, score/verdict, changed files, and commit hash.
 
 ## Lightweight Rules
 

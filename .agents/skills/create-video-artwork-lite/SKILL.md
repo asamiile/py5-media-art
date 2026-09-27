@@ -26,6 +26,7 @@ Create exactly one new py5 media art animation using a reduced-overhead version 
 9. Update both `sketch/WORKS.md` and `.agents/FEEDBACK.md` (leave Rating and Comment empty per conventions).
 10. Stage and commit the intended non-ignored files in `sketch/{work_name}/`, plus `sketch/WORKS.md` and `.agents/FEEDBACK.md`.
 11. Push.
+12. Upload outputs to Google Drive: `uv run python scripts/upload_to_drive.py {work_name}` (see `.agents/skills/shared/drive-upload.md`).
 
 ## Lightweight Rules
 
@@ -33,5 +34,5 @@ Create exactly one new py5 media art animation using a reduced-overhead version 
 - Do not invoke separate Planner, Artist, or Critic agents.
 - Do not run an indefinite loop.
 - Do not perform more than one revision.
-- Animation is the primary output; ensure `output.mp4` is generated. Commit MP4 files only when explicitly requested.
+- Animation is the primary output; ensure `output.mp4` is generated. Never commit MP4 files; they live on Google Drive after the upload step.
 - Follow `.agents/skills/shared/artwork-conventions.md` for naming and staging.

@@ -1,3 +1,10 @@
+## kinetic_quincke_rotor_active_flocking_2d
+- **Date**: 2026-09-27
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: 2D electrohydrodynamic and active matter simulation of Quincke rotation and active polar flocking, capturing Maxwell-Wagner interface charge relaxation, supercritical pitchfork symmetry-breaking bifurcation ($E > E_c$), self-propelled Quincke rollers, hydrodynamic velocity-alignment, Vicsek-Toner-Tu polar flocking solitary waves, active vortex mills, and Blinn-Phong specular dielectric liquid chrome optics.
+- **Techniques**: 2,000 Lagrangian active agents with Quincke pitchfork bifurcation, Vicsek-Toner-Tu polar alignment, and boundary steering, combined with vectorized continuum hydrodynamic micro-vorticity fields, travelling polar wave streamfunctions, and dual-light Blinn-Phong specular dielectric liquid chrome normal shading.
+- **Palette**: Active Quincke Rollers & Polar Flocking Bands Incandescent Amber & Solar Orange, Hydrodynamic Fluid Micro-Vortices & Wake Electric Cyan & Deep Sapphire Blue, Specular Electrode Rails & Highlights Diamond White & Solar Platinum, Dielectric Oil Bath Abyss Deep Midnight Obsidian.
+
 ## kinetic_whispering_gallery_kerr_soliton_microcomb_2d
 - **Date**: 2026-09-27
 - **Type**: Animation (900 frames, 60fps)

@@ -1,3 +1,10 @@
+## kinetic_weibel_instability_collisionless_shock_2d
+- **Date**: 2026-09-27
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: 2D relativistic plasma astrophysics simulation of the spontaneous generation of intense microscopic magnetic filaments in counter-streaming collisionless plasmas via the Weibel electromagnetic instability, culminating in a turbulent collisionless shock front with diffusive Fermi particle acceleration. The animation captures two relativistic unmagnetized plasma beams colliding at near-light speeds, forming alternating Bennett-pinched longitudinal current filaments ($J_x \propto \partial B_z / \partial y$) separated by the electron skin depth ($d_e = c/\omega_{pe}$), filament kink undulation and coalescence, magnetic barrier shock compression, post-shock downstream magnetic turbulence, rippling shock fronts, and dual-light Blinn-Phong specular relativistic plasma sheen.
+- **Techniques**: 2D multi-harmonic skin-depth Weibel magnetic field tensor $B_z(x, y)$ on a high-density grid ($480 \times 270$), finite-difference curl derivation of longitudinal current filaments $J_x$, downstream magnetic turbulence modeling, multi-layer shock front wave surfaces, dual-light Blinn-Phong specular normal shading, and Lagrangian relativistic particle kinematics (4,000 charged particles with filamentary magnetic trapping, pitch-angle scattering, and diffusive Fermi shock acceleration).
+- **Palette**: Forward Incoming Beam (Left) Electric Glacial Cyan & Deep Cobalt Azure, Backward Incoming Beam (Right) Neon Laser Coral & Crimson Flare, Weibel Current Filaments Incandescent Solar Gold & Radiant Amber, Post-Shock Magnetic Turbulence Core Liquid Diamond White, Electric Ionized Violet & Opal Green, Relativistic Vacuum Void Midnight Obsidian.
+
 ## kinetic_plasmoid_instability_magnetic_reconnection_2d
 - **Date**: 2026-09-27
 - **Type**: Animation (900 frames, 60fps)

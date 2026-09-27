@@ -1,3 +1,10 @@
+## kinetic_acoustic_radiation_acoustophoresis_2d
+- **Date**: 2026-09-27
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: 2D ultrasonic microfluidics simulation of acoustophoresis, capturing Gor'kov acoustic radiation potential gradients ($\vec{F}_{rad} = -\nabla U$), boundary-layer Rayleigh acoustic streaming micro-vortices, dual-contrast particle separation, and crystalline quartz surface optics.
+- **Techniques**: 2D standing acoustic pressure wavefield formulation, analytical Gor'kov radiation force field derivation, boundary-layer Rayleigh acoustic streaming streamfunction $\psi_s$, dual-light Blinn-Phong specular quartz chrome normal shading, and Lagrangian dual-contrast microbead and cavitation spark kinematics.
+- **Palette**: Ultrasonic Pressure Nodes Fluorescent Jade Green & Glacial Mint, Rayleigh Streaming Eddies Electric Violet & Deep Iris, Focused Microbead Ribbons & Cavitation Sparks Diamond-White & Solar Amber, Quartz Microchannel Void Tourmaline Obsidian.
+
 ## kinetic_relativistic_jet_helical_kink_2d
 - **Date**: 2026-09-20
 - **Type**: Animation (900 frames, 60fps)

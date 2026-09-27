@@ -23,6 +23,7 @@ Shared naming, file, and staging rules for py5 media art skills.
 sketch/
   {work_name}/
     main.py
+    *.glsl                   # optional shaders (see shaders.md)
     README.md
     {work_name}_p1.png
     {work_name}_p2.png       # optional additional pattern

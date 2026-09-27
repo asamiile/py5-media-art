@@ -71,6 +71,9 @@ Emit exactly this block and nothing else:
 ### Format
 {Still image | Animation (Ns @ 60fps)}
 
+### Shader
+{none | PostFX | GPU field | GPU field + PostFX} — {one-line reason; see `.agents/skills/shared/shaders.md`}
+
 ### Logic Lab Reference
 {Optional. If using MCP, include source, path, title, and reason. Example:
 - Source: logic-lab MCP
@@ -88,6 +91,7 @@ Emit exactly this block and nothing else:
 - Follow work-name rules in `.agents/skills/shared/artwork-conventions.md`
 - Limit palette to 3–5 colors; never propose a full-spectrum rainbow as the primary scheme
 - If the concept suits animation (motion is essential to the idea), say so in **Format**.
+- **Shader** is optional: choose `none` unless light emission, cinematic finish, or a per-pixel field the CPU cannot render well at 4K serves the theme. Do not pick shaders by default; vary it across works like any other technique.
 - **MANDATORY**: If the calling skill specifies a required format (Still image or Animation) in its instructions, the planner MUST output that format in the brief.
 - If proposing animation, specify duration in the brief. See `.agents/skills/shared/py5-templates.md` for timing guidance (10–30 seconds depending on content).
 - Do not write any code — output the brief only.

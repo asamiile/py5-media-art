@@ -56,3 +56,4 @@ APPROVE (total 30+) or REVISE (29 or below)
 - For `REVISE`: always include concrete code-level improvement suggestions
 - Maximum 2 `REVISE` verdicts — the 3rd review must always be `APPROVE`
 - Praise-only feedback is not allowed — always raise at least one improvement point
+- If the work uses shaders (`lib/shaders.py`), also check: bloom halos sit on the bright shapes (not offset or flipped), grain reads as noise (no grid), effects serve the theme rather than a generic "shader demo" look, and the seed varies per run (`.agents/skills/shared/shaders.md`).

@@ -10,6 +10,11 @@ The Artist reads this file before starting a new sketch to understand preference
 
 
 
+## kinetic_whispering_gallery_kerr_soliton_microcomb_2d
+
+- **Rating**: 
+- **Comment**: 
+
 
 ## kinetic_icf_ablative_implosion_stagnation_2d
 

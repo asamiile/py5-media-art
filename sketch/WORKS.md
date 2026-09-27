@@ -1,3 +1,10 @@
+## kinetic_whispering_gallery_kerr_soliton_microcomb_2d
+- **Date**: 2026-09-27
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: 2D integrated photonics simulation of a high-Q Whispering Gallery Mode (WGM) optical microtoroid resonator coupled to a tapered bus waveguide, capturing evanescent optical tunneling, four-wave mixing (FWM), modulation instability (Turing roll pattern), dissipative Kerr soliton (DKS) pulse formation via Lugiato-Lefever dynamics, and prismatic optical frequency microcomb emission.
+- **Techniques**: Vectorized 2D electromagnetic wavefields, Lugiato-Lefever soliton mode formulation, evanescent coupling decay functions, Bessel-like radial confinement profiles, dual-light Blinn-Phong specular silica glass normal shading, and Lagrangian photon wavepacket kinematics.
+- **Palette**: Circulating Kerr Solitons & Core Ring Luminous Glacial Cyan & Electric Sapphire, Evanescent Coupling & Microcomb Fringes Laser Magenta & Actinic Amethyst, Dielectric Silica Specular Chrome Diamond White & Solar Platinum, Photonic Chip Substrate Void Deep Midnight Obsidian.
+
 ## kinetic_icf_ablative_implosion_stagnation_2d
 - **Date**: 2026-09-27
 - **Type**: Animation (900 frames, 60fps)

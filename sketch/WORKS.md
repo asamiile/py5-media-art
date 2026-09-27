@@ -1,3 +1,10 @@
+## kinetic_topological_valley_hall_photonic_crystal_2d
+- **Date**: 2026-09-27
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: 2D topological photonics and semiconductor physics simulation of backscattering-immune light routing in a Valley Hall Photonic Crystal (VPC) with broken spatial inversion symmetry ($P$). The animation captures a triangular dielectric resonator lattice where alternating sublattice perturbations ($\Delta r = r_A - r_B \neq 0$) lift Dirac cone degeneracies to open a topological bandgap with opposite Valley Chern numbers ($C_V = \pm 1/2$) at the $K$ and $K'$ Dirac valleys. At the trapezoidal domain wall interface featuring sharp 60° and 120° corners, topologically protected chiral edge states transport light with near-unity transmission ($T \approx 100\%$) and zero backscattering under dual-light Blinn-Phong specular dielectric crystal facet optics.
+- **Techniques**: Vectorized 2D honeycomb/triangular lattice potentials with inversion-symmetry-breaking perturbations, piecewise linear trapezoidal orthogonal projection metrics for sub-wavelength edge state confinement ($\xi \approx 0.42$), finite-difference surface normal and dual-light Blinn-Phong specular facet shading, and multi-species Lagrangian kinematics (120 Poynting energy flux streamline ribbons and 2,800 Dirac quasiparticle photon wavepacket sparks).
+- **Palette**: Top Valley $K$ Domain Electric Glacial Cyan & Deep Cobalt Azure, Bottom Valley $K'$ Domain Radiant Laser Cerise/Magenta & Royal Amethyst Violet, Topological Waveguide Edge Modes Incandescent Solar Gold & Amber Fire, Specular Crystal Facets Liquid Diamond Chrome, Photonic Substrate Abyss Deep Midnight Obsidian.
+
 ## kinetic_internal_gravity_wave_stratified_shear_2d
 - **Date**: 2026-09-27
 - **Type**: Animation (900 frames, 60fps)

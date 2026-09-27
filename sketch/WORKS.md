@@ -1,3 +1,10 @@
+## kinetic_bec_quantized_vortex_reconnection_2d
+- **Date**: 2026-09-27
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: 2D macroscopic quantum fluid and ultra-cold atomic physics simulation of a Bose-Einstein Condensate (BEC) undergoing quantized vortex dipole reconnection and dark soliton snake instability under the non-linear Gross-Pitaevskii equation ($\Psi = \sqrt{\rho} e^{i\theta}$). The animation captures a harmonic magnetic trap with a smooth Thomas-Fermi boundary profile, 8 quantized vortices undergoing helical approach and topological reconnection with integer phase circulation ($\oint \mathbf{v}_s \cdot d\mathbf{l} = 2\pi \hbar/m$), an undulating dark soliton stripe decaying via the snake instability into vortex dipole pairs, radiating concentric Bogoliubov acoustic phonon shock waves, and dual-light Blinn-Phong specular quantum condensate chrome optics.
+- **Techniques**: Vectorized 2D Gross-Pitaevskii macroscopic wavefunction density and analytical phase winding calculations, healing length core regularization ($\xi = 0.38$), Bogoliubov acoustic dispersion wave modeling, dual-light Blinn-Phong specular quantum normal shading, and Lagrangian multi-species particle kinematics (2,400 superfluid condensate atoms with irrotational circulation $v \propto 1/r$).
+- **Palette**: Superfluid Condensate Bulk Luminous Emerald & Deep Sapphire Cobalt, Vortex Singularities & Solitons Neon Laser Fuchsia & Royal Amethyst Violet, Bogoliubov Acoustic Phonon Shocks Incandescent Solar Amber & Radiant Topaz, Specular Condensate Highlights Pure Diamond White, Ultra-Cold Vacuum Abyss Midnight Obsidian.
+
 ## kinetic_topological_valley_hall_photonic_crystal_2d
 - **Date**: 2026-09-27
 - **Type**: Animation (900 frames, 60fps)

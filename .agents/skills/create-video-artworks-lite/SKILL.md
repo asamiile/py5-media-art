@@ -27,13 +27,14 @@ Each iteration must produce one complete, independent animation and commit/push 
    5. Perform one concise self-critique in the same format as `.agents/skills/critic/SKILL.md`.
    6. Update `sketch/WORKS.md` and `.agents/FEEDBACK.md` (leave Rating and Comment empty per conventions).
    7. Commit and push.
-   8. Wait 60-90 seconds (Rate Limit) then start the next iteration.
+   8. Upload outputs to Google Drive: `uv run python scripts/upload_to_drive.py {work_name}` (see `.agents/skills/shared/drive-upload.md`).
+   9. Wait 60-90 seconds (Rate Limit) then start the next iteration.
 
 ## Lightweight Rules
 
 - **MANDATORY**: Always produce Animations.
 - Do not invoke separate Planner, Artist, or Critic agents.
-- Animation is the primary output; ensure `output.mp4` is generated for each work. Commit MP4 files only when explicitly requested.
+- Animation is the primary output; ensure `output.mp4` is generated for each work. Never commit MP4 files; they live on Google Drive after the upload step.
 - Do not perform more than one revision per work.
 - Follow `.agents/skills/shared/artwork-conventions.md` for naming and staging.
 - The loop continues indefinitely until externally stopped.

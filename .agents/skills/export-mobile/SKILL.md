@@ -35,7 +35,9 @@ No new sketch is created — only the existing rendered video is transcoded.
 3. Find the source MP4. Try in this order:
    a. `sketch/{work_name}/{work_name}.mp4`
    b. Any single `*.mp4` file in `sketch/{work_name}/` that does not end with `_landscape.mp4` or `_portrait.mp4`
-   If no source found, stop and report.
+   If neither exists locally, download it from Google Drive first:
+   `uv run python scripts/upload_to_drive.py --fetch {work_name}` (see `.agents/skills/shared/drive-upload.md`), then retry a/b.
+   If still no source found, stop and report.
 4. Get the source duration:
    ```bash
    ffprobe -v quiet -show_entries format=duration -of csv=p=0 sketch/{work_name}/{work_name}.mp4
@@ -82,5 +84,6 @@ No new sketch is created — only the existing rendered video is transcoded.
 - Never overwrite the original source file.
 - Do **not** modify `main.py`, `WORKS.md`, or `FEEDBACK.md`.
 - Do **not** commit unless explicitly requested.
+- When finished, run `uv run python scripts/upload_to_drive.py {work_name}` to move the source and both outputs back to Google Drive.
 - If the source video does not exist at all (artwork never rendered), report clearly:
-  `"Source MP4 not found. Run the sketch first to generate {work_name}.mp4."`
+  `"Source MP4 not found locally or on Google Drive. Run the sketch first to generate {work_name}.mp4."`

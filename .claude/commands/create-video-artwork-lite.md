@@ -14,4 +14,5 @@ Execution rules:
 9. Update `sketch/WORKS.md` and `.agents/FEEDBACK.md`.
 10. Stage only intended files for this work.
 11. Commit and push.
-12. Report work name, score/verdict, changed files, and commit hash.
+12. Upload outputs to Google Drive: `uv run python scripts/upload_to_drive.py {work_name}` (stills copied, videos moved; see `.agents/skills/shared/drive-upload.md`).
+13. Report work name, score/verdict, changed files, and commit hash.

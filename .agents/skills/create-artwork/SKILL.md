@@ -19,6 +19,7 @@ Autonomously creates a py5 media art still image by following the workflow defin
 7. If REVISE: artist applies feedback and re-runs (max 2 revisions)
 8. Update `sketch/WORKS.md` and `.agents/FEEDBACK.md` (leave Rating and Comment empty per conventions)
 9. Commit and push
+10. Upload outputs to Google Drive: `uv run python scripts/upload_to_drive.py {work_name}` (see `.agents/skills/shared/drive-upload.md`)
 
 ## Notes
 

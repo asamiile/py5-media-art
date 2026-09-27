@@ -7,5 +7,6 @@ The workflow:
 4. **Preview**: Generate new preview.png (save existing as preview_v{n}.png for version tracking)
 5. **Document**: Update README.md and FEEDBACK.md with enhancement notes
 6. **Commit**: Stage and commit changes with descriptive message
+7. **Upload**: `uv run python scripts/upload_to_drive.py {work_name}_v{n}` (see `.agents/skills/shared/drive-upload.md`)
 
 See `.agents/skills/polish/SKILL.md` for detailed implementation rules.

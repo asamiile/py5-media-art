@@ -14,7 +14,7 @@ Execution rules:
 9. Perform at most one revision per work.
 10. Update `sketch/WORKS.md` and `.agents/FEEDBACK.md` every iteration.
 11. Stage only intended files for the current work.
-12. Commit and push each work before starting the next.
+12. Commit and push each work, then upload it with `uv run python scripts/upload_to_drive.py {work_name}` (see `.agents/skills/shared/drive-upload.md`), before starting the next.
 13. Wait 60-90 seconds between iterations to respect rate limits.
 14. Stop on preview, commit, or push failure after one repair attempt.
 15. After each iteration, report work name, score/verdict, changed files, and commit hash.

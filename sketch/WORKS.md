@@ -1,3 +1,10 @@
+## kinetic_hyperbolic_phonon_polariton_caustics_2d
+- **Date**: 2026-09-27
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: 2D nanophotonics and condensed matter physics simulation depicting anisotropic polariton propagation, directional ray caustics, and sub-diffraction wavepacket canalization in a biaxial van der Waals crystal ($\alpha\text{-MoO}_3$) across the Reststrahlen band. The animation captures natural hyperbolic dispersion with open hyperbolic equifrequency surfaces, directional polariton ray caustics fanning out from nanoscale gold antenna tips along asymptote angles $\theta_c(t) = \arctan\sqrt{|\epsilon_y / \epsilon_x|}$, concave negative-dispersion wavefronts with sub-wavelength phase ripples ($\lambda_p \sim \lambda_0 / 100$), crossing ray caustics forming high-contrast diamond interference moiré networks, atomic cleavage step edge reflections and terrace standing waves, dual-light Blinn-Phong specular normal mapping, and 4,000 Lagrangian polariton quasiparticles streaming along Poynting vector rays.
+- **Techniques**: Continuous 2D anisotropic Green's function field tensor synthesis on a $480 \times 270$ computational grid with Reststrahlen band frequency sweep, hyperbolic ray caustic envelope modulation, concave negative-dispersion phase carrier, atomic terrace step boundary standing waves, dual-light Blinn-Phong specular sheen, and Lagrangian quasiparticle kinematics (4,000 hybrid phonon-polariton wavepackets with sub-wavelength transverse ripples).
+- **Palette**: Basal van der Waals Plane Midnight Obsidian Slate & Bismuth Indigo, Hyperbolic Ray Caustics Phosphorescent Electric Emerald & Glacial Cyan, Interference Fringes & Moiré Nodes Neon Laser Fuchsia / Magenta & Amethyst Violet, Nano-Antenna Launch Pads Incandescent Solar Gold & Liquid Diamond White, Crystal Step Terrace Reflectors Luminescent Pale Cyan & Mint White.
+
 ## kinetic_sagnac_matter_wave_atom_interferometer_2d
 - **Date**: 2026-09-27
 - **Type**: Animation (900 frames, 60fps)

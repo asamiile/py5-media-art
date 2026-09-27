@@ -27,7 +27,7 @@ sketch/
     {work_name}_p1.png
     {work_name}_p2.png       # optional additional pattern
     {work_name}_p1_v1.png    # optional revision snapshot
-    {work_name}.mp4          # animation only
+    {work_name}.mp4          # animation only; moved to Google Drive after commit
     frames/                  # sequential PNGs, not committed
 ```
 
@@ -40,6 +40,10 @@ Stage only intended files:
 - `.agents/FEEDBACK.md`
 
 Do not stage unrelated pending changes.
+
+## Google Drive Upload
+
+After commit and push, send the work's outputs to Google Drive (stills copied, videos moved) — see `.agents/skills/shared/drive-upload.md`.
 
 ## FEEDBACK.md Protocol
 

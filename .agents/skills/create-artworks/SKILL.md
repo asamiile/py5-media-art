@@ -20,7 +20,8 @@ Continuously creates py5 media art still images in a loop. Each iteration produc
    5. If REVISE: artist applies feedback and re-runs (max 2 revisions)
    6. Update `sketch/WORKS.md` and `.agents/FEEDBACK.md` (leave Rating and Comment empty per conventions)
    7. Commit and push
-   8. Start next iteration immediately — no user confirmation
+   8. Upload outputs to Google Drive: `uv run python scripts/upload_to_drive.py {work_name}` (see `.agents/skills/shared/drive-upload.md`)
+   9. Start next iteration immediately — no user confirmation
 
 ## Notes
 

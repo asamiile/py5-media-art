@@ -13,6 +13,6 @@ Execution rules:
 8. Perform at most one revision per work.
 9. Update `sketch/WORKS.md` and `sketch/FEEDBACK.md` every iteration.
 10. Stage only intended files for the current work.
-11. Commit and push each work before starting the next.
+11. Commit and push each work, then upload it with `uv run python scripts/upload_to_drive.py {work_name}` (see `.agents/skills/shared/drive-upload.md`), before starting the next.
 12. Stop on preview, commit, or push failure after one repair attempt.
 13. After each iteration, report work name, score/verdict, changed files, and commit hash.

@@ -48,6 +48,9 @@ Autonomously polishes an existing py5 media art sketch by analyzing feedback tre
 7. **Commit**
    - Commit message: `polish: {work_name}_v{n} — {specific_improvement}`.
 
+8. **Upload**
+   - `uv run python scripts/upload_to_drive.py {work_name}_v{n}` (see `.agents/skills/shared/drive-upload.md`).
+
 ## Selection Priority
 
 1. **Critical**: Rating = NG with Comment (clear rejection needing fix).

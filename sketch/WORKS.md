@@ -1,3 +1,10 @@
+## kinetic_taylor_couette_wavy_vortices_2d
+- **Date**: 2026-09-27
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: 2D fluid dynamics and hydrodynamic stability simulation of Taylor-Couette flow, capturing centrifugal instability beyond the Rayleigh criterion, supercritical bifurcation into counter-rotating toroidal Taylor vortex pairs, Hopf bifurcation into wavy vortex flow (WVF) with azimuthal traveling wave mode $m=4$, sharp knife-edge inflow convergence jets, broad divergent outflow plume crests, and rheoscopic mica platelet calligraphic reflectance under dual-light Blinn-Phong specular sheen.
+- **Techniques**: Vectorized 2D wavy vortex streamfunctions and azimuthal shear velocity fields, principal rate-of-strain tensor eigenspace analysis for rheoscopic mica platelet orientation, dual-light Blinn-Phong specular normal height mapping, and multi-species Lagrangian tracer kinematics (360 circulating streamline ribbons and 2,800 glittering mica micro-flakes).
+- **Palette**: Vortex Roll Cores Electric Glacial Cyan & Deep Sapphire Cobalt, Inflow Boundary Jets Radiant Laser Magenta & Neon Violet, Outflow Plume Crests Molten Topaz & Iridescent Silk Amber, Specular Highlights Platinum Diamond White, Viscous Annulus Abyss Deep Midnight Obsidian.
+
 ## kinetic_dendritic_solidification_2d
 - **Date**: 2026-09-27
 - **Type**: Animation (900 frames, 60fps)

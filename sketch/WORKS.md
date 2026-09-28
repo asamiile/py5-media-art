@@ -1,3 +1,10 @@
+## kinetic_chalker_coddington_quantum_hall_criticality_2d
+- **Date**: 2026-09-28
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: 2D quantum condensed matter physics simulation depicting multifractal electronic wavefunctions, random magnetic disorder potential landscapes, chiral edge percolation channels, and saddle-point quantum tunneling in the integer quantum Hall plateau transition. The animation captures a smooth random disorder potential landscape $V(x, y)$, oscillating Fermi energy $E_F(t)$ sweeping through the critical Landau level center ($E = 0$), chiral edge percolation channels flowing along equipotential contours, quantum phase winding along percolating paths with interference nodes, saddle-point quantum tunneling at quantum point contacts (QPCs), dual-light Blinn-Phong specular normal mapping for cryogenic 2DEG topography, and 4,000 chiral cyclotron electrons executing $\mathbf{E} \times \mathbf{B}$ guiding center drift and saddle tunneling.
+- **Techniques**: Continuous 2D random potential landscape synthesis on a $480 \times 270$ computational domain with 24 Fourier modes, equipotential chiral drift velocity formulation $\mathbf{v} = (-\partial_y V, \partial_x V) / |\nabla V|$, Gaussian wavefunction percolation probability density $|\psi(x, y)|^2$, saddle-point quantum tunneling metric, dual-light Blinn-Phong specular relief shading, and Lagrangian particle kinematics (4,000 electrons with microscopic Larmor cyclotron gyration and saddle branching).
+- **Palette**: Potential Hills Luminescent Electric Coral & Solar Gold, Potential Valleys Deep Cryogenic Cobalt Azure & Midnight Obsidian, Critical Percolating Channels Phosphorescent Electric Mint & Glacial Cyan, Saddle-Point Tunneling Nodes Incandescent Liquid Pearl White, Chiral Cyclotron Electrons Opal Mint & Golden Sparks.
+
 ## kinetic_rayleigh_taylor_kelvin_helmholtz_mushrooms_2d
 - **Date**: 2026-09-27
 - **Type**: Animation (900 frames, 60fps)

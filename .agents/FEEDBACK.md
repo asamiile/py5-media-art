@@ -2,15 +2,113 @@
 
 **CRITICAL RULE**: ONLY the USER may write to the `Rating` and `Comment` field.
 Agents MUST NOT write anything in the `Comment` field. When registering a new work, Agents must leave the `Rating` and `Comment` fields empty or with their default labels as placeholders for the user.
-The Artist reads this file before starting a new sketch to understand preferences.
+
+## kinetic_chalker_coddington_quantum_hall_criticality_2d
+
+- **Rating**: 
+- **Comment**: 
 
 
+## kinetic_rayleigh_taylor_kelvin_helmholtz_mushrooms_2d
+
+- **Rating**: 
+- **Comment**: 
 
 
+## kinetic_hyperbolic_phonon_polariton_caustics_2d
+
+- **Rating**: 
+- **Comment**: 
 
 
+## kinetic_sagnac_matter_wave_atom_interferometer_2d
+
+- **Rating**: 
+- **Comment**: 
 
 
+## kinetic_weibel_instability_collisionless_shock_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_plasmoid_instability_magnetic_reconnection_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_bec_quantized_vortex_reconnection_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_topological_valley_hall_photonic_crystal_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_internal_gravity_wave_stratified_shear_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_magnetorotational_mri_turbulence_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_taylor_couette_wavy_vortices_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_dendritic_solidification_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_majorana_anyon_braiding_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_blandford_znajek_poynting_jet_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_quincke_rotor_active_flocking_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_whispering_gallery_kerr_soliton_microcomb_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_icf_ablative_implosion_stagnation_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_acoustic_radiation_acoustophoresis_2d
+
+- **Rating**: 
+- **Comment**: 
 
 
 ## kinetic_relativistic_jet_helical_kink_2d

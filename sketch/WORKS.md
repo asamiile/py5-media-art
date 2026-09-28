@@ -1,3 +1,10 @@
+## kinetic_rayleigh_taylor_kelvin_helmholtz_mushrooms_2d
+- **Date**: 2026-09-27
+- **Type**: Animation (900 frames, 60fps)
+- **Concept**: 2D hydrodynamic simulation depicting multi-mode Rayleigh-Taylor interfacial instability with Atwood number density stratification ($A_t \approx 0.6$), baroclinic vorticity generation ($\frac{1}{\rho^2} \nabla \rho \times \nabla p$), and secondary Kelvin-Helmholtz mushroom vortex rollups. The animation captures multi-mode interfacial perturbation growth, descending dense fluid spikes and ascending light fluid bubbles, counter-rotating Kelvin-Helmholtz vortex sheet rollups forming nested spiraling mushroom caps, baroclinic shear boundary layer highlights, dual-light Blinn-Phong specular normal mapping on the fluid meniscus, and 4,500 Lagrangian fluid tracer particles tracing swirling stream-function paths.
+- **Techniques**: Continuous 2D multi-mode fluid density field $\rho(x, y, t)$ on a $480 \times 270$ computational domain, analytical baroclinic vortex doublet circulation advection, hyperbolic tangent interfacial thickness formulation, dual-light Blinn-Phong specular normal shading, and Lagrangian particle kinematics (4,500 fluid tracer particles advected by localized vortex circulation).
+- **Palette**: Dense Upper Fluid Deep Obsidian Indigo & Sapphire Abyss, Light Lower Fluid Molten Solar Amber & Radiant Gold, Shear Mixing Layer & Mushroom Spirals Phosphorescent Emerald Teal & Coral Violet, Specular Liquid Sheen Incandescent Liquid Pearl White.
+
 ## kinetic_hyperbolic_phonon_polariton_caustics_2d
 - **Date**: 2026-09-27
 - **Type**: Animation (900 frames, 60fps)

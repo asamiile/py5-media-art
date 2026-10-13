@@ -50,6 +50,8 @@ cp .env.example .env                            # then set PY5_UPLOAD_REMOTE
 | --- | --- |
 | `PY5_UPLOAD_REMOTE` | Upload destination (e.g. `gdrive:Media/py5-media-art`). No upload if unset |
 | `PY5_UPLOAD` | Set to `0` to skip uploading |
+| `PY5_UPLOAD_TRANSFERS` | Parallel uploads (default `8`) |
+| `PY5_UPLOAD_CHUNK_SIZE` | Drive upload chunk size (default `64M`; uses this much memory per parallel upload) |
 
 ```bash
 uv run python scripts/upload_to_drive.py {work_name}          # upload one work

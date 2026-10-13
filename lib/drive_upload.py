@@ -10,7 +10,9 @@ Each work gets its own folder on Drive: ``{remote}/{work_name}/``.
 
 Remote:  PY5_UPLOAD_REMOTE (rclone "remote:path"; uploads are off when unset)
 Disable: PY5_UPLOAD=0 (outputs then stay in the sketch folder)
-Both are read from the environment or the repository's ``.env``.
+Tuning:  PY5_UPLOAD_TRANSFERS (parallel uploads, default 8),
+         PY5_UPLOAD_CHUNK_SIZE (Drive upload chunk, default 64M)
+Read from the environment or the repository's ``.env``.
 Setup:   see README.md ("Google Drive upload").
 """
 
@@ -37,7 +39,12 @@ def _load_env() -> dict[str, str]:
                 continue
             key, value = line.split("=", 1)
             values[key.strip()] = value.strip().strip("'\"")
-    for key in ("PY5_UPLOAD_REMOTE", "PY5_UPLOAD"):
+    for key in (
+        "PY5_UPLOAD_REMOTE",
+        "PY5_UPLOAD",
+        "PY5_UPLOAD_TRANSFERS",
+        "PY5_UPLOAD_CHUNK_SIZE",
+    ):
         if key in os.environ:
             values[key] = os.environ[key]
     return values
@@ -82,6 +89,20 @@ def _is_readable_video(file: Path) -> bool:
     return result.returncode == 0 and bool(result.stdout.strip())
 
 
+def _transfer_options() -> list[str]:
+    env = _load_env()
+    transfers = env.get("PY5_UPLOAD_TRANSFERS", "8")
+    chunk_size = env.get("PY5_UPLOAD_CHUNK_SIZE", "64M")
+    return [
+        "--transfers",
+        transfers,
+        "--checkers",
+        "16",
+        "--drive-chunk-size",
+        chunk_size,
+    ]
+
+
 def _transfer(command: str, work_dir: Path, names: list[str]) -> None:
     if not names:
         return
@@ -91,6 +112,7 @@ def _transfer(command: str, work_dir: Path, names: list[str]) -> None:
         _rclone([
             command, str(work_dir), f"{remote()}/{work_dir.name}",
             "--files-from-raw", listing.name,
+            *_transfer_options(),
             "--retries", "3", "--stats-one-line", "--stats", "30s", "-v",
         ])
     finally:

@@ -1,3 +1,10 @@
+## kinetic_cathode_ray_raster_video_feedback_2d
+- **Date**: 2026-10-30
+- **Type**: Animation (720 frames, 60fps)
+- **Concept**: Analogue Cathode Ray Tube (CRT) video synthesizer with recursive optical feedback loop, multi-harmonic Lissajous beam deflection, RGB chromatic aberration shears, horizontal sync glitch tearing, and P22 phosphor persistence glow. Simulating an analogue camera pointed into a CRT monitor, 46 recursive feedback planes shear, rotate, and tunnel toward infinity inside a curved glass tube bezel, completely free of any author signatures or personal marks.
+- **Techniques**: 46-stage recursive feedback raster corridor with geometric zoom and Lissajous orbit drift, 3-channel chromatic aberration RGB separation, multi-tier vector oscilloscope Harmonograph Lissajous curves with persistence halo glow, sub-pixel shadow-mask scanline grilles, horizontal sync tracking jitter slice shears, and oscilloscope calibration reticle crosshairs.
+- **Palette**: CRT Chassis Black (`#08080b`), P22 Phosphor Green (`#22c55e`), Vector Oscilloscope Cyan (`#06b6d4`), Beam Trace Magenta (`#f43f5e`), Master Lock Amber (`#fbbf24`), Electron Core White (`#ffffff`).
+
 ## kinetic_suminagashi_vortex_ink_marbling_2d
 - **Date**: 2026-10-30
 - **Type**: Animation (720 frames, 60fps)

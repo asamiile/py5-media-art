@@ -1,3 +1,10 @@
+## kinetic_andreev_reflection_bound_states_2d
+- **Date**: 2026-10-30
+- **Type**: Animation (720 frames, 60fps)
+- **Concept**: 2D quantum condensed matter physics simulation depicting Bogoliubov-de Gennes quasiparticle dynamics, Andreev retro-reflection at superconductor-normal-superconductor (SNS) interfaces, quantized Andreev bound state resonances, and macroscopic Cooper pair condensation. The animation captures an electron wavepacket striking the superconducting interface ($|x| = 2.85$), forming a transmitted Cooper pair into the superconducting order parameter field $\Delta(x) e^{i\phi(t)}$ with 2D concentric phase ripples, and retro-reflecting as a hole with exact velocity reversal ($\mathbf{v}_h = -\mathbf{v}_e$). In the central mesoscopic cavity, multiple Andreev reflections form quantized standing-wave bound state channels with dual-light Blinn-Phong specular relief normal mapping and 2,400 multi-trail Lagrangian quasiparticles tracing glowing trajectory ribbons.
+- **Techniques**: Continuous 2D superconducting proximity field $\Delta(x)$ on a $480 \times 270$ computational domain, analytical Josephson phase modulation $\Delta\phi(t)$, 2D concentric phase ripple dispersion, quantized Andreev bound state mode interference, dual-light Blinn-Phong specular normal shading, and Lagrangian quasiparticle kinematics with multi-segment history ribbons rendered via vectorized `py5.lines()` and `py5.points()`.
+- **Palette**: Superconducting Leads Cryogenic Azure Cobalt & Radiant Cyan Ripples, Normal Cavity Midnight Violet & Radiant Amethyst, Incident Electrons Electric Glacial Cyan, Retro-Reflected Holes Neon Laser Magenta / Radiant Cerise, Cooper Pairs & Specular Sheen Incandescent Liquid Pearl White & Solar Gold.
+
 ## kinetic_chalker_coddington_quantum_hall_criticality_2d
 - **Date**: 2026-09-28
 - **Type**: Animation (900 frames, 60fps)

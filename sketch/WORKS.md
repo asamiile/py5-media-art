@@ -1,3 +1,10 @@
+## kinetic_ferroelectric_domain_wall_vortices_2d
+- **Date**: 2026-10-30
+- **Type**: Animation (720 frames, 60fps)
+- **Concept**: 2D condensed matter and polar topology simulation depicting ferroelectric domain textures, 90° and 180° domain walls, flux-closure polarization vortices, and quasi-1D conductive domain wall electron transport. The animation captures spontaneous electric polarization forming alternating orthogonal domains with non-linear Landau-Devonshire saturation, continuous swirling flux-closure vortices channeling electric flux into closed toroidal loops, and mobile charge carriers streaming along incandescent conductive domain boundaries under applied electric bias.
+- **Techniques**: Continuous 2D Landau-Devonshire polarization field synthesis on a $480 \times 270$ computational domain, non-linear $\tanh$ saturation locking, spatial derivative domain-wall metric tensor, and Lagrangian charge carrier kinematics rendered via vectorized `py5.lines()` and `py5.points()`.
+- **Palette**: Opposing Polar Domains Saturated Ultramarine Blue & Vivid Carmine Crimson, Vortex Torus & Shearing Zones Luminous Cyan / Turquoise & Radiant Magenta, Conductive Domain Walls Blinding Incandescent Superconductive Gold/White Filament Glow, Dielectric Ground Deep Obsidian Crystal Void.
+
 ## kinetic_optical_tractor_bessel_beam_2d
 - **Date**: 2026-10-30
 - **Type**: Animation (720 frames, 60fps)

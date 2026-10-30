@@ -1,3 +1,10 @@
+## kinetic_non_hermitian_exceptional_point_caustics_2d
+- **Date**: 2026-10-30
+- **Type**: Animation (720 frames, 60fps)
+- **Concept**: 2D non-Hermitian wave physics and singular photonics simulation depicting parity-time (PT) symmetric coupled optical waveguides with balanced gain and loss, dynamic parameter encircling through an Exceptional Point (EP), two-sheeted Riemann surface branch cut caustics, and non-reciprocal chiral photon amplification. The animation visualizes stable oscillatory Rabi flopping across coupled active/passive channels transitioning into exponential amplification and eigenvector coalescence at the defective EP bottleneck.
+- **Techniques**: Continuous non-Hermitian 2x2 Hamiltonian tensor synthesis on a $480 \times 270$ computational domain, Riemann surface branch cut caustic field mapping, dual-light Blinn-Phong specular relief normal shading, and Lagrangian chiral photon kinematics rendered via vectorized `py5.lines()` and `py5.points()`.
+- **Palette**: Photonic Dielectric Substrate Deep Obsidian Void, Active Gain Channel Blinding Incandescent Neon Coral & Molten Solar Amber, Dissipative Loss Channel Cryogenic Midnight Indigo & Actinic Amethyst, Exceptional Point Singularities Radiant Glacial Cyan & Electric Jade, Coalescence Nodes Diamond Liquid Pearl White.
+
 ## kinetic_binary_gravitational_microlensing_caustics_2d
 - **Date**: 2026-10-30
 - **Type**: Animation (720 frames, 60fps)

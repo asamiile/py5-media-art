@@ -29,5 +29,6 @@ All agents must follow:
 - **Resolution**: Preview 1920×1080 | Output 3840×2160 (change `SIZE` constant)
 - **Retina**: After `py5.load_np_pixels()`, check `py5.np_pixels.shape[:2]` for actual size
 - **No fixed seeds**: Results should vary each run
+- **Diversity & Anti-Clustering**: Enforce Genre Taxonomy rotation, background inversion, and anti-template primitive restrictions (see `.agents/skills/planner/SKILL.md` and `.agents/skills/critic/SKILL.md`)
 - `.agents/FEEDBACK.md` is reserved for user feedback only (agents do not write to Rating/Comment fields)
 - **Branch protection**: Never push directly to the `main` branch. Always create a feature/work branch first, then push.

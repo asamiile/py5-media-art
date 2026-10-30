@@ -2,7 +2,7 @@
 - **Date**: 2026-10-30
 - **Type**: Animation (720 frames, 60fps)
 - **Concept**: Traditional Japanese Suminagashi (墨流し) fluid ink marbling on still water, where concentric bands of pure sumi charcoal ink, indigo dye, and vermilion undulate across an unbleached Echizen washi paper basin under gentle breath and convection vortices. Because the floating ink forms an immiscible surface film, ink boundaries never cross or intersect; they stretch, wrap, and compress around one another in continuous harmonic topological layers with quiet Heian-period wabi-sabi elegance.
-- **Techniques**: Diffeomorphic vortex twist advection preserving topological non-intersection, nested Lagrangian closed contour synthesis ($N=145$, $P=640$), laminar surface breeze stream modulation, standing capillary tension ripples, static kozo paper fibers and pulp deckle simulation, and traditional hand-carved vermilion Hanko artist seal.
+- **Techniques**: Diffeomorphic vortex twist advection preserving topological non-intersection, nested Lagrangian closed contour synthesis ($N=145$, $P=640$), laminar surface breeze stream modulation, standing capillary tension ripples, and static kozo paper fibers with pulp deckle simulation.
 - **Palette**: Unbleached Echizen Washi Ground (`#f4ede0`), Deep Pine-Soot Sumi Ink (`#121110`), Fermented Indigo Dye (*kachi-iro*, `#182638`), Walnut Gall Sepia (*kurumi-iro*, `#3c281c`), Mineral Vermilion (*shu-iro*, `#b02e20`).
 
 ## kinetic_girih_arabesque_interlacing_strapwork_2d

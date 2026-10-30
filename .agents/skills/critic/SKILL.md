@@ -32,7 +32,8 @@ Score on 5 axes (10 points each):
    If visual clustering is detected, assign a **Portfolio Diversity** score <= 5, which will trigger a `REVISE`.
 3. Read `sketch/{work_name}/main.py`
 4. View generated previews visually according to `.agents/skills/shared/artwork-conventions.md`, preferring `preview_p1.png` and comparing additional `preview_pN.png` files when present.
-5. Output scores on all 5 axes with specific improvement suggestions
+5. Inspect code and visuals for any artist signatures, name seals (hanko/落款), initials, monograms, personal marks, or author watermarks. If any element resembling an author signature or seal is detected, issue an automatic `REVISE`.
+6. Output scores on all 5 axes with specific improvement suggestions
 
 ## Output Format
 
@@ -61,6 +62,7 @@ APPROVE (total 38+) or REVISE (37 or below)
 
 - `APPROVE` threshold: total **38 or above** (with Portfolio Diversity >= 7)
 - If Portfolio Diversity is < 7, issue `REVISE` with explicit directions on how to diverge from recent works (e.g. switch to light background, use geometric planes or organic branching instead of particle trails).
+- **Zero-Tolerance for Signatures / Hanko / Personal Marks**: If an artwork contains any signature, artist seal (落款・印章), monogram, initials, personal logo, or identifiable author mark, it CANNOT be approved under any circumstances. Verdict must be `REVISE` with an immediate requirement to remove the element.
 - For `REVISE`: always include concrete code-level improvement suggestions
 - Maximum 2 `REVISE` verdicts — the 3rd review must always be `APPROVE`
 - Praise-only feedback is not allowed — always raise at least one improvement point

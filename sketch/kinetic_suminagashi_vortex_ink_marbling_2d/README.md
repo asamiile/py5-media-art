@@ -16,7 +16,7 @@ Because the ink floats as an immiscible surface film, ink boundaries never cross
 
 - **Genre**: *Atmospheric / Painterly / Color Field* (Rotates away from *Textile / Calligraphy / Procedural Craft*, *Architectural / Brutalism / Geometric*, and *Physical / Micro-Kinetic*).
 - **Background Tone**: Unbleached Echizen washi paper (`#f4ede0`, high luminance $L > 90\%$), featuring embedded kozo paper fibers and raw pulp flecks.
-- **Rendering Primitives**: 145 non-intersecting nested closed contour polygons deformed via smooth diffeomorphic transformations. Hand-carved vermilion artist seal (落款 Hanko) in the lower right corner. **Zero particle streams or point clouds.**
+- **Rendering Primitives**: 145 non-intersecting nested closed contour polygons deformed via smooth diffeomorphic transformations. **Zero particle streams or point clouds.**
 - **Palette**: Authentic Japanese traditional pigments:
   - Deep sumi charcoal ink (`#121110`)
   - Fermented indigo dye (*kachi-iro*, `#182638`)

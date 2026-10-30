@@ -11,7 +11,7 @@ Anti-Clustering & Diversity Compliance:
 - Genre: Atmospheric / Painterly / Color Field (Rotates away from Craft, Architecture, and Physics)
 - Background: Unbleached Echizen washi paper (#f4ede0, warm high-luminance ground)
 - Primitives: Non-intersecting continuous nested fluid ink rings with diffeomorphic vortex
-  and streamline advection. Fine paper pulp fibers. Hand-carved vermilion Hanko seal.
+  and streamline advection. Fine paper pulp fibers.
   Zero particles or point clouds.
 - Palette: Sumi charcoal ink (#121110), indigo kachi-iro (#182638), walnut sepia (#3c281c),
   and vermilion shu-iro (#b02e20).
@@ -199,23 +199,7 @@ def draw():
         py5.vertices(pts)
         py5.end_shape(py5.CLOSE)
 
-    # 4. Vermilion artist seal (落款 Hanko) in bottom right corner
-    seal_x = WIDTH - 260
-    seal_y = HEIGHT - 260
-    py5.fill(176, 46, 32, 240)
-    py5.no_stroke()
-    py5.rect(seal_x - 38, seal_y - 38, 76, 76, 8)
-    py5.stroke(244, 237, 224, 245)
-    py5.stroke_weight(3.5)
-    py5.no_fill()
-    py5.rect(seal_x - 30, seal_y - 30, 60, 60, 4)
-    py5.stroke_weight(3.2)
-    py5.line(seal_x - 15, seal_y - 20, seal_x - 15, seal_y + 20)
-    py5.line(seal_x - 15, seal_y - 2, seal_x + 18, seal_y - 2)
-    py5.line(seal_x + 6, seal_y - 20, seal_x + 6, seal_y + 20)
-    py5.line(seal_x + 18, seal_y - 12, seal_x + 18, seal_y + 16)
-
-    # 5. Save frame
+    # 4. Save frame
     frame_path = os.path.join(FRAMES_DIR, f"frame_{frame:04d}.png")
     py5.save_frame(frame_path)
 

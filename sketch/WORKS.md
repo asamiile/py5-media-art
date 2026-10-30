@@ -1,3 +1,10 @@
+## kinetic_girih_arabesque_interlacing_strapwork_2d
+- **Date**: 2026-10-30
+- **Type**: Animation (720 frames, 60fps)
+- **Concept**: Illuminated medieval Islamic Girih geometric strapwork and continuous interlaced star polygon tessellation on antique manuscript vellum. Exploring sacred geometric harmony, a monumental 16-point central star medallion interlocks with four 12-point corner rosettes and four 8-point edge cartouches via connecting gilded strapwork bridges, breathing and rotating in harmonic counterpoint with enameled lapis lazuli and Persian turquoise inlays.
+- **Techniques**: Star polygon cord synthesis ({16/6}, {12/4}, {8/3}), topological two-pass over-under interlacing, gilded bevel edge highlighting, sacred geometry compass drafting grid, and harmonic multi-frequency radial breathing and counter-rotation.
+- **Palette**: Antique Gold-Flecked Vellum & Manuscript Ground, Interlacing Strapwork Burnished Gold Leaf & Shaded Bronze, Enameled Geometric Inlays Lapis Lazuli Ultramarine, Persian Enameled Turquoise & Carmine Ruby, Drafting Walnut Sepia Ink.
+
 ## kinetic_constructivist_spatial_decomposition_2d
 - **Date**: 2026-10-30
 - **Type**: Animation (720 frames, 60fps)

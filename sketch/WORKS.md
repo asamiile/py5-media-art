@@ -1,3 +1,10 @@
+## kinetic_optical_tractor_bessel_beam_2d
+- **Date**: 2026-10-30
+- **Type**: Animation (720 frames, 60fps)
+- **Concept**: 2D wave optics and photonics simulation depicting structured singular optics, non-diffracting high-order Bessel-vortex beams, negative radiation pressure, and retrograde optical tractor pulling dynamics. The animation captures an optical aperture launching a high-order Bessel-vortex beam ($m = 2$) whose concentric diffraction rings and dynamic helical phase wavefronts exert negative radiation pressure on trapped matter particles, pulling them upstream along retrograde helical corkscrew trajectories into the incandescent laser aperture against forward-propagating light wavepackets.
+- **Techniques**: Analytical SciPy high-order Bessel profile $J_2(k_r r)^2$ on a $480 \times 270$ computational grid, helical phase wave caustics, transverse optical gradient force trapping, dual-light Blinn-Phong specular relief normal mapping, and Lagrangian kinematics with multi-segment history ribbons rendered via vectorized `py5.lines()` and `py5.points()`.
+- **Palette**: Aperture Core Diamond White, Bessel Rings Radiant Laser Emerald & Electric Mint, Pulled Matter Sparks Solar Amber & Topaz Gold, Forward Light Pulses Fluorescent Pale Mint, Cosmic Void Deep Indigo Obsidian.
+
 ## kinetic_andreev_reflection_bound_states_2d
 - **Date**: 2026-10-30
 - **Type**: Animation (720 frames, 60fps)

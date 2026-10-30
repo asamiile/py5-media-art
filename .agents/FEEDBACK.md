@@ -2,6 +2,12 @@
 
 **CRITICAL RULE**: ONLY the USER may write to the `Rating` and `Comment` field.
 Agents MUST NOT write anything in the `Comment` field. When registering a new work, Agents must leave the `Rating` and `Comment` fields empty or with their default labels as placeholders for the user.
+## kinetic_constructivist_spatial_decomposition_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
 ## kinetic_non_hermitian_exceptional_point_caustics_2d
 
 - **Rating**: 

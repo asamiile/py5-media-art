@@ -1,3 +1,10 @@
+## kinetic_constructivist_spatial_decomposition_2d
+- **Date**: 2026-10-30
+- **Type**: Animation (720 frames, 60fps)
+- **Concept**: Constructivist architectural deconstruction and spatial tension on tactile ivory drafting vellum. Departing fundamentally from particle physics simulations, the work investigates macro-scale tectonic balance, cantilevered monolithic slabs, shifting soft cast shadow volumes, rhythmic terracotta vermilion and Prussian indigo counterpoints, and architectural drafting linework in classical 30-degree axonometry.
+- **Techniques**: Custom 2.5D oblique axonometric projection engine, harmonic multi-axis cyclical oscillator trajectories, back-to-front painter's depth sorting, dual-layer polygonal contact shadow penumbra projection, and architectural drafting vector graphics (millimeter grid, registration marks, diagonal cross-hatching, variable ink silhouette weights).
+- **Palette**: Architectural Drafting Vellum Canvas Warm Ivory & Bone White, Brutalist Monolith Concrete Ash & Limestone, Constructivist Accents Terracotta Vermilion & Prussian Slate Indigo, Raw Ochre Sienna, Drafting Charcoal Ink.
+
 ## kinetic_non_hermitian_exceptional_point_caustics_2d
 - **Date**: 2026-10-30
 - **Type**: Animation (720 frames, 60fps)

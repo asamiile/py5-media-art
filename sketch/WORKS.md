@@ -1,3 +1,10 @@
+## kinetic_higher_order_topological_corner_states_2d
+- **Date**: 2026-10-30
+- **Type**: Animation (720 frames, 60fps)
+- **Concept**: 2D acoustic metamaterial and higher-order topological insulator (HOTI) simulation depicting a 2D Benalcazar-Bernevig-Hughes (BBH) quadrupole lattice, bulk bandgap insulation, gapped 1D perimeter edges, and robust zero-dimensional topological corner bound state condensation under resonant acoustic excitation. The animation captures a finite rectangular acoustic micro-resonator plate with synthetic $\pi$-flux per plaquette, showing how dynamic acoustic frequency pumping cancels interior bulk and perimeter edge propagation while concentrating mechanical vibrational energy into four incandescent, indestructible corner resonance traps with alternating quadrupolar phase signs and orbiting Lagrangian phonon quasiparticles.
+- **Techniques**: Continuous 2D BBH quadrupole topological field tensor synthesis on a $480 \times 270$ computational domain, exponential corner spatial confinement modeling, dual-light Blinn-Phong specular relief normal shading, and Lagrangian phonon kinematics rendered via vectorized `py5.lines()` and `py5.points()`.
+- **Palette**: Silicon Substrate Deep Obsidian Void, Micro-Pillar Lattice Midnight Cobalt & Slate Mesh, Topological Pressure Waves Radiant Electric Mint & Glacial Cyan, Phase Shearing Cryogenic Indigo & Royal Violet, Corner Bound Singularities Blinding Incandescent Solar Topaz & Liquid Pearl White.
+
 ## kinetic_ferroelectric_domain_wall_vortices_2d
 - **Date**: 2026-10-30
 - **Type**: Animation (720 frames, 60fps)

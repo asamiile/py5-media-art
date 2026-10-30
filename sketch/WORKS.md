@@ -1,3 +1,10 @@
+## kinetic_quantum_spin_hall_helical_edge_states_2d
+- **Date**: 2026-10-30
+- **Type**: Animation (720 frames, 60fps)
+- **Concept**: 2D quantum condensed matter physics simulation of the Quantum Spin Hall (QSH) effect in a Bernevig-Hughes-Zhang (BHZ) / Kane-Mele $\mathbb{Z}_2$ topological insulator, depicting bulk bandgap insulation, Kramers-paired helical edge channels with strict spin-momentum locking, and dissipationless boundary transport immune to non-magnetic impurity backscattering. The animation captures an inverted bandgap Mexican-hat quantum well bordered by counter-circulating spin-up (clockwise electric glacial cyan) and spin-down (counter-clockwise laser cerise/magenta) helical currents that weave an iridescent braided perimeter border and glide seamlessly around non-magnetic defect scatterers.
+- **Techniques**: Continuous 2D signed distance boundary field synthesis on a $480 \times 270$ computational domain, counter-propagating helical wave interference, dual-light Blinn-Phong specular relief normal shading, and Lagrangian spin-momentum-locked electron kinematics rendered via vectorized `py5.lines()` and `py5.points()`.
+- **Palette**: Substrate Deep Obsidian Void, Bulk Well Midnight Cobalt & Amethyst Veil, Spin-Up Current Electric Glacial Cyan, Spin-Down Current Radiant Laser Cerise & Neon Magenta, Defect Immunity Nodes Blinding Incandescent Solar Gold.
+
 ## kinetic_higher_order_topological_corner_states_2d
 - **Date**: 2026-10-30
 - **Type**: Animation (720 frames, 60fps)

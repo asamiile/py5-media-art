@@ -1,3 +1,10 @@
+## kinetic_binary_gravitational_microlensing_caustics_2d
+- **Date**: 2026-10-30
+- **Type**: Animation (720 frames, 60fps)
+- **Concept**: 2D relativistic astrophysics simulation of binary gravitational microlensing, depicting the complex 2-body lens equation, critical curves where the Jacobian determinant vanishes ($\det J = 0$), astroid-shaped caustic networks, extreme relativistic magnification spikes ($A \propto 1 / |\det J|$), and multi-image creation/annihilation kinematics. The animation captures a binary stellar lens whose orbiting gravitational potential wells distort the spacetime fabric and form glowing dumbbell-shaped critical rings that flare with incandescent gold and white magnification bursts as a background source sweeps across the caustic folds.
+- **Techniques**: Continuous 2-body complex gravitational lens tensor evaluation on a $480 \times 270$ computational domain, Jacobian determinant mapping, regularized magnification field synthesis, dual-light Blinn-Phong spacetime gravitational potential normal relief, and Lagrangian photon kinematics rendered via vectorized `py5.lines()` and `py5.points()`.
+- **Palette**: Spacetime Fabric Void Deep Obsidian Space Abyss, Gravitational Potential Wells Midnight Sapphire & Deep Indigo, Critical Curve Boundaries Radiant Electric Cyan & Glacial Jade, Caustic Magnification Flares Blinding Incandescent Solar Gold & Topaz Amber, Singularities Diamond Liquid White.
+
 ## kinetic_quantum_spin_hall_helical_edge_states_2d
 - **Date**: 2026-10-30
 - **Type**: Animation (720 frames, 60fps)

@@ -1,3 +1,10 @@
+## kinetic_pelagic_medusa_bioluminescence_morphogenesis_2d
+- **Date**: 2026-10-30
+- **Type**: Animation (720 frames, 60fps)
+- **Concept**: Deep-sea pelagic scyphozoan jellyfish (Medusa) bioluminescent morphogenesis. Inspired by Ernst Haeckel's Kunstformen der Natur and bathypelagic marine hydrodynamics, a multi-tiered nectophore umbrella pulses rhythmically through the hadal midnight abyss, accompanied by eight fluted silken oral arm ribbons and 44 trailing tentacular filaments with pulsating bioluminescent nematocyst batteries, free of human authorship marks.
+- **Techniques**: 22-tier translucent nectophore umbrella bell with scalloped marginal lappets, harmonic coronal contraction/power-stroke kinematics ($T=720$), 16 radial gastrovascular canal ribs with rhopalia sensory beads, multi-frequency sinuous traveling wave oral arm ribbons, trailing tentacular filaments with nematocyst batteries, and apical statocyst sensory organ crown.
+- **Palette**: Hadal Midnight Abyss (`#04070f`), Bioluminescent Ocean Cyan (`#06b6d4`), Bio-Phosphor Emerald (`#10b981`), Topaz Amber (`#f59e0b`), Core Bio-Luminescence White (`#fef08a`).
+
 ## kinetic_cathode_ray_raster_video_feedback_2d
 - **Date**: 2026-10-30
 - **Type**: Animation (720 frames, 60fps)

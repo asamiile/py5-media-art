@@ -1,3 +1,10 @@
+## kinetic_mizuhiki_ceremonial_knot_braiding_2d
+- **Date**: 2026-10-31
+- **Type**: Animation (720 frames, 60fps)
+- **Concept**: Sacred Japanese Mizuhiki (水引) ceremonial cord knotting and topological Ume-Awaji knot dynamics on tactile warm unbleached kozo washi paper. Multi-strand parallel silk ribbons traverse continuous 3D space curve knot trajectories, featuring a central 5-petal Ume plum blossom knot in harmonic breathing resonance with an interwoven inner gilded rosette, outer royal indigo Awaji Carrick bow wings, and cascading silk streamers with cylindrical silk thread sheen and tactile drop shadows, completely free of author signatures or seals.
+- **Techniques**: Multi-strand Frenet-Serret parallel transport ribbon splines, 3D parametric space curve knot kinematics ($T=720$, 60fps), 64-tier analytical depth-sorting (Painter's algorithm), dual-pass cylindrical silk thread profile with specular highlights, tactile ground drop shadow projection, procedural kozo mulberry fiber grain, and burnished sunago gold leaf flecks.
+- **Palette**: Warm Unbleached Kozo Washi (`#f7f3ea`), Ceremonial Lacquer Vermilion (*beni-iro* `#be1c1c` / `#f03a3a`), Burnished Metallic Gold Leaf (*kin-paku* `#c3911e` / `#ffe86e`), Raw Silk Pearl White (*shiro* `#f5f5f8`), Royal Fermented Indigo (*kachi-iro* `#14243c`).
+
 ## kinetic_subpolar_auroral_geomagnetic_ribbons_2d
 - **Date**: 2026-10-31
 - **Type**: Animation (720 frames, 60fps)

@@ -1,3 +1,108 @@
+## kinetic_subpolar_auroral_geomagnetic_ribbons_2d
+- **Date**: 2026-10-31
+- **Type**: Animation (720 frames, 60fps)
+- **Concept**: Sublime polar night Aurora Borealis and Birkeland geomagnetic field-aligned current curtains rippling over a tranquil subarctic glacial fjord. Four folded auroral drapery sheets undulate in periodic harmonic resonance with hundreds of vertical ray streamers inclined at 78° magnetic dip angle, exhibiting altitude-dependent spectral emission lines (atomic oxygen 557.7nm emerald base, N2+ cyan mid-altitude, 630.0nm ruby top) above three-tiered basalt mountain silhouettes and fjord mirror reflections, completely free of author signatures.
+- **Techniques**: Multi-tier folded Birkeland curtain traveling waves, 12-segment magnetic field line ray streamers with 78° dip angle tilt, fold density cusp magnification, atmospheric ionospheric wash, triple-tier basalt mountain ridge polygons with frost crest highlights, and capillary water reflection lines.
+- **Palette**: Cosmic Polar Void (`#02040a`), Atomic Oxygen Emerald (`#22c55e`), Ionospheric Glacial Cyan (`#06b6d4`), High-Altitude Oxygen Ruby (`#e11d48`), Basalt Mountain Midnight (`#030712`), Glacial Frost Rim (`#6ee7b7`).
+
+## kinetic_renaissance_astrolabe_armillary_mechanism_2d
+- **Date**: 2026-10-31
+- **Type**: Animation (720 frames, 60fps)
+- **Concept**: Renaissance astronomical armillary sphere, celestial astrolabe, and planetary clockwork linkage drafted on Prussian cyanotype blueprint vellum. An outer 360-degree meridian ring graduated with vernier arc divisions encloses a tilted rotating ecliptic zodiac ring, breathing celestial colure meridians, a 6-tier planetary epicyclic gear train with involute gear teeth, connecting kinematic linkage armatures, and a rotating sight-vane alidade rule in 12.0s harmonic resonance, free of human author signatures.
+- **Techniques**: Oblique 3D ecliptic ring projection with 23.44° astronomical obliquity, 6-tier planetary epicyclic gear train with parametric tooth profiles and pitch circle meshing, vernier 360-degree meridian hierarchical graduations, kinematic linkage connecting rods, rotating alidade sight rule, and cyanotype blueprint coordinate grid.
+- **Palette**: Prussian Cyanotype Ground (`#0b1d3a`), Celestial Brass Gold (`#fbbf24`), Drafting Cyan (`#38bdf8`), Technical Chalk White (`#f8fafc`), Blueprint Grid Lines (`#18345c`).
+
+## kinetic_poincare_hyperbolic_hopf_fibration_2d
+- **Date**: 2026-10-31
+- **Type**: Animation (720 frames, 60fps)
+- **Concept**: Non-Euclidean Poincaré disk hyperbolic geometry, conformal Möbius transformations, and 4D Clifford-Hopf fibration Villarceau circle bundles projected onto tactile antique mathematician drafting vellum. A central Poincaré boundary circle anchors rotating conformal circular geodesics and concentric horocycles, interwoven with chiral Villarceau circle fibers of the Hopf fibration and an orthogonal Apollonian coordinate pencil net in 12.0s harmonic resonance, free of human author signatures.
+- **Techniques**: Conformal circular geodesics meeting the Poincaré boundary orthogonally via Pythagorean metric constraints, coaxial Apollonian pencil circle net, chiral Villarceau circle fibers on Clifford tori ($S^3 \to S^2$), concentric breathing horocycle families, and perimeter radian calibration compass ticks.
+- **Palette**: Drafting Vellum Ground (`#f6f2e8`), Prussian Slate Blue (`#1c3e66`), Copper Sepia Bronze (`#944c2a`), Sage Drafting Ink (`#3d5a45`), Deep Boundary Track Ink (`#1e2530`).
+
+## kinetic_pelagic_medusa_bioluminescence_morphogenesis_2d
+- **Date**: 2026-10-30
+- **Type**: Animation (720 frames, 60fps)
+- **Concept**: Deep-sea pelagic scyphozoan jellyfish (Medusa) bioluminescent morphogenesis. Inspired by Ernst Haeckel's Kunstformen der Natur and bathypelagic marine hydrodynamics, a multi-tiered nectophore umbrella pulses rhythmically through the hadal midnight abyss, accompanied by eight fluted silken oral arm ribbons and 44 trailing tentacular filaments with pulsating bioluminescent nematocyst batteries, free of human authorship marks.
+- **Techniques**: 22-tier translucent nectophore umbrella bell with scalloped marginal lappets, harmonic coronal contraction/power-stroke kinematics ($T=720$), 16 radial gastrovascular canal ribs with rhopalia sensory beads, multi-frequency sinuous traveling wave oral arm ribbons, trailing tentacular filaments with nematocyst batteries, and apical statocyst sensory organ crown.
+- **Palette**: Hadal Midnight Abyss (`#04070f`), Bioluminescent Ocean Cyan (`#06b6d4`), Bio-Phosphor Emerald (`#10b981`), Topaz Amber (`#f59e0b`), Core Bio-Luminescence White (`#fef08a`).
+
+## kinetic_cathode_ray_raster_video_feedback_2d
+- **Date**: 2026-10-30
+- **Type**: Animation (720 frames, 60fps)
+- **Concept**: Analogue Cathode Ray Tube (CRT) video synthesizer with recursive optical feedback loop, multi-harmonic Lissajous beam deflection, RGB chromatic aberration shears, horizontal sync glitch tearing, and P22 phosphor persistence glow. Simulating an analogue camera pointed into a CRT monitor, 46 recursive feedback planes shear, rotate, and tunnel toward infinity inside a curved glass tube bezel, completely free of any author signatures or personal marks.
+- **Techniques**: 46-stage recursive feedback raster corridor with geometric zoom and Lissajous orbit drift, 3-channel chromatic aberration RGB separation, multi-tier vector oscilloscope Harmonograph Lissajous curves with persistence halo glow, sub-pixel shadow-mask scanline grilles, horizontal sync tracking jitter slice shears, and oscilloscope calibration reticle crosshairs.
+- **Palette**: CRT Chassis Black (`#08080b`), P22 Phosphor Green (`#22c55e`), Vector Oscilloscope Cyan (`#06b6d4`), Beam Trace Magenta (`#f43f5e`), Master Lock Amber (`#fbbf24`), Electron Core White (`#ffffff`).
+
+## kinetic_suminagashi_vortex_ink_marbling_2d
+- **Date**: 2026-10-30
+- **Type**: Animation (720 frames, 60fps)
+- **Concept**: Traditional Japanese Suminagashi (墨流し) fluid ink marbling on still water, where concentric bands of pure sumi charcoal ink, indigo dye, and vermilion undulate across an unbleached Echizen washi paper basin under gentle breath and convection vortices. Because the floating ink forms an immiscible surface film, ink boundaries never cross or intersect; they stretch, wrap, and compress around one another in continuous harmonic topological layers with quiet Heian-period wabi-sabi elegance.
+- **Techniques**: Diffeomorphic vortex twist advection preserving topological non-intersection, nested Lagrangian closed contour synthesis ($N=145$, $P=640$), laminar surface breeze stream modulation, standing capillary tension ripples, and static kozo paper fibers with pulp deckle simulation.
+- **Palette**: Unbleached Echizen Washi Ground (`#f4ede0`), Deep Pine-Soot Sumi Ink (`#121110`), Fermented Indigo Dye (*kachi-iro*, `#182638`), Walnut Gall Sepia (*kurumi-iro*, `#3c281c`), Mineral Vermilion (*shu-iro*, `#b02e20`).
+
+## kinetic_girih_arabesque_interlacing_strapwork_2d
+- **Date**: 2026-10-30
+- **Type**: Animation (720 frames, 60fps)
+- **Concept**: Illuminated medieval Islamic Girih geometric strapwork and continuous interlaced star polygon tessellation on antique manuscript vellum. Exploring sacred geometric harmony, a monumental 16-point central star medallion interlocks with four 12-point corner rosettes and four 8-point edge cartouches via connecting gilded strapwork bridges, breathing and rotating in harmonic counterpoint with enameled lapis lazuli and Persian turquoise inlays.
+- **Techniques**: Star polygon cord synthesis ({16/6}, {12/4}, {8/3}), topological two-pass over-under interlacing, gilded bevel edge highlighting, sacred geometry compass drafting grid, and harmonic multi-frequency radial breathing and counter-rotation.
+- **Palette**: Antique Gold-Flecked Vellum & Manuscript Ground, Interlacing Strapwork Burnished Gold Leaf & Shaded Bronze, Enameled Geometric Inlays Lapis Lazuli Ultramarine, Persian Enameled Turquoise & Carmine Ruby, Drafting Walnut Sepia Ink.
+
+## kinetic_constructivist_spatial_decomposition_2d
+- **Date**: 2026-10-30
+- **Type**: Animation (720 frames, 60fps)
+- **Concept**: Constructivist architectural deconstruction and spatial tension on tactile ivory drafting vellum. Departing fundamentally from particle physics simulations, the work investigates macro-scale tectonic balance, cantilevered monolithic slabs, shifting soft cast shadow volumes, rhythmic terracotta vermilion and Prussian indigo counterpoints, and architectural drafting linework in classical 30-degree axonometry.
+- **Techniques**: Custom 2.5D oblique axonometric projection engine, harmonic multi-axis cyclical oscillator trajectories, back-to-front painter's depth sorting, dual-layer polygonal contact shadow penumbra projection, and architectural drafting vector graphics (millimeter grid, registration marks, diagonal cross-hatching, variable ink silhouette weights).
+- **Palette**: Architectural Drafting Vellum Canvas Warm Ivory & Bone White, Brutalist Monolith Concrete Ash & Limestone, Constructivist Accents Terracotta Vermilion & Prussian Slate Indigo, Raw Ochre Sienna, Drafting Charcoal Ink.
+
+## kinetic_non_hermitian_exceptional_point_caustics_2d
+- **Date**: 2026-10-30
+- **Type**: Animation (720 frames, 60fps)
+- **Concept**: 2D non-Hermitian wave physics and singular photonics simulation depicting parity-time (PT) symmetric coupled optical waveguides with balanced gain and loss, dynamic parameter encircling through an Exceptional Point (EP), two-sheeted Riemann surface branch cut caustics, and non-reciprocal chiral photon amplification. The animation visualizes stable oscillatory Rabi flopping across coupled active/passive channels transitioning into exponential amplification and eigenvector coalescence at the defective EP bottleneck.
+- **Techniques**: Continuous non-Hermitian 2x2 Hamiltonian tensor synthesis on a $480 \times 270$ computational domain, Riemann surface branch cut caustic field mapping, dual-light Blinn-Phong specular relief normal shading, and Lagrangian chiral photon kinematics rendered via vectorized `py5.lines()` and `py5.points()`.
+- **Palette**: Photonic Dielectric Substrate Deep Obsidian Void, Active Gain Channel Blinding Incandescent Neon Coral & Molten Solar Amber, Dissipative Loss Channel Cryogenic Midnight Indigo & Actinic Amethyst, Exceptional Point Singularities Radiant Glacial Cyan & Electric Jade, Coalescence Nodes Diamond Liquid Pearl White.
+
+## kinetic_binary_gravitational_microlensing_caustics_2d
+- **Date**: 2026-10-30
+- **Type**: Animation (720 frames, 60fps)
+- **Concept**: 2D relativistic astrophysics simulation of binary gravitational microlensing, depicting the complex 2-body lens equation, critical curves where the Jacobian determinant vanishes ($\det J = 0$), astroid-shaped caustic networks, extreme relativistic magnification spikes ($A \propto 1 / |\det J|$), and multi-image creation/annihilation kinematics. The animation captures a binary stellar lens whose orbiting gravitational potential wells distort the spacetime fabric and form glowing dumbbell-shaped critical rings that flare with incandescent gold and white magnification bursts as a background source sweeps across the caustic folds.
+- **Techniques**: Continuous 2-body complex gravitational lens tensor evaluation on a $480 \times 270$ computational domain, Jacobian determinant mapping, regularized magnification field synthesis, dual-light Blinn-Phong spacetime gravitational potential normal relief, and Lagrangian photon kinematics rendered via vectorized `py5.lines()` and `py5.points()`.
+- **Palette**: Spacetime Fabric Void Deep Obsidian Space Abyss, Gravitational Potential Wells Midnight Sapphire & Deep Indigo, Critical Curve Boundaries Radiant Electric Cyan & Glacial Jade, Caustic Magnification Flares Blinding Incandescent Solar Gold & Topaz Amber, Singularities Diamond Liquid White.
+
+## kinetic_quantum_spin_hall_helical_edge_states_2d
+- **Date**: 2026-10-30
+- **Type**: Animation (720 frames, 60fps)
+- **Concept**: 2D quantum condensed matter physics simulation of the Quantum Spin Hall (QSH) effect in a Bernevig-Hughes-Zhang (BHZ) / Kane-Mele $\mathbb{Z}_2$ topological insulator, depicting bulk bandgap insulation, Kramers-paired helical edge channels with strict spin-momentum locking, and dissipationless boundary transport immune to non-magnetic impurity backscattering. The animation captures an inverted bandgap Mexican-hat quantum well bordered by counter-circulating spin-up (clockwise electric glacial cyan) and spin-down (counter-clockwise laser cerise/magenta) helical currents that weave an iridescent braided perimeter border and glide seamlessly around non-magnetic defect scatterers.
+- **Techniques**: Continuous 2D signed distance boundary field synthesis on a $480 \times 270$ computational domain, counter-propagating helical wave interference, dual-light Blinn-Phong specular relief normal shading, and Lagrangian spin-momentum-locked electron kinematics rendered via vectorized `py5.lines()` and `py5.points()`.
+- **Palette**: Substrate Deep Obsidian Void, Bulk Well Midnight Cobalt & Amethyst Veil, Spin-Up Current Electric Glacial Cyan, Spin-Down Current Radiant Laser Cerise & Neon Magenta, Defect Immunity Nodes Blinding Incandescent Solar Gold.
+
+## kinetic_higher_order_topological_corner_states_2d
+- **Date**: 2026-10-30
+- **Type**: Animation (720 frames, 60fps)
+- **Concept**: 2D acoustic metamaterial and higher-order topological insulator (HOTI) simulation depicting a 2D Benalcazar-Bernevig-Hughes (BBH) quadrupole lattice, bulk bandgap insulation, gapped 1D perimeter edges, and robust zero-dimensional topological corner bound state condensation under resonant acoustic excitation. The animation captures a finite rectangular acoustic micro-resonator plate with synthetic $\pi$-flux per plaquette, showing how dynamic acoustic frequency pumping cancels interior bulk and perimeter edge propagation while concentrating mechanical vibrational energy into four incandescent, indestructible corner resonance traps with alternating quadrupolar phase signs and orbiting Lagrangian phonon quasiparticles.
+- **Techniques**: Continuous 2D BBH quadrupole topological field tensor synthesis on a $480 \times 270$ computational domain, exponential corner spatial confinement modeling, dual-light Blinn-Phong specular relief normal shading, and Lagrangian phonon kinematics rendered via vectorized `py5.lines()` and `py5.points()`.
+- **Palette**: Silicon Substrate Deep Obsidian Void, Micro-Pillar Lattice Midnight Cobalt & Slate Mesh, Topological Pressure Waves Radiant Electric Mint & Glacial Cyan, Phase Shearing Cryogenic Indigo & Royal Violet, Corner Bound Singularities Blinding Incandescent Solar Topaz & Liquid Pearl White.
+
+## kinetic_ferroelectric_domain_wall_vortices_2d
+- **Date**: 2026-10-30
+- **Type**: Animation (720 frames, 60fps)
+- **Concept**: 2D condensed matter and polar topology simulation depicting ferroelectric domain textures, 90° and 180° domain walls, flux-closure polarization vortices, and quasi-1D conductive domain wall electron transport. The animation captures spontaneous electric polarization forming alternating orthogonal domains with non-linear Landau-Devonshire saturation, continuous swirling flux-closure vortices channeling electric flux into closed toroidal loops, and mobile charge carriers streaming along incandescent conductive domain boundaries under applied electric bias.
+- **Techniques**: Continuous 2D Landau-Devonshire polarization field synthesis on a $480 \times 270$ computational domain, non-linear $\tanh$ saturation locking, spatial derivative domain-wall metric tensor, and Lagrangian charge carrier kinematics rendered via vectorized `py5.lines()` and `py5.points()`.
+- **Palette**: Opposing Polar Domains Saturated Ultramarine Blue & Vivid Carmine Crimson, Vortex Torus & Shearing Zones Luminous Cyan / Turquoise & Radiant Magenta, Conductive Domain Walls Blinding Incandescent Superconductive Gold/White Filament Glow, Dielectric Ground Deep Obsidian Crystal Void.
+
+## kinetic_optical_tractor_bessel_beam_2d
+- **Date**: 2026-10-30
+- **Type**: Animation (720 frames, 60fps)
+- **Concept**: 2D wave optics and photonics simulation depicting structured singular optics, non-diffracting high-order Bessel-vortex beams, negative radiation pressure, and retrograde optical tractor pulling dynamics. The animation captures an optical aperture launching a high-order Bessel-vortex beam ($m = 2$) whose concentric diffraction rings and dynamic helical phase wavefronts exert negative radiation pressure on trapped matter particles, pulling them upstream along retrograde helical corkscrew trajectories into the incandescent laser aperture against forward-propagating light wavepackets.
+- **Techniques**: Analytical SciPy high-order Bessel profile $J_2(k_r r)^2$ on a $480 \times 270$ computational grid, helical phase wave caustics, transverse optical gradient force trapping, dual-light Blinn-Phong specular relief normal mapping, and Lagrangian kinematics with multi-segment history ribbons rendered via vectorized `py5.lines()` and `py5.points()`.
+- **Palette**: Aperture Core Diamond White, Bessel Rings Radiant Laser Emerald & Electric Mint, Pulled Matter Sparks Solar Amber & Topaz Gold, Forward Light Pulses Fluorescent Pale Mint, Cosmic Void Deep Indigo Obsidian.
+
+## kinetic_andreev_reflection_bound_states_2d
+- **Date**: 2026-10-30
+- **Type**: Animation (720 frames, 60fps)
+- **Concept**: 2D quantum condensed matter physics simulation depicting Bogoliubov-de Gennes quasiparticle dynamics, Andreev retro-reflection at superconductor-normal-superconductor (SNS) interfaces, quantized Andreev bound state resonances, and macroscopic Cooper pair condensation. The animation captures an electron wavepacket striking the superconducting interface ($|x| = 2.85$), forming a transmitted Cooper pair into the superconducting order parameter field $\Delta(x) e^{i\phi(t)}$ with 2D concentric phase ripples, and retro-reflecting as a hole with exact velocity reversal ($\mathbf{v}_h = -\mathbf{v}_e$). In the central mesoscopic cavity, multiple Andreev reflections form quantized standing-wave bound state channels with dual-light Blinn-Phong specular relief normal mapping and 2,400 multi-trail Lagrangian quasiparticles tracing glowing trajectory ribbons.
+- **Techniques**: Continuous 2D superconducting proximity field $\Delta(x)$ on a $480 \times 270$ computational domain, analytical Josephson phase modulation $\Delta\phi(t)$, 2D concentric phase ripple dispersion, quantized Andreev bound state mode interference, dual-light Blinn-Phong specular normal shading, and Lagrangian quasiparticle kinematics with multi-segment history ribbons rendered via vectorized `py5.lines()` and `py5.points()`.
+- **Palette**: Superconducting Leads Cryogenic Azure Cobalt & Radiant Cyan Ripples, Normal Cavity Midnight Violet & Radiant Amethyst, Incident Electrons Electric Glacial Cyan, Retro-Reflected Holes Neon Laser Magenta / Radiant Cerise, Cooper Pairs & Specular Sheen Incandescent Liquid Pearl White & Solar Gold.
+
 ## kinetic_chalker_coddington_quantum_hall_criticality_2d
 - **Date**: 2026-09-28
 - **Type**: Animation (900 frames, 60fps)

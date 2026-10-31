@@ -2,6 +2,95 @@
 
 **CRITICAL RULE**: ONLY the USER may write to the `Rating` and `Comment` field.
 Agents MUST NOT write anything in the `Comment` field. When registering a new work, Agents must leave the `Rating` and `Comment` fields empty or with their default labels as placeholders for the user.
+## kinetic_subpolar_auroral_geomagnetic_ribbons_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_renaissance_astrolabe_armillary_mechanism_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_poincare_hyperbolic_hopf_fibration_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_pelagic_medusa_bioluminescence_morphogenesis_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_cathode_ray_raster_video_feedback_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_suminagashi_vortex_ink_marbling_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_girih_arabesque_interlacing_strapwork_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_constructivist_spatial_decomposition_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_non_hermitian_exceptional_point_caustics_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_binary_gravitational_microlensing_caustics_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_quantum_spin_hall_helical_edge_states_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_higher_order_topological_corner_states_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_ferroelectric_domain_wall_vortices_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_optical_tractor_bessel_beam_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_andreev_reflection_bound_states_2d
+
+- **Rating**: 
+- **Comment**: 
+
 
 ## kinetic_chalker_coddington_quantum_hall_criticality_2d
 

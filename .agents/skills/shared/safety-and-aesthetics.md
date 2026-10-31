@@ -21,3 +21,15 @@ Techniques recommended from the perspectives of ergonomics and cognitive psychol
   Abrupt value jumps frame-by-frame using `random()` create flicker. Connect value changes smoothly using `noise()` or `lerp()` to create organic, eye-friendly movements.
 - **Luminance and Saturation Control**:
   Instead of painting large areas with high-saturation, high-luminance colors (like pure red or neon green), use gradients or Bloom effects (additive blending) to suppress luminance peaks while creating rich expressions.
+
+## 3. Strict Anonymity & PII / Signature Prohibition (個人特定・署名・落款等の厳格な排除)
+This repository is dedicated to 100% autonomous, non-human-intervened generative media art. To ensure absolute objectivity, privacy, and freedom from human authorship claims:
+
+- **Absolute Prohibition of Artist Seals & Hanko (落款・印章・花押の禁止)**:
+  Never render traditional red/colored artist seals (落款), chop marks, monogram stamps, or signature cartouches anywhere in the artwork.
+- **No Signatures, Monograms, or Initials (署名・イニシャル・モノグラムの禁止)**:
+  Never draw stylized text, cursive scripts, initials, personal logos, or letterforms that resemble an artist's signature or watermark.
+- **No Personally Identifiable or Brand Marks (個人特定・固有識別要素の排除)**:
+  Do not include names, individual identifiers, personal crests (家紋), or trademarks.
+- **Pure Algorithmic & Procedural Identity**:
+  Every artwork must stand on its mathematical, physical, or procedural integrity alone, completely free of artificial human author signatures.

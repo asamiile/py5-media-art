@@ -1,3 +1,10 @@
+## kinetic_marbling_ebru_suminagashi_vortex_2d
+- **Date**: 2026-10-31
+- **Type**: Animation (720 frames, 60fps)
+- **Concept**: Classical Turkish Ebru (*ebru sanatı*) and Japanese Suminagashi (墨流し, "floating ink") paper marbling fluid dynamics combining historical hydrodynamics with modern computational geometry. In traditional Ebru, insoluble mineral pigments floating upon a viscous carragheen sizing bath are combed orthogonally with a fine wire rake (*tarak*) to produce undulating *Gelgit* chevron waves, while delicate stylus swirling imparts logarithmic core vortices. The artwork simulates 46 multi-tier concentric mineral pigment ribbons undulating under bidirectional comb shearing, viscous core vortex shear, drifting gold foil (*kinpaku*) flecks, and an archival basin calibration graticule across warm torinoko washi vellum, completely free of author signatures.
+- **Techniques**: 46 concentric annular pigment rings ($r \in [14, 695]$) sampled at 220 radial points and rendered as continuous `QUAD_STRIP` gouache washes with delicate boundary contour lines, harmonic spatial-phase comb shearing along orthogonal axes ($A_x \sin(\omega t + k_x x) \cos(\omega t/2 + \phi_r)$), viscous core vortex shear ($\theta(r) = \theta_0 e^{-r/r_0} \sin(\omega t)$), 200 floating irregular 5-point gold leaf polygons (*kinpaku*) drifting under surface tension, warm torinoko washi vellum laid paper chain-lines, archival marbling basin border (*Ebru Teknesi*), millimeter calibration scale, and rotating stylus rake compass dial.
+- **Palette**: Warm Torinoko Vellum (`#f6f0e4`), Prussian Indigo (*Ai* `#163058`), Madder Carmine (*Beni* `#b92d3e`), Turmeric Gold (*Kihada* `#dca22a`), Shōen Sumi Black (`#14181e`), Malachite Celadon (*Rokushō* `#26737a`), Violet Logwood (*Murasaki* `#824476`), Floating Gold Foil (*Kinpaku* `#ebc037`), Basin Walnut Wood (`#826950`).
+
 ## kinetic_diatom_silica_frustule_radiance_2d
 - **Date**: 2026-10-31
 - **Type**: Animation (720 frames, 60fps)

@@ -1,3 +1,10 @@
+## kinetic_capillary_paper_chromatography_diffusion_2d
+- **Date**: 2026-10-31
+- **Type**: Animation (720 frames, 60fps)
+- **Concept**: Chemical paper chromatography and multi-solute capillary pigment fractionation across porous unbleached cotton cellulose paper. Three distinct historical ink formulations—a classic iron-gall ink core that fractionates into Prussian indigo, alizarin crimson, and tartrazine solar amber; a vibrant peacock dye that unfolds into turquoise, cyan, and deep violet; and a dragon's blood tincture that blooms in vermilion and rose madder—undulate through Saffman-Taylor viscous fingering lobes and 12-tier translucent optical glazes in 12.0s harmonic breathing resonance, completely free of author signatures.
+- **Techniques**: Chromatographic $R_f$ retention transport modeling, 12-tier multi-pass translucent pigment glaze polygons ($T=720$, 60fps), Saffman-Taylor viscous fingering boundary harmonics, radial capillary streamer fibrils, and porous cellulose paper fiber tooth grain.
+- **Palette**: Porous Cellulose Paper Ground (`#f6f3ec`), Fermented Prussian Indigo & Cobalt (`#18305c` / `#2b4c7e`), Alizarin Carmine Crimson & Rose Madder (`#cd2a4b` / `#e2486a`), Tartrazine Solar Amber & Saffron (`#f2c02d` / `#e89524`), Peacock Cyan & Turquoise (`#1891b6` / `#30b6bc`), Heavy Carbon Black & Gall Nuclei (`#0c0e12`).
+
 ## kinetic_crustose_lichen_apothecia_symbiosis_2d
 - **Date**: 2026-10-31
 - **Type**: Animation (720 frames, 60fps)

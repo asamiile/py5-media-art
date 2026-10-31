@@ -1,3 +1,10 @@
+## kinetic_frei_otto_tensile_membrane_catenary_2d
+- **Date**: 2026-10-31
+- **Type**: Animation (720 frames, 60fps)
+- **Concept**: Lightweight tensile membrane architecture, minimal surface form-finding, and structural cable-net mechanics inspired by Frei Otto (Institute for Lightweight Structures / IL Stuttgart; Munich Olympic Stadium 1972) executed on warm architectural drafting vellum. A dual-bay interconnected hyperbolic paraboloid (hypar) canopy spans between high tubular steel compression masts and low ground anchors. The anticlastic saddle geometry maintains continuous prestress under aerodynamic wind forces, featuring orthogonal Prussian-blue suspension catenaries, rust-ochre stabilizing cables, brass node swage fittings, translucent PTFE fabric shading, and radiating guy-wire rigging in 12.0s harmonic aeroelastic resonance, completely free of author signatures.
+- **Techniques**: Dual-bay coupled hyperbolic paraboloid geometry ($z = u^2 - v^2$) projected in 26-degree oblique axonometric elevation, aeroelastic wind buffeting wave kinematics ($A \sin(\omega t + \vec{k} \cdot \vec{r})$), depth-sorted painter's polygon rasterization with directional Lambertian sun shading, 30×30 orthogonal catenary cable grid (Prussian blue gravity-load suspension cables and rust-ochre wind-uplift stabilizing cables), 225 brass swage clamping nodes, heavy boundary wire ropes (*Seilnetzränder*), articulated steel tubular kingposts with spherical pin joints, radiating guy-wire ground tiebacks with stake anchors, foundation datum drop shadows, and millimeter prestress tension graticule.
+- **Palette**: Warm Architectural Drafting Vellum (`#f6f2ea`), Construction Datum Grid (`#e8e2d8`), Translucent PTFE Fabric Membrane (`#e0d8c4` / `#fcf8f0`), Structural Prussian Slate Cables (`#263e5f`), Safety Rust Ochre Cables (`#a53a2a`), Brass Clamping Swages (`#e1af2d`), Charcoal Steel Masts (`#232a34`), Crimson Foundation Stakes (`#b93728`).
+
 ## kinetic_lagrangian_three_body_jacobi_orbits_2d
 - **Date**: 2026-10-31
 - **Type**: Animation (720 frames, 60fps)

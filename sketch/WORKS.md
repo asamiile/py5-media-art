@@ -1,3 +1,10 @@
+## kinetic_lagrangian_three_body_jacobi_orbits_2d
+- **Date**: 2026-10-31
+- **Type**: Animation (720 frames, 60fps)
+- **Concept**: Circular Restricted Three-Body Problem (CR3BP) and Jacobi invariant manifold topology simulation on deep cosmic obsidian space. In the non-inertial rotating frame of two gravitationally bound celestial bodies—a radiant Primary star and an orbiting ringed gas giant—the balance between gravity and centrifugal acceleration establishes five equilibrium Lagrange libration points ($L_1, L_2, L_3, L_4, L_5$). The artwork visualizes 21 continuous Roche equipotential curves connecting through the critical neck at $L_1$, flowing invariant manifold stream ribbons ("The Interplanetary Superhighway") linking interior and exterior planetary space, periodic Lyapunov and Halo orbits, and resonant Trojan asteroid swarms orbiting $L_4$ and $L_5$, completely free of author signatures.
+- **Techniques**: 21 exact Roche equipotential curves computed on a $960 \times 540$ computational grid and traced via OpenCV contour extraction ($U \in [1.44, 4.60]$), critical $L_1$ and $L_2$ separatrix neck opening modeling, 44 parametric stream ribbons ($A(s) \sin(\omega t + ks)$) modeling ballistic invariant manifold transfer tubes, 24 hyperbolic dispersal streamlines radiating from $L_2$ into interstellar space, 5-tier nested Lyapunov and Halo orbit families oscillating around $L_1$ and $L_2$, 10-tier nested tadpole and horseshoe orbits around the triangular libration points $L_4$ and $L_5$ with 28 orbiting asteroid particulates, primary star solar corona, ringed gas giant, and rotating True Anomaly Astrolabe telemetry.
+- **Palette**: Deep Interstellar Obsidian Void (`#07090f`), Primary Solar Amber (`#f59e0b` / `#fef08a`), Secondary Cobalt Blue & Glacial Rings (`#2563eb` / `#93c5fd`), Deep Celestial Indigo (`#2655aa`), Electric Cyan Manifolds (`#26b9f0`), Solar Amber Gold (`#e0a020`), Laser Rose-Crimson Separators (`#f43f5e`), Hyperbolic Dispersal Violet (`#a855f7`).
+
 ## kinetic_marbling_ebru_suminagashi_vortex_2d
 - **Date**: 2026-10-31
 - **Type**: Animation (720 frames, 60fps)

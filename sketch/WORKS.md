@@ -1,3 +1,10 @@
+## kinetic_diatom_silica_frustule_radiance_2d
+- **Date**: 2026-10-31
+- **Type**: Animation (720 frames, 60fps)
+- **Concept**: Marine planktonic diatom (*Bacillariophyta*) silica shell biomineralization and polarized optical interference simulation on a deep hadal marine abyss. Inspired by Ernst Haeckel's *Kunstformen der Natur* and confocal polarized laser microscopy, a centric diatom valve disk features 24 radiating structural costae ribs, six concentric tiers of chambered loculi sectors, and thousands of perforated cribrum sieve pores. Under rotating optical polarization, the silica chambers illuminate with vibrant structural interference colors—electric cyan, opalescent amethyst, solar amber, and chlorophyll emerald—pulsing in 12.0s harmonic breathing resonance, completely free of author signatures.
+- **Techniques**: 24-sector radial costae tube modeling with dual-pass 3D embossed relief (shadow baseline and specular crest highlights), six concentric annular loculi tiers ($r \in [90, 530]$) with harmonic osmotic breathing kinematics ($A \sin(2\omega t + \phi)$), 2D cribrum sieve pore arrays with glowing sub-micron apertures, 72 coronal marginal spines tipped with hyaline jewel beads, multi-tier central 12-petal gold star rosette with pyrenoid bead core, drifting marine snow ambient suspension, and confocal microscope graticule markings.
+- **Palette**: Deep Hadal Abyss (`#060b12`), Polarized Electric Cyan (`#0ea5c3`), Opalescent Amethyst (`#a846d2`), Solar Silica Amber (`#e1af2d`), Chlorophyll Emerald (`#23c396`), Hyaline Jewel White (`#dcfafe`), Imperial Gold Silica Core (`#facc15`).
+
 ## kinetic_ferrofluid_rosensweig_magnetic_spires_2d
 - **Date**: 2026-10-31
 - **Type**: Animation (720 frames, 60fps)

@@ -1,3 +1,10 @@
+## kinetic_crustose_lichen_apothecia_symbiosis_2d
+- **Date**: 2026-10-31
+- **Type**: Animation (720 frames, 60fps)
+- **Concept**: Symbiotic crustose and foliose lichen colony morphogenesis across an alpine basalt rock slab. Two coexisting lichen species—vibrant golden sunburst lichen (*Xanthoria elegans*) and pale celadon green shield lichen (*Parmelia sulcata*)—expand rhythmically under diurnal microclimatic moisture cycles, unfurling multi-harmonic crenulated growth zonation rings and breathing elevated terracotta spore chalices (apothecia) with deep 3D concave relief and quartz mineral micro-fissures, completely free of author signatures.
+- **Techniques**: Multi-harmonic Fourier crenulated lobal perimeter kinematics ($T=720$, 60fps), concentric ontogenetic growth zonation rings, concave 3D apothecia spore chalices with dual-light Blinn-Phong relief, marginal rhizine anchoring filaments, and geological basalt foliation fractures with crystalline quartz cleavage veins.
+- **Palette**: Deep Weathered Basalt Slate (`#16191d`), Saffron & Amber Sunburst Lichen (*Xanthoria*, `#eba83a` / `#d28022`), Pale Celadon & Sage Shield Lichen (*Parmelia*, `#94b89a` / `#6c9676`), Terracotta & Burnt Ochre Spore Discs (`#b85a36` / `#743612`), Chalk Mineral White Rims (`#eef6ee` / `#fffae6`), Quartz Micro-Veins (`#a5916e`).
+
 ## kinetic_mizuhiki_ceremonial_knot_braiding_2d
 - **Date**: 2026-10-31
 - **Type**: Animation (720 frames, 60fps)

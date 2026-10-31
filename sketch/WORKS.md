@@ -1,3 +1,10 @@
+## kinetic_brutalist_tectonic_cantilever_shadows_2d
+- **Date**: 2026-10-31
+- **Type**: Animation (720 frames, 60fps)
+- **Concept**: Monumental brutalist megastructure and dynamic solar shadow study executed in 30-degree axonometric projection on warm travertine vellum. A heroic complex of massive board-formed concrete slabs (béton brut), sliding cantilever balconies, vertical brise-soleil sun louvers, and stepped plazas rests upon a vast podium deck. Set within the complex is an Aegean cerulean reflecting pool whose surface ripples with delicate wave caustics. A dynamic solar vector completes a full 360-degree orbital rotation, casting dramatic, crisp geometric shadows across the podium deck and ground datum, turning the entire architectural composition into a living kinetic sundial in 12.0s harmonic resonance, completely free of author signatures.
+- **Techniques**: 30-degree isometric axonometric projection ($u = c_x + (x - y)\cos(30^\circ)$, $v = c_y + (x + y)\sin(30^\circ) - z$), depth-sorted painter's occlusion order, dual-tier dynamic solar shadow projection onto ground ($z=0$) and elevated podium ($z=35$) planes, harmonic $C^1$ cantilever sliding kinematics ($dx_1 = 125 \sin(\omega t)$, $dy_1 = 95 \cos(\omega t)$, $dx_2 = -85 \sin(\omega t)$), board-formed timber shuttering lines with tie-rod anchor holes, Bauhaus safety vermilion cantilever leading edges, Aegean cerulean water caustics, architectural draftsman millimeter datum scale, and rotating solar azimuth compass dial.
+- **Palette**: Warm Travertine Vellum (`#ece8de`), Sunlit Concrete Top (`#dad5c9`), Concrete Mid-Tone Left (`#a8a296`), Concrete Shade Right (`#7d786e`), Aegean Cerulean Pool (`#1280b9`), Pool Water Shimmer (`#5acdf5`), Bauhaus Safety Vermilion (`#dc2626` / `#e12a20`), Cast Shadows (`#24211c`).
+
 ## kinetic_auxetic_kirigami_metamaterial_tessellation_2d
 - **Date**: 2026-10-31
 - **Type**: Animation (720 frames, 60fps)

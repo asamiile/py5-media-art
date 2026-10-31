@@ -1,3 +1,10 @@
+## kinetic_subpolar_auroral_geomagnetic_ribbons_2d
+- **Date**: 2026-10-31
+- **Type**: Animation (720 frames, 60fps)
+- **Concept**: Sublime polar night Aurora Borealis and Birkeland geomagnetic field-aligned current curtains rippling over a tranquil subarctic glacial fjord. Four folded auroral drapery sheets undulate in periodic harmonic resonance with hundreds of vertical ray streamers inclined at 78° magnetic dip angle, exhibiting altitude-dependent spectral emission lines (atomic oxygen 557.7nm emerald base, N2+ cyan mid-altitude, 630.0nm ruby top) above three-tiered basalt mountain silhouettes and fjord mirror reflections, completely free of author signatures.
+- **Techniques**: Multi-tier folded Birkeland curtain traveling waves, 12-segment magnetic field line ray streamers with 78° dip angle tilt, fold density cusp magnification, atmospheric ionospheric wash, triple-tier basalt mountain ridge polygons with frost crest highlights, and capillary water reflection lines.
+- **Palette**: Cosmic Polar Void (`#02040a`), Atomic Oxygen Emerald (`#22c55e`), Ionospheric Glacial Cyan (`#06b6d4`), High-Altitude Oxygen Ruby (`#e11d48`), Basalt Mountain Midnight (`#030712`), Glacial Frost Rim (`#6ee7b7`).
+
 ## kinetic_renaissance_astrolabe_armillary_mechanism_2d
 - **Date**: 2026-10-31
 - **Type**: Animation (720 frames, 60fps)

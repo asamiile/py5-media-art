@@ -1,3 +1,10 @@
+## kinetic_ferrofluid_rosensweig_magnetic_spires_2d
+- **Date**: 2026-10-31
+- **Type**: Animation (720 frames, 60fps)
+- **Concept**: Kinetic ferrofluid Rosensweig instability and magnetic flux field simulation executed on deep obsidian laboratory substrate. Under an external rotating and pulsating electromagnetic quadrupole field, a colloidal pool of ferromagnetic liquid spontaneously organizes into a hexagonal lattice of sharp conical spires. The spires undulate in a chiral spiral traveling wave, featuring metallic Blinn-Phong specular reflections, concentric capillary meniscus depression rings, and glowing electric-cyan apical field concentration nodes, encircled by magnetic potential flux lines and azimuth compass tracking in 12.0s harmonic resonance, completely free of author signatures.
+- **Techniques**: Hexagonal spire lattice generation ($d = 105.0$), Gaussian radial envelope dampening, chiral traveling wave height/radius modulation ($\sin(2\omega t - kr + m\theta)$), 24-segment 3D conical triangular mesh rendering with Blinn-Phong diffuse and specular metallic highlights, depth-sorted painter's occlusion order, multi-tier capillary meniscus depression rings, quadrupole isopotential contour curves, and rotating magnetic vector needle dial.
+- **Palette**: Deep Obsidian Laboratory Ground (`#0a0c11`), Metallic Carbon-Slate Spires (`#0f172a`), Petroleum Blue Meniscus Rings (`#183048` / `#2d557d`), Iridescent Chrome Highlights (`#e0f2fe`), Electric Cyan Apical Beads (`#38bdf8`), Magnetic Flux Isopotentials (`#1c2d46`).
+
 ## kinetic_brutalist_tectonic_cantilever_shadows_2d
 - **Date**: 2026-10-31
 - **Type**: Animation (720 frames, 60fps)

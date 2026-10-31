@@ -1,3 +1,10 @@
+## kinetic_rutt_etra_scan_processor_synthesis_2d
+- **Date**: 2026-10-31
+- **Type**: Animation (720 frames, 60fps)
+- **Concept**: 1973 Rutt-Etra Video Synthesizer and early video scan processing art homage executed on CRT phosphor pitch black. Pioneered by Louise and Bill Etra with Steve Rutt and famously explored by Woody and Steina Vasulka, the piece simulates analog voltage-controlled vertical deflection of horizontal CRT electron beam scanlines into dynamic 3D undulating topographical video landscapes. The artwork features 150 scanlines modulated by tri-harmonic video voltage oscillators (radial Bessel waves, chiral spiral waves, and orthogonal standing waves), tri-channel RGB chromatic aberration with temporal phase offsets, P22 phosphor persistence blooming, horizontal sync jitter tracking slices, and auxiliary telemetry instrumentation (NTSC vectorscope, XY oscilloscope, IRE waveform monitor), completely free of author signatures.
+- **Techniques**: 150 horizontal scanlines with 360 subcarrier samples projected into oblique 3D perspective ($Z = V(u, v, t)$), vectorized line segment batching via `py5.lines` across a NumPy meshgrid for sub-second 4K rendering, tri-harmonic video voltage equation ($z_1 \sim \sin(9r - 2\omega t)$, $z_2 \sim \sin(3\theta + 6r - \omega t)$, $z_3 \sim \cos(3u + \omega t)\sin(2.5v - \omega t)$), tri-channel RGB chromatic aberration with temporal phase offsets ($\pm 12\text{ ms}$), dual-pass phosphor blooming (wide low-alpha halo and high-alpha electron core), periodic horizontal sync tracking jitter glitch slices, NTSC color subcarrier vectorscope, XY audio oscilloscope (3:2 Lissajous knot), and A-scan IRE 100 waveform monitor.
+- **Palette**: CRT Chassis Deep Phosphor Black (`#040609`), P22 Phosphor Emerald Green (`#22c55e` / `#4ade80`), Chromatic Aberration Red/Magenta (`#f43f5e`), Chromatic Lag Royal Blue (`#2563eb`), Vector Oscilloscope Cyan (`#06b6d4`), Waveform IRE Amber (`#f59e0b`).
+
 ## kinetic_horological_rose_engine_guilloche_2d
 - **Date**: 2026-10-31
 - **Type**: Animation (720 frames, 60fps)

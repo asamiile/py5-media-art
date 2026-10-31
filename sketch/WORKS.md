@@ -1,3 +1,10 @@
+## kinetic_renaissance_astrolabe_armillary_mechanism_2d
+- **Date**: 2026-10-31
+- **Type**: Animation (720 frames, 60fps)
+- **Concept**: Renaissance astronomical armillary sphere, celestial astrolabe, and planetary clockwork linkage drafted on Prussian cyanotype blueprint vellum. An outer 360-degree meridian ring graduated with vernier arc divisions encloses a tilted rotating ecliptic zodiac ring, breathing celestial colure meridians, a 6-tier planetary epicyclic gear train with involute gear teeth, connecting kinematic linkage armatures, and a rotating sight-vane alidade rule in 12.0s harmonic resonance, free of human author signatures.
+- **Techniques**: Oblique 3D ecliptic ring projection with 23.44° astronomical obliquity, 6-tier planetary epicyclic gear train with parametric tooth profiles and pitch circle meshing, vernier 360-degree meridian hierarchical graduations, kinematic linkage connecting rods, rotating alidade sight rule, and cyanotype blueprint coordinate grid.
+- **Palette**: Prussian Cyanotype Ground (`#0b1d3a`), Celestial Brass Gold (`#fbbf24`), Drafting Cyan (`#38bdf8`), Technical Chalk White (`#f8fafc`), Blueprint Grid Lines (`#18345c`).
+
 ## kinetic_poincare_hyperbolic_hopf_fibration_2d
 - **Date**: 2026-10-31
 - **Type**: Animation (720 frames, 60fps)

@@ -1,3 +1,10 @@
+## kinetic_auxetic_kirigami_metamaterial_tessellation_2d
+- **Date**: 2026-10-31
+- **Type**: Animation (720 frames, 60fps)
+- **Concept**: Kinetic auxetic metamaterial kirigami sheet expanding and contracting through synchronized counter-rotating diamond facet mechanisms (Grima & Evans rotating squares kinematics) on deep obsidian slate. As the washi paper facets counter-rotate with negative Poisson's ratio, the entire lattice contracts isotropically while expanding rhythmic diamond-shaped void apertures, revealing a radiant underlayer core of molten cinnabar, solar amber, and imperial gold leaf in 12.0s harmonic breathing resonance, completely free of author signatures.
+- **Techniques**: Exact rotating rigid unit kinematics ($scale(t) = 2h \cos(\theta(t))$, displacement vectors $\vec{u} = scale \cdot (1, 1)$ and $\vec{v} = scale \cdot (1, -1)$), harmonic $C^1$ loop trajectory ($\theta(t) = \frac{\theta_{\max}}{2}(1 - \cos(2\pi t / T))$, $\theta_{\max} = 38.0^\circ$), 4K UHD 60fps vectorized quad batching via `py5.QUADS`, multi-pass directional contact drop shadows, dual debossed relief grooves with gold sashiko inner insets, burnished gold corner hinge rivets, and synchronous back-illuminated radiant amber-cinnabar substrate glow.
+- **Palette**: Obsidian Slate Ground (`#0e1016`), Echizen Mulberry Bone White Facets (`#fbf9f4`), Unbleached Linen Flaxen Facets (`#f4ede2`), Debossed Relief Insets (`#d8cfc0` / `#aba090`), Solar Amber Underlayer (`#d97706`), Radiant Cinnabar Core (`#dc2626`), Metallic Gold Leaf Rivets & Inlays (`#f59e0b` / `#ca8a04`).
+
 ## kinetic_ammann_beenker_quasicrystal_phasons_2d
 - **Date**: 2026-10-31
 - **Type**: Animation (720 frames, 60fps)

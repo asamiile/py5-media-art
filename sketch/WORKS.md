@@ -1,3 +1,10 @@
+## kinetic_ammann_beenker_quasicrystal_phasons_2d
+- **Date**: 2026-10-31
+- **Type**: Animation (720 frames, 60fps)
+- **Concept**: Aperiodic octagonal Ammann-Beenker quasicrystal tessellation dancing through non-periodic phason strain waves and topological tile-flip bifurcations on deep midnight basalt vellum. Discovered in 1982 by Robert Ammann and F. P. M. Beenker, the octagonal tiling has exact global 8-fold rotational symmetry and irrational tile frequency governed by the silver ratio ($\delta_S = 1 + \sqrt{2}$). The animation visualizes the solid-state physics of phasons—collective topological reconfigurations where local hexagonal clusters of two squares and two rhombuses dynamically interchange diagonals along continuous "worm" corridors in 12.0s harmonic resonance, completely free of author signatures.
+- **Techniques**: Dual multigrid projection from 4D hypercubic lattice $\mathbb{Z}^4$ ($N=1460$ polygonal tiles), 4D harmonic phason trajectory kinematics ($T=720$, 60fps), multi-tier cloisonné enamel chamfered relief, 28% concentric faceted insets, 8-fold star rosette cabochon jewels with solar amber and incandescent diamond cores, and octagonal polar coordinate calibration rings.
+- **Palette**: Deep Midnight Basalt Canvas (`#090c12`), Royal Celestial Cobalt (`#122658`), Electric Sapphire (`#2563eb`), Platinum White-Gold (`#e2e8f0` / `#f8fafc`), Warm Copper Vermilion (`#ea580c`), Solar Amber Gold (`#fbbf24`), Glacial Cyan Coordinate Lines (`#38bdf8`).
+
 ## kinetic_capillary_paper_chromatography_diffusion_2d
 - **Date**: 2026-10-31
 - **Type**: Animation (720 frames, 60fps)

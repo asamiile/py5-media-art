@@ -2,6 +2,121 @@
 
 **CRITICAL RULE**: ONLY the USER may write to the `Rating` and `Comment` field.
 Agents MUST NOT write anything in the `Comment` field. When registering a new work, Agents must leave the `Rating` and `Comment` fields empty or with their default labels as placeholders for the user.
+
+## kinetic_kerr_black_hole_ergosphere_frame_dragging_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_boy_surface_projective_plane_immersion_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_nervi_isostatic_ribbed_vault_kinematics_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_haboku_sansui_ink_wash_mountain_mist_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_hamilton_conical_refraction_diabolical_points_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_radiolaria_siliceous_skeleton_morphogenesis_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_rutt_etra_scan_processor_synthesis_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_horological_rose_engine_guilloche_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_frei_otto_tensile_membrane_catenary_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_lagrangian_three_body_jacobi_orbits_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_marbling_ebru_suminagashi_vortex_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_diatom_silica_frustule_radiance_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_ferrofluid_rosensweig_magnetic_spires_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_brutalist_tectonic_cantilever_shadows_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_auxetic_kirigami_metamaterial_tessellation_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_ammann_beenker_quasicrystal_phasons_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_capillary_paper_chromatography_diffusion_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_crustose_lichen_apothecia_symbiosis_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_mizuhiki_ceremonial_knot_braiding_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
 ## kinetic_subpolar_auroral_geomagnetic_ribbons_2d
 
 - **Rating**: 

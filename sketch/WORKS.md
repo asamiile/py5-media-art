@@ -1,3 +1,10 @@
+## kinetic_poincare_hyperbolic_hopf_fibration_2d
+- **Date**: 2026-10-31
+- **Type**: Animation (720 frames, 60fps)
+- **Concept**: Non-Euclidean Poincaré disk hyperbolic geometry, conformal Möbius transformations, and 4D Clifford-Hopf fibration Villarceau circle bundles projected onto tactile antique mathematician drafting vellum. A central Poincaré boundary circle anchors rotating conformal circular geodesics and concentric horocycles, interwoven with chiral Villarceau circle fibers of the Hopf fibration and an orthogonal Apollonian coordinate pencil net in 12.0s harmonic resonance, free of human author signatures.
+- **Techniques**: Conformal circular geodesics meeting the Poincaré boundary orthogonally via Pythagorean metric constraints, coaxial Apollonian pencil circle net, chiral Villarceau circle fibers on Clifford tori ($S^3 \to S^2$), concentric breathing horocycle families, and perimeter radian calibration compass ticks.
+- **Palette**: Drafting Vellum Ground (`#f6f2e8`), Prussian Slate Blue (`#1c3e66`), Copper Sepia Bronze (`#944c2a`), Sage Drafting Ink (`#3d5a45`), Deep Boundary Track Ink (`#1e2530`).
+
 ## kinetic_pelagic_medusa_bioluminescence_morphogenesis_2d
 - **Date**: 2026-10-30
 - **Type**: Animation (720 frames, 60fps)

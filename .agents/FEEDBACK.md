@@ -3,6 +3,12 @@
 **CRITICAL RULE**: ONLY the USER may write to the `Rating` and `Comment` field.
 Agents MUST NOT write anything in the `Comment` field. When registering a new work, Agents must leave the `Rating` and `Comment` fields empty or with their default labels as placeholders for the user.
 
+## kinetic_nipkow_mechanical_television_selenium_scan_disc_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
 ## kinetic_petrographic_crossed_nicols_birefringence_mosaic_2d
 
 - **Rating**: 

@@ -22,3 +22,4 @@ A **Muqarnas** (*Mocárabes*) stalactite vault transitions a square hall ($D_4$)
 ```bash
 uv run python sketch/kinetic_muqarnas_stalactite_vault_corbeling_stereotomy_2d/main.py
 ```
+

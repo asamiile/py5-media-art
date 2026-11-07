@@ -20,3 +20,4 @@ Around the polished circular *Kagami* (鏡, mirror) disk of a traditional wooden
   6. `FIG. 06`: Historical *Kumihimo* codex & topological link invariant ledger (Nara *Shōsō-in* 756 CE to Jones polynomial $V_L(t)$).
   7. `FIG. 07`: Microscopic 4-ply *Bombyx mori* silk yarn & helical *Kinshi* gold-foil wrap geometry.
   8. `FIG. 08`: Harmonic *Tama* angular momentum & radial tension oscillogram.
+

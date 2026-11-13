@@ -3,6 +3,108 @@
 **CRITICAL RULE**: ONLY the USER may write to the `Rating` and `Comment` field.
 Agents MUST NOT write anything in the `Comment` field. When registering a new work, Agents must leave the `Rating` and `Comment` fields empty or with their default labels as placeholders for the user.
 
+## kinetic_muqarnas_stalactite_vault_corbeling_stereotomy_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_siphonophora_polymorphic_zooid_nectosome_propulsion_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_bobbin_lace_torchon_rose_ground_braid_topology_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_brocken_spectre_mie_backscatter_glory_fogbow_optics_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_ferrite_magnetic_core_matrix_coincident_current_memory_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_breguet_tourbillon_swiss_lever_escapement_chronometer_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_seifert_fibered_trefoil_knot_complement_foliation_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_vauban_bastioned_trace_italienne_polygonal_citadel_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_ctenophora_metachronal_comb_plate_bioluminescence_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_jacquard_verdol_punched_card_lampas_brocade_loom_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_nacreous_polar_stratospheric_cloud_iridescence_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_nipkow_mechanical_television_selenium_scan_disc_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_petrographic_crossed_nicols_birefringence_mosaic_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_costa_minimal_surface_weierstrass_immersion_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_guastavino_timbrel_vault_herringbone_stereotomy_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_foraminifera_logarithmic_chamber_biomineralization_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kinetic_kumihimo_marudai_braiding_loom_topology_2d
+
+- **Rating**: 
+- **Comment**: 
+
+
 ## kinetic_parhelia_ice_crystal_halo_refraction_dome_2d
 
 - **Rating**: 

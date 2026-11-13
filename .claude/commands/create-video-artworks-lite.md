@@ -1,20 +1,6 @@
-Follow `.agents/skills/create-video-artworks-lite/SKILL.md` to continuously create py5 media art animations (videos) using the lightweight workflow.
+Execute `.agents/skills/create-video-artworks-lite/SKILL.md` following the canonical pipeline in `.agents/skills/shared/workflow.md`:
 
-Use this command for slow execution routes, especially Claude Code connected through an NVIDIA API proxy.
-
-Execution rules:
-1. Repeat lightweight animation creation until interrupted.
-2. Complete exactly one animation per iteration.
-3. Do not invoke separate Planner, Artist, or Critic agents.
-4. Keep planning and review concise.
-5. Use branch `feature/works-YYYYMMDD`.
-6. Check `git status --short` before each iteration. Stop if unrelated pending changes would make a clean commit unsafe.
-7. Use **Format: Animation (10-30s @ 60fps)** for every iteration and ensure FFmpeg encoding.
-8. Generate `sketch/{work_name}/output.mp4` and `sketch/{work_name}/{work_name}_p1.png` for each work.
-9. Perform at most one revision per work.
-10. Update `sketch/WORKS.md` and `.agents/FEEDBACK.md` every iteration.
-11. Stage only intended files for the current work.
-12. Commit and push each work, then upload it with `uv run python scripts/upload_to_drive.py {work_name}` (see `.agents/skills/shared/drive-upload.md`), before starting the next.
-13. Wait 60-90 seconds between iterations to respect rate limits.
-14. Stop on preview, commit, or push failure after one repair attempt.
-15. After each iteration, report work name, score/verdict, changed files, and commit hash.
+- **Format**: Animation (`15–30s @ 60fps`, `900`–`1800` frames; outputs `output.mp4`, `{work_name}.mp4`, and `{work_name}_p1.png`)
+- **Mode**: Continuous loop with 60–90s rate-limit pause between works, Lite depth (inline Creative Brief + 1 concise self-critique; no subagent invocations)
+- For each iteration, run `uv run python scripts/check_diversity.py plan` before planning and `uv run python scripts/check_diversity.py check {work_name}` before rendering
+- Update `sketch/WORKS.md` and `.agents/FEEDBACK.md` (leave Rating and Comment blank), commit & push on `feature/works-YYYYMMDD` (never stage `.mp4` or `frames/`), and run `uv run python scripts/upload_to_drive.py {work_name}`

@@ -1,7 +1,6 @@
-Repeat the `/create-video-artwork` workflow continuously, creating one new animation (video) per iteration.
+Execute `.agents/skills/create-video-artworks/SKILL.md` following the canonical pipeline in `.agents/skills/shared/workflow.md`:
 
-After each animation is complete (committed and pushed), immediately begin the next one without waiting for user input. Use `sketch/WORKS.md` to ensure every new work has a unique concept, theme, and technique compared to all previous works.
-
-Each iteration must produce `sketch/{work_name}/output.mp4` along with the pattern preview images, with **Format: Animation (10-30s @ 60fps)**.
-
-Stop only when the user interrupts with Esc or Ctrl+C.
+- **Format**: Animation (`15–30s @ 60fps`, `900`–`1800` frames; outputs `output.mp4`, `{work_name}.mp4`, and `{work_name}_p1.png`)
+- **Mode**: Continuous loop (repeat until stopped), Standard depth (`Planner` → `Artist` → `Critic`)
+- For each iteration, run `uv run python scripts/check_diversity.py plan` before planning and `uv run python scripts/check_diversity.py check {work_name}` before rendering and during review
+- Update `sketch/WORKS.md` and `.agents/FEEDBACK.md` (leave Rating and Comment blank), commit & push on `feature/works-YYYYMMDD` (never stage `.mp4` or `frames/`), and run `uv run python scripts/upload_to_drive.py {work_name}`

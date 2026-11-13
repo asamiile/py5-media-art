@@ -27,4 +27,5 @@ medium/
 .env
 
 # Cowork tasks
+.agents/cowork-tasks/
 cowork-tasks/

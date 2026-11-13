@@ -1,3 +1,4 @@
-Follow `.agents/skills/write-medium-article/SKILL.md` to generate a Medium article for the specified sketch and upload it as a draft.
+Execute `.agents/skills/write-medium-article/SKILL.md` for work `$ARGUMENTS`:
 
-The argument passed to this command is the `work_name` (e.g. `/write-medium-article kinetic_ferrofluid_magnetic_sculpture_3d`).
+1. Read `sketch/$ARGUMENTS/main.py`, `sketch/$ARGUMENTS/README.md`, and the entry in `sketch/WORKS.md`
+2. Generate a Medium-ready technical and artistic article at `medium/YYYY-MM-DD_${ARGUMENTS}_medium.md` (do not modify files inside `sketch/$ARGUMENTS/`)

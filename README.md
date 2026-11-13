@@ -8,24 +8,37 @@
 brew install ffmpeg
 ```
 
-- Run Sketch
+- Run a Sketch
 
 ```bash
-uv run python sketch/test/main.py
+uv run python sketch/{work_name}/main.py
 ```
 
-- Autonomous artwork creation via Claude Code
+- Check Portfolio Diversity & Anti-Bias Rules
 
-Open this repository in Claude Code and run:
+```bash
+uv run python scripts/check_diversity.py plan              # 5-axis diversity prescription for the next work
+uv run python scripts/check_diversity.py check {work_name} # audit a sketch against naming/template/palette bias
+```
+
+- Autonomous artwork creation via Claude Code / Antigravity
+
+Open this repository and run:
 
 ```
-/create-artwork
+/create-artwork          # single still image
+/create-artworks         # continuous still images
+/create-video-artwork    # single animation (15-30s @ 60fps)
+/create-video-artworks   # continuous animations (15-30s @ 60fps)
 ```
 
-If you continue with multiple iterations:
+For slow proxy environments (e.g. NVIDIA API), lightweight variants are also available:
 
 ```
-/create-artworks
+/create-artwork-lite
+/create-artworks-lite
+/create-video-artwork-lite
+/create-video-artworks-lite
 ```
 
 ### Shaders (optional)
@@ -85,5 +98,3 @@ If you find this helpful, consider supporting the work:
 ## Author
 
 [Asami.K](https://asami.tokyo/)
-
-

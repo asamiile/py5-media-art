@@ -6,39 +6,16 @@ allowed-tools: Bash, Read, Write, Edit
 
 # Create Video Artworks Lite Skill (Continuous)
 
-Continuously create py5 media art animations using the lightweight workflow from `create-video-artwork-lite`. This is intended for slow execution routes, especially Claude Code connected through an NVIDIA API proxy.
+Continuously creates py5 media art animations using the lightweight mode of the canonical pipeline in `.agents/skills/shared/workflow.md` (optimized for slow proxy routes such as NVIDIA API).
 
-Each iteration must produce one complete, independent full-bleed animation and commit/push it before starting the next.
+## Mode Parameters
 
-## Workflow
+- **Format**: Animation (`15–30s @ 60fps`, `900`–`1800` frames; outputs `output.mp4`, `{work_name}.mp4`, and `{work_name}_p1.png`)
+- **Loop Mode**: Continuous loop with a 60–90 second rate-limit pause between iterations
+- **Depth**: Lite (inline Creative Brief + 1 concise self-critique, max 1 revision; no separate subagent invocations)
 
-1. Read only the essential parts of `AGENTS.md`, `.agents/skills/shared/artwork-conventions.md`, `.agents/skills/shared/py5-templates.md`, `sketch/WORKS.md`, and `.agents/FEEDBACK.md`.
-2. Create or reuse branch `feature/works-YYYYMMDD`.
-3. Loop until externally interrupted:
-   1. Check `git status --short`. Stop if unrelated pending changes would make a clean commit unsafe.
-   2. Run `uv run python scripts/check_diversity.py plan` to get the 5-axis diversity prescription (target genre, composition archetype, motion archetype, tonal family, and banned subject tokens).
-   3. Produce a short inline creative brief with **Format: Animation (15-30s @ 60fps)**:
-      - work name (2–4 words, no `kinetic_` prefix, no `_2d`/`_3d` suffix)
-      - genre, composition archetype, and motion archetype
-      - one-sentence theme (sensory/visual, not a historical treatise)
-      - technique
-      - 3–5 color palette (full-canvas tonal polarity)
-      - how it differs from recent works
-   4. Implement `sketch/{work_name}/main.py` (100% pure visual art across 3840×2160; zero `py5.text()`, zero flank cards or medallions) and `README.md`.
-   5. Run `uv run python scripts/check_diversity.py check {work_name}` and fix any reported bias issues.
-   6. Run `uv run python sketch/{work_name}/main.py` and ensure `sketch/{work_name}/output.mp4` and `{work_name}_p1.png` exist.
-   7. Perform one concise self-critique in the same format as `.agents/skills/critic/SKILL.md`.
-   8. Update `sketch/WORKS.md` and `.agents/FEEDBACK.md` (leave Rating and Comment empty per conventions).
-   9. Commit and push.
-   10. Upload outputs to Google Drive: `uv run python scripts/upload_to_drive.py {work_name}` (see `.agents/skills/shared/drive-upload.md`).
-   11. Wait 60-90 seconds (Rate Limit) then start the next iteration.
+## Execution
 
-## Lightweight Rules
-
-- **MANDATORY**: Always produce Animations (15–30s @ 60fps; never 12s / 720 frames).
-- **Pure Visual Canvas**: Never use `py5.text()`, `FIG. 01..08` telemetry flank cards, museum borders, or central compass bezels.
-- Do not invoke separate Planner, Artist, or Critic agents.
-- Animation is the primary output; ensure `output.mp4` is generated for each work. Never commit MP4 files; they live on Google Drive after the upload step.
-- Do not perform more than one revision per work (except fixing `check_diversity.py` errors).
-- Follow `.agents/skills/shared/artwork-conventions.md` for naming and staging.
-- The loop continues indefinitely until externally stopped.
+1. Read `.agents/skills/shared/workflow.md`, `AGENTS.md`, `.agents/skills/shared/artwork-conventions.md`, and `.agents/skills/shared/py5-templates.md`.
+2. Run **Pre-Flight Setup** once, then repeat the **Per-Work Iteration Pipeline** in **Lite Depth** (`plan` → inline brief → `main.py` & `README.md` → `check` → `render` → concise self-critique → `WORKS.md` / `FEEDBACK.md` → `commit & push` → `upload_to_drive.py` → wait 60–90s).
+3. Never commit `.mp4` files or `frames/`; videos are moved to Google Drive by `scripts/upload_to_drive.py`.

@@ -4,86 +4,17 @@ description: "Continuously creates py5 media art still images with the lightweig
 allowed-tools: Bash, Read, Write, Edit
 ---
 
-# Create Artworks Lite Skill
+# Create Artworks Lite Skill (Continuous)
 
-Continuously create py5 media art still images using the lightweight workflow from `create-artwork-lite`. This is intended for slow execution routes, especially Claude Code connected through an NVIDIA API proxy.
+Continuously creates py5 media art still images using the lightweight mode of the canonical pipeline in `.agents/skills/shared/workflow.md` (optimized for slow proxy routes such as NVIDIA API).
 
-Each iteration must produce one complete, independent artwork and commit/push it before starting the next.
+## Mode Parameters
 
-## Workflow
+- **Format**: Still image (`{work_name}_p1.png`)
+- **Loop Mode**: Continuous loop with a 60–90 second rate-limit pause between iterations
+- **Depth**: Lite (inline Creative Brief + 1 concise self-critique, max 1 revision; no separate subagent invocations)
 
-1. Read only the essential parts of `AGENTS.md`, `.agents/skills/shared/artwork-conventions.md`, `.agents/skills/shared/py5-templates.md`, `sketch/WORKS.md`, and `.agents/FEEDBACK.md`.
-2. Create or reuse branch `feature/works-YYYYMMDD`.
-3. Loop until externally interrupted:
-   1. Check `git status --short`. Stop if unrelated pending changes would make a clean commit unsafe.
-   2. Run `uv run python scripts/check_diversity.py plan` and rescan `sketch/WORKS.md` and `.agents/FEEDBACK.md` enough to avoid repetition.
-   3. Produce a short inline creative brief:
-      - work name (2–4 words, no `kinetic_` prefix, no `_2d`/`_3d` suffix)
-      - genre and composition archetype
-      - one-sentence theme
-      - technique
-      - 3-5 color palette
-      - how it differs from recent works
-   4. Implement `sketch/{work_name}/main.py` (100% pure visual art; zero `py5.text()`, zero flank cards or medallions) and `README.md`.
-   5. Run `uv run python scripts/check_diversity.py check {work_name}` and fix any reported bias issues.
-   6. Run `uv run python sketch/{work_name}/main.py` and ensure `sketch/{work_name}/{work_name}_p1.png` exists.
-   6. Perform one concise self-critique in the same format as `.agents/skills/critic/SKILL.md`.
-   7. If the verdict is `REVISE`, apply at most one revision and regenerate pattern-specific previews; the second review should approve unless there is a hard failure.
-   8. Update both `sketch/WORKS.md` and `.agents/FEEDBACK.md` (leave Rating and Comment empty per conventions).
-   9. Stage only intended files:
-      - `sketch/{work_name}/`
-      - `sketch/WORKS.md`
-      - `.agents/FEEDBACK.md`
-   10. Commit and push.
-   11. Upload outputs to Google Drive: `uv run python scripts/upload_to_drive.py {work_name}` (see `.agents/skills/shared/drive-upload.md`).
-   12. Report the completed work name, score/verdict, changed files, and commit hash.
-   13. Immediately start the next iteration.
+## Execution
 
-## Stop Conditions
-
-Stop instead of continuing if any of these happen:
-
-- unrelated pending changes are present
-- a unique work name cannot be chosen confidently
-- `preview_p1.png` cannot be generated
-- the sketch fails after one repair attempt
-- commit or push fails after one repair attempt
-- the user interrupts the run
-
-## Lightweight Rules
-
-- Do not invoke separate Planner, Artist, or Critic agents.
-- Do not use the full `create-artworks` workflow.
-- Do not carry creative state between works except by reading updated `sketch/WORKS.md` and `.agents/FEEDBACK.md`.
-- Do not perform more than one revision per work.
-- Do not read every historical work in detail; scan enough of `sketch/WORKS.md` and `.agents/FEEDBACK.md` to avoid obvious repetition.
-- Prefer a still image over MP4 unless the concept clearly requires motion.
-- Follow `.agents/skills/shared/artwork-conventions.md` for work names, preview names, and staging.
-- Prefer existing helpers in `lib/`:
-  - `lib.paths.sketch_dir`
-  - `lib.sizes.get_sizes`
-  - `lib.preview.exit_after_preview_py5`
-  - `lib.preview.maybe_save_exit_on_frame`
-  - `lib.preview.save_preview_pil`
-  - `lib.animation` only for animation output
-- Never delete unrelated files or stage unrelated pending changes.
-
-## Minimum Quality Bar Per Work
-
-- The work must be visually intentional, not a default demo.
-- The concept, technique, and palette must differ from recent works.
-- `preview_p1.png` must be generated before review and commit.
-- **Agents MUST NOT** write anything in the `Rating` or `Comment` fields of `.agents/FEEDBACK.md`.
-- If critique tooling or visual inspection is unavailable, use a fallback self-critique in the critic format and explicitly output `APPROVE` or `REVISE`.
-- The final report for each iteration must include an explicit `APPROVE` or `REVISE` verdict.
-
-## Recommended Templates
-
-Use `.agents/skills/shared/py5-templates.md`.
-
-## Rate Limit Rules
-
-- After each committed/pushed artwork, wait 60-90 seconds before starting the next iteration.
-- If `Provider API request failed` or an upstream API error occurs, wait 90-180 seconds and retry once.
-- If the retry fails, stop and report the last completed commit and current git status.
-- Keep progress reports concise to reduce extra provider calls.
+1. Read `.agents/skills/shared/workflow.md`, `AGENTS.md`, `.agents/skills/shared/artwork-conventions.md`, and `.agents/skills/shared/py5-templates.md`.
+2. Run **Pre-Flight Setup** once, then repeat the **Per-Work Iteration Pipeline** in **Lite Depth** (`plan` → inline brief → `main.py` & `README.md` → `check` → `render` → concise self-critique → `WORKS.md` / `FEEDBACK.md` → `commit & push` → `upload_to_drive.py` → wait 60–90s).

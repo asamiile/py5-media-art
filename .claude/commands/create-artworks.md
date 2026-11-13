@@ -1,5 +1,6 @@
-Repeat the `/create-artwork` workflow continuously, creating one new artwork per iteration.
+Execute `.agents/skills/create-artworks/SKILL.md` following the canonical pipeline in `.agents/skills/shared/workflow.md`:
 
-After each artwork is complete (committed and pushed), immediately begin the next one without waiting for user input. Use `sketch/WORKS.md` to ensure every new work has a unique concept, theme, and technique compared to all previous works.
-
-Stop only when the user interrupts with Esc or Ctrl+C.
+- **Format**: Still image (`sketch/{work_name}/{work_name}_p1.png`)
+- **Mode**: Continuous loop (repeat until stopped), Standard depth (`Planner` → `Artist` → `Critic`)
+- For each iteration, run `uv run python scripts/check_diversity.py plan` before planning and `uv run python scripts/check_diversity.py check {work_name}` before rendering and during review
+- Update `sketch/WORKS.md` and `.agents/FEEDBACK.md` (leave Rating and Comment blank), commit & push on `feature/works-YYYYMMDD`, and run `uv run python scripts/upload_to_drive.py {work_name}`

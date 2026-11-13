@@ -4,10 +4,16 @@ Shared naming, file, and staging rules for py5 media art skills.
 
 ## Work Names
 
-- Use plain snake_case for new concepts, e.g. `flowing_particles`.
+- Use concise, evocative 2–4 word `snake_case` names for new concepts (e.g., `vermilion_basalt_faults`, `sashiko_indigo_drift`, `mist_catenary_veil`).
+- **Forbidden affixes**: Never prefix names with `kinetic_` and never suffix names with `_2d` or `_3d`. Avoid long 6–8 word academic/scientific jargon chains.
 - Do not add `_v1` to first versions.
 - If intentionally remaking or replacing the idea of a past work, create a new directory with the next suffix: `{base_work_name}_v2`, `{base_work_name}_v3`, etc.
 - Never overwrite an existing past work directory.
+
+## Pure Visual Canvas (Zero Text / Zero Infographic Panels)
+
+- Every sketch must be **100% pure visual media art** across the entire 3840×2160 frame.
+- **Strictly forbidden on canvas**: `py5.text()`, title headers, footer captions, `FIG. 01..08` flank cards, telemetry dashboards, color swatch legends, historical timeline tables, oscillogram boxes, museum borders, and central circular compass/goniometer bezels.
 
 ## Preview Images
 

@@ -101,14 +101,16 @@ def draw():
     if py5.frame_count >= TOTAL_FRAMES:
         py5.exit_sketch()
         
-        # Compile frames into MP4
+        # Compile frames into MP4 (both output.mp4 and {WORK_NAME}.mp4 for upload compatibility)
         print(f"[Render FFmpeg] Compiling {TOTAL_FRAMES} frames into video...")
+        output_mp4 = SKETCH_DIR / "output.mp4"
         subprocess.run([
             "ffmpeg", "-y", "-r", str(FPS),
             "-i", str(FRAMES_DIR / "frame-%04d.png"),
             "-vcodec", "libx264", "-pix_fmt", "yuv420p",
-            str(SKETCH_DIR / f"{WORK_NAME}.mp4"),
+            str(output_mp4),
         ], check=True)
+        shutil.copyfile(output_mp4, SKETCH_DIR / f"{WORK_NAME}.mp4")
         
         # Save a preview snapshot
         mid = str(FRAMES_DIR / f"frame-{TOTAL_FRAMES // 2:04d}.png")

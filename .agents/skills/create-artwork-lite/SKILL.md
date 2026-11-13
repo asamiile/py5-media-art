@@ -15,14 +15,17 @@ Use this skill when execution speed and fewer model/tool round trips matter more
 1. Read only the essential parts of `AGENTS.md`, `.agents/skills/shared/artwork-conventions.md`, `.agents/skills/shared/py5-templates.md`, `sketch/WORKS.md`, and `.agents/FEEDBACK.md`.
 2. Check `git status --short`. Stop if unrelated pending changes would make a clean commit unsafe.
 3. Create or reuse branch `feature/works-YYYYMMDD`.
-4. Produce a short inline creative brief:
-   - work name
+4. Run `uv run python scripts/check_diversity.py plan` to get the 5-axis diversity prescription.
+5. Produce a short inline creative brief:
+   - work name (2–4 words, no `kinetic_` prefix, no `_2d`/`_3d` suffix)
+   - genre and composition archetype
    - one-sentence theme
    - technique
    - 3-5 color palette
    - how it differs from recent works
-5. Implement `sketch/{work_name}/main.py` and `README.md`.
-6. Run `uv run python sketch/{work_name}/main.py` and ensure `sketch/{work_name}/preview_p1.png` exists.
+6. Implement `sketch/{work_name}/main.py` (100% pure visual art; zero `py5.text()`, zero flank cards or medallions) and `README.md`.
+7. Run `uv run python scripts/check_diversity.py check {work_name}` and fix any reported bias issues.
+8. Run `uv run python sketch/{work_name}/main.py` and ensure `sketch/{work_name}/{work_name}_p1.png` exists.
 7. Perform one concise self-critique in the same format as `.agents/skills/critic/SKILL.md`.
 8. If the verdict is `REVISE`, apply at most one revision and regenerate pattern-specific previews; the second review should approve unless there is a hard failure.
 9. Update both `sketch/WORKS.md` and `.agents/FEEDBACK.md` (leave Rating and Comment empty per conventions).

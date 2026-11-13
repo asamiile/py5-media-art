@@ -16,15 +16,17 @@ Each iteration must produce one complete, independent artwork and commit/push it
 2. Create or reuse branch `feature/works-YYYYMMDD`.
 3. Loop until externally interrupted:
    1. Check `git status --short`. Stop if unrelated pending changes would make a clean commit unsafe.
-   2. Re-read or rescan `sketch/WORKS.md` and `.agents/FEEDBACK.md` enough to avoid repetition.
+   2. Run `uv run python scripts/check_diversity.py plan` and rescan `sketch/WORKS.md` and `.agents/FEEDBACK.md` enough to avoid repetition.
    3. Produce a short inline creative brief:
-      - work name
+      - work name (2–4 words, no `kinetic_` prefix, no `_2d`/`_3d` suffix)
+      - genre and composition archetype
       - one-sentence theme
       - technique
       - 3-5 color palette
       - how it differs from recent works
-   4. Implement `sketch/{work_name}/main.py` and `README.md`.
-   5. Run `uv run python sketch/{work_name}/main.py` and ensure `sketch/{work_name}/preview_p1.png` exists.
+   4. Implement `sketch/{work_name}/main.py` (100% pure visual art; zero `py5.text()`, zero flank cards or medallions) and `README.md`.
+   5. Run `uv run python scripts/check_diversity.py check {work_name}` and fix any reported bias issues.
+   6. Run `uv run python sketch/{work_name}/main.py` and ensure `sketch/{work_name}/{work_name}_p1.png` exists.
    6. Perform one concise self-critique in the same format as `.agents/skills/critic/SKILL.md`.
    7. If the verdict is `REVISE`, apply at most one revision and regenerate pattern-specific previews; the second review should approve unless there is a hard failure.
    8. Update both `sketch/WORKS.md` and `.agents/FEEDBACK.md` (leave Rating and Comment empty per conventions).

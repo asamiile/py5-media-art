@@ -1,3 +1,13 @@
+## wavelet_quantizer_array
+- **Date**: 2026-11-14
+- **Type**: Animation (1080 frames, 60fps)
+- **Genre**: Signal / Glitch / Digital Artifacts
+- **Composition Archetype**: Full-Canvas Polyptych / Rhythmic Matrix
+- **Motion Archetype**: Spatial Camera / Depth Traversal
+- **Concept**: Full-canvas 4×3 rhythmic matrix of 2D wavelet subbands, Walsh-Hadamard square-wave basis packets, and dead-zone uniform quantizers across a deep nocturnal monochrome field (`#0a0c11`–`#e6edf7`), where cyclic camera depth traversal and horizontal packet-slip shears ignite a single burnt-signal amber accent (`#ff5e24`) along quantization residual spikes.
+- **Techniques**: 12-subband Walsh-Hadamard / cosine packet interference and dead-zone quantization in GLSL (`wavelet_quantizer_array.glsl`), vector staircase transfer curves and residual error stems per subband cell in `py5`, and `PostFX` chromatic aberration, bloom, and grain.
+- **Palette**: Deep Obsidian (`#0a0c11`), Nocturnal Slate (`#181e2a`), Silver Subband (`#8f9eb5`), Ice Contour (`#e6edf7`), Burnt Signal Amber Accent (`#ff5e24`).
+
 ## basalt_fault_strata
 - **Date**: 2026-11-14
 - **Type**: Animation (1320 frames, 60fps)

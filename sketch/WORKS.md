@@ -1,3 +1,13 @@
+## hypostyle_voussoir_colonnade
+- **Date**: 2026-11-14
+- **Type**: Animation (1320 frames, 60fps)
+- **Genre**: Architectural / Brutalism / Geometric
+- **Composition Archetype**: 3D Sculptural / Volumetric Space (P3D)
+- **Motion Archetype**: Spatial Camera / Depth Traversal
+- **Concept**: Volumetric 3D hypostyle colonnade of 22 depth-stacked scalloped voussoir arch vaults and transverse tie-beams across a 100% full-canvas warm cream Risograph paper ground (`#efe9dc`), rendered in translucent spot inks of fluorescent coral (`#f05240`), peacock teal (`#12948a`), deep federal indigo (`#1a285c`), and overprint plum (`#583e6b`) as a perspective camera traverses the central nave.
+- **Techniques**: Vectorized 1,848-block 3D voussoir wedge hexahedra in `P3D` with multi-act radial expansion, harmonic torsion, and 4-band atmospheric paper-fog binning (`py5.QUADS` / `py5.vertices`), misregistered Risograph drum tie-wires (`py5.LINES`), and `PostFX` finishing.
+- **Palette**: Warm Risograph Paper (`#efe9dc`), Fluorescent Coral (`#f05240`), Peacock Teal (`#12948a`), Deep Federal Indigo (`#1a285c`), Overprint Plum (`#583e6b`).
+
 ## turing_chemotaxis_tesserae
 - **Date**: 2026-11-14
 - **Type**: Animation (1140 frames, 60fps)

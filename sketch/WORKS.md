@@ -1,3 +1,13 @@
+## scanline_overprint_matrix
+- **Date**: 2026-11-14
+- **Type**: Animation (1140 frames, 60fps)
+- **Genre**: Signal / Glitch / Digital Artifacts
+- **Composition Archetype**: Full-Canvas Polyptych / Rhythmic Matrix
+- **Motion Archetype**: Spatial Camera / Depth Traversal
+- **Concept**: Edge-to-edge rhythmic cellular matrix of analog cathode scanlines, halftone signal registers, and phase-slipped frequency gratings printed across a warm cream paper ground (`#efe9dc`) in three translucent overlapping Risograph spot inks as a 2.5D spatial camera traverses through three parallax register planes.
+- **Techniques**: Multi-plane parallax cellular signal polyptych with 4 waveform archetypes and subtractive spot-ink overprint multiplication in GLSL (`scanline_overprint_matrix.glsl`), 144 parallax registration bars batched via `py5.QUADS` / `py5.vertices`, and `PostFX` chromatic aberration, bloom, and paper grain.
+- **Palette**: Warm Cream Risograph Paper (`#efe9dc`), Fluorescent Coral Spot Ink (`#f05442`), Peacock Teal Spot Ink (`#14968c`), Deep Indigo Spot Ink (`#1c2a5e`).
+
 ## celadon_soliton_estuary
 - **Date**: 2026-11-14
 - **Type**: Animation (900 frames, 60fps)

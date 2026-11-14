@@ -1,17 +1,6 @@
-Follow `.agents/skills/create-artwork-lite/SKILL.md` to create exactly one new py5 media art sketch using the lightweight workflow.
+Execute `.agents/skills/create-artwork-lite/SKILL.md` following the canonical pipeline in `.agents/skills/shared/workflow.md`:
 
-Use this command for slow execution routes, especially Claude Code connected through an NVIDIA API proxy.
-
-Execution rules:
-1. Run one artwork only.
-2. Do not invoke separate Planner, Artist, or Critic agents.
-3. Keep planning and review concise.
-4. Use branch `feature/works-YYYYMMDD`.
-5. Check `git status --short` before starting. Stop if unrelated pending changes would make a clean commit unsafe.
-6. Generate `sketch/{work_name}/preview.png`.
-7. Perform at most one revision.
-8. Update `sketch/WORKS.md` and `sketch/FEEDBACK.md`.
-9. Stage only intended files for this work.
-10. Commit and push.
-11. Upload outputs to Google Drive: `uv run python scripts/upload_to_drive.py {work_name}` (stills copied, videos moved; see `.agents/skills/shared/drive-upload.md`).
-12. Report work name, score/verdict, changed files, and commit hash.
+- **Format**: Still image (`sketch/{work_name}/{work_name}_p1.png`)
+- **Mode**: Single work, Lite depth (inline Creative Brief + 1 concise self-critique; no subagent invocations)
+- Run `uv run python scripts/check_diversity.py plan` before planning and `uv run python scripts/check_diversity.py check {work_name}` before rendering
+- Update `sketch/WORKS.md` and `.agents/FEEDBACK.md` (leave Rating and Comment blank), commit & push on `feature/works-YYYYMMDD`, and run `uv run python scripts/upload_to_drive.py {work_name}`

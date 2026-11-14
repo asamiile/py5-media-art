@@ -1,3 +1,323 @@
+## kam_resonance_tori
+- **Date**: 2026-11-14
+- **Type**: Animation (1440 frames, 60fps)
+- **Genre**: Mathematical / Abstract Topology
+- **Composition Archetype**: Full-Bleed Continuous Field
+- **Motion Archetype**: Persistent Trail Accumulation & Decay
+- **Concept**: Full-bleed symplectic Hamiltonian phase-space flow across a mid-tone atmospheric dusk and celadon-slate field (`#2c3840`–`#405c5a`), where 2,800 divergence-free tracers and 18 rotational Kolmogorov-Arnold-Moser (KAM) invariant tori accumulate persistent calligraphic trails around nested 3:2 resonance islands in soft chalk (`#f2ede0`), misty seafoam (`#8eb8b4`), warm golden amber (`#f0a438`), and coral terracotta (`#d86242`).
+- **Techniques**: Vectorized symplectic Hamiltonian flow ($\partial H/\partial y, -\partial H/\partial x$) and instantaneous KAM invariant-torus / resonance-island contours batched via `py5.QUADS` / `py5.vertices` in pure `P2D` with persistent translucent frame decay (`fill(44, 56, 64, 11)`).
+- **Palette**: Atmospheric Dusk Slate (`#2c3840`), Celadon Sage (`#405c5a`), Misty Seafoam (`#8eb8b4`), Soft Chalk (`#f2ede0`), Warm Golden Amber (`#f0a438`), Coral Terracotta (`#d86242`).
+
+## eikonal_linen_shocks
+- **Date**: 2026-11-14
+- **Type**: Animation (1200 frames, 60fps)
+- **Genre**: Physical / Micro-Kinetic
+- **Composition Archetype**: Emergent Network / Boundary-to-Interior Growth
+- **Motion Archetype**: Directional Advection & Traveling Wavefronts
+- **Concept**: Boundary-nucleated Eikonal wavefronts emitted from 16 perimeter stations along the four outer edges of a 100% full-canvas high-key raw linen ground (`#ede8dc`–`#e4ddd0`), where colliding wavefronts coalesce into Rankine-Hugoniot medial-axis shock ridges and branching fracture networks in iron-gall slate (`#243440`), burnt terracotta (`#b84a2e`), raw gold ochre (`#c98826`), and malachite sage (`#387268`).
+- **Techniques**: 16-source Eikonal arrival-time solver and medial-axis shock bisector contours in GLSL (`eikonal_linen_shocks.glsl`), 256 vectorized boundary-to-interior shock-deflected filaments batched via `py5.QUADS` / `py5.vertices`, and `PostFX` finishing.
+- **Palette**: Raw Alabaster Linen (`#ede8dc`–`#e4ddd0`), Iron-Gall Slate (`#243440`), Burnt Terracotta (`#b84a2e`), Raw Gold Ochre (`#c98826`), Malachite Sage (`#387268`).
+
+## sienna_capillary_glaze
+- **Date**: 2026-11-14
+- **Type**: Animation (1140 frames, 60fps)
+- **Genre**: Atmospheric / Painterly / Color Field
+- **Composition Archetype**: Asymmetric Off-Center Tension
+- **Motion Archetype**: Multi-Act Temporal Evolution
+- **Concept**: Asymmetric wet-on-wet pigment chromatography where a concentrated lapis-ultramarine (`#143474`) and verdigris-turquoise (`#189c90`) bloom anchored in the left-third golden-ratio focal zone radiates concentric Naples-gold (`#f6c438`) coffee-ring tide halos and 210 capillary veins across an expansive burnt-sienna (`#701e12`), alizarin-madder (`#a8281e`), and raw-amber (`#d66820`) glaze field.
+- **Techniques**: Domain-warped 5-octave fBM wet-on-wet pigment diffusion and capillary tide-ring contours in GLSL (`sienna_capillary_glaze.glsl`), 210 vectorized capillary veins and 420 granulation floccules batched via `py5.QUADS` / `py5.vertices`, and `PostFX` finishing.
+- **Palette**: Deep Burnt Sienna (`#701e12`), Alizarin Madder (`#a8281e`), Raw Amber Glaze (`#d66820`), Lapis Ultramarine (`#143474`), Verdigris Turquoise (`#189c90`), Naples Gold (`#f6c438`), Warm Cream (`#f9eeda`).
+
+## kumihimo_triaxial_weave
+- **Date**: 2026-11-14
+- **Type**: Animation (960 frames, 60fps)
+- **Genre**: Textile / Calligraphy / Procedural Craft
+- **Composition Archetype**: 3D Sculptural / Volumetric Space (P3D)
+- **Motion Archetype**: Poly-Rhythmic Phase Interference
+- **Concept**: Volumetric P3D sculptural suspension of 57 interwoven triaxial ribbons (`0°`, `+60°`, `-60°` symmetry axes) across dual canopies over a deep obsidian lacquer ground (`#0d1016`), where 1:2:3 harmonic phase interference drives true over-under interlacing waves in raw bone ivory (`#f4efe4`), vermilion lacquer (`#e63826`), imperial gold (`#f2b01e`), and cobalt ultramarine (`#2558d1`).
+- **Techniques**: Vectorized 3-face 3D ribbon slab extrusion with torsion normals and 5-band directional slope/fog shading in `P3D` (`py5.QUADS` / `py5.vertices`), vertical gold tension filaments (`py5.LINES`), and `PostFX` finishing.
+- **Palette**: Obsidian Lacquer (`#0d1016`), Raw Bone Ivory (`#f4efe4`), Vermilion Lacquer (`#e63826`), Imperial Gold (`#f2b01e`), Cobalt Ultramarine (`#2558d1`).
+
+## cobalt_foliation_shear
+- **Date**: 2026-11-14
+- **Type**: Animation (1080 frames, 60fps)
+- **Genre**: Mathematical / Abstract Topology
+- **Composition Archetype**: Stratified Horizon / Diagonal Sweep
+- **Motion Archetype**: Multi-Act Temporal Evolution
+- **Concept**: Full-canvas diagonally swept Reeb foliation and symplectic shear strata (`27°` inclination) across a rich saturated color field of deep forest viridian (`#0a3830`) and cobalt ultramarine (`#132c66`), where luminous foliation leaves in burnt sienna (`#d94e28`), cadmium gold (`#f4b024`), coral vermilion (`#f06438`), and warm ivory (`#f6efe2`) evolve through laminar nucleation, homoclinic saddle folding, and adiabatic re-lamination.
+- **Techniques**: Continuous Reeb foliation leaf contours and asymptotic separatrix ridges in GLSL (`cobalt_foliation_shear.glsl`), 162 vectorized holonomy ribbons and hyperbolic saddle-node diamond markers batched via `py5.QUADS` / `py5.vertices`, and `PostFX` finishing.
+- **Palette**: Deep Forest Viridian (`#0a3830`), Cobalt Ultramarine (`#132c66`), Emerald Teal (`#126862`), Burnt Sienna (`#d94e28`), Coral Vermilion (`#f06438`), Cadmium Gold (`#f4b024`), Warm Ivory (`#f6efe2`).
+
+## hypostyle_voussoir_colonnade
+- **Date**: 2026-11-14
+- **Type**: Animation (1320 frames, 60fps)
+- **Genre**: Architectural / Brutalism / Geometric
+- **Composition Archetype**: 3D Sculptural / Volumetric Space (P3D)
+- **Motion Archetype**: Spatial Camera / Depth Traversal
+- **Concept**: Volumetric 3D hypostyle colonnade of 22 depth-stacked scalloped voussoir arch vaults and transverse tie-beams across a 100% full-canvas warm cream Risograph paper ground (`#efe9dc`), rendered in translucent spot inks of fluorescent coral (`#f05240`), peacock teal (`#12948a`), deep federal indigo (`#1a285c`), and overprint plum (`#583e6b`) as a perspective camera traverses the central nave.
+- **Techniques**: Vectorized 1,848-block 3D voussoir wedge hexahedra in `P3D` with multi-act radial expansion, harmonic torsion, and 4-band atmospheric paper-fog binning (`py5.QUADS` / `py5.vertices`), misregistered Risograph drum tie-wires (`py5.LINES`), and `PostFX` finishing.
+- **Palette**: Warm Risograph Paper (`#efe9dc`), Fluorescent Coral (`#f05240`), Peacock Teal (`#12948a`), Deep Federal Indigo (`#1a285c`), Overprint Plum (`#583e6b`).
+
+## turing_chemotaxis_tesserae
+- **Date**: 2026-11-14
+- **Type**: Animation (1140 frames, 60fps)
+- **Genre**: Organic / Morphogenesis
+- **Composition Archetype**: Full-Canvas Polyptych / Rhythmic Matrix
+- **Motion Archetype**: Directional Advection & Traveling Wavefronts
+- **Concept**: Full-canvas 5×3 rhythmic matrix of 15 morphogenetic reaction-diffusion tesserae set on a mid-tone atmospheric dusk and celadon-slate ground (`#2c3840`–`#3d4e48`), where anisotropic activator-inhibitor Turing wavefronts and 150 chemotactic filament ribbons advect continuously in soft chalk (`#ebe6da`), misty celadon (`#82a8aa`), warm amber-ochre (`#e49636`), and terracotta (`#ce5e40`).
+- **Techniques**: 15-cell anisotropic reaction-diffusion labyrinth wavefronts and catalyst crest contours in GLSL (`turing_chemotaxis_tesserae.glsl`), 150 advecting chemotactic wavefront ribbons and 360 catalyst droplets batched via `py5.QUADS` / `py5.vertices`, and `PostFX` finishing.
+- **Palette**: Dusk Slate (`#2c3840`), Celadon Sage (`#3d4e48`), Misty Celadon-Teal (`#82a8aa`), Soft Chalk (`#ebe6da`), Warm Amber-Ochre (`#e49636`), Terracotta (`#ce5e40`).
+
+## kasuri_shuttle_wavefronts
+- **Date**: 2026-11-14
+- **Type**: Animation (1020 frames, 60fps)
+- **Genre**: Textile / Calligraphy / Procedural Craft
+- **Composition Archetype**: Stratified Horizon / Diagonal Sweep
+- **Motion Archetype**: Directional Advection & Traveling Wavefronts
+- **Concept**: Diagonally swept kasuri (ikat) resist-dyed textile strata across a 100% full-canvas high-key warm kozo washi ground (`#eee8db`–`#e2dac9`), where seven woven bands in iron-gall slate (`#24333d`), mineral indigo (`#324e62`), burnt terracotta (`#bc4e30`), raw gold ochre (`#ce8e2a`), and celadon sage (`#46736c`) undergo continuous directional advection and traveling shed wavefronts.
+- **Techniques**: Feathered kasuri weft step-shift, twill micro-ribbing, and kozo paper fiber texture in GLSL (`kasuri_shuttle_wavefronts.glsl`), 35 warp ribbons and 420 advecting weft-shuttle thread segments batched via `py5.QUADS` / `py5.vertices`, and `PostFX` finishing.
+- **Palette**: Warm Kozo Washi (`#eee8db`–`#e2dac9`), Iron-Gall Slate (`#24333d`), Mineral Indigo (`#324e62`), Burnt Terracotta (`#bc4e30`), Raw Gold Ochre (`#ce8e2a`), Celadon Sage (`#46736c`).
+
+## sumi_kuroshio_plumes
+- **Date**: 2026-11-14
+- **Type**: Animation (1260 frames, 60fps)
+- **Genre**: Atmospheric / Painterly / Color Field
+- **Composition Archetype**: Full-Bleed Continuous Field
+- **Motion Archetype**: Persistent Trail Accumulation & Decay
+- **Concept**: Continuous edge-to-edge nocturnal ink-wash and oceanic vortex plumes across a deep sumi-obsidian ground (`#090c14`), where 2,600 divergence-free curl-streamfunction brush filaments accumulate persistent silver-mist (`#94abc7`) and moonlit-chalk (`#eef4fc`) trails punctuated by a single vermilion-cinnabar accent (`#ff5232`).
+- **Techniques**: Vectorized 4-mode harmonic curl-streamfunction advection ($\nabla \times \psi$) batched across 4 brush roles via `py5.QUADS` / `py5.vertices`, and persistent translucent nocturnal veil accumulation (`fill(9, 12, 20, 12)`).
+- **Palette**: Nocturnal Sumi Obsidian (`#090c14`), Slate-Blue Ink Wash (`#2c3e5a`), Luminous Silver Mist (`#94abc7`), Moonlit Chalk (`#eef4fc`), Vermilion-Cinnabar Accent (`#ff5232`).
+
+## prussian_legendre_strata
+- **Date**: 2026-11-14
+- **Type**: Animation (1380 frames, 60fps)
+- **Genre**: Mathematical / Abstract Topology
+- **Composition Archetype**: Stratified Horizon / Diagonal Sweep
+- **Motion Archetype**: Poly-Rhythmic Phase Interference
+- **Concept**: Diagonally swept algebraic foliation of Legendre-Chebyshev orthogonal polynomials across a rich saturated color field of deep Prussian blue (`#0a1e40`), forest malachite (`#0e5750`), verdigris turquoise (`#24a89e`), burnt sienna (`#c04424`), and luminous cadmium gold (`#f4ac24`), where harmonic wave trains (`T2`, `T3`, `T4`, `T5`, `T7`) interfere at poly-rhythmic temporal ratios (`1:2:3`).
+- **Techniques**: Seven-stratum Chebyshev-Legendre polynomial horizon foliation and algebraic caustic intersections in GLSL (`prussian_legendre_strata.glsl`), 32 calligraphic polynomial envelope ribbons and inflection tangent rulings batched via `py5.QUADS` / `py5.LINES`, and `PostFX` finishing.
+- **Palette**: Deep Prussian Blue (`#0a1e40`), Forest Malachite (`#0e5750`), Verdigris Turquoise (`#24a89e`), Burnt Sienna (`#c04424`), Luminous Cadmium Gold (`#f4ac24`), Warm Ivory Highlight (`#fcf1da`).
+
+## escarpment_halftone_strata
+- **Date**: 2026-11-14
+- **Type**: Animation (960 frames, 60fps)
+- **Genre**: Atmospheric / Painterly / Color Field
+- **Composition Archetype**: Stratified Horizon / Diagonal Sweep
+- **Motion Archetype**: Spatial Camera / Depth Traversal
+- **Concept**: Diagonally swept atmospheric escarpment horizons rendered in Risograph spot-ink overprint across a full-canvas warm cream paper ground (`#f0e9dc`–`#e7dfd0`), where nine stratified horizons in translucent fluorescent coral (`#f25240`), peacock teal (`#10968c`), and deep federal indigo (`#1c2a62`) advance seamlessly from the upper horizon toward the foreground.
+- **Techniques**: Angled halftone dot screens and subtractive 3-channel Risograph drum registration in GLSL (`escarpment_halftone_strata.glsl`), 27 misregistered spot-ink contour ribbons and halftone stipple ridges batched via `py5.QUADS` / `py5.vertices`, and `PostFX` finishing.
+- **Palette**: Warm Risograph Cream Paper (`#f0e9dc`–`#e7dfd0`), Fluorescent Coral Spot Ink (`#f25240`), Peacock Teal Spot Ink (`#10968c`), Deep Federal Indigo Spot Ink (`#1c2a62`).
+
+## heterodyne_amber_chorus
+- **Date**: 2026-11-14
+- **Type**: Animation (900 frames, 60fps)
+- **Genre**: Signal / Glitch / Digital Artifacts
+- **Composition Archetype**: Full-Bleed Continuous Field
+- **Motion Archetype**: Poly-Rhythmic Phase Interference
+- **Concept**: Continuous edge-to-edge frequency-modulated (FM) heterodyne carrier interference and scanband phase-slip displacement across a rich saturated color field of deep ultramarine (`#0a133c`–`#1e3eb8`), crimson magenta (`#b81e6c`), signal vermilion (`#ec4828`), and luminous amber gold (`#f8b224`).
+- **Techniques**: Four-wave poly-rhythmic FM heterodyne beat interference and quantized raster scanband shear in GLSL (`heterodyne_amber_chorus.glsl`), 44 full-bleed vector carrier ribbons and phase-pinched harmonic bridge struts batched via `py5.QUADS` / `py5.LINES`, and `PostFX` finishing.
+- **Palette**: Deep Ultramarine (`#0a133c`–`#1e3eb8`), Crimson Magenta (`#b81e6c`), Signal Vermilion (`#ec4828`), Luminous Amber Gold (`#f8b224`), Warm Cream Highlight (`#fcf2dc`).
+
+## dendrite_rime_veins
+- **Date**: 2026-11-14
+- **Type**: Animation (1260 frames, 60fps)
+- **Genre**: Atmospheric / Painterly / Color Field
+- **Composition Archetype**: Emergent Network / Boundary-to-Interior Growth
+- **Motion Archetype**: Spatial Camera / Depth Traversal
+- **Concept**: Boundary-nucleated rime-frost dendrite veins and crystalline networks growing inward from all four canvas edges across a deep nocturnal indigo and charcoal color field (`#0a0d14`–`#161c28`), where three parallax crystal planes drift through spatial depth and ignite with a single warm amber-gold accent (`#f59332`) at colliding filament tips.
+- **Techniques**: Three-plane parallax domain-warped Voronoi ridge veins and boundary-to-interior growth envelopes in GLSL (`dendrite_rime_veins.glsl`), 36 recursive 5-generation dendritic trees batched by generation via `py5.LINES` / `py5.vertices`, and `PostFX` bloom, chromatic aberration, and grain.
+- **Palette**: Nocturnal Indigo (`#0a0d14`), Deep Charcoal (`#161c28`), Rime Graphite (`#48576f`), Frost Silver (`#c2d0e4`), Crystalline Ice (`#ecf3fc`), Warm Amber Gold Accent (`#f59332`).
+
+## raster_extrusion_corridor
+- **Date**: 2026-11-14
+- **Type**: Animation (960 frames, 60fps)
+- **Genre**: Signal / Glitch / Digital Artifacts
+- **Composition Archetype**: 3D Sculptural / Volumetric Space (P3D)
+- **Motion Archetype**: Spatial Camera / Depth Traversal
+- **Concept**: Volumetric 3D raster deflection corridor across a stark constructivist carbon-black void (`#0d0f14`), where 28 depth-stacked electromagnetic scanline curtains and 180 quantized phase-slip voxel blocks undergo staircase carrier quantization and horizontal slip while an orbiting perspective camera traverses the 3D depth space.
+- **Techniques**: True `P3D` perspective camera traversal (`perspective` + `camera`), 28 extruded 3D raster ribbon meshes with two-sided normal shading and 180 6-face constructivist cuboids batched via `py5.QUADS` / `py5.vertices`, and `PostFX` chromatic aberration, bloom, and grain.
+- **Palette**: Carbon Black Void (`#0d0f14`), Crisp Bone White (`#f3f0e8`), Signal Vermilion (`#e83424`), International Ultramarine (`#1c3ed6`), Cadmium Ochre (`#f2b218`), Constructivist Steel (`#323946`).
+
+## ochre_littoral_strata
+- **Date**: 2026-11-14
+- **Type**: Animation (1200 frames, 60fps)
+- **Genre**: Atmospheric / Painterly / Color Field
+- **Composition Archetype**: Stratified Horizon / Diagonal Sweep
+- **Motion Archetype**: Poly-Rhythmic Phase Interference
+- **Concept**: Diagonally swept littoral mineral wash horizons across a 100% full-canvas high-key warm alabaster and raw linen paper ground (`#ede8dc`–`#e5dfcf`), where eight wet-into-wet pigment veils and 28 capillary tide-line ribbons in raw ochre, burnt sienna, celadon sage, and iron-gall slate undergo poly-rhythmic phase interference.
+- **Techniques**: Subtractive mineral glaze diffusion, FBM granulation, and capillary tide-ring contours in GLSL (`ochre_littoral_strata.glsl`), 28 calligraphic tide-line ribbons and mineral stipple nodes batched via `py5.QUADS` / `py5.vertices`, and `PostFX` finishing.
+- **Palette**: Warm Alabaster Paper (`#ede8dc`), Raw Linen (`#e5dfcf`), Raw Mineral Ochre (`#ca8a2a`), Burnt Sienna (`#b84c31`), Celadon Sage (`#48746e`), Iron-Gall Slate (`#263640`).
+
+## wavelet_quantizer_array
+- **Date**: 2026-11-14
+- **Type**: Animation (1080 frames, 60fps)
+- **Genre**: Signal / Glitch / Digital Artifacts
+- **Composition Archetype**: Full-Canvas Polyptych / Rhythmic Matrix
+- **Motion Archetype**: Spatial Camera / Depth Traversal
+- **Concept**: Full-canvas 4×3 rhythmic matrix of 2D wavelet subbands, Walsh-Hadamard square-wave basis packets, and dead-zone uniform quantizers across a deep nocturnal monochrome field (`#0a0c11`–`#e6edf7`), where cyclic camera depth traversal and horizontal packet-slip shears ignite a single burnt-signal amber accent (`#ff5e24`) along quantization residual spikes.
+- **Techniques**: 12-subband Walsh-Hadamard / cosine packet interference and dead-zone quantization in GLSL (`wavelet_quantizer_array.glsl`), vector staircase transfer curves and residual error stems per subband cell in `py5`, and `PostFX` chromatic aberration, bloom, and grain.
+- **Palette**: Deep Obsidian (`#0a0c11`), Nocturnal Slate (`#181e2a`), Silver Subband (`#8f9eb5`), Ice Contour (`#e6edf7`), Burnt Signal Amber Accent (`#ff5e24`).
+
+## basalt_fault_strata
+- **Date**: 2026-11-14
+- **Type**: Animation (1320 frames, 60fps)
+- **Genre**: Architectural / Brutalism / Geometric
+- **Composition Archetype**: Stratified Horizon / Diagonal Sweep
+- **Motion Archetype**: Directional Advection & Traveling Wavefronts
+- **Concept**: Diagonally stratified tectonic fault and columnar shear landscape sweeping at a $-24^\circ$ angle across a stark constructivist carbon-black ground (`#0f1116`), where 22 counter-advecting basalt horizons and 308 graphic fault blocks slip and interlock along propagating transverse shear waves.
+- **Techniques**: Diagonal columnar basalt jointing and transverse $\tanh$ fault-wave displacement in GLSL (`basalt_fault_strata.glsl`), 308 slanted tectonic shear blocks batched across 4 constructivist color roles via `py5.QUADS` / `py5.vertices`, and `PostFX` chromatic aberration, bloom, and grain.
+- **Palette**: Carbon Constructivist Ground (`#0f1116`), Striated Basalt (`#1e222a`), Crisp Bone White (`#f3f0e8`), Signal Vermilion (`#e83424`), International Ultramarine (`#1c3ed6`), Cadmium Ochre (`#f2b218`).
+
+## sashiko_terracotta_drift
+- **Date**: 2026-11-14
+- **Type**: Animation (1440 frames, 60fps)
+- **Genre**: Textile / Calligraphy / Procedural Craft
+- **Composition Archetype**: Full-Bleed Continuous Field
+- **Motion Archetype**: Multi-Act Temporal Evolution
+- **Concept**: Edge-to-edge procedural boro linen patchwork and hitomezashi sashiko running-stitch field across a full-canvas warm alabaster-linen ground (`#ede8dc`), where warp, weft, and diagonal stitch lattices nucleate, expand, billow through traveling shear waves, and resolve into taut woven harmony.
+- **Techniques**: Multi-patch linen warp/weft micro-weave and diagonal sashiko under-stitches in GLSL (`sashiko_terracotta_drift.glsl`), 3,228 running-stitch thread segments batched across 4 mineral pigment roles via `py5.QUADS` / `py5.vertices`, and `PostFX` finishing.
+- **Palette**: Warm Alabaster Linen (`#ede8dc`), Raw Boro Linen (`#e3ddce`), Iron-Gall Slate Ink (`#263640`), Burnt Terracotta (`#ba4a30`), Raw Mineral Ochre (`#ca8628`), Celadon Sage (`#46726a`).
+
+## harmonograph_slate_caustics
+- **Date**: 2026-11-14
+- **Type**: Animation (1260 frames, 60fps)
+- **Genre**: Physical / Micro-Kinetic
+- **Composition Archetype**: Full-Canvas Polyptych / Rhythmic Matrix
+- **Motion Archetype**: Persistent Trail Accumulation & Decay
+- **Concept**: Edge-to-edge hierarchical matrix of 48 subdivided acoustic harmonograph pendulum cells across a mid-tone atmospheric dusk slate field (`#2c3840`), where coupled tri-frequency rotary pendulums trace evolving Lissajous-caustic envelopes over a persistent translucent frame-decay buffer.
+- **Techniques**: Hierarchical 6×4 + 2×2 cellular matrix subdivision, vectorized tri-frequency rotary harmonograph pendulum integration batched via `py5.QUADS` / `py5.vertices`, and persistent translucent slate-veil trail decay (`fill(44, 56, 64, 7)`).
+- **Palette**: Mid-Tone Atmospheric Dusk Slate (`#2c3840`), Misty Celadon-Teal (`#8ab2b4`), Soft Chalk (`#e8e3d8`), Warm Amber Ochre (`#e29434`).
+
+## sepiolite_separatrix_web
+- **Date**: 2026-11-14
+- **Type**: Animation (1380 frames, 60fps)
+- **Genre**: Mathematical / Abstract Topology
+- **Composition Archetype**: Emergent Network / Boundary-to-Interior Growth
+- **Motion Archetype**: Persistent Trail Accumulation & Decay
+- **Concept**: Emergent topological phase-space portrait where 3,200 tracer filaments nucleate along the four canvas edges and propagate inward along the symplectic Hamiltonian stream function of a time-modulated multipolar saddle lattice across a full-canvas warm sepiolite washi ground (`#ece7db`).
+- **Techniques**: Divergence-free symplectic Hamiltonian velocity field ($\dot{x} = \partial H/\partial y,\; \dot{y} = -\partial H/\partial x$) coupled with 9 precessing Gaussian saddle-vortex poles, 3,200 12-node tapered calligraphic ribbons batched via `py5.QUADS` / `py5.vertices`, and persistent translucent paper-veil trail decay (`fill(236, 231, 219, 7)`).
+- **Palette**: Warm Sepiolite Washi (`#ece7db`), Iron-Gall Slate Ink (`#26353d`), Raw Mineral Ochre (`#c88428`), Burnt Terracotta Sienna (`#b84830`), Celadon Malachite (`#3b6964`).
+
+## scanline_overprint_matrix
+- **Date**: 2026-11-14
+- **Type**: Animation (1140 frames, 60fps)
+- **Genre**: Signal / Glitch / Digital Artifacts
+- **Composition Archetype**: Full-Canvas Polyptych / Rhythmic Matrix
+- **Motion Archetype**: Spatial Camera / Depth Traversal
+- **Concept**: Edge-to-edge rhythmic cellular matrix of analog cathode scanlines, halftone signal registers, and phase-slipped frequency gratings printed across a warm cream paper ground (`#efe9dc`) in three translucent overlapping Risograph spot inks as a 2.5D spatial camera traverses through three parallax register planes.
+- **Techniques**: Multi-plane parallax cellular signal polyptych with 4 waveform archetypes and subtractive spot-ink overprint multiplication in GLSL (`scanline_overprint_matrix.glsl`), 144 parallax registration bars batched via `py5.QUADS` / `py5.vertices`, and `PostFX` chromatic aberration, bloom, and paper grain.
+- **Palette**: Warm Cream Risograph Paper (`#efe9dc`), Fluorescent Coral Spot Ink (`#f05442`), Peacock Teal Spot Ink (`#14968c`), Deep Indigo Spot Ink (`#1c2a5e`).
+
+## celadon_soliton_estuary
+- **Date**: 2026-11-14
+- **Type**: Animation (900 frames, 60fps)
+- **Genre**: Atmospheric / Painterly / Color Field
+- **Composition Archetype**: Asymmetric Off-Center Tension
+- **Motion Archetype**: Directional Advection & Traveling Wavefronts
+- **Concept**: Propagating internal soliton wave packets radiating from an off-center tidal mouth near the lower-left golden-ratio focal zone and sweeping diagonally across a mid-tone celadon-slate dusk field (`#2c3840`–`#3d504b`) with buoyant soft chalk-mist and warm amber-ochre drift filaments.
+- **Techniques**: Domain-warped fBm and non-singular directional Korteweg-de Vries ($\operatorname{sech}^2$) soliton packet synthesis in GLSL (`celadon_soliton_estuary.glsl`), 340 tangential crest-foam arcs and diagonal shear-current streamers batched via `py5.QUADS` / `py5.vertices`, and `PostFX` bloom, vignette, and film grain.
+- **Palette**: Mid-Tone Atmospheric Slate (`#2c3840`), Celadon Dusk (`#3d504b`), Estuary Mist (`#759496`), Soft Chalk Foam (`#ece6da`), Warm Amber Ochre (`#e69232`).
+
+## enneper_mineral_petals
+- **Date**: 2026-11-14
+- **Type**: Animation (1320 frames, 60fps)
+- **Genre**: Mathematical / Abstract Topology
+- **Composition Archetype**: 3D Sculptural / Volumetric Space (P3D)
+- **Motion Archetype**: Multi-Act Temporal Evolution
+- **Concept**: Three generalized Enneper-Bonnet minimal-surface sculptures ($k = 2, 3, 4$) unfolding, twisting through their isometric Bonnet association family, and counter-rotating across a full-canvas warm alabaster washi ground (`#ede8dc`).
+- **Techniques**: True `P3D` volumetric minimal-surface synthesis ($X_\theta = \cos\theta\,X_0 + \sin\theta\,X_{\pi/2}$) with 32-band analytical two-sided surface shading and iron-gall geodesic rulings batched via `py5.QUADS` / `py5.LINES`, and subtle `PostFX` finishing.
+- **Palette**: Warm Alabaster Washi (`#ede8dc`), Iron-Gall Slate Ink (`#2a3941`), Burnt Terracotta Sienna (`#b84a31`), Raw Mineral Ochre (`#c8862a`), Celadon Malachite Slate (`#3e6d68`).
+
+## brutalist_cantilever_polyhedra
+- **Date**: 2026-11-14
+- **Type**: Animation (1080 frames, 60fps)
+- **Genre**: Architectural / Brutalism / Geometric
+- **Composition Archetype**: 3D Sculptural / Volumetric Space (P3D)
+- **Motion Archetype**: Poly-Rhythmic Phase Interference
+- **Concept**: Monumental 3D constructivist cantilever architecture of 180 interlocking concrete-bone slabs, signal-vermilion tension beams, ultramarine structural towers, and cadmium-ochre counterweight blocks suspended in stark carbon-black space (`#0f1115`).
+- **Techniques**: True `P3D` volumetric box-face synthesis with directional architectural lighting, golden-ratio poly-rhythmic harmonic wave interference ($\omega_1 : \omega_2 : \omega_3 = 1 : \varphi : \varphi^2$) driving axial shearing and telescopic cantilever extensions batched via `py5.QUADS` / `py5.vertices`, and `PostFX` bloom, vignette, and film grain.
+- **Palette**: Carbon Constructivist Ground (`#0f1115`), Bone White Concrete (`#f2efe9`), Signal Vermilion (`#e83424`), International Ultramarine (`#1c3dd4`), Cadmium Ochre (`#f2b018`), Dark Graphite Steel (`#333841`).
+
+## hopf_saffron_bundle
+- **Date**: 2026-11-14
+- **Type**: Animation (960 frames, 60fps)
+- **Genre**: Mathematical / Abstract Topology
+- **Composition Archetype**: Asymmetric Off-Center Tension
+- **Motion Archetype**: Spatial Camera / Depth Traversal
+- **Concept**: Asymmetric 3D stereographic projection of 132 linked Hopf circle fibers across 6 nested Clifford torus shells in $S^3$, anchored near the upper-right golden-ratio focal zone and sweeping into wide loxodrome arcs across a rich Prussian-cobalt, viridian-teal, and burnt-sienna field (`#0a1d38`–`#6e2e18`).
+- **Techniques**: 4D $S^3$ Clifford rotation and stereographic projection $S^3 \to \mathbb{R}^3$ with 3-tier depth-sorted perspective ribbons batched via `py5.QUADS` / `py5.vertices`, logarithmic loxodrome caustic field in GLSL (`hopf_saffron_bundle.glsl`), and `PostFX` bloom, vignette, and film grain.
+- **Palette**: Deep Prussian Cobalt (`#0a1d38`), Viridian Teal (`#0f3844`), Burnt Ochre-Sienna (`#6e2e18`), Luminous Saffron Gold (`#f4b22a`), Warm Coral Persimmon (`#eb5a38`), Pale Turquoise Ice (`#94ece6`).
+
+## cymatic_salt_nodals
+- **Date**: 2026-11-14
+- **Type**: Animation (1260 frames, 60fps)
+- **Genre**: Physical / Micro-Kinetic
+- **Composition Archetype**: Emergent Network / Boundary-to-Interior Growth
+- **Motion Archetype**: Persistent Trail Accumulation & Decay
+- **Concept**: Acoustic cymatic resonance plate where coupled standing waves drive 22,000 fine ivory silica, warm brass, and vermilion garnet sand grains from boundary exciters into bifurcating Chladni nodal filaments across a deep nocturnal obsidian-slate field (`#0d1016`).
+- **Techniques**: Coupled non-integer Chladni eigenmode superposition and finite-difference nodal groove relief in GLSL (`cymatic_salt_nodals.glsl`), analytical acoustic potential gradient $\nabla |W(x, y, t)|$ advection of 22,000 sand grains in NumPy batched via `py5.QUADS` / `py5.vertices`, and `PostFX` bloom, vignette, and film grain.
+- **Palette**: Nocturnal Obsidian Slate (`#0d1016`), Brushed Acoustic Trough (`#131a24`), Fine Ivory Silica (`#ece6d8`), Champagne Brass (`#e2a84b`), Vermilion Garnet Accent (`#f05438`).
+
+## lichen_travertine_terraces
+- **Date**: 2026-11-14
+- **Type**: Animation (1200 frames, 60fps)
+- **Genre**: Organic / Morphogenesis
+- **Composition Archetype**: Stratified Horizon / Diagonal Sweep
+- **Motion Archetype**: Directional Advection & Traveling Wavefronts
+- **Concept**: Diagonally stratified travertine rimstone terraces (*gours*) and calcified thermal mineral pools stepping across a mid-tone celadon-slate dusk field (`#363c40`–`#4a5d62`), rimmed by micro-fluted chalk lips (`#e4dfd4`) and thermophilic amber-ochre lichen bands (`#d88c32`).
+- **Techniques**: Multi-octave fBm + scalloped cusp step-function morphogenesis and micro-fluted calcite rib modulation in GLSL (`lichen_travertine_terraces.glsl`), 32 diagonal rimstone contour ribbons batched via `py5.QUADS` / `py5.vertices`, and `PostFX` filmic tone-mapping and subtle bloom.
+- **Palette**: Mid-Tone Umber-Slate Dusk (`#363c40`), Weathered Celadon-Slate Terrace Pools (`#4a5d62` / `#728c90`), Calcified Travertine Chalk (`#e4dfd4`), Thermophilic Amber-Ochre Lichen (`#d88c32`).
+
+## viridian_catenary_canopy
+- **Date**: 2026-11-14
+- **Type**: Animation (1140 frames, 60fps)
+- **Genre**: Textile / Calligraphy / Procedural Craft
+- **Composition Archetype**: 3D Sculptural / Volumetric Space (P3D)
+- **Motion Archetype**: Poly-Rhythmic Phase Interference
+- **Concept**: Three-tiered 3D architectural canopy of 45 translucent saffron-amber, pale celadon, and warm persimmon silk-organza ribbons suspended across a deep forest-viridian to Prussian-teal atrium (`#0b2632`–`#14443c`) and undulating with golden-ratio poly-rhythmic wave interference.
+- **Techniques**: True `P3D` volumetric catenary surface synthesis ($\cosh(ku)$ vaults + golden-ratio harmonic wave superposition $\omega_2 = \varphi\omega_1$, $\omega_3 = \varphi^{-1}\omega_1$), analytical two-sided 3D surface normal cross-products batched across 12 luminance/hue `py5.QUADS` bins, and `PostFX` soft bloom and filmic tone-mapping.
+- **Palette**: Forest-Viridian & Prussian-Teal Color Field (`#0b2632` / `#14443c`), Luminous Saffron Amber Silk (`#f29e2e`), Pale Celadon Organza (`#d8ece2`), Warm Persimmon Coral (`#e85a3c`).
+
+## bitplane_moire_polyptych
+- **Date**: 2026-11-14
+- **Type**: Animation (1020 frames, 60fps)
+- **Genre**: Signal / Glitch / Digital Artifacts
+- **Composition Archetype**: Full-Canvas Polyptych / Rhythmic Matrix
+- **Motion Archetype**: Multi-Act Temporal Evolution
+- **Concept**: Edge-to-edge constructivist transmission polyptych subdividing the 3840×2160 canvas into hierarchical signal registers where 6-bit quantized XOR carpets, phase-slipped analog scanlines, and dual-grating moiré interference waves fracture and re-lock across a 4-act temporal cycle.
+- **Techniques**: Hierarchical 8×5 polyptych subdivision with sub-register splitting, 6-bit integer XOR interferometry, and dual-grating moiré wave multiplication in GLSL (`bitplane_moire_polyptych.glsl`), 96 quantized constructivist shutter bars batched via `py5.QUADS` / `py5.vertices`, and `PostFX` radial chromatic aberration and filmic tone-mapping.
+- **Palette**: Carbon Constructivist Ground (`#111317`), Crisp Bone White (`#f2efe9`), Signal Vermilion (`#e63426`), International Ultramarine (`#183ad4`), Cadmium Ochre (`#f2b418`).
+
+## karman_washi_vortices
+- **Date**: 2026-11-14
+- **Type**: Animation (1080 frames, 60fps)
+- **Genre**: Physical / Micro-Kinetic
+- **Composition Archetype**: Asymmetric Off-Center Tension
+- **Motion Archetype**: Persistent Trail Accumulation & Decay
+- **Concept**: Asymmetric von Kármán vortex street shedding from an off-center hydrodynamic shear singularity near the upper-left golden-ratio focal zone and trailing persistent calligraphic ribbons of iron-gall slate, raw mineral ochre, and burnt terracotta across expansive pale celadon-sage washi paper (`#e8ede6`).
+- **Techniques**: Vectorized potential-flow doublet + 14-core Lamb-Oseen Biot-Savart velocity field with radial spiral entrainment, 520 28-node tapered brush ribbons batched via `py5.QUADS` / `py5.vertices`, and persistent translucent paper-veil trail decay (`fill(232, 237, 230, 8)`).
+- **Palette**: Pale Celadon-Sage Washi (`#e8ede6`), Iron-Gall Slate Ink (`#26343c`), Raw Mineral Ochre (`#c88428`), Burnt Terracotta Sienna (`#b84830`).
+
+## hyperbolic_risograph_geodesics
+- **Date**: 2026-11-14
+- **Type**: Animation (960 frames, 60fps)
+- **Genre**: Mathematical / Abstract Topology
+- **Composition Archetype**: Full-Bleed Continuous Field
+- **Motion Archetype**: Spatial Camera / Depth Traversal
+- **Concept**: Full-bleed non-Euclidean $\text{PSL}(2, \mathbb{Z})$ modular tessellation and Poincaré geodesic arches printed in slightly misregistered translucent teal, fluorescent coral, and deep indigo risograph spot-ink plates across warm cotton paper (`#ede8de`).
+- **Techniques**: 12-step iterative complex Möbius fundamental-domain folding ($T(z) = z - \lfloor \text{Re}(z) + 1/2 \rfloor$, $S(z) = -1/z$) with rotated halftone dot screens and subtractive spot-ink multiplication in GLSL (`hyperbolic_risograph_geodesics.glsl`), overlaid with 42 animated Poincaré geodesic ribbon arches batched via `py5.QUADS` / `py5.vertices`.
+- **Palette**: Warm Cotton Risograph Paper (`#ede8de`), Translucent Teal Spot Ink (`#169a8e`), Fluorescent Coral Misregistration Ink (`#f05a46`), Deep Indigo Overprint Ink (`#1e2d5c`).
+
+## cinnabar_ink_fronts
+- **Date**: 2026-11-14
+- **Type**: Animation (900 frames, 60fps)
+- **Genre**: Atmospheric / Painterly / Color Field
+- **Composition Archetype**: Emergent Network / Boundary-to-Interior Growth
+- **Motion Archetype**: Directional Advection & Traveling Wavefronts
+- **Concept**: Full-bleed suminagashi and wet sumi-e pigment collision fronts advancing from the four margins of dark slate paper and igniting warm cinnabar capillary seams where opposing curl-advected wavefronts converge in open space.
+- **Techniques**: Custom GLSL curl-warped multi-front advection and capillary interference shader (`cinnabar_ink_fronts.glsl` via `load_shader` + `draw_fullscreen`), 56 boundary-nucleated tapered wash ribbons batched via `py5.QUADS` / `py5.vertices`, and `PostFX` filmic tone-mapping, bloom, vignette, and grain.
+- **Palette**: Deep Slate Charcoal (`#0e131b`), Wet Sumi Shadow (`#1e2837`), Pewter Mist (`#586980`), Frosted Silver Wash (`#c6d4e4`), Molten Cinnabar Front Seam (`#e85234`).
+
 ## kinetic_muqarnas_stalactite_vault_corbeling_stereotomy_2d
 - **Date**: 2026-11-05
 - **Type**: Animation (720 frames, 60fps)

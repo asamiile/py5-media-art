@@ -1,7 +1,7 @@
 [project]
 name = "py5-media-art"
 version = "0.1.0"
-description = "Add your description here"
+description = "Autonomous generative media art sketches and animations built with py5"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [

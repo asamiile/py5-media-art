@@ -6,35 +6,16 @@ allowed-tools: Bash, Read, Write, Edit
 
 # Create Video Artworks Lite Skill (Continuous)
 
-Continuously create py5 media art animations using the lightweight workflow from `create-video-artwork-lite`. This is intended for slow execution routes, especially Claude Code connected through an NVIDIA API proxy.
+Continuously creates py5 media art animations using the lightweight mode of the canonical pipeline in `.agents/skills/shared/workflow.md` (optimized for slow proxy routes such as NVIDIA API).
 
-Each iteration must produce one complete, independent animation and commit/push it before starting the next.
+## Mode Parameters
 
-## Workflow
+- **Format**: Animation (`15–30s @ 60fps`, `900`–`1800` frames; outputs `{work_name}.mp4` and `{work_name}.png`)
+- **Loop Mode**: Continuous loop with a 60–90 second rate-limit pause between iterations
+- **Depth**: Lite (inline Creative Brief + 1 concise self-critique, max 1 revision; no separate subagent invocations)
 
-1. Read only the essential parts of `AGENTS.md`, `.agents/skills/shared/artwork-conventions.md`, `.agents/skills/shared/py5-templates.md`, `sketch/WORKS.md`, and `.agents/FEEDBACK.md`.
-2. Create or reuse branch `feature/works-YYYYMMDD`.
-3. Loop until externally interrupted:
-   1. Check `git status --short`. Stop if unrelated pending changes would make a clean commit unsafe.
-   2. Produce a short inline creative brief with **Format: Animation (10-30s @ 60fps)**:
-      - work name
-      - one-sentence theme
-      - technique
-      - 3-5 color palette
-      - how it differs from recent works
-   3. Implement `sketch/{work_name}/main.py` and `README.md`.
-   4. Run `uv run python sketch/{work_name}/main.py` and ensure `sketch/{work_name}/output.mp4` and `preview_p1.png` exist.
-   5. Perform one concise self-critique in the same format as `.agents/skills/critic/SKILL.md`.
-   6. Update `sketch/WORKS.md` and `.agents/FEEDBACK.md` (leave Rating and Comment empty per conventions).
-   7. Commit and push.
-   8. Upload outputs to Google Drive: `uv run python scripts/upload_to_drive.py {work_name}` (see `.agents/skills/shared/drive-upload.md`).
-   9. Wait 60-90 seconds (Rate Limit) then start the next iteration.
+## Execution
 
-## Lightweight Rules
-
-- **MANDATORY**: Always produce Animations.
-- Do not invoke separate Planner, Artist, or Critic agents.
-- Animation is the primary output; ensure `output.mp4` is generated for each work. Never commit MP4 files; they live on Google Drive after the upload step.
-- Do not perform more than one revision per work.
-- Follow `.agents/skills/shared/artwork-conventions.md` for naming and staging.
-- The loop continues indefinitely until externally stopped.
+1. Read `.agents/skills/shared/workflow.md`, `AGENTS.md`, `.agents/skills/shared/artwork-conventions.md`, and `.agents/skills/shared/py5-templates.md`.
+2. Run **Pre-Flight Setup** once, then repeat the **Per-Work Iteration Pipeline** in **Lite Depth** (`plan` → inline brief → `main.py` & `README.md` → `check` → `render` → concise self-critique → `WORKS.md` / `FEEDBACK.md` → `commit & push` → `upload_to_drive.py` → wait 60–90s).
+3. Never commit `.mp4` files or `frames/`; videos are moved to Google Drive by `scripts/upload_to_drive.py`.

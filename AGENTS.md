@@ -5,10 +5,10 @@ Use `/create-artwork` or `/create-artworks` to automate. Each step reads shared 
 ## Workflow
 
 1. **Branch** — `feature/works-$(date +%Y%m%d)`
-2. **Plan** — Planner reads `sketch/WORKS.md` + `.agents/FEEDBACK.md` → Creative Brief (`.agents/skills/planner/SKILL.md`)
-3. **Implement** — Artist executes brief in `sketch/{work_name}/main.py` (`.agents/skills/artist/SKILL.md`)
+2. **Plan** — Run `uv run python scripts/check_diversity.py plan`, then Planner reads `sketch/WORKS.md` + `.agents/FEEDBACK.md` → Creative Brief (`.agents/skills/planner/SKILL.md`)
+3. **Implement** — Artist executes brief in `sketch/{work_name}/main.py` as 100% pure visual media art with zero canvas text or infographic panels (`.agents/skills/artist/SKILL.md`)
 4. **Preview** — `uv run python sketch/{work_name}/main.py` → saves pattern-specific previews (ensure process terminates)
-5. **Review** — Critic loop, max 2 revisions (`.agents/skills/critic/SKILL.md`)
+5. **Review** — Run `uv run python scripts/check_diversity.py check {work_name}` and Critic loop, max 2 revisions (`.agents/skills/critic/SKILL.md`)
 6. **Document** — Add README.md, update `sketch/WORKS.md` and `.agents/FEEDBACK.md`
 7. **Commit & Push**
 8. **Upload** — `uv run python scripts/upload_to_drive.py {work_name}` → stills copied / videos moved to Google Drive (`.agents/skills/shared/drive-upload.md`)
@@ -29,7 +29,7 @@ All agents must follow:
 - **Resolution**: Preview 1920×1080 | Output 3840×2160 (change `SIZE` constant)
 - **Retina**: After `py5.load_np_pixels()`, check `py5.np_pixels.shape[:2]` for actual size
 - **No fixed seeds**: Results should vary each run
-- **Diversity & Anti-Clustering**: Enforce Genre Taxonomy rotation, background inversion, and anti-template primitive restrictions (see `.agents/skills/planner/SKILL.md` and `.agents/skills/critic/SKILL.md`)
+- **Diversity & Anti-Clustering**: Enforce 5-axis rotation (Genre, Composition Archetype, Motion Archetype, Tonal/Palette Family, and Technique/Renderer), pure visual composition (zero `py5.text()`, zero `FIG. 01..08` telemetry flank cards or central medallions), concise naming (no `kinetic_` prefix or `_2d`/`_3d` suffix), and programmatic verification via `scripts/check_diversity.py` (see `.agents/skills/planner/SKILL.md` and `.agents/skills/critic/SKILL.md`)
 - **Strict Anonymity & No Signatures/Seals (個人特定・署名要素の厳格な排除)**: Never include artist signatures, name seals/hanko (落款・印章), monograms, initials, personal marks, or any element that could identify or imply an individual author. Artworks are 100% autonomous algorithmic generative art without human authorship marks.
 - `.agents/FEEDBACK.md` is reserved for user feedback only (agents do not write to Rating/Comment fields)
 - **Branch protection**: Never push directly to the `main` branch. Always create a feature/work branch first, then push.

@@ -6,27 +6,15 @@ allowed-tools: Bash, Read, Write, Edit
 
 # Create Artworks Skill (Continuous)
 
-Continuously creates py5 media art still images in a loop. Each iteration produces a distinct work with a unique concept, theme, and technique.
+Continuously creates py5 media art still images in an autonomous loop by following the canonical pipeline in `.agents/skills/shared/workflow.md`.
 
-## Workflow
+## Mode Parameters
 
-1. Read `AGENTS.md`, `.agents/skills/shared/artwork-conventions.md`, and `.agents/skills/shared/py5-templates.md` to confirm the full workflow and shared conventions
-2. Create or switch to the branch `feature/works-YYYYMMDD` (use today's date)
-3. **Loop** — Repeat the following for each new work:
-   1. **Planner**: Read `sketch/WORKS.md` and `.agents/FEEDBACK.md`, then produce a Creative Brief (see `.agents/skills/planner/SKILL.md`)
-   2. **Artist**: Implement the concept from the Creative Brief in `sketch/{work_name}/main.py` (see `.agents/skills/artist/SKILL.md`)
-   3. Run the sketch to generate pattern-specific preview images and wait for the process to fully terminate before proceeding (ensure no lingering python processes)
-   4. **Critic**: Review code + generated preview images and return APPROVE or REVISE (see `.agents/skills/critic/SKILL.md`)
-   5. If REVISE: artist applies feedback and re-runs (max 2 revisions)
-   6. Update `sketch/WORKS.md` and `.agents/FEEDBACK.md` (leave Rating and Comment empty per conventions)
-   7. Commit and push
-   8. Upload outputs to Google Drive: `uv run python scripts/upload_to_drive.py {work_name}` (see `.agents/skills/shared/drive-upload.md`)
-   9. Start next iteration immediately — no user confirmation
+- **Format**: Still image (`{work_name}.png`)
+- **Loop Mode**: Continuous loop (repeats until externally stopped; no user confirmation between iterations)
+- **Depth**: Standard (`Planner` → `Artist` → `Critic`, max 2 revisions)
 
-## Notes
+## Execution
 
-- Always choose a concept, theme, and technique different from every past work (re-read `WORKS.md` each iteration)
-- Follow shared naming, preview, and staging rules in `.agents/skills/shared/artwork-conventions.md`
-- Entry point filename is always `main.py`
-- Each iteration is a self-contained artwork — do not carry state between works
-- The loop continues indefinitely until externally stopped
+1. Read `.agents/skills/shared/workflow.md`, `AGENTS.md`, `.agents/skills/shared/artwork-conventions.md`, and `.agents/skills/shared/py5-templates.md`.
+2. Run **Pre-Flight Setup** once, then repeat the **Per-Work Iteration Pipeline** in `.agents/skills/shared/workflow.md` indefinitely (`plan` → `Creative Brief` → `main.py` → `check` → `render` → `Critic` → `README.md` / `WORKS.md` / `FEEDBACK.md` → `commit & push` → `upload_to_drive.py`).

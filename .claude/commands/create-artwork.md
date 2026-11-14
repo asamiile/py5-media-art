@@ -1,18 +1,6 @@
-Follow the workflow in `CLAUDE.md` to autonomously create exactly one new py5 media art sketch and finish all steps end-to-end.
+Execute `.agents/skills/create-artwork/SKILL.md` following the canonical pipeline in `.agents/skills/shared/workflow.md`:
 
-Use the skill documents directly:
-- **Artist** (`.agents/skills/artist/SKILL.md`)
-- **Critic** (`.agents/skills/critic/SKILL.md`)
-
-Execution rules:
-1. Run one artwork only.
-2. Use branch `feature/works-YYYYMMDD`.
-3. Check `git status --short` before starting. Stop if unrelated pending changes exist.
-4. Follow the full Planner -> Artist -> Critic workflow from `CLAUDE.md`.
-5. Loop Artist -> Critic up to 2 revisions until APPROVE.
-6. Ensure `sketch/{work_name}/preview.png` exists before final review.
-7. Update `sketch/WORKS.md` and `sketch/FEEDBACK.md`.
-8. Stage only intended files for this work.
-9. Commit and push.
-10. Upload outputs to Google Drive: `uv run python scripts/upload_to_drive.py {work_name}` (stills copied, videos moved; see `.agents/skills/shared/drive-upload.md`).
-11. Report work name, critique verdict/score, changed files, and commit hash.
+- **Format**: Still image (`sketch/{work_name}/{work_name}_p1.png`)
+- **Mode**: Single work, Standard depth (`Planner` → `Artist` → `Critic`)
+- Run `uv run python scripts/check_diversity.py plan` before planning and `uv run python scripts/check_diversity.py check {work_name}` before rendering and during review
+- Update `sketch/WORKS.md` and `.agents/FEEDBACK.md` (leave Rating and Comment blank), commit & push on `feature/works-YYYYMMDD`, and run `uv run python scripts/upload_to_drive.py {work_name}`

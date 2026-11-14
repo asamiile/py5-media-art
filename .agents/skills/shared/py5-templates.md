@@ -20,7 +20,7 @@ from lib.sizes import get_sizes
 SKETCH_DIR = sketch_dir(__file__)
 WORK_NAME = SKETCH_DIR.name
 PREVIEW_FRAME = 60
-PREVIEW_FILENAME = f"{WORK_NAME}_p1.png"
+PREVIEW_FILENAME = preview_filename(work_name=WORK_NAME)
 PREVIEW_SIZE, OUTPUT_SIZE, _ = get_sizes()
 SIZE = OUTPUT_SIZE
 
@@ -28,19 +28,11 @@ SIZE = OUTPUT_SIZE
 def setup():
     py5.size(*SIZE)
     py5.pixel_density(1)  # Capping density at 1x prevents extreme Retina-doubled rendering loads
-    py5.background(0)
+    # Initialize canvas with the brief's background polarity
 
 
 def draw():
-    # drawing logic
-    
-    if py5.frame_count == 2 or py5.frame_count == PREVIEW_FRAME:
-        py5.load_np_pixels()
-        if py5.np_pixels.std() < 1.0:
-            print(f"[Error] Blank screen detected on frame {py5.frame_count} (std < 1.0). Aborting.")
-            import os
-            os._exit(1)
-
+    # Pure visual drawing logic across the full 3840x2160 canvas (zero py5.text)
     maybe_save_exit_on_frame(PREVIEW_FRAME, SKETCH_DIR, filename=PREVIEW_FILENAME)
 
 
@@ -51,27 +43,26 @@ py5.run_sketch()
 
 ```python
 from pathlib import Path
-import shutil
-import subprocess
-import sys
 import random
+import sys
 import py5
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.append(str(PROJECT_ROOT))
 
+from lib.animation import frames_dir, step_animation_frame
 from lib.paths import sketch_dir
 from lib.preview import preview_filename
 from lib.sizes import get_sizes
 
 SKETCH_DIR = sketch_dir(__file__)
 WORK_NAME = SKETCH_DIR.name
-FRAMES_DIR = SKETCH_DIR / "frames"
-DURATION_SEC = random.randint(15, 30)  # Random duration up to 30s
+FRAMES_DIR = frames_dir(SKETCH_DIR)
+DURATION_SEC = random.randint(15, 30)  # 15-30s (never lock to 12s / 720 frames)
 FPS = 60
 TOTAL_FRAMES = DURATION_SEC * FPS
-PREVIEW_FILENAME = f"{WORK_NAME}_p1.png"
+PREVIEW_FILENAME = preview_filename(work_name=WORK_NAME)
 PREVIEW_SIZE, OUTPUT_SIZE, _ = get_sizes()
 SIZE = OUTPUT_SIZE
 
@@ -83,44 +74,15 @@ def setup():
 
 
 def draw():
-    # drawing logic; choose intentionally whether to call background() each frame
-    py5.save_frame(str(FRAMES_DIR / "frame-####.png"))
+    # Pure visual drawing logic across the full 3840x2160 canvas (zero py5.text)
+    step_animation_frame(
+        SKETCH_DIR,
+        FRAMES_DIR,
+        fps=FPS,
+        total_frames=TOTAL_FRAMES,
+        preview_name=PREVIEW_FILENAME,
+    )
 
-    # Fail-safe: abort if nothing is drawn
-    if py5.frame_count == 2 or py5.frame_count % 60 == 0:
-        py5.load_np_pixels()
-        if py5.np_pixels.std() < 1.0:
-            print(f"[Error] Blank screen detected on frame {py5.frame_count} (std < 1.0). Aborting.")
-            import os
-            os._exit(1)
-
-    # Progress feedback: prevents silent timeouts and makes it clear the render is healthy
-    if py5.frame_count % 60 == 0:
-        print(f"[Render Progress] Frame {py5.frame_count}/{TOTAL_FRAMES} ({py5.frame_count/TOTAL_FRAMES*100:.1f}%)")
-
-    if py5.frame_count >= TOTAL_FRAMES:
-        py5.exit_sketch()
-        
-        # Compile frames into MP4
-        print(f"[Render FFmpeg] Compiling {TOTAL_FRAMES} frames into video...")
-        subprocess.run([
-            "ffmpeg", "-y", "-r", str(FPS),
-            "-i", str(FRAMES_DIR / "frame-%04d.png"),
-            "-vcodec", "libx264", "-pix_fmt", "yuv420p",
-            str(SKETCH_DIR / f"{WORK_NAME}.mp4"),
-        ], check=True)
-        
-        # Save a preview snapshot
-        mid = str(FRAMES_DIR / f"frame-{TOTAL_FRAMES // 2:04d}.png")
-        subprocess.run(["cp", mid, str(SKETCH_DIR / PREVIEW_FILENAME)], check=True)
-        
-        # Clean up frames directory to save gigabytes of local storage
-        if FRAMES_DIR.exists():
-            shutil.rmtree(FRAMES_DIR)
-            print("[Render Cleanup] Temporary frames directory successfully removed.")
-            
-        import os
-        os._exit(0)  # Force exit to prevent macOS JVM hangs
 
 py5.run_sketch()
 ```
@@ -140,17 +102,16 @@ def setup():
     fx.setup()
 
 def draw():
-    py5.background(0)
     # drawing logic
-    fx.apply()  # last step before the blank check / save_frame
+    fx.apply()  # last step before maybe_save_exit_on_frame / step_animation_frame
 ```
 
 ## Notes
 
-- Prefer helpers in `lib/`: `lib.paths.sketch_dir`, `lib.sizes.get_sizes`, and `lib.preview`.
-- Save previews with `{work_name}_p1.png` where `{work_name}` is the directory name.
-- Explicitly call `py5.exit_sketch()` or use `maybe_save_exit_on_frame()` so continuous runs do not leave sketch processes running.
-- Animation works save sequential PNGs to `frames/` and combine into MP4 with ffmpeg.
+- Prefer helpers in `lib/`: `lib.paths.sketch_dir`, `lib.sizes.get_sizes`, `lib.preview`, and `lib.animation`.
+- Save previews with `{work_name}.png` (`preview_filename(work_name=WORK_NAME)`).
+- Explicitly call `maybe_save_exit_on_frame()` or `step_animation_frame()` so continuous runs do not leave sketch processes running.
+- Animation works save sequential PNGs to `frames/` and compile `{work_name}.mp4` with ffmpeg, then remove `frames/`.
 - MP4 files are generated outputs; do not commit them. After commit, they are moved to Google Drive (`.agents/skills/shared/drive-upload.md`).
 - Do not fix random seed; results should vary each run.
 - On Retina, after `py5.load_np_pixels()`, get actual size from `py5.np_pixels.shape[:2]`.

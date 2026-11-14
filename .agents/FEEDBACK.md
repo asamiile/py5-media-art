@@ -3,6 +3,198 @@
 **CRITICAL RULE**: ONLY the USER may write to the `Rating` and `Comment` field.
 Agents MUST NOT write anything in the `Comment` field. When registering a new work, Agents must leave the `Rating` and `Comment` fields empty or with their default labels as placeholders for the user.
 
+## kam_resonance_tori
+
+- **Rating**: OK
+- **Comment**: 
+
+
+## eikonal_linen_shocks
+
+- **Rating**: 
+- **Comment**: 
+
+
+## sienna_capillary_glaze
+
+- **Rating**: 
+- **Comment**: 
+
+
+## kumihimo_triaxial_weave
+
+- **Rating**: 
+- **Comment**: 
+
+
+## cobalt_foliation_shear
+
+- **Rating**: 
+- **Comment**: 
+
+
+## hypostyle_voussoir_colonnade
+
+- **Rating**: OK
+- **Comment**: 
+
+
+## turing_chemotaxis_tesserae
+
+- **Rating**: OK
+- **Comment**: 
+
+
+## kasuri_shuttle_wavefronts
+
+- **Rating**: 
+- **Comment**: 
+
+
+## sumi_kuroshio_plumes
+
+- **Rating**: OK
+- **Comment**: 
+
+
+## prussian_legendre_strata
+
+- **Rating**: OK
+- **Comment**: 
+
+
+## escarpment_halftone_strata
+
+- **Rating**: OK
+- **Comment**: 
+
+
+## heterodyne_amber_chorus
+
+- **Rating**: OK
+- **Comment**: 
+
+
+## dendrite_rime_veins
+
+- **Rating**: 
+- **Comment**: 
+
+
+## raster_extrusion_corridor
+
+- **Rating**: 
+- **Comment**: 
+
+
+## ochre_littoral_strata
+
+- **Rating**: 
+- **Comment**: 
+
+
+## wavelet_quantizer_array
+
+- **Rating**: 
+- **Comment**: 
+
+
+## basalt_fault_strata
+
+- **Rating**: 
+- **Comment**: 
+
+
+## sashiko_terracotta_drift
+
+- **Rating**: 
+- **Comment**: 
+
+
+## harmonograph_slate_caustics
+
+- **Rating**: OK
+- **Comment**: 
+
+
+## sepiolite_separatrix_web
+
+- **Rating**: 
+- **Comment**: 
+
+
+## scanline_overprint_matrix
+
+- **Rating**: OK
+- **Comment**: 
+
+
+## celadon_soliton_estuary
+
+- **Rating**: 
+- **Comment**: 
+
+
+## enneper_mineral_petals
+
+- **Rating**: OK
+- **Comment**: 
+
+
+## brutalist_cantilever_polyhedra
+
+- **Rating**: 
+- **Comment**: 
+
+
+## hopf_saffron_bundle
+
+- **Rating**: OK
+- **Comment**: 
+
+
+## cymatic_salt_nodals
+
+- **Rating**: 
+- **Comment**: 
+
+
+## lichen_travertine_terraces
+
+- **Rating**: OK
+- **Comment**: 
+
+
+## viridian_catenary_canopy
+
+- **Rating**: OK
+- **Comment**: 
+
+
+## bitplane_moire_polyptych
+
+- **Rating**: OK
+- **Comment**: 
+
+
+## karman_washi_vortices
+
+- **Rating**: OK
+- **Comment**: 
+
+
+## hyperbolic_risograph_geodesics
+
+- **Rating**: OK
+- **Comment**: 
+
+
+## cinnabar_ink_fronts
+
+- **Rating**: OK
+- **Comment**: 
+
+
 ## kinetic_muqarnas_stalactite_vault_corbeling_stereotomy_2d
 
 - **Rating**: 

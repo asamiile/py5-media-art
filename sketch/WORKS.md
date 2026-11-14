@@ -1,3 +1,13 @@
+## dendrite_rime_veins
+- **Date**: 2026-11-14
+- **Type**: Animation (1260 frames, 60fps)
+- **Genre**: Atmospheric / Painterly / Color Field
+- **Composition Archetype**: Emergent Network / Boundary-to-Interior Growth
+- **Motion Archetype**: Spatial Camera / Depth Traversal
+- **Concept**: Boundary-nucleated rime-frost dendrite veins and crystalline networks growing inward from all four canvas edges across a deep nocturnal indigo and charcoal color field (`#0a0d14`–`#161c28`), where three parallax crystal planes drift through spatial depth and ignite with a single warm amber-gold accent (`#f59332`) at colliding filament tips.
+- **Techniques**: Three-plane parallax domain-warped Voronoi ridge veins and boundary-to-interior growth envelopes in GLSL (`dendrite_rime_veins.glsl`), 36 recursive 5-generation dendritic trees batched by generation via `py5.LINES` / `py5.vertices`, and `PostFX` bloom, chromatic aberration, and grain.
+- **Palette**: Nocturnal Indigo (`#0a0d14`), Deep Charcoal (`#161c28`), Rime Graphite (`#48576f`), Frost Silver (`#c2d0e4`), Crystalline Ice (`#ecf3fc`), Warm Amber Gold Accent (`#f59332`).
+
 ## raster_extrusion_corridor
 - **Date**: 2026-11-14
 - **Type**: Animation (960 frames, 60fps)

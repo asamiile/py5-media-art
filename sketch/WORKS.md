@@ -1,3 +1,13 @@
+## heterodyne_amber_chorus
+- **Date**: 2026-11-14
+- **Type**: Animation (900 frames, 60fps)
+- **Genre**: Signal / Glitch / Digital Artifacts
+- **Composition Archetype**: Full-Bleed Continuous Field
+- **Motion Archetype**: Poly-Rhythmic Phase Interference
+- **Concept**: Continuous edge-to-edge frequency-modulated (FM) heterodyne carrier interference and scanband phase-slip displacement across a rich saturated color field of deep ultramarine (`#0a133c`–`#1e3eb8`), crimson magenta (`#b81e6c`), signal vermilion (`#ec4828`), and luminous amber gold (`#f8b224`).
+- **Techniques**: Four-wave poly-rhythmic FM heterodyne beat interference and quantized raster scanband shear in GLSL (`heterodyne_amber_chorus.glsl`), 44 full-bleed vector carrier ribbons and phase-pinched harmonic bridge struts batched via `py5.QUADS` / `py5.LINES`, and `PostFX` finishing.
+- **Palette**: Deep Ultramarine (`#0a133c`–`#1e3eb8`), Crimson Magenta (`#b81e6c`), Signal Vermilion (`#ec4828`), Luminous Amber Gold (`#f8b224`), Warm Cream Highlight (`#fcf2dc`).
+
 ## dendrite_rime_veins
 - **Date**: 2026-11-14
 - **Type**: Animation (1260 frames, 60fps)

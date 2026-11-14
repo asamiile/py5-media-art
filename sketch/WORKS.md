@@ -1,3 +1,13 @@
+## raster_extrusion_corridor
+- **Date**: 2026-11-14
+- **Type**: Animation (960 frames, 60fps)
+- **Genre**: Signal / Glitch / Digital Artifacts
+- **Composition Archetype**: 3D Sculptural / Volumetric Space (P3D)
+- **Motion Archetype**: Spatial Camera / Depth Traversal
+- **Concept**: Volumetric 3D raster deflection corridor across a stark constructivist carbon-black void (`#0d0f14`), where 28 depth-stacked electromagnetic scanline curtains and 180 quantized phase-slip voxel blocks undergo staircase carrier quantization and horizontal slip while an orbiting perspective camera traverses the 3D depth space.
+- **Techniques**: True `P3D` perspective camera traversal (`perspective` + `camera`), 28 extruded 3D raster ribbon meshes with two-sided normal shading and 180 6-face constructivist cuboids batched via `py5.QUADS` / `py5.vertices`, and `PostFX` chromatic aberration, bloom, and grain.
+- **Palette**: Carbon Black Void (`#0d0f14`), Crisp Bone White (`#f3f0e8`), Signal Vermilion (`#e83424`), International Ultramarine (`#1c3ed6`), Cadmium Ochre (`#f2b218`), Constructivist Steel (`#323946`).
+
 ## ochre_littoral_strata
 - **Date**: 2026-11-14
 - **Type**: Animation (1200 frames, 60fps)

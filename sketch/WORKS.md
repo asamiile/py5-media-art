@@ -1,3 +1,13 @@
+## hopf_saffron_bundle
+- **Date**: 2026-11-14
+- **Type**: Animation (960 frames, 60fps)
+- **Genre**: Mathematical / Abstract Topology
+- **Composition Archetype**: Asymmetric Off-Center Tension
+- **Motion Archetype**: Spatial Camera / Depth Traversal
+- **Concept**: Asymmetric 3D stereographic projection of 132 linked Hopf circle fibers across 6 nested Clifford torus shells in $S^3$, anchored near the upper-right golden-ratio focal zone and sweeping into wide loxodrome arcs across a rich Prussian-cobalt, viridian-teal, and burnt-sienna field (`#0a1d38`–`#6e2e18`).
+- **Techniques**: 4D $S^3$ Clifford rotation and stereographic projection $S^3 \to \mathbb{R}^3$ with 3-tier depth-sorted perspective ribbons batched via `py5.QUADS` / `py5.vertices`, logarithmic loxodrome caustic field in GLSL (`hopf_saffron_bundle.glsl`), and `PostFX` bloom, vignette, and film grain.
+- **Palette**: Deep Prussian Cobalt (`#0a1d38`), Viridian Teal (`#0f3844`), Burnt Ochre-Sienna (`#6e2e18`), Luminous Saffron Gold (`#f4b22a`), Warm Coral Persimmon (`#eb5a38`), Pale Turquoise Ice (`#94ece6`).
+
 ## cymatic_salt_nodals
 - **Date**: 2026-11-14
 - **Type**: Animation (1260 frames, 60fps)

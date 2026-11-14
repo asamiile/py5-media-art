@@ -1,3 +1,13 @@
+## harmonograph_slate_caustics
+- **Date**: 2026-11-14
+- **Type**: Animation (1260 frames, 60fps)
+- **Genre**: Physical / Micro-Kinetic
+- **Composition Archetype**: Full-Canvas Polyptych / Rhythmic Matrix
+- **Motion Archetype**: Persistent Trail Accumulation & Decay
+- **Concept**: Edge-to-edge hierarchical matrix of 48 subdivided acoustic harmonograph pendulum cells across a mid-tone atmospheric dusk slate field (`#2c3840`), where coupled tri-frequency rotary pendulums trace evolving Lissajous-caustic envelopes over a persistent translucent frame-decay buffer.
+- **Techniques**: Hierarchical 6×4 + 2×2 cellular matrix subdivision, vectorized tri-frequency rotary harmonograph pendulum integration batched via `py5.QUADS` / `py5.vertices`, and persistent translucent slate-veil trail decay (`fill(44, 56, 64, 7)`).
+- **Palette**: Mid-Tone Atmospheric Dusk Slate (`#2c3840`), Misty Celadon-Teal (`#8ab2b4`), Soft Chalk (`#e8e3d8`), Warm Amber Ochre (`#e29434`).
+
 ## sepiolite_separatrix_web
 - **Date**: 2026-11-14
 - **Type**: Animation (1380 frames, 60fps)

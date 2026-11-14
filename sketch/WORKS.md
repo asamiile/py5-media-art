@@ -1,3 +1,13 @@
+## bitplane_moire_polyptych
+- **Date**: 2026-11-14
+- **Type**: Animation (1020 frames, 60fps)
+- **Genre**: Signal / Glitch / Digital Artifacts
+- **Composition Archetype**: Full-Canvas Polyptych / Rhythmic Matrix
+- **Motion Archetype**: Multi-Act Temporal Evolution
+- **Concept**: Edge-to-edge constructivist transmission polyptych subdividing the 3840×2160 canvas into hierarchical signal registers where 6-bit quantized XOR carpets, phase-slipped analog scanlines, and dual-grating moiré interference waves fracture and re-lock across a 4-act temporal cycle.
+- **Techniques**: Hierarchical 8×5 polyptych subdivision with sub-register splitting, 6-bit integer XOR interferometry, and dual-grating moiré wave multiplication in GLSL (`bitplane_moire_polyptych.glsl`), 96 quantized constructivist shutter bars batched via `py5.QUADS` / `py5.vertices`, and `PostFX` radial chromatic aberration and filmic tone-mapping.
+- **Palette**: Carbon Constructivist Ground (`#111317`), Crisp Bone White (`#f2efe9`), Signal Vermilion (`#e63426`), International Ultramarine (`#183ad4`), Cadmium Ochre (`#f2b418`).
+
 ## karman_washi_vortices
 - **Date**: 2026-11-14
 - **Type**: Animation (1080 frames, 60fps)

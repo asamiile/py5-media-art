@@ -1,3 +1,13 @@
+## sumi_kuroshio_plumes
+- **Date**: 2026-11-14
+- **Type**: Animation (1260 frames, 60fps)
+- **Genre**: Atmospheric / Painterly / Color Field
+- **Composition Archetype**: Full-Bleed Continuous Field
+- **Motion Archetype**: Persistent Trail Accumulation & Decay
+- **Concept**: Continuous edge-to-edge nocturnal ink-wash and oceanic vortex plumes across a deep sumi-obsidian ground (`#090c14`), where 2,600 divergence-free curl-streamfunction brush filaments accumulate persistent silver-mist (`#94abc7`) and moonlit-chalk (`#eef4fc`) trails punctuated by a single vermilion-cinnabar accent (`#ff5232`).
+- **Techniques**: Vectorized 4-mode harmonic curl-streamfunction advection ($\nabla \times \psi$) batched across 4 brush roles via `py5.QUADS` / `py5.vertices`, and persistent translucent nocturnal veil accumulation (`fill(9, 12, 20, 12)`).
+- **Palette**: Nocturnal Sumi Obsidian (`#090c14`), Slate-Blue Ink Wash (`#2c3e5a`), Luminous Silver Mist (`#94abc7`), Moonlit Chalk (`#eef4fc`), Vermilion-Cinnabar Accent (`#ff5232`).
+
 ## prussian_legendre_strata
 - **Date**: 2026-11-14
 - **Type**: Animation (1380 frames, 60fps)

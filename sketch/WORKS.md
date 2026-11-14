@@ -1,3 +1,13 @@
+## kam_resonance_tori
+- **Date**: 2026-11-14
+- **Type**: Animation (1440 frames, 60fps)
+- **Genre**: Mathematical / Abstract Topology
+- **Composition Archetype**: Full-Bleed Continuous Field
+- **Motion Archetype**: Persistent Trail Accumulation & Decay
+- **Concept**: Full-bleed symplectic Hamiltonian phase-space flow across a mid-tone atmospheric dusk and celadon-slate field (`#2c3840`–`#405c5a`), where 2,800 divergence-free tracers and 18 rotational Kolmogorov-Arnold-Moser (KAM) invariant tori accumulate persistent calligraphic trails around nested 3:2 resonance islands in soft chalk (`#f2ede0`), misty seafoam (`#8eb8b4`), warm golden amber (`#f0a438`), and coral terracotta (`#d86242`).
+- **Techniques**: Vectorized symplectic Hamiltonian flow ($\partial H/\partial y, -\partial H/\partial x$) and instantaneous KAM invariant-torus / resonance-island contours batched via `py5.QUADS` / `py5.vertices` in pure `P2D` with persistent translucent frame decay (`fill(44, 56, 64, 11)`).
+- **Palette**: Atmospheric Dusk Slate (`#2c3840`), Celadon Sage (`#405c5a`), Misty Seafoam (`#8eb8b4`), Soft Chalk (`#f2ede0`), Warm Golden Amber (`#f0a438`), Coral Terracotta (`#d86242`).
+
 ## eikonal_linen_shocks
 - **Date**: 2026-11-14
 - **Type**: Animation (1200 frames, 60fps)

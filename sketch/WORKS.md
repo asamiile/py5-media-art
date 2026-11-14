@@ -1,3 +1,13 @@
+## eikonal_linen_shocks
+- **Date**: 2026-11-14
+- **Type**: Animation (1200 frames, 60fps)
+- **Genre**: Physical / Micro-Kinetic
+- **Composition Archetype**: Emergent Network / Boundary-to-Interior Growth
+- **Motion Archetype**: Directional Advection & Traveling Wavefronts
+- **Concept**: Boundary-nucleated Eikonal wavefronts emitted from 16 perimeter stations along the four outer edges of a 100% full-canvas high-key raw linen ground (`#ede8dc`–`#e4ddd0`), where colliding wavefronts coalesce into Rankine-Hugoniot medial-axis shock ridges and branching fracture networks in iron-gall slate (`#243440`), burnt terracotta (`#b84a2e`), raw gold ochre (`#c98826`), and malachite sage (`#387268`).
+- **Techniques**: 16-source Eikonal arrival-time solver and medial-axis shock bisector contours in GLSL (`eikonal_linen_shocks.glsl`), 256 vectorized boundary-to-interior shock-deflected filaments batched via `py5.QUADS` / `py5.vertices`, and `PostFX` finishing.
+- **Palette**: Raw Alabaster Linen (`#ede8dc`–`#e4ddd0`), Iron-Gall Slate (`#243440`), Burnt Terracotta (`#b84a2e`), Raw Gold Ochre (`#c98826`), Malachite Sage (`#387268`).
+
 ## sienna_capillary_glaze
 - **Date**: 2026-11-14
 - **Type**: Animation (1140 frames, 60fps)

@@ -1,3 +1,13 @@
+## sienna_capillary_glaze
+- **Date**: 2026-11-14
+- **Type**: Animation (1140 frames, 60fps)
+- **Genre**: Atmospheric / Painterly / Color Field
+- **Composition Archetype**: Asymmetric Off-Center Tension
+- **Motion Archetype**: Multi-Act Temporal Evolution
+- **Concept**: Asymmetric wet-on-wet pigment chromatography where a concentrated lapis-ultramarine (`#143474`) and verdigris-turquoise (`#189c90`) bloom anchored in the left-third golden-ratio focal zone radiates concentric Naples-gold (`#f6c438`) coffee-ring tide halos and 210 capillary veins across an expansive burnt-sienna (`#701e12`), alizarin-madder (`#a8281e`), and raw-amber (`#d66820`) glaze field.
+- **Techniques**: Domain-warped 5-octave fBM wet-on-wet pigment diffusion and capillary tide-ring contours in GLSL (`sienna_capillary_glaze.glsl`), 210 vectorized capillary veins and 420 granulation floccules batched via `py5.QUADS` / `py5.vertices`, and `PostFX` finishing.
+- **Palette**: Deep Burnt Sienna (`#701e12`), Alizarin Madder (`#a8281e`), Raw Amber Glaze (`#d66820`), Lapis Ultramarine (`#143474`), Verdigris Turquoise (`#189c90`), Naples Gold (`#f6c438`), Warm Cream (`#f9eeda`).
+
 ## kumihimo_triaxial_weave
 - **Date**: 2026-11-14
 - **Type**: Animation (960 frames, 60fps)

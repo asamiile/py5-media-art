@@ -1,3 +1,13 @@
+## cobalt_foliation_shear
+- **Date**: 2026-11-14
+- **Type**: Animation (1080 frames, 60fps)
+- **Genre**: Mathematical / Abstract Topology
+- **Composition Archetype**: Stratified Horizon / Diagonal Sweep
+- **Motion Archetype**: Multi-Act Temporal Evolution
+- **Concept**: Full-canvas diagonally swept Reeb foliation and symplectic shear strata (`27°` inclination) across a rich saturated color field of deep forest viridian (`#0a3830`) and cobalt ultramarine (`#132c66`), where luminous foliation leaves in burnt sienna (`#d94e28`), cadmium gold (`#f4b024`), coral vermilion (`#f06438`), and warm ivory (`#f6efe2`) evolve through laminar nucleation, homoclinic saddle folding, and adiabatic re-lamination.
+- **Techniques**: Continuous Reeb foliation leaf contours and asymptotic separatrix ridges in GLSL (`cobalt_foliation_shear.glsl`), 162 vectorized holonomy ribbons and hyperbolic saddle-node diamond markers batched via `py5.QUADS` / `py5.vertices`, and `PostFX` finishing.
+- **Palette**: Deep Forest Viridian (`#0a3830`), Cobalt Ultramarine (`#132c66`), Emerald Teal (`#126862`), Burnt Sienna (`#d94e28`), Coral Vermilion (`#f06438`), Cadmium Gold (`#f4b024`), Warm Ivory (`#f6efe2`).
+
 ## hypostyle_voussoir_colonnade
 - **Date**: 2026-11-14
 - **Type**: Animation (1320 frames, 60fps)

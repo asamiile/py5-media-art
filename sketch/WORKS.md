@@ -1,3 +1,13 @@
+## sashiko_terracotta_drift
+- **Date**: 2026-11-14
+- **Type**: Animation (1440 frames, 60fps)
+- **Genre**: Textile / Calligraphy / Procedural Craft
+- **Composition Archetype**: Full-Bleed Continuous Field
+- **Motion Archetype**: Multi-Act Temporal Evolution
+- **Concept**: Edge-to-edge procedural boro linen patchwork and hitomezashi sashiko running-stitch field across a full-canvas warm alabaster-linen ground (`#ede8dc`), where warp, weft, and diagonal stitch lattices nucleate, expand, billow through traveling shear waves, and resolve into taut woven harmony.
+- **Techniques**: Multi-patch linen warp/weft micro-weave and diagonal sashiko under-stitches in GLSL (`sashiko_terracotta_drift.glsl`), 3,228 running-stitch thread segments batched across 4 mineral pigment roles via `py5.QUADS` / `py5.vertices`, and `PostFX` finishing.
+- **Palette**: Warm Alabaster Linen (`#ede8dc`), Raw Boro Linen (`#e3ddce`), Iron-Gall Slate Ink (`#263640`), Burnt Terracotta (`#ba4a30`), Raw Mineral Ochre (`#ca8628`), Celadon Sage (`#46726a`).
+
 ## harmonograph_slate_caustics
 - **Date**: 2026-11-14
 - **Type**: Animation (1260 frames, 60fps)

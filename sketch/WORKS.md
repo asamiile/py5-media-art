@@ -1,3 +1,13 @@
+## lichen_travertine_terraces
+- **Date**: 2026-11-14
+- **Type**: Animation (1200 frames, 60fps)
+- **Genre**: Organic / Morphogenesis
+- **Composition Archetype**: Stratified Horizon / Diagonal Sweep
+- **Motion Archetype**: Directional Advection & Traveling Wavefronts
+- **Concept**: Diagonally stratified travertine rimstone terraces (*gours*) and calcified thermal mineral pools stepping across a mid-tone celadon-slate dusk field (`#363c40`–`#4a5d62`), rimmed by micro-fluted chalk lips (`#e4dfd4`) and thermophilic amber-ochre lichen bands (`#d88c32`).
+- **Techniques**: Multi-octave fBm + scalloped cusp step-function morphogenesis and micro-fluted calcite rib modulation in GLSL (`lichen_travertine_terraces.glsl`), 32 diagonal rimstone contour ribbons batched via `py5.QUADS` / `py5.vertices`, and `PostFX` filmic tone-mapping and subtle bloom.
+- **Palette**: Mid-Tone Umber-Slate Dusk (`#363c40`), Weathered Celadon-Slate Terrace Pools (`#4a5d62` / `#728c90`), Calcified Travertine Chalk (`#e4dfd4`), Thermophilic Amber-Ochre Lichen (`#d88c32`).
+
 ## viridian_catenary_canopy
 - **Date**: 2026-11-14
 - **Type**: Animation (1140 frames, 60fps)

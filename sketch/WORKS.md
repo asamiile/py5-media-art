@@ -1,3 +1,13 @@
+## basalt_fault_strata
+- **Date**: 2026-11-14
+- **Type**: Animation (1320 frames, 60fps)
+- **Genre**: Architectural / Brutalism / Geometric
+- **Composition Archetype**: Stratified Horizon / Diagonal Sweep
+- **Motion Archetype**: Directional Advection & Traveling Wavefronts
+- **Concept**: Diagonally stratified tectonic fault and columnar shear landscape sweeping at a $-24^\circ$ angle across a stark constructivist carbon-black ground (`#0f1116`), where 22 counter-advecting basalt horizons and 308 graphic fault blocks slip and interlock along propagating transverse shear waves.
+- **Techniques**: Diagonal columnar basalt jointing and transverse $\tanh$ fault-wave displacement in GLSL (`basalt_fault_strata.glsl`), 308 slanted tectonic shear blocks batched across 4 constructivist color roles via `py5.QUADS` / `py5.vertices`, and `PostFX` chromatic aberration, bloom, and grain.
+- **Palette**: Carbon Constructivist Ground (`#0f1116`), Striated Basalt (`#1e222a`), Crisp Bone White (`#f3f0e8`), Signal Vermilion (`#e83424`), International Ultramarine (`#1c3ed6`), Cadmium Ochre (`#f2b218`).
+
 ## sashiko_terracotta_drift
 - **Date**: 2026-11-14
 - **Type**: Animation (1440 frames, 60fps)

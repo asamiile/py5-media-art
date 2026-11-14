@@ -1,3 +1,13 @@
+## karman_washi_vortices
+- **Date**: 2026-11-14
+- **Type**: Animation (1080 frames, 60fps)
+- **Genre**: Physical / Micro-Kinetic
+- **Composition Archetype**: Asymmetric Off-Center Tension
+- **Motion Archetype**: Persistent Trail Accumulation & Decay
+- **Concept**: Asymmetric von Kármán vortex street shedding from an off-center hydrodynamic shear singularity near the upper-left golden-ratio focal zone and trailing persistent calligraphic ribbons of iron-gall slate, raw mineral ochre, and burnt terracotta across expansive pale celadon-sage washi paper (`#e8ede6`).
+- **Techniques**: Vectorized potential-flow doublet + 14-core Lamb-Oseen Biot-Savart velocity field with radial spiral entrainment, 520 28-node tapered brush ribbons batched via `py5.QUADS` / `py5.vertices`, and persistent translucent paper-veil trail decay (`fill(232, 237, 230, 8)`).
+- **Palette**: Pale Celadon-Sage Washi (`#e8ede6`), Iron-Gall Slate Ink (`#26343c`), Raw Mineral Ochre (`#c88428`), Burnt Terracotta Sienna (`#b84830`).
+
 ## hyperbolic_risograph_geodesics
 - **Date**: 2026-11-14
 - **Type**: Animation (960 frames, 60fps)

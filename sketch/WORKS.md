@@ -1,3 +1,13 @@
+## brutalist_cantilever_polyhedra
+- **Date**: 2026-11-14
+- **Type**: Animation (1080 frames, 60fps)
+- **Genre**: Architectural / Brutalism / Geometric
+- **Composition Archetype**: 3D Sculptural / Volumetric Space (P3D)
+- **Motion Archetype**: Poly-Rhythmic Phase Interference
+- **Concept**: Monumental 3D constructivist cantilever architecture of 180 interlocking concrete-bone slabs, signal-vermilion tension beams, ultramarine structural towers, and cadmium-ochre counterweight blocks suspended in stark carbon-black space (`#0f1115`).
+- **Techniques**: True `P3D` volumetric box-face synthesis with directional architectural lighting, golden-ratio poly-rhythmic harmonic wave interference ($\omega_1 : \omega_2 : \omega_3 = 1 : \varphi : \varphi^2$) driving axial shearing and telescopic cantilever extensions batched via `py5.QUADS` / `py5.vertices`, and `PostFX` bloom, vignette, and film grain.
+- **Palette**: Carbon Constructivist Ground (`#0f1115`), Bone White Concrete (`#f2efe9`), Signal Vermilion (`#e83424`), International Ultramarine (`#1c3dd4`), Cadmium Ochre (`#f2b018`), Dark Graphite Steel (`#333841`).
+
 ## hopf_saffron_bundle
 - **Date**: 2026-11-14
 - **Type**: Animation (960 frames, 60fps)

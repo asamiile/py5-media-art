@@ -1,3 +1,13 @@
+## sepiolite_separatrix_web
+- **Date**: 2026-11-14
+- **Type**: Animation (1380 frames, 60fps)
+- **Genre**: Mathematical / Abstract Topology
+- **Composition Archetype**: Emergent Network / Boundary-to-Interior Growth
+- **Motion Archetype**: Persistent Trail Accumulation & Decay
+- **Concept**: Emergent topological phase-space portrait where 3,200 tracer filaments nucleate along the four canvas edges and propagate inward along the symplectic Hamiltonian stream function of a time-modulated multipolar saddle lattice across a full-canvas warm sepiolite washi ground (`#ece7db`).
+- **Techniques**: Divergence-free symplectic Hamiltonian velocity field ($\dot{x} = \partial H/\partial y,\; \dot{y} = -\partial H/\partial x$) coupled with 9 precessing Gaussian saddle-vortex poles, 3,200 12-node tapered calligraphic ribbons batched via `py5.QUADS` / `py5.vertices`, and persistent translucent paper-veil trail decay (`fill(236, 231, 219, 7)`).
+- **Palette**: Warm Sepiolite Washi (`#ece7db`), Iron-Gall Slate Ink (`#26353d`), Raw Mineral Ochre (`#c88428`), Burnt Terracotta Sienna (`#b84830`), Celadon Malachite (`#3b6964`).
+
 ## scanline_overprint_matrix
 - **Date**: 2026-11-14
 - **Type**: Animation (1140 frames, 60fps)

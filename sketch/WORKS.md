@@ -1,3 +1,13 @@
+## viridian_catenary_canopy
+- **Date**: 2026-11-14
+- **Type**: Animation (1140 frames, 60fps)
+- **Genre**: Textile / Calligraphy / Procedural Craft
+- **Composition Archetype**: 3D Sculptural / Volumetric Space (P3D)
+- **Motion Archetype**: Poly-Rhythmic Phase Interference
+- **Concept**: Three-tiered 3D architectural canopy of 45 translucent saffron-amber, pale celadon, and warm persimmon silk-organza ribbons suspended across a deep forest-viridian to Prussian-teal atrium (`#0b2632`–`#14443c`) and undulating with golden-ratio poly-rhythmic wave interference.
+- **Techniques**: True `P3D` volumetric catenary surface synthesis ($\cosh(ku)$ vaults + golden-ratio harmonic wave superposition $\omega_2 = \varphi\omega_1$, $\omega_3 = \varphi^{-1}\omega_1$), analytical two-sided 3D surface normal cross-products batched across 12 luminance/hue `py5.QUADS` bins, and `PostFX` soft bloom and filmic tone-mapping.
+- **Palette**: Forest-Viridian & Prussian-Teal Color Field (`#0b2632` / `#14443c`), Luminous Saffron Amber Silk (`#f29e2e`), Pale Celadon Organza (`#d8ece2`), Warm Persimmon Coral (`#e85a3c`).
+
 ## bitplane_moire_polyptych
 - **Date**: 2026-11-14
 - **Type**: Animation (1020 frames, 60fps)

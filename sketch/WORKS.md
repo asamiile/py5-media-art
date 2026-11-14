@@ -1,3 +1,13 @@
+## ochre_littoral_strata
+- **Date**: 2026-11-14
+- **Type**: Animation (1200 frames, 60fps)
+- **Genre**: Atmospheric / Painterly / Color Field
+- **Composition Archetype**: Stratified Horizon / Diagonal Sweep
+- **Motion Archetype**: Poly-Rhythmic Phase Interference
+- **Concept**: Diagonally swept littoral mineral wash horizons across a 100% full-canvas high-key warm alabaster and raw linen paper ground (`#ede8dc`–`#e5dfcf`), where eight wet-into-wet pigment veils and 28 capillary tide-line ribbons in raw ochre, burnt sienna, celadon sage, and iron-gall slate undergo poly-rhythmic phase interference.
+- **Techniques**: Subtractive mineral glaze diffusion, FBM granulation, and capillary tide-ring contours in GLSL (`ochre_littoral_strata.glsl`), 28 calligraphic tide-line ribbons and mineral stipple nodes batched via `py5.QUADS` / `py5.vertices`, and `PostFX` finishing.
+- **Palette**: Warm Alabaster Paper (`#ede8dc`), Raw Linen (`#e5dfcf`), Raw Mineral Ochre (`#ca8a2a`), Burnt Sienna (`#b84c31`), Celadon Sage (`#48746e`), Iron-Gall Slate (`#263640`).
+
 ## wavelet_quantizer_array
 - **Date**: 2026-11-14
 - **Type**: Animation (1080 frames, 60fps)

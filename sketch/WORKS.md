@@ -1,3 +1,13 @@
+## prussian_legendre_strata
+- **Date**: 2026-11-14
+- **Type**: Animation (1380 frames, 60fps)
+- **Genre**: Mathematical / Abstract Topology
+- **Composition Archetype**: Stratified Horizon / Diagonal Sweep
+- **Motion Archetype**: Poly-Rhythmic Phase Interference
+- **Concept**: Diagonally swept algebraic foliation of Legendre-Chebyshev orthogonal polynomials across a rich saturated color field of deep Prussian blue (`#0a1e40`), forest malachite (`#0e5750`), verdigris turquoise (`#24a89e`), burnt sienna (`#c04424`), and luminous cadmium gold (`#f4ac24`), where harmonic wave trains (`T2`, `T3`, `T4`, `T5`, `T7`) interfere at poly-rhythmic temporal ratios (`1:2:3`).
+- **Techniques**: Seven-stratum Chebyshev-Legendre polynomial horizon foliation and algebraic caustic intersections in GLSL (`prussian_legendre_strata.glsl`), 32 calligraphic polynomial envelope ribbons and inflection tangent rulings batched via `py5.QUADS` / `py5.LINES`, and `PostFX` finishing.
+- **Palette**: Deep Prussian Blue (`#0a1e40`), Forest Malachite (`#0e5750`), Verdigris Turquoise (`#24a89e`), Burnt Sienna (`#c04424`), Luminous Cadmium Gold (`#f4ac24`), Warm Ivory Highlight (`#fcf1da`).
+
 ## escarpment_halftone_strata
 - **Date**: 2026-11-14
 - **Type**: Animation (960 frames, 60fps)

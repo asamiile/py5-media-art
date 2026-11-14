@@ -1,3 +1,13 @@
+## escarpment_halftone_strata
+- **Date**: 2026-11-14
+- **Type**: Animation (960 frames, 60fps)
+- **Genre**: Atmospheric / Painterly / Color Field
+- **Composition Archetype**: Stratified Horizon / Diagonal Sweep
+- **Motion Archetype**: Spatial Camera / Depth Traversal
+- **Concept**: Diagonally swept atmospheric escarpment horizons rendered in Risograph spot-ink overprint across a full-canvas warm cream paper ground (`#f0e9dc`–`#e7dfd0`), where nine stratified horizons in translucent fluorescent coral (`#f25240`), peacock teal (`#10968c`), and deep federal indigo (`#1c2a62`) advance seamlessly from the upper horizon toward the foreground.
+- **Techniques**: Angled halftone dot screens and subtractive 3-channel Risograph drum registration in GLSL (`escarpment_halftone_strata.glsl`), 27 misregistered spot-ink contour ribbons and halftone stipple ridges batched via `py5.QUADS` / `py5.vertices`, and `PostFX` finishing.
+- **Palette**: Warm Risograph Cream Paper (`#f0e9dc`–`#e7dfd0`), Fluorescent Coral Spot Ink (`#f25240`), Peacock Teal Spot Ink (`#10968c`), Deep Federal Indigo Spot Ink (`#1c2a62`).
+
 ## heterodyne_amber_chorus
 - **Date**: 2026-11-14
 - **Type**: Animation (900 frames, 60fps)

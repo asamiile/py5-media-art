@@ -52,9 +52,6 @@ def render_video_and_preview(
         ],
         check=True,
     )
-    work_mp4 = sketch_dir / f"{sketch_dir.name}.mp4"
-    if output_path != work_mp4:
-        shutil.copyfile(output_path, work_mp4)
 
     frame_no = preview_frame if preview_frame is not None else max(1, total_frames // 2)
     frame_file = frames_path / f"frame-{frame_no:04d}.png"

@@ -1,3 +1,13 @@
+## hyperbolic_risograph_geodesics
+- **Date**: 2026-11-14
+- **Type**: Animation (960 frames, 60fps)
+- **Genre**: Mathematical / Abstract Topology
+- **Composition Archetype**: Full-Bleed Continuous Field
+- **Motion Archetype**: Spatial Camera / Depth Traversal
+- **Concept**: Full-bleed non-Euclidean $\text{PSL}(2, \mathbb{Z})$ modular tessellation and Poincaré geodesic arches printed in slightly misregistered translucent teal, fluorescent coral, and deep indigo risograph spot-ink plates across warm cotton paper (`#ede8de`).
+- **Techniques**: 12-step iterative complex Möbius fundamental-domain folding ($T(z) = z - \lfloor \text{Re}(z) + 1/2 \rfloor$, $S(z) = -1/z$) with rotated halftone dot screens and subtractive spot-ink multiplication in GLSL (`hyperbolic_risograph_geodesics.glsl`), overlaid with 42 animated Poincaré geodesic ribbon arches batched via `py5.QUADS` / `py5.vertices`.
+- **Palette**: Warm Cotton Risograph Paper (`#ede8de`), Translucent Teal Spot Ink (`#169a8e`), Fluorescent Coral Misregistration Ink (`#f05a46`), Deep Indigo Overprint Ink (`#1e2d5c`).
+
 ## cinnabar_ink_fronts
 - **Date**: 2026-11-14
 - **Type**: Animation (900 frames, 60fps)

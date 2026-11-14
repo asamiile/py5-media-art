@@ -1,3 +1,13 @@
+## enneper_mineral_petals
+- **Date**: 2026-11-14
+- **Type**: Animation (1320 frames, 60fps)
+- **Genre**: Mathematical / Abstract Topology
+- **Composition Archetype**: 3D Sculptural / Volumetric Space (P3D)
+- **Motion Archetype**: Multi-Act Temporal Evolution
+- **Concept**: Three generalized Enneper-Bonnet minimal-surface sculptures ($k = 2, 3, 4$) unfolding, twisting through their isometric Bonnet association family, and counter-rotating across a full-canvas warm alabaster washi ground (`#ede8dc`).
+- **Techniques**: True `P3D` volumetric minimal-surface synthesis ($X_\theta = \cos\theta\,X_0 + \sin\theta\,X_{\pi/2}$) with 32-band analytical two-sided surface shading and iron-gall geodesic rulings batched via `py5.QUADS` / `py5.LINES`, and subtle `PostFX` finishing.
+- **Palette**: Warm Alabaster Washi (`#ede8dc`), Iron-Gall Slate Ink (`#2a3941`), Burnt Terracotta Sienna (`#b84a31`), Raw Mineral Ochre (`#c8862a`), Celadon Malachite Slate (`#3e6d68`).
+
 ## brutalist_cantilever_polyhedra
 - **Date**: 2026-11-14
 - **Type**: Animation (1080 frames, 60fps)

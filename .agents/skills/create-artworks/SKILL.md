@@ -10,7 +10,7 @@ Continuously creates py5 media art still images in an autonomous loop by followi
 
 ## Mode Parameters
 
-- **Format**: Still image (`{work_name}_p1.png`)
+- **Format**: Still image (`{work_name}.png`)
 - **Loop Mode**: Continuous loop (repeats until externally stopped; no user confirmation between iterations)
 - **Depth**: Standard (`Planner` → `Artist` → `Critic`, max 2 revisions)
 

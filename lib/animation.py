@@ -27,15 +27,17 @@ def render_video_and_preview(
     fps: int,
     total_frames: int,
     preview_frame: int | None = None,
-    output_filename: str = "output.mp4",
-    preview_filename: str = "preview.png",
+    output_filename: str | None = None,
+    preview_name: str | None = None,
     input_pattern: str = "frame-%04d.png",
     cleanup_frames: bool = False,
 ) -> None:
     """
-    Build ``output.mp4`` from saved frames and copy one frame to ``preview_filename``.
+    Build ``{work_name}.mp4`` from saved frames and copy one frame to ``preview_name``.
     """
-    output_path = sketch_dir / output_filename
+    target_video = output_filename or f"{sketch_dir.name}.mp4"
+    target_preview = preview_name or preview_filename(work_name=sketch_dir.name)
+    output_path = sketch_dir / target_video
     subprocess.run(
         [
             "ffmpeg",
@@ -61,7 +63,7 @@ def render_video_and_preview(
         if candidates:
             frame_file = candidates[len(candidates) // 2]
     if frame_file.exists():
-        shutil.copyfile(frame_file, sketch_dir / preview_filename)
+        shutil.copyfile(frame_file, sketch_dir / target_preview)
 
     if cleanup_frames and frames_path.exists():
         shutil.rmtree(frames_path)
@@ -80,8 +82,8 @@ def step_animation_frame(
     1. Saves the current frame to ``frames/frame-####.png``.
     2. Checks for blank screens on frame 2 and every 60 frames.
     3. Prints render progress every 60 frames.
-    4. On ``total_frames``, compiles ``output.mp4`` + ``{work_name}.mp4``,
-       copies the midpoint frame to ``{work_name}_p1.png``, deletes ``frames/``,
+    4. On ``total_frames``, compiles ``{work_name}.mp4``,
+       copies the midpoint frame to ``{work_name}.png``, deletes ``frames/``,
        and terminates the process cleanly.
     """
     import py5
@@ -97,15 +99,16 @@ def step_animation_frame(
 
     if py5.frame_count >= total_frames:
         py5.exit_sketch()
+        target_video = f"{sketch_dir.name}.mp4"
         target_preview = preview_name or preview_filename(work_name=sketch_dir.name)
-        print(f"[Render FFmpeg] Compiling {total_frames} frames into video...")
+        print(f"[Render FFmpeg] Compiling {total_frames} frames into {target_video}...")
         render_video_and_preview(
             sketch_dir,
             frames_path,
             fps=fps,
             total_frames=total_frames,
-            output_filename="output.mp4",
-            preview_filename=target_preview,
+            output_filename=target_video,
+            preview_name=target_preview,
             cleanup_frames=True,
         )
         print("[Render Cleanup] Temporary frames directory successfully removed.")

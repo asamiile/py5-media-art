@@ -35,7 +35,7 @@ Score on 5 axes (10 points each):
    - Does its name start with `kinetic_` or end with `_2d`/`_3d`? (If yes → automatic `REVISE`).
    If any visual clustering is detected, assign a **Portfolio Diversity** score <= 5, which triggers a `REVISE`.
 4. Read `sketch/{work_name}/main.py`
-5. View generated previews visually according to `.agents/skills/shared/artwork-conventions.md` (`{work_name}_p1.png`).
+5. View generated previews visually according to `.agents/skills/shared/artwork-conventions.md` (`{work_name}.png`).
 6. Inspect code and visuals for any artist signatures, name seals (hanko/落款), initials, monograms, personal marks, or author watermarks. If any element resembling an author signature or seal is detected, issue an automatic `REVISE`.
 7. Output scores on all 5 axes with specific improvement suggestions.
 

@@ -10,7 +10,7 @@ Continuously creates py5 media art animations in an autonomous loop by following
 
 ## Mode Parameters
 
-- **Format**: Animation (`15–30s @ 60fps`, `900`–`1800` frames; outputs `output.mp4`, `{work_name}.mp4`, and `{work_name}_p1.png`)
+- **Format**: Animation (`15–30s @ 60fps`, `900`–`1800` frames; outputs `{work_name}.mp4` and `{work_name}.png`)
 - **Loop Mode**: Continuous loop (repeats until externally stopped; no user confirmation between iterations)
 - **Depth**: Standard (`Planner` → `Artist` → `Critic`, max 2 revisions)
 

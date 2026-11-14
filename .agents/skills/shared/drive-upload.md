@@ -23,7 +23,7 @@ uv run python scripts/upload_to_drive.py --enabled            # exit 0 when uplo
 
 ## Rules
 
-- Upload **after** commit & push, never before review: the Critic and verification steps need the local `output.mp4`/`{work_name}.mp4`.
+- Upload **after** commit & push, never before review: the Critic and verification steps need the local `{work_name}.mp4`.
 - Implementation: `lib/drive_upload.py` (rclone). rclone verifies each upload by checksum and deletes the local video only after success. Videos that `ffprobe` cannot read stay local.
 - Settings come from `.env` (gitignored; template in `.env.example`): `PY5_UPLOAD_REMOTE` (e.g. `gdrive:Media/py5-media-art`), `PY5_UPLOAD=0` to disable. Do not hardcode the Drive path in code.
 - Tuning: `PY5_UPLOAD_TRANSFERS` (parallel uploads, default 8), `PY5_UPLOAD_CHUNK_SIZE` (Drive upload chunk, default 64M; memory use is about transfers × chunk size).

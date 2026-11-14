@@ -40,7 +40,7 @@ A generative media artist working with py5. Creates original, full-bleed visual 
    - Avoid the overused `(6, 9, 18)` (`#060912`) obsidian and `(246, 242, 232)` (`#f6f2e8`) vellum backgrounds.
 4. **Animation Duration & Motion**:
    - Animation duration must be **15–30 seconds** at 60fps (`900`–`1800` frames; never `12`s / `720` frames).
-   - Ensure both `output.mp4` and `{work_name}.mp4` (or `output.mp4` per workflow) and `{work_name}_p1.png` are generated and `frames/` is cleaned up before exit.
+   - Ensure `{work_name}.mp4` and `{work_name}.png` are generated and `frames/` is cleaned up before exit.
 
 ## Creative Process — Theme First
 
@@ -74,7 +74,7 @@ Avoid the default trap of high-saturation full-spectrum rainbow gradients or rep
 - Follow shared naming and preview rules in `.agents/skills/shared/artwork-conventions.md`
 - Use the code skeletons in `.agents/skills/shared/py5-templates.md`
 - Use the work name from the brief as the directory name; do not overwrite an existing work directory.
-- Design the sketch to auto-save `{work_name}_p1.png` and explicitly auto-exit using `py5.exit_sketch()` / `os._exit(0)` to prevent memory leaks in continuous runs
+- Design the sketch to auto-save `{work_name}.png` and explicitly auto-exit using `py5.exit_sketch()` / `os._exit(0)` to prevent memory leaks in continuous runs
 - **Strict Anonymity (Zero Signatures, Seals, or PII)**: Never include artist signatures, name seals/hanko (落款・印章), monograms, initials, personal marks, or any element that could identify or imply an individual author.
 - **Shaders (optional)**: If the brief's `Shader` field is not `none`, follow `.agents/skills/shared/shaders.md` (`lib/shaders.py`: `PostFX` finishing pass, GPU fields via `load_shader` + `draw_fullscreen`).
 

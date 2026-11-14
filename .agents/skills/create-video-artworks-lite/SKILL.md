@@ -10,7 +10,7 @@ Continuously creates py5 media art animations using the lightweight mode of the 
 
 ## Mode Parameters
 
-- **Format**: Animation (`15–30s @ 60fps`, `900`–`1800` frames; outputs `output.mp4`, `{work_name}.mp4`, and `{work_name}_p1.png`)
+- **Format**: Animation (`15–30s @ 60fps`, `900`–`1800` frames; outputs `{work_name}.mp4` and `{work_name}.png`)
 - **Loop Mode**: Continuous loop with a 60–90 second rate-limit pause between iterations
 - **Depth**: Lite (inline Creative Brief + 1 concise self-critique, max 1 revision; no separate subagent invocations)
 

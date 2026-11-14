@@ -10,7 +10,7 @@ Continuously creates py5 media art still images using the lightweight mode of th
 
 ## Mode Parameters
 
-- **Format**: Still image (`{work_name}_p1.png`)
+- **Format**: Still image (`{work_name}.png`)
 - **Loop Mode**: Continuous loop with a 60–90 second rate-limit pause between iterations
 - **Depth**: Lite (inline Creative Brief + 1 concise self-critique, max 1 revision; no separate subagent invocations)
 

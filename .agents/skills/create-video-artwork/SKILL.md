@@ -10,7 +10,7 @@ Autonomously creates a single py5 media art animation (video) by following the c
 
 ## Mode Parameters
 
-- **Format**: Animation (`15–30s @ 60fps`, `900`–`1800` frames; outputs `output.mp4`, `{work_name}.mp4`, and `{work_name}_p1.png`)
+- **Format**: Animation (`15–30s @ 60fps`, `900`–`1800` frames; outputs `{work_name}.mp4` and `{work_name}.png`)
 - **Loop Mode**: Single work (1 iteration)
 - **Depth**: Standard (`Planner` → `Artist` → `Critic`, max 2 revisions)
 

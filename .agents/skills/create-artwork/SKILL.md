@@ -10,7 +10,7 @@ Autonomously creates a single py5 media art still image by following the canonic
 
 ## Mode Parameters
 
-- **Format**: Still image (`{work_name}_p1.png`)
+- **Format**: Still image (`{work_name}.png`)
 - **Loop Mode**: Single work (1 iteration)
 - **Depth**: Standard (`Planner` → `Artist` → `Critic`, max 2 revisions)
 

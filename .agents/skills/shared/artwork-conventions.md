@@ -17,11 +17,10 @@ Shared naming, file, and staging rules for py5 media art skills.
 
 ## Preview Images
 
-- Use `{work_name}_p1.png` for the first generated pattern.
-- If the work deliberately includes multiple distinct patterns or variants, save them as `{work_name}_p2.png`, `{work_name}_p3.png`, etc.
-- Keep the pattern suffix before the revision suffix for snapshots: `{work_name}_p1_v1.png`, `{work_name}_p2_v1.png`, etc.
+- Use `{work_name}.png` for the default preview image (do not append `_p1` or `_v1`).
+- Only if a work deliberately includes multiple distinct patterns or variants, save the additional ones as `{work_name}_p2.png`, `{work_name}_p3.png`, etc.
 - Do not create or commit an unsuffixed `preview.png` for new works.
-- `{work_name}_p1.png` must exist before review and commit.
+- `{work_name}.png` must exist before review and commit.
 
 ## Work Directory
 
@@ -31,9 +30,8 @@ sketch/
     main.py
     *.glsl                   # optional shaders (see shaders.md)
     README.md
-    {work_name}_p1.png
+    {work_name}.png
     {work_name}_p2.png       # optional additional pattern
-    {work_name}_p1_v1.png    # optional revision snapshot
     {work_name}.mp4          # animation only; moved to Google Drive after commit
     frames/                  # sequential PNGs, not committed
 ```

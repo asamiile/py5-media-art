@@ -14,20 +14,22 @@ def preview_filename(
     """
     Return the preview filename for a pattern and optional revision.
 
-    When ``work_name`` is provided, returns ``{work_name}_p{pattern}.png``
-    (or ``{work_name}_p{pattern}_v{revision}.png``) per current conventions.
-    When ``work_name`` is omitted, returns ``preview_p{pattern}.png`` for
-    backward compatibility with legacy sketches.
+    When ``work_name`` is provided, returns ``{work_name}.png`` for the default
+    first pattern (``pattern == 1`` and ``revision is None``), or
+    ``{work_name}_p{pattern}.png`` / ``{work_name}_v{revision}.png`` when
+    explicitly requested.
     """
     if pattern < 1:
         raise ValueError("pattern must be >= 1")
     if revision is not None and revision < 1:
         raise ValueError("revision must be >= 1")
 
-    prefix = f"{work_name}_p{pattern}" if work_name else f"preview_p{pattern}"
+    stem = work_name if work_name else "preview"
+    if pattern > 1:
+        stem = f"{stem}_p{pattern}"
     if revision is not None:
-        prefix = f"{prefix}_v{revision}"
-    return f"{prefix}.png"
+        stem = f"{stem}_v{revision}"
+    return f"{stem}.png"
 
 
 def abort_if_blank(min_std: float = 1.0) -> None:

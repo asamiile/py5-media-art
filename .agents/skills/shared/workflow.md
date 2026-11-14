@@ -6,14 +6,14 @@ All `create-artwork*` and `create-video-artwork*` skills follow this unified pip
 
 | Skill | Format | Loop Mode | Depth |
 | --- | --- | --- | --- |
-| `create-artwork` | Still image (`{work_name}_p1.png`) | Single | Standard (Planner → Artist → Critic, max 2 revisions) |
-| `create-artworks` | Still image (`{work_name}_p1.png`) | Continuous loop | Standard (Planner → Artist → Critic, max 2 revisions) |
-| `create-video-artwork` | Animation (`15–30s @ 60fps`, `output.mp4` + `{work_name}_p1.png`) | Single | Standard (Planner → Artist → Critic, max 2 revisions) |
-| `create-video-artworks` | Animation (`15–30s @ 60fps`, `output.mp4` + `{work_name}_p1.png`) | Continuous loop | Standard (Planner → Artist → Critic, max 2 revisions) |
-| `create-artwork-lite` | Still image (`{work_name}_p1.png`) | Single | Lite (Inline brief + 1 concise self-critique, max 1 revision) |
-| `create-artworks-lite` | Still image (`{work_name}_p1.png`) | Continuous loop (+ 60–90s rate-limit pause) | Lite (Inline brief + 1 concise self-critique, max 1 revision) |
-| `create-video-artwork-lite` | Animation (`15–30s @ 60fps`, `output.mp4` + `{work_name}_p1.png`) | Single | Lite (Inline brief + 1 concise self-critique, max 1 revision) |
-| `create-video-artworks-lite` | Animation (`15–30s @ 60fps`, `output.mp4` + `{work_name}_p1.png`) | Continuous loop (+ 60–90s rate-limit pause) | Lite (Inline brief + 1 concise self-critique, max 1 revision) |
+| `create-artwork` | Still image (`{work_name}.png`) | Single | Standard (Planner → Artist → Critic, max 2 revisions) |
+| `create-artworks` | Still image (`{work_name}.png`) | Continuous loop | Standard (Planner → Artist → Critic, max 2 revisions) |
+| `create-video-artwork` | Animation (`15–30s @ 60fps`, `{work_name}.mp4` + `{work_name}.png`) | Single | Standard (Planner → Artist → Critic, max 2 revisions) |
+| `create-video-artworks` | Animation (`15–30s @ 60fps`, `{work_name}.mp4` + `{work_name}.png`) | Continuous loop | Standard (Planner → Artist → Critic, max 2 revisions) |
+| `create-artwork-lite` | Still image (`{work_name}.png`) | Single | Lite (Inline brief + 1 concise self-critique, max 1 revision) |
+| `create-artworks-lite` | Still image (`{work_name}.png`) | Continuous loop (+ 60–90s rate-limit pause) | Lite (Inline brief + 1 concise self-critique, max 1 revision) |
+| `create-video-artwork-lite` | Animation (`15–30s @ 60fps`, `{work_name}.mp4` + `{work_name}.png`) | Single | Lite (Inline brief + 1 concise self-critique, max 1 revision) |
+| `create-video-artworks-lite` | Animation (`15–30s @ 60fps`, `{work_name}.mp4` + `{work_name}.png`) | Continuous loop (+ 60–90s rate-limit pause) | Lite (Inline brief + 1 concise self-critique, max 1 revision) |
 
 ---
 
@@ -67,11 +67,11 @@ Run the sketch and ensure the process terminates cleanly:
 ```bash
 uv run python sketch/{work_name}/main.py
 ```
-- **Still works**: Verify `sketch/{work_name}/{work_name}_p1.png` (and any `_p2.png`, etc.) exists and is non-blank.
-- **Animation works**: Verify `sketch/{work_name}/output.mp4`, `sketch/{work_name}/{work_name}.mp4`, and `sketch/{work_name}/{work_name}_p1.png` exist and `frames/` is cleaned up.
+- **Still works**: Verify `sketch/{work_name}/{work_name}.png` (and any `_p2.png`, etc.) exists and is non-blank.
+- **Animation works**: Verify `sketch/{work_name}/{work_name}.mp4` and `sketch/{work_name}/{work_name}.png` exist and `frames/` is cleaned up.
 
 ### 6. Critique & Revision
-- **Standard Depth**: Follow `.agents/skills/critic/SKILL.md`. Run `uv run python scripts/check_diversity.py check {work_name}`, inspect the generated preview images (`{work_name}_p1.png`) and code, score all 5 axes, and return `APPROVE` or `REVISE` (up to 2 revisions).
+- **Standard Depth**: Follow `.agents/skills/critic/SKILL.md`. Run `uv run python scripts/check_diversity.py check {work_name}`, inspect the generated preview image (`{work_name}.png`) and code, score all 5 axes, and return `APPROVE` or `REVISE` (up to 2 revisions).
 - **Lite Depth**: Perform one concise self-critique using the 5 axes in `.agents/skills/critic/SKILL.md` (up to 1 revision if needed).
 
 ### 7. Documentation & Registry Update
@@ -80,7 +80,7 @@ uv run python sketch/{work_name}/main.py
 - Prepend a blank feedback section to `.agents/FEEDBACK.md` (leave `Rating` and `Comment` empty).
 
 ### 8. Commit, Push & Upload
-- Stage only the allowed files (`git add sketch/{work_name}/main.py sketch/{work_name}/README.md sketch/{work_name}/{work_name}_p*.png sketch/WORKS.md .agents/FEEDBACK.md`). Never stage `.mp4` files or `frames/`.
+- Stage only the allowed files (`git add sketch/{work_name}/main.py sketch/{work_name}/README.md sketch/{work_name}/{work_name}*.png sketch/WORKS.md .agents/FEEDBACK.md`). Never stage `.mp4` files or `frames/`.
 - Commit (`feat: add {work_name} sketch`) and push to the `feature/works-YYYYMMDD` branch.
 - Upload outputs to Google Drive (stills copied, videos moved):
   ```bash

@@ -109,9 +109,9 @@ def draw():
 ## Notes
 
 - Prefer helpers in `lib/`: `lib.paths.sketch_dir`, `lib.sizes.get_sizes`, `lib.preview`, and `lib.animation`.
-- Save previews with `{work_name}_p1.png` (`preview_filename(work_name=WORK_NAME)`).
+- Save previews with `{work_name}.png` (`preview_filename(work_name=WORK_NAME)`).
 - Explicitly call `maybe_save_exit_on_frame()` or `step_animation_frame()` so continuous runs do not leave sketch processes running.
-- Animation works save sequential PNGs to `frames/` and compile `output.mp4` and `{work_name}.mp4` with ffmpeg, then remove `frames/`.
+- Animation works save sequential PNGs to `frames/` and compile `{work_name}.mp4` with ffmpeg, then remove `frames/`.
 - MP4 files are generated outputs; do not commit them. After commit, they are moved to Google Drive (`.agents/skills/shared/drive-upload.md`).
 - Do not fix random seed; results should vary each run.
 - On Retina, after `py5.load_np_pixels()`, get actual size from `py5.np_pixels.shape[:2]`.

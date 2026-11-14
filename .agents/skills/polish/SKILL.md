@@ -34,7 +34,7 @@ Autonomously polishes an existing py5 media art sketch by analyzing feedback tre
 
 5. **Programmatic Check, Preview & Self-Critique**
    - Run `uv run python scripts/check_diversity.py check {work_name}_v{n}` and resolve any violations.
-   - Run `uv run python sketch/{work_name}_v{n}/main.py` to generate `{work_name}_v{n}_p1.png` (and `output.mp4` if animated).
+   - Run `uv run python sketch/{work_name}_v{n}/main.py` to generate `{work_name}_v{n}.png` (and `{work_name}_v{n}.mp4` if animated).
    - **Self-Critique Loop**: Evaluate the result against the **Refinement Plan** and **Critic axes** (`.agents/skills/critic/SKILL.md`).
    - If the result doesn't fully address the feedback, perform one iteration of code adjustment.
 
@@ -62,7 +62,7 @@ Autonomously polishes an existing py5 media art sketch by analyzing feedback tre
 - **Palette Precision**: Use curated color palettes suited to the work's tonal family (high-key paper, mid-tone mineral, pastel atmospheric, vibrant chromatic, monochrome, or deep luminous) rather than defaulting to a single dark palette.
 - **Complexity Precision**: If "more abstract" is requested, increase noise octaves or transformation depth; if "more realistic," add physical constraints or optical shading.
 - **Naming Precision**: Always use `{work_name}_v{n}` for directories and entries to maintain a clear evolution path.
-- **Convention Adherence**: Ensure all preview files follow the `{work_name}_v{n}_p1.png` naming convention.
+- **Convention Adherence**: Ensure all preview files follow the `{work_name}_v{n}.png` naming convention.
 
 ## Notes
 

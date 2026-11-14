@@ -10,7 +10,7 @@ Creates one py5 media art still image using the lightweight mode of the canonica
 
 ## Mode Parameters
 
-- **Format**: Still image (`{work_name}_p1.png`)
+- **Format**: Still image (`{work_name}.png`)
 - **Loop Mode**: Single work (1 iteration)
 - **Depth**: Lite (inline Creative Brief + 1 concise self-critique, max 1 revision; no separate subagent invocations)
 

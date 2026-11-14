@@ -5,7 +5,7 @@ Agents MUST NOT write anything in the `Comment` field. When registering a new wo
 
 ## kam_resonance_tori
 
-- **Rating**: 
+- **Rating**: OK
 - **Comment**: 
 
 
@@ -35,13 +35,13 @@ Agents MUST NOT write anything in the `Comment` field. When registering a new wo
 
 ## hypostyle_voussoir_colonnade
 
-- **Rating**: 
+- **Rating**: OK
 - **Comment**: 
 
 
 ## turing_chemotaxis_tesserae
 
-- **Rating**: 
+- **Rating**: OK
 - **Comment**: 
 
 
@@ -53,25 +53,25 @@ Agents MUST NOT write anything in the `Comment` field. When registering a new wo
 
 ## sumi_kuroshio_plumes
 
-- **Rating**: 
+- **Rating**: OK
 - **Comment**: 
 
 
 ## prussian_legendre_strata
 
-- **Rating**: 
+- **Rating**: OK
 - **Comment**: 
 
 
 ## escarpment_halftone_strata
 
-- **Rating**: 
+- **Rating**: OK
 - **Comment**: 
 
 
 ## heterodyne_amber_chorus
 
-- **Rating**: 
+- **Rating**: OK
 - **Comment**: 
 
 
@@ -113,7 +113,7 @@ Agents MUST NOT write anything in the `Comment` field. When registering a new wo
 
 ## harmonograph_slate_caustics
 
-- **Rating**: 
+- **Rating**: OK
 - **Comment**: 
 
 
@@ -125,7 +125,7 @@ Agents MUST NOT write anything in the `Comment` field. When registering a new wo
 
 ## scanline_overprint_matrix
 
-- **Rating**: 
+- **Rating**: OK
 - **Comment**: 
 
 
@@ -137,7 +137,7 @@ Agents MUST NOT write anything in the `Comment` field. When registering a new wo
 
 ## enneper_mineral_petals
 
-- **Rating**: 
+- **Rating**: OK
 - **Comment**: 
 
 
@@ -149,7 +149,7 @@ Agents MUST NOT write anything in the `Comment` field. When registering a new wo
 
 ## hopf_saffron_bundle
 
-- **Rating**: 
+- **Rating**: OK
 - **Comment**: 
 
 
@@ -161,37 +161,37 @@ Agents MUST NOT write anything in the `Comment` field. When registering a new wo
 
 ## lichen_travertine_terraces
 
-- **Rating**: 
+- **Rating**: OK
 - **Comment**: 
 
 
 ## viridian_catenary_canopy
 
-- **Rating**: 
+- **Rating**: OK
 - **Comment**: 
 
 
 ## bitplane_moire_polyptych
 
-- **Rating**: 
+- **Rating**: OK
 - **Comment**: 
 
 
 ## karman_washi_vortices
 
-- **Rating**: 
+- **Rating**: OK
 - **Comment**: 
 
 
 ## hyperbolic_risograph_geodesics
 
-- **Rating**: 
+- **Rating**: OK
 - **Comment**: 
 
 
 ## cinnabar_ink_fronts
 
-- **Rating**: 
+- **Rating**: OK
 - **Comment**: 
 
 

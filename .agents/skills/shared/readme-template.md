@@ -5,7 +5,7 @@ Use this template for all new py5 media art sketch `README.md` files.
 ```markdown
 # {work_name}
 
-![Preview]({work_name}_p1.png)
+![Preview]({work_name}.png)
 
 ## Metadata
 - **Date**: {YYYY-MM-DD}

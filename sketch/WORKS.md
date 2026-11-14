@@ -1,3 +1,13 @@
+## cymatic_salt_nodals
+- **Date**: 2026-11-14
+- **Type**: Animation (1260 frames, 60fps)
+- **Genre**: Physical / Micro-Kinetic
+- **Composition Archetype**: Emergent Network / Boundary-to-Interior Growth
+- **Motion Archetype**: Persistent Trail Accumulation & Decay
+- **Concept**: Acoustic cymatic resonance plate where coupled standing waves drive 22,000 fine ivory silica, warm brass, and vermilion garnet sand grains from boundary exciters into bifurcating Chladni nodal filaments across a deep nocturnal obsidian-slate field (`#0d1016`).
+- **Techniques**: Coupled non-integer Chladni eigenmode superposition and finite-difference nodal groove relief in GLSL (`cymatic_salt_nodals.glsl`), analytical acoustic potential gradient $\nabla |W(x, y, t)|$ advection of 22,000 sand grains in NumPy batched via `py5.QUADS` / `py5.vertices`, and `PostFX` bloom, vignette, and film grain.
+- **Palette**: Nocturnal Obsidian Slate (`#0d1016`), Brushed Acoustic Trough (`#131a24`), Fine Ivory Silica (`#ece6d8`), Champagne Brass (`#e2a84b`), Vermilion Garnet Accent (`#f05438`).
+
 ## lichen_travertine_terraces
 - **Date**: 2026-11-14
 - **Type**: Animation (1200 frames, 60fps)

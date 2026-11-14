@@ -1,3 +1,13 @@
+## kumihimo_triaxial_weave
+- **Date**: 2026-11-14
+- **Type**: Animation (960 frames, 60fps)
+- **Genre**: Textile / Calligraphy / Procedural Craft
+- **Composition Archetype**: 3D Sculptural / Volumetric Space (P3D)
+- **Motion Archetype**: Poly-Rhythmic Phase Interference
+- **Concept**: Volumetric P3D sculptural suspension of 57 interwoven triaxial ribbons (`0°`, `+60°`, `-60°` symmetry axes) across dual canopies over a deep obsidian lacquer ground (`#0d1016`), where 1:2:3 harmonic phase interference drives true over-under interlacing waves in raw bone ivory (`#f4efe4`), vermilion lacquer (`#e63826`), imperial gold (`#f2b01e`), and cobalt ultramarine (`#2558d1`).
+- **Techniques**: Vectorized 3-face 3D ribbon slab extrusion with torsion normals and 5-band directional slope/fog shading in `P3D` (`py5.QUADS` / `py5.vertices`), vertical gold tension filaments (`py5.LINES`), and `PostFX` finishing.
+- **Palette**: Obsidian Lacquer (`#0d1016`), Raw Bone Ivory (`#f4efe4`), Vermilion Lacquer (`#e63826`), Imperial Gold (`#f2b01e`), Cobalt Ultramarine (`#2558d1`).
+
 ## cobalt_foliation_shear
 - **Date**: 2026-11-14
 - **Type**: Animation (1080 frames, 60fps)

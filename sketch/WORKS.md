@@ -1,3 +1,13 @@
+## kasuri_shuttle_wavefronts
+- **Date**: 2026-11-14
+- **Type**: Animation (1020 frames, 60fps)
+- **Genre**: Textile / Calligraphy / Procedural Craft
+- **Composition Archetype**: Stratified Horizon / Diagonal Sweep
+- **Motion Archetype**: Directional Advection & Traveling Wavefronts
+- **Concept**: Diagonally swept kasuri (ikat) resist-dyed textile strata across a 100% full-canvas high-key warm kozo washi ground (`#eee8db`–`#e2dac9`), where seven woven bands in iron-gall slate (`#24333d`), mineral indigo (`#324e62`), burnt terracotta (`#bc4e30`), raw gold ochre (`#ce8e2a`), and celadon sage (`#46736c`) undergo continuous directional advection and traveling shed wavefronts.
+- **Techniques**: Feathered kasuri weft step-shift, twill micro-ribbing, and kozo paper fiber texture in GLSL (`kasuri_shuttle_wavefronts.glsl`), 35 warp ribbons and 420 advecting weft-shuttle thread segments batched via `py5.QUADS` / `py5.vertices`, and `PostFX` finishing.
+- **Palette**: Warm Kozo Washi (`#eee8db`–`#e2dac9`), Iron-Gall Slate (`#24333d`), Mineral Indigo (`#324e62`), Burnt Terracotta (`#bc4e30`), Raw Gold Ochre (`#ce8e2a`), Celadon Sage (`#46736c`).
+
 ## sumi_kuroshio_plumes
 - **Date**: 2026-11-14
 - **Type**: Animation (1260 frames, 60fps)

@@ -1,3 +1,13 @@
+## celadon_soliton_estuary
+- **Date**: 2026-11-14
+- **Type**: Animation (900 frames, 60fps)
+- **Genre**: Atmospheric / Painterly / Color Field
+- **Composition Archetype**: Asymmetric Off-Center Tension
+- **Motion Archetype**: Directional Advection & Traveling Wavefronts
+- **Concept**: Propagating internal soliton wave packets radiating from an off-center tidal mouth near the lower-left golden-ratio focal zone and sweeping diagonally across a mid-tone celadon-slate dusk field (`#2c3840`–`#3d504b`) with buoyant soft chalk-mist and warm amber-ochre drift filaments.
+- **Techniques**: Domain-warped fBm and non-singular directional Korteweg-de Vries ($\operatorname{sech}^2$) soliton packet synthesis in GLSL (`celadon_soliton_estuary.glsl`), 340 tangential crest-foam arcs and diagonal shear-current streamers batched via `py5.QUADS` / `py5.vertices`, and `PostFX` bloom, vignette, and film grain.
+- **Palette**: Mid-Tone Atmospheric Slate (`#2c3840`), Celadon Dusk (`#3d504b`), Estuary Mist (`#759496`), Soft Chalk Foam (`#ece6da`), Warm Amber Ochre (`#e69232`).
+
 ## enneper_mineral_petals
 - **Date**: 2026-11-14
 - **Type**: Animation (1320 frames, 60fps)

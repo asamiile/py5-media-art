@@ -3,6 +3,12 @@
 **CRITICAL RULE**: ONLY the USER may write to the `Rating` and `Comment` field.
 Agents MUST NOT write anything in the `Comment` field. When registering a new work, Agents must leave the `Rating` and `Comment` fields empty or with their default labels as placeholders for the user.
 
+## turing_chemotaxis_tesserae
+
+- **Rating**: 
+- **Comment**: 
+
+
 ## kasuri_shuttle_wavefronts
 
 - **Rating**: 

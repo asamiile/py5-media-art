@@ -1,3 +1,13 @@
+## turing_chemotaxis_tesserae
+- **Date**: 2026-11-14
+- **Type**: Animation (1140 frames, 60fps)
+- **Genre**: Organic / Morphogenesis
+- **Composition Archetype**: Full-Canvas Polyptych / Rhythmic Matrix
+- **Motion Archetype**: Directional Advection & Traveling Wavefronts
+- **Concept**: Full-canvas 5×3 rhythmic matrix of 15 morphogenetic reaction-diffusion tesserae set on a mid-tone atmospheric dusk and celadon-slate ground (`#2c3840`–`#3d4e48`), where anisotropic activator-inhibitor Turing wavefronts and 150 chemotactic filament ribbons advect continuously in soft chalk (`#ebe6da`), misty celadon (`#82a8aa`), warm amber-ochre (`#e49636`), and terracotta (`#ce5e40`).
+- **Techniques**: 15-cell anisotropic reaction-diffusion labyrinth wavefronts and catalyst crest contours in GLSL (`turing_chemotaxis_tesserae.glsl`), 150 advecting chemotactic wavefront ribbons and 360 catalyst droplets batched via `py5.QUADS` / `py5.vertices`, and `PostFX` finishing.
+- **Palette**: Dusk Slate (`#2c3840`), Celadon Sage (`#3d4e48`), Misty Celadon-Teal (`#82a8aa`), Soft Chalk (`#ebe6da`), Warm Amber-Ochre (`#e49636`), Terracotta (`#ce5e40`).
+
 ## kasuri_shuttle_wavefronts
 - **Date**: 2026-11-14
 - **Type**: Animation (1020 frames, 60fps)

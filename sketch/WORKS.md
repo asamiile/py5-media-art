@@ -1,3 +1,13 @@
+## cinnabar_ink_fronts
+- **Date**: 2026-11-14
+- **Type**: Animation (900 frames, 60fps)
+- **Genre**: Atmospheric / Painterly / Color Field
+- **Composition Archetype**: Emergent Network / Boundary-to-Interior Growth
+- **Motion Archetype**: Directional Advection & Traveling Wavefronts
+- **Concept**: Full-bleed suminagashi and wet sumi-e pigment collision fronts advancing from the four margins of dark slate paper and igniting warm cinnabar capillary seams where opposing curl-advected wavefronts converge in open space.
+- **Techniques**: Custom GLSL curl-warped multi-front advection and capillary interference shader (`cinnabar_ink_fronts.glsl` via `load_shader` + `draw_fullscreen`), 56 boundary-nucleated tapered wash ribbons batched via `py5.QUADS` / `py5.vertices`, and `PostFX` filmic tone-mapping, bloom, vignette, and grain.
+- **Palette**: Deep Slate Charcoal (`#0e131b`), Wet Sumi Shadow (`#1e2837`), Pewter Mist (`#586980`), Frosted Silver Wash (`#c6d4e4`), Molten Cinnabar Front Seam (`#e85234`).
+
 ## kinetic_muqarnas_stalactite_vault_corbeling_stereotomy_2d
 - **Date**: 2026-11-05
 - **Type**: Animation (720 frames, 60fps)
